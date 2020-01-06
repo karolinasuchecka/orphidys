@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+     <front>
+        <docAuthor></docAuthor>
+        <docTitle><titlePart type="main">Orphée aux Enfers</titlePart>
+        <titlePart type="sub">Opéra bouffon</titlePart></docTitle>
+        <castList>
+           <castItem xml:id="aristee">Aristée</castItem>
+           <castItem xml:id="pluton">Pluton</castItem>
+           <castItem xml:id="jupiter">Jupiter</castItem>
+           <castItem xml:id="orphee">Orphée</castItem>
+           <castItem xml:id="styx">John Styx</castItem>
+           <castItem xml:id="mercure">Mercure</castItem>
+           <castItem xml:id="bacchus">Bacchus</castItem>
+           <castItem xml:id="mars">Mars</castItem>
+           <castItem xml:id="eurydice">Eurydice</castItem>
+           <castItem xml:id="diane">Diane</castItem>
+           <castItem xml:id="opinion-publique">L'Opinion publique</castItem>
+           <castItem xml:id="junon">Junon</castItem>
+           <castItem xml:id="venus">Vénus</castItem>
+           <castItem xml:id="cupidon">Cupidon</castItem>
+           <castItem xml:id="minerve">Minerve</castItem>
+           <castItem xml:id="dieux">Dieu, déesses, etc.</castItem>
+        </castList>
+     </front>
+      <body>
+         <div type="act" n="1">
+            <head>Premier tableau <lb/> La mort d'Eurydice</head>
+            <argument><p>La campagne aux environs de Thèbes. Au fond, des blés dorés et des bluets. A gauche, la cabane d’Aristée, surmontée de cette enseigne : Aristée, fabricant de miel, gros et détail, dépôt au mont Hymette. A droite, la cabane d’Orphée avec cette inscription : Orphée, directeur de l’Orphéon de Thèbes, leçons au mois et au cachet.</p></argument>
+            <div type="avant-scene">
+               <move type="onStage" who="#opinion-publique"/>
+               <sp who="#opinion-publique" toWhom="#public">
+               <speaker>L'opinion publique</speaker>
+        <said><lg><l><date from-custom="00:03:08,240" to-custom="00:03:11,835"/>Qui je suis? Du théâtre antique</l>
+<l><date from-custom="00:03:12,000" to-custom="00:03:16,312"/>J'ai perfectionné le chœur;</l>
+<l>Je suis l'Opinion Publique,</l>
+
+<l><date from-custom="00:03:17,000" to-custom="00:03:21,630"/>Un personnage symbolique,</l>
+<l>Ce qu'on appelle un raisonneur.</l></lg>
+
+<lg><l><date from-custom="00:03:22,920" to-custom="00:03:26,754"/>La chœur antique en confidence</l>
+<l>Se chargeait d'expliquer aux gens</l>
+
+<l><date from-custom="00:03:26,840" to-custom="00:03:30,515"/>cCe qu'ils avaient compris d'avance</l>
+<l>Quand ils étaient intelligents.</l></lg>
+
+                  <lg><l><date from-custom="00:03:30,600" to-custom="00:03:33,910"/>Moi, je fais mieux. – J’agis moi-même ;</l>
+
+<l><date from-custom="00:03:34,640" to-custom="00:03:38,633"/>Et prenant part à l'action,</l>
+<l>De la palme ou de l'anathème</l>
+
+<l><date from-custom="00:03:39,320" to-custom="00:03:42,312"/>Je fais la distribution.</l></lg>
+
+<lg><l><date from-custom="00:03:42,600" to-custom="00:03:46,878"/>Que prenne garde à moi la femme</l>
+<l>Qui voudrait tromper son époux,</l>
+
+<l><date from-custom="00:03:47,240" to-custom="00:03:51,233"/>Et que se garde aussi l'époux</l>
+<l>Qui ferait des traits à sa femme!...</l>
+
+   <l><date from-custom="00:03:51,600" to-custom="00:03:55,593"/>– C'est aux Personnages du drame</l>
+   <l>Que je parle. – Rassurez-vous!</l></lg>
+
+<lg><l><date from-custom="00:03:58,520" to-custom="00:04:03,913"/>Voici venir notre Eurydice;</l>
+                  <l>Je pars: – mais je suis toujours là,</l>
+
+<l><date from-custom="00:04:04,320" to-custom="00:04:10,509"/>Prêt à sortir de la coulisse</l>
+<l>Comme un <hi rend="i">Deus ex machina !</hi>.</l>
+</lg></said>
+               </sp>
+                  <move type="exit" who="#opinion-publique"/>
+            </div>
+            <div type="scene" n="1">
+               <move who="#eurydice" type="entrance"/>
+               <sp who="#eurydice" toWhom="#public">
+                  <speaker>Eurydice</speaker><stage type="business" who="#eurydice">elle cueille des fleurs et en fait une guirlande</stage>
+                  <said><lg><l><date from-custom="00:04:41,040" to-custom="00:04:45,591"/>La femme dont le cœur rêve</l>
+<l>N'a pas de sommeil;</l>
+
+<l><date from-custom="00:04:47,720" to-custom="00:04:52,510"/>Chaque jour elle se lève</l>
+<l>Avec le soleil.</l>
+
+<l><date from-custom="00:04:53,920" to-custom="00:04:59,278"/>Le matin de fleurs plus belles</l>
+<l>Les prés sont brodés :</l>
+
+<l><date from-custom="00:04:59,800" to-custom="00:05:02,951"/>Mais ces fleurs pour qui sont-elles?</l>
+
+<l><date from-custom="00:05:03,080" to-custom="00:05:07,471"/>Vous le demandez? Vous le demandez?</l>
+
+<l><date from-custom="00:05:07,960" to-custom="00:05:12,511"/>Pour qui? <kinesic type="rire"/></l>
+
+<l><date from-custom="00:05:13,720" to-custom="00:05:17,918"/>N'en dites rien à mon mari,</l>
+<l>à mon mari,</l>
+
+<l><date from-custom="00:05:18,520" to-custom="00:05:22,229"/>Car c'est pour le berger joli</l>
+<l>Qui loge ici,</l>
+
+<l><date from-custom="00:05:22,520" to-custom="00:05:27,150"/>Qui loge ici,</l>
+<l>Qui loge ici,</l>
+
+<l><date from-custom="00:05:28,360" to-custom="00:05:34,515"/>N'en dites rien à mon mari,</l>
+<l>N'en dites rien à mon mari.</l></lg>
+                     <stage who="#eurydice" toWhom="#aristee" type="business">Elle s’approche avec inquiétude de la cabane d’Aristée et suspend à sa porte une guirlande.</stage>
+                  <lg>
+<l><date from-custom="00:05:45,120" to-custom="00:05:50,114"/>Chaque jour ainsi j'apporte</l>
+<l>Au berger galant,</l>
+
+<l><date from-custom="00:05:51,960" to-custom="00:05:57,114"/>De beaux bleuets, qu'à sa porte</l>
+<l>J'accroche en tremblant,</l>
+
+<l><date from-custom="00:05:58,240" to-custom="00:06:01,232"/>Et mon pauvre cœur palpite</l>
+
+               <l><date from-custom="00:06:01,600" to-custom="00:06:04,592"/>À bonds saccadés;</l>
+
+<l><date from-custom="00:06:04,680" to-custom="00:06:07,717"/>Pour qui donc bat-il si vite?</l>
+
+<l><date from-custom="00:06:08,120" to-custom="00:06:12,432"/>Vous le demandez? Vous le demandez?</l>
+
+<l><date from-custom="00:06:13,120" to-custom="00:06:17,796"/>Pour qui? <kinesic type="rire"/></l>
+
+<l><date from-custom="00:06:19,600" to-custom="00:06:23,832"/>N'en dites rien à mon mari,</l>
+               <l>À mon mari,</l>
+
+<l><date from-custom="00:06:24,520" to-custom="00:06:28,308"/>Car c'est pour le berger joli</l>
+<l>Qui loge ici,</l>
+
+<l><date from-custom="00:06:28,400" to-custom="00:06:33,520"/>Qui loge ici,</l>
+<l>Qui loge ici,</l>
+
+<l><date from-custom="00:06:34,760" to-custom="00:06:41,279"/>N'en dites rien à mon mari,</l>
+<l>N'en dites rien à mon mari.</l></lg>
+                  </said>
+               </sp>
+               <stage who="#eurydice #orphee" type="mixed"><stage who="#eurydice" type="business">Elle entr’ouvre la porte de la cabane et regarde un instant à l’intérieur ;</stage>
+                  <stage who="#orphee" type="entrance">pendant ce temps, Orphée paraît à gauche : il tient à la main son violon.</stage></stage>
+               <move type="entrance" who="#orphee"/>
+            </div>
+            <div type="scene" n="2">
+               <move type="onStage" who="#eurydice #orphee"/>
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><lg><l><date from-custom="00:06:55,480" to-custom="00:06:59,314"/>Il est sorti! Je voudrais qu'en rentrant <date from-custom="00:06:59,400" to-custom="00:07:02,392"/>il trouve son toit semé de fleurs.</l></lg></said>
+                  <stage type="business" who="#eurydice">Elle prend le reste des fleurs qu’elle tient dans sa robe et les jette dans la cabane.</stage>
+               </sp>
+               <sp who="#orphee" toWhom="#public">
+                  <speaker>Orphée</speaker>
+                  <said>
+                     <l><date from-custom="00:07:04,920" to-custom="00:07:08,913"/>Que vois-je? N'est-ce pas la nymphe Maquilla, la belle nymphe que j'adore? <date from-custom="00:07:10,320" to-custom="00:07:13,471"/>Elle est seule. Révélons ma présence chantant. <date from-custom="00:07:14,520" to-custom="00:07:18,513"/><kinesic type="chant"/>Là là là là là...</l>
+                  </said>
+                  <stage type="business">Il joue une phrase passionnée sur le violon.</stage>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><date from-custom="00:07:19,240" to-custom="00:07:22,755"/>Flûte! C'est mon mari!</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said>Zut! C'est ma femme! Imbécile! <date from-custom="00:07:22,840" to-custom="00:07:26,753"/>Dépêchons-nous de crier avant qu'elle ne commence! Ah! Madame, vous êtes prise!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><date from-custom="00:07:26,840" to-custom="00:07:30,833"/>Par qui, s'il vous plaît? Pour quoi?</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said>Pour quoi? Pour qui plutôt ces fleurs, <date from-custom="00:07:30,920" to-custom="00:07:34,913"/>s'il vous plaît?</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Quelles fleurs? Ah! pour le soleil, <date from-custom="00:07:35,080" to-custom="00:07:39,073"/>pour le vent, et vous, pour qui le chant passionné?</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:07:39,280" to-custom="00:07:44,274"/>Pour la lune.</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Pour la lune, très bien, vive la lune! Bon; savez-vous ce que je <date from-custom="00:07:44,360" to-custom="00:07:49,229"/>pense, moi, mon chéri? C'est que si j'ai mon berger, vous avez votre bergère. <date from-custom="00:07:50,320" to-custom="00:07:54,074"/>Alors, je vous laisse votre bergère et laissez-moi mon berger.</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:07:54,160" to-custom="00:07:58,153"/>Allons! Madame, ce que vous dites est de mauvais goût!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Pourquoi, je vous prie?</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:07:58,240" to-custom="00:08:01,915"/>Parce que... Tenez! j'en rougis!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Ah! Vraiment! Mais si la couleur <date from-custom="00:08:02,000" to-custom="00:08:05,470"/>ne vous convient pas, on vous en trouvera une autre.</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:08:06,240" to-custom="00:08:10,472"/>Eurydice!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Ah! non! c'est qu'il est temps de s'expliquer, à la fin! <date from-custom="00:08:11,040" to-custom="00:08:15,033"/>Je vais vous dire la vérité, maître Orphée, mon chaste épouse, <date from-custom="00:08:15,120" to-custom="00:08:20,558"/>qui rougissez! Ecoutez! je vous déteste! <date from-custom="00:08:21,520" to-custom="00:08:25,229"/>J'ai cru épouser un artiste et je me suis unie à l'homme <date from-custom="00:08:25,320" to-custom="00:08:29,313"/>le plus ennuyeux de la création. Vous vous prenez pour un poète, <date from-custom="00:08:29,400" to-custom="00:08:32,915"/>parce que vous avez inventé le vers hexamêtre! <date from-custom="00:08:33,760" to-custom="00:08:37,753"/>Je hais les hexamêtres, je hais les songes et les hymnes classiques, <date from-custom="00:08:37,840" to-custom="00:08:42,994"/>et surtout, surtout l'exécrable instrument que voici!</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:08:43,240" to-custom="00:08:46,994"/>Mon violon! ne touchez pas à cette corde, Madame!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><date from-custom="00:08:47,080" to-custom="00:08:50,834"/>Il m'ennuie, votre violon! Allez charmer de ses sons les bergères <date from-custom="00:08:50,920" to-custom="00:08:53,992"/>de troisième ordre que vous aimez tant! Allez! <date from-custom="00:08:54,520" to-custom="00:08:58,513"/>Quant à moi, qui suis la fille d'une nymphe et d'un demi-dieu, <date from-custom="00:08:59,000" to-custom="00:09:02,913"/>il me faut de la liberté, il me faut de la fantaisie! <date from-custom="00:09:03,000" to-custom="00:09:06,993"/>Il me faut... J'aime aujourd'hui ce berger, il m'aime, <date from-custom="00:09:07,160" to-custom="00:09:10,152"/>rien ne me séparera d'Aristée!</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:09:11,400" to-custom="00:09:14,392"/>Ah! c'est ainsi!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><date from-custom="00:09:14,520" to-custom="00:09:17,512"/>Oui, mon ami.</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:09:18,040" to-custom="00:09:23,160"/>Tu me trompes comme mari?</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Oui, mon ami! Oui, mon ami!</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:09:24,360" to-custom="00:09:29,195"/>Tu me dédaignes comme artiste?</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Oui, mon ami! Oui, mon ami!</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:09:30,480" to-custom="00:09:35,235"/>Tu n'aimes pas le violoniste?</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><lg><l>Non, mon ami!</l>
+                     <l>Non, mon ami!</l>
+                     <l><date from-custom="00:09:35,320" to-custom="00:09:39,836"/>Le violoniste</l>
+                     <l>me paraît triste;</l>
+                     <l>l'instrumentiste</l>
+                     <l>est assommant,</l>
+
+                     <l><date from-custom="00:09:39,920" to-custom="00:09:43,799"/>et l'instrument, </l>
+                     <l>et l'instrument,</l>
+<l>me déplaît souverainement.</l></lg>
+                  </said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><l><date from-custom="00:09:45,400" to-custom="00:09:50,918"/>Ah! de ton insolence</l>
+<l>je dois tirer vengeance!</l></said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said><date from-custom="00:09:51,600" to-custom="00:09:54,592"/>Et comment, et comment,<date from-custom="00:09:55,080" to-custom="00:09:58,072"/>comment, je vous prie? </said>
+               </sp> 
+                  <sp who="#orphee" toWhom="#eurydice">
+                     <speaker>Orphée</speaker>
+                     <said><l><date from-custom="00:10:00,960" to-custom="00:10:05,670"/>Je vais ma tendre amie</l>
+
+<l><date from-custom="00:10:06,240" to-custom="00:10:09,835"/>vous jouer aussitôt</l>
+
+<l><date from-custom="00:10:10,280" to-custom="00:10:13,875"/>une œuvre de génie,</l>
+
+<l><date from-custom="00:10:14,160" to-custom="00:10:17,152"/>mon dernier concerto!</l>
+</said>
+                  </sp>
+                  
+                  <sp who="#eurydice" toWhom="#orphee">
+                     <speaker>Eurydice</speaker>
+                     <said><date from-custom="00:10:17,240" to-custom="00:10:21,756"/>Grâce, grâce, je t'en supplie!</said>
+                  </sp>
+                  <sp who="#orphee" toWhom="#eurydice">
+                     <speaker>Orphée</speaker>
+                     <said><l>Non, non, pas de retard,</l>
+
+<l><date from-custom="00:10:21,920" to-custom="00:10:26,198"/>c'est le comble de l'art,</l>
+<l>il dure une heure un quart!</l></said>
+                  </sp>
+                  
+                  <sp who="#eurydice" toWhom="#orphee">
+                     <speaker>Eurydice</speaker>
+                     <said><date from-custom="00:10:26,360" to-custom="00:10:30,638"/>Miséricorde, une heure un quart!</said>
+                  </sp>
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said>Une heure un quart, c'est le comble <date from-custom="00:10:30,760" to-custom="00:10:34,275"/>de l'art.</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Je n'écouterai pas.</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said>Si, tu m'écouteras!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Je n'écouterai pas.</said>
+               </sp>
+               
+               <sp who="#orphee" toWhom="#eurydice">
+                  <speaker>Orphée</speaker>
+                  <said><date from-custom="00:10:34,360" to-custom="00:10:39,115"/>Si, tu m'écouteras!</said>
+               </sp>
+               
+               <sp who="#eurydice" toWhom="#orphee">
+                  <speaker>Eurydice</speaker>
+                  <said>Non, non, non, non, non!</said>
+               </sp>
+            </div>
+
+<l>- -</l>
+<l></l>
+
+<l> -</l>
+<l></l>
+
+<l><date from-custom="00:10:41,720" to-custom="00:10:44,188"/>Grâce!</l>
+
+<l><date from-custom="00:10:46,920" to-custom="00:10:49,388"/>Grâce!</l>
+
+<l><date from-custom="00:10:55,520" to-custom="00:10:58,990"/>ah!</l>
+
+<l><date from-custom="00:11:48,120" to-custom="00:11:52,318"/>C'est déplorable, c'est effroyable,</l>
+<l>-C'est adorable, c'est délectable,</l>
+
+<l><date from-custom="00:11:52,400" to-custom="00:11:56,712"/>c'est assommant, c'est irritant!...</l>
+<l>-c'est ravissant, c’est entraînant!...</l>
+
+<l><date from-custom="00:11:56,800" to-custom="00:11:59,792"/>Ah! ah! ah! ah!</l>
+
+<l><date from-custom="00:12:00,000" to-custom="00:12:02,992"/>C'est assommant, c'est irritant! Ah...</l>
+
+<l><date from-custom="00:12:03,080" to-custom="00:12:06,117"/>Ah! c'est charmant, c'est ravissant!</l>
+
+<l><date from-custom="00:12:06,240" to-custom="00:12:09,232"/>C'est assommant, c'est irritant! Ah...</l>
+
+<l><date from-custom="00:12:09,320" to-custom="00:12:12,392"/>Ah! c'est charmant, c'est ravissant!</l>
+
+<l><date from-custom="00:12:12,640" to-custom="00:12:18,397"/>Ah! ah! ah! ah! ah! ah!</l>
+<l>-ah! ravissant, ah! ah! ah!</l>
+
+<l><date from-custom="00:12:18,520" to-custom="00:12:21,830"/>C'est assommant, c’est irritant!</l>
+
+<l><date from-custom="00:12:21,920" to-custom="00:12:25,435"/>assommant!</l>
+
+<l><date from-custom="00:12:28,840" to-custom="00:12:31,832"/>Ecoutez encore ce motif,</l>
+
+<l><date from-custom="00:12:32,240" to-custom="00:12:35,471"/>Langoureux, expressif!</l>
+
+<l><date from-custom="00:12:42,680" to-custom="00:12:45,672"/>Gnagnagnagnagnagna!</l>
+
+<l><date from-custom="00:12:49,400" to-custom="00:12:52,517"/>C'est assommant, c'est irritant!</l>
+
+<l><date from-custom="00:12:59,520" to-custom="00:13:03,513"/>Non, je ne veux rien entendre.</l>
+<l>-Ah! c'est doux, ah! c'est tendre!</l>
+
+<l><date from-custom="00:13:03,600" to-custom="00:13:06,592"/>Non, c'est horrible, c'est terrible!</l>
+
+<l><date from-custom="00:13:06,760" to-custom="00:13:11,151"/>Quel trémolo! -Ah!</l>
+<l>Presto, presto! -Ah!</l>
+
+<l><date from-custom="00:13:11,360" to-custom="00:13:15,114"/>Largo, largo! -Ah!</l>
+<l>Pizzicato, pizzicato!</l>
+
+<l><date from-custom="00:13:15,200" to-custom="00:13:19,512"/>c'est terrible, c'est terrible,</l>
+<l>-Presto, presto! Amoroso! Agitato!</l>
+
+<l><date from-custom="00:13:19,840" to-custom="00:13:25,756"/>ah!</l>
+
+<l><date from-custom="00:13:26,920" to-custom="00:13:30,390"/>La la la, la, la...</l>
+<l>-Ah! Seigneur, quel supplice!</l>
+
+<l><date from-custom="00:13:30,480" to-custom="00:13:36,828"/>C'est fini, le voilà parti!</l>
+<l>O Vénus, sois-moi propice,</l>
+
+<l><date from-custom="00:13:37,160" to-custom="00:13:43,474"/>délivre-moi de mon mari.</l>
+<l>-...La la la, la, la.</l>
+
+<l><date from-custom="00:13:46,520" to-custom="00:13:50,752"/>Ah quel supplice,</l>
+
+<l><date from-custom="00:13:51,400" to-custom="00:13:56,872"/>c'est fini, le voilà parti!</l>
+
+<l><date from-custom="00:13:57,800" to-custom="00:14:04,069"/>O Seigneur, délivre-moi</l>
+
+<l><date from-custom="00:14:04,240" to-custom="00:14:07,232"/>de mon mari,</l>
+
+<l><date from-custom="00:14:07,320" to-custom="00:14:10,312"/>délivre-moi de mon mari,</l>
+
+<l><date from-custom="00:14:10,400" to-custom="00:14:13,517"/>ah!</l>
+
+<l><date from-custom="00:14:33,400" to-custom="00:14:37,473"/>Oh Vénus, délivre-moi d'Orphée,</l>
+<l>et je t'immolerai dix brebis</l>
+
+<l><date from-custom="00:14:37,600" to-custom="00:14:41,593"/>plus blanches que le lait!</l>
+<l>-Oh! Jupiter, maître de la foudre,</l>
+
+<l><date from-custom="00:14:41,760" to-custom="00:14:45,912"/>délivre-moi d'Eurydice, et je chanterai</l>
+<l>tes louanges sur ma lyre à quatre cordes.</l>
+
+<l><date from-custom="00:14:46,320" to-custom="00:14:50,871"/>Madame, je 'ne me fais plus d'illusions!</l>
+<l>Quand une femme en est arrivée... là,</l>
+
+<l><date from-custom="00:14:52,280" to-custom="00:14:56,512"/>il est parfaitement inutile d'essayer</l>
+<l>de la remettre sur la bonne voie...</l>
+
+<l><date from-custom="00:14:57,080" to-custom="00:15:01,995"/>Parfait! Allons, séparons-nous!</l>
+<l>-Ah ça! je le ferais volontiers...</l>
+
+<l><date from-custom="00:15:02,080" to-custom="00:15:04,071"/>Ah!</l>
+
+<l><date from-custom="00:15:04,440" to-custom="00:15:07,432"/>Mais ma réputation,</l>
+
+<l><date from-custom="00:15:07,560" to-custom="00:15:12,031"/>la considération, j'ai besoin du monde.</l>
+<l>Je suis esclave de L'Opinion Publique:</l>
+
+<l><date from-custom="00:15:12,200" to-custom="00:15:16,478"/>c'est ma faiblesse, laissez-la moi.</l>
+<l>Quant à votre adorateur</l>
+
+<l><date from-custom="00:15:16,720" to-custom="00:15:20,599"/>je vais le pourfendre!</l>
+<l>-Avec votre archet? -Non,</l>
+
+<l><date from-custom="00:15:20,800" to-custom="00:15:24,793"/>d'ailleurs je ne vous dirai pas le</l>
+<l>moyen, juste une chose: il ne devrait pas</l>
+
+<l><date from-custom="00:15:24,880" to-custom="00:15:29,158"/>folâtrer dans les blés, comme il le fait</l>
+<l>depuis qu'il est venu, je ne sais d'où,</l>
+
+<l><date from-custom="00:15:29,240" to-custom="00:15:33,233"/>vivre dans mon quartier.</l>
+<l>-Et qui l'en empêchera? -Qui!</l>
+
+<l><date from-custom="00:15:35,040" to-custom="00:15:38,032"/>une petite surprise</l>
+
+<l><date from-custom="00:15:38,120" to-custom="00:15:41,999"/>que j'ai semée pour lui</l>
+<l>dans les blonds épis</l>
+
+<l><date from-custom="00:15:43,040" to-custom="00:15:46,032"/>que voici!</l>
+
+<l><date from-custom="00:15:58,120" to-custom="00:16:02,318"/>Vous voulez dire?</l>
+<l>-Rien! plus rien!</l>
+
+<l><date from-custom="00:16:03,840" to-custom="00:16:07,833"/>Bon, je vais donner mes leçons</l>
+<l>à l'Orphéon.</l>
+
+<l><date from-custom="00:16:08,680" to-custom="00:16:12,389"/>Adieu, ma biche!</l>
+<l>Une petite surprise...</l>
+
+<l><date from-custom="00:16:13,320" to-custom="00:16:17,916"/>semée pour lui, là...</l>
+<l>Faites attention! Adieu!</l>
+
+<l><date from-custom="00:16:19,240" to-custom="00:16:24,075"/>J'ai peur... que veut-il dire avec</l>
+<l>sa surprise semée dans le blonds épis?</l>
+
+<l><date from-custom="00:16:29,160" to-custom="00:16:33,153"/>Un piège peut-être! Un piège à loups!</l>
+<l>Il es tellement jaloux!</l>
+
+<l><date from-custom="00:16:38,160" to-custom="00:16:42,153"/>Et Aristée qui vient toujours</l>
+<l>à travers ces blés pour m'y rencontrer</l>
+
+<l><date from-custom="00:16:42,240" to-custom="00:16:46,756"/>et folâtrer avec moi! Courons vers lui!</l>
+<l>Le malheureux se ferait faire du mal!</l>
+
+<l><date from-custom="00:16:46,840" to-custom="00:16:47,640"/>Courons!</l>
+
+<l><date from-custom="00:16:47,640" to-custom="00:16:50,108"/>Courons!</l>
+
+<l><date from-custom="00:18:18,760" to-custom="00:18:22,469"/>Moi; je suis Aristée,</l>
+
+<l><date from-custom="00:18:22,920" to-custom="00:18:25,912"/>un berger d'Arcadie,</l>
+
+<l><date from-custom="00:18:27,680" to-custom="00:18:33,152"/>un fabricant de miel,</l>
+
+<l><date from-custom="00:18:33,680" to-custom="00:18:36,672"/>ivre de mélodie,</l>
+
+<l><date from-custom="00:18:37,800" to-custom="00:18:43,989"/>sachant se contenter</l>
+<l>des plaisirs innocents</l>
+
+<l><date from-custom="00:18:44,280" to-custom="00:18:49,400"/>que les dieux ont permis</l>
+
+<l><date from-custom="00:18:51,200" to-custom="00:18:54,476"/>à l'habitant des champs.</l>
+
+<l><date from-custom="00:19:07,400" to-custom="00:19:11,837"/>Voir voltiger sous les treilles</l>
+<l>entre terre et ciel</l>
+
+<l><date from-custom="00:19:12,120" to-custom="00:19:16,318"/>les essaims de mes abeilles</l>
+<l>butinant leur miel,</l>
+
+<l><date from-custom="00:19:16,840" to-custom="00:19:23,837"/>voir le lever de l'aurore</l>
+<l>et chaque matin</l>
+
+<l><date from-custom="00:19:24,040" to-custom="00:19:28,238"/>se dire: je veux encore</l>
+<l>le revoir demain,</l>
+
+<l><date from-custom="00:19:28,320" to-custom="00:19:32,233"/>le revoir, le revoir demain.</l>
+
+<l><date from-custom="00:19:33,240" to-custom="00:19:37,518"/>Voilà la fête, voilà la fête</l>
+<l>d'une âme honnête,</l>
+
+<l><date from-custom="00:19:37,720" to-custom="00:19:41,759"/>le vrai bonheur, le vrai bonheur</l>
+<l>d'un tendre cœur.</l>
+
+<l><date from-custom="00:19:41,880" to-custom="00:19:44,235"/>Ah!</l>
+
+<l><date from-custom="00:19:44,400" to-custom="00:19:47,517"/>ah! ah!</l>
+
+<l><date from-custom="00:19:47,640" to-custom="00:19:50,950"/>ah!</l>
+
+<l><date from-custom="00:19:51,200" to-custom="00:19:55,159"/>ah!</l>
+
+<l><date from-custom="00:19:55,680" to-custom="00:19:59,468"/>ah! ah!</l>
+
+<l><date from-custom="00:20:00,000" to-custom="00:20:07,680"/>ah!</l>
+
+<l><date from-custom="00:20:22,080" to-custom="00:20:26,676"/>Voir bondir dans la plaine</l>
+<l>les petits moutons,</l>
+
+<l><date from-custom="00:20:26,840" to-custom="00:20:31,311"/>accrochant leur blanche laine</l>
+<l>à tous les buissons,</l>
+
+<l><date from-custom="00:20:31,600" to-custom="00:20:38,915"/>voir sommeiller la bergère</l>
+<l>tandis qu'à pas lents,</l>
+
+<l><date from-custom="00:20:39,160" to-custom="00:20:43,312"/>le berger qu'elle préfère</l>
+<l>vient et la surprend,</l>
+
+<l><date from-custom="00:20:43,560" to-custom="00:20:47,917"/>la surprend, la surprend,</l>
+<l>vient et la surprend!</l>
+
+<l><date from-custom="00:20:48,400" to-custom="00:20:53,030"/>Voilà la fête, voilà la fête</l>
+<l>d'une âme honnête,</l>
+
+<l><date from-custom="00:20:53,320" to-custom="00:20:57,233"/>le vrai bonheur, le vrai bonheur</l>
+<l>d'un tendre cœur.</l>
+
+<l><date from-custom="00:20:57,520" to-custom="00:20:59,511"/>Ah!</l>
+
+<l><date from-custom="00:20:59,960" to-custom="00:21:02,076"/>ah!</l>
+
+<l><date from-custom="00:21:02,400" to-custom="00:21:06,518"/>ah!</l>
+
+<l><date from-custom="00:21:07,240" to-custom="00:21:11,518"/>ah!</l>
+
+<l><date from-custom="00:21:11,760" to-custom="00:21:14,069"/>ah! ah!</l>
+
+<l><date from-custom="00:21:14,280" to-custom="00:21:17,158"/>ah! ah! ah!</l>
+
+<l><date from-custom="00:21:17,320" to-custom="00:21:23,190"/>ah!</l>
+
+<l><date from-custom="00:21:46,240" to-custom="00:21:49,949"/>Voilà! Voilà ce que je dis</l>
+<l>pour inspirer de la confiance!</l>
+
+<l><date from-custom="00:21:50,240" to-custom="00:21:54,233"/>Mais si vous saviez qui je suis</l>
+<l>et quels projets infernaux je médite!</l>
+
+<l><date from-custom="00:21:54,320" to-custom="00:21:58,313"/>Si l'idée que j'ai soufflée à Orphée</l>
+<l>réussit, aujourd’hui nous frapperons</l>
+
+<l><date from-custom="00:21:58,400" to-custom="00:22:02,154"/>un grand coup! Ah voilà la tendre</l>
+<l>Eurydice, n'ayons pas l'air</l>
+
+<l><date from-custom="00:22:02,240" to-custom="00:22:06,313"/>d'avoir passé par les blés.</l>
+<l>-Je ne le trouve pas. -Coucou!</l>
+
+<l><date from-custom="00:22:07,240" to-custom="00:22:11,916"/>Ah! Le voici! J'arrive à temps!</l>
+<l>Aristée! mon berger! attention!</l>
+
+<l><date from-custom="00:22:12,000" to-custom="00:22:15,993"/>A quoi? -A toi! -A moi? Pourquoi?</l>
+<l>-Tais-toi! Et parle plus bas!</l>
+
+<l><date from-custom="00:22:16,080" to-custom="00:22:20,073"/>Entendons-nous! Je vais...</l>
+<l>-Aristée! mon berger! ne bouge pas!</l>
+
+<l><date from-custom="00:22:20,160" to-custom="00:22:24,153"/>Mais si je ne peux pas te parler et</l>
+<l>pas non plus t'approcher, alors nous</l>
+
+<l><date from-custom="00:22:24,240" to-custom="00:22:28,233"/>ne pourrons pas nous entendre. Je ne sais</l>
+<l>pas... parlons par gestes! -Aristée!</l>
+
+<l><date from-custom="00:22:28,320" to-custom="00:22:32,757"/>Au nom de notre amour, n'approche pas!</l>
+<l>-Mais quelle timidité! d'habitude tu es</l>
+
+<l><date from-custom="00:22:32,840" to-custom="00:22:36,469"/>sauvage, mais tu l'es raisonnablement...</l>
+<l>-Arrête!</l>
+
+<l><date from-custom="00:22:37,520" to-custom="00:22:41,752"/>Mon mari sait tout! Si tu fais un pas,</l>
+<l>tu es mort! Il nous a espionnés,</l>
+
+<l><date from-custom="00:22:41,920" to-custom="00:22:45,913"/>il a semé des pièges dans ces blés,</l>
+<l>témoins de nos amours... -Bah!</l>
+
+<l><date from-custom="00:22:46,080" to-custom="00:22:50,312"/>C'est comme ça! -Il lui a dit,</l>
+<l>-quel idiot! Réparons la maladresse...</l>
+
+<l><date from-custom="00:22:50,400" to-custom="00:22:54,678"/>Veux-tu que je te dise? -Dis!</l>
+<l>Eh bien! c'est des bêtises, des chansons</l>
+
+<l><date from-custom="00:22:54,760" to-custom="00:22:59,072"/>et des imbécilités. -Des imbécillités!</l>
+<l>-Je te dis, mois, qu'il est furieux...</l>
+
+<l><date from-custom="00:22:59,160" to-custom="00:23:03,153"/>qu'il a juré de te perdre... Ah!</l>
+<l>-Mais regarde comme je me moque</l>
+
+<l><date from-custom="00:23:03,240" to-custom="00:23:07,756"/>de ses pièges, regarde... -Aristée!</l>
+<l>-Ton amour et ton courage t'emportent!</l>
+
+<l><date from-custom="00:23:08,120" to-custom="00:23:12,398"/>Aristée! tu cours vers la mort!</l>
+<l>-Il n'y a pas de danger, et même,</l>
+
+<l><date from-custom="00:23:12,480" to-custom="00:23:15,631"/>que ne ferait-on pas pour te rejoindre?</l>
+<l>-Alors,</l>
+
+<l><date from-custom="00:23:16,480" to-custom="00:23:18,000"/>je veux mourir avec toi!</l>
+<l>-Allons, allons!</l>
+
+<l><date from-custom="00:23:18,000" to-custom="00:23:21,515"/>je veux mourir avec toi!</l>
+<l>-Allons, allons!</l>
+
+<l><date from-custom="00:23:21,840" to-custom="00:23:25,958"/>Ah! -Crac! Ça y est! -Je suis prise!</l>
+<l>-Et plus que tu ne crois!</l>
+
+<l><date from-custom="00:23:26,240" to-custom="00:23:29,232"/>Dieu, qu'est-ce que j'éprouve?</l>
+
+<l><date from-custom="00:23:29,320" to-custom="00:23:32,312"/>Pluton, redeviens toi-même!</l>
+
+<l><date from-custom="00:23:32,480" to-custom="00:23:35,472"/>Une, deux, trois!</l>
+
+<l><date from-custom="00:23:37,520" to-custom="00:23:40,910"/>Et maintenant,</l>
+<l>désorganisons les éléments!</l>
+
+<l><date from-custom="00:23:50,600" to-custom="00:23:54,593"/>Eh oui! Chez moi, c'est comme</l>
+<l>ça qu'on désorganise les éléments.</l>
+
+<l><date from-custom="00:23:58,840" to-custom="00:24:01,912"/>Dieux puissants! Je vais mourir?</l>
+
+<l><date from-custom="00:24:02,480" to-custom="00:24:09,352"/>Complètement!</l>
+<l>Lasciate ogni speranza!</l>
+
+<l><date from-custom="00:24:09,680" to-custom="00:24:13,150"/>Mais je ne souffre pas.</l>
+<l>-Je t'expliquerai pourquoi.</l>
+
+<l><date from-custom="00:24:13,240" to-custom="00:24:16,232"/>C'est étrange...</l>
+<l>-C'est logique!</l>
+
+<l><date from-custom="00:24:24,920" to-custom="00:24:31,598"/>La mort m'apparaît souriante,</l>
+
+<l><date from-custom="00:24:33,320" to-custom="00:24:39,919"/>qui vient me frapper près de toi.</l>
+
+<l><date from-custom="00:24:41,680" to-custom="00:24:48,916"/>Elle m'attire, elle me tente...</l>
+
+<l><date from-custom="00:24:50,280" to-custom="00:24:53,272"/>Mort, je t'appelle,</l>
+
+<l><date from-custom="00:24:53,440" to-custom="00:24:59,515"/>emporte moi!</l>
+
+<l><date from-custom="00:25:00,600" to-custom="00:25:06,948"/>Mort, je t'appelle,</l>
+
+<l><date from-custom="00:25:08,520" to-custom="00:25:17,599"/>emporte moi!</l>
+
+<l><date from-custom="00:25:23,840" to-custom="00:25:31,110"/>Mort, ton ivresse me pénètre,</l>
+
+<l><date from-custom="00:25:32,120" to-custom="00:25:39,231"/>ton froid ne me fait pas souffrir,</l>
+
+<l><date from-custom="00:25:40,840" to-custom="00:25:48,155"/>il semble que je vais renaître,</l>
+
+<l><date from-custom="00:25:49,520" to-custom="00:25:59,839"/>oui, renaître au lieu de mourir,</l>
+
+<l><date from-custom="00:26:00,720" to-custom="00:26:07,239"/>oui, renaître,</l>
+
+<l><date from-custom="00:26:07,760" to-custom="00:26:22,835"/>renaître au lieu de mourir!</l>
+
+<l><date from-custom="00:26:42,680" to-custom="00:26:45,911"/>Crac! c'est bon!</l>
+<l>Une larme, et partons!</l>
+
+<l><date from-custom="00:26:46,240" to-custom="00:26:49,915"/>Mais avant de partir,</l>
+<l>abusons de notre divinité</l>
+
+<l><date from-custom="00:26:50,000" to-custom="00:26:54,198"/>pour jeter un dernier défi au mari!</l>
+<l>Voici une plume</l>
+
+<l><date from-custom="00:26:56,080" to-custom="00:26:59,072"/>et tout ce qu'il faut pour écrire!</l>
+
+<l><date from-custom="00:27:00,720" to-custom="00:27:06,158"/>Je quitte la maison</l>
+<l>parce que je suis morte,</l>
+
+<l><date from-custom="00:27:06,240" to-custom="00:27:08,754"/>virgule,</l>
+
+<l><date from-custom="00:27:09,080" to-custom="00:27:12,072"/>Aristée est Pluton</l>
+
+<l><date from-custom="00:27:12,520" to-custom="00:27:15,512"/>et le diable m'emporte!</l>
+
+<l><date from-custom="00:27:15,920" to-custom="00:27:19,754"/>La rime n'est pas riche...</l>
+<l>mais la richesse ne fait pas le bonheur!</l>
+
+<l><date from-custom="00:27:32,320" to-custom="00:27:35,312"/>Et maintenant!</l>
+<l>aux sombres bords!</l>
+
+<l><date from-custom="00:27:53,080" to-custom="00:27:56,834"/>Ah ça! mais que diable y a-t-il</l>
+<l>donc de dérangé là-haut?</l>
+
+<l><date from-custom="00:27:57,080" to-custom="00:28:01,073"/>Je quitte mes leçons à la 3ième heure</l>
+<l>et j'arrive en pleine nuit chez moi!</l>
+
+<l><date from-custom="00:28:01,160" to-custom="00:28:04,596"/>Je n'ai pas dîné,</l>
+<l>et voici déjà l'heure du souper!</l>
+
+<l><date from-custom="00:28:04,760" to-custom="00:28:08,753"/>Que veut dire cette perturbation?</l>
+<l>Il y a une éclipse, Ça c'est sûr!</l>
+
+<l><date from-custom="00:28:09,520" to-custom="00:28:13,149"/>Par Jupiter!</l>
+<l>Qu'est-ce que ça veut dire?</l>
+
+<l><date from-custom="00:28:15,520" to-custom="00:28:18,512"/>L'écriture de ma femme!</l>
+
+<l><date from-custom="00:28:19,520" to-custom="00:28:24,355"/>Je quitte la maison</l>
+<l>parce que je suis morte,</l>
+
+<l><date from-custom="00:28:26,320" to-custom="00:28:31,314"/>virgule, Aristée est Pluton</l>
+<l>et le diable m'emporte!</l>
+
+<l><date from-custom="00:28:33,160" to-custom="00:28:37,597"/>Comment ça, elle est morte!</l>
+<l>Ça n'est pas dieu possible!</l>
+
+<l><date from-custom="00:28:40,840" to-custom="00:28:44,833"/>Mais si... elle est bien morte!</l>
+<l>c'est elle qui le dit!</l>
+
+<l><date from-custom="00:28:49,520" to-custom="00:28:51,988"/>Merci!</l>
+
+<l><date from-custom="00:28:52,920" to-custom="00:28:56,913"/>Merci! Jupin!</l>
+<l>Quelqu'un! non, personne!</l>
+
+<l><date from-custom="00:28:58,280" to-custom="00:29:02,990"/>Libre! ô bonheur! ô joie extrême!</l>
+
+<l><date from-custom="00:29:03,640" to-custom="00:29:08,475"/>Courons, courons conter le fait</l>
+<l>à le nymphe que j'aime!</l>
+
+<l><date from-custom="00:29:10,160" to-custom="00:29:15,553"/>Anathème, anathème, sur celui</l>
+<l>qui sans pitié, qui sans pitié,</l>
+
+<l><date from-custom="00:29:15,760" to-custom="00:29:21,153"/>anathème, anathème,</l>
+<l>refuse une larme même à sa moitié.</l>
+
+<l><date from-custom="00:29:21,320" to-custom="00:29:24,312"/>Etrangers cris! Etrangers cris!</l>
+
+<l><date from-custom="00:29:24,400" to-custom="00:29:28,518"/>Anathème, anathème,</l>
+<l>sur celui qui sans pitié...</l>
+
+<l><date from-custom="00:29:28,640" to-custom="00:29:32,474"/>Encore ces voix!</l>
+<l>-anathème, anathème,</l>
+
+<l><date from-custom="00:29:32,600" to-custom="00:29:38,072"/>refuse une larme même à sa moitié...</l>
+<l>-Encore ces voix! -anathème,</l>
+
+<l><date from-custom="00:29:38,240" to-custom="00:29:41,232"/>anathème.</l>
+
+<l><date from-custom="00:29:41,320" to-custom="00:29:46,599"/>De tous les côtes à la fois!</l>
+<l>Quel phénomène d'acoustique!</l>
+
+<l><date from-custom="00:29:46,840" to-custom="00:29:49,832"/>Quel phénomène d'acoustique!</l>
+
+<l><date from-custom="00:29:50,240" to-custom="00:29:55,792"/>Anathème, anathème,</l>
+<l>-Anathème!</l>
+
+<l><date from-custom="00:29:56,600" to-custom="00:30:02,152"/>Anathème, anathème, sur celui</l>
+<l>qui sans pitié, qui sans pitié,</l>
+
+<l><date from-custom="00:30:02,320" to-custom="00:30:11,513"/>anathème, anathème,</l>
+<l>refuse une larme même à sa moitié,</l>
+
+<l><date from-custom="00:30:11,760" to-custom="00:30:17,312"/>anathème, anathème,</l>
+<l>refuse une larme même à sa moitié!</l>
+
+<l><date from-custom="00:30:18,400" to-custom="00:30:27,559"/>Anathème, anathème!</l>
+
+<l><date from-custom="00:30:36,040" to-custom="00:30:40,158"/>Ciel! L'Opinion Publique</l>
+<l>qui me poursuit déjà!</l>
+
+<l><date from-custom="00:30:40,720" to-custom="00:30:44,713"/>Ciel! L'Opinion Publique</l>
+<l>qui le poursuit déjà!</l>
+
+<l><date from-custom="00:30:45,080" to-custom="00:30:48,993"/>Ciel! L'Opinion Publique</l>
+<l>-Ciel! L'Opinion Publique</l>
+
+<l><date from-custom="00:30:49,520" to-custom="00:30:54,594"/>qui me poursuit,</l>
+<l>qui me poursuit déjà, déjà!</l>
+
+<l><date from-custom="00:30:55,160" to-custom="00:30:58,391"/>C'est L'Opinion Publique</l>
+
+<l><date from-custom="00:30:58,720" to-custom="00:31:01,837"/>qui proclame ce qu'elle sait,</l>
+
+<l><date from-custom="00:31:02,160" to-custom="00:31:05,516"/>qui peut dans un sentier oblique</l>
+
+<l><date from-custom="00:31:05,680" to-custom="00:31:08,911"/>saisir la trace d'un forfait,</l>
+
+<l><date from-custom="00:31:09,240" to-custom="00:31:12,789"/>qui dit à la main sacrilège:</l>
+
+<l><date from-custom="00:31:13,080" to-custom="00:31:19,235"/>dans les blés tu semas le piège!</l>
+
+<l><date from-custom="00:31:19,520" to-custom="00:31:23,513"/>Halte là! Halte là!</l>
+<l>Ça n'peut pas s'passer,</l>
+
+<l><date from-custom="00:31:23,600" to-custom="00:31:26,160"/>non, ça n'peut pas s'passer comme ça!</l>
+
+<l><date from-custom="00:31:26,360" to-custom="00:31:30,911"/>Halte là! Halte là!</l>
+<l>Ça n'peut pas s'passer,</l>
+
+<l><date from-custom="00:31:31,160" to-custom="00:31:34,550"/>non, ça n'peut pas s'passer comme ça!</l>
+
+<l><date from-custom="00:31:41,000" to-custom="00:31:44,470"/>Epoux indigne, ma colère</l>
+
+<l><date from-custom="00:31:44,680" to-custom="00:31:47,752"/>te suivra de toutes les façons,</l>
+
+<l><date from-custom="00:31:48,000" to-custom="00:31:51,276"/>je veux te mettre en la misère,</l>
+
+<l><date from-custom="00:31:51,520" to-custom="00:31:54,751"/>te aire perdre tes leçons</l>
+
+<l><date from-custom="00:31:55,080" to-custom="00:31:58,390"/>et, du crépuscule à l'aurore,</l>
+
+<l><date from-custom="00:31:58,680" to-custom="00:32:05,074"/>troublant tes nuits, crier encore:</l>
+
+<l><date from-custom="00:32:05,320" to-custom="00:32:08,312"/>Halte là! Halte là!</l>
+
+<l><date from-custom="00:32:08,400" to-custom="00:32:12,234"/>Ça n'peut pas s'passer,</l>
+<l>non, ça n'peut pas s'passer comme ça!</l>
+
+<l><date from-custom="00:32:12,320" to-custom="00:32:15,312"/>Halte là! Halte là!</l>
+
+<l><date from-custom="00:32:15,600" to-custom="00:32:21,516"/>Ça n'peut pas s'passer,</l>
+<l>non, ça n'peut pas s'passer comme ça!</l>
+
+<l><date from-custom="00:32:29,160" to-custom="00:32:32,914"/>Viens! à l'Opinion c'est en vain</l>
+<l>qu'on résiste!</l>
+
+<l><date from-custom="00:32:33,000" to-custom="00:32:36,310"/>Pars! à l'Opinion c'est en vain</l>
+<l>qu'on résiste!</l>
+
+<l><date from-custom="00:32:36,400" to-custom="00:32:39,915"/>Grâce!</l>
+<l>-Pour te soustraire à ma sévérité</l>
+
+<l><date from-custom="00:32:40,000" to-custom="00:32:45,279"/>et pour servir d'exemple à la postérité,</l>
+<l>un seul moyen te reste!</l>
+
+<l><date from-custom="00:32:45,640" to-custom="00:32:50,395"/>Et lequel, dis?</l>
+<l>-Bédane, c'est de courir après ta femme!</l>
+
+<l><date from-custom="00:32:50,480" to-custom="00:32:54,393"/>Mais je ne l'aime pas!</l>
+<l>-L'exemple à tous yeux</l>
+
+<l><date from-custom="00:32:54,480" to-custom="00:32:57,756"/>n'en sera que plus glorieux!</l>
+
+<l><date from-custom="00:32:57,840" to-custom="00:33:04,518"/>Fut-il jamais un sort... ah! ah! ah!</l>
+<l>plus triste!</l>
+
+<l><date from-custom="00:33:04,840" to-custom="00:33:10,949"/>Cours, cours après ta femme!</l>
+<l>-Cours, cours après ta femme!</l>
+
+<l><date from-custom="00:33:15,680" to-custom="00:33:18,877"/>A ton implacable voix,</l>
+
+<l><date from-custom="00:33:19,080" to-custom="00:33:23,949"/>il faut céder, je le vois.</l>
+
+<l><date from-custom="00:33:24,400" to-custom="00:33:30,077"/>Viens, viens, viens, viens,</l>
+
+<l><date from-custom="00:33:30,600" to-custom="00:33:35,913"/>viens! c'est l'honneur qui t'appelle,</l>
+<l>et l'honneur passe avant l'amour,</l>
+
+<l><date from-custom="00:33:36,000" to-custom="00:33:39,310"/>avant l'amour, avant l'amour, viens!</l>
+
+<l><date from-custom="00:33:39,680" to-custom="00:33:44,708"/>Je serai ton compagnon fidèle...</l>
+<l>pendant l'aller et le retour!</l>
+
+<l><date from-custom="00:33:45,000" to-custom="00:33:50,279"/>Viens! mais l'honneur qui m'appelle</l>
+<l>hélas! me joue un vilain tour,</l>
+
+<l><date from-custom="00:33:51,760" to-custom="00:33:55,753"/>un vilain tour.</l>
+<l>Je maudis le guide fidèle</l>
+
+<l><date from-custom="00:33:55,840" to-custom="00:33:59,674"/>qui me suivra jusqu'au retour,</l>
+<l>-Je serai ton compagnon fidèle</l>
+
+<l><date from-custom="00:33:59,760" to-custom="00:34:04,231"/>qui me suivra jusqu'au retour,</l>
+<l>-pendant l'aller et le retour!</l>
+
+<l><date from-custom="00:34:04,800" to-custom="00:34:08,918"/>Marchons, marchons,</l>
+<l>marchons, marchons, marchons!</l>
+
+<l><date from-custom="00:34:09,160" to-custom="00:34:13,392"/>ah! viens!</l>
+
+<l><date from-custom="00:34:13,640" to-custom="00:34:18,634"/>Mais l'honneur qui m'appelle</l>
+<l>-C'est l'honneur qui t'appelle,</l>
+
+<l><date from-custom="00:34:18,720" to-custom="00:34:23,510"/>hélas! me joue un vilain tour...</l>
+<l>-et l'honneur passe avant l'amour...</l>
+
+<l><date from-custom="00:34:23,600" to-custom="00:34:30,199"/>un vilain tour, l'honneur, me joue...</l>
+<l>-avant l'amour, oui l'honneur passe...</l>
+
+<l><date from-custom="00:34:30,440" to-custom="00:34:34,877"/>puisque l'honneur m'appelle...</l>
+<l>-t'appelle l'honneur, l'honneur passe...</l>
+
+<l><date from-custom="00:34:35,080" to-custom="00:34:38,834"/>puis-que l'honneur m'appelle...</l>
+<l>-t'appelle l'honneur, l'honneur passe...</l>
+
+<l><date from-custom="00:34:38,920" to-custom="00:34:46,713"/>oui, me joue un vilain tour...</l>
+<l>-passe avant, avant l'amour...</l>
+
+<l><date from-custom="00:37:54,320" to-custom="00:37:59,440"/>Dormons, dormons, que notre somme</l>
+
+<l><date from-custom="00:37:59,600" to-custom="00:38:04,958"/>ne vienne jamais à finir,</l>
+
+<l><date from-custom="00:38:10,680" to-custom="00:38:15,834"/>puisque le seul bonheur en somme</l>
+
+<l><date from-custom="00:38:16,000" to-custom="00:38:21,472"/>dans notre Olympe est de dormir.</l>
+
+<l><date from-custom="00:38:26,520" to-custom="00:38:31,833"/>Dormons, dormons, que notre somme</l>
+
+<l><date from-custom="00:38:32,000" to-custom="00:38:36,596"/>ne vienne jamais à finir.</l>
+
+<l><date from-custom="00:39:23,880" to-custom="00:39:29,238"/>Je suis Cupidon mon amour</l>
+<l>a fait l'école buissonnière!</l>
+
+<l><date from-custom="00:39:29,640" to-custom="00:39:35,829"/>Je reviens au lever du jour</l>
+<l>d'un petit voyage a Cythère!</l>
+
+<l><date from-custom="00:39:36,720" to-custom="00:39:42,078"/>Un profond mystère</l>
+<l>cache mon retour!</l>
+
+<l><date from-custom="00:39:42,520" to-custom="00:39:49,278"/>Ils dorment tous!</l>
+<l>Endormons-nous,</l>
+
+<l><date from-custom="00:39:50,280" to-custom="00:39:54,159"/>endormons-nous,</l>
+
+<l><date from-custom="00:39:54,560" to-custom="00:39:58,838"/>endormons-nous,</l>
+
+<l><date from-custom="00:39:59,160" to-custom="00:40:06,475"/>endormons, endormons-nous!</l>
+
+<l><date from-custom="00:40:07,480" to-custom="00:40:22,236"/>Ah!...</l>
+
+<l><date from-custom="00:40:29,960" to-custom="00:40:35,398"/>Je suis Vénus! et mon amour</l>
+<l>a tait l'école buissonnière!</l>
+
+<l><date from-custom="00:40:35,720" to-custom="00:40:41,955"/>Je reviens au lever du jour</l>
+<l>d'un petit voyage a Cythère!</l>
+
+<l><date from-custom="00:40:43,000" to-custom="00:40:48,518"/>Un profond mystère</l>
+<l>cache mon retour!</l>
+
+<l><date from-custom="00:40:49,160" to-custom="00:40:56,475"/>Ils dorment tous!</l>
+<l>Endormons nous,</l>
+
+<l><date from-custom="00:40:56,920" to-custom="00:41:01,232"/>endormons nous,</l>
+
+<l><date from-custom="00:41:01,760" to-custom="00:41:05,833"/>endormons nous,</l>
+
+<l><date from-custom="00:41:06,040" to-custom="00:41:14,232"/>endormons, endormons nous!</l>
+
+<l><date from-custom="00:41:15,320" to-custom="00:41:30,236"/>Ah!...</l>
+
+<l><date from-custom="00:43:57,920" to-custom="00:44:02,232"/>Par Saturne! quel est ce bruit</l>
+<l>qui nous réveille au milieu de la nuit?</l>
+
+<l><date from-custom="00:44:03,520" to-custom="00:44:06,671"/>Qui nous réveille au milieu de la nuit?</l>
+
+<l><date from-custom="00:44:07,400" to-custom="00:44:10,392"/>C'est Diane, ma fille chérie,</l>
+
+<l><date from-custom="00:44:11,400" to-custom="00:44:17,236"/>qui nous sonne sa sonnerie!</l>
+<l>Sus! qu'on se réveille à l'instant!</l>
+
+<l><date from-custom="00:44:17,360" to-custom="00:44:20,750"/>Ah!...</l>
+
+<l><date from-custom="00:44:26,080" to-custom="00:44:29,152"/>Et surtout pas de bâillement!</l>
+
+<l><date from-custom="00:44:29,400" to-custom="00:44:32,597"/>D'un cri de joie et d'allégresse</l>
+
+<l><date from-custom="00:44:33,400" to-custom="00:44:38,793"/>il faut saluer la déesse;</l>
+<l>obéissons au règlement!</l>
+
+<l><date from-custom="00:44:39,120" to-custom="00:44:42,669"/>Salut à Diane chasseresse!</l>
+
+<l><date from-custom="00:44:42,840" to-custom="00:44:45,912"/>Salut à Diane!</l>
+
+<l><date from-custom="00:44:48,040" to-custom="00:44:52,636"/>Mais pourquoi cet air de tristesse?</l>
+
+<l><date from-custom="00:44:53,800" to-custom="00:44:57,634"/>Pourquoi cet air de tristesse?</l>
+
+<l><date from-custom="00:44:58,640" to-custom="00:45:06,149"/>Ah! rien n'égale mon tourment,</l>
+
+<l><date from-custom="00:45:09,200" to-custom="00:45:19,394"/>non, rien n'égale mon tourment,</l>
+
+<l><date from-custom="00:45:19,480" to-custom="00:45:24,679"/>ah! mon tourment!</l>
+
+<l><date from-custom="00:45:25,480" to-custom="00:45:29,393"/>Quand Diane descend dans la plaine,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:45:29,520" to-custom="00:45:33,229"/>c'est pour y chercher Actéon,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:45:33,320" to-custom="00:45:37,108"/>c'est près d'une fontaine,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:45:37,200" to-custom="00:45:41,751"/>que Diane rencontre Actéon,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:45:41,920" to-custom="00:45:44,912"/>tontaine tonton, tontaine tonton,</l>
+<l>tontaine tonton,</l>
+
+<l><date from-custom="00:45:45,000" to-custom="00:45:47,992"/>Que Diane rencontre Actéon,</l>
+
+<l><date from-custom="00:45:48,080" to-custom="00:45:52,358"/>que Diane rencontre Actéon!</l>
+<l>-que Diane rencontre Actéon!</l>
+
+<l><date from-custom="00:45:58,000" to-custom="00:46:01,913"/>Or ce matin dans la plaine,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:46:02,000" to-custom="00:46:05,834"/>je m'en fus chercher Actéon,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:46:05,920" to-custom="00:46:09,674"/>mais hélas près de la fontaine,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:46:09,760" to-custom="00:46:14,231"/>point n'est venu mon Actéon,</l>
+<l>tonton tontaine tonton,</l>
+
+<l><date from-custom="00:46:14,400" to-custom="00:46:17,392"/>tontaine tonton, tontaine tonton,</l>
+<l>tontaine tonton,</l>
+
+<l><date from-custom="00:46:17,520" to-custom="00:46:20,512"/>Point n'est venu son Actéon.</l>
+
+<l><date from-custom="00:46:20,760" to-custom="00:46:28,678"/>point n'est venu mon Actéon.</l>
+<l>-Point n'est venu son Actéon.</l>
+
+<l><date from-custom="00:46:37,920" to-custom="00:46:41,674"/>Ah! pauvre Actéon! Qu'est-il devenu?</l>
+<l>Lui, caché sous son buisson,</l>
+
+<l><date from-custom="00:46:41,760" to-custom="00:46:45,514"/>pendant que, oh! je le voyais très bien!</l>
+<l>-Ce qu'il est devenue? Je vais te le</l>
+
+<l><date from-custom="00:46:45,600" to-custom="00:46:49,513"/>dire! Tu te compromettais avec ce jeune</l>
+<l>homme, je me suis débarrassé de lui!</l>
+
+<l><date from-custom="00:46:49,600" to-custom="00:46:53,912"/>Et comment? -Je l'ai changé en cerf!</l>
+<l>Quoi? -En cerf. Et pour sauver</l>
+
+<l><date from-custom="00:46:54,000" to-custom="00:46:58,312"/>ta réputation, chaste Diane, j’ai répandu</l>
+<l>le bruit, parmi les mortels que c'était</l>
+
+<l><date from-custom="00:46:58,400" to-custom="00:47:02,234"/>à ta demande que j'avais ainsi...</l>
+<l>désorganisé Actéon; j'ai dit que</l>
+
+<l><date from-custom="00:47:02,320" to-custom="00:47:06,518"/>tu avais trouvé sa curiosité indiscrète.</l>
+<l>-Mais pas du tout! -Je l'ai dit</l>
+
+<l><date from-custom="00:47:06,600" to-custom="00:47:11,071"/>pour l'honneur de la mythologie! Mes</l>
+<l>enfants, les mortels ont l'œil sur nous!</l>
+
+<l><date from-custom="00:47:11,160" to-custom="00:47:15,153"/>Sauvons les apparences, au moins!</l>
+<l>sauvons les apparences, tout est là!</l>
+
+<l><date from-custom="00:47:15,240" to-custom="00:47:18,994"/>Ça, vous les sauvez bien, vous!</l>
+<l>-Est-ce qu'il a encore fait</l>
+
+<l><date from-custom="00:47:19,080" to-custom="00:47:23,073"/>quelque nouvelle escapade?</l>
+<l>-Mais non, ma chérie... des cancans...</l>
+
+<l><date from-custom="00:47:23,160" to-custom="00:47:27,153"/>ce sont les journalistes, ils font courir</l>
+<l>des bruits... -Des bruits...</l>
+
+<l><date from-custom="00:47:27,240" to-custom="00:47:31,313"/>Des bruits! Je sais, moi, qu'il y a</l>
+<l>quelque chose... Je suis sûre qu'il y a</l>
+
+<l><date from-custom="00:47:31,400" to-custom="00:47:35,678"/>Gorgone sous roche, j'en suis sûre, va!</l>
+<l>Dis-le moi, Diane, si tu sais...</l>
+
+<l><date from-custom="00:47:35,760" to-custom="00:47:39,753"/>De la réserve! pas de scène devant le</l>
+<l>monde! Laissez-moi m'occuper des affaires</l>
+
+<l><date from-custom="00:47:39,840" to-custom="00:47:43,833"/>intérieures de l'Olympe. Je reçois</l>
+<l>des plaintes de tous les côtés. Tenez!</l>
+
+<l><date from-custom="00:47:45,760" to-custom="00:47:48,911"/>Plaintes, réclamations,</l>
+
+<l><date from-custom="00:47:50,080" to-custom="00:47:53,072"/>récriminations!</l>
+
+<l><date from-custom="00:47:53,160" to-custom="00:47:57,597"/>L'Olympe s'en va, mes enfants!</l>
+<l>vous le perdez par vous inconséquences.</l>
+
+<l><date from-custom="00:47:57,840" to-custom="00:48:02,231"/>Quel tyran!</l>
+<l>-Cupidon, où est le petit? -Voilà!</l>
+
+<l><date from-custom="00:48:02,680" to-custom="00:48:06,992"/>Ah toi, gamin, si tu continues nous</l>
+<l>nous fâcherons. -Ah! quelle scie!</l>
+
+<l><date from-custom="00:48:07,280" to-custom="00:48:13,230"/>Jupiter tannant! va! mais, si tu m'as</l>
+<l>donné des ailes, c'est pour voltiger.</l>
+
+<l><date from-custom="00:48:13,320" to-custom="00:48:17,518"/>Si je t'ai donné des ailes, c'est pour</l>
+<l>que tu sois zélé... et tu es toujours</l>
+
+<l><date from-custom="00:48:17,600" to-custom="00:48:21,593"/>en retard. A quelle heure es-tu rentré?</l>
+<l>Recommence et je te mets au pain</l>
+
+<l><date from-custom="00:48:21,680" to-custom="00:48:26,071"/>et à l'eau pendant huit jours...</l>
+<l>Allons! que chacun aille à sa besogne,</l>
+
+<l><date from-custom="00:48:26,160" to-custom="00:48:30,153"/>en attendant l'heure de savourer</l>
+<l>le nectar et l'ambroisie...</l>
+
+<l><date from-custom="00:48:30,240" to-custom="00:48:33,994"/>Et que personne ne manque au déjeuner...</l>
+<l>Allez! j'ai entendu des rumeurs, voilà</l>
+
+<l><date from-custom="00:48:34,080" to-custom="00:48:37,834"/>déjà plusieurs fois que je m'aperçois...</l>
+<l>-Maman, vous croyez que ça peut durer?</l>
+
+<l><date from-custom="00:48:37,920" to-custom="00:48:41,674"/>Il nous ennuie trop! -Moi, d'abord,</l>
+<l>-je dépéris ici. Cet Olympe me déprime!</l>
+
+<l><date from-custom="00:48:41,760" to-custom="00:48:45,514"/>Si nous nous révoltions!</l>
+<l>-J'ai mon idée. Nous refuserons de...</l>
+
+<l><date from-custom="00:48:45,600" to-custom="00:48:49,593"/>Qu'est-ce qu'on marmotte dans</l>
+<l>ce coin-là! On ne m'a donc pas entendu?</l>
+
+<l><date from-custom="00:48:52,520" to-custom="00:48:56,308"/>Par ma foudre! on a du mal à mener</l>
+<l>son équipe... J'en perds la tête!</l>
+
+<l><date from-custom="00:48:56,400" to-custom="00:49:00,313"/>Et, si ce n'était que ça...</l>
+<l>il faut encore que j'aie la jalousie</l>
+
+<l><date from-custom="00:49:00,400" to-custom="00:49:04,154"/>de ma tendre épouse...</l>
+<l>Allez! encore elle!</l>
+
+<l><date from-custom="00:49:04,320" to-custom="00:49:08,233"/>Quel crampon! Je disais tout à l'heure</l>
+<l>à Cupidon de se ranger...</l>
+
+<l><date from-custom="00:49:08,320" to-custom="00:49:12,438"/>celle-là qui devrait se déranger</l>
+<l>un peu... C'est toi! Mon astre!</l>
+
+<l><date from-custom="00:49:12,560" to-custom="00:49:16,394"/>qu'est-ce qu'il y a?</l>
+<l>-Il y a que je ne puis plus vivre ainsi!</l>
+
+<l><date from-custom="00:49:16,520" to-custom="00:49:20,513"/>Et que l'existence que vous me faites...</l>
+<l>-Qu'est-ce que j'ai encore fait, voyons?</l>
+
+<l><date from-custom="00:49:20,600" to-custom="00:49:24,991"/>Ah! n'essayez pas de me tromper. Les</l>
+<l>bruits de la terre montent jusqu'à moi.</l>
+
+<l><date from-custom="00:49:25,080" to-custom="00:49:28,675"/>Mais encore...</l>
+<l>-Eh bien! il n'est question là-bas</l>
+
+<l><date from-custom="00:49:28,760" to-custom="00:49:32,514"/>que la disparition d'une mortelle,</l>
+<l>belle comme une déesse,</l>
+
+<l><date from-custom="00:49:32,600" to-custom="00:49:36,593"/>et qui vient d'être enlevée par un dieu.</l>
+<l>Cette femme s'appelle Eurydice...</l>
+
+<l><date from-custom="00:49:36,960" to-custom="00:49:40,953"/>Et le dieu s'appelle... vous! -Moi?</l>
+<l>Et quel autre que vous eût osé?</l>
+
+<l><date from-custom="00:49:41,040" to-custom="00:49:44,794"/>Vois, mon amie, vois où t'entraîne</l>
+<l>ton aveugle passion! Cet enlèvement,</l>
+
+<l><date from-custom="00:49:44,880" to-custom="00:49:48,634"/>je le connais, comme toi! -Je le crois.</l>
+<l>Mes soupçons se portent sur quelqu'un,</l>
+
+<l><date from-custom="00:49:48,720" to-custom="00:49:51,792"/>et nous allons bientôt savoir...</l>
+<l>-Chansons que tout cela...</l>
+
+<l><date from-custom="00:49:51,880" to-custom="00:49:55,634"/>J'ai envoyé Mercure aux renseignements.</l>
+<l>Et si mes soupçousons sont fondés...</l>
+
+<l><date from-custom="00:49:55,720" to-custom="00:49:59,508"/>tu verras bientôt qu'un dieu qui punit,</l>
+<l>comme moi, les escapades des autres,</l>
+
+<l><date from-custom="00:49:59,600" to-custom="00:50:02,910"/>doit être le mari le plus fidèle,</l>
+<l>le plus constant...</l>
+
+<l><date from-custom="00:50:03,000" to-custom="00:50:07,755"/>Je ne vous crois plus, gros hypocrite!</l>
+<l>Vous m'avez tant de fois trompée!</l>
+
+<l><date from-custom="00:50:07,840" to-custom="00:50:11,833"/>Allons, bon! c'est comme tu voudras!</l>
+<l>Que veux-tu que je te dise? Attends!</l>
+
+<l><date from-custom="00:50:12,000" to-custom="00:50:15,993"/>j'entends les ailes chromées de Mercure.</l>
+<l>Ecoute et juge-moi!</l>
+
+<l><date from-custom="00:50:22,000" to-custom="00:50:25,913"/>Eh hop! Eh hop! Place à Mercure!</l>
+<l>Ses pieds ne touchent pas le sol,</l>
+
+<l><date from-custom="00:50:26,000" to-custom="00:50:29,913"/>un bleu nuage est sa voiture,</l>
+<l>rien ne l'arrête dans son vol...</l>
+
+<l><date from-custom="00:50:30,000" to-custom="00:50:33,913"/>Bouillet dans son dictionnaire</l>
+<l>vous dira mes titres nombreux:</l>
+
+<l><date from-custom="00:50:34,000" to-custom="00:50:37,913"/>je suis le commissionnaire</l>
+<l>et des déesses et des dieux;</l>
+
+<l><date from-custom="00:50:38,000" to-custom="00:50:41,913"/>pour leurs amours moi je travaille,</l>
+<l>actif, agile, intelligent,</l>
+
+<l><date from-custom="00:50:42,000" to-custom="00:50:45,913"/>mon caducée est ma médaille,</l>
+<l>une médaille en vit argent.</l>
+
+<l><date from-custom="00:50:46,000" to-custom="00:50:51,757"/>Eh hop! Eh hop! Place à Mercure!</l>
+<l>Ses pieds ne touchent pas le sol,</l>
+
+<l><date from-custom="00:50:51,840" to-custom="00:50:57,676"/>un bleu nuage est sa voiture,</l>
+<l>rien ne l'arrête dans son vol...</l>
+
+<l><date from-custom="00:50:57,760" to-custom="00:51:01,514"/>Je suis le dieu de l'éloquence,</l>
+<l>les avocats sont mes enfants,</l>
+
+<l><date from-custom="00:51:01,600" to-custom="00:51:05,309"/>ils me sont d'un secours immense</l>
+<l>pour flanquer les mortels dedans.</l>
+
+<l><date from-custom="00:51:05,400" to-custom="00:51:09,154"/>Je dois comme dieu du commerce</l>
+<l>détester la fraude et le dol,</l>
+
+<l><date from-custom="00:51:09,240" to-custom="00:51:12,994"/>mais je sais par raison inverse</l>
+<l>les aimer comme dieu du vol,</l>
+
+<l><date from-custom="00:51:13,080" to-custom="00:51:16,959"/>car j'ai la main fort indirecte</l>
+<l>et quelquefois le bras trop long:</l>
+
+<l><date from-custom="00:51:17,040" to-custom="00:51:20,953"/>quand il était berger d'Admète</l>
+<l>j'ai chipe les bœufs d'Apollon.</l>
+
+<l><date from-custom="00:51:21,040" to-custom="00:51:24,953"/>Tout en étant le dieu des drôles,</l>
+<l>je suis le plus drôle des dieux,</l>
+
+<l><date from-custom="00:51:25,040" to-custom="00:51:28,953"/>j'ai des ailes sur les épaules,</l>
+<l>aux talons et dans les cheveux.</l>
+
+<l><date from-custom="00:51:29,040" to-custom="00:51:32,919"/>Jupin mon maître sait me mettre</l>
+<l>à toute sauce; il finira</l>
+
+<l><date from-custom="00:51:33,000" to-custom="00:51:36,834"/>par me mettre dans un baromètre</l>
+<l>pour savoir le temps qu'il fera...</l>
+
+<l><date from-custom="00:51:36,920" to-custom="00:51:39,912"/>Eh hop! -Eh hop!</l>
+<l>Eh hop!</l>
+
+<l><date from-custom="00:51:40,000" to-custom="00:51:45,757"/>Eh hop! Eh hop! Place à Mercure!</l>
+<l>Ses pieds ne touchent pas le sol,</l>
+
+<l><date from-custom="00:51:45,840" to-custom="00:51:50,789"/>un bleu nuage est sa voiture,</l>
+<l>rien ne l'arrête dans son vol...</l>
+
+<l><date from-custom="00:51:50,880" to-custom="00:51:54,839"/>un bleu nuage est sa voiture,</l>
+<l>rien ne l'arrête dans son vol,</l>
+
+<l><date from-custom="00:51:54,920" to-custom="00:51:57,992"/>rien ne l'arrête dans son vol,</l>
+
+<l><date from-custom="00:51:58,080" to-custom="00:52:01,072"/>dans son vol!</l>
+
+<l><date from-custom="00:52:07,200" to-custom="00:52:11,193"/>Salut au puissant maître des dieux et...</l>
+<l>-Pas de phrases! Au fait! Rends-moi</l>
+
+<l><date from-custom="00:52:11,280" to-custom="00:52:15,273"/>compte de ta mission. -Seigneur,</l>
+<l>-j'arrive en droite ligne des Enfers!</l>
+
+<l><date from-custom="00:52:15,360" to-custom="00:52:19,273"/>Et Pluton? Y régnait-il dans toute sa</l>
+<l>gloire? -Ce n'était pas Pluton qui</l>
+
+<l><date from-custom="00:52:19,360" to-custom="00:52:23,194"/>y régnait! C'était une franche gaieté.</l>
+<l>Ils s'amusaient joliment, là-bas!</l>
+
+<l><date from-custom="00:52:23,280" to-custom="00:52:27,034"/>et j'ai vraiment passé quelques moments</l>
+<l>agréables! -Et Pluton?</l>
+
+<l><date from-custom="00:52:27,120" to-custom="00:52:31,511"/>Pluton était sorti! -Depuis la matin?</l>
+<l>Depuis 1 5 jours! -Il avait découché?</l>
+
+<l><date from-custom="00:52:31,600" to-custom="00:52:35,229"/>Probable! -Et tu ne l'as pas vu?</l>
+<l>Si! Il est rentré aux Enfers</l>
+
+<l><date from-custom="00:52:35,320" to-custom="00:52:39,836"/>il y a une heure! -Et d'où venait-il?</l>
+<l>De la terre! -Seul?</l>
+
+<l><date from-custom="00:52:39,920" to-custom="00:52:43,833"/>Pas du tout! Avec une jolie petite femme</l>
+<l>qu'il venait d'enlever à son mari!</l>
+
+<l><date from-custom="00:52:43,920" to-custom="00:52:48,357"/>Tu sais son nom? -Eurydice.</l>
+<l>Là! je ne lui fais pas dire!</l>
+
+<l><date from-custom="00:52:49,000" to-custom="00:52:53,516"/>Ça fait plaisir! -Pas à tout le monde!</l>
+<l>-Ah! le coquin de Pluton! Il va venir?</l>
+
+<l><date from-custom="00:52:53,600" to-custom="00:52:57,309"/>Oui, je lui ai dit que vous l'attendiez!</l>
+<l>J'entends le moteur de son char.</l>
+
+<l><date from-custom="00:52:57,400" to-custom="00:53:01,154"/>Parfait! Je vous le traiter comme</l>
+<l>il mérite! Laissez-moi le recevoir!</l>
+
+<l><date from-custom="00:53:01,240" to-custom="00:53:04,994"/>Tu ne me trompes pas, dis, Ernest?</l>
+<l>il n'y a pas autre chose?</l>
+
+<l><date from-custom="00:53:05,080" to-custom="00:53:08,834"/>Mais non, ma biche!</l>
+<l>-Enfin, ça va mieux.</l>
+
+<l><date from-custom="00:53:13,120" to-custom="00:53:16,112"/>Je vais manger!</l>
+
+<l><date from-custom="00:53:18,000" to-custom="00:53:21,276"/>Crampon! Va-tien voir s'ils viennent!</l>
+
+<l><date from-custom="00:53:22,440" to-custom="00:53:26,194"/>Cette petite Eurydice est donc</l>
+<l>bien jolie?</l>
+
+<l><date from-custom="00:53:26,280" to-custom="00:53:27,600"/>Seigneur, le voilà!</l>
+
+<l><date from-custom="00:53:27,600" to-custom="00:53:30,592"/>Seigneur, le voilà!</l>
+
+<l><date from-custom="00:53:47,320" to-custom="00:53:51,154"/>Ah! Salut au puissant maître des cieux</l>
+<l>et de la terre!</l>
+
+<l><date from-custom="00:53:51,240" to-custom="00:53:55,472"/>Assez! je te fais grâce de la formule!</l>
+<l>-Madame va bien? -Elle mange!</l>
+
+<l><date from-custom="00:54:00,520" to-custom="00:54:04,229"/>Comme il me regarde!</l>
+<l>Est-ce qu'il se douterait?</l>
+
+<l><date from-custom="00:54:08,160" to-custom="00:54:11,277"/>Détournons les soupçons! Flagornons-le.</l>
+
+<l><date from-custom="00:54:15,320" to-custom="00:54:18,995"/>Ayons l'air de trouver</l>
+<l>son domicile agréable.</l>
+
+<l><date from-custom="00:54:23,320" to-custom="00:54:30,749"/>J'ai justement une belle</l>
+<l>tirade que j'ai lue quelque part. Ah!</l>
+
+<l><date from-custom="00:54:31,000" to-custom="00:54:35,152"/>avec quelle volupté je m'enivre des</l>
+<l>suaves émanations de cette atmosphère</l>
+
+<l><date from-custom="00:54:35,240" to-custom="00:54:40,314"/>douce et vivifiante de l'Olympe!</l>
+
+<l><date from-custom="00:54:46,400" to-custom="00:54:52,270"/>Heureuses divinités qui folâtrez sans</l>
+<l>cesse sous des cieux,</l>
+
+<l><date from-custom="00:54:52,680" to-custom="00:54:55,672"/>sous des cieux toujours bleus!</l>
+
+<l><date from-custom="00:54:56,840" to-custom="00:55:01,834"/>Tandis que je suis condamné aux sombres</l>
+<l>cloaques du royaume,</l>
+
+<l><date from-custom="00:55:02,000" to-custom="00:55:04,992"/>du royaume infernal,</l>
+
+<l><date from-custom="00:55:06,680" to-custom="00:55:10,798"/>ici l'on respire une odeur de déesse</l>
+<l>et de nymphe,</l>
+
+<l><date from-custom="00:55:11,160" to-custom="00:55:15,233"/>une suave odeur de myrte et de verveine,</l>
+
+<l><date from-custom="00:55:15,600" to-custom="00:55:21,516"/>de nectar et d'ambroisie!</l>
+
+<l><date from-custom="00:55:32,840" to-custom="00:55:36,913"/>On entend le roucoulement des colombes,</l>
+
+<l><date from-custom="00:55:37,520" to-custom="00:55:41,308"/>des colombes, les chansons d'Apollon</l>
+
+<l><date from-custom="00:55:41,480" to-custom="00:55:45,712"/>et la lyre de Lesbos,</l>
+<l>la lyre de Lesbos.</l>
+
+<l><date from-custom="00:55:46,960" to-custom="00:55:50,919"/>Voici les Muses,</l>
+<l>voici les Nymphes,</l>
+
+<l><date from-custom="00:55:51,680" to-custom="00:55:57,471"/>les Grâces, les Grâces,</l>
+<l>les Grâces ne sont pas loin. Non, non!</l>
+
+<l><date from-custom="00:55:58,120" to-custom="00:56:02,318"/>Non, non! Non, non!</l>
+<l>Les Grâces ne sont pas loin.</l>
+
+<l><date from-custom="00:56:02,720" to-custom="00:56:06,838"/>Vous les verrez danser,</l>
+<l>calmes et bondissantes,</l>
+
+<l><date from-custom="00:56:06,920" to-custom="00:56:11,277"/>aux douces clartés de la nuit,</l>
+<l>de la nuit et du jour!</l>
+
+<l><date from-custom="00:56:19,040" to-custom="00:56:24,478"/>On entend le roucoulement des colombes,</l>
+
+<l><date from-custom="00:56:25,080" to-custom="00:56:29,039"/>des colombes, les chansons d'Apollon</l>
+
+<l><date from-custom="00:56:29,200" to-custom="00:56:32,909"/>et la lyre de Lesbos,</l>
+<l>la lyre de Lesbos.</l>
+
+<l><date from-custom="00:56:33,600" to-custom="00:56:36,751"/>Tous les parfums sont déchaînés...</l>
+
+<l><date from-custom="00:56:36,840" to-custom="00:56:40,753"/>et les parfums de la nuit et... du jour,</l>
+<l>et les parfums du matin et... du soir,</l>
+
+<l><date from-custom="00:56:40,840" to-custom="00:56:45,595"/>et les parfums du ciel et... des Grâces,</l>
+<l>et les parfums des Muses et les parfums</l>
+
+<l><date from-custom="00:56:45,680" to-custom="00:56:49,912"/>des Nymphes.</l>
+
+<l><date from-custom="00:56:52,680" to-custom="00:56:57,754"/>As-tu bientôt fini, avec ta parfumerie?</l>
+<l>-Il va me passer un savon, il écume!</l>
+
+<l><date from-custom="00:56:57,840" to-custom="00:57:01,992"/>Eh bien? -On ne chantera jamais</l>
+<l>-assez votre bonheur! -Notre bonheur!</l>
+
+<l><date from-custom="00:57:02,080" to-custom="00:57:06,073"/>Tu fais semblant de croire, toi,</l>
+<l>que le bonheur se trouve près des Grâces</l>
+
+<l><date from-custom="00:57:06,160" to-custom="00:57:10,153"/>et des Nymphes! Ce n'est pas mon avis!</l>
+<l>je ne suis pas d'une nature nymphtique!</l>
+
+<l><date from-custom="00:57:10,240" to-custom="00:57:13,994"/>Mais laissons cela! et prête-moi</l>
+<l>une oreille attentive. Roi des enfers,</l>
+
+<l><date from-custom="00:57:14,080" to-custom="00:57:17,595"/>c'est moi qui vous appelle!</l>
+<l>Il paraît, que tu te conduis</l>
+
+<l><date from-custom="00:57:17,680" to-custom="00:57:21,673"/>comme le dernier des drôles! -Seigneur!</l>
+<l>que tu mènes une existence de pacha!</l>
+
+<l><date from-custom="00:57:21,760" to-custom="00:57:25,514"/>D'abord, c'est quoi tout ça là?</l>
+<l>-Ça, c'est mon déjeuner,</l>
+
+<l><date from-custom="00:57:25,600" to-custom="00:57:29,832"/>un petit en-cas qui me suit partout:</l>
+<l>une bouteille de vin vieux de Chypre,</l>
+
+<l><date from-custom="00:57:30,520" to-custom="00:57:33,512"/>un saucisson</l>
+
+<l><date from-custom="00:57:33,600" to-custom="00:57:37,912"/>et un flacon d'essence de feu,</l>
+<l>"vite spirit"!</l>
+
+<l><date from-custom="00:57:40,440" to-custom="00:57:44,319"/>Du vin! Un saucisson...</l>
+<l>-de Lyon!</l>
+
+<l><date from-custom="00:57:45,000" to-custom="00:57:49,516"/>Et nous qui sommes éternellement</l>
+<l>condamnés au nectar et à l'ambroisie!</l>
+
+<l><date from-custom="00:57:49,600" to-custom="00:57:53,593"/>Et c'est ta nourriture habituelle?</l>
+<l>-Oui! je n'aime pas les choses fades!</l>
+
+<l><date from-custom="00:57:53,680" to-custom="00:57:58,151"/>Il me faut du piment! -Ah ça!</l>
+<l>-mais tu es le plus heureux des dieux!</l>
+
+<l><date from-custom="00:57:58,240" to-custom="00:58:02,233"/>Moi, seigneur! Heureux!</l>
+<l>-Oui, toi! Depuis 15 jours que fais-tu?</l>
+
+<l><date from-custom="00:58:02,320" to-custom="00:58:06,313"/>J'habite le sombre cloaque de l'enfer.</l>
+<l>L'on n'y respire pas comme ici une odeur</l>
+
+<l><date from-custom="00:58:06,400" to-custom="00:58:10,154"/>de... -Tu parles! Tu habites une cabane</l>
+<l>-aux environs de Thèbes. Et tu as abusé</l>
+
+<l><date from-custom="00:58:10,240" to-custom="00:58:14,233"/>de ton pouvoir en enlevant par la mort</l>
+<l>une épouse à son époux. -Je suis fort...</l>
+
+<l><date from-custom="00:58:14,320" to-custom="00:58:17,312"/>Ne nie pas! Je sais tout!</l>
+<l>-Ce n'est pas vrai!</l>
+
+<l><date from-custom="00:58:17,400" to-custom="00:58:21,154"/>Silence! Quand je parle, on se tait!</l>
+<l>Je ne suis pas habitué à la discussion!</l>
+
+<l><date from-custom="00:58:21,240" to-custom="00:58:25,233"/>Devant moi, tout tremble...</l>
+<l>Qu'est-ce que c'est que ça?</l>
+
+<l><date from-custom="00:58:25,680" to-custom="00:58:29,673"/>Ça n'a pas l'air de cris d'obéissance,</l>
+<l>ni de cris d'enthousiasme ça!</l>
+
+<l><date from-custom="00:58:34,120" to-custom="00:58:38,113"/>Aux armes, dieux et demi-dieux!</l>
+<l>Aux armes, dieux et demi-dieux!</l>
+
+<l><date from-custom="00:58:38,440" to-custom="00:58:42,399"/>Abattons cette tyrannie.</l>
+<l>Ce régime est fastidieux!</l>
+
+<l><date from-custom="00:58:42,520" to-custom="00:58:45,512"/>Aux armes!</l>
+
+<l><date from-custom="00:58:45,600" to-custom="00:58:48,592"/>Aux armes!</l>
+
+<l><date from-custom="00:58:48,840" to-custom="00:58:51,752"/>Aux armes!</l>
+
+<l><date from-custom="00:58:51,920" to-custom="00:58:55,595"/>Aux armes! Aux armes!</l>
+<l>Ce régime est fastidieux!</l>
+
+<l><date from-custom="00:58:55,680" to-custom="00:58:59,673"/>Une révolte, une révolte,</l>
+<l>vraiment c'est curieux!</l>
+
+<l><date from-custom="00:58:59,760" to-custom="00:59:03,514"/>Une révolte chez les dieux!</l>
+<l>Sur mon âme, elle arrive au mieux!</l>
+
+<l><date from-custom="00:59:03,600" to-custom="00:59:07,593"/>Plus de nectar! plus d'ambroisie!</l>
+<l>-Plus de nectar!</l>
+
+<l><date from-custom="00:59:07,680" to-custom="00:59:11,514"/>cette liqueur fait mal au cœur!</l>
+<l>-oui, mal au cœur!</l>
+
+<l><date from-custom="00:59:11,680" to-custom="00:59:15,673"/>Assez de sucre et d'ambroisie!</l>
+<l>-Plus d'ambroisie!</l>
+
+<l><date from-custom="00:59:15,760" to-custom="00:59:19,753"/>Ils ont raison!</l>
+<l>Ces aliments sont fades!</l>
+
+<l><date from-custom="00:59:19,920" to-custom="00:59:23,549"/>Parlez-moi de ceci, de ceci, camarades!</l>
+
+<l><date from-custom="00:59:23,960" to-custom="00:59:29,796"/>Aux armes! -Aux armes!</l>
+<l>-Aux armes!</l>
+
+<l><date from-custom="00:59:30,000" to-custom="00:59:33,913"/>Aux armes! dieux et demi-dieux!</l>
+<l>Aux armes! dieux et demi-dieux!</l>
+
+<l><date from-custom="00:59:34,000" to-custom="00:59:37,913"/>Abattons cette tyrannie!</l>
+<l>Ce régime est fastidieux!</l>
+
+<l><date from-custom="00:59:38,000" to-custom="00:59:42,312"/>Aux armes! Aux armes! Aux armes!</l>
+
+<l><date from-custom="00:59:42,520" to-custom="00:59:45,671"/>Plus de nectar! plus d'ambroisie!</l>
+
+<l><date from-custom="00:59:45,760" to-custom="00:59:51,312"/>Abattons cette tyrannie.</l>
+<l>Ce régime est fastidieux!</l>
+
+<l><date from-custom="00:59:51,520" to-custom="00:59:54,512"/>Aux armes! Aux armes!</l>
+
+<l><date from-custom="00:59:54,680" to-custom="01:00:00,550"/>Plus de nectar! plus de nectar!</l>
+
+<l><date from-custom="01:00:01,240" to-custom="01:00:05,153"/>Une sédition! On refuse obéissance!</l>
+<l>-Oui!</l>
+
+<l><date from-custom="01:00:05,240" to-custom="01:00:09,233"/>On perd le respect à papa Piter!</l>
+<l>Alors! vous ne voulez pas savourer</l>
+
+<l><date from-custom="01:00:09,320" to-custom="01:00:13,518"/>le nectar et l'ambroisie?</l>
+<l>-Non! non! plus de nectar!...</l>
+
+<l><date from-custom="01:00:13,600" to-custom="01:00:17,513"/>Nous sommes confits! -Nous avons</l>
+<l>-du sirop d'orgeat dans les veines!</l>
+
+<l><date from-custom="01:00:17,600" to-custom="01:00:21,593"/>Ils ont raison! -C'est une révolte,</l>
+<l>-alors? Et vous ne rougissez pas</l>
+
+<l><date from-custom="01:00:21,680" to-custom="01:00:25,389"/>de mettre à votre tête un bandit</l>
+<l>comme celui-là? -Un bandit!</l>
+
+<l><date from-custom="01:00:25,480" to-custom="01:00:29,234"/>Je ne suis pas un bandit!</l>
+<l>-Si! un misérable qui abuse de</l>
+
+<l><date from-custom="01:00:29,320" to-custom="01:00:33,313"/>sa position pour enlever des mortelles</l>
+<l>à leur mari! -Ce n'est pas vrai!</l>
+
+<l><date from-custom="01:00:34,800" to-custom="01:00:38,475"/>Vous voulez des noms?</l>
+<l>-Oui, vous avez dit citons, ben citez!</l>
+
+<l><date from-custom="01:00:38,600" to-custom="01:00:42,309"/>Nous citerons. Il vient de ravir</l>
+<l>le jeune femme du violoneux Orphée,</l>
+
+<l><date from-custom="01:00:42,400" to-custom="01:00:46,154"/>la belle Eurydice. -Ce n'est pas vrai!</l>
+<l>-Eh bien, après!</l>
+
+<l><date from-custom="01:00:46,240" to-custom="01:00:50,233"/>Comment, après? mais la morale? L'opinion</l>
+<l>des mortels? -Il faudrait pourtant</l>
+
+<l><date from-custom="01:00:50,320" to-custom="01:00:54,313"/>s'entendre sur ta morale! Tu en as fait</l>
+<l>bien d'autres, toi, mon petit père!</l>
+
+<l><date from-custom="01:00:54,400" to-custom="01:00:58,791"/>Là! Qu'est-ce que je disais?</l>
+<l>-Moi? Jamais... bon époux, bon père...</l>
+
+<l><date from-custom="01:00:58,880" to-custom="01:01:02,634"/>Ah oui! Parlons-en de tes qualités</l>
+<l>domestiques! Je ne veux pas jeter</l>
+
+<l><date from-custom="01:01:02,720" to-custom="01:01:06,508"/>la zizanie. Nous sommes ici en famille,</l>
+<l>que des dieux de première classe,</l>
+
+<l><date from-custom="01:01:06,600" to-custom="01:01:10,513"/>alors expliquons-nous! Tu me reproches</l>
+<l>c'que j'ai fait. Et si on rappelai</l>
+
+<l><date from-custom="01:01:10,600" to-custom="01:01:14,479"/>ce que tu as fait, toi? -Laisse donc!</l>
+<l>-j'en sais sur ton compte! -Et moi!</l>
+
+<l><date from-custom="01:01:14,600" to-custom="01:01:18,229"/>Et nous donc! -Nous avons fait</l>
+<l>-une chanson là-dessus! -J'y vais?</l>
+
+<l><date from-custom="01:01:18,320" to-custom="01:01:22,074"/>J'ai un rendez-vous avec mon astrologue.</l>
+<l>-Tu l'entendras! -Tu l'entendras!</l>
+
+<l><date from-custom="01:01:22,160" to-custom="01:01:23,280"/>Et ce sera ta punition!</l>
+
+<l><date from-custom="01:01:23,280" to-custom="01:01:26,272"/>Et ce sera ta punition!</l>
+
+<l><date from-custom="01:01:27,320" to-custom="01:01:31,518"/>Pour séduire Alcmène la fière</l>
+<l>tu pris les traits de son mari!</l>
+
+<l><date from-custom="01:01:31,760" to-custom="01:01:36,880"/>Je sais bien des femmes sur terre</l>
+<l>pour qui çà n'eût pas réussi!</l>
+
+<l><date from-custom="01:01:37,240" to-custom="01:01:41,233"/>Ah! ah!... Ne prends plus l'air patelin:</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:01:41,320" to-custom="01:01:45,313"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:01:45,480" to-custom="01:01:49,519"/>Ah! ah!... Ne prends plus l'air patelin:</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:01:49,680" to-custom="01:01:53,673"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:01:54,480" to-custom="01:01:58,678"/>Est-ce de la même enveloppe</l>
+<l>que tu te servis de nouveau,</l>
+
+<l><date from-custom="01:01:59,000" to-custom="01:02:04,393"/>Lorsque, pour enlever Europe,</l>
+<l>Tu pris les cornes d'un taureau!</l>
+
+<l><date from-custom="01:02:04,520" to-custom="01:02:08,513"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:02:08,760" to-custom="01:02:12,753"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:02:13,000" to-custom="01:02:16,993"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:02:17,240" to-custom="01:02:21,233"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:02:22,000" to-custom="01:02:26,152"/>A Danaé, ton adorée,</l>
+<l>en pluie, un jour, tu te montras;</l>
+
+<l><date from-custom="01:02:26,680" to-custom="01:02:32,391"/>Mais cette pluie était dorée;</l>
+<l>ça lui plut et tu l'adoras!</l>
+
+<l><date from-custom="01:02:32,480" to-custom="01:02:36,519"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:02:36,680" to-custom="01:02:40,673"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:02:41,080" to-custom="01:02:45,073"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:02:45,240" to-custom="01:02:49,313"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:02:50,400" to-custom="01:02:54,678"/>Ce cygne traqué par un aigle</l>
+<l>que Léda sauva dans ses bras,</l>
+
+<l><date from-custom="01:02:54,920" to-custom="01:03:00,916"/>c'était encore vous, gros espiègle!</l>
+<l>J'étais l'aigle, ne le niez pas!</l>
+
+<l><date from-custom="01:03:01,000" to-custom="01:03:04,993"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:03:05,160" to-custom="01:03:09,153"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:03:09,560" to-custom="01:03:13,553"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:03:13,720" to-custom="01:03:17,713"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:03:18,680" to-custom="01:03:22,832"/>Que prouvent ces métamorphoses?</l>
+<l>C'est que tu te trouves si laid,</l>
+
+<l><date from-custom="01:03:23,240" to-custom="01:03:28,314"/>que pour te faire aimer tu n'oses</l>
+<l>te montrer tel que l'ont t'a fait!</l>
+
+<l><date from-custom="01:03:28,400" to-custom="01:03:32,518"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:03:32,600" to-custom="01:03:36,593"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:03:37,000" to-custom="01:03:40,993"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on connaît tes farces, Jupin!</l>
+
+<l><date from-custom="01:03:41,080" to-custom="01:03:45,790"/>Ah! ah!... Ne prends plus l'air patelin,</l>
+<l>on te connaît Jupin!</l>
+
+<l><date from-custom="01:03:48,920" to-custom="01:03:53,675"/>Je suis à bout de forces!</l>
+<l>Ah! traître!</l>
+
+<l><date from-custom="01:03:53,760" to-custom="01:03:57,150"/>ah! volage! Va-t'en!</l>
+
+<l><date from-custom="01:03:57,800" to-custom="01:04:02,316"/>je te hais!</l>
+
+<l><date from-custom="01:04:02,440" to-custom="01:04:05,432"/>je veux divorcer! nous nous séparerons!</l>
+
+<l><date from-custom="01:04:05,600" to-custom="01:04:09,832"/>La crise de nerfs! je ne pouvais pas</l>
+<l>l'éviter! -Prenez donc votre femme!</l>
+
+<l><date from-custom="01:04:09,920" to-custom="01:04:13,913"/>Mon cygne, je te jure</l>
+<l>que c'était avant le mariage!</l>
+
+<l><date from-custom="01:04:14,000" to-custom="01:04:17,834"/>Ah! ne parlez pas de cygne!</l>
+<l>-Mais prenez-donc votre femme!</l>
+
+<l><date from-custom="01:04:17,920" to-custom="01:04:21,754"/>Tout ça, c'est des cancans, de purs</l>
+<l>cancans! Je n'ai jamais aimé que toi!</l>
+
+<l><date from-custom="01:04:21,840" to-custom="01:04:25,753"/>Tu n'es qu'un diffamateur! tu n'es qu...</l>
+<l>-N'achevez pas! Prenez-donc votre femme!</l>
+
+<l><date from-custom="01:04:25,840" to-custom="01:04:29,674"/>Elle me gêne! -Seigneur!</l>
+<l>-Quoi? -Deux étrangers sont là,</l>
+
+<l><date from-custom="01:04:29,760" to-custom="01:04:33,753"/>demandant audience! -Leurs noms?</l>
+<l>Orphée. -Orphée! Lui ici!</l>
+
+<l><date from-custom="01:04:33,840" to-custom="01:04:37,594"/>Mais prenez-donc votre femme!</l>
+<l>Tiens, je ne l'ai plus!</l>
+
+<l><date from-custom="01:04:37,680" to-custom="01:04:41,753"/>Orphée! Je vais le repincer! -Et une</l>
+<l>-femme qui se dit L'Opinion Publique.</l>
+
+<l><date from-custom="01:04:41,840" to-custom="01:04:45,833"/>L'Opinion Publique! Les mortels!</l>
+<l>Mes enfants, trêve à nos dissensions!</l>
+
+<l><date from-custom="01:04:46,000" to-custom="01:04:49,993"/>Ne les recevez pas! -Recevez-les!</l>
+<l>-Je vais les recevoir!</l>
+
+<l><date from-custom="01:04:50,080" to-custom="01:04:53,311"/>Ah!</l>
+<l>-Je suis Jupin et je dois la justice!</l>
+
+<l><date from-custom="01:04:53,600" to-custom="01:04:57,593"/>Ah! ah! tu trembles!</l>
+<l>-Moi, seigneur! je ne tremble jamais!</l>
+
+<l><date from-custom="01:04:57,680" to-custom="01:05:01,150"/>je suis fort. J'aurai du toupet!</l>
+<l>Qu'ils entrent!</l>
+
+<l><date from-custom="01:05:01,240" to-custom="01:05:05,233"/>Tu donnes des ordres chez moi!</l>
+<l>Qu'ils pénètrent! et nous, soignons</l>
+
+<l><date from-custom="01:05:05,320" to-custom="01:05:09,518"/>Les groupes! L'Opinion Publique est là!</l>
+<l>tenons-nous bien! Tout pour le décorum!</l>
+
+<l><date from-custom="01:05:09,800" to-custom="01:05:13,793"/>où est mon trône? où est ma foudre?</l>
+<l>Je veux ma foudre des dimanches!</l>
+
+<l><date from-custom="01:05:14,480" to-custom="01:05:16,994"/>Allez!</l>
+
+<l><date from-custom="01:05:23,320" to-custom="01:05:27,677"/>Vénus, à ma droite!</l>
+<l>Diane, à ma gauche!</l>
+
+<l><date from-custom="01:05:27,880" to-custom="01:05:31,919"/>Et moi? -Toi! tiens, là-bas,</l>
+<l>-sur le banc des accusés!</l>
+
+<l><date from-custom="01:05:32,000" to-custom="01:05:36,915"/>Et moi? -Toi! où tu voudras!</l>
+<l>-tu feras toujours tableau.</l>
+
+<l><date from-custom="01:05:42,400" to-custom="01:05:45,392"/>Parfait! le groupe sera bien ainsi!</l>
+
+<l><date from-custom="01:05:45,720" to-custom="01:05:49,793"/>Qu'ils pénètrent!</l>
+<l>-Non! qu'ils entrent! -Est-il taquin!</l>
+
+<l><date from-custom="01:05:58,600" to-custom="01:06:02,388"/>Il approche! Il s'avance!</l>
+
+<l><date from-custom="01:06:02,760" to-custom="01:06:06,514"/>Le voilà, oui, c'est bien lui!</l>
+
+<l><date from-custom="01:06:07,000" to-custom="01:06:10,913"/>Ah! sapristi! je commence</l>
+
+<l><date from-custom="01:06:11,080" to-custom="01:06:14,516"/>à bien m'ennuyer ici.</l>
+
+<l><date from-custom="01:06:15,040" to-custom="01:06:18,999"/>C'est malgré moi que j'avance!</l>
+<l>-Il approche! Il s'avance!</l>
+
+<l><date from-custom="01:06:19,280" to-custom="01:06:23,193"/>Et je suis tout ahuri</l>
+<l>-Le voilà, oui, c'est bien lui!</l>
+
+<l><date from-custom="01:06:23,320" to-custom="01:06:27,199"/>ce voyage-là commence</l>
+<l>-on va prendre ta défense,</l>
+
+<l><date from-custom="01:06:27,400" to-custom="01:06:31,837"/>à me donner beaucoup trop d'ennui.</l>
+<l>-hélas, trop infortuné mari!</l>
+
+<l><date from-custom="01:06:32,000" to-custom="01:06:35,993"/>Le voilà, -Attendons!</l>
+<l>C'est bien lui! -Observons!</l>
+
+<l><date from-custom="01:06:36,160" to-custom="01:06:40,153"/>Avance! avance! obéis-moi!</l>
+
+<l><date from-custom="01:06:40,360" to-custom="01:06:44,353"/>Le voilà! -Regardons!</l>
+<l>C'est bien lui! -Écoutons!</l>
+
+<l><date from-custom="01:06:44,520" to-custom="01:06:48,513"/>La vengeance est bien</l>
+<l>près de toi, allons!</l>
+
+<l><date from-custom="01:06:48,600" to-custom="01:06:52,593"/>(L'OPINION PUBLIQUE:...obéis-moi,</l>
+<l>marche toujours! Crains ma vengeance!...</l>
+
+<l><date from-custom="01:06:52,680" to-custom="01:06:56,389"/>oui, prête à fondre sur toi!...)</l>
+<l>-(ORPH.: La vengeance est bien près...</l>
+
+<l><date from-custom="01:06:56,520" to-custom="01:07:00,513"/>Oui, il m'ennuie, ce damné vieillard,</l>
+<l>oui, commence à me donner de l'ennui...)</l>
+
+<l><date from-custom="01:07:00,600" to-custom="01:07:04,513"/>(CHOEUR/CUPIDON/VÉNUS/DIANE:</l>
+<l>Regardons, même écoutons! Car il va prendre</l>
+
+<l><date from-custom="01:07:04,600" to-custom="01:07:07,592"/>ta défense, trop infortuné mari!)</l>
+
+<l><date from-custom="01:07:12,320" to-custom="01:07:16,154"/>Que me veux-tu, faible mortel?</l>
+
+<l><date from-custom="01:07:21,800" to-custom="01:07:25,952"/>Voici le moment solennel!</l>
+
+<l><date from-custom="01:07:26,880" to-custom="01:07:31,590"/>Tu vas, d'une voix attendrie,</l>
+
+<l><date from-custom="01:07:31,840" to-custom="01:07:37,119"/>implorer du grand Jupiter</l>
+
+<l><date from-custom="01:07:37,280" to-custom="01:07:43,833"/>le droit de reprendre à l'Enfer</l>
+
+<l><date from-custom="01:07:45,440" to-custom="01:07:51,151"/>ton épouse tendre et chérie!</l>
+
+<l><date from-custom="01:07:51,320" to-custom="01:07:54,915"/>Vous le voulez?</l>
+<l>-Allons!</l>
+
+<l><date from-custom="01:08:03,320" to-custom="01:08:09,156"/>On m'a ravi mon Eurydice...</l>
+
+<l><date from-custom="01:08:09,320" to-custom="01:08:14,030"/>Rien n'égale son tourment!</l>
+
+<l><date from-custom="01:08:19,840" to-custom="01:08:25,631"/>Rien n'égale sa douleur!</l>
+
+<l><date from-custom="01:08:26,000" to-custom="01:08:32,235"/>Rien n'égale sa douleur!</l>
+
+<l><date from-custom="01:08:34,320" to-custom="01:08:37,596"/>Et le ravisseur?</l>
+<l>-C'est?</l>
+
+<l><date from-custom="01:08:37,680" to-custom="01:08:42,515"/>C'est Pluton!</l>
+<l>-C'est Pluton!</l>
+
+<l><date from-custom="01:08:42,760" to-custom="01:08:47,515"/>C'est Pluton!</l>
+
+<l><date from-custom="01:08:50,280" to-custom="01:08:54,068"/>C'est Pluton! C'est Pluton!</l>
+
+<l><date from-custom="01:08:57,800" to-custom="01:09:03,796"/>Puissant justement</l>
+<l>le crime et l'injustice</l>
+
+<l><date from-custom="01:09:04,200" to-custom="01:09:09,911"/>je condamne Pluton</l>
+<l>à lui rendre Eurydice!</l>
+
+<l><date from-custom="01:09:10,320" to-custom="01:09:14,279"/>O ciel! O ciel! Il me la rend!</l>
+
+<l><date from-custom="01:09:14,840" to-custom="01:09:19,231"/>O ciel! O ciel! Il me la prend!</l>
+
+<l><date from-custom="01:09:19,400" to-custom="01:09:24,235"/>Et pour faire observer</l>
+<l>ma volonté suprême,</l>
+
+<l><date from-custom="01:09:24,320" to-custom="01:09:28,313"/>aux Enfers aujourd'hui,</l>
+<l>Pluton, j'irai moi-même!</l>
+
+<l><date from-custom="01:09:28,400" to-custom="01:09:31,392"/>Aux Enfers! -Aux Enfers!</l>
+<l>Aux Enfers! -Aux Enfers!</l>
+
+<l><date from-custom="01:09:31,480" to-custom="01:09:35,598"/>Aux Enfers!</l>
+
+<l><date from-custom="01:09:35,760" to-custom="01:09:41,312"/>Jupin, emmenez-nous avec vous,</l>
+<l>s'il vous plaît!...</l>
+
+<l><date from-custom="01:09:41,520" to-custom="01:09:46,514"/>Emmenez-nous, -Emmenez-nous,...</l>
+<l>Jupin! -Jupin! -Jupin!</l>
+
+<l><date from-custom="01:09:47,120" to-custom="01:09:50,112"/>Jupin emmenez-nous,</l>
+<l>emmenez-nous avec vous!</l>
+
+<l><date from-custom="01:09:50,720" to-custom="01:09:56,238"/>Allons, j'emmènerai l'Olympe</l>
+<l>au grand complet!</l>
+
+<l><date from-custom="01:09:56,400" to-custom="01:10:01,758"/>Vive, vive Jupin!</l>
+<l>Vive, vive Jupin!</l>
+
+<l><date from-custom="01:10:02,120" to-custom="01:10:05,510"/>Venez tous, venez tous,</l>
+
+<l><date from-custom="01:10:05,760" to-custom="01:10:08,479"/>venez tous!</l>
+
+<l><date from-custom="01:10:14,320" to-custom="01:10:22,238"/>Gloire, gloire à Jupiter!</l>
+
+<l><date from-custom="01:10:23,520" to-custom="01:10:32,553"/>Gloire à ce dieu clément et doux,</l>
+
+<l><date from-custom="01:10:33,240" to-custom="01:10:41,238"/>qui pour ce sémillant enfer,</l>
+
+<l><date from-custom="01:10:42,400" to-custom="01:10:47,793"/>n'a pas voulu partir sans nous!</l>
+
+<l><date from-custom="01:10:48,000" to-custom="01:10:50,992"/>Partons, partons, partons!</l>
+
+<l><date from-custom="01:10:51,080" to-custom="01:10:55,232"/>La la la la la,</l>
+<l>partons, partons, partons!...</l>
+
+<l><date from-custom="01:10:55,320" to-custom="01:10:59,836"/>Partons, partons, marchons!</l>
+<l>La la la la la, partons, partons...</l>
+
+<l><date from-custom="01:10:59,920" to-custom="01:11:03,515"/>La la la la la, partons, marchons,</l>
+<l>partons, marchons! Ah!</l>
+
+<l><date from-custom="01:11:03,600" to-custom="01:11:09,152"/>Plus de nectar, plus de ciel bleu!</l>
+<l>Oh, nous allons donc rire un peu,</l>
+
+<l><date from-custom="01:11:09,600" to-custom="01:11:15,675"/>merci, mon Dieu, merci, mon Dieu,</l>
+<l>-Adieu bonheur, amour adieu!</l>
+
+<l><date from-custom="01:11:16,760" to-custom="01:11:21,231"/>La la la la la,</l>
+<l>partons, partons, partons!...</l>
+
+<l><date from-custom="01:11:21,400" to-custom="01:11:25,916"/>Partons, partons, marchons!</l>
+<l>La la la la la, partons, partons...</l>
+
+<l><date from-custom="01:11:26,000" to-custom="01:11:28,912"/>La la la la la...!</l>
+
+<l><date from-custom="01:11:29,000" to-custom="01:11:34,518"/>Prenons nos a... nos attributs,</l>
+<l>partons, n'hési... n'hésitons plus!</l>
+
+<l><date from-custom="01:11:34,760" to-custom="01:11:40,517"/>Prenons nos a... nos attributs,</l>
+<l>partons, n'hési... n'hésitons plus!</l>
+
+<l><date from-custom="01:11:40,680" to-custom="01:11:45,754"/>partons, partons, n'hésitons plus,</l>
+<l>-Merci, merci!</l>
+
+<l><date from-custom="01:11:46,720" to-custom="01:11:51,475"/>La la la la la,</l>
+<l>partons, partons, partons!...</l>
+
+<l><date from-custom="01:11:51,680" to-custom="01:11:54,877"/>Qui, partons, partons, partons, partons,</l>
+
+<l><date from-custom="01:11:55,040" to-custom="01:12:00,194"/>plus de nectar, plus de ciel bleu!</l>
+<l>Oh, nous allons donc rire un peu,</l>
+
+<l><date from-custom="01:12:00,280" to-custom="01:12:04,671"/>merci, merci, merci, mon Dieu!</l>
+<l>-Adieu, amour, adieu, adieu!</l>
+
+<l><date from-custom="01:12:15,760" to-custom="01:12:19,753"/>La la la la la,</l>
+<l>partons, partons, partons!...</l>
+
+<l><date from-custom="01:12:19,840" to-custom="01:12:23,833"/>Partons, partons, marchons!</l>
+<l>La la la la la, partons, partons...</l>
+
+<l><date from-custom="01:12:24,040" to-custom="01:12:27,112"/>La la la la la...!</l>
+
+<l><date from-custom="01:13:36,640" to-custom="01:13:39,473"/>Personne encore!</l>
+
+<l><date from-custom="01:13:41,920" to-custom="01:13:44,912"/>Pas de nouvelles.</l>
+
+<l><date from-custom="01:13:45,920" to-custom="01:13:50,948"/>Ah, ça, mais c'est intolérable!</l>
+<l>Je m'ennuie épouvantablement ici!</l>
+
+<l><date from-custom="01:13:57,800" to-custom="01:14:03,318"/>Ah! quelle triste destinée</l>
+<l>me fait ici le dieu Pluton!</l>
+
+<l><date from-custom="01:14:04,040" to-custom="01:14:07,032"/>Me laisser seule abandonnée!</l>
+
+<l><date from-custom="01:14:07,240" to-custom="01:14:10,232"/>Que veut dire cet abandon!</l>
+
+<l><date from-custom="01:14:10,360" to-custom="01:14:16,117"/>Lorsqu'avec lui je suis venue,</l>
+<l>de tendresse il était pétri!</l>
+
+<l><date from-custom="01:14:16,320" to-custom="01:14:22,077"/>Ah! mais si cela continue</l>
+
+<l><date from-custom="01:14:23,840" to-custom="01:14:26,832"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:14:27,200" to-custom="01:14:30,192"/>je vais regretter mon mari!</l>
+
+<l><date from-custom="01:14:30,520" to-custom="01:14:36,356"/>Ah mais oui, ah mais oui, ah,</l>
+
+<l><date from-custom="01:14:37,400" to-custom="01:14:40,392"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:14:40,600" to-custom="01:14:43,592"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:14:43,800" to-custom="01:14:50,399"/>ah mais oui, ah mais oui!</l>
+
+<l><date from-custom="01:14:57,000" to-custom="01:15:00,310"/>L'amour des dieux,</l>
+<l>disait le traître,</l>
+
+<l><date from-custom="01:15:00,400" to-custom="01:15:03,392"/>contient d'ineffables douceurs!</l>
+
+<l><date from-custom="01:15:03,600" to-custom="01:15:06,910"/>Je vais te les faire connaître...</l>
+
+<l><date from-custom="01:15:07,080" to-custom="01:15:10,072"/>Les dieux seraient-ils des lâcheurs?</l>
+
+<l><date from-custom="01:15:10,520" to-custom="01:15:13,751"/>Ou donc est l'ivresse inconnue</l>
+
+<l><date from-custom="01:15:14,040" to-custom="01:15:17,032"/>que je devais goûter ici!</l>
+
+<l><date from-custom="01:15:17,120" to-custom="01:15:23,150"/>Ah! mais si cela continue,</l>
+
+<l><date from-custom="01:15:24,000" to-custom="01:15:27,072"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:15:27,600" to-custom="01:15:30,672"/>je vais regretter mon mari!</l>
+
+<l><date from-custom="01:15:30,920" to-custom="01:15:34,230"/>Ah mais oui, ah mais oui,</l>
+
+<l><date from-custom="01:15:34,720" to-custom="01:15:37,917"/>ah,</l>
+
+<l><date from-custom="01:15:38,320" to-custom="01:15:41,437"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:15:41,840" to-custom="01:15:44,832"/>je vais regretter mon mari,</l>
+
+<l><date from-custom="01:15:45,280" to-custom="01:15:55,838"/>ah mais oui, ah mais oui!</l>
+
+<l><date from-custom="01:16:14,320" to-custom="01:16:18,313"/>Voilà deux jours que je suis seule,</l>
+<l>n'ayant d'autre amusement</l>
+
+<l><date from-custom="01:16:18,400" to-custom="01:16:22,393"/>que la compagnie d'un domestique</l>
+<l>dont on a fait mon geôlier!</l>
+
+<l><date from-custom="01:16:23,000" to-custom="01:16:26,913"/>Ah! Pluton, méfie-toi!</l>
+<l>tu ne sais pas ce que peut l'ennui</l>
+
+<l><date from-custom="01:16:27,000" to-custom="01:16:30,231"/>sur une femme aussi fantaisiste que moi!</l>
+
+<l><date from-custom="01:16:30,400" to-custom="01:16:34,837"/>Si c'est comme ça qu'il m'aime!</l>
+<l>Je vais vraiment le regretter, mon mari!</l>
+
+<l><date from-custom="01:16:34,920" to-custom="01:16:37,673"/>Quelqu'un...</l>
+
+<l><date from-custom="01:16:39,920" to-custom="01:16:42,912"/>Oh non! encore lui!</l>
+
+<l><date from-custom="01:16:43,400" to-custom="01:16:48,315"/>Ah! Elle est bien belle!</l>
+<l>elle est bien belle! Ah! si j'osais!</l>
+
+<l><date from-custom="01:16:48,600" to-custom="01:16:52,912"/>C'est encore toi! que me veux-tu?</l>
+<l>-Madame n'a pas sonné? -Moi? Non.</l>
+
+<l><date from-custom="01:16:53,000" to-custom="01:16:56,675"/>Tant pis! -Pourquoi?</l>
+<l>Parce que si madame avait sonné, c'est</l>
+
+<l><date from-custom="01:16:56,760" to-custom="01:17:00,514"/>qu'elle aurait eu besoin de quelque</l>
+<l>chose, et comme madame ne sonne pas,</l>
+
+<l><date from-custom="01:17:00,600" to-custom="01:17:03,751"/>c'est que madame n'a besoin de rien!</l>
+<l>-Gnagnagnagnagnagna!</l>
+
+<l><date from-custom="01:17:03,840" to-custom="01:17:07,389"/>Elle est bien belle!</l>
+<l>Mon Dieu, elle est belle!</l>
+
+<l><date from-custom="01:17:08,120" to-custom="01:17:11,237"/>Est-ce que madame sonnera bientôt?</l>
+
+<l><date from-custom="01:17:11,400" to-custom="01:17:15,154"/>Je ne sais pas? Pourquoi?</l>
+<l>-Parce que, si madame sonnait,</l>
+
+<l><date from-custom="01:17:15,240" to-custom="01:17:18,312"/>j'accourrai... Ah!</l>
+
+<l><date from-custom="01:17:19,040" to-custom="01:17:23,033"/>je suis bien malheureux, madame!</l>
+<l>-Qu'est-ce que cela me fait!</l>
+
+<l><date from-custom="01:17:24,280" to-custom="01:17:28,273"/>Puisque madame paraît s'intéresser</l>
+<l>à moi, je vais tout lui dire.</l>
+
+<l><date from-custom="01:17:28,360" to-custom="01:17:32,069"/>Madame, j'ai un cœur sensible</l>
+<l>et une tête faible.</l>
+
+<l><date from-custom="01:17:32,160" to-custom="01:17:35,835"/>La femme qui m'aimerait</l>
+<l>serait bien heureuse!</l>
+
+<l><date from-custom="01:17:35,920" to-custom="01:17:39,390"/>C'est un fou!</l>
+<l>il va me raconter ses amours!</l>
+
+<l><date from-custom="01:17:39,480" to-custom="01:17:44,076"/>Pourtant j'ai un défaut, j'aime mieux</l>
+<l>vous le dire tout de suite pour que</l>
+
+<l><date from-custom="01:17:44,160" to-custom="01:17:50,235"/>vous ne me le reprochiez pas</l>
+<l>ensuite, madame, je bois quelquefois,</l>
+
+<l><date from-custom="01:17:50,720" to-custom="01:17:54,508"/>j'ai dit: quelquefois!</l>
+<l>-Il n'est pas fou, il est gris!</l>
+
+<l><date from-custom="01:17:54,680" to-custom="01:17:59,117"/>Maintenant, vous me connaissez...</l>
+<l>comme si vous m'aviez fait...</l>
+
+<l><date from-custom="01:17:59,200" to-custom="01:18:03,637"/>Ah! éloigne-toi! Il est affreux!</l>
+<l>-Madame me repousse après un tel aveu?</l>
+
+<l><date from-custom="01:18:03,720" to-custom="01:18:07,713"/>C'est parce que je ne suis qu'un</l>
+<l>domestique? C'est cela les grandes</l>
+
+<l><date from-custom="01:18:07,800" to-custom="01:18:12,237"/>dames! Toutes les mêmes! Mais je ne suis</l>
+<l>pas mort pour porter cette livrée,</l>
+
+<l><date from-custom="01:18:12,320" to-custom="01:18:17,997"/>madame, moi! Quand j'étais sur la terre,</l>
+<l>j'étais le fils d'un prince de Béotie!</l>
+
+<l><date from-custom="01:18:18,080" to-custom="01:18:21,390"/>Eh bien! Il te reste</l>
+<l>quelque chose de ta patrie!</l>
+
+<l><date from-custom="01:18:26,840" to-custom="01:18:29,991"/>Quand j'étais roi de Béotie,</l>
+
+<l><date from-custom="01:18:30,080" to-custom="01:18:34,232"/>j'avais des sujets, des soldats,</l>
+
+<l><date from-custom="01:18:35,240" to-custom="01:18:38,471"/>mais un jour, en perdant la vie,</l>
+
+<l><date from-custom="01:18:38,640" to-custom="01:18:42,519"/>j'ai perdu tous ces biens, hélas!</l>
+
+<l><date from-custom="01:18:43,720" to-custom="01:18:46,792"/>Et pourtant, point ne les envie:</l>
+
+<l><date from-custom="01:18:46,880" to-custom="01:18:50,589"/>ce que je regrette en ce jour</l>
+
+<l><date from-custom="01:18:51,840" to-custom="01:18:55,150"/>c'est de ne t'avoir pas choisie</l>
+
+<l><date from-custom="01:18:55,240" to-custom="01:18:59,279"/>pour te donner tout mon amour!</l>
+
+<l><date from-custom="01:19:00,160" to-custom="01:19:03,516"/>Quand j'étais roi de Béotie,</l>
+
+<l><date from-custom="01:19:03,840" to-custom="01:19:13,078"/>quand j'étais roi de Béotie!</l>
+
+<l><date from-custom="01:19:15,200" to-custom="01:19:18,590"/>Si j'étais roi de Béotie,</l>
+
+<l><date from-custom="01:19:18,680" to-custom="01:19:22,992"/>tu serais reine sur ma foi,</l>
+
+<l><date from-custom="01:19:23,720" to-custom="01:19:26,996"/>je ne puis plus qu'en effigie</l>
+
+<l><date from-custom="01:19:27,080" to-custom="01:19:31,312"/>t'offrir ma puissance de roi.</l>
+
+<l><date from-custom="01:19:32,080" to-custom="01:19:35,436"/>La plus belle ombre, ma chérie</l>
+
+<l><date from-custom="01:19:35,600" to-custom="01:19:39,912"/>ne peut donner que ce qu'elle a,</l>
+
+<l><date from-custom="01:19:40,520" to-custom="01:19:43,830"/>accepte donc, je t'en supplie,</l>
+
+<l><date from-custom="01:19:43,920" to-custom="01:19:48,596"/>dans l'enveloppe que voilà</l>
+
+<l><date from-custom="01:19:49,000" to-custom="01:19:52,231"/>le cœur d'un roi de Béotie,</l>
+
+<l><date from-custom="01:19:52,400" to-custom="01:20:01,911"/>le cœur d'un roi de Béotie.</l>
+
+<l><date from-custom="01:20:05,640" to-custom="01:20:09,633"/>Va-t'en, je te dis, tu sens le vin...</l>
+<l>-Ah! quelle drôle d'idée!</l>
+
+<l><date from-custom="01:20:09,720" to-custom="01:20:13,713"/>c'est parce que je vous ai dit</l>
+<l>tout à l'heure que je buvais parfois...</l>
+
+<l><date from-custom="01:20:13,800" to-custom="01:20:17,554"/>Mais vous ne savez donc pas avec quoi</l>
+<l>je m'enivre, c'est avec</l>
+
+<l><date from-custom="01:20:17,640" to-custom="01:20:21,633"/>de l'eau toute pure! -De l'eau!</l>
+<l>Oui, et pas n'importe quelle eau,</l>
+
+<l><date from-custom="01:20:21,720" to-custom="01:20:26,271"/>l'eau du fleuve Léthé...</l>
+<l>eh oui, c'est pour oublier que je bois,</l>
+
+<l><date from-custom="01:20:26,600" to-custom="01:20:30,354"/>c'est pour oublier la triste condition</l>
+<l>où je suis tombé!</l>
+
+<l><date from-custom="01:20:31,000" to-custom="01:20:33,753"/>Quelle drôle d'idée!</l>
+<l>-C'est une idée d'homme libre,</l>
+
+<l><date from-custom="01:20:33,840" to-custom="01:20:38,311"/>c'est une idée d'homme fier, qui se</l>
+<l>souvient de sa splendeur passée...</l>
+
+<l><date from-custom="01:20:39,000" to-custom="01:20:43,391"/>Bien sûr cette habitude me gêne bien</l>
+<l>parfois dans mon service, par exemple,</l>
+
+<l><date from-custom="01:20:43,520" to-custom="01:20:47,832"/>quand mon maître me donne un ordre,</l>
+<l>je bois, par fierté, avant de lui obéir.</l>
+
+<l><date from-custom="01:20:47,920" to-custom="01:20:53,916"/>Alors j'oublie l'ordre qu'il ma donné...</l>
+<l>Il me le redonne, alors je rebois,</l>
+
+<l><date from-custom="01:20:54,160" to-custom="01:20:57,232"/>je réoublie</l>
+
+<l><date from-custom="01:20:57,400" to-custom="01:21:00,710"/>et ça dure comme ça</l>
+<l>des journées entières...</l>
+
+<l><date from-custom="01:21:00,840" to-custom="01:21:05,914"/>remarquez il s'en fiche,</l>
+<l>il me trouve intelligent...</l>
+
+<l><date from-custom="01:21:07,520" to-custom="01:21:11,229"/>Mais il est une chose</l>
+<l>que je n'oublierai jamais,</l>
+
+<l><date from-custom="01:21:11,320" to-custom="01:21:14,312"/>même si je buvais tout le Léthé,</l>
+
+<l><date from-custom="01:21:14,400" to-custom="01:21:17,392"/>c'est la femme adorable,</l>
+
+<l><date from-custom="01:21:17,680" to-custom="01:21:24,233"/>O my lord!</l>
+<l>la femme splendide, oh la la la la!</l>
+
+<l><date from-custom="01:21:24,800" to-custom="01:21:28,793"/>dont on m'a donné la garde</l>
+<l>depuis deux jours...</l>
+
+<l><date from-custom="01:21:28,880" to-custom="01:21:32,634"/>Insolent! -Une chose</l>
+<l>-que j'oublierais, par contre...</l>
+
+<l><date from-custom="01:21:32,720" to-custom="01:21:36,713"/>c'est mes devoirs! -Ah!</l>
+<l>ah, madame!</l>
+
+<l><date from-custom="01:21:39,320" to-custom="01:21:43,518"/>Zut, voilà mon maître. Il faut rentrer.</l>
+<l>-Je ne veux pas! -Ce sont les ordres.</l>
+
+<l><date from-custom="01:21:43,600" to-custom="01:21:47,309"/>Vous me feriez mettre à la porte!</l>
+<l>-Mais enfin, jusqu'à quand durera</l>
+
+<l><date from-custom="01:21:47,400" to-custom="01:21:51,598"/>cette plaisanterie?</l>
+<l>-Plus tard, je vous dirai! Allons!</l>
+
+<l><date from-custom="01:21:59,480" to-custom="01:22:03,712"/>Elle n'est pas là! il a eu le temps</l>
+<l>de la ranger! Ouf! je respire...</l>
+
+<l><date from-custom="01:22:10,480" to-custom="01:22:14,473"/>Tu as de drôles façons de faire les</l>
+<l>honneurs chez toi, toi! -Qui? Moi?</l>
+
+<l><date from-custom="01:22:14,600" to-custom="01:22:18,229"/>Oui, toi! Quand on est poli,</l>
+<l>on fait passer les gens en premier,</l>
+
+<l><date from-custom="01:22:18,320" to-custom="01:22:22,313"/>et on les suit. Où sommes-nous ici?</l>
+<l>-Dans mes petits appartements,</l>
+
+<l><date from-custom="01:22:22,400" to-custom="01:22:26,154"/>dans mon buen retiro, si tu veux.</l>
+<l>C'est là que, fatigué du gouvernement</l>
+
+<l><date from-custom="01:22:26,240" to-custom="01:22:29,994"/>de mon royaume infernal,</l>
+<l>je viens goûter le repos et la solitude.</l>
+
+<l><date from-custom="01:22:30,080" to-custom="01:22:33,311"/>La solitude.</l>
+<l>Je suis sûr qu'elle est ici.</l>
+
+<l><date from-custom="01:22:35,240" to-custom="01:22:39,153"/>Tu cherches quelque chose,</l>
+<l>ô dieu puissant? -Rien, non, merci,</l>
+
+<l><date from-custom="01:22:39,240" to-custom="01:22:43,392"/>j'étudie la construction de ce petit...</l>
+<l>Comment dis-tu déjà?</l>
+
+<l><date from-custom="01:22:43,880" to-custom="01:22:48,396"/>Buen retiro. -Bravo!</l>
+<l>-Je trouve cela très joli, très intime.</l>
+
+<l><date from-custom="01:22:48,680" to-custom="01:22:52,514"/>Qu'est-ce que tu fais là?</l>
+<l>Tu fais des signes à quelqu'un!</l>
+
+<l><date from-custom="01:22:53,480" to-custom="01:22:57,234"/>Qu'est-ce que ça? -Hein? qui?</l>
+<l>Ça! cette perche animée! -Ah!</l>
+
+<l><date from-custom="01:22:58,160" to-custom="01:23:01,914"/>C'est John Styx, mon domestyx,</l>
+<l>mon factotum, un bon garçon,</l>
+
+<l><date from-custom="01:23:02,000" to-custom="01:23:05,231"/>à qui je confie...</l>
+<l>-Tes secrets! Où est-elle?</l>
+
+<l><date from-custom="01:23:05,320" to-custom="01:23:09,074"/>Tu crois encore que j'ai enlevé cette</l>
+<l>petite! -Parfaitement!</l>
+
+<l><date from-custom="01:23:09,160" to-custom="01:23:12,152"/>Laisse-moi passer, ou je tonne! Ah!</l>
+
+<l><date from-custom="01:23:12,920" to-custom="01:23:15,912"/>Cherche, cherche, dieu puissant!</l>
+
+<l><date from-custom="01:23:18,320" to-custom="01:23:21,915"/>Rien!... Rien!...</l>
+
+<l><date from-custom="01:23:25,800" to-custom="01:23:28,792"/>Rien du tout! ah!</l>
+
+<l><date from-custom="01:23:29,080" to-custom="01:23:32,914"/>si... là... une serrure!</l>
+<l>Elle est là! J'en suis sûr!</l>
+
+<l><date from-custom="01:23:33,000" to-custom="01:23:36,675"/>Par mon immortalité,</l>
+<l>sous une forme ou sous une autre,</l>
+
+<l><date from-custom="01:23:36,760" to-custom="01:23:40,594"/>il faut que je pénètre là!</l>
+<l>Rien, tu avais raison.</l>
+
+<l><date from-custom="01:23:40,680" to-custom="01:23:44,673"/>Alors remontons auprès des dieux</l>
+<l>à la fête que je t'ai préparée; ah!</l>
+
+<l><date from-custom="01:23:46,520" to-custom="01:23:49,990"/>une belle fête!</l>
+<l>-Allons, je te rends mon estime.</l>
+
+<l><date from-custom="01:23:50,080" to-custom="01:23:53,914"/>Ce mortel aura voulu se moquer.</l>
+<l>-Un mot encore et je t'emboîte...</l>
+
+<l><date from-custom="01:23:54,320" to-custom="01:23:58,836"/>J'ai une idée! Laissons-lui ma carte...</l>
+<l>Et dans deux secondes je reviens.</l>
+
+<l><date from-custom="01:24:03,920" to-custom="01:24:07,913"/>Mais il faudrait me changer,</l>
+<l>il faudrait que je sois cette fois</l>
+
+<l><date from-custom="01:24:08,040" to-custom="01:24:11,032"/>le plus élégant, les plus petit,</l>
+
+<l><date from-custom="01:24:11,240" to-custom="01:24:15,791"/>les plus fin... ah! je ne sais pas!</l>
+<l>-Ne le perdons pas de vue,</l>
+
+<l><date from-custom="01:24:15,880" to-custom="01:24:19,873"/>il pourrait revenir. -Mais je trouverai,</l>
+<l>-je ne vous dis que ça.</l>
+
+<l><date from-custom="01:24:20,360" to-custom="01:24:23,352"/>Je suis à toi, ô dieu puissant.</l>
+
+<l><date from-custom="01:24:30,000" to-custom="01:24:33,834"/>Je vais regretter mon mari...</l>
+
+<l><date from-custom="01:24:36,520" to-custom="01:24:40,069"/>Je vais regretter mon mari...</l>
+
+<l><date from-custom="01:24:48,080" to-custom="01:24:51,755"/>Ah, ah, ah! papa,</l>
+<l>papa, vous me faites peine!</l>
+
+<l><date from-custom="01:24:51,840" to-custom="01:24:55,515"/>Tiens, c'est Cupidon! Qu'est-ce qu'il</l>
+<l>vient faire là, le galopin?</l>
+
+<l><date from-custom="01:24:55,600" to-custom="01:24:59,070"/>Il vient te sauver, le galopin.</l>
+<l>-Me sauver? -Oui! tu cherches</l>
+
+<l><date from-custom="01:24:59,160" to-custom="01:25:02,914"/>une femme et pour la retrouver,</l>
+<l>tu ne penses pas à moi, l'Amour...</l>
+
+<l><date from-custom="01:25:03,000" to-custom="01:25:07,516"/>Quoi! mon petit chéri, tu ferais ça...</l>
+<l>-Voilà!... galopin, tout à l'heure,</l>
+
+<l><date from-custom="01:25:07,600" to-custom="01:25:11,388"/>petit chéri maintenant...</l>
+<l>Ah! que vous êtes ridicules,</l>
+
+<l><date from-custom="01:25:11,480" to-custom="01:25:16,429"/>hommes et dieux, quand on vous tient...</l>
+<l>car je te tiens, mon papounet...</l>
+
+<l><date from-custom="01:25:16,880" to-custom="01:25:19,917"/>Je le crois!</l>
+<l>-Alors,</l>
+
+<l><date from-custom="01:25:20,680" to-custom="01:25:23,672"/>tu la veux, ton Eurydice?</l>
+
+<l><date from-custom="01:25:23,840" to-custom="01:25:26,070"/>Oui!</l>
+
+<l><date from-custom="01:25:26,240" to-custom="01:25:29,232"/>Oui, je la veux!</l>
+
+<l><date from-custom="01:25:29,720" to-custom="01:25:35,078"/>Laisse-moi faire. Je vais</l>
+<l>te métamorphoser séance tenante.</l>
+
+<l><date from-custom="01:25:35,520" to-custom="01:25:38,990"/>Tu connais, non?</l>
+<l>-Me métamorphoser en quoi?</l>
+
+<l><date from-custom="01:25:39,080" to-custom="01:25:43,312"/>Tu verras. -Je veux savoir d'avance.</l>
+<l>Moi, je veux que tu aies la surprise.</l>
+
+<l><date from-custom="01:25:43,400" to-custom="01:25:48,520"/>Une surprise! C'est que... j'ai besoin</l>
+<l>d'être joli, très joli... tu sais...</l>
+
+<l><date from-custom="01:25:48,840" to-custom="01:25:54,198"/>Tu seras... très joli, joli...</l>
+<l>Attention au changement, papa!</l>
+
+<l><date from-custom="01:25:54,920" to-custom="01:25:58,674"/>Attention! -En quoi</l>
+<l>-va-t-il me mettre, le malheureux.</l>
+
+<l><date from-custom="01:26:02,120" to-custom="01:26:05,396"/>Pour attirer du fond de sa retraite</l>
+
+<l><date from-custom="01:26:05,600" to-custom="01:26:09,149"/>une souris qui cache son museau,</l>
+
+<l><date from-custom="01:26:09,400" to-custom="01:26:12,517"/>non loin du nez la petite bête,</l>
+
+<l><date from-custom="01:26:12,760" to-custom="01:26:15,752"/>il faut semer quelque friand morceau.</l>
+
+<l><date from-custom="01:26:15,920" to-custom="01:26:19,515"/>Je sais un autre stratagème</l>
+
+<l><date from-custom="01:26:19,760" to-custom="01:26:22,752"/>qui doit faire de son réduit</l>
+
+<l><date from-custom="01:26:22,920" to-custom="01:26:28,790"/>sortir une femme qu'on aime:</l>
+<l>ce stratagème, c'est un bruit;</l>
+
+<l><date from-custom="01:26:29,280" to-custom="01:26:33,273"/>Mais il faut que ce joli bruit</l>
+<l>soit bien mignon et bien gentil!</l>
+
+<l><date from-custom="01:26:33,480" to-custom="01:26:35,914"/>Ah!</l>
+
+<l><date from-custom="01:26:39,560" to-custom="01:26:43,314"/>Allez-y, la p'tit' bête</l>
+<l>va répondre au bruit,</l>
+
+<l><date from-custom="01:26:46,920" to-custom="01:26:51,516"/>la p'tit' bête va répondre au bruit!</l>
+
+<l><date from-custom="01:26:55,120" to-custom="01:26:58,874"/>Allez-y, la p'tit' bête</l>
+<l>va répondre au bruit,</l>
+
+<l><date from-custom="01:27:02,440" to-custom="01:27:07,309"/>la p'tit' bête va répondre au bruit!</l>
+
+<l><date from-custom="01:27:15,440" to-custom="01:27:18,910"/>Lorsque l'on veut attirer l'alouette,</l>
+
+<l><date from-custom="01:27:19,240" to-custom="01:27:23,392"/>on fait briller un miroir à ses yeux</l>
+
+<l><date from-custom="01:27:23,520" to-custom="01:27:26,751"/>et sans retard on voit la coquette</l>
+
+<l><date from-custom="01:27:26,920" to-custom="01:27:30,071"/>en voltigeant accourir à ses feux!</l>
+
+<l><date from-custom="01:27:30,240" to-custom="01:27:33,994"/>Une femme, c'est tout de même,</l>
+
+<l><date from-custom="01:27:34,320" to-custom="01:27:37,357"/>par sa faiblesse qu'on la séduit;</l>
+
+<l><date from-custom="01:27:38,160" to-custom="01:27:43,792"/>tout ce qu'elle veut, c'est qu'on l'aime</l>
+<l>et c'est ainsi qu'on le lui dit,</l>
+
+<l><date from-custom="01:27:44,160" to-custom="01:27:48,153"/>mais il faut que cela soit dit</l>
+<l>d'un air mignon bien gentil!</l>
+
+<l><date from-custom="01:27:48,520" to-custom="01:27:50,988"/>Ah!</l>
+
+<l><date from-custom="01:27:55,120" to-custom="01:27:58,908"/>Allez-y, la p'tit' bête</l>
+<l>va répondre au bruit,</l>
+
+<l><date from-custom="01:28:02,600" to-custom="01:28:07,594"/>la p'tit' bête va répondre au bruit!</l>
+
+<l><date from-custom="01:28:11,400" to-custom="01:28:15,154"/>Allez-y, la p'tit' bête</l>
+<l>va répondre au bruit,</l>
+
+<l><date from-custom="01:28:18,680" to-custom="01:28:24,232"/>la p'tit' bête va répondre au bruit!</l>
+
+<l><date from-custom="01:28:32,760" to-custom="01:28:35,752"/>A la une... à la deux... à la trois!</l>
+
+<l><date from-custom="01:28:38,600" to-custom="01:28:41,592"/>Une mouche!</l>
+
+<l><date from-custom="01:28:41,920" to-custom="01:28:45,833"/>Elégant, petit et fin,</l>
+<l>comme ça tu passeras partout!</l>
+
+<l><date from-custom="01:29:09,160" to-custom="01:29:13,995"/>Il m'a semblé sur mon épaule</l>
+<l>sentir un doux frémissement!</l>
+
+<l><date from-custom="01:29:22,440" to-custom="01:29:27,070"/>Il s'agit de jouer mon rôle</l>
+<l>plus un mot! Car dès ce moment</l>
+
+<l><date from-custom="01:29:27,320" to-custom="01:29:31,996"/>je n'ai droit qu'au bourdonnement!</l>
+
+<l><date from-custom="01:29:32,400" to-custom="01:29:36,393"/>Je n'ai droit qu'au bourdonnement!</l>
+
+<l><date from-custom="01:29:36,840" to-custom="01:29:41,072"/>Zi... zi...</l>
+
+<l><date from-custom="01:29:42,240" to-custom="01:29:44,754"/>zi...</l>
+
+<l><date from-custom="01:29:44,840" to-custom="01:29:48,230"/>Ah! la belle mouche!</l>
+<l>-Zi...</l>
+
+<l><date from-custom="01:29:50,080" to-custom="01:29:54,870"/>Le joli fredon! Ah! la belle mouche!</l>
+<l>-Zi...</l>
+
+<l><date from-custom="01:29:55,240" to-custom="01:29:58,994"/>Le joli fredon!</l>
+<l>-Zi! Ma chanson la touche,</l>
+
+<l><date from-custom="01:29:59,160" to-custom="01:30:03,517"/>chantons, chantons ma chanson!</l>
+<l>-La belle mouche!</l>
+
+<l><date from-custom="01:30:04,320" to-custom="01:30:07,312"/>Ma chanson la touche,</l>
+
+<l><date from-custom="01:30:08,240" to-custom="01:30:11,232"/>chantons ma chanson!</l>
+
+<l><date from-custom="01:30:12,240" to-custom="01:30:15,994"/>Ah, la belle mouche!</l>
+
+<l><date from-custom="01:30:16,320" to-custom="01:30:20,916"/>Le joli fredon!</l>
+
+<l><date from-custom="01:30:23,840" to-custom="01:30:27,833"/>Bel insecte à l'aile dorée</l>
+<l>veux-tu rester mon compagnon?</l>
+
+<l><date from-custom="01:30:28,040" to-custom="01:30:31,476"/>Zi...</l>
+
+<l><date from-custom="01:30:31,840" to-custom="01:30:35,992"/>Ces lieux dont du forças l'entrée,</l>
+<l>hélas, me servent de prison.</l>
+
+<l><date from-custom="01:30:36,160" to-custom="01:30:39,675"/>Zi...</l>
+
+<l><date from-custom="01:30:40,320" to-custom="01:30:43,756"/>Ne me quitte pas, je t'en prie,</l>
+
+<l><date from-custom="01:30:44,320" to-custom="01:30:47,835"/>reste, on prendra bien soin de toi!</l>
+
+<l><date from-custom="01:30:48,160" to-custom="01:30:50,230"/>Ah!</l>
+
+<l><date from-custom="01:30:50,320" to-custom="01:30:54,518"/>je t'aimerai, mouche jolie,</l>
+<l>reste avec moi, reste avec moi!</l>
+
+<l><date from-custom="01:30:54,760" to-custom="01:30:58,036"/>Je t'aimerai, mouche jolie,</l>
+
+<l><date from-custom="01:30:58,440" to-custom="01:31:05,391"/>ah!</l>
+
+<l><date from-custom="01:31:10,320" to-custom="01:31:14,632"/>Quand on veut se faire adorer</l>
+<l>il faut se laisser désirer.</l>
+
+<l><date from-custom="01:31:15,200" to-custom="01:31:19,591"/>Je la tiens par son aile d'or!</l>
+<l>-Pas encore! Pas encore!</l>
+
+<l><date from-custom="01:31:20,000" to-custom="01:31:24,471"/>Je la tiens par son aile d'or!</l>
+<l>-Pas encore! Pas encore!</l>
+
+<l><date from-custom="01:31:24,840" to-custom="01:31:29,595"/>Fi, la méchante, la méchante...</l>
+<l>-J'ai pris des ailes, ma charmante...</l>
+
+<l><date from-custom="01:31:29,840" to-custom="01:31:34,311"/>Fi, la méchante, la méchante...</l>
+<l>-J'ai pris des ailes, ma charmante...</l>
+
+<l><date from-custom="01:31:34,400" to-custom="01:31:39,520"/>Elle ne cherche qu'a me fuir!...</l>
+<l>-j'ai bien le droit de m'en servir!...</l>
+
+<l><date from-custom="01:31:41,000" to-custom="01:31:43,992"/>De cette gaze légère,</l>
+
+<l><date from-custom="01:31:44,480" to-custom="01:31:48,996"/>sans l'étouffer, je puis faire</l>
+
+<l><date from-custom="01:31:49,080" to-custom="01:31:53,392"/>un filet à papillon.</l>
+
+<l><date from-custom="01:31:54,240" to-custom="01:31:58,153"/>Attention! Attention!</l>
+
+<l><date from-custom="01:31:58,240" to-custom="01:32:01,630"/>Ah! la voilà prise! plus de résistance!</l>
+
+<l><date from-custom="01:32:01,720" to-custom="01:32:04,712"/>La voilà prise, la voilà prise!</l>
+
+<l><date from-custom="01:32:05,080" to-custom="01:32:10,916"/>La plus prise des deux</l>
+<l>n'est pas celle qu'on pense,</l>
+
+<l><date from-custom="01:32:11,920" to-custom="01:32:17,916"/>la plus prise des deux</l>
+<l>n'est pas celle qu'on pense!</l>
+
+<l><date from-custom="01:32:18,400" to-custom="01:32:21,392"/>Chante, chante!</l>
+<l>-Zi!</l>
+
+<l><date from-custom="01:32:21,840" to-custom="01:32:24,832"/>Chante, chante!</l>
+<l>-Zi!</l>
+
+<l><date from-custom="01:32:24,920" to-custom="01:32:28,230"/>Zi! -Zi!</l>
+<l>Zi! -Zi!</l>
+
+<l><date from-custom="01:32:28,320" to-custom="01:32:32,154"/>Ah...</l>
+
+<l><date from-custom="01:32:32,320" to-custom="01:32:36,074"/>Zi, zi, zi, zi...</l>
+<l>-Zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:32:36,240" to-custom="01:32:40,916"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:32:41,520" to-custom="01:32:46,310"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+<l>-Zi...</l>
+
+<l><date from-custom="01:32:46,600" to-custom="01:32:50,912"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+<l>-Zi...</l>
+
+<l><date from-custom="01:32:51,160" to-custom="01:32:56,075"/>Zi, zi, zi, -Zi, zi, zi,</l>
+<l>Zi, zi, zi, -Zi, zi, zi,</l>
+
+<l><date from-custom="01:32:56,240" to-custom="01:33:00,995"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:33:01,600" to-custom="01:33:05,513"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:33:05,760" to-custom="01:33:10,231"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+<l>-Zi, zi, zi, zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:33:10,480" to-custom="01:33:17,158"/>Zi, zi, zi, zi, zi, zi, zi...</l>
+<l>-Zi, zi, zi, zi, zi, zi, zi...</l>
+
+<l><date from-custom="01:33:17,400" to-custom="01:33:24,511"/>Ah! je la tiens! Ah! je la tiens,</l>
+<l>je la tiens! Ah! je la tiens!...</l>
+
+<l><date from-custom="01:33:25,320" to-custom="01:33:27,834"/>Je la tiens!</l>
+
+<l><date from-custom="01:33:28,080" to-custom="01:33:30,833"/>Ah! Zi, zi, zi...</l>
+
+<l><date from-custom="01:33:30,920" to-custom="01:33:38,395"/>Ah, ah, ah...</l>
+
+<l><date from-custom="01:33:38,920" to-custom="01:33:42,515"/>C'est charmant!</l>
+
+<l><date from-custom="01:33:57,600" to-custom="01:34:00,592"/>Ah, je le savais bien</l>
+
+<l><date from-custom="01:34:00,840" to-custom="01:34:04,230"/>que je t'attraperais,</l>
+<l>petit bijou ailé!</l>
+
+<l><date from-custom="01:34:04,320" to-custom="01:34:07,392"/>Maintenant tu es à moi,</l>
+<l>et pour toujours;</l>
+
+<l><date from-custom="01:34:07,480" to-custom="01:34:11,234"/>tu seras la consolation</l>
+<l>de la pauvre prisonnière! Ah!</l>
+
+<l><date from-custom="01:34:11,320" to-custom="01:34:14,756"/>Mais voyez!</l>
+<l>qu'elle est gracieuse!</l>
+
+<l><date from-custom="01:34:14,960" to-custom="01:34:18,919"/>Quelles belles couleurs!</l>
+<l>quelle taille fine! Et ces ailes d'or!</l>
+
+<l><date from-custom="01:34:19,000" to-custom="01:34:21,992"/>ma petite mouche, tiens!</l>
+
+<l><date from-custom="01:34:22,480" to-custom="01:34:26,473"/>Eh bien! tout cela est à toi,</l>
+<l>si tu le veux, ô mortelle adorée!</l>
+
+<l><date from-custom="01:34:26,600" to-custom="01:34:30,309"/>Dieux puissants! elle parle!</l>
+<l>au secours!</l>
+
+<l><date from-custom="01:34:30,400" to-custom="01:34:34,154"/>Mais tais-toi! regarde,</l>
+<l>je ne suis pas une mouche,</l>
+
+<l><date from-custom="01:34:34,240" to-custom="01:34:37,994"/>j'ai pris ce costume pour tromper</l>
+<l>les regards du tyran jaloux</l>
+
+<l><date from-custom="01:34:38,080" to-custom="01:34:41,834"/>qui veut te torturer.</l>
+<l>-Est-il possible! Qui donc es-tu?</l>
+
+<l><date from-custom="01:34:41,920" to-custom="01:34:45,799"/>Moi? Je déclare ici, la vérité</l>
+<l>m'y pousse! que je suis ton amant,</l>
+
+<l><date from-custom="01:34:45,880" to-custom="01:34:48,997"/>Jupiter Barberousse!</l>
+<l>-Ah.</l>
+
+<l><date from-custom="01:34:49,080" to-custom="01:34:52,993"/>Oui... c'est moi, le roi des dieux!</l>
+<l>Tu me vois de tes yeux...</l>
+
+<l><date from-custom="01:34:53,160" to-custom="01:34:55,230"/>Ah!</l>
+
+<l><date from-custom="01:34:55,320" to-custom="01:34:59,074"/>Oui, je le dis,</l>
+<l>si je t'avais connue, plus tôt</l>
+
+<l><date from-custom="01:34:59,160" to-custom="01:35:03,153"/>Pluton ne t'aurait pas enlevée...</l>
+<l>Je t'aurais montée dans l'Olympe.</l>
+
+<l><date from-custom="01:35:03,240" to-custom="01:35:07,074"/>L'Olympe!</l>
+<l>tu m'aurais fait voir l'Olympe</l>
+
+<l><date from-custom="01:35:07,160" to-custom="01:35:11,073"/>et quitter cet affreux séjour...</l>
+<l>Oh! fuyons, emmène-moi!</l>
+
+<l><date from-custom="01:35:11,160" to-custom="01:35:15,153"/>Cependant, il faut que je retourne à la</l>
+<l>fête que donne cette idiot de Pluton!</l>
+
+<l><date from-custom="01:35:15,240" to-custom="01:35:19,233"/>C'est le seul moyen de ne pas éveiller</l>
+<l>les soupçons... rejoins-m'y! -Hein?</l>
+
+<l><date from-custom="01:35:19,600" to-custom="01:35:24,071"/>Rejoins-m'y, je dis! -Jeudi?</l>
+<l>Non! rejoins-moi tout à l'heure sous</l>
+
+<l><date from-custom="01:35:24,480" to-custom="01:35:30,157"/>un déguisement, et à la faveur de la</l>
+<l>sortie générale, j't'emmène dans le tas.</l>
+
+<l><date from-custom="01:35:30,520" to-custom="01:35:33,592"/>Ce que Dieu veut, femme le veut!</l>
+
+<l><date from-custom="01:35:36,160" to-custom="01:35:39,152"/>A toit! Jupiter... forever!</l>
+
+<l><date from-custom="01:35:41,280" to-custom="01:35:44,317"/>Dans une heure! Oh!</l>
+
+<l><date from-custom="01:35:44,560" to-custom="01:35:47,632"/>je suis un insecte bien heureux!</l>
+
+<l><date from-custom="01:35:48,080" to-custom="01:35:51,914"/>Mouche! mouche! mouche! mouche!</l>
+
+<l><date from-custom="01:35:52,160" to-custom="01:35:55,516"/>mouche! mouche! mouche! mouche!</l>
+
+<l><date from-custom="01:35:59,240" to-custom="01:36:03,233"/>mouche. Si j'étais roi de Béotie...</l>
+
+<l><date from-custom="01:36:03,320" to-custom="01:36:08,314"/>Où est-elle? La mouche? Où est</l>
+<l>la mouche? Ah! John! as-tu vu la mouche?</l>
+
+<l><date from-custom="01:36:08,480" to-custom="01:36:12,792"/>Quelle mouche?</l>
+<l>...tu serais reine sur ma foi.</l>
+
+<l><date from-custom="01:36:12,880" to-custom="01:36:15,872"/>Eh! Rigole,</l>
+
+<l><date from-custom="01:36:15,960" to-custom="01:36:18,952"/>Mémento! Remember!</l>
+
+<l><date from-custom="01:36:19,320" to-custom="01:36:22,312"/>Remember?</l>
+
+<l><date from-custom="01:36:23,160" to-custom="01:36:26,596"/>Si j'étais roi de Béotie,</l>
+
+<l><date from-custom="01:36:26,760" to-custom="01:36:31,117"/>tu serais reine sur ma foi!</l>
+
+<l><date from-custom="01:36:31,640" to-custom="01:36:34,632"/>Je ne puis plus qu'en effigie</l>
+
+<l><date from-custom="01:36:34,720" to-custom="01:36:38,918"/>Ce n'est pas un homme, c'est un orgue!</l>
+<l>-t'offrir ma puissance de roi!</l>
+
+<l><date from-custom="01:36:39,760" to-custom="01:36:43,639"/>La plus belle ombre ma chérie</l>
+<l>-La plus belle ombre ma chérie</l>
+
+<l><date from-custom="01:36:43,720" to-custom="01:36:47,838"/>ne peut donner que ce qu'elle a,</l>
+<l>-Ah! Tu es un collègue...</l>
+
+<l><date from-custom="01:36:48,040" to-custom="01:36:55,594"/>accepte donc, je t'en supplie,</l>
+<l>dans l'enveloppe que voilà</l>
+
+<l><date from-custom="01:36:56,080" to-custom="01:36:59,231"/>le cœur d'un roi de Béotie,</l>
+
+<l><date from-custom="01:36:59,400" to-custom="01:37:08,354"/>le cœur d'un roi de Béotie!</l>
+
+<l><date from-custom="01:37:08,440" to-custom="01:37:11,432"/>Va-t-en, je ne veux plus te voir!</l>
+
+<l><date from-custom="01:37:11,680" to-custom="01:37:14,672"/>Trahi, trahi par tout le monde!</l>
+
+<l><date from-custom="01:37:14,960" to-custom="01:37:18,919"/>Mais c'est à prendre sa tête</l>
+<l>et à se la fouler aux pieds!</l>
+
+<l><date from-custom="01:37:19,240" to-custom="01:37:22,516"/>Cette mouche! Qui me livrera la mouche!</l>
+
+<l><date from-custom="01:37:22,600" to-custom="01:37:26,309"/>Ah tu veux le retrouver</l>
+<l>le bel insecte diapré!</l>
+
+<l><date from-custom="01:37:26,400" to-custom="01:37:30,154"/>Eh bien écoute, regarde,</l>
+<l>et surtout, attends!</l>
+
+<l><date from-custom="01:37:59,040" to-custom="01:38:02,032"/>La mouche! La mouche! La mouche!</l>
+
+<l><date from-custom="01:40:34,680" to-custom="01:40:40,073"/>Vive le vin! Vive Pluton!...</l>
+<l>Et nargue du qu'en dira-t-on!</l>
+
+<l><date from-custom="01:40:40,320" to-custom="01:40:45,314"/>Vive le vin! Vive Pluton!...</l>
+<l>Et nargue du qu'en dira-t-on!</l>
+
+<l><date from-custom="01:40:45,600" to-custom="01:40:51,152"/>La divine cohorte</l>
+<l>que ce vieux vin transporte...</l>
+
+<l><date from-custom="01:40:51,400" to-custom="01:40:56,918"/>chante le dieu qui porte</l>
+<l>la couronne de fer!...</l>
+
+<l><date from-custom="01:40:58,240" to-custom="01:41:02,552"/>Chante le dieu qui porte</l>
+<l>la couronne de fer,</l>
+
+<l><date from-custom="01:41:03,840" to-custom="01:41:06,832"/>la couronne de fer!</l>
+
+<l><date from-custom="01:41:07,480" to-custom="01:41:13,112"/>Sa demeure chérie</l>
+<l>sera notre patrie,</l>
+
+<l><date from-custom="01:41:13,360" to-custom="01:41:18,878"/>sa demeure chérie</l>
+<l>sera notre patrie.</l>
+
+<l><date from-custom="01:41:19,320" to-custom="01:41:24,348"/>Si l'on comprend la vie,</l>
+<l>amis, c'est en enfer,</l>
+
+<l><date from-custom="01:41:24,520" to-custom="01:41:27,478"/>c'est en enfer!</l>
+
+<l><date from-custom="01:41:27,600" to-custom="01:41:34,199"/>Si l'on comprend la vie,</l>
+<l>amis, c'est en enfer,</l>
+
+<l><date from-custom="01:41:34,360" to-custom="01:41:38,512"/>si l'on comprend la vie,</l>
+<l>amis, c'est dans l'enfer...</l>
+
+<l><date from-custom="01:41:38,600" to-custom="01:41:41,319"/>Amis!</l>
+
+<l><date from-custom="01:41:41,400" to-custom="01:41:46,315"/>Vive le vin! Vive Pluton!...</l>
+<l>Et nargue du qu'en dira-t-on!</l>
+
+<l><date from-custom="01:41:46,680" to-custom="01:41:52,232"/>Vive le vin! Vive Pluton!...</l>
+<l>Et nargue du qu'en dira-t-on!</l>
+
+<l><date from-custom="01:41:52,360" to-custom="01:41:57,718"/>Vive le vin! Vive Pluton!</l>
+<l>Vive le vin! Vive Pluton!...</l>
+
+<l><date from-custom="01:41:57,920" to-custom="01:42:02,994"/>Vive le vin! Vive Pluton!</l>
+<l>Vive le vin! Vive Pluton!...</l>
+
+<l><date from-custom="01:42:03,240" to-custom="01:42:11,477"/>Vive le vin! Vive Pluton!</l>
+<l>Et nargue du qu'en dira-t-on!</l>
+
+<l><date from-custom="01:42:11,920" to-custom="01:42:14,912"/>Vive Pluton!</l>
+
+<l><date from-custom="01:42:28,480" to-custom="01:42:33,600"/>Allons, ma belle bacchante,</l>
+
+<l><date from-custom="01:42:39,560" to-custom="01:42:44,588"/>mortelle émule de Vénus!</l>
+
+<l><date from-custom="01:42:46,400" to-custom="01:42:49,153"/>C'est moi!</l>
+
+<l><date from-custom="01:42:49,240" to-custom="01:42:56,078"/>Chante-nous, de ta voix charmante</l>
+
+<l><date from-custom="01:42:56,760" to-custom="01:43:02,835"/>chante-nous ton hymne à Bacchus!</l>
+
+<l><date from-custom="01:43:03,760" to-custom="01:43:10,836"/>Chante, chante, belle bacchante</l>
+
+<l><date from-custom="01:43:11,320" to-custom="01:43:19,910"/>Chante-nous ton hymne à Bacchus!</l>
+
+<l><date from-custom="01:43:22,840" to-custom="01:43:27,755"/>J'ai vu le Dieu Bacchus</l>
+<l>sur sa roche fertile</l>
+
+<l><date from-custom="01:43:29,400" to-custom="01:43:34,599"/>donnant à ses sujets</l>
+<l>ses joyeuses leçons,</l>
+
+<l><date from-custom="01:43:35,200" to-custom="01:43:40,354"/>le Faune au Pied de chèvre</l>
+<l>et la Nymphe docile</l>
+
+<l><date from-custom="01:43:40,440" to-custom="01:43:43,432"/>répétaient ses chansons!</l>
+
+<l><date from-custom="01:43:43,560" to-custom="01:43:47,314"/>Répétaient ses chansons!</l>
+<l>-Répétaient ses chansons!</l>
+
+<l><date from-custom="01:43:47,600" to-custom="01:43:51,149"/>Evohé! Evohé!</l>
+
+<l><date from-custom="01:43:51,320" to-custom="01:43:56,474"/>Evohé! Bacchus m'inspire!</l>
+<l>Evohé! je sens en moi,</l>
+
+<l><date from-custom="01:43:56,840" to-custom="01:44:01,914"/>Evohé! son saint délire,</l>
+<l>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:44:02,240" to-custom="01:44:06,279"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:44:06,640" to-custom="01:44:11,111"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:44:11,360" to-custom="01:44:16,275"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:44:25,960" to-custom="01:44:32,308"/>Laissez, leur disait-il,</l>
+<l>les tristesses moroses,</l>
+
+<l><date from-custom="01:44:33,000" to-custom="01:44:38,279"/>Iaissez les noirs soucis</l>
+<l>aux profanes humains,</l>
+
+<l><date from-custom="01:44:39,040" to-custom="01:44:44,910"/>et vous, couronnez-vous</l>
+<l>de pampres et de roses</l>
+
+<l><date from-custom="01:44:45,040" to-custom="01:44:48,032"/>Ah!</l>
+<l>-qui tombent de mes mains!</l>
+
+<l><date from-custom="01:44:48,120" to-custom="01:44:52,432"/>Qui tombent de mes mains!</l>
+<l>-Qui tombent de mes mains!</l>
+
+<l><date from-custom="01:44:52,920" to-custom="01:44:56,230"/>Evohé! Evohé!</l>
+
+<l><date from-custom="01:44:56,840" to-custom="01:45:02,949"/>Evohé! Bacchus m'inspire!</l>
+<l>Evohé! je sens en moi,</l>
+
+<l><date from-custom="01:45:03,240" to-custom="01:45:08,519"/>Evohé! -son saint délire,</l>
+<l>Evohé! -Bacchus est roi!</l>
+
+<l><date from-custom="01:45:08,840" to-custom="01:45:13,231"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:45:13,680" to-custom="01:45:18,515"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:45:18,760" to-custom="01:45:28,317"/>Evohé, Bacchus est roi!</l>
+
+<l><date from-custom="01:45:37,520" to-custom="01:45:40,910"/>Et voici mon petit corps de ballet!</l>
+<l>-Ah!</l>
+
+<l><date from-custom="01:45:46,640" to-custom="01:45:51,316"/>Maintenant, je veux,</l>
+<l>moi qui suis mince et fluet,</l>
+
+<l><date from-custom="01:45:52,320" to-custom="01:45:57,235"/>comme au temps du grand roi</l>
+<l>danser un menuet.</l>
+
+<l><date from-custom="01:45:57,320" to-custom="01:45:59,834"/>Ah!...</l>
+
+<l><date from-custom="01:46:07,840" to-custom="01:46:13,392"/>Ah!...</l>
+<l>-Ah!...</l>
+
+<l><date from-custom="01:46:13,520" to-custom="01:46:17,991"/>Ce niais de Pluton ne t'a pas reconnue;</l>
+<l>après la danse, nous lèverons le pied!</l>
+
+<l><date from-custom="01:46:19,520" to-custom="01:46:26,039"/>Ah!...</l>
+<l>-Ah!...</l>
+
+<l><date from-custom="01:46:26,200" to-custom="01:46:30,193"/>Cet idiot de Jupiter pense</l>
+<l>que je n'ai pas reconnu la bacchante,</l>
+
+<l><date from-custom="01:46:30,280" to-custom="01:46:35,559"/>mais j'ai l'œil sur eux!</l>
+<l>-Ah!...</l>
+
+<l><date from-custom="01:46:36,760" to-custom="01:46:49,719"/>Ah!...</l>
+
+<l><date from-custom="01:46:56,520" to-custom="01:46:59,512"/>La la la la la!...</l>
+
+<l><date from-custom="01:46:59,600" to-custom="01:47:03,309"/>Le menuet n'est vraiment si charmant</l>
+<l>-La la la la la!...</l>
+
+<l><date from-custom="01:47:03,640" to-custom="01:47:06,791"/>que lorsque Jupin le danse.</l>
+
+<l><date from-custom="01:47:07,400" to-custom="01:47:11,154"/>Le menuet n'est vraiment si charmant</l>
+<l>-La la la la la!...</l>
+
+<l><date from-custom="01:47:11,320" to-custom="01:47:14,312"/>que lorsque Jupin le danse.</l>
+
+<l><date from-custom="01:47:15,280" to-custom="01:47:19,159"/>Comme il tend d'un air coquet</l>
+<l>le jarret:</l>
+
+<l><date from-custom="01:47:19,280" to-custom="01:47:22,317"/>comme il s'élance en cadence!</l>
+
+<l><date from-custom="01:47:23,240" to-custom="01:47:26,994"/>Le menuet n'est vraiment si charmant</l>
+<l>-La la la la la!...</l>
+
+<l><date from-custom="01:47:27,080" to-custom="01:47:30,072"/>que lorsque Jupin le danse.</l>
+
+<l><date from-custom="01:47:31,080" to-custom="01:47:35,995"/>Terpsichore dans ses pas</l>
+<l>n'a pas plus d'appas!</l>
+
+<l><date from-custom="01:47:36,840" to-custom="01:47:41,675"/>Terpsichore dans ses pas</l>
+<l>n'a pas plus d'appas!</l>
+
+<l><date from-custom="01:47:42,520" to-custom="01:47:47,719"/>Terpsichore dans ses pas</l>
+<l>n'a pas plus d'appas!</l>
+
+<l><date from-custom="01:47:48,520" to-custom="01:47:53,230"/>Terpsichore dans ses pas</l>
+<l>n'a pas plus d'appas!</l>
+
+<l><date from-custom="01:47:55,720" to-custom="01:47:59,554"/>Le menuet n'est vraiment si charmant</l>
+<l>-La la la la la!...</l>
+
+<l><date from-custom="01:47:59,920" to-custom="01:48:02,912"/>que lorsque Jupin le danse.</l>
+
+<l><date from-custom="01:48:03,800" to-custom="01:48:07,554"/>Le menuet n'est vraiment si charmant</l>
+<l>-La la la la la!...</l>
+
+<l><date from-custom="01:48:07,840" to-custom="01:48:14,757"/>que lorsque Jupin,</l>
+<l>lorsque Jupin le danse.</l>
+
+<l><date from-custom="01:49:02,000" to-custom="01:49:06,516"/>Ce bal est original;</l>
+<l>d'un galop infernal</l>
+
+<l><date from-custom="01:49:06,600" to-custom="01:49:11,071"/>donnons tous le signal!</l>
+<l>Vive le galop infernal!</l>
+
+<l><date from-custom="01:49:11,160" to-custom="01:49:15,676"/>Donnons le signal</l>
+<l>d'un galop infernal!</l>
+
+<l><date from-custom="01:49:15,760" to-custom="01:49:21,312"/>Amis, vive le bal!</l>
+<l>vive le bal!...</l>
+
+<l><date from-custom="01:49:35,920" to-custom="01:49:40,232"/>La la la la la!...</l>
+
+<l><date from-custom="01:49:40,520" to-custom="01:49:44,911"/>La la la la la!...</l>
+
+<l><date from-custom="01:49:45,240" to-custom="01:49:50,234"/>La la la la la!...</l>
+
+<l><date from-custom="01:49:50,520" to-custom="01:49:54,513"/>La la la la la!...</l>
+
+<l><date from-custom="01:49:54,760" to-custom="01:50:04,237"/>La la la la la!</l>
+
+<l><date from-custom="01:50:06,520" to-custom="01:50:09,512"/>Ah!</l>
+
+<l><date from-custom="01:50:23,240" to-custom="01:50:26,994"/>Et maintenant, fuyons...</l>
+<l>-Oui, profitons du souffle</l>
+
+<l><date from-custom="01:50:27,080" to-custom="01:50:30,072"/>qui nous reste... fuyons...</l>
+
+<l><date from-custom="01:50:30,920" to-custom="01:50:34,913"/>Où donc? -Que veut cet audacieux?</l>
+<l>Ah! plus de dignité? Crois-tu que</l>
+
+<l><date from-custom="01:50:35,000" to-custom="01:50:38,834"/>je ne sais pas ce qui se passe ici</l>
+<l>depuis 2 heures? Tu crois que sous</l>
+
+<l><date from-custom="01:50:38,920" to-custom="01:50:42,674"/>ce costume je n'ai pas reconnu la femme.</l>
+<l>-Que tu n'avais pas enlevée...</l>
+
+<l><date from-custom="01:50:42,760" to-custom="01:50:46,753"/>Eh bien, oui! Mais je m'en repens!</l>
+<l>-Que dit il? -Que tu t'es conduite</l>
+
+<l><date from-custom="01:50:46,840" to-custom="01:50:50,753"/>avec moi comme... -Peuh!</l>
+<l>avec ton mari, diable! Tu m'as flanqué</l>
+
+<l><date from-custom="01:50:50,840" to-custom="01:50:54,116"/>mon envers à l'enfer,</l>
+<l>mon enfer à l'envers...</l>
+
+<l><date from-custom="01:50:54,200" to-custom="01:50:57,715"/>Il sait tout!</l>
+<l>-Riez, allez, riez!...</l>
+
+<l><date from-custom="01:50:58,160" to-custom="01:51:01,914"/>La farce est bonne... mais vous</l>
+<l>ne la porterez pas au Paradis!</l>
+
+<l><date from-custom="01:51:02,000" to-custom="01:51:05,993"/>Et qui m'en empêcherait, si je voulais?</l>
+<l>-Qui? Toi-même! -Que veut-il dire?</l>
+
+<l><date from-custom="01:51:06,080" to-custom="01:51:10,392"/>Et le mari qui va venir!</l>
+<l>le tout petit mari! -Ah mon mari!</l>
+
+<l><date from-custom="01:51:10,960" to-custom="01:51:14,953"/>Je l'avais complètement oublié!</l>
+<l>-Ça t'arrive quelquefois! -Et moi aussi!</l>
+
+<l><date from-custom="01:51:15,040" to-custom="01:51:19,033"/>Et la promesse que tu lui avais faite,</l>
+<l>tu l'as oubliée? Tu verras, ce n'est pas</l>
+
+<l><date from-custom="01:51:19,120" to-custom="01:51:23,272"/>à moi que tu va rendre Eurydice, c'est à</l>
+<l>lui! -Maladroit! Qu'ai-je promis?</l>
+
+<l><date from-custom="01:51:27,000" to-custom="01:51:29,036"/>Ah!</l>
+
+<l><date from-custom="01:51:34,000" to-custom="01:51:38,516"/>La position se tend! Je vais élever</l>
+<l>la dialogue avec la situation!</l>
+
+<l><date from-custom="01:51:39,320" to-custom="01:51:42,835"/>Je ne parle plus qu'en vers!</l>
+<l>méfiez-vous.</l>
+
+<l><date from-custom="01:51:44,600" to-custom="01:51:48,309"/>Femme, reconnais-tu ce chant de violon?</l>
+
+<l><date from-custom="01:51:49,000" to-custom="01:51:52,788"/>Ce chant qu'il trouve large</l>
+<l>et que je trouve long,</l>
+
+<l><date from-custom="01:51:52,880" to-custom="01:51:56,634"/>c'est celui de l'époux que j'ai...</l>
+<l>-Tu l'as dit, femme!</l>
+
+<l><date from-custom="01:51:56,720" to-custom="01:52:00,190"/>C'est ton époux qui vient</l>
+<l>pour racheter ton âme!</l>
+
+<l><date from-custom="01:52:00,280" to-custom="01:52:03,795"/>Cette âme que j'aimais</l>
+<l>mais que je n'aime plus!</l>
+
+<l><date from-custom="01:52:03,880" to-custom="01:52:07,873"/>Tu connais de Jupin les ordres absolus!</l>
+<l>Ton époux te réclame, on te rend</l>
+
+<l><date from-custom="01:52:07,960" to-custom="01:52:12,715"/>à la terre! C'est un joli cadeau</l>
+<l>que nous allons lui faire! -Jupin!</l>
+
+<l><date from-custom="01:52:12,880" to-custom="01:52:17,317"/>Rassure-toi, pauvre ange, j'ai mon plan!</l>
+<l>Tu n'es pas encore au bras de ton tyran!</l>
+
+<l><date from-custom="01:52:19,600" to-custom="01:52:23,388"/>Que tout rentre dans l'ordre!</l>
+<l>Enfants, de la tenue!</l>
+
+<l><date from-custom="01:52:23,520" to-custom="01:52:27,308"/>Voici qu'au sombre bord</l>
+<l>leur barque est parvenue...</l>
+
+<l><date from-custom="01:52:27,400" to-custom="01:52:31,154"/>Des divins plaisirs</l>
+<l>ils ne soupçonnent rien...</l>
+
+<l><date from-custom="01:52:31,240" to-custom="01:52:36,519"/>Et prenons pour mot d'ordre</l>
+<l>hexamètre et maintien!</l>
+
+<l><date from-custom="01:52:44,160" to-custom="01:52:48,153"/>Oui, je suis convaincu!</l>
+<l>malgré ses injustices, c'est ma femme,</l>
+
+<l><date from-custom="01:52:48,240" to-custom="01:52:51,232"/>et je veux ignorer ses caprices...</l>
+
+<l><date from-custom="01:52:51,400" to-custom="01:52:53,391"/>Ah!</l>
+
+<l><date from-custom="01:52:53,520" to-custom="01:52:57,513"/>Puissant roi des... -Assez, grâce</l>
+<l>-du boniment! Je connais ta demande:</l>
+
+<l><date from-custom="01:52:57,600" to-custom="01:53:01,070"/>Allons-y vivement!</l>
+<l>Fidèle à ma promesse...</l>
+
+<l><date from-custom="01:53:06,920" to-custom="01:53:10,390"/>Fidèle à ma promesse,</l>
+<l>à tes désirs propices,</l>
+
+<l><date from-custom="01:53:10,520" to-custom="01:53:13,990"/>d'accord avec Pluton,</l>
+<l>je te rends Eurydice. Va!</l>
+
+<l><date from-custom="01:53:14,160" to-custom="01:53:18,153"/>Jupiter me comble et Pluton est trop</l>
+<l>bon! -Mais j'y mets, cependant,</l>
+
+<l><date from-custom="01:53:18,240" to-custom="01:53:21,232"/>une condition...</l>
+
+<l><date from-custom="01:53:27,920" to-custom="01:53:31,913"/>...expresse autant qu'inexplicable...</l>
+<l>Que tu n'as pas besoin comprendre,</l>
+
+<l><date from-custom="01:53:32,000" to-custom="01:53:35,993"/>que diable! Vers le Styx, gravement,</l>
+<l>tu vas t'acheminer, en précédant</l>
+
+<l><date from-custom="01:53:36,080" to-custom="01:53:40,312"/>ta femme et sans te retourner! Si, trop</l>
+<l>pressé de voir ton aimable Eurydice,</l>
+
+<l><date from-custom="01:53:40,400" to-custom="01:53:44,393"/>tu désobéissais à ce petit caprice,</l>
+<l>elle t'échapperait pour toujours,</l>
+
+<l><date from-custom="01:53:44,520" to-custom="01:53:48,513"/>cette fois! -Mais ce n'est pas du jeu!</l>
+<l>L'on élève la voix?... Allons,</l>
+
+<l><date from-custom="01:53:48,600" to-custom="01:53:52,912"/>derrière toi va marcher Eurydice; ne te</l>
+<l>retourne pas! J'ai dit! Qu'on obéisse!</l>
+
+<l><date from-custom="01:53:57,560" to-custom="01:54:02,350"/>Ne regarde pas en arrière!</l>
+
+<l><date from-custom="01:54:03,120" to-custom="01:54:08,513"/>A quinze pas fixe les yeux!</l>
+
+<l><date from-custom="01:54:09,400" to-custom="01:54:14,520"/>Ami, pense à la terre,</l>
+
+<l><date from-custom="01:54:15,200" to-custom="01:54:20,149"/>elle nous attend tous les deux.</l>
+
+<l><date from-custom="01:54:20,240" to-custom="01:54:23,232"/>Pour un époux, quel embarras!</l>
+
+<l><date from-custom="01:54:23,320" to-custom="01:54:26,312"/>Il se retournera, se retournera pas!</l>
+
+<l><date from-custom="01:54:26,400" to-custom="01:54:29,472"/>Pour un époux, quel embarras!</l>
+
+<l><date from-custom="01:54:29,680" to-custom="01:54:32,672"/>Il se retournera, se retournera pas!</l>
+
+<l><date from-custom="01:54:32,760" to-custom="01:54:36,196"/>Sur sa curiosité</l>
+<l>aurais-je donc en vain compté?</l>
+
+<l><date from-custom="01:54:36,280" to-custom="01:54:42,355"/>Nous triomphons! Ah! Quelle joie!</l>
+<l>Ah! Quelle joie!</l>
+
+<l><date from-custom="01:54:42,520" to-custom="01:54:47,594"/>Il ne tourne pas! tant pis!</l>
+<l>tant pis! Je le foudroie!</l>
+
+<l><date from-custom="01:54:47,720" to-custom="01:54:49,711"/>Ah!</l>
+
+<l><date from-custom="01:54:50,600" to-custom="01:54:58,234"/>Malheureux, que viens-tu de faire?</l>
+<l>-Un mouvement involontaire!</l>
+
+<l><date from-custom="01:54:58,320" to-custom="01:55:03,599"/>Tu l'as perdue, et pour jamais!</l>
+<l>Elle me reste donc?</l>
+
+<l><date from-custom="01:55:04,440" to-custom="01:55:10,072"/>Pas plus qu'à moi! -Comment?</l>
+<l>Non, car j'en fais une bacchante.</l>
+
+<l><date from-custom="01:55:10,360" to-custom="01:55:14,194"/>Une bacchante!</l>
+
+<l><date from-custom="01:55:14,920" to-custom="01:55:16,911"/>Ah!</l>
+
+<l><date from-custom="01:55:17,160" to-custom="01:55:19,151"/>ah!</l>
+
+<l><date from-custom="01:55:19,320" to-custom="01:55:23,313"/>ah!</l>
+
+<l><date from-custom="01:55:23,800" to-custom="01:55:33,232"/>ah!</l>
+
+<l><date from-custom="01:55:34,080" to-custom="01:55:39,200"/>Bacchus, mon âme légère</l>
+<l>qui n'a pu se faire</l>
+
+<l><date from-custom="01:55:39,400" to-custom="01:55:43,075"/>au bonheur sur terre,</l>
+<l>aspire à toi, divin Bacchus! Reçois</l>
+
+<l><date from-custom="01:55:43,160" to-custom="01:55:47,551"/>la prêtresse, dont la voix sans cesse</l>
+<l>vient chanter l'ivresse à tes élus!</l>
+
+<l><date from-custom="01:55:47,720" to-custom="01:55:52,510"/>La la la la la!...</l>
+
+<l><date from-custom="01:55:52,760" to-custom="01:55:56,514"/>La la la la la!...</l>
+
+<l><date from-custom="01:55:56,760" to-custom="01:56:01,072"/>La la la la la!...</l>
+
+<l><date from-custom="01:56:01,320" to-custom="01:56:05,677"/>La la la la la!</l>
+
+<l><date from-custom="01:57:12,160" to-custom="01:57:16,756"/>Can-Can! Can-Can! Can-Can!...</l>
+
+<l><date from-custom="01:57:22,160" to-custom="01:57:26,039"/>Ce bal est original;</l>
+<l>d'un galop infernal</l>
+
+<l><date from-custom="01:57:26,120" to-custom="01:57:30,113"/>donnons tous le signal!</l>
+<l>Vive le galop infernal!</l>
+
+<l><date from-custom="01:57:30,200" to-custom="01:57:34,193"/>Donnons le signal</l>
+<l>d'un galop infernal!</l>
+
+<l><date from-custom="01:57:34,280" to-custom="01:57:38,273"/>Amis, vive le bal!</l>
+<l>vive le bal!...</l>
+
+<l><date from-custom="01:57:49,560" to-custom="01:57:53,712"/>La la la la la!...</l>
+
+<l><date from-custom="01:57:53,960" to-custom="01:57:57,475"/>La la la la la!...</l>
+
+<l><date from-custom="01:57:57,920" to-custom="01:58:01,595"/>La la la la la!...</l>
+
+<l><date from-custom="01:58:01,920" to-custom="01:58:05,151"/>La la la la la!...</l>
+
+<l><date from-custom="01:58:05,400" to-custom="01:58:08,870"/>La la la la la!...</l>
+
+<l><date from-custom="01:58:09,120" to-custom="01:58:12,908"/>La la la la la!</l>
+
+
+      </body>
+  </text>
+</TEI>
