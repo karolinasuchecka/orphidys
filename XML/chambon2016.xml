@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title type="main">Episode 1 : le mythe d'Orphée et Eurydice. Web-série Les nouvelles Métamorphoses</title>
+            <author>Jacques Chambon, Franck-Emmanuel Comte</author>
+            <editor></editor>
+        </titleStmt>
+        <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+            <respStmt>
+                <name>Karolina Suchecka</name>
+                <resp>Chargé de l'édition</resp>
+            </respStmt>
+            <respStmt>
+                <name>Nathalie Gasiglia</name>
+                <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+                <name>Karl Zieger</name>
+                <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
+                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
+                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
+                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
+                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+                </licence>
+            </availability>
+            <idno>autres/chambon2016.mp4</idno>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl><author>Jacques Chambon, Franck-Emmanuel Comte</author> / <title>Episode 1 : le mythe d'Orphée et Eurydice. Web-série Les nouvelles Métamorphoses</title> / Lyon / Le Concert de l'Hostel Dieu / 2016 / .</bibl> 
+            <biblFull>
+                <titleStmt>
+                    <title>Episode 1 : le mythe d'Orphée et Eurydice. Web-série Les nouvelles Métamorphoses</title>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Le Concert de l'Hostel Dieu</publisher>
+                    <pubPlace>Lyon</pubPlace>
+                    <date when="2016"/>
+                </publicationStmt>
+            </biblFull>
+            <genre>autre</genre>
+            <structure>chambon2016</structure>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+        <creation>
+            <date when="2016">2016</date>
+        </creation>
+        <language>
+            <language>FR</language>
+        </language>
+        <textClass>
+            <keywords>
+                <list>
+                    <item>parodie</item>
+                </list>
+            </keywords>
+        </textClass>
+    </profileDesc>
+</teiHeader><text><front><titlePage>
+        <docAuthor>Jacques Chambon, Franck-Emmanuel Comte</docAuthor>
+        <docTitle>
+          <titlePart type="main">Episode 1 : le mythe d'Orphée et Eurydice. Web-série Les nouvelles Métamorphoses</titlePart>
+        </docTitle>
+      </titlePage></front>
+        
+
+    <front>
+      <castList>
+        <castItem xml:id="ingenieurson">Ingénieur-son</castItem>
+        <castItem xml:id="agentdesecurite">Agent de sécurité</castItem>
+      </castList>
+    </front>
+    <body>
+      
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Vous vous y connaissez en Antiquité ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ah non, j’suis une bille. J’ai jamais été foutu de reconnaître un buffet Henri II d’une commode Louis XIII.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Mais je vous parle pas de meuble, je vous parle de mythes.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ah ben les mites, j’connais. Alors c’est des vraies saloperies ça. Il faut pas hésiter à employer la manière forte. Deux bonnes couches de xylophène et vous êtes tranquilles.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Mais vous le faites exprès ou quoi, je vous parle des mythes de l’Antiquité. La mythologie.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Les dieux ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Oui ! Les dieux, les héros…</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ah mais bien sur j’connais, vous voulez que je vous explique ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Oui.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Bon ben ça c’est pas compliqué. Alors, vous avez les Dieux, bon bah, ça c’est le top niveau, ça c’est des cadors, des tauliers, si vous voulez, hein ? Ensuite, vous avez les demi-dieux. Bon, là on est niveau super-héros. Ensuite, vous avez les héros. Bon, alors là c’est genre Mohamed Ali, Djokovic, tout ça. Et puis, vous avez les mortels, les pauvres types comme vous.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah ouais. Ouais, il n’y a pas à dire, vous m’avez l’air d’être un expert hein !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ben exactement. Et pourquoi vous me demandez ça ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ben parce que, c’est ça la répèt’ ce soir</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Quoi, c’est de la musique de l’Antiquité ?!</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Oui.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Avec de la flûte de Pan et tout ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>La flûte de Pan ? Mais oh, vous vous croyez au Machu Picchu ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Je vous signale quand même que Pan, c’était un Dieu de l’Antiquité et qu’il jouait de la flûte !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Oui, mais c’est pas de la musique de l’Antiquité. C’est de la musique baroque qui évoque les légendes de l’Antiquité.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ah…</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p rend="i">Les Métamorphoses</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Non ! Ovide ? Mais j’adore !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah mais vous vous y connaissez vraiment ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Mais puisque je vous le dis ! Et c’est quoi comme métamorphose ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah j’crois qu’il y a Orphée !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Non !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Si.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Oh la vache !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Qu’est-ce qui vous arrive ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Non mais Orphée, c’est… ça Orphée, ça me donne la chair de poule, regardez, regardez !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah ben ouais mais faut pas vous mettre dans un état pareil ! J’croyais que c’était juste une légende !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Et alors ? Une légende, c’est la vie en plus grand, en plus beau, en plus fort, en plus tragique ! Une légende, c’est la projection cosmique des cataclysmes microscopiques qui se produisent dans le plus intime du cœur des hommes et qu’ils arrivent pas à nommer ! Et Orphée, c’est…</p>
+          <stage rend="i">(Geste de la main droite vers le haut au-dessus de la tête)</stage>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Vous êtes sûr que ça va ? Vous faites flipper là !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Imaginez : deux jeunes, des gamins, des adolescents. Elle, c’est Eurydice, nymphe de la forêt. Elle est belle, elle est lumineuse, elle est pure ! Orphée, lui, c’est le fils de la nymphe Calliope et du roi Thrace. Ou d’Apollon, on sait pas trop parce qu’à l’époque, il y avait pas de test de paternité.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ouais.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>En tout cas, Orphée, c’est un génie de la musique ! Il joue de la lyre comme un Dieu. Il est capable de faire fondre les pierres et d’attendrir les animaux les plus féroces rien qu’en leur jouant un morceau sur son crincrin. Bref, Orphée est en train de revenir d’un voyage avec Jason des Argonautes quand il tombe nez à nez avec Eurydice, et là, PAF !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Coup de foudre.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Exactement.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>C’est vrai que ça aide quand même de savoir jouer d’un truc. Moi j’ai un copain, dès qu’il joue de la guitare, il y a toutes les filles qui le regardent avec des yeux brillants. Pourtant, il a vraiment une sale gueule, hein.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Et bah Orphée, il avait une belle gueule, lui !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Eh oui. Alors bon, ben, ils tombent amoureux l’un de l’autre, ils sortent ensemble, ils se marient, tout va bien, lui, il joue de la lyre, elle, tous les matins, elle va se baigner dans la rivière avec ses copines naïades, bref, la belle vie.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>J’sais pas pourquoi mais… je sens que ça va se gâter.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ben évidemment que ça va se gâter sinon il y aurait pas de légende.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah oui. Ah je sais, elle sait pas nager et elle va se noyer.</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Bon dites, vous me laissez raconter là, hein ? Parce que si c’est pour vous entendre sortir des trucs genre <hi rend="i">Alerte à Malibu</hi>, moi j’aime autant plier les gaules et rentrer chez moi !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Non, non, excusez-moi, allez-y, allez-y…</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Bon, alors il se trouve que dans le coin, il y a une espèce de petit vicelard de berger qui s’appelle Aristée. Et ce petit pervers, il en pince pour la petite Eurydice. Il va jusqu’à même la mater pendant qu’elle se baigne ! Mais elle, elle le calcule même pas ! Alors lui, il devient comme un fou ! Il veut la posséder, il la pourchasse, il la poursuit et elle va pour s’échapper et au moment où elle s’échappe, elle marche sur un serpent venimeux qui la mord et elle meurt !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah merde… il y avait pas d’Aspivenin…</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Non mais dites !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Excusez-moi, mais on peut bien rigoler un peu, non ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Non ! On rigole pas, pas avec Orphée et Eurydice, j’suis désolé !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah… et ensuite ? J’imagine que ça a dû lui mettre un sacré coup à Orphée !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Pensez ! Il était complètement désespéré le pauvre. Alors il décide d’aller dans les Enfers, dans le Royaume des morts, pour ramener Eurydice. Et le voilà parti avec sa lyre. Il arrive à charmer Charon, le passeur, et il arrive à charmer Cerbère, le chien de garde, une espèce de pitbull à trois têtes ! Vous voyez, horrible ! Il arrive même à charmer Pluton, le dieu des morts.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Pourtant, ça a pas l’air d’être un rigolo celui-là !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ah ben non, ça je vous garantis que non. N’empêche que la musique d’Orphée, elle est tellement belle que Pluton, il autorise à ramener Eurydice à une condition ! Qu’il se retourne pas sur elle avant d’avoir atteint le Royaume des vivants.</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ben fastoche !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Fastoche, fastoche, c’est ce que croit Orphée. Et les voilà partis. Lui devant, avec sa lyre, toujours, et elle qui suit derrière. Et au moment, au moment où ils vont atteindre la lumière du jour, Orphée n’entend plus Eurydice… Il panique, et là…</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Il se retourne !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Exactement ! Et là, Eurydice disparaît dans les profondeurs des enfers en poussant un cri horrible : haaaa !</p>
+          <stage>(Il pousse un cri de détresse)</stage>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Et alors, il est retourné la chercher ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Mais non ! Il avait le droit qu’à une seule chance !</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Mais c’est horrible, vous imaginez la culpabilité ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Alors, je vous l’avais pas dit que c’était tragique ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ben si, mais là, à ce point-là… et ensuite, qu’est-ce qu’il est devenu ?</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ben, il est allé s’installer sur une montagne pour cacher son chagrin et chanter son amour pour Eurydice. Alors Dionysos, qui était un brave type, a décidé de le consoler un petit peu et il lui a envoyé ses ménades. Alors les ménades, je vous explique, les ménades, c’est des filles très très gentilles, très très jolies, pas très farouches et pas très habillées si vous voyez ce que je veux dire !</p>
+          <stage rend="i">(Rires)</stage>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Ah oui !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Seulement, Orphée, il les regarde même pas ! Il continue à chanter son amour pour Eurydice. C’est beau, non ?</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>Oui, c’est beau. Bon en même temps, il faut savoir tourner la page. La vie continue. Surtout avec des filles comme les ménades !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Ouais ben Orphée, il veut pas la tourner la page, lui ! Seulement, les ménades, du coup, elles se vexent ! Et comme elles prennent des substances pas très nettes, elles se laissent entraîner dans une frénésie de violence, elles déchiquettent le corps d’Orphée en tout petits morceaux, un peu comme des lardons, vous voyez, et elles balancent le tout à la rivière ! Seulement, la tête d’Orphée, elle continue à flotter et à chanter son amour pour Eurydice… Alors là, les muses, elles se prennent de pitié pour lui et elles décident de l’enterrer au pied du mont Olympe. Mais attention, même enterré, même enterré, Orphée continue à chanter son amour pour Eurydice ! Alors, on fait moins le malin, là ?!</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <stage rend="i">(Pleurant)</stage>
+          <p>Ben là, j’dois dire, que ça m’a secoué un peu votre histoire…</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Allez, vous avez du travail, allez…</p>
+        </sp>
+        <sp who="ingenieurson">
+          <speaker>Ingénieur-son</speaker>
+          <p>J’peux pas avancer, j’peux plus avancer !</p>
+        </sp>
+        <sp who="agentdesecurite">
+          <speaker>Agent de sécurité</speaker>
+          <p>Si, allez-y, vous laissez pas…, voilà, allez !</p>
+        </sp>
+          <label><hi rend="i">Orphée, cantate J-P. Rameau</hi> :</label>
+          <l>Amour,</l>
+          <l>Amour, c’est toi qui fais mon crime.</l>
+          <l>Ne saurais-tu le réparer ?</l>
+          <l>Amour,</l>
+          <l>Amour, c’est toi qui fais mon crime.</l>
+          <l>Ne saurais-tu le réparer ?</l>
+        
+    </body>
+  
+</text></TEI>
