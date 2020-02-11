@@ -1,0 +1,2478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+        <TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée-roi</title>
+                <author>Victor Segalen</author>
+                <editor></editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire 
+                dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » 
+                réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l'édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse 
+                        « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale
+                         innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1)
+                         est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons :
+                          « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera 
+                        le nom du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les 
+                        contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://fr.wikisource.org/wiki/Orph%C3%A9e-Roi</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Victor Segalen</author> / <title>Orphée-roi</title> / Paris / Georges Crès / 1921 / .</bibl> 
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée-roi</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Georges Crès</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1921"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>théâtre</genre>
+                <structure>segalen1921</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et 
+            enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence 
+            à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1921">1921</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>modernisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader><text><front><titlePage>
+            <docAuthor>Victor Segalen</docAuthor>
+            <docTitle>
+              <titlePart type="main">Orphée-roi</titlePart>
+            </docTitle>
+          </titlePage></front>
+    <body>
+      <div>
+        <head>Préface</head>
+        <p>Livrer ce drame, — lyrique s’il en fût — sans un avant-prologue où sa raison d’être s’explique, serait injustice majeure envers le musicien, ingratitude non pas moins grande pour l’ami qui, tous deux inclus dans le même homme Claude Debussy, suscitèrent le drame. Bien que lui, désormais glorieux, si discret du vivant de sa vie, eût défiance ou dédain de toute glose autour de lui, — le survivant étonné qui doit signer ces lignes, bâtir le spectacle sur un nom, ne saurait dissimuler ni vanter les parts intimes de la double tâche élaborée. <anchor xml:id="ii"/>Il faut écrire et maintenir : double élaboration, sans prétendre à l’œuvre commune. Œuvre est accomplissement, singulier s’il se réalise dans un art ; complexe mais harmonieux si deux modes sont donnés. Dans la collaboration authentique d’un musicien et d’un poète, on doit réclamer et subir le don de chacun. Or, ce qui se joue ici ne comporte que les mots sourds volontiers, les mots seuls, les mots sans plus du poète demeuré seul.</p>
+        <p>Voilà pourtant onze années que, d’un accord réfléchi, le poète ayant écrit en l’honneur secret du musicien :</p>
+        <p>« Orphée… Orphée ne fut pas un homme, ni un être vivant ou mort. Orphée : le désir d’entendre et d’être entendu. Le pouvoir dans un monde sonore… »</p>
+        <p>Le musicien répondit :</p>
+        <p>« Orphée ?… Celui de Gluck en représente le côté anecdotique et larmoyant. Le « monde sonore » est un domaine inexploré. Ne pensez-vous pas qu’il y aurait quelque chose d’inouï à faire entendre dans ce nouveau mythe, d’Orphée ? »</p>
+        <p>C’est de là que le germe grandit. De fréquentes causeries s’en suivirent, moins bavardes que <anchor xml:id="iii"/>taciturnes ; pénétrantes plus que dialoguées. Ce qui n’était pas dit agissait. Ce qui se tut ourdissait le silence. Nous cherchions l’incantation des syllabes. Sans confondre — fût-ce le ton d’une voyelle ou le temps d’une appoggiature — deux arts aussi hautainement divers, nous tentions par quelles harmonies ces deux arts coexisteraient avec goût ; comment ils se coexalteraient. Les contours verbaux se sacrifiaient à l’hymne futur. Le lyrisme des mots, — mot lui-même si équivoque, — se renonçait en faveur de l’autre, lyrisme musical, lyrisme de la Lyre : — le chant.</p>
+        <p>Sous les mots se formulaient des êtres et grondait le drame inhumain. Des personnages émergeaient de limbes. Il passait des figurants. Au milieu d’eux, étranger, mortel à tous, se manifestait Orphée-Roi. Il y eut aussi, comme y obligent les tréteaux dressés sur la terre, une arabesque imaginée, la construction d’un certain monde concret, bâti de Montagnes, Bois et Fleuve, pesamment architecturé de matières, surdécoré de Palais, <anchor xml:id="iv"/>creusé d’Antres… La mise en œuvre dura plus de deux années. — Ce fut un temps non mesurable, marqué du seul rythme Intérieur.</p>
+        <p>Un jour, dans une lumière sonore dont le poète garde l’éblouissement, il entendit :</p>
+        <p>« … claire, triomphante en l’inaccessible lointain, UNE VOIX CHANTANT toute seule, singulière, avec de grands ébats sauvages… »</p>
+        <p>et le musicien se s’écrier : « Ce sera mon testament lyrique. » Il fallut accepter le mot testament, qui, dans le monde non chantant, le monde sourd, retentit à la mort. On put croire la mort devancée par le grand geste final d’Orphée assailli, lançant la lyre au-dessus du combat. La mort dans la vie, — qui n’est pas toujours un drame, — est survenue ici avant le chant. Des Ménades ont dépecé la voix même d’Orphée. Le drapé du langage imite moins un acteur en plein jeu que le <anchor xml:id="v"/>suaire collant aux membres et au masque du héros.</p>
+        <p>Si la voix d’Orphée est perdue, il en demeure la pré-audition (on n’ose pas dire son écho) dans le monde des hommes. Orphée les fuyait en les tuant. Il est aidé de recueillir les grommellements qu’ils poussaient à son passage, et de suivre avant le chant le petit et faible cantique d’Eurydice avant l’extase… sa fierté d’avoir été suivie, sa joie naïve, sa jalouse puérilité de vierge toute donnée à un homme, — dit-elle ! Comme les transports de la Prêtresse-Ménade, pleine d’un rut qu’elle estime liturgique, — cette femme en amour de chair dont les accents, exaspérables par la musique, ne réclament pas absolument la musique pour se rythmer. Et aussi le personnage ambigu du Vieillard-Citharède, demi-chantre, demi-chanteur, centaure musical doué du savoir d’être attentif, d’écouter, mais non pas du pouvoir d’entendre. Ce pouvoir-là est réservé à l’Eurydice vraie, et pour peu de temps : un moment : celui de mourir évanouie. <anchor xml:id="vi"/></p>
+        <p>Donc, ce qui sera lu dans ce livre n’est pas le texte Orphique d’un roi que Debussy aurait intrônisé. L’autre texte, qui est à lui, demeure enterré dans une tombe, la sienne. Mais ceci, « en noir et blanc » sur du papier blanc, n’offre que la recension renonçant, dans un drame de musique essentielle, à tout ce qui serait musique coupable des mots. J’étouffe l’orchestre verbal avec ses mille timbres, je le brûle en holocauste de bois sec à la mémoire du grand musicien mort, et mon Ami.</p>
+        <p>C’est pourquoi, livrant ce drame, je ne puis vraiment le dédier qu’à son hommage,</p>
+        <signed>AU SEUL NOM DE CLAUDE DEBUSSY</signed>
+      </div>
+      <div>
+        <head>I
+<lb/>La Montagne</head>
+        <div>
+          <head>Prologue</head>
+          <stage><hi rend="i">Toute lumière éteinte, derrière le Rideau fermé, on entend, claire, triomphante en l’inaccessible lointain</hi>, UNE VOIX CHANTANT <hi rend="i">toute seule, singulière, avec de grands ébats sauvages…</hi></stage>
+          <stage>On discerne autour d’elle l’irisation d’une LYRE nombreuse qui, dans l’instant où la VOIX reprend haleine, double les derniers contours du chant et ne laisse aucun répit au silence.</stage>
+          <stage>Le Rideau s’ouvre.</stage>
+          <stage>On aperçoit, enveloppé de gros blocs de nuit terrestre, un amas tumultueux de roches toutes voisines qu’on toucherait de la main tendue, et dont le haussement escalade la scène entière, atteignant et bousculant ce peu de ciel éclairé par des lueurs affleurant là-haut cette crête boisée…</stage>
+          <stage>Mais c’est plus loin, au delà de tous les spectacles visibles que semble habiter la VOIX.</stage>
+          <stage><hi rend="i">Surgissant de tout près, d’en bas, de la gauche</hi>, DEUX HOMMES <hi rend="i">vêtus de peaux de bêtes, têtes et jambes nues, tâtonnent et trébuchent comme las d’une longue route. Ils dressent l’oreille, puis échangent des paroles</hi>, (ce qui fait un grognement de syllabes rauques gravissant la lointaine vocalise continue…)</stage>
+          <sp who="lundeux">
+            <speaker>L’UN D’EUX</speaker>
+            <stage>qui sera le prêtre.</stage>
+            <said>La voix semble venir de plus loin ! </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <stage>qui sera le guerrier.</stage>
+            <said>De si loin que l’atteindrons-nous jamais ? </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>C’est vrai ! Elle recule à chaque pas… </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Voici toute la nuit et deux nuits que nous marchons vers elle, et par quels chemins égarés ! </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Il a fait clair tout d’un coup sur la crête. </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Puissions-nous y voir enfin ! </said>
+            <stage>Ils reprennent leur aventure ; s’efforçant, par les ravines enchevêtrées de broussailles, de gagner cette crête où la lueur grandit.</stage>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <stage>s’arrêtant à mi-côte.</stage>
+            <said>C’est décevant ! La voix appelle et se dérobe. La voix attire et se moque de nous ! </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Comprends-tu ce qu’elle chante ? </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Allons ! Allons ! </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Je n’en peux plus dans ce nouveau jour qui n’éclaire pas les pieds et qui ne fait pas d’ombres, et qui pleut tout autour de nous. </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Allons ! Regarde là-haut, là ! Voici pour nous un guide ! </said>
+            <stage>Sur la crête, un VIEILLARD de grande taille, immobile, le visage tourné vers l’autre versant de la Montagne, une cithare à quatre cordes pendue au côté, — est aperçu dans la clarté croissante…</stage>
+          </sp>
+          <sp who="lautre" xml:id="6">
+            <speaker>L’AUTRE</speaker>
+            <said>C’est quelque vagabond joueur de cithare. </said>
+            <said>Hé ? </said>
+          </sp>
+          <sp who="levieillardcitharede">
+            <speaker>LE VIEILLARD-CITHARÈDE</speaker>
+            <stage>sans se retourner.</stage>
+            <said>Taisez-vous ! </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <stage>comme avec respect.</stage>
+            <said>Ô Citharède aux beaux récits renommés… </said>
+            <stage>Il trébuche… Des cailloux croulent sous ses pieds.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage>rudement.</stage>
+            <said>Tais-toi ! Tais-toi ! Écoute ! </said>
+            <stage>On réentend, toute seule et singulière :</stage>
+          </sp>
+          <sp who="lavoixchantant">
+            <speaker>LA VOIX CHANTANT</speaker>
+            <stage>Impatients, les deux Hommes ont repris leur marche, et de plus près interpellent le Vieillard.</stage>
+          </sp>
+          <sp who="lun" xml:id="7">
+            <speaker>L’UN</speaker>
+            <said>Dis-nous seulement… </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Quel est ce chanteur infatigable ? </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Par quel sentier l’atteindrons-nous ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage>se détourne à demi.</stage>
+            <said>Non ! Non ! Ne venez pas ! </said>
+            <stage>Mais, comme il a dit, les deux Hommes gravissent la crête, non loin du Vieillard, et, prolongeant le regard de sa face, ils regardent, et</stage>
+          </sp>
+          <sp who="lunetlautre">
+            <speaker>L’UN ET L’AUTRE</speaker>
+            <said>Ha ! </said>
+            <stage>ont crié d’étonnement.</stage>
+          </sp>
+          <sp who="levieillard" xml:id="8">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Taisez-vous donc ! Il va s’enfuir. </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Qui est cet homme chantant ? </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Je le sais : celui que l’on cherche : celui vers qui nous marchons. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Moi ! que sais-je de lui ? Il apparut ainsi dans les vallées, voici deux lunaisons. J’écoute. Écoutons encore… </said>
+          </sp>
+          <sp who="lautre">
+            <speaker>L’AUTRE</speaker>
+            <said>Comme il est grand ! Est-ce le brouillard sans soleil qui le hausse ? On ne peut pas le dompter de la vue. </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Il est jeune. Il est étranger. Ses cheveux ont la couleur de l’airain doré. Sa poitrine est large. Il doit mener bien les troupeaux : il mènera bien les hommes. </said>
+            <said>Toi, conduis-nous. Nous devons saisir et saluer cet homme. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Oh ! l’approcher ! Lui parler ! Je vous dis qu’il va s’enfuir. </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Non pas, quand il saura ce que nous portons. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Quoi ? et qui êtes-vous ? </said>
+          </sp>
+          <sp who="lun">
+            <speaker>L’UN</speaker>
+            <said>Vois donc. </said>
+            <stage>L’un et L’autre se dépouillent de leurs manteaux de peaux de bêtes.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Tu es paré comme un Prêtre avant l’hommage ! </said>
+            <said>Et toi, armé comme un Guerrier de cortège triomphal… </said>
+            <said>Que voulez-vous faire de Lui ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Conduis-nous. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Je n’ose pas. Je ne veux pas. S’il se taisait ! S’il disparaissait ! </said>
+            <said>Vous ignorez s’il est mortel ou non ? </said>
+            <said>Écoutez-le : écoutez encore : jamais fils de la sourde Terre et du Ciel muet, jamais être conçu d’un être… </said>
+            <said>S’il se taisait ! Oh ! soyez pitoyables à ma vieillesse qu’il réjouit : je ne peux plus vivre ailleurs que dans l’air vivant de sa voix. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Tu ne peux pas nous résister : conduis-nous ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Si tu refuses, tu le perds quand même : regarde : il s’éloigne… </said>
+            <said>Mais regarde-le donc, il s’en va dans la lumière insolente qui nous fait tourner la tête. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Venez ! </said>
+            <stage>Il s’élance à travers les fourrés et les roches pour dévaler l’autre versant. On l’aperçoit à mi-corps baigné de toutes les lueurs, mais se frayant à grand’peine passage.</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Prends garde… Où nous mènes-tu ? </said>
+            <said>Par les pierres et les broussailles… </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Par les rochers dévalant… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Venez vite ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Par des précipices. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Suivez-moi. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il est ardu d’atteindre cet homme ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Il n y a pas de chemin vers lui ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Non. Il faut faire sa route vers Lui. </said>
+            <stage>Tous trois disparaissent.</stage>
+            <stage>On les entend descendre par bonds.</stage>
+            <stage>Puis leurs bruits s’enfoncent et s’éloignent…</stage>
+            <stage>Mais triomphante de nouveau.</stage>
+          </sp>
+          <sp who="lavoix">
+            <speaker>LA VOIX</speaker>
+            <stage rend="i">se renforce. — Les trois hommes doivent l’entendre à pleines oreilles.</stage>
+            <stage>Une luminosité vibrante envahit les bas-fonds et jusqu’à l’aube quotidienne qu’elle détrône et déconcerte.</stage>
+            <stage>Les formes lourdes s’atténuent, commencent à mourir, se dérobent, s’écartent, se déchirent : Le premier plan de roches a disparu, et dans l’espace agrandi,</stage>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>ACTE I.</head>
+        <div type="scene">
+          <head>SCÈNE I</head>
+          <stage>l’on découvre une conque montagneuse, et debout au centre des échos,</stage>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <stage>Sa grande Voix et la LYRE sonnent à pleine envolée. Il se fait un moment radieux : un hymne. </stage>
+            <stage>Mais surgissent les hommes ; le Prêtre, d’abord, puis le Guerrier, — suivis, à distance respectueuse, du Vieillard-Citharède.</stage>
+          </sp>
+          <sp who="lepretreetleguerrier" xml:id="15">
+            <speaker>LE PRÊTRE ET LE GUERRIER</speaker>
+            <stage>s’avançant avec emphase :</stage>
+            <said>Roi des Thraces et Chef des Cent Guerriers, Salut ! </said>
+          </sp>
+          <sp who="silence">
+            <speaker>SILENCE</speaker>
+            <stage>Le premier silence. Un jour cru. Un jour solaire.</stage>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Nous te proclamons Roi des Thraces. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Nous te proclamons… </said>
+            <said>(Le premier homme qui n’ait pas tressailli d’aise au salut de « Roi ».) </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il n’a pas compris. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Est-il sourd ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Dis-moi, jeune étranger à la voix retentissante, as-tu bien entendu nos paroles ? </said>
+            <said>Tu es Roi. </said>
+            <said>Roi du peuple Thrace. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Et Chef des Cent Guerriers. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Nous implorons le premier signe sur ton visage pour courir avant toi vers les Tribus et la Ville qui te réclament. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Tu dois nous suivre. </said>
+          </sp>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <stage>reste impassible</stage>
+          </sp>
+          <sp who="lepretre" xml:id="17">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Veux-tu que d’autres viennent comme en suppliants, pour te ramener dans un cortège avec des danses et des cris ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Veux-tu des armes ? Un manteau de bronze ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <stage>désignant le Vieillard-Citharède qui s’approche : </stage>
+            <said>Celui-là portera ta cithare et chantera tes musiques devant toi. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Laissez-le… Que vous a-t-il fait ? Il ne s’inquiète pas de vous ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>D’où vient-il ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Quel langage parle-t-il ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Nous dirais-tu comment il s’appelle ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Vous l’avez écouté, et vous voulez savoir son nom ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Pourquoi ne répond-il pas ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Nous lui offrons à régner un noble peuple entre la mer et la montagne ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Il aime mieux chanter pour les ours et pour les chacals ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il est vrai : sa voix n’est pas commune à tous les hommes. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>N’importe. Qu’il réponde ! Qu’il dise une parole parlée ! </said>
+            <stage>(et il fait un mouvement de menace…)</stage>
+          </sp>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <stage>(sans émoi, se détourne vers le fond de la Montagne.)</stage>
+          </sp>
+          <sp who="levieillardcitharede">
+            <speaker>LE VIEILLARD-CITHARÈDE</speaker>
+            <said>Il s’en va ! Il s’en va ! Je vous le prédisais ! Laissez-moi… Ne menacez plus… Ne dites plus un mot parlé… </said>
+            <said>Ô Chanteur à la voix resplendissante, </said>
+            <said>Ô Chanteur de l’Hymne inconnu, ne fuis pas ainsi dans le silence… </said>
+            <said>Ha ! Ha ! Je m’essouffle à te rejoindre : secours-moi, qui ne vis que pour t’écouter… et entendre… </said>
+          </sp>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <stage>(s’éloigne.)</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Maître ! Accueille ceci ! Mes doigts tremblent… Mais les cordes bien tendues se gonflent d’elles-mêmes aux souffles épars, aux derniers échos de ta voix… </said>
+            <stage>Et, levant haut sa cithare à quatre cordes, le Vieillard-Citharède jette un rappel désespéré des derniers échos entendus.</stage>
+          </sp>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <stage rend="i">s’arrête, et se retourne sans haine.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage rend="i">poursuivant avec plus de confiance :</stage>
+            <said>Et réponds maintenant. — Non pas à moi : je ne demande rien. Mais ceux-ci, </said>
+            <said>(d’où viennent-ils, quel langage parlent-ils ?) </said>
+            <said>Ceux-ci veulent savoir ton nom. </said>
+            <said>Je te supplie, courbant ma vieillesse vers ta race ignorée ; vers les fils qui naîtront de toi, — je te supplie : jette à ceux-ci que voilà ton nom, en pâture… </said>
+            <said>Ton nom, et qu’ils s’en aillent à jamais de toi ! — Maître, dis ton nom. </said>
+          </sp>
+          <sp who="lechanteur">
+            <speaker>LE CHANTEUR</speaker>
+            <said>Orphée. </said>
+            <stage>Le Nom tonne à travers la Montagne.</stage>
+            <stage>Le Chanteur disparaît dans les profonds taillis.</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Qu’est-ce qu’il a dit ? Comment s’appelle-t-il ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Il se nomme : Orphée ! </said>
+            <stage rend="i">et le Vieillard s’empresse sur les pas du Chanteur.</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Orphée ! Ha ! Personne encore ne s’est appelé : Orphée ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Orphée, le « Ténébreux »… Orphée, l’ « Obscur »… Orphée, l’ « Aveugle » peut-être… </said>
+            <said>Personne n’osa se nommer : </said>
+            <said>Orphée ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Est-ce un nom heureux ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <stage>avec exaltation.</stage>
+            <said>C’est un nom heureux ! C’est un signe ! </said>
+            <said>C’est le verbe de l’oracle. Je tiens la révélation. Il nous fallait joindre cet homme. Tout s’éclaire. Tout s’accomplit. </said>
+            <said>Écoutez l’Oracle. Maintenant on peut le répandre avec des mots. Qu’on en remplisse la vallée ! Il prédisait : </said>
+            <stage>
+              <hi rend="i">« Celui-là domptera le peuple des montagnes, Celui-là, chanteur-dans-la-nuit, qui voit de toutes ses oreilles et entend la vue de ses yeux. »</hi>
+            </stage>
+            <said>N’est-ce pas lui ? C’est bien lui. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Je ne comprends pas. Comment voir avec des oreilles ? Ceci est « obscur » autant que le nom. — Nous sommes trompés. Revenons plutôt en arrière ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <stage>ruminant son oracle.</stage>
+            <said>« Celui qui voit de toutes ses oreilles !… » </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage>réapparaît.</stage>
+            <said>Vous l’avez chassé ! Il est trop loin ! J’entends même mourir la rumeur de son nom… </said>
+            <said>C’est une angoisse de tombeau que l’on creuse ! La montagne vide son poids à travers ma poitrine… </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Ce vieil homme se démène sans raison. On le rejoindra, ton chanteur ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Vous ne pouvez plus… Vous ne pourrez jamais plus… Ha ! Ah ! À moi ! </said>
+            <said>Eurydice ! Ma fille… Eurydice ! </said>
+            <stage>Un cri d’enfant répond à l’appel du Vieillard.</stage>
+            <stage rend="i">Paraît</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">vive, violente et douce ; obéissante et imprévue ; vêtue comme il sied à la fille d’un chanteur errant.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ma fille ! Il est parti ! Ils l’ont mis en fuite… Va-t-en courir sur ses pas : Va suivre l’écho de ses pas : tu le rejoindras : tu le l’amèneras… </said>
+            <stage rend="i">et il jette Eurydice docile sur les échos du Chanteur.</stage>
+          </sp>
+          <sp who="leguerrier" xml:id="25">
+            <speaker>LE GUERRIER</speaker>
+            <said>Ah ah ah ! Il dévoue sa fille au plaisir de l’époux au bon gosier ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Que la fille nous le ramène ! L’Oracle ne s’est pas trompé sur lui. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Quelle incertitude ! Il chante, et il ne parle pas ! Il entend, et il feint d’être sourd. On le salue comme Roi et il s’évade. </said>
+            <said>Il ne vit pas comme un bon compagnon. </said>
+            <said>Je n’ai vraiment jamais vu aucun pareil à cet homme ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>C’est bien lui. </said>
+            <stage>Le Rideau se referme.</stage>
+            <stage>La course d’Eurydice prolonge, à travers monts, la poursuite…</stage>
+            <stage>On entend…</stage>
+            <stage>On entend froisser des fourrés, franchir des ronces, s’égarer, — se reprendre, — s’élancer, atteindre enfin</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCÈNE II</head>
+          <stage>(<hi rend="i">Le Rideau s’ouvre</hi>)</stage>
+          <stage rend="i">un repaire profondément reculé.</stage>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">seul, tapi comme un fauve derrière des feuillages, halète.</stage>
+            <said>Hors des hommes ! Hors du bruit des hommes ! Encor fuir… Fuir… Fuir… J’appelais… J’écoute… J’ai chanté… J’écoute… Ne répondent que les rochers et les bêtes ! </said>
+            <said>Je croyais mon gîte invisible, inaccessible, hors des hommes… Et ils paraissent, crachant leurs mots. </said>
+            <said>Fuir encore ? Fuir… Fuir… — Je suis las ! J’ai soif d’un cri au cœur d’un autre ! — Entendre un chant qui ne soit pas le mien ! </said>
+            <said>Ho ! bruits d’hommes… Tumulte et insultes ! Ils me traquent jusqu’au fond de mon silence. </said>
+            <said>Non… C’est plus doux… Mousse froissée… Rosée secouée… C’est plus furtif que le galop d’un chacal. On glisse… </said>
+            <said>Des pieds nus à peine posés… Ce ne sont pas les hommes… Ce ne sont pas mes bêtes familières… Ni la course du vent dans les taillis… </said>
+            <said>Il s’en vient vers moi quelque chose d’ignoré, d’inouï… </said>
+            <stage>Paraît</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage>Elle s’arrête d’un bond, interdite. Ils se dévisagent et s’épient l’un l’autre, sauvagement.</stage>
+            <stage>Puis Eurydice balbutie :</stage>
+            <said>D’où je viens ? Pourquoi je viens ? Mon père m’a dit… </said>
+            <said>Il m’a dit… Oh ! voici ta Lyre. Comme elle est grande et courbée ! Elle a des cordes bien tendues… </said>
+            <said>Elle a des cordes nombreuses : quatre, et huit et douze… Douze cordes, est-ce donc permis ? </said>
+            <stage rend="i">Elle avance.</stage>
+            <said>Puis-je la prendre ? La soulever ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">se dressant à demi, fait un geste…</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage>… Non ? </stage>
+            <said>Tu ne veux pas. Est-elle lourde ? — Je sais un peu jouer aussi ; sur le tétracorde… Mon père, quand les doigts lui pèsent, je joue pour lui devant des chefs. </said>
+            <said>C’est pourquoi il m’a enseignée… </said>
+            <said>Toi, qui t’enseigna ? Qui fut ton maître ? </said>
+            <said>On dit que tu charmes les bêtes velues et que tu fais danser les pierres… </said>
+            <said>On dit parmi les villages… — Est-ce vrai que tu es tombé du ciel ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ta voix… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Ah ! Tu chantes avec des mots. Pourrais-tu parler comme les autres ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ta voix… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Tu ne dis pas cela comme les autres… comme les hommes. Quand je chante à leurs repas, et s’ils ont bu, ils me prennent dans leurs mains en criant qu’ils m’aiment… </said>
+            <said>Non ! je ne laisse pas… mais ils sont forts et ils ont les bras rudes… </said>
+            <said>Toi, ton visage et tes poignets sont blancs. Voudrais-tu vivre parmi les hommes ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>se dresse avec emportement.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Les deux étrangers, pourquoi te cherchaient-ils ? Ils te suppliaient comme un roi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">embrassant d’un geste impérieux la Montagne et relevant sa LYRE :</stage>
+            <said>Je suis roi. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">recule avec respect :</stage>
+            <said>Oh ! Tu habiteras une maison avec des piliers peints de couleurs… Tu vêtiras des vêtements tissés et tu porteras la hache au double fer. </said>
+            <said>Tu entendras le peuple répétant tes mots, et le Fleuve qui bruit sans discontinuer, et la Mer qui se tait parfois ou bien hurle plus fort que tout… </said>
+            <said>Tu régneras ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Je suis roi. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je serai ta servante. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Mais qui donc a donné le chant à ta voix… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je ne sais. Peut-être toi. Voici deux lunaisons que je n’écoute plus ailleurs… </said>
+            <said>Mon père se tait, par piété ! </said>
+            <said>Mon père… j’oubliais son message : il se désole : il tremble que tu ne disparaisses… </said>
+            <said>Ne t’en va point : reviens vers lui qui te révère… </said>
+            <stage>(Elle recule.)</stage>
+            <said>Voici ta route… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’aime… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>﻿Viens… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>﻿Ta voix… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage>apeurée soudain et qui s’arrête.</stage>
+            <said>Comme les autres ? </said>
+            <stage>un moment d’attente craintive.</stage>
+            <said>Tu ne me prends pas dans tes bras ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Pourquoi ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Tu ne me serres pas avec force ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Voudrais-tu ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je savais bien. Tu n’es pas comme les hommes… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’aime… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Oui. Et tu ne m’as pas fait mal encore… </said>
+            <stage>Elle lui tend à distance craintive la main, et l’attirant, le conduisant, tous deux retiennent décidément vers la lisière des montagnes, vers les rumeurs, vers les hommes.</stage>
+            <stage>Le Rideau tombe au moment où elle va se laisser atteindre par Lui.</stage>
+          </sp>
+        </div>
+      </div>
+      <div xml:id="II">
+        <head>II
+<lb/>LE BOIS ET LE FLEUVE</head>
+        <stage>Rumeurs grondantes :</stage>
+        <div type="scene">
+          <head>SCÈNE I</head>
+          <stage>
+            <hi rend="i">Le Rideau s’ouvre.</hi>
+          </stage>
+          <stage>
+            <hi rend="i">Au premier plan, parmi les arbres d’un bois opaque, des ombres humaines récriminent sourdement.</hi>
+          </stage>
+          <stage>Tout au loin, — large épée miroitant sous la lune qui lève, — le Fleuve étend son cours impassible. </stage>
+          <stage>Les rumeurs se font plus pressantes et on distingue ces trois voix :</stage>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Non ! Non ! Non ! Je n’ai jamais vu de pareil à cet homme ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Je reconnais combien il est étrange. </said>
+          </sp>
+          <sp who="lapretressemenade">
+            <speaker>LA PRÊTRESSE-MÉNADE</speaker>
+            <said>Il est plus qu’étrange ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Qu’en dites-vous, parmi vous autres Ménades ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Il suffit bien qu’il détourne les gens de se battre ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Non pas ! Il est fort. Mais si peu raisonnable… Cette servante, — la vagabonde qu’il ramena du fond de la montagne… </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>La fille du vieux fou ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Eh bien ! Qu’on la chasse à présent. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>C’est elle qu’il prend pour épouse ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Comment sais-tu… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Je le guette chaque nuit. Il passe là-bas toutes les nuits au bord du fleuve, en chantant, toujours suivi d’elle. </said>
+            <said>Il s’arrête, il s’allonge au bord du fleuve et la caresse d’une voix si puissante et si douce que toute femme envierait d’être là-bas étendue auprès de lui. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Que répond-elle ? </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Elle ouvre les yeux ; elle ne sait que dire… Une autre, plus ingénieuse, répondrait. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Tu voudrais bien être… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Non. Il donne peur avec son grand air magique. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Ce n’est pas un magicien. C’est le Roi : l’Oracle est indiscutable. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Je n’ai pas compris. Mais je vois clair : il ne fait pas un bon guerrier : il ne fait pas un bon chef. </said>
+            <said>Quand j’ai menacé, il a fui ; il a fui jusqu’au fond de son repaire. </said>
+            <said>C’est un peureux ! C’est un lâche à la voix forte et au bras… </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Garde que l’on entende ! Il y a autour de nous autant d’oreilles que de feuilles et le bois est plein de rumeurs. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Qu’on entende, qu’on lui répète ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Garde qu’il ne soit là ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Qu’il vienne lui-même ; qu’il paraisse ! Je lui jette ceci en pleine face : tu n’es pas un vrai chef de horde ! tu n’es pas un gardien de troupeau ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Écoute au loin… Tais-toi. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Me taire ! Toujours me taire ! Pourquoi me tairais-je devant lui ? Est-ce un homme, est-ce un roi, qui n’a pour besogne que les jeux de son gosier ? </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il vient ! Il vient ! Sa voix sonne sans pareille sur le fleuve. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Que peut-il bien chanter là ? </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il dédie un hymne nouveau à chaque nuit. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <stage>indigné.</stage>
+            <said>Est-ce possible ! Il a multiplié les cordes à la lyre ! Il a changé les Nombres consacrés ! </said>
+            <said>Il s’en prend aux Modes vénérables… et il invente des chansons sans dignité. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Attendez, je vais lui dire aussi la mienne. </said>
+            <said>Mais qu’il se montre enfin ! </said>
+            <said>Ah ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il resplendit sous la lumière. </said>
+            <stage>Plus loin que la forêt hostile, plus loin que les rumeurs des hommes, tout au bord du Fleuve coulant, marche</stage>
+          </sp>
+          <sp who="leroiorphee">
+            <speaker>LE ROI ORPHÉE</speaker>
+            <stage rend="i">sous des habits dynastiques. Sa LYRE qu’il dresse haute devant lui, ruisselle de lueurs radieuses, et les cordes nombreuses, pleines de son, s’irisent et chatoient.</stage>
+          </sp>
+          <sp who="leguerrier" xml:id="42">
+            <speaker>LE GUERRIER</speaker>
+            <stage>s’avançant vers lui.</stage>
+            <said>Hé ? l’homme au bon gosier ? </said>
+            <stage>Sous le bois, les Rumeurs lèvent. On discerne des têtes et des épaules gesticulant. Les grondements escortent de loin la Marche inaccessible.</stage>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Hé ? l’homme au bon gosier ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Je savais bien, nous n’étions pas seuls. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Ho oh ! Celui qui feint de ne pas voir… </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Ho… Ho… </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Par mépris, sans doute ? Par mépris ? </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Voyez ! Voyez ! Voyez-le donc ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Voilà tout le peuple qui gronde… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Comme des loups, dans l’ombre… </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Ha ah ? Celui qui fait le sourd ? </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Ouvre tes oreilles ! Ouvre-les bien ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Pour ne pas répondre aux insultes ? </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Je ne l’ai jamais vu si fier et si noble. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Lyrobate ! N’es-tu pas fatigué de la porter si haut ? </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Porte-lyre ! Porte-la haut ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Te crois-tu colombe pour roucouler ainsi toujours ? </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Où sont tes amours… </said>
+            <said>﻿tes amours ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Cygne qui ne va pas mourir, qu’as-tu fait de ton plumage ? </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>De tes ailes ? </said>
+            <said>﻿De ton cou ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>C’est leur Roi qu’ils insultent là ! </said>
+            <said>Le Roi que l’Oracle a sacré. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il peut les confondre d’un souffle. Mais, qu’ils s’en aillent donc jusqu’à lui : </said>
+            <said>Qu’ils se montrent tous dans la lumière. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Dans la lumière ? </said>
+            <stage>se retournant vers la foule</stage>
+            <said>Regardez, vous autres ! </said>
+            <stage>Et il s’élance vers Le Roi, suivi de loin de la ruée du Peuple que tant de sérénité exaspère.</stage>
+            <stage>On le voit tout à coup en pleine clarté, frappé droit par les éclats du Chant.</stage>
+          </sp>
+          <sp who="orphee" xml:id="46">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">passe et s’éloigne avec indifférence.</stage>
+            <stage>La grande voix n’a même pas frémi.</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <stage rend="i">vacillant de stupeur, revient en bégayant vers la foule :</stage>
+            <said>Il fuit… c’est… un… peureux… </said>
+          </sp>
+          <sp who="rumeurs">
+            <speaker>RUMEURS</speaker>
+            <said>Il fuit… </said>
+            <said>﻿C’est… </said>
+            <said>﻿un… </said>
+            <said>﻿peureux… </said>
+            <stage>Et, ce disant, tous, ils reculent toujours.</stage>
+            <stage>Le Rideau, retombant, les contient à peine.</stage>
+            <stage>Les rumeurs décroissent, s’éloignent, soudain traversées d’une course effarouchée…</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCÈNE II</head>
+          <stage>Le Rideau se rouvre.</stage>
+          <stage>On est tout au bord du Fleuve, en pleine nuit, sous la lune plus haute.</stage>
+          <stage>On voit :</stage>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">allongé au bord du Fleuve.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">achevant sa course effarouchée.</stage>
+            <said>Où es-tu ? Où es-tu ? </said>
+            <said>Ils t’insultent, là-bas, du fond du bois… </said>
+            <said>(J’ai tous leurs cris dans les oreilles) </said>
+            <said>Ne les as-tu point entendus ? </said>
+            <said>Tu as passé par là, comme moi, à travers toutes les huées. </said>
+            <said>Il dort. Il dort, en dépit de tous et de moi ! </said>
+            <said>Étendu, apaisé, mieux qu’il n’a dormi jamais entre mes bras. </said>
+            <said>Tu délaisses mes bras. Tu me délaisses toute. Tu fuis toujours. </said>
+            <said>Tu es loin. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’entends… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Oh ! le dormeur a parlé. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>une voix inespérable,</stage>
+            <said>D’où vient-elle ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>J’accours à l’instant du Palais, comme toi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Cette voix reculée </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Non : elle est tout près tout près de toi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>﻿que j’avais trouvée et perdue… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Elle n’osait… Elle se taisait… </said>
+            <said>Mais maintenant, tu m’accueilles et tu me gardes, </said>
+            <said>Dis-moi, veux-tu me consoler ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Qui demande d’être consolé ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Tu as souffert ces gens et leurs injures ? </said>
+            <said>Je les hais ! Ils ont osé… Ils sont là encore… </said>
+            <said>Parle-moi, pour que j’oublie. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Qu’elle réponde ! Qu’elle entende aussi. Le mauvais silence tombera. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>À quoi rêve-t-il ? Il ne s’inquiète pas de moi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu es là ? Tu m’as rejoint ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Oui, oui, mais il ne faut plus t’en aller. Il ne faut plus me mépriser : j’étais une fille sauvage. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Écoute-moi. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">livre tout le désir et la profonde attente de ses yeux.</stage>
+          </sp>
+          <sp who="orphee" xml:id="51">
+            <speaker>ORPHÉE</speaker>
+            <said>Écoute avec moi : </said>
+            <said>Écoute tout au fond du monde : </said>
+            <stage>(on entend un étrange chant inhumain.)</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Quoi donc écouter ? </said>
+            <said>Je n’entends rien que la nuit. </said>
+            <said>Je n’entends que l’eau et l’herbe sur la rive, le roulement des cailloux au fond de l’eau… </said>
+            <said>Et le vent qui tombe, et le temps qui passe, et les bruits des hommes qui s’en vont. </said>
+            <said>Et puis… je n’entends plus rien. </said>
+            <stage>(On réentend cet étrange chant inhumain.)</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Il gémit ! Il a peur ! Il ne veut pas : </said>
+            <said>Le fleuve revient en roulant sur lui-même et se tient suspendu. </said>
+            <said>Tout est recueilli et tendu comme un chaos originel. </said>
+            <said>Et je suis seul ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Il se plaint d’être seul ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Mais seul je danse ! Mais seul je vole ! Mais seul j’habite… </said>
+            <said>Pourquoi ce corps est-il encore allongé par la terre ? </said>
+            <said>Je ne suis plus là-dedans. Je nage aux nuages du son. </said>
+            <said>Je suis… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Il rêve plus profondément. Il s’épuise… Il est pâle… Il respire à peine… </said>
+            <said>Il ne respire plus… Orphée ! </said>
+            <stage>Le Nom plonge à travers l’étrange rumeur et s’en vêt comme d’un nouveau corps vivant.</stage>
+            <stage>Orphée n’a point tressailli.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Vole et danse ! Va-t-en… où tu voudras en esprit ! </said>
+            <stage rend="i">(à genoux, prieuse plaintive aux flancs du dormeur…)</stage>
+            <said>Je suis là, fidèle à ton corps endormi, plus docile que toute fille ou femme humaine… </said>
+            <said>Qu’une autre, jalouse, implore les caresses et le don nuptial, </said>
+            <said>Je ne demande rien ; je suis là, au bord de ton sommeil. </said>
+            <said>Tu ne m’as jamais dit ce qu’on dit en aimant. Une première fois, tu as chanté : « J’aime… » </said>
+            <said>À quoi bon ? Il dort plus sourdement ! Il est parti, il est perdu de lui, il s’est dépris de ce corps que je tiens sous mes doigts. </said>
+            <said>Va-t-en ! Va-t-en ! </said>
+            <said>Non. Reste parmi nous les vivants. </said>
+            <said>Reviens à moi. Je t’aime. </said>
+            <said>Mais je ne veux plus que tu rêves si je ne peux pas aimer ton rêve aussi ! Ah ! </said>
+            <stage>Elle s’abat toute sur Orphée ; étreignant le dormeur sans défense, couvrant le visage de ses mains qui font des signes et des caresses…</stage>
+            <stage>
+              <hi rend="i">Un cri… Eurydice se rejette en arrière.</hi>
+            </stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">a ouvert les yeux.</stage>
+            <stage>Toute musique se tait.</stage>
+          </sp>
+          <sp who="longsilence">
+            <speaker>LONG SILENCE</speaker>
+            <stage rend="i">rompu par la voix tremblante d’</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Pardonne-moi… J’ai… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Que ce monde est sourd et silencieux ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Ce monde… Où étais-tu ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Qui m’a rappelé ? Qui m’a frappé ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Oh non ! pas moi ! J’ai mal… cette corde en cassant m’a cinglée… </said>
+            <said>Personne ne l’a touchée… Elle s’est brisée toute seule… </said>
+            <said>Mais tant mieux, et toutes les autres ! </said>
+            <said>Voilà d’où vient ton mépris de moi, et les haines autour de toi-même : ta lyre, </said>
+            <said>Je la déteste : elle te possède, elle t’ensorcèle… </said>
+            <said>Mais je te délivrerai. Je t’éveillerai toujours de tes mauvais songes. </said>
+            <said>Alors, tu me diras ce qu’on dit en aimant. </said>
+            <stage>(Dans un transport passionné :</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">saisit sa LYRE, se lève, et, — détourné d’Eurydice :)</stage>
+            <said>Tu es belle et indomptable, Lyre, amante enchantée ! </said>
+            <said>Gardienne au seuil de mes palais sonores ! Réseau fier qui trame mes sommeils et défend mon rêve chantant, </said>
+            <said>Lyre, c’est à toi que vont les jeux aimants : tes hanches sont polies et nacrées ; la courbe de tes cornes est cambrée comme deux bras dansants : </said>
+            <said>Ta voix est nombreuse ! Ta voix est hardie ! Quand tu trembles, tout s’agite et retentit. </said>
+            <said>Mais, tes nerfs vivants, voici qu’ils se brisent : la corde morte traîne sur mes poignets et sur mes doigts. </said>
+            <said>Quel discord a pu la rompre ? </said>
+            <said>Ô seule ! Vas-tu m’abandonner ainsi ? </said>
+            <said>Je t’emporte, je te ravis, je te sauve avec moi-même ! </said>
+            <stage>Il s’en va, descendant le cours du Fleuve. Eurydice éclate en sanglots.</stage>
+            <stage>Le Rideau tombe brutalement.</stage>
+            <stage>Les pleurs d’Eurydice ne s’arrêtent pas de toute la nuit.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCÈNE III</head>
+          <stage>Le Rideau se relève,</stage>
+          <stage rend="i">très doucement. La nuit a passé. Il vient du Fleuve des buées fraîches et caressantes. Les mousses et les herbes se givrent. On pressent l’aube, et l’air tremble et rit sous l’haleine du jour neuf.</stage>
+          <stage>Étendue à la même place,</stage>
+          <sp who="eurydice" xml:id="58">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">gémit ses mêmes plaintes, mais alenties.</stage>
+            <stage>Paraît</stage>
+          </sp>
+          <sp who="levieillardcitharede">
+            <speaker>LE VIEILLARD-CITHARÈDE</speaker>
+            <said>Il s’est retiré plus loin que de coutume, cette nuit. C’est ici pourtant qu’il aime à chanter. </said>
+            <said>Qui donc a pu l’offenser davantage ? Oh ! ces hommes hargneux plus que des bêtes ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">qu’il frôle en passant, l’aperçoit et supplie :</stage>
+            <said>Père ! tu me consoleras ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Qui veut être consolé ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Moi, mon père. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Que fais-tu là ? Pourquoi n’es-tu pas auprès de lui, toi seule qu’il accepte auprès de lui ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Il me fuit… Il m’a laissée ici… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Il te fuit ! — Que lui as-tu fait, méchante enfant ? L’aurais-tu mécontenté… </said>
+            <said>Ou déçu peut-être ? </said>
+            <said>Que lui as-tu dit ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je lui ai dit que je l’aime… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Et puis ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Il me fuit. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Tu lui as dit que tu l’aimais ! </said>
+            <said>Pourquoi lui donner des mots flétris par toute femme ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Mais j’ai cherché à lui plaire en écoutant… J’ai tendu mon visage et toute ma pensée… Toute moi vers ses caresses… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Pourquoi réclamer qu’il te traite en épouse, Lui, qui est autre qu’un homme, et plus Maître que tous les époux ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Donne-moi un homme ! Donne-moi un Maître de famille ! Qu’il se serve de moi ! Qu’il m’attache ! </said>
+            <said>Qu’il s’inquiète enfin de moi ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Tu ne sais pas ce que tu dis. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Pour toi, tu te satisfais de bien peu : l’écouter… en te cachant… </said>
+            <said>Imiter sa voix, à la dérobée… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ma fille ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Et s’il te montre un jour son mépris ? </said>
+            <said>S’il te repousse de lui… en riant de joie.. en chantant ? </said>
+            <said>Que saurais-tu bien dire, alors ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ma fille, tais-toi. Étouffe ta rancune. Épargne à ton amour ce rappel des rumeurs des hommes… </said>
+            <said>Ce que je ferais ? — Courbant la tête sous son dédain, je suivrais sa voix même insultante, — et recueillerais jusqu’aux silences de son mépris. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Toi ! si hautain sous l’outrage ! Personne encore ne t’a traité ainsi ! </said>
+            <said>Tu n’as jamais révéré personne, — ni les dieux — comme lui. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>C’est que Lui n’est personne, et non pas un dieu même ! (On l’aborderait avec bassesse et il répondrait aussitôt.) </said>
+            <said>Non, non, ce n’est pas un dieu descendu. Ce n’est pas un dieu ressuscité. </said>
+            <said>Il n’a pas vécu parmi les hommes d’autrefois. Il semble éternellement étonné de vivre au ras des hommes d’aujourd’hui. </said>
+            <said>Et il n’a point d’âge, si ce n’est, vraiment, à venir. Les années qui nous mènent ne peuvent pas se dénombrer pour Lui. </said>
+            <said>— Voilà qui doit te consoler, toi, petite fille des ravins, toute nue, toute ignorante, — </said>
+            <said>Il t’a choisie, il t’a suivie, il t’accueille parfois en sa couche. </said>
+            <said>Il te comble d’une grâce inespérée ; — mieux que dans l’histoire que tu chantes, de Sémélé-la-Bienheureuse que daigna réjouir le Grand Dieu… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Et qui mourut… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Oui, oui, tu te souviens. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Et… si… je mourais aussi ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>À quoi penses-tu ? — Tu dis cela d’une voix toute changée ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">vient incliner sa tête près des genoux du Vieillard.</stage>
+            <said>Tu me consoles. Tu me révèles. </said>
+            <said>Tu me donnes un grand désir… et peur aussi. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>N’aie pas peur. Apaise-toi. On ne meurt plus d’amour parmi les gens que nous sommes. On ne meurt plus d’amour ni de divinité. </said>
+            <said>Cela serait beau, désirable… Oui, cela serait harmonieux. </said>
+            <said>Oh ! n’aie pas peur : on ne peut plus mourir ainsi. </said>
+            <stage>Tous deux demeurent longuement pensifs, étouffant un effroi prophétique.</stage>
+            <stage rend="i">Rideau.</stage>
+          </sp>
+        </div>
+      </div>
+      <div xml:id="III_LE_PORTIQUE_ET_LA_MER">
+        <head>Acte III
+<lb/>Le Portique et la mer</head>
+        <div type="scene" xml:id="67">
+          <head>SCÈNE UNIQUE</head>
+          <stage rend="i">Dans un</stage>
+          <stage>GRAND SILENCE</stage>
+          <stage>Le Rideau découvre la salle plénière d’un Palais cyclopéen.</stage>
+          <stage>Dure, tombant droit du cruel œil jaune à son midi, la lumière quotidienne afflue par un Portique d’où se découvre toute la Mer, — immobile sous ce jour qui retentit sur la cuirasse liquide.</stage>
+          <sp who="orphee" xml:id="68">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">adossé à la colonne extrême du Portique, ne regarde point vers la Mer. On le voit indifférent, incertain…</stage>
+            <stage>Cependant sa parure est d’une violente richesse, comme il sied au Roi d’une glèbe matrice des métaux. L’or orfévri damasquine ses épaules, ses bras, ses flancs.</stage>
+            <stage>Mais les cheveux ont gardé leur ton d’airain pâle.</stage>
+            <stage>… <hi rend="i">se glissant, très humble, parmi les détours de l’entrée, s’accrochant aux murailles qui l’abritent de leurs replis formidables, s’avance</hi></stage>
+          </sp>
+          <sp who="eurydice" xml:id="69">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">comme parée pour des noces ou un sacrifice, ou un don.</stage>
+            <said>Je n’ai plus peur depuis que mon père a promis… Je n’ai plus peur. Et tout au Palais est plein d’une angoisse nouvelle ! </said>
+            <said>Il se tait, depuis l’autre nuit. Il se tait… Par ma faute… Par moi… </said>
+            <said>Par moi seule qu’il avait choisie. </said>
+            <said>Dois-je le poursuivre plus loin ? Dois-je l’appeler encore ? </said>
+            <said>J’ai trop souvent profané le Nom. </said>
+            <said>Est-ce l’instant expiatoire ? Est-ce le moment recueilli ? — Comment franchir le grand silence ? </said>
+            <said>Comment me donner à lui ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">d’une voix presque humaine.</stage>
+            <said>Eurydice… perdue… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">croyant à un appel, fait quelques pas, vite, pour se montrer.</stage>
+            <said>Non ! toute retrouvée… toute présente… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">lève les yeux et la dévisage.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">s’arrête, interdite sous le regard froid.</stage>
+            <said>… toute présente. </said>
+            <said>Mais comment m’approcher de toi ? Les pas sont lourds à travers le silence… </said>
+            <said>Le cœur pèse… Les genoux plient… </said>
+            <said>Les pieds s’attachent à la terre… </said>
+            <said>Oh ! le chemin vers toi est long et douloureux ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Pourquoi s’est-elle dérobée ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Aide-moi, toi qui m’as choisie ; toi qui m’as suivie… qui m’attendais, peut-être… </said>
+            <said>Tu viens de me donner mon nom. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’appelais Eurydice perdue. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je suis là. Accueille-moi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’ai nommé la montagne. J’évoquais le fleuve coulant. J’ai franchi le bois grondant. Je cherchais la voix inouïe et sauvage… </said>
+            <said>Elle n’a pas entendu mon appel. </said>
+            <stage>(Un suspens)</stage>
+            <said>Ce que nul ne pouvait, avec des clameurs et des cris ou des menaces ou des morts, </said>
+            <said>Elle l’a fait ! Par quel sortilège de son amour de femme ? — Voici. Je me tais. </said>
+            <said>Tout est vide autour de moi. Tout est rempli de stupeur en moi. </said>
+            <said>Qu’elle soit fière de son maléfice de femme ! </said>
+            <stage>Il se détourne et regarde l’horizon dans la mer.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Qu’il lui plaise plutôt de s’enfuir à jamais ! </said>
+            <stage>Vacillante, éblouie, elle implore refuge et réconfort autour d’elle… hors de l’éclat dru du soleil… dans l’ombre des voûtes…</stage>
+            <said>Mais j’étais heureuse, j’étais joyeuse, autrefois dans la lumière… </said>
+            <said>Je riais aux jours renaissants… </said>
+            <said>Celui-ci brûle sans dessiller mes yeux qui ne peuvent pas pleurer. </said>
+            <stage>Elle ose s’avancer, par un grand détour, vers Orphée, pour épier de loin le visage…</stage>
+            <stage>et revient, reculant comme d’une chose épouvantable…</stage>
+            <said>Oh ! toi, — tu pleures ? Tu peux donc pleurer ? </said>
+            <said>Tu es homme… Tu as eu pitié de moi ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Sois satisfaite. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Tu t’es abaissé jusqu’à moi ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Sois donc satisfaite ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">hésitante, espérante… se reprend tout d’un coup : </stage>
+            <said>Non ! Non ! ce n’est pas le prodige promis ! </said>
+            <said>Ce n’est pas la révélation ! </said>
+            <said>Mais reconnais-moi ; reconnais en moi Eurydice. </said>
+            <said>Sache bien que tout en elle va s’éveiller… si tu le veux. </said>
+            <said>Mais… </said>
+            <said>Où est l’Autre ? Tu l’as abandonnée aussi ? Perdue aussi ? — Maître, que mon indigne amour enlaçait au rang des hommes, </said>
+            <said>Pardonne-moi, oublie-moi et reprends toute ta lyre. </said>
+            <said>Ressaisis ta force et ta joie, la compagne sans défaillance et sans discord. </said>
+            <said>Et retourne dans ton repaire ou dans ton ciel. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">peu à peu a changé de visage, et plutôt que ce qu’il entend, semble écouter les paroles à venir.</stage>
+          </sp>
+          <sp who="eurydice" xml:id="75">
+            <speaker>EURYDICE</speaker>
+            <said>Tu es si loin. Tu es si étranger… Tu n’es pas un dieu même, descendu, ou ressuscité ? </said>
+            <said>Mais s’il est vrai que tu fais vivre et danser la montagne, </said>
+            <said>Si tu daignes enfin être Roi, </said>
+            <said>Secoue ces piliers et ces voûtes et tout le Palais consterné de ton silence ! </said>
+            <said>Qu’il retentisse ! Qu’il t’obéisse ! Qu’il s’écroule et qu’il m’écrase si tu peux en retrouver ta joie ! </said>
+            <stage>Un arrêt. Un temps d’exaltation suspendue…</stage>
+            <stage>Puis</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">ressaisissant comme de très loin la Voix, avec un espoir :</stage>
+            <said>Qui t’a enseignée ? Qui t’a révélée ? </said>
+            <said>Comment sais-tu que je ne suis pas dieu ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>J’ai parlé sans te déplaire ? </said>
+            <said>Tu m’entends. Exauce-moi : ne t’abaisse plus jusqu’à moi. Reprends ta puissance et ton sceptre. </said>
+            <said>Ressaisis ton arme contre moi… Ta foudre contre moi… Même brûlante et cinglante et douloureuse, </said>
+            <said>Ressaisis ta Lyre… Où est-elle ? S’est-elle enfuie aussi ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>(hésitant et presque haletant) :</stage>
+            <said>Voici… que tu es là… </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Daigne comprendre la raison des mots que je dis : je ne veux plus te détourner d’elle… </said>
+            <said>Je suis sa servante, je suis prête. </said>
+            <said>Qu’elle éclate en pluie d’or ou de sang ! Je suis sa victime. </said>
+            <said>Maître, prends ta Lyre dans tes bras. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>comme déchaîné tout à coup.</stage>
+            <said>Pourquoi ma Lyre… auprès de toi qui te révèles ? — Tu es Eurydice. </said>
+            <said>Tu es l’harmonieuse attendue. </said>
+            <said>Oserai-je, enfin ? Pourrai-je tout ? </said>
+            <stage>Il s’avance avec majesté vers</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <stage rend="i">qui, d’instinct, se reprend à trembler.</stage>
+            <said>Il peut tout ! Comme dans l’hymne que je chante, de Sémélé-la-Bienheureuse… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu as peur soudain : tu as vacillé. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je n’ai plus peur depuis que mon père a promis… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu invoques ma puissance et tu trembles ! Tu me raffermis et tu ploies ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Non ! Non ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>As-tu peur de quelqu’une des paroles, ou de l’écho de ces paroles ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Non. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu as chanté : « Que le Palais tremble et danse… » </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Oui, qu’il s’envole si tu dois… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu as chanté que la terre bondisse ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Qu’elle s’ouvre ! Qu’elle t’obéisse ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne crains-tu pas que l’air vibrant, l’air sonnant, l’air plein de flammes ne te brûle ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Ah ! qu’il me brûle ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu es secouée d’angoisse espérante… Tu es prise à la gorge d’un effroi… </said>
+            <said>Dis-moi, de quoi donc as-tu peur ? </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>J’ai peur de te décevoir, ô Maître, ou d’être déçue par moi. </said>
+            <said>Le moment où je vis m’emporte, et j’ai peur de celui qui viendra. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Qu’il soit donc ! </said>
+            <said>Écoute ! Écoute ! ce que ton désir ajoute au chant du monde : </said>
+            <said>Quand j’appelle, entends ce qui gronde, Là. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Quelque chose a répondu : un étrange chant inhumain. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Nulle oreille n’a jamais connu. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Pourtant, nous nous taisions, et l’écho était mort. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>C’est le Prodige. Le retentissement de l’abîme. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Les piliers et les voûtes ont frémi… Et ils sonnent, ils résonnent… Par quelle magie ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Par ta voix unie enfin à ma voix. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>La terre répond ! La terre est pleine et mugissante. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Le Sourd se secoue comme un dormeur que l’on nomme. </said>
+            <said>Il s’anime : il va chanter de ses millions de bouches. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Et j’entendrai ! </said>
+            <said>Ce n’est plus assez pour ma joie ! Donne-moi plus… Tout. </said>
+            <said>Tout à moi. </said>
+            <said>Je veux plus encore. Je veux… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Que cela encore s’accomplisse. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>… chanter toute entière sous ta voix… chanter sous ta voix comme ces pierres ! </said>
+            <said>Le sol retentit, l’air est plein de musique, — et moi, seule au monde, resterais muette dans ce corps qui m’étreint ! </said>
+            <said>Fais-moi cendres ou flammes puisque tout s’embrase et flamboie ! </said>
+            <said>Fais-moi devenir un chant que tu aimes… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">a reculé comme d’épouvante à son tour.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Sois sans pitié : accomplis ton œuvre en moi ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu veux… résonner en ta chair ! Tu veux… t’affranchir de la chair ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Ne tarde plus. Nous ne pouvons revenir en arrière. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Eurydice ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Déjà cela est profondément doux et beau. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Eurydice ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Tu m’as promis des noces inouïes… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">en répons, jette son premier grand cri de puissance.</stage>
+            <stage>La Lumière fauve du jour s’est changée sous le cri en luminosité vibrante qui grandit à chaque imprécation, qui pénètre et va dissoudre toute vision du sol, des piliers et des voûtes et de la Mer.</stage>
+          </sp>
+          <sp who="eurydice" xml:id="84">
+            <speaker>EURYDICE</speaker>
+            <said>Ah ! le Palais s’envole ! la mer bouillonne ! </said>
+            <said>Qui est cette lueur qui bat ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Réjouis-toi. Le soleil a peur de nous. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Je l’ai maudit dans mon rêve. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ceci est mon rêve chantant. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Sans réveil ! Sans réveil ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Réjouis-toi. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Nos voix se répondent. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Le mauvais silence est vaincu. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Réjouis-toi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Le monde est sonore ! </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>Orphée ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>L’œuvre est accompli. L’œuvre est beau. </said>
+          </sp>
+          <sp who="eurydice">
+            <speaker>EURYDICE</speaker>
+            <said>L’œuvre est beau… </said>
+            <said>Et je défaille… Orphée… sous ta voix. Je ne suis plus que l’écho de ta voix. </said>
+            <said>Je… ne… suis plus… </said>
+            <stage>Elle s’incline et glisse doucement extasiée étendue aux pieds d’</stage>
+          </sp>
+          <sp who="orpheeroi" xml:id="86">
+            <speaker>ORPHÉE-ROI</speaker>
+            <stage rend="i">qui, jusqu’au bout, mène l’hymne inexorable.</stage>
+            <stage>Les deux amants règnent dans cette atmosphère embrasée de toutes les musiques.</stage>
+            <stage>Tout s’exalte dans la sonorité.</stage>
+          </sp>
+        </div>
+      </div>
+      <div xml:id="IV">
+        <head>IV
+<lb/>LE TEMPLE SOUS LA TERRE ET L’ANTRE</head>
+        <div type="scene">
+          <head>SCÈNE I</head>
+          <stage>
+            <hi rend="i">Un grand cri d’homme désespéré, — et le Rideau se divise sur l’arrivée hagarde du</hi>
+          </stage>
+          <sp who="vieillard">
+            <speaker>VIEILLARD</speaker>
+            <stage>qui descend, — de la gauche, — une rampe dallée, éclairée d’un jour tortueux, et débouche dans le vestibule de ce Temple souterrain :</stage>
+            <said>Ma fille est morte ! </said>
+            <stage>Alors, du profond hypogée, surgissent trois Ombres agitant des torches dont les feux éclaboussent ces énormes piliers bas qui portent le poids implacable du sol.</stage>
+            <said>Ma fille est morte ! Qui êtes-vous ? Laissez-moi. Ma fille est morte. Je cherche le lieu funéraire… </said>
+            <said>Qui êtes-vous ? </said>
+            <stage>Aux éclats des torches, on reconnaît :</stage>
+            <stage>LE PRÊTRE, LE GUERRIER,</stage>
+          </sp>
+          <sp who="lapretressemenade">
+            <speaker>LA PRÊTRESSE-MÉNADE</speaker>
+            <said>Ta fille est morte… </said>
+            <said>﻿— Morte, comment est-elle morte… </said>
+            <said>﻿— Morte, </said>
+            <said>où donc est-elle… </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>﻿… morte, là-haut, aux pieds du Maître, dans le Palais résonnant. </said>
+            <said>Je l’ai trouvée aux pieds du Maître, étendue, extasiée… </said>
+            <said>Je l’ai emportée ! </said>
+          </sp>
+          <sp who="lesombres">
+            <speaker>LES OMBRES</speaker>
+            <stage>assaillant le Vieillard.</stage>
+            <said>Lui ? </said>
+            <said>﻿— Que faisait-il ? </said>
+            <said>﻿— Que disait-il ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Il chantait avec triomphe ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il chantait, et ta fille est morte ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Morte, et comment ? </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Il a tué ta fille. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il ne l’aimait plus. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Elle devait mourir de lui. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il l’a trouvée indigne de lui. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Oh ! Ô ma fille ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Nous diras-tu comment elle est morte ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Elle est morte par grand amour. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Ha ! Le vieux fou ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>On ne meurt pas d’amour parmi les gens que nous sommes. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Je parlais autrefois ainsi… </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Elle est morte par maléfice. </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>C’est un sorcier redoutable. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>C’est un sacrilège : il n’est pas fou comme il convient. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ne l’insultez pas. Vous n’en êtes pas dignes ! </said>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Tu le défends : tu es un bon serviteur. Il a tué ta fille. Tu te lamentes. </said>
+            <said>Et lui ? </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il n’a pas pleuré comme il faut sur cette mort. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il ignore les chants funèbres pour ceux qu’on aime : Écoute… </said>
+            <stage>On entend un bruissement allègre de la LYRE.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Vous ! Oh ! vous, n’entendrez jamais. — Il ne sait pas que ma fille est morte. Il l’appelle ! Il la désire. Il veut descendre ici-bas pour la réclamer à la terre. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Il vient ! Il vient ! Sa voix sonnera sans pareille sous la terre ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Qu’il triomphe de toute la terre ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il n’osera pas. </said>
+            <stage>Le Prêtre fait un geste respectueux et peureux qui désigne, à l’opposé, vers l’extrême droite, un Antre sans espoir d’où sortent des vapeurs rampantes.</stage>
+          </sp>
+          <sp who="leguerrier">
+            <speaker>LE GUERRIER</speaker>
+            <said>Il osera. Je le pousserai. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ho ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>C’est là… peut-être… le meilleur destin pour lui. On oublie… Il oubliera… Il dépouillera sa folie. Il deviendra comme les autres. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Qu’il y aille, et n’en sorte jamais ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Laissez… Laissez-moi le conduire. Laissez-le moi. </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Prends garde. Il est mortel à qui l’approche. Et l’Antre est plein de vapeurs empoisonnées. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Taisez-vous. Éteignez les torches. </said>
+            <said>Enfin, il vient à moi ! </said>
+          </sp>
+          <sp who="lepretre">
+            <speaker>LE PRÊTRE</speaker>
+            <said>Il est juste qu’il expie. </said>
+            <stage>La Ménade se glisse et disparaît dans la bouche de l’Antre. Les torches s’éteignent. Il se fait un silence horrible…</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Qu’est-ce qu’ils trament contre lui ? Quelle insulte plus obscure et plus basse ? </said>
+            <stage>Tout à coup la grande</stage>
+          </sp>
+          <sp who="voixdorphee">
+            <speaker>VOIX D’ORPHÉE</speaker>
+            <stage rend="i">envahit le Temple souterrain.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage rend="i">s’élance à l’encontre pour lui barrer le passage, criant :</stage>
+            <said>Ô Maître ! Ne descends pas ! Ne cherche plus ! Fuis les hommes… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">apparaît.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Et fuis-moi, fuis-moi aussi ! </said>
+            <stage>Mais on voit et on entend</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">passer outre, — traverser le Temple, — et plonger dans la bouche de l’Antre.</stage>
+            <stage>Aussitôt les vapeurs bouillonnent et se convulsent ; s’efforçant de rejeter l’hôte insolite qui les pénètre et disparaît.</stage>
+            <stage>Furieuses, les vapeurs envahissent toute la scène, ayant mis en fuite le Prêtre, le Guerrier et jusqu’au Vieillard-Citharède.</stage>
+            <stage>L’exhalaison absorbe enfin et engouffre tout le Temple-Hypogée.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCÈNE II</head>
+          <stage>On se trouve dans un lieu sans espace descriptible… l’Antre, cave visqueuse, pulpe de fruit vénéneux…</stage>
+          <stage>Quelques lueurs égarées suivent les rehauts et les chutes des voix et de la LYRE, — permettant seules d’apercevoir</stage>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">comme en proie à une frénésie.</stage>
+            <said>Plus bas ! Plus bas ! jusqu’au ventre impur de la terre… </said>
+            <said>Je te cherche avec allégresse, ô Fugitive ! </said>
+            <said>Je te poursuis en riant ! À tâtons ! Je fouille les replis du manteau lourd que j’avais cru dépouillé… </said>
+            <said>Plus bas ! Ha ! plus bas encore… </said>
+            <said>Les hommes perdent l’esprit dans ces ténèbres ! </said>
+            <said>Je m’y plonge ! Je me baigne ! Je descends avec délices ! </said>
+            <stage>Le bruissement de la LYRE entoure ces paroles de lueurs violettes vite amorties.</stage>
+            <said>Es-tu là ? Pourquoi disparaître et t’enfuir ? </said>
+            <stage>Comme en répons, roulent par la bouche de la caverne des échos attardés de la dispute du Vieillard et des Ombres…</stage>
+            <said>Morte… </said>
+            <said>﻿— Morte… </said>
+            <said>﻿tuée par lui… </said>
+            <said>﻿— Morte par </said>
+            <said>grand a… </said>
+            <said>﻿— Morte par </said>
+            <said>﻿— maléfice ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">(avec emportement)</stage>
+            <said>Morte… Qui a dit « morte » ? </said>
+            <stage rend="i">éclatant d’un rire de haine :</stage>
+            <said>Ce sont les hommes… là-haut ! Ils jacassent entre eux… </said>
+            <said>Morte ! Ils te croient morte ! </said>
+            <said>La mort n’atteint pas où nous sommes. </said>
+            <stage>Un appel pressant de la Lyre laisse entrevoir un déboulis de rocs, de fanges, de mousses humides plongeant dans une ombre d’où remontent incessamment des fumées lourdes fusant du sol vers la voûte qui renvoie au sol une incessante pluie lente.</stage>
+            <stage>Et du plus profond de l’Antre, on voit sourdre</stage>
+          </sp>
+          <sp who="uneforme" xml:id="101">
+            <speaker>UNE FORME</speaker>
+            <stage rend="i">indécisément voilée,</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu es là : vraiment ! dans cette boue et dans ce silence… </said>
+            <said>Pourquoi ? Pourquoi ? </said>
+            <stage>Les lueurs de la LYRE pénètrent l’Antre sans l’émouvoir. Et l’appel et les lueurs, vite étouffés, s’éteignent sous une angoisse double.</stage>
+            <said>Tu ne réponds pas ? </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Je ne suis plus celle que tu aimes. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne joue pas avec les échos. </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Je ne suis plus celle que tu as tuée. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne fais pas mentir les échos. </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Ma voix est véridique. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ta voix est fausse, soudain… Qu’es-tu devenue ! Eurydice ! </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Je ne suis pas Eurydice. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ô aveu d’ingratitude ! Tu ne serais pas Eurydice ! Tu ne me crois plus… </said>
+            <said>Qui te reconnaîtrait mieux que moi ? </said>
+            <said>Réponds ! — Tu n’oses pas ? Ta voix changée, tu en as peur toi-même… </said>
+            <said>Oui. Mieux vaut se taire… se taire et… Fuir tout d’un coup ! </said>
+            <said>Viens, remontons vers le Palais chantant. </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Ah ! jamais plus ! N’y songe plus ! Tu es ici-bas où l’on meurt. </said>
+            <said>Ah ! le beau chant d’oiseau fou ! Il s’étrangle… Tu es ici-bas. Tu es homme. </said>
+            <said>Je suis heureuse. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Je suis maître. Viens ! </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Tu n’es plus maître que d’un seul hymne, Funèbre : et pour l’épouse, et pour l’époux. </said>
+            <said>Je suis heureuse. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu prononces des mots sans harmonie… Le son de tes lèvres est vide… </said>
+            <said>Il y a quelque maléfice humain. Ces vapeurs, ces bouffées d’un souffle empesté ! </said>
+            <said>Cet antre sourd… Ô ! par où fuir, fuir, fuir ? </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Personne que moi ne saurait te montrer la route. </said>
+            <said>Personne, et non pas un dieu, n’est sorti lui-même de ceci. </said>
+            <said>Mais je suis heureuse. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Je t’ai donné la ferveur de ma voix. </said>
+          </sp>
+          <sp who="laforme">
+            <speaker>LA FORME</speaker>
+            <said>Je t’ai conduit au Palais de mes noces : Voici la couche et voici la maison. </said>
+            <said>Tu as passé le seuil ! L’épousée se dévoile. </said>
+            <stage>(La forme se dévoile.)</stage>
+            <said>Orphée ! Tu dois enfin regarder et me voir. </said>
+            <said>Vois donc ! Je suis la Prêtresse-Ménade ! </said>
+            <said>Et vierge comme l’Autre, et sacrée ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Laisse-moi ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Je ne te touche pas. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Eurydice, qu’es-tu devenue ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Ne m’insulte pas. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>hésitant.</stage>
+            <said>Quoi ! Tu fais des signes… comme une femme ! Tes pieds s’enlisent dans la boue… Ta main est souillée… Arrache-toi de la fange ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>C’est ma demeure ! C’est mon Palais à moi ! </said>
+            <said>J’aurai le sort même de l’Autre. </said>
+            <said>Je l’enviais, là-bas, toutes les nuits au bord du Fleuve, </said>
+            <said>Je veux aussi… Chante ! Tu es redoutable à ceux qui t’aiment. </said>
+            <said>Tu es puissant. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu implores… (je ne te comprends pas…) je ne sais quoi… Attends… N’importe… </said>
+            <said>Je vais te secourir. </said>
+            <stage>Comme un recours à un charme indéfectible, il saisit à nouveau la LYRE et tente de la faire sonner.</stage>
+            <stage>Le chant s’étouffe.</stage>
+            <said>Ma LYRE s’assourdit et s’étouffe… </said>
+            <said>Ma LYRE même a peur ici ! Viens ! </said>
+            <said>Suis-moi, ô celle que j’ai suivie… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Fais que j’obéisse. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Je ne t’entends plus… Je te vois, lamentablement. </said>
+            <said>Je te vois : tu es toute emprise par la terre… </said>
+            <said>La terre monte autour de tes jambes… La voûte pleut sa boue chaude sur tes seins… </said>
+            <said>Je… ne… puis… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Gloire ! tu es à moi ! Tu es là ! Le héros va mourir dans mes bras ; — et d’abord, captif, il me tuera. </said>
+            <said>Tu es ma divine proie ! J’ai choisi le dieu que j’aime ! Il est descendu, il m’habite. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Que fais-tu ? L’immonde nous étreint. Les hommes rient, là-haut. Leurs pieds frappent nos têtes ! </said>
+            <said>Ils sont ivres de ces vapeurs et de nos plaintes… </said>
+            <said>Mais non ! Ils ne vaincront pas : </said>
+            <said>Souviens-toi, nous avons chanté et le Palais a volé en nuages… </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Tu es en moi. Dans mon piège, dans mes bras. Tu es sans force et sans voix… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>J’étouffe… J’étouffe… Ce poison… Ce chaos… dans ma poitrine… </said>
+            <said>Ce combat qui n’est pas le mien. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Gloire ! Dans mon palais sourd et au plus profond de mon antre, viens. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Aide-moi ! — Non ! ne caresse pas ainsi ! </said>
+            <said>Ce n’est pas l’étreinte humaine </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Joie ! ô joie ! la boue chaude </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>qui sauvera !</stage>
+            <said>À quoi bon te dévoiler ? </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <stage>est mon</stage>
+            <said>lit de tendresse, </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tu crois t’évader de la fange ? mais </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <stage>le poids de toute la montagne</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>plutôt</stage>
+            <said>Crions d’amour, et que les roches dansent de respect et que la voûte </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>est ma volupté. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>se déchire !</stage>
+            <said>Et nous vivrons dans le ciel d’Eurydice. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Tu l’as véritablement tuée. Mais elle n’est pas morte avec toi. </said>
+            <said>Orphée ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne livre pas mon nom ici. </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <stage>(criant.)</stage>
+            <said>Orphée ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Tais-toi ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <said>Oui. Le silence. Pour nous deux. </said>
+            <said>Le même silence. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Viens ! Viens ! </said>
+          </sp>
+          <sp who="lamenade">
+            <speaker>LA MÉNADE</speaker>
+            <stage>comme en folie.</stage>
+            <said>Je t’ai dit « Viens » aussi. Je suis Reine ici. Je suis ivre ! Moi, prêtresse, je saisis mon dieu ! </said>
+            <stage>Dans un transport elle enlace le corps redressé d’Orphée, dont, sauvagement, elle entoure les hanches.</stage>
+          </sp>
+          <sp who="orphee" xml:id="111">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">haut et droit, sans mouvement de retrait sous l’étreinte, dresse sa LYRE au dessus du combat.</stage>
+            <stage>Et, saisi d’un rire éclatant :</stage>
+            <said>Ha ! Ha ! Ha ! c’est toi qui fais cela ! </said>
+            <said>Ha ! ils disaient bien, là-haut, tu es morte. </said>
+            <said>Tu es bien morte. Tu n’es pas l’autre Eurydice, </said>
+            <said>Morte d’amour, morte là-haut. </said>
+            <said>… mais moi ! Mais moi ! lyre au-dessus de tout ! </said>
+            <said>Ah ! périsse la femme ! — Lyre, ouvre-moi la route ! Ma route ! </said>
+            <said>À moi ! </said>
+            <stage>D’un sursaut fulgurant, il déchire le réseau de la LYRE ; et le crèvement des cordes et leurs cinglements trament l’Antre,<hi rend="i"> (qui se fend comme un fruit) de rayons faisant au plus profond de l’épaisseur une échappée radieuse, par où, d’un seul bond, s’évade et disparaît</hi> ORPHÉE. Puis, tout l’Antre retombe, écrasant LA MÉNADE <hi rend="i">avec un obscur fracas.</hi> Les ténèbres referment leur Rideau.</stage>
+          </sp>
+        </div>
+        <div>
+          <head>INTERLUDE</head>
+          <stage>On suit à l’oreille les traces éperdues d’Orphée que ce déchirement désespéré et triomphal a relancé au travers des hommes — épiant, hors de l’atteinte, l’issue du combat dans l’Antre.</stage>
+          <stage>
+            
+            <hi rend="i">Ils le voient reparaître vivant. Ils célèbrent ce Chef inattendu qui vainc les enfers, qui ressuscite du lieu d’où jamais homme n’est revenu humain.</hi>
+          </stage>
+          <stage>
+            <hi rend="i">Leurs clameurs doubles, — envieuses et glorieuses — se fondent et s’accrochent a l’en-allée du Héros.</hi>
+          </stage>
+          <stage>
+            <hi rend="i">Les timbres rancuniers persistent longtemps par-dessus les autres.</hi>
+          </stage>
+          <stage><hi rend="i">On rejoint ainsi et l’on suit à l’oreille, — on fait cortège à la marche à rebours d’Orphée, remontant le Drame et tout ce qui salent de s’entendre</hi> :
+      </stage>
+          <stage><hi rend="i">Retrouvant le Palais Sonore encor vibrant de la Mort d’Eurydice</hi>,
+      </stage>
+          <stage>
+            <hi rend="i">Rejoignant le bord du Fleuve, les rumeurs du Bois, les frémissements familiers du Repaire…</hi>
+          </stage>
+        </div>
+      </div>
+      <div xml:id="V_LA_MONTAGNE_ET_LES_AIRS_SONORES">
+        <head>V
+<lb/>LA MONTAGNE ET LES AIRS SONORES</head>
+        <div>
+          <head>ÉPILOGUE</head>
+          <stage>
+            <hi rend="i">Et l’on se replonge avec Lui dans un grand calme rasséréné, au centre des échos du premier cirque en la Montagne, — là même ou, voici quelques mois à peine… quelques jours… quelques instants…</hi>
+          </stage>
+          <stage>
+            <hi rend="i">Le Prêtre et Le Guerrier l’avaient élu Roi, selon l’Oracle.</hi>
+          </stage>
+          <stage>
+            <hi rend="i">Le Rideau s’ouvre une dernière fois.</hi>
+          </stage>
+          <stage><hi rend="i">De nouveau l’on aperçoit la conque montagneuse, et, couché noblement au centre des échos</hi>,
+      </stage>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>
+              <hi rend="i">de nouveau seul.</hi>
+            </stage>
+            <stage>
+              <hi rend="i">Sa grande Voix et sa LYRE aux cordes nombreuses et retendues, sonnent à pleine envolée…</hi>
+            </stage>
+            <stage>
+              <hi rend="i">Il va se faire un moment radieux, un Hymne…</hi>
+            </stage>
+            <stage><hi rend="i">Mais survient, à pas précipités</hi>,
+      </stage>
+          </sp>
+          <sp who="levieillardcitharede">
+            <speaker>LE VIEILLARD-CITHARÈDE</speaker>
+            <stage>Il jette des signes… il veut parler…</stage>
+          </sp>
+          <sp who="orphee" xml:id="119">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne trouble pas l’écho de la Montagne ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Pardonne-moi… Il faut que tu m’écoutes : Pour fuir encore… au delà ! </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Ne trouble pas l’écho de la Montagne ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ce n’est plus ce que tu pouvais craindre. </said>
+            <said>Ce ne sont plus les hommes : ils s’occupent, loin d’ici, à d’autres jeux : </said>
+            <said>Ils se tuent l’un l’autre, pour toi. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Laisse-les battre. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ou ils te prétendent imposteur. Ou, que tu es bien mort, mais, comme un dieu, ressuscité. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Laisse-les dire. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ils recueillent des lambeaux de ta tunique. </said>
+            <said>Ils répètent tes mots chantés. </said>
+            <said>Ils miment les douleurs de ton agonie… </said>
+            <said>Et ils pleurent. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Laisse les hommes ! </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Ce ne sont plus les hommes qui menacent ! Mais ce qui vient ! Celles qui accourent sur mes pas… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Nulle femme ne me joindra plus jamais </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Aucune femme… Oui, je le sais, moi, le père… </said>
+            <said>Ton merveilleux pouvoir : tu es redoutable à ceux qui t’aiment. </said>
+            <said>Tu es puissant. — Mais toutes celles-ci… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">chantant à mi-voix, sur un mode recueilli, avec un amical accent asséréné :</stage>
+            <said>Pourquoi ne m’avais-tu jamais écouté face à face ? </said>
+            <said>Pourquoi n’osais-tu murmurer ce que tu vas me dire ? </said>
+            <said>Reprends haleine, et chante enfin selon ton gré. </said>
+            <stage>L’accueil est si apaisé, si confidentiel, que</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage rend="i">oubliant sa course et ses craintes, s’assied, pour des aveux, près du Maître.</stage>
+            <said>Oui. Je le puis maintenant. Près de toi. </said>
+            <said>Maintenant quelque chose nous unit et nous sépare. </said>
+            <said>En ce moment, je puis enfin t’interroger. </said>
+            <said>Moi. </said>
+            <said>— Voici : tu ne vis pas comme les hommes d’aujourd’hui. Tu n’as pas vécu parmi les hommes d’autrefois. Tu ne fais pas les gestes des dieux honorés. </said>
+            <said>Tu n’as point d’âge. Tu n’es personne. </said>
+            <said>Ô Toi ! Qui es-tu ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Orphée. </said>
+            <stage>Le Nom tonne à travers la Montagne.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Oh ! le Nom a tonné à travers la Montagne ! </said>
+            <said>Des mondes… </said>
+            <said>S’ouvrent… Trop loin ! </said>
+            <said>Trop vite… </said>
+            <said>Je suis trop lié à mon âge ! D’autres viendront, peut-être… </said>
+            <said>D’autres entendront. </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Profère ta seconde angoisse. </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Eh bien ! Dis-moi sans tarder, — car j’ai droit — </said>
+            <said>Celle que tu… qui mourut sous tes chants par grand amour, </said>
+            <said>Celle qui brûla d’extase sous ta voix… </said>
+            <said>Là-bas, au Palais sonore… </said>
+            <said>Dis-moi, avant de mourir sous ta voix, </said>
+            <said>A-t-elle entendu ? </said>
+            <said>Celle que tu choisis, que tu suivis… a-t-elle… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Jamais je n’ai suivi personne. </said>
+            <said>J’appelais… J’appelais… Eurydice ! </said>
+            <stage>Aussitôt des bruissements de</stage>
+          </sp>
+          <sp who="petitesvoixmyriadaires" xml:id="124">
+            <speaker>PETITES VOIX MYRIADAIRES</speaker>
+            <stage rend="i">partout, dans le vent, au bout des arbres, dans les feuilles qui tournoient, dans les gouttes suspendues… murmurent universellement</stage>
+            <said>Eurydice… </said>
+            <stage rend="i">et les ravins, la Montagne et le Ciel attentif s’extasient avec douceur sur l’Infini du nom multiplié.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Oh ! Oh ! j’entends ceci : elle vit : elle est immortelle. </said>
+            <said>Oh ! Oh ! C’est plus divin que d’enfanter un dieu ! </said>
+          </sp>
+          <sp who="lesmemesvoixmyriadaires">
+            <speaker>LES MÊMES VOIX MYRIADAIRES</speaker>
+            <said>C’est plus… </said>
+            <said>﻿divin… </said>
+            <said>﻿que d’enfanter… </said>
+            <said>﻿un dieu ! </said>
+            <stage>
+              <hi rend="i">Le souvenir, ayant pénétré la Montagne, revient, replié sur lui-même, après un grand cercle, vers le Vieillard, vers Orphée.</hi>
+            </stage>
+            <stage>
+              <hi rend="i">Tous deux, en un commun recueillement, prolongent au plud profond d’eux-mêmes cet écho.</hi>
+            </stage>
+            <stage>
+              <hi rend="i">Respectueux l’un de l’autr
+        e.</hi>
+            </stage>
+            <stage>Mais, dans le lointain de l’espace, un sifflement se darde (LE VIEILLARD <hi rend="i">s’est dressé) si aigre, si étranger, qu’il semble étonnant qu’il ait percé le formidable calme.</hi></stage>
+            <stage>Un autre sifflement… et soudain, de toutes parts, et l’on ne sait plus où prêter l’oreille…</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">n’a point tressailli.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Les voilà ! Ce sont elles ! Les Ménades en furie, comme des chiennes… Elles réclament ta mort </said>
+            <said>Pour la mort de leur Prêtresse, écrasée par toi, engloutie au fond de l’Antre… </said>
+            <said>Tu te souviens ? </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage rend="i">demeure impassible.</stage>
+            <stage>Les sifflements s’aiguisent et se renforcent.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Maître ! Maître ! Prends garde </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <said>Comment peux-tu craindre ? </said>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <stage>pour toi.</stage>
+            <said>Celles-ci ne se peuvent combattre : elles crient plus fort que tout : elles sifflent : elles se démènent… </said>
+            <said>Elles vont déchirer ta chair de leurs ongles… te mordre, te disperser ! </said>
+            <said>Maître, ô Maître, exauce-moi une dernière fois. Fuis encore ! </said>
+            <said>Évade-toi ! Tu n’es point armé contre elles… </said>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage><hi rend="i">daigne se lever enfin, lentement. Et dans la noble attitude où, pour la première fois, on le vit chanter</hi>,
+      </stage>
+            <stage>
+              <hi rend="i">Il a sa LYRE ressuscitée dans les bras. Ses doigts sont dispos.</hi>
+            </stage>
+            <stage>Il regarde en souriant le Vieillard.</stage>
+          </sp>
+          <sp who="levieillard">
+            <speaker>LE VIEILLARD</speaker>
+            <said>Tu méprises de mourir ? Soit ! Tu es Maître. Mais ta voix ! Elles vont la déchirer aussi… L’étrangler aussi… </said>
+            <said>Ta voix va mourir aussi et tout ne sera plus que silence… </said>
+            <said>Aie pitié de ceux qui viendront, de tes sujets, </said>
+            <said>De tes fils dans un monde sonore, </said>
+            <said>Orphée ! Orphée-Roi ! </said>
+            <stage>Et il se prosterne.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>ORPHÉE</speaker>
+            <stage>
+              <hi rend="i">élève lentement sa LYRE comme un bouclier devant sa face…</hi>
+            </stage>
+            <stage>
+              <hi rend="i">Et le masque sonnant, peu à peu se substitue à son visage humain.</hi>
+            </stage>
+            <stage>Alors au paroxysme de la tempête, une immense vague fauve et blanche, — femmes innombrables, ivres et nues sous les dépouilles de renards :</stage>
+          </sp>
+          <sp who="lesmenadesenfurie">
+            <speaker>LES MÉNADES EN FURIE</speaker>
+            <stage rend="i">bondissent, brandissant leurs roseaux aiguisés, faisant siffler leurs fouets de vignes et cinglant de leurs sistres avec ce singulier cri :</stage>
+            <said>C’est lui, celui-ci </said>
+            <said>﻿C’est ici lui, celui-ci </said>
+            <said>C’est lui, celui-ci </said>
+            <said>﻿C’est lui </said>
+            <stage rend="i">et assaillant toutes Orphée, le submergent, l’entraînent, dépècent sa voix toute vivante.</stage>
+            <stage>LE VIEILLARD <hi rend="i">qui d’abord s’est jeté dans la mêlée, en est repoussé, s’abat et se démène d’impuissance.</hi></stage>
+            <stage>LES MÉNADES et leur proie<hi rend="i"> ont disparu.</hi> </stage>
+            <stage>
+              <hi rend="i">Une onde noire absorbe tout ; et la scène visible.</hi>
+            </stage>
+            <stage><hi rend="i">Il se fait un</hi> DERNIER SILENCE puis on voit que tout près du Vieillard, la LYRE, dont le chant par éclats avait dominé le tumulte, gît, négligée du troupeau des assaillantes.</stage>
+            <stage>LE VIEILLARD<hi rend="i"> dresse La tête, se relève, s’en approche, s’agenouille et, dévotement, tend les mains pour la saisir et l’emporter.</hi> </stage>
+            <stage>
+              <hi rend="i">À peine est-elle effleurée qu’il défaille, retombe et achève de mourir près d’elle sa vieillesse.</hi>
+            </stage>
+            <stage>Seule, intacte, mortelle à tous, bienfaisante, irréelle, harmonieuse, LA LYRE <hi rend="i">s’élève peu à peu et plane au-dessus de l’abîme. Et voici que dans cette ascension fulgurante, le Chant s’affirme, et c’est</hi> LA VOIX PREMIÈRE D’ORPHÉE — <hi rend="i">dominant de son épiphanie le sol lourd, les bois et les roches, les jeux, les amours et les cris, et se haussant, triomphante, — qui règne au plus haut des cieux chantants.</hi></stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+  
+</text></TEI>

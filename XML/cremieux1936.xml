@@ -1,0 +1,2664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title type="main">Orphée aux Enfers</title>
+            <author>Jacques Offenbach, Hector Crémieux</author>
+            <editor></editor>
+        </titleStmt>
+        <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+            <respStmt>
+                <name>Karolina Suchecka</name>
+                <resp>Chargé de l'édition</resp>
+            </respStmt>
+            <respStmt>
+                <name>Nathalie Gasiglia</name>
+                <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+                <name>Karl Zieger</name>
+                <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
+                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
+                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
+                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
+                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+                </licence>
+            </availability>
+            <idno>https://fr.wikisource.org/wiki/Orph%C3%A9e_aux_Enfers</idno>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl><author>Jacques Offenbach, Hector Crémieux</author> / <title>Orphée aux Enfers</title> / Paris / Calmann-Lévy / 1936 / .</bibl> 
+            <biblFull>
+                <titleStmt>
+                    <title>Orphée aux Enfers</title>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Calmann-Lévy</publisher>
+                    <pubPlace>Paris</pubPlace>
+                    <date when="1936"/>
+                </publicationStmt>
+            </biblFull>
+            <genre>opéra</genre>
+            <structure>cremieux1936</structure>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+        <creation>
+            <date when="1936">1936</date>
+        </creation>
+        <language>
+            <language>FR</language>
+        </language>
+        <textClass>
+            <keywords>
+                <list>
+                    <item>parodie</item>
+                </list>
+            </keywords>
+        </textClass>
+    </profileDesc>
+</teiHeader><text><front><titlePage>
+        <docAuthor>Jacques Offenbach, Hector Crémieux</docAuthor>
+        <docTitle>
+          <titlePart type="main">Orphée aux Enfers</titlePart>
+        </docTitle>
+      </titlePage></front>
+        
+
+    <body>
+      <div type="acte" n="1">
+        <head>ACTE PREMIER</head>
+        <div type="tableau" n="1">
+          <head>PREMIER TABLEAU
+<lb/>La mort d’Eurydice</head>
+          <stage>La campagne aux environs de Thèbes. Au fond, des blés dorés et des bluets. A gauche, la cabane d’Aristée, surmontée de cette enseigne : Aristée, fabricant de miel, gros et détail, dépôt au mont Hymette. A droite, la cabane d’Orphée avec cette inscription : Orphée, directeur de l’Orphéon de Thèbes, leçons au mois et au cachet.
+          </stage>
+          <div type="scene" n="0">
+            <head>AVANT-SCÈNE</head>
+            <sp who="lopinionpublique">
+              <speaker>l’opinion publique</speaker>
+              <l>Qui je suis ? — Du théâtre antique</l>
+              <l>J’ai perfectionné le chœur,</l>
+              <l>Je suis l’Opinion publique,</l>
+              <l>Un personnage symbolique,</l>
+              <l>Ce qu’on appelle un raisonneur.</l>
+              <l>Le chœur antique en confidence</l>
+              <l>Se chargeait d’expliquer aux gens</l>
+              <l>Ce qu’ils avaient compris d’avance,</l>
+              <l>Quand ils étaient intelligents.</l>
+              <l>Moi, je fais mieux. — J’agis moi-même ;</l>
+              <l>Et prenant part à l’action,</l>
+              <l>De la palme ou de l’anathème</l>
+              <l>Je fais la distribution.</l>
+              <l>Que prenne garde à moi la femme</l>
+              <l>Qui voudrait tromper son époux,</l>
+              <l>Et que se garde aussi l’époux</l>
+              <l>Qui ferait des traits à sa femme !…</l>
+              <l>— C’est aux personnages du drame</l>
+              <l>Que je parle. — Rassurez-vous !</l>
+              <l>Voici venir notre Eurydice ;</l>
+              <l>Je pars : — mais je suis toujours là,</l>
+              <l>Prêt à sortir de la coulisse,</l>
+              <l>Comme un <hi rend="i">Deus ex machina</hi> !</l>
+              <stage>L’Opinion exit.</stage>
+            </sp>
+          </div>
+          <div type="scene" n="1">
+            <head>Scène PREMIÈRE</head>
+            <stage>EURYDICE<hi rend="i">, elle cueille des fleurs et en fait une guirlande.</hi></stage>
+            <l>La femme dont le cœur rêve</l>
+            <l>N’a pas de sommeil ;</l>
+            <l>Chaque jour elle se lève</l>
+            <l>Avec le soleil.</l>
+            <l>Le matin de fleurs plus belles</l>
+            <l>Les prés sont brodés :</l>
+            <l>Mais ces fleurs, pour qui sont-elles ?</l>
+            <l>Vous le demandez ?</l>
+            <l>Pour qui ?</l>
+            <l>N’en dites rien à mon mari,</l>
+            <l>Car c’est pour le berger joli</l>
+            <l>Qui loge ici.</l>
+            <stage>Elle s’approche avec inquiétude de la cabane d’Aristée et suspend à sa porte une guirlande.</stage>
+<label>II</label>
+            <l>Chaque jour ainsi j’apporte,</l>
+            <l>Au berger galant,</l>
+            <l>De beaux bluets, qu’à sa porte</l>
+            <l>J’accroche en tremblant,</l>
+            <l>Et mon pauvre cœur palpite,</l>
+            <l>A bonds saccadés…</l>
+            <l>Pour qui donc bat-il si vite ?</l>
+            <l>Vous le demandez ?</l>
+            <l>Pour qui ?</l>
+            <l>N’en dites rien à mon mari,</l>
+            <l>Car c’est pour le berger joli</l>
+            <l>Qui loge ici.</l>
+            <stage>Elle entr’ouvre la porte de la cabane et regarde un instant à l’intérieur ; pendant ce temps, Orphée paraît à gauche : il tient à la main son violon.</stage>
+          </div>
+          <div type="scene" n="II">
+            <head>Scène II</head>
+            <stage>Eurydice, Orphée.</stage>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Il est sorti !… Je veux qu’en rentrant il trouve son toit semé de fleurs.</p>
+              <stage>Elle prend le reste des fleurs qu’elle tient dans sa robe et les jette dans la cabane.</stage>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Que vois-je !… n’est-ce pas la nymphe Maquilla, la belle nymphe que j’adore ?… Seule ! Révélons ma présence par ce trait qu’elle aime tant.</p>
+              <stage>Il joue une phrase passionnée sur le violon.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Mon mari !…</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Ma femme !… Imbécile !… Dépêchons-nous de crier avant qu’elle commence… Ah ! je vous y prends, madame.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>À quoi, je vous prie ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>À quoi ?… mais à qui donc jetiez-vous ces fleurs, s’il vous plaît ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ces fleurs ?… au vent !… et vous, mon tendre ami, à qui jetiez-vous ce chant passionné de votre… crin-crin ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>À la lune…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Fort bien ! Savez-vous ce que je conclus de tout cela, mon bon chéri ?… c’est que si j’ai mon berger, vous avez votre bergère… Eh bien ! Je vous laisse votre bergère, laissez-moi mon berger.</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Allons ! madame, cette proposition est de mauvais goût !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Pourquoi donc, je vous prie ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Parce que… parce que… Tenez ! vous me faites rougir !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Vraiment ! Eh bien ! si cette couleur-là vous déplaît, nous tâcherons de vous en trouver une autre.</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>ORPHÉE.</speaker>
+              <p>Eurydice !… ma femme ?…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>EURYDICE.</speaker>
+              <p>Ah ! mais, c’est qu’il est temps de s’expliquer, à la fin ! Et il faut qu’une bonne fois je vous dise votre fait, maître Orphée, mon chaste époux, qui rougissez ! Apprenez que je vous déteste ! Que j’ai cru épouser un artiste et que je me suis unie à l’homme le plus ennuyeux de la création. Vous vous croyez un aigle, parce que vous avez inventé les vers hexamètres !… mais c’est votre plus grand crime à mes yeux !… Est-ce que vous croyez que je passerai ma jeunesse à vous entendre réciter des songes classiques et racler <stage>(Montrant le violon d’Orphée.)</stage> l’exécrable instrument que voilà ?…</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>ORPHÉE.</speaker>
+              <p>Mon violon !… Ne touchez pas cette corde, madame !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>EURYDICE.</speaker>
+              <p>Il m’ennuie, comme vos vers, votre violon !… Allez charmer de ses sons les bergères de troisième ordre dont vous raffolez. Quant à moi, qui suis fille d’une nymphe et d’un demi-dieu, il me faut la liberté et la fantaisie !… J’aime aujourd’hui ce berger, il m’aime ; rien ne me séparera d’Aristée !</p>
+            </sp>
+            <label>DUO.</label>
+            <sp who="orphee">
+              <speaker>ORPHÉE.</speaker>
+              <l>Ah ! C’est ainsi ?</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>EURYDICE.</speaker>
+              <l>Oui, mon ami.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Tu me trompes, comme mari ?</l>
+            </sp>
+            <sp who="euridyce">
+              <speaker>Euridyce</speaker>
+              <l>Oui, mon ami !…</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Tu me dédaignes, comme artiste !</l>
+            </sp>
+            <sp who="euridyce">
+              <speaker>Euridyce</speaker>
+              <l>Oui, mon ami !</l>
+              <l>Le violoniste</l>
+              <l>Me paraît triste,</l>
+              <l>L’instrumentiste</l>
+              <l>Est assommant,</l>
+              <l>Et l’instrument</l>
+              <l>Me déplaît souverainement.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Ah ! De ton insolence</l>
+              <l>Je vais tirer vengeance.</l>
+            </sp>
+            <sp who="euridyce">
+              <speaker>Euridyce</speaker>
+              <l>Et comment, je vous prie ?</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Je vais, ma tendre amie,</l>
+              <l>Vous jouer aussitôt</l>
+              <l>Une œuvre de génie :</l>
+              <l>Mon dernier concerto.</l>
+            </sp>
+            <sp who="euridyce">
+              <speaker>Euridyce</speaker>
+              <l>Grâce, je t’en supplie…</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Non, non, pas de retard,</l>
+              <l>C’est le comble de l’art :</l>
+              <l>Il dure une heure un quart !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker>
+              <l>Une heure un quart !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Au moins.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker>
+              <l>Je n’écouterai pas.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Si, tu m’écouteras.</l>
+            </sp>
+              <stage>
+                <hi rend="i">Il joue du violon : Eurydice se bouche les oreilles avec désespoir.</hi>
+              </stage>
+              <label>ENSEMBLE.</label>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>C’est adorable,</l>
+              <l>C’est délectable,</l>
+              <l>C’est ravissant,</l>
+              <l>C’est entraînant.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker>
+              <l>C’est déplorable,</l>
+              <l>C’est effroyable,</l>
+              <l>C’est assommant,</l>
+              <l>C’est irritant.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Écoutez encor ce motif</l>
+              <l>Charmant, langoureux, expressif.</l>
+              <stage>Reprise du violon.</stage>
+              <l>Quel charmant concerto !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker>
+              <l>Ah ! C’est horrible,</l>
+              <l>Ah ! C’est terrible.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Quel tremolo ! rinforzando,</l>
+              <l>Presto, presto, pianissimo,</l>
+              <l>Pizzicato… agitato…</l>
+              </sp>
+<label>ENSEMBLE.</label>
+              <stage>Orphée joue du violon avec rage et Eurydice chante.</stage>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker>
+              <l>Ah ! Seigneur, ah ! quel supplice,</l>
+              <l>C’est fini, le voilà parti.</l>
+              <l>O Vénus, sois-moi propice !</l>
+              <l>Délivre-moi de mon mari.</l>
+              <p>Vénus, ma belle déesse, délivre-moi de mon aimable Orphée, et je t’immolerai dix brebis plus blanches que le lait !</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <p>Jupiter, mon maître, délivre-moi de ma tendre Eurydice, et je chanterai tes louanges sur ma lyre à quatre cordes. <stage>(À Eurydice.)</stage>Madame, je ne me fais aucune illusion sur le sort qui m’attend ! Quand une femme en est arrivée à ce degré d’audace, il est parfaitement inutile d’essayer de la remettre dans la bonne voie…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>À la bonne heure ! séparons-nous donc !</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Je le ferais de bon cœur, si cela ne devait pas nuire à ma considération et à la position que je me suis faite par mon talent et mon travail. Je suis esclave de l’opinion publique : – c’est ma seule faiblesse, laissez-la-moi. – J’ai besoin du monde, je ne veux pas le heurter. Mais je me suis mis en tête de pourfendre chacun de vos adorateurs…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Avec votre archet ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Non, madame. Je crois inutile de vous apprendre le moyen que j’ai choisi pour attraper le maraudeur… Qu’il vous suffise de savoir ceci : Je ne lui conseille pas de folâtrer dans les blés que voilà, comme il le fait depuis qu’il est venu, je ne sais d’où, s’établir dans mon voisinage.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Et qui l’en empêchera ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Qui !… petit nanan que j’ai semé à son intention dans les blonds épis…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Que voulez-vous dire ?</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Rien de plus ! Je vais donner mes leçons à l’Orphéon… Adieu, bibiche… petit nanan semé pour lui, là… Faites attention… Adieu !</p>
+            </sp>
+            <stage>Il sort.</stage>
+          </div>
+          <div type="scene" n="3">
+            <head>Scène III</head>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Que veut-il dire avec son petit nanan semé dans les blonds épis ?… C’est que ce vilain homme est capable de tout !… Quelque piège peut-être !… quelque piège à loups !… Il l’est tellement, jaloux !… Et Aristée qui vient toujours à travers ces blés pour m’y rencontrer et folâtrer avec moi ! Courons au-devant de lui !… Le malheureux se ferait faire du mal !… Courons !…</p>
+              <stage>Elle sort à droite. Au même instant, Aristée paraît à gauche et descend la colline du fond.</stage>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_IV">
+            <head>Scène IV</head>
+            <stage>ARISTÉE, puis EURYDICE.</stage>
+            <sp who="aristee"><speaker>Aristée</speaker><stage>, s’arrêtant au fond.</stage>
+            
+            <lg><label>RÉCITATIF.</label>
+              <l>Moi, je suis Aristée, un berger d’Arcadie,</l>
+            <l>Un fabricant de miel, ivre de mélodie,</l>
+            <l>Sachant se contenter des plaisirs innocents</l>
+            <l>Que les dieux ont permis à l’habitant des champs !</l></lg>
+            
+              <lg><label>I</label>
+                <l>Voir voltiger sous les treilles,</l>
+              <l>Entre terre et ciel,</l>
+              <l>Les essaims de mes abeilles</l>
+              <l>Butinant leur miel ;</l>
+              <l>Voir le lever de l’aurore,</l>
+              <l>Et, chaque matin,</l>
+              <l>Se dire : je veux encore</l>
+              <l>Le revoir demain.</l>
+              <l>Voilà la fête</l>
+              <l>D’une âme honnête,</l>
+              <l>Le vrai bonheur</l>
+              <l>Du cœur !</l></lg>
+              <stage>Parler très naïf.</stage>
+              <p>Voilà !</p>
+              
+              <lg><label>II</label>
+                <l>Voir bondir dedans la plaine</l>
+              <l>Les petits moutons,</l>
+              <l>Accrochant leur blanche laine</l>
+              <l>A tous les buissons !</l>
+              <l>Voir sommeiller la bergère,</l>
+              <l>Tandis qu’à pas lents,</l>
+              <l>Le berger qu’elle préfère</l>
+              <l>Vient et la surprend !</l>
+              <l>Voilà la fête</l>
+              <l>D’une âme honnête,</l>
+              <l>Le vrai bonheur,</l>
+              <l>Du cœur !</l></lg>
+              <p>Voilà ! <stage>(Regardant avec précaution autour de lui.)</stage> Voilà ce que je dis aux personnes, ce que je dis devant le monde ! pour inspirer de la confiance !… Mais si vous saviez qui je suis en réalité, et quels projets infernaux je médite !… Si l’idée que j’ai soufflée à Orphée réussit, je crois que c’est aujourd’hui que nous frapperons un grand coup ! Voici la tendre Eurydice, n’ayons pas l’air d’avoir passé dans les blés.</p></sp>
+          
+              <stage>Il remonte.</stage>
+              <sp who="eurydice">
+                <speaker>Eurydice</speaker><stage>, rentrant à droite.</stage>
+              <p>Impossible de le rencontrer. Ah ! le voici !… J’arrive à temps ! Sois béni, ô Vulcain !… Aristée !… mon beau berger ! prends garde !</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>À quoi ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>À toi !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>À moi ?… Pourquoi ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Tais-toi !… Et parle plus bas !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Entendons-nous !… Je vais…</p>
+              <stage>Il fait mine d’entrer dans les blés.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Aristée !… mon fidèle berger !… ne bouge pas !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Comment ! Ne bouge pas !… Mais pourtant si je ne peux pas parler haut et que je ne puisse pas non plus t’approcher, ma bergère, nous n’avons pas de chances de nous entendre… Alors, parlons par gestes !…</p>
+              <stage>
+                <hi rend="i">Il fait un pas vers les blés.</hi>
+              </stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Aristée !… au nom de mon amour, n’approche pas !… te dis-je !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Quelle singulière timidité te prend donc aujourd’hui !… Tu es sauvage ordinairement, je ne dis pas… mais, enfin, tu l’es raisonnablement… comme une bergère… mythologique…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Il s’agit bien de ma sauvagerie !… Il s’agit de ta vie !… Si tu fais un pas, tu es mort !</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Comment ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Mon mari sait tout… Il nous a espionnés… et il a semé des piéges dans ces blés, témoins ordinaires de nos innocentes amours !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Bah !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>C’est comme ça !…</p>
+              <stage>Aristée<hi rend="i">, à part.</hi></stage>
+              <p>Est-il bête, l’animal ! Il l’a prévenue !… Ces maris sont tous les mêmes !… Il veut me surprendre !… et il me fait prévenir !… Réparons sa maladresse… <hi rend="i">(Haut.)</hi> Veux-tu que je te dise ?…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Dis !</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Eh bien ! C’est des bêtises, des chansons et des balivernes.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Des bêtises !… Mais je te dis qu’il est furieux… qu’il a juré…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Tiens ! regarde comme je m’en moque, de ses piéges, non, mais regarde…</p>
+              <stage>Il trottine dans les blés.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Aristée !… ton amour et ton courage t’emportent !… Aristée !… tu cours à la mort !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Il n’y a pas de danger, et quand même, que n’affronterait-on pas pour te rejoindre ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Eh bien ! Alors, je veux mourir avec toi !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée</speaker><stage>, à part</stage>
+              <p>Allons donc !…</p>
+              <stage>Ils marchent dans les blés, à la rencontre l’un de l’autre. Eurydice s’arrête tout à coup, un pied en l’air.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Aïe !</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée</speaker>
+              <p>Crac !… ça y est !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Je suis prise !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée</speaker>
+              <p>Et plus que tu ne crois !…</p>
+              <stage>Musique à l’orchestre.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Mon dieu, qu’est-ce que j’éprouve ?</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée</speaker>
+              <p>Pluton, redeviens toi-même ! une ! deux ! trois ! <stage>(Son costume de berger disparaît. – Il est vêtu en dieu des enfers.)</stage> Et maintenant, désorganisons les éléments. <stage>(Il fait un signe de son bident. Tonnerre. La nuit arrive subitement. – Après l’orage.)</stage> Chez moi, voilà comme on désorganise les éléments.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Dieu puissant ! est-ce que je vais mourir ?</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>Entièrement !… <hi rend="i">Lasciate ogni speranza !…</hi></p>
+              <stage>Il rit d’un rire strident.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Et cependant je ne souffre pas…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée</speaker><stage>, bas.</stage>
+              <p>Je t’expliquerai pourquoi…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ah ! C’est étrange !…</p>
+            </sp>
+            <sp who="aristee">
+              <speaker>Aristée.</speaker>
+              <p>C’est logique…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <lg><label>I</label>
+              <l>La mort m’apparaît souriante</l>
+              <l>Que vient me frapper près de toi…</l>
+              <l>Elle m’attire, elle me tente…</l>
+              <l>Mort, je t’appelle… emporte-moi !…</l></lg>
+              <lg><label>II</label>
+              <l>Mort, ton ivresse me pénètre !</l>
+              <l>Ton froid ne me fait pas souffrir ;</l>
+              <l>Il semble que je vais renaître,</l>
+              <l>Oui, renaître, au lieu de mourir !…</l>
+              <l>Adieu !… adieu !…</l></lg>
+              <stage>Elle tombe inanimée sur le banc de gazon.</stage>
+              <stage>Aristée<hi rend="i">, lui tâtant le pouls</hi></stage>
+              <p>Crac !… ça y est !… Une larme !… une larme ! et partons ! Avant de partir, abusons de notre divinité pour jeter un dernier défi au mari… <stage>(Il étend son bident sur la tête d’Eurydice, qui se réveille et se dresse comme dominée. Pluton s’arrache une plume, et la lui donne en montrant du geste la cabane d’Orphée.)</stage> Voilà une plume… et tout ce qu’il faut pour écrire.</p>
+              <stage>Eurydice écrit sur la porte ces quatre vers qui se tracent en lettres de feu :</stage>
+              <l>Je quitte la maison</l>
+              <l>Parce que je suis morte,</l>
+              <l>Aristée est Pluton,</l>
+              <l>Et le diable m’emporte.</l>
+              <stage>Pluton saisit Eurydice.</stage>
+              <p>La rime n’est pas riche !… mais la richesse ne fait pas le bonheur ! Et maintenant !… aux sombres bords !… Nous arriverons bien plus vite que par la barrière d’Enfer…</p>
+              <stage>Ils s’engloutissent.</stage>
+            </sp>
+          </div>
+          <div type="scene" n="5">
+            <head>Scène V</head>
+            <stage>Orphée<hi rend="i">, rentrant par la droite</hi></stage>
+            <p>Ah çà ! que diable y a-t-il donc de dérangé là-haut ? je quitte mes leçons à la troisième heure et j’arrive en pleine nuit chez moi !… je n’ai pas encore dîné, et voici déjà l’heure du souper !… Que veut dire cette perturbation ?… Ah ! bah !… en somme, ça ne me fait qu’un repas au lieu de deux avec ma tendre épouse, c’est autant de gagné… C’est égal, il y a une éclipse, bien sûr !… <stage>(Il est arrivé devant sa maison ; l’inscription frappe ses regards.)</stage> Par Jupiter !… Que veut dire ceci !… L’écriture de ma femme !…</p>
+            <stage>(Il lit.)</stage>
+            <l>Je quitte la maison</l>
+            <l>Parce que je suis morte,</l>
+            <l>Aristée est Pluton,</l>
+            <l>Et le diable m’emporte.</l>
+            <stage>Il entre dans sa cabane et en ressort immédiatement.</stage>
+            <p>Comment, elle est morte !… ce n’est pas possible ! Mais si !… elle est bien morte !… puisqu’elle le dit elle-même !… Merci !… merci !… Jupin !… <stage>(Il regarde avec inquiétude à droite.)</stage> Quelqu’un !… Mais non, personne !… je puis me livrer à ma joie !!! Courons apprendre ce bonheur à celle que j’aime !</p>
+            <stage>Éclairs et tonnerre.</stage>
+          </div>
+          <div type="scene" n="6">
+            <head>Scène VI</head>
+            <stage>ORPHÉE, L’OPINION PUBLIQUE, armée d’une torche et d’un fouet.</stage>
+            <sp who="lopinion">
+              <speaker>L’opinion.</speaker>
+              <p>Arrière !… ça ne se passera pas comme ça !…</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Ciel ! L’opinion publique qui me poursuit déjà.</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’opinion.</speaker>
+              <p>Oui, l’opinion publique qui sait tout et qui vient t’arracher à ta joie inconvenante pour te faire expier ton forfait.</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Que veux-tu dire ?</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <p>Tu vas me suivre dans l’Olympe, aux pieds de Jupiter, à qui tu redemanderas ton épouse adorée.</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Moi ! réclamer Eurydice ! m’en préservent les dieux !</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <p>Pour l’édification de la postérité, il nous faut au moins l’exemple d’un mari qui ait voulu ravoir sa femme.</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Mais je ne l’aime pas !</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <p>L’exemple n’en sera que plus frappant et plus glorieux pour toi !…</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Mais je ne veux pas !…</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <p>Tu refuses !… tu aimes mieux ma vengeance ! Eh bien ! elle te poursuivra partout !… je te ferai perdre tes leçons !… on saura qui a dressé le piége où s’est prise Eurydice… on saura…</p>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <p>Ah !… grâce !…</p>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <p>Viens donc alors.</p>
+            </sp>
+              <stage>ensemble.</stage>
+            <sp who="lopinionpublique">
+              <speaker>L’Opinion publique.</speaker>
+              <l>Viens ! C’est l’honneur qui t’appelle !</l>
+              <l>Et l’honneur passe avant l’amour !</l>
+              <l>Je serai ton guide fidèle</l>
+              <l>Pendant l’aller et le retour !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <l>Viens ! C’est l’honneur qui m’appelle,</l>
+              <l>Et l’honneur passe avant l’amour !</l>
+              <l>Je maudis le guide fidèle</l>
+              <l>Qui me suivra jusqu’au retour.</l>
+            </sp>
+          </div>
+        </div>
+        <div>
+          <head>DEUXIÈME TABLEAU</head>
+          <stage>L’Olympe</stage>
+          <stage>Des nuages.</stage>
+          <div type="scene" xml:id="Sc.C3.A8ne_PREMI.C3.88RE_2">
+            <head>Scène PREMIÈRE</head>
+            <stage>JUPITER, JUNON, MARS, MINERVE, HÉBÉ, NEPTUNE, etc., endormis dans les nuages, MORPHÉE, seul éveillé, répand des pavots sur les dieux endormis.</stage>
+            <sp who="lesdieux">
+              <speaker>Les dieux</speaker><stage>, dormant.</stage>
+              <l>Dormons, que notre somme</l>
+              <l>Ne vienne jamais à finir.</l>
+              <l>Puisque le seul bonheur, en somme,</l>
+              <l>Dans notre olympe, est de dormir.</l>
+              <l>Ron, ron.</l>
+              <stage>Morphée<hi rend="i">, secouant ses pavots sur le nez des dieux</hi></stage>
+              <l>Ron ! Ron ! Ron ! Ron !</l>
+              <stage>Cupidon<hi rend="i">, entrant à petit pas</hi></stage>
+              <l>Je suis Cupidon ! Mon amour</l>
+              <l>A fait l’école buissonnière !</l>
+              <l>Je reviens au lever du jour</l>
+              <l>D’un petit voyage à Cythère !</l>
+              <l>Un profond mystère</l>
+              <l>Cache mon retour !</l>
+              <l>Ils dorment tous !</l>
+              <l>Endormons-nous !</l>
+              <stage>Il s’endort dans les nuages.</stage>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Dormons, que notre somme, etc.</l>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus</speaker><stage>, entrant avec mystère de l’autre côté</stage>
+              <l>Je suis Vénus ! Mon amour</l>
+              <l>A fait l’école buissonnière !</l>
+              <l>Je reviens au lever du jour</l>
+              <l>D’un petit voyage à Cythère !</l>
+              <l>Un profond mystère</l>
+              <l>Cache mon retour !</l>
+              <l>Ils dorment tous !</l>
+              <l>Endormons-nous !</l>
+              <stage>Elle s’endort à droite.</stage>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Ron ! Ron ! Ron ! Ron !</l>
+              <stage>Sonnerie dans le lointain, se rapprochant peu à peu en accompagnant le récitatif qui suit.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, s’éveillant en sursaut.</stage>
+              <l>Par Saturne ! Quel est ce bruit</l>
+              <l>Qui nous réveille au milieu de la nuit ?</l>
+              <l>C’est Diane, ma fille chérie,</l>
+              <l>Qui nous sonne sa sonnerie !</l>
+              <l>Sus ! Qu’on se réveille à l’instant !…</l>
+            </sp>
+            <sp who="lesdieux">
+              <speaker>Les dieux</speaker>
+              <l>Han ! Han ! Han ! Han !</l>
+              <stage>Tous se lèvent et descendent. – Les nuages disparaissent. – Vue de l’Olympe.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Et surtout pas de bâillement !</l>
+              <l>D’un cri de joie et d’allégresse,</l>
+              <l>Il faut saluer la déesse ;</l>
+              <l>Obéissons au règlement !</l>
+              <stage>Entre Diane avec ses nymphes.</stage>
+              <l>Salut à Diane chasseresse !</l>
+              <stage>Diane arrive d’un air pensif et affligé.</stage>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <l>Mais pourquoi cet air de tristesse ?</l>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <l>Ah ! Rien n’égale mon tourment !</l>
+              <lg><label>I</label>
+              <l>Quand Diane descend dans la plaine,</l>
+              <l>Tontaine, tontaine,</l>
+              <l>C’est pour y chercher Actéon,</l>
+              <l>Tontaine, tonton !</l>
+              <l>C’est près d’une claire fontaine,</l>
+              <l>Tontaine, tontaine,</l>
+              <l>Que Diane rencontre Actéon,</l>
+              <l>Tontaine, tonton !</l></lg>
+              <lg><label>II</label>
+              <l>Or, ce matin, dedans la plaine,</l>
+              <l>Tontaine, tontaine,</l>
+              <l>Je m’en fus chercher Actéon,</l>
+              <l>Tontaine, tonton !</l>
+              <l>Mais hélas ! Près de la fontaine,</l>
+              <l>Tontaine, tontaine,</l>
+              <l>Point n’est venu mon Actéon,</l>
+              <l>Tontaine, tonton !</l></lg>
+              <p>Pauvre Actéon ! Qu’est-il devenu ? Lui qui était là tous les jours, caché sous un buisson, pendant que… Ah ! je le voyais très-bien !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Ce qu’il est devenu ? Je vais te le dire ! Tout ça était immoral dans la forme ! Tu te compromettais avec ce jeune homme ! Je me suis débarrassé de lui !</p>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <p>Et comment ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Je l’ai changé en cerf ! Et pour sauver ta réputation, ô ma chaste Diane, j’ai répandu le bruit, parmi les faibles mortels, que c’était à ta demande que j’avais ainsi désorganisé Actéon ; j’ai dit que tu avais trouvé sa curiosité indiscrète…</p>
+              <stage>Diane<hi rend="i">, vivement</hi></stage>
+              <p>Mais non !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Je l’ai dit pour l’honneur de la mythologie ! Corbleu ! mes enfants, les faibles mortels ont l’œil sur nous ! Sauvons les apparences au moins ! Sauvons les apparences ! Tout est là !</p>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <p>Vous les sauvez bien, vous !</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Est-ce qu’il a encore fait quelque nouvelle escapade ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Mais non, ma bonne Junon… mais non… des cancans… de purs cancans… C’est les journalistes qui font courir des bruits sur moi pour me déconsidérer…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Du tout… du tout… Je suis sûr qu’il y a quelque chose… Monstre, va !… <stage>(</stage><stage>À</stage><stage> Diane.)</stage> Dis-le-moi, si tu le sais…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Madame, de la réserve !… pas de scène devant le monde !… Il y a temps pour tout !… Laissez-moi m’occuper des affaires intérieures de l’Olympe… Je reçois des plaintes de tous les côtés… Tenez !… <stage>(Il prend des papiers qu’il feuillette.)</stage> Mars ?</p>
+            </sp>
+            <sp who="mars">
+              <speaker>Mars.</speaker>
+              <p>Présent !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Noble fils de Bellone, ton dossier s’est enrichi d’une plainte de Vulcain qui prétend…</p>
+              <stage>Vénus<hi rend="i">, vivement</hi></stage>
+              <p>Ce n’est pas vrai !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Elle l’a bien dit ! Que ça soit vrai, que ça ne le soit pas, chaste Vénus !… ça m’est égal en principe… mais je vous en prie, mes enfants, de la tenue !… L’Olympe s’en va ! vous le perdez par vos inconséquences.</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Quel tyran !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Cupidon ?… où est le petit ?…</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon</speaker><stage>, lutinant Hébé.</stage>
+              <p>Voilà !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Allons, bien ! le voilà qui fait la cour à Hébé, maintenant !… Et puis, l’ambroisie va brûler pendant ce temps-là !… <stage>(Il le prend par l’oreille.)</stage> Je te déclare, toi, gamin, que si tu continues nous nous fâcherons.</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <p>Ah ! quelle scie !… Jupiter tannant ! va !… pourtant, si tu m’as donné des ailes, c’est pour voltiger…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Si je t’ai donné des ailes… c’est pour que tu sois zélé… et tu es toujours en retard… A quelle heure es-tu rentré ?… Recommence et je te mets au pain et à l’eau pendant huit jours et je te consigne… Allons ! que chacun aille à sa besogne, en attendant l’heure de savourer le nectar et l’ambroisie… <stage>(Murmures.)</stage> Et que personne ne manque au déjeuner… Allez ! j’ai entendu des rumeurs, voilà déjà plusieurs fois que je m’aperçois…</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon</speaker><stage>, à Vénus</stage>
+              <p>Dis donc, maman, est-ce que tu crois que ça peut durer comme ça ?</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Ah ! il nous ennuie trop !…</p>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <p>Moi, d’abord… je dépéris ici… cet Olympe m’étouffe avec son implacable azur…</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Si nous nous révoltions !…</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <p>J’ai mon idée… nous refuserons de…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Qu’est-ce qu’on marmotte dans ce coin-là !… On ne m’a donc pas entendu ?…</p>
+              <stage>Les dieux sortent en grognant. Junon reste seule avec Jupiter.</stage>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_II_2">
+            <head>Scène II</head>
+            <stage>JUPITER, puis JUNON.</stage>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Par ma foudre !… on a du mal à mener ces gaillards-là… J’en perds la tête !… Et, si ce n’était que ça… il faut encore que j’aie la jalousie de ma tendre épouse, qui ne cesse de… Bon !… encore elle !… quel crampon !… Je disais tout à l’heure à Vénus de se ranger… celle-là devrait bien se déranger un peu… C’est toi !… ma bonne !… qu’est-ce qu’il y a ?…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Il y a que je ne puis plus vivre ainsi !… et que l’existence que vous me faites…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter. </speaker>
+              <p>Qu’est-ce que j’ai encore fait, voyons ?…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Ah !… n’essaye pas de me tromper… Les bruits de la terre montent jusqu’à moi…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Mais encore…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Eh bien !… il n’est bruit là-bas que de la disparition d’une mortelle, belle comme une déesse, et qui vient d’être enlevée par un dieu… Cette femme s’appelle Eurydice… Le dieu !… c’est vous.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Moi ?…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Et quel autre que vous eût osé…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Vois, mon amie, où t’entraîne ton aveugle passion !… cet enlèvement, je le connais comme toi !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Je le crois.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Mes soupçons se portent sur quelqu’un, et nous allons bientôt savoir…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Rengaines que tout cela…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>J’ai envoyé aux renseignements mon fidèle Mercure… Et si mes soupçons sont fondés… tu verras bientôt qu’un dieu qui punit, comme j’entends le faire, les escapades des autres, doit être le mari le plus fidèle, le plus constant…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Je ne vous crois plus, gros hypocrite !… Vous m’avez tant de fois trompée !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Allons, bon !… c’est comme tu voudras !… Que veux-tu que je te dise ?…Tiens !… j’entends le clapotement des ailes de Mercure… Écoute et juge-moi !…</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_III_2">
+            <head>Scène III</head>
+            <stage>Les Mêmes, MERCURE.</stage>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Salut au puissant maître des cieux et de la…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Pas de phrase ! au fait ! Rends-moi compte de ta mission.</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Seigneur, j’arrive en droite ligne des enfers !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et Pluton ? y régnait-il dans toute sa gloire ?</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Ce n’était pas Pluton qui y régnait ! C’était une grande gaieté. Ils s’amusaient joliment, là-bas ! et j’ai vraiment passé quelques moments agréables !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et Pluton ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Pluton était sorti !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Depuis le matin ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Depuis quinze jours !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Ainsi, il avait découché ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Probablement !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et tu ne l’as pas vu ?</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Si fait !… Il est rentré aux enfers, il y a une heure !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et d’où venait-il ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>De la terre !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Seul ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Non pas ! mais avec une jolie petite femme qu’il venait d’enlever à son mari !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tu sais son nom ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Eurydice…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à Junon</stage>
+              <p>Là ! Je ne le lui fais pas dire !</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon,</speaker><stage> l’embrassant</stage>
+              <p>Cela fait plaisir !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part</stage>
+              <p>Pas à tout le monde ! <stage>(Haut.)</stage> Ah ! le coquin de Pluton !… Et il va venir ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>A l’instant… je lui ai dit que vous l’attendiez !… J’entends le bruit des roues de son char.</p>
+            </sp>
+              <label>Mélodrame.</label>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Eh bien ! je vais le traiter comme il le mérite !… Laissez-moi le recevoir !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Tu ne me trompes pas, dis, Ernest ?… il n’y a pas autre chose ?…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Mais non, Bibiche !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Enfin, ça va mieux ! je vais manger !</p>
+              <stage>Elle sort.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part</stage>
+              <p>Crampon, va !… <stage>(A Mercure.)</stage> Va-t’en voir s’ils viennent !… <stage>(Rêvant.)</stage> Cette petite Eurydice est donc bien jolie ?…</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Seigneur, le voilà !…</p>
+            </sp>
+            <stage>Mercure sort.</stage>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_IV_2">
+            <head>Scène IV</head>
+            <stage>JUPITER, PLUTON, escorté de trois démons.</stage>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <stage>
+                <hi rend="i">Il frappe à la porte</hi>
+              </stage>
+              <p>Madame va bien ?…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Elle mange !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Salut au puissant maître des cieux et de la terre…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Assez !… assez !… je te fais grâce de la formule !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, à part</stage>
+              <p>Comme il me regarde !… Est-ce qu’il se douterait !… Détournons les soupçons !… Flagornons-le !… Ayons l’air de trouver son domicile agréable… J’ai justement une vieille tirade que j’ai lue quelque part… <stage>(Haut.)</stage> Ah ! Avec quelle volupté je m’enivre des suaves émanations de cette atmosphère douce et vivifiante de l’Olympe ; heureuses divinités qui folâtrez sans cesse sous des cieux toujours bleus, tandis que je suis condamné aux sombres cloaques du royaume infernal !… Ici l’on respire une odeur de déesse et de nymphe, une suave odeur de myrte et de verveine, de nectar et d’ambroisie. On entend le roucoulement des colombes, les chansons d’Apollon et la lyre de Lesbos !… Voici les Nymphes !… voici les Muses !… Les Grâces ne sont pas loin !… Vous les verrez danser, calmes et bondissantes, aux douces clartés de la lune d’avril !… Tous les parfums sont déchaînés, et lesparfums de la nuit, et les parfums du jour, et les parfums du ciel, et les parfums des Grâces, et les parfums des Muses, et les parfums des Nymphes !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>As-tu bientôt fini, avec ta parfumerie ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Il va me donner un savon, il mousse !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Eh bien ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>On n’en dira jamais assez sur votre bonheur !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Notre bonheur !… Tu fais semblant de croire que le bonheur se trouve près des Grâces et des Nymphes, toi !… Ce n’est pas mon avis, à moi !… Il paraît que je ne suis pas d’une nature nymphatique !… Mais laissons cela ! et prête-moi une oreille attentive !… Roi des enfers, c’est moi qui vous appelle !… Il paraît, mon bonhomme, que tu te conduis comme le dernier des drôles !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Seigneur ! Je suis fort !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tu mènes une existence de pacha !… D’abord, qu’est-ce que ces gamins que tu traînes avec toi ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Mes trois petits tigres avec mon déjeuner, un en-cas !… qui me suit toujours ; une bouteille de vieux vin de Chypre, une hure de sanglier et un flacon d’essence de feu !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Du vin de Chypre !… Une hure !… Et nous qui sommes éternellement condamnés au nectar et à l’ambroisie ! — Et c’est là ta nourriture habituelle ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Oui !… Oh ! je n’aime pas les choses fades !… Il me faut du piment, beaucoup de piment !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, éclatant</stage>
+              <p>Ah çà ! mais tu es le plus heureux des dieux !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Moi, seigneur !… heureux !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Oui, toi ! Depuis quinze jours, que fais-tu ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>J’habite le sombre cloaque de l’enfer. L’on n’y respire pas comme ici une odeur de…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Pas du tout ! Tu habites une cabane aux environs de Thèbes.</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Hein ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et tu as abusé de ton pouvoir en enlevant par la mort une épouse à son époux.</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Moi, seigneur !… Je suis fort…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Ne nie pas ! Je sais tout !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ce n’est pas vrai !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Silence !… Quand je parle, on se tait !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Seigneur !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Je ne suis pas habitué à la discussion !… Devant moi tout tremble !… <stage>(On entend des hurlements.)</stage> Qu’est-ce que c’est que cela ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ça ne m’a pas l’air de cris d’obéissance, ni de cris d’enthousiasme, cela !…</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_V_2">
+            <head>Scène V</head>
+            <stage>Les Mêmes, tous LES DIEUX, entrant en désordre.</stage>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Aux armes ! dieux et demi-dieux !</l>
+              <l>Abattons cette tyrannie,</l>
+              <l>Ce régime est fastidieux !</l>
+              <l>Plus de nectar ! plus d’ambroisie !</l>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <l>Plus de nectar !</l>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <l>Cette liqueur</l>
+              <l>Fait mal au cœur…</l>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <l>Plus d’ambroisie ! Et plus jamais</l>
+              <l>Qu’on ne nous serve de ces mets.</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, à part</stage>
+              <l>Une révolte chez les dieux !</l>
+              <l>Sur mon âme ! elle arrive au mieux !</l>
+              <stage>Haut.</stage>
+              <p>Ils ont raison ! Ces aliments sont fades !</p>
+              <stage>Se jetant sur les mets que tiennent les démons.</stage>
+              <l>Parlez-moi de ceci, camarades !</l>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Aux armes ! dieux et demi-dieux !</l>
+              <l>Abattons cette tyrannie,</l>
+              <l>Ce régime est fastidieux !</l>
+              <l>Plus de nectar ! plus d’ambroisie.</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Une sédition !… On refuse obéissance !…</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Oui !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>On perd le respect à papa Piter !… ah ! Vous ne voulez pas savourer le nectar et l’ambroisie ?</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Non !… non !… plus de nectar !… plus de nectar !…</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Nous sommes confits !…</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <p>Nous avons du sirop d’orgeat dans les veines !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ils ont raison !… ils ont raison !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>C’est une révolte, alors ?… Et vous ne rougissez pas de mettre à votre tête un bandit comme celui-là ?…</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Un bandit !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Seigneur !!! Je ne suis pas un bandit !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Si !… un misérable qui abuse de sa position pour enlever des mortelles à leur mari !…</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Oh ! Contez-nous cela !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ce n’est pas vrai !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Voulez-vous des noms ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Oui ! Vous avez dit : Citons… citez !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Nous citerons !… nous citerons !… — Il vient de ravir la femme du violoneux Orphée, la belle Eurydice.</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ce n’est pas vrai !</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Eh bien, après !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Comment, après ? Eh bien ? et la morale ? et l’opinion des mortels ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Il faudrait pourtant s’entendre sur ta morale !… Tu en as fait bien d’autres, toi !… mon petit père !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Là !… Qu’est-ce que je disais ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Moi ? Jamais !… Bon époux, bon père, bon…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ah ! oui, parlons-en, de tes qualités domestiques… Je ne veux pas jeter la zizanie dans le ménage. Voyons, nous sommes ici en famille, ni hommes, ni femmes, tous dieux de première classe… Expliquons-nous !… Tu me reproches ce que j’ai fait… Si on te rappelait ce que tu as fait, toi ?</p>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <p>Laisse donc… J’en sais sur ton compte !</p>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <p>Et moi !</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <p>Et moi donc !…</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Et nous donc !…</p>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <p>Mais nous avons fait une chanson là-dessus !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Hein ?… J’ai un rendez-vous avec mon architecte.</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Tu l’entendras !…</p>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <p>Tu l’entendras !</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Ce sera ta punition !</p>
+            </sp>
+            <label>RONDEAU.</label>
+            <sp who="minerve">
+              <speaker>Minerve.</speaker>
+              <l>Pour séduire Alcmène la fière,</l>
+              <l>Tu pris les traits de son mari !</l>
+              <l>Je sais bien des femmes sur terre</l>
+              <l>Pour qui ça n’eût pas réussi !</l>
+              <l>Ah ! ah ! ah !</l>
+              <l>Ne prends plus l’air patelin :</l>
+              <l>On connaît tes farces, Jupin !</l>
+            </sp>
+            <sp who="lechœur">
+              <speaker>Le chœur.</speaker>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane.</speaker>
+              <l>Est-ce de la même enveloppe</l>
+              <l>Que tu te servis de nouveau,</l>
+              <l>Lorsque, pour enlever Europe,</l>
+              <l>Tu pris les cornes d’un taureau ?</l>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="lechœur">
+              <speaker>Le chœur.</speaker>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="cupidon">
+              <speaker>Cupidon.</speaker>
+              <l>A Danaé, ton adorée,</l>
+              <l>En pluie, un jour, tu te montras ;</l>
+              <l>Mais cette pluie était dorée :</l>
+              <l>Ça lui plut et tu l’adoras.</l>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="lechœur">
+              <speaker>Le chœur.</speaker>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="venus">
+              <speaker>Vénus.</speaker>
+              <l>Ce cygne, traqué par un aigle,</l>
+              <l>Que Léda sauva dans ses bras,</l>
+              <l>C’était encor vous, gros espiègle !</l>
+              <l>— J’étais l’aigle ! — Ne le niez pas !…</l>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="lechœur">
+              <speaker>Le chœur.</speaker>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <l>Que prouvent ces métamorphoses ?</l>
+              <l>C’est que tu te trouves si laid,</l>
+              <l>Que, pour te faire aimer, tu n’oses</l>
+              <l>Te montrer tel que l’on t’a fait !</l>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="lechœur">
+              <speaker>Le chœur.</speaker>
+              <l>Ah ! ah ! ah !</l>
+              <l>Etc., etc., etc.</l>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Je suis à bout de forces !… Ah ! traître ! ah ! volage !… <stage>(Jupiter s’approche pour la calmer.)</stage> Va-t’en !… je te hais ! Nous nous séparerons !…</p>
+              <stage>Elle tombe dans les bras de Pluton en poussant des cris.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>L’attaque de nerfs !… je ne pouvais pas l’éviter !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Prenez-moi donc votre femme !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, lui tapant dans les mains</stage>
+              <p>Je te jure que c’est avant mon mariage !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Ah !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Mais prenez donc votre femme !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tout ça, c’est des cancans, de purs cancans !… Je n’ai jamais aimé que toi ! <stage>(A Pluton.)</stage> Tu n’es qu’un diffamateur !… tu n’es qu’un coq…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>N’achevez pas !… Mais prenez donc votre femme ! Elle me gêne !</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_VI_2">
+            <head>Scène VI</head>
+            <stage>Les Mêmes, MERCURE.</stage>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Seigneur !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Eh bien ! quoi ! Que me veut-on encore ?</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Seigneur ! deux étrangers sont là, demandant audience.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Leurs noms ?</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Orphée !</p>
+              <stage>Junon se relève vivement en arrangeant sa toilette.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, à part</stage>
+              <p>Orphée ! lui ici !… Mais prenez donc votre femme !… Tiens, je ne l’ai plus !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Orphée ! <stage>(A part, regardant Pluton.)</stage> Je vais le repincer !</p>
+            </sp>
+            <sp who="mercure">
+              <speaker>Mercure.</speaker>
+              <p>Et un jeune homme qui se dit l’Opinion publique.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>L’Opinion publique !… les mortels !… Mes enfants, trêve à nos dissensions intestines !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ne les recevez pas !…</p>
+            </sp>
+            <sp who="touslesdieux">
+              <speaker>Tous les dieux.</speaker>
+              <p>Recevez-les !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker>
+              <p>je vais les recevoir !… Je suis Jupin et je dois la justice à tous ! Ah ! tu trembles !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Moi, seigneur !… je ne tremble jamais !… je suis fort ! <stage>(A part.)</stage> J’aurai du toupet ! <stage>(Haut.)</stage> Qu’ils entrent !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tu donnes des ordres chez moi !… Qu’ils pénètrent !… Et nous, soignons les groupes !… L’Opinion publique est là !… tenons-nous bien !… Tout pour le décorum et par le décorum ! Où est mon trône ?… où est ma foudre ? Je veux ma foudre des dimanches pour paraître dans toute ma gloire !… <stage>(Grand branle-bas. On lui apporte sa foudre et son trône.)</stage> Vénus, ici, à ma droite !… Diane, à ma gauche !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Et moi ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Toi ! tiens, là-bas, sur le banc des accusés !…</p>
+            </sp>
+            <sp who="junon">
+              <speaker>Junon.</speaker>
+              <p>Et moi ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Toi ! où tu voudras, dans les bras de Mars ! tu feras tableau. Parfait ! le groupe sera bien ainsi !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Qu’ils pénètrent !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Non ! Qu’ils entrent !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Est-il taquin !</p>
+              <stage>Mercure sort et revient avec Orphée et l’Opinion publique.</stage>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_VII">
+            <head>Scène VII</head>
+            <stage>Les Mêmes, ORPHÉE, L’OPINION PUBLIQUE.</stage>
+<label>FINALE.</label>
+            <label>ENSEMBLE.</label>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Il approche ! Il s’avance !</l>
+              <l>Le voilà ! c’est bien lui.</l>
+              <l>Je veux prendre ta défense,</l>
+              <l>Trop infortuné mari.</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <l>Il s’approche, il s’avance !</l>
+              <l>Le voilà ! c’est bien lui.</l>
+              <l>Ah ! sapristi ! je commence</l>
+              <l>A bien m’ennuyer ici.</l>
+              <stage>Orphée<hi rend="i">, à l’opinion</hi></stage>
+              <l>C’est malgré moi que j’avance,</l>
+              <l>Et j’en suis tout ahuri ;</l>
+              <l>Cette démarche commence</l>
+              <l>A me donner de l’ennui.</l>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <l>Marche toujours ! avance !</l>
+              <l>Allons ! obéis-moi !</l>
+              <l>Sinon, crains la vengeance</l>
+              <l>Prête à fondre sur toi !</l>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Attendons !</l>
+              <l>Observons !</l>
+              <l>Regardons !</l>
+              <l>Écoutons !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à Orphée</stage>
+              <l>Que me veux-tu, faible mortel ?</l>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion</speaker><stage>, bas à Orphée</stage>
+              <l>Voici le moment solennel !</l>
+              <l>Tu vas, d’une voix attendrie,</l>
+              <l>Implorer du grand Jupiter</l>
+              <l>Le droit de reprendre à l’enfer</l>
+              <l>Ton épouse tendre et chérie !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker><stage>, bas à l’opinion</stage>
+              <l>Mais non ! Mais non ! cela m’ennuie.</l>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion</speaker>
+              <l>Allons ! Allons ! obéis-moi !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker><stage>, avec passion</stage>
+              <l>O roi des cieux et de la terre,</l>
+              <l>Vois ma douleur et ma misère,</l>
+              <l>Ma tristesse et mon abandon !</l>
+              <l>Je viens te demander justice.</l>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane</speaker><stage>, sur le motif de Gluck</stage>
+              <l>« On lui ravit son Eurydice.</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker>
+              <l>Et le ravisseur, c’est Pluton ! »</l>
+              
+            </sp><stage>Jupiter prend une attitude recueillie.</stage>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Faites silence !</l>
+              <l>Je vais prononcer ma sentence !</l>
+              <l>O vous qui m’écoutez,</l>
+              <l>Dieux et divinités !</l>
+              <l>Punissant justement le crime et l’injustice,</l>
+              <l>Je condamne Pluton à lui rendre Eurydice !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker><stage>, à part</stage>
+              <l>O ciel ! il me la rend !</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, à part</stage>
+              <l>O ciel ! il me la prend !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Et pour faire observer ma volonté suprême,</l>
+              <l>Aux enfers, aujourd’hui, Pluton, j’irai moi-même !</l>
+            </sp>
+            <sp who="diane">
+              <speaker>Diane, Vénus et Cupidon</speaker><stage>, à genoux.</stage>
+              <l>Jupin, emmenez-nous avec vous, s’il vous plaît !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, avec bonté</stage>
+              <l>Allons, j’emmènerai l’Olympe au grand complet !</l>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Gloire ! gloire à Jupiter !</l>
+              <l>Gloire à ce dieu clément et doux !</l>
+              <l>Qui, pour ce sémillant enfer,</l>
+              <l>N’a pas voulu partir sans nous !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Partons !</l>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Allons !</l>
+              <l>Plus de nectar, plus de ciel bleu !</l>
+              <l>Ah ! nous allons donc rire un peu !</l>
+              <l>Merci, mon Dieu ! merci, mon Dieu !</l>
+            </sp>
+            <sp who="orpheeetpluton">
+              <speaker>Orphée et Pluton.</speaker>
+              <l>C’est désolant ! c’est révoltant !</l>
+              <l>Car le bon droit est triomphant !</l>
+              <l>Adieu bonheur ! amour, adieu !</l>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <l>Je suis heureux ! je suis content !</l>
+              <l>Car le bon droit est triomphant !</l>
+              <l>Merci, mon Dieu ! merci, mon Dieu !</l>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Prenons nos attributs</l>
+              <l>Partons, n’hésitons plus !</l>
+            </sp>
+              <label>Défilé</label>
+          </div>
+        </div>
+      </div>
+      <div xml:id="ACTE_DEUXI.C3.88ME">
+        <head>ACTE DEUXIÈME</head>
+        <div>
+          <head>TROISIÈME TABLEAU
+<lb/>Un roi de Béotie</head>
+          <stage>Le théâtre représente le boudoir de Pluton.</stage>
+          <div type="scene" xml:id="Sc.C3.A8ne_PREMI.C3.88RE_3">
+            <head>Scène PREMIÈRE</head>
+            <sp who="eurydice">
+              <speaker>EURYDICE</speaker><stage>, Elle écoute à la porte.</stage>
+              <p>Personne encore !… pas de nouvelles !… ah çà !… mais c’estintolérable !… Je m’ennuie épouvantablement ici !… Voilà deux jours que je suis seule, n’ayant d’autre récréation que la compagnie d’un grand bêta de domestique dont on a fait mon geôlier !… Ah ! Pluton, prends garde !… tu ne sais pas ce que peut l’ennui sur une femme aussi fantaisiste que moi !… Si c’est ainsi qu’il m’aime !… je vais regretter mon mari !… Quelqu’un !… encore lui !…</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_II_3">
+            <head>Scène II</head>
+            <stage>JOHN STYX, EURYDICE.</stage>
+            <sp who="john">
+              <speaker>John</speaker>
+              <p>Elle est bien belle !… elle est bien belle !… Ah ! si j’osais !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>C’est encore toi ; que me veux-tu ?…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Madame n’a pas sonné ?…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Moi ? non…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Tant pis !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Pourquoi ?</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Parce que si madame avait sonné, c’est qu’elle aurait eu besoin de quelque chose… <stage>(Il soupire bruyamment.)</stage> Et comme madame nesonne pas, c’est que madame n’a besoin de rien… <stage>(Il se dirige vers la porte.)</stage> Elle est bien belle, mon Dieu !… elle est bien belle !… <stage>(Revenant.)</stage> Est-ce que madame sonnera bientôt ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Est-ce que je sais ? pourquoi ?…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Parce que, si madame sonnait, je m’empresserais d’accourir… Ah ! je suis bien malheureux, allez, madame !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Qu’est-ce que cela me fait ?</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Puisque madame paraît s’intéresser à moi, je vais tout lui dire. Figurez-vous, madame, que je suis la meilleure nature du monde, j’ai un cœur sensible et une tête faible… La femme qui m’aimerait serait bien heureuse…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>C’est un fou !… Comment, il va me raconter ses amours à présent !</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Je n’ai qu’un défaut, madame, j’aime mieux vous le dire tout de suite, pour que vous ne me le reprochiez pas plus tard : je m’enivre quelquefois !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Il n’est pas fou, le malheureux, il est gris !</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Maintenant, madame, que vous me connaissez… comme si vous m’aviez fait…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ne m’approche pas, malheureux !… Il est affreux !</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Madame me repousse après un tel aveu ? Ah ! c’est parce que je ne suis qu’un domestique, n’est-ce pas ?… C’est bien cela les grandes dames ! Toutes les mêmes ! Mais je n’étais pas mort pour porter cette livrée ! Madame, quand j’étais sur la terre, j’étais le fils d’un grand prince de Béotie !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Eh bien !… il te reste quelque chose de ta patrie !</p>
+              </sp>
+<label>COUPLETS.</label>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <l>Quand j’étais roi de Béotie,</l>
+              <l>J’avais des sujets, des soldats,</l>
+              <l>Mais, un jour, en perdant la vie,</l>
+              <l>J’ai perdu tous ces biens, hélas !</l>
+              <l>Et, pourtant, point ne les envie.</l>
+              <l>Ce que je regrette en ce jour,</l>
+              <l>C’est de ne t’avoir pas choisie</l>
+              <l>Pour te donner tout mon amour</l>
+              <l>Quand j’étais roi de Béotie !</l>
+              <l>Si j’étais roi de Béotie,</l>
+              <l>Tu serais reine sur ma foi !</l>
+              <l>Je ne puis plus qu’en effigie</l>
+              <l>T’offrir ma puissance de roi :</l>
+              <l>La plus belle ombre, ma chérie !</l>
+              <l>Ne peut donner que ce qu’elle a.</l>
+              <l>Accepte donc, je t’en supplie,</l>
+              <l>Sous l’enveloppe que voilà,</l>
+              <l>Le cœur d’un roi de Béotie !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Va-t’en, te dis-je, tu sens le vin…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Ah ! Voilà bien une idée !… parce que je vous ai dit tout à l’heure que je m’enivrais parfois… Mais vous ne savez donc pas avec quoi je m’enivre… c’est avec de l’eau… de l’eau pure !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>De l’eau !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Oui, madame… mais une eau délicieuse, l’eau du fleuve Léthé… Oui, c’est pour oublier que je bois, pour oublier la triste condition où je suis tombé !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>C’est une drôle d’idée !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>C’est une idée d’homme libre et fier, madame, qui se souvient de sa splendeur passée… Cette funeste habitude me gêne bien quelquefois dans mon service ;… par exemple, quand mon maître me donne un ordre, naturellement, je bois, par fierté… avant de lui obéir… Naturellement aussi j’oublie l’ordre qu’il m’a donné… Il me le redonne, je rebois, je réoublie, et ça dure quelquefois comme cela des journées entières… mais il s’en accommode très-bien, parce qu’il me trouve intelligent d’ailleurs… <stage>(Tombant à genoux.)</stage> Mais, voyez-vous, il est une chose que je n’oublierai jamais, quand je boirais tout le Léthé, c’est l’image de la femme adorable dont mon maître m’a donné la garde depuis deux jours…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Insolent !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Une chose que j’oublierais bien auprès de vous, par contre… ce sont mes devoirs !… Ah !… voyez-vous, madame… <stage>(On entend du bruit.)</stage> Bigre ! voilà mon maître !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Quel est ce bruit ?</p>
+            </sp>
+            <sp who="john">
+              <speaker>John</speaker><stage>, se relevant.</stage>
+              <p>Rien… rien, madame… Il faut rentrer.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Je ne veux pas !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Ce sont les ordres du maître… Vous me feriez ficher à la porte !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Mais enfin, jusqu’à quand durera cette plaisanterie ?</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Plus tard, je vous dirai !… Rentrez !</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ah ! Pluton, tu me le payeras !</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Allons ! <stage>(Il la fait entrer au fond au moment où arrivent Pluton et Jupiter.)</stage> Il était temps !</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_III_3">
+            <head>Scène III</head>
+            <stage>JOHN STYX, PLUTON, JUPITER.</stage>
+            <stage>Pluton et Jupiter entrent en se bousculant, et tâchant de se devancer l’un l’autre.</stage>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, paraissant le premier, à part.</stage>
+              <p>Elle n’est pas là !… il a eu le temps de la cacher dans son appartement !… Ouf ! je respire…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, avec méfiance.</stage>
+              <p>Tu as de singulières façons de faire les honneurs chez toi, toi !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Moi ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Oui, toi… Quand on est poli, on fait passer les gens les premiers, et on les suit. <stage>(Se frottant l’épaule.)</stage> Tu y mets trop d’empressement, vois-tu… il ne faut pas pousser la prévenance jusqu’à la bousculade… Où sommes-nous ici ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Nous sommes dans mes petits appartements, dans ce que j’appellerai, si tu veux, mon <hi rend="i">buen retiro</hi>.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tu dis ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Je dis mon <hi rend="i">buen retiro</hi>… comme qui dirait mon boudoir… C’est là que, fatigué du gouvernement de mon royaume infernal, je viens goûter quelques instants de repos et de solitude.</p>
+              <stage>Jupiter<hi rend="i">, toujours méfiant.</hi></stage>
+              <p>De solitude. <stage>(</stage><stage>À</stage><stage> part.)</stage> Je suis sûr qu’elle est ici.</p>
+              <stage>Jupiter cherche sous les meubles, frappe contre les murs, y applique son oreille, Pluton le suit pas à pas.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Tu cherches quelque chose, dieu puissant ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Rien, non, merci… J’étudie la disposition et la construction de ce petit… Comment appelles-tu cela ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>
+                <hi rend="i">Buen retiro !…</hi>
+              </p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Soit… Oui, je trouve cela très-joli, très-intime… je veux m’en faire disposer un pareil dans l’Olympe. C’est très-favorable <stage>(Souriant.)</stage> aux amours, n’est-ce pas ?</p>
+              <stage>Pluton<hi rend="i">, avec pudeur.</hi></stage>
+              <p>Aux amours ?… Je ne suis pas de ces dieux à passions qui compromettent leur divinité dans de profanes amours ! moi !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Vraiment ! Tartufe, va !… <stage>(Pendant que Jupiter a le dos tourné, Pluton fait des signes à John, comme pour lui demander si Eurydice est dans l’appartement du fond.)</stage> Qu’est-ce que tu fais donc là ? tu me fais des niches par derrière, dieu sérieux !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Moi… du tout… je faisais…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, se trouvant nez à nez avec John.</stage>
+              <p>Tu faisais des signes à quelqu’un… Qu’est-ce que cela ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Quoi ? Qui ?…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, montrant John.</stage>
+              <p>Cette perche animée ?… Ce bâton de cire à cacheter ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>John Styx, mon domestyx, mon domestique intime… mon factotum… un brave et honnête garçon, à qui je confie…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tes secrets ? <stage>(A John.)</stage> Où est-elle ?</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, fait signe à John de se taire, en le menaçant</stage>
+              <p>Qui !… elle ?…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Eurydice, par ma foudre !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Eurydice !… Comment, malgré tout ce que je t’ai dit… tu crois encore que j’ai enlevé cette petite !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Parfaitement… Et je verrai bien… Place, ou je tonne !… Ah ! ah ! ah !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, comme s’il parlait à un chien.</stage>
+              <p>Cherche là !… dieu puissant, cherche là !… <stage>(A part.)</stage> Ces murs sont épais.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, après avoir longtemps visité et gratté le mur. A part.</stage>
+              <p>Rien !… ah !… si… une serrure !… il me semble… Elle est là !… j’en suis sûr !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Eh bien !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Rien !… tu avais raison ! <stage>(A part.)</stage> Par mon immortalité, moi qui me suis métamorphosé tant de fois pour plaire à tant de femmes, je ne resterai pas à court d’imagination ; sous une forme ou sous une autre, il faut que je pénètre là !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Allons, retournons auprès des dieux qui nous attendent à la fête que j’ai préparée pour toi ; une rude fête, va !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>C’est dit ; je te rends mon estime et commence à croire que ce vil mortel a voulu me faire poser en me réclamant son épouse.</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Quelques ordres et je t’emboîte…</p>
+              <stage>Il parle bas à John.</stage>
+            </sp>
+            <sp who="john">
+              <speaker>John</speaker><stage>, à part.</stage>
+              <p>Ah ! ce supplice est affreux, la garder pour les autres : ce n’est que dans l’oubli que je pourrai me consoler…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part.</stage>
+              <p>Ah ! quelle idée !… laissons-lui toujours ma carte, qu’elle sache que je suis là… <stage>(Il met la carte dans le trou de la serrure.)</stage> Et dans un instant, je reviens par le trou de la serrure, sous la forme la plus fine et la plus séduisante !… Je ne vous dis que cela !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton,</speaker><stage> à John.</stage>
+              <p>Ne le perdons pas de vue… il est fin, il pourrait revenir sur ses pas… Prends ma queue, je prends la sienne. <stage>(Haut.)</stage> Je suis à toi, dieu puissant.</p>
+              <stage>Ils sortent à la queue leu leu en se bousculant.</stage>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_IV_3">
+            <head>Scène IV</head>
+            <sp who="eurydice">
+              <speaker>EURYDICE</speaker><stage>, tenant à la main la carte de Jupiter</stage>
+              <p>J’avais cru entendre des voix !… Personne ! Que veut dire cette carte cornée ? qui me l’envoie ?… Ernest, baron de Jupiter !… quelqu’un penserait-il à moi !… Ma vie à celui qui me tirera de ma prison !…</p>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_V_3">
+            <head>Scène V</head>
+            <stage>JUPITER, EURYDICE.</stage>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, sous la forme d’une grosse mouche.</stage>
+              <stage>
+                <hi rend="i">Il entre en bourdonnant.</hi>
+              </stage>
+              <p>Est-ce assez fin ?… Sous ce costume on passe partout… C’est elle !… Qu’elle est belle !… Soyons séduisant !</p>
+              </sp>
+<label>DUO.</label>
+              <stage>Jupiter voltige autour d’Eurydice en effleurant son épaule de droite et de gauche.</stage>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, se levant.</stage>
+              <l>Il m’a semblé sur mon épaule</l>
+              <l>Sentir un doux frémissement !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part.</stage>
+              <l>Il s’agit de jouer mon rôle.</l>
+              <l>Plus un mot ! Car, dès ce moment,</l>
+              <l>Je n’ai droit qu’au bourdonnement !</l>
+              <stage>Il tourne autour d’Eurydice en bourdonnant.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Ah ! La belle mouche !</l>
+              <stage>Jupiter bourdonne.</stage>
+              <l>Le joli fredon !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part.</stage>
+              <l>Ma chanson la touche,</l>
+              <l>Chantons ma chanson !</l>
+              <stage>Il fredonne.</stage>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Le joli fredon !</l>
+              <lg><label>AIR.</label>
+              <l>Bel insecte, à l’aile dorée,</l>
+              <l>Veux-tu rester mon compagnon ?</l>
+              <l>Ces lieux dont tu forças l’entrée,</l>
+              <l>Hélas ! Me servent de prison.</l>
+              <l>Ne me quitte pas, je t’en prie,</l>
+              <l>Reste, on prendra bien soin de toi :</l>
+              <l>Je t’aimerai, mouche jolie,</l>
+              <l>Reste avec moi !</l></lg>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part.</stage>
+              <l>Quand on veut se faire adorer,</l>
+              <l>Il faut se laisser désirer.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, se précipitant vers lui.</stage>
+              <l>Je la tiens par son aile d’or !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Pas encor !</l>
+              <stage>Il s’échappe au moment où elle va le saisir, et saute sur un meuble.</stage>
+              
+            </sp><label>ENSEMBLE.</label>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Fi ! la méchante ! la méchante !</l>
+              <l>Elle ne cherche qu’à me fuir !</l>
+              <l>Ah ! par ton aile si brillante,</l>
+              <l>Malgré toi, je veux te saisir.</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>J’ai pris des ailes, ma charmante,</l>
+              <l>J’ai bien le droit de m’en servir.</l>
+              <l>Je veux prolonger ton attente</l>
+              <l>Avant de me laisser saisir.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, le poursuivant pendant qu’il sautille de meuble en meuble et de mur en mur.</stage>
+              <l>En vain, à ma poursuite</l>
+              <l>Tu voudrais échapper.</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à part.</stage>
+              <l>Moi, je me sauve, quitte</l>
+              <l>A me faire attraper.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Je te trouverai bien, cruelle…</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>J’y compte bien.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Où donc est-elle ?</l>
+              <l>— sur ce fauteuil ! — Attention !…</l>
+              <stage>Elle ôte le voile de gaze qu’elle a au cou.</stage>
+              <l>De cette gaze légère,</l>
+              <l>Sans l’étouffer, je puis faire</l>
+              <l>Un filet à papillon.</l>
+              <stage>
+                <hi rend="i">Elle s’est approchée sur la pointe du pied.</hi>
+              </stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Attention ! attention !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, lui jetant le filet.</stage>
+              <l>La voilà prise ! — Plus de résistance !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, sous le voile.</stage>
+              <l>La plus prise des deux n’est pas celle qu’on pense.</l>
+              </sp>
+<label>ENSEMBLE.</label>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Je te tiens, petite méchante,</l>
+              <l>Toi qui ne cherchais qu’à me fuir.</l>
+              <l>Je savais bien, mouche charmante,</l>
+              <l>Qu’on finirait par te saisir.</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>J’ai voulu prolonger l’attente,</l>
+              <l>Avant de me laisser saisir.</l>
+              <l>Ne crains plus rien, ô ma charmante,</l>
+              <l>Je ne cherche plus à m’enfuir.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ah ! je savais bien que je t’attraperais, mon bijou ailé !… tu as beau te défendre ! tu es à moi ! et pour toujours ; tu seras laconsolation de la pauvre prisonnière !… Mais voyez donc ! qu’elle est gracieuse ! quelles belles couleurs ! et quelle taille fine ! <stage>(Jupiter fait des grâces.)</stage> Et ces ailes d’or !… tiens !</p>
+              <stage>Elle l’embrasse.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, tombant à genoux.</stage>
+              <p>Eh bien !… tout cela est à toi si tu le veux, mortelle adorée !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ah ! grands dieux !… elle parle ! au secours !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Tais-toi !… En réalité, je ne suis pas une mouche, j’ai pris ce costume pour tromper les regards jaloux d’un tyran qui ne veut que te torturer…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Est-il possible !… Qui donc es-tu ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Moi ?… Je déclare ici, la vérité m’y pousse ! que je suis ton amant, Jupiter Barberousse.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>C’est donc toi qui tout à l’heure m’as glissé…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Ce vélin… Oui… c’est moi, le roi des dieux !… Ni plus ni moins !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ah !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et si je t’avais connue, Pluton, plus tôt ne t’aurait pas enlevée… Je t’aurais emmenée dans l’Olympe.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>L’Olympe !… tu m’aurais fait voir l’Olympe et quitter cet affreux séjour… Oh ! fuyons, emmène-moi.</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Nous n’avons qu’un moyen pour ne pas éveiller les soupçons !… il faut que je retourne à la fête que donne cet idiot de Pluton ! — rejoins-m’y.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Hein ?</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Rejoins-m’y sous un déguisement, et à la faveur de la sortie générale de mes collègues, je t’emmène — dans le tas.</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Ce que le Dieu veut, la femme le veut ! A toi ! Jupiter !… <hi rend="i">for ever</hi> !</p>
+              <stage>Elle sort à gauche.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Dans une heure !… Oh ! je suis un insecte bien heureux !</p>
+              <stage>Il se dirige vers la droite en bourdonnant joyeusement. John entre, son flacon de Léthé à la main. — Il est dans une espèce d’extase béate.</stage>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_VI_3">
+            <head>Scène VI</head>
+            <stage>John, puis Pluton.</stage>
+            <sp who="john">
+              <speaker>John</speaker><stage>, poursuivant Jupiter du geste d’un homme qui veut attraper une mouche.</stage>
+              <p>Mouche ! mouche !…</p>
+              <stage>Jupiter s’esquive. — John s’avance en silence sur le devant de la scène, et reprend avec sentiment son refrain.</stage>
+              <l>Si j’étais roi de Béotie !</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, sortant tout bouleversé de la chambre du fond.</stage>
+              <p>Où est-elle ?… la mouche ?… où est la mouche ? Ah ! John ! as-tu vu la mouche ?…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John</speaker><stage>, étonné.</stage>
+              <p>La mouche ?… quelle mouche ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Jupiter !… que ce petit futé de Cupidon a reconnu sous la forme d’une mouche !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Jupiter !…</p>
+            </sp>
+            <sp who="ilfredonne">
+              <speaker>Il fredonne.</speaker>
+              <l>Quand j’étais roi de Béotie…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Qu’as-tu fait d’Eurydice ?</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <p>Eurydice ?…</p>
+              <stage>Il continue l’air.</stage>
+              <l>J’avais des sujets, des soldats…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Regarde-moi donc un peu, toi !… Ah ! le malheureux ! il s’est livré à sa funeste passion !… il a encore bu du Léthé !… et pendant ce temps il aura laissé pénétrer !… Voyons ! John ! mon fidèle John ! c’est moi, Pluton ! ton bon maître !… Canaille, va ! souviens-toi, au nom de tes cendres !… la clef de la grille du parc au moins, la clef !…</p>
+            </sp>
+            <sp who="john">
+              <speaker>John</speaker><stage>, fredonnant toujours.</stage>
+              <l>Mais un jour en perdant la vie…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Voyons, si je lui parlais une autre langue que celle qu’il a oubliée… peut-être se la rappellerait-il. Ricordati !… memento !… remember !</p>
+            </sp>
+            <sp who="john">
+              <speaker>John</speaker><stage>, répétant machinalement.</stage>
+              <p>Remember !</p>
+              <stage>Il fredonne.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Rien !… rien !… C’est à se prendre la tête et à se la fouler aux pieds ! <stage>(On entend la voix d’Eurydice qui chante le motif : Bel insecte à l’aile dorée, etc, etc.)</stage> Ah ! cette voix ! c’est celle d’Eurydice, elle n’est pas encore partie !… Courons !… Cerbère ! Caron ! qu’on redouble de surveillance !… qu’on cerne toutes les issues !… Et toi, viens, John, John.</p>
+            </sp>
+            <sp who="john">
+              <speaker>John.</speaker>
+              <stage>reste en place en chantant tranquillement à mi-voix la fin du couplet.</stage>
+              <l>Quand j’étais roi de Béotie…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Encore ! mais ce n’est pas un homme, c’est un orgue !… — Va-t’en ! que je ne te voie plus !…</p>
+              <stage>
+                <hi rend="i">Il frappe du pied avec impatience ; John s’engloutit et disparaît lentement en chantant toujours son couplet. Pluton le pousse avec rage, et en faisant auprès de lui le geste d’un homme qui joue de l’orgue.</hi>
+               
+              </stage>
+            </sp>
+          </div>
+        </div>
+        <div>
+          <head>QUATRIÈME TABLEAU
+<lb/>Les enfers</head>
+          <stage>
+            <hi rend="i">Au fond, le Styx.</hi>
+          </stage>
+          <div type="scene" xml:id="Sc.C3.A8ne_PREMI.C3.88RE_4">
+            <head>Scène PREMIÈRE</head>
+            <stage>TOUS LES DIEUX, EURYDICE en costume de bacchante. Au lever du rideau, tous les dieux de l’Olympe et des Enfers sont réunis autour d’une table. — Ils sont couronnés de fleurs, et boivent. — Bacchanale.</stage>
+            <sp who="chŒur">
+              <speaker>CHŒUR.</speaker>
+              <l>Vive le vin ! vive Pluton !</l>
+              <l>Et nargue du qu’en dira-t-on.</l>
+              <l>La divine cohorte</l>
+              <l>Que ce vieux vin transporte,</l>
+              <l>Chante le Dieu qui porte</l>
+              <l>La couronne de fer.</l>
+              <l>Sa demeure chérie</l>
+              <l>Sera notre patrie ;</l>
+              <l>Si l’on comprend la vie,</l>
+              <l>Amis, c’est en enfer !</l>
+              <l>Vive le vin ! Vive Pluton !</l>
+              <l>Et nargue du qu’en dira-t-on !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à Eurydice.</stage>
+              <l>Allons ! Ma belle bacchante,</l>
+              <l>Mortelle émule de Vénus,</l>
+              <l>Chante-nous de ta voix charmante,</l>
+              <l>Chante-nous l’hymne de Bacchus !</l>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <l>Chante ! chante !</l>
+              <l>Belle bacchante !</l>
+              </sp>
+<label>I</label>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>J’ai vu le dieu Bacchus, sur sa roche fertile,</l>
+              <l>Donnant à ses sujets ses joyeuses leçons :</l>
+              <l>Le faune au pied de chèvre et la nymphe docile</l>
+              <l>Répétaient ses chansons.</l>
+              <l>Évohé ! Bacchus m’inspire,</l>
+              <l>Je sens en moi</l>
+              <l>Son saint délire,</l>
+              <l>Évohé ! Bacchus est roi !</l>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <l>Évohé ! Bacchus m’inspire.</l>
+              <l>Etc, etc.</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Laissez, leur disait-il, les tristesses moroses,</l>
+              <l>Laissez les noirs soucis aux profanes humains.</l>
+              <l>Et vous, couronnez-vous des pampres et des roses</l>
+              <l>Qui tombent de mes mains !</l>
+              <l>Évohé ! Bacchus m’inspire,</l>
+              <l>Je sens en moi</l>
+              <l>Son saint délire !</l>
+              <l>Évohé ! Bacchus est roi !</l>
+            </sp>
+            <sp who="tous">
+              <speaker>Tous.</speaker>
+              <l>Évohé ! Bacchus m’inspire, etc.</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Maintenant, je veux, moi</l>
+              <l>Qui suis mince et fluet,</l>
+              <l>Comme au temps du grand roi,</l>
+              <l>Danser un menuet !…</l>
+              <stage>Parlé sur la ritournelle du menuet.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, à Eurydice.</stage>
+              <p>Ce niais de Pluton ne t’a pas reconnue ; après la danse, nous lèverons le pied !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, à part.</stage>
+              <p>Cet idiot de Jupiter croit que je n’ai pas reconnu la bacchante… mais j’ai l’œil sur eux !</p>
+            </sp>
+            <label>BALLET.</label>
+              <stage>Menuet dansé par Pluton, Jupiter, Vénus et Eurydice. — Galop infernal par tous les dieux.</stage>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, à Jupiter.</stage>
+              <p>Et maintenant, fuyons…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Fuyons… oui, profitons de ce qui nous reste de souffle… fuyons…</p>
+              <stage>Ils se dirigent vers le fond. Pluton se dresse devant eux.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Où donc ?</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Aïe…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Que veut cet audacieux ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Ah ! Plus de dignité, n’est-ce pas ?… Crois-tu donc que j’ignore rien de ce qui se passe ici depuis deux heures ? Crois-tu que, sous ce costume de bacchante, je n’aie pas reconnu la femme…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Que tu n’avais pas enlevée, disais-tu ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Eh bien ! Oui, je l’avais enlevée… mais, sarpejeu, je m’en repens bien !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Que dit-il ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Je dis que tu t’es conduite avec moi comme… avec ton mari !… que tu m’as flanqué mon envers à l’enfer, mon enfer à l’envers, et que…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, rit en regardant Eurydice.</stage>
+              <p>Il sait tout !…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Riez, allez !… rira bien qui rira le dernier… La farce est bonne… mais vous ne la porterez pas ensemble en paradis !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Et qui donc m’empêcherait si je voulais ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Qui ?… Mais toi-même !</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Que veut-il dire ?…</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Et le mari qui va venir !… le petit mari !…</p>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <p>Mon mari !… je l’avais oublié !… oui… ça t’arrive quelquefois !…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Moi aussi !</p>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>Et la promesse que tu lui as faite ! L’as-tu oubliée aussi ?… je vais être vengé… ce n’est pas à moi que tu rendras Eurydice, c’est à lui !… au petit trovatore…</p>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <p>Maladroit !… qu’ai-je promis !…</p>
+              <stage>On entend au loin un chant de violon.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <p>La position se tend ! Je vais élever le dialogue avec la situation !… Je ne parle plus qu’en vers !… méfiez-vous…</p>
+              <stage>Le chant continue en se rapprochant peu à peu, chacun écoute avec anxiété.</stage>
+              <l>Femme, reconnais-tu ce chant de violon ?</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Ce chant qu’il trouve large et que je trouve long,</l>
+              <l>C’est celui de l’époux que j’ai…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <l>Tu l’as dit, femme !</l>
+              <l>C’est ton époux qui vient pour racheter ton âme !…</l>
+              <stage>Bas et grinçant des dents.</stage>
+              <l>Cette âme que j’aimais et que je n’aime plus !…</l>
+              <l>Tu connais de Jupin les ordres absolus !</l>
+              <l>Ton époux te réclame, on te rend à la terre !</l>
+              <l>C’est un joli cadeau que nous allons lui faire !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice</speaker><stage>, suppliante.</stage>
+              <l>Jupin !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker>
+              <l>Rassure-toi, pauvre ange ! j’ai mon plan !</l>
+              <l>Et tu n’es pas encore au bras de ton tyran !…</l>
+              <stage>Une barque paraît au fond. C’est l’Opinion publique qui rame. Orphée est auprès d’elle et joue du violon.</stage>
+              <l>Que tout rentre dans l’ordre ! — Enfants, de la tenue !</l>
+              <l>Voici qu’au sombre bord leur barque est parvenue…</l>
+              <l>Que des divins plaisirs ils ne soupçonnent rien…</l>
+              <stage>Tous les dieux se groupent autour de Jupiter et de Pluton. Eurydice est renfermée dans le groupe. On ne la voit plus.</stage>
+              <l>Et prenons pour mot d’ordre : Hexamètre et maintien !</l>
+            </sp>
+          </div>
+          <div type="scene" xml:id="Sc.C3.A8ne_II_4">
+            <head>Scène II</head>
+            <stage>Les Mêmes, ORPHÉE, L’OPINION PUBLIQUE.</stage>
+            <sp who="orphee">
+              <speaker>Orphée</speaker><stage>, appuyé sur l’Opinion comme sur un confident de tragédie.</stage>
+              <l>Oui, je suis convaincu ! — Malgré ses injustices,</l>
+              <l>— C’est ma femme, et je veux ignorer ses caprices…</l>
+              <l>Puissant roi des…</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Assez !… Grâce du boniment !</l>
+              <l>Je connais ta demande : — Allons-y vivement !…</l>
+              <l>Fidèle à ma promesse, à tes désirs propice,</l>
+              <l>D’accord avec Pluton, je te rends Eurydice.</l>
+              <l>Va !…</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée</speaker><stage>, avec philosophie.</stage>
+              <l>Jupiter me comble et Pluton est trop bon !…</l>
+              <stage>Pluton se frotte les mains en regardant Jupiter d’un air narquois.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, arrêtant Orphée de la main.</stage>
+              <l>Mais j’y mets cependant une condition…</l>
+              <l>Condition expresse autant qu’inexplicable.</l>
+              <stage>S’animant.</stage>
+              <l>Que tu n’as pas besoin de comprendre, que diable !</l>
+              <stage>Orphée exprime par un geste qu’il est prêt à obéir.</stage>
+              <l>— Vers le Styx, gravement, tu vas t’acheminer,</l>
+              <l>En précédant ta femme, et sans te retourner !…</l>
+              <l>— Si, trop pressé de voir ton aimable Eurydice,</l>
+              <l>Tu désobéissais à ce petit caprice,</l>
+              <l>Elle t’échapperait, pour toujours, cette fois !…</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, furieux.</stage>
+              <l>Mais ce n’est pas du jeu !…</l>
+              <stage>Murmure général.</stage>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, terrible, agitant sa foudre.</stage>
+              <l>L’on élève la voix !…</l>
+              <stage>Le murmure s’apaise. Tout le monde s’incline.</stage>
+              <l>Allons ! — Derrière toi va marcher Eurydice…</l>
+              <l>Ne te retourne pas ! — J’ai dit ! — Qu’on obéisse ! –</l>
+            </sp>
+            <label>FINALE.</label>
+              <stage>Marche à l’orchestre. Eurydice paraît cachée sous un voile. C’est John Styx qui la conduit par la main.</stage>
+            <sp who="lopinion">
+              <speaker>L’Opinion</speaker><stage>, à Orphée, sur le devant de la scène.</stage>
+              <l>Ne regarde pas en arrière !</l>
+              <l>A quinze pas fixe les yeux.</l>
+              <l>Ami, pense à la terre !</l>
+              <l>Elle nous attend tous les deux !</l>
+              <stage>La marche recommence. L’Opinion est en tête. Orphée vient ensuite, puis Eurydice conduite par John Styx.</stage>
+            </sp>
+            <sp who="lesdieux">
+              <speaker>Les dieux. </speaker>
+              <l>Pour un époux quel embarras !</l>
+              <l>Il se retournera,</l>
+              <l>Se retournera pas !</l>
+              <l>Tournera,</l>
+              <l>Tourn’ra pas !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, suivant des yeux Orphée qui est tout près de la barque.</stage>
+              <l>Sur sa curiosité</l>
+              <l>Aurais-je donc en vain compté !…</l>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion</speaker><stage>, qui est déjà dans la barque.</stage>
+              <l>Nous triomphons ! Ah ! quelle joie !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Il ne se tourne pas ! Tant pis ! Je le foudroie !</l>
+              <stage>
+                <hi rend="i">Jupin prend sa foudre de la main droite, la brandit, et au lieu de s’en servir, il administre dans le vide et dans la direction d’Orphée un vigoureux coup de pied électrique qui traverse la scène sous la forme d’une étincelle. Coup de tam-tam. Orphée se retourne brusquement, comme si le coup l’avait atteint. Eurydice disparaît à ses yeux.</hi>
+              </stage>
+            </sp>
+            <sp who="lopinion">
+              <speaker>L’Opinion.</speaker>
+              <l>Malheureux ! Que viens-tu de faire ?</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <l>Un mouvement involontaire !</l>
+              <stage>Il est entré dans la barque où est déjà l’opinion. La barque se met en mouvement.</stage>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <l>Tu l’as perdue et pour jamais !</l>
+            </sp>
+            <sp who="orphee">
+              <speaker>Orphée.</speaker>
+              <l>Hélas !</l>
+              <stage>À lui-même.</stage>
+              <l>Ce dénoûment m’enchante !</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton.</speaker>
+              <l>Elle me reste donc !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter.</speaker>
+              <l>Pas plus qu’à moi ! — J’en fais</l>
+              <l>Une bacchante !</l>
+            </sp>
+            <sp who="pluton">
+              <speaker>Pluton</speaker><stage>, parlé</stage>
+              <l>Mais ça n’est pas dans la mythologie !</l>
+            </sp>
+            <sp who="jupiter">
+              <speaker>Jupiter</speaker><stage>, de même.</stage>
+              <l>Eh bien ! On la refera, la mythologie !</l>
+            </sp>
+            <sp who="eurydice">
+              <speaker>Eurydice.</speaker>
+              <l>Bacchus !</l>
+              <l>Mon âme légère</l>
+              <l>Qui n’a pu se faire</l>
+              <l>Au bonheur sur terre,</l>
+              <l>Aspire à toi, divin Bacchus !</l>
+              <l>Reçois la prêtresse</l>
+              <l>Dont la voix sans cesse</l>
+              <l>Veut chanter l’ivresse</l>
+              <l>A tes élus !…</l>
+              <stage>
+                <hi rend="i">Bacchus paraît au fond sur un trône orné de pampres, porté par quatre faunes. — Eurydice monte jusqu’à lui sur les bras des dieux qui s’empressent à sa rencontre. — Le théâtre s’embrase.</hi>
+              </stage>
+            </sp>
+            <sp who="chœur">
+              <speaker>Chœur.</speaker>
+              <l>Bacchus !</l>
+              <l>Reçois la prêtresse</l>
+              <l>Dont la voix sans cesse</l>
+              <l>Veut chanter l’ivresse</l>
+              <l>À tes élus !…</l>
+            </sp>
+          </div>
+        </div>
+      </div>
+    </body>
+  
+</text></TEI>
