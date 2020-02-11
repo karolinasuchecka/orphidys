@@ -2,7 +2,7 @@
 <!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<!DOCTYPE TEI SYSTEM "Corpus_DTD.dtd">
+<!--<!DOCTYPE TEI SYSTEM "Corpus_DTD.dtd">-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -97,7 +97,7 @@
                   </additional>
             </object>
             
-            <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="walleys1493" xml:lang="oFR" ana="text_image" style="adultes">
+            <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="walleys1493" xml:lang="oFR" ana="text_image" style="adultes" resp="Ovide">
                <objectIdentifier>
                   <idno>Monographie imprimée richement ornée (2 illustrations), traduction moralisée en prose accompagné d'un moral. Transcription à partir du manuscrit avec l'aide de Mathieu Marchal pour l'article de TAL.</idno>
                </objectIdentifier>
@@ -181,7 +181,7 @@
                </additional>
             </object>
             
-            <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="legouais1301" xml:lang="oFR" ana="text_image" style="adultes">
+            <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="legouais1301" xml:lang="oFR" ana="text_image" style="adultes" resp="Ovide">
                <objectIdentifier>
                   <idno>Monographie imprimée richement ornée (4 illustrations, ornements en marges et à l'initiale), traduction moralisée en vers accompagné d'un moral. Transcription à partir du manuscrit avec l'aide de Mathieu Marchal pour l'article de TAL.</idno>
                </objectIdentifier>
@@ -993,20 +993,14 @@
                <biblStruct type="en-ligne">
                   <analytic>
                      <author>
-                        <persName>
-                           <forename>Félix</forename>
-                           <surname>de Paranjon</surname>
-                        </persName>
+                           <persName><surname>Ovide</surname></persName>
                      </author>
-                     <title>Ovide. Choix des <emph>Métamorphoses</emph></title>
+                     <title>Choix des Métamorphoses</title>
+                     <editor resp="trad">Félix de Parnajon</editor>
                   </analytic>
                   <monogr>
-                     <author>
-                        <persName>
-                           <surname>Société de professeurs et de latinistes</surname>
-                        </persName>
-                     </author>
                      <title>Les auteurs latins expliqués d'après une méthode nouvelle par deux traductions françaises. L'une littérale et juxtalinéaire présentant le mot à mot français des mots latins correspondants. L'autre correcte et précédée du texte latin.</title>
+                     <editor resp="dir">Société de professeurs et de latinistes</editor>
                      <availability status="free">
                         <p>Accès libre</p>
                      </availability>
@@ -2214,9 +2208,9 @@
                </additional>
             </object>
             
-            <object sortKey="trad" status="océrisé" type="traduction" subtype="prose" xml:id="duryer1702" xml:lang="FR" ana="text" style="tout-public">
+            <object sortKey="trad" status="océrisé" type="traduction" subtype="prose" xml:id="duryer1702" xml:lang="FR" ana="text" style="tout-public" resp="Ovide">
                <objectIdentifier>
-                  <idno>Traduction assez littérale et descriptive (pas très bonne). Explication des fables (à comparer potentiellement avec les moralisations), deux gravures de Jacob van Swanenburg (au moins la deuxième), le texte latin en miroir.</idno>
+                  <idno>Traduction assez littérale et descriptive (pas très bonne). Explication des fables (à comparer potentiellement avec les moralisations), deux gravures de Jacob van Swanenburg (au moins la deuxième), le texte latin en miroir. Pas mal de graphies anciennes.</idno>
                </objectIdentifier>
                <biblStruct type="en-ligne">
                   <monogr>
@@ -2225,7 +2219,7 @@
                            <surname>Ovide</surname>
                         </persName>
                      </author>
-                     <title>Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures. Pas mal de graphies anciennes.</title>
+                     <title>Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures.</title>
                      <editor resp="trad">Pierre du Ryer</editor>
                      <availability status="free">
                         <p>Domaine public</p>
@@ -2463,7 +2457,7 @@
                   </surrogates>
                </additional>
             </object>
-            <object sortKey="trad" status="océrisé-corrigé" type="traduction" subtype="prose" xml:id="nisard1868" xml:lang="FR" ana="text" style="adultes">
+            <object sortKey="trad" status="océrisé-corrigé" type="traduction" subtype="prose" xml:id="nisard1868" xml:lang="FR" ana="text" style="adultes" resp="Virgile">
                <objectIdentifier>
                   <idno>Traduction en prose accompagnée du texte latin.</idno>
                </objectIdentifier>
@@ -2475,7 +2469,7 @@
                         </persName>
                      </author>
                      <title>Géorgiques. Livre IV</title>
-                     
+                     <editor resp="trad">Désiré Nisard (?)</editor>
                   </analytic>
                   <monogr>
                      <title> Lucrèce, Virgile, Valérius Flaccus : oeuvres complètes : avec la traduction en français</title>
@@ -2786,6 +2780,7 @@
                         </persName>
                      </author>
                      <title>Les Bucoliques et les Géorgiques</title>
+<editor resp="trad">Maurice Rat</editor>
                      <availability status="free">
                         <p>Domaine libre</p>
                      </availability>
@@ -2926,10 +2921,6 @@
                   </surrogates>
                </additional>
             </object>
-         </listObject>
-      </body>
-  </text>
-</TEI>
             
             <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="cournand1805" xml:lang="FR" ana="text" style="adultes" resp="Virgile">
                <objectIdentifier>
@@ -2943,10 +2934,7 @@
                         </persName>
                      </author>
                      <title>Les Géorgiques de Virgile traduites en vers français, avec le texte latin à côté, accompagnées de notes relatives à l'agriculture, à l'astronomie, à la géographie, à l'histoire, à la mythologie et à la poésie</title>
-                     <editor resp="trad">
-                        <forename>Antoine de</forename>
-                        <surname>Cournand</surname>
-                     </editor>
+                     <editor resp="trad">Antoine de Cournand</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -2998,8 +2986,7 @@
                         </persName>
                      </author>
                      <title>Aristée , episode du quatrieme livre des Georgiques</title>
-                     <editor resp="trad"><forename>Joseph de Cuers</forename>
-                     <surname>Cogolin</surname></editor>
+                     <editor resp="trad">Joseph Cogolin</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3008,7 +2995,7 @@
                         <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k1512598q"/>
                      </note>
                      <imprint>
-                        <pubPlace></pubPlace>
+                        <pubPlace>(Paris)</pubPlace>
                         <date when="1750"/>
                      </imprint>
                      <biblScope unit="part" n="IV"/>
@@ -3051,10 +3038,7 @@
                         </persName>
                      </author>
                      <title>Les bucoliques et les géorgiques de Virgile, traductions nouvelles</title>
-                     <editor resp="trad">
-                        <forename>Charles</forename>
-                        <surname>Héguin de Guerle</surname>
-                     </editor>
+                     <editor resp="trad">Charles Héguin de Guerle</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3106,10 +3090,7 @@
                         </persName>
                      </author>
                      <title>Oeuvres de Virgile traduites en vers français : Bucoliques, géorgiques</title>
-                     <editor resp="trad">
-                        <forename>Louis</forename>
-                        <surname>Duchemin</surname>
-                     </editor>
+                     <editor resp="trad">Louis Duchemin</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3162,9 +3143,7 @@
                         </persName>
                      </author>
                      <title> Les Métamorphoses d'Ovide en latin, traduites en françois avec des remarques et des explications historiques, par M. l'abbé Banier, ouvrage enrichi de figures en taille douce gravées par B. Picart et autres</title>
-                     <editor resp="trad">
-                        <surname>M. l'abbé Banier</surname>
-                     </editor>
+                     <editor resp="trad">M. l'abbé Banier</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3250,10 +3229,7 @@
                         </persName>
                      </author>
                      <title>Les Métamorphoses d'Ovide, de nouveau traduittes en françois, avec XV discours contenans l'explication morale des fable</title>
-                     <editor resp="trad">
-                        <forename>Nicolas</forename>
-                        <surname>Renouard</surname>
-                     </editor>
+                     <editor resp="trad">Nicolas Renouard</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3319,10 +3295,7 @@
                         </persName>
                      </author>
                      <title>Les metamorphoses d'Ovide, mises en vers françois</title>
-                     <editor resp="trad">
-                        <forename>Thomas</forename>
-                        <surname>Corneille</surname>
-                     </editor>
+                     <editor resp="trad">Thomas Corneille</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3393,17 +3366,9 @@
                         </persName>
                      </author>
                      <title>Les Métamorphoses</title>
-                     <editor resp="trad">
-                        <forename>Étienne</forename>
-                        <surname>Gros</surname>
-                     </editor>
+                     <editor resp="trad">Étienne Gros</editor>
                   </analytic>
                   <monogr>
-                     <author>
-                        <persName>
-                           <surname>Ovide</surname>
-                        </persName>
-                     </author>
                      <title>Oeuvres complètes d'Ovide</title>
                      <availability status="free">
                         <p>Domaine public</p>
@@ -3459,10 +3424,7 @@
                         </persName>
                      </author>
                      <title>Œuvres complètes de Virgile</title>
-                     <editor resp="trad">
-                        <forename>J.-R.-T.</forename>
-                        <surname>Cabaret-Dupaty</surname>
-                     </editor>
+                     <editor resp="trad">J.-R.-T. Cabaret-Dupaty</editor>
                      <availability status="free">
                         <p>Domaine libre</p>
                      </availability>
@@ -3516,10 +3478,7 @@
                         </persName>
                      </author>
                      <title>Œuvres complètes de Virgile, traduction nouvelle</title>
-                     <editor resp="trad">
-                        <forename>Jean-Pierre</forename>
-                        <surname>Charpentier</surname>
-                     </editor>
+                     <editor resp="trad">Jean-Pierre Charpentier</editor>
                      <availability status="free">
                         <p>Domaine libre</p>
                      </availability>
@@ -3575,11 +3534,7 @@
                         </persName>
                      </author>
                      <title>Oeuvres de Virgile traduites en françois, le texte vis-à-vis la traduction, avec des remarques</title>
-                     <editor resp="trad">
-                        <forename>Pierre-François</forename>
-                        <surname>Desfontaines
-                        </surname>
-                     </editor>
+                     <editor resp="trad">Pierre-François Desfontaines</editor>
                      <availability status="free">
                         <p>Domaine libre</p>
                      </availability>
@@ -3700,10 +3655,7 @@
                         </persName>
                      </author>
                      <title>Les metamorphoses d'Ovide, avec des explications à la fin de chaque fable. Traduction nouvelle par M. l'abbé de Bellegarde</title>
-                     <editor resp="trad">
-                        <forename>Jean-Baptiste</forename>
-                        <surname>Morvan de Bellegarde</surname>
-                     </editor>
+                     <editor resp="trad">Jean-Baptiste Morvan de Bellegarde</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3791,10 +3743,7 @@
                         </persName>
                      </author>
                      <title>Les oeuvres d'Ovide, traduction nouvelle par monsieur de Martignac, avec des remarques</title>
-                     <editor resp="trad">
-                        <forename>Étienne Algay de</forename>
-                        <surname>Martignac</surname>
-                     </editor>
+                     <editor resp="trad">Étienne Algay de Martignac</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3847,10 +3796,7 @@
                         </persName>
                      </author>
                      <title>Les 15 livres de la métamorphose d'Ovide , interprétés en rimes françoises</title>
-                     <editor resp="trad">
-                        <forename>François</forename>
-                        <surname>Habert</surname>
-                     </editor>
+                     <editor resp="trad">François Habert</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -3942,14 +3888,8 @@
                         </persName>
                      </author>
                      <title>Les métamorphoses d'Ovide , mises en vers françois, par Raimond et Charles de Massac, père et fils. Avec XV sommaires, chacun devant son livre</title>
-                     <editor resp="trad">
-                        <forename>Raimond</forename>
-                        <surname>de Massac</surname>
-                     </editor>
-                     <editor resp="trad">
-                        <forename>Charles</forename>
-                        <surname>de Massac</surname>
-                     </editor>
+                     <editor resp="trad">Raimond de Massac</editor>
+                     <editor resp="trad">Charles de Massac</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>
@@ -4001,14 +3941,8 @@
                         </persName>
                      </author>
                      <title>Métamorphoses d'Ovide. Traduction nouvelle conforme au texte latin du P. Jouvenci, par Monsieur Fontanelle</title>
-                     <editor resp="trad">
-                        <forename>Joseph-Gaspard</forename>
-                        <surname>Dubois-Fontanelle</surname>
-                     </editor>
-                     <editor resp="éd">
-                        <forename>Joseph de</forename>
-                        <surname>Jouvancy</surname>
-                     </editor>
+                     <editor resp="trad">Joseph-Gaspard Dubois-Fontanelle</editor>
+                     <editor resp="éd">Joseph de Jouvancy</editor>
                      <availability status="free">
                         <p>Domaine public</p>
                      </availability>

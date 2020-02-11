@@ -28,11 +28,15 @@ def structuration_corpus(traitement, racine):
         os.makedirs(traitement.dossier_target)
     os.chdir(racine)
     os.chdir(traitement.dossier_source)
+    noms_fichiers = os.listdir(".")
     os.system("cp -r *.odt " + racine + "/" + traitement.odette)
     os.chdir(racine + "/" + traitement.odette)
     os.system("ls .")
     os.system("php  -f Odt2tei.php \"*.odt\" XML/")
-    os.system("mv XML/*.xml " + racine + "/" + traitement.dossier_target + " | rm *.odt")
+    for fichier in noms_fichiers:
+        fichier = fichier[:-3]
+        os.system("mv "+fichier+"xml " + racine + "/" + traitement.dossier_target)
+    os.system("rm *.odt")
     os.chdir(racine)
     os.chdir(traitement.dossier_target)
     print("Pensez à corriger votre XML après le traitement")

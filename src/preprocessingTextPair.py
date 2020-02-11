@@ -36,7 +36,7 @@ def initialisation_text_pair (traitement, racine):
             fichier_corpus = open('total.txt', 'r')
             texte_corpus = fichier_corpus.read()
             texte_corpus = re.sub(r"\.\S", r". ", texte_corpus)
-            liste_lemmes = traitementsTal.lemmatisation(texte_corpus, "fichier")
+            liste_lemmes = traitementsTal.lemmatisation(texte_corpus, "dictionnaire")
             fichier_lemmes = open(traitement.dossier_logiciel + '/lemmes.txt', 'w')
             for ligne in liste_lemmes.values():
                 fichier_lemmes.write(ligne[1] + '\t' + ligne[0] + '\n')

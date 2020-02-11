@@ -17,7 +17,7 @@ stopwords = ["au", "aux", "avec", "ce", "ces", "dans", "de", "des", "du", "elle"
              "soient", "fusse", "fusses", "fût", "fussions", "fussiez", "fussent", "ayant", "eu", "eue", "eues", "eus",
              "ai", "as", "avons", "avez", "ont", "aurai", "auras", "aura", "aurons", "aurez", "auront", "aurais",
              "aurait", "aurions", "auriez", "auraient", "avais", "avait", "avions", "aviez", "avaient", "eut", "eûmes",
-             "eûtes", "eurent", "aie", "aies", "ait", "ayons", "ayez", "aient", "eusse", "eusses", "eût", "eussions",
+             "eûtes", "eurent", "a","aie", "aies", "ait", "ayons", "ayez", "aient", "eusse", "eusses", "eût", "eussions",
              "eussiez", "eussent", "ceci", "cela", "celà", "cet", "cette", "ici", "ils", "les", "leurs", "quel",
              "quels", "quelle", "quelles", "sans", "soi"]
 
@@ -28,18 +28,26 @@ def lemmatisation(phrase, besoin):
     sorties = tagger.tag_text(phrase, notagdns=True)
     corpus_lemmes = {}
     i = 0
-    for sortie in sorties:
-        elements = sortie.split('\t')
-        mot = elements[0]
-        #print(mot)
-        lemme = elements[2]
-        pos = elements[1]
-        corpus_lemmes[i] = [mot, lemme, pos]
-        i += 1
+    if besoin == 'dictionnaire':
+        for sortie in sorties:
+            elements = sortie.split('\t')
+            mot = elements[0]
+            if mot not in corpus_lemmes.keys():
+                # print(mot)
+                lemme = elements[2]
+                pos = elements[1]
+                corpus_lemmes[mot] = [mot, lemme, pos]
+    else:
+        for sortie in sorties:
+            elements = sortie.split('\t')
+            mot = elements[0]
+            #print(mot)
+            lemme = elements[2]
+            pos = elements[1]
+            corpus_lemmes[i] = [mot, lemme, pos]
+            i += 1
 
-    if besoin == 'fichier':
-        #print ('ok ', corpus_lemmes)
-        return corpus_lemmes
+    return corpus_lemmes
 
 
 def nettoyage_caracteres(phrase):
@@ -92,7 +100,7 @@ def detecte_stopwords(mot, lemme, pos):
 
 
 data = {}
-with open("synonymes_CRISCO.json", 'r') as dico:
+with open("src/synonymes_CRISCO.json", 'r') as dico:
     data = json.load(dico)
 dico.close()
 

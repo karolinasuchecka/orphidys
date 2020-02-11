@@ -96,7 +96,7 @@ def preprocessing(traitement, racine):
         texte = ''
         for phrase in phrases:
             texte += phrase + ' '
-        liste_lemmes = traitementsTal.lemmatisation(texte, "fichier")
+        liste_lemmes = traitementsTal.lemmatisation(texte, "dictionnaire")
 
         fichier_lemmes = open(chemin_projet_tracer + traitement.nom_traitement + '/lemmes.lemma', 'w')
         for ligne in liste_lemmes.values():
