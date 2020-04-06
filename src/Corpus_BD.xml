@@ -2,7 +2,7 @@
 <!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<!--<!DOCTYPE TEI SYSTEM "Corpus_DTD.dtd">-->
+<!DOCTYPE TEI SYSTEM "Corpus_DTD.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -3978,6 +3978,62 @@
                         <objectType>Fac-similé des pages correspondantes</objectType>
                         <origPlace>Bibliothèque numérique de Lyon</origPlace>
                         <ref target="traductions/ovide/fontanelle1789_facsimile.pdf"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="mod" status="océrisé" type="modernisation" subtype="opéra" xml:id="gluck1774" xml:lang="IT" ana="text_vidéo_musique" style="adultes">
+               <objectIdentifier>
+                  <idno>Tragédie-opéra en trois actes. Considéré comme modernisation, puisque Orphée ne perd pas Eurydice par son amour, mais à cause des doutes d'Eurydice quant à la sincérité de cette amour. À la fin, ils sont réunis par Eros.</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <monogr>
+                     <author> 
+                        <persName>
+                           <forename>Christoph Willibald</forename>
+                           <surname>Gluck</surname>
+                        </persName>
+                     </author>
+                     <author>
+                        <persName>
+                           <forename>Ranieri</forename>
+                           <surname>de Calzabigi</surname>
+                        </persName>
+                     </author>
+                     <title>Orphée et Eurydice</title>
+                     <editor resp="trad">Pierre-Louis Molinet</editor>
+                     <availability status="free">
+                        <p>Domaine public</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/gluck1774.odt" targetLang="TXT"/>
+                        <ref target="http://www.impresario.ch/libretto/libgluorf_f.htm"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Académie Royale</publisher>
+                        <date when="1774"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>La traduction de Molinet vient du site http://www.impresario.ch/libretto/libgluorf_f.htm. Nous disposons également d'une édition de la partition piano et chant réduite par F.-A. Gevaret (Paris : Henry Lemoine, 1901)</source>
+                        <change corresp="gluck1774_texte"><date when="03-04-2020"/>Transcription et stylage</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="gluck1774_texte">
+                        <objectType>Transcription en stylage du libretto en français</objectType>
+                        <origPlace>Site spécialisé</origPlace>
+                        <ptr target="operas/gluck1774.odt" targetLang="TXT"/>
+                     </objectName>
+                     <objectName xml:id="gluck1774_partition">
+                        <objectType>Édition de la partition Piano et Chant, réduite par F.-A. Gevaert (Paris : Henry Lemoine, 1901)</objectType>
+                        <origPlace>archives.org</origPlace>
+                        <ref target="operas/gluck1774_partition.pdf"/>
                      </objectName>
                   </surrogates>
                </additional>
