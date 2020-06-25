@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+--><?xml-model  href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:epub="http://www.idpf.org/2007/ops">
+  <teiHeader>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Orphée</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cocteau Jean</dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Stock</dc:publisher>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">© 1927, 1957, 1986, 1991, 1994, 1998, 2005, Éditions Stock</dc:rights>
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" id="ean">176498</dc:identifier>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">fre</dc:language>
+      <meta xml:id="cover"/>
+    </metadata>
+  </teiHeader>
+  <text>
+    
+        
+        <front>
+          
+          <div type="epigraph">
+         <quote> <l>Qu’il est laid le bonheur qu’on veut.</l>
+          <l>Qu’il est beau le malheur qu’on a.</l>
+          <bibl>L’A. H.</bibl></quote>
+          </div>
+          <div type="dedication">
+            <opener>Mon cher Pitoëff,</opener>
+            <p>Un peintre peut se jeter du cinquième étage, l’amateur dira encore que cela fait une jolie tache. Vous savez à quoi s’expose un dramaturge écorché vif. Mais, au théâtre, le public réserve des surprises et ne préjuge pas. La critique, elle, sauf quelques exceptions, ne réserve aucune surprise. Or, votre indifférence à cet ordre de choses dépasse la mienne, et, malgré la critique, nous obtînmes chaque soir une salle qui collaborait avec nous. Salles émouvantes pour un esprit que l’admiration laisse froid et dont la seule affaire est d’être cru.</p>
+              <p>Vos enfants vinrent un dimanche. L’aîné a sept ans. Ils sortent neufs de la mort où les grandes personnes retournent. Ils se trouvent donc de plain-pied avec le mystère. Depuis, la soupe se mange pour Orphée, pour Eurydice, pour Heurtebise ; Sacha imite le cheval et Ludmilla traverse les miroirs. Les critiques citent mon texte tout de travers. Eux le retiennent, le jouent, y jouent. S’ils le changent, c’est comme le rêve change nos actes. Bref, ils réussissent le miracle de la dernière scène : une maison montée au ciel. J’offre ma pièce à vos enfants, et je souhaite qu’ils ne perdent jamais l’enfance, ou qu’ils la retrouvent grâce au cœur, au génie, hérités de votre femme et de vous.</p>
+            <signed>Jean.</signed>
+            <dateline>1<hi rend="sup">er</hi> juillet 1926.</dateline>
+          
+        </div>
+          <div><castList>
+            <castItem xml:id="orphee"><role>Orphée</role>, MM. Georges Pitoëff</castItem>
+            <castItem xml:id="heurtebise"><role>Heurtebise</role>, Marcel Herrand</castItem>
+            <castItem xml:id="commissaire_police"><role>Le Commissaire de Police</role>, Léon Larive</castItem>
+            <castItem xml:id="greffier"><role>Le Greffier</role>, Jean Hort</castItem>
+            <castItem xml:id="cheval"><role>Le Cheval</role>, Norbert</castItem>
+            <castItem xml:id="facteur"><role>Voix du Facteur</role>, Roger</castItem>
+            <castItem xml:id="azrael"><role>Azraël</role>, aide de la Mort, Alfred Penay</castItem>
+            <castItem xml:id="raphael"><role>Raphaël</role>, aide de la Mort, Georges de Vos</castItem>
+            <castItem xml:id="eurydice"><role>Eurydice</role>, Mme Ludmilla Pitoëff</castItem>
+            <castItem xml:id="mort"><role>La Mort</role>, Mlle Mireille Havet</castItem>
+            <castItem xml:id="monsieur_orchestre"><role>Un monsieur de l’orchestre</role></castItem>
+          </castList>
+          <set>En Thrace, chez Orphée</set>
+          </div>
+          
+          <div>
+            <p><hi rend="i">Orphée</hi> a été représenté pour la première fois au Théâtre des Arts, à Paris, le 17 juin 1926, avec la distribution ci-dessus. Le décor était de Jean Victor-Hugo, les robes de Gabrielle Chanel.</p>
+          </div>
+          <!--<div rend="fig">
+            <graphic alt="003" class="img" id="JFIG1" src="9782234072282_img003.jpg"/>
+            <div rend="leglegp">Décor.</div>
+          </div>
+          <div rend="fig">
+            <graphic alt="004" class="img" id="JFIG2" src="9782234072282_img004.jpg"/>
+            <div rend="leglegp">Plan du décor.</div>
+          </div>-->
+        
+        <div>
+          <head>Costumes</head>
+          <p>On doit adopter les costumes de l’époque où la tragédie est représentée.</p>
+          <p>Orphée et Eurydice en tenues de campagne, les plus simples, les plus invisibles.</p>
+          <p>Heurtebise avec la cotte bleu pâle des ouvriers, un foulard sombre autour du cou et des espadrilles blanches. Il est hâlé, tête nue. Il ne quitte jamais son appareil à vitres.</p>
+          <p>Le Commissaire et le Greffier portent des redingotes noires, des panamas, des barbiches, des bottines à boutons.</p>
+          <p>La Mort est une jeune femme très belle en robe de bal rose vif et en manteau de fourrure. Cheveux, robe, manteau, souliers, gestes, démarche à la dernière mode. Elle a de grands yeux bleus peints sur un loup. Elle parle vite, d’une voix sèche et distraite. Sa blouse d’infirmière aussi doit être l’élégance même.</p>
+          <p>Ses aides ont l’uniforme, le masque de linge, les gants de caoutchouc des chirurgiens qui opèrent.</p>
+        </div>
+        <div>
+          <head>Décor</head>
+          <p>Un salon dans la villa d’Orphée. C’est un curieux salon. Il ressemble pas mal aux salons des prestidigitateurs. Malgré le ciel d’avril et sa lumière franche, on devine ce salon cerné par des forces mystérieuses. Même les objets familiers ont un air suspect.</p>
+          <p>D’abord, dans un box en forme de niche, bien au milieu, habite un cheval blanc. Les jambes de ce cheval ressemblent beaucoup à des jambes d’homme. À gauche du cheval, une autre petite niche. Dans cette niche que du laurier encadre, se dresse un socle vide. Après le socle, à l’extrême gauche, une porte ouvre sur le jardin. Lorsque cette porte est ouverte, le battant cache le socle. À droite du cheval, un lavabo de faïence. Après ce lavabo, à l’extrême droite, une porte-fenêtre. Cette porte-fenêtre, dont on aperçoit le vitrage à demi poussé vers l’extérieur, donne sur une terrasse qui entoure la villa.</p>
+          <p>Au premier plan, à gauche, contre le mur, un vaste miroir. Au second plan, une bibliothèque. Au milieu du pan coupé de droite, porte ouverte sur la chambre d’Eurydice. Un plafond en pente ferme la scène comme une boîte.</p>
+          <p>Deux tables et trois chaises blanches meublent la pièce. À gauche, une table à écrire et une des chaises.</p>
+          <p>À droite de la scène, des fruits, des assiettes, une carafe, des verres, pareils aux ustensiles en carton des jongleurs, sur la seconde table recouverte d’une nappe qui touche le sol. Une chaise derrière cette table, de face ; une autre près d’elle, à gauche.</p>
+          <p>On ne pourrait ajouter ou supprimer une chaise, distribuer autrement les ouvertures, car ce décor est un décor <emph>utile</emph> où le moindre détail joue son rôle comme les appareils d’un numéro d’acrobates.</p>
+          <p>Sauf le bleu du ciel et le bourrelet de velours rouge sombre qui borde en haut la petite porte du box dissimulant le milieu du corps du cheval, aucune couleur.</p>
+          <p>Le décor rappellera les aéroplanes ou navires trompe-l’œil chez les photographes forains.</p>
+          <p>Au reste ce décor épouse les personnages et les événements d’une manière aussi naïve et aussi dure que modèle et toile peinte se mélangent sur le camaïeu des cartes-portraits.</p>
+        </div></front>
+    <body>
+        <div>
+          <head>Prologue</head>
+            <stage>L’acteur chargé du rôle d’Orphée paraît devant le rideau.</stage>
+          
+          <sp who="orphee">
+            <speaker></speaker>
+            <p>Mesdames, Messieurs, ce prologue n’est pas de l’auteur. Sans doute sera-t-il surpris de m’entendre. La tragédie dont il nous a confié les rôles est d’une marche très délicate. Je vous demanderai donc d’attendre la fin pour vous exprimer si notre travail vous mécontente. Voici la cause de ma requête : nous jouons très haut et sans filet de secours. Le moindre bruit intempestif risque de nous faire tuer, mes camarades et moi.</p></sp>
+          <stage>Exit</stage>
+        </div>
+      
+        <div>
+          
+          <head>Scène première <lb/> Orphée, Eurydice, le Cheval</head>
+          <stage>Orphée derrière la table de gauche. Il consulte un alphabet spirite. Eurydice assise à droite, près de la table servie.</stage>
+         
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je peux bouger ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Attends encore une seconde.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il ne tape plus.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Il met quelquefois très longtemps entre la première lettre et les autres.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>On prévoit les autres !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je t’en prie, n’est-ce pas !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Avoue que ce mot revient toujours.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>M, M… Cheval, continue. Allons, vite, après la lettre M… Je t’écoute.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Quelle patience ! Toi qui n’as aucune tête, tu en trouves pour ton cheval.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>J’écoute. Allons, cheval ! M. M, après M. <stage>(Le cheval bouge.)</stage> Tu bouges. Tu vas parler. Parle. Dicte-nous la lettre après la lettre M. <stage>(Le cheval frappe avec son sabot, Orphée compte.)</stage> A. B. C. D. E. E, c’est la lettre E ? <stage>(Le cheval remue la tête de haut en bas.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Naturellement.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, furieux</stage>.</speaker>
+          <p>Chut ! <stage>(Le cheval frappe.)</stage> A. B. C. D. E. F. G. H. I. J. K. L. M. N. O. P. Q. R. <stage>(À Eurydice.)</stage> Je te défends de rire. R, c’est bien la lettre R ? M, E, R, mer ? J’ai mal compté. Cheval ! est-ce bien la lettre R ? Si c’est oui frappe un coup, deux si c’est non. <stage>(Le cheval frappe un coup.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>N’insiste pas.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Écoute, je te demande en grâce de te tenir tranquille. Rien ne dérange ce cheval comme les personnes incrédules. Va dans ta chambre ou tais-toi.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je n’ouvrirai plus la bouche.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Tant mieux. <stage>(Au cheval.)</stage> Mer. Mer… et après mer ? M. E. R., mer. J’écoute. Parle. Parle-moi, cheval. Cheval ! Allons, un peu de courage. Après la lettre R ? <stage>(Le cheval frappe. Orphée compte.)</stage> A.B.C. <stage>(Silence.)</stage> C. La lettre C. La lettre C, chère Madame ! <stage>(Le cheval frappe.)</stage> A. B. C. D. E. F. G. H. I. Merci. Merci ! C’était merci ! Est-ce tout ? Est-ce merci tout court ? <stage>(Le cheval remue la tête de haut en bas.)</stage> C’est for-mi-da-ble. Tu vois, Eurydice ! Avec ton esprit mal tourné, j’aurais pu te croire, j’aurais pu avoir la faiblesse de me laisser convaincre… Merci tout court, c’est for-mi-da-ble !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Pourquoi ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Comment, pourquoi ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Pourquoi est-ce formidable ? Ce merci n’a aucun sens.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Par exemple ! Ce cheval me dicte la semaine dernière une des phrases les plus émouvantes du monde.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Oh !…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>… Me dicte une des phrases les plus émouvantes du monde. Je me propose de la mettre en œuvre pour transfigurer la poésie. J’immortalise mon cheval et tu t’étonnes de l’entendre me dire merci. Ce merci est un chef-d’œuvre de tact. Et moi qui croyais… <stage>(Il enlace le cou du cheval.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Écoute, Orphée, mon amour, ne me gronde pas. Sois juste. Avoue que depuis cette fameuse phrase tu obtiens un mot, un seul, et que ce mot n’est guère poétique.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Sait-on ce qui est poétique et pas poétique.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Aglaonice faisait tourner les tables, et sa table répondait toujours ce mot-là.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Allons bon ! Il ne manquait plus que de mêler cette personne à nos affaires. Je t’ai déjà dit que je ne voulais plus qu’on me parle d’elle. Une femme dont l’influence a failli te perdre ! Une femme qui boit, qui promène des tigres, qui tourne la tête de nos épouses, qui empêche les jeunes filles de se marier.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Mais c’est le culte de la lune !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Bravo ! Je t’engage à la défendre. Retourne chez les Bacchantes puisque leurs mœurs te plaisent.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je te taquine. Tu sais bien que je n’aime que toi et que tu n’as eu qu’un signe à faire pour que je quitte ce milieu.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Joli milieu. Je n’oublierai jamais la voix avec laquelle Aglaonice m’a dit : « Emmenez-la puisqu’elle accepte. Les femmes bêtes adorent les artistes. Rira bien qui rira le dernier. »</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>J’en ai eu froid dans le dos.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Si je la retrouve ! <stage>(Il frappe l’encrier contre la table.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Orphée, mon poète… Regarde comme tu es nerveux depuis ton cheval. Avant tu riais, tu m’embrassais, tu me berçais ; tu avais une situation superbe. Tu étais chargé de gloire, de fortune. Tu écrivais des poèmes qu’on s’arrachait et que toute la Thrace récitait par cœur. Tu glorifiais le soleil. Tu étais son prêtre et un chef. Mais depuis le cheval tout est fini. Nous habitons la campagne. Tu as abandonné ton poste et tu refuses d’écrire. Ta vie se passe à dorloter ce cheval, à interroger ce cheval, à espérer que ce cheval va te répondre. Ce n’est pas sérieux.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Pas sérieux ? Ma vie commençait à se faisander, à être à point, à puer la réussite et la mort. Je mets le soleil et la lune dans le même sac. Il me reste la nuit. Et pas la nuit des autres ! Ma nuit. Ce cheval entre dans ma nuit et il en sort comme un plongeur. Il en rapporte des phrases. Ne sens-tu pas que la moindre de ces phrases est plus étonnante que tous les poèmes ? Je donnerais mes œuvres complètes pour une seule de ces petites phrases où je m’écoute comme on écoute la mer dans un coquillage. Pas sérieux ? Que te faut-il, ma petite ! Je découvre un monde. Je retourne ma peau. Je traque l’inconnu.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Tu vas encore me citer la fameuse phrase.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, grave</stage></speaker>
+          <p>Oui. <stage>(Il remonte vers le cheval et récite.)</stage> Madame Eurydice reviendra des enfers.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Elle n’a aucun sens, cette phrase.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Il s’agit bien de sens. Colle ton oreille contre cette phrase. Écoute le mystère. « Eurydice reviendra » serait quelconque – mais Madame Eurydice ! Madame Eurydice reviendra – ce revien<emph>dra</emph> ! ce futur ! et la chute : des enfers. Tu devrais être contente que je parle de toi.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ce n’est pas toi qui en parles… <stage>(Montrant le cheval.)</stage> C’est lui.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Ni lui, ni moi, ni personne. Que savons-nous ? Qui parle ? Nous nous cognons dans le noir ; nous sommes dans le surnaturel jusqu’au cou. Nous jouons à cache-cache avec les dieux. Nous ne savons rien, rien, rien. « Madame Eurydice reviendra des enfers », ce n’est pas une phrase. C’est un poème, un poème du rêve, une fleur du fond de la mort.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Et tu espères convaincre le monde ? Faire admettre que la poésie consiste à écrire une phrase ; avoir du succès avec ta phrase de cheval.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Il ne s’agit pas de succès, ni de cheval, ni de convaincre le monde. Du reste, je ne suis pas seul.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ne me parle pas de ton public. Quatre ou cinq jeunes brutes sans cœur qui te croient un anarchiste et une douzaine d’imbéciles qui cherchent à se faire remarquer.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>J’aurai mieux. J’espère un jour charmer les vraies bêtes.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Puisque tu méprises le succès, pourquoi envoyer cette phrase au concours de Thrace ? Pourquoi attacher une importance pareille à remporter le prix ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Il faut jeter une bombe. Il faut obtenir un scandale. Il faut un de ces orages qui rafraîchissent l’air. On étouffe. On ne respire plus.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Nous étions si calmes.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Trop calmes.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Tu m’aimais.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je t’aime.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Tu aimes le cheval. Je passe en second.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Tu es stupide. Il n’y a aucun rapport. <stage>(Il embrasse distraitement Eurydice et s’approche du cheval.)</stage> N’est-ce pas, mon vieux ? N’est-ce pas, mon vieux frère ? Hein ? On l’aime, son ami ? Tu veux un sucre ? Alors, embrasse-moi. Non, mieux. Là… là… qu’il est beau ! Tiens. <stage>(Il sort du sucre de sa poche et le donne au cheval.)</stage> C’est bon.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je n’existe plus. Je mourrais que tu ne t’en apercevrais pas.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Nous étions morts sans nous en apercevoir.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Viens près de moi.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Hélas ! Il faut que je sorte. Je vais en ville me mettre en règle pour le concours. C’est demain la date limite. Je n’ai pas une minute à perdre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice<stage>, dans un élan.</stage></speaker>
+          <p>Orphée ! mon Orphée !…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Tu vois ce socle vide. Je n’y poserai qu’un buste digne de moi.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ils te lanceront des pierres.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je ferai mon buste avec.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Méfie-toi des Bacchantes.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je les ignore.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Elles existent. Elles plaisent. Je connais leurs méthodes. Aglaonice te hait. Elle doit prendre part au concours.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oh ! cette femme ! cette femme !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Sois juste… Elle a du talent.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Hein ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Dans un genre affreux, c’est entendu. Mais sous un certain angle, sur un certain plan, elle en a. Elle a de belles images.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Voyez-vous cela. Sous un certain angle… sur un certain plan… C’est chez les Bacchantes que tu as appris cette façon de parler ? Alors sur un certain plan ses images te plaisent. Sous un certain angle tu approuves mes ennemis mortels. Et tu m’aimes, et tu prétends que tu m’aimes. Eh bien, par cet angle et par ce plan, je déclare que j’en ai assez, qu’on me persécute, et que ce cheval est la seule personne qui sache me prendre ici. <stage>(Coup de poing sur la table.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ce n’est pas la peine de casser tout.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Casser tout. C’est le comble ! Madame casse un carreau par jour, et maintenant c’est moi qui casse tout.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>D’abord…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée, <stage>qui marche de long en large.</stage></speaker>
+          <p>Je sais ce que tu vas dire. Tu vas dire que tu n’as pas encore cassé de carreau aujourd’hui.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Mais…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Eh bien, casse, casse-le, casse le carreau.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Comment peux-tu te mettre dans un état pareil ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Voyez la fine mouche. Tu ne casses pas de carreau parce que je sors…</p>
+          </sp>
+<sp who="eurydice">
+  <speaker>Eurydice<stage>, vivement</stage></speaker>
+          <p>Que veux-tu insinuer ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Tu me crois donc aveugle ! Tu casses chaque jour un carreau pour que le vitrier monte.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Eh bien oui, je casse un carreau pour que le vitrier monte. C’est un brave garçon plein de cœur. Il m’écoute. Il t’admire.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Trop aimable.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Et quand tu interroges le cheval et que tu me laisses toute seule, je casse le carreau. Tu n’es pas jaloux, je suppose ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Jaloux, moi ? Jaloux d’un garçon vitrier ? Pourquoi ne serais-je pas aussi jaloux d’Aglaonice ! Par exemple ! Tiens, puisque tu refuses de casser le carreau, c’est moi qui le casserai. Cela me soulagera. <stage>(Il casse un carreau. On entend : Vitrier ! Vitrier ! Vitrier !)</stage> Hep ! Vitrier ! – Il monte. Jaloux ?</p>
+</sp>
+        </div>
+        <div>
+          
+          <head>Scène II <lb/> Les mêmes, Heurtebise</head>
+          <stage>Heurtebise apparaît sur le balcon. Le soleil frappe ses vitres. Il entre, plie un genou et croise les mains sur son cœur.</stage>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Bonjour, messieurs et dames.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Bonjour, mon ami. C’est moi, MOI qui ai cassé ce carreau. Remettez-le. Je vous laisse. <stage>(À Eurydice.)</stage> Ma chère, vous surveillerez le travail. <stage>(Au cheval.)</stage> On l’aime, son poète ? <stage>(Il l’embrasse.)</stage> À ce soir. <stage>(Il sort.)</stage></p>
+</sp>
+        </div>
+        <div>
+          <head>Scène III <lb/> Eurydice, Heurtebise</head>
+         
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous voyez. Je n’invente rien.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est inouï.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous me comprenez.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Ma pauvre dame.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Depuis que ce cheval l’a suivi dans la rue, depuis qu’il l’a ramené à la maison, depuis qu’il habite chez nous, depuis qu’ils se parlent…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Le cheval lui a encore parlé ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il lui a dit merci.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il sait le prendre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Bref, depuis un mois, notre existence est devenue un supplice.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous ne pouvez pas être jalouse d’un cheval ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>J’aimerais mieux lui savoir une maîtresse.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous le dites…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Sans vous, sans votre amitié, je serais déjà folle.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Chère Eurydice.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+  <stage>Elle se regarde dans le miroir. Sourire</stage>
+          <p>Figurez-vous que j’ai une petite lueur. Il s’est rendu compte que je cassais un carreau chaque jour. Alors, au lieu de dire que je casse du verre blanc pour me porter la chance, j’ai dit que je le cassais pour que vous montiez me voir.</p>
+          </sp>
+          <sp who="heurtebise">
+  <speaker>Heurtebise</speaker>
+          <p>J’aurais cru…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Attendez. Il m’a fait une scène et il a cassé le carreau. Je le crois encore jaloux.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Comme vous l’aimez…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Plus il me maltraite, plus je l’aime. Il m’avait déjà semblé qu’il était jaloux d’Aglaonice.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>D’Aglaonice ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il déteste tout ce qui se rapporte à mon ancien milieu. C’est pourquoi je crains que nous ne commettions une imprudence terrible. Parlons bas. J’ai toujours peur que ce cheval ne m’écoute.</p>
+  <stage>Ils remontent sur la pointe des pieds jusqu’à la niche</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il dort.</p>
+  <stage>Ils redescendent au premier plan</stage>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous avez vu Aglaonice ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Oui.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Orphée vous tuerait s’il l’apprenait.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il ne l’apprendra pas.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+  <stage>Elle l’entraîne encore plus loin du cheval, vers sa chambre.</stage>
+          <p>Vous avez… la chose ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je l’ai.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Sous quelle forme ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Sous la forme d’un morceau de sucre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Quelle attitude avait-elle ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Très simple. Elle m’a dit : Donnant, donnant. Voici le poison, rapportez-moi la lettre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>C’est une lettre fort ennuyeuse pour elle.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle a même ajouté : Pour que la petite ne se compromette pas, je vous remets une enveloppe. Mon adresse est de ma propre écriture. Elle n’aura qu’à introduire la lettre dedans et à coller. Il ne restera aucune trace de notre échange.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Orphée est injuste. Elle est capable de choses très bien. Elle était seule ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Avec une amie. Ce n’était pas un milieu pour vous.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Certes. Mais je ne trouve pas que Aglaonice soit une mauvaise fille.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Méfiez-vous des bonnes filles et des braves garçons. Voilà votre sucre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Merci… <stage>(Elle prend le sucre avec crainte et s’approche du cheval.)</stage> J’ai peur.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous reculez ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je ne recule pas, mais j’ai peur. À froid, nez à nez avec l’acte, j’avoue que je manque de courage. <stage>(Elle redescend devant la table à écrire.)</stage> Heurtebise ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Quoi ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Mon petit Heurtebise. Vous ne consentiriez pas…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Ho ! ho ! Vous me demandez une chose bien grave.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous m’avez dit que vous feriez n’importe quoi pour me rendre service.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je le répète, mais…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Oh ! mon cher, si cela vous gêne le moins du monde… n’en parlons plus.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Passez-moi le sucre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Merci. Vous êtes un brave cœur.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Seulement, l’acceptera-t-il de ma main ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Essayez toujours.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise<stage>, près du cheval.</stage></speaker>
+          <p>Je vous avoue ne pas me sentir très fort sur mes jambes.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Soyez un homme ! <stage>(Elle passe à droite et s’arrête près de la porte de sa chambre.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Allons-y. <stage>(D’une voix faible.)</stage> Cheval… Cheval…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice<stage>, regardant par la fenêtre.</stage></speaker>
+          <p>Ciel, Orphée ! il rentre. Il traverse le jardin. Vite, vite, ayez l’air de travailler.</p>
+          <stage>Heurtebise jette le sucre sur la table servie et la pousse contre le mur entre la fenêtre et la porte de la chambre.</stage>
+          <p>Montez sur cette chaise.</p>
+</sp>
+          <stage>Heurtebise monte sur la chaise dans le cadre de la porte-fenêtre et feint de prendre des mesures. Eurydice tombe assise sur la chaise de la table à écrire.</stage>
+        </div>
+        <div>
+          
+          <head>Scène IV <lb/> Les mêmes, Orphée</head>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>J’ai oublié mon acte de naissance. Où l’ai-je mis ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>En haut de la bibliothèque, à gauche. Veux-tu que je le cherche ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Reste assise. Je le trouverai bien moi-même. <stage>(Il passe devant le cheval, le caresse, prend la chaise sur laquelle Heurtebise se tient debout et l’emporte. Heurtebise reste dans sa pose, suspendu en l’air. Eurydice étouffe un cri. Orphée, sans s’apercevoir de rien, monte sur la chaise devant la bibliothèque, dit : « Le voilà », prend l’acte de naissance, descend de la chaise, la reporte à sa place sous les pieds d’Heurtebise et sort.)</stage></p>
+</sp>
+        </div>
+        <div>
+          
+          <head>Scène V <lb/> Eurydice, Heurtebise</head>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Heurtebise ! M’expliquerez-vous ce prodige !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Quel prodige ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous n’allez pas me dire que vous ne vous êtes aperçu de rien et qu’il est naturel qu’un homme sous lequel on ôte une chaise reste suspendu en l’air au lieu de tomber.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Suspendu en l’air ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Jouez la surprise, je vous ai vu. Vous teniez en l’air. Vous restiez en l’air à cinquante centimètres du sol. Il y avait le vide autour.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous m’étonnez beaucoup.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Vous êtes demeuré une bonne minute entre terre et ciel.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est impossible.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Justement parce que c’est impossible, vous me devez une explication.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous prétendez que je me tenais sans support entre le plancher et le plafond ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ne mentez pas, Heurtebise ! Je vous ai vu, de mes yeux vu. J’ai eu toutes les peines du monde à étouffer un cri. Dans cette maison de fous, vous étiez mon dernier refuge, la seule personne qui ne m’effrayait pas, auprès de laquelle je retrouvais mon équilibre. Mais on a beau vivre avec un cheval qui parle, un ami qui flotte en l’air devient forcément suspect. Ne m’approchez pas ! Jusqu’à nouvel ordre, même votre lumière dans le dos me donne la chair de poule. Expliquez-vous, Heurtebise : je vous écoute.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je n’ai pas à me défendre. Ou je rêve, ou vous avez rêvé.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Oui, en rêve, il arrive qu’on fasse ce que vous avez fait, mais nous ne dormions ni l’un ni l’autre.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous devez être le jouet d’un mirage entre mes vitres et les vôtres. Il arrive que les objets mentent. J’ai vu à la foire une dame nue marcher au plafond.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il ne s’agissait pas d’une machine. C’était beau et atroce. L’espace d’une seconde je vous ai vu atroce comme un accident et beau comme l’arc-en-ciel. Vous étiez le cri d’un homme qui tombe par la fenêtre et le silence des étoiles. Vous me faites peur. Je suis trop franche pour ne pas vous le dire. Si vous voulez vous taire, taisez-vous ; mais nos rapports ne peuvent plus être les mêmes. Je vous croyais simple, vous êtes compliqué. Je vous croyais de ma race, vous êtes de celle du cheval.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Eurydice, ne me torturez pas… Vous avez une voix de somnambule. C’est vous qui me faites peur.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>N’employez pas le système d’Orphée. Ne retournez pas les rôles. N’essayez pas de me faire croire que je suis folle.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Eurydice, je vous jure…</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Inutile, Heurtebise. J’ai perdu ma confiance en vous.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Que faire ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Attendez. <stage>(Elle se dirige vers la bibliothèque, monte sur la chaise, prend un livre, l’ouvre, en retire une lettre et le remet en place.)</stage> Donnez-moi l’enveloppe d’Aglaonice. <stage>(Il la donne.)</stage> Merci. <stage>(Elle met la lettre dans l’enveloppe et lèche la colle.)</stage> Oh !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous vous êtes coupé la langue ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Non, mais cette colle a un drôle de goût. Prenez l’enveloppe. Vous la porterez chez Aglaonice. Allez.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>La vitre n’est pas remise.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je me passerai de vitre. Allez.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous voulez que je parte.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>J’ai besoin de rester seule.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous êtes méchante.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je n’aime pas les fournisseurs qui volent.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Ce jeu de mots cruel est indigne de vous.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ce n’est pas un jeu de mots.</p>
+          </sp>
+<sp who="heurtebise">
+  <speaker>Heurtebise</speaker>
+  <stage>Il ramasse son sac</stage>
+          <p>Vous regretterez de m’avoir fait du mal. <stage>(Silence.)</stage> Vous me chassez ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Le mystère est mon ennemi. Je suis décidée à le combattre.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je sors. Je veux vous plaire par mon obéissance. Adieu, Madame.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Adieu. <stage>(Ils se croisent. Eurydice se dirige vers sa chambre. Heurtebise ouvre la porte et sort. La porte reste ouverte. On voit son dos briller immobile au soleil. Tout à coup Eurydice s’arrête et change de visage. Elle chancelle, porte la main à son cœur et se met à crier.)</stage> Heurtebise ! Heurtebise ! vite, vite…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise<stage>, rentrant.</stage></speaker>
+          <p>Qu’y a-t-il ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Au secours !…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous êtes glacée, vous êtes verte !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je me paralyse. Mon cœur saute. Mon ventre brûle.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>L’enveloppe !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Quoi, l’enveloppe ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise, <stage>criant.</stage></speaker>
+          <p>L’enveloppe d’Aglaonice. Vous l’avez léchée. Vous avez dit qu’elle avait un drôle de goût.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ah ! La misérable ! Courez vite. Ramenez Orphée. Je meurs. Je veux revoir Orphée. Orphée ! Orphée !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je ne peux pas vous laisser seule. Il doit y avoir quelque chose à faire, un contrepoison à prendre.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Je connais ce poison des Bacchantes. Il paralyse. Rien ne me sauvera. Courez vite. Ramenez Orphée. Je veux le revoir. Je veux qu’il me pardonne. Je l’aime, Heurtebise. Je souffre. Si vous hésitez, il sera trop tard. Je vous le demande à genoux. Heurtebise, Heurtebise, vous êtes bon, vous me plaignez. Ah ! on m’enfonce des pointes entre les côtes. Vite, vite, courez, volez ! Prenez le raccourci. S’il rentre, vous le rencontrerez en route. Je vais me coucher dans ma chambre pour vous attendre. Aidez-moi. <stage>(Heurtebise la mène jusqu’à sa chambre.)</stage> Vite, vite, vite. <stage>(Elle disparaît. Au moment où Heurtebise va ouvrir la porte, elle sort de la chambre.)</stage> Heurtebise, écoutez, si vous savez des choses… enfin… des choses comme tout à l’heure… qui permettent de se transporter instantanément d’un point à un autre… Il ne faut pas m’en vouloir, j’étais nerveuse, j’étais sotte… Je vous aime bien, Heurtebise… Essayez tout. Ah ! <stage>(Elle rentre dans la chambre.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je le ramènerai, je vous le promets.</p>
+          <stage>Il sort.</stage>
+</sp>
+  <stage>La scène reste vide un instant. La lumière change. Roulements et syncopes de tambours qui accompagnent en sourdine toute la scène suivante</stage>
+        </div>
+        <div>
+          
+          <head>Scène VI <lb/> La Mort, Azraël, Raphaël</head>
+          <stage>La Mort entre en scène par le miroir, suivie de ses deux aides. Elle est en robe de bal sous un manteau. Ses aides ont l’uniforme des chirurgiens. On devine leurs yeux. Le reste du visage est recouvert par du linge. Gants de caoutchouc. Ils portent deux grandes valises noires très élégantes. La Mort marche vite et s’arrête au milieu de la chambre.</stage>
+          
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Dépêchons-nous.</p>
+          </sp>
+<sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Où Madame veut-elle qu’on pose les sacs ?</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Par terre, n’importe où. Azraël vous expliquera. Azraël, mon manteau.</p>
+          <stage>Il enlève le manteau.</stage>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>C’est la peur de me tromper qui me fait faire des bêtises.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Vous ne pouvez pas apprendre en deux jours le métier d’Azraël. Azraël est à mon service depuis des siècles. Il était comme vous au début. Ma blouse.</p>
+          <stage>Azraël sort la blouse blanche d’un des sacs et aide la Mort à la passer sur sa robe de bal.</stage>
+          </sp>
+<sp who="azrael">
+  <speaker>Azraël<stage>, à Raphaël</stage></speaker>
+          <p>Prends les boîtes de métal et mets-les sur la table. Non, d’abord les serviettes. Couvre la table avec les serviettes.</p>
+          </sp>
+<sp who="mort">
+  <speaker>La Mort<stage>, se dirigeant vers le lavabo</stage>.</speaker>
+          <p>Azraël vous dira que j’exige l’ordre et la propreté comme sur un bateau.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Oui, Madame. Que Madame me pardonne… mais j’étais distrait ; je regardais ce cheval.</p>
+          </sp>
+<sp who="mort">
+  <speaker>La Mort<stage>, qui se lave les mains</stage></speaker>
+          <p>Il vous plaît, ce cheval ?</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Oh ! oui, Madame, beaucoup.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Quel enfant ! Je suis sûre que vous aimeriez l’avoir. C’est très simple. Azraël, l’alcool. <stage>(À Raphaël.)</stage> Vous trouverez un morceau de sucre sur l’autre table.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Oui, Madame, il y est.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Donnez-le-lui. S’il refuse, je le lui donnerai moi-même. Azraël, mes gants de caoutchouc. Merci. <stage>(Elle met le gant de la main droite.)</stage></p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Madame, le cheval refuse le sucre.</p>
+          </sp>
+<sp who="mort">
+  <speaker>La Mort <stage>prend le sucre</stage></speaker>
+          <p>Mange, cheval, je le veux. <stage>(Le cheval mange, recule et disparaît. Un rideau noir ferme la niche.)</stage> Et voilà. <stage>(À Raphaël.)</stage> Il est à vous.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Madame est trop bonne.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort<stage>, mettant le gant de la main gauche.</stage></speaker>
+          <p>Il y a encore une semaine, vous pensiez que j’étais un squelette avec un suaire et une faux. Vous vous représentiez un croquemitaine, un épouvantail…</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Oh ! Madame…</p>
+          <stage>Pendant ces répliques, Azraël cache le miroir avec un linge.</stage>
+          </sp>
+<sp who="mort">
+  <speaker>La Mort<stage>, allant prendre la chaise laissée par Heurtebise dans la porte-fenêtre</stage></speaker>
+          <p>Si, si, si. Tous le croient. Mais, mon pauvre garçon, si j’étais comme les gens veulent me voir, ils me verraient. Et je dois entrer chez eux sans être vue. <stage>(Elle pose la chaise, près de la rampe, au milieu.)</stage> Azraël, essayez le contact.</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Il marche, Madame.</p>
+          <stage>Rumeur profonde d’une machine électrique.</stage>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+  <stage>Elle tire un mouchoir de sa blouse.</stage>
+          <p>Parfait. Raphaël, voulez-vous avoir l’obligeance de me bander les yeux avec ce mouchoir. <stage>(Pendant que Raphaël lui bande les yeux.)</stage> Nous avons une onde sept et une zone sept-douze. Réglez tout sur quatre. Si j’augmente, vous irez jusqu’à cinq. Ne dépassez cinq sous aucun prétexte. Serrez fort. Faites un nœud double. Merci. Vous êtes à vos postes ? <stage>(Azraël et Raphaël se tiennent derrière la table, côte à côte, debout, les mains à l’intérieur des boîtes de métal.)</stage> Je commence. <stage>(Elle s’approche de la chaise. Gesticulation lente de masseuse et d’hypnotiseur autour d’une tête invisible.)</stage></p>
+          </sp>
+          <sp who="raphael">
+            <speaker>Raphaël<stage>, très bas</stage></speaker>
+          <p>Azraël…</p>
+          </sp>
+<sp who="azrael">
+  <speaker>Azraël<stage>, même jeu</stage></speaker>
+          <p>Chut…</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Parlez, parlez, vous ne me dérangez pas.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Azraël, où est Eurydice ?</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Je m’y attendais. Tu vois, Azraël, tous la même question ! Explique-lui.</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>La Mort, pour toucher les choses de la vie, traverse un élément qui les déforme et les déplace. Nos appareils lui permettent de les toucher où elle les voit, ce qui évite des calculs et une perte de temps considérable.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>C’est comme pour tirer un poisson dans l’eau avec une arme à feu.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort<stage>, riant.</stage></speaker>
+          <p>Si vous voulez. <stage>(Grave.)</stage> Azraël, prépare-moi la bobine.</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Oui, Madame… Madame sait-elle où est Heurtebise ?</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Il ramène Orphée de la ville.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>S’ils courent, aurons-nous le temps de finir ?</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Ceci regarde Azraël. Il change nos vitesses. Une heure pour moi doit être une minute pour eux.</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>L’aiguille dépasse cinq. Madame veut-elle la bobine ?</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Amorce-la et donne-la-moi.</p>
+          <stage>Azraël disparaît chez Eurydice et rentre en scène avec la bobine. La Mort compte les pas entre sa chaise et la chambre. Puis elle s’arrête face à la porte. Azraël lui remet la bobine, sorte de mètre automatique où s’enroulera un fil blanc qui sort de la chambre.</stage>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Raphaël, vous avez le chronomètre ?</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Je l’ai oublié !</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Nous voilà propres.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+  <p>Ne vous énervez pas. Il y a un moyen très simple. <stage>(Elle parle bas à Azraël<note place="bottom"><p>Le metteur en scène qui craindrait de déchirer un rideau de mystère par un geste entre la scène et la salle peut substituer à ce passage un conciliabule obscur.</p>
+    <label>1°</label><sp who="mort"><speaker>La Mort</speaker><p>Il y a un moyen très simple.</p> <stage>(Elle parle bas à Azraël. Azraël retourne à la table, parle bas à Raphaël.)</stage> <p>Vous y êtes ?</p></sp> <label>2° (p. 71)</label> <sp who="mort"><speaker>La Mort</speaker><p>Alors, en route.</p></sp> <sp who="azrael"><speaker>Azraël</speaker><p>Raphaël !</p></sp> <sp who="mort"><speaker>La Mort</speaker><p>Qu’est-ce que c’est ?</p></sp> <sp who="raphael"><speaker>Raphaël</speaker><p>C’est juste.</p><stage>(Il entre dans la chambre d’Eurydice.)</stage></sp> <sp who="mort"><speaker>La Mort</speaker><p>Raphaël, dépêchez-vous, dépêchez-vous…</p></sp></note>.)</stage></p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+  <stage>Il s’approche de la rampe.</stage>
+          <p>Mesdames, Messieurs. La Mort me charge de demander à l’assistance si un spectateur serait assez aimable pour lui prêter une montre ? <stage>(À un monsieur qui, au premier rang, lève la main.)</stage> Merci, Monsieur. Raphaël, voulez-vous prendre la montre de Monsieur.</p>
+          <stage>Jeu de scène.</stage>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Vous y êtes ?</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Partez ! <stage>(Roulement de tambour. Le fil s’échappe de la chambre et entre dans la boîte tenue par la Mort. Azraël et Raphaël, au fond, tournent le dos. Azraël compte avec une main en l’air comme un arbitre de boxe. Raphaël exécute lentement des signaux pareils à ceux du code naval.)</stage> Hop ! <stage>(Le roulement de tambour s’arrête. Raphaël s’immobilise. Le fil résiste. La Mort se rue dans la chambre. Elle en sort sans le bandeau qui lui couvrait les yeux avec une colombe qui se débat, attachée au bout du fil. On n’entend plus la machine.)</stage></p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Ouf ! Vite, vite, Raphaël, les ciseaux. <stage>(Elle court sur le balcon.)</stage> Venez ici, coupez. <stage>(Il coupe le fil ; la colombe s’envole.)</stage> Rangez la bande. Azraël, montre-lui. C’est très simple. Laisse-le faire, il faut qu’il apprenne.</p>
+          <stage>Azraël et Raphaël enferment les boîtes de métal, la blouse, etc.</stage>
+          <stage>La Mort s’appuie contre la table de droite. Elle regarde le vide avec une fatigue profonde. Elle passe lentement son bras droit et sa main sur son front comme un somnambule qui se réveille, comme pour se sortir de l’hypnose.</stage>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Tout est en place, Madame.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Et maintenant, fermez, bouclez. Je suis prête. Mon manteau. <stage>(Azraël lui pose le manteau sur les épaules pendant que Raphaël ferme les sacs.)</stage> Nous n’oublions rien ?</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Non, Madame.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Alors, en route.</p>
+          </sp>
+<sp who="monsieur_orchestre">
+<speaker>Le Monsieur de l’orchestre</speaker>
+          <p>Psst !</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>Ah ! c’est juste.</p>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Qu’est-ce que c’est ?</p>
+          </sp>
+<sp who="azrael">
+<speaker>Azraël</speaker>
+          <p>La montre. Raphaël, reportez la montre à Monsieur en le remerciant.</p>
+          <stage>Jeu de scène.</stage>
+          </sp>
+<sp who="mort">
+<speaker>La Mort</speaker>
+          <p>Raphaël, dépêchez-vous, dépêchez-vous.</p>
+          </sp>
+          <sp who="raphael">
+<speaker>Raphaël</speaker>
+          <p>Voilà, Madame, j’arrive.</p>
+          </sp>
+          <stage>La Mort se hâte et s’immobilise, le bras tendu, devant le miroir. Puis elle y pénètre. Ses aides la suivent. Ils exécutent la même manœuvre. Sur la table de droite, bien en évidence, elle a oublié ses gants de caoutchouc.</stage>
+        </div>
+        <div>
+          
+          <head>Scène VII <lb/>Orphée, Heurtebise</head>
+          <stage>Aussitôt après la dernière réplique de la Mort, on entend la voix d’Orphée dans le jardin.</stage>
+<sp who="orphee">
+<speaker>La voix d’Orphée</speaker>
+          <p>Vous ne la connaissez pas. Vous ne savez pas de quoi elle est capable. Ce sont des comédies pour me faire rentrer à la maison.</p>
+          <stage>La porte s’ouvre, ils entrent. Heurtebise se précipite vers la chambre, regarde, recule et se met à genoux sur le seuil.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Où est-elle ? Eurydice !… Elle boude. Ah ! ça… Je deviens fou ! Le cheval ! Où est le cheval ? <stage>(Il découvre la niche.)</stage> Parti ! Je suis perdu. On lui aura ouvert la porte, on l’aura effrayé ; ce doit être un coup d’Eurydice. Elle me le payera !</p>
+          <stage>Il s’élance.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Halte !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous m’empêchez d’entrer chez ma femme !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Regardez.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Où ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Regardez à travers mes vitres.</p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée</speaker><stage>Il regarde</stage>
+          <p>Elle est assise. Elle dort.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle est morte.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Quoi ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Morte. Nous sommes arrivés trop tard.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>C’est impossible. <stage>(Il frappe aux vitres.)</stage> Eurydice, ma chérie ! Réponds-moi !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Inutile.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous ! Laissez-moi entrer. <stage>(Il écarte Heurtebise.)</stage> Où est-elle ? <stage>(À la cantonade.)</stage> Je viens de la voir, assise, près du lit. La chambre est vide. <stage>(Il rentre en scène.)</stage> Eurydice !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous avez cru la voir. Eurydice habite chez la Mort.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Ah ! peu importe le cheval ! Je veux revoir Eurydice. Je veux qu’elle me pardonne de l’avoir ainsi négligée, mal comprise. Aidez-moi. Sauvez-moi. Que faire ? Nous perdons un temps précieux.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Ces bonnes paroles vous sauvent, Orphée…</p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, pleurant, effondré sur la table</stage>.</speaker>
+          <p>Morte. Eurydice est morte. <stage>(Il se lève.)</stage> Eh bien… je l’arracherai à la mort ! S’il le faut, j’irai la chercher jusqu’aux enfers !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Orphée… écoutez-moi. Du calme. Vous m’écouterez…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oui… Je serai calme. Réfléchissons. Trouvons un plan…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je connais un moyen.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Mais il faut m’obéir et ne pas perdre une minute.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oui.</p>
+          <stage>Toutes ces répliques d’Orphée, il les prononce dans la fièvre et la docilité. La scène se déroule avec une extrême vitesse.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>La Mort est entrée chez vous pour prendre Eurydice.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oui…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle a oublié ses gants de caoutchouc. <stage>(Un silence. Il s’approche de la table, hésite et prend les gants de loin comme on touche un objet sacré.)</stage></p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, avec terreur</stage></speaker>
+          <p>Ah !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous allez les mettre.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Bon.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Mettez-les. <stage>(Il les lui passe. Orphée les met.)</stage> Vous irez voir la Mort sous prétexte de les lui rendre, et grâce à eux vous pourrez parvenir jusqu’à elle.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Bien…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>La Mort va chercher ses gants. Si vous les lui rapportez, elle vous donnera une récompense. Elle est avare, elle aime mieux prendre que donner, et comme elle ne rend jamais ce qu’on lui laisse prendre, votre démarche l’étonnera beaucoup. Sans doute vous obtiendrez peu, mais vous obtiendrez toujours quelque chose.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Bon.</p>
+          </sp>
+<sp who="heurtebise">
+  <speaker>Heurtebise</speaker>
+  <stage>Il le mène devant le miroir</stage>
+          <p>Voilà votre route.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Ce miroir ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je vous livre le secret des secrets. Les miroirs sont les portes par lesquelles la Mort va et vient. Ne le dites à personne. Du reste, regardez-vous toute votre vie dans une glace et vous verrez la Mort travailler comme des abeilles dans une ruche de verre. Adieu. Bonne chance !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Mais un miroir, c’est dur.</p>
+          </sp>
+<sp who="heurtebise">
+  <speaker>Heurtebise<stage>, la main haute</stage></speaker>
+          <p>Avec ces gants vous traverserez les miroirs comme de l’eau.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Où avez-vous appris toutes ces choses redoutables ?</p>
+          </sp>
+<sp who="heurtebise">
+  <speaker>Heurtebise<stage>, sa main retombe</stage></speaker>
+          <p>Vous savez, les miroirs, ça rentre un peu dans la vitre. C’est notre métier.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Et une fois passée cette… porte…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Respirez lentement, régulièrement. Marchez sans crainte devant vous. Prenez à droite, puis à gauche, puis à droite, puis tout droit. Là, comment vous expliquer… Il n’y a plus de sens… on tourne ; c’est un peu pénible au premier abord.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Et après ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Après ? Personne au monde ne peut vous renseigner. La Mort commence.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je ne la crains pas.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Adieu. Je vous attends à la sortie.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je serai peut-être long.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Long… pour vous. Pour nous, vous ne ferez guère qu’entrer et sortir.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je ne peux croire que cette glace soit molle. Enfin, j’essaye.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Essayez. <stage>(Orphée se met en marche.)</stage> D’abord les mains !</p>
+          </sp>
+          <stage>Orphée, les mains en avant, gantées de rouge, s’enfonce dans la glace.</stage>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Eurydice !… <stage>(Il disparaît.)</stage></p>
+</sp>
+        </div>
+        <div>
+          
+          <head>Scène VIII <lb/> Heurtebise seul, puis le facteur</head>
+          <stage>Heurtebise resté seul s’agenouille devant la niche du cheval. On frappe.</stage>
+          
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Qu’est-ce que c’est ?</p>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Le facteur. J’ai une lettre pour vous.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Monsieur n’est pas là.</p>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Et Madame ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Madame non plus. Glissez votre lettre sous la porte.</p>
+          <stage>Une lettre passe sous la porte.</stage>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Ils sont sortis ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Non… Ils dorment.</p>
+</sp>
+          <stage>Le rideau de l’intervalle tombe lentement et se relève tout de suite.</stage>
+          
+        </div>
+        <div>
+          
+          <head>Scène VIII <emph>bis</emph> <lb/> Heurtebise, le facteur</head>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Qu’est-ce que c’est ?</p>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Le facteur. J’ai une lettre pour vous.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Monsieur n’est pas là.</p>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Et Madame ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Madame non plus. Glissez votre lettre sous la porte.</p>
+          </sp>
+<sp who="facteur">
+<speaker>La voix du facteur</speaker>
+          <p>Ils sont sortis ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Non… Ils dorment.</p>
+</sp>
+        </div>
+        <div>
+          
+          <head>Scène IX <lb/> Heurtebise Orphée, puis Eurydice</head>
+          <stage>Orphée sort de la glace.</stage>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous êtes encore là ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Eh bien, racontez vite.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Mon cher, vous êtes un ange.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Pas du tout.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Si, si, un ange, un vrai ange. Vous m’avez sauvé.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Eurydice.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Une surprise. Regardez bien.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Où ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>La glace. Une, deux, trois. <stage>(Eurydice sort de la glace.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Oui, moi. Moi la plus heureuse des épouses, moi la première femme que son mari ait eu l’audace de venir reprendre chez les morts.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>« Madame Eurydice reviendra des enfers. » Et nous qui refusions un sens à cette phrase.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Chut, mon chéri ; rappelle-toi ta promesse. On ne reparlera plus jamais du cheval.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Où avais-je la tête ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Et vous savez, Heurtebise, il a découvert le chemin tout seul. Il n’a pas hésité une seconde. Il a eu l’idée géniale de mettre les gants de la Mort.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est ce qu’on appelle, si je ne me trompe, se donner des gants.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, très vite.</stage></speaker>
+          <p>Enfin… le principal était de réussir. <stage>(Il fait mine de se retourner vers Eurydice.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Attention !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oh ! <stage>(Il se fige.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Qu’avez-vous ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Un détail, un simple détail. Au premier moment la chose paraît effrayante, mais avec un peu de prudence tout s’arrangera.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ce sera une affaire d’habitude.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>De quoi s’agit-il ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>D’un pacte. J’ai le droit de reprendre Eurydice, je n’ai pas le droit de la regarder. Si je la regarde, elle disparaît.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Quelle horreur !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>C’est intelligent de décourager mon mari !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, faisant passer Heurtebise devant lui.</stage></speaker>
+          <p>Laisse, laisse, je ne me décourage pas. Il lui arrive ce qui nous est arrivé. Vous pensez bien qu’après avoir accepté cette clause – il le fallait coûte que coûte –, nous avons passé par toutes vos transes. Or, je le répète, c’est faisable. Ce n’est pas facile, certes non, mais c’est faisable. J’estime que c’est moins dur que de devenir aveugle.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ou que de perdre une jambe.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Et puis… nous n’avions pas le choix.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il y a même des avantages. Orphée ne connaîtra pas mes rides.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Bravo ! Il ne me reste plus qu’à vous souhaiter bonne chance.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous nous quittez ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je crains que ma présence ne vous dérange. Vous devez avoir tant de choses à vous dire.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Nous nous les dirons après le déjeuner. La table est mise. J’ai grand-faim. Vous êtes trop de notre aventure pour ne pas rester déjeuner avec nous.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je crains que la présence d’un tiers ne contrarie votre femme.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Non, Heurtebise. <stage>(En insistant sur les mots.)</stage> Le voyage d’où je reviens transforme la face du monde. J’ai appris beaucoup. J’ai honte de moi. Orphée aura dorénavant une épouse méconnaissable, une épouse de lune de miel.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Eurydice ! Ta promesse. On ne parlera plus jamais de la lune.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>C’est mon tour de n’avoir aucune tête. À table ! À table ! Heurtebise à ma droite. Asseyez-vous. Orphée en face de moi.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Pas en face !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Dieux ! J’ai eu raison de retenir Heurtebise. Je m’installe à ta gauche et je te tourne le dos. Je mange sur mes genoux.</p>
+          <stage>Eurydice les sert.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je brûle d’entendre le récit de votre voyage.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Ma foi, j’aurai du mal à le raconter. Il me semble que je sors d’une opération. J’ai le vague souvenir d’un de mes poèmes que je récite pour me tenir éveillé et de bêtes immondes qui s’endorment. Ensuite un trou noir. Ensuite, j’ai parlé avec une dame invisible. Elle m’a remercié pour les gants. Une sorte de chirurgien est venu les reprendre et m’a dit de partir, qu’Eurydice me suivrait et que je ne devais la regarder sous aucun prétexte. J’ai soif ! <stage>(Il prend son verre et se retourne.)</stage></p>
+          </sp>
+<sp who="eurydice heurtebise">
+<speaker>Eurydice et Heurtebise<stage>, ensemble.</stage></speaker>
+          <p>Attention !</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>J’ai eu une de ces peurs ! Sans te retourner, mon chéri, tâte comme mon cœur bat.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>C’est stupide. Si je me bandais les yeux ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je ne vous le conseille pas. Vous ne savez pas les règles exactes. Si vous trichez, tout est perdu.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>On se représente mal la difficulté, la tension d’esprit qu’exige une bêtise pareille.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Que veux-tu, mon pauvre chéri, tu es toujours dans la lune…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Encore la lune ! Autant me traiter d’idiot.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Orphée !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je laisse la lune à tes ex-compagnes.</p>
+          <stage>Silence.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Monsieur Orphée !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je suis hiérophante du soleil.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Tu ne l’es plus, mon amour.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Soit. Mais je défends qu’on parle de lune dans ma maison.</p>
+          <stage>Silence.</stage>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Si tu savais comme ces histoires de lune et de soleil ont peu d’importance.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Madame est au-dessus de ces choses-là.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Si je pouvais parler…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Il me semble que pour une personne qui ne peut pas parler, tu parles beaucoup. Beaucoup ! Beaucoup trop !</p>
+          <stage>Eurydice pleure. Silence</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous faites pleurer votre femme.</p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, menaçant</stage></speaker>
+          <p>Vous ! <stage>(Il se retourne.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ah !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Prenez garde !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>C’est de sa faute. Elle ferait retourner un mort.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Il valait mieux rester morte.</p>
+          <stage>Silence</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>La lune ! Si je la laissais dire, où irions-nous ? Je vous le demande. L’époque du cheval recommencerait.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous exagérez…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>J’exagère ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Oui.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Et même en admettant que j’exagère. <stage>(Il se retourne.)</stage></p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Attention !</p>
+          </sp>
+<sp who="heurtebise">
+  <speaker>Heurtebise<stage>, à Eurydice</stage>.</speaker>
+          <p>Du calme. Ne pleurez pas. La difficulté vous énerve. Orphée, mettez-y du vôtre. Vous finirez par faire un malheur.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Et même en admettant que j’exagère, qui commence ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ce n’est pas moi.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Pas toi ! Pas toi ! <stage>(Il se retourne.)</stage></p>
+          </sp>
+<sp who="eurydice heurtebise">
+<speaker>Eurydice et Heurtebise</speaker>
+          <p>Ho !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous êtes dangereux, mon cher.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Vous avez raison. Le plus simple est que je sorte de table et que je vous débarrasse de ma présence puisque vous me trouvez dangereux.</p>
+          </sp>
+          <stage>Il se lève. Eurydice et Heurtebise le retiennent par sa veste.</stage>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Mon ami…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Orphée…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Non, non. Laissez-moi.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Soyez raisonnable.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je serai ce qu’il me convient d’être.</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Reste. <stage>(Elle le tire, il perd l’équilibre, et la regarde. Il pousse un cri. Eurydice, pétrifiée, se lève. Son visage exprime l’épouvante. La lumière baisse. Eurydice s’enfonce lentement et disparaît. La lumière revient.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’était fatal.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, pâle, sans forces, avec une grimace de fausse désinvolture.</stage></speaker>
+
+          <p>Ouf ! on se sent mieux.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Quoi ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, même jeu.</stage></speaker>
+          <p>On respire.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il est fou !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, cachant de plus en plus sa gêne sous la colère.</stage></speaker>
+          <p>Il faut se montrer dur avec les femmes. Il faut leur prouver qu’on ne tient pas à elles. Il ne faut pas se laisser conduire par le bout du nez.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Voilà qui est fort ! Vous prétendez me laisser entendre que vous avez regardé Eurydice exprès ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Suis-je un homme à distractions ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous ne manquez pas d’audace ! Vous avez regardé par distraction. Vous avez perdu l’équilibre. Vous avez tourné la tête par distraction. Je vous ai vu.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>J’ai perdu l’équilibre exprès. J’ai tourné la tête exprès, et je défends qu’on me contredise.</p>
+          <stage>Silence.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Eh bien, si vous avez tourné la tête exprès, je ne vous félicite pas.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je me passe de vos félicitations. Je me félicite, moi, d’avoir tourné la tête exprès vers ma femme. Cela vaut mieux que d’essayer de tourner la tête aux femmes des autres.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Est-ce pour moi, cette phrase ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Prenez-la comme bon vous semble.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous êtes trop injuste. Jamais je ne me suis permis de faire la cour à votre femme. Elle m’aurait vite envoyé promener. Votre femme était une femme modèle. Il vous a fallu la perdre une première fois pour vous en rendre compte, et vous venez de la perdre une seconde fois, de la perdre lâchement et de la perdre tragiquement, de vous perdre, de tuer une morte, de commettre de gaieté de cœur un acte irréparable. Car elle est morte, morte, remorte. Elle ne reviendra plus.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Allons donc !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Comment, allons donc ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Où avez-vous vu une femme quitter la table en criant et ne pas venir se remettre à table ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je vous laisse cinq minutes pour comprendre votre infortune.</p>
+          <stage>Orphée lance sa serviette par terre, se lève, contourne la table, va regarder la glace, la touche, se dirige vers la porte et ramasse la lettre.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+  <stage>Il ouvre la lettre.</stage>
+          <p>Qu’est-ce que c’est que ça ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Une mauvaise nouvelle ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je ne peux pas lire, la lettre est écrite à l’envers.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est un moyen de déguiser l’écriture. Lisez dans la glace.</p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, devant la glace, lit</stage>.</speaker>
+         <q type="letter"><opener>Monsieur,</opener>
+          <p>Excusez-moi de conserver l’incognito. Aglaonice a découvert que l’ensemble des lettres qui commencent les mots de votre phrase : <emph>Madame Eurydice Reviendra Des Enfers</emph> forme un mot injurieux pour le tribunal du concours. Elle a convaincu le jury que vous étiez un mystificateur. Elle a soulevé contre vous la moitié des femmes de la ville. Bref, une énorme troupe de folles sous ses ordres se dirige vers votre maison. Les Bacchantes ouvrent la marche et réclament votre mort. Sauvez-vous, cachez-vous. Ne perdez pas une minute.</p>
+          <signed>Une personne qui vous veut du bien.</signed></q>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il ne doit pas y avoir un mot de vrai.</p>
+          <stage>On entend au loin des tambours qui s’approchent et battent un rythme furieux.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Écoutez…</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Des tambours.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p><emph>Leurs</emph> tambours. Eurydice voyait juste. Heurtebise, le cheval m’a joué !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>On n’écharpe pas un homme pour un mot.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Le mot est un prétexte qui cache une haine profonde, une haine religieuse. Aglaonice guettait son heure. Je suis perdu.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Les tambours approchent.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Comment n’ai-je pas vu cette lettre ? Depuis quand l’a-t-on glissée sous la porte ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Orphée, je suis bien coupable. On a glissé la lettre pendant votre visite chez les morts. Le retour de votre femme m’a saisi. J’ai oublié de vous prévenir. Sauvez-vous !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Trop tard. <stage>(L’envoûtement du cheval est fini. Orphée se transfigure.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Cachez-vous derrière les massifs, je dirai que vous êtes en voyage…</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Inutile, Heurtebise. Les choses arrivent comme elles doivent arriver.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je vous sauverai de force !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je refuse.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est fou !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>La glace est dure. Elle m’a lu la lettre. Je sais ce qu’il me reste à faire.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Que voulez-vous faire ?</p>
+</sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+          <p>Rejoindre Eurydice.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous ne le pouvez plus.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je le peux.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Même si vous y parvenez, les scènes recommenceront entre vous.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée<stage>, en extase.</stage></speaker>
+          <p>Pas où elle me fait signe de la rejoindre.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous souffrez. Votre figure se contracte. Je ne vous laisserai pas vous perdre à plaisir.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Oh ! ces tambours, ces tambours ! Ils approchent, Heurtebise, ils tonnent, ils éclatent, ils vont être là.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous avez déjà fait l’impossible.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>À l’impossible je suis tenu.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous avez résisté à d’autres cabales.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Je n’ai pas encore résisté jusqu’au sang.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous m’effrayez…</p>
+          <stage>Le visage d’Heurtebise exprime une peur surhumaine.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Que pense le marbre dans lequel un sculpteur taille un chef-d’œuvre ? Il pense : on me frappe, on m’abîme, on m’insulte, on me brise, je suis perdu. Ce marbre est idiot. La vie me taille, Heurtebise ! Elle fait un chef-d’œuvre. Il faut que je supporte ses coups sans les comprendre. Il faut que je me raidisse. Il faut que j’accepte, que je me tienne tranquille, que je l’aide, que je collabore, que je lui laisse finir son travail.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Les pierres !</p>
+          <stage>Des pierres brisent les vitres et tombent dans la chambre.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Du verre blanc. C’est la chance ! la chance ! J’aurai le buste que je voulais.</p>
+          <stage>Une pierre casse la glace.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>La glace !</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Pas la glace ! <stage>(Il s’élance sur le balcon.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elles vont vous écharper.</p>
+          <stage>On entend des clameurs et des tambours.</stage>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, de dos sur le balcon, il se penche</stage></speaker>
+          <p>Mesdames ! <stage>(Rafale de tambours.)</stage> Mesdames ! <stage>(Rafale de tambours.)</stage> Mesdames ! <stage>(Rafale de tambours.)</stage></p>
+</sp>
+          <stage>Il se précipite vers la droite, partie invisible du balcon. Les tambours couvrent sa voix. Ténèbres. Heurtebise tombe à genoux et se cache le visage.</stage>
+          <stage>Tout à coup une chose vole par la fenêtre et tombe dans la chambre. C’est la tête d’Orphée. Elle roule vers la droite et s’arrête au premier plan. Heurtebise pousse un faible cri. Les tambours s’éloignent.</stage>
+        </div>
+        <div>
+          
+          <head>Scène X <lb/> Heurtebise, la tête d’Orphée, puis Eurydice</head>
+<sp who="orphee">
+  <speaker>La tête d’Orphée</speaker><stage>Elle parle avec la voix d’un grand blessé</stage>
+          <p>Où suis-je ? Comme il fait noir… Comme j’ai la tête lourde. Et mon corps, mon corps me fait si mal. J’ai dû tomber du balcon. J’ai dû tomber de très haut, de très haut, très haut sur la tête. Et ma tête… ? Au fait, oui… je parle de ma tête… Où est-elle, ma tête ? Eurydice ! Heurtebise ! Aidez-moi ! Où êtes-vous ? Allumez la lampe. Eurydice ! Je ne vois pas mon corps. Je ne trouve plus ma tête. Je n’ai plus ni tête ni corps. Je ne comprends plus. Et j’ai du vide, j’ai du vide partout. Expliquez-moi. Réveillez-moi. Au secours ! Au secours ! Eurydice ! <stage>(Comme une plainte.)</stage> Eurydice… Eurydice… Eurydice… Eurydice… Eurydice…</p>
+  
+          </sp><stage>Entre Eurydice, sortant du miroir. Elle reste sur place</stage>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Mon chéri ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Eurydice… c’est toi ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>C’est moi.</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Où est mon corps ? Où ai-je mis mon corps ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Ne cherche pas. Ne t’agace pas. Donne-moi la main.</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Où est ma tête ?…</p>
+          </sp>
+<sp who="eurydice">
+  <speaker>Eurydice<stage>, prenant le corps invisible par la main</stage></speaker>
+          <p>J’ai ta main dans ma main. Marche. N’aie pas peur. Laisse-toi conduire…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Où est mon corps ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Près de moi. Contre moi. Maintenant, tu ne peux plus me voir, et j’ai la permission de t’emmener.</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Et ma tête, Eurydice… ma tête… Où ai-je mis ma tête ?</p>
+          </sp>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Laisse, mon amour, ne t’occupe plus de ta tête…</p>
+</sp>
+  <stage>Eurydice et le corps invisible d’Orphée s’enfoncent dans le miroir</stage>
+        </div>
+        <div>
+          
+          <head>Scène XI <lb/> Heurtebise, la tête d’Orphée, puis le Commissaire de Police, le Greffier</head>
+          <stage>On frappe à la porte. Silence. On frappe. Silence.</stage>
+          <sp who="commissaire_police">
+<speaker>La voix du commissaire</speaker>
+          <p>Au nom de la loi, ouvrez.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Qui êtes-vous ?</p>
+          </sp>
+          <sp who="commissaire_police">
+            <speaker>La voix du commissaire</speaker>
+          <p>La police. Ouvrez ou j’enfonce la porte.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>J’ouvre. <stage>(Il s’élance vers la tête d’Orphée, la ramasse, hésite, la pose sur le socle et ouvre la porte. Le battant cache le socle. C’est alors que l’acteur qui joue le rôle d’Orphée substitue sa tête à la tête de carton.)</stage></p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Pourquoi n’avez-vous pas répondu à ma première sommation ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Monsieur le Juge…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Commissaire.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Monsieur le Commissaire, je suis un ami de la famille… J’étais encore sous le coup d’un saisissement compréhensible…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Un coup. Quel coup ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Il faut vous dire que j’étais seul avec Orphée au moment du drame.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Quel drame ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Le meurtre d’Orphée par les Bacchantes.</p>
+          </sp>
+<sp who="commissaire_police">
+  <speaker>Le Commissaire<stage>, se retournant vers le Greffier</stage></speaker>
+          <p>Je m’attendais à cette version. Et… la femme de la victime… Où est-elle ? J’aimerais la confronter avec vous.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle est absente.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>De mieux en mieux.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Elle avait même abandonné le domicile conjugal.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Voyez-vous cela ! <stage>(Au Greffier.)</stage> Veuillez vous mettre à cette table <stage>(Il désigne la table de gauche.)</stage> et prendre note. <stage>(Le Greffier s’installe. Papiers, plumes. Il tourne le dos à la glace. Heurtebise est debout près de la glace. Pour être plus à l’aise le Greffier tire la table en arrière de sorte que cette table rende l’accès de la porte impossible.)</stage></p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>J’ai…</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Silence.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Procédons par ordre. Ne parlez que si je vous interroge. Où est le corps ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Quel corps ?</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Quand il y a crime, il y a corps. Je vous demande où se trouve le corps ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Mais, Monsieur le Commissaire, il n’y a pas de corps. Il a été déchiré, décapité, emporté par ces folles !</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Primo, je vous dispense de porter un jugement injurieux sur des femmes qui exercent un sacerdoce. Secundo, votre version est contredite par cinq cents témoignages visuels.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Vous prétendez…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Silence !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je…</p>
+          </sp>
+<sp who="commissaire_police">
+  <speaker>Le Commissaire<stage>, débit prétentieux</stage>.</speaker>
+          <p>Silence. Écoutez-moi bien, mon gaillard. Nous sommes aujourd’hui jour d’éclipse. Cette éclipse de soleil est cause d’un formidable revirement populaire en faveur d’Orphée. On porte le deuil. On organise son triomphe. Les autorités réclament sa dépouille mortelle. Or, les Bacchantes ont vu Orphée paraître à son balcon couvert de sang et criant au secours. Surprises, car elles venaient sous ses fenêtres à seule fin de lui faire un charivari, elles eussent volé à son aide s’il n’était, racontent-elles (et cinq cents bouches le racontent), s’il n’était, disais-je, tombé mort sous leurs yeux.</p>
+          <p>Je me résume. Ces dames organisent un monôme. Elles arrivent aux cris de « conspuez Orphée ». Soudain la fenêtre s’ouvre. Orphée ensanglanté s’élance et appelle au secours. Ces dames s’apprêtent à gravir les marches ; il est trop tard ! Orphée tombe, et toute la troupe – n’oublions pas que ce sont des femmes… des femmes qui aiment crier, mais que la vue du sang effraye – toute la troupe, dis-je, rebrousse chemin. Éclipse. La ville voit dans cette éclipse la colère du soleil, parce qu’on moque un de ses anciens prêtres. Les autorités s’avancent à la rencontre des femmes, et les femmes, par l’entremise d’Aglaonice, racontent le crime étrange dont elles viennent d’être témoins. La ville entière voulait se ruer sur les lieux. Des mesures sévères furent prises afin de réprimer le désordre et on m’a dépêché, moi, moi le chef de la police, moi qui vous interroge et qui ne supporterai pas qu’on me traite comme un garde champêtre. Tenez-vous-le pour dit.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Mais je ne vous…</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Silence. On ne vous interroge pas.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Procédons par ordre. <stage>(Au Greffier.)</stage> Où en étais-je ?</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Le buste. Je me permets de vous rappeler le buste…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Ah ! oui. <stage>(À Heurtebise.)</stage> Vous êtes de la maison ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Un ami de la maison.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>On demande un buste d’Orphée pour le triomphe. En connaissez-vous un ?</p>
+          <stage>Heurtebise se dirige vers la porte et la ferme. On voit la tête sur le socle. Le Commissaire et le Greffier se retournent.</stage>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Il n’est pas ressemblant.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>C’est une très belle chose.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>De qui ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je l’ignore.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Il n’est pas signé, ce buste ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Non.</p>
+          </sp>
+<sp who="commissaire_police">
+  <speaker>Le Commissaire<stage>, au Greffier</stage></speaker>
+          <p>Prenez note : Tête présumée d’Orphée.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Non, non. C’est Orphée, de cela on est certain. Le doute ne porte que sur l’auteur.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Alors, mettez : Tête d’Orphée, par X. <stage>(À Heurtebise.)</stage> Vos noms.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Plaît-il ?</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>On vous demande vos noms.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Car, pour le métier, on ne me trompe pas. J’ai l’œil. <stage>(Il s’approche et tapote les vitres.)</stage> Vous êtes vitrier, mon gaillard !</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise, <stage>souriant.</stage></speaker>
+          <p>Vitrier, je l’avoue.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Avouez, avouez, c’est encore le seul système de défense qui tienne debout.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Excusez-moi, Monsieur le Commissaire, mais, si nous lui demandions ses papiers…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Très juste. <stage>(Il s’assoit.)</stage> Vos papiers.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je… je n’en ai pas.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Hein ?</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Oh ! oh !</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Vous circulez sans vos papiers ? Où sont-ils ? Où demeurez-vous ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je demeure… C’est-à-dire, voilà : je demeurais…</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Je ne vous demande pas où vous demeuriez. Je vous demande l’adresse de votre domicile actuel.</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Actuellement ?… Actuellement je me trouve… sans domicile.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Pas de papiers, pas de domicile. Parfait. Vagabondage. Un ambulant ! Votre affaire est claire, mon ami. Votre âge ?</p>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>J’ai… <stage>(Il hésite.)</stage></p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+  <stage>Il interroge en tournant le dos, les yeux au ciel, remuant le pied, comme les examinateurs.</stage>
+          <p>Je suppose que vous avez du moins un âge…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Dix-huit ans.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker><stage>Il écrit.</stage>
+          <p>Dix-sept ans.</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Dix-huit.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Né à…</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Une petite minute, Monsieur le Commissaire. Je gratte le chiffre. <stage>(Il gratte.)</stage></p>
+          </sp><stage>Eurydice sort à moitié du miroir</stage>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Heurtebise… Heurtebise. Je sais qui vous êtes. Venez, entrez, nous vous attendions. Il ne manque plus que vous.</p>
+          <stage>Heurtebise hésite.</stage>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Dépêchez-vous, Heurtebise. Suivez ma femme. Je vais répondre à votre place. J’inventerai n’importe quoi.</p>
+</sp>
+          <stage>Heurtebise plonge dans le miroir.</stage>
+        </div>
+        <div>
+          
+          <head>Scène XII <lb/> La tête d’Orphée, Le Commissaire.Le Greffier</head>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Monsieur le Commissaire, à vos ordres.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Né à…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Maisons-Laffitte.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Maison quoi ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Maisons-Laffitte, deux f, deux t.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Puisque vous me dites votre lieu de naissance, vous ne refuserez plus de dire votre nom. Vous vous appelez…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Jean.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Jean comment ?</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Jean Cocteau.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Coc…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>C. O. C. T. E. A. U. Cocteau.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>C’est un nom à coucher dehors. Il est vrai que vous couchez dehors. À moins que vous ne consentiez, maintenant, à nous dire votre domicile…</p>
+          </sp>
+<sp who="orphee">
+<speaker>La tête d’Orphée</speaker>
+          <p>Rue d’Anjou, dix.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Vous devenez raisonnable.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>La signature.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Préparez une plume. <stage>(À Heurtebise.)</stage> Approchez. Approchez, on ne vous mangera pas. <stage>(Il se retourne.)</stage> Oh !</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Qu’y a-t-il ?</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Tonnerre ! L’inculpé a disparu.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>C’est prodigieux !</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Prodigieux… Prodigieux… Il n’y a rien de prodigieux. <stage>(Il arpente la scène.)</stage> Je ne crois pas aux prodiges. Une éclipse est une éclipse. Une table est une table. Un inculpé est un inculpé. Procédons par ordre. Cette porte…</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Impossible, Monsieur le Commissaire, pour sortir par cette porte il fallait bousculer ma chaise.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Reste la fenêtre.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Pour la fenêtre, il fallait passer devant nous. D’ailleurs, l’inculpé répondait. Il a répondu jusqu’à la dernière minute.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Alors ?</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Alors, je n’y comprends rien.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Il faut qu’il existe quelque issue secrète dont l’assassin – car cette fuite nous apporte la preuve du crime –, dont l’assassin, disais-je, devait connaître l’existence. Sondez le mur.</p>
+          <stage>Le Greffier cogne. Recherches.</stage>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Le mur sonne plein.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Parfait. Puisque ce gaillard nous brûle la politesse et se cache, ne lui donnons pas la satisfaction de le chercher sous ses propres yeux. <stage>(À tue-tête.)</stage> J’ai des hommes autour de la maison. Il ne peut faire deux pas dehors sans être pris et, s’il s’obstine, on le cernera jusqu’à ce que la faim l’oblige à sortir. Venez.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Quelle histoire !</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Il n’y a pas la moindre histoire. Vous voyez toujours des histoires partout.</p>
+          </sp><stage>Ils sortent. Pendant qu’ils sortent et que le battant de la porte cache le buste, l’acteur substitue à sa tête la fausse tête. La scène reste vide</stage>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker><stage>Il rentre.</stage>
+          <p>Nous oublions le buste.</p>
+          </sp>
+<sp who="greffier">
+<speaker>Le Greffier</speaker>
+          <p>Il ne faut pas revenir les mains vides.</p>
+          </sp>
+<sp who="commissaire_police">
+<speaker>Le Commissaire</speaker>
+          <p>Prenez-le.</p>
+</sp>
+          <stage>Le Greffier prend la tête. Ils sortent.</stage>
+        </div>
+        <div>
+          
+          <head>Scène XIII</head>
+          <stage>Le décor monte au ciel. Entrent par la glace Eurydice et Orphée. Heurtebise les mène. Ils regardent leur maison comme s’ils la voyaient pour la première fois. Ils s’asseyent à table. Eurydice désigne sa droite à Heurtebise. Ils sourient. Ils respirent le calme.</stage>
+<sp who="eurydice">
+<speaker>Eurydice</speaker>
+          <p>Tu voulais du vin, je crois, mon chéri.</p>
+          </sp>
+<sp who="orphee">
+<speaker>Orphée</speaker>
+          <p>Attends. D’abord la prière. <stage>(Il se lève ainsi qu’Eurydice et Heurtebise. Il récite.)</stage> Mon Dieu, nous vous remercions de nous avoir assigné notre demeure et notre ménage comme seul paradis et de nous avoir ouvert votre paradis. Nous vous remercions de nous avoir envoyé Heurtebise et nous nous accusons de n’avoir pas reconnu notre ange gardien. Nous vous remercions d’avoir sauvé Eurydice parce que, par amour, elle a tué le diable sous la forme d’un cheval et qu’elle en est morte. Nous vous remercions de m’avoir sauvé parce que j’adorais la poésie et que la poésie c’est vous. Ainsi soit-il.</p>
+                    </sp><stage>Ils se rasseyent.</stage>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Je vous sers ?</p>
+          </sp>
+<sp who="orphee">
+  <speaker>Orphée<stage>, respectueusement</stage></speaker>
+          <p>Laissez Eurydice…</p>
+          <stage>Eurydice lui verse à boire.</stage>
+          </sp>
+<sp who="heurtebise">
+<speaker>Heurtebise</speaker>
+          <p>Peut-être arriverons-nous enfin à déjeuner.</p>
+</sp>
+          <dateline>Villefranche-sur-Mer, 24 septembre 1925.</dateline>
+        </div>
+          
+        
+        <div type="postface">
+          <head>Notes de mise en scène</head>
+          <p>Le miroir laisse entrer et sortir les personnages par un praticable qui débouche des coulisses à la hauteur du cadre. C’est une ouverture dont la découverte est cachée par un panneau miroitant.</p>
+          <p>La bibliothèque doit avoir une petite case praticable où se glisse un vrai livre. Au-dessus de la bibliothèque, une fente permet de prendre une feuille de papier.</p>
+          <p>Le socle contient l’acteur à genoux sur un coussin de telle sorte que sa tête dépasse et habite la niche.</p>
+          <p>Le Cheval est le devant d’un cheval, une tête de cheval à l’encolure très courbée, sur un homme en maillot. La porte du box cache le haut des jambes et le poitrail.</p>
+          <p>Un rideau noir sur une tringle permet de fermer la niche.</p>
+          <p>Le lavabo est en trompe-l’œil.</p>
+          <p>Lorsque Heurtebise feint de travailler, il dégage d’abord la fenêtre en portant la table servie contre le mur de droite. Ensuite, à la réplique : « Montez sur cette chaise », il prend la chaise qui était derrière la table et la place dans le cadre de la porte-fenêtre. Il pose le pied gauche dessus et le pied droit sur un escabeau dissimulé derrière le portant. Il lève les mains vers les vitres. Un machiniste le tient par une ceinture invisible dont l’anneau dépasse sous son appareil de vitrier. Lorsque Orphée ôte la chaise, il vole. Ce système très simple, trouvé par Pitoëff, est d’un effet extraordinaire.</p>
+          <p>L’appareil de vitrier d’Heurtebise supporte des vitres d’espèces différentes. Sa tête se détache sur du mica. Derrière lui, ses vitres sont d’une matière miroitante et qui envoie des reflets partout.</p>
+          <p>Dans la coulisse, côté cour, une machine électrique à rumeur profonde. (On peut employer le <emph>vacuum cleaner</emph>.)</p>
+          <p>Lorsque la Mort entre dans la chambre d’Eurydice<note place="bottom">Inutile de dire qu’il n’y a pas un seul symbole dans la pièce. Rien que du langage pauvre, du <emph>poème agi</emph>. Cette colombe est un lieu commun.</note>.</p>
+          <p>Après la réplique d’Heurtebise : « Je le ramènerai, je vous le promets », la lumière baisse et devient laiteuse. Une fois fixée cette nouvelle lumière d’aquarium, la Mort entre. On voit d’abord son bras sortir du miroir ; ensuite, le bras gauche des aides avant les aides.</p>
+          <p>En partant, la Mort se dépêche et se pétrifie une seconde, la main tendue, devant le miroir. Ses aides, même jeu.</p>
+          <p>Lorsque le rideau de l’intervalle tombe, attendre un peu avant de relever si les spectateurs applaudissent pour que ce tour de cartes abstrait ne prenne pas l’apparence d’une fausse manœuvre.</p>
+          <p>Disparition d’Eurydice. Dans un théâtre sans trappe on baisse la lumière sur résistance. Eurydice se lève avec un geste d’horreur et glisse lentement derrière la table. Une fois l’obscurité complète on passe le bout d’une étoffe noire à Orphée qui se tient contre la porte de la chambre. Il tend l’étoffe jusqu’à la table, Eurydice se sauve derrière elle. On tire l’étoffe des coulisses d’un seul coup et on donne la lumière pleins feux. Toute cette manœuvre s’exécute en un clin d’œil. Même dans un théâtre muni d’une trappe, Eurydice doit disparaître lentement et la lumière descendre avec elle.</p>
+          <p>Trois musiciens suffisent pour l’arrivée des Bacchantes.</p>
+          <p>Un homme : tambour et cymbale. Un autre : caisse de jazz. Un troisième : timbales.</p>
+          <p>Les rythmes doivent angoisser, ressembler au tam-tam des sauvages.</p>
+          <p>Après le troisième : « Mesdames ! » d’Orphée, les tambours font un bruit terrible. On entend des vitres brisées, une chose lourde qui tombe et une chaise qui se renverse. Une petite lampe, dissimulée à droite dans la rampe, s’allume. C’est l’éclairage des crimes au musée Grévin. On voit par terre, près de la nappe, la tête qui se détache sur le blanc de la chaise tombée. La chaise est renversée, la tête mise en place pendant le noir qui aveugle la salle. L’acteur se couche dans la coulisse et parle de la chambre.</p>
+          <p>Lorsque la police frappe ses coups contre la porte et que l’ange ramasse la tête, la pose sur le socle et ouvre la porte, on rend toute la lumière et l’acteur substitue sa tête à la tête de carton. Lorsque le Commissaire et le Greffier sortent, l’acteur se retire et remet la tête de carton.</p>
+        </div>
+    </body>
+  </text>
+</TEI>
