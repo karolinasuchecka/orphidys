@@ -4920,7 +4920,7 @@
                </additional>
             </object>
             
-            <object sortKey="transmod" status="numérisé" type="transmodalisation" subtype="prose" xml:id="montardre2013" xml:lang="FR" ana="text" style="adolescents">
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="prose" xml:id="montardre2013" xml:lang="FR" ana="text" style="adolescents">
                <objectIdentifier>
                   <idno>Adaptation pour des enfants / adolescents. À compléter après l'xmlisation. Texte obtenu à partir d'ebook acheté auprès l'éditeur.</idno>
                </objectIdentifier>
@@ -4964,7 +4964,7 @@
                </additional>
             </object>
             
-            <object sortKey="mod" status="numérisé" type="modernisation" subtype="théâtre" xml:id="cocteau1927" xml:lang="FR" ana="text" style="adultes">
+            <object sortKey="par" status="océrisé" type="parodie" subtype="théâtre" xml:id="cocteau1927" xml:lang="FR" ana="text" style="adultes">
                <objectIdentifier>
                   <idno>Pièce de théâtre de Cocteau : modernisation théâtrale majeure. Texte obtenu à partir d'ebook acheté auprès l'éditeur.</idno>
                </objectIdentifier>
@@ -5056,7 +5056,7 @@
                   </surrogates>
                </additional>
             </object>
-            <object sortKey="mod" status="numérisé" type="modernisation" subtype="prose" xml:id="liking2000" xml:lang="FR" ana="text" style="adultes">
+            <object sortKey="mod" status="océrisé" type="modernisation" subtype="prose" xml:id="liking2000" xml:lang="FR" ana="text" style="adultes">
                <objectIdentifier>
                   <idno>Oeuvre analysée dans le mémoire de recherche de Lyria Audrey Afu Niki, Contextualisation et recontextualisation du mythe d’Orphée, BU Metz-Moselle, 2009. Numérisation d'après PDF acheté auprès d'éditeur. Ne pas mettre la totalité du texte en ligne</idno>
                </objectIdentifier>
@@ -5113,7 +5113,7 @@
                
             </object>
             
-            <object sortKey="mod" status="numérisé" type="modernisation" subtype="théâtre" xml:id="manjock2000" xml:lang="FR" ana="text" style="adultes">
+            <object sortKey="mod" status="océrisé" type="modernisation" subtype="théâtre" xml:id="manjock2000" xml:lang="FR" ana="text" style="adultes">
                <objectIdentifier>
                   <idno>Oeuvre analysé dans le mémoire de recherche de Lyria Audrey Afu Niki, Contextualisation et recontextualisation du mythe d’Orphée, BU Metz-Moselle, 2009. Théâtre-rituel. Mises en scène ? Numérisation d'après PDF acheté auprès d'éditeur. Ne pas mettre la totalité du texte en ligne</idno>
                </objectIdentifier>
@@ -5170,7 +5170,7 @@
                
             </object>
             
-            <object sortKey="trad" status="numérisé" type="traduction" subtype="prose" xml:id="laffon2016" xml:lang="FR" ana="text" style="adolescents">
+            <object sortKey="trad" status="océrisé" type="traduction" subtype="prose" xml:id="laffon2016" xml:lang="FR" ana="text" style="adolescents">
                <objectIdentifier>
                   <idno>Il peut s'agir d'une modernisation ou transposition, l'histoire est racontée par l'Argonaute Circos. Récit de toute la vie d'Orphée (à partir de la quête de la Toison d'Or). A partir d'11 ans, sans doute quelques illustrations. Texte obtenu à partir de l'Ebook acheté auprès de l'éditeur. La partie du mythe qui nous intéresse commence au chapitre 6.</idno>
                </objectIdentifier>
@@ -5210,6 +5210,61 @@
                         <objectType>Structuration XML à conformer avec TEI</objectType>
                         <origPlace>Ebook Flammarion</origPlace>
                         <ptr target="prose/laffon2016.xml" targetLang="XML"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="opéra" xml:id="regnard1699" xml:lang="FR" ana="text" style="adultes">
+               <objectIdentifier>
+                  <idno>Un divertissement (en italien) à la fin de l'opéra-ballet <hi rend="i">Le Carnaval de Venise</hi>. Très bref (8 scènes), parodié probablement par Fuzelier dans <hi rend="i">Arlequin aux Enfers.</hi> Français sur les pages impars, italien sur les pages pairs</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <analytic>
+                     <author>
+                        <persName>
+                           <forename>Jean-François</forename>
+                           <surname>Regnard</surname>
+                        </persName>
+                     </author>
+                     <title>Orphée aux enfers, opéra</title>
+                  </analytic>
+                  <monogr>
+                     <title>Œuvres complètes de J.-F. Regnard</title>
+                     <availability status="free">
+                        <p>Domaine public</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/regnard1699.xml" targetLang="XML"/>
+                        <ref target="https://books.google.fr/books?id=KtvURyrF5SMC&amp;dq=jean%20loyson%20orph%C3%A9e&amp;hl=fr&amp;pg=PA341#v=onepage&amp;q=jean%20loyson%20orph%C3%A9e&amp;f=false"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Brière</publisher>
+                        <date when="1823"/>
+                     </imprint>
+                     <biblScope unit="volume" n="4"/>
+                  </monogr>
+                  <citedRange from="343" to="351" unit="page"/>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Google Books</source>
+                        <change corresp="regnard1699_texte"><date when="29-06-2020"/>Établissement et stylage du texte (en xml)</change>
+                        <change corresp="regnard1699_facsimile"><date when="29-06-2020"/>Extraction des pages correspondants</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="regnard1699_texte">
+                        <objectType>Transcription et stylage à partir d'un eBook (Google Books)</objectType>
+                        <origPlace>Google Books</origPlace>
+                        <ptr target="operas/regnard1699.xml" targetLang="XML"/>
+                     </objectName>
+                     <objectName xml:id="regnard1699_facsimile">
+                        <objectType>Fac-similé des pages correspondantes</objectType>
+                        <origPlace>Google Books</origPlace>
+                        <ref target="operas/regnard1699_facsimile.pdf"/>
                      </objectName>
                   </surrogates>
                </additional>

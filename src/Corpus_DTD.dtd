@@ -31,7 +31,7 @@
                         <!-- xml:id = nomauteur0000, xml:lang= FR|oFR|LAT|GR|EN (langue de l'original pour les traductions autres qu'Ovide et Virgile), ana = spécifie les médias (texte, vidéo, musique, image, etc.)-->
                 
                 <!ELEMENT objectIdentifier (idno)> <!--une brève description caractéristique/commentaires-->
-                <!ELEMENT idno (#PCDATA)>
+                <!ELEMENT idno (#PCDATA|hi)*>
                 <!ELEMENT biblStruct (analytic?,monogr,series?, relatedItem*, citedRange*)>
                     <!ATTLIST biblStruct type (en-ligne|bibliotheque|magasin) #REQUIRED>
                         <!ELEMENT analytic (author*,title,editor*,ref?)> <!--ref ici code l'URL si l'article en ligne-->
