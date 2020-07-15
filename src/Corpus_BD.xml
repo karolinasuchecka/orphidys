@@ -736,26 +736,37 @@
                </additional>
             </object>
             
-            <object sortKey="transmod" status="repertorié" type="transmodalisation" subtype="BD" xml:id="bruneau2019" xml:lang="FR" ana="text_image" style="adolescents">
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="BD" xml:id="ferry2019" xml:lang="FR" ana="text_image" style="adolescents">
                <objectIdentifier>
-                  <idno>Bande dessinée à la visée sans doute éducative qui fait partie de la série Sagesse des mythes.</idno>
+                  <idno>Bande dessinée qui fait partie de la série Sagesse des mythes. L'ayant initialement considéré comme œuvre à visée éducative, je m'interroge à présent sur le public visé. Il fait partie de très peu de textes qui évoquent clairement, et de manière d'autant plus suggestive par la présence des images, l'épisode de l'amour homosexuel d'Orphée. Il me semble à présent destiné plutôt aux adolescents assez âgés, et aux adultes. La disposition inhabituelle des vignettes, et surtout du texte en leur sein, pose quelques problèmes de structuration homogène. Un approche adapté s'imposera sans doute une fois toutes les bandes dessinées et romans de jeunesse collectés. </idno>
                </objectIdentifier>
                <biblStruct type="bibliotheque">
                   <monogr>
+                     <author>
+                        <persName>
+                           <forename>Luc</forename>
+                           <surname>Ferry</surname>
+                        </persName>
+                     </author>
                      <author>
                         <persName>
                            <forename>Clotilde</forename>
                            <surname>Bruneau</surname>
                         </persName>
                      </author>
+                     <author>
+                        <persName>
+                           <forename>Diego</forename>
+                           <surname>Oddi</surname>
+                        </persName>
+                     </author>
                      <title>Orphée et Eurydice. Précédé de Déméter et Perséphone</title>
                      <availability status="restricted">
-                        <p>Sous droits</p>
+                        <p>Sous droits. Numérisation à partir d'un epub acheté auprès de l'éditeur</p>
                      </availability>
                      <note>
-                        <ptr target="" targetLang="XML"/>
-                        <ref target=""/>
-                        <p>Disponible à la BM de Lomme (BD+ODD|Littérature)</p>
+                        <ptr target="autres/ferry2019" targetLang="XML"/>
+                        <ref target="https://www.numilog.com/1074947/Orphee-et-Eurydice.ebook"/>
                      </note>
                      <imprint>
                         <pubPlace>Paris</pubPlace>
@@ -763,18 +774,28 @@
                         <date when="2019"/>
                      </imprint>
                   </monogr>
+                  <citedRange from="26" to="48" unit="page"/>
                </biblStruct>
                <additional>
                   <adminInfo>
                      <recordHist>
-                        <source></source>
-                        <change></change>
+                        <source>Epub Glenat</source>
+                        <change corresp="ferry2019_texte"><date when="01-07-2020"/>Transcription et xmlisation</change>
+                        <change corresp="anonyme1700_facsimile ferry2019_img"><date when="01-07-2020"/>Extraction et sauvegarde</change>
                      </recordHist>
                   </adminInfo>
                   <surrogates>
-                     <objectName xml:id="bruneau2019_facsimile">
-                        <objectType>Scan de la version imprimée</objectType>
-                        <origPlace></origPlace>
+                     <objectName xml:id="ferry2019_texte">
+                        <objectType>Transcription et structuration des pages correspondantes</objectType>
+                        <origPlace>Epub Glenat</origPlace>
+                     </objectName>
+                     <objectName xml:id="ferry2019_facsimile">
+                        <objectType>Extraction des pages correspondantes à partir de l'epub PDF</objectType>
+                        <origPlace>Epub Glenat</origPlace>
+                     </objectName>
+                     <objectName xml:id="ferry2019_img">
+                        <objectType>Dossier contenant les planches en format JPG</objectType>
+                        <origPlace>Epub Glenat</origPlace>
                      </objectName>
                   </surrogates>
                </additional>
@@ -2023,7 +2044,7 @@
                         <p>Domaine public</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/eimann1854.odt" targetLang="TXT"/>
+                        <ptr target="prose/eimann1854.odt" targetLang="TXT"/>
                         <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k5699364p/"/>
                      </note>
                      <imprint>
@@ -2051,12 +2072,12 @@
                         <state>
                            <p>S'assurer, lors de la transformation avec Odette, que la lettre est codée avec "q @type = letter"</p>
                         </state>
-                        <ptr target="parodies/eimann1854.odt" targetLang="TXT"/>
+                        <ptr target="prose/eimann1854.odt" targetLang="TXT"/>
                      </objectName>
                      <objectName xml:id="eimann1854_facsimile">
                         <objectType>Fac-similé des pages correspondantes</objectType>
                         <origPlace>Gallica</origPlace>
-                        <ref target="parodies/eimann1854_facsimile.pdf"/>
+                        <ref target="prose/eimann1854_facsimile.pdf"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -2400,7 +2421,7 @@
                         <p>Domaine public</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/martin1649.odt" targetLang="TXT"/>
+                        <ptr target="poesie/martin1649.odt" targetLang="TXT"/>
                         <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k57236890/"/>
                      </note>
                      <imprint>
@@ -2427,7 +2448,52 @@
                      <objectName xml:id="martin1649_facsimile">
                         <objectType>Fac-similé</objectType>
                         <origPlace>Gallica</origPlace>
-                        <ref target="parodies/martin1649_facsimile.pdf"/>
+                        <ref target="poesie/martin1649_facsimile.pdf"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="par" status="océrisé" type="parodie" subtype="poésie" xml:id="martin1649_2" xml:lang="oFR" ana="text" style="adultes">
+               <objectIdentifier>
+                  <idno>Deuxième partie de la parodie-burlesque par un auteur anonyme. Pas de descente aux Enfers. Dans un monologue, Orphée déclare ne plus aimer une autre femme. Venus, outrée, se tourne vers Bacchus pour qu’il la venge en tuant le poète. Cette partie est plus proche de la trame du mythe.
+                  </idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <monogr>
+                     <title>L'Orphée grotesque, avec le bal rustique. En vers burlesques. Deuxième partie.</title>
+                     <availability status="free">
+                        <p>Domaine public</p>
+                     </availability>
+                     <note>
+                        <ptr target="poesie/martin1649_2.odt" targetLang="TXT"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k56658116/"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Sebastien Martin</publisher>
+                        <date when="1649"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="martin1649_2_texte"><date when="2020-06-01"/>Fin de la transcription</change>
+                        <change corresp="martin1649_2_facsimile"><date when="2020-06-01"/>Téléchargement</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="martin1649_2_texte">
+                        <objectType>Transcription et le stylage</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="poesie/martin1649_2.odt" targetLang="XML"/>
+                     </objectName>
+                     <objectName xml:id="martin1649_2_facsimile">
+                        <objectType>Fac-similé</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="poesie/martin1649_2_facsimile.pdf"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -2603,7 +2669,7 @@
                         <p>Domaine public</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/cremieux1936.odt" targetLang="TXT"/>
+                        <ptr target="operas/cremieux1936.xml" targetLang="XML"/>
                         <ref target="https://fr.wikisource.org/wiki/Orph%C3%A9e_aux_Enfers"/>
                      </note>
                      <imprint>
@@ -2617,13 +2683,14 @@
                   <adminInfo>
                      <recordHist>
                         <source>Wikisource</source>
-                        <change corresp="cremieux1936_texte"><date when="2019-11-08"/>Stylage du texte Wikisourcz</change>
+                        <change corresp="cremieux1936_texte"><date when="2019-11-08"/>Stylage du texte Wikisource</change>
                      </recordHist>
                   </adminInfo>
                   <surrogates>
                      <objectName xml:id="cremieux1936_texte">
                         <objectType>Stylage du texte Wikisource</objectType>
                         <origPlace>Wikisoure</origPlace>
+                        <ptr target="operas/cremieux1936.xml" targetLang="XML"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -4489,7 +4556,7 @@
                         <p>Domaine public</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/dorvigny1775.odt" targetLang="TXT"/>
+                        <ptr target="theatre/dorvigny1775.odt" targetLang="TXT"/>
                         <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k9808875q"/>
                      </note>
                      <imprint>
@@ -4513,7 +4580,12 @@
                      <objectName xml:id="dorvigny1775_facsimile">
                         <objectType>Facsimile des pages correspondantes</objectType>
                         <origPlace>Gallica</origPlace>
-                        <ref target="parodies/dorvigny1775_facsimile.pdf"/>
+                        <ref target="theatre/dorvigny1775_facsimile.pdf"/>
+                     </objectName>
+                     <objectName xml:id="dorvigny1775_partition">
+                        <objectType>Facsimile d'une brève partition d'un ariette d'Orphée : "Eh, Messieurs ! laissez-vous toucher ; Mais écoutez un petit air : Rendez-moi donc ma femme, Par égard pour ma flamme, Par pitié, par amitié.</objectType>
+                        <origPlace>Après le texte de la pièce</origPlace>
+                        <ref target="theatre/dorvigny1775_partition.png"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -4689,7 +4761,7 @@
                         <p>Texte du domaine public, numérisation dans le cadre du projet Théâtre classique.</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/regnard1689.xml" targetLang="XML"/>
+                        <ptr target="theatre/regnard1689.xml" targetLang="XML"/>
                         <ref target="http://www.theatre-classique.fr/pages/programmes/edition.php?t=../documents/REGNARD_ARLEQUINAUXENFERS.xml"/>
                      </note>
                      <imprint>
@@ -4709,7 +4781,7 @@
                      <objectName xml:id="regnard1689_texte">
                         <objectType>Téléchargement du fichier XML:TEI</objectType>
                         <origPlace>Théâtre classique</origPlace>
-                        <ptr target="parodies/regnard1689.xml" targetLang="XML"/>
+                        <ptr target="theatre/regnard1689.xml" targetLang="XML"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -4733,7 +4805,7 @@
                         <p>Texte du domaine public, numérisation dans le cadre du projet Théâtre classique.</p>
                      </availability>
                      <note>
-                        <ptr target="parodies/fuzelier1711.xml" targetLang="XML"/>
+                        <ptr target="theatre/fuzelier1711.xml" targetLang="XML"/>
                         <ref target="http://www.theatre-classique.fr/pages/programmes/edition.php?t=../documents/FUZELIER_ORPHEE.xml"/>
                      </note>
                      <imprint>
@@ -4754,7 +4826,7 @@
                      <objectName xml:id="fuzelier1711_texte">
                         <objectType>Téléchargement du fichier XML:TEI</objectType>
                         <origPlace>Théâtre classique</origPlace>
-                        <ptr target="parodies/fuzelier1711.xml" targetLang="XML"/>
+                        <ptr target="theatre/fuzelier1711.xml" targetLang="XML"/>
                      </objectName>
                   </surrogates>
                </additional>
@@ -5265,6 +5337,334 @@
                         <objectType>Fac-similé des pages correspondantes</objectType>
                         <origPlace>Google Books</origPlace>
                         <ref target="operas/regnard1699_facsimile.pdf"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="mod" status="océrisé" type="modernisation" subtype="poésie" xml:id="loyson1948" xml:lang="FR" ana="text" style="adultes">
+               <objectIdentifier>
+                  <idno>La structure théâtrale, mais l'auteur dans la préface revendique le statut d'un poème lyrique. Le poème est suivi par les poésies diverses que nous ne retenons pas, puisque, quoique thématiquement proches, elles ne peuvent être considérés que comme des allusions au mythe. Le poème commence après la seconde mort de l'Eurydice (durant ses obsèques). Orphée évoque brièvement sa descente aux Enfers, mais le texte se concentre plutôt sur son aspects d'initiateur. Il veut s'élever au rang des dieux, qu'il devient brièvement avant de redevenir l'homme et mourir crucifié. Dans la préface, l'auteur souligne qu'il n'a pas voulu introduire la parabole avec Christ : "Au point de vue historique, je n'ai pas introduit le Messie Juif dans le drame d'Orphée. Ces quelques lignes de mise au point ne sont ni une tentative d'apologie pour le héros de cette tragédie spirituelle, ni de dénigrement du symbole chrétien, en soulignant l'antériorité de l'orphisme où certains ont voulu voir un manque d'originalité du christianisme. Sans vouloir diminuer l'un ou l'autre, je les associe dans ce que l'esprit de l'homme a pu concevoir de plus noble et de plus profondément humain. Certains ont voulu considérer la Croix comme la création collective des hommes. Je ne la veux envisager, en tant que poète, que comme le drame le plus émouvant qu'ait produit l'humanité."</idno>
+               </objectIdentifier>
+               <biblStruct type="magasin">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename>Jean</forename>
+                           <surname>Hyacinthe-Loyson</surname>
+                        </persName>
+                     </author>
+                     <title>Orphée, poème</title>
+                     <availability status="restricted">
+                        <p> Il s'agit d'une œuvre orphéline, mais la numérisation a été faite avec le soutien du CNL. Distribution et édition numérique par FeniXX :</p>
+                        <p>Participant d’une démarche de transmission de fictions ou de savoirs rendus difficiles d’accès par le temps, cette édition numérique redonne vie à une œuvre existant jusqu’alors uniquement sur un support imprimé, conformément à la loi n° 2012-287 du 1er mars 2012 relative à l’exploitation des Livres Indisponibles du XXe siècle.</p>
+                           <p>
+                           Cette édition numérique a été réalisée à partir d’un support physique parfois ancien conservé au sein des collections de la Bibliothèque nationale de France, notamment au titre du dépôt légal. Elle peut donc reproduire, au-delà du texte lui-même, des éléments propres à l’exemplaire qui a servi à la numérisation.</p>
+                        <p>Cette édition numérique a été initialement fabriquée par la société FeniXX au format ePub (ISBN 9782307031444) le 23 octobre 2019.</p>
+                        <p>La couverture reproduit celle du livre original conservé au sein des collections de la Bibliothèque nationale de France, notamment au titre du dépôt légal.</p>
+                        <p>La société FeniXX diffuse cette édition numérique en vertu d’une licence confiée par la Sofia ‒ Société Française des Intérêts des Auteurs de l’Écrit ‒ dans le cadre de la loi n° 2012-287 du 1er mars 2012.</p>
+                     </availability>
+                     <note>
+                        <ptr target="poesie/loyson1948.xml" targetLang="XML"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k33730695"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Nouvelle Librairie de France</publisher>
+                        <date when="1948"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Ebook de FeniXX acheté auprès de l'éditeur. Exemplaire imprimé disponible sur Gallica.</source>
+                        <change></change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="loyson1948_texte">
+                        <objectType>Structuration XML à partir de l'epub</objectType>
+                        <origPlace>Gallica/FeniXX epub</origPlace>
+                        <ptr target="poesie/loyson1948.xml" targetLang="XML"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="opéra" xml:id="lacroix1717" xml:lang="FR" ana="text_musique" style="tout-public">
+               <objectIdentifier>
+                  <idno>Une cantate sur laquelle je n'ai pas encore trouvé beaucoup d'informations. Le manuscrit de la partition provient de la Bibliothèque municipale de Toulouse. Elle est très courte : à voir si on ne la retrouve pas dans une des opéras. Le texte de courbois1710 (= Fuzelier) est pratiquement indentique, mais les variantes de graphies, les variantes textuelles et surtout la différence de la musique implique qu'il s'agit de deux compositions différentes. Nous ne disposons malheureusement pas de suffisamment d'informations pour savoir si Fuzelier avait été le parolier pour les deux ou qu'il s'agit d'un plagiat d'un autre parolier.</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename>François de</forename>
+                           <surname>Lacroix</surname>
+                        </persName>
+                     </author>
+                     <title>Orphée. Cantate avec Symphonie</title>
+                     <availability status="free">
+                        <p>Le texte et la partition en accès libre. Les interprétations sans doute sous droits.</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/lacroix1717.odt" targetLang="TXT"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k53907011/"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Toulouse</pubPlace>
+                        <publisher>Bibliothèque municipale de Toulouse</publisher>
+                        <date when="1717"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="lacroix1717_partitions"><date when="2020-07-13"/>Téléchargement</change>
+                        <change corresp="lacroix1717_texte"><date when="2020-07-13"/>Transcription et stylage.</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="lacroix1717_texte">
+                        <objectType>Transcription du texte de la cantate (à partir de la partition)</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="operas/lacroix1717.odt" targetLang="TXT"/>
+                     </objectName>
+                     <objectName xml:id="lacroix1717_partitions">
+                        <objectType>Fac-similé de la partition manuscrite</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="operas/lacroix1717_partitions.pdf" targetLang="PDF"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="opéra" xml:id="courbois1700" xml:lang="FR" ana="text_musique" style="tout-public">
+               <objectIdentifier>
+                  <idno>Une cantate avec les paroles écrites par Fuzelier. Très peu de différences avec lacroix1717. À creuser.</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <analytic>
+                     <author>
+                        <persName>
+                           <forename>Philippe</forename>
+                           <surname>Courbois</surname>
+                        </persName>
+                     </author>
+                     <author>
+                        <persName>
+                           <forename>Louis</forename>
+                           <surname>Fuzelier</surname>
+                        </persName>
+                     </author>
+                     <title>Orphée. Cantate à voix seule et un violon</title>
+                  </analytic>
+                  <monogr>
+                     
+                     <title>Cantates françoises à I et II voix sans simphonie et avec simphonie</title>
+                     <availability status="free">
+                        <p>Le texte et la partition en accès libre. Les interprétations sans doute sous droits.</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/courbois1700.odt" targetLang="TXT"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/btv1b9009725b/"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>BNF, dép. Musique, VM7-162</publisher>
+                        <date when="1710"/>
+                     </imprint>
+                  </monogr>
+                  <citedRange from="32" to="46" unit="page"/>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="courbois1700_partitions"><date when="2020-07-13"/>Téléchargement</change>
+                        <change corresp="courbois1700_texte"><date when="2020-07-13"/>Transcription et stylage.</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="courbois1700_texte">
+                        <objectType>Transcription du texte de la cantate (à partir de la partition)</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="operas/courbois1700.odt" targetLang="TXT"/>
+                     </objectName>
+                     <objectName xml:id="courbois1700_partitions">
+                        <objectType>Fac-similé de la partition manuscrite</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="operas/courbois1700_partitions.pdf" targetLang="PDF"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="transmod" status="océrisé" type="transmodalisation" subtype="opéra" xml:id="piroye1717" xml:lang="FR" ana="text_musique" style="tout-public">
+               <objectIdentifier>
+                  <idno>Une cantate censée faire suite d'une cantate d'Orphée, mais je ne sais pas à laquelle, je n'en ai retrouvé aucune de ce compositeur. Il est intéressant que ce soit la seule cantate, avec celle du Rameau, qui narre l'échec de la sortie des Enfers. Les autres s'arrêtent quand Pluton concède Eurydice au poète.</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename>Charles</forename>
+                           <surname>Piroye</surname>
+                        </persName>
+                     </author>
+                     <title>Le retour d'Eurydice aux enfers, suite de la cantate d'Orphée ; par C. Piroye, maître de musique, &amp; ancien organiste de l'eglise collegiale de Saint Honoré, &amp; des reverends peres jacobins</title>
+                     <availability status="free">
+                        <p>Le texte et la partition en accès libre. Les interprétations sans doute sous droits.</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/piroye1717.odt" targetLang="TXT"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k53907011/"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Imprimerie de J-B-Christophe Ballard, seul imprimeur du Roy pour la musique</publisher>
+                        <date when="1717"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="piroye1717_partitions"><date when="2020-07-13"/>Téléchargement</change>
+                        <change corresp="piroye1717_texte"><date when="2020-07-13"/>Transcription et stylage.</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="piroye1717_texte">
+                        <objectType>Transcription du texte de la cantate (à partir de la partition)</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="operas/piroye1717.odt" targetLang="TXT"/>
+                     </objectName>
+                     <objectName xml:id="piroye1717_partitions">
+                        <objectType>Fac-similé de la partition manuscrite</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="operas/piroye1717_partitions.pdf" targetLang="PDF"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="par" status="océrisé" type="parodie" subtype="opéra" xml:id="grandval1729" xml:lang="FR" ana="text_musique" style="tout-public">
+               <objectIdentifier>
+                  <idno>Parodie de la cantate de Cléraambault, reprises partiellement très proches (clerambault1710 : "Mais que sert à mon désespoir / De gémir et me plaindre encore ? / Pluton retient les charmes que j'adore. / Allons implorer son pouvoir", grandval1729 : "Pourquoy tant pleurer et me plaidre encore? / Allons retirer celle que j'adore ; / Le roy du sombre manoir / N'est pas si Diable qu'il est noir")</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename>Nicolas Racot</forename>
+                           <surname>Grandval</surname>
+                        </persName>
+                     </author>
+                     <title> Orphée. Cantate avec simphonie.</title>
+                     <availability status="free">
+                        <p>Le texte et la partition en accès libre. Les interprétations sans doute sous droits.</p>
+                     </availability>
+                     <note>
+                        <ptr target="operas/grandval1729.odt" targetLang="TXT"/>
+                        <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k53907011/"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Ancien fonds du Conservatoire, D-1343 (5)</publisher>
+                        <date when="1729"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="grandval1729_partitions"><date when="2020-07-13"/>Téléchargement</change>
+                        <change corresp="grandval1729_texte"><date when="2020-07-13"/>Transcription et stylage.</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="grandval1729_texte">
+                        <objectType>Transcription du texte de la cantate (à partir de la partition)</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="operas/piroye1717.odt" targetLang="TXT"/>
+                     </objectName>
+                     <objectName xml:id="grandval1729_partitions">
+                        <objectType>Fac-similé de la partition manuscrite</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="operas/grandval1729_partitions.pdf" targetLang="PDF"/>
+                     </objectName>
+                  </surrogates>
+               </additional>
+            </object>
+            
+            <object sortKey="trad" status="océrisé" type="traduction" subtype="poésie" xml:id="tours1540" xml:lang="oFR" ana="text" style="adultes" resp="Virgile">
+               <objectIdentifier>
+                  <idno>Transcription du manuscrit, quelques hésitation, une relecture aurait été bienvenue. La gravure introduisant l'épisode du mythe rassemble à morin1532_graphic1, mais en miroir. La seule transcription d'un manuscrit ancien des Géorgiques incluse dans le corpus. La traduction est en vers (décasyllabes)</idno>
+               </objectIdentifier>
+               <biblStruct type="en-ligne">
+                  <analytic>
+                     <author>
+                        <persName>
+                           <surname>Virgile</surname>
+                        </persName>
+                     </author>
+                     <title>Géorgiques</title>
+                     <editor resp="trad">Michel de Tours</editor>
+                  </analytic>
+                  <monogr>
+                     <title>Les oeuvres de Virgile. Translatees de latin en [vers] francoyes</title>
+                     <availability status="free">
+                        <p>Domaine public</p>
+                     </availability>
+                     <note>
+                        <ptr target="traductions/virgile/tours1540.odt" targetLang="TXT"/>
+                        <ref target="https://books.google.fr/books?id=EeksmgevUeoC&amp;hl=fr&amp;pg=PA3#v=onepage&amp;q&amp;f=false"/>
+                     </note>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Jean Petit, Pierre Vidoue</publisher>
+                        <date when="1540"/>
+                     </imprint>
+                     <biblScope unit="part" n="IV"/>
+                  </monogr>
+                  <citedRange from="19" to="29" unit="page"/>
+               </biblStruct>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Gallica</source>
+                        <change corresp="tours1540_texte"><date when="15-07-2020"/>Transcription et stylage</change>
+                        <change corresp="tours1540_facsimile"><date when="15-07-2020"/>Téléchargement des pages correspondantes</change>
+                     </recordHist>
+                  </adminInfo>
+                  <surrogates>
+                     <objectName xml:id="tours1540_texte">
+                        <objectType>Transcription des pages correspondantes</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ptr target="traductions/virgile/tours1540.odt" targetLang="TXT"/>
+                     </objectName>
+                     
+                     <objectName xml:id="tours1540_facsimile">
+                        <objectType>Fac-similé des pages correspondantes</objectType>
+                        <origPlace>Gallica</origPlace>
+                        <ref target="traductions/virgile/tours1540_facsimile.pdf"/>
+                     </objectName>
+                     <objectName xml:id="tours1540_graphic1">
+                        <objectType>Gravure</objectType>
+                        
+                        <figure>
+                           <graphic url="traductions/virgile/tours1540_graphic1.jpeg" width="248px" height="170px"/>
+                           <figDesc>Représente à gauche Orphée devant Eurydice, jouant sur sa Lyre, comme s'il envoûtait le serpent qui se trouve dans le coin du bas. À droite, deux personnages, dont le premier est probablement Pluton (avec une couronne sur la tête et le feu qui jaillit de sa bouche (je ne sais pas...). En bas à droite, la tête d'Orphée et sa lyre voguent dans l'Hèbre. Cf. morin1532_grapihc1 pour une gravure très semblable.</figDesc>
+                        </figure>
+                        
+                        <origPlace>en bas du folio 72ra</origPlace>
                      </objectName>
                   </surrogates>
                </additional>

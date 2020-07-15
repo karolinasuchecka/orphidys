@@ -46,7 +46,7 @@
                                     <!ATTLIST hi rend (sc|i|b|sup|sub) #REQUIRED>
                             <!ELEMENT editor (#PCDATA|forename|surname)*>
                                 <!ATTLIST editor resp (dir|éd|trad|cop) "éd">
-                            <!ELEMENT availability (p)>
+                            <!ELEMENT availability (p)+>
                                 <!ATTLIST availability status (restricted|free|unknown) #REQUIRED>
                                 <!ELEMENT p (#PCDATA|date)*><!--renseigne l'emplacement du texte (bibliothèque, site Internet)-->
                             <!ELEMENT note (ptr+,ref+,p*)>
