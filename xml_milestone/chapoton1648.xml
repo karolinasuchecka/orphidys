@@ -1,0 +1,3077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La grande Journée des machines</title>
+        <title type="alt">Le mariage d’Orphée et d’Euridice</title>
+        <author>François Chapoton</author>
+        <editor/>
+      </titleStmt>
+      <editionStmt>
+        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+          édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
+          comparative intermédiale innovante accompagnée d’une ressource pour le repérage
+          intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
+          l’Université de Lille.</edition>
+        <respStmt>
+          <name>Karolina Suchecka</name>
+          <resp>Chargé de l’édition</resp>
+        </respStmt>
+        <respStmt>
+          <name>Nathalie Gasiglia</name>
+          <resp>Co-tutrice de thèse</resp>
+        </respStmt>
+        <respStmt>
+          <name>Karl Zieger</name>
+          <resp>Co-tuteur de thèse</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karolina Suchecka</publisher>
+        <publisher>ALITHILA (Université Lille III)</publisher>
+        <date when="2019"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+              thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+              numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
+              ressource pour le repérage intertextuel »</p>
+            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+              les bases de données (L341-1) est mise à disposition de la communauté scientifique
+              internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
+              : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
+              BY-NC-ND 3.0 FR) ». </p>
+            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+              de cette ressource électroniques comportera le nom du projet et surtout l’adresse
+              Internet de la ressource. </p>
+            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+              utilisation commerciale est interdite.</p>
+            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+              électronique, notamment en intégrant toutes les contributions extérieures, la
+              diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+          </licence>
+        </availability>
+        <idno>https://gallica.bnf.fr/ark:/12148/bpt6k117255k</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><author>François Chapoton</author> / <title>La grande Journée des machines, ou Le
+            mariage d’Orphée et d’Euridice</title> / Paris / Chez Toussainct Quinet / 1648.</bibl>
+        <biblFull>
+          <titleStmt>
+            <title>La grande Journée des machines, ou Le mariage d’Orphée et d’Euridice</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>Chez Toussainct Quinet</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="1648"/>
+          </publicationStmt>
+        </biblFull>
+        <genre>théâtre</genre>
+        <structure>chapoton1648</structure>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+        nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
+        projet. La structure des métadonnées a été établie en référence à la manière dont le
+        logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1648">1648</date>
+      </creation>
+      <language>
+        <language>oFR</language>
+      </language>
+      <textClass>
+        <keywords>
+          <list>
+            <item>transmodalisation</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docAuthor>François Chapoton</docAuthor>
+        <docTitle>
+          <titlePart type="main">La grande Journée des machines</titlePart>
+          <titlePart type="alt">Le mariage d’Orphée et d’Euridice</titlePart>
+        </docTitle>
+      </titlePage>
+      <castList>
+        <castItem xml:id="orphee">Orphée</castItem>
+        <castItem xml:id="eurydice">Euridice</castItem>
+        <castItem xml:id="aristee">Aristée</castItem>
+        <castItem xml:id="arcas">Arcas</castItem>
+        <castItem xml:id="ergaste">Ergaste</castItem>
+        <castItem xml:id="junon">Junon</castItem>
+        <castItem xml:id="envie">L’Envie</castItem>
+        <castItem xml:id="eurimedon">Eurimedon, magicien</castItem>
+        <castItem xml:id="soleil">Le Soleil</castItem>
+        <castItem xml:id="caron">Caron</castItem>
+        <castItem xml:id="pluton">Pluton</castItem>
+        <castItem xml:id="proserpine">Proserpine</castItem>
+        <castItem xml:id="radamante">Radamante</castItem>
+        <castItem xml:id="allectum">Allectum</castItem>
+        <castItem xml:id="esprits">Les Esprits</castItem>
+        <castItem xml:id="driades">Les Driades</castItem>
+        <castItem xml:id="bacchantes">Les Baccantes</castItem>
+        <castItem xml:id="bachus">Bachus</castItem>
+        <castItem xml:id="pan">Pan</castItem>
+      </castList>
+    </front>
+    <body>
+
+
+      <div>
+        <head>Acte premier</head>
+        <div type="scene">
+          <head>Scène première</head>
+          <stage><milestone unit="sent"/><pb n="1" xml:id="p1"/>L’on entend d’abord un tonnerre, des esclairs, et des vents
+            qui agitent l’air, le ciel s’ouvre, et Junon paroissant sur son char parle
+            ainsi :</stage>
+          <sp who="junon">
+            <speaker>Junon</speaker>
+            <l><milestone unit="sent"/>Vents, Tempestes, Vapeurs qui tombans sur la terre,</l>
+            <l>Precedes chaque jour les fureurs du Tonnerre ?</l>
+            <l><milestone unit="sent"/>Esloignant de mon char vos funestes Esclairs,</l>
+            <l>Faites à mes oyseaux un chemin dans les Airs</l>
+            <stage><milestone unit="sent"/><pb n="2" xml:id="p2"/>Apres estre descenduë.</stage>
+            <l>Junon n’endure plus qu’un espoux infidele,</l>
+            <l>Place tes ennemis dans la troupe immortelle,</l>
+            <l>C’est assez que Caliste, et son fils tous les jours</l>
+            <l>Te fassent souvenir de ses lâches amours ;</l>
+            <l>C’est assez que Bacchus, et l’insolent Persee</l>
+            <l>Produisent des clartez dont ta veuë est blessée !</l>
+            <l><milestone unit="sent"/>Et que le Ciel témoin de ses feux insensez,</l>
+            <l>Depuis le cours fatal de ses lustres passez,</l>
+            <l>Adore en ses Palais malgré ta jalousie</l>
+            <l>Tous ceux à qui sa main presente l’ambroisie,</l>
+            <l>Sans que le mesme Ciel dans un âge futur</l>
+            <l>Releve des mortels sur ses Trosnes d’azur,</l>
+            <l>Il n’est pas satisfait d’avoir mis ma Couronne</l>
+            <l>Mons sceptre et ma grandeur au pouvoir de la tonne ;</l>
+            <l>Et que ces deux enfans adorez par les Rois</l>
+            <l>Divisent tous les ans, les saisons et les mois.</l>
+            <l><milestone unit="sent"/>Que l’un traisne apres luy la lumiere du monde,</l>
+            <l>Et que l’autre quittant l’humide sein de l’onde,</l>
+            <l>Alors que le silence a fait mourir le bruit</l>
+            <l>Preside pour jamais aux flambeaux de la nuict :</l>
+            <l><milestone unit="sent"/>Si le Soleil ne voit un homme de sa race</l>
+            <l>Recevoir des encens parmy les Dieux de Thrace,</l>
+            <l>Et si favorisant ce qu’il a projetté</l>
+            <l>L’on y adore en Orphée une divinité.</l>
+            <l><pb n="3" xml:id="p3"/><milestone unit="sent"/>Le perfide a voulu d’un estrange caprice</l>
+            <l>Le rendre possesseur des beautez d’Euridice,</l>
+            <l>Et pour authoriser ses projets furieux</l>
+            <l>Appeller à sa Nopce et la terre et les Cieux,</l>
+            <l>Mais je luy feray voir par un effet visible</l>
+            <l>Combien pour cet affront je dois estre sensible ;</l>
+            <l>Le sort a secondé mon genereux dessein,</l>
+            <l>Et luy-mesme a placé la vengeance en mon sein ;</l>
+            <l>Je vis entrer au lict cette ame déloyale,</l>
+            <l>Sans qu’Hymen y portast sa clairté Nuptiale :</l>
+            <l><milestone unit="sent"/>Et les Graces fuyant Orphée et ses Amours</l>
+            <l>Predirent devant moy le malheur de ses jours ;</l>
+            <l>Les filles de la Nuict en ma place y coururent,</l>
+            <l>Et d’un funeste bras ainsi qu’elles parurent,</l>
+            <l>Secoüerent trois fois par differens efforts,</l>
+            <l>Des torches que l’on porte aux obseques des morts,</l>
+            <l>Ne se contentant pas que d’un sinistre augure</l>
+            <l>Un Hybou luy predit sa fatale adventure,</l>
+            <l>Junon haste-toy donc perds cet audacieux,</l>
+            <l>Fay mourir les honneurs qu’on luy prepare aux Cieux,</l>
+            <l>Un vieil antre desert au pied d’une montagne,</l>
+            <l>Qu’au milieu des glaçons la froidure accompagne,</l>
+            <l>D’où l’horreur a chassé la paix et la clairté,</l>
+            <l>Pour dresser un logis propre à la cruauté,</l>
+            <l>Recelle dans ses flancs le palais de l’Envie,</l>
+            <l>Qui des fureurs d’Enfer à toute heure suivie</l>
+            <l><pb n="4" xml:id="p4"/>Causant les desplaisirs et portant la douleur,</l>
+            <l>Se plaist à divertir quelque insigne bon heur,</l>
+            <l>Là ce monstre infecte sur des licts de Viperes,</l>
+            <l>Entretient dans le fiel ses humeurs sanguinaires ;</l>
+            <l>Et se ronge luy-mesme alors qu’il voit fleurir</l>
+            <l>Ceux qui par son venin ne peuvent pas mourir :</l>
+            <l><milestone unit="sent"/>Cours viste le treuver sa demeure est si proche,</l>
+            <l>Qu’on la peut descouvrir du pied de ceste roche,</l>
+            <stage><milestone unit="sent"/>Elle heurte de son sceptre à la porte de l’Antre</stage>
+            <l>Heurte, fais le sortir, mais porte ailleurs tes yeux,</l>
+            <l>Et ne regarde point son sejour odieux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <sp who="junon">
+            <speaker>Junon</speaker>
+            <l><milestone unit="sent"/>Noire fille du Stix, qui d’un visage blesme</l>
+            <l>Et d’un œil enuieux te regarde toy mesme ;</l>
+            <l>Toy qui coulant par fois au milieu des Citez,</l>
+            <l>En bannis les plaisirs et les felicitez,</l>
+            <l>Qui dans le triste cours des plus fortes alarmes</l>
+            <l>Rallument ta fureur qui se nourrit de larmes,</l>
+            <l><pb n="5" xml:id="p5"/>Qui suscite la guerre et les seditions,</l>
+            <l>Qui te plaist dans les feux, par qui les passions</l>
+            <l>Animent les enfans contre leur propres peres ;</l>
+            <l>Toy qui fais escouler les fortunes prosperes,</l>
+            <l>Et par qui l’Univers void à chaque moment,</l>
+            <l>Quelque guerre civile, ou quelque embrazement,</l>
+            <l>Je veux t’abandonner une ame ambitieuse ;</l>
+            <l>Capable d’exercer ton humeur vicieuse ;</l>
+            <l>Mais sans plus retarder leve-toy promptement,</l>
+            <l>Il te faut obeïr à mon commandement.</l>
+          </sp>
+          <sp who="envie">
+            <speaker>L’Envie</speaker>
+            <l><milestone unit="sent"/>Grande Reine du Ciel, si c’est pour vostre gloire</l>
+            <l>Je laisseray bien-tost cette demeure noire.</l>
+            <l><milestone unit="sent"/>Faut-il mettre à vos yeux le feu dans un Palais ?</l>
+            <l><milestone unit="sent"/>Faut-il perdre un Estat, ou bien rompre une paix ?</l>
+            <l><milestone unit="sent"/>Faut-il pour vous servir brûler une Province ?</l>
+            <l><milestone unit="sent"/>Faut-il aller briser la Couronne d’un Prince ?</l>
+            <l><milestone unit="sent"/>Dans peu vous cognoistrez, qu’avec juste raison</l>
+            <l>L’on redoute en tous lieux l’effect de mon poison.</l>
+            <l><milestone unit="sent"/>Commandez seulement, puis que vostre puissance</l>
+            <l>Peut s’asseurer tousjours de mon obeissance.</l>
+          </sp>
+          <sp who="junon">
+            <speaker>Junon</speaker>
+            <stage>(bas)</stage>
+            <l><milestone unit="sent"/>Quoy qu’elle parle ainsi d’un mouvement secret,</l>
+            <l>Je recognois fort bien que ce n’est qu’à regret.</l>
+          </sp>
+          <sp who="envie">
+            <speaker>L’Envie</speaker>
+            <l><milestone unit="sent"/><pb n="6" xml:id="p6"/>Si vous le desirez, il n’est dans cet orage</l>
+            <l>Ny peuple, ny païs qui ne sente ma rage,</l>
+            <l>J’infecteray les cœurs abolissant les Loix,</l>
+            <l>J’armeray les subjets contre leurs propres Rois ;</l>
+            <l>Glissant des factions dans les plus grandes villes</l>
+            <l>Je semeray par tout les discordes civiles,</l>
+            <l>Je meneray la guerre et la peste avec moy,</l>
+            <l>Je chasseray du monde et l’amour et la foy,</l>
+            <l>Enfin si vous voulez il n’est ame si forte</l>
+            <l>Qui ne sente bien-tost le venin que je porte.</l>
+          </sp>
+          <sp who="junon">
+            <speaker>Junon</speaker>
+            <l><milestone unit="sent"/>Non, non, je ne veux point que ce mal soit commun,</l>
+            <l>Car mon cœur irrité n’en veut abolir qu’un.</l>
+          </sp>
+          <sp who="envie">
+            <speaker>L’Envie</speaker>
+            <stage>(bas)</stage>
+            <l><milestone unit="sent"/>Sur un homme tout seul sa vengeance est bornee.</l>
+          </sp>
+          <sp who="junon">
+            <speaker>Junon</speaker>
+            <l><milestone unit="sent"/>Prends ton vol parmy l’air jusqu’aux ceux de Penee,</l>
+            <l>Là tu rencontreras Aristee amoureux,</l>
+            <l>Qui se plaint du destin qui le rend malheureux,</l>
+            <l>Et qui se veut vanger dans le mal qui le presse</l>
+            <l>D’un Rival qui possede aujourd’huy sa maistresse,</l>
+            <l><pb n="7" xml:id="p7"/>Entre dans son esprit, fais couler dans son flanc</l>
+            <l>Un serpent venimeux qui corrompe son sang,</l>
+            <l>Et lors que tu verras sa poictrine eschaufee</l>
+            <l>Arme le promptement pour la perte d’Orphee ;</l>
+            <l>Pars sas plus differer, car du plus haut des Cieux</l>
+            <l>Jusques à ton retour je te suivray des yeux.</l>
+            <stage><milestone unit="sent"/>Junon remonte.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scene III</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Veritables témoins du fidele service</l>
+            <l>Que je rends tous les jours aux beautez d’Euridice,</l>
+            <l>Qui me voyant gemir sous le joug amoureux,</l>
+            <l>Vous plaignez du destin qui m’est si rigoureux,</l>
+            <l>Depuis le temps fatal qu’amour logea sa flamme</l>
+            <l>D’un pouvoir tyrannique au milieu de mon ame,</l>
+            <l>Ay-je manqué jamais d’avoir pour ses beaux yeux,</l>
+            <l>Tout le mesme respect que l’on a pour les Dieux ?</l>
+            <l><milestone unit="sent"/>Pour suivre ses appas mes ardeurs nompareilles</l>
+            <l>M’ont fait quitter le soing que j’avois des abeilles,</l>
+            <l>J’ay laissé mes jardins, et l’on voit mes troupeaux</l>
+            <l>Errer sans conducteur au sommet des costeaux,</l>
+            <l>Cerés qui fait jaunir ses tresors dans mes pleines</l>
+            <l>Et qui jamais n’a veu mes esperances veines</l>
+            <l><pb n="8" xml:id="p8"/>Regarde l’espi meur qui redonne son fruict,</l>
+            <l>A ses mesmes seillons qui me l’avoient produit ;</l>
+            <l>Baccus qui dés long-temps par des bienfaits insignes,</l>
+            <l>Faisoit couler le vin au milieu de mes vignes,</l>
+            <l>Par ma seule paresse en mille endroits divers</l>
+            <l>Voit secher sa liqueur dessus les pampres verts,</l>
+            <l>Prés du coutre mes bœufs demeurent inutiles,</l>
+            <l>Mes Estangs sont taris, mes Vergers infertilles,</l>
+            <l>Et depuis que je sers cette ingrate beauté</l>
+            <l>La campagne se plaigne de sa sterilité.</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/>Chassez de vostre esprit et de vostre pensee</l>
+            <l>D’un genereux effort cette amour insensee ;</l>
+            <l>Et puis que le destin vous deffend desormais,</l>
+            <l>De revoir cette Amante et d’y penser jamais,</l>
+            <l>Opposant la prudence au coup de cet orage,</l>
+            <l>Montrez-nous la vertu d’un homme de courage,</l>
+            <l>Tant de beautez pour vous souspirent chaque jour,</l>
+            <l>Au lieu que vostre cœur méprise leur amour,</l>
+            <l>Choisissez, choisissez quelque Nimphe adorable</l>
+            <l>Qui d’un feu mutuel vous rende le semblable,</l>
+            <l>Euridice apres tout dans les bras d’un espoux,</l>
+            <l>Quoy que vous l’esperiez ne peut plus estre à vous.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Arcas que dittes-vous que je change pour elle,</l>
+            <l>Non, cela ne se peut, cette ingrate est trop belle,</l>
+            <l><pb n="9" xml:id="p9"/>J’iray plutost chercher par un dernier effort</l>
+            <l>Un remede asseuré dans les bras de la mort.</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/>Que deliberez-vous ? vous lassez-vous de vivre ?</l>
+            <l><milestone unit="sent"/>Mon enfant ce n’est pas le conseil qu’il faut suivre,</l>
+            <l>Au lieu de vous punir pensez qu’entre tous ceux</l>
+            <l>Qui sont dans les Enfers il n’est si malheureux</l>
+            <l>Qui ne voulust changer, tant sa peine soit dure,</l>
+            <l>Les clairtez du Soleil aux tourmens qu’il endure.</l>
+            <l><milestone unit="sent"/>Que Pluton a rendu le chemin de la mort</l>
+            <l>Facile à qui descend, difficile à qui sort.</l>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/>LE temps dans peu de jours donnera du remede</l>
+            <l>Aux presentes douleurs du mal qui vous possede.</l>
+            <l><milestone unit="sent"/>Berger laissez agir un si grand Medecin.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Je suivray vos advis, ouy, mon esprit plus sain</l>
+            <l>Esloignera de moy ceste amour dereglee</l>
+            <l>Qui rend mes yeux captifs et mon ame aveuglee ;</l>
+            <stage><milestone unit="sent"/>L’envie paroist en un coing de Theatre tenant un serpent en la main, quelle luy
+              jette.</stage>
+            <l>Mais quel trouble me change et quels efforts puissans</l>
+            <l>Infectant mon humeur assoupissent mes sens ?</l>
+            <l><milestone unit="sent"/>Je vois bien maintenant qu’il faut que je perisse,</l>
+            <l>Mon sang est infecté, le desespoir se glisse,</l>
+            <l>La fureur me domine, et d’un cruel effet</l>
+            <l>M’oblige d’achever de dessein que j’ay fait,</l>
+            <l><pb n="10" xml:id="p10"/>Un remords me travaille, et mon ame saisie</l>
+            <l>Ne se gouverne plus que par la jalousie,</l>
+            <l>Va te vanger d’Orphee, et sans plus contester</l>
+            <l>Pense qu’au lieu de plaindre il faut executer ;</l>
+            <l>Mais non, il faut devant que de rien entreprendre</l>
+            <l>Treuver seule Euridice et luy faire comprendre</l>
+            <l>Avec quelle injustice et quelle cruauté</l>
+            <l>Un Rival l’a ravie à ma fidelité.</l>
+            <l><milestone unit="sent"/>Que si je ne puis pas en voir naistre une issuë</l>
+            <l>Telle que je l’attends et que je l’ay conceuë,</l>
+            <l>Et qu’elle use sur moy de ses premiers mespris</l>
+            <l>Laissant à ma fureur gouverner mes esprits,</l>
+            <l>Divinitez des bois par vos Temples je jure,</l>
+            <l>Que je forceray tout pour vanger mon injure,</l>
+            <l>Alors vous apprendrez tout ce que je feray</l>
+            <l>Et dans peu vous sçaurez si je me vengeray.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>D’où vient que depuis peu vous changez de visage ?</l>
+            <l><milestone unit="sent"/>Auriez-vous remarqué quelque mauvais presage</l>
+            <l>Par qui nostre bon-heur peut estre terminé ?</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je ne sçay pour quels maux vous estes destiné,</l>
+            <l>Je ne sçay sous quel sort le Ciel veut que je vive,</l>
+            <l>Mais je sçay bien pourtant que quoy qu’il en arrive,</l>
+            <l>Nous allons esprouver la colere des Dieux.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Non, non, mon cœur perdez ce penser odieux,</l>
+            <l>Et croyez que le Ciel qui vous est si propice</l>
+            <l>Veut conserver Orphée avec son Euridice.</l>
+            <l><milestone unit="sent"/>Les Dieux nos protecteurs au milieu du festin</l>
+            <l>Nous auroient declaré ce funeste destin,</l>
+            <l>S’ils eussent recognu qu’une mesme journée</l>
+            <l><pb n="12" xml:id="p12"/>Deubs voir et terminer un si bel Hymenee,</l>
+            <l>Non, non, ne craignez rien, mettez fin à vos pleurs,</l>
+            <l>Allons nous reposer au milieu de ses fleurs,</l>
+            <l>Mais qui vous peut causer cette crainte soudaine</l>
+            <l>Qui très asseurement ne peut estre que vaine ?</l>
+            <l><milestone unit="sent"/>Euridice</l>
+            <l>Plusieurs signes certains qu’on voit chaque moment</l>
+            <l>Me font apprehender un triste evenement,</l>
+            <l>Il vous souvient tres-bien que parmy l’assemblee</l>
+            <l>En preference des Dieux Junon parut troublee,</l>
+            <l>Que ce fut à regret que sa main nous joignit,</l>
+            <l>Que le flambeau d’Hymen par trois fois s’esteignit,</l>
+            <l>Qu’à quelque pas de vous un Demon invisible</l>
+            <l>Fit rejallir du sang d’une masse insensible,</l>
+            <l>Et que l’on vit Lucine en colere approcher</l>
+            <l>Qui grava certains mots sur le mesme Rocher,</l>
+            <l>Comme en nous predisant qu’une prochaine perte</l>
+            <l>Alloit bien-tost laisser nostre couche deserte.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Perdez ce sentimens, je sçay bien que le Ciel</l>
+            <l>Parmy tant de douceurs ne mesle point de fiel,</l>
+            <l>Belle Nimphe, croyez qu’une crainte importune</l>
+            <l>Menasse vrayement nostre bonne fortune,</l>
+            <l>Les Dieux protegeront ceux qu’ils ont protegez</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="13" xml:id="p13"/>S’ils secourent tousjours les hommes affligez,</l>
+            <l>Allez donc les prier c’est tout ce qui vous reste,</l>
+            <l>Pour esloigner de nous cet accident funeste.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Assez proche d’un lac, est un Temple sacré,</l>
+            <l>Que nos predecesseurs ont tousjours reveré,</l>
+            <l>Ou d’un miracle estrange et qui n’a point d’exemple</l>
+            <l>L’on rencontre d’abord un magnifique Temple.</l>
+            <l><milestone unit="sent"/>Là les Dieux infernaux sur des sombres autels,</l>
+            <l>Escoutent tous les vœux qui leur font les mortels,</l>
+            <l>Et s’appaisants souvent par le sang des victimes</l>
+            <l>Divertissent les maux et pardonnent les crimes.</l>
+            <l><milestone unit="sent"/>Dans ce Temple secret d’un cœur devotieux</l>
+            <l>Je vais sacrifier deux Thoreaux à ses Dieux,</l>
+            <l>Pour esloigner dans peu bien loing de nostre teste,</l>
+            <l>L’effect contagieux du malheur qui s’appreste,</l>
+            <l>Cependant dans ses lieux attendant mon retour</l>
+            <l>Joüissez, joüissez de la beauté du jour,</l>
+            <l>Et d’un cœur asseuré dissipez ces tenebres,</l>
+            <l>Qui pour vostre clairté ne seront pas funebres.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Allez je vous attends aux bords de ses ruisseaux,</l>
+            <l>Dont les Mirtes fleuris environnent les eaux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <label>Stances</label>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <stage>(seule)</stage>
+
+            <l><milestone unit="sent"/><pb n="14" xml:id="p14"/>Injuste tiran de nos Ames,</l>
+            <l>Petit Demon malicieux</l>
+            <l>Par qui l’air, la terre, et les Cieux</l>
+            <l>Sont remplis de fers et de flames,</l>
+            <l>Brise ton arc et ton flambeau,</l>
+            <l>Romps tes traicts oste ce bandeau</l>
+            <l>Dont tu caches<note place="bottom" resp="KS">Nous corrigeons « cache » par
+                « caches ».</note> ton imposture,</l>
+            <l>Alors d’un sentiment secret</l>
+            <l>Tu cognoistras que la Nature</l>
+            <l>Ne t’adore plus qu’à regret.</l>
+            <l><milestone unit="sent"/>Ceux qui t’offrent des sacrifices</l>
+            <l>Sont gesnez eternellement,</l>
+            <l>Et qui te sert fidellement</l>
+            <l>N’a jamais tes faveurs propices ;</l>
+            <l>Tu mesprises<note place="bottom" resp="KS">Nous corrigeons « mesprise » par
+                « mesprises ».</note> lors qu’on te suit,</l>
+            <l>Tu parois doux à qui te fuit,</l>
+            <l><pb n="15" xml:id="p15"/>Tous les Amants sont tes victimes,</l>
+            <l>Dans leurs pleurs on te voit baigner,</l>
+            <l>Mais celuy qui faict plus de crimes,</l>
+            <l>C’est celuy que tu fais regner.</l>
+            <l><milestone unit="sent"/>Lors qu’on se croit sous quelque azille</l>
+            <l>Exempt de toute passion,</l>
+            <l>D’une nouvelle ambition,</l>
+            <l>Tu rends la liberté serville,</l>
+            <l>Dans la tempeste, dans le port,</l>
+            <l>Pendant la vie, apres la mort,</l>
+            <l>Sans te lasser de nous poursuivre,</l>
+            <l>Tu nous fais tousjours souspirer,</l>
+            <l>Et combien qu’on cesse de vivre</l>
+            <l>L’on ne cesse pas d’endurer.</l>
+            <l><milestone unit="sent"/>Si sur les testes Couronnées,</l>
+            <l>Eschauffé d’une juste ardeur,</l>
+            <l>Pour faire esclatter ta grandeur</l>
+            <l>Tes victoires estoient bornées,</l>
+            <l>Peu de personnes souffriroient,</l>
+            <l>Tous les hommes t’adoreroient,</l>
+            <l>Mais cet orgueil qui t’environne,</l>
+            <l>Dans les villes et dans les bois,</l>
+            <l>Sur le coutre et sur la Couronne,</l>
+            <l>Establit des égales Loix.</l>
+            <l><pb n="16" xml:id="p16"/><milestone unit="sent"/>Je veux toute crainte bannie,</l>
+            <l>Conseiller aux foibles mortels</l>
+            <l>De s’esloigner de tes Autels</l>
+            <l>Pour cognoistre ta tyrannie.</l>
+            <l><milestone unit="sent"/>Mais Dieux que j’ay peu de raison</l>
+            <l>De condamner ta trahison,</l>
+            <l>En nommant ta douleur amere,</l>
+            <l>Je ne me plains plus de ta Loy,</l>
+            <l>Si tu n’espargnas pas ta mere</l>
+            <l>Que peut-on attendre de toy ?</l>
+            <l><milestone unit="sent"/>Vaine image de peur dont mon ame est attainte</l>
+            <l>Pourquoy m’obligez-vous de courir à la plainte ?</l>
+            <l><milestone unit="sent"/>Ne sçavez-vous pas bien que mon cœur genereux</l>
+            <l>Ne s’afflige jamais, quoy qu’il soit mal-heureux ?</l>
+            <l><milestone unit="sent"/>S’il plaist aux Dieux du Ciel, d’une cause incognuë</l>
+            <l>Faire naistre ma mort j’attendray sa venuë.</l>
+            <l><milestone unit="sent"/>Mais que viens-je de voir un object furieux,</l>
+            <l>Pour troubler mon repos se presente à mes yeux,</l>
+            <l>Aristée est icy, bons Dieux par quel supplice,</l>
+            <l>Amour faict esclater sa derniere malice ?</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/><pb n="17" xml:id="p17"/>Je conjure Venus, et le Dieu des Amours,</l>
+            <l>Qu’un bon-heur eternel accompagne vos jours.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je conjure les Dieux de ses heureuses plaines,</l>
+            <l>Qu’en vous chargant de biens ils allegent vos peines.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Belle Nimphe pour moy ne faites point de vœux,</l>
+            <l>Aucun autre que vous ne me peut rendre heureux.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>S’il ne tenoit qu’à moy dans peu de temp Pomone</l>
+            <l>Mettroit dans vos Jardins tous les fruicts qu’elle donne.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Sans implorer son ayde, il ne tiendra qu’à vous,</l>
+            <l>De me faire cueillir des fruicts qui soient plus doux.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="18" xml:id="p18"/>Dans les loix de l’honneur si je puis quelque chose</l>
+            <l>Qui vous soit profitable, il n’est rien que je n’oze.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Mes services rendus, et mes devoir passez</l>
+            <l>Seront donc aujourd’huy si mal recompensez.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je croyois que le nœud de l’Hymen qui me lie</l>
+            <l>Auroit dans vostre sein l’amour ensevelie.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Cet Espoux si charmant où buttent tous vos soings</l>
+            <l>Est plus heureux que moy, mais il vous ayme moins.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je le crois en effet ; mais d’un mal-heur extrême</l>
+            <l>Vous m’aymez je vous fuis, il m’adore et je l’ayme.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Voys l’aymés, ô grands Dieux ! par quelle injuste loy</l>
+            <l>Pouvez-vous maintenant le preferer à moy ?</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Parant de qualitez qui le rendent aymable,</l>
+            <l>Par son propre merite à nul autre semblable.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/><pb n="19" xml:id="p19"/>Il est homme pourtant, je suis du sang des Dieux,</l>
+            <l>Et ma mere commande aux fleuves de ses lieux.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Il est homme il est vray, mais il a pour son Pere</l>
+            <l>Cet Astre lumineux que le monde revere.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>J’ay le premier appris aux hommes à semer,</l>
+            <l>Ce grain miraculeux que nous voyons germer.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Il aprint le premier dedans leurs republiques</l>
+            <l>Et le culte divin, et les loix politiques.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Par mes soins assidus ils receurent le miel,</l>
+            <l>Ce tresor precieux que me donna le Ciel.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Par ses soins assidus l’impieté tombee,</l>
+            <l>A veu monter aux Cieux les odeurs de Sabee.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>J’ay le premier pressé l’Olive de mes mains,</l>
+            <l>Pour tirer la liqueur qu’elle donne aux humains.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="20" xml:id="p20"/>Il força le premier le Parnasse, et les Muses,</l>
+            <l>A nous developer cent lumieres confuses.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Je me suis signalé par de rudes travaux,</l>
+            <l>J’ay descouvert des Dieux et des astres nouveaux,</l>
+            <l>J’ay des monstres Marins la colere domptee,</l>
+            <l>Sur le sable à leurs yeux, j’ay subjugué Prothee.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Ses chants melodieux peuvent subjuguer tout,</l>
+            <l>Il charmer l’univers de l’un à l’autre bout,</l>
+            <l>Sa Lire châque jour par ses doigts animee,</l>
+            <l>Aux peuples inconnus apprend sa renommee,</l>
+            <l>Enfin il vous surpasse, et la fidelité</l>
+            <l>Me defend de luy faire aucune lâcheté.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Et quoy si vous m’aymiez croiriez vous que parjure</l>
+            <l>Vous fissiez contre luy quelque sanglante injure.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>En suivant mon conseil croyez-moy desormais,</l>
+            <l>Esloignez vous d’icy, ne me voyez jamais.</l>
+            <l><milestone unit="sent"/>À Dieu ces vains propos excitent ma cholere.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/><pb n="21" xml:id="p21"/>Je le recognois bien je suis trop temeraire,</l>
+            <l>Euridice arrestez mes regrets superflus</l>
+            <l>Un moment escoulé ne vous fâcheront plus.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VII</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <stage>(seul)</stage>
+            <l><milestone unit="sent"/>Inventons un moyen qui ne soit pas vulgaire</l>
+            <l>Et qui puisse apporter un secours salutaire,</l>
+            <l>Le viel Eurimedon ce grand Magicien,</l>
+            <l>Dont l’esprit recognoist et le mal et le bien,</l>
+            <l>Qui fait trembler les Cieux, et donc la voix commande</l>
+            <l>Aux Juges souverains de l’Infernalle bande,</l>
+            <l>Dans les murs demolis d’un antique Palais</l>
+            <l>Que nul autre que moy ne decouvrit jamais,</l>
+            <l>Au milieu de l’horreur de ses demeures sombres</l>
+            <l>Entretien tous les jours Proserpine et les ombres,</l>
+            <l>Allons luy demander quelque filtre Amoureux</l>
+            <l>Qui flechisse Euridice et qui nous rende heureux.</l>
+            <l><pb n="22" xml:id="p22"/><milestone unit="sent"/>Son pouvoir est si grand et sa force si prompte,</l>
+            <l>Qu’il n’est rien de si dur que son art ne surmonte.</l>
+            <l><milestone unit="sent"/>Il appaise les flots, fait esmouvoir les vents</l>
+            <l>Rend le Marbre sensible, et les Rochers mouvans,</l>
+            <l>Mesmes quand il luy plaist par parolles puissantes</l>
+            <l>Il adjouste beaucoup à la vertu des plantes,</l>
+            <l>Pluton sous son pouvoir void le sien abbatu,</l>
+            <l>De tous les animaux il cognoist la vertu,</l>
+            <l>Il arreste le Char de l’aveugle fortune,</l>
+            <l>Il attire vers luy les coursiers de la Lune,</l>
+            <l>Du fer il fait de l’Or, par un decret fatal</l>
+            <l>Des ondes de la mer il en fait du cristal,</l>
+            <l>Et par fois en changeant l’ordre de la Nature</l>
+            <l>Il fait sortir les morts hors de leur sepulture,</l>
+            <l>Si bien que si je vais son secours implorer</l>
+            <l>Je puis dans mon malheur encor tout esperer.</l>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>Acte II</head>
+        <div type="scene">
+          <head>Scène première</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <stage>Il se tint sur une vieille ruine d’un ancien Palais</stage>
+            <l><milestone unit="sent"/><pb n="23" xml:id="p23"/>Que vous ont respondu les Demons vos Ministres,</l>
+            <l>Ne m’ont-ils point predict des accidens sinistres.</l>
+          </sp>
+          <sp who="eurimedon">
+            <speaker>Eurimedon</speaker>
+            <l><milestone unit="sent"/>Je les ay consultez, et vous devez sçavoir,</l>
+            <l>Qu’en me suivant tousjours ils craignent mon pouvoir.</l>
+            <l><pb n="24" xml:id="p24"/><milestone unit="sent"/>D’abord qu’ils m’ont fasché je les mets dans les gesnes,</l>
+            <l>J’accrois quand il me plaist ou j’alege leurs peines,</l>
+            <l>Ils sont tous mes sujets et Pluton leur grand Roy</l>
+            <l>N’a pas plus dessus eux d’authorité que moy,</l>
+            <l>Si bien que quand je veux dans ma grotte profonde</l>
+            <l>Ils font voir à mes yeux tous les secrets du monde</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Puissant Eurimedon ces esprits infernaux</l>
+            <l>Ne promettent-ils pas de soulager mes maux.</l>
+          </sp>
+          <sp who="eurimedon">
+            <speaker>Eurimedon</speaker>
+            <l><milestone unit="sent"/>Quand vous eustes recours à mes divins misteres,</l>
+            <l>J’alumay des flambeaux, je fis des caracteres,</l>
+            <l>Dans un cerne sacré tous leurs noms je traçay,</l>
+            <l>En neuf diverses parts mes parfuns je plaçay,</l>
+            <l>Du costé d’Orient je leur fis ma priere,</l>
+            <l>Puis regardant les lieux où s’esteint la lumiere,</l>
+            <l>Par menaces, par cris et par commandemens</l>
+            <l>Je fis tant qu’à la fin sous mes enchantemens,</l>
+            <l>Ce vieux Palais trembla lors qu’un coup de tonnerre</l>
+            <l>M’anonça qu’ils faisoient leur retour sur la terre,</l>
+            <l>Puis succedant d’abord à ce signe evident</l>
+            <l>Je les interrogeay touchant vostre accident,</l>
+            <l>Et sans deliberer ma voix leur fit comprendre</l>
+            <l>Le service important que je voulois vous rendre.</l>
+            <l><milestone unit="sent"/>Mais croyant les treuver sur ce point disposez</l>
+            <l>Je vis en un instant mes desseins abusez,</l>
+            <l><pb n="25" xml:id="p25"/>Car l’un d’eux m’anonça que jamais vostre amante</l>
+            <l>Ne pourroit soulager le mal qui vous tourmente,</l>
+            <l>Et me dit que jamais vostre fidelité</l>
+            <l>Ne pourroit obtenir ce qu’elle a merité.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/>Dure conclusion ! ô mortelle sentence !</l>
+            <l><milestone unit="sent"/>Indigne de ma gloire et de vostre puissance ;</l>
+            <l>Esperance, desirs, vous qui me hayssez</l>
+            <l>Je vois bien maintenant que vous me trahissez ;</l>
+            <stage><milestone unit="sent"/>(Il se retire en un coin du Theatre)</stage>
+            <l>Sortez donc de mon sang l’horreur vous en convie,</l>
+            <l>Ne me poursuivez plus sur la fin de ma vie,</l>
+            <l>Le dernier desespoir où je me vois rangé</l>
+            <l>Finira mes douleurs quand je seray vangé.</l>
+            <l><milestone unit="sent"/>Ô vous, sage viellard ! <milestone unit="sent"/>Dont la vertu supréme</l>
+            <l>Ne m’a jamais manque dans le besoin extreme,</l>
+            <l>Paravant que ma vie ait terminé son cours</l>
+            <l>Employez tout vostre art pour me donner secours.</l>
+            <l><milestone unit="sent"/>Je sçay que vous pouvez d’un souverain empire,</l>
+            <l>Par la simple vertu d’une image de cire,</l>
+            <l>Vous vanger des mortels, qui peu respectueux</l>
+            <l>Ont fait souvent tomber vostre fureur sur eux,</l>
+            <l>Et que dans peu de temps si vous le voulez faire,</l>
+            <l>Vous me pourrez vanger d’un rival temeraire,</l>
+            <l>Qui se mocquant tousjours des maux que j’ay souffers</l>
+            <l>Captive la beauté qui me tient en ses fers.</l>
+            <l><milestone unit="sent"/>Vous avez des metaux, des onguents, des escorces,</l>
+            <l><pb n="26" xml:id="p26"/>Des simples et des fleurs dont les secrettes forces</l>
+            <l>Peuvent faire pleurer l’homme le plus heureux,</l>
+            <l>Employez leur puissance, et d’un traict venimeux</l>
+            <l>Punissant mon Rival donnez moy l’allegeance,</l>
+            <l>Que je dois esperer d’une juste vengeance.</l>
+          </sp>
+          <sp who="eurimedon">
+            <speaker>Eurimedon</speaker>
+            <l><milestone unit="sent"/>S’il ne tient qu’à cela dans peu vous allez voir</l>
+            <l>Ce que peut dessur luy l’effet de mon sçavoir.</l>
+            <l><milestone unit="sent"/>Allés retirez-vous, et l’enfer, et la terre</l>
+            <l>Desormais par ma voix luy declarent la guerre,</l>
+            <l>Ouy sans vous abuser en discours superflus,</l>
+            <l>Euridice est à luy, mais il ne l’aura plus.</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <stage>(en s’en allant)</stage>
+            <l><milestone unit="sent"/>C’est est fait, il mourra, sa perte est asseuree,</l>
+            <l>Je vois qu’Eurimedon maintenant l’a juree.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="27" xml:id="p27"/>Depuis que le Soleil esclaire dans les Cieux</l>
+            <l>Jamais un plus beau jour ne s’offrit à nos yeux :</l>
+            <l><milestone unit="sent"/>Et jamais on ne vit dans la saison nouvelle</l>
+            <l>Que produit le printemps, la campagne si balle,</l>
+            <l>Le Zephir qui soupire au doux bruit de ses eaux</l>
+            <l>La verdure naissante, et le chant des oyseaux,</l>
+            <l>Et ce fleuve sacré qui dans la mer tranquille</l>
+            <l>Va porter le tribut de son onde serville,</l>
+            <l>Voyant que la Nature invente des plaisirs</l>
+            <l>Font naistre dans le sein d’agreables desirs,</l>
+            <l>C’est à nous d’inventer quelque noble exercice,</l>
+            <l>Avant que le Soleil de ses rayons banisse</l>
+            <l>Du midy chalureux, dont à plein il nous luit</l>
+            <l>Dans les antres profonds, la fraicheur qui le fuit.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Premiere Driade</speaker>
+            <l><milestone unit="sent"/>À peine du levant les deux portes ouvertes</l>
+            <l>Me faisoient voir de fleurs les campagnes couvertes.</l>
+            <l><pb n="28" xml:id="p28"/><milestone unit="sent"/>À peine dans la mer les Baleines sautoient,</l>
+            <l>À peine du Soleil les Chevaux esclatoient,</l>
+            <l>Que laissant pour un temps nos demeures farouches</l>
+            <l>Nous fendismes des mains et nos troncs et nos souches,</l>
+            <l>Pour adorer un jour en qui le Ciel si beau</l>
+            <l>Semble considerer sa figure dans l’eau,</l>
+            <l>Et vous voyant de loin dessus ses rives molles,</l>
+            <l>Où l’ombrage entretient les peupliers et les saulles,</l>
+            <l>D’où la vigne aux ormeaux par de doux entrelats</l>
+            <l>Force mesme Diane à descendre icy bas,</l>
+            <l>Je suis hors des forests la premiere sortie</l>
+            <l>Pour faire en vous suivant quelque belle partie.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Quel est vostre dessein ? <milestone unit="sent"/>Nimphes dites le moy,</l>
+            <l>Car de vous maintenant je veux prendre la loy.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Premiere Driade</speaker>
+            <l><milestone unit="sent"/>Lassons le bel esmail de ses heureuses plaines,</l>
+            <l>Allons tendre des rets dans les forests prochaines.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je ne puis pas, mes sœurs, en cette extremité</l>
+            <l>Cacher mes sentimens, ny ma timidité.</l>
+            <l><milestone unit="sent"/>Je fremis que je vois un Lion plein de rage</l>
+            <l>Rugir, se tourmenter, témoigner son courage,</l>
+            <l>Et l’espieu dans le flanc sur un corps terrassé,</l>
+            <l>Dechirer par morceaux le bras qui l’a blessé</l>
+            <l><pb n="29" xml:id="p29"/>Lors qu’un Loup furieux me vient à la rencontre,</l>
+            <l>Quand un Tigre paroist, quand un Sanglier se montre,</l>
+            <l>Plus peureuse qu’un Daim courant legerement</l>
+            <l>Je cherche mon salut en mon esloignement.</l>
+            <l><milestone unit="sent"/>D’ailleurs je crois la chasse un tourment si penible,</l>
+            <l>Que mon humeur le juge un plaisir insensible.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Premiere Driade</speaker>
+            <l><milestone unit="sent"/>Ma sœur inventez donc un divertissement</l>
+            <l>D’où vous puissiez tirer plus de contentement.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Allons nous divertir sur les tapis de flore,</l>
+            <l>Faisons tomber des fleurs les larmes de l’Aurore,</l>
+            <l>Et nous couronnerons celle qui de nous<note place="bottom" resp="KS">Nous corrigeons
+                « nos » par « nous ».</note> trois,</l>
+            <l>Dans leur confusion fera le plus beau choix.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Premiere Driade</speaker>
+            <l><milestone unit="sent"/>J’approuve ce dessein, cette plaine esloignee</l>
+            <l>Où par l’ombre des monts la veuë est terminee</l>
+            <l>Nous en pourra fournir.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Ce pré délicieux</l>
+            <l>En est assez remply pour contenter nos yeux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <stage>(seule cueillant des fleurs)</stage>
+            <l><milestone unit="sent"/><pb n="30" xml:id="p30"/>Ô Dieux, que mon esprit est dans un trouble estrange !</l>
+            <l><milestone unit="sent"/>Je ne sçay que choisir parmy ce grand meslange.</l>
+            <l><milestone unit="sent"/>L’ordre de tant de fleurs me paroist si confus</l>
+            <l>Que si j’en voyois moins, j’en cueillirois bien plus.</l>
+            <l><milestone unit="sent"/>Le Narcisse amoureux sur ce rivage sombre,</l>
+            <l>Le chef panaché sur l’eau considere son ombre,</l>
+            <l>Et quoy qu’il ne soit plus qu’un corps inanimé</l>
+            <l>Il trouve encore en luy ce qu’il a tant aymé.</l>
+            <l><milestone unit="sent"/>Icy naist une fleur si parfaitement teinte</l>
+            <l>Qu’on void bien qu’elle sort du beau sang d’Hiacinte,</l>
+            <l>Que nature trouva si vermeil à ses yeux</l>
+            <l>Qu’elle l’eternisa, suivant l’ordre des Dieux,</l>
+            <l>À la blancheur des lys je voids rougir les roses,</l>
+            <l>Qui filles du printemps, à peine sont escloses,</l>
+            <l>Qu’elles<note place="bottom" resp="KS">Nous corrigeons « elle » par « elles ».</note>
+              leur semblent dire en des termes jaloux,</l>
+            <l>Sans le sang de Venus nous serions comme vous.</l>
+            <l><milestone unit="sent"/>Je vois paroistre icy des tulipes diverses,</l>
+            <l>Dans un nombre plus grand qu’aux campagnes des Perses.</l>
+            <l><pb n="31" xml:id="p31"/><milestone unit="sent"/>Sur le blanc Jasmin l’abeille prend le miel,</l>
+            <l>L’iris prés des œillets imite l’arc-en-Ciel,</l>
+            <l>Enfin de tant de fleurs dont la terre se pare</l>
+            <l>Je ne sçaurois juger laquelle est la plus rare.</l>
+            <l><milestone unit="sent"/>Si bien donc que je veux avec toute equité,</l>
+            <l>De chacune admirer la naissante beauté.</l>
+            <stage><milestone unit="sent"/>(Un Aspie paroist sur le Theatre qui vient et la pique)</stage>
+            <l>Mais Dieux qu’ay-je senti ? faut-il qu’en cette place</l>
+            <l>Où mon cœur s’affoiblit, où tout mon sang se glace,</l>
+            <l>Au milieu des plaisirs, l’injustice du sort</l>
+            <l>Vienne couvrir mes yeux du voile de la mort ?</l>
+            <l><milestone unit="sent"/>Ô Dieux ! c’est un aspic, fortune rigoureuse ?</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <stage><milestone unit="sent"/>[La première et la seconde driade] tiennent des fleurs dans leur giron et
+            s’approchent d’Euridice</stage>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Voyons qui de nous trois sera la plus heureuse.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je vous cedde le prix, couronnez-vous de fleurs :</l>
+            <l><milestone unit="sent"/>Le destin m’est cruel, vous vivrez, et je meurs.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/><pb n="32" xml:id="p32"/>Quel funeste accident ? quelle douleur si forte</l>
+            <l>Vous oblige ma sœur à parler de la sorte ?</l>
+            <l><milestone unit="sent"/>Vous sembliez si joyeuse, on eust dit que vostre œil</l>
+            <l>Eust regardé le Ciel et non pas le cercueil.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <stage>(en mourant)</stage>
+            <l><milestone unit="sent"/>Je cueillois mille fleurs quand d’un sentier funeste</l>
+            <l>Un aspic qui portoit et la rage et la peste,</l>
+            <l>Suivant l’ordre du sort, qui sans doute causoit</l>
+            <l>Le feu contagieux d’où son cœur s’embrasoit,</l>
+            <l>Se lança contre moy, qui de plaisir ravie</l>
+            <l>Estimois ce beau jour le plus doux de ma vie.</l>
+            <l><milestone unit="sent"/>Qui vivois en repos, et qui ne pensois pas</l>
+            <l>Que le Ciel sous des fleurs eust caché mon trepas.</l>
+            <l><milestone unit="sent"/>Tel que l’on void l’Iris de couleurs éclatantes,</l>
+            <l>Depeindre de son arc les formes apparentes,</l>
+            <l>Tel estoit cet aspic qui sur le dos portoit</l>
+            <l>Dans un verd escailleux où le jaune esclatoit</l>
+            <l>Un noir plein de sueur, qui tombant sur les plantes</l>
+            <l>Faisoit seicher les lys et les roses naissantes,</l>
+            <l>Ses yeux estinceloient de colere et d’horreur,</l>
+            <l>Et gravoit dans l’esprit l’image de la peur.</l>
+            <l><milestone unit="sent"/>L’on voyoit à travers de sa bouche animee,</l>
+            <l>Noircir de tous costez une épaisse fumee,</l>
+            <l>Mesmes dans le chemin par où son corps glissoit,</l>
+            <l>D’escume et de venin la terre blanchissoit,</l>
+            <l><pb n="33" xml:id="p33"/>Cent remplis ondoyans faisoient voir sur sa teste</l>
+            <l>L’effroyable rougeur d’une sanglante creste ;</l>
+            <l>Et parmy du poison sa langue qu’il dardoit</l>
+            <l>Épouventoit de loin l’œil qui la regardoit.</l>
+            <l><milestone unit="sent"/>Cet animal cruel de son venin superbe</l>
+            <l>Conduit par un demon d’écoule dessous l’herbe.</l>
+            <l><milestone unit="sent"/>Et paroissant d’abord qu’il est proche de moy</l>
+            <l>Fait vous dessus son chef la fureur et l’effroy,</l>
+            <l>Puis se courbant en arc de mesme qu’une fleche</l>
+            <l>Son subtil éguillon dans mon pied faict sa breche</l>
+            <l>Qu’il ne retire point que d’un sensible effort,</l>
+            <l>Il ne laisse dedans la douleur et la mort,</l>
+            <l>Mais l’émail qui saisit mon cœur foible et debile</l>
+            <l>M’empesche d’achever ce recit inutile.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Euridice, ma sœur nous abandonnez-vous ?</l>
+            <l><milestone unit="sent"/>Ne mourez point si tost, vivez pour vostre Espoux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <stage><milestone unit="sent"/>Cependant que les Nimphes pleurent sur le corps d’Euridice, Orphée paroist sur un
+            coin venant du sacrifice.</stage>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/><pb n="34" xml:id="p34"/>Ah ! malheureux Amant, que je plains ta venuë,</l>
+            <l>Helas pour toy sa mort est encore incognuë<note place="bottom" resp="KS">Nous
+                corrigeons « icognuë » par « incognuë ».</note></l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>(après avoir long-temps ruminé)</stage>
+            <l><milestone unit="sent"/>Un accident fatal qui me poursuit de prés</l>
+            <l>Transforme mes lauriers en de tristes cyprés.</l>
+            <l><milestone unit="sent"/>Mon Pere en son midy par un mauvais presage</l>
+            <l>D’une sombre vapeur se couvre le visage.</l>
+            <l><milestone unit="sent"/>La terre sous mes pas parmy ses tremblemens</l>
+            <l>Semble jetter des cris et des mugissemens.</l>
+            <l><milestone unit="sent"/>L’Enfer a refusé mon dernier sacrifice,</l>
+            <l>Ô Dieux ! <milestone unit="sent"/>Si vous m’aymez, sauvez mon Euridice.</l>
+            <l><milestone unit="sent"/>Belles Reines des bois, puissances de ces lieux,</l>
+            <l>Qui tirez vostre sang du sang mesme des Dieux,</l>
+            <l>Quel sujet avez-vous de repandre des larmes ?</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/><pb n="35" xml:id="p35"/>La mort s’en va priver la beauté de ses charmes,</l>
+            <l>Par ce mot cognoissez quelle est nostre douleur.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Par ce mot je cognois ma perte et mon malheur,</l>
+            <l>Euridice se meurt ? <milestone unit="sent"/>Ciel qui punis la terre</l>
+            <l>Que ne m’accables-tu<note place="bottom" resp="KS">Nous corrigeons « accable tu » par
+                « accables-tu ».</note> d’un esclat de Tonnerre ?</l>
+            <l><milestone unit="sent"/>Mais quel Demon cruel me produit tant de maux ?</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Le plus pernicieux de tous les animaux.</l>
+            <l><milestone unit="sent"/>L’esguillon d’un aspic met dans la sepulture</l>
+            <l>L’ouvrage le plus beau qu’ait formé la nature.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Barbare Dieu d’Enfer en qui je me fiois,</l>
+            <l>Tu la prends justement, je te sacrifiois.</l>
+            <stage><milestone unit="sent"/>(à Euridice en la baisant)</stage>
+            <l>Ne passez point si tost, vous ne faites que naistre,</l>
+            <l>Quoy ? <milestone unit="sent"/>Dans vostre Orient cessez-vous de paroistre ?</l>
+            <l><milestone unit="sent"/>La mort, ce Monstre affreux, ne peut point dans ce jour</l>
+            <l>Me ravir un tresor que je tiens de l’Amour.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Son pouvoir absolu va terminer ma vie.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/><pb n="36" xml:id="p36"/>Elle me ravira, si vous m’estes ravie.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>La mort ne veut que moy.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>La barbare me fuit.</l>
+            <l><milestone unit="sent"/>Elle ne me veut pas, mais mon âme la suit.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Voulez-vous contredire aux puissances Celestes ?</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Je ne les cognois plus, elles me sont funestes.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>C’est de mon triste sort l’inevitable loy.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Vivez encor un peu, ne mourez point sans moy.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Vous prolongez mes maux.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Vous accroissez ma peine.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="37" xml:id="p37"/>Vous m’estes rigoureux.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Vous m’estes inhumaine.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Le ciel ne le veut pas.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Le Ciel l’ordonne ainsi.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>L’Enfer me veut avoir.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Il me demande aussi.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Cessez de souspirer.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ne versez plus de larmes.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Ne vous affligez point.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Conservez donc vos charmes.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Mes charmes sont esteints.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Mes esprits sont blessez.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/><pb n="38" xml:id="p38"/>Mes jours sont achevez.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Mes plaisirs sont passez.</l>
+            <l><milestone unit="sent"/>Mais Dieux ! elle descend sur la fatale rive</l>
+            <l>Des fleuves eternels ombre triste et plaintive.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Fauves, Nimphes, Bergers, pleurez amerement</l>
+            <l>La Reine des mortels qui meurt innocemment.</l>
+          </sp>
+          <label>Plainte d’Orphée</label>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+
+            <l><milestone unit="sent"/>Belle Reine des cœurs Euridice ma vie,</l>
+            <l>Dans l’espace d’un jour est donnee et ravie,</l>
+            <l>Beau throsne de l’amour, belle bouche, beaux yeux,</l>
+            <l>Vous que je ne tenois que de la main des Dieux,</l>
+            <l>Faut-il que par l’effort d’une rage inoüye</l>
+            <l>Vous soyez de mon lict si tost evanouye ?</l>
+            <l><milestone unit="sent"/>Et faut-il que la Parque ait mis dans un tombeau</l>
+            <l>Ce que jamais le monde avoit veu de plus beau ?</l>
+            <l><milestone unit="sent"/>Helas il le falloit ! puisque la destinne</l>
+            <l>Avoir par vostre mort ma fortune bornee,</l>
+            <l>Je possedois un bien qui ne m’estoit pas deu,</l>
+            <l>Je m’en sentois indigne, aussi je l’ay perdu.</l>
+            <l><milestone unit="sent"/>Vaines prosperitez, qui semblables aux songes,</l>
+            <l>Dessous de faux appas cachez tant de mensonges,</l>
+            <l><pb n="39" xml:id="p39"/>Vous pouviez me montrer quel est vostre couroux,</l>
+            <l>Vous pouviez me trahir, je dependois de vous,</l>
+            <l>Dans le mobile estat des affaires humaines</l>
+            <l>Vous paroissez tousjours inconstantes et vaines,</l>
+            <l>Et suivant les decrets du Ciel et du destin</l>
+            <l>Vous esteignez le soir ce qui naist le matin.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Ses plaintes, ses douleurs, ses paroles perduës,</l>
+            <l>Et ses larmes icy vainement respanduës,</l>
+            <l>Ne luy rendront jamais les clartez du Soleil.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ô funeste accident ! tu n’as point de pareil.</l>
+            <l><milestone unit="sent"/>Dieux, Euridice est morte ! et sa memoire esteinte</l>
+            <l>Parmy le desespoir me reduit à la plainte :</l>
+            <l><milestone unit="sent"/>Non, non, elle vivra tout le temps que mes yeux</l>
+            <l>De ce debile corps regarderont les Cieux.</l>
+            <l><milestone unit="sent"/>Et lors que l’on verra sa memoire estouffee</l>
+            <l>L’on ne parlera plus de la Lyre d’Orphée ;</l>
+            <l>Assis dans un desert en depit du destin,</l>
+            <l>Soit que l’Astre du jour paroisse le matin,</l>
+            <l>Ou bien que sur le soir dans la Mer il se couche,</l>
+            <l>Son nom incessamment sortira de ma bouche.</l>
+            <l><milestone unit="sent"/>Les Rochers et les bois me l’entendront benir,</l>
+            <l>Et rien sinon la mort ne le pourra finir.</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/><pb n="40" xml:id="p40"/>Amant infortune ! quelque noire puissance</l>
+            <l>Presidoit dans les airs au jour de ta naissance</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Soleil qui m’a laissé ! <milestone unit="sent"/>Dieux qui me trahissez ?</l>
+            <l><milestone unit="sent"/>Fortune qui me perds ? destins qui m’abbaissez ?</l>
+            <l><milestone unit="sent"/>Puis que vous exercez vos rigueurs coustumieres</l>
+            <l>N’attendez plus de moy de vœux ny de prieres !</l>
+            <l><milestone unit="sent"/>Je suis en un estat où mes chants desormais</l>
+            <l>Et pour vous et pour moy vont finir pour jamais !</l>
+            <l><milestone unit="sent"/>Puisqu’Euridice meurt, ma voix mourra de mesme,</l>
+            <l>En suivant le conseil de ma douleur extréme,</l>
+            <l>Dans un antre secret la rage qui me suit</l>
+            <l>Du reste de mes jours ne fera qu’une nuict.</l>
+            <l><milestone unit="sent"/>Là les noires fureurs me tiendront compagnie ;</l>
+            <l>L’enfer me donnera ce que le Ciel me nie ;</l>
+            <l>J’y trouveray la mort qui finira mon deüil,</l>
+            <l>Et j’y feray bien-tost de mon lict mon cercueil.</l>
+            <l><milestone unit="sent"/>Mais de quelle clarté se couvre l’Hémisphere</l>
+            <l>Qui semble dissiper les rayons de mon pere ?</l>
+          </sp>
+          <sp who="driades">
+            <speaker>Première Driade</speaker>
+            <l><milestone unit="sent"/>Le Soleil qui paroist sur son char lumineux</l>
+            <l>S’en va nous annoncer quelque destin heureux.</l>
+          </sp>
+        </div>
+        <div>
+          <head>Chanson du Soleil</head>
+          <sp who="soleil">
+            <speaker>Soleil</speaker>
+            <l><milestone unit="sent"/><pb n="40a"/>Je suis l’Astre qui fais le jour,</l>
+            <l>Et dont la flame vagabonde</l>
+            <l>Remplis de merveille et d’amour</l>
+            <l>Les Cieux et l’air, la terre et l’onde.</l>
+            <l><milestone unit="sent"/>J’échauffe tout ce que je voy,</l>
+            <l>Et quand je brûle tout le monde</l>
+            <l>Il n’est rien de plus froid que moy.</l>
+            <l><pb n="40b"/><milestone unit="sent"/>Je dissipe l’horreur des nuits,</l>
+            <l>Je donne l’ame à toutes choses :</l>
+            <l><milestone unit="sent"/>C’est moy qui fais mourir les fruicts,</l>
+            <l>Et qui donne l’éclat aux roses ;</l>
+            <l>Les fleurs naissent de mes soupirs,</l>
+            <l>Et si tost qu’elles sont écloses</l>
+            <l>J’en laisse l’empire aux zephirs.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VI</head>
+          <stage><milestone unit="sent"/>Prière d’Orphée au Soleil</stage>
+          <label>Stances</label>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+
+            <l><milestone unit="sent"/><pb n="41" xml:id="p41"/>Vive source de toutes choses,</l>
+            <l>Illustre Prince des Saisons,</l>
+            <l>Unique autheur de tant de causes,</l>
+            <l>Monarque des douze maisons ;</l>
+            <l>Toy que l’on void dans sa carriere</l>
+            <l>Esteindre du Char de lumiere</l>
+            <l>Les Astres qui te font la Cour,</l>
+            <l>Lors que l’Univers qui t’adore</l>
+            <l>Void rougir le tein de l’aurore,</l>
+            <l>En ouvrant les portes du jour.</l>
+            <l><milestone unit="sent"/>Toy qui laissant ton lict humide,</l>
+            <l>Porte sur l’air journellement,</l>
+            <l>Traisne d’une cource rapide,</l>
+            <l>Le plus chaloureux Element ;</l>
+            <l><pb n="42" xml:id="p42"/>Toy dont le Ciel est la patrie,</l>
+            <l>Toy dont les peuples d’Hyberie,</l>
+            <l>Entendant tous les soirs le bruit,</l>
+            <l>Lors que tes chevaux sous Neptune</l>
+            <l>S’opposent à ceux de la Lune,</l>
+            <l>Pour la naissance de la nuict.</l>
+            <l><milestone unit="sent"/>Arreste ton trosne de flame,</l>
+            <l>Preste un peu l’oreille à mes vers,</l>
+            <l>Voyant celuy qui te reclame,</l>
+            <l>Rends toy visible à l’univers :</l>
+            <l><milestone unit="sent"/>La demande que je vais faire,</l>
+            <l>Ne sera point si temeraire,</l>
+            <l>D’esperer que d’authorité</l>
+            <l>Tu fasses que les destinées</l>
+            <l>Sur le declin de mes années</l>
+            <l>Me donnent l’immortalité.</l>
+            <l><milestone unit="sent"/>Pareil à l’enfant de Climene,</l>
+            <l>Qui pour illustrer ses travaux,</l>
+            <l>Eust autrefois l’ame si vaine</l>
+            <l>Que de pretendre à tes chevaux ;</l>
+            <l>Je ne veux point que mon audace</l>
+            <l>M’obtienne la fatale grace,</l>
+            <l>Qui par un malheur sans pareil,</l>
+            <l>Alluma la voute Celeste</l>
+            <l><pb n="43" xml:id="p43"/>Parmy l’embrasement funeste</l>
+            <l>Que causa ce jeune Soleil.</l>
+            <l><milestone unit="sent"/>Mon esperance est mieux bornée ;</l>
+            <l>Je n’ay point cette vanité,</l>
+            <l>Celle que tu m’avois donnée</l>
+            <l>Ne reverra plus ta clarté ;</l>
+            <l>Ses deux lumieres sont esteintes,</l>
+            <l>Je ne veux plus pousser de plaintes</l>
+            <l>Contre l’injustice du sort,</l>
+            <l>Fais donc que ma douleur finisse,</l>
+            <l>Puis que je perds mon Euridice,</l>
+            <l>Je ne demande que la mort.</l>
+            <l><milestone unit="sent"/>Que si par des rigueurs estranges</l>
+            <l>Les Dieux different mon trespas,</l>
+            <l>Et si pour chanter leurs loüanges,</l>
+            <l>Il me faut survivre icy bas ;</l>
+            <l>Fais que l’Enfer inexorable,</l>
+            <l>Une seule fois favorable</l>
+            <l>Redonne Euridice à mes vœux ;</l>
+            <l>Alors mes chants et mes offrandes,</l>
+            <l>Produiront des choses si grandes</l>
+            <l>Que j’estonneray non nepveux.</l>
+            <l><pb n="44" xml:id="p44"/><milestone unit="sent"/>Je sçay bien que tu le peus faire,</l>
+            <l>Toy de qui les Rais immortels,</l>
+            <l>Du depuis la quatriesme Sphere<note place="bottom" resp="KS">Nous corrigeons
+                « Shpere » par « Sphere ».</note>,</l>
+            <l>Esclairent par tous les Autels ;</l>
+            <l>Toy qui des estoilles constantes,</l>
+            <l>Des legeres, et des errantes,</l>
+            <l>Regarde les sablons mouvans,</l>
+            <l>Qui s’eslevent dessus nos testes,</l>
+            <l>Lors que la fureur des tempestes,</l>
+            <l>Fait mourir, et naistre les vents.</l>
+          </sp>
+          <label>Response du Soleil</label>
+          <sp who="soleil">
+            <speaker>Soleil</speaker>
+
+            <l><milestone unit="sent"/>Proche du Mont Tenare, un gouffre en Laconie</l>
+            <l>D’où depuis le Cahos la lumiere est bannie,</l>
+            <l>Fait un passage à ceux qui sur l’horrible port</l>
+            <l>Vont porter à Caron le tribut de la mort,</l>
+            <l>Là les fourneaux d’Enfer les plus noires fumees</l>
+            <l>Enveloppent tousjours les Roches enflammées,</l>
+            <l>Et poussant hors de l’antre un air contagieux</l>
+            <l>Infectent les Oyseaux, et font palir les Dieux.</l>
+            <l><milestone unit="sent"/>Par des sentiers obscurs cette affreuse caverne</l>
+            <l>T’ouvrira le chemin des Palais de L’averne,</l>
+            <l>Descends par cet endroit dans le triste sejour,</l>
+            <l>Prenant pour t’esclairer le flambeau de l’amour ;</l>
+            <l>Et puis ayant passé dans les fatales plaines,</l>
+            <l>De ses peuples legers, qui sont des ombres vaines,</l>
+            <l><pb n="45" xml:id="p45"/>Rends toy dans le Palais de ce Dieu sousterrain</l>
+            <l>Qui regne dans les feux sur un trosne d’airain.</l>
+            <l><milestone unit="sent"/>Depeins luy tes malheurs par paroles charmantes ;</l>
+            <l>Forme pour le toucher des plaines eloquentes ;</l>
+            <l>Et par fortes raisons preuve qu’injustement</l>
+            <l>Il ferme ton amante au creux du monument ;</l>
+            <l>D’abord tu le verras d’un œil sombre et severe,</l>
+            <l>Animé de dépit et remply de colere,</l>
+            <l>Secoüant dans les mains un Sceptre ensanglanté,</l>
+            <l>Ne respirer qu’horreur, et qu’inhumanité.</l>
+            <l><milestone unit="sent"/>Mais sans t’espouventer d’un stile magnifique,</l>
+            <l>Calme la cruauté d’un Dieu si tyrannique.</l>
+            <l><milestone unit="sent"/>S’il paroist immobile à ta juste douleur,</l>
+            <l>Peut-estre que ta voix adoucira son cœur ;</l>
+            <l>Car je luy donneray de la cime des nuës</l>
+            <l>Jusqu’au fonds des Enfers des vertus incogneuës.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Sacré Pare du temps, ame de l’Univers,</l>
+            <l>Qui montrez les beautez de tant d’objets divers :</l>
+            <l><milestone unit="sent"/>C’est bien avec raison qu’Élicon vous implore,</l>
+            <l>Que Pinde vous cherit, que Delos vous adore.</l>
+            <l><milestone unit="sent"/>Le sort vous a commis sur ses justes decrets,</l>
+            <l>L’on ne voit point paroistre au monde de Forests,</l>
+            <l>Aux Forests il n’est point de vigoureuse plante :</l>
+            <l><milestone unit="sent"/>Sur la plante il n’est point de branche verdoyante,</l>
+            <l>Dans la branche il n’est point de feuille ny de fleur,</l>
+            <l><pb n="46" xml:id="p46"/>Dans la fleur et la fueille il n’est point de fruit
+              meur,</l>
+            <l>Dans le fruit il n’est point de secrette semence :</l>
+            <l><milestone unit="sent"/>Mesme dans la semence il n’est point de substance,</l>
+            <l>Et parmi la substance il n’est rien de si doux</l>
+            <l>Que la terre aujourd’huy ne possede par vous.</l>
+          </sp>
+          <sp who="soleil">
+            <speaker>Le soleil</speaker>
+            <l><milestone unit="sent"/>Je sçay depuis long-temps quel amour et quel zele</l>
+            <l>T’accompagnent tousjours pour ma gloire immortelle,</l>
+            <l>Mais va trouver Pluton, et sans plus differer</l>
+            <l>Demande-luy le bien que tu peux esperer.</l>
+            <l><milestone unit="sent"/>Adieu. Du Ciel roulant la course vagabonde</l>
+            <l>Oblige mes chevaux à se plonger dans l’onde.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>aux Nymphes en se levant</stage>
+            <l><milestone unit="sent"/>Vous jusqu’à mon retour conservez ce beau corps</l>
+            <l>Où l’amour avoit mis ses plus rares tresors ;</l>
+            <l>Tandis que je m’en vais dans les Palais funebres</l>
+            <l>Du superbe Tyran qui regit les tenebres,</l>
+            <l>Avec intention de ne plus vous revoir,</l>
+            <l>Si je ne puis flechir son barbare pouvoir.</l>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>Acte III</head>
+        <div type="scene">
+          <head>Scène première</head>
+          <stage><milestone unit="sent"/>Aristée sort de fureur et se defait d’Arcas et d’Ergaste, qui le veulent
+            retenir</stage>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <l><milestone unit="sent"/><pb n="47" xml:id="p47"/>Non non, retirez-vous, la douleur me transporte,</l>
+            <l>Je me consoleray quand Euridice est morte,</l>
+            <l>Apres avoir perdu cette rare beauté</l>
+            <l>Par ma propre malice et par ma cruauté,</l>
+            <l>Oserois-je penser à prolonger ma vie ?</l>
+            <l><milestone unit="sent"/>Mourons, mourons plutost, l’honneur nous y convie.</l>
+            <l><milestone unit="sent"/>Ô rages qui pouvez perdre les criminels,</l>
+            <l>Employez de sur moy vos bourreaux eternels ;</l>
+            <l>Venez saisir mon cœur, exercez vos supplices,</l>
+            <l>Appellez les Demons, vos funestes complices,</l>
+            <l>Ramassez tous les maux desquels vos vous servez,</l>
+            <l>Pour la punition de ceux que vous suivez.</l>
+            <l><pb n="48" xml:id="p48"/><milestone unit="sent"/>Et faites que le Ciel d’un esclat de sa foudre</l>
+            <l>Convertisse mon corps en des monceaux de poudre.</l>
+            <l><milestone unit="sent"/>Irritez son courroux, attirez sa fureur,</l>
+            <l>Et tout ce qui comme moy d’un crime abominable</l>
+            <l>Perdent ce que le monde a de plus adorable.</l>
+            <l><milestone unit="sent"/>Enfin n’espargnés rien pour perdre un malheureux,</l>
+            <l>Suscitez moy la mort, c’est tout ce que je veux.</l>
+            <l><milestone unit="sent"/>Mais la rage, n’a pas desir de me poursuivre,</l>
+            <l>Pour me mieux traverser, elle me laisse vivre,</l>
+            <l>Elle agit bien sur moy mais c’est si lentement</l>
+            <l>Qu’on void bien qu’elle veut prolonger mon tourment,</l>
+            <l>Et que pour me punir sa vengeance m’imprime</l>
+            <l>Le sanglant souvenir d’avoir commis un crime.</l>
+            <l><milestone unit="sent"/>Toutesfois en mourant execrable affronteur,</l>
+            <l>Infame Eurimedon qui me fus si menteur,</l>
+            <l>J’invoqueray sur toy la justice Celeste,</l>
+            <l>Puis que pour me vanger c’est tout ce qui me reste.</l>
+            <l><milestone unit="sent"/>Le jour que je commis un malheureux peché,</l>
+            <l>Lors que je te fus voir en ton antre caché,</l>
+            <l>Meschant tu me disois d’une langue rusee,</l>
+            <l>Que tu me vangerois de ma foy mesprisee.</l>
+            <l><milestone unit="sent"/>Mais tu ne disois pas qu’Euridice seroit</l>
+            <l>L’innocente vertu que ton bras frapperoit ;</l>
+            <l>N’y qu’un aspic contrainct par l’effort de tes charmes</l>
+            <l>Luy donnant le trespas me causeroit des larmes.</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/><pb n="49" xml:id="p49"/>Que je plains ton mal-heur, Berger infortuné.</l>
+            <l><milestone unit="sent"/>Amant trop hazardeux sous quel astre es-tu né ?</l>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <stage>en fureur</stage>
+            <l><milestone unit="sent"/>Ah Dieux ! injustes Dieux, qui cognoissez ma peine,</l>
+            <l>Pere de la lumiere, et vous belle Cireyne,</l>
+            <l>Comme permettez-vous qu’un Démon irrité</l>
+            <l>Renverse mon repos et ma prosperité ?</l>
+            <l><milestone unit="sent"/>Sont-ce là les faveurs ? est-ce là ceste grace</l>
+            <l>Que vous distribuez à ceux de vostre race ?</l>
+            <l><milestone unit="sent"/>Si j’offence aujourd’huy vostre sacré pouvoir,</l>
+            <l>Si je manque pour vous d’amour ou de devoir,</l>
+            <l>Que ne m’accablez-vous d’un plus cruel suplice ?</l>
+            <l><milestone unit="sent"/>Vous n’estes pas vangez en perdant Euridice.</l>
+            <l><milestone unit="sent"/>Arrachez mes moissons du milieu des guerets,</l>
+            <l>Changez en un desert mes plus sainctes Forests ;</l>
+            <l>Ou bien faisant secher l’herbe dans mes prairies,</l>
+            <l>Consommez tous mes grains, avec mes Bergeries ;</l>
+            <l>Faites fondre en ce lieu des oyseaux estrangers</l>
+            <l>Pour gaster tant de fruicts qui sont dans mes vergers ;</l>
+            <l>Et meslant du venin sur mes roses vermeilles,</l>
+            <l>Pour me punir d’un crime infectés mes abeilles.</l>
+            <l><milestone unit="sent"/>Alors sans murmurer je seray mal-heureux,</l>
+            <l>Et mon sort me sera moins desadvantageux.</l>
+            <stage><milestone unit="sent"/>Il s’en va precipiter<note place="bottom" resp="KS">[sic.]</note>.</stage>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/><pb n="50" xml:id="p50"/>Arcas, il va mourir, divertissons l’Envie</l>
+            <l>Qui porte son esprit à le priver de vie.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <stage><milestone unit="sent"/>La toille s’abaisse et le rivage de l’Acheron paroist.</stage>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>seul au bord de l’Acheron</stage>
+            <l><milestone unit="sent"/>Enfin je suis venu dans l’horrible sejour</l>
+            <l>Où ne peut penetrer le bel astre du jour.</l>
+            <l><milestone unit="sent"/>C’est icy que la mort en sa plus vive image</l>
+            <l>Se presente aux mortels qui luy rendent hommage,</l>
+            <l>Et qu’elle leur fait voir que ses superbes loix</l>
+            <l>Frappent quant il luy plaist la personne des Rois ;</l>
+            <l>Par delà ce Rocher sont les maudites plaines</l>
+            <l>Où l’Enfer fait sentir ses plus cruelles peines ;</l>
+            <l>Le Cocitte puant plus fort que des ramparts</l>
+            <l>Par neuf larges replis le ceint de toutes parts,</l>
+            <l>Qui font cognoistre assez aux manes qui descendent</l>
+            <l>L’importance du lieu que leurs ondes deffendent.</l>
+            <stage><milestone unit="sent"/>Des Espris paroissent qui vont le long du rivage.</stage>
+            <l>Mais d’où vient que je vois tant d’esprits assemblez</l>
+            <l>Qui vont le long des eaux, et qui semblent troublez ?</l>
+            <l><pb n="51" xml:id="p51"/><milestone unit="sent"/>Sans doute ce sont ceux à qui les destinées</l>
+            <l>Ont ordonné d’errer le cours de cent années ;</l>
+            <l>Et pour qui les parents par d’estranges malheurs</l>
+            <l>N’ont peu sur le tombeau faire couler des pleurs.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <stage><milestone unit="sent"/>La Barque de Caron paroist.</stage>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>D’où vient qu’en abordant prés de ses Roches sombres ?</l>
+            <l><milestone unit="sent"/>Je vois un corps vivant au milieu de tant d’ombres ?</l>
+            <l><milestone unit="sent"/>Seroit-il descendu pour forcer les Enfers ?</l>
+            <l><milestone unit="sent"/>Ou bien pour delivrer les Titans de leurs fers ?</l>
+            <l><milestone unit="sent"/>S’il pouvoit concevoir un dessein si perfide</l>
+            <l>Il s’en sortiroit pas comme autrefois Alcide.</l>
+            <stage><milestone unit="sent"/>Il aborde.</stage>
+            <l>Esprits de qui la cendre est dessous le tombeau,</l>
+            <l>Entrez dedans ma Barque, et traversez cette eau.</l>
+            <stage><milestone unit="sent"/>Ils entrent. Orphée veut entrer et Caron le repousse.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/><pb n="52" xml:id="p52"/>Non, non, ne craignez rien, le subjet qui m’ameine</l>
+            <l>N’est point pour enlever vostre pudique Reyne,</l>
+            <l>Je ne suis point armé.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Esloignez-vous d’icy,</l>
+            <l>Vous vous imaginez qu’on peut passer ainsi,</l>
+            <l>Hercule malgré moy vint dedans cette barque,</l>
+            <l>Mais cét audacieux auroit forcé la Parque.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>tout bas.</stage>
+            <l><milestone unit="sent"/>Les plus fortes raisons ne le peuvent toucher,</l>
+            <l>Il est inexorable et plus dur qu’un Rocher,</l>
+            <l>Ma voix montrez icy vos douceurs nompareilles</l>
+            <l>Vous toucherez son cœur en frappant ses oreilles.</l>
+            <lg>
+              <label>Chanson d’Orphée</label>
+              <l><milestone unit="sent"/>Vieil Nocher de ses rives sombres,</l>
+              <l>Qui passe le peuple et les Rois,</l>
+              <l>Change tes invincibles lois,</l>
+              <l>Et me reçois parmy les ombres,</l>
+              <l>Ou bien si tu ne peux un vivant recevoir,</l>
+              <l>La douleur et la mort vont faire leur devoir.</l>
+            </lg>
+            <stage><milestone unit="sent"/>Caron laisse tomber ses rames et demeure pasmé sur la poupe de son
+              vaisseau.</stage>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/><pb n="53" xml:id="p53"/>Ô toy qui que tu sois, de la terre ou des Cieux,</l>
+            <l>Qui quitte le Soleil pour descendre en ces lieux,</l>
+            <l>Il faut asseurement qu’au jour de ta naissance</l>
+            <l>Jupiter t’ait donné quelque grande puissance.</l>
+            <l><milestone unit="sent"/>Tes chants harmonieux m’ont ravi tellement</l>
+            <l>Que je trouve mon corps perclus de mouvement,</l>
+            <l>Entre, car j’y consents, esprits faites luy place.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Que mon cœur est ravy d’obtenir cette grace.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <stage>aux Esprits, les sortant de sa Barque.</stage>
+            <l><milestone unit="sent"/>Vous jusques à mon retour, demeurez sur ce bord,</l>
+            <l>Je ne puis pas mesler la vie avec la mort.</l>
+            <stage><milestone unit="sent"/>Les Esprits sortent.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène 4</head>
+          <stage><milestone unit="sent"/>Apres estre arrivés sur le milieu du fleuve, Caron trouve à propos d’instruire
+            Orphée du chemin qu’il doit tenir, et pour ce il arreste sa Barque.</stage>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/><pb n="54" xml:id="p54"/>Puis qu’il plaist au destin de vous faire un passage</l>
+            <l>Parmy ce deplorable et funeste rivage,</l>
+            <l>Et que vous traversez par vos charmans accords</l>
+            <l>Un lieu qu’on ne void point sous la forme du corps,</l>
+            <l>Apprenez le chemin et la route certaine</l>
+            <l>Que vous devez tenir.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Si vous prenez la peine</l>
+            <l>De m’en entretenir, ce soing officieux</l>
+            <l>Trouvera dans Orphée un cœur Religieux.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Alors que vous serez sur la rive prochaine,</l>
+            <l>Vous serez transporté d’une frayeur soudaine,</l>
+            <l><pb n="55" xml:id="p55"/>Par les Monstres hideux que vous rencontrerez,</l>
+            <l>Et par les noirs objets que vous regarderez ;</l>
+            <l>D’abord il faut passer une porte assez large,</l>
+            <l>Qu’on ne repasse plus et dont Cerbere a charge,</l>
+            <l>Qui par ses trois gosiers vomissant sa fureur</l>
+            <l>Porte dans les esprits une estrange terreur.</l>
+            <l><milestone unit="sent"/>Sur le sueil prez de luy, la colere et la plainte,</l>
+            <l>Considerent la rage opposée à la crainte,</l>
+            <l>La mort assise aupres du sommeil son parent</l>
+            <l>D’un seul coup de sa faux calme leur different,</l>
+            <l>Et carresse tousjours l’assassin et la guerre,</l>
+            <l>comme les Lieutenans qu’elle met sur la terre.</l>
+            <l><milestone unit="sent"/>À quelque pas de là, la vieillesse au teint blanc</l>
+            <l>Montre ses cheveux gris et descouvre son flanc,</l>
+            <l>Et rit incessamment de voir pester l’Envie,</l>
+            <l>Contre tant de mortels qu’elle conserve en vie.</l>
+            <l><milestone unit="sent"/>Vous y rencontrerez l’Hyver plein de soucy,</l>
+            <l>Qui demeure en un coing paresseux et trancy,</l>
+            <l>Tousjours environné des douleurs homicides,</l>
+            <l>Et de trois licts de fer où sont le Eumenides.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Toutes ces visions peuvent espouventer</l>
+            <l>Quiconque dans ce lieu vous viendroit affronter.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Vous venez sous l’adveu de quelque Dieu Celeste,</l>
+            <l>Vous ne pouvez rien craindre escoutez ce qui reste ;</l>
+            <l><pb n="56" xml:id="p56"/>Au delà du portail s’eslevent deux ormeaux</l>
+            <l>Dont la vaste estenduë et les larges rameaux</l>
+            <l>Couvrent un vilain Lac, sur qui l’on voit des ames</l>
+            <l>Errer à la mercy dans des ondes de flames.</l>
+            <l><milestone unit="sent"/>Sur ses arbres cruels tous les songes perchez,</l>
+            <l>Sans estre par les vents de leurs troncs arrachez,</l>
+            <l>Presentent aux damnez de si fausses images,</l>
+            <l>Qu’ils croyent voir des bourreaux et des nouvelles rages.</l>
+            <l><milestone unit="sent"/>Autour du mesme Lac, mille monstres divers</l>
+            <l>Semble contribuer à leurs desseins pervers,</l>
+            <l>Et contraindre leur veuë à voir des corps enormes,</l>
+            <l>Et les membres affreux dont ils n’ont que les formes.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Hélas que dites vous ! <milestone unit="sent"/>Dieux que je suis faché</l>
+            <l>De voir à quel malheur les reduit le peché !</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>L’on y voit une Scylle en des chiens transfomée,</l>
+            <l>L’espouventable crin du Lyon de Nesmée ;</l>
+            <l>Le Serpent qu’autrefois l’invincible Jason</l>
+            <l>Mit à mort quand il fut conquerir la Toison.</l>
+            <l><milestone unit="sent"/>Cet enfant de Vulcain qui n’avoit point de mere,</l>
+            <l>Les Jumens qui mangeoient le cadavre d’Abdere,</l>
+            <l>Des Centares, des Linx, Briaree à cent brac,</l>
+            <l>Qui sembloit deffier les Dieux et le trespas,</l>
+            <l><pb n="57" xml:id="p57"/>Et qui pour s’élever des plus basses campagnes,</l>
+            <l>Porta dedans le Ciel le sommet des montagnes,</l>
+            <l>En vous voyant paroistre ils courront dessus vous,</l>
+            <l>Hurlans en apparence et remplis de courroux,</l>
+            <l>Mais sans vous estonner de leurs troupes farouches</l>
+            <l>Usez de cette voix qui faict mouvoir les souches,</l>
+            <l>D’abord ils tomberont perclus de mouvement.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ce salutaire advis m’oblige infiniment.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Les ayant arrestez avec fort peu de peine</l>
+            <l>Il faut long-temps errer dans une vaste plaine,</l>
+            <l>Ou ceux de qui les mains par le sanglant effort</l>
+            <l>D’un cruel desespoir precipitent le sort,</l>
+            <l>Viennent prés de Minos recevoir le supplice,</l>
+            <l>Et tout le bastiment qu’il plaist à sa justice ;</l>
+            <l>De là vous entrerez dans un bois escarté</l>
+            <l>Que l’on diroit qu’amour à luy-mesme planté</l>
+            <l>Pour servir de retraite à ceux à qui ses fleches</l>
+            <l>Ont fait quand il vivoient d’inevitables breches.</l>
+            <l><milestone unit="sent"/>Là l’on conserve encor en depit du cercueil</l>
+            <l>La memoire, les traits et la beauté d’un œil ;</l>
+            <l>Tousjours les passions agitent la pensee,</l>
+            <l>Et n’en sortent jamais dés que l’ame est blessee.</l>
+            <l><milestone unit="sent"/>Si bien que vous verrez presque à chaque moment,</l>
+            <l>Souspirer une Amante en cherchant son Amant.</l>
+            <l><pb n="58" xml:id="p58"/><milestone unit="sent"/>Qui par d’autres costez d’une voix enflammées</l>
+            <l>Fait retenir le nom de la personne aymée.</l>
+            <l><milestone unit="sent"/>Passant un peu plus loin vous verrez les guerriers</l>
+            <l>Que le monde autrefois a couvert de lauriers :</l>
+            <l><milestone unit="sent"/>Et de qui la valeur aux hommes redoutable,</l>
+            <l>A choisi dessous terre un lieu considerable.</l>
+            <l><milestone unit="sent"/>Tous ceux qui perissans pour un juste subjet,</l>
+            <l>Ont tousjours eu la gloire et l’honneur pour objet.</l>
+            <l><milestone unit="sent"/>Tous ceux qui defendant l’enclos de leurs murailles</l>
+            <l>Ont pour leurs Citoyens emporté des batailles.</l>
+            <l><milestone unit="sent"/>Tous ceux qui dans l’assaut sur le bord d’un fossé</l>
+            <l>Ont genereusement l’ennemy repoussé,</l>
+            <l>Reposent dans ces lieux goustans mille delices ;</l>
+            <l>Boyent proche de là dedant d’estranges suplices</l>
+            <l>Ceux qui trop amoureux de leur propre tresor,</l>
+            <l>Ont vendu leur pays pour acquerir de l’or.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ah ! Veritablement ses ames genereuses</l>
+            <l>Meritent d’habiter des plaines bien-heureuses.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>En les abandonnant vous verrez des chemins</l>
+            <l>Sur qui vous trouverez d’autres lieux inhumains.</l>
+            <l><milestone unit="sent"/>Il vous faut parvenir au bas d’une vallee,</l>
+            <l>Que les Dieux infernaux ont loing d’eux reculee :</l>
+            <l><milestone unit="sent"/>Où l’on voit eslever un superbe Chasteau,</l>
+            <l>Qui presente à l’abord un objet si nouveau</l>
+            <l><pb n="59" xml:id="p59"/>Qu’il faut absolument croire qu’en ce lieu mesme,</l>
+            <l>L’on exerce du Ciel la vengeance supresme.</l>
+            <l><milestone unit="sent"/>Ce chasteau sous l’abry d’un funeste Rocher,</l>
+            <l>Dont les yeux sans terreur n’oseroient approcher,</l>
+            <l>Est ceint de tous costez de murailles si fortes,</l>
+            <l>De si fermes ramparts et de si dures portes,</l>
+            <l>Que chacun peut juger par ses retranchemens</l>
+            <l>Qu’en ce lieu la vangeance a des appartemens.</l>
+            <l><milestone unit="sent"/>Phlegeton dont la source est au creux du Tartare,</l>
+            <l>Environne trois fois cette maison barbare,</l>
+            <l>Et par un cours rapide entraisnant les cailloux,</l>
+            <l>Tesmoigne de Pluton l’implacables couroux.</l>
+            <l><milestone unit="sent"/>Sur une tour de fer que ce fleuve environne,</l>
+            <l>L’on voit et nuict et jour surveiller Tisiphone,</l>
+            <l>Qui la roche à la main par d’effroyable cris,</l>
+            <l>Fait trembler de frayeur les malheureux esprits.</l>
+            <l><milestone unit="sent"/>Vous entendrez de loing du bruit des coups de chaines</l>
+            <l>Des fers qu’on va traisnant, des pleurs, des plaintes vaynes,</l>
+            <l>Et tout ce que l’Enfer a jamais inventé,</l>
+            <l>Pour satisfaire aux loix de la divinité.</l>
+            <l><milestone unit="sent"/>L’on met dans cette tour, ceux qui plains de malice,</l>
+            <l>Ont quitté la vertu pour adorer le vice,</l>
+            <l>Ou parmy la torture et les embrasemens</l>
+            <l>Tisiphonne leur fait souffrir mille tourmens,</l>
+            <l>Car d’une main ardante à croistre leurs miseres,</l>
+            <l>Elle leur porte aux yeux des faisseaux de viperes,</l>
+            <l><pb n="60" xml:id="p60"/>Et sans aucun repos les poursuivans tousjours</l>
+            <l>Elle appelle Alecton et Megere au secours,</l>
+            <l>Qui courant à sa voix beaucoup plus inhumaines,</l>
+            <l>Prolongent leur supplice et font croistre leur peines.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ceux que l’on y punit avoient bien merité</l>
+            <l>Le juste chastiment de leur meschanceté.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>De là vous passerez dans une estroite voye,</l>
+            <l>Dont Eaque a banny le plaisir et la joye,</l>
+            <l>Qui conduira à vos pas pleins de champs de malheurs</l>
+            <l>Où vous remarquerez de nouvelles douleurs,</l>
+            <l>Vous verrez prés des eaux l’infortuné Tantale,</l>
+            <l>Au milieu des douceurs d’une table Royale,</l>
+            <l>Tousjours pleine de mets aussi delicieux,</l>
+            <l>Que ceux dont on se sert à la table des Dieux ;</l>
+            <l>Il meurt tousjours de faim d’autant que les Harpies,</l>
+            <l>Le regardant de loing dessous l’herbe tapies</l>
+            <l>Se jettent contre luy quant il les veut toucher,</l>
+            <l>Et malgré qu’il en ait les luy vont arracher.</l>
+            <l><milestone unit="sent"/>Vous trouverez encor Ixion sur sa rouë,</l>
+            <l>Les filles de Belus dont un démon se jouë,</l>
+            <l>Et ses mesmes Titans que les lustres passez</l>
+            <l>Ont veu d’un coup de foudre icy bouleversez,</l>
+            <l>Mais sans errer beaucoup dans cette nuict espaisse,</l>
+            <l>Ne vous arrestez point quelque objet qui paroisse,</l>
+            <l><pb n="61" xml:id="p61"/>Entrez dans le Palais qui s’eleve à l’entour,</l>
+            <l>Car c’est dans cet enclos que Pluton tient sa Cour.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Si je revois le Ciel chacun à mon exemple</l>
+            <l>Vous dressera par tout un magnifique Temple.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Nous sommes abordez, r’asseurez vostre esprit.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>C’est donc là le portail que vous m’avez descrit.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>C’est luy-mesme, passez, et faites que la crainte</l>
+            <l>Vous rencontre tousjours exempt de son atteinte.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Je mesprise l’effect de ses traicts vigoureux,</l>
+            <l>Son pouvoir ne peut rien sur un cœur amoureux.</l>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>Acte IV</head>
+        <div type="scene">
+          <head>Scène I</head>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>seul, approche<note place="bottom" resp="KS">Nous corrigeons « proche » par
+                « approche ».</note> le Palais de Pluton</stage>
+            <l><milestone unit="sent"/><pb n="62" xml:id="p62"/>De ceste abisme affreux soyez benit mon pere,</l>
+            <l>Tout me va succeder ainsi que je l’espere,</l>
+            <l>Les Parques aujourd’huy d’une fatale main,</l>
+            <l>Pour aller chez Pluton m’ont ouvert un chemin,</l>
+            <l>Alors que j’ay passé l’effroyable Cerbere,</l>
+            <l>Surpris de mes chansons a<note place="bottom" resp="KS">Nous corrigeons « à » par
+                « a ».</note> perdu sa colere,</l>
+            <l><pb n="63" xml:id="p63"/>Je l’ay veu prés de moy plein de ravissement</l>
+            <l>Aux portes des Enfers dormir profondement.</l>
+            <l><milestone unit="sent"/>Ainsi que mes regrets qui sont mes seules armes,</l>
+            <l>Obligeoient la mort mesme à respandre des larmes.</l>
+            <l><milestone unit="sent"/>Les Esprits delivrez de ces lieux criminels</l>
+            <l>Où l’on leur fait souffrir des tourmens eternels,</l>
+            <l>M’accompagnant tousjours dans ce funeste Empire</l>
+            <l>Se sont laissez charmer aux accens de ma Lyre,</l>
+            <l>Estimant que j’estois quelqu’un d’entre les Dieux</l>
+            <l>Qui venoit les tirer de ses horribles lieux,</l>
+            <l>Des plus nobles Heros les ombres genereuses,</l>
+            <l>Des fideles Amants les ames bien-heureuses,</l>
+            <l>Le front environné d’herbe et de roseaux</l>
+            <l>Ont quitté le Coxitte et l’horreur de ses eaux,</l>
+            <l>Pour entendre ma voix ; dont resonnoient les rives</l>
+            <l>De ces marais bourbeux, qui les tiennent captives.</l>
+            <l><milestone unit="sent"/>Enfin loin de mes yeux tous les demons bannis,</l>
+            <l>Ixion et Thesee ont veu leurs maux finis.</l>
+            <l><milestone unit="sent"/>Mais n’aperçois-je pas des augustes portiques,</l>
+            <l>L’or éclate sur eux, des colonnes doriques,</l>
+            <l>D’un art ingenieux en soustiennent le fais,</l>
+            <l>Et je crois que Pluton regne dans ce Palais.</l>
+            <l><milestone unit="sent"/>Les murs plains de rubis, de perles, de Hyacintes,</l>
+            <l>Font voir de ce sejour les plus riceintes,</l>
+            <l>Plus bas le feu qui sort et les coups des marteaux</l>
+            <l>M’apprennent qu’un Ciclope y dresse ses fourneaux ;</l>
+            <l>Ne deliberons plus, entrons, l’heure est propice,</l>
+            <l>C’est icy qu’il me faut demander Euridice,</l>
+            <l><pb n="64" xml:id="p64"/>Mon Pere assiste moy, favorable à mes vœux,</l>
+            <l>Fais moy gouster le fruict de mes soins amoureux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>Un mortel, dites vous, s’apreste à me defir,</l>
+            <l>Il ose traverses mon tenebreux Empire ;</l>
+            <l>Et me voulant ravir le pouvoir que le sort</l>
+            <l>M’a conservé tousjours au throsne de la mort,</l>
+            <l>Destache des prisons les ames criminelles,</l>
+            <l>Termine absolument leurs peines eternelles :</l>
+            <l><milestone unit="sent"/>Et pour me mieux braver, vient promettre aux damnez</l>
+            <l>Un sejour asseuré dans les champs fortunez.</l>
+            <l><milestone unit="sent"/>Ainsi donc tous les jours Jupiter qui me brave</l>
+            <l>Exigera de moy le tribut d’un esclave,</l>
+            <l>M’envoyant des Heros pour me deposseder,</l>
+            <l>En un lieu que sans luy l’on ne peut aborder.</l>
+            <l><milestone unit="sent"/>Non, non, je cognois bien quelle est sa perfidie,</l>
+            <l>Aussi j’ay resolu que l’on y remedie ;</l>
+            <l><pb n="65" xml:id="p65"/>J’ay des forces en main qui luy feront sentir</l>
+            <l>Les plus vives douleurs que cause un repentir,</l>
+            <l>Qu’on aille delivrer de leur antre nocturne</l>
+            <l>Et nostre mere Rhee et le pere Saturne,</l>
+            <l>Le Ciel est leur Royaume, et c’est injustement</l>
+            <l>Qu’on voit regner ce traistre en leur appartement,</l>
+            <l>Qu’on ouvre mes cachots, et que les aloïdes</l>
+            <l>S’esloignent des demons qui les rendent timides,</l>
+            <l>que pour luy faire voir quel est le déplaisir</l>
+            <l>Dont cet evenement vient mon ame saisir,</l>
+            <l>Au mespris de ses loix dont la course est bornee</l>
+            <l>Que l’on laisse en repos Titie et Salmonee,</l>
+            <l>Que l’on prenne sa place arrachant de ses mains</l>
+            <l>Ler armes dont il perd les plus nobles humains,</l>
+            <l>Et que l’autre portant par les villes d’Élide</l>
+            <l>L’éclat miraculeux qui sort de son Ægide,</l>
+            <l>Dessus un pont d’airain imite en liberté</l>
+            <l>Le foudre et les esclairs dont il fait vanité,</l>
+            <l>Il abisme aux Enfers, je suis depositaire</l>
+            <l>De tout ce qu’il redoute et qui le peut défaire,</l>
+            <l>Et pour ma recompense il produit des mortels</l>
+            <l>Qui se vantent d’offrir mon sceptre à ses Autels.</l>
+            <l><milestone unit="sent"/>Mais je luy feray voir si dans son heritage</l>
+            <l>Il contera ces lieux qui sont de mon partage.</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/><pb n="66,"/>Calmez vostre fureur, du moins si vous m’aymez,</l>
+            <l>Les hommes sont meschans sans qu’ils soient animez.</l>
+            <l><milestone unit="sent"/>Jupiter ne veut point acquerir des victoires</l>
+            <l>En se rendant Seigneur de vos Provinces noires,</l>
+            <l>Se voyant relevé dans l’estat glorieux</l>
+            <l>De gouverner la terre et de regner aux Cieux,</l>
+            <l>Croyez-vous qu’il voulust d’une estrange manie</l>
+            <l>Exercer dessus vous la moindre tyrannie ?</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>Ne venez point ainsi flatter ma passion,</l>
+            <l>Je cognois sa malice et son ambition ;</l>
+            <l>Il veut depuis long-temps d’une haine commune</l>
+            <l>S’acquerir mon Trident et celuy de Neptune,</l>
+            <l>Il ne veut point de Dieu qui puisse resister,</l>
+            <l>Qui depossede un pere, ose tout attenter.</l>
+            <l><milestone unit="sent"/>Toutesfois sa conqueste est un peu difficile.</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/>Ne vous souvient-il plus qu’au bord de la Sicile,</l>
+            <l>Lors que pour me ravir vous fendistes les monts</l>
+            <l>Environné de feux et suivi de Demons,</l>
+            <l>Qu’un pareil differend vous avoit fait resoudre</l>
+            <l>D’exciter les Titans pour luy ravir le foudre,</l>
+            <l><pb n="67" xml:id="p67"/>Et que recognoissant son extréme bonté</l>
+            <l>Vous fustes déplaisant de l’avoir irrité.</l>
+            <l><milestone unit="sent"/>Regnez paisible ici sans émouvoir la guerre,</l>
+            <l>Possedez le trident, laissez-luy la tonnerre.</l>
+          </sp>
+          <sp who="radamante">
+            <speaker>Radamante</speaker>
+            <l><milestone unit="sent"/>Avant que témoigner quel est vostre courroux</l>
+            <l>Que de rompre la paix qui subsiste entre vous,</l>
+            <l>Pour moy je suis d’advis qu’on sçache qui des hommes</l>
+            <l>Alors si nous voyons que cet ambitieux</l>
+            <l>Nous trouble de la sorte inspiré par les Cieux,</l>
+            <l>Sans plus vous arrester pour conspirer sa perte,</l>
+            <l>Armez tous vos subjects et faites guerre ouverte.</l>
+            <l><milestone unit="sent"/>Que si cet insolent au mespris du cercueil</l>
+            <l>Nous venoit offenser seulement par orgueil,</l>
+            <l>Il le faut condamner au marais du Coxitte,</l>
+            <l>Et luy faire souffrir la peine qu’il merite.</l>
+            <l><milestone unit="sent"/>Mais Alecton arrive, il la faut escouter,</l>
+            <l>Quelque important subject l’oblige à se haster.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/><pb n="68" xml:id="p68"/>Alecton, luy faut-il envoyer ma Couronne ?</l>
+            <l><milestone unit="sent"/>Apprens-moy ses progrez, ton silence m’estonne.</l>
+          </sp>
+          <sp who="alecton">
+            <speaker>Alecton</speaker>
+            <l><milestone unit="sent"/>Ne craignez point ses coups, ses chants harmonieux</l>
+            <l>M’apprennent que l’amour est logé dans ses yeux,</l>
+            <l>Et que le Dieu sanglant qui preside aux allarmes</l>
+            <l>Ne l’a jamais nourry dans la fureur des armes.</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>Par ce mot je comprens quel est mon ennemy,</l>
+            <l>Ha, que mon foible esprit estoit bien endormy !</l>
+            <l><milestone unit="sent"/>Alors que je voulois, transporté de colere,</l>
+            <l>Venger ce déplaisir dessus mon propre frere.</l>
+            <l><pb n="69" xml:id="p69"/><milestone unit="sent"/>Les destins m’ont appris au bord de l’acheron</l>
+            <l>Qu’un amant forceroit et Cerbere et Caron ;</l>
+            <l>Qu’apres il passeroit parmy les ombres vaines,</l>
+            <l>Suspendant pour un temps leurs rigoureuses peines,</l>
+            <l>Pour venir implorer ma derniere faveur</l>
+            <l>Et me prendre à témoin de sa juste douleur.</l>
+            <l><milestone unit="sent"/>Mais j’estime qu’en vain il quitte la lumiere.</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/>Sans luy rien accorder escoutez sa priere,</l>
+            <l>Est-il bien esloigné, nous le peux-tu monstrer.</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>S’il est proche d’icy commande luy d’entrer.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <label>Harangue d’Orphée</label>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+
+            <l><milestone unit="sent"/><pb n="70" xml:id="p70"/>Monarque des enfers dont le pouvoir enserre</l>
+            <l>Tous les tresors qui sont au centre de la terre,</l>
+            <l>Qui punis les pechez, et de qui l’equité</l>
+            <l>Rend ou donne à chacun ce qu’il a merité.</l>
+            <l><milestone unit="sent"/>Arbitre souverain de ses mornes Royaumes,</l>
+            <l>Ou d’un nombre pareil à celuy des atomes,</l>
+            <l>Les mortels chaque jour s’acquittent de ce droit</l>
+            <l>Que depuis si long-temps la nature vous doit,</l>
+            <l>Jupiter infernal qui dans l’horrible gouffre</l>
+            <l>Faites tousjours brûler le bithume et le souffre</l>
+            <l>Pour servir de supplice à ceux dont le mespris</l>
+            <l>Obligerent les Dieux à punir les Esprits,</l>
+            <l><pb n="71" xml:id="p71"/>Ne vous estonnez pas si d’une audace extreme</l>
+            <l>J’ay traversé le Stix et son rivage blesme,</l>
+            <l>Je ne viens point icy pour rompre vostre paix,</l>
+            <l>Pour troubler vostre Cour ou vos tristes Palais,</l>
+            <l>Ny pour traisner captif du milieu de ses flames</l>
+            <l>Le portier qui surveille à la garde des ames,</l>
+            <l>Afin que signalant mon illustre renom</l>
+            <l>Je me fasse adorer aux autels de Junon.</l>
+            <l><milestone unit="sent"/>Je ne viens point icy pour delivrer Titie,</l>
+            <l>Ny pour voir d’Ixion la peine divertie ;</l>
+            <l>Je ne demande point d’inutiles propos</l>
+            <l>Que l’on laisse Phlegie et Sisiphe en repos,</l>
+            <l>Ny que des vieux Titans la famille abolie</l>
+            <l>Une seconde fois aux champs de Tessalie,</l>
+            <l>Sur Osse et Pelion d’un projet furieux</l>
+            <l>Fasse gémir la terre et trembler tous les Dieux.</l>
+            <l><milestone unit="sent"/>Enfin je ne viens point parmy mes adventures</l>
+            <l>Tirer les criminels de leurs prisons obscures,</l>
+            <l>Pour raconter à ceux qui sont dans l’Univers</l>
+            <l>Que j’ay vaincu Pluton et dompté les Enfers.</l>
+            <l><milestone unit="sent"/>Je demande plutost d’une amour sans seconde</l>
+            <l>Ce qu’on vit autrefois de plus beau dans le monde,</l>
+            <l>Amour des immortels le plus puissant de tous</l>
+            <l>Humble et respectueux me fait venir chez vous</l>
+            <l>Pour obtenir un bien que vous venez de prendre,</l>
+            <l>Que vous pouvez garder et que vous pouvez rendre,</l>
+            <l>Euridice m’oblige à venir en ce lieu</l>
+            <l><pb n="72" xml:id="p72"/>Pour implorer justice au tribunal d’un Dieu,</l>
+            <l>Elle qui m’ordonnant un eternel veufvage</l>
+            <l>A senty d’un aspic la venimeuse rage,</l>
+            <l>Sans qu’il me fust permis en luy donnant secours</l>
+            <l>De divertir le mal qui menaçoit ses jours,</l>
+            <l>Et que j’eusse cueilly sur ses levres de roses</l>
+            <l>Les beautez que l’amour sembloit avoir escloses.</l>
+            <l><milestone unit="sent"/>J’ay long-temps consulté, mais enfin la douleur</l>
+            <l>De qui le traict sanglant égale mon malheur,</l>
+            <l>M’a reduit à tel poinct que malgré ma constance</l>
+            <l>Je cherche en ce lieu ma derniere esperance</l>
+            <l>Qui ne finira point si par vostre bonté</l>
+            <l>Euridice dans peu ne revoit la clarté,</l>
+            <l>Rendez donc à mes pleurs son ame prisonniere,</l>
+            <l>Flechissez, flechissez à ma juste priere,</l>
+            <l>Et montrez aux mortels d’un genereux effort</l>
+            <l>Que fermant d’une main l’empire de la mort,</l>
+            <l>De l’autre vous pouvez contentant mon envie</l>
+            <l>Ouvrir quand il vous plaist les portes de la vie,</l>
+            <l>S’il vous souvient du rapt qu’au milieu des forests</l>
+            <l>L’amour a fait pour vous autresfois à Cerés,</l>
+            <l>Quoy qu’à la verité mon audace soit grand</l>
+            <l>Vous ne pourrez jamais condamner ma demande.</l>
+            <l><milestone unit="sent"/>Pour mieux vous obliger et m’accorder ce bien</l>
+            <l>De rejoindre nos cœurs par un sacré lien,</l>
+            <l>Et de me redonner cette rare merveille</l>
+            <l>Dont jamais le Soleil ne verra la pareille.</l>
+            <l><pb n="73" xml:id="p73"/><milestone unit="sent"/>Vous considererez qu’entre tous les humains,</l>
+            <l>Dont je vous vois porter le Sceptre dans les mains,</l>
+            <l>« Nul ne peut éviter par le cours des annees</l>
+            <l>Les eternelles loix que font les destinees ;</l>
+            <l>L’Acheron est un port sur qui chacun se rend,</l>
+            <l>Et la Parque y conduit tout ce qu’elle surprend. »</l>
+            <l><milestone unit="sent"/>Si bien que tost ou tard, une forte puissance</l>
+            <l>Nous amene en ces lieux, où regne le silence :</l>
+            <l><milestone unit="sent"/>Les Bergers et les Rois traitez également</l>
+            <l>S’y rendent devant vous presque à chaque moment,</l>
+            <l>Et son aage parfait celle que je demande</l>
+            <l>Repassera la barque et rejoindra leur bande,</l>
+            <l>Ainsi vous ne perdrez si vous me la rendez,</l>
+            <l>Aucuns de tous les droicts que vous y pretendez.</l>
+            <l><milestone unit="sent"/>J’oze la demander par la peur incroiable</l>
+            <l>Que porte dans l’esprit vostre throsne effroiable,</l>
+            <l>Par le sombre cahos, par l’horreur de la nuit,</l>
+            <l>Qui de vos habitans a separé le bruit.</l>
+            <l><milestone unit="sent"/>Par les fleches d’amour, par ses ardeurs si saintes,</l>
+            <l>Dont vous avez senti les plus vives atteintes.</l>
+            <l><milestone unit="sent"/>Par tout ce qu’à jamais inspiré la pitié ;</l>
+            <l>Par le char qui ravit vostre chaste moitié,</l>
+            <l>Et par ce qu’eust jamais de plus considerable</l>
+            <l>L’éclat majestueux d’un visage adorable.</l>
+          </sp>
+          <label>Réponse de Pluton</label>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+
+            <l><milestone unit="sent"/>Quoy que jamais mes yeux dans ce lieu de douleurs</l>
+            <l>Amollis de pitié n’ayent respandu des pleurs,</l>
+            <l><pb n="74" xml:id="p74"/>Quoy que je n’aye jamais fléchy dessous les plaintes</l>
+            <l>Je sens dans mon esprit des severes contraintes,</l>
+            <l>Touché de ses regrets l’entendant souspirer</l>
+            <l>J’ay trouvé comme luy l’usage de pleurer.</l>
+            <l><milestone unit="sent"/>Toy qui suivant l’Amour ne crois rien impossible</l>
+            <l>Comme as-tu pû trouver cette terre invisible ?</l>
+            <l><milestone unit="sent"/>N’avois-tu pas appris que revestu du corps</l>
+            <l>L’on ne peut penetrer dans l’Empire des morts ?</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <lg>
+              <l><milestone unit="sent"/>Je sçay qu’on ne vient point dans la fatale barque</l>
+              <l>Qu’on n’ait auparavant satisfait à la parque,</l>
+              <l>Qu’avant qu’entrer icy l’on entre au monument,</l>
+              <l>Aussi si j’ay failly qu’on m’ordonne un tourment,</l>
+              <l>Que vostre Deité qu’à genoux je reclame,</l>
+              <l>Daigne considerer qu’ayant perdu mon ame,</l>
+              <l>Et que ne me restant d’un mortel que la voix,</l>
+              <l>Je n’ay point transgressé vos rigoureuses loix.</l>
+              <l><milestone unit="sent"/>De ma vie, Euridice autrefois fut la source,</l>
+              <l>Alors qu’elle mourut elle en finit la course,</l>
+              <l>Mais mes raisonnemens ne font que l’irriter,</l>
+              <l>Son oreille desja ne veut plus m’écouter.</l>
+              <l><milestone unit="sent"/>Mon luth, c’est sur toy seul que ma gloire se fonde,</l>
+              <l>Si tu charmas les Cieux charme ce triste monde.</l>
+            </lg>
+            <lg>
+              <label>Chanson d’Orphée</label>
+              <l><milestone unit="sent"/>Grand Dieu si jamais vostre cœur</l>
+              <l>A cognu l’Amour pour vainqueur,</l>
+              <l>Écoutez un Amant fidele ;</l>
+              <l>Rendez Euridice à mes pleurs,</l>
+              <l>Ou bien pour finir mes douleurs</l>
+              <l>Faites-moy mourir auprez d’elle</l>
+              <l>Ne me dites point que la mort</l>
+              <l>Ne rend jamais ceux que le sort</l>
+              <l>Fait tomber dessous vostre empire ;</l>
+              <l>Amour s’oppose à cette loy,</l>
+              <l>Vous fustes Amant comme moy,</l>
+              <l>Jugez donc quel est mon martyre.</l>
+            </lg>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <stage>à Proserpine</stage>
+            <l><milestone unit="sent"/>Touché de ses chansons, amolly par ses Vers</l>
+            <l>J’ignore si je suis le Prince des Enfers.</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/>Oserois-je grand Dieu vous faire une requeste</l>
+            <l>Dans la solennité d’une si grande feste.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Elle prend mon party, je suis victorieux.</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/>Si l’amour autrefois a regné dans ces lieux,</l>
+            <l>Si de me posseder vous eustes quelque envie</l>
+            <l>Moderez la douleur qui va finir sa vie,</l>
+            <l>Rendez-luy la beauté qui le fait soupirer.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Si vous estes pour moy je dois tout esperer.</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <stage>à Proserpine</stage>
+            <l><milestone unit="sent"/>Je vous accorde tout, Alecton qu’on l’appelle</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>À cet Arrest divin mon plaisir renouvelle</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>Auparavant cela je desire sçavoir</l>
+            <l>Si je ne blesse point ma gloire et mon pouvoir</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <l><milestone unit="sent"/>Sans plus deliberer, rendez-luy son Amante.</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/>Je veux dessus ce poinct consulter Radamante.</l>
+            <stage><milestone unit="sent"/>Il se leve. Proserpine, Radamante et Minos consultent avec luy, cependant Alecton
+              ameine l’ombre d’Euridice</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/><pb n="77" xml:id="p77"/>Grande Divinité, ne vous obstinez pas</l>
+            <l>À retenir un bien que me prend le trépas ;</l>
+            <l>Quoy que vous soyez Dieu de l’eternelle flame,</l>
+            <l>La flame de l’Amour a consumé vostre ame,</l>
+            <l>Et malgré vos braziers d’un effort genereux</l>
+            <l>Hymen dans ce Palais a fait luire ces feux.</l>
+            <l><milestone unit="sent"/>Vous deesse aux trois noms que le monde revere</l>
+            <l>Ne m’abandonnez point, c’est en vous que j’espere,</l>
+            <l>À vous qui punissez les crimes qu’ont commis</l>
+            <l>Tous ceux que le Ciel conte entre ses ennemis,</l>
+            <l>Qui donnez une peine à leur malice deuë,</l>
+            <l>Permettez qu’Euridice à mes vœux soit renduë.</l>
+          </sp>
+          <label>Jugement de Pluton</label>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+
+            <l><milestone unit="sent"/>De ce trosne eternel où les destins m’ont mis,</l>
+            <l>Devant qui les defuncts à mes loix sont soumis,</l>
+            <l>Je te veux prononcer un Arrest favorable,</l>
+            <l>Cesse de t’affliger, ne sois plus miserable,</l>
+            <l>Ne verse plus de pleurs, gouste mille plaisirs</l>
+            <l>Euridice est renduë à tes chastes desirs.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ô bonté souveraine ! <milestone unit="sent"/>Ô divine sentence</l>
+            <l>Digne de vostre bouche et de vostre puissance.</l>
+          </sp>
+          <sp who="pluton">
+            <speaker>Pluton</speaker>
+            <l><milestone unit="sent"/><pb n="78" xml:id="p78"/>Mais hors de mon Palais ne tourne point les yeux</l>
+            <l>Qu’alors que tu verras la lumiere des Cieux,</l>
+            <l>Oui bien sois asseuré que son ombre ravie</l>
+            <l>Ne goustera jamais les plaisirs de la vie.</l>
+            <l><milestone unit="sent"/>Pour toy nous t’ordonnons qu’en suivant ton espoux</l>
+            <l>Dont la voix aujourd’huy calme nostre courroux,</l>
+            <l>D’observer en marchant un rigoureux silence.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>L’ombre d’Euridice</speaker>
+            <stage>bas</stage>
+            <l><milestone unit="sent"/>Quelle dure contrainte et quelle violence ?</l>
+          </sp>
+          <sp who="proserpine">
+            <speaker>Proserpine</speaker>
+            <stage>à Orphée</stage>
+            <l><milestone unit="sent"/>C’est à toy de sçavoir regir ta passion.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ah ! j’accepte à genoux cette condition ;</l>
+            <l>Ainsi puisse Cerbere ses cavernes sombres</l>
+            <l>Par des cris eternels épouventer les ombres :</l>
+            <l><milestone unit="sent"/>Ainsi puisse à jamais la justice des Cieux</l>
+            <l>Punir dans vos cachots les esprits vitieux :</l>
+            <l><milestone unit="sent"/>Ainsi puisse à jamais la mort devant vos sieges</l>
+            <l>Presenter les mortels qui tombent dans ses pieges :</l>
+            <l><milestone unit="sent"/>Ainsi puisse à jamais endurer Ixion</l>
+            <l>Proche du triple corps de l’affreux Gerion,</l>
+            <l><pb n="79" xml:id="p79"/>Ainsi puisse à jamais la terre vous construire</l>
+            <l>Un temple que le temps ne puisse pas destruire.</l>
+            <l><milestone unit="sent"/>Enfin suivant mes vœux puissiez-vous à jamais</l>
+            <l>D’un paisible repos regner dans vos Palais.</l>
+            <stage><milestone unit="sent"/>Les Dieux d’Enfer se levent et s’en vont.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Sage fils d’Apollon dont l’ame genereuse</l>
+            <l>S’est ouvert un chemin dans la nuict tenebreuse,</l>
+            <l>De quelle recompense et de quels complimens</l>
+            <l>Pourray-je satisfaire à mes ressentimens ?</l>
+            <l><milestone unit="sent"/>Vostre plainte força les prisons les plus fortes,</l>
+            <l>L’Enfer à vos douleurs ouvrit les tristes portes,</l>
+            <l>Les trois cruelles sœurs sont l’esprit irrité</l>
+            <l>Se plaist parmy le sang et dans la cruauté,</l>
+            <l>En differant le cours de leurs tragiques œuvres</l>
+            <l>Laisserent de leurs mains escouler les couleuvres,</l>
+            <l><pb n="80" xml:id="p80"/>Leur flambeau fut esteint, et mesme la pitié</l>
+            <l>S’emparant de leur cœur y plaça l’amitié,</l>
+            <l>Les Gorgonnes, les Sphinx avec l’hydre de Lerne</l>
+            <l>Escouterent vos airs du fond de leur caverne ;</l>
+            <l>Aux accens dont par tout resonnoient ses Palais,</l>
+            <l>La Chimere sortit de ses sales marais,</l>
+            <l>La nuict dans son enclos resta comme confuse,</l>
+            <l>L’horreur ne parut plus sur le chef de Meduse,</l>
+            <l>Cerbere en vous voyant par trois diverses fois</l>
+            <l>Fermant ses trois gosiers estouffa ses trois voix,</l>
+            <l>Et sentant de son flanc toute rage bannie</l>
+            <l>Fut touché de vos chants et de vostre harmonie.</l>
+            <l><milestone unit="sent"/>Mais ce ne fut pas tout, un autre evenement</l>
+            <l>Adjousta de beaucoup à ce ravissement :</l>
+            <l><milestone unit="sent"/>Vous fustes si puissant, vous eustes tant de charmes</l>
+            <l>Que la mort oublia l’usage de ses armes,</l>
+            <l>Si bien que tout le temps qu’on la vid s’arrester</l>
+            <l>Dans ce commun plaisir pour vous ouyr chanter,</l>
+            <l>Nul d’entre les mortels n’esprouva la puissance</l>
+            <l>Qu’elle garde sur nous depuis nostre naissance.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Elle perdit son arc et ses traits en effect,</l>
+            <l>Et mesme souspira du mal qu’elle avoit fait.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Sisiphe adoucissant son mal à vostre approche</l>
+            <l>Adora vos chansons assis dessus sa roche,</l>
+            <l><pb n="81" xml:id="p81"/>Sans qu’il se void contraint en ce jour solennel</l>
+            <l>De plus continuer son supplice eternel.</l>
+            <l><milestone unit="sent"/>Les Princesses d’Argos voyant finir leurs peines</l>
+            <l>S’estonnerent d’abord de voir leur cruches pleines,</l>
+            <l>Et qu’un fâcheux demon leur permist d’écouter</l>
+            <l>Vos celestes accords sans les épouventer.</l>
+            <l><milestone unit="sent"/>Tantale beut de l’eau, la main de Tisiphone</l>
+            <l>Ne luy déroba plus les presens de l’Automne,</l>
+            <l>Il vous loüa tout haut, s’assit sans murmurer,</l>
+            <l>Et dit que les mortels vous devoient adorer.</l>
+            <l><milestone unit="sent"/>L’equitable Minos de qui l’ame s’applique,</l>
+            <l>À sceller les decrets de ce lieu tyrannique,</l>
+            <l>Que le sort a commis pour Juge souverain,</l>
+            <l>Des loix que sa main grave en des tables d’airain,</l>
+            <l>Au lieu d’examiner pendant cette adventure</l>
+            <l>Les esprits criminels qu’il met à la torture,</l>
+            <l>D’un miracle inoüy fut si bien enchanté</l>
+            <l>Qu’il perdit la colere et la severité.</l>
+            <l><milestone unit="sent"/>Enfin la Parque fut jusqu’à ce poinct ravie,</l>
+            <l>Qu’ayant laissé tomber les ciseaux de la vie,</l>
+            <l>Sa main sas qu’elle creust de me donner secours,</l>
+            <l>Renoüa le filet qui conservoit mes jours.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ne m’attribuez point ces illustres miracles,</l>
+            <l>Lors qu’on vous doit servir on ne voit point d’obstacles,</l>
+            <l>C’est par vous seulement que mes soins ont produit</l>
+            <l>Apres tant de travaux un si glorieux fruit ;</l>
+            <l><pb n="82" xml:id="p82"/>Par vous j’ay captivé Caron dedans sa barque,</l>
+            <l>Par vous j’ay des Enfers adoucy le Monarque,</l>
+            <l>Par vous j’ay sur le Stix tes tourmens terminez</l>
+            <l>Qui travailloient toujours les malheureux damnez.</l>
+            <l><milestone unit="sent"/>Et pour dire en un mot d’une si grande chose,</l>
+            <l>Je ne suis que l’effect vous en estes la cause,</l>
+            <l>Si je n’avois aimé, si jamais vos beaux yeux</l>
+            <l>Ne m’avoient fait descendre en ses horribles lieux,</l>
+            <l>Jamais ma voix n’auroit obligé cette Lire</l>
+            <l>À toucher le tyran qui regne en cet Empire,</l>
+            <l>Mon cœur suivoit la loy d’un noble sentiment,</l>
+            <l>Malheureux que j’estois je paroissois amant,</l>
+            <l>Et sentant de mon sein toute crainte bannie,</l>
+            <l>Ma bouche ne parloit que par vostre genie.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Je ne meritois pas ces nobles sentimens,</l>
+            <l>Ny d’obtenir en vous le premier des amans</l>
+            <l>L’excez de vos bien-faits surpassent ma puissance,</l>
+            <l>Je resteray sans cœur et sans recognoissance.</l>
+            <l><milestone unit="sent"/>Mais changeant de propos de grace apprenez-moy</l>
+            <l>Si lors qu’avec mes yeux l’on vid mourir ma foy,</l>
+            <l>Le monde témoigna devant vous par sa plainte</l>
+            <l>Quelque ressentiment d’une mort si contrainte.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/><pb n="83" xml:id="p83"/>Alors qu’il plut au Ciel d’éloigner de ma veuë</l>
+            <l>Cette rare beauté dont vous estes pourveuë,</l>
+            <l>Je ne puis raconter de quel estonnement</l>
+            <l>Se vid saisir la terre à cet evenement.</l>
+            <l><milestone unit="sent"/>Les Nimphes des Forests d’une douleur commune</l>
+            <l>En sortant de leurs troncs plaindrent vostre infortune,</l>
+            <l>La Thrace s’affligea, la Nature souffrit,</l>
+            <l>Je vis pleurer le monde, et je perdis l’esprit,</l>
+            <l>On entendit d’abord une troupe affligee,</l>
+            <l>Faire retentir l’air aux rochers de Pangee ;</l>
+            <l>Qui descendant du haut de cet auguste mont,</l>
+            <l>S’en vint mesler des pleurs dans les eaux du Strimont ;</l>
+            <l>Rhodope dont la masse et la superbe teste</l>
+            <l>Sont au dessous des lieux où se fait la tempeste,</l>
+            <l>Fit par trois fois trembler ces sommets orgueilleux,</l>
+            <l>Et publia par tout que j’estois malheureux,</l>
+            <l>Je vis seicher les fleurs de la Grecque Orithie,</l>
+            <l>Vostre malheur toucha les peuples de Scithie,</l>
+            <l>Neptune en son enclos fut émeu de couroux,</l>
+            <l>Jupiter dans le Ciel fut affligé pour vous,</l>
+            <l>De voir qu’il fut contraint par une mort cruelle,</l>
+            <l>De vous faire obeïr à la loy naturelle.</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>Sans estre satisfait d’avoir paru charmant,</l>
+            <l>Vous me voulez encor obliger doublement,</l>
+            <l>Bien, puis que d’un bonheur qui n’a point de limite,</l>
+            <l><pb n="84" xml:id="p84"/>Le destin m’a donné plus que je ne merite,</l>
+            <l>Sans errer plus long-temps dans cette noire Cour,</l>
+            <l>Cherchons quelque chemin qui nous rende le jour.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VI</head>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>J’en vois un asseuré qui nous y peut conduire.</l>
+            <l><milestone unit="sent"/>Amour assiste-moy, garde bien de me nuire.</l>
+            <l><milestone unit="sent"/>Suivez-moy seulement je n’ose regarder,</l>
+            <l>Ne sois pas indiscret, tu l’a vais posseder.</l>
+          </sp>
+          <sp who="alecton">
+            <speaker>Alecton</speaker>
+            <stage>à l’esprit, en sortant</stage>
+            <l><milestone unit="sent"/>Marchons dessus ses pas, il perdra la memoire</l>
+            <l>Du serment qu’il a faict.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Que j’auray de la gloire</l>
+            <l>Alors que l’on verra la beauté qui me suit</l>
+            <l>Dans ses climats heureux où le Soleil reluit.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VII</head>
+          <stage><milestone unit="sent"/>Caron paroist avec sa barque chargee d’Esprits.</stage>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/><pb n="85" xml:id="p85"/>Depuis que Jupiter de la masse premiere</l>
+            <l>Fit sortir le Soleil autheur de la lumiere,</l>
+            <l>Depuis que sous le monde en des lieux reculez</l>
+            <l>Il bastit ces climats que la nuict a voilez,</l>
+            <l>Où le crime aux meschans establit un supplice,</l>
+            <l>J’exerce sur ces eaux ce penible exercice ;</l>
+            <l>Mais j’approche du bord, Esprits l’on vous apprend</l>
+            <l>Qu’en ce Royaume obscur la justice se rend,</l>
+            <l>Pluton dans son Palais d’une juste puissance</l>
+            <l>Cognoistra vos defauts ou bien vostre innocence.</l>
+            <l><milestone unit="sent"/>Il lira dans vos cœurs, vos plus secrets pechez</l>
+            <l>À ses yeux eternels ne seront point cachez.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VIII</head>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/><pb n="86" xml:id="p86"/>Euridice mon cœur, quand vous m’estes renduë</l>
+            <l>Je crains en mesme temps de vous avoir perduë,</l>
+            <l>L’amour faict sur mes sens un combat furieux,</l>
+            <l>Mon esprit est pressé d’un desir curieux,</l>
+            <l>La crainte le respect, l’honneur, l’obeissance,</l>
+            <l>Me font apprehender une auguste puissance.</l>
+            <l><milestone unit="sent"/>Je veux, je n’ose pas, je cherche qui me nuit ;</l>
+            <l>Le repos m’abandonne, et la douleur me suit ;</l>
+            <l>Je brûle de vous voir, mais je perds cette envie</l>
+            <l>Quand je me ressouviens que vous perdriez la vie,</l>
+            <l>Je fais vœu d’obeïr, et d’abord dans mon sein</l>
+            <l>Un autre sentiment succede à ce dessein,</l>
+            <l>Car les tristes pensers où la fureur me plonge,</l>
+            <l>Me font croire qu’icy tout passe pour un songe,</l>
+            <l>Et je crains justement de me trouver confus,</l>
+            <l>S’il faut qu’à mon réveil je ne vous trouve plus,</l>
+            <l><pb n="87" xml:id="p87"/>Mais je crains vainement l’authorité fatale</l>
+            <l>Du Prince qui regit cette terre infernale,</l>
+            <l>Ne sçauroit m’abuser, ce que donnent les Dieux</l>
+            <l>Est tousjours si parfaict et si Religieux</l>
+            <l>Qu’il n’en provient jamais une mauvaise issuë,</l>
+            <l>Quand je craignois pour vous mon ame estoit deceuë</l>
+            <l>Achevons cette course, et dans peu le Soleil</l>
+            <l>Fera voir à mes yeux un tresor sans pareil ;</l>
+            <l>Mais je veux que Pluton me tienne sa promesse,</l>
+            <l>Ne vous perdez-vous point dans cette nuit épaisse ?</l>
+            <l><milestone unit="sent"/>Suivez-vous bien mes pas dans ce regne inhumain,</l>
+            <l>Euridice parlez, ou tendez-moy la main,</l>
+            <l>Considerez le deüil de mon cœur qui soupire,</l>
+            <l>Faites de vostre voix retentir cette Empire,</l>
+            <l>Si vous vous égarez je courray promptement,</l>
+            <l>Et vous aurez bien-tost prés de vous vostre amant,</l>
+            <l>Mais ne me parlez point j’ay perdu la memoire,</l>
+            <l>Observez le silence, il y va de ma gloire,</l>
+            <l>Vous ne l’oseriez pas sans commettre un peché,</l>
+            <l>Qui dans ces sombres lieux ne seroit pas caché,</l>
+            <l>Mes yeux feront pour vous un si fidelle office,</l>
+            <l>Mes yeux n’en faites rien, je perdrois Euridice.</l>
+            <l><milestone unit="sent"/>Foible amant, lâche esprit, que deliberes-tu<note place="bottom" resp="KS">Nous
+                corrigeons « delibere-tu » par « deliberes-tu ».</note>,</l>
+            <l>Pluton ne punit pas un acte de vertu ;</l>
+            <l>Pluton vient de te faire une estroite defense.</l>
+            <l><milestone unit="sent"/>Mais en cecy ta cause est la mesme innocence,</l>
+            <l>Pluton est inhumain, ton cœur l’offensera.</l>
+            <l><pb n="88" xml:id="p88"/><milestone unit="sent"/>Mais si tu fais un crime, amour t’excusera.</l>
+            <l><milestone unit="sent"/>Que mes sens sont troublez, que mon mal est sensible,</l>
+            <l>Cette condition m’est du tout impossible.</l>
+          </sp>
+          <sp who="caron">
+            <speaker>Caron</speaker>
+            <l><milestone unit="sent"/>Hastez-vous de partir, entrez et promptement,</l>
+            <l>Vous estes bien tardif pour un fidele amant.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>Orphée met un pied dans la barque puis il le retire.</stage>
+            <l><milestone unit="sent"/>Ces termes si pressans presagent quelque chose</l>
+            <l>Que je ne cognois point ; entrons pourtant, je n’ose,</l>
+            <l>Il le faut, n’en fais rien, perds honneur et respect.</l>
+            <l><milestone unit="sent"/>Ce procedé cruel te doit estre suspect.</l>
+            <l><milestone unit="sent"/>Entre sans consulter, ne suis point ton caprice,</l>
+            <l>Dompte tes passions en faveur d’Euridice.</l>
+            <l><milestone unit="sent"/>Pluton veut m’eloigner dessous de faux appas,</l>
+            <l>Il retient Euridice, elle ne me suit pas.</l>
+            <stage><milestone unit="sent"/>Il se retourne.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Euridice</speaker>
+            <l><milestone unit="sent"/>D’une plus dure mort que ne fut la premiere,</l>
+            <l>Pour la seconde fois l’on m’oste la lumiere ;</l>
+            <l>Je retombe aux enfers, Alecton qui me suit</l>
+            <l>M’oblige à retourner dans l’eternelle nuict.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Où fuyez-vous bel Astre ? arrestez Euridice,</l>
+            <l>Il faut en vous suivant que mon sort s’accomplice,</l>
+            <l><pb n="89" xml:id="p89"/>Mais elle disparoist, et le puissant effort</l>
+            <l>D’un vent impetueux me met sur l’autre bord,</l>
+            <l>Caron ne paroist plus, deplorable adventure,</l>
+            <l>Injuste Dieu d’enfer, execrable imposture !</l>
+          </sp>
+          <sp who="eurydice">
+            <speaker>L’ombre d’Euridice</speaker>
+            <stage>loing</stage>
+            <lg>
+              <l><milestone unit="sent"/>N’espere plus mon cœur de me rendre le jour,</l>
+              <l>Car tu me l’as osté par un exceds d’amour ;</l>
+              <l>En voulant m’animer tu fus mon homicide,</l>
+              <l>Et trop aventureux en paroissant timide,</l>
+              <l>Si ton œil curieux n’eust point trahy ta foy</l>
+              <l>Je verrois maintenant le Soleil avec toy,</l>
+              <l>Et malgré la rigueur du destin qui me lie</l>
+              <l>Nous nous reposerions aux eaux de Castalie ;</l>
+              <l>Mais puis que ce mesme œil dans ce poinct aveuglé</l>
+              <l>À l’égal de tes chants n’a pas esté reglé ;</l>
+              <l>Ô dur ressouvenir qui faict que je souspire,</l>
+              <l>Tu ne gousteras pas les doux fruicts de ta Lire,</l>
+              <l>Ny tu n’auras jamais le pouvoir d’aborder</l>
+              <l>Le trosne de Pluton pour m’y redemander.</l>
+            </lg>
+            <lg>
+              <label>Passion d’Orphée</label>
+              <l><milestone unit="sent"/>Fausse divinité malicieuse, ingrate,</l>
+              <l>C’est icy que sur moy ton injustice éclate ;</l>
+              <l>Pluton c’est à ce coup que tu me fais sçavoir</l>
+              <l>Que l’on ne peut fléchir ton barbare pouvoir,</l>
+              <l>Tu ravis à mes yeux une amante donnee</l>
+              <l><pb n="90" xml:id="p90"/>Par toy, par Proserpine et par la destinee,</l>
+              <l>D’abord qu’elle est renduë un demon la surprend,</l>
+              <l>M’accable de douleurs et par force la rend,</l>
+              <l>Un don n’est pas entier quand on le veut reprendre,</l>
+              <l>Celuy qui le reçoit ne le doit jamais rendre.</l>
+              <l><milestone unit="sent"/>Qui se peut repentir du plaisir qu’il a fait</l>
+              <l>En avilit l’éclat et le rend imparfait,</l>
+              <l>Ou bien tu me devois accorder cette grace,</l>
+              <l>Ou bien tu me devois punir de mon audace.</l>
+              <l><milestone unit="sent"/>Mais sans plus t’accuser des travaux que je sens</l>
+              <l>Je maudiray plutost mes peu sensibles chants.</l>
+              <l><milestone unit="sent"/>Ô mon Luth que me sert dans cet estat funeste</l>
+              <l>La charmante vertu de vostre son celeste,</l>
+              <l>Si je ne puis toucher par vos divins accords</l>
+              <l>L’impitoyable cœur du monarque des morts.</l>
+              <l><milestone unit="sent"/>Que me sert que le Ciel m’ait donné la couronne,</l>
+              <l>De lauriers immortels dont mon chef s’environne ?</l>
+              <l><milestone unit="sent"/>Que me sert malheureux que les peuples d’Europe</l>
+              <l>M’ayent creu fils d’Apollon et né de Calliope ?</l>
+              <l><milestone unit="sent"/>Enfin de quoy me sert qu’on m’entende chanter,</l>
+              <l>Des hymnes à l’honneur du grand Dieu Jupiter ?</l>
+              <l><milestone unit="sent"/>Si luy-mesme insensible aux accens de mes plaintes,</l>
+              <l>Ne peut estre touché de leurs justes atteintes ?</l>
+              <l><milestone unit="sent"/>Severe Dieu des morts noir tyran de ces lieux,</l>
+              <l>Je suis pourtant celuy dont le style pieux</l>
+              <l><pb n="91" xml:id="p91"/>A solennellement au temple de memoire</l>
+              <l>Chanté dessus son luth ton immortelle gloire,</l>
+              <l>Et qui mesme a forcé les stupides mortels</l>
+              <l>À porter les encens dont fument tes Autels,</l>
+              <l>Et pour ma recompense il faut qu’un artifice</l>
+              <l>D’une nouvelle mort me ravisse Euridice.</l>
+              <l><milestone unit="sent"/>Dure condition difficile à garder !</l>
+              <l><milestone unit="sent"/>Pour le rare tresor qu’on vouloit m’accorder,</l>
+              <l>Si mon ame eust esté beaucoup moins amoureuse</l>
+              <l>La parole d’un Dieu n’eust pas esté trompeuse.</l>
+              <l><milestone unit="sent"/>Euridice ma vie et mes derniers plaisirs,</l>
+              <l>Revenez, revenez, contentez mes desirs.</l>
+              <l><milestone unit="sent"/>Me faut-il habiter mes demeures premieres</l>
+              <l>Sans y revoir vos yeux, mes celestes lumieres ?</l>
+              <l><milestone unit="sent"/>Faut-il que j’aille voir les Nimphes dont les pleurs</l>
+              <l>Coulent avec le sang dont vous teinctes les fleurs,</l>
+              <l>Et que pour mon malheur je me trouve en la place</l>
+              <l>Sur qui la parque vint accomplir ma disgrace ?</l>
+              <l><milestone unit="sent"/>L’enfer ne peut-il pas favorable à mes vœux</l>
+              <l>Dedans un mesme enclos nous retenir tous deux ?</l>
+              <l><milestone unit="sent"/>Pourquoy vous recevant faut-il qu’il me refuse ?</l>
+              <l><milestone unit="sent"/>Et qu’au mesme moment sa cruauté m’abuse ?</l>
+              <l><milestone unit="sent"/>Ne vous tient-il ainsi captive dans ses fers</l>
+              <l>Qu’afin qu’en chaque lieu je trouve mes enfers ?</l>
+              <l><milestone unit="sent"/>Et pour nostre bonheur n’est-il inexorable</l>
+              <l>Si ce n’est à dessein de me voir miserable ?</l>
+              <l><milestone unit="sent"/>Ah ! si je suis contraint d’habiter l’Univers,</l>
+              <l><pb n="92" xml:id="p92"/>Je n’y reciteray que des tragiques Vers,</l>
+              <l>Ses plaisirs me seront d’execrables furies</l>
+              <l>Que je sçauray dompter parmy mes réveries ;</l>
+              <l>Le Soleil que j’aymois ne me sera plus cher,</l>
+              <l>Quiconque me verra n’osera m’approcher</l>
+              <l>Ma Lire qui souloit faire mouvoir les arbres,</l>
+              <l>Qui pouvoit amolir la dureté des marbres</l>
+              <l>Plus triste que mon cœur ressentant mes douleurs,</l>
+              <l>Fera croistre les eaux du torrent de mes pleurs,</l>
+              <l>Bachus dont je faisois resonner les Orgies,</l>
+              <l>M’écoutera chanter des tristes Elegies,</l>
+              <l>Ma Muse me voyant dans une obscurité</l>
+              <l>S’étonnera d’abord de ma sterilité,</l>
+              <l>Et de me voir tarir cette veine feconde,</l>
+              <l>D’où l’on a fait recit aux quatre coins du monde,</l>
+              <l>Enfin chacun sçaura me voyant consommer,</l>
+              <l>Que puisque je vous pers, je ne dois rien aimer.</l>
+            </lg>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>Acte V</head>
+        <div type="scene">
+          <head>Scène première</head>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/><pb n="93" xml:id="p93"/>Suivant les mouvements de son ame échauffee,</l>
+            <l>Ce berger se noya dans les ondes d’Alphee,</l>
+            <l>Et son malheur luy fit dans le profond de l’eau</l>
+            <l>Devant les Dieux marins un humide tombeau.</l>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/>Par tout de son trépas la nouvelle est semee,</l>
+            <l>Par la suite de Pan et par la renommee.</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/>En changeant de propos sçache qu’un demy-Dieu</l>
+            <l>Fait depuis quelques jours un miracle en ce lieu,</l>
+            <l><pb n="94" xml:id="p94"/>Qu’il attire les monts et les forests entieres,</l>
+            <l>Qu’il arreste en leur lit le courant des rivieres,</l>
+            <l>Et que prenant le Ciel pour témoin de ses maux</l>
+            <l>Il adoucit le cœur de tous les animaux.</l>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/>Ô Dieux ! cette merveille est difficile à croire.</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/>Escoute, je m’en vay t’en raconter l’histoire,</l>
+            <l>Mais ne m’interrompt pas, et crois qu’assurément</l>
+            <l>Tu seras estonné de cet evenement.</l>
+            <l><milestone unit="sent"/>Au moment qu’il chante, les zephirs dans la pleine</l>
+            <l>De peur de le troubler retindrent leur haleine,</l>
+            <l>L’écho cacha sa voix au creux de ses poulmons,</l>
+            <l>Je vis trembler la terre, et marcher tous les monts,</l>
+            <l>Rodophe, à ses soupirs tes neiges se fondirent,</l>
+            <l>Ta teste s’abbaissa, tes froideurs se perdirent,</l>
+            <l>L’excez de son amour t’échauffa tellement,</l>
+            <l>Qu’on te verra jetter la flame à tout moment,</l>
+            <l>Mesme tu l’imitas qu’au plus chaut qu’en Affrique,</l>
+            <l>Ou le peuple s’enfuit du Soleil qui le picque,</l>
+            <l>Tu chassas de tes pins les aimables oyseaux,</l>
+            <l>Lors que tu vis boüillir dans tes sources les eaux,</l>
+            <l>Certes tu surpassas les transports qu’ils sentirent,</l>
+            <l>Tes superbes sommets deslors se racourcirent,</l>
+            <l>Bien qu’on t’eust veu souvent en colere braver</l>
+            <l>L’inconstance des flots qui te viennent laver,</l>
+            <l>Et quoy que l’Aquilon te creust parmy l’orage,</l>
+            <l><pb n="95" xml:id="p95"/>Comme un ferme rampart qui repoussoit sa rage,</l>
+            <l>Alors que tu tombas dans tes flancs démolis,</l>
+            <l>Les Centaures legers furent ensevelis</l>
+            <l>D’un prodige plus grand tous les arbres quitterent</l>
+            <l>Les costes de ces monts et puis l’environnerent.</l>
+            <l><milestone unit="sent"/>Le premier qui parut fut celuy que Cerés</l>
+            <l>Arracha de sa main au milieu des forests</l>
+            <l>Pour s’éclairer la nuict dans ces climats celebres,</l>
+            <l>Qui du rapt de sa fille accusoient les tenebres ;</l>
+            <l>Il fut accompagné du chesne dont le gland</l>
+            <l>Repeut ceux qui vivoient devant l’âge sanglant.</l>
+            <l><milestone unit="sent"/>Le funeste Ciprés de fort peu de distance,</l>
+            <l>Et les buys verdoyans suivirent leur cadance.</l>
+            <l><milestone unit="sent"/>Le fresne dont le vois si robuste et nerveux</l>
+            <l>Arme de javelot le guerrier genereux</l>
+            <l>Coula dessus le sable, et d’un ample ramage</l>
+            <l>Imitant le tilleul s’en vint luy faire hommage.</l>
+            <l><milestone unit="sent"/>Cet arbre si fameux par qui les matelots</l>
+            <l>Bravent insolemment l’inconstance des flots :</l>
+            <l><milestone unit="sent"/>Le sapin orgueilleux dont la teste chenuë</l>
+            <l>Semble monter en haut pour provoquer la nuë,</l>
+            <l>Craignant que l’olivier ne le pust devancer,</l>
+            <l>Suivit ses compagnons qui venoit de passer.</l>
+            <l><milestone unit="sent"/>Un peu plus bas la palme avec bon droict nommee</l>
+            <l>L’ornement et l’honneur des plaines d’Idumee,</l>
+            <l>Par un sentier secret traversant sur ce mont,</l>
+            <l>De ce chantre pieux vint ombrager le front,</l>
+            <l><pb n="96" xml:id="p96"/>Le laurier se courba sur son chef en couronne,</l>
+            <l>Et l’arbre que l’amour noircit dans Babilone,</l>
+            <l>Se vid plus estonné que lors que la douleur</l>
+            <l>Ensanglantant son tronc luy changea de couleur,</l>
+            <l>Au moment qu’on voyoit ses racines mouvantes,</l>
+            <l>Suivre insensiblement les rochers et les plantes :</l>
+            <l><milestone unit="sent"/>Les orengers touffus des jardins reverez</l>
+            <l>Y porterent leurs fleurs avec leurs fruicts dorez.</l>
+            <l><milestone unit="sent"/>J’y vis courir la plaine et les buissons sauvages,</l>
+            <l>Le saule et les peupliers qui bordent les rivages,</l>
+            <l>Les genievres poignant les faux, les alisiers,</l>
+            <l>L’ormeau, le tamarist avecque les cerisiers,</l>
+            <l>La vigne consacree à l’enfant de Semelle,</l>
+            <l>L’arbre odoriferant qui porte la canelle,</l>
+            <l>Et tout ce que l’on void d’arbres dans l’Univers</l>
+            <l>S’y rendirent soudain par des chemins divers ;</l>
+            <l>Lors voulant acquerir des plus grandes conquestes,</l>
+            <l>Il charma tous les cœurs des plus cruelles bestes,</l>
+            <l>Ne se contentant pas que dessus les rameaux</l>
+            <l>Ils eussent apporté dans le nid les oiseaux,</l>
+            <l>Mais n’apperçois-je pas des femmes insolentes,</l>
+            <l>Que je ne puis nommer que du nom de bacantes,</l>
+            <l>Qui du milieu des bois nous viennent investir ?</l>
+            <l><milestone unit="sent"/>Entrons, puis qu’on les voit en colere sortir.</l>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/>Sans attendre en ce lieu leur furieuse approche,</l>
+            <l>Cachons-nous à l’abry du creux de cette roche.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/><pb n="97" xml:id="p97"/>Cheres sœurs aujourd’huy que les mortels vaincus,</l>
+            <l>Se prosternent par tout aux autels de Bacus,</l>
+            <l>Et que plein de fureur ce grand Dieu nous appelle</l>
+            <l>Pour venir celebrer sa feste solennelle,</l>
+            <l>Courons parmy les champs, rendons-luy le devoir</l>
+            <l>Qu’exige de nos cœurs son celeste pouvoir.</l>
+            <l><milestone unit="sent"/>Chantons comme traisnant Mars avec la Fortune,</l>
+            <l>Jusqu’aux lieux reculez où se borne Neptune.</l>
+            <l><milestone unit="sent"/>Porté du seul desir de signaler les siens,</l>
+            <l>Il arresta captifs tant de Rois Indiens,</l>
+            <l>Chantons mes cheres sœurs comme dés sa naissance,</l>
+            <l>Pour montrer aux mortels l’effect de sa puissance,</l>
+            <l>D’un juste chastiment qu’on ne peut divertir,</l>
+            <l>Il changea sur la mer les mariniers de Thir.</l>
+            <l><milestone unit="sent"/>Enfin, faisons si bien que dans peu tout le monde,</l>
+            <l>De l’un à l’autre bout à nos accens responde.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Deuxième Baccante</speaker>
+            <l><milestone unit="sent"/><pb n="98" xml:id="p98"/>Depuis long-temps la Grece a veu de toutes parts</l>
+            <l>Ce que peuvent ces Linx et ces fiers Leopars.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Troisième Baccante</speaker>
+            <l><milestone unit="sent"/>Faisons donc retentir au lever de l’Aurore,</l>
+            <l>Les rivages qui sont au destroit du Bosphore,</l>
+            <l>Apprenons aux Tritons ainsi qu’aux Mariniers</l>
+            <l>Que le Tirse aujourd’huy surpasse les lauriers,</l>
+            <l>Puis qu’en les méprisant d’une si belle plante,</l>
+            <l>Baccus a couronné sa teste triomphante.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <stage><milestone unit="sent"/>Orphée sur Rodophe charmant les Animaux</stage>
+          <label>Chanson d’Orphée</label>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+
+            <lg>
+              <l><milestone unit="sent"/>De cette montagne deserte,</l>
+              <l>J’irrite le foudre des Dieux,</l>
+              <l>En pleurant ma derniere perte,</l>
+              <l>J’inonde de larmes ces lieux,</l>
+              <l>Et si je ne puis pas transporté de ma rage,</l>
+              <l>Dans l’onde que j’acrois rencontrer mon naufrage.</l>
+              <l><milestone unit="sent"/>Je pense que les destinees</l>
+              <l>Qui seules causent mes malheurs,</l>
+              <l>Avec les cours de mes annees,</l>
+              <l>Éterniseront mes douleurs,</l>
+              <l>Car j’en ay recognu de si visibles marques</l>
+              <l>Que je n’ay peu mourir dans la maison des Parques.</l>
+              <l><milestone unit="sent"/>Tyran des cavernes profondes,</l>
+              <l>Exécrable bourreau des cœurs</l>
+              <l>Qui dans le plus triste des mondes</l>
+              <l>Tiens les captifs et les vainqueurs,</l>
+              <l>Quand je me vis par toy mon espouse renduë,</l>
+              <l>Je jugeay bien délors que je l’avois perduë.</l>
+              <l><milestone unit="sent"/>Cette avare et noire puissance</l>
+              <l>Qui me promettoit des plaisirs,</l>
+              <l>A voulu mesme en leur naissance</l>
+              <l>Estouffer mes chastes desirs,</l>
+              <l>Pluton fut liberal pour me rendre complice</l>
+              <l>De la seconde mort qui ravit Euridice.</l>
+              <l><milestone unit="sent"/>Mortels faites des entreprises,</l>
+              <l>Ne craignez plus des chastimens,</l>
+              <l><pb n="100" xml:id="p100"/>Toutes choses vous sont permises</l>
+              <l>Dans vos sales dêreglemens,</l>
+              <l>Vous pouvez bien pecher par une audace extréme,</l>
+              <l>Si les Dieux criminels osent pecher de mesme.</l>
+              <l><milestone unit="sent"/>Soleil sors de la mer, fens le centre des monts,</l>
+              <l>Rend visible à chacun le sejour des Demons,</l>
+              <l>En perçant de la nuict les plus obscures toiles,</l>
+              <l>Quand tu te coucheras donne-leur des estoiles,</l>
+              <l>Faits que dans peu le Stix produise des poissons,</l>
+              <l>Que l’on cueille en ses bords des fertiles moissons ;</l>
+              <l>Faits que les criminels goustent mille delices,</l>
+              <l>Transforme en des plaisirs leur plus affreux suplices</l>
+              <l>Esteins par tes vapeurs les soulphres et les feux,</l>
+              <l>Faits de tous les Enfers des climats bien-heureux,</l>
+              <l>Enfin chassant Pluton de ses Palais funebres,</l>
+              <l>Faits regner la lumiere où regnent les tenebres ;</l>
+              <l>Si le destin s’oppose aux pressantes chaleurs,</l>
+              <l>Que tu lances du Ciel en tes vives ardeurs,</l>
+              <l>Oblige Jupiter à finir mon supplice</l>
+              <l>En rendant à mes yeux les beautez d’Euridice,</l>
+              <l>S’il est inexorable, et si par ton pouvoir</l>
+              <l>Non plus que par mes chants il ne peut s’émouvoir,</l>
+              <l>Esteignant ton flambeau pour vanger ta querelle,</l>
+              <l>Declare à l’Univers une guerre immortelle :</l>
+              <l><milestone unit="sent"/>Afflige la Nature en tes ressentimens,</l>
+              <l>Confonds l’ordre reglé de tous les elemens,</l>
+              <l><pb n="101" xml:id="p101"/>Mesle avec la chaleur le sec et la froidure,</l>
+              <l>Joins l’humide à leurs corps et dans cette adventure</l>
+              <l>Prenant ton arc mortel, et tes fleches en main</l>
+              <l>Lance la peste au cœur de tout le genre humain.</l>
+              <l><milestone unit="sent"/>Mais tu ne peux guerir le mal qui me possede,</l>
+              <l>Ma voix est ma vengeance et mon dernier remede,</l>
+              <l>Par elle je m’en vais dans ce triste sejour</l>
+              <l>Me plaindre de Pluton aussi bien que d’amour.</l>
+            </lg>
+            <lg>
+              <label>Chanson d’Orphee</label>
+              <l><milestone unit="sent"/>Fideles témoins de mes peines,</l>
+              <l>Arbres sacrez superbes chesnes</l>
+              <l>Qui ne vieillissez point par la suite des ans,</l>
+              <l>Si ma voix anime vos souches</l>
+              <l>Prenez en ma faveur des bouches,</l>
+              <l>Pour plaindre les maux que je sens.</l>
+            </lg>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>aux rochers</stage>
+            <lg>
+              <l><milestone unit="sent"/>Ô rochers qui sortez pendant cette adventure</l>
+              <l>Hors de ses lieux deserts où vous mit la nature,</l>
+              <l>Qui courez à ma voix, et qui vous offensez</l>
+              <l>D’avoir esté témoins de mes travaux passez,</l>
+              <l>Puis que dans ce moment vous paroissez sensibles,</l>
+              <l>Faites en m’accablant des miracles visibles.</l>
+              <l><milestone unit="sent"/>Tombez dessus mon chef, et d’un pesant fardeau</l>
+              <l>Faites-moy sur ce mont un illustre tombeau.</l>
+            </lg>
+            <lg>
+              <label>Chanson d’Orphée</label>
+              <l><milestone unit="sent"/><pb n="102" xml:id="p102"/>Ma disgrace n’est pas commune :</l>
+              <l><milestone unit="sent"/>Je rends tribut au Dieu Neptune,</l>
+              <l>Mes yeux luy font couler un funeste ruisseau ;</l>
+              <l>Et ce Dieu s’estonne en son ame</l>
+              <l>Que d’un corps tout remply de flame</l>
+              <l>Je puisse produire tant d’eau.</l>
+            </lg>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>aux Forests</stage>
+            <lg>
+              <l><milestone unit="sent"/>Ô Forests, maintenant par ma voix animees,</l>
+              <l>Si jamais de mes chants vous fustes enflammees</l>
+              <l>Jusqu’au poinct de produire au sein de l’Univers</l>
+              <l>Des fueilles et des fruits au milieu des hyvers,</l>
+              <l>En m’ostant du Soleil les ardentes lumieres,</l>
+              <l>Venez de vos rameaux obscurcir mes paupieres.</l>
+            </lg>
+            <lg>
+              <label>Chanson d’Orphée</label>
+              <l><milestone unit="sent"/>Le desespoir passe en mes veines,</l>
+              <l>Écho me respond dans ses plaines,</l>
+              <l>Le Ciel qui me punit d’un prodige nouveau,</l>
+              <l>Fait que cette triste demeure</l>
+              <l>Je souffre la mort à toute heure,</l>
+              <l>Et ne trouve point de tombeau.</l>
+            </lg>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <stage>aux Animaux</stage>
+            <l><milestone unit="sent"/>Lyons dessus mon corps exercez vos furies,</l>
+            <l>Employez dessus moy toutes vos barbaries,</l>
+            <l><pb n="103" xml:id="p103"/>Tygres courez sur moy, à quoy bon s’arrester,</l>
+            <l>Puis que j’ay dans mon sang dequoy vous contenter.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/>Mes sœurs considerez, cet homme dans la haine</l>
+            <l>A toujours méprisé nostre amoureuse peine,</l>
+            <l>Souffrirons-nous encor que son ambition</l>
+            <l>Le fasse triompher de nostre passion ;</l>
+            <l>Et qu’ayant enchanté les rochers et les bestes</l>
+            <l>Il nous puisse conter au rang de ses conquestes.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Deuxième Baccante</speaker>
+            <l><milestone unit="sent"/>Non, non, il le faut perdre.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Troisième Baccante</speaker>
+            <l><milestone unit="sent"/>Allons donc le trouver.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/><pb n="104" xml:id="p104"/>L’assistance d’un Dieu ne le pourroit sauver.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Grace aux Dieux je mourray</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <stage>sortant la teste du coing d’un Rocher</stage>
+            <l><milestone unit="sent"/>Sa perte est asseuree.</l>
+          </sp>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <stage>sortant de mesme.</stage>
+            <l><milestone unit="sent"/>Rien ne peut arrester cette desesperee.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Il me faut bien mourir par de plus nobles mains,</l>
+            <l>Je ne crains point l’effort de vos bras inhumains.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Deuxième Baccante</speaker>
+            <l><milestone unit="sent"/>Ce fer te montrera s’il faut que l’on méprise</l>
+            <l>Une ame de Baccus et de l’amour surprise.</l>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Ô Dieux, je suis blessé, vous suivez mes desirs,</l>
+            <l>En me donnant la mort, vous croissez mes plaisirs.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Troisième Baccante</speaker>
+            <l><milestone unit="sent"/>Sur le poinct de sa mort nous parlant de la sorte</l>
+            <l>Il nous méprise encore.</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/>La colere m’emporte.</l>
+            <l><milestone unit="sent"/>Meschant d’un second coup, perdant la vanité,</l>
+            <l>Juge si l’on doit craindre un esprit irrité.</l>
+            <stage><milestone unit="sent"/>Orphée tombe.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Que tardes-tu<note place="bottom" resp="KS">Nous corrigeons « tarde-tu » par
+                « tardes-tu ».</note> mon ame acheve ta disgrace,</l>
+            <l>Et quitte pour jamais les campagnes de Thrace,</l>
+            <l>Retirez-vous de moy, Spectres, Demons jaloux,</l>
+            <l>Je vous donne mon sang, que me demandez-vous ?</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/>Si nous nous retirons, cette derniere atteinte</l>
+            <l>En finissant ton mal s’en va finir ta plainte.</l>
+            <stage><milestone unit="sent"/>Orphée meurt.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <l><milestone unit="sent"/>Euridice, je meurs, mes regrets sont finis,</l>
+            <l>Mes desirs accomplis et nos cœurs reünis.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <sp who="ergaste">
+            <speaker>Ergaste</speaker>
+            <l><milestone unit="sent"/>Arcas, avez-vous veu de quel rude supplice</l>
+            <l>Ces Megeres ont fait éclater leur malice ?</l>
+          </sp>
+          <sp who="arcas">
+            <speaker>Arcas</speaker>
+            <l><milestone unit="sent"/>Je ne l’ay que trop veu, que plust aux justes Dieux</l>
+            <l>Que je fusse privé de l’usage des yeux,</l>
+            <l>Car je ne verrois pas sur l’émail de ses plaines</l>
+            <l>Couler hors de son corps des sanglantes fontaines ?</l>
+            <stage><milestone unit="sent"/>Ils le considerent et le treuvent mort.</stage>
+            <l>Mais approchons de luy pour sçavoir si la mort</l>
+            <l>A produit la rigueur de son dernier effort.</l>
+            <l><milestone unit="sent"/>Pestes de l’Univers ce sont les sacrifices</l>
+            <l>Que vous faites aux Dieux pour les rendre propices.</l>
+            <l><milestone unit="sent"/>Ce sont-là les encens que vous leur presentez,</l>
+            <l>Suivant vos passions que vous executez.</l>
+            <l><milestone unit="sent"/>Mais croyez que ces Dieux dont vous soüilles les festes</l>
+            <l>Gardent des chastimens pour vos coupables testes ;</l>
+            <l>Et que dans peu de temps ils lanceront sur vous</l>
+            <l>Le trait le plus sanglant qu’ait produit leur couroux ;</l>
+            <stage><milestone unit="sent"/>Ils l’emportent.</stage>
+            <l><pb n="107" xml:id="p107"/>Cependant emportons bien loing de cette place</l>
+            <l>Ce corps miraculeux qui n’est plus rien que glace,</l>
+            <l>En dressant à sa cendre un celebre cercueil,</l>
+            <l>Jusqu’à l’eternité prolongeons nostre dueil.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VI</head>
+          <sp who="bacchantes">
+            <speaker>Première Baccante</speaker>
+            <l><milestone unit="sent"/>Mes sœurs, Orphée est mort, et son ame hautaine</l>
+            <l>D’un mespris insolent a ressenti la peine,</l>
+            <l>Nos forces ont fait voir en nous vengeant de luy</l>
+            <l>La puissance du Dieu qui nous guide aujourd’huy.</l>
+            <l><milestone unit="sent"/>Mais quoy que son trespas augmente nostre gloire</l>
+            <l>Quelque secret remors trouble nostre victoire.</l>
+            <l><milestone unit="sent"/>Mon courage interdit, et mon bras suspendu</l>
+            <l>Voudroient bien conserver ce qu’ils ont répandu,</l>
+            <l>Puis qu’une si legere et si lasche vengeance</l>
+            <l>Nous reduit à tel poinct que tres-asseurement</l>
+            <l>Le Ciel nous punira d’un juste chastiment,</l>
+            <l><pb n="108" xml:id="p108"/>Au lieu de le meurtrir plutost que le deffaire,</l>
+            <l>Il nous falloit chercher les moyens de luy plaire,</l>
+            <l>Et peut-estre qu’alors cet homme ambitieux</l>
+            <l>Sur quelqu’une de nous auroit tourné les yeux.</l>
+            <l><milestone unit="sent"/>Mais puis que nos soupirs pleins d’amour et de flame</l>
+            <l>Ne peuvent dans son corps rappeller sa belle ame.</l>
+            <l><milestone unit="sent"/>Que chacune de nous aille dans sa maison</l>
+            <l>Pleurer nostre malheur, et nostre trahison,</l>
+            <l>Jusqu’à ce que du Ciel la derniere vengeance,</l>
+            <l>Esclate dessus nous au milieu de Bisance,</l>
+            <l>Mais la montagne tremble, ô Dieu quelle clarté !</l>
+          </sp>
+          <sp who="bacchantes">
+            <speaker>Deuxième Baccante</speaker>
+            <l><milestone unit="sent"/>Baccus montre un effet de sa divinité,</l>
+            <l>Tous ces rochers voisins, à son abord resonnent,</l>
+            <l>Je vois Pan et les Dieux qui par tout l’environnent.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VII</head>
+          <sp who="baccus">
+            <speaker>Baccus</speaker>
+            <l><milestone unit="sent"/><pb n="109" xml:id="p109"/>Effroyables demons, objets pleins de fureur,</l>
+            <l>Qui remplissez les Cieux, et de sang et d’horreur,</l>
+            <l>Pernicieux esprits, execrables viperes,</l>
+            <l>Qui venans de soüiller mes plus sacrez misteres ;</l>
+            <l>Par un horrible crime avez porté vos mains</l>
+            <l>Dans le cœur innocent du meilleur des humains ?</l>
+            <l><milestone unit="sent"/>Puis que vous polluez mes festes solennelles,</l>
+            <l>J’ordonne à vos pechez des peines eternelles ;</l>
+            <l>Toy, demeure immobile, et poussant des rameaux</l>
+            <l>Serts d’ombrage eternels aux Nimphes de ses eaux.</l>
+            <l><milestone unit="sent"/>Toy qui te veux cacher dans les forests voisines</l>
+            <l>Jette dessus ce mont des profondes racines :</l>
+            <l><milestone unit="sent"/>Et toy sous une escorce apprens dedans ces lieux</l>
+            <l>Aux siecles à venir la justice des Dieux.</l>
+          </sp>
+          <sp who="pan">
+            <speaker>Pan</speaker>
+            <l><milestone unit="sent"/><pb n="110" xml:id="p110"/>Vous venez de commettre un acte de justice,</l>
+            <l>Leur crime meritoit un plus rude suplice.</l>
+          </sp>
+          <sp who="baccus">
+            <speaker>Baccus</speaker>
+            <l><milestone unit="sent"/>Laissons cette demeure et ce païs ingrat,</l>
+            <l>Qui fut le seul témoin de leur noir attentat,</l>
+            <l>Et sans plus differer allons prendre Pactolle,</l>
+            <l>Voir les vignes que j’ay dessur le mont Timolle.</l>
+            <l><milestone unit="sent"/>Là chez les Phrygiens visitant mes autels</l>
+            <l>Goustons parmy le vin des plaisirs immortels,</l>
+            <l>Et faisons que par tout on m’éleve un trophée,</l>
+            <l>Comme au juste vengeur de la perte d’Orphée.</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+
+  </text>
+</TEI>

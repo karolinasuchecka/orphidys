@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Roger-Bontems et Javotte, parodie d’Orphée et Eurydice</title>
+        <title type="sub">Pièce en un acte, mêlée d’ariettes ; par MM. Moline et d’Orvigny :
+          représentée pour la premiere fois par les comédiens italiens ordinaires du Roi, le samedi
+          13 mai 1775</title>
+        <author>Pierre-Louis Moline, d’Orvigny</author>
+        <editor/>
+      </titleStmt>
+      <editionStmt>
+        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+          édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
+          comparative intermédiale innovante accompagnée d’une ressource pour le repérage
+          intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
+          l’Université de Lille.</edition>
+        <respStmt>
+          <name>Karolina Suchecka</name>
+          <resp>Chargé de l’édition</resp>
+        </respStmt>
+        <respStmt>
+          <name>Nathalie Gasiglia</name>
+          <resp>Co-tutrice de thèse</resp>
+        </respStmt>
+        <respStmt>
+          <name>Karl Zieger</name>
+          <resp>Co-tuteur de thèse</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karolina Suchecka</publisher>
+        <publisher>ALITHILA (Université Lille III)</publisher>
+        <date when="2019"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+              thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+              numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
+              ressource pour le repérage intertextuel »</p>
+            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+              les bases de données (L341-1) est mise à disposition de la communauté scientifique
+              internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
+              : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
+              BY-NC-ND 3.0 FR) ». </p>
+            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+              de cette ressource électroniques comportera le nom du projet et surtout l’adresse
+              Internet de la ressource. </p>
+            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+              utilisation commerciale est interdite.</p>
+            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+              électronique, notamment en intégrant toutes les contributions extérieures, la
+              diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+          </licence>
+        </availability>
+        <idno>https://gallica.bnf.fr/ark:/12148/bpt6k9808875q</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><author>Pierre-Louis Moline, d’Orvigny</author> / <title>Roger-Bontems et Javotte,
+            parodie d’Orphée et Eurydice ; pièce en un acte, mêlée d’ariettes ; par MM. Moline et
+            d’Orvigny : représentée pour la premiere fois par les comédiens italiens ordinaires du
+            Roi, le samedi 13 mai 1775 </title> / Paris / Vve Duchesne / 1775.</bibl>
+        <biblFull>
+          <titleStmt>
+            <title>Roger-Bontems et Javotte, parodie d’Orphée et Eurydice ; pièce en un acte, mêlée
+              d’ariettes ; par MM. Moline et d’Orvigny : représentée pour la premiere fois par les
+              comédiens italiens ordinaires du Roi, le samedi 13 mai 1775 </title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>Vve Duchesne</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="1775"/>
+          </publicationStmt>
+        </biblFull>
+        <genre>théâtre</genre>
+        <structure>dorvigny1775</structure>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+        nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
+        projet. La structure des métadonnées a été établie en référence à la manière dont le
+        logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1775">1775</date>
+      </creation>
+      <language>
+        <language>FR</language>
+      </language>
+      <textClass>
+        <keywords>
+          <list>
+            <item>parodie</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docAuthor>Pierre-Louis Moline, d’Orvigny</docAuthor>
+        <docTitle>
+          <titlePart type="main">Roger-Bontems et Javotte, parodie d’Orphée et Eurydice</titlePart>
+          <titlePart type="sub">Pièce en un acte, mêlée d’ariettes ; par MM. Moline et d’Orvigny :
+            représentée pour la premiere fois par les comédiens italiens ordinaires du Roi, le
+            samedi 13 mai 1775</titlePart>
+        </docTitle>
+      </titlePage>
+      <castList>
+        <castItem xml:id="pluton">M. Fumeron, Maître de Forges</castItem>
+        <castItem xml:id="proserpine">Madame Fumeron</castItem>
+        <castItem xml:id="celadon">Céladon, Empyrique</castItem>
+        <castItem xml:id="orphee">Roger-Bontems, Joueur de Vielle</castItem>
+        <castItem xml:id="eurydice">Javotte, femme de Roger-Bontems</castItem>
+        <castItem xml:id="guilmino">Guilmino, Chef des Forgerons</castItem>
+        <castItem xml:id="premier_vielleur">Premier Vielleur</castItem>
+        <castItem xml:id="deuxieme_vielleur">Deuxième Vielleur</castItem>
+        <castItem xml:id="premiere_marmotte">Première Marmotte</castItem>
+        <castItem xml:id="deuxieme_marmotte">Deuxième Marmotte</castItem>
+        <castItem xml:id="marmottes">Troupe de Marmottes</castItem>
+        <castItem xml:id="vielleurs">Troupe de Vielleurs</castItem>
+        <castItem xml:id="premier_forgeron">Premier Forgeron</castItem>
+        <castItem xml:id="second_forgeron">Second Forgeron</castItem>
+        <castItem xml:id="forgerons">Troupe de Forgerons</castItem>
+        <castItem xml:id="suite_proserpine">Trois suivantes de Mad. Fumeron</castItem>
+        <castItem xml:id="chœur">Le chœur</castItem>
+      </castList>
+      <set>
+        <p>La scène se passe moitié de les Forges, moitié dans le Jardin de Fumeron</p>
+      </set>
+    </front>
+    <body>
+
+
+      <div type="scene">
+        <head>Scène première <lb/>Roger, les Marmottes</head>
+        <stage><pb n="3" xml:id="p3"/>Le Théâtre représente un Paysage agréable et lointain, d’un
+          côté : de l’autre on apperçoit une Forge, dont les travaux ne sont pas animés. Une troupe
+          de Marmottes garnit le Théâtre. Roger sur le devant paroît absorbé dans sa douleur ; il
+          est assis par terre, et appuyé contre un tronc d’arbre : sa Vielle est suspendue en
+          évidence sur le devant du Théâtre, avec un bonnet à la Corse.</stage>
+        <stage>Chœur de Marmottes y chantant et dansant à la Reprise.</stage>
+        <label>Air.</label>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+
+          <l>Elle est morte, la Vache à Panier ;</l>
+          <l>Elle est morte, n’en faut plus parler.</l>
+        </sp>
+        <sp who="deuxieme_marmotte">
+          <speaker>Seconde Marmotte</speaker>
+          <l><pb n="4" xml:id="p4"/>Faut se consoler,</l>
+          <l>Ne faut plus pleurer ;</l>
+          <l>Mais il faut chanter,</l>
+          <l>Il faut danser,</l>
+          <l>Il faut chanter.</l>
+        </sp>
+        <sp who="chœur">
+          <speaker>Chœur</speaker>
+          <l>Elle est morte, la Vache à Panier ;</l>
+          <l>Elle est morte s n’en faut plus parler.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène II <lb/>Roger ; Les Vielleurs</head>
+        <stage>Camarades de Roger, arrivent.</stage>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <stage>, aux Marmottes.</stage>
+          <p>Eh bien ! vous autres, qu’y a-t-il de nouveau ?</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p>Ah ! mon enfant, nous sommes au désespoir.</p>
+        </sp>
+        <sp who="second_vielleur">
+          <speaker>Second Vielleur</speaker>
+          <p>Au désespoir ! Et vous chantez, vous dansez !</p>
+        </sp>
+        <sp who="deuxieme_marmotte">
+          <speaker>Seconde Marmotte</speaker>
+          <p>C’est pour nous consoler.</p>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>La méthode est nouvelle.</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p><pb n="5" xml:id="p5"/>Nouvelle ! Elle est aussi ancienne que l’Opéra.</p>
+          <lg>
+            <label>Air : Ah ! vous en venez, ah ! vous en venez.</label>
+            <l>Dans ce pays c’est l’usage ;</l>
+            <l>Par un beau Chœur, par du tapage,</l>
+            <l>Tous les chagrins sont dissipés.</l>
+          </lg>
+        </sp>
+        <sp who="vielleurs">
+          <speaker>Les Vielleurs</speaker>
+          <l>Vous en venez, vous en venez ;</l>
+          <l>Ah ! je vois bien que vous en venez.</l>
+          <l>Que vous en venez.</l>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>Mais encore, pourquoi vous chagrinez-vous ?</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p>Pourquoi nous le demander ?</p>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>C’est qu’en nous le disant, tout le monde le saura, et alors on ne sera pas obligé de
+            deviner.</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p>Eh bien ! mon enfant, apprends que la pauvre Javotte jouait ici de la vielle avec
+            nous : M. Fumeron, le Maître des Forges, vient de la faire enlever.</p>
+        </sp>
+        <sp who="second_vielleur">
+          <speaker>Second Vielleur</speaker>
+          <p>Enlever ! Et son mari, le pauvre Roger-Bontems ?</p>
+        </sp>
+        <sp who="seconde_marmotte">
+          <speaker>Seconde Marmotte</speaker>
+          <p>Le voilà.</p>
+
+        </sp>
+        <label>Duo de Mondonville.</label>
+        <label>Air : Est-il endormi, ton maudit mari ?</label>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+
+          <l><pb n="6" xml:id="p6"/>Est-il endormi,</l>
+          <l>Ce pauvre mari ?</l>
+          <l>Hélas ! je le plains bien !</l>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <l>Sa douleur profonde</l>
+          <l>Lui fait fuir tout le monde.</l>
+        </sp>
+        <sp who="seconde_marmotte">
+          <speaker>Seconde Marmotte</speaker>
+          <l>Il n’entend plus rien.</l>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <l>Il ne voit plus rien.</l>
+        </sp>
+        <sp who="premiere_marmotte seconde_marmotte">
+          <speaker>Ensemble</speaker>
+          <l>Pour lui plus de bien,</l>
+          <l>Et la lumiere</l>
+          <l>Le désespère.</l>
+        </sp>
+        <sp who="second_vielleur">
+          <speaker>Second Vielleur</speaker>
+          <l>Mais ne parle-t-il plus ?</l>
+        </sp>
+        <label>Air : Des fraises, des fraises.</label>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <l>Frappé d’un si grand revers,</l>
+          <l>Un nom seul il marmotte ;</l>
+          <l>Il le dit en prose, en vers,</l>
+          <l>Soit à tort, soit à travers.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, s’écriant.</stage>
+          <p><pb n="7" xml:id="p7"/>Javotte ! Javotte ! Javotte !</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p>Vous voyez, il ne pense qu’à sa femme. Quelle leçon pour les maris !</p>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>Elle ne sera pas suivie.</p>
+          <lg>
+            <label>Air : Des fraises.</label>
+            <l>On verroit bien des Maris</l>
+            <l>Lui dire qu’il radotte ;</l>
+            <l>Quoique l’usage, à Paris</l>
+            <l>Soit de jeter les hauts cris.</l>
+          </lg>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, s’écriant</stage>
+          <p>Javotte ! Javotte ! Javotte !</p>
+        </sp>
+        <sp who="premiere_marmotte">
+          <speaker>Première Marmotte</speaker>
+          <p>Allons, mes amis ; prenons-nous par la main, et dansons une ronde.</p>
+          <lg>
+            <label>Air : du Devin de Village.</label>
+            <l>Allons danser sous ces Ormeaux.</l>
+            <l>Animez-vous, jeunes Fillettes ;</l>
+            <l>Allons danser sous ces Ormeaux ;</l>
+            <l>Galans, prenez vos Chalumeaux.</l>
+          </lg>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, se lève et les interrompt.</stage>
+          <p>Eh ! mes amis, mes camarades ! Je vous remercie <pb n="8" xml:id="p8"/>de la peine et
+            de la fatigue que vous vous donnez pour me consoler ; mais, je vous en prie, ménagez vos
+            voix et vos bras, pour la fin de mon aventure, et laissez-moi seul ici.</p>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>Mais quelle fantaisie ! Pourquoi veux-tu rester seul ?</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Que sais-je ?… J’aurai plus de plaisir à me désespérer sans témoins, et puis, je veux
+            tâcher de me rappeller quelque chanson qui convienne à ma douleur.</p>
+        </sp>
+        <sp who="premier_vielleur">
+          <speaker>Premier Vielleur</speaker>
+          <p>Eh bien ! mon ami, nous te laissons : console-toi comme tu pourras ; chante, danse,
+            rêve, désespère-toi ; pends-toi même, si tu veux : nous allons t’attendre au
+            cabaret.</p>
+          <stage>Ils se retirent en chantant et en dansant.</stage>
+        </sp>
+        <sp who="vielleurs">
+          <speaker>Chœur</speaker>
+          <l>Allons nous-en, gens de la noce,</l>
+          <l>Allons nous-en boire deux coups.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène III</head>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, seul.</stage>
+          <p><pb n="9" xml:id="p9"/>Me pendre, disent-ils ! J’en aurais bonne envie ; je le devrois,
+            peut-être : mais, si je débute par-là, je m’ôterai la ressource du dénouement.… Pour
+            gagner du tems, mettons-nous en règle, et commençons par apostropher l’aurore, le jour,
+            la nuit, les forêts, les échos, les parques, les démons et la nature entiere.
+            Allons…</p>
+          <lg>
+            <label>Air : Pour héritage, je n’eus de mes Parens.</label>
+            <l>Toi, que j’adore,</l>
+            <l>Je te demande au jour ;</l>
+            <l>Pour toi j’implore,</l>
+            <l>La Lune à ton retour :</l>
+            <l>Quand il fait nuit,</l>
+            <l>Je m’adresse à l’Aurore,</l>
+            <l>Et je te redemande encore</l>
+            <l>Quand le Soleil luit.</l>
+            <l>Javotte ! hélas ! Javotte ! où donc es-tu ?</l>
+            <l>Sans savoir ce qu’il dit, ton époux éperdu,</l>
+            <l>Pour calmer sa douleur amère,</l>
+            <l>Chante, danse, se désespère…</l>
+            <l>Mais, hélas !…</l>
+          </lg>
+          <lg>
+            <label>(Refrain.)</label>
+            <l>Autant en emporte le vent.</l>
+          </lg>
+          <lg>
+            <label>Air : Adieu, paniers, etc.</label>
+            <l><pb n="10" xml:id="p10"/>Javotte étoit des plus parfaites,</l>
+            <l>Elle me gagnoit des écus ;</l>
+            <l>Mais, hélas ! je n’en aurai plus :</l>
+            <l>Adieu, paniers, vendanges sont faites.</l>
+            <l>Dans tous les coins de la maison,</l>
+            <l>Sur tous les murs on voit ton nom ;</l>
+            <l>Dans tous les cabarets, sur chaque cheminée</l>
+            <l>On lit, écrit en noir charbon :</l>
+            <l>Javotte, hélas ! Javotte est enlevée !</l>
+          </lg>
+          <lg>
+            <label>Air : Autrefois à sa Maitresse, etc.</label>
+            <l>Par une vive tendresse,</l>
+            <l>Tu répondois à mon cœur ;</l>
+            <l>Javotte, chere Maitresse,</l>
+            <l>Tu partageois mon ardeur.</l>
+            <l>Quoi ! ta beauté, ta jeunesse,</l>
+            <l>Rien n’a pu te garantir !</l>
+            <l>Ton Époux, dans son ivresse,</l>
+            <l>N’a pas sçu te secourir.</l>
+            <l>Pour le malheur de ma vie,</l>
+            <l>Tu sçais plaire à Fumeron.</l>
+            <l>Faut-il que tu sois ravie</l>
+            <l>Par ce maudit Forgeron ?</l>
+          </lg>
+          <p>Mais, je m’amuse à chanter, lorsque je dois agir… Qui m’empêchera d’entrer dans la
+            forge, et d’enlever ma femme à mon tour ? On dit que rien n’est impossible à la
+            musique : elle adoucira <pb n="11" xml:id="p11"/>les Forgerons… Inspire-moi, divin
+            Orphée ! Et si je ne puis les enchanter avec ma vielle, fais du moins que je les
+            endorme.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène IV <lb/>Roger, Céladon</head>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <lg>
+            <label>Air : La bonne aventure, ô gué !</label>
+            <l>Pour venir à ton recours,</l>
+            <l>Je suis hors d’haleine ;</l>
+            <l>Mon pauvre Roger, j’accours</l>
+            <l>Pour finir ta peine :</l>
+            <l>Ton bonheur va commencer,</l>
+            <l>Déjà je viens t’annoncer</l>
+            <l>La bonne aventure,</l>
+            <l>Ô gué !</l>
+            <l>La bonne aventure.</l>
+          </lg>
+          <p>Arme-toi de résolution, et mets ta vielle d’accord ; c’est d’elle que dépend ta
+            destinée.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Eh ! qui êtes-vous, pour savoir tout cela ?</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Bon ! j’en sais bien d’autres ! Quoique je tombe ici des nues pour toi, je mérite ta
+            confiance. Je protège les amans ; je suis confident né de <pb n="12" xml:id="p12"
+            />toutes les intrigues du Village. Par la vertu de mes secrets, je fais aimer les plus
+            insensibles ; je rajeunis les vieillards, j’embellis les figures, et je corrige
+            l’influence des planètes… En un mot, je suis le fameux Empyrique Céladon.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>C’est-à-dire, un grand Charlatan.</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>À-peu-près, mon ami ! je suis l’Apothicaire des Forges, je viens pour te servir.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Eh bien ! si vous le savez, apprenez-moi ce que fait ma femme à présent.</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Ta femme est actuellement dans les jardins de Monsieur Fumeron ; et comme il aime
+            beaucoup la musique, si tu peux parvenir à l’amuser avec ta vielle, il te rendra ta
+            femme, mais à une condition.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Ah ! Monsieur Céladon, je suis prêt à tout.</p>
+          <p>Dites, quelle condition ?</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>C’est que… Peste du bavard ! j’allois faire une belle sottise ! Ce que c’est que les
+            mauvais <pb n="13" xml:id="p13"/>exemples ! Apprends, mon ami, que je la sais fort
+            bien ; mais que je ne dois ni te la dire, ni même la savoir. Va trouver Monsieur
+            Fumeron ; c’est à lui à te l’apprendre.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <lg>
+            <label>Air : de Janot et Janette. Que ferons-je en mariage ?</label>
+            <l>Mais ce secret n’est pas sage ;</l>
+            <l>Pourquoi me cacher cela ?</l>
+          </lg>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <l>Je n’en dis pas davantage ;</l>
+          <l>Mais bientôt on t’instruira,</l>
+          <l>Je l’imagine ;</l>
+          <l>Et ce que je ne te dis pas,</l>
+          <l>Le public le devine.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Mais, pourquoi cette discrétion ?</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Pourquoi ?… C’est pour ne pas éventer le secret. Si je te le disois, il n’y auroit plus
+            d’intérêt pour les autres scènes.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Ah ! je vous en prie, Monsieur Céladon</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <lg>
+            <label>Air : Va-t’en voir s’ils viennent, Jean ; va-t’en voir s’ils viennent.</label>
+            <l>Non tu ne me tiens pas là,</l>
+            <l>Je saurai me taire.</l>
+          </lg>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l><pb n="14" xml:id="p14"/>Mais, est-ce qu’à l’Opéra</l>
+          <l>L’on en fait mystère ?</l>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <l>Va-t’en voir s’ils viennent, Jean,</l>
+          <l>Va-t’en voir s’ils viennent.</l>
+          <p>Adieu. Je pourrois te débiter ici de jolies maximes d’amour et de délicatesse, quelques
+            petits persifflages à la mode : mais je réserve cela pour une meilleure occasion. En
+            attendant, compte sur mon secours, tu me reverras en tems et lieu ; entre dans la forge,
+            et si le feu te fait peur,</p>
+          <stage>(Il chante).</stage>
+          <lg>
+            <label>Air : Robin turelure.</label>
+            <l>Que, dans ce pressant danger,</l>
+            <l>Ta tendresse te rassûre.</l>
+            <l>L’amour, mon ami Roger,</l>
+            <l>Turelure,</l>
+            <l>Est plus fort que la brûlure ;</l>
+            <l>Robin turelure lure.</l>
+          </lg>
+          <stage>(Il s’en va).</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène V</head>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, seul.</stage>
+          <p><pb n="15" xml:id="p15"/>Je vais revoir ma femme, dit-il ; ah ! cette promesse me rend
+            toute ma gaieté. Chantons encore un peu.</p>
+          <lg>
+            <label>Air : De la Bohémienne.</label>
+            <l>Dans l’espérance du plaisir,</l>
+            <l>Il faut d’avance se réjouir, etc.</l>
+          </lg>
+          <stage>(Il est interrompu par le bruit de la forge dont les travaux se font entendre ;
+            mais à petit bruit d’abord).</stage>
+          <p>Il faut entrer dans la forge : mais ces Forgerons qui m’ont enlevé ma femme, sont pis
+            que des démons. S’ils alloient m’assommer ?</p>
+          <lg>
+            <label>Air : Vogue la galere, etc.</label>
+            <l>Allons, prenons courage :</l>
+            <l>L’amour règle mon sort.</l>
+            <l>Dans le feu, le tapage,</l>
+            <l>Je veux braver la mort :</l>
+            <l>Et vogue la galere,</l>
+            <l>Tant qu’elle, tant qu’elle, tant qu’elle ;</l>
+            <l>Et vogue la galere,</l>
+            <l>Tant qu’elle pourra voguer.</l>
+          </lg>
+          <stage><pb n="16" xml:id="p16"/>(Il prend sa vielle avec intrépidité, et enfonce son
+            chapeau ; puis il porte ses pas vers l’entrée de la forge : alors le bruit redouble ; on
+            entend les coups de marteau, et on voit sortir du feu).</stage>
+          <lg>
+            <label>Air : Tentation de Saint Antoine, Ciel ! l’Univers.</label>
+            <l>Ah ! c’en est fait ! c’est mon heure derniere.</l>
+            <l>Quel bruit ! quels coups ! quel horrible fracas !</l>
+            <l>Ah ! c’est : pis que le tonnerre</l>
+            <l>Qui gronde et tombe en éclats !</l>
+            <l>Je sens la terre</l>
+            <l>Trembler sous mes pas.</l>
+          </lg>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène VI <lb/>Roger, Un Forgeron, avançant vers Roger</head>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <lg>
+            <label>Air : Aux armes, camarades, etc.</label>
+            <l>À l’aide, camarades, à l’aide !</l>
+            <l>Empêchons d’approcher ce ravisseur-là.</l>
+            <l>À l’aide, camarades, à l’aide !</l>
+          </lg>
+          <stage>(à Roger)</stage>
+          <p>Toi, coquin, veux-tu bien rester là !</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Moi, coquin ! moi, ravisseur ! Eh ! Messieurs, je viens vous demander ma femme.</p>
+        </sp>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <p><pb n="17" xml:id="p17"/>Ta femme !</p>
+          <stage>(Il reprend l’air.)</stage>
+          <l>À l’aide, Camarades, etc.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène VII</head>
+        <stage>Les Forgerons accourent avec des marteaux, des barres de fer, des fourches, et autres
+          instrumens de Forges.</stage>
+        <label>Air : Ah ! te voilà ! etc.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+
+          <l>Ah ! les voilà !</l>
+          <l>Hélas ! le cœur me bat déjà.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons,</speaker>
+          <l>Arrête, frippon.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Eh ! Messieurs, laissez-moi donc !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Ayez moins de rigueurs !</l>
+          <l>Laissez-vous attendrir par mes pleurs.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Rien ne peut nous toucher,</l>
+          <l>Sors d’ici, garde-toi d’approcher.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l><pb n="18" xml:id="p18"/>Écoutez-moi :</l>
+          <l>Ne me causez plus tant d’effroi.</l>
+          <l>Appaisez-vous donc,</l>
+          <l>Je vais dire une chanson.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <label>Air : Ah ! vous avez bon air.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+
+          <l>Écoutez ma vielle.</l>
+        </sp>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <l>Ah ! la chose est nouvelle !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Écoutez ma vielle,</l>
+          <l>Vous serez charmés.</l>
+        </sp>
+        <sp who="second_forgeron">
+          <speaker>Second Forgeron</speaker>
+          <l>Ah ! ah ! vous avez bon air !</l>
+          <l>Bon air vous avez !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Chœur des forgerons</speaker>
+          <l>Ah ! ah ! vous avez bon air !</l>
+          <l>Bon air vous avez !</l>
+          <stage>( Ils dansent autour de lui en chantant. )</stage>
+        </sp>
+        <label>Ariette dont le chant est noté a la fin.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+
+          <l>Eh ! Messieurs, laissez-vous toucher !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <p>Non.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l><pb n="19" xml:id="p19"/>Mais, écoutez un petit air.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Rendez-moi donc ma femme !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Par égard pour ma flamme !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Par pitié !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Par amitié !</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Les Forgerons</speaker>
+          <l>Non.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+          <p>Le diable les emporte.</p>
+          <stage>(Deux Forgerons le prennent par les épaules.)</stage>
+          <lg>
+            <label>Air : J’avois cent francs, etc.</label>
+            <l>L’ami, crois-moi,</l>
+            <l>Ne nous fais pas la nique ;</l>
+            <l>Laisse-là ta musique ;</l>
+            <l>Va-t-en, retire-toi.</l>
+            <l><pb n="20" xml:id="p20"/>À l’Opéra</l>
+            <l>Tu pourrois trouver grâce</l>
+            <l>Par ce secours-là.</l>
+            <l>Ici, crois-moi,</l>
+            <l>Mets autre chose en place,</l>
+            <l>Ou bien c’est fait de toi.</l>
+          </lg>
+          <stage>(Ils levent tous leurs marteaux sur lui, et l’entourent avec des gestes menaçans,
+            etc.)</stage>
+        </sp>
+        <label>Air : Quand vous entendrez les doux zéphirs.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, du ton le plus affectueux.</stage>
+
+          <l>Hélas ! laissez vous donc attendrir,</l>
+          <l>Par les soupirs d’un mari fidèle !</l>
+          <l>À vos genoux voyez-moi mourir,</l>
+          <l>Ou rendez-moi ma Belle.</l>
+          <l>Loin de ses yeux,</l>
+          <l>Tout m’est odieux ;</l>
+          <l>Je dépéris, je meurs de dépit.</l>
+          <l>Oui, sans Javotte…</l>
+          <l>Roger radotte,</l>
+          <l>Il en perd l’esprit.</l>
+          <l>Hélas ! laissez, etc.</l>
+        </sp>
+        <sp who="second_forgeron">
+          <speaker>Second Forgeron</speaker>
+          <p>Oui, voilà bien quelque chose ; tu ne chantes pas mal ; mais ne saurois-tu pas, pour
+            nous achever, quelque petit air de danse ?</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Hélas ! Messieurs, ce n’est pas par-là que je brille ; mais, n’importe, je vais
+            essayer.</p>
+          <stage><pb n="21" xml:id="p21"/>(Il joue l’Allemande-Suisse, pendant laquelle les
+            Forgerons font différens gestes d’admiration et de contentement.)</stage>
+        </sp>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <p>Oh ! pour le coup, mes amis, il faut nous rendre à cela ; oui-dà : car s’il nous dit
+            tout ce qu’il sait, il n’aura plus rien à dire a notre maître.</p>
+        </sp>
+        <sp who="second_forgeron">
+          <speaker>Second Forgeron</speaker>
+          <p>Viens avec moi, je vais te conduire dans tous les recoins de la forge.</p>
+          <stage>(Il rejoue la même Allemande ; tous, se mettant à danser, sortent du Théâtre, en
+            rentrant par la forge.)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène VIII <lb/>Fumeron, sa femme, Javotte, trois suivantes, dont une file avec une
+          guenouille, l’autre tricote, l’autre devide un rouet</head>
+        <stage><pb n="22" xml:id="p22"/>(La Forge a disparu. Le Théâtre représente un Jardin.
+          Fumeron entre avec sa femme.)</stage>
+        <label>Air : Fanfare de Saint-Cloud.</label>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+
+          <l>Mettons-nous sous cet ombrage</l>
+          <l>Pour éviter la chaleur.</l>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <stage>, à ses femmes.</stage>
+          <l>Portez-ici votre ouvrage,</l>
+          <l>Et respirez la fraîcheur.</l>
+          <stage>(Les femmes avancent des chaises.)</stage>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <l>Mais qu’a donc notre Marmotte ?</l>
+          <l>Auroit-elle de l’humeur ?</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Monseigneur ! Monseigneur ! Monseigneur !</l>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <l><pb n="23" xml:id="p23"/>Va, console-toi, Javotte :</l>
+          <l>Mon mari veut ton bonheur.</l>
+          <stage>(Madame Fumeron s’assied à côté de son mari.)</stage>
+          <stage>(À Javotte.)</stage>
+          <l>Allons, ma petite ; pour t’égayer, chante-nous quelque chose.</l>
+        </sp>
+        <label>Air : Poulida Pastourella.</label>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, chante.</stage>
+
+          <l>Poulida Pastourella !</l>
+          <l>Perletta mas amours !</l>
+          <l>Perché sias-vous tant bella,</l>
+          <l>Et yeou tant amouroux ?</l>
+          <l>Poulida, etc.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène IX <lb/>Les susdits ; Guilmino, accourant</head>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Qu’est-ce qu’il y a, Guilmino ? Vous êtes bien échauffé !</p>
+        </sp>
+        <label>Air : De la petite Poste.</label>
+        <sp who="guilmino">
+          <speaker>Guilmino</speaker>
+
+          <l>Ah ! Monseigneur ! ah ! Monseigneur !</l>
+          <l>Tout est chez vous dans la rumeur ;</l>
+          <l><pb n="24" xml:id="p24"/>Tous les travaux sont arrêtés,</l>
+          <l>Les Forgerons sont enchantés ;</l>
+          <l>Un chansonnier, qui vient d’entrer,</l>
+          <l>Comme des fous les fait danser.</l>
+          <p>Sa vielle est comme une magie. Le Sorcier chante, et le gros Dogue reste la gueule
+            béante ; tous les Forgerons font chorus, votre vieux Portier bat la mesure, et les
+            femmes de Madame dansent la Fricassée.</p>
+          <stage>(On entend du bruit.)</stage>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <p>Ah ! mon ami, ils viennent par ici.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Ne craignez rien, ma femme. Guilmino, emmenez Javotte, et veillez sur elle.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène X <lb/>Roger entre avec les Forgerons ; les précédens ; troupe de
+          Forgerons.</head>
+        <label>Air : De la Fricassée.</label>
+        <sp who="chœur">
+          <speaker>Chœur</speaker>
+          <stage>que l’on entend des coulisses.</stage>
+
+          <l><pb n="25" xml:id="p25"/>C’est le meilleur des maris</l>
+          <l>Qui vient pour demander sa femme ;</l>
+          <l>C’est le meilleur des maris,</l>
+          <l>Qui soit de la Chine à Paris.</l>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <stage>, se levant, dit à Roger</stage>
+          <p>Insolent ! viens-tu braver ma colere ?</p>
+          <lg>
+            <label>Air : Jean de la Riole.</label>
+            <l>Jean de la Riole, mon ami,</l>
+            <l>Est -ce que tu ris, est-ce que tu te moques ?</l>
+            <l>Jean de la Riole, mon ami,</l>
+            <l>Que viens-tu chercher par ici ?</l>
+          </lg>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, troublé.</stage>
+          <p>Monseigneur !…</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Eh ! bien, après ?…</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p><pb n="26" xml:id="p26"/>Monseigneur !… Et vous, ma bonne Dame !…</p>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <p>Que demandez-vous ? Parlez.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Je ne saurois…</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Dis donc, qui es-tu ?</p>
+        </sp>
+        <label>Air : De la fricassée.</label>
+        <sp who="forgerons">
+          <speaker>Chœur des Forgerons</speaker>
+
+          <l>C’est le meilleur des maris,</l>
+          <l>Qui vient vous demander sa femme ;</l>
+          <l>C’est le meilleur des maris,</l>
+          <l>Qui soit de la Chine à Paris.</l>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <stage>, à Roger.</stage>
+          <l>Mais, dis-moi donc quelque mot.</l>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <l>Tu restes-là comme un sot.</l>
+        </sp>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <l>Mais, parle leur donc ? nigaud.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Je me sens saisir l’âme,</l>
+          <l>Et je ne peux dire un mot.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Chœur des Forgerons</speaker>
+          <l><pb n="27" xml:id="p27"/>C’est le meilleur des maris,</l>
+          <l>Qui vient pour demander sa femme ;</l>
+          <l>C’est le meilleur des maris,</l>
+          <l>Qui soit de la Chine à Paris.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker><hi rend="sc">Roger</hi></speaker>
+          <stage>, à Fumeron</stage>
+          <p>Monseigneur, je vous avouerai bonnement que je venois pour chercher ma Javotte ; mais
+            je ne comptois pas avoir affaire à vous : c’est pourquoi votre présence
+            m’embarrasse.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Tu ne comptois pas avoir affaire à moi ! Mais, nigaud, si tu veux ravoir ta femme, il
+            faut bien que nous ayons affaire ensemble, et que ce soit moi qui te la rende.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Vous avez raison. Monseigneur. Mais, on ne peut pas penser à tout.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Mauvaise excuse ! Dis plutôt que tu voulois éviter une situation qui t’a paru
+            difficile. Mais, va, je suis bon diable, je ne la ferai pas durer long-tems, et je n’ai
+            paru que pour la forme… À présent, amuse-nous ; et si tu sais encore quelques chansons,
+            voyons ; regagne ta Javotte</p>
+        </sp>
+        <label>Air : De Rameau. Fatal amour !</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, avec emphase.</stage>
+
+          <l>Charmant amour, puissant vainqueur !</l>
+          <l>Fais-moi rendre l’objet dont dépend mon bonheur !</l>
+          <stage>(Fumeron bâille, ainsi que sa femme et les Forgerons.)</stage>
+        </sp>
+        <sp who="second_forgeron">
+          <speaker>Second Forgeron</speaker>
+          <stage>, l’interrompant.</stage>
+          <p>Tais-toi donc, tu vas l’impatienter. Change de ton.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Bon, bon. Laisse-moi faire.</p>
+          <lg>
+            <label>Air : Du haut en bas.</label>
+            <l>Rendez-la moi,</l>
+            <l>Cette Javotte que tant j’aime ;</l>
+            <l>Rendez-la moi,</l>
+            <l>C’est l’unique objet de ma foi.</l>
+            <l>Ah ! par votre bonté suprême,</l>
+            <l>Pour prix de ma tendresse extrême ;</l>
+            <l>Rendez-la moi.</l>
+          </lg>
+          <lg>
+            <label>Air : Margoton, mon cœur.</label>
+            <l>Ah ! ma belle Dame, Ah ! mon bon Seigneur,</l>
+            <l>Écoutez-un air flatteur,</l>
+            <l>Pour vous, pour vous, pour vous remettre ;</l>
+            <l>Écoutez un air flatteur,</l>
+            <l>Pour vous remettre en belle humeur.</l>
+          </lg>
+          <p><pb n="29" xml:id="p29"/>Quand Orphée descendit aux Enfers pour demander sa femme à
+            Pluton ; voici ce que le Monarque Ténébreux lui dit, en la lui rendant.</p>
+          <lg>
+            <label>Air : des Femmes Vengées. Tous les pas d’un discret Amant.</label>
+            <l>Je crains peu que cette faveur</l>
+            <l>Puisse tirer à conséquence ;</l>
+            <l>Tous les maris ont ta douleur,</l>
+            <l>Mais aucun n’a ton imprudence.</l>
+            <l>Si, pour imiter ton dessein,</l>
+            <l>Quelqu’autre étoit assez peu sage</l>
+            <l>Crois qu’il se perdroit en chemin,</l>
+            <l>Sans achever le voyage.</l>
+          </lg>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <stage>, à son mari.</stage>
+          <p>Eh bien ! mon ami.</p>
+          <lg>
+            <label>Air : Vraiment ma commere, voire.</label>
+            <l>Vous sentez-vous réjoui ?</l>
+          </lg>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <l>Vraiment, ma commere, oui.</l>
+        </sp>
+        <sp who="premier_forgeron">
+          <speaker>Premier Forgeron</speaker>
+          <l>S’il le dit, il le faut croire.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Chœur des forgerons</speaker>
+          <l>Vraiment, mon compere, voire,</l>
+          <l>Vraiment, mon compere,</l>
+          <l>Oui.</l>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <p><pb n="30" xml:id="p30"/>Comme je n’ai pas de modèle à copier, je ne sais pas ce que je
+            dois dire ; mais je sais fort bien ce que j’en pense.</p>
+          <lg>
+            <label>Air : La Beauté et la Curiosité.</label>
+            <l>D’une sincere ardeur chérir en une Belle</l>
+            <l>Sa beauté ;</l>
+            <l>En voyant ses appas, lui demeurer fidèle,</l>
+            <l>La rareté !</l>
+            <l>Mais sitôt qu’on la perd, recourir après elle,</l>
+            <l>La curiosité !</l>
+          </lg>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Mon garçon, je t’accorde ta priere ; je te rends ta femme ; emmene-la : mais j’y mets
+            une condition. Si tu jettes un seul regard sur sa personne, tu la perdras aussi-tôt pour
+            jamais.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Ô Ciel ! quelle condition barbare ! Autant vaut-il ne me la pas rendre.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <p>Je conviens qu’elle est ridicule ; mais je ne fais rien de mon chef, et j’ai la fable
+            pour guide ; ainsi obéis, et ne réplique pas. Venez, ma chere femme, et renvoyons-lui sa
+            Javotte…</p>
+
+        </sp>
+        <label>Duo.</label>
+        <label>Air de la Fête du Château. Une terre, avec moi, etc.</label>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <stage>, en s’en allant.</stage>
+
+          <l><pb n="31" xml:id="p31"/>Contraignez les desirs de vos cœurs amoureux ;</l>
+          <l>Dans le silence,</l>
+          <l>Sortez de ces lieux.</l>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Madame Fumeron</speaker>
+          <l>Ne porte point sur elle un regard curieux,</l>
+          <l>Une imprudence</l>
+          <l>Vous perdroit tous deux.</l>
+        </sp>
+        <sp who="pluton">
+          <speaker>Fumeron</speaker>
+          <l>Je veux être obéi, redoute ma vengeance ;</l>
+          <l>Si tu la regardois,</l>
+          <l>Tu la reperdrois pour jamais.</l>
+          <stage>(Reprise en Duo.)</stage>
+          <l>Contraignez, etc.</l>
+        </sp>
+        <sp who="forgerons">
+          <speaker>Chœur des forgerons</speaker>
+          <l>Emmène ta Belle ;</l>
+          <l>Décampe avec elle :</l>
+          <l>Car Fumeron</l>
+          <l>N’entendroit pas raison.</l>
+          <l>Oui, crains sa vengeance ;</l>
+          <l>La moindre imprudence</l>
+          <l>À ton amour</l>
+          <l>Jouerait un mauvais tour.</l>
+          <stage>(Ils sortent tous sur la premiere reprise de l’air de Chasse de la Garde.)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène XI</head>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, seul.</stage>
+          <p><pb n="32" xml:id="p32"/>J’en connois qui, dans la position où je me trouve,
+            s’amuseroient à admirer ce jardin, et qui diroient…</p>
+          <lg>
+            <label>Air : Quand vous entendrez, etc.</label>
+            <l>Petits oiseaux, aimables zéphirs ;</l>
+            <l>Et vous, ruisseaux, dont le doux murmure, etc.</l>
+          </lg>
+          <p>Pour moi, je sens que je ne dois songer qu’à ma femme, et j’oublie tout pour elle… Elle
+            va m’être rendue !…</p>
+          <lg>
+            <label>Air : Toujours, il efl toujours le même, etc.</label>
+            <l>Toujours, toujours, c’est toujours quelque chose ;</l>
+            <l>À quel danger,</l>
+            <l>L’Amour va m’exposer !</l>
+            <l>Quoi ! de l’envisager,</l>
+            <l>Pour moi c’est lettre close !</l>
+            <l>Mais sans la regarder,</l>
+            <l>Je pourrai la toucher :</l>
+            <l>Toujours, toujours, c’est toujours quelque chose.</l>
+          </lg>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène XII <lb/>Roger, Guilmino, ramenant Javotte, qui est voilée d’un mouchoir</head>
+        <label>Air : Allons, gai, réjouissez-vous, etc.</label>
+        <sp who="guilmino">
+          <speaker><hi rend="sc">Guilmino</hi></speaker>
+          <stage>, à Roger</stage>
+
+          <l><pb n="33" xml:id="p33"/>Reçois de moi ta tourterelle,</l>
+          <l>Tendre tourtereau ;</l>
+          <l>Et jusqu’au tombeau,</l>
+          <l>Des bons Maris sois le modèle.</l>
+          <l>Allons, gai, sans plus de façons.</l>
+          <l>D’ici pars avec elle :</l>
+          <l>Allons, gai, sans plus de façons,</l>
+          <l>Tournez les talons.</l>
+          <stage>(Il la dévoile et la lui remet entre les mains.)</stage>
+          <stage>(Guilmino sort.)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène XIII <lb/>Roger, Javotte</head>
+        <label>Air du Peintre amoureux, etc. Me promenant près du logis, etc.</label>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l><pb n="34" xml:id="p34"/>Ah ! te voilà, mon cher mari !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Oui, tu me vois. Je suis ici.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Mon cher ami !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+          <l>Je suis saisi, etc.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+          <l>Ah ! quel martyre !</l>
+          <l>Que lui dire ?</l>
+          <stage>(Haut)</stage>
+          <l>Viens, n’arrête pas.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, à part.</stage>
+          <l>Eh, mais ! d’où vient qu’il soupire ?</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Avance donc ; suis mes pas.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Roger ! pourquoi te taire ?</l>
+          <l>Quel est ce mystère ?</l>
+          <l><pb n="35" xml:id="p35"/>(À part)</l>
+          <l>Ah ! je crois, ma foi,</l>
+          <l>Qu’il se rit de moi.</l>
+          <stage>(À Roger)</stage>
+          <l>Retourne-toi,</l>
+          <l>Regarde-moi.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Sans différer, sortons d’ici.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>(À la Reprise.)</stage>
+          <l>Mon cher ami !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Je suis saisi, etc.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, s’éloignant d’elle.</stage>
+          <l>Ah ! morbleu ! la terrible chose qu’une défense !</l>
+
+        </sp>
+        <label>Duo</label>
+        <label>Air : Robin turelure.</label>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Mais, viens donc, mon cher Roger !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+          <l>J’ai bien peur de l’aventure.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Mon ami, viens m’embrasser !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Turelure.</l>
+          <l><pb n="36" xml:id="p36"/>Cache-moi bien ta figure.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Ah ! quel affront ! quelle injure !</l>
+        </sp>
+        <label>Air : Sur un Sopha 3 etc.</label>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+
+          <l>Quelle douleur !</l>
+          <l>Cette froideur</l>
+          <l>Me fend le cœur.</l>
+          <l>Ingrat, j’aime mieux</l>
+          <l>Que tu me laisse en ces lieux.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Dieux !</l>
+
+        </sp>
+        <label>Duo.</label>
+        <label>Air : Toto, carabo.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+
+          <l>Au nom de ma tendresse,</l>
+          <l>Éloignons-nous d’ici,</l>
+          <l>Carabi.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Prends pitié de ma foiblesse,</l>
+          <l>Dissipe mon souci,</l>
+          <l>Carabi</l>
+          <l>Toto, carabo, marchand caraban,</l>
+          <l>Roger, mon pauvre ami,</l>
+          <l>Me laîras-tu, me laîras-tu, me laîras-tu mourir ?</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l><pb n="37" xml:id="p37"/>Prends pitié de ma foiblesse ;</l>
+          <l>Tourne les yeux ici,</l>
+          <l>Carabi.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Ah ! ma chere maitresse</l>
+          <l>D’honneur je ne le puis ;</l>
+          <l>Carabi,</l>
+          <l>Toto, carabo, marchand caraban,</l>
+          <l>Roger, ton bon ami,</l>
+          <l>Te laîroit-il, te laîroit-il, te laîroit-il mourir ?</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Ah ! ma chere maitresse,</l>
+          <l>D’honneur je ne le puis,</l>
+          <l>Carabi.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>C’est une mal-adresse</l>
+          <l>De t’excuser ainsi,</l>
+          <l>Carabi,</l>
+          <l>Toto, carabo,</l>
+          <l>Marchand caraban,</l>
+          <l>Roger, mon cher ami.</l>
+          <l>Me laîras-tu, me laîras-tu, me laîras-tu mourir ?</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>C’est une mal-adresse</l>
+          <l>De t’excuser ainsi,</l>
+          <l>Carabi.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l><pb n="38" xml:id="p38"/>C’est pour suivre la Pièce</l>
+          <l>Où l’on a pris ceci,</l>
+          <l>Carabi.</l>
+          <l>Toto, carabo,</l>
+          <l>Marchand caraban,</l>
+          <l>Roger, ton bon ami,</l>
+        </sp>
+        <sp who="orphee eurydice">
+          <speaker>Duo</speaker>
+          <l>Te laîroit-il mourir ?</l>
+          <l>Me laîroit-il mourir ?</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Tu ne veux donc pas m’en dire davantage ?</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Écoute, Javotte : il est bien vrai que je pourrois te tranquilliser d’un seul mot ;
+            mais je ne le veux pas. C’est à toi à te dire : oui-dà ! il faut qu’il y ait un secret
+            là-dessous, que Roger est forcé de me cacher, et à te payer de raison.</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Me payer de raison ! Belle proposition à faire à une femme !</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Je n’en ai pourtant pas de meilleure.</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Est-ce là ton dernier mot ?</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Oui.</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, à part.</stage>
+          <p><pb n="39" xml:id="p39"/>Puisque rien ne peut le toucher, faisons semblant de nous
+            évanouir petit-à-petit…</p>
+          <stage>(Haut.) </stage>
+          <p>Roger… je me trouve mal.</p>
+        </sp>
+        <label>Air : À la façon de Barbari.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+
+          <l>Quoi ! tu veux donc mourir aussi</l>
+          <l>Biribi,</l>
+          <l>À la façon de Barbari, mon ami ?</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Oui. C’en est fait… Adieu, Roger.</p>
+          <l>(Elle tombe sur le gazon)</l>
+
+        </sp>
+        <label>Duo.</label>
+        <label>Air : Vous, Amans que j’intéresse.</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Non, tu n’es pas assez sotte ;</l>
+          <l>Non, non, ma chere Javotte,</l>
+          <l>Non, tu n’es pas assez sotte,</l>
+          <l>Pour mourir pour tout de bon !</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Crois que ta chere Javotte</l>
+          <l>Va mourir pour tout de bon.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, à part.</stage>
+          <l>Fumeron ! ordre funeste !</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Va, cruel ! je te déteste.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l><pb n="40" xml:id="p40"/>C’est pour jouer de ton reste,</l>
+          <l>Et pour me faire la loi.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Moi !</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Toi.</l>
+          <stage>Ensemble :</stage>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Non, tu n’es pas assez sotte ;</l>
+          <l>Non, non, ma chere Javotte,</l>
+          <l>Non, tu n’es pas allez sorte</l>
+          <l>Pour mourir pour tout de bon.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Crois que ta chere Javotte</l>
+          <l>Va mourir pour tout de bon.</l>
+          <stage>(À la fin de l’air, Javotte laisse tomber sa tête sur le gazon, et ne parle plus.
+            Roger, après un instant de silence se retourne et parle.)</stage>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Mais cependant, si c’étoit vrai !… Qu’est-ce que je risque de la regarder ? Suis-je un
+            basilic ? Mes yeux ne la tueront pas.</p>
+          <stage>(Il s’approche d’elle.)</stage>
+          <p>Ma chere Javotte ! ouvre les yeux, vois-moi.</p>
+          <lg>
+            <label>Air : Eh ! riez, riez donc, etc.</label>
+            <l>Et reviens, reviens donc,</l>
+            <l>C’est Roger qui t’appelle,</l>
+            <l>Et reviens, reviens donc,</l>
+            <l>Ma gentille Tonton.</l>
+          </lg>
+          <p>Elle ne dit mot ! ô Ciel ! Ce maudit Forgeron l’a ensorcelée. Elle est morte !</p>
+          <lg>
+            <label>Air du Devin du Village.</label>
+            <l>J’ai perdu tout mon bonheur,</l>
+            <stage>(En s’écriant.)</stage>
+            <l>J’ai perdu ma Javotte !</l>
+          </lg>
+          <p>Allons, il faut se tuer, pour sortir d’embarras.</p>
+          <stage>(Il sort un couteau de sa poche)</stage>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène XIV <lb/>Javotte, Roger, Céladon</head>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <stage>, lui touchant le bras.</stage>
+          <p><pb n="42" xml:id="p42"/>J’arrive à point nommé pour t’épargner les frais d’un second
+            désespoir ; car ce seroit toujours la même chose.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Non, parbleu ! Cette fois-ci j’y allois bon jeu, bon argent.</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Pourquoi donc cette folie ?</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Pour varier la scène. Ma femme est morte, que voulez-vous que je fasse ici tout
+            seul ?</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, riant.</stage>
+          <p>Ah ! le nigaud, qui donnoit là-dedans !</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Comment tu n’es pas morte ?</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Eh ! non vraiment, c’est un semblant.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p><pb n="43" xml:id="p43"/>Ma foi, je croyois que c’étoit une vapeur lyrique, qui t’avoit
+            suffoquée.</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Et moi, je vous apportais un dénouement.</p>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <p>Donnez toujours : cela n’est pas de refus.</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Oh ! non ; puisque vous n’êtes pas morte, il ne sçauroit vous servir.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Pourquoi donc cela ?</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Parce que c’est un dénouement à la moderne. Je ne venois ici que pour faire valoir la
+            vertu de mes secrets ; j’avois même rassemblé tous vos camarades pour les rendre témoins
+            de la cure merveilleuse que j’allois opérer : mais, puisque vous vivez, je n’ai plus que
+            faire ici.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <p>Comment diable ! il faut donc absolument mourir pour vous rendre nécessaire ?</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène IV <lb/>Les précédens ; Guilmino, accourant</head>
+        <sp who="guilmino">
+          <speaker>Guilmino</speaker>
+          <p><pb n="44" xml:id="p44"/>Au contraire, vivez, mes amis ; Monsieur Fumeron n’avoit envie
+            que de se divertir en faisant une petite épreuve. Il vouloit voir si un mari aimeroit
+            assez sa femme pour entreprendre ce que Roger a fait pour Javotte ; il est content de
+            vous, et vous récompensera l’un et l’autre.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>Scène XVI et dernière <lb/>Les précédens ; les Marmottes, et Vielleurs, camarades de
+          Roger, arrivent</head>
+        <sp who="vielleurs">
+          <speaker>Les Vielleurs</speaker>
+          <p><pb n="45" xml:id="p45"/>Ah ! mon cher Roger !</p>
+        </sp>
+        <sp who="marmottes">
+          <speaker>Les Marmottes</speaker>
+          <p>Ah ! ma chere Javotte !</p>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <p>Allons, mes amis, divertissez-vous.</p>
+
+        </sp>
+        <label>Chœur de l’Amoureux de Quinze ans.</label>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <l>Mes enfans,</l>
+          <l>Dans les plaisirs, employons ces momens.</l>
+        </sp>
+        <sp who="chœur">
+          <speaker>Chœur</speaker>
+          <l>Mes enfans,</l>
+          <l>Célebrons ces heureux Amans.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker><hi rend="sc">Roger</hi></speaker>
+          <stage>, à Javotte</stage>
+          <l>Roger revoit tes appas !</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, à Roger</stage>
+          <l>Oui, Javotte est dans tes bras.</l>
+        </sp>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <l><pb n="46" xml:id="p46"/>Amis, plus de soucis ;</l>
+          <l>Bannissons d’ici</l>
+          <l>L’ennui.</l>
+          <l>Oui, oui ;</l>
+          <l>Mes enfans,</l>
+          <l>Dans les plaisirs, employez, etc.</l>
+
+        </sp>
+        <label>Air du Vaudeville de Sara,</label>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <stage>, au Public.</stage>
+          <l>Sans cesse étudier vos goûts,</l>
+          <l>Nous conformer à tous,</l>
+          <l>Ne penser qu’à vous.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <stage>, au Public ;</stage>
+          <l>Souvent vous voir amuser parmi nous,</l>
+          <l>Rien n’est plus doux !</l>
+          <l>De nos soins, c’est le salaire.</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Pouvoir remplir tous vos loisirs,</l>
+          <l>Messieurs, c’est notre unique affaire.</l>
+        </sp>
+        <sp who="orphee eurydice">
+          <speaker>Ensemble</speaker>
+          <l>Vous charmer et vous plaire</l>
+          <l>C’est le but de nos desirs.</l>
+
+        </sp>
+        <label>Reprise du Chœur de l’Amoureux de Quinze ans.</label>
+        <sp who="celadon">
+          <speaker>Céladon</speaker>
+          <l>Qu’il est doux</l>
+          <l>De réussir à contenter vos goûts !</l>
+        </sp>
+        <sp who="chœur">
+          <speaker>Chœur</speaker>
+          <l><pb n="47" xml:id="p47"/>Qu’il est doux</l>
+          <l>De vous voir amuser chez nous I</l>
+        </sp>
+        <sp who="orphee">
+          <speaker>Roger</speaker>
+          <l>Ailleurs, on voit de grands traits.</l>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Javotte</speaker>
+          <l>Ici de simples portraits</l>
+        </sp>
+        <sp who="chœur">
+          <speaker>Chœur</speaker>
+          <l>Heureux,</l>
+          <l>Si, par nos jeux,</l>
+          <l>Nous chassons d’ici</l>
+          <l>L’ennui ;</l>
+          <l>Oui, oui, oui.</l>
+          <l>Qu’il est doux</l>
+          <l>De réussir à contenter vos goûts !</l>
+        </sp>
+      </div>
+    </body>
+
+  </text>
+</TEI>

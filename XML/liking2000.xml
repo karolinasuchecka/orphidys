@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée Dafric. Encres noires</title>
+                <author>Werewere Liking</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://www.furet.com/fr/orphee-dafric-roman-orphee-d-afrique-theatre-rituel-1034959.html</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Werewere Liking</author> / <title>Orphée Dafric. Encres noires</title>
+                    / Paris / L’Harmattan / 2000.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée Dafric. Encres noires</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>L’Harmattan</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2000"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>liking2000</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="2000">2000</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>modernisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Werewere Liking</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée Dafric. Encres noires</titlePart>
+                </docTitle>
+            </titlePage>
+            <div type="dedication">
+                <salute>À Njock Ndogbea</salute>
+                <salute>Et à Ngo Btyong Bi Küban</salute>
+                <l>Pour la lumière qu’ils apportèrent</l>
+                <l>Et pour l’espoir qui en naîtra…</l>
+            </div>
+        </front>
+
+        <body>
+
+            <l><pb n="9" xml:id="p9"/>Orphée, Nyango, Nyango – Orphée.</l>
+            <l>Deux noms qui sonnaient bien.</l>
+            <l>Allaient-ils bien ensemble ?</l>
+            <l>Nyango signifie : Madame…</l>
+            <l>Comme ça lui allait bien !</l>
+            <l>C’était réellement une grande dame.</l>
+            <l>Et Orphée ?</l>
+            <p>Longtemps, Orphée s’était demandé ce que signifiait son nom. Traditionnellement,
+                chaque nom voulait dire quelque chose, quelque chose qui était en rapport avec les
+                circonstances de la naissance, le caractère et le destin de son porteur. Et au fur
+                et à mesure de l’évolution, on acquérait de nouveaux noms…</p>
+            <p>Aujourd’hui, dès la naissance et irrévocablement, on nous affuble d’une demi-douzaine
+                de noms en ignorant leur intention première. Ne suffit-il pas de savoir qu’ils
+                furent portés par des Saints ? Saint-Athanase, Saint-Polycarpe, Saint-Simplice,
+                Sainte-Cunégonde, Sainte-Thècle, et autre Eulalie…</p>
+            <p>Un jour, par chance, on vit des titres comme « Orphée aux enfers », « Orfeo negro »…
+                Et à défaut de savoir la signification de ce nom, on sut le destin de son porteur…
+                Et notre Orphée espéra au fond de son cœur que ce nom signifiait : Monsieur ; sinon,
+                il faudrait désormais appeler Nyango, Eurydice. Mais, … en réfléchissant bien, il
+                préféra la première solution : il ne voulait tout de même pas être obligé d’aller
+                chercher son amour jusqu’aux enfers !…</p>
+            <p><pb n="10" xml:id="p10"/>« … »</p>
+            <p>C’est ce qu’ils se répétaient inlassablement.</p>
+            <p>Et ils se le répétèrent tant et si bien que leur conviction se condensa, se durcit,
+                et s’imposa…</p>
+            <p>Malgré les oppositions et les pièges en tous genres, Orphée et Nyango venaient, non
+                seulement de se marier, mais de réussir le plus dur, rallier tous les suffrages…
+                Deux familles opposées comme le jour et la nuit venaient de s’unir.
+                Volontairement…</p>
+            <p>Les parents de Nyango étaient de ces nouveaux riches à qui tout était offert comme au
+                jeu du sort, sans efforts. Ils étaient assis aux postes d’honneur, confortablement,
+                comme on s’assoit sur un héritage l’unique possibilité de révocation serait la
+                mort…</p>
+            <p>Le père avait « fait des études », juste ce qui suffisait à l’orée des indépendances
+                pour être un homme à placer ; un homme avec la juste somme d’idées reçues et de
+                complexes pour être manipulé. Il s’était inscrit au nouveau parti et avait reçu une
+                formation d’administrateur, sur le tas ; il savait donc prononcer des discours… Et
+                il était farouchement pour : pour le développement, pour le progrès, pour la
+                démocratie… Il voyait déjà l’Afrique noire rattraper l’Occident, bien qu’elle soit
+                « mal partie »… Il voulait construire des gratte-ciel, des bases nucléaires, des
+                bombes… Et il participait à toutes les « négociations » pour obtenir les prêts
+                nécessaires…</p>
+            <p>La mère de Nyango avait, elle aussi, fait des études, certes inférieures à celles de
+                son mari, comme il se devait. Mais « suffisantes » pour se voir élevée au rang
+                d’« intellectuelle », et pour augmenter <pb n="11" xml:id="p11"/>sa valeur « sur le
+                marché »… Aux temps de leurs fiançailles, une institutrice diplômée, ça valait son
+                pesant d’or… Elle savait discuter de politique et se servir de son « instinct
+                féminin » pour dépister les pièges qu’on tendait à son époux. Elle lui conseillait
+                la vigilance, la prudence, et faisait pression sur lui quand il se révoltait contre
+                certaines positions de son gouvernement : que deviendrait-elle ? qu’adviendrait-il
+                si on les « dégommait » ? Ne savait-il pas combien il était difficile, voire
+                impossible de « changer de veste » ?</p>
+            <p>Alors il devint de plus en plus conciliant, et la chance vint habiter chez eux… De
+                plus, ils eurent le temps de donner la vie à leur fille unique, Nyango, pour les
+                combler. Maintenant, le couple avait atteint les faîtes de son ascension…</p>
+            <p>On ne pouvait pas en dire de même d’Orphée et de sa famille…</p>
+            <p>L’aîné d’une horde de dix enfants, Orphée était le seul en âge d’aider les autres.
+                Son père s’était esquinté à la tâche. Certes, la cacaoyère produisait bien, mais les
+                prix de la Caisse de Stabilisation – on ne savait pas ce qu’elle stabilisait et pour
+                qui – ne permettaient pas de joindre les deux bouts. Aussi, Orphée avait-il dû
+                travailler après le brevet, en continuant ses études le soir. Il s’occupait
+                entièrement de ses trois cadets déjà au collège, tandis que son père « se
+                débrouillait » pour les autres.</p>
+            <p>Son père était de ces hommes qui s’éloignent continuellement d’une fortune sans cesse
+                à leur portée. Intelligent, ouvert, respecté de tous, on aurait pu penser que le
+                succès répondrait présent à son moindre claquement de doigt. Hélas, il ne le
+                claquait point ce doigt et se tuait à la tâche pour un gain dérisoire ; sans
+                reproches ni revendications, sans amertume… Et ce village solitaire, semblait
+                n’attendre qu’un signe de lui pour se soulever, mais son <pb n="12" xml:id="p12"
+                />calme désarçonnait les plus révoltés et rassérénait les plus aigris…</p>
+            <p>Son village aurait commencé à retrouver une harmonie qui se raréfiait partout
+                ailleurs dans le pays, pour ne pas dire qu’elle avait disparu…</p>
+            <p>Et si les gens travaillaient avec plaisir et en communauté, la moitié de la journée,
+                le reste du temps serait consacré aux activités sportives et culturelles où l’on
+                exploiterait les capacités de chacun : les voyants, les guérisseurs
+                réapprofondiraient leur science et initieraient des jeunes.</p>
+            <p>Et les instrumentistes, les conteurs, se relayent pour rendre les soirées aussi
+                agréables qu’instructives : on réapprend l’histoire, la mythologie, la philosophie
+                et l’ontologie de sa tribu. Et l’on envisage l’avenir avec optimisme et confiance en
+                soi. Les vieillards acceptent à nouveau de transmettre leur savoir, de parler à des
+                jeunes attentifs qui les écoutent, leur rendant ainsi la dignité qu’on leur avait
+                retirée.</p>
+            <p>Et si les femmes ralentissaient la course au pouvoir et aux richesses, elles ne
+                conseilleraient plus à leurs enfants de chercher tel parti nanti, ne feraient plus
+                pression sur leurs maris pour qu’ils adhèrent à tel parti en place, et briguent tel
+                poste d’honneur. Parce que l’honneur ici se place à un autre niveau, un niveau
+                qualifié de rétrograde et d’anti-progressiste, par les gens de la capitale…</p>
+            <p>C’est pourquoi la famille de Nyango voyait d’un mauvais œil une union avec une telle
+                famille, une famille qui stagnait et freinait le développement. La famille d’Orphée,
+                de son côté, considérait comme une mésalliance l’union avec une « race » de
+                traîtres, d’aliénés et de resquilleurs.</p>
+            <p>Mais chose curieuse, il n’y eut plus d’opposition radicale quand les fiancés se
+                furent présentés à leurs parents respectifs, comme si tous avaient senti, ou
+                pressenti la Vraie Rencontre… Certes les méfiances <pb n="13" xml:id="p13"/>avaient
+                persisté. Sciemment ou inconsciemment, on avait retardé le projet ; mais les
+                réticences s’atténuaient de jour en jour, non que l’on ait fini par s’apprécier ou
+                s’accepter, mais parce que la volonté des jeunes gens s’imposait irrésistiblement,
+                comme une fascination qui balayait tout.</p>
+            <p>Et les deux familles finirent par conjurer leurs efforts pour que leurs enfants
+                aillent jusqu’au bout d’eux-mêmes, pour que leur mariage soit un succès.</p>
+            <p>On avait même autorisé les jeunes mariés, en compagnie de deux amis seulement, à
+                traverser le fleuve en crue sur le fragile kayac qu’Orphée avait fabriqué lui-même.
+                Si le ciel agréait cette union, rien ne leur arriverait. Tout le monde avait peur :
+                des jeunes mariés sur un kayac pendant les crues !!! Le Fleuve Blanc pardonnait
+                difficilement ce genre de provocations. Tous y pensaient mais personne ne le dit.
+                Personne ne voulait être l’oiseau de malheur, surtout pas les mariés eux-mêmes : ils
+                tremblaient pour leur vie mais ils avaient besoin de cette dernière voix, la voix du
+                ciel. Leur mariage serait agréé par tous ou il ne serait pas, car c’est toute une
+                vie qui devait se réconcilier avec elle-même, avec la nature, à travers eux. C’était
+                leur rêve, c’était leur vœu.</p>
+            <p>Le cœur battant, ils étaient entrés dans le kayac, ils s’étaient confiés aux dieux,
+                et ils avaient traversé le Fleuve Blanc, sans incident. Le reste des convives avait
+                traversé le fleuve par le bac. La fête commencée sur une rive dans la famille de
+                Nyango avait continué sur l’autre dans le village natal d’Orphée, jusqu’au
+                lendemain. Le jeune couple hésitait à entrer dans la chambre nuptiale. Déjà, on
+                bavardait : l’outre n’était-elle plus pleine ? l’Étoile Initiale avait-elle explosé
+                avant terme ?</p>
+            <p>C’est à sept heures du matin qu’Orphée et Nyango se décidèrent enfin pour le grand
+                voyage… Devant <pb n="14" xml:id="p14"/> la porte de la chambre nuptiale, on avait
+                posé une bouteille pleine d’eau ; sur le lit des mariés, on avait disposé le
+                traditionnel drap blanc…</p>
+            <p>« … » Et ils se le répétèrent encore : <hi rend="i">« l’amour vient à bout de
+                tout… »</hi>.</p>
+            <p>Le sommeil fut long à venir, mais il vint… Il vint s’abattre comme un ouragan,
+                saccageant et retournant tout sur son passage. Les appréhensions, les doutes trop
+                longtemps tus, le combat mené pendant ces trois longues années de fiançailles
+                avaient usé certaines cordes qui lâchaient maintenant, après la victoire. Et les
+                profondeurs béaient. Et l’angoisse fouettait leurs visages comme des réalités plus
+                concrètes que nature, celles des cauchemars ou des rêves merveilleux…</p>
+            <p>Le cœur d’Orphée bat follement, pris d’un sentiment de catastrophe… Et voici, le
+                kayac saute en l’air comme projeté par une force surnaturelle et renverse les quatre
+                amis. Ils se battent contre le courant fougueux. Les deux garçons réussissent à
+                remettre le kayac en place. Il faut aider les filles à monter, mais où sont-elles ?
+                ah ! en voici une ! on l’installe. Et Nyango ? Où est Nyango ? Les jeunes gens
+                plongent, appellent, cherchent, crient… Nyango a disparu ! Deux jours et deux nuits,
+                les hommes fouillent, sillonnent le fleuve de part en part. En vain. Les
+                sapeurs-pompiers et la gendarmerie venus à la rescousse ne parviennent pas à un
+                meilleur résultat…</p>
+            <p>Le fleuve rend toujours ses victimes le troisième jour. La nouvelle court jusqu’aux
+                villages les plus <pb n="15" xml:id="p15"/>éloignés, elle atteint tous les villages
+                du bout du fleuve. Tous les hommes sont mobilisés dès cinq heures de ce matin du
+                troisième jour. Ils vont et viennent le long des rivages, à l’affût d’un signe. On
+                retourne les buissons, on soulève les troncs creux.</p>
+            <l>Quand je m’adresse à une femme et lui demande à manger,</l>
+            <l>Elle m’insulte.</l>
+            <l>Quand j’envoie un enfant à la source pour me puiser de l’eau,</l>
+            <l>Il se détourne de moi.</l>
+            <l>On me dit « <hi rend="i">tu as tué ta femme, tu as mangé Madame</hi> »</l>
+            <l>On me dit « <hi rend="i">tu as vendu Madame, tu as coupé ta Dame</hi> ».</l>
+            <l>Quel or, quel diamant m’auraient été aussi précieux que Madame ?</l>
+            <l>Quelles richesses m’auraient été plus utiles que Madame ?</l>
+            <l>Toi qui connais<note place="bottom" resp="KS">Nous corrigeons « connait » par
+                    « connais ».</note> mon cœur Madame,</l>
+            <l>Toi qui me vois par les yeux de Dieu, tu sais maintenant,</l>
+            <p>Je ne t’aurais échangé contre rien au monde…</p>
+            <p>Reviens je t’invite, reviens je t’implore</p>
+            <p>Viens me chercher, reviens Madame</p>
+            <p>Viens m’emporter, reviens Madame</p>
+            <p>Viens me délivrer, j’ai de la peine</p>
+            <p>Viens me consoler, reviens je t’en prie…</p>
+            <p>Et Orphée chantait seul dans son kayac, au milieu du fleuve, juste là où avait
+                disparu Nyango, neuf jours plus tôt, le jour de leur mariage…</p>
+            <p><pb n="16" xml:id="p16"/>Neuf jours que les rumeurs couraient bon train : quelle
+                était cette noyade où l’on ne retrouvait pas de corps ?</p>
+            <p>Oui. Le fleuve rend toujours ses victimes le troisième jour…</p>
+            <p>Seuls les corps de gens « vendus » disparaissent. Ils sont récupérés pour travailler
+                dans les plantations invisibles des maîtres de Kong…</p>
+            <p>Qui avait vendu Nyango ?</p>
+            <p>Qui avait besoin d’argent ou d’honneurs ?</p>
+            <p>Certainement pas ses parents, non vraiment pas…</p>
+            <p>Ils n’avaient plus besoin de rien.</p>
+            <p>Sauf peut-être d’une fille « cousue de diplômes »…</p>
+            <p>Ils n’auraient pas vendu leur unique fille…</p>
+            <p>Tout de même…</p>
+            <p>Mais Orphée…</p>
+            <p>Orphée venait d’avoir son bac. Il allait certainement gagner un peu plus. Mais on
+                sait ce que c’est que les augmentations dans notre pays. Ce n’était certainement pas
+                ce qui allait résoudre les problèmes de sa famille…</p>
+            <p>N’était-ce pas lui qui avait vendu sa femme ? Quelle idée de faire traverser le
+                fleuve en crue à une jeune mariée dans un machin-truc aussi fragile qu’un
+                kayac ?</p>
+            <p>Ah ! il avait bien préparé son coup et il était. ; bien récompensé : n’avait-on pas
+                annoncé à la radio sa réussite à un concours qui lui donnait droit à une bonne
+                bourse d’études dans une grande école scientifique en Amérique ?</p>
+            <p>Juste le troisième jour de la disparition de Nyango…</p>
+            <p><pb n="17" xml:id="p17"/>Alors même que l’on cherchait vainement son corps…</p>
+            <p>Et lui qui n’avait même pas versé une larme, ni montré la moindre tristesse, comme
+                s’il n’était pas concerné…</p>
+            <p>Ah ! mon cher, c’était lui, sans doute, et vraiment, il avait bien calculé son
+                coup…</p>
+            <p>Neuf jours que les rumeurs couraient bon train…</p>
+            <p>Et là maintenant au milieu du fleuve, Orphée vit un moment de panique et de
+                désespoir ; il était convaincu que Nyango vivait ; elle ne pouvait pas être morte,
+                elle ne pouvait pas l’abandonner. Mais s’il s’était trompé ? Si réellement c’était
+                fini ? À cette seule pensée, le souffle refuse de pénétrer dans ses poumons, son
+                cœur se fige, sa peau se glace…</p>
+            <p>Mais voici le souffle de Madame sur son cou, comme elle le faisait le soir quand ils
+                restaient trop longtemps courbés sur leurs livres… c’était sa façon à elle de
+                l’encourager, de le réconforter…</p>
+            <p>Alors Orphée sait et se rassure. Nyango vit. Elle vivra toujours…</p>
+            <p>Il rentre au village, le visage lumineux. Il se met à construire leur maison,
+                exactement comme ils l’avaient conçue ensemble, avant leur mariage…</p>
+            <p>Orphée s’anime dans son lit…</p>
+            <p>Orphée et Nyango avaient mis à profit les années de leurs fiançailles pour construire
+                leur maison. Chaque période des vacances était employée pleinement pour la
+                réalisation de ce projet… Et ils avaient réussi.</p>
+            <p>Il y avait cinq chambres à coucher, un grand living, qui pouvait être partagé en deux
+                parties, le salon et la salle à manger. Il y avait également une Cuisine et trois
+                salles d’eau incorporées, bien que <pb n="18" xml:id="p18"/>cette pratique ne soit
+                pas encore entrée dans les mœurs au village. En effet, coutumièrement, la cuisine
+                était construite à part, avec deux chambres supplémentaires dont une servait
+                généralement de grenier et l’autre de chambre à coucher à la maîtresse de maison.
+                C’était son royaume et elle n’allait dans la « maison principale » que pour
+                rejoindre son époux, quand elle était sollicitée…</p>
+            <p>La salle d’eau et les latrines étaient construites un peu plus en retrait, derrière
+                les maisons.</p>
+            <p>Mais les fiancés avaient tenu à cette commodité moderne de tout avoir dans une même
+                maison. Leur chambre à coucher avait donc au sud, la salle d’eau, au nord un petit
+                réduit qui leur servirait de lieu de recueillement et de prière. La porte de cette
+                sorte de sanctuaire rappelait une niche. Cette niche avait été peinte en violet.
+                Elle accueillerait plus tard « le fétiche » de leur union. La tête de lit était
+                tournée vers l’Ouest. Sur le mur Est, tout blanc, en face du lit, ils avaient prévu
+                un clou unique pour suspendre un objet d’art, quand ils en trouveraient un à leur
+                goût…</p>
+            <p>L’extérieur de la maison était tout ocre, comme l’argile. Tout l’intérieur était
+                blanc. Les rideaux étaient tous bleus, sauf ceux de leurs chambres à coucher qui
+                étaient blancs et indigos…</p>
+            <l>L’amour mériterait un socle</l>
+            <l>une niche couleur de l’esprit</l>
+            <l>placée à l’angle le plus réceptif du monde</l>
+            <l>Le violet anti-matière de la lumière blanche :</l>
+            <l>Et il sourd du Nord l’énergie attractive qui retiendra l’Amour.</l>
+            <l>Le fétiche y veillerait</l>
+            <l><pb n="19" xml:id="p19"/>Et l’amour sur cet autel</l>
+            <l>par le point réceptif de la plénitude</l>
+            <l>L’Amour recueillerait de l’Ouest</l>
+            <l>l’énergie pure d’un soleil mûr</l>
+            <l>La lumière naîtrait de chaque jour neuf</l>
+            <l>tamisée par le savoir bleu et indigo,</l>
+            <l>par l’angle le plus émettant du monde</l>
+            <l>Et jaillirait de l’Est, le rayon blanc-actif du beau et du fort.</l>
+            <l>L’Eau maturera la pleine abondance du Sud</l>
+            <l>L’Eau fécondera les corps d’argile et de feu</l>
+            <l>Et l’Amour méritera un socle…</l>
+            <l>Dans son rêve, Orphée reconstruisait leur maison…</l>
+            <l>Il se retourna dans son lit…</l>
+            <p>Personne ne lui parle plus dans le village. Sa mère, ses frères et sœurs ont
+                disparu : ils se cachent quelque part, peut-être pour échapper à la horde ? et son
+                père ?</p>
+            <p>Son père n’était pas bavard. Il lui avait souvent dit : « <hi rend="i">Les gens parlent trop
+                    et ne s’écoutent jamais, pourquoi leur parlerais-je, leur dirais-je des choses
+                    qu’ils n’entendront même pas</hi> ? »</p>
+            <p>Alors Orphée se tait. Mais il écoute lui, et il entend. Il construit sa maison ; elle
+                monte tous les jours. Et il se dit que c’est un privilège d’écouter et d’entendre
+                enfin. Il ne s’était jamais rendu compte du monumental nombre de mots qu’une bouche
+                déversait tous les jours, mais surtout, il ne s’était pas rendu compte de
+                l’inconscience des hommes : inconscience de ce qui se dit, se fait, de ce qui se
+                passe autour de soi ; inconscience de ce qu’on dit, de ses implications, des
+                conséquences de ses actes. <pb n="20" xml:id="p20"/>Un mot tisse une chaîne de
+                réactions qui se poursuivent jusqu’à l’infini. Son père avait raison :
+                    « <hi rend="i">chaque homme devrait s’imposer au moins un mois de silence dans sa vie,
+                    pour prendre conscience, pour comprendre la vie, et pour savoir pourquoi il y a
+                    un Dieu</hi> ». Car il ne peut pas ne pas y avoir un Dieu, on s’en rend compte
+                quand on se tait.</p>
+            <p>Quand on se tait, on est assailli par le bruit, un bourdonnement intense rempli de
+                cris, de chants, de rires, d’invites, mais surtout de questions. Qui est ce bruit ?
+                Faites donc l’expérience : taisez-vous ! Bouchez vos oreilles, et écoutez à
+                l’intérieur. Le bruit est en vous. Il aspire à la vie. Vous devez la lui donner.
+                Vous êtes né pour créer, pour donner, pour renouveler la vie. Qui est cette Vie ?
+                Donner la vie à un bruit, c’est lui donner une forme, un corps de bruit fait de sons
+                et de couleurs, fait de mots et de pensées originales, uniques. Qui sont ces mots,
+                ces pensées ?</p>
+            <p>Depuis qu’Orphée s’était tu, il avait été obligé de créer, de matérialiser son bruit
+                intérieur. Un certain nombre de questions effleurait maintenant sa conscience
+                objective. Un proverbe de chez lui disait : « <hi rend="i">au lieu de regarder où
+                    vous êtes tombé, cherchez plutôt où vous avez glissé…</hi> » Où avait-il glissé
+                lui, pour tomber là où il était ? Mais où était-il au fait ? Autour de lui, rien que
+                des visages tordus par une sourde haine. Haine du voisin, haine de soi-même
+                peut-être ?… Qui était cette haine ?</p>
+            <p>Autour de lui, plus personne n’émergeait. Émerger seul pour aller où ? Pour quoi
+                faire ? Que faire d’ailleurs dans une société qui avait décidé d’en finir dans un
+                suicide collectif ?</p>
+            <p>Tout le génie créateur était voué aux maléfices, à la destruction, à
+                l’auto-destruction ; un enfant avançait-il trop vite dans ses études ? un commerçant
+                faisait-il de bonnes affaires ? un politicien <pb n="21" xml:id="p21"/>grimpait-il
+                vite au sommet de la hiérarchie ? une femme s’épanouissait-elle ? On « vendait » les
+                uns, on « mangeait » les autres. On écumait les tombes à la recherche de squelettes
+                à vendre : à qui ? aux « Blancs » et aux Arabes qui en extrayaient un philtre
+                consommé à l’échelle internationale, disait-on. Et l’on fabriquait des poisons de
+                plus en plus sophistiqués : poisons téléguidés, poisons par contact, poisons
+                transportés par des insectes dressés, poisons sur les ombres, etc. Et on déplaçait
+                les cercueils par télékinésie souterraine !!! Une partie des populations se livrait
+                au pillage des tombes, à la vente des corps. L’autre s’évertuait à découvrir la
+                première et à lui « faire son affaire » : on enfonçait un clou dans la tête des
+                pilleurs de tombes ou bien on leur faisait boire l’eau de la décomposition des
+                cadavres, ou encore on leur enfonçait des cendres avec de la chaux dans
+                l’anus !!!</p>
+            <p>Et le cercle infernal se perpétuait.</p>
+            <p>Et claquaient, et résonnaient des mots aux syllabes damnées : Kông ! Kông ! Fam-laa !
+                Fam-laa !</p>
+            <p>De fantastiques chantiers ouvrent leurs portes de nuit : des immeubles poussent de la
+                terre avec la fougue des champignons vénéneux. Des plantations éclosent par
+                enchantement. Traite ! On traite. Traîtreusement. Et des zombies travaillent nuit et
+                jour, sous terre, pour des maîtres qui les ont achetés à leurs familles, à leurs
+                amis, contre la fortune, contre les honneurs… Traite ! On traite.
+                Transcendantalement. On sépare l’âme de son véhicule et on la maintient emprisonnée
+                au mont « Koupé », alors que le corps… Le corps plisse, creuse, se creuse, s’use
+                jusqu’à ce que les cordes d’or et d’argent se cassent, seconde mort qui libère l’âme
+                et lui permet de se résorber dans la conscience unique.</p>
+            <p>Le génie zodiacal nommé scorpion s’était emparé des foules et l’on détruisait, et
+                l’on s’auto-détruisait <pb n="22" xml:id="p22"/>avec une frénésie que l’on pouvait
+                qualifier de géniale. Et la peur s’était installée ; elle maintenait les villages
+                dans un « végétatisme » morbide. La peur enfantait la haine, haine de l’autre,
+                témoin de notre peur, de notre honte, symbole de la conscience de notre dégradation,
+                de notre humiliation, une conscience qu’on avait décidée<note place="bottom"
+                    resp="KS">Nous corrigeons « décidé » par « décidée ».</note> de noyer.</p>
+            <p>Ce peuple fut pourtant une fière race…</p>
+            <p>Ses fils refusaient le chef et l’état d’esclave, se considérant tous comme nobles et
+                responsables, rois de leurs consciences… Et « l’initiation de l’univers » basée sur
+                la puissance de la parole, conduisait à la maîtrise du « mot-force » : poésie
+                – philosophie – efficacité. Ce mot ôtait ou donnait la vie ; il devait résoudre tous
+                les problèmes, guérir…, même les morsures de serpents !</p>
+            <p>La « grande parole » affirmait que l’homme ne serait avili que par lui-même, en
+                commettant des bassesses, des actes honteux, tout simplement. Alors l’asservissement
+                s’abat sur lui et il se désagrège là, boudé par les mouches, les asticots… Aussi les
+                hommes fuyaient comme la peste tout ce qui pouvait faire honte…</p>
+            <p>Et ils marchaient, la poitrine bombée, la tête haute ; ils répondaient à l’appel en
+                clamant fièrement leur lignée et en frappant finalement la main droite sur le torse
+                pour dire leur nom… Leurs reins étaient ceints d’immenses pagnes dont les pans
+                retombaient lourdement, semblant les retenir solidement au sol, les attacher à la
+                matière à jamais ; et pourtant… Ils ne furent ni artisans, ni commerçants ; le libre
+                échange seul tenait lieu de monnaie. Ils ne sculptèrent qu’un seul masque : « le
+                justicier » qui symbolisait le dieu des morts, et se transmettait au fil des siècles
+                à la garde des initiés…</p>
+            <p>Ils ne cultivaient que pour nourrir leurs familles et en réalité, la seule richesse
+                importante se mesurait <pb n="23" xml:id="p23"/>par le nombre de vies humaines
+                engendrées… Aussi l’être stérile était-il le plus pauvre.</p>
+            <p>Le culte fut celui du savoir et du savoir-dire…</p>
+            <p>Ici, le savoir-dire et la poésie étaient les plus grandes formes d’expression
+                artistique.</p>
+            <p>Les historiens racontent le passé, interrogent le présent et imaginent l’avenir dans
+                une gerbe de mots taillés comme des diamants. Et les populations impatientes
+                s’abreuvent d’une émotion constamment renouvelée, puisée à la source même de leur
+                créativité.</p>
+            <p>Des « philosophes » démêlent des litiges : ils élèvent les compréhensions jusqu’à
+                l’ultime conscience… Comment en serait-il autrement ? Ici, les mots changent
+                totalement de sens à une nuance près dans l’intonation. Alors on malaxe, on élabore,
+                on polit, on fignole, on joue sur le son et sa vibration. Et les plus graves
+                problèmes reviennent à leur degré zéro ; les adversaires s’étonnent qu’une telle
+                broutille ait pu les mettre hors d’eux-mêmes.</p>
+            <p>Des « avocats » plaident les causes perdues : on applaudit l’originalité d’un style
+                qui « fait passer » toutes les idées… Et le « condamné » salue un nouveau jour, une
+                nouvelle vie qu’il doit à l’Art.</p>
+            <p>Des « manieurs » de la parole thérapeutique retrouvent le « verbe perdu », le triple
+                son qui créa le monde. Ils connaissent les vibrations contenues dans chaque ton,
+                dans chaque mot, dans tous les souffles. Ils maîtrisent l’esprit du mal par la
+                « juste » combinaison des sons, par le poids du mot « juste ». Et l’ordre revient
+                dans les cellules, et l’esprit réanime la matière.</p>
+            <p>Il y avait aussi des « harangueurs » de foules pendant les travaux communautaires,
+                des « rythmeurs » de la parole chantée, des « satiriques », des « spécialistes » du
+                proverbe… Bref, tout fils de ce peuple était artiste dès qu’il prenait la
+                parole…</p>
+            <p><pb n="24" xml:id="p24"/>Orphée se retourne dans son lit.</p>
+            <p>Il se demande où il est…</p>
+            <p>C’est un village. Les maisons sont carrées ou rectangulaires<note place="bottom"
+                    resp="KS">Nous corrigeons « rectangulaire » par « rectangulaires ».</note>,
+                crépies à l’argile ocre, ou blanchies au kaolin, et alignées de part et d’autre
+                d’une route principale. Les cours se confondent avec la route, et sont balayées
+                ensemble le matin par les enfants. Les arrière-cours sont délimitées par des haies
+                d’hibiscus pour endiguer les feuilles de cacao qui volettent partout au moindre
+                souffle d’air, et pour décorer aussi peut-être ?</p>
+            <p>Les futures mères utilisent les feuilles d’hibiscus pour des lavements intestinaux ;
+                elles affirment que ça facilite l’accouchement et que les enfants naissent propres…
+                Les hommes exercent leurs machettes sur les haies le matin pour s’assurer qu’elles
+                ont bien été aiguisées. Les ménagères « arrosent » les haies avec leurs eaux de
+                ménage… Allez savoir !…</p>
+            <p>Au-delà des haies, des cacaoyères, si bien taillées qu’elles rappellent des casques
+                de cheveux ! Le sol est matelassé de feuilles mortes qui empêchent l’herbe de
+                pousser. Quelques palmiers à huile dressent élégamment leurs troncs noirs comme des
+                cobras aux aguets…</p>
+            <p>Autrefois, les maisons étaient entourées de champs d’arachides, d’ignames, de
+                maniocs, et de pois. On cultivait à la tombée du soleil en surveillant d’un œil le
+                repas du soir qui cuisait au feu de bois dans la cour. Aujourd’hui, les
+                « plantations industrielles » ont remplacé autour des maisons les « champs » de
+                vivres qui ont été repoussés de plus en plus loin. Les femmes (les pauvres ! )
+                doivent s’y rendre pour travailler encore après les corvées <pb n="25" xml:id="p25"
+                />de la « plantation ». Le chemin est long et grande la fatigue.</p>
+            <p>Certaines y laissent leur peau ; tenez… l’année dernière, la vieille Nanga y est
+                morte sous le poids des vivres et du bois de chauffage. On a retrouvé le lendemain
+                son corps rongé par les fourmis rouges, le cou tordu sous son panier… Mais peut-être
+                sa famille l’avait-elle vendue au Kông ?</p>
+            <p>Derrière la cacaoyère, une touffe plus dense obstrue la ligne d’horizon ; c’est la
+                forêt. Parfois, on a l’impression qu’elle se resserre autour des cacaoyères comme le
+                boa autour d’une gazelle ; on étouffe, on va s’étrangler, puis elle desserre
+                l’étreinte et semble s’éloigner.</p>
+            <p>C’était l’orage ; c’est après la pluie ; on respire. Et chaque année, on s’acharne
+                sur la forêt. On scie, on abât. Des géants noueux, gorgés de sèves séculaires, sont
+                scindés en billes et transportés là-bas… Quand on les remplace, ce qui n’est pas
+                obligatoire, on plante le palmier nain, le caféier, des éléments du paysage de
+                demain…</p>
+            <p>C’est dans ce village que vit Orphée. L’horizon n’y est pas ample ; il est touffu,
+                plein. Il faut complètement casser le cou, nuque contre omoplates, pour voir un coin
+                du ciel…</p>
+            <p>Depuis la neuvaine de deuil où il avait senti le souffle chaud de Nyango sur sa
+                nuque, Orphée avait continué à venir en ce lieu tous les neuf jours. Il y venait
+                parler avec Nyango, parler pour lui-même et pour elle, pour faire le point de ce
+                qu’il avait appris en silence. En effet, il se considérait maintenant comme élève de
+                l’école de la vie. Une école supérieure où il apprenait réellement quelque chose,
+                chaque jour, une leçon qui pénétrait et marquait <pb n="26" xml:id="p26"/>son âme à
+                jamais, une leçon de l’expérience individuelle et quotidienne…</p>
+            <p>Ce jour de la première « neuvaine de mois », Orphée s’était préparé plus
+                particulièrement pour sa visite à Nyango ; leur maison était terminée jusqu’aux
+                moindres finitions. Les linteaux de portes avaient été peints à la kola. Les rideaux
+                indigos, bleus et blancs, créaient une ambiance originale. Les ustensiles de cuisine
+                pendaient à une claie, étincelants<note place="bottom" resp="KS">Nous corrigeons
+                    « étincelantes » par « étincelants ».</note>. Du bois de chauffage, bien fendu
+                et prêt à l’emploi, était bien rangé sous la claie, de même qu’un réchaud à
+                pétrole ; c’est que l’usage du gaz n’était pas encore arrivé sur cette rive du
+                fleuve, dans ce coin perdu de la forêt des « Accapareurs ». La haie d’hibiscus avait
+                été soigneusement taillée.</p>
+            <p>Orphée avait fermé la porte à clé. Il voulait d’abord trouver sa mère. Comment
+                pourrait-il retrouver Nyango au pays des morts s’il ne réussissait pas à trouver sa
+                mère au pays des vivants ?</p>
+            <p>Son cœur s’affole et il s’agite dans son lit…</p>
+            <p>La dernière fois qu’il avait vu sa mère, c’était lors des cérémonies de la première
+                neuvaine de deuil de Nyango : on avait interrogé le village sur les causes de cette
+                mort. On avait demandé à ceux qui lui devaient quelque chose de le dévoiler et de
+                faire la paix. On s’était « lavé les mains » et on avait libéré son âme de toute
+                contrainte. « <hi rend="i">Dors en paix Nyango, tout le village te bénit, dors en
+                    paix…</hi> » Seul Orphée avait refusé de participer à ces rites. « <hi rend="i"
+                    >Évidemment n’est-ce pas</hi> ? chuchotait la foule. <hi rend="i">Il n’allait
+                    quand même pas être parjure publiquement et devant la<note place="bottom"
+                        resp="KS">Nous corrigeons « la la » par « la ».</note> mort…</hi> » Sa mère
+                l’avait supplié de s’acquitter de la coutume puisqu’il était innocent, mais il
+                s’était contenté de dire en souriant « <hi rend="i">mais puisque Nyango
+                vit…</hi> ».</p>
+            <p>Depuis ce jour, il n’avait plus desserré les lèvres, bien qu’il continuât d’exécuter
+                sa part de travail. On <pb n="27" xml:id="p27"/>avait conclu que le choc l’avait
+                rendu fou et muet…</p>
+            <p>Or, voici sa mère, et Orphée s’avance vers elle : « <hi rend="i">Mère, tout est prêt
+                    pour accueillir Nyango. Je vais donc aller la chercher. Je ne sais combien de
+                    temps il me faudra, mais voici un double des clés. Si tu peux, maintiens la
+                    maison accueillante jusqu’à notre retour…</hi> »</p>
+            <p>Et Orphée avait déjà disparu au tournant de la route qui mène vers le fleuve. La mère
+                parcourut la berge en criant, suivie de la population du village. Le kayac revenait
+                du large comme guidé par une force invisible, Vide !…</p>
+            <p>Il y eut une neuvaine de deuil. « <hi rend="i">Dors en paix Orphée, tout<note
+                        place="bottom" resp="KS">Nous corrigeons « toute » par « tout ».</note> le
+                    village te bénit, dors en paix Orphée…</hi> » Seule sa mère refusa de
+                s’acquitter du rite. Tous les matins, elle allait dans la maison d’Orphée guetter
+                son retour. On la catalogua… Tel fils, telle mère…</p>
+            <p>À cet endroit du fleuve, pendant la saison sèche, tous les rochers sont dehors comme
+                pour capter la particulière énergie solaire qui leur manque tant pendant les crues.
+                Le grand rocher noir, là au milieu des autres, contient une source mystérieuse à sa
+                crête. Quelle que soit la sécheresse, il y a toujours de l’eau fraîche. Pendant les
+                pêches collectives (une fois l’an), on interdit aux enfants de s’en approcher. En
+                effet, bien que l’eau y soit claire comme du cristal, on ne voit pas le fond de
+                cette étrange source ; de plus, on entend le bruit d’un autre monde quand on se
+                penche sur la source : des chants de coqs, des aboiements de chiens, des cris et des
+                rires de femmes et d’enfants…</p>
+            <p>Le Conseil des Sages a décidé de faire à cet endroit un sacrifice annuel pour les
+                mânes des ancêtres : <pb n="28" xml:id="p28"/>un mouton et le plus gros poisson
+                attrapé pendant la pêche collective y sont déposés vivants. On ne les retrouve
+                jamais…</p>
+            <p>Pendant la saison des pluies, la source disparaît et aucun repère n’a pu être
+                définitif pour la localiser. Certaines années, elle est en amont par rapport au
+                village et les années suivantes on la retrouve en aval. Aussi le mouton du sacrifice
+                suit-il les pêcheurs jusqu’à ce qu’on arrive au rocher à la source mystérieuse…</p>
+            <p>Depuis ce matin, je marche. Je n’ai rencontré aucun être vivant. Je n’ai entendu que
+                le bruit de l’eau qui sifflait à mes oreilles et dans mon nez. À la tombée de la
+                nuit, je me suis littéralement écroulé, convaincu que j’étais mort. Or, voici la
+                source mystérieuse et je bois. Enfin la vie : des grillons commentent la fraîcheur
+                du soir… Vivant ! je suis vivant ! je vais retrouver Nyango. Je consens donc à me
+                reposer, avec la certitude de me réveiller et de continuer ma route…</p>
+            <p>Il y a six heures que je dors ! il faut partir. Deux routes que je n’avais pas
+                remarquées en arrivant s’ouvrent devant moi et pénètrent dans la source mystérieuse.
+                L’une à ma droite et l’autre à ma gauche. Elles sont parfaitement identiques.
+                Laquelle prendre ? Si encore l’une avait été tortueuse et l’autre large… La droite…
+                La droite du Père… Nyango serait certainement à la droite du Père si elle était
+                morte… Mais Nyango vit, j’en suis sûr. Elle aura certainement pris la gauche, elle
+                aurait préféré la gauche. Eh mais… La source mystérieuse mène au pays des ancêtres.
+                Si Nyango est dedans, quelle que soit la route, c’est qu’elle est morte !!! Mes
+                aïeux… Ce n’est pas possible !</p>
+            <p><pb n="29" xml:id="p29"/>« <hi rend="i">Laisse ta Mort avec ses morts. Viens avec
+                    moi, je suis ta Vie. Il y a tant de beautés vivantes qui t’attendent… Viens avec
+                    moi, je suis la Vie…</hi> »</p>
+            <p>Six heures se sont encore écoulées depuis que je tergiverse… Où est Nyango ? Quelle
+                route me mènera vers elle ? J’ai pris la gauche. Peut-être mène-t-elle en enfer ?
+                Mais je suis prédestiné. Orphée doit se battre en enfer et pas au ciel. Et si elle
+                n’y est pas ? Eh bien, elle viendra m’y chercher… On innovera…</p>
+            <l>Je l’aime</l>
+            <l>Je l’aime comme on ne peut aimer que soi-même</l>
+            <l>Son souffle est comme la brise du soir.</l>
+            <l>La salive de sa bouche est un miel des forêts vierges</l>
+            <l>Savoureux et odoriférant à enivrer</l>
+            <l>Sa peau est un velours de soie</l>
+            <l>Je l’aime</l>
+            <l>Sa parole est un écho de moi-même</l>
+            <l>Un moi-même égaré depuis des âges</l>
+            <l>Un moi-même oublié là-bas</l>
+            <l>Plus près de Dieu.</l>
+            <l>Je la perds et la retrouve chaque fois</l>
+            <l>Et si je me perds, elle me retrouvera.</l>
+            <l>On innovera…</l>
+            <l>Je l’aime.</l>
+            <l>Où es-tu Nyango ?</l>
+            <l>Réponds-moi mon amour…</l>
+            <p>À peine ai-je abordé le premier tournant que je suis happé par une spirale… une
+                spirale en forme de sept, une spirale qui parle, pendant que je descends, descends,
+                descends, interminablement vers le cœur de la terre…</p>
+            <l>– Je suis le chariot de Ngué</l>
+            <l>Ngué le justicier</l>
+            <l><pb n="30" xml:id="p30"/>Ngué le Magnanime</l>
+            <l>Je suis la providence du voyageur fatigué</l>
+            <l>Je l’aide à continuer sa route</l>
+            <l>Je te conduirai dans le sens de ton choix</l>
+            <l>L’aller ou le retour</l>
+            <l>Indique-moi ta volonté.</l>
+            <p>– Je cherche Nyango. L’as-tu vu passer ?</p>
+            <p>– Je vois passer beaucoup de jeunes femmes Qui vont dans les deux sens…</p>
+            <p>– Je l’aurais rencontrée si elle était retournée, Si elle est passée, c’est dans le
+                sens de l’aller… L’as-tu vue ?</p>
+            <l>– Qui te dit qu’elle a emprunté cette voie ?</l>
+            <l>À quoi l’aurais-je reconnue ?</l>
+            <l>Et quand je le saurais, pourquoi te le dirais-je ?</l>
+            <l>Car les hommes ne font jamais la part des choses.</l>
+            <l>Je suis le chariot de Ngué</l>
+            <l>Providence du voyageur fatigué</l>
+            <l>Je le conduis d’après son choix</l>
+            <l>Vers son équilibre</l>
+            <l>Vers sa propre justice</l>
+            <l>Là s’arrête mon rôle assigné par Ngué</l>
+            <l>Ngué le Magnanime</l>
+            <l>Le Haut et le Bas</l>
+            <l>Ngué le constant renouvellement…</l>
+            <p>Il me faut prendre les rênes… pour aller… vers quelle direction ? À qui demander
+                conseil ?</p>
+            <p>Le civilisateur vint un jour ; pris de pitié pour les barbares, il vint leur
+                instaurer l’école. Une école <pb n="31" xml:id="p31"/>où l’on apprenait à tracer des
+                signes et à dire des choses qu’on ne comprenait pas. Mais qu’importe ? C’était les
+                mêmes signes qu’on traçait chez lui, les mêmes choses qu’on disait là-bas. On
+                demandait à Dieu un pain quotidien qu’on ne connaissait pas ; tant pis, nos ancêtres
+                les Gaulois en mangeaient… Là-bas, on apprenait à réfléchir à l’école. Ici, il
+                suffisait de réciter on avait déjà réfléchi pour nous. Dès la première classe, il
+                nous fallut le cartable pour emmagasiner la somme des réflexions ; le cahier de
+                langue, le cahier de calcul, le livre de lecture… la leçon de choses… Tout dépendait
+                de ça. Impossible d’apprendre quoi que ce soit les mains vides.</p>
+            <p>Le Prophète a prédit l’arrivée de la Vérité « <hi rend="i">il viendra un homme portant le
+                    Livre ; il nous ouvrira les portes de l’évolution. Il nous élèvera jusqu’à
+                    l’assimilation totale : il nous purifiera, il nous absorbera. Nous serons
+                    Blancs</hi> ». Le prophète l’a écrit… La paix soit avec toi au siècle des
+                siècles, Saint-Harris !</p>
+            <p>Et l’université perpétua la Vérité Écrite : elle invoqua les Savants avec « ES »
+                majuscule, lesquels se mirent à polir les Manans avec grand « thème ». Récite,
+                copie, recopie, polycopie-prédigérée ! Le réflexe de la « cogitation » personnelle
+                devenant une fatigue, un outrage, il se sclérosa, de A à Z : Allah Zombifiant, ses
+                créatures par une nuit de sabbat divin !…</p>
+            <p>Et, à mourir pour mourir vide, on choisit d’hiberner dans le luxe ; dans un sursaut
+                goulu, on consomma les « Femmesvoituresvillas », les
+                « frigécochaînestéréotélévisioncouleur » qu’on baptisa : « marques extérieures de
+                possibilités… ». À mourir pour mourir seul, on choisit de végéter en
+                « association » : on créa le Parti-Troupeau-Unique.</p>
+            <p>À mourir pour mourir muet, on choisit d’aller <pb n="32" xml:id="p32"/>« jacter à
+                l’Est ». Et dans une épouvantable indigestion, on se mettait le doigt « jusqu’au
+                cou » pour vomir ; à peine réussissait-on à crachoter<note place="bottom" resp="KS"
+                    >Nous corrigeons « crachotter » par « crachoter ».</note>
+                « gouver-coopération-nement-démocrate », qu’on se gargarisait de
+                « peuplimpérialisme »…</p>
+            <p>À mourir pour mourir sourd, à mourir pour mourir pour de bon, on choisit de faire du
+                bruit, et on chantait :</p>
+            <l>« Il faut séparer</l>
+            <l>Il faut nous séparer</l>
+            <l>On s’entend trop,</l>
+            <l>On ne s’entend plus… »</l>
+            <p>Que peut-on faire alors, que faut-il faire quand on se retrouve seul, face à un
+                chariot-sept qui vous défie ?</p>
+            <p>Quelle direction prendre ?</p>
+            <p>Heureusement pour moi, je suis un privilégié, j’ai un maître ; l’amour de Nyango. Il
+                me dirigera sûrement jusqu’à elle. Je puis me reposer entièrement sur lui en
+                attendant d’être un jour mon propre maître. Il me parle au creux de l’oreille
+                intérieure, je saute sur les rênes du chariot et chemine vers mon amour…</p>
+            <p>Combien de temps s’est écoulé depuis que le chariot fend l’air ? La descente abrupte
+                et sinueuse<note place="bottom" resp="KS">Nous corrigeons « sineuse » par
+                    « sinueuse ».</note> me donne le vertige et me soulève le cœur. Mais ma volonté
+                d’aller jusqu’à Nyango semble suffire pour guider le chariot de Ngué. Et
+                aujourd’hui, il m’a déposé devant ce qui semblait être des collines jumelles. Un
+                homme attendait là, hagard, une blessure béante allant de la base du front au
+                menton ; il s’est précipité sur le chariot, lui a fait faire demi-tour et <pb n="33"
+                    xml:id="p33"/>a disparu avant que je n’aie pu esquisser le moindre geste…</p>
+            <p>Me voici seul devant les collines jumelles qui sont en réalité une fourmi géante en
+                forme de huit et si bien équilibrée que l’idée d’une bascule remplit ma tête. De ma
+                place, je ne vois qu’un seul de ses yeux et il me regarde comme… l’Éternité ! Au
+                point de jonction des deux anneaux qui forment le huit, se tient droit par on ne
+                sait quel miracle, un glaive à double tranchant. En dessous de l’œil, une sorte de
+                sas qui coulisse…</p>
+            <l>Le chemin du chercheur passe par mes deux vallons</l>
+            <l>Celui qui vient jusqu’à moi n’a pas encore trouvé l’objet de sa quête</l>
+            <l>Que désires-tu, Ô homme ?</l>
+            <l>Je suis les deux maisons</l>
+            <l>Mais aussi les deux greniers</l>
+            <l>Voici devant toi les deux maisons</l>
+            <l>Les vannes grandes ouvertes</l>
+            <l>Pour assouvir tes ambitions les plus folles</l>
+            <l>Les honneurs, les pierres et les métaux les plus précieux</l>
+            <l>La puissance, le pouvoir.</l>
+            <l>Le voyage du chercheur de richesses s’arrête ici.</l>
+            <l>Ose, désire, prends, et pars.</l>
+            <l>Mes maisons sont le don de Ngué</l>
+            <l>Ngué le Magnanime</l>
+            <l>Le Haut et le Bas</l>
+            <l>Ngué le constant renouvellement…</l>
+            <p>Un jour, « la Morrnt Blanche » arriva, précédée du Saint Livre, suivi du Fusil Saint.
+                Elle enseigna aux gens le monde de son Dieu. Ce monde était divisé en deux parties :
+                l’enfer où grillaient « éternellement les mécréants avec des cris et des
+                    grincements<pb n="34" xml:id="p34"/>de dents », et le paradis qui était un lieu
+                d’éternel enchantement. Au paradis, les anges soufflaient dans des trompettes à
+                longueur des journées, et les humains répondaient Alléluia ! Tous se pâmaient dans
+                des jardins où des fleurs, des fruits et des parfums s’épanouissaient éternellement.
+                On n’avait plus rien à faire, tout se faisait tout seul. Il n’y avait plus d’autres
+                désirs que celui de jouir éternellement de la beauté et de la paix de Dieu,
+                Alléluia…</p>
+            <p>Comme avant-goût de ce lieu de rêve, la Mort-Blanche sur terre installa son modèle :
+                Dieu avait travaillé six jours, s’était reposé le septième, et depuis lors, son
+                unique travail consiste à recevoir les louanges, à exaucer<note place="bottom"
+                    resp="KS">Nous corrigeons « exhausser » par « exaucer ».</note> les prières de
+                ceux qui le « courtisent » le plus humblement possible, et à punir les autres… La
+                Mort-Blanche avait travaillé en conquérant les Nègres et leurs terres. Elle avait
+                gagné son statut de demi-dieu. Elle s’était reposée et maintenant elle n’avait plus
+                qu’à récompenser les courtisans et à punir les rebelles…</p>
+            <p>Or, les courtisans étaient ceux qui avaient vendu leurs frères, ceux qui avaient
+                trahi leur patrie. La Mort-Blanche les avait décorés, les avait couverts d’or et
+                d’honneurs. Ils s’épanouissaient dans des parfums durables, servis par les rebelles,
+                à l’image des mécréants de l’enfer qui brûlent éternellement pour dispenser de la
+                bonne chaleur tamisée aux fidèles de Dieu, dans leur paradis… Alleluia !</p>
+            <p>Avec le fusil, on avait courbé l’échine des plus fiers. On avait expédié les
+                récalcitrants et les héros en enfer. On avait humilié les patriotes. Mais c’était
+                encore normal : les fidèles de Dieu doivent se couvrir de cendres, s’amoindrir le
+                plus possible, se torturer le corps et l’esprit pour mériter ses grâces, n’est-ce
+                pas ? La hauteur ? Mais… s’entourer de biens matériels et être servi par des
+                subalternes qui répondaient <pb n="35" xml:id="p35"/> amen à tous les désirs ! Dieu
+                s’entoure bien de toutes ces richesses… ; et il écoute éternellement les sons doux
+                des trompettes, des flûtes, et des Alleluia !…</p>
+            <p>Cette imagerie enfoncée à coups de crosses a fait du chemin et des petits au-delà de
+                toute espérance. Aujourd’hui, elle nous colle à la peau, elle est une partie de
+                nous.</p>
+            <p>La plus grande ambition est donc d’atteindre ce niveau où l’on a tout pour soi, et
+                tous en dessous de soi… Avoir, c’est le seul verbe qui caractérise l’action, la vie.
+                Être n’est plus que « nom commun de choses, ou de personnes ».</p>
+            <p>Autrefois, me disait mon père, le verbe « être » prédominait : il fallait être digne
+                de son clan, de sa tribu, être fier de soi ou être honteux de ses actes. L’ambition
+                la plus haute ? Être un ancêtre, c’est-à-dire maîtriser suffisamment de connaissance
+                à transmettre à la tribu, pouvoir la protéger et lui permettre plus de
+                créativité.</p>
+            <p>Aujourd’hui, nous n’attendons de la vie que ce qui entre dans le cadre de l’avoir :
+                avoir des honneurs même si on en est indigne, avoir des richesses même si on est
+                égoïste et ingrat, même si on est idiot, avoir l’amour des autres même si on est un
+                salaud, avoir la puissance même si on est un danger public…</p>
+            <p>Dès lors, que peut désirer un chercheur ? Sa soif s’assouvit devant les deux maisons
+                contenues dans ce vallon du huit. Il boit et mange à satiété. Il se remplit les sens
+                et les poches. « <hi rend="i">Mon cher, c’est ça la vie</hi> ! » La « providence » fait
+                la navette aller retour. L’aller est vertigineux et dangereux, mais le huit
+                récompense les efforts. Le retour est calme et sûr. Mais la voix du huit a dit :
+                    « <hi rend="i">Le chemin du chercheur passe…</hi> »</p>
+            <p>Et moi, je passe… Je veux passer. Je cherche <pb n="36" xml:id="p36"/>Nyango. Elle
+                n’est pas dans les « deux maisons », c’est sûr. Peut-être sera-t-elle dans les deux
+                greniers ? Mon amour pour elle, mon Maître, me conduira vers elle.</p>
+            <l>Où est-tu Nyango ?</l>
+            <l>Réponds-moi mon amour !</l>
+            <l>Je t’aime</l>
+            <l>Je t’aime comme on ne peut aimer que l’image de Dieu</l>
+            <l>Ton regard ouvre sur des mondes inconnus</l>
+            <l>Et je découvre les merveilles de la création</l>
+            <l>Je me sens grandir, je m’étends, je m’élargis</l>
+            <l>Et je découvre Dieu en moi</l>
+            <l>Et je l’aime… Et je t’aime</l>
+            <l>Et je m’aime en toi.</l>
+            <l>Où es-tu mon amour ?</l>
+            <l>La voix du huit a dit :</l>
+            <l>« <hi rend="i">Le chemin du chercheur passe…</hi> »</l>
+            <l>Et moi je passe… Je veux passer.</l>
+            <l>Je cours, je saute, je vole vers toi Mon amour,</l>
+            <l>Mon chemin ne peut s’arrêter ici…</l>
+            <l>– Ô ! huit des deux maisons et des deux greniers. Reine des fourmis, j’ai vu tes deux
+                maisons, mais je ne vois point tes deux greniers…</l>
+            <l>– Celui qui dépasse les deux maisons peut.</l>
+            <l>Il peut voir les deux greniers</l>
+            <l>S’il le mérite…</l>
+            <l>Il devra se peser</l>
+            <l>Sur mon premier vallon,</l>
+            <l>Il se posera.</l>
+            <l>Sur mon deuxième vallon,</l>
+            <l>Il posera son fardeau intérieur.</l>
+            <l>Si ce fardeau est plus lourd</l>
+            <l><pb n="37" xml:id="p37"/>Plus lourd que lui-même et ses ambitions,</l>
+            <l>Il se verra propulsé de l’autre côté de moi.</l>
+            <l>Sinon gare !</l>
+            <l>Le glaive de mon équilibre retombe sur lui</l>
+            <l>Et il perd tout…</l>
+            <p>Le fardeau intérieur… serait-ce la somme des énergies déplacées ? Celles que l’on
+                consume, celles que l’on accumule ; toutes les énergies mises en mouvement par des
+                grands sentiments, des passions diverses, des combats…</p>
+            <p>Or moi, comme la plupart de mes camarades, je n’avais pas eu avant Nyango une
+                impulsion, un mouvement intérieur assez intense pour engendrer un sentiment, me
+                pousser à aimer ou à haïr, à admirer ou à mépriser quelqu’un. Je n’avais pas eu non
+                plus un désir assez fort pour m’engager dans une réelle action, quelle qu’elle soit.
+                C’était l’apathie la plus totale. Bien que la conscience de l’absurde nous ait
+                souvent effleuré, elle ne durait jamais assez pour nous mobiliser. On y pensait et
+                on oubliait. Parfois, on criait, presque par jeu, sans analyser nos motivations,
+                incapables de les défendre. Mais nous étions rapidement exhaussés, meilleur moyen de
+                nous museler. Ça aussi, nous le savions, mais nous nous empressions de l’oublier. Et
+                nous nous complaisions dans ce tiède non-désir qui faisait de nous un terrain
+                neutre : incapable de consumer ni d’accumuler l’énergie, incapable de privilégier un
+                pôle…</p>
+            <p>Et puis j’ai rencontré Nyango. Mon amour pour elle est devenu un fardeau intérieur.
+                Il remplit tout mon cœur, tout mon cerveau, il habite tous les pores de ma peau. Il
+                ne peut pas peser moins que moi. Je glisserai peut-être trop près du glaive ;
+                peut-être serai-je mortellement blessé ? Mais, c’est sûr, je me retrouverai de
+                l’autre côté et je verrai Nyango.</p>
+            <l><pb n="38" xml:id="p38"/>Celui qui passe de l’autre côté se condamne :</l>
+            <l>Il sera chercheur solitaire longtemps, très longtemps.</l>
+            <l>Il devra gravir l’escalier aux sept marches</l>
+            <l>L’escalier suspendu dans le vide</l>
+            <l>Le très sombre abîme de la solitude</l>
+            <l>Éclairé uniquement par la lampe voilée,</l>
+            <l>Cadeau de Ngué</l>
+            <l>Car ma justice n’est pas aveugle</l>
+            <l>Elle est le regard ouvert de Ngué</l>
+            <l>Ngué le Magnanime,</l>
+            <l>Le dieu des morts</l>
+            <l>Le Haut et le Bas</l>
+            <l>Ngué, le constant renouvellement…</l>
+            <p>Orphée s’agite dans son lit et se calme : voici le souffle de Nyango dans son dos,
+                sur son cou, indiscutable preuve qu’elle est passée par là. Il vit en elle. Il
+                plonge au fond d’elle. Sa chaleur est celle du sang frais. Un délice incommensurable
+                monte le long de son échine et explose au sommet de son crâne. Il pousse un cri et
+                s’effondre…</p>
+            <p>Nyango, soit bénie entre toutes les femmes. Mon amour pour toi exalte le Dieu des
+                dieux, l’Ancien des anciens. Pour toi Ngué a eu pitié de moi et me voici devant les
+                deux greniers du deuxième vallon du huit, sain et sauf. Rien mon amour, rien ne peut
+                plus me séparer de toi. Attends-moi, j’arrive…</p>
+            <p>Les deux greniers sont une sorte de cellule double. Du cœur des cellules jaillit un
+                magnétisme bipolarisé <pb n="39" xml:id="p39"/> qui arrive vers moi à travers des
+                stries rayonnantes. Mon corps se remplit d’une nouvelle énergie, sans doute un
+                cadeau de Ngué, Ngué le Magnanime, le dieu des morts, le Haut et le Bas, Ngué le
+                constant renouvellement…</p>
+            <p>Maintenant, les deux greniers redeviennent opaques. À mes pieds, gisent un bâton à
+                sept nœuds et une petite lampe voilée… Je les prends et me retourne. D’abord, je ne
+                vois que du noir mais en m’éclairant de plus près, j’aperçois une forme de neuf.
+                C’est la porte de l’escalier aux sept marches, l’escalier suspendu dans le vide, sur
+                l’abîme de la solitude. Prudence…</p>
+            <p>Je tâtonne. Je me sers de ma canne. Avec précaution j’ouvre la porte en forme de neuf
+                et je me hisse à la première marche. Or, voici le premier nœud de la canne qui se
+                met à gonfler… La canne me pèse et me tire dans le vide… J’ai mal au bas-ventre
+                subitement. Mal de désir. Depuis combien de temps n’ai-je pas fait l’amour ? Combien
+                de fois l’ai-je fait dans ma vie ? Oh ! certes pas assez. Mes amis me l’ont souvent
+                dit : « <hi rend="i">Tu ne fais pas assez l’amour ; c’est mauvais pour la santé, physique
+                    et morale. Tu t’atrophies les fonctions : un membre qui travaille se
+                    développe</hi> »… Mais me croira-t-on ? Mon apathie était telle que je n’avais
+                même pas un tel désir.</p>
+            <p>Je regardais les filles se trémousser et ça ne m’amusait même pas. Puis, un jour je
+                décidai de m’y mettre, par jeu, espérant faire plaisir sinon à moi-même, du moins au
+                partenaire. Mais bien vite je me lassai de ce genre d’altruisme qui ne convainquait
+                personne ; en effet, les partenaires désiraient autre chose, des choses plus
+                importantes pour elles, des choses que je n’avais malheureusement pas : de l’argent,
+                des sorties, des cadeaux, ou ce qu’elles appelaient effrontément une planque… Je
+                n’allais <pb n="40" xml:id="p40"/>quand même pas les épouser par altruisme ! Sinon,
+                pourquoi une et pas une autre ? Pourquoi deux, quatre, et pas cent, mille ? Car
+                l’altruisme doit toujours aller grandissant, n’est-ce pas ?</p>
+            <p>Ah ! que j’ai mal ! Toute la vie de mon être semble être descendue dans mon
+                bas-ventre, trop petit pour la contenir. Et plus mon sexe enfle, plus le premier
+                nœud de la canne s’alourdit, me déséquilibre. Les ténèbres me font peur. Oh là ! il
+                n’y a personne ? Silence… Même pas l’écho de mon appel. Je suis seul, désespérément
+                seul. Dans le noir. Mes pieds ne peuvent plus me soutenir. Je tombe. Je tombe. Je
+                vais tomber… Non ! je ne le puis ! Si je tombe, que deviendra Nyango ?</p>
+            <p>Nyango, où es-tu ? Es-tu tombée ? Es-tu allée plus haut ? plus haut c’est sûr. Ta
+                lumière ne saurait habiter les abysses. Je regarde vers le firmament et voilà ton
+                étoile. Elle plane, allègre, délivrée de toute pesanteur. Mon désir est celui de
+                toi. Il sourd de mon épaisseur et s’affine en s’approchant de toi. Le grès se mue en
+                cristal et je m’envole vers toi. Attends-moi, mon Amour.</p>
+            <p>Subitement, le premier nœud se défait et mon corps s’allège. Je me hisse à la
+                deuxième marche. La petite lampe émet six rayons orange, et je me souviens…</p>
+            <p>Je me souviens de mon père… Il s’était bien moqué de moi quand il avait appris mon
+                option pour les matières scientifiques. « <hi rend="i">Ah ! tu veux faire
+                    l’enseignement…</hi> », avait-il lâché ! Surpris, je lui demandai pourquoi cette
+                option devait nécessairement me conduire dans l’enseignement. Sa surprise sembla
+                plus grande que la mienne :</p>
+            <p>– Mais à quoi d’autre cela peut-il conduire ? <pb n="41" xml:id="p41"/>Il n’y a pas
+                de laboratoire de recherches digne de ce nom dans nos pays. Où trouveras-tu donc les
+                moyens de financer des recherches, en admettant que tu en aies quelque velléité ? Et
+                quelle matière as-tu choisie ?</p>
+            <p>– L’astrophysique, dis-je, espérant l’impressionner.</p>
+            <p>Hélas ! Il me rit au nez !</p>
+            <p>– On a plusieurs frères de race dans des écoles américaines, dit-on. À la fin de
+                leurs études, les plus doués vont faire le « gros boulot » dans les laboratoires des
+                autres (soulever les engins par exemple), et les moyens rentrent chez eux. On les
+                affecte dans l’enseignement en général ; ceux qui sont pistonnés sont nommés
+                directeurs de n’importe quoi et vont croupir dans des bureaux… Ô, mon fils !
+                crois-tu réellement que c’est dans ces domaines que des petits nègres vont apporter
+                leur quote-part à la fameuse civilisation de l’universel ? Si tu avais décidé de
+                faire les sciences, n’aurais-tu pas mieux fait de choisir la chimie ou la biologie
+                au moins ?</p>
+            <p>– Mais pourquoi la chimie et la biologie mon père ?</p>
+            <p>– Mais parce qu’on en a un vital besoin… Il y aurait tellement de choses à trouver…
+                pense qu’ici on soignerait les cancers, les fractures de toutes sortes, en un temps
+                record. Il suffirait que nous ayons<note place="bottom" resp="KS">Nous corrigeons
+                    « ayions » par « ayons ».</note> de bons chimistes biologistes consciencieux qui
+                sachent mériter la confiance de ceux qui détiennent le secret. Ils passeraient alors
+                cette connaissance à un niveau plus universellement scientifique. Ne serait-ce pas
+                une bonne contribution à…</p>
+            <p>– Mais père, c’est dépassé tout ça ! Nous pouvons maintenant nous intéresser à tous
+                les sujets comme tout le monde. Nous n’avons plus rien à prouver : nous avons déjà
+                apporté notre contribution <pb n="42" xml:id="p42"/>à la civilisation de
+                l’universel, tu sais, notre humanisme…</p>
+            <p>– En quoi consiste-t-il ?</p>
+            <p>Et il me ferma la porte au nez et partit subitement.</p>
+            <p>Encore une fois, mon père venait de me porter un coup. Je lui sortais toujours ce
+                qu’on nous avait servi à l’école ou dans les livres, sans y avoir réfléchi, et mon
+                père me mettait dans l’impasse. C’était vrai que je ne savais pas en quoi il
+                consistait ce fameux humanisme que le nègre était censé avoir apporté au monde ; les
+                initiations ? il y en avait partout. Les nôtres, on les avait abandonnées. Celles
+                qui avaient survécu n’avaient pas été réadaptées. Les masques avaient été recopiés
+                par milliers et vendus aux enchères. Les ancêtres et les dieux avaient été oubliés ;
+                on s’était converti à l’Islam et au Christianisme. Une certaine idée des relations
+                humaines, de la famille, peut-être ? Eh bien, nous étions en train de la renier
+                nous-mêmes, de la fouler aux pieds. Quoi d’autre, bon dieu ? Le rythme ? Eh bien, si
+                ce n’était que ça, me lamentais-je, sans trouver d’issue.</p>
+            <p>Cette même nuit, je me retrouvai hors de mon corps en compagnie de mon père. Il me
+                montrait des herbes, et il m’expliquait des choses… Le lendemain matin, mon petit
+                frère se fractura le bras et mon père me dit : « <hi rend="i">Soigne-le</hi> ! » Je le
+                soignai, et au bout de trois jours, la fracture disparut.</p>
+            <p>Oui, je me souviens maintenant… Le matin, je me sentais bizarre… Quand la blessure de
+                mon frère fut guérie, je demandai à mon père comment était-ce possible puisque je
+                n’avais jamais soigné personne auparavant ? Mon père se contenta de me dire : « <hi
+                    rend="i">Et ton humanisme ? Ne pourrais-tu pas te réjouir de trouver Dieu en toi
+                    alors que le monde le cherche au ciel ? N’es-tu pas heureux d’éponger la
+                    souffrance et de toujours essayer de la remplacer par l’harmonie</hi>
+                <pb n="43" xml:id="p43"/><hi rend="i"> et la paix</hi> ? » J’en étais pour mes
+                frais, encore une fois.</p>
+            <p>Les mois qui suivirent, je fis encore d’autres voyages hors de mon corps, d’autres
+                rencontres dont le souvenir ne me revient que maintenant… Mon être tout entier
+                bondit… Et je me retrouve sur la troisième marche, le deuxième nœud de la canne
+                défait, la lampe voilée émettant dix rayons jaunes…</p>
+            <p>Jaune comme l’égo, jaune comme la jalousie… Je ne me suis jamais demandé quelle vie
+                menait Nyango avant moi. C’est comme si nous n’étions nés qu’à notre première
+                rencontre, comme si rien d’autre n’avait existé avant. Bien sûr, elle ne m’a posé
+                aucune question, elle non plus. Mais c’était normal : moi, on me connaissait dans
+                les deux villages, n’étais-je pas un cas ? Le seul jeune homme qui s’acharnait à
+                suivre les voies de la tradition, tout en vivant avec son temps. Du coup, je passais
+                pour un marginal des deux côtés, et on m’avait à l’œil ; ma vie était connue de
+                tous. Bien sûr, je devais cette réputation à mon père, mais c’est quand même de moi
+                qu’on parlait… non ?</p>
+            <p>Depuis les soins miraculeux de mon frère, j’avais commencé à chercher je ne sais
+                quoi, à poser des questions ; je n’avais jamais su que mon père possédait autant de
+                connaissances. Pourquoi ne s’en servait-il pas ? Pourquoi ne les transmettait-il pas
+                au monde au lieu de se moquer de notre « humanisme » ?</p>
+            <l>J’ai été, me dit-il, celui qui recueille et entasse.</l>
+            <l>Mes moyens ne permettaient pas plus.</l>
+            <l>Mais toi,</l>
+            <l><pb n="44" xml:id="p44"/>cherche d’autres moyens, plus puissants, plus efficaces,</l>
+            <l>car toi, tu dois être</l>
+            <l>celui qui dépouille, analyse,</l>
+            <l>celui qui sélectionne, synthétise,</l>
+            <l>celui qui réadapte et actualise…</l>
+            <p>Quel orgueil m’envahit soudain… C’est vrai que je suis un cas… tandis que Nyango,
+                personne n’avait entendu parler d’elle avant notre rencontre. Peut-être
+                profitait-elle de cet anonymat pour flirter en douce avec je ne sais qui !!! Quel
+                idiot j’ai été de ne l’avoir pas questionnée ? Peut-être même qu’elle me trompait
+                pendant ces trois dernières années de fiançailles ? Ah ! J’enrage ! Et le troisième
+                nœud enfle et me tire vers le bas. J’ai encore perdu l’équilibre. Il faut que je me
+                ressaisisse. Je tends toutes mes « antennes », en quête d’un signe, la trace de
+                Nyango, quelque chose à quoi m’accrocher… Mais je ne sens autour de moi que
+                l’hostilité. Elle remplit l’air, elle m’enserre, elle m’étouffe…</p>
+            <p>C’est fou ce que les pensées prennent vite forme et consistance. Elles créent autour
+                de nous un véritable étau qui nous étreint, nous étrangle… Nous émettons constamment
+                des pensées négatives et nous nous étonnons après d’être toujours dans le pétrin.
+                Nous laissons se scléroser toutes nos capacités, nous les subordonnons à un
+                matérialisme, et à un machinisme forcenés, puis, face à un problème, nous nous
+                disons que nous ne pouvons rien, et nos membres ne nous portent plus. Nous créons un
+                tas d’imageries dont nous devenons esclaves, alors que nous pourrions commander aux
+                éléments. D’ailleurs, nos ancêtres ne le faisaient-ils pas ? Une épidémie
+                s’abattait-elle ? Les vieux parlaient aux dieux et la santé revenait. Un dirigeant
+                abusait-il du pouvoir ? Les jeunes pointaient l’index sur lui et les choses <pb
+                    n="45" xml:id="p45"/>rentraient dans l’ordre. La sécheresse durait-elle ? Les
+                femmes sortaient nues la nuit, elles causaient avec le ciel, et il pleuvait.
+                Aujourd’hui, on se laisse malmener par le premier idiot venu, trouvant juste la
+                force de se lamenter, et juste la complaisance de se déclarer pays sinistré…</p>
+            <p>On a perdu le code…</p>
+            <p>Mon père disait que la meilleure façon d’enrayer une forme-pensée était d’en créer
+                une autre plus forte qui puisse absorber la première. Il faudra essayer…</p>
+            <p>L’hostilité que je ressens à cette troisième marche de « l’escalier de l’ermite »
+                n’est que le rejet de<note place="bottom" resp="KS">Nous corrigeons « de de » par
+                    « de ».</note> cet autre moi-même que je sais faible et veule, et que j’ai
+                toujours essayé d’agrandir en lui inventant des histoires… Oui, j’ai peur. J’ai
+                toujours porté une terrible peur en moi, je peux même en localiser le siège, là,
+                entre mes jambes… J’ai peur de m’ouvrir comme une mauvaise cicatrice. J’ai peur de
+                sauter, peur du vide qui semble toujours disposé à m’avaler…</p>
+            <p>Seul, je ne peux rien faire. J’ai besoin d’être habité par une force qui me
+                maintienne en moi-même, qui m’empêche de fuir ce corps trouble qui m’inquiète tant.
+                Alors seulement, je me réalise, et je réalise. Cette force, c’est Nyango. Je l’ai
+                reconnue tout de suite au premier coup d’œil car j’ai totalement réintégré mon
+                corps, j’ai entrepris tout ce que mon père désespérait de me voir entamer, et je me
+                suis surpris en train de prier le ciel, dans des paroles d’actions de grâce : « <hi
+                    rend="i">Je suis une étincelle dans une grande lumière. Un filet d’énergie
+                    aimant dans le fleuve d’amour…</hi> »</p>
+            <p>Dès que mon amour me quitte, je ne suis plus moi-même, je perds l’équilibre… Me
+                revient-il ? Et je me libère de toute épaisseur, de toute pesanteur, et je m’envole
+                allègrement…</p>
+            <p><pb n="46" xml:id="p46"/>Le troisième nœud de la canne s’est déroulé, et voici, je
+                suis à la quatrième marche, pendant que la petite lampe voilée émet douze rayons
+                verts…</p>
+            <p>Et la douleur m’empoigne le cœur. Je perçois, je sens les joies des uns et l’angoisse
+                des autres, mais je sens surtout le désarroi de Nyango, ainsi que son amour…</p>
+            <p>Oui, Nyango s’est arrêtée longtemps à cette marche, à cette marche où même le Christ
+                souffrit d’amour pour des hommes inconscients qui lui décochèrent une flèche au
+                cœur… cependant, il marchait sur l’eau et dans les airs, il disparaissait à volonté…
+                Hélas ! l’amour ne lâche pas sa proie, il l’assaille et la pousse à des efforts
+                surhumains, d’autant plus astreignants que le partenaire a une conscience
+                restreinte.</p>
+            <p>Car l’amour est réellement le seul pouvoir de réalisation, il engendre la cohésion.
+                Et par amour, l’eau maintient la lune en place, et la lune empêche les océans de
+                déborder ; et le soleil féconde les terres, et les terres lui chantent la chanson de
+                la vie reçue et transmise…</p>
+            <p>Mais c’est toujours un amour plein de compassion et qui fait mal au cœur : le
+                partenaire plus évolué attend désespérément le retardataire à qui il peut juste
+                indiquer la voie, mais jamais la parcourir pour lui…</p>
+            <p>Et le soleil attend patiemment qu’un jour les terres aient fini de tournoyer autour
+                de lui, toujours dans le même sens : peut-être alors finiront-ils par se retrouver
+                dans la Grande Étreinte !…</p>
+            <p>Et les Christs attendent anxieusement que leurs adeptes aient décidé enfin
+                d’abandonner « le luxe et la luxure », d’emprunter « le chemin étroit », et <pb
+                    n="47" xml:id="p47"/>alors ils pourront se retrouver dans les chambres nuptiales
+                réservées à la droite du Père, dans les cieux-paradis-prairies…</p>
+            <p>Et les patriotes attendent désespérément que les compatriotes parviennent un jour à
+                une conscience politique suffisamment lucide pour comprendre leurs véritables
+                devoirs, et pour entreprendre eux-mêmes leur part d’action et peut-être
+                hisseront-ils ensemble sur le toit un drapeau qu’ils auront choisi eux-mêmes, parce
+                qu’ils en auront vécu le symbole…</p>
+            <p>Et Nyango attend douloureusement que je me libère des poncifs, des préjugés, et de
+                toutes les formes-pensées égoïques et obscurantistes qui m’éloignent<note
+                    place="bottom" resp="KS">Nous corrigeons « éloigent » par « éloignent ».</note>
+                d’elle et de notre idéal d’amour, l’amour-action.</p>
+            <p>Or, nous accumulons les bévues, nous retardons l’ascension, et souvent, nous
+                conduisons à la mort ceux qui nous ont attendu. Mais pour eux, l’attente continue ;
+                l’attente continue pour toi Ruben Um, pour toi Lumumba, pour toi Nkrumah, pour toi
+                Moumié, pour toi aussi Amilcar Cabrai… Pour combien de temps encore ?</p>
+            <p>Car chaque fois que nous montons, vous montez aussi d’un échelon ; c’est juste : il
+                faut bien que notre aspiration demeure toujours plus haute que notre tête. Mais
+                quelle grandeur d’âme vous faut-il pour ne pas nous maudire, pour nous aimer
+                toujours plus fort…</p>
+            <p>La douleur m’empoigne le cœur… Et je prends mes jambes à mon cou : il faut que je
+                marche, que j’avance plus vite, il faut que je rejoigne Nyango. Je ne veux plus la
+                faire attendre plus longtemps. Je saute, je cours, je vole vers toi… Mon amour…</p>
+            <l>Nous ne sommes plus au pied du mont</l>
+            <l>Mais nous ne sommes pas non plus au sommet</l>
+            <l><pb n="48" xml:id="p48"/>Le chemin a des creux profonds et dangereux</l>
+            <l>Mais tu as la lumière</l>
+            <l>L’important</l>
+            <l>« <hi rend="i">C’est de mettre un pied devant l’autre</hi> »</l>
+            <l>Et de recommencer…</l>
+            <l>Je t’attends</l>
+            <l>Je ne peux que t’attendre</l>
+            <l>Que peut faire un corps divisé ?</l>
+            <l>Je t’attends</l>
+            <l>Pour être entière</l>
+            <l>Je dois t’attendre…</l>
+            <p>Sa voix, la voix de Nyango, je l’ai entendue. Et du coup, la lampe voilée a émis six
+                rayons bleus. La quatrième épaisseur de la canne s’était dénouée, affinée, et je me
+                retrouvais à la cinquième marche.</p>
+            <p>J’entends aussi la voix de mon père, le jour où je lui ai parlé de Nyango pour la
+                première fois. J’entends ma mère dans ses youyous de joie, quand Nyango a mis autour
+                de ses reins la ceinture de cauris et de perles que la femme de l’aîné mettait
+                toujours autour des reins depuis plusieurs siècles… J’entends les cris de mes frères
+                et sœurs, quand ils nous reverront<note place="bottom" resp="KS">Nous corrigeons
+                    « reverrons » par « reverront ».</note>. J’entends dans le temps et dans
+                l’espace !!! J’entends les commères et les jaloux, j’entends la terre et les
+                oiseaux, j’entends l’air et les feuilles mortes, j’entends, j’entends !!!</p>
+            <l>– Les temps sont venus pour toi d’être toi-même.</l>
+            <l>De retrouver cette partie de toi que tu avais perdue.</l>
+            <l>Le ciel et la terre t’ont pris en pitié</l>
+            <l>Mais tu dois produire ta part d’action de grâce</l>
+            <l>Pour que la vie continue à naître</l>
+            <l>par la fécondation de l’amour.</l>
+            <l><pb n="49" xml:id="p49"/>Ne me parle pas de Nyango</l>
+            <l>car je la connais autant que je te connais.</l>
+            <l>Je vous connais depuis toujours…</l>
+            <l>Allez… je vous bénis.</l>
+            <p>(C’était la voix de mon père…)</p>
+            <l>– Elle tue, l’arme blanche</l>
+            <l>Elle décime, l’arme à feu</l>
+            <l>J’ai vu les hommes d’hier</l>
+            <l>Je verrai ceux de demain</l>
+            <l>Et tu ne seras ni comme les uns, ni comme les autres</l>
+            <l>Ne marche pas sur moi</l>
+            <l>Je suis le témoin Regarde…</l>
+            <l>La connaissance est distribuée aux peuples de la terre</l>
+            <l>Déversée des « deux urnes » par les génies de l’eau</l>
+            <l>Et tout devient connaissance</l>
+            <l>Et la connaissance, la seule arme</l>
+            <l>Puisses-tu la rechercher dès maintenant…</l>
+            <l>Regarde…</l>
+            <l>Ils arrivent eux aussi</l>
+            <l>Les temps où le Grand Abîme fait coulisser sa machine</l>
+            <l>Et il bée là</l>
+            <l>Assoiffé de sang et de pourriture</l>
+            <l>Gare !</l>
+            <l>Ne marche pas sur moi</l>
+            <l>Je suis le témoin.</l>
+            <p>(C’est la voix des feuilles mortes.)</p>
+            <l>– Marchons debout</l>
+            <l>Marchons droit allons de l’avant</l>
+            <l><pb n="50" xml:id="p50"/>Je reprends ma charge et toi la tienne</l>
+            <l>Je te prends la main et tu serres la mienne.</l>
+            <l>Et sciemment nous allons nous allons</l>
+            <l>Conscients de marcher en nous tenant la main</l>
+            <l>Les zombies ont retrouvé leur âme</l>
+            <l>Les esclaves ont retrouvé la liberté</l>
+            <l>Nous allons nous allons</l>
+            <l>Conscients de marcher la main dans la main…</l>
+            <p>(Ce seront les voix de mes frères et de mes sœurs.)</p>
+            <p>J’entends dans le temps et dans l’espace, j’entends chanter l’amour, j’entends vivre
+                la liberté ! Et…</p>
+            <p>Et… je vois. La petite lampe voilée émet deux larges rayons indigo, divisés chacun en
+                quarante-huit rayons plus fins, comme les fibrilles d’une cellule. L’avant-dernière
+                épaisseur de la canne palpite comme un cœur après avoir dénoué et expulsé le
+                cinquième nœud. Je suis à la sixième marche.</p>
+            <p>Et je vois. Je vois la trace des pas de Nyango, le chemin fait par elle, celui qui me
+                reste à parcourir…</p>
+            <p>Je vois les épreuves l’impatience, le désespoir…</p>
+            <p>Cet irrésistible désir d’en finir… Ce désir d’être moi et non tout un peuple…</p>
+            <p>Je rejoindrais Nyango dans la vie ou dans la mort et dans une éblouissante étreinte,
+                nous serions unis à jamais. Finis les soucis parasites ! je me libère d’une société
+                vaincue, déracinée, aigrie, encombrante… une société qui se complaît dans ses
+                complexes !</p>
+            <p>Je me libère. Je me libère… je me libère !</p>
+            <p>Et mon amour disparaît pour toujours, parce qu’il a manqué d’efficacité : il n’a pas
+                su ramener l’équilibre, soigner par la lumière ; il est vaincu <pb n="51"
+                    xml:id="p51"/>à son tour… Et il n’y a plus de cadre pour l’abriter ni dans la
+                vie, ni dans la mort… Non !!! Non.</p>
+            <p>Tenir bon. Tenir droit. Il me faut tenir absolument. Je vois les sacrifices : je suis
+                condamné ; condamné à marcher ; toujours de l’avant.</p>
+            <l>Partir de nulle part et de partout</l>
+            <l>Partir de tout et de mes riens</l>
+            <l>Partir enraciné dans mon désenracinement</l>
+            <l>Me développer dans mon sous-développement</l>
+            <l>Alphabétiser mon analphabétisme</l>
+            <l>Partir vide de mon trop plein de vide</l>
+            <l>Partir fort de ma faiblesse</l>
+            <l>Partir mort de ma vie de mort</l>
+            <l>Marcher et vivre éternellement.</l>
+            <p>Or, je vois les combats…</p>
+            <p>Je m’empoigne à pleines mains et me vide de l’indigéré, du non-assimilé. Je me râpe,
+                je me cure, j’extirpe. Et nu, je me relève. Je repars.</p>
+            <l>Partir jusqu’au bout de toi…</l>
+            <l>Jusqu’au fond de moi.</l>
+            <l>Et des sept nœuds des sept cordes de l’Âme d’ici</l>
+            <l>Rejaillit la mélodie perdue.</l>
+            <l>Il vit mon amour</l>
+            <l>Il vivra éternellement.</l>
+            <l>Le ciel l’enfer le couronnent sur terre</l>
+            <l>Il vivra éternellement.</l>
+            <p>Mais je vois l’acceptation aussi…</p>
+            <p>Nous devons accepter de payer, de compenser nos dettes. Accepter aussi le prix, la
+                rétribution de<note place="bottom" resp="KS">Nous corrigeons « de de » par
+                    « de ».</note> nos actions. Car il n’est rien qui soit pour rien, n’est-ce
+                pas ?… Et surtout pas la vie, surtout pas de la part de Dieu…</p>
+            <p>Il nous faut donc chercher les causes, pour mieux <pb n="52" xml:id="p52"/>comprendre
+                les effets. Où avons-nous glissé ? À quoi devons-nous nous accrocher pour nous
+                relever ? Car il faut toujours se relever « <hi rend="i">Le monde est la chute du
+                    chimpanzé ; le monde chute, le monde se relève…</hi> », disait mon père.</p>
+            <p>Et je vois le temps du réajustement, le temps du nouveau départ. Car il a encore
+                avalé sa queue, Damballa : Un nouveau cycle commence… « L’étendard<note
+                    place="bottom" resp="KS">Nous corrigeons « étendart » par « étendard ».</note>
+                sanglant » trop longtemps glorieusement « levé » se casse le nez : c’est la foudre
+                de Jupiter foudroyant la tour de la maison-dieu-matière, construite avec ses
+                ambitions, ses passions…</p>
+            <p>Et je vois la fille d’Isis, l’étoile à huit branches sur la tête, irradier la lumière
+                des aubes de demain, démasquant la Grande Illusion. Chacun retrouve sa vraie place
+                et assume son propre chemin, sans favoritisme aucun. Les puissants à la tête pleine
+                de richesse matérielles, repartent de zéro pour la quête de l’essentiel, leur
+                véritable nature ensevelie sous des tonnes d’argent…</p>
+            <p>Et je vois les retrouvailles avec Nyango sous le grand astre, quand les morts se
+                réveillent : leur idéal secoue les cendres de l’oubli et en ressort pimpant et
+                lumineux comme des diamants…</p>
+            <p>Je vois, j’entends, je sens, je suis, je le sais maintenant : mille rayons
+                violets-blancs fusent du sommet de la canne complètement affinée à présent, tous les
+                nœuds disparus. Et je suis au sommet de l’échelle, allégé, hors de portée de la
+                pesanteur… Je prends possession de la conscience…</p>
+            <p>Nos corps reposent là-bas dans la chambre nuptiale, sur le drap blanc, un peu
+                poisseux maintenant, imbibé de tous les sucs libérés…</p>
+            <p>Nos corps reposent là-bas, la main dans la main, <pb n="53" xml:id="p53"/>la tête de
+                Nyango au creux de mon cou. Sa respiration n’est plus perceptible que par la petite
+                chaleur qui s’en dégage au contact de ma peau.</p>
+            <p>Nos corps reposent là-bas, dans une détente totale, après qu’ils nous aient expulsé
+                hors d’eux, dans une ultime contraction à l’orée de l’orgasme…</p>
+            <p>Je suis conscient de moi, ici, et je vois Nyango bien devant moi, et je suis
+                conscient de nos corps là-bas sur le lit. C’est une sensation extraordinaire. J’ai
+                la conscience de l’absolu : je suis le tout dans le tout. C’est un moment d’extase
+                où bientôt je ne distingue plus rien qui soit différent de moi. Il n’y a plus aucune
+                limite, aucune barrière. Il n’y a plus Nyango, ni personne d’autre. Je suis tous en
+                tout. Et puis, voici la voix du tout :</p>
+            <l>Pour toi</l>
+            <l>La roue de fortune a tourné</l>
+            <l>Tu reçois en récompense</l>
+            <l>La force intérieure qui muselle<note place="bottom" resp="KS">Nous corrigeons
+                    « musèle » par « muselle ».</note> le lion</l>
+            <l>Et déconnecte la poche venimeuse de la vipère</l>
+            <l>Tu sors de la porte de l’ermitage</l>
+            <l>Et l’extase t’abandonne</l>
+            <l>Mais tu gardes la canne</l>
+            <l>Et deux couleuvres</l>
+            <l>Deux cordes par lesquelles à ton tour</l>
+            <l>Tu dois tirer tes frères de l’abîme</l>
+            <l>Ils t’enchaîneront peut-être t’entraîneront-ils plus bas</l>
+            <l>Mais tu gardes la canne</l>
+            <l>Car tu connais son secret</l>
+            <l>Et l’échelle reste suspendue éternellement</l>
+            <l>pour qui cherche à monter</l>
+            <l>Le chiffre douze sera ton destin</l>
+            <l>Tu verras les choses de bas en haut</l>
+            <l>Car tu seras pendu au douzième tournant</l>
+            <l>Et dans l’inversion des choses</l>
+            <l><pb n="54" xml:id="p54"/>Pour respecter la loi des homologies</l>
+            <l>Tu recevras la couronne des mages au vingt et unième tournant</l>
+            <l>Heureux l’homme couronné</l>
+            <l>il demeure au cœur du cercle du monde</l>
+            <l>Gardé par le sphinx</l>
+            <l>Le Taureau le Lion l’Aigle et l’Ange sont à son service…</l>
+            <l>Pour toi la roue de fortune a tourné !</l>
+            <p>Quand et comment suis-je sorti de l’extase ? Je ne m’en souviens plus… Me voici pendu
+                par un pied à la branche d’un arbre, à l’aide d’une couleuvre… Ma vision des choses
+                ici change complètement : la faux de l’irréversible va passer. Ainsi, les feuillages
+                des arbres seront des racines plantées dans la voûte du ciel. La couleuvre qui
+                m’attache là à l’arbre, ce sera la lune, la vierge qui enfanta Legba, le messie
+                sacrifié d’avance ; ce sera Nyango me conduisant à mon destin. Une force sereine
+                m’envahit. Je croise ma jambe libre sur ma jambe pendue et j’observe les
+                transformations qu’opère déjà le squelette faucheur.</p>
+            <p>C’était moi, hier encore, l’extrémiste : je prêchais la loi du talion. Je prenais en
+                sympathie les Noirs qui violaient les petites Blanches et giflaient leurs pères… Je
+                protégeais ceux qui en avaient tué quelques-uns, et je félicitais ceux qui leur
+                avaient volé quelque chose : pour tous les Nègres humiliés, toutes les Négresses
+                violées, toutes les richesses volées au Nègre, je pensais qu’aucun acte ne serait
+                assez vil pour les compenser. Je le pense toujours, mais <pb n="55" xml:id="p55"
+                />sous un autre angle : aucun acte vil ne peut en réparer un autre. Seul le beau
+                compense le laid, et seule la force répare la faiblesse. Tout ce qui est vil est
+                faiblesse. Comment une faiblesse pourrait-elle donc en compenser une autre ?</p>
+            <p>La faux du squelette est entrée en action…</p>
+            <p>C’était moi encore, hier, l’intempestif révolutionnaire je voulais renverser tous les
+                vieux gouvernements sclérosés, les remplacer par des jeunes. Des jeunes gens qui
+                auraient privilégié les intérêts de l’Afrique d’abord, et pourquoi pas, des jeunes
+                qui n’auraient travaillé que pour les intérêts de l’Afrique, sans le souci de
+                « garnir leurs poches » d’abord. Je les voyais intransigeants devant l’oppresseur :
+                on ne massacrait plus nos forêts sans reboiser ; on n’exploitait plus nos mines sans
+                bénéfices pour les populations. On n’exterminait plus nos faunes. On ne vidangeait
+                plus les pétroliers sur nos côtes, impunément. Bref ! on faisait attention à nous,
+                comme on fait attention à soi.</p>
+            <p>Ces jeunes gens miraculés, c’était nous évidemment. Nous qui rêvions de chalets en
+                Suisse, de villas sur la Côte d’Azur, de châteaux en Sologne, d’actions dans des
+                sociétés américaines, et d’immeubles dans les capitales d’Afrique. Avec quels
+                moyens ? Nous aurions automatiquement continué l’œuvre des « Vieux » : rançonner au
+                maximum les populations, perpétuer la zizanie, la corruption, la délation. De plus,
+                nous aurions été encore plus faciles à manipuler : nous n’avions aucune expérience,
+                et surtout nous n’avions pas connu un autre idéal ; les « Vieux », eux, avaient vécu
+                ce temps où la conscience nègre avait atteint une certaine crise. Ils avaient connu
+                des patriotes et leur propre décadence se heurtait à des moments de mauvaise
+                conscience, des sursauts de lucidité où l’exemple trahi émergeait quelque part…
+                Alors, ils tentaient désespérément <pb n="56" xml:id="p56"/>une action de bravoure…
+                Mais nous, à quoi allions-nous nous accrocher ? À quel modèle ? Nous ne trouvions
+                autour de nous que des larbins ou des aigris qui se valaient tous : ils étaient
+                tombés d’accord sur les termes « pourquoi pas moi après tout ! » comme slogan
+                mobilisateur. Et ils ahanaient médiocrement, laborieusement, soucieux de ne laisser
+                passer aucune miette sous leur nez. Et nous, jeunes loups aux dents acérées, nous
+                allions tenter de nous emparer d’une plus grande « part du gâteau »… « L’Afrique aux
+                Africains, le gâteau aux jeunes »… Et le cycle infernal allait continuer son
+                cheminement… Éternellement.</p>
+            <p>Non ! il nous faut nous préparer sérieusement : nous devons redéfinir notre idéal,
+                reformuler le progressisme sur de nouvelles bases… Vers où, vers quoi devons-nous
+                progresser ? Il nous faut réinventer des valeurs : quelle est la plus belle
+                marchandise ? et la plus haute monnaie ? Il nous faut répartir les tâches. Quel est
+                le rôle d’un peuple ? Que peut-on attendre d’un dirigeant ? Il serait temps
+                d’élargir notre humanisme et de l’appliquer concrètement ; qu’il cesse d’être une
+                notion abstraite dont nous cernons difficilement le contenu et dont nous ne voyons
+                pas l’efficacité.</p>
+            <p>Il semble alors évident que les dirigeants doivent être des initiés. Trêve des règnes
+                de cons, vieux ou jeunes !</p>
+            <p>La faux du squelette a fait son travail…</p>
+            <l>– Viennent, Ô viennent</l>
+            <l>Viennent les « Deux urnes de la Tempérance »</l>
+            <l>Que l’esprit se réinsuffle dans la matière</l>
+            <l>Que l’âme réhabite le corps</l>
+            <l>Que la richesse redevienne belle</l>
+            <l><pb n="57" xml:id="p57"/>Que le pouvoir ré-symbolise la sagesse</l>
+            <l>L’urne d’argent se déverse dans l’urne d’or</l>
+            <l>L’urne d’or ressource l’urne d’argent</l>
+            <l>Et l’harmonie règle la vraie évolution</l>
+            <l>Viennent, Ô viennent</l>
+            <l>Viennent les « Deux urnes de la Tempérance »</l>
+            <l>pour que se révèle la vraie initiative…</l>
+            <l>Qu’elles viennent avant le typhon</l>
+            <l>Avant la « chèvre-Femme » qui coagule et dissout</l>
+            <l>Avant que la colère du ciel ne foudroie la tour de nos espoirs !</l>
+            <p>Je reprends cette prière derrière la voix de Nyango que j’entends de plus en plus
+                près de moi, et je la dis avec doublement de ferveur, car déjà voici les signes
+                annonciateurs du typhon…</p>
+            <p>Le typhon siffle, souffle, du Nord au Sud… Partout, des noyaux empoisonnés, des
+                braises sous des cendres. Que souffle un petit vent, et tout s’enflamme, qu’arrive
+                le typhon, et tout saute…</p>
+            <p>De toutes façons, tout doit sauter, tout sautera : l’Afrique du Sud, les loges de la
+                séquestration, les secteurs minés du Tchad, du Sahara Occidental, de la Namibie, et
+                tous les autres « coins piégés »… Tout doit sauter, mais la relève sera prise
+                avantageusement, si les hommes sont préparés, s’ils retrouvent et rétablissent
+                l’équilibre entre le corps et l’esprit. La matière a trop longtemps régné,
+                l’emportant de plus en plus sur la vie intérieure.</p>
+            <p>Mais j’entends déjà la voix de l’ennemi, le grand « Solvant » et ses disciples… Ils
+                vont de loin en loin semer l’ivraie : « <hi rend="i">La voie mystique ? Mais c’est
+                    antiprogressiste</hi> ! » clament-ils. Ils font passer cette voix <pb n="58"
+                    xml:id="p58"/>pour un appel au non-engagement, puisqu’elle propose l’action des
+                puissances supérieures.</p>
+            <p>Oui, il faudra une puissance supérieure pour régler nos problèmes, mais elle n’est
+                pas ailleurs qu’en nous-mêmes. Elle git-là, au bas de la canne aux sept nœuds. Il
+                s’agit de la réveiller, de la mettre en action, et les arbres pousseront à notre
+                appel, et les montagnes se déplaceront au son de notre voix. Que perd-on à essayer ?
+                On gaspille tellement de temps. Que perd-on à tenter une nouvelle aventure ?</p>
+            <p>Le typhon siffle, souffle, du Nord au Sud… Les éclairs déchirent le ciel. On a
+                dégoupillé toutes les grenades, toutes les bombes. Les grêles s’abattent, les
+                foudres de tous les cieux se concentrent dans un seul jet pour décapiter la tour de
+                la Maison-dieu-Matière… Il pleut, il tonne, il vente… Jusqu’à l’aube d’un nouvel
+                âge.</p>
+            <p>Et aux aurores, l’étoile à huit branches se met à scintiller, sur la tête de la
+                Princesse Noire, pour indiquer la nouvelle direction.</p>
+            <p>Où es-tu Nyango ? La descente est-elle sans fond, sans fin ? À quelle marche, à quel
+                tournant te tiens-tu ? Entends-tu ma voix qui te cherche ? Je marche et la lumière
+                n’est toujours pas assez forte pour m’éclairer définitivement. Où es-tu Nyango ?</p>
+            <p>Accourez petites étoiles, entourez la reine, l’Étoile des Mages ; que vos étincelles
+                nourrissent la grande lumière ! Que la lumière soit plus forte et qu’il nous soit
+                permis de voir !…</p>
+            <p>Chaque fois que je me pénètre d’amour, de l’amour de Nyango, la lumière s’intensifie
+                en moi. Je perçois tout en transparence, et je me sens tout transparent. Ne le
+                suis-je pas ? Ne voyez-vous pas mes sentiments par-delà les chairs et le sang ? Ne
+                    <pb n="59" xml:id="p59"/>lisez-vous pas comme dans un livre ouvert les peurs qui
+                m’habitent encore, les doutes ?…</p>
+            <p>Maintenant, à la lumière de la Reine des sept collines, entourée de myriades
+                d’étoiles, le doute m’envahit. Ai-je bien examiné les causes et les effets ? Le
+                vieil homme qui a piqué du nez, du haut de la tour foudroyée, ne risque-t-il pas de
+                renaître ailleurs, ici même, et peut-être en moi ? C’est maintenant à la lumière de
+                l’aurore que je dois tout examiner, pour ne pas présenter au monde et à Nyango une
+                ente déjà contaminée, quand viendra la lumière de midi.</p>
+            <p>L’illusion voile et pare ce que j’ai été et dans ce que je pourrais devenir, le
+                mirage me guette au prochain tournant, à la clarté de la lune…</p>
+            <p>Je revois le spectre du néant qui nous a si longtemps assujetti ; et voici, ce n’est
+                plus une chèvre-femme, mais bien le Baphomet, hermaphrodite et quadriactif. Il trône
+                sur quatre murs, symbole du faux, du clinquant, de la matière… Sa tête rouge, Feu
+                dévorant aux mille et une envies…, ses cuisses couvertes d’écailles vertes de
+                poisson, Eaux sournoises, ses ailes bleues de chauve-souris, Air des réverbérations
+                et des projections de mirages, et ses pieds noirs, Terres des matérialisations
+                délimitant le champ de ses actions. C’est là que se bousculaient les salamandres,
+                les ondines, les sylphes, et les gnomes… Ils créaient la confusion jusque dans
+                l’âme. Nous avions de la peine à nous reconnaître mutuellement, et nous ne
+                retrouvions plus notre route. Cent ordres, mille sectes se proposaient de nous
+                l’indiquer, moyennant finances, parfois gracieusement disaient-ils, et ils nous
+                suçaient jusqu’à l’épi. Les uns nous avançaient des affirmations aberrantes qui nous
+                laissaient pantois, les autres se perdaient en négations stériles, installant le
+                vide et le néant à nos portes.</p>
+            <p><pb n="60" xml:id="p60"/>Deux diablotins aux pieds de « l’Horreur » se relayaient
+                pour nous fourvoyer : le mâle, rouge, séduisait les intelligences par l’orgueil, les
+                dirigeant de plus en plus vers des connaissances dévastatrices. La femelle, verte,
+                régnait sur la sensibilité la plus inférieure, déchaînant le rut et des
+                irréversibles appétences.</p>
+            <p>Une longue torche tenue dans la main gauche du diable mettait le feu aux poudres :
+                une extrême confiance en soi, un impérieux besoin de ce qu’on nommait liberté, une
+                révolte contre toute morale, sourdaient de partout, pendant que la main droite, dans
+                un geste de vanité, barrait la route à toute autre connaissance que celle qu’elle
+                proposait.</p>
+            <p>Comment dans ces conditions être sûr de la route qu’on prend ? Comment en convaincre
+                les autres sans tomber dans la démagogie ? Le doute sacquait toutes les forces, tous
+                les élans.</p>
+            <p>Or le mal plante toujours ses racines dans la faiblesse : faiblesse du corps, et on
+                se gave de sédatifs et de fortifiants, drogues qui maintiennent une illusion de
+                santé ; faiblesse d’esprit et l’on se laisse posséder par la « grouillance » du bas
+                astral ; faiblesse d’âme, et c’est la folie furieuse… Le mal s’y glisse et entame la
+                ponte…</p>
+            <p>Seul celui qui vit sa propre expérience jusqu’au bout connaîtra le fin mot : « <hi
+                    rend="i">La nuit est l’œuf du jour, et le mal l’œuf du bien ; une fois la
+                    coquille brisée, la lumière divine s’irradie</hi> »… Voyez le pentacle sur le
+                front de Baphomet : la lumière divine ne peut, ni se ternir, ni s’éteindre,
+                frottons, essuyons les plaques du doute, essayons…</p>
+            <p>Et l’étoile des mages éclairera, plus fort que la lune. Et nous découvrirons l’ennemi
+                tapi dans la mare…</p>
+            <l>– Ils guettent là</l>
+            <l><pb n="61" xml:id="p61"/>Tapis dans la mare</l>
+            <l>Les dogmes : répondent-ils à toutes les attentes ?</l>
+            <l>Les clés : ouvrent-elles toutes les portes ?…</l>
+            <l>Alors indique la voie</l>
+            <l>Simplement et sans trêve</l>
+            <l>Tant pis pour ceux qui regardent le doigt</l>
+            <l>Plutôt que l’objet indiqué</l>
+            <l>Et si les chiens aboient</l>
+            <l>C’est de peur ou de faim</l>
+            <l>Ne piétine pas leur queue</l>
+            <l>En pays étranger</l>
+            <l>Te baignerais-tu sur des plages solitaires ?</l>
+            <l>Goûte le fruit</l>
+            <l>Au lieu d’écouter sa description !</l>
+            <l>Marcherais-tu face au vent pendant l’incendie ?</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétine pas leur queue..,</l>
+            <l>Défoncerais-tu une porte</l>
+            <l>Sans avoir essayé de l’ouvrir en douceur ?</l>
+            <l>Parlerais-tu tout seul parmi les bouches closes ?</l>
+            <l>Ne marche pas dans la mare</l>
+            <l>Contourne-là !</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétine pas leur queue…</l>
+            <l>N’enfonce pas la lumière dans un rocher</l>
+            <l>À moins qu’il ne s’ouvre tout seul</l>
+            <l>Mettrais-tu un fruit pourri</l>
+            <l>Dans un panier de fruits neufs ?</l>
+            <l>Lâcherais-tu les oiseaux diurnes dans la nuit ?</l>
+            <l>Ne détruis<note place="bottom" resp="KS">Nous corrigeons « détruit » par
+                    « détruis ».</note> pas un gîte</l>
+            <l>Sans avoir prévu le lieu de transfert</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétine pas leur queue…</l>
+            <p><pb n="62" xml:id="p62"/>C’est la rengaine que chante la vieille lune bleue à la
+                jeune lune rouge encore fougueusement pleine d’illusions quand elle se mire dans la
+                mare ; elle ne voit que son reflet cependant que se dissimule le cancer, aux
+                aguets.</p>
+            <p>J’ai contourné un village fantôme. L’œuf du jour a éclos et la lumière s’est
+                    succédé<note place="bottom" resp="KS">Nous corrigeons « succédée » par
+                    « succédé ».</note> à elle-même. Et voici l’aurore de la Grande Rencontre…</p>
+            <p>L’Unique se lève dans sa majesté lumineuse éclairant toutes choses dans sa
+                générosité. Les peurs se sont évanouies avec les ténèbres. Et à nouveau, je
+                vois…</p>
+            <p>Je vois de l’autre côté du mur, un vaste champ. Et voici, plusieurs sépultures
+                s’ouvrent, au son d’un cor. Voici mon grand-père, et voilà mes frères jumeaux
+                décédés depuis l’enfance. Là-bas, ce sont certainement mes ancêtres, des ancêtres
+                que je n’ai pas connu. Us s’approchent de moi, ils passent à travers le mur et
+                m’entourent. Il y a un sourire dans leurs yeux, dans leur cœur. Une musique et un
+                parfum émanent de leur personne. Leurs lèvres ne bougent pas, mais je les entends.
+                D’abord mon grand-père.</p>
+            <l>– Tu as parcouru le chemin jusqu’ici</l>
+            <l>Tu pensais venir chercher Nyango</l>
+            <l>Mais tu devais faire ce chemin de toutes façons</l>
+            <l>Et grâce à Nyango tu as réussi</l>
+            <l>Le chemin que tu as choisi à l’entrée de la source</l>
+            <l>Est un chemin à double sens</l>
+            <l>C’est celui que tu emprunteras</l>
+            <l>Celui que tu feras emprunter à ton peuple</l>
+            <l><pb n="63" xml:id="p63"/>L’autre chemin est à sens unique</l>
+            <l>Sans retour</l>
+            <l>Il conduit de l’autre côté du mur</l>
+            <l>Au pays des ancêtres</l>
+            <p>(Ensuite, ce sont les voix de mes ancêtres…)</p>
+            <l>– Il était temps que tu saches</l>
+            <l>Que vous tous sachiez :</l>
+            <l>Il n’y a rien d’autre à faire</l>
+            <l>Qu’à être pleinement ce qu’on est</l>
+            <l>À chaque étape</l>
+            <l>l’étape suivante arrive d’elle-même</l>
+            <l>Automatiquement</l>
+            <l>Regarde…</l>
+            <p>Et ils me montrent une pierre… Et c’est la pierre que mon père nous a offerte à
+                Nyango et à moi comme cadeau de mariage ! Et voici, ils la fendent en deux. Elle a
+                neuf différentes couches ; d’abord, c’est une couche de terre meuble, ensuite une
+                couche d’argile, puis une de sable, une d’une roche friable, puis une de roche plus
+                dure, une d’une roche plus fine et plus nuancée, une de charbon plus dense et plus
+                claire, une de cristal pur, et au cœur, un vrai noyau de feu, un diamant !…</p>
+            <l>– Sois totalement argile</l>
+            <l>Quand la terre meuble aura disparu</l>
+            <l>Sois sable, sois roche</l>
+            <l>Sois marbre, sois charbon</l>
+            <l>Quand vient le moment de l’être</l>
+            <l>Sois-le réellement</l>
+            <l>Exploites-en toutes les qualités</l>
+            <l>Paie les dettes de charbon jusqu’à la cendre</l>
+            <l>Subis les casses du cristal jusqu’aux miettes</l>
+            <l>Irradie les feux du diamant</l>
+            <l><pb n="64" xml:id="p64"/>Totalement</l>
+            <l>Il n’y a rien de mieux à faire</l>
+            <l>Qu’à être profondément soi-même</l>
+            <l>Comme on est</l>
+            <l>Quand on l’est</l>
+            <l>Va et regarde la pierre</l>
+            <l>Découvre quelle couche est la mienne aujourd’hui</l>
+            <l>Découvre-toi va</l>
+            <l>Va et sois…</l>
+            <p>Puis, ils se taisent… peut-être vont-ils retraverser les murs ? Mais ils ne m’ont pas
+                dit l’essentiel : où est Nyango ? Je suis venu jusqu’aux enfers pour la ramener chez
+                nous. Ils ne vont pas disparaître sans me l’avoir rendue !</p>
+            <p>Alors, j’entends la voix de mes frères jumeaux…</p>
+            <l>– Aujourd’hui est le jour de la Grande Rencontre…</l>
+            <l>Le dernier jour d’épreuves</l>
+            <l>Aujourd’hui</l>
+            <l>Tu as droit à la question et à la réponse</l>
+            <l>Car « <hi rend="i">c’est pour les questions que tu recevras les bénédictions</hi></l>
+            <l><hi rend="i">Et c’est pour les réponses que tu seras honoré…</hi> »</l>
+            <p>– Où est Nyango ?</p>
+            <p>– Elle t’attend chez vous. Nous l’avons remise là où nous l’avions prise pour que tu
+                ne croies pas avoir ravi quelqu’un à tes ancêtres…</p>
+            <p>– Pourquoi donc l’aviez-vous prise ?</p>
+            <p><pb n="65" xml:id="p65"/>– Parce qu’elle était la seule capable de te diriger de te
+                conduire jusqu’à nous jusqu’à ta limite.</p>
+            <p>– Qui est Nyango ?</p>
+            <p>– Elle est toi elle est ta force la moitié que tu avais perdue… Ta route mène jusqu’à
+                elle…</p>
+            <p>– Mais ce chemin va peut-être plus loin ! Ne pourrais-je pas le suivre jusqu’au
+                bout ? N’est-il pas possible de voir et de savoir plus ? Le Sphinx de la Roue de
+                fortune m’avait promis quelque chose au vingt et unième tournant…</p>
+            <p>– Le chemin des vivants ne dépasse jamais le carrefour de la Grande Rencontre…
+                Au-delà c’est le chemin des Ancêtres… Mais qu’attendais-tu au vingt et unième
+                tournant ?</p>
+            <p>– La réalisation. Mais vous avez raison. Je me réaliserai auprès de Nyango qui
+                m’attends là-bas… Quel chemin prendrons-nous ensemble pour évoluer un peu plus ?</p>
+            <p>– C’est toujours le même chemin que l’on emprunte tant qu’on est vivant. Mais on le
+                prend à différents niveaux de conscience… Le prochain voyage sera différent. Le
+                voyage est toujours différent à chaque fois et pour chacun même si on est mille à la
+                fois.</p>
+            <p>(C’était la voix de mon grand-père.)</p>
+            <l>– La voie est toujours ouverte</l>
+            <l>À tous et à toute heure</l>
+            <l>Celui qui l’indique est béni</l>
+            <l>Va et sois.</l>
+            <p><pb n="66" xml:id="p66"/>(Conclut la voix de mes ancêtres… et ils retraversent le
+                mur…)</p>
+            <p>Que de questions me viennent alors à l’esprit ! des questions que je ne peux poser
+                qu’à moi-même maintenant…</p>
+            <p>Quand Orphée ouvrit les yeux, Nyango était tendrement penchée sur lui, guettant son
+                réveil. Il balbutia éperdu : « <hi rend="i">Toi, mon amour, enfin toi, tu m’as
+                    attendu.</hi> » Nyango répondit : « <hi rend="i">Je t’attendrai toujours…</hi> »
+                Sa voix était si calme, si sûre, qu’Orphée se réveilla totalement… Il s’assit et la
+                regarda longuement dans les yeux, et il sut qu’il n’avait pas seulement rêvé. Il
+                venait réellement de vivre une initiation qui avait duré neuf ans. Neuf ans ? Il
+                chercha fiévreusement sa montre : il y avait exactement vingt-deux heures qu’il
+                avait sombré dans le sommeil, à l’issue d’un orgasme trop longtemps retenu. Il
+                regarda encore Nyango et sentit son désir renaître… Elle se lova entre ses bras et
+                ils s’aimèrent encore une fois, plus doucement mais plus pleinement, plus
+                intensément, dans une totale communion de corps et d’âmes… Neuf ans ? Ce n’était pas
+                possible…</p>
+            <p>Maintenant, complètement ressaisi, en pleine possession de ses sens, Orphée regarde
+                Nyango, superbement impudique dans sa nudité. Qu’elle est belle… La ceinture de
+                perles et de cauris autour de ses reins luit doucement et donne des reflets
+                supplémentaires à sa peau déjà moirée. Le lit est à peine froissé. Les oreillers
+                sont tombés à terre. Il n’y a comme décor qu’un grand masque sur le mur, au-dessus
+                du lit, un Ntomo à sept cornes au regard de compassion, et dans la niche, le cadeau
+                de mariage du père…</p>
+            <p><pb n="67" xml:id="p67"/>Son père leur avait dit : « <hi rend="i">Prenez cette
+                    pierre, c’est un fétiche. Regardez-le avant de vous "connaître" dans votre
+                    chambre nuptiale. Regardez-le aussi au réveil avant de rendre le drap blanc.
+                    S’il y a une transformation, alors vous aurez eu la bénédiction de
+                tous…</hi> »</p>
+            <p>Orphée et Nyango regardent la niche, anxieux, n’osant pas s’approcher. Puis ils se
+                décident…</p>
+            <p>Sept couches se sont désolidarisées. Il ne reste que le petit bloc de cristal
+                encastrant le diamant…</p>
+            <p>Ils éclatent d’un rire sonore… Le rire de leur jeunesse pleinement retrouvé. Ils
+                s’empressent d’aller ôter le drap blanc du lit nuptial, mais…</p>
+            <p>Là, sur la tâche du sang de vierge de Nyango, trône la vingt-et-unième carte du livre
+                de Thot, impassible témoin de la bénédiction cosmique, seule capable de permettre la
+                véritable créativité.</p>
+            <p>Ainsi, c’était vrai. Ils avaient bien vécu cette aventure…</p>
+            <p>– Connais-tu le livre de Thot ? demande Nyango – Jamais entendu parler, mais dès
+                notre retour en ville, je m’en vais le chercher en librairie. Et toi, le
+                connais-tu ?</p>
+            <p>– Oui ! ton père me l’a offert il y a trois ans quand toi et moi nous sommes fiancés…
+                Je l’ai dans mes caisses, chez mon père… Je t’offrirai le vingt-deuxième arcane
+                majeur, le crocodile. Ce sera notre arcane garde-fou. Il symbolise l’illumination ou
+                la folie, l’ultime connaissance ou l’égarement. Puissions-nous ne vivre que la
+                vérité, mon Amour…</p>
+            <p>Alors, ils entreprirent de se souvenir…</p>
+            <p>Et ils écrivirent sur un papier le texte qui leur semblait être la leçon à retenir,
+                une leçon qui rejoindrait leurs objets sacrés, dans la niche au fétiche…</p>
+            <l><pb n="68" xml:id="p68"/>– Nous n’imposerons pas de dogmes</l>
+            <l>Nous ne proposerons aucune clé</l>
+            <l>Car tout dogme toute clé</l>
+            <l>Sont autant d’ennemis tapis dans la mare</l>
+            <l>Il n’est pas un dogme qui réponde à toutes les attentes</l>
+            <l>Et pas de clé qui ouvre toutes les portes</l>
+            <l>Sans trêve nous indiquerons la voie</l>
+            <l>Et tant pis pour ceux qui regardent le doigt</l>
+            <l>Plutôt que l’objet indiqué…</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétinons pas leur queue…</l>
+            <l>En pays étranger</l>
+            <l>Ne nous baignons point sur les berges solitaires</l>
+            <l>Nous goûterons le fruit</l>
+            <l>Au lieu d’écouter sa description</l>
+            <l>Nous ne marcherons pas face au vent pendant l’incendie</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétinons pas leur queue…</l>
+            <l>Nous ne défoncerons pas une porte</l>
+            <l>Sans avoir essayé de l’ouvrir en douceur</l>
+            <l>Ne parlons pas tout seul</l>
+            <l>Parmi les bouches closes</l>
+            <l>Ne marchons pas dans la mare</l>
+            <l>Contournons-là !</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétinons pas leur queue…</l>
+            <l>Nous n’enfoncerons pas la lumière dans un rocher</l>
+            <l>À moins qu’il ne s’ouvre tout seul</l>
+            <l>Ne mettons pas un fruit pourri</l>
+            <l>Dans un panier de fruits neufs.</l>
+            <l>Ne lâchons pas les oiseaux diurnes dans la nuit</l>
+            <l>Nous ne détruirons pas un gîte</l>
+            <l><pb n="69" xml:id="p69"/>Sans avoir prévu le lieu de transfert</l>
+            <l>Les chiens aboient de peur ou de faim</l>
+            <l>Ne piétinons pas leur queue…</l>
+            <p>Ils méditèrent encore un moment sur ces paroles, devant le morceau de cristal au
+                diamant et « le crocodile », avant de se préparer pour la nouvelle journée.</p>
+            <p>Il était neuf heures du matin. Il y avait vingt-cinq heures que le couple avait gagné
+                la chambre nuptiale. Les marraines rôdaient nerveusement devant la porte où la
+                bouteille d’eau était toujours pleine…</p>
+            <p>Les jeunes filles attendaient dehors en file indienne, parées de leurs plus beaux
+                bijoux, anxieuses… C’est depuis sept heures que le drap blanc aurait dû leur être
+                rendu pour qu’elles le portent à la mère de Nyango qui attendait, là-bas dans sa
+                retraite, la nouvelle qui allait faire sa fierté ou sa honte… Personne ne bougeait
+                plus, même les enfants s’étaient tus…</p>
+            <p>Subitement, la porte s’ouvrit, et Orphée jeta sur la bouteille d’eau le drap blanc
+                tâché du sang de Nyango, symbole de l’explosion de l’étoile initiale…</p>
+            <p>Les youyous relancèrent les festivités.</p>
+        </body>
+
+    </text>
+</TEI>

@@ -3,20 +3,25 @@
         type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
         schematypens="http://purl.oclc.org/dsdl/schematron"?>
-        <TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Les bucoliques et les géorgiques de Virgile, traductions nouvelles</title>
+                <title type="main">Les Géorgiques</title>
+                <title type="book">Les bucoliques et les géorgiques de Virgile, traductions
+                    nouvelles</title>
                 <author>Virgile</author>
                 <editor>Charles Héguin de Guerle</editor>
             </titleStmt>
             <editionStmt>
-                <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire 
-                dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » 
-                réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
                 <respStmt>
                     <name>Karolina Suchecka</name>
-                    <resp>Chargé de l'édition</resp>
+                    <resp>Chargé de l’édition</resp>
                 </respStmt>
                 <respStmt>
                     <name>Nathalie Gasiglia</name>
@@ -33,26 +38,38 @@
                 <date when="2019"/>
                 <availability status="restricted">
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse 
-                        « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale
-                         innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                        <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1)
-                         est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons :
-                          « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                        <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera 
-                        le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les 
-                        contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
                     </licence>
                 </availability>
                 <idno>https://numelyo.bm-lyon.fr/f_view/BML:BML_00GOO0100137001100373435#</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl><author>Virgile</author> / <title>Les bucoliques et les géorgiques de Virgile, traductions nouvelles</title> / Paris / Auguste Delalain / 1827 / p. 281-289.</bibl> 
+                <bibl><author>Virgile</author> / <title>Les Géorgiques</title> / <title>Les
+                    bucoliques et les géorgiques de Virgile, traductions nouvelles</title> / Charles Héguin de Guerle (trad.) / 
+                    Paris / Auguste Delalain / 1827 / p. 281-289.</bibl>
                 <biblFull>
                     <titleStmt>
-                        <title>Les bucoliques et les géorgiques de Virgile, traductions nouvelles</title>
+                        <title>Les bucoliques et les géorgiques de Virgile, traductions
+                            nouvelles</title>
                     </titleStmt>
                     <publicationStmt>
                         <publisher>Auguste Delalain</publisher>
@@ -65,9 +82,11 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et 
-            enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence 
-            à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
         </encodingDesc>
         <profileDesc>
             <creation>
@@ -84,21 +103,85 @@
                 </keywords>
             </textClass>
         </profileDesc>
-    </teiHeader><text><front><titlePage>
-            <docAuthor>Virgile</docAuthor>
-            <docTitle>
-              <titlePart type="main">Les bucoliques et les géorgiques de Virgile, traductions nouvelles</titlePart>
-            </docTitle>
-          </titlePage></front>
-    <body>
-      <head>Chant IV</head>
-      <p><pb n="281" xml:id="p281"/>C’est la vengeance d’un dieu qui te poursuit : <pb n="283" xml:id="p283"/>tu expies un grand forfait ! Le malheureux Or­phée attire ces châtimens sur ta tête… Peine légère, en comparaison du crime !… Rends-en grâce au destin qui te protège… Orphée venge sur toi la perte d’une épouse que tu voulus ra­vir à sa tendresse. Pour échapper à ta poursuite, Eurydice fuyait à pas précipités le long du fleuve : l’infortunée ne vit pas un serpent énorme, que lui cachait l’herbe épaisse du rivage, et qui allait lui donner la mort ! Les jeunes Nymphes, ses compa­gnes, remplirent les monts voisins de leurs cris douloureux : le Rhodope, le Pangée, la belliqueuse patrie de Rhésus, les contrées du Gète ; celles que l’Hèbre arrose, ou qui reçurent la jeune Orithye, semblèrent partager leurs regrets. Pour Orphée, seul avec sa douleur, et tristement assis sur le ri­vage, il confiait ses plaintes à sa lyre fidèle : c’est toi, chère épouse ! toi qu’il chantait, au retour de la lumière ; toi qu’il chantait encore, à son déclin !</p>
-      <p>Il fit plus : il osa franchir les gouffres du Ténare, ses forêts noires d’épouvante, et le seuil du palais de Pluton ; aborder les Mânes et leur formidable roi, et tenter de fléchir ces cœurs impitoyables que des prières humaines n’ont jamais fléchis. Au bruit harmonieux de ses accords, accouraient en foule du fond de l’Erèbe des ombres légères, aussi nombreu­ses que ces essaims d’oiseaux, que l’approche du soir ou la menace de l’orage chassent des montagnes dans les forêts. Autour du chantre divin erraient con­fondus des mères, des époux, des héros noblement tombés dans les combats ; des enfans, de jeunes vierges, <pb n="285" xml:id="p285"/>encore étrangères aux douceurs de l’hymen ; des fils chéris, placés sur le bûcher sous les yeux paternels ! Tristes victimes, qu’enferment à jamais la fange et les noirs roseaux du Cocyte, et que le Styx enchaîne neuf fois dans ses affreux replis.</p>
-      <p>Que dis-je ? Le Tartare lui-même fut ému jus­que dans ses plus profonds abîmes ; les Euménides, aux cheveux hérissés de serpens, tressaillirent : Cer­bère étonné retint son triple aboiement dans sa gueule béante, et le vent qui emporte la roue d’Ixion, cessa un moment de l’agiter.</p>
-      <p>Vainqueur de tous les obstacles, échappé à tous les dangers, il revenait enfin : il touchait aux portes du jour. Rendue à son amour, sa chère Eurydice suivait ses pas ; telle était la condition imposée par Pro­serpine !… Soudain, oubliant la loi fatale, vaincu par son amour, égaré par son délire (faute helas ! bien pardonnable, si l’enfer savait pardonner !) il se retourne… C’en est fait ; le fruit de tant de pei­nes est perdu pour toujours ; tout pacte est rompu avec le tyran des Enfers ; et trois fois l’Averne en a mugi d’une horrible joie.</p>
-      <p>Eurydice s’écrie : « Qu’as-tu fait, cher époux ! quel aveugle transport nous perd à jamais l’un et l’autre ! la cruelle mort a ressaisi sa proie… déjà son éter­nel sommeil ferme mes yeux éteints… une ombre épaisse m’environne ; adieu ! En vain mes faibles bras te cherchent encore… je ne suis plus à toi… adieu ! » – Elle dit, s’évapore, et disparaît comme une vapeur légère, que dissipe le souffle des vents. En vain le malheureux Orphée s’efforce de saisir <pb n="287" xml:id="p287"/>une ombre qui lui échappe : en vain, il voudrait lui parler encore ; elle s’évanouit pour toujours ; et le nocher des Enfers ne lui permit plus de franchir l’inexorable barrière.</p>
-      <p>Que faire ? où porter ses pas, privé deux fois d’une épouse si tendrement aimée ! Par quels pleurs, par quels accens tenter de fléchir encore les Mânes, et les dieux des sombres bords ! Hélas ! déjà la barque fatale entraînait l’ombre froide d’Eurydice. On raconte que durant sept mois entiers, l’inconsolable Orphée redit ses douleurs aux rochers de la Thrace, aux antres glacés, aux rives désertes du Strymon, entraînant sur ses pas les tigres adoucis, et les arbres même, charmés par la douceur de ses chants. Telle, sous l’épais feuillage d’un peuplier, la plaintive Philomèle déplore la perte de ses petits, qu’un pâtre inhumain a ravis, nus encore, à sa ten­dresse. Mère infortunée, elle passe les nuits en­tières à gémir, et fixée sur le même rameau, elle dit, redit son chant de douleur, et l’écho le ré­pète tristement au loin.</p>
-      <p>Plus d’amour, plus d’hymen pour Orphée. Tou­jours seul, il porta son désespoir au milieu des glaces hyperboréennes, sur les bords du Tanaïs, et dans les contrées qu’assiégent les éternels frimas des monts Riphées ; pleurant sans cesse la perte d’Eury­dice, et reprochant à Pluton l’inutilité de ses per­fides bienfaits. Furieuses de ses mépris, les femmes de Thrace se jetèrent sur le jeune infortuné, à la <pb n="289" xml:id="p289"/>faveur du tumulte nocturne des fêtes de Bacchus, et dispersèrent dans les champs ses membres déchirés. L’Hèbre reçut sa tête, séparée de son cou d’albâtre ; et tandis qu’elle flottait, entraînée par le courant du fleuve, sa langue déjà glacée faisait entendre encore un son plaintif et mourant : il nommait Eurydice ! et tout l’écho du fleuve répondait, Eurydice !</p>
-    </body>
-  
-</text></TEI>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Géorgiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Charles Héguin de Guerle</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <head>Chant IV</head>
+            <p><pb n="281" xml:id="p281"/>C’est la vengeance d’un dieu qui te poursuit : <pb n="283"
+                    xml:id="p283"/>tu expies un grand forfait ! Le malheureux Orphée attire ces
+                châtimens sur ta tête… Peine légère, en comparaison du crime !… Rends-en grâce au
+                destin qui te protège… Orphée venge sur toi la perte d’une épouse que tu voulus
+                ravir à sa tendresse. Pour échapper à ta poursuite, Eurydice fuyait à pas
+                précipités le long du fleuve : l’infortunée ne vit pas un serpent énorme, que lui
+                cachait l’herbe épaisse du rivage, et qui allait lui donner la mort ! Les jeunes
+                Nymphes, ses compagnes, remplirent les monts voisins de leurs cris douloureux : le
+                Rhodope, le Pangée, la belliqueuse patrie de Rhésus, les contrées du Gète ; celles
+                que l’Hèbre arrose, ou qui reçurent la jeune Orithye, semblèrent partager leurs
+                regrets. Pour Orphée, seul avec sa douleur, et tristement assis sur le rivage, il
+                confiait ses plaintes à sa lyre fidèle : c’est toi, chère épouse ! toi qu’il
+                chantait, au retour de la lumière ; toi qu’il chantait encore, à son déclin !</p>
+            <p>Il fit plus : il osa franchir les gouffres du Ténare, ses forêts noires d’épouvante,
+                et le seuil du palais de Pluton ; aborder les Mânes et leur formidable roi, et
+                tenter de fléchir ces cœurs impitoyables que des prières humaines n’ont jamais
+                fléchis. Au bruit harmonieux de ses accords, accouraient en foule du fond de l’Erèbe
+                des ombres légères, aussi nombreuses que ces essaims d’oiseaux, que l’approche du
+                soir ou la menace de l’orage chassent des montagnes dans les forêts. Autour du
+                chantre divin erraient confondus des mères, des époux, des héros noblement tombés
+                dans les combats ; des enfans, de jeunes vierges, <pb n="285" xml:id="p285"/>encore
+                étrangères aux douceurs de l’hymen ; des fils chéris, placés sur le bûcher sous les
+                yeux paternels ! Tristes victimes, qu’enferment à jamais la fange et les noirs
+                roseaux du Cocyte, et que le Styx enchaîne neuf fois dans ses affreux replis.</p>
+            <p>Que dis-je ? Le Tartare lui-même fut ému jusque dans ses plus profonds abîmes ; les
+                Euménides, aux cheveux hérissés de serpens, tressaillirent : Cerbère étonné retint
+                son triple aboiement dans sa gueule béante, et le vent qui emporte la roue d’Ixion,
+                cessa un moment de l’agiter.</p>
+            <p>Vainqueur de tous les obstacles, échappé à tous les dangers, il revenait enfin : il
+                touchait aux portes du jour. Rendue à son amour, sa chère Eurydice suivait ses pas ;
+                telle était la condition imposée par Proserpine !… Soudain, oubliant la loi fatale,
+                vaincu par son amour, égaré par son délire (faute helas ! bien pardonnable, si
+                l’enfer savait pardonner !) il se retourne… C’en est fait ; le fruit de tant de
+                peines est perdu pour toujours ; tout pacte est rompu avec le tyran des Enfers ; et
+                trois fois l’Averne en a mugi d’une horrible joie.</p>
+            <p>Eurydice s’écrie : « Qu’as-tu fait, cher époux ! quel aveugle transport nous perd à
+                jamais l’un et l’autre ! la cruelle mort a ressaisi sa proie… déjà son éternel
+                sommeil ferme mes yeux éteints… une ombre épaisse m’environne ; adieu ! En vain mes
+                faibles bras te cherchent encore… je ne suis plus à toi… adieu ! » – Elle dit,
+                s’évapore, et disparaît comme une vapeur légère, que dissipe le souffle des vents.
+                En vain le malheureux Orphée s’efforce de saisir <pb n="287" xml:id="p287"/>une
+                ombre qui lui échappe : en vain, il voudrait lui parler encore ; elle s’évanouit
+                pour toujours ; et le nocher des Enfers ne lui permit plus de franchir l’inexorable
+                barrière.</p>
+            <p>Que faire ? où porter ses pas, privé deux fois d’une épouse si tendrement aimée ! Par
+                quels pleurs, par quels accens tenter de fléchir encore les Mânes, et les dieux des
+                sombres bords ! Hélas ! déjà la barque fatale entraînait l’ombre froide d’Eurydice.
+                On raconte que durant sept mois entiers, l’inconsolable Orphée redit ses douleurs
+                aux rochers de la Thrace, aux antres glacés, aux rives désertes du Strymon,
+                entraînant sur ses pas les tigres adoucis, et les arbres même, charmés par la
+                douceur de ses chants. Telle, sous l’épais feuillage d’un peuplier, la plaintive
+                Philomèle déplore la perte de ses petits, qu’un pâtre inhumain a ravis, nus encore,
+                à sa tendresse. Mère infortunée, elle passe les nuits entières à gémir, et fixée
+                sur le même rameau, elle dit, redit son chant de douleur, et l’écho le répète
+                tristement au loin.</p>
+            <p>Plus d’amour, plus d’hymen pour Orphée. Toujours seul, il porta son désespoir au
+                milieu des glaces hyperboréennes, sur les bords du Tanaïs, et dans les contrées
+                qu’assiégent les éternels frimas des monts Riphées ; pleurant sans cesse la perte
+                d’Eurydice, et reprochant à Pluton l’inutilité de ses perfides bienfaits.
+                Furieuses de ses mépris, les femmes de Thrace se jetèrent sur le jeune infortuné, à
+                la <pb n="289" xml:id="p289"/>faveur du tumulte nocturne des fêtes de Bacchus, et
+                dispersèrent dans les champs ses membres déchirés. L’Hèbre reçut sa tête, séparée de
+                son cou d’albâtre ; et tandis qu’elle flottait, entraînée par le courant du fleuve,
+                sa langue déjà glacée faisait entendre encore un son plaintif et mourant : il
+                nommait Eurydice ! et tout l’écho du fleuve répondait, Eurydice !</p>
+        </body>
+
+    </text>
+</TEI>

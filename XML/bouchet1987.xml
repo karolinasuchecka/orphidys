@@ -2,89 +2,146 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title type="main">Orphée et Eurydice. La Mythologie grecque adoptée par les Romains.</title>
-            <author>Paule du Bouchet</author>
-        </titleStmt>
-        <editionStmt>
-            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-            <respStmt>
-                <name>Karolina Suchecka</name>
-                <resp>Chargé de l'édition</resp>
-            </respStmt>
-            <respStmt>
-                <name>Nathalie Gasiglia</name>
-                <resp>Co-tutrice de thèse</resp>
-            </respStmt>
-            <respStmt>
-                <name>Karl Zieger</name>
-                <resp>Co-tuteur de thèse</resp>
-            </respStmt>
-        </editionStmt>
-        <publicationStmt>
-            <publisher>Karolina Suchecka</publisher>
-            <publisher>ALITHILA (Université Lille III)</publisher>
-            <date when="2019"/>
-            <availability status="restricted">
-                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-                </licence>
-            </availability>
-            <idno></idno>
-        </publicationStmt>
-        <sourceDesc>
-            <bibl><author>Paule du Bouchet</author> / <title>Orphée et Eurydice. La Mythologie grecque adoptée par les Romains.</title> / Paris / Hatier / 1987 / .</bibl> 
-            <biblFull>
-                <titleStmt>
-                    <title>Orphée et Eurydice. La Mythologie grecque adoptée par les Romains.</title>
-                </titleStmt>
-                <publicationStmt>
-                    <publisher>Hatier</publisher>
-                    <pubPlace>Paris</pubPlace>
-                    <date when="1987"/>
-                </publicationStmt>
-            </biblFull>
-            <genre>prose</genre>
-            <structure>bouchet1987</structure>
-        </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-        <creation>
-            <date when="1987">1987</date>
-        </creation>
-        <language>
-            <language>FR</language>
-        </language>
-        <textClass>
-            <keywords>
-                <list>
-                    <item>transmodalisation</item>
-                </list>
-            </keywords>
-        </textClass>
-    </profileDesc>
-</teiHeader><text><front><titlePage>
-        <docAuthor>Paule du Bouchet</docAuthor>
-        <docTitle>
-          <titlePart type="main">Orphée et Eurydice. La Mythologie grecque adoptée par les Romains.</titlePart>
-        </docTitle>
-      </titlePage></front>
-        
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée et Eurydice</title>
+                <title type="sub">La Mythologie grecque adoptée par les
+                    Romains</title>
+                <author>Paule du Bouchet</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno/>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Paule du Bouchet</author> / <title>Orphée et Eurydice. La Mythologie
+                        grecque adoptée par les Romains</title> / Paris / Hatier / 1987.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée et Eurydice. La Mythologie grecque adoptée par les
+                            Romains.</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Hatier</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1987"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>bouchet1987</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1987">1987</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Paule du Bouchet</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée et Eurydice. La Mythologie grecque adoptée par les
+                        Romains.</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
 
-    <body>
-      <p><pb n="30" xml:id="p30"/> En principe, les dieux sont toujours les meilleurs en tout. Mais il faut bien dire que pour la musique et la poésie, Orphée n’est pas loin de surpasser les dieux… Lorsqu’il prend sa lyre et se met à chanter, tout s’apaise, tout se calme, tout devient magique. Les rochers, les collines se mettent en marche, les animaux le suivent, les hommes cessent leur querelles. On a même vu des fleuves changer leur cours…</p>
-      <p>Est-ce par sa musique qu’il a séduit la belle Eurydice ? Cela, on ne le sait pas. En tout cas, elle est devenue sa femme, et ils s’aiment avec passion.</p>
-      <p>C’est peut-être parce que la passion est si grande que le malheur frappe un jour si fort : Eurydice st mordue par une vipère et elle meurt. La douleur d’Orphée n’a pas de nom. Lui aussi croit mourir. Il ne peut vivre sans son aimée. Il décide de se rendre au Royaume des Morts pour arracher Eurydice à Hadès. Il ose par amour ce qu’aucun homme n’a jamais osé. Arrivé chez les morts, Orphée joue de sa lyre… Et miracle ! Cerbère lâche sa garde, la roue d’Ixion cesse de tourner, Sisyphe s’appuie sur sa pierre et Tantale lui-même oublie sa soif ! Maintenant, Orphée chante pour Hadès et Perséphone, et ses paroles sont une supplication : « Laissez-moi reprendre mon Eurydice ! » Et des larmes de fer coulent le long des joues d’Hadès. Il fait venir Orphée et lui rend son Eurydice. Mais à une condition : pendant tout le temps que durera le voyage de retour vers la lumière, Orphée ne devra pas se retourner.</p>
-      <p>Les voilà, les deux époux retrouvés, l’un derrière l’autre, Orphée devant, son cœur bondissant dans sa poitrine… L’ombre devient grise, bientôt le jour. Un pas encore, et Orphée entre, joyeux, dans la lumière du jour. Il se retourne… Trop tôt ! Eurydice est encore dans la caverne. Il la voit trembler dans la lumière. Il lui tend les bras… Plus personne ! Orphée l’appelle, crie, supplie. Il n’a plus maintenant qu’à errer, seul et désespéré, sur la terre, chantant sa douleur et seuls les rochers lui répondent, et les rivières et les arbres. Pauvre Orphée !</p>
-    </body>
-  
-</text></TEI>
+
+        <body>
+            <p><pb n="30" xml:id="p30"/> En principe, les dieux sont toujours les meilleurs en tout.
+                Mais il faut bien dire que pour la musique et la poésie, Orphée n’est pas loin de
+                surpasser les dieux… Lorsqu’il prend sa lyre et se met à chanter, tout s’apaise,
+                tout se calme, tout devient magique. Les rochers, les collines se mettent en marche,
+                les animaux le suivent, les hommes cessent leur querelles. On a même vu des fleuves
+                changer leur cours…</p>
+            <p>Est-ce par sa musique qu’il a séduit la belle Eurydice ? Cela, on ne le sait pas. En
+                tout cas, elle est devenue sa femme, et ils s’aiment avec passion.</p>
+            <p>C’est peut-être parce que la passion est si grande que le malheur frappe un jour si
+                fort : Eurydice st mordue par une vipère et elle meurt. La douleur d’Orphée n’a pas
+                de nom. Lui aussi croit mourir. Il ne peut vivre sans son aimée. Il décide de se
+                rendre au Royaume des Morts pour arracher Eurydice à Hadès. Il ose par amour ce
+                qu’aucun homme n’a jamais osé. Arrivé chez les morts, Orphée joue de sa lyre… Et
+                miracle ! Cerbère lâche sa garde, la roue d’Ixion cesse de tourner, Sisyphe s’appuie
+                sur sa pierre et Tantale lui-même oublie sa soif ! Maintenant, Orphée chante pour
+                Hadès et Perséphone, et ses paroles sont une supplication : « Laissez-moi reprendre
+                mon Eurydice ! » Et des larmes de fer coulent le long des joues d’Hadès. Il fait
+                venir Orphée et lui rend son Eurydice. Mais à une condition : pendant tout le temps
+                que durera le voyage de retour vers la lumière, Orphée ne devra pas se
+                retourner.</p>
+            <p>Les voilà, les deux époux retrouvés, l’un derrière l’autre, Orphée devant, son cœur
+                bondissant dans sa poitrine… L’ombre devient grise, bientôt le jour. Un pas encore,
+                et Orphée entre, joyeux, dans la lumière du jour. Il se retourne… Trop tôt !
+                Eurydice est encore dans la caverne. Il la voit trembler dans la lumière. Il lui
+                tend les bras… Plus personne ! Orphée l’appelle, crie, supplie. Il n’a plus
+                maintenant qu’à errer, seul et désespéré, sur la terre, chantant sa douleur et seuls
+                les rochers lui répondent, et les rivières et les arbres. Pauvre Orphée !</p>
+        </body>
+
+    </text>
+</TEI>

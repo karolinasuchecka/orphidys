@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les mystères d’Orphée</title>
+                <author>Marie Goudot</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno/>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Marie Goudot</author> / <title>Les mystères d’Orphée</title> / Paris /
+                    l’école des loisirs / 2003 / p. 38-115.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les mystères d’Orphée</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>l’école des loisirs</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2003"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>goudot2003</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="2003">2003</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Marie Goudot</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les mystères d’Orphée</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <head>III <lb/>Le venin du serpent</head>
+                <argument>
+                    <p><milestone unit="sent"/>L’homme au crâne rasé</p>
+                </argument>
+                <p rend="noindent"><pb n="38" xml:id="p38"/>Dès qu’il eut mis pied à terre, Orphée
+                    n’eut plus qu’une hâte : regagner son village et ses monts.</p>
+                <p><milestone unit="sent"/>Il regarda l’<hi rend="i">Argo</hi> s’éloigner et les mains s’agiter en sa
+                    direction. <milestone unit="sent"/>Aux autres étapes, ses compagnons seraient attendus. <milestone unit="sent"/>Lui, personne
+                    n’était venu l’accueillir. <milestone unit="sent"/>Ni son frère Linos, ni Calliope sa mère, toujours
+                    trop occupés pour faire ce long voyage vers la mer. <milestone unit="sent"/>Et son père devenait si
+                    vieux ! <milestone unit="sent"/>Mais Orphée conservait l’espoir de le prendre bientôt dans ses bras. <milestone unit="sent"/>« Oui, il n’a pu quitter la maison, il sera là ! » se répétait-il tout en se
+                    sentant des ailes pour <pb n="39" xml:id="p39"/>traverser les terres qui le
+                    séparaient de Pimpleia. <milestone unit="sent"/>« Avec l’été, tout est plus facile. <milestone unit="sent"/>La marche ne me fait
+                    pas peur. <milestone unit="sent"/>Si je trouve des mulets, ce sera encore mieux. <milestone unit="sent"/>Mes bagages sont si peu
+                    lourds. »</p>
+                <p><milestone unit="sent"/>Après ces mois de navigation, le voyage terrestre lui parut un enchantement. <milestone unit="sent"/>Les
+                    plaines succédaient aux montagnes, et il redécouvrait le plaisir de dormir seul
+                    à l’abri dans les forêts, dans des grottes au creux des rochers ou au bord de
+                    rivières.</p>
+                <p><milestone unit="sent"/>– Allez vite prévenir mon père, cria Orphée à une bande de gamins qui se
+                    précipitaient à sa rencontre à la sortie des faubourgs de Dion.</p>
+                <p><milestone unit="sent"/>Tandis qu’ils filaient comme des flèches, il releva la tête.</p>
+                <p><milestone unit="sent"/>Sur le flanc de la colline, au seuil d’une porte surplombée de glycine, le vieil
+                    Œagre l’attendait déjà bras grands ouverts. <milestone unit="sent"/>Orphée accéléra le pas, un œil sur
+                    la maison au toit <pb n="40" xml:id="p40"/>plat dont la partie gauche
+                    s’affaissait dangereusement. <milestone unit="sent"/>« Et personne ne l’a réparé. <milestone unit="sent"/>Rien n’a changé,
+                    pensa-t-il en respirant l’air à pleines narines. <milestone unit="sent"/>Mais le parfum de toutes ces
+                    fleurs, j’avais oublié. »</p>
+                <p><milestone unit="sent"/>– Comme tu m’as manqué ! <milestone unit="sent"/>Tant de mois sans toi. <milestone unit="sent"/>Ta mère n’est pas à la maison. <milestone unit="sent"/>Encore par monts et par vaux.</p>
+                <p>Œagre souriait.</p>
+                <p><milestone unit="sent"/>Et Orphée savait que son sourire était moins fait d’agacement que de
+                    tendresse :</p>
+                <p><milestone unit="sent"/>– Père, quand on a choisi d’épouser une Muse, on sait à quoi s’attendre. <milestone unit="sent"/>Calliope
+                    est appelée à tous les coins de la terre !</p>
+                <p><milestone unit="sent"/>– Et moi, est-ce que je la sollicite à chaque instant ? <milestone unit="sent"/>Le plus discret des
+                    maris. <milestone unit="sent"/>Toi non plus d’ailleurs…</p>
+                <p><milestone unit="sent"/>– Eh bien ! moi-même, figure-toi que j’ai eu besoin d’elle, il y a peu de temps. <milestone unit="sent"/>Sans son intervention, tous les Argonautes auraient été portés disparus. <milestone unit="sent"/>Je suis
+                    sûr que c’est elle qui a guidé mes doigts et mes lèvres.</p>
+                <p><pb n="41" xml:id="p41"/><milestone unit="sent"/>Comme son père semblait ne rien comprendre, Orphée lui
+                    raconta sa rencontre avec les Sirènes. <milestone unit="sent"/>Et il eut à nouveau en tête la vision de
+                    leur rivage de mort, de l’amoncellement des cadavres. <milestone unit="sent"/>Une longue ride plissa
+                    aussi le front d’Œagre :</p>
+                <p><milestone unit="sent"/>– Vaincues dans leur chant par le pouvoir de ta lyre ! <milestone unit="sent"/>Mais n’as-tu pas quelque
+                    crainte maintenant ?</p>
+                <p><milestone unit="sent"/>« Les paroles de Jason, presque mot pour mot. » <milestone unit="sent"/>Orphée tressaillit tandis que le
+                    vieil homme s’exclamait d’un ton qu’il voulait gai :</p>
+                <p><milestone unit="sent"/>– Tu tiens vraiment de ta mère. <milestone unit="sent"/>Et de ta grand-mère. <milestone unit="sent"/>Les dons de Mnémosyne sont
+                    passés en toi, et dans ton frère. <milestone unit="sent"/>Déjà, petits, vous…</p>
+                <p><milestone unit="sent"/>Orphée l’interrompit avec affection. Œagre était si intarissable pour rappeler
+                    dans les plus menus détails les histoires de leur enfance :</p>
+                <p><milestone unit="sent"/>– Mon frère ? Mais où est-il ? Où est Linos ?</p>
+                <p><pb n="42" xml:id="p42"/><milestone unit="sent"/>– Occupé comme toujours à ses cours de lyre. <milestone unit="sent"/>Oh, tu vas
+                    voir. <milestone unit="sent"/>Tout sage qu’il est aux yeux des hommes, il n’a pas gagné en patience dès
+                    qu’il est question de musique. <milestone unit="sent"/>En ton absence, il a décidé de remplacer les
+                    cordes de lin par des boyaux de vache. <milestone unit="sent"/>Mais ses élèves sont, dit-il, toujours
+                    aussi mauvais. <milestone unit="sent"/>Rien ne va jamais avec eux. <milestone unit="sent"/>Il est si exigeant. <milestone unit="sent"/>Contre Héraclès
+                    même, tu t’en souviens, on l’entendait crier. <milestone unit="sent"/>Il le frappait parfois et…</p>
+                <p><milestone unit="sent"/>De la maison voisine leur parvinrent des éclats de voix pleins de colère. <milestone unit="sent"/>Oui, il
+                    allait retrouver Linos égal à lui-même. <milestone unit="sent"/>Bouillant. Incapable de supporter la
+                    moindre erreur des gamins :</p>
+                <p><milestone unit="sent"/>– Des fautes de rythme encore et toujours, expliqua son frère aîné dès qu’Orphée
+                    entra dans la pièce.</p>
+                <p><milestone unit="sent"/>Malgré les mois passés, ils allaient reprendre leur discussion comme s’ils
+                    l’avaient abandonnée la veille :</p>
+                <p><pb n="43" xml:id="p43"/><milestone unit="sent"/>– Que veux-tu, Linos ? <milestone unit="sent"/>Ils n’ont pas la chance d’avoir
+                    ça comme nous dans la peau et dans le sang. <milestone unit="sent"/>Quand Calliope nous portait en elle,
+                    notre cœur battait déjà au rythme de ses chants…</p>
+                <p><milestone unit="sent"/>– Mais ces parents qui veulent que leurs enfants jouent de la lyre, interrompit
+                    Linos. <milestone unit="sent"/>Ils en font une obligation. <milestone unit="sent"/>Même si les gosses n’en ont pas la moindre
+                    envie.</p>
+                <p><milestone unit="sent"/>– Le monde autour de nous paraît à certains trop rude, tenta d’expliquer Orphée. <milestone unit="sent"/>Nous, nous savons la poésie de la nature, l’organisation des sphères
+                    célestes.</p>
+                <p><milestone unit="sent"/>– C’est vrai, reconnut Linos.</p>
+                <p><milestone unit="sent"/>Il fit un signe à son élève, qui semblait ravi : le retour de l’Argonaute allait
+                    mettre fin à son supplice !</p>
+                <p><milestone unit="sent"/>« Notre don pour la musique est une affaire de famille, oui. <milestone unit="sent"/>Mais comme nous
+                    sommes différents, songeait Orphée en regardant l’enfant ranger à toute vitesse
+                    ses affaires. <milestone unit="sent"/>Moi, je n’ai jamais eu le moindre <pb n="44" xml:id="p44"/>désir
+                    d’enseigner. <milestone unit="sent"/>Transformer la musique en une tâche ingrate ! <milestone unit="sent"/>Interrompre le
+                    déroulement des mélodies par des cris, des reproches ! <milestone unit="sent"/>Je préfère mes chênes,
+                    les bêtes sauvages. »</p>
+                <p><milestone unit="sent"/>Il les retrouva.</p>
+                <p><milestone unit="sent"/>Il retrouva sa vie d’avant, partagée entre la solitude et son enseignement dans
+                    les temples voisins. <milestone unit="sent"/>Et les jours se suivaient, heureux et semblables. <milestone unit="sent"/>Les nuits
+                    aussi, où il observait le cours familier de ses étoiles, qui lui rappelait comme
+                    le ciel était différent en Colchide.</p>
+                <p><milestone unit="sent"/>Parfois seulement les paroles de Médée, le rire des Érinyes infernales
+                    tambourinaient dans ses tempes. <milestone unit="sent"/>Et une inquiétude sourde l’envahissait.</p>
+                <p><milestone unit="sent"/>– Mon rôle n’est pas celui de Linos, père, rappela un soir Orphée pour le
+                    préparer à une nouvelle séparation, pas pour longtemps cette fois. <milestone unit="sent"/>Guider non
+                    les bateaux, mais les humains : voilà ma vraie mission. <milestone unit="sent"/>D’autres lieux
+                    m’appellent.</p>
+                <p><pb n="45" xml:id="p45"/><milestone unit="sent"/>– Depuis ton séjour en Égypte ? interrogea timidement
+                    Œagre qui savait de quel secret son fils et ses disciples s’entouraient.</p>
+                <p><milestone unit="sent"/>– Oui, tu n’ignores pas que Dionysos a droit à bien peu d’égards. <milestone unit="sent"/>Hécate aussi
+                    doit avoir ses mystères. <milestone unit="sent"/>L’île d’Égine n’est pas loin, rassure-toi, et c’est
+                    là…</p>
+                <p><milestone unit="sent"/>– Hécate !</p>
+                <p>Œagre hochait la tête anxieusement.</p>
+                <p><milestone unit="sent"/>Ses sourcils froncés disaient à Orphée qu’il avait en tête les chiens hurlants de
+                    la déesse, les terribles sacrifices accomplis pour elle à la lumière trouble de
+                    la lune.</p>
+                <p><milestone unit="sent"/>– Une divinité de la nuit et des fantômes, elle n’est pas que cela. <milestone unit="sent"/>Je dois
+                    enseigner aux hommes son vrai visage, conclut-il en entourant affectueusement
+                    son père de ses bras.</p>
+                <p><milestone unit="sent"/>– Mais que va-t-il donc m’arriver ? <milestone unit="sent"/>Orphée ne pouvait s’empêcher de s’étonner de
+                    l’émotion inhabituelle qui lui faisait <pb n="46" xml:id="p46"/>battre le cœur. <milestone unit="sent"/>Après les semaines passées à Égine, il y avait bien le bonheur de retrouver ses
+                    clairières, son vallon qu’il allait pouvoir arpenter seul. <milestone unit="sent"/>Mais rien de tout
+                    cela ne suffisait à expliquer le trouble grandissant qui était le sien.</p>
+                <p><milestone unit="sent"/>Arrivé près des vignes d’Œagre, il posa autour de lui un long regard. Personne !</p>
+                <p><milestone unit="sent"/>Il n’avait pas gratté deux accords sur sa lyre qu’à nouveau il sentit qu’on
+                    l’observait. <milestone unit="sent"/>Quelqu’un était là. <milestone unit="sent"/>Mais qui ? Il se leva d’un bond et s’approcha
+                    de la rivière. <milestone unit="sent"/>Que lui voulait donc cette jeune fille, venue se baigner sans
+                    personne avec elle ?</p>
+                <p><milestone unit="sent"/>– Qu’est-ce que tu fais ici ?</p>
+                <p><milestone unit="sent"/>À son grand étonnement, elle ne lui répondit que par une question très douce et
+                    très calme :</p>
+                <p><milestone unit="sent"/>– Tu as vu ce qui s’est produit autour de toi : la nature sous le charme, au
+                    premier de tes accords ? <milestone unit="sent"/>Tu es bien Orphée, le chantre ?</p>
+                <p><milestone unit="sent"/>Il la regarda.</p>
+                <p><pb n="47" xml:id="p47"/><milestone unit="sent"/>Ses cheveux blonds entouraient un visage resplendissant
+                    de beauté et des yeux azur qui pétillaient. <milestone unit="sent"/>Elle devait avoir quinze ans. <milestone unit="sent"/>Seize
+                    tout au plus.</p>
+                <p><milestone unit="sent"/>– Et toi, répliqua-t-il enfin. <milestone unit="sent"/>Qui es-tu ? Qui sont tes parents ?</p>
+                <p><milestone unit="sent"/>– Tu ne sais pas ?</p>
+                <p><milestone unit="sent"/>Puis, sur le même ton joyeux :</p>
+                <p><milestone unit="sent"/>– Est-ce que tu adores autant que moi les énigmes familiales ? <milestone unit="sent"/>Celle-là par
+                    exemple : <hi rend="i">C’est la fille de sa mère et la mère est fille de sa
+                        fille</hi>. <milestone unit="sent"/>Alors, Orphée, tu donnes ta langue au chat ?</p>
+                <p><milestone unit="sent"/>– La journée et la nuit, s’entendit-il répondre, sans cesser de penser que cette
+                    fille était vraiment étrange : elle paraissait ne savoir répondre aux questions
+                    que par de nouvelles questions ou des devinettes ! <milestone unit="sent"/>Il décida de l’interroger à
+                    son tour. <milestone unit="sent"/>Peut-être arriverait-il à lui faire perdre son aplomb :</p>
+                <p><milestone unit="sent"/>– <hi rend="i">Je nais immense. <milestone unit="sent"/>Au milieu de ma vie, je suis toute petite. <milestone unit="sent"/>Près
+                        de disparaître je redeviens gigantesque. <milestone unit="sent"/>Qui suis-je</hi> ?</p>
+                <p><pb n="48" xml:id="p48"/><milestone unit="sent"/>Mais la jeune fille s’écria aussitôt :</p>
+                <p><milestone unit="sent"/>– L’ombre !</p>
+                <p><milestone unit="sent"/>– Tiens… tu n’as pas posé de questions cette fois ! J’ai gagné !</p>
+                <p><milestone unit="sent"/>Orphée sourit à son tour. <milestone unit="sent"/>Étonné de retrouver avec elle si brusquement
+                    l’insouciance de son enfance. <milestone unit="sent"/>Plus émerveillé encore de ce que les devinettes de
+                    sa compagne aient tourné ainsi autour des ténèbres et de la lumière, de tout ce
+                    qui le préoccupait. <milestone unit="sent"/>Mais dans une telle gaieté !</p>
+                <p><milestone unit="sent"/>La nuit commençait à tomber :</p>
+                <p><milestone unit="sent"/>– Déjà ! Je vais rentrer. <milestone unit="sent"/>Mon nom est Eurydice.</p>
+                <p><milestone unit="sent"/>– Où puis-je te revoir ?</p>
+                <p><milestone unit="sent"/>– Ici bien sûr. Demain, au début de l’après-midi.</p>
+                <p><milestone unit="sent"/>Les jours suivants furent, par leur douceur, à l’image de celui de leur rencontre
+                    Mais Eurydice arrêta de parler par questions lui raconta sa propre enfance, sa
+                    passion de <pb n="49" xml:id="p49"/>la forêt. <milestone unit="sent"/>Elle en savait peu sur lui, sur
+                    les prêtres qu’il formait pour Apollon ou Dionysos, les cultes qu’il essayait
+                    d’introduire en Thrace.</p>
+                <p><milestone unit="sent"/>– Des mystères ! <milestone unit="sent"/>Je sais. Ne t’inquiète pas. <milestone unit="sent"/>Je ne te poserai aucune question
+                    cette fois. <milestone unit="sent"/>Silence ! ajouta-t-elle en posant un doigt sur ses lèvres.</p>
+                <p><milestone unit="sent"/>Puis :</p>
+                <p><milestone unit="sent"/>– Tu es si différent des autres garçons, Orphée. <milestone unit="sent"/>La plupart utilisent la musique
+                    pour leurs conquêtes amoureuses. <milestone unit="sent"/>Quelques grattements de cithare et les filles
+                    sont à leurs genoux. <milestone unit="sent"/>Toi, ce sont les bêtes sauvages. <milestone unit="sent"/>Les dons de ta mère, je
+                    sais.</p>
+                <p><milestone unit="sent"/>Orphée aimait écouter la jeune fille, la suivre vers ses fieux de promenade
+                    préférés ou la guider vers les siens. <milestone unit="sent"/>Parfois, il prenait plaisir à lui
+                    expliquer ses idées sur l’origine du monde :</p>
+                <p><milestone unit="sent"/>– Mais je suis jeune encore, Eurydice. <milestone unit="sent"/>J’ai encore tant à apprendre.</p>
+                <p><pb n="50" xml:id="p50"/><milestone unit="sent"/>Pourtant il y avait un moment, toujours le même, où il
+                    voyait le visage de la jeune fille s’assombrir. <milestone unit="sent"/>C’était celui où leur chemin
+                    longeait un grand champ rempli de ruches.</p>
+                <p><milestone unit="sent"/>– Le domaine d’Aristée, murmura-t-elle un jour, en accélérant le pas. <milestone unit="sent"/>La part
+                    d’ombre de ma vie.</p>
+                <p><milestone unit="sent"/>Et Orphée comprit qu’il ne devait pas la questionner davantage sur cet homme de
+                    son passé. <milestone unit="sent"/>De son passé ? Était-ce bien sûr ?</p>
+                <p><milestone unit="sent"/>Un après-midi, Orphée avait cru le voir, caché derrière un bosquet, occupé à
+                    épier Eurydice. <milestone unit="sent"/>Un autre, il contemplait avec émerveillement l’eau limpide. <milestone unit="sent"/>Tout
+                    s’y reflétait. <milestone unit="sent"/>Le visage lumineux de sa compagne, le sien, les feuillages des
+                    chênes au-dessus d’eux. <milestone unit="sent"/>Soudain, un crâne nu et un œil s’étaient dessinés à la
+                    surface de la rivière. <milestone unit="sent"/>Aristée ? Il n’eut pas le temps de relever la tête. <milestone unit="sent"/>Une
+                    légère risée avait tout dissipé.</p>
+                <p><milestone unit="sent"/>– Il est fiancé à la fille du roi de Thèbes, avait ajouté pour le rassurer
+                    Eurydice, qui <pb n="51" xml:id="p51"/>lisait la plupart de ses pensées. <milestone unit="sent"/>Il
+                    quittera la Thrace dès l’automne.</p>
+                <p><milestone unit="sent"/>– Qu’y a-t-il donc, mon fils ?</p>
+                <p><milestone unit="sent"/>Ce qu’il y avait ? <milestone unit="sent"/>Orphée devinait que le vieil Œagre le savait. <milestone unit="sent"/>Qu’aurait-il
+                    d’ailleurs pu lui répondre ? <milestone unit="sent"/>« Même si je mettais bout à bout la douceur de nos
+                    rencontres, le besoin que j’ai d’elle à tout instant, de l’entendre, de lui
+                    parler, le résultat ne pourrait qu’être ennuyeux. <milestone unit="sent"/>Un amour heureux, ça ne peut
+                    pas se raconter. »</p>
+                <p><milestone unit="sent"/>Linos était plus moqueur :</p>
+                <p><milestone unit="sent"/>– Quand tu es avec nous, tu n’es pas là.</p>
+                <p><milestone unit="sent"/>Et un soir, avec sa brusquerie coutumière :</p>
+                <p><milestone unit="sent"/>– Il n’y a pas trente-six solutions. <milestone unit="sent"/>Mariez-vous. Cela ne t’empêchera pas
+                    d’accomplir ton service au temple et de partir instituer de nouveaux cultes.</p>
+                <p><milestone unit="sent"/>Puis, après un soupir en voyant arriver un dernier élève, chargé de sa
+                    cithare :</p>
+                <p><milestone unit="sent"/>– Tes inquiétudes prendront fin.</p>
+                <p><pb n="52" xml:id="p52"/><milestone unit="sent"/>Ses inquiétudes ?</p>
+                <p><milestone unit="sent"/>Linos connaissait-il l’existence d’Aristée ?</p>
+                <p><milestone unit="sent"/>– Tu m’énerves quand tu joues ton rôle d’aîné, rétorqua vivement Orphée pour
+                    cacher son trouble. <milestone unit="sent"/>Je n’ai pas attendu tes conseils. <milestone unit="sent"/>Les étoiles ont été les
+                    témoins de nos serments. <milestone unit="sent"/>Que veux-tu de plus ? <milestone unit="sent"/>Une cérémonie pleine d’invités,
+                    un repas somptueux ? <milestone unit="sent"/>Du vin, des viandes à profusion ? <milestone unit="sent"/>J’ai horreur de tout ça,
+                    tu sais bien. <milestone unit="sent"/>Et Eurydice aussi.</p>
+                <p><milestone unit="sent"/>– Quelle lune de miel !</p>
+                <p><milestone unit="sent"/>Linos était visiblement ravi de sa formule résumant les mois qui venaient de
+                    s’écouler pour son frère :</p>
+                <p><milestone unit="sent"/>– Vous êtes toujours ensemble. <milestone unit="sent"/>Moi, lorsque je trouverai femme…</p>
+                <p><milestone unit="sent"/>– Lorsque tu seras amoureux, alors tu pourras parler !</p>
+                <p><milestone unit="sent"/>À Linos moins encore qu’à Œagre, Orphée n’aurait osé avouer qu’il vivait une <pb
+                        n="53" xml:id="p53"/>passion sans bornes. <milestone unit="sent"/>Que parfois la nuit, quand il
+                    travaillait ou recopiait, à la lumière de la lampe à huile, un de ses derniers
+                    poèmes, il contemplait le visage d’Eurydice endormie. <milestone unit="sent"/>Et son bonheur se teintait
+                    d’anxiété. <milestone unit="sent"/>Où était-elle ? Dans quel monde, loin de lui ? <milestone unit="sent"/>Il lui était parfois
+                    venu à l’esprit de réveiller sa compagne. <milestone unit="sent"/>Mais il s’en était toujours
+                    abstenu.</p>
+                <p><milestone unit="sent"/>Il n’avait pas pour autant renoncé à son enseignement. <milestone unit="sent"/>Au contraire ! Depuis sa
+                    rencontre avec Eurydice, il évoquait avec plus d’enthousiasme la grandeur de la
+                    marche que chaque homme devait accomplir vers la perfection et la lumière. <milestone unit="sent"/>Et
+                    puis les moments où ils se retrouvaient lui étaient une occasion supplémentaire
+                    de dire à Eurydice qu’il serait capable de tout pour elle.</p>
+                <p><milestone unit="sent"/>– De tout ? Mais quoi par exemple ? demandait-elle parfois.</p>
+                <p><milestone unit="sent"/>Et un jour, au bord de leur rivière :</p>
+                <p><milestone unit="sent"/>– Déplacer les chênes, mettre les sangliers à tes pieds, endormir des hydres. <milestone unit="sent"/>Tu
+                    avais déjà <pb n="54" xml:id="p54"/>réalisé tous ces exploits avec ta lyre avant
+                    de me rencontrer. <milestone unit="sent"/>Est-ce qu’on peut imaginer quelque chose de mieux ?</p>
+                <p><milestone unit="sent"/>Orphée hocha la tête :</p>
+                <p><milestone unit="sent"/>– J’affronterais des épreuves plus difficiles encore.</p>
+                <p><milestone unit="sent"/>– Plus difficiles ?</p>
+                <p><milestone unit="sent"/>– Je ferais ce qu’aucun homme n’a jamais fait pour son amour. <milestone unit="sent"/>Si tu
+                    disparaissais, j’irais te chercher au bout du monde, fût-ce…</p>
+                <p><milestone unit="sent"/>Il s’interrompit, bouleversé. <milestone unit="sent"/>Il venait de revoir dans sa tête les mains tendues
+                    des Sirènes aux rivages de mort et le dernier regard, en Colchide, des divinités
+                    infernales. <milestone unit="sent"/>« Non, pas cela, se murmura-t-il à lui-même. <milestone unit="sent"/>Elles ne peuvent venir
+                    m’arracher Eurydice. »</p>
+                <p><milestone unit="sent"/>Celle-ci aborda vite un sujet moins grave :</p>
+                <p><milestone unit="sent"/>– C’est vrai qu’avant toi la lyre n’avait que sept cordes, que tu en as rajouté
+                    deux ?</p>
+                <p><milestone unit="sent"/>– Oui, neuf cordes. <milestone unit="sent"/>Un hommage à ma mère Calliope et à ses huit sœurs. <milestone unit="sent"/>Ma mère
+                    est ta seule rivale dans mon cœur…</p>
+                <p><pb n="55" xml:id="p55"/><milestone unit="sent"/>– La rivale d’une Muse, répliqua gaiement Eurydice. <milestone unit="sent"/>Pas
+                    mal !</p>
+                <p><milestone unit="sent"/>– Oui, et maintenant c’est mon amour pour toi qui guide mes doigts. <milestone unit="sent"/>Jamais je
+                    n’ai joué aussi bien.</p>
+                <p><milestone unit="sent"/>Il s’empara de son instrument. <milestone unit="sent"/>Tout, autour d’eux, sembla se taire pour
+                    l’écouter. <milestone unit="sent"/>Dans le ciel, même les étoiles eurent l’air de cligner
+                    différemment :</p>
+                <p><milestone unit="sent"/>– Le jour où je pourrai vivre sans toi, l’eau de notre Pénée remontera vers sa
+                    source !</p>
+                <p><milestone unit="sent"/>Il posa sa lyre. <milestone unit="sent"/>Prit le visage d’Eurydice doucement entre ses mains et
+                    l’embrassa.</p>
+                <p><milestone unit="sent"/>Mais ce fut pendant une des matinées d’Orphée au temple voisin que le malheur
+                    frappa à la porte de leur existence. <milestone unit="sent"/>Avec la même soudaineté que leur amour s’y
+                    était installé.</p>
+                <p><milestone unit="sent"/>L’aube s’était levée au-dessus de Pimpleia avec une immense douceur. <milestone unit="sent"/>Orphée
+                    assistait au départ de trois jeunes prêtres ambulants <pb n="56" xml:id="p56"
+                    />quand un cri strident déchira la tranquillité bleue du ciel. <milestone unit="sent"/>« Eurydice ! »
+                    pensa-t-il aussitôt. <milestone unit="sent"/>Oui, c’était elle. <milestone unit="sent"/>Il l’avait reconnue. <milestone unit="sent"/>Sa voix résonnait
+                    pourtant d’une souffrance qu’il ne lui avait jamais entendue.</p>
+                <p><milestone unit="sent"/>– Eurydice, hurla-t-il.</p>
+                <p><milestone unit="sent"/>L’écho répondit à son appel. <milestone unit="sent"/>Mais un murmure renvoyé par les forêts s’y mêlait : <milestone unit="sent"/>« Vite, Orphée, elle est en danger. »</p>
+                <p><milestone unit="sent"/>Eurydice ! Il courait. Eurydice, je viens ! <milestone unit="sent"/>Courait à en perdre haleine. <milestone unit="sent"/>Dans la
+                    clairière, sa femme était allongée à terre. <milestone unit="sent"/>Son visage tordu de souffrance
+                    désignait à quelques pas d’elle une vipère dont l’extrémité disparaissait dans
+                    l’herbe haute. <milestone unit="sent"/>Plus loin les buissons frémissaient encore d’une silhouette au
+                    crâne rasé qui fuyait.</p>
+                <p><milestone unit="sent"/>– Aristée ? interrogea Orphée.</p>
+                <p><milestone unit="sent"/>Eurydice parut faire oui de la tête :</p>
+                <p><milestone unit="sent"/>– Sauve-moi.</p>
+                <p><milestone unit="sent"/>Il posa la bouche sur son pied, essayant d’aspirer le venin du serpent. <milestone unit="sent"/>En
+                    vain.</p>
+                <p><pb n="57" xml:id="p57"/><milestone unit="sent"/>– Je suis perdue. <milestone unit="sent"/>Le poison commence à remonter.</p>
+                <p><milestone unit="sent"/>Il la prit dans ses bras pour la ramener chez eux. <milestone unit="sent"/>Qu’elle était lourde ! <milestone unit="sent"/>Comme
+                    tout son corps était ankylosé !</p>
+                <p><milestone unit="sent"/>– J’ai mal, soufflait-elle d’une voix entrecoupée. <milestone unit="sent"/>Bientôt je ne pourrai plus
+                    respirer.</p>
+                <p><milestone unit="sent"/>Puis, tandis que son amant la déposait sur leur lit :</p>
+                <p><milestone unit="sent"/>– Orphée, appela-t-elle plus sourdement, en essayant de tendre un bras vers lui. <milestone unit="sent"/>Ne m’abandonne pas. <milestone unit="sent"/>Je t’en supplie.</p>
+                <p><milestone unit="sent"/>Ses lèvres tremblaient. <milestone unit="sent"/>Une larme coulait sur sa joue.</p>
+                <p><milestone unit="sent"/>Il se pencha vers elle comme il l’avait si souvent fait durant son sommeil. <milestone unit="sent"/>Ses
+                    cheveux sentaient encore l’odeur des herbes et de l’eau de la rivière.</p>
+                <p><milestone unit="sent"/>– Tu es si belle, chuchota-t-il malgré lui.</p>
+                <p><milestone unit="sent"/>Les traits de la jeune femme avaient retrouvé leur apaisement. <milestone unit="sent"/>Plus aucune plainte <pb n="58" xml:id="p58"/>ne sortait
+                    de sa bouche. <milestone unit="sent"/>Elle aurait pu sembler endormie. <milestone unit="sent"/>Orphée lui embrassa les paupières
+                    dans ce geste qui bouleversait Eurydice : <milestone unit="sent"/>« Quand tu me donnes ces baisers, j’ai
+                    l’impression que le temps est suspendu. »</p>
+                <p><milestone unit="sent"/>Il entendait sa voix. <milestone unit="sent"/>Et pourtant sa peau avait perdu sa tiédeur. <milestone unit="sent"/>Et sa bouche,
+                    ses yeux, il le savait, étaient désormais insensibles aux caresses,
+                    définitivement fermés.</p>
+                <p><milestone unit="sent"/>Le Sommeil, frère de la Mort.</p>
+                <p><milestone unit="sent"/>Jamais jusque-là il n’avait vraiment réalisé ce que cela signifiait !</p>
+                <p><milestone unit="sent"/>Assis près d’elle, il essaya sa lyre. <milestone unit="sent"/>Inutilement. Eurydice était déjà très loin. <milestone unit="sent"/>Sans lui. Ailleurs.</p>
+                <p><milestone unit="sent"/>« Son âme est libérée enfin de son enveloppe terrestre ! » lui répétait le vieil
+                    Œagre, rappelant ce qu’il enseignait à ses disciples pour les préparer à la
+                    mort. <milestone unit="sent"/>Mais face à Eurydice, l’idée ne lui était d’aucune consolation pendant
+                    qu’il enveloppait le corps de son amante, selon les usages de leur secte, d’une
+                        <pb n="59" xml:id="p59"/>longue robe blanche, ne laissant émerger du
+                    vêtement que son visage diaphane et son bras droit orné de feuillages. <milestone unit="sent"/>Oui, elle
+                    était encore plus belle que le jour de leur rencontre. <milestone unit="sent"/>« Il y a six mois à
+                    peine ! »</p>
+                <p><milestone unit="sent"/>Toute la nuit, tandis que Linos creusait sa tombe au pied de leur chêne, Orphée
+                    resta aux côtés d’Eurydice, sa main posée sur la sienne. <milestone unit="sent"/>Incapable de réciter la
+                    moindre prière aux divinités infernales, il essaya de rallumer, par son chant,
+                    la flamme de ses yeux et la chaleur de son visage.</p>
+                <p><milestone unit="sent"/>Puis, quand il eut transporté son corps et jeté sur lui la dernière pelletée de
+                    terre, alors seulement il se laissa aller aux larmes.</p>
+            </div>
+            <div>
+                <head>IV <lb/>Le galet du Centaure</head>
+                <argument>
+                    <p><milestone unit="sent"/>Si Eurydice ne m’est rendue…</p>
+                </argument>
+                <p rend="noindent"><pb n="60" xml:id="p60"/>Aristée avait-il essayé de violer
+                    Eurydice ?</p>
+                <p><milestone unit="sent"/>Était-ce la zone d’ombre dont celle-ci lui avait parlé avec effroi ? <milestone unit="sent"/>Ces
+                    questions rendaient plus terrible le reste. <milestone unit="sent"/>Plus jamais Eurydice ne se
+                    blottirait contre lui. <milestone unit="sent"/>Plus jamais elle ne lui montrerait la beauté des nuits. <milestone unit="sent"/>Voilà ce qu’était pour les vivants la souffrance de la mort : ces<hi rend="i">
+                        plus jamais</hi> qui vous laissent au cœur un vide intenable. <milestone unit="sent"/>Et elle ? Quand on était sous terre, pouvait-on encore se rappeler le monde des vivants et
+                    en pleurer ? <milestone unit="sent"/>« Oh ! Que je meure moi aussi pour être près d’elle et la
+                    consoler ! » <milestone unit="sent"/>Aussitôt il se reprochait cette pensée. <pb n="61" xml:id="p61"
+                    /><milestone unit="sent"/>L’interdiction du suicide était un des éléments essentiels de son
+                    enseignement. <milestone unit="sent"/>Il devait le premier s’y conformer.</p>
+                <p><milestone unit="sent"/>Durant des jours, il ne put quitter le lit où s’était éteinte Eurydice. <milestone unit="sent"/>Quand il
+                    ouvrait les yeux, il découvrait au-dessus de lui le visage inquiet de son
+                    père.</p>
+                <p><milestone unit="sent"/>– Regarde ce que je t’ai préparé. <milestone unit="sent"/>Tu n’as rien avalé depuis deux jours.</p>
+                <p><milestone unit="sent"/>Mais son corps refusait toute nourriture. <milestone unit="sent"/>Même ses fruits préférés, le miel dont
+                    Œagre les enveloppait ne pouvaient traverser sa gorge. <milestone unit="sent"/>Aussitôt il les
+                    vomissait.</p>
+                <p><milestone unit="sent"/>Il aurait voulu dormir.</p>
+                <p><milestone unit="sent"/>Lui qui avait su appeler le sommeil pour l’hydre et tant de bêtes, pour des
+                    hommes souffrants, voilà que dans son propre cas il se trouvait incapable
+                    d’accomplir la même chose. <milestone unit="sent"/>Hypnos le doux, le beau, qui parcourait la terre,
+                    tempes sombres mais sourire aux lèvres, en répandant l’oubli bienfaiteur, Hypnos
+                    se détournait de lui.</p>
+                <p><pb n="62" xml:id="p62"/><milestone unit="sent"/>Calliope elle-même revint le veiller, les bras chargés
+                    d’herbes, la bouche emplie de chants pour calmer sa douleur. <milestone unit="sent"/>Souvent elle
+                    s’attristait :</p>
+                <p><milestone unit="sent"/>– Je ne peux rien pour toi. <milestone unit="sent"/>Je n’ai aucune influence sur ceux d’en bas. <milestone unit="sent"/>J’ai eu
+                    trop de disputes avec certains.</p>
+                <p><milestone unit="sent"/>Elle n’en disait pas plus. <milestone unit="sent"/>Orphée sentait qu’elle aurait tout fait pour l’aider. <milestone unit="sent"/>Mais sa tendresse restait sur lui sans effet.</p>
+                <p><milestone unit="sent"/>Un matin, pourtant, elle fut obligée de quitter Pimpleia :</p>
+                <p><milestone unit="sent"/>Assis devant la maison paternelle, il la regarda s’éloigner. <milestone unit="sent"/>Derrière elle, les
+                    premières neiges des montagnes fondaient. <milestone unit="sent"/>Bientôt de petites cascades se
+                    formeraient et feraient renaître la nature sur leur passage. <milestone unit="sent"/>L’approche du
+                    printemps ! <milestone unit="sent"/>Les crocus, les chardons bleus qui allaient sortir de terre. <milestone unit="sent"/>Le
+                    spectacle autrefois l’enchantait ! <milestone unit="sent"/>Mais l’idée qu’Eurydice ne serait pas là lui
+                    chavirait le cœur.</p>
+                <p><pb n="63" xml:id="p63"/>« À quoi bon mes pouvoirs, à quoi bon tant de beauté
+                    si… »</p>
+                <p><milestone unit="sent"/>Les mots hésitèrent dans sa tête avant de s’assembler clairement : « … si
+                    Eurydice ne m’est rendue. »</p>
+                <p rend="i">Rendue ?</p>
+                <p><milestone unit="sent"/>Il sursauta. Se redressa brusquement en réalisant qu’il avait dû s’assoupir
+                    quelques instants. <milestone unit="sent"/>« Et j’ai rêvé ! <milestone unit="sent"/>Et dans mon sommeil Eurydice m’appelait. <milestone unit="sent"/>Et
+                    Chiron m’aidait à la retrouver. »</p>
+                <p><milestone unit="sent"/>Aucune présence à ses côtés pour le retenir. <milestone unit="sent"/>Oui, c’était un signe supplémentaire
+                    du destin. <milestone unit="sent"/>Il lui fallait se rendre chez le Centaure au plus vite.</p>
+                <p><milestone unit="sent"/>Comment n’y avait-il pas pensé avant ? <milestone unit="sent"/>« J’ai accepté de partir avec les
+                    Argonautes sur sa demande. <milestone unit="sent"/>Il me doit bien son aide en échange. »</p>
+                <p><milestone unit="sent"/>Sur le long chemin qui menait à travers une succession de vallées jusqu’à l’antre
+                    de Chiron, il se répétait les mots de sa prière : <milestone unit="sent"/>« Je ne te <pb n="64"
+                        xml:id="p64"/>demande pas de guérir ma douleur. <milestone unit="sent"/>Tout médecin que tu es, tu
+                    ne pourrais pas l’apaiser. »</p>
+                <p><milestone unit="sent"/>Arrivé devant le Centaure, il ne lui laissa pas le temps de manifester sa
+                    stupéfaction :</p>
+                <p><milestone unit="sent"/>– Le Sommeil a refusé des nuits entières de me visiter. <milestone unit="sent"/>Hier seulement, un songe
+                    m’est arrivé. <milestone unit="sent"/>Eurydice s’était assise sur le bord de notre lit pour me rappeler
+                    ma promesse : que, si elle venait à disparaître, je serais capable d’aller la
+                    chercher au bout du monde, quel qu’il soit. <milestone unit="sent"/>J’ai tendu les bras, en essayant de
+                    la toucher. <milestone unit="sent"/>Et tu serrais mes mains dans les tiennes comme pour sceller un
+                    pacte. <milestone unit="sent"/>J’ai réalisé alors que ce n’était qu’un rêve.</p>
+                <p><milestone unit="sent"/>– Les pièges du Sommeil possibles, rétorqua vivement Chiron d’un air renfrogné. <milestone unit="sent"/>Tu es prêtre. Tu n’ignores pas ce que sont les songes : les uns trompeurs, les
+                    autres véridiques, selon la porte, d’ivoire ou de corne, qu’ils empruntent pour
+                    sortir des Enfers et arriver jusqu’aux hommes. <milestone unit="sent"/>Comment peux-tu être sûr que ton
+                    rêve est vérité ?</p>
+                <p><pb n="65" xml:id="p65"/><milestone unit="sent"/>Orphée n’était pas près de se démonter :</p>
+                <p><milestone unit="sent"/>– En le réalisant !</p>
+                <p><milestone unit="sent"/>Le Centaure fit mine de ne pas comprendre :</p>
+                <p><milestone unit="sent"/>– Que veux-tu donc de moi ?</p>
+                <p><milestone unit="sent"/>– Oh ! c’est très simple.</p>
+                <p><milestone unit="sent"/>Orphée désigna du doigt d’innombrables fioles alignées sur les étagères :</p>
+                <p><milestone unit="sent"/>– Je n’espère rien de tes drogues. <milestone unit="sent"/>Dis-moi juste où est l’entrée du monde
+                    infernal. <milestone unit="sent"/>Tu as bien été immortel dans le passé ?</p>
+                <p><milestone unit="sent"/>– Oui, et j’ai préféré redevenir humain. <milestone unit="sent"/>Un temps sans coupure, éternellement
+                    répété, quel ennui !</p>
+                <p><milestone unit="sent"/>Puis, marquant un moment d’arrêt :</p>
+                <p><milestone unit="sent"/>– As-tu bien pensé, Orphée, à tout ce qui t’attend ? <milestone unit="sent"/>Le Styx noir. Cerbère. <milestone unit="sent"/>Des
+                    dieux intraitables dans un univers sans soleil.</p>
+                <p><milestone unit="sent"/>– Tous les jours sans Eurydice sont pour moi privés de lumière.</p>
+                <p><milestone unit="sent"/>– Mais le Trépas a un cœur de fer ! <milestone unit="sent"/>Il ne lâche jamais les proies dont il s’est
+                    emparé. <milestone unit="sent"/>Pas <pb n="66" xml:id="p66"/>plus qu’une autre, ta femme ne pourra lui
+                    échapper.</p>
+                <p><milestone unit="sent"/>– Inutile d’essayer de me dissuader. J’irai.</p>
+                <p><milestone unit="sent"/>Mieux que n’importe quel humain, Orphée connaissait l’histoire des trois fils de
+                    Cronos, leur partage de l’univers. <milestone unit="sent"/>Le monde noir attribué à Hadès :</p>
+                <p><milestone unit="sent"/>– Oh ! il mérite bien son nom de Plouton, le riche. <milestone unit="sent"/>Tu imagines la densité de la
+                    population d’en bas. <milestone unit="sent"/>Tous ceux qui sont morts depuis l’origine du monde !</p>
+                <p><milestone unit="sent"/>Et Chiron lui décrivait à l’envi les lacs d’eau glacée ou de poix bouillante dans
+                    laquelle on jetait tour à tour les suppliciés :</p>
+                <p><milestone unit="sent"/>– Partout, une insupportable odeur de vase et de moisi !</p>
+                <p><milestone unit="sent"/>– Raison de plus pour en arracher Eurydice.</p>
+                <p><milestone unit="sent"/>– Et puis, insista Chiron imperturbable, tu n’imagines pas quel personnel Hadès a
+                    à son service. <milestone unit="sent"/>Pour surveiller son royaume, en interdire l’accès aux étrangers :
+                    les vivants, bien <pb n="67" xml:id="p67"/>sûr ! <milestone unit="sent"/>Ils ne peuvent que semer la
+                    pagaille là-bas. <milestone unit="sent"/>Les dernières visites humaines l’ont prouvé. Et depuis…</p>
+                <p><milestone unit="sent"/>– Depuis ?</p>
+                <p><milestone unit="sent"/>– Le service d’ordre a été renforcé. <milestone unit="sent"/>Les consignes sont plus sévères que jamais. <milestone unit="sent"/>Impressionnant aujourd’hui ! <milestone unit="sent"/>Cerbère en personne a mis au point une nouvelle
+                    technique de surveillance. <milestone unit="sent"/>Il flatte d’abord ceux qui entrent. <milestone unit="sent"/>Va vers eux pour
+                    se faire caresser. <milestone unit="sent"/>Oh, gentil, doux comme un agneau. <milestone unit="sent"/>Après seulement, il montre
+                    son vrai visage, écumant de rage.</p>
+                <p><milestone unit="sent"/>Orphée l’écoutait. <milestone unit="sent"/>« On voit qu’il a été immortel. »</p>
+                <p><milestone unit="sent"/>– Mais, rappela-t-il au Centaure, j’ai fait à Eurydice une promesse.</p>
+                <p><milestone unit="sent"/>À ce dernier mot, brusquement, Chiron eut l’air ébranlé :</p>
+                <p><milestone unit="sent"/>– La seule chose que j’obtiendrai peut-être de certaines personnes bien placées… <milestone unit="sent"/>Qu’Hermès t’aide à franchir le Styx et te guide là-bas.</p>
+                <p><pb n="68" xml:id="p68"/><milestone unit="sent"/>– Hermès, le psychopompe, l’accompagnateur des
+                    âmes ?</p>
+                <p><milestone unit="sent"/>– Oui. Ou bien le perce-muraille, le guetteur de portes, le dieu des passages et
+                    des silences, l’insaisissable. <milestone unit="sent"/>Tu as le choix. Les humains lui ont trouvé tant
+                    de qualificatifs !</p>
+                <p><milestone unit="sent"/>Orphée se tut, étonné des mystérieuses amitiés de Chiron et des passe-droits
+                    qu’il s’était acquis dans le monde d’en bas.</p>
+                <p><milestone unit="sent"/>Chiron respecta son silence.</p>
+                <p><milestone unit="sent"/>– Tiens ! Hermès passe ! <milestone unit="sent"/>Ça tombe bien ! murmura Orphée en souvenir de
+                    Castor.</p>
+                <p><milestone unit="sent"/>– Il connaît de réputation ta sagesse. <milestone unit="sent"/>Et puis c’est l’inventeur de la lyre. <milestone unit="sent"/>Vous
+                    pourrez discuter musique en chemin, ça te fera passer le temps.</p>
+                <p><milestone unit="sent"/>Orphée sourit.</p>
+                <p><milestone unit="sent"/>Il s’imaginait déjà aux côtés de celui dont il avait vu si souvent la statue aux
+                    carrefours, aux portes des maisons : caducée à la main, petites ailes aux pieds
+                    et, sur la tête, son <pb n="69" xml:id="p69"/>immense chapeau ou le casque
+                    d’Hadès pour se rendre invisible.</p>
+                <p><milestone unit="sent"/>– Dis-moi où je le retrouverai. <milestone unit="sent"/>Les gorges du Ténare sont où précisément ?</p>
+                <p><milestone unit="sent"/>Chiron fouilla dans un grand sac et en tira un galet blanc, allongé et très
+                    plat :</p>
+                <p><milestone unit="sent"/>– Tiens, regarde, j’ai fait le plan du monde infernal, d’après ce qu’on m’a
+                    raconté, ce que j’ai reconstitué. <milestone unit="sent"/>Je n’ai jamais été un habitué des lieux ! <milestone unit="sent"/>Même
+                    quand on est immortel, il y a des endroits peu fréquentables. <milestone unit="sent"/>Commençons par les
+                    fleuves, si tu veux. <milestone unit="sent"/>Voilà donc le Styx et l’Achéron, les premiers obstacles. <milestone unit="sent"/>Là, le Cocyte, le gémissant. <milestone unit="sent"/>Et puis le Phlégéthon, avec ses flots de
+                    flammes…</p>
+                <p><milestone unit="sent"/>– Mais l’entrée ? s’obstinait Orphée.</p>
+                <p><milestone unit="sent"/>Chiron retourna le galet :</p>
+                <p><milestone unit="sent"/>– À l’extrémité de la Laconie, au bord de l’Océan. <milestone unit="sent"/>On repère les gorges de loin. <milestone unit="sent"/>Tout oiseau qui les survole est empoisonné par les vapeurs sulfureuses et tombe
+                    mort sur-le-champ. En plus il y a…</p>
+                <p><pb n="70" xml:id="p70"/><milestone unit="sent"/>Le Centaure lui désigna un promontoire et un bosquet
+                    dessinés avec soin :</p>
+                <p><milestone unit="sent"/>– Le bois de Perséphone, ses saules aux fruits morts.</p>
+                <p><milestone unit="sent"/>Ils restèrent penchés, tête contre tête, au-dessus de la carte de pierre.</p>
+                <p><milestone unit="sent"/>Pour la première fois depuis la mort d’Eurydice, ce furent pour Orphée des heures
+                    sans souffrance. <milestone unit="sent"/>Et quand la nuit tomba, belle et lumineuse, il connut la paix
+                    sur les larges épaules du Sommeil.</p>
+                <p><milestone unit="sent"/>– Il est vite arrivé pour toi, Orphée, hier soir. <milestone unit="sent"/>J’ignorais qu’il disposait
+                    d’une telle panoplie de ronflements à offrir aux mortels, ironisa Chiron.</p>
+                <p><milestone unit="sent"/>Il lui tendit des fruits :</p>
+                <p><milestone unit="sent"/>– Pour te restaurer en route.</p>
+                <p><milestone unit="sent"/>Orphée respira à pleins poumons l’odeur sucrée qui arrivait à ses narines. <milestone unit="sent"/>« Après le sommeil, voilà l’appétit qui revient. <milestone unit="sent"/>Je crève de faim. »</p>
+                <p><pb n="71" xml:id="p71"/><milestone unit="sent"/>Au bas du sentier, il croqua à pleines dents dans une
+                    poire. <milestone unit="sent"/>Sa chair était si délicieusement acide ! <milestone unit="sent"/>Dans l’air vif du matin, il
+                    marchait à grands pas, tandis que les dernières recommandations de Chiron lui
+                    parvenaient aux oreilles :</p>
+                <p><milestone unit="sent"/>– Prends ton temps pour la déguster. <milestone unit="sent"/>Et surtout fais bien attention…</p>
+                <p><milestone unit="sent"/>Une brise douce emporta la fin de la phrase.</p>
+                <p><milestone unit="sent"/>« Attention aux pépins. » <milestone unit="sent"/>Était-ce le conseil du Centaure ? <milestone unit="sent"/>Pour manger une poire
+                    pareille, juteuse à souhait ! <milestone unit="sent"/>Et avant son prochain départ pour le pays le plus
+                    terrifiant qui fût au monde ! <milestone unit="sent"/>Les pépins ? Cela réveillait en lui le souvenir
+                    d’histoires de son enfance. <milestone unit="sent"/>Il faillit se retourner pour interroger Chiron ou
+                    lui répondre par quelque plaisanterie.</p>
+                <p><milestone unit="sent"/>Non, il n’avait pas un instant à perdre. <milestone unit="sent"/>Il voulait préparer au plus vite Œagre à
+                    l’idée de son voyage. <milestone unit="sent"/>Mais tout lui paraissait facile depuis qu’il connaissait
+                    l’accès au monde <pb n="72" xml:id="p72"/>infernal et que la même pensée
+                    chantait dans sa tête. <milestone unit="sent"/>Bientôt, il découvrirait le monde d’après la vie. <milestone unit="sent"/>Bientôt
+                    il retrouverait Eurydice, il la prendrait dans ses bras. La serrerait.</p>
+                <p><milestone unit="sent"/>La serrer ?</p>
+                <p><milestone unit="sent"/>Mais quel corps serait le sien dans l’univers des morts, des ombres décharnées et
+                    impalpables ?</p>
+                <p><milestone unit="sent"/>En pensée, il était déjà revenu chez Œagre.</p>
+                <p><milestone unit="sent"/>Il y arriva vite, réalisant au fur et à mesure de sa route qu’il n’avait aucun
+                    besoin de compagnons pour traverser bois et montagnes. <milestone unit="sent"/>Pas davantage pour
+                    s’embarquer ensuite vers la Laconie. <milestone unit="sent"/>« Je n’emporterai ni or ni bagages. <milestone unit="sent"/>Seulement ma lyre. <milestone unit="sent"/>Quel voleur de grand chemin ou quel pirate pourrait bien s’y
+                    intéresser ? »</p>
+                <p><milestone unit="sent"/>Comme Linos et son plus jeune serviteur insistaient :</p>
+                <p><pb n="73" xml:id="p73"/><milestone unit="sent"/>– Pourquoi donc, ô mon frère ? <milestone unit="sent"/>Tu détestes la mer, les
+                    tempêtes. <milestone unit="sent"/>Moi j’en ai pris l’habitude.</p>
+                <p><milestone unit="sent"/>Son aîné restait inébranlable.</p>
+                <p><milestone unit="sent"/>– Venez, si tu y tiens tant. <milestone unit="sent"/>Mais seulement jusqu’à ce que les gorges du Ténare
+                    soient en vue. <milestone unit="sent"/>Vous me déposerez à terre et repartirez.</p>
+                <p><milestone unit="sent"/>Il s’entendit ajouter avec un sourire enjoué :</p>
+                <p><milestone unit="sent"/>– Pour le retour, pas question de votre présence. <milestone unit="sent"/>Je ne serai pas seul, vous vous
+                    en doutez.</p>
+                <p><milestone unit="sent"/>Et, devant l’air stupéfait de Linos, il s’étonna lui-même des paroles qu’il
+                    venait de prononcer, de la certitude qu’elles traduisaient : il saurait émouvoir
+                    les divinités infernales et obtiendrait qu’Eurydice lui soit rendue.</p>
+                <p><milestone unit="sent"/>Les cinq jours qui avaient suivi la mort de sa compagne lui avaient paru une
+                    éternité. <milestone unit="sent"/>Le voyage vers la nouvelle demeure de celle-ci passa en un éclair. <milestone unit="sent"/>Les
+                    vents étaient favorables <pb n="74" xml:id="p74"/>à la navigation. <milestone unit="sent"/>Les îles
+                    défilaient mais, malgré la beauté de leurs rivages, des arbres fruitiers qu’on y
+                    devinait, Orphée refusait le moindre arrêt :</p>
+                <p><milestone unit="sent"/>– Nos provisions sont largement suffisantes. <milestone unit="sent"/>Vous flânerez un peu au retour si
+                    vous en avez envie, répliquait-il, bouillant d’impatience à chaque demande de
+                    Linos.</p>
+                <p><milestone unit="sent"/>Et puis, un soir, un soir pareil aux autres en apparence, Orphée crut reconnaître
+                    les rivages dé Cythère.</p>
+                <p><milestone unit="sent"/>Le matin suivant, il réalisa que le soleil était levé depuis un long moment mais
+                    que le jour resterait sombre, même en plein midi :</p>
+                <p><milestone unit="sent"/>– Cette fois-ci, ça y est. <milestone unit="sent"/>Laissez-moi ici, dans cette crique.</p>
+                <p><milestone unit="sent"/>Il sauta à terre et regarda le bateau s’éloigner.</p>
+                <p><milestone unit="sent"/>Son cœur battait à tout rompre.</p>
+                <p><milestone unit="sent"/>Il allait enfin affronter le pays des ténèbres. <milestone unit="sent"/>Le seul à être complètement privé
+                    de soleil ! <milestone unit="sent"/>Les descriptions de Chiron lui revinrent en <pb n="75" xml:id="p75"
+                    />mémoire. <milestone unit="sent"/>Il escalada une colline. <milestone unit="sent"/>Tout était là. Le petit promontoire, le bois
+                    de Perséphone, ses saules. <milestone unit="sent"/>« Me voilà arrivé, pensa-t-il, en serrant contre lui
+                    sa lyre. <milestone unit="sent"/>Ô Calliope ! J’ai besoin de ton aide. »</p>
+                <p><milestone unit="sent"/>Il sentit alors à ses côtés la présence de sa mère, sans que celle-ci eût besoin
+                    de se manifester davantage.</p>
+            </div>
+            <div>
+                <head>V <lb/>Hermès perce-muraille</head>
+                <argument>
+                    <p><milestone unit="sent"/>Les visages entourés de ténèbres…</p>
+                </argument>
+                <p rend="noindent"><pb n="76" xml:id="p76"/>À l’entrée de la gigantesque crevasse
+                    qui s’ouvrait dans le sol, Hermès l’attendait, chapeau à la main. <milestone unit="sent"/>« Son Pégase ! Même ici ! <milestone unit="sent"/>Aurait-il l’intention de me le prêter en cas de besoin ? <milestone unit="sent"/>Ou bien
+                    est-ce juste un signe de reconnaissance ? <milestone unit="sent"/>C’est vrai que j’ai ma lyre et il ne
+                    peut se tromper. »</p>
+                <p><milestone unit="sent"/>– J’aurais été heureux de te rencontrer, sage Orphée, ailleurs qu’ici. <milestone unit="sent"/>Les
+                    visites d’humains aux Enfers ont toujours provoqué tant d’ennuis !</p>
+                <p><milestone unit="sent"/>Et brusquement :</p>
+                <p><milestone unit="sent"/>– Eh bien ! Allons-y sans perdre de temps. <milestone unit="sent"/>Pour l’instant c’est assez large pour
+                    que nous <pb n="77" xml:id="p77"/>marchions à deux de front. <milestone unit="sent"/>On y voit presque
+                    comme en plein jour.</p>
+                <p><milestone unit="sent"/>Déjà ils descendaient le sentier à vive allure. <milestone unit="sent"/>Déjà les pierres roulaient sous
+                    leurs pieds, faisant résonner rochers et bois autour, d’eux.</p>
+                <p><milestone unit="sent"/>Peu après, le chemin rétrécit, encombré de branchages morts, bourrés d’humidité
+                    qu’il leur fallait enjamber. <milestone unit="sent"/>Puis le sol caillouteux fit place à une boue noire,
+                    et la lumière du soleil à une clarté sale.– i</p>
+                <p><milestone unit="sent"/>– Quelle vitesse malgré les obstacles ! s’exclama Hermès. <milestone unit="sent"/>Décidément, ce qu’on
+                    m’a raconté est vrai : chez les humains, l’amour donne des ailes ! <milestone unit="sent"/>À ce
+                    train-là, pas étonnant que nous soyons si vite arrivés.</p>
+                <p><milestone unit="sent"/>Ils venaient de déboucher sur une grande plate-forme.</p>
+                <p><milestone unit="sent"/>Orphée s’arrêta, impressionné par le nombre de silhouettes grises massées sur la
+                    grève à leurs pieds. <milestone unit="sent"/>Derrière elles, il ne distinguait <pb n="78" xml:id="p78"
+                    />qu’à grand peine le fleuve noir dont Chiron lui avait parlé :</p>
+                <p><milestone unit="sent"/>– Ils font la queue pour passer ? <milestone unit="sent"/>Et ce marais est…</p>
+                <p><milestone unit="sent"/>– Le Styx, acquiesça son guide, visiblement désireux de remplir à chaque pas son
+                    rôle. <milestone unit="sent"/>Jette un coup d’œil de l’autre côté, c’est pareil. <milestone unit="sent"/>Femmes, hommes,
+                    enfants. <milestone unit="sent"/>Tous attendent le verdict de Minos pour savoir quel lieu on leur
+                    désignera. <milestone unit="sent"/>Les derniers arrivés n’ont plus qu’à s’armer de patience. <milestone unit="sent"/>Ce n’est
+                    pas pour demain ! <milestone unit="sent"/>Tant et tant d’âmes doivent passer avant eux.</p>
+                <p><milestone unit="sent"/>« S’il y a une telle cohue partout, s’ils ont tous ces visages entourés de
+                    ténèbres, comment vais-je réussir à reconnaître Eurydice au milieu d’eux ? »</p>
+                <p><milestone unit="sent"/>Orphée fat arraché à ses pensées par une tête hirsute qui, à quelques pas d’eux,
+                    émergeait de la nuit. <milestone unit="sent"/>Il devança les explications d’Hermès :</p>
+                <p><pb n="79" xml:id="p79"/><milestone unit="sent"/>– Manteau en haillons. <milestone unit="sent"/>Barbe en broussaille. <milestone unit="sent"/>L’avare
+                    Charon ! <milestone unit="sent"/>Semblable en tout point au portrait que j’enseigne aux enfants de chez
+                    nous. <milestone unit="sent"/>Mais comment franchir la ligne de démarcation ? <milestone unit="sent"/>Pas la moindre pièce en
+                    poche. <milestone unit="sent"/>Et puis… je ne suis pas une ombre !</p>
+                <p><milestone unit="sent"/>Avant que son compagnon ait pu réagir, il cria en direction du passeur :</p>
+                <p><milestone unit="sent"/>– Je n’ai rien à te donner. <milestone unit="sent"/>Mais fais-moi traverser. <milestone unit="sent"/>Je t’en supplie.</p>
+                <p><milestone unit="sent"/>– Non, mortel, ce n’est pas un problème d’argent. <milestone unit="sent"/>Ton heure n’est pas encore
+                    venue, et personne ne peut la devancer.</p>
+                <p><milestone unit="sent"/>– Ma femme est déjà là. <milestone unit="sent"/>Je dois la retrouver.</p>
+                <p><milestone unit="sent"/>– Et tu crois que je l’ignore ? <milestone unit="sent"/>Je l’ai embarquée il y a une bonne dizaine de
+                    jours, ta bien-aimée ! <milestone unit="sent"/>Jolie comme tout. <milestone unit="sent"/>Un peu inquiète, bien sûr. Normal.</p>
+                <p><milestone unit="sent"/>Orphée blêmit.</p>
+                <p><milestone unit="sent"/>– Oh ! Je sais, je sais. <milestone unit="sent"/>Tu ne peux pas vivre sans elle. <milestone unit="sent"/>Votre refrain d’humains
+                    sur la souffrance <pb n="80" xml:id="p80"/>de la séparation, je le connais par
+                    cœur…</p>
+                <p><milestone unit="sent"/>– Chiron a dû te prévenir, intervint Hermès. <milestone unit="sent"/>Tu ne peux compter sur mes
+                    interventions. <milestone unit="sent"/>Tu as suffisamment de dons, à ce qu’on dit chez vous, pour te
+                    débrouiller seul, ajouta-t-il d’un ton qui se voulait rassurant.</p>
+                <p><milestone unit="sent"/>– Tu t’habitueras à vivre sans elle. <milestone unit="sent"/>Comme les autres ! <milestone unit="sent"/>Vous avez tous
+                    l’impression que votre souffrance est unique. <milestone unit="sent"/>Ici, pas de traitement de faveur. <milestone unit="sent"/>Même pour les musiciens ! ricana le nocher en louchant vers la lyre dont les
+                    doigts d’Orphée s’emparaient.</p>
+                <p><milestone unit="sent"/>Le vieil homme venait de poser l’énorme rame qui lui servait de gouvernail.</p>
+                <p><milestone unit="sent"/>– Mais qu’est-ce que tu me chantes là ? marmonna-t-il d’une voix changée dès
+                    qu’il entendit les premiers sons retentir. <milestone unit="sent"/>Approche ! Moi aussi, autrefois, il
+                    m’est arrivé…</p>
+                <p><milestone unit="sent"/>Hermès, lui-même, siffla d’admiration :</p>
+                <p><milestone unit="sent"/>– Ça alors ! C’est donc vrai ! <milestone unit="sent"/>Allons-y franchement.</p>
+                <p><pb n="81" xml:id="p81"/><milestone unit="sent"/>Les ombres s’écartèrent pour les laisser s’avancer.</p>
+                <p><milestone unit="sent"/>Et ils passèrent, faisant grincer à chaque instant la barque sous leur
+                    poids :</p>
+                <p><milestone unit="sent"/>– Poète mais bien lourd ! maugréait Charon.</p>
+                <p><milestone unit="sent"/>Il avait retrouvé son humeur première :</p>
+                <p><milestone unit="sent"/>– Ne donne pas le conseil à d’autres. <milestone unit="sent"/>On ne m’y reprendra pas. <milestone unit="sent"/>J’espère ne pas
+                    avoir à le regretter.</p>
+                <p><milestone unit="sent"/>Comme ils mettaient le pied sur l’autre rive, une odeur affreuse de pourri emplit
+                    le nez d’Orphée. <milestone unit="sent"/>Hermès ne semblait pas y prêter attention.</p>
+                <p><milestone unit="sent"/>Ses narines de demi-dieu peut-être ?</p>
+                <p><milestone unit="sent"/>Ou la vision de l’animal énorme qui venait vers eux ?</p>
+                <p><milestone unit="sent"/>Orphée esquissa un mouvement de recul. <milestone unit="sent"/>Mais, avec des jappements joyeux, le chien
+                    tendait sa triple gueule pour se faire caresser.</p>
+                <p><pb n="82" xml:id="p82"/><milestone unit="sent"/>– Quelle haleine infecte ! ne put-il s’empêcher de
+                    remarquer tout en se rappelant les mises en garde du Centaure : <milestone unit="sent"/>« Sa tactique
+                    préférée avec les mortels… <milestone unit="sent"/>L’instant d’après, il écumera de rage. »</p>
+                <p><milestone unit="sent"/>– Ne lui en laissons pas le temps !</p>
+                <p><milestone unit="sent"/>À peine Orphée avait-il gratté ses premiers accords que Cerbère vint se coucher à
+                    ses pieds, visiblement prêt à se laisser envahir par la plus douce des
+                    torpeurs.</p>
+                <p><milestone unit="sent"/>– Passeur, gardien amadoués en quelques secondes. <milestone unit="sent"/>Pas mal du tout comme début. <milestone unit="sent"/>On
+                    peut continuer, conclut Hermès.</p>
+                <p><milestone unit="sent"/>Orphée détestait vraiment le ton que prenait son guide par moment. <milestone unit="sent"/>« Quel drôle
+                    de caractère ! tantôt prévenant ! tantôt horriblement moqueur ! <milestone unit="sent"/>Sa façon à lui
+                    de réagir à toute cette tristesse ? » <milestone unit="sent"/>Orphée n’eut pas le loisir de s’interroger
+                    davantage :</p>
+                <p><milestone unit="sent"/>– Dans un endroit pareil, je ne m’y serais pas attendu.</p>
+                <p><pb n="83" xml:id="p83"/><milestone unit="sent"/>Une immense arcade se dessinait, privée de tout mur pour
+                    la prolonger. <milestone unit="sent"/>Sous elle, de lourdes portes battaient au vent, lui découvrant de
+                    temps à autre la vision d’enfants qui dormaient en toute tranquillité, allongés,
+                    sur d’immenses feuilles, jambes et bras entremêlés, bien serrés les uns contre
+                    les autres pour se protéger de la nuit et de l’humidité :</p>
+                <p><milestone unit="sent"/>– Les Songes ?</p>
+                <p><milestone unit="sent"/>– Et la porte de corne, confirma Hermès. <milestone unit="sent"/>Nous sommes encore dans l’antichambre
+                    des Enfers. <milestone unit="sent"/>Et cet orme est un de leurs lieux préférés pour se reposer. <milestone unit="sent"/>Comme
+                    ça, ils sont à deux pas de la sortie. <milestone unit="sent"/>À tout moment ils peuvent être amenés à
+                    partir sur terre !</p>
+                <p><milestone unit="sent"/>« Les rêves qui visitent les humains pendant la nuit ? <milestone unit="sent"/>Le petit là-bas, qui vient
+                    de cligner de l’œil vers nous : celui qui m’a apporté la vision d’Eurydice et
+                    ses appels ? »</p>
+                <p><milestone unit="sent"/>Orphée était trop préoccupé par sa marche pour poser la question à son guide. <milestone unit="sent"/>À
+                    chaque pas, ses pieds s’enfonçaient dans le <pb n="84" xml:id="p84"/>sol noir. <milestone unit="sent"/>Quel bourbier, et ce n’était que le début !</p>
+                <p><milestone unit="sent"/>– Est-ce qu’Hadès lui-même et son épouse vivent au milieu de cette boue ?</p>
+                <p><milestone unit="sent"/>Puis, sans transition :</p>
+                <p><milestone unit="sent"/>– Quand allons-nous le voir ? <milestone unit="sent"/>Quand vais-je enfin… ?</p>
+                <p><milestone unit="sent"/>– Comment un mortel égaré parmi les ombres pourrait-il voir l’invisible ? <milestone unit="sent"/>Ne
+                    compte pas sur un tête-à-tête avec lui.</p>
+                <p><milestone unit="sent"/>Hermès avait retrouvé un air affreusement narquois :</p>
+                <p><milestone unit="sent"/>« Et le pouvoir de la poésie ? le pouvoir qui est le mien : contempler, et faire
+                    contempler ce que les autres ne parviennent à distinguer ? <milestone unit="sent"/>Cela ne compte donc
+                    pour rien ici », pensa Orphée, la gorge serrée.</p>
+                <p><milestone unit="sent"/>– Tu veux dire qu’il ne me sera pas accordé de lui parler ?</p>
+                <p><milestone unit="sent"/>– C’est à sa femme qu’il délègue souvent ses pouvoirs pour accueillir ou
+                    repousser les humains. <milestone unit="sent"/>Elle est plus proche de vous, parce <pb n="85"
+                        xml:id="p85"/>qu’elle a grandi dans votre monde. <milestone unit="sent"/>Mais elle a des colères
+                    effrayantes si on l’agace.</p>
+                <p><milestone unit="sent"/>– Je suis au courant, coupa Orphée.</p>
+                <p><milestone unit="sent"/>– Oh ! Plus d’une fois elle a envoyé la tête de Méduse à la figure de ses
+                    visiteurs. <milestone unit="sent"/>Et hop. En l’espace d’une seconde, transformés en statues de pierre. <milestone unit="sent"/>Elle est terrible. <milestone unit="sent"/>Mais quand on sait lui parler de son enfance, de sa vie sur
+                    terre ! <milestone unit="sent"/>Là alors, c’est autre chose. <milestone unit="sent"/>Mais, avant, profite un peu du voyage. <milestone unit="sent"/>Les
+                    occasions de venir ici sont rares.</p>
+                <p><milestone unit="sent"/>Et, surprenant sans doute le regard d’Orphée vers une immense table derrière
+                    laquelle trois hommes siégeaient :</p>
+                <p><milestone unit="sent"/>– Pas la peine de faire la queue ! <milestone unit="sent"/>Tu ne pourrais être jugé. <milestone unit="sent"/>Ce tribunal n’est
+                    destiné qu’aux morts ! <milestone unit="sent"/>Pas besoin d’amadouer ces juges. <milestone unit="sent"/>Ils ont assez de travail
+                    comme ça. <milestone unit="sent"/>Ma présence à tes côtés est une garantie suffisante. <milestone unit="sent"/>Alors ? continua
+                    Hermès avec enjouement. <milestone unit="sent"/>Je te laisse le choix de l’itinéraire, Orphée. <milestone unit="sent"/>Les
+                    étangs glacés et les lacs de poix <pb n="86" xml:id="p86"/>bouillante, pour
+                    commencer ? <milestone unit="sent"/>Ou quelque chose de plus paisible ? <milestone unit="sent"/>Dis-moi ce que tu veux.</p>
+                <p><milestone unit="sent"/>Ce qu’il voulait ?</p>
+                <p><milestone unit="sent"/>Qu’Eurydice lui soit rendue le plus tôt possible. <milestone unit="sent"/>Mais aussi qu’Hermès lui
+                    explique les mystères de ce monde qu’il enseignait là-haut. <milestone unit="sent"/>Par exemple
+                    l’immense champ qu’ils avaient sous les yeux, où des hommes erraient :</p>
+                <p><milestone unit="sent"/>– Un lieu paisible. <milestone unit="sent"/>Trop paisible même à mon goût ! <milestone unit="sent"/>Celui des médiocres et des
+                    tièdes, annonça Hermès. <milestone unit="sent"/>Le seul endroit ici où les âmes ne connaissent pas
+                    d’autre supplice que l’ennui. Et pour cause !</p>
+                <p><milestone unit="sent"/>– Comme dans leur vie passée, remarqua Orphée, les yeux fixés sur le sol.</p>
+                <p><milestone unit="sent"/>Curieusement, leurs pas n’y laissaient pas la moindre empreinte. <milestone unit="sent"/>Il était donc
+                    vrai qu’ici toutes les formes étaient visibles mais impalpables ? <milestone unit="sent"/>Privées du
+                    poids de leur corps d’autrefois ? <milestone unit="sent"/>Orphée les regardait traîner, sans but, <pb
+                        n="87" xml:id="p87"/>dans le même désœuvrement que durant toute leur vie
+                    terrestre. <milestone unit="sent"/>Y avait-il une chose qu’il détestât autant que la tiédeur ! <milestone unit="sent"/>Une haine
+                    qu’il partageait avec sa mère : <milestone unit="sent"/>« La tiédeur et la patience vont de pair. »</p>
+                <p><milestone unit="sent"/>Tout autour d’eux, la nuit s’étendait à perte de vue, poisseuse, entrecoupée çà
+                    et là dans le lointain par des groupes d’âmes qui campaient sous les arbres
+                    gris.</p>
+                <p><milestone unit="sent"/>Et Eurydice était seule dans ces ténèbres. <milestone unit="sent"/>À seize ans à peine !</p>
+                <p><milestone unit="sent"/>Hermès posa la main sur l’épaule d’Orphée dans un élan d’amitié qui lui rappela
+                    Castor.</p>
+                <p><milestone unit="sent"/>– Il y a bien quelque part des lieux pour les purs ?</p>
+                <p><milestone unit="sent"/>– Bien sûr, répliqua son compagnon. <milestone unit="sent"/>Les Champs Élysées, tout là-bas. <milestone unit="sent"/>L’accès
+                    n’est réservé qu’à peu. <milestone unit="sent"/>Toi-même après ta mort… <milestone unit="sent"/>Eurydice n’a pas eu le temps d’y
+                    parvenir. <milestone unit="sent"/>Tu la retrouveras bientôt.</p>
+                <p><milestone unit="sent"/>Bientôt.</p>
+                <p><pb n="88" xml:id="p88"/><milestone unit="sent"/>La première promesse d’Hermès !</p>
+                <p><milestone unit="sent"/>Orphée fut empli par un courage nouveau.</p>
+                <p><milestone unit="sent"/>La route se divisait en une multitude de chemins, sans qu’il pût savoir celui qui
+                    l’amènerait le plus rapidement vers Eurydice. <milestone unit="sent"/>Mais il n’osait poser trop de
+                    questions ni accélérer le pas. <milestone unit="sent"/>Hermès l’avait prévenu :</p>
+                <p><milestone unit="sent"/>– Inutile de chercher à brûler les étapes. <milestone unit="sent"/>Le temps d’ici n’est pas le vôtre. <milestone unit="sent"/>Tu
+                    dois t’habituer à ce Heu, à ses ombres, à leurs préoccupations si tu veux avoir
+                    quelque chance de convaincre Perséphone.</p>
+                <p><milestone unit="sent"/>Ce fut lui pourtant qui agita son Pégase en tous sens et parut curieusement
+                    pressé :</p>
+                <p><milestone unit="sent"/>– Alors, suis-moi, Orphée ! <milestone unit="sent"/>On perd facilement sa route. <milestone unit="sent"/>Essaie donc de prendre
+                    les habitudes du monde d’ici. <milestone unit="sent"/>Retourne-toi le moins possible.</p>
+                <p><milestone unit="sent"/>Et en guise d’explication :</p>
+                <p><milestone unit="sent"/>– Les ombres n’aiment pas s’offrir deux <pb n="89" xml:id="p89"/>fois aux
+                    regards. <milestone unit="sent"/>Les lieux non plus. <milestone unit="sent"/>Celui-là moins que les autres !</p>
+                <p><milestone unit="sent"/>Lentement émergée du brouillard sombre, une forteresse immense se dressait devant
+                    eux.</p>
+                <p><milestone unit="sent"/>– Les rivages des Sirènes, les cadavres qui s’y décomposent à l’air libre : tout
+                    cela n’est que bagatelle par rapport à ce qui se passe derrière ces murs !</p>
+                <p><milestone unit="sent"/>À peine si Orphée entendait Hermès au milieu du tintamarre de cris, de chaînes et
+                    de sifflements en tout genre qui lui vrillaient les oreilles :</p>
+                <p><milestone unit="sent"/>– Le Tartare ! l’enfer des Titans déchus…</p>
+                <p><milestone unit="sent"/>– Sisyphe, Ixion… commença Orphée.</p>
+                <p><milestone unit="sent"/>– Tisiphone en personne, la pire des Érinyes, y manie le fouet.</p>
+                <p><milestone unit="sent"/>Hermès hurlait carrément :</p>
+                <p><milestone unit="sent"/>– Tu ne pourras rien voir de ce qui est à l’intérieur…</p>
+                <p><milestone unit="sent"/>Il s’arrêta quelques instants, les yeux fixés sur la main droite d’Orphée :</p>
+                <p><milestone unit="sent"/>– … sauf si tu réussis à faire s’entrebâiller la porte. <milestone unit="sent"/>Belle occasion encore de
+                    tester ton <pb n="90" xml:id="p90"/>pouvoir ! <milestone unit="sent"/>Si le miracle se produit, ouvre
+                    tout grand tes yeux. <milestone unit="sent"/>Le spectacle, tu n’y auras pas droit deux fois ! <milestone unit="sent"/>Il ne
+                    concerne d’ailleurs que la partie supérieure du Tartare. <milestone unit="sent"/>Un centième de sa
+                    surface à peine. <milestone unit="sent"/>Quand bien même tu arriverais à franchir les portes, une année
+                    entière de marche ne te permettrait pas d’atteindre le fond, qui est aussi loin
+                    de nous que le ciel de la terre. <milestone unit="sent"/>C’est le moment, Orphée. <milestone unit="sent"/>Ne ménage pas tes
+                    effets.</p>
+                <p><milestone unit="sent"/>Hermès avait retrouvé son rire narquois :</p>
+                <p><milestone unit="sent"/>– Pas sûr que ça marche à tous les coups. <milestone unit="sent"/>Ce serait lassant à la longue !</p>
+                <p><milestone unit="sent"/>Mais, comme par enchantement, le vacarme s’apaisa.</p>
+                <p><milestone unit="sent"/>Plus un cri, plus un gémissement.</p>
+                <p><milestone unit="sent"/>Seule la musique qui s’infiltrait avec légèreté à l’intérieur des hautes
+                    murailles !</p>
+                <p><milestone unit="sent"/>Les battants de l’entrée tournèrent sur leurs gonds, laissant deviner, dans une
+                    nuit encore plus sombre, des corps chargés de lourdes chaînes, mais étrangement
+                    immobiles.</p>
+                <p><pb n="91" xml:id="p91"/><milestone unit="sent"/>– J’ai déjà vu le Tartare s’entr’ouvrir. <milestone unit="sent"/>Mais c’est bien
+                    la première fois que…</p>
+                <p><milestone unit="sent"/>Hermès se frotte les yeux, visiblement aussi stupéfait qu’Orphée : la roue
+                    d’Ixion s’est arrêtée de tourner ! <milestone unit="sent"/>Le supplicié aux membres écartelés reste tête
+                    en bas. <milestone unit="sent"/>Malgré l’inconfort de sa position, un sourire erre sur ses lèvres
+                    décharnées.</p>
+                <p><milestone unit="sent"/>– Ton chant n’a pas l’air de le laisser indifférent, Orphée ! <milestone unit="sent"/>Et il n’est pas le
+                    seul !</p>
+                <p><milestone unit="sent"/>Sur le flanc de sa montagne, pour l’écouter, Sisyphe s’est appuyé contre son
+                    énorme rocher.</p>
+                <p><milestone unit="sent"/>Plus loin, les vautours cessent brusquement de déchiqueter de leurs becs voraces
+                    les entrailles de Tityos, et ses mains peuvent oublier de les repousser :</p>
+                <p><milestone unit="sent"/>– Leur supplice sans fin suspendu pour quelques instants. Grâce à toi.</p>
+                <p><milestone unit="sent"/>Un claquement de fouet retentit presque aussitôt.</p>
+                <p><pb n="92" xml:id="p92"/><milestone unit="sent"/>Une manière de rappeler les condamnés à leurs travaux ? <milestone unit="sent"/>Ou de signifier à Orphée qu’il en a assez vu ? <milestone unit="sent"/>Les lourdes portes d’airain se
+                    referment dans des grincements horribles :</p>
+                <p><milestone unit="sent"/>– Et voilà, s’écrie Hermès. <milestone unit="sent"/>L’éternité va reprendre ses droits. <milestone unit="sent"/>Heureusement. Rien qu’à les regarder, tu pourrais être souillé par leurs crimes…</p>
+                <p><milestone unit="sent"/>– Ce sont les mêmes pour tous ? risque Orphée.</p>
+                <p><milestone unit="sent"/>– D’une certaine façon, oui. <milestone unit="sent"/>Pour les Titans, leur attitude face à Dionysos est
+                    cause de tout. <milestone unit="sent"/>Mais chacun a essayé de dépasser les limites imposées.</p>
+                <p><milestone unit="sent"/>« Et moi ? <milestone unit="sent"/>Que suis-je en train de faire d’autre ici ? » pense Orphée, mais sans
+                    crainte ni le moindre désir de revenir en arrière.</p>
+                <p><milestone unit="sent"/>– Et jamais ils ne pourront se racheter, à la différence de ceux-là.</p>
+                <p><milestone unit="sent"/>Du doigt, Hermès désigne au loin des ombres dont les âmes semblent flotter au
+                    vent.</p>
+                <p><milestone unit="sent"/>– Qu’est-ce qu’elles font ?</p>
+                <p><pb n="93" xml:id="p93"/><milestone unit="sent"/>– Elles se lavent de leurs fautes. <milestone unit="sent"/>Mais c’est sur terre,
+                    Orphée, toi, tu le sais, que les purifications doivent commencer pour diminuer
+                    la durée des souffrances ici. <milestone unit="sent"/>Tu dois continuer de l’enseigner aux hommes.</p>
+                <p><milestone unit="sent"/>– Et…</p>
+                <p><milestone unit="sent"/>– Assez de révélations ! <milestone unit="sent"/>Ta lucidité de prêtre m’a souvent émerveillé. <milestone unit="sent"/>Mais
+                    silence maintenant.</p>
+                <p><milestone unit="sent"/>Comme agacé d’avoir trop parlé, Hermès s’en tire par un brutal accès de
+                    rire :</p>
+                <p><milestone unit="sent"/>– Ce n’est pas pour cela que j’ai été embauché par Chiron. <milestone unit="sent"/>Si Perséphone est en
+                    verve, elle t’expliquera. <milestone unit="sent"/>Quoique ce ne soit pas tellement son domaine !</p>
+            </div>
+            <div>
+                <head>VI <lb/>La prairie d’asphodèles</head>
+                <argument>
+                    <p><milestone unit="sent"/>Pour six pépins de grenade…</p>
+                </argument>
+                <p rend="noindent"><pb n="94" xml:id="p94"/><milestone unit="sent"/>– Qu’est-ce que tu regardes ?</p>
+                <p><milestone unit="sent"/>En revenant sur leurs pas vers le tribunal, ils longeaient une eau sombre. <milestone unit="sent"/>Instinctivement, Orphée y avait penché la tête.</p>
+                <p><milestone unit="sent"/>– Pas la peine de te fatiguer, intervint Hermès. <milestone unit="sent"/>Dans ce miroir, les hommes ne
+                    peuvent voir leur reflet. <milestone unit="sent"/>Quant aux habitants d’ici, à quoi bon ? <milestone unit="sent"/>Ils ne sont
+                    déjà plus que l’ombre d’eux-mêmes, le visage entouré de ténèbres.</p>
+                <p><milestone unit="sent"/>Puis, sans transition :</p>
+                <p><milestone unit="sent"/>– Viens par ici. <milestone unit="sent"/>Je vais te présenter à Perséphone et à ses amies.</p>
+                <p><pb n="95" xml:id="p95"/><milestone unit="sent"/>Le ton cérémonieux d’Hermès aurait fait rire Orphée en
+                    des circonstances moins importantes.</p>
+                <p><milestone unit="sent"/>Le champ de la Vérité !</p>
+                <p><milestone unit="sent"/>La reine des Enfers ! <milestone unit="sent"/>Enfin ! Avec, comme compagnes, en cercle sur l’immense
+                    prairie, des jeunes filles au sourire enjôleur et dur tout à la fois. <milestone unit="sent"/>De plus
+                    près, les visages de certaines parurent familiers à Orphée, lui rappelant les
+                    rivages d’Anthémoëssa, ou les derniers regards des Érinyes. <milestone unit="sent"/>« Voilà où elles me
+                    donnaient rendez-vous. <milestone unit="sent"/>Elles avaient déjà en tête ma venue sur ces terres sans
+                    soleil ! »</p>
+                <p><milestone unit="sent"/>– Les Sirènes en personne ! acquiesça Hermès qui lisait dans ses pensées. <milestone unit="sent"/>Elles
+                    descendent parfois distraire Perséphone. <milestone unit="sent"/>Mais trois par trois, pendant que les
+                    autres continuent le guet sur leurs rochers. <milestone unit="sent"/>Elles sont aussi peu sensibles que
+                    Perséphone à la pitié. <milestone unit="sent"/>Nouvelle épreuve pour ta lyre, Orphée !</p>
+                <p><milestone unit="sent"/>À peine le poète s’en était-il emparé que toutes se turent. <milestone unit="sent"/>Leurs traits prirent
+                    une gravité qui lui fit suspendre son chant :</p>
+                <p><milestone unit="sent"/>– Non, ne t’arrête pas, Orphée. <milestone unit="sent"/>N’interromps pas une telle paix, supplia une voix
+                    féminine. <milestone unit="sent"/>J’ai l’impression que…</p>
+                <p><milestone unit="sent"/>– Tu entends, c’est Ligeïa en personne qui te le demande, reprit Hermès.</p>
+                <p><milestone unit="sent"/>Le chant du poète dura, dura.</p>
+                <p><milestone unit="sent"/>Il disait la beauté de l’été, sa tristesse soudaine quand l’être aimé vous est
+                    enlevé. <milestone unit="sent"/>Les yeux brillants de larmes, Perséphone fit signe à Orphée de venir
+                    s’asseoir.</p>
+                <p><milestone unit="sent"/>Et, presque aussitôt, sans attendre la moindre question, elle commença à évoquer
+                    son enfance.</p>
+                <p><milestone unit="sent"/>– Si vite. Du jamais vu, chuchota Hermès à l’oreille de son compagnon. <milestone unit="sent"/>Ta poésie
+                    sait donc faire resurgir les souvenirs et libérer les cœurs. <milestone unit="sent"/>Eh bien ! Parions
+                    qu’elle va te parler de sa mère Déméter, de sa douleur d’être séparée d’elle la
+                    moitié de l’année, du deuil <pb n="97" xml:id="p97"/>de la terre alors. <milestone unit="sent"/>C’est ce
+                    que vous appelez là-haut la saison morte.</p>
+                <p><milestone unit="sent"/>Perséphone ne cessait pour autant d’arranger son bouquet d’asphodèles :</p>
+                <p><milestone unit="sent"/>– Un jour, j’ai été arrachée brutalement au soleil, à l’affection des miens, pour
+                    être amenée ici et devenir la femme d’Hadès. <milestone unit="sent"/>J’aurais pu repartir si je n’avais
+                    fait une bêtise énorme. <milestone unit="sent"/>Mais j’étais si jeune alors.</p>
+                <p><milestone unit="sent"/>« Si jeune, songea Orphée. <milestone unit="sent"/>Et maintenant ? À quel rythme vieillit-on quand on
+                    passe seulement six mois par an dans le temps humain ? »</p>
+                <p><milestone unit="sent"/>– L’histoire des pépins de grenade. Demande-lui.</p>
+                <p><milestone unit="sent"/>– Une bêtise, laquelle ? interrogea Orphée sans prêter davantage d’attention à
+                    l’intervention d’Hermès.</p>
+                <p><milestone unit="sent"/>Il imaginait si différemment sa rencontre avec la reine des Enfers. <milestone unit="sent"/>Effrayante au
+                    premier abord, elle lui semblait désormais de plus en plus émouvante. <milestone unit="sent"/>« Avec cet
+                    univers pourri <pb n="98" xml:id="p98"/>comme seul paysage, et comme unique
+                    amour son époux aux sourcils sombres ! »</p>
+                <p><milestone unit="sent"/>Même en l’absence de pluie, l’air dégoulinait sans cesse d’humidité et de fines
+                    gouttes leur tombaient sur le visage. <milestone unit="sent"/>Perséphone devait y être habituée. <milestone unit="sent"/>Elle
+                    n’avait pas le moindre geste pour s’essuyer les joues :</p>
+                <p><milestone unit="sent"/>– Hadès, car c’est lui qui avait fait organiser mon enlèvement, ne pouvait me
+                    retenir aux Enfers que si je m’y nourrissais, fût-ce une seule fois. <milestone unit="sent"/>Un
+                    compromis qu’il avait trouvé avec ma mère. <milestone unit="sent"/>Je ne l’ai su qu’après.</p>
+                <p><milestone unit="sent"/>« Des araignées. <milestone unit="sent"/>Des brins d’herbes flétries. <milestone unit="sent"/>Quelques pattes de crapauds. <milestone unit="sent"/>Pas
+                    très appétissant ! <milestone unit="sent"/>Elle n’avait pas trop de mérite à refuser un festin pareil. <milestone unit="sent"/>Que s’est-il passé ? » <milestone unit="sent"/>Devinant les questions d’Orphée, Perséphone lui énumérait
+                    tous ceux que son mari avait envoyés successivement sur terre pour lui rapporter
+                    raisins, poires, pavots ou autres merveilles.</p>
+                <p><milestone unit="sent"/>– J’y jetais à peine un regard. <milestone unit="sent"/>Dans les plaines desséchées, j’avais su ne pas
+                    boire à <pb n="99" xml:id="p99"/>l’eau du Léthé, si transparente pourtant. <milestone unit="sent"/>Mail
+                    je ne voulais pas perdre tout souvenir. <milestone unit="sent"/>Oublier ce que j’avais aimé ! <milestone unit="sent"/>De la même
+                    façon, je disais non à tous leurs fruits. <milestone unit="sent"/>Et puis finalement…</p>
+                <p><milestone unit="sent"/>Perséphone resta rêveuse :</p>
+                <p><milestone unit="sent"/>– Finalement ? reprit Orphée le plus doucement qu’il put pour l’inciter à
+                    poursuivre.</p>
+                <p><milestone unit="sent"/>– Un messager d’Hadès m’a apporté une grenade. <milestone unit="sent"/>Pas aussi belle que celles de mon
+                    enfance. <milestone unit="sent"/>Oh ! non. Le temps qu’il revienne, en plus, c’était la fin de l’été
+                    là-haut, elle était rabougrie, presque totalement privée de jus. <milestone unit="sent"/>Son odeur
+                    restait quand même. <milestone unit="sent"/>Je n’ai pu résister.</p>
+                <p><milestone unit="sent"/>– Et alors ? demanda Orphée.</p>
+                <p><milestone unit="sent"/>– Si tu l’interromps tout le temps, on n’en a pas fini, chuchota à nouveau Hermès
+                    avec agacement.</p>
+                <p><milestone unit="sent"/>– Eh bien ! j’ai mordu dans le fruit. <milestone unit="sent"/>Juste une fois. En recrachant presque
+                    aussitôt la bouchée. <milestone unit="sent"/>Trop tard. Quelques pépins m’étaient <pb n="100"
+                        xml:id="p100"/>restés sur la langue. <milestone unit="sent"/>Six exactement. Ascalaphe m’avait vu
+                    communier avec les ombres et il m’a dénoncée. <milestone unit="sent"/>Suffisant pour décider de la
+                    suite. <milestone unit="sent"/>Un mois par pépin. <milestone unit="sent"/>La moitié de l’année sous terre à cause de cette
+                    malheureuse bouchée. <milestone unit="sent"/>L’autre moitié là-haut. <milestone unit="sent"/>Quand j’arrive, oh, que j’aime ce
+                    moment. <milestone unit="sent"/>La lumière m’éblouit des jours entiers.</p>
+                <p><milestone unit="sent"/>« Des pépins, sourit intérieurement Orphée. <milestone unit="sent"/>La dernière recommandation de
+                    Chiron ! <milestone unit="sent"/>Il peut se rassurer, je ne goûterai à rien. <milestone unit="sent"/>Leurs révélations seules
+                    m’importent, et le fait de retrouver Eurydice. »</p>
+                <p><milestone unit="sent"/>Perséphone semblait parler davantage pour elle-même que pour son visiteur. <milestone unit="sent"/>Et ses
+                    phrases étaient murmurées d’une voix si basse qu’elles n’arrivaient que par
+                    bribes à Orphée :</p>
+                <p><milestone unit="sent"/>– Même quand Zagreus, petit, se précipitait dans mes bras… <milestone unit="sent"/>Je suis mère aussi… <milestone unit="sent"/>Je
+                    l’ai été. <milestone unit="sent"/>Parfois j’oublie… <milestone unit="sent"/>Il m’a été arraché. <milestone unit="sent"/>Une sombre histoire… <milestone unit="sent"/>La jalousie
+                    d’Héra… <milestone unit="sent"/>Celle des Titans.</p>
+                <p><pb n="101" xml:id="p101"/><milestone unit="sent"/>– Zagreus devenu ensuite le Dionysos que tu connais,
+                    précisa Hermès. <milestone unit="sent"/>Eh bien, tu peux te flatter d’avoir droit à des révélations, et
+                    de taille, Orphée. <milestone unit="sent"/>Va savoir si elles sont totalement désintéressées. <milestone unit="sent"/>Tu es
+                    prêtre. <milestone unit="sent"/>Elle attend peut-être de toi un culte nouveau ?</p>
+                <p><milestone unit="sent"/>– Mon fils si mal reconnu, si peu honoré chez vous, se plaignit en effet
+                    Perséphone.</p>
+                <p><milestone unit="sent"/>Elle semblait toute mélancolique :</p>
+                <p><milestone unit="sent"/>– Comme il me manque ! <milestone unit="sent"/>Comme ma mère me manque ! <milestone unit="sent"/>Je ne sais pourquoi je te
+                    raconte tout cela. <milestone unit="sent"/>C’est ton chant. <milestone unit="sent"/>Ton deuil d’Eurydice. <milestone unit="sent"/>Le vide insupportable
+                    de l’absence. <milestone unit="sent"/>Même si je n’étais pas à moitié immortelle, rien qu’à t’entendre,
+                    j’aurais deviné ta passion et les raisons de ta venue.</p>
+                <p><milestone unit="sent"/>Elle se leva soudain :</p>
+                <p><milestone unit="sent"/>– À propos de celle que tu as perdue, voilà ma proposition.</p>
+                <p><milestone unit="sent"/>Les mains de ses compagnes cessèrent de tresser leurs couronnes de pavots. <milestone unit="sent"/>Elles
+                    se tenaient immobiles. <milestone unit="sent"/>Les Parques elles-mêmes <pb n="102" xml:id="p102"
+                    />s’approchèrent et tendirent l’oreille. <milestone unit="sent"/>Il n y avait plus la moindre dureté sur
+                    leur visage. <milestone unit="sent"/>Pas davantage sur celui de Ligeïa.</p>
+                <p><milestone unit="sent"/>Orphée retint son souffle.</p>
+                <p><milestone unit="sent"/>– Écoute-moi bien.</p>
+                <p><milestone unit="sent"/>Perséphone avait repris son air sévère de souveraine du monde infernal :</p>
+                <p><milestone unit="sent"/>– Tu pourras repartir d’ici avec Eurydice. <milestone unit="sent"/>Mais elle marchera derrière toi. <milestone unit="sent"/>Tu ne
+                    devras ni te retourner, ni lui parler, ni essayer de la toucher. <milestone unit="sent"/>Voilà mes trois
+                    conditions. <milestone unit="sent"/>Elles sont impératives. <milestone unit="sent"/>Si tu ne les respectes pas, ta femme te sera
+                    enlevée. Définitivement.</p>
+                <p><milestone unit="sent"/>Elle tordait en tous sens la tige de l’asphodèle qu’elle avait entre les
+                    doigts :</p>
+                <p><milestone unit="sent"/>– Alors, Orphée ? <milestone unit="sent"/>Cela te semble insurmontable ?</p>
+                <p><milestone unit="sent"/>Tout au bonheur de voir Eurydice, de l’embrasser, de la ramener à la lumière du
+                    jour, Orphée fit aussitôt signe que non.</p>
+                <p><milestone unit="sent"/>– Quand j’ai été transportée ici, rappelle-toi, <pb n="103" xml:id="p103"/>j’ai
+                    résisté durant des mois ! <milestone unit="sent"/>Même si tu n’entends pas ses pas, tu devras savoir
+                    qu’elle est là. <milestone unit="sent"/>Sans le vérifier. <milestone unit="sent"/>Sans t’arrêter pour l’entendre te rassurer sur
+                    sa présence.</p>
+                <p><milestone unit="sent"/>Orphée s’étonnait d’une telle insistance. <milestone unit="sent"/>Bien sûr qu’il saurait s’empêcher de se
+                    retourner, de la regarder.</p>
+                <p><milestone unit="sent"/>Avec gravité, la femme d’Hadès ajoutait :</p>
+                <p><milestone unit="sent"/>– Un amour ne doit pas avoir besoin de preuves renouvelées. <milestone unit="sent"/>Sinon, il risque de
+                    dépérir. <milestone unit="sent"/>Même sous le soleil d’en haut. <milestone unit="sent"/>Il faut savoir aimer à bonne distance,
+                    ne pas étouffer ceux qu’on aime sous des demandes constantes.</p>
+                <p><milestone unit="sent"/>« Que sait-elle de la passion ? <milestone unit="sent"/>A-t-elle jamais pu éprouver le moindre sentiment
+                    pour Hadès ? » s’interrogea Orphée tandis qu’elle poursuivait :</p>
+                <p><milestone unit="sent"/>– Bientôt je vais remonter moi aussi à la surface de la terre. <milestone unit="sent"/>L’hiver s’achève. <milestone unit="sent"/>J’arriverai là-haut en même temps que le printemps. <milestone unit="sent"/>La nature sera en fête. <milestone unit="sent"/>Des
+                    bourgeons sur les <pb n="104" xml:id="p104"/>arbres. <milestone unit="sent"/>Les premiers blés dans les
+                    champs. <milestone unit="sent"/>Des fleurs prêtes à éclore. <milestone unit="sent"/>Ma mère Déméter y veille
+                    personnellement.</p>
+                <p><milestone unit="sent"/>L’idée de son retour vers le monde ensoleillé donnait au visage de Perséphone un
+                    air pétillant. <milestone unit="sent"/>« Comme elle paraît jeune ! »</p>
+                <p><milestone unit="sent"/>Quelles étaient les deux silhouettes qui émergeaient du bois ?</p>
+                <p><milestone unit="sent"/>Le cœur d’Orphée battait à tout rompre. <milestone unit="sent"/>Il écarquilla les yeux en distinguant la
+                    forme de l’immense chapeau. <milestone unit="sent"/>« Hermès ! Et je ne l’ai même pas vu partir ! <milestone unit="sent"/>Où
+                    est-il allé ? <milestone unit="sent"/>Est-ce que Perséphone lui a donné l’ordre… ? »</p>
+                <p><milestone unit="sent"/>Oui ! Derrière lui, c’était bien Eurydice !</p>
+                <p><milestone unit="sent"/>Elle marchait vers la prairie d’asphodèles à pas lents, une mèche de cheveux
+                    blonds tristement collée à son fixant. <milestone unit="sent"/>Elle paraissait l’ombre d’elle-même ! <milestone unit="sent"/>À
+                    peine esquissa-t-elle un geste de la main, faisant trembler légèrement son
+                    bracelet de feuillage fané. <milestone unit="sent"/>Le chêne de leur rivière ! <milestone unit="sent"/>Une vague d’émotion
+                    submergea <pb n="105" xml:id="p105"/><milestone unit="sent"/>Orphée. Eurydice y pensait-elle aussi ? <milestone unit="sent"/>Les
+                    souvenirs ici ressemblaient-ils aux rêves d’en haut ? <milestone unit="sent"/>Pouvait-on, en les
+                    retrouvant, avoir même fugitivement l’impression d’être encore sur terre ?</p>
+                <p><milestone unit="sent"/>Incapable du moindre mouvement, il cherchait sur le visage de sa femme quelque
+                    chose qui ressemblât à une expression de joie. <milestone unit="sent"/>Comment les sentiments se
+                    manifestaient-ils au cœur des Enfers ? <milestone unit="sent"/>Qu’était donc un sourire sans lèvres
+                    réelles ?</p>
+                <p><milestone unit="sent"/>Puis il s’approcha d’elle doucement.</p>
+                <p><milestone unit="sent"/>L’un face à l’autre !</p>
+                <p><milestone unit="sent"/>La prendre par la main. <milestone unit="sent"/>La ramener là-haut avec lui le plus vite possible.</p>
+                <p><milestone unit="sent"/>Son souhait depuis des jours !</p>
+                <p><milestone unit="sent"/>Mais il n’osait l’embrasser de peur de l’étouffer : <milestone unit="sent"/>« Si tu cherchais à
+                    l’étreindre, tu ne serrerais que du vide. <milestone unit="sent"/>Comme un rêve qui s’envole. » <milestone unit="sent"/>Et puis
+                    Eurydice semblait si lointaine. <milestone unit="sent"/>Dix jours dans cet univers avaient-ils pu lui
+                    faire oublier la folie de leur bonheur ? <milestone unit="sent"/>Avait-elle pu… ?</p>
+                <p><pb n="106" xml:id="p106"/><milestone unit="sent"/>Enfin elle lui tendit les bras.</p>
+                <p><milestone unit="sent"/>– Ne perdez pas de temps, conseilla Hermès de nuit. <milestone unit="sent"/>Je vous accompagne jusqu’à
+                    l’embarcadère.</p>
+                <p><milestone unit="sent"/>Et, comme pour éviter tout attendrissement :</p>
+                <p><milestone unit="sent"/>– Que veux-tu donc faire de plus, Orphée ? <milestone unit="sent"/>D’autres visites à rendre peut-être ? <milestone unit="sent"/>Un dernier coup d’œil à jeter sur la roue d’Ixion, pour vérifier ton pouvoir ? <milestone unit="sent"/>Tu l’as vu. Ton chant peut tout, même ici. <milestone unit="sent"/>Les siècles à venir le sauront grâce
+                    à toi et ton exemple : la poésie est capable d’adoucir les souffrances. <milestone unit="sent"/>La mort
+                    elle-même…</p>
+                <p><milestone unit="sent"/>– Et surtout souviens-toi, intervint Perséphone.</p>
+                <p><milestone unit="sent"/>En guise d’adieu, elle lui rappela la triple interdiction. <milestone unit="sent"/>Mais en mimant chacune
+                    à l’aide de gestes qui firent sourire Orphée malgré lui. <milestone unit="sent"/>« Je ne m’y serais pas
+                    attendu de la part d’une souveraine des Enfers. <milestone unit="sent"/>Qu’elle est drôle et
+                    touchante ! »</p>
+                <p><pb n="107" xml:id="p107"/><milestone unit="sent"/>– Et puis, Orphée, n’oublie pas non plus.</p>
+                <p><milestone unit="sent"/>Pour la première fois depuis son arrivée dans l’univers moisi, c’était la voix tonnante d’Hadès qui retentissait
+                    désormais, très loin des oreilles d’Orphée, venue il ne savait d’où :</p>
+                <p><milestone unit="sent"/>– Tu ne dois rien révéler à la masse des hommes de ce que tu as découvert et
+                    compris ici.</p>
+                <p><milestone unit="sent"/>– Mais, en échange, j’organiserai des cérémonies en l’honneur de Zagreus et de
+                    Perséphone. <milestone unit="sent"/>Son retour sur terre est promesse de résurrection. <milestone unit="sent"/>Quoi qu’il
+                    arrive, j’en fais serment, assura-t-il à Hermès qui l’aidait à descendre de la
+                    barque.</p>
+                <p><milestone unit="sent"/>– Oui, tu repars, chargé d’un nouveau savoir. <milestone unit="sent"/>Continue d’instruire ceux d’en
+                    haut, mais les seuls initiés.</p>
+                <p><milestone unit="sent"/>Comme Orphée s’apprêtait à prendre la main de sa compagne, Hermès le tira par un
+                    bout de sa tunique pour le rappeler à l’ordre :</p>
+                <p><milestone unit="sent"/>– Non, tu dois marcher devant elle. <milestone unit="sent"/>Je t’en supplie. <milestone unit="sent"/>Ne te retourne pas.</p>
+            </div>
+            <div>
+                <head>VII <lb/>Les premiers rayons du soleil Un regard, un seul…</head>
+                <argument>
+                    <p><milestone unit="sent"/>Ne te retourne pas.</p>
+                </argument>
+                <p rend="noindent"><pb n="108" xml:id="p108"/>La voix d’Hermès vibra encore quelques
+                    instants au milieu des premiers rochers du chemin, puis s’éteignit.</p>
+                <p><milestone unit="sent"/>Le silence régnait désormais autour d’eux. <milestone unit="sent"/>Un silence lourd, comme Orphée n’en
+                    avait jamais connu. <milestone unit="sent"/>« Eurydice est-elle bien là ? » se demandait-il avec
+                    angoisse à chaque pas. <milestone unit="sent"/>Les dernières paroles de Perséphone résonnaient à nouveau
+                    dans ses tempes. <milestone unit="sent"/>« Pas besoin de vérifier à chaque instant sa présence. <milestone unit="sent"/>Un amour
+                    peut en mourir. »</p>
+                <p><milestone unit="sent"/>Il essaya de concentrer son attention sur le chemin, d’éviter les arbustes qui
+                    risquaient <pb n="109" xml:id="p109"/>d’égratigner le visage de sa femme. <milestone unit="sent"/>« La
+                    route grimpe vite. Mais bientôt… »</p>
+                <p><milestone unit="sent"/>Bientôt ? Son soulagement refit place à l’angoisse.</p>
+                <p><milestone unit="sent"/>Et si Eurydice ne le suivait pas ?</p>
+                <p><milestone unit="sent"/>Pourquoi n’entendait-il pas le bruit de ses pieds collant à la boue, ou de son
+                    corps contre les branches ? <milestone unit="sent"/>« Elle est si légère encore. <milestone unit="sent"/>Une ombre ! » répondait
+                    une partie de lui-même. <milestone unit="sent"/>Tandis qu’une autre susurrait : <milestone unit="sent"/>« Toute reine des Enfers
+                    qu’elle est, Perséphone s’est moquée de toi. <milestone unit="sent"/>Impossible de faire confiance à
+                    quelqu’un qui vit coupée entre deux mondes. »</p>
+                <p><milestone unit="sent"/>Brusquement, à un coude du sentier, l’air devint brillant. <milestone unit="sent"/>Un rayon de soleil
+                    sembla jouer sur un des arbres les plus éloignés.</p>
+                <p><milestone unit="sent"/>Le monde d’en haut ? <milestone unit="sent"/>La lumière des vivants ?</p>
+                <p><milestone unit="sent"/>Si Eurydice…</p>
+                <p><milestone unit="sent"/>Non, il ne se retournerait pas.</p>
+                <p><pb n="110" xml:id="p110"/><milestone unit="sent"/>À quoi bon y arriver pourtant si elle n’était pas là ? <milestone unit="sent"/>Peut-être avait-elle mangé, elle aussi, des pépins de grenade ou bu un peu d’eau
+                    du Léthé, sans qu’Hermès ni Perséphone ne l’aient vue ?</p>
+                <p><milestone unit="sent"/>Orphée voulait en avoir le cœur net.</p>
+                <p><milestone unit="sent"/>Il tendit la main derrière lui, mais n’en rapporta que quelques feuilles d’arbre
+                    gorgées d’humidité. <milestone unit="sent"/>Oh ! l’appeler, l’entendre. <milestone unit="sent"/>Une fois. Une seule. <milestone unit="sent"/>Il n’en
+                    demandait pas plus. <milestone unit="sent"/>Juste vérifier qu’il n’avait pas marché trop vite. <milestone unit="sent"/>Qu’Eurydice ne s’était pas arrêtée en chemin, essoufflée ou blessée par une
+                    pierre tranchante. <milestone unit="sent"/>Il lui fallait en avoir la certitude avant de retrouver le
+                    monde des vivants.</p>
+                <p><milestone unit="sent"/>Après, il serait trop tard !</p>
+                <p><milestone unit="sent"/>– Eurydice ? chuchota-t-il le plus doucement qu’il put. <milestone unit="sent"/>Dis-moi que tu es bien
+                    là.</p>
+                <p><milestone unit="sent"/>Presque en même temps, il tourna la tête :</p>
+                <p><milestone unit="sent"/>– Oh ! Orphée. Quelle folie. Je faisais exprès de ne pas te répondre. <milestone unit="sent"/>Le pacte. Mais comment as-tu pu l’oublier ? <milestone unit="sent"/>Je meurs, définitivement <pb n="111"
+                        xml:id="p111"/>cette fois, et d’avoir été trop aimée.</p>
+                <p><milestone unit="sent"/>Puis, dans un souffle :</p>
+                <p><milestone unit="sent"/>– Adieu.</p>
+                <p><milestone unit="sent"/>À ce mot, aussi rapide qu’un rêve, elle s’évanouit.</p>
+                <p><milestone unit="sent"/>Orphée se précipita sur ses pas.</p>
+                <p><milestone unit="sent"/>Déjà elle était arrivée aux bords du Styx. <milestone unit="sent"/>Déjà Hermès, retrouvant son travail
+                    habituel de passeur des âmes, avait repris en main le sort de la jeune femme. <milestone unit="sent"/>Elle était redevenue une ombre comme les autres, fondue dans la longue file
+                    grise des voyageurs de l’au-delà, attendant avec eux sur la grève le passage. <milestone unit="sent"/>Plus rien ne la distinguait de la foule environnante.</p>
+                <p><milestone unit="sent"/>Orphée parvint à son tour à l’embarcadère, hors d’haleine. <milestone unit="sent"/>La main tendue vers
+                    l’autre rive où serait bientôt Eurydice, il supplia le vieux passeur de le
+                    laisser monter :</p>
+                <p><milestone unit="sent"/>– Encore une fois ?</p>
+                <p><milestone unit="sent"/>Charon éclata d’un rire mauvais.</p>
+                <p><pb n="112" xml:id="p112"/><milestone unit="sent"/>– Tu as l’intention de revenir comme ça souvent ?</p>
+                <p><milestone unit="sent"/>– Non, maintenant seulement. <milestone unit="sent"/>Je peux t’assurer que je saurai…</p>
+                <p><milestone unit="sent"/>Le passeur le dévisagea pensivement :</p>
+                <p><milestone unit="sent"/>– Tu es, dit-on, un des hommes les plus sages qui soient sur votre terre. <milestone unit="sent"/>Quelle
+                    folie que la passion…</p>
+                <p><milestone unit="sent"/>Et en le repoussant brusquement du bout de sa rame.</p>
+                <p><milestone unit="sent"/>– Ça ne te servira à rien de te fatiguer en prières ou en chansons. <milestone unit="sent"/>Manifestement, rien de nouveau sous votre soleil. <milestone unit="sent"/>Vos engagements de mortels ne
+                    valent pas grand-chose J’en ai vu avant toi. <milestone unit="sent"/>Question fidélité à leurs
+                    promesses, ils n’étaient pas mieux. Va-t’en.</p>
+                <p><milestone unit="sent"/>Orphée lui tourna le dos, bien décidé à ne pas obéir à son ordre. <milestone unit="sent"/>Il n’était pas
+                    question qu’il quitte les fieux sans Eurydice.</p>
+                <p><milestone unit="sent"/>Sept jours, sept nuits, il essaya tous les accents de sa lyre, guettant le moment
+                    où le nocher se déciderait à l’écouter. <milestone unit="sent"/>Mais, imperturbable, <pb n="113"
+                        xml:id="p113"/><milestone unit="sent"/>Charon continuait son travail, accueillant certaines âmes, en
+                    rejetant d’autres, s’arrêtant de temps en temps pour secouer le trop-plein de
+                    vase qui alourdissait le bas de son manteau. <milestone unit="sent"/>Son regard narquois parfois posé
+                    sur Orphée semblait lui dire : <milestone unit="sent"/>« De quoi te plains-tu ? <milestone unit="sent"/>Il t’a été donné de
+                    remonter le temps une fois. <milestone unit="sent"/>Une chance extraordinaire. <milestone unit="sent"/>Et tu n’as pas su la
+                    saisir. <milestone unit="sent"/>Repars là-haut pour t’y désespérer. <milestone unit="sent"/>Tu n’as plus que ça à faire. »</p>
+                <p><milestone unit="sent"/>« C’est ma faute ! »</p>
+                <p><milestone unit="sent"/>Tout était sa faute.</p>
+                <p><milestone unit="sent"/>Il était là à la lumière, et Eurydice avait été rendue aux ténèbres. <milestone unit="sent"/>À cause de
+                    sa folie. <milestone unit="sent"/>Pourrait-elle lui pardonner ? <milestone unit="sent"/>Des jours après son retour, Orphée avait
+                    ces seules pensées en tête.</p>
+                <p><milestone unit="sent"/>« Morte d’avoir été trop aimée. » <milestone unit="sent"/>Les derniers mots d’Eurydice lui étaient un
+                    poignard. <milestone unit="sent"/>Derrière eux, il entendait les mises en garde <pb n="114"
+                        xml:id="p114"/>répétées de Perséphone : <milestone unit="sent"/>« Pas de vérifications constantes. Un amour… »</p>
+                <p><milestone unit="sent"/>Oui, elle avait raison, un amour pouvait en périr.</p>
+                <p><milestone unit="sent"/>Et il devrait vivre sans lui. <milestone unit="sent"/>Mais il errait comme un aveugle, insensible à tout. <milestone unit="sent"/>Jusqu’à la tendresse de son frère, de son père. <milestone unit="sent"/>Jusqu’à la tiédeur d’un soleil
+                    qui annonçait la fin de l’hiver.</p>
+                <p><milestone unit="sent"/>Et c’était lui le coupable. <milestone unit="sent"/>L’unique. Il avait trahi le pacte de Perséphone. <milestone unit="sent"/>Il
+                    respecterait ses autres engagements en instituant les cultes promis pour
+                    Zagreus. <milestone unit="sent"/>Mais, d’abord, il irait à Éleusis.</p>
+                <p><milestone unit="sent"/>– Dépêche-toi. Sinon Perséphone y sera arrivée avant toi, lança Linos quand
+                    Orphée lui fit part de ses projets.</p>
+                <p><milestone unit="sent"/>Et, tentant d’arracher un sourire à son frère, il le prit affectueusement par les
+                    épaules :</p>
+                <p><milestone unit="sent"/>– Peut-être te donnera-t-elle des nouvelles d’en bas.</p>
+                <p><pb n="115" xml:id="p115"/><milestone unit="sent"/>Des nouvelles ? On voyait bien que Linos n’avait rien
+                    compris du monde infernal, de la dureté de sa reine.</p>
+                <p><milestone unit="sent"/>– Les purifications imposées aux âmes dans les Enfers doivent commencer sur
+                    terre. <milestone unit="sent"/>Il me faut le rappeler aux hommes, répondit simplement Orphée.</p>
+                <p><milestone unit="sent"/>– Mais moi, je tiens à ce que je suis. <milestone unit="sent"/>Je tiens à mes colères, maugréa Linos. <milestone unit="sent"/>Pour te faire plaisir, le temps de ton absence je m’exercerai à les dominer. <milestone unit="sent"/>Plus de fureur contre mes élèves. <milestone unit="sent"/>Plus… Quels mois ennuyeux en perspective ! <milestone unit="sent"/>À
+                    ton retour je te raconterai. <milestone unit="sent"/>Et toi, tu me diras. <milestone unit="sent"/>Ah, non, j’oubliais. <milestone unit="sent"/>Le secret
+                    de tes mystères. Silence !</p>
+                <p><milestone unit="sent"/>Oui. Sur tout cela, silence.</p>
+            </div>
+            <div>
+                <head>VIII <lb/>La jalousie des Cicones</head>
+                <argument>
+                    <p><milestone unit="sent"/>Le seul nom d’Eurydice…</p>
+                </argument>
+                <p rend="noindent"><pb n="116" xml:id="p116"/>Orphée revint à Pimpleia en même temps
+                    que l’automne. <milestone unit="sent"/>Les premières pluies glacées tombaient lentement sur les vallons
+                    et les forêts. <milestone unit="sent"/>Au bord du Pénée, des femmes Cicones s’étaient installées dans sa
+                    clairière préférée.</p>
+                <p><milestone unit="sent"/>Le lieu de ses rencontres avec Eurydice.</p>
+                <p><milestone unit="sent"/>Comment avaient-elles pu choisir un endroit pareil ?</p>
+                <p><milestone unit="sent"/>Quand il parcourait les berges de la rivière, ce n’était plus l’œil de son épouse
+                    qui l’accompagnait, ni ses chants, mais les danses <pb n="117" xml:id="p117"
+                    />folles de ces femmes auxquelles se joignirent bientôt quelques Ménades. <milestone unit="sent"/>Les
+                    cérémonies des changements de saison ? <milestone unit="sent"/>L’enterrement de l’automne ? <milestone unit="sent"/>Orphée le
+                    pensa d’abord, avant de remarquer que leurs rondes lui étaient destinées. <milestone unit="sent"/>Que
+                    leur fureur semblait augmenter de jour en jour devant son indifférence :</p>
+                <p><milestone unit="sent"/>– Tant d’efforts à essayer de te consoler ! Et pour rien.</p>
+                <p><milestone unit="sent"/>Le soir quand elles regagnaient leurs maisons, Orphée était soulagé. <milestone unit="sent"/>Pourtant il
+                    savait très bien que, dès l’aube suivante, elles reviendraient, pieds nus et
+                    tambour à la main. <milestone unit="sent"/>Qu’elles tournoieraient, tournoieraient sur l’herbe et
+                    recommenceraient à le harceler. <milestone unit="sent"/>Mais pour quelques heures, il restait enfin seul
+                    sous la nuit.</p>
+                <p><milestone unit="sent"/>La nuit et son silence. <milestone unit="sent"/>Et son ciel étoilé. Et ses chênes.</p>
+                <p><milestone unit="sent"/>L’unique endroit où le sommeil venait le visiter. <milestone unit="sent"/>Dans l’abri de feuillages qu’il
+                    s’était fabriqué, il l’attendait impatiemment, tout <pb n="118" xml:id="p118"
+                    />entier à la même pensée : peut-être retrouverait-il Eurydice dans des songes
+                    dont il savait désormais par quelles mains d’enfants ils étaient apportés.</p>
+                <p><milestone unit="sent"/>À l’approche de l’hiver, la violence d’un rêve le laissa au petit matin
+                    bouleversé.</p>
+                <p><milestone unit="sent"/>Les Cicones s’avançaient vers lui, écume à la bouche, yeux révulsés. <milestone unit="sent"/>Il les
+                    reconnaissait à leurs visages, à leurs thyrses. <milestone unit="sent"/>Mais leurs bras étaient chargés
+                    d’instruments qu’il ne leur avait jamais vus : pilons, broches, sarcloirs,
+                    doubles haches. <milestone unit="sent"/>Et elles les brandissaient en sa direction. <milestone unit="sent"/>De vraies furies ! <milestone unit="sent"/>Rien ne semblait suffisant à leur colère pour le punir : <milestone unit="sent"/>« Pas le moindre regard
+                    pour nous ! <milestone unit="sent"/>Dans tes chants, le seul nom d’Eurydice… »</p>
+                <p><milestone unit="sent"/>Les nuits suivantes, des présences nouvelles apparurent. <milestone unit="sent"/>« Ta lyre, transportée
+                    au ciel, deviendra une constellation », promettait une Cicone d’une voix privée
+                    de toute jalousie. <milestone unit="sent"/>Et sa compagne renchérissait : <milestone unit="sent"/>« Tu seras honoré<pb n="119"
+                        xml:id="p119"/> jusqu’à Lesbos. <milestone unit="sent"/>L’île deviendra célèbre grâce à toi. » <milestone unit="sent"/>Non
+                    loin d’elles, les autres revenaient à la charge, équipées de leurs outils
+                    aiguisés, capables en un rien de temps de le déchiqueter en lambeaux ou de faire
+                    voler sa tête à l’autre bout de la clairière. <milestone unit="sent"/>Mais, une nuit, celles d’après et
+                    d’après encore, Orphée devina enfin derrière elles la présence apaisante
+                    d’Eurydice. <milestone unit="sent"/>Elle l’appelait, sans reproche, agitant seulement avec douceur la
+                    main droite et le bracelet de feuilles à son poignet. <milestone unit="sent"/>Il aurait tout donné pour
+                    prolonger son rêve et être sûr qu’elle entendait sa promesse : <milestone unit="sent"/>« Jamais l’eau du
+                    Pénée ne remontera vers sa source. Jamais… »</p>
+                <p><milestone unit="sent"/>Au petit matin, il s’éveillait sans peur.</p>
+                <p><milestone unit="sent"/>Quelle angoisse aurait-il pu ressentir : il ne retirait de ses cauchemars que
+                    l’étrange douceur de la perspective de rejoindre Eurydice. <milestone unit="sent"/>Il n’aurait plus
+                    besoin cette fois de supplier Charon pour embarquer sur le Styx. <milestone unit="sent"/>Il attendrait
+                    dans la longue file des âmes. <milestone unit="sent"/>Mais pour <pb n="120" xml:id="p120"/>une traversée
+                    sans retour. <milestone unit="sent"/>Il serait mort. Et Hermès lui tendrait la main comme à n’importe
+                    quel voyageur de l’au-delà afin de l’aider à franchir la vase du marais. <milestone unit="sent"/>Avec
+                    plus de sollicitude peut-être, en souvenir de leur expédition précédente.</p>
+                <p><milestone unit="sent"/>Des rêves annonciateurs de sa mort prochaine ? <milestone unit="sent"/>Ou des rêves trompeurs ? <milestone unit="sent"/>La
+                    question l’assaillait dès son réveil. <milestone unit="sent"/>Elle revenait parfois sous d’autres
+                    formes. <milestone unit="sent"/>« Des songes vrais, sortis par la porte d’ivoire ? apportés par le petit
+                    qui a cligné de l’œil à mon passage près de l’orme ? »</p>
+                <p><milestone unit="sent"/>Orphée comprit vite qu’il n’aurait la réponse qu’en laissant la suite se
+                    dérouler.</p>
+                <p><milestone unit="sent"/>Et, quand le premier jour de l’hiver se leva dans le ciel blanc de Pimpleia,
+                    quand Orphée vit déferler sur la rive la troupe des femmes et briller dans leurs
+                    mains les tranchants des sarcloirs, des haches, il les attendit en souriant.</p>
+                <p><milestone unit="sent"/>Il était prêt.</p>
+                <p><pb n="121" xml:id="p121"/><milestone unit="sent"/>Au fur et à mesure qu’elles marchaient vers lui, les
+                    arbres se chargèrent d’une humidité poisseuse, le sol ne fut plus que boue. <milestone unit="sent"/>La
+                    lumière se voila, en prenant une couleur grise indéfinissable. <milestone unit="sent"/>« Comme dans la
+                    maison des morts » se murmura à lui-même Orphée. <milestone unit="sent"/>Dans ses yeux se bousculèrent
+                    les images des plages des Sirènes, les visages de Cerbère et de Charon, le
+                    sourire de Perséphone assise dans son champ d’asphodèles et la silhouette
+                    d’Eurydice sortant du bois sombre, un bras tendu vers lui.</p>
+                <p><milestone unit="sent"/>« Les visions en accéléré qui précèdent l’instant de la mort, pensa-t-il très
+                    vite, sans arriver pourtant à faire taire la question qui grésillait sourdement
+                    dans ses tempes. <milestone unit="sent"/>Au pays sans soleil, y avait-il vraiment une région de lumière
+                    et de paix ? <milestone unit="sent"/>Est-ce que deux ombres immatérielles pouvaient encore s’y embrasser
+                    et s’y aimer ?</p>
+            </div>
+        </body>
+
+    </text>
+</TEI>

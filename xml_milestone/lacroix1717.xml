@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée</title>
+                <title type="sub">Cantate avec Symphonie</title>
+                <author>François de Lacroix</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k53907011/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>François de Lacroix</author> / <title>Orphée. Cantate avec
+                        Symphonie</title> / Toulouse / Bibliothèque municipale de Toulouse / 1717.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée. Cantate avec Symphonie</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Bibliothèque municipale de Toulouse</publisher>
+                        <pubPlace>Toulouse</pubPlace>
+                        <date when="1717"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>opéra</genre>
+                <structure>lacroix1717</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1717">1717</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>François de Lacroix</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée</titlePart>
+                    <titlePart type="sub">Cantate avec Symphonie</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+
+
+            <label>Récitatif</label>
+            <l><milestone unit="sent"/><pb n="150" xml:id="p150"/>Ô Ciel, disoit Orphée, ô disgrace fatale</l>
+            <l>Vous mourez Euridice, hélas.</l>
+            <l><milestone unit="sent"/>Attendez, je descend sur la rive Infernale</l>
+            <l>Que ma Lyre en ce jour ne m’abandonne pas.</l>
+            <l><pb n="151" xml:id="p151"/><milestone unit="sent"/>Je vois desja le terrible rivage</l>
+            <l>Où Mercure confond les bergers et les Roys.</l>
+            <l><milestone unit="sent"/>Caron est attendry pour la premiere fois</l>
+            <l>Il m’offre dans sa barque un facile passage.</l>
+            <l><milestone unit="sent"/>Et Cerber attentif dans son antre sauvage</l>
+            <l>Du Monarque des <pb n="152" xml:id="p152"/>morts trahit les dures Loix.</l>
+            <l><milestone unit="sent"/>Je voy Pluton. Amour viens animer ma voix</l>
+            <label>Air</label>
+            <l><pb n="153" xml:id="p153"/>Dieu redouté qui regnez sur les ombres,</l>
+            <l>Terminez mon funeste sort.</l>
+            <l><pb n="154" xml:id="p154"/><milestone unit="sent"/>Je viens chercher dans vos demeures sombres</l>
+            <l>Ou mon Euridice ou la mort.</l>
+            <label>Récitatif</label>
+            <l><pb n="155" xml:id="p155"/>Orphée à ces accords voit l’Enfer enchanté,</l>
+            <l>Mégere en l’escoutant suspend sa cruauté,</l>
+            <l>Pluton cesse d’estre Inflexible</l>
+            <l>« Qu’Eurydice, dit-il, quitte avec toy ces lieux</l>
+            <l>Mais attend pour la voir qu’elle ait revuë <pb n="156" xml:id="p156"/>les Cieux.</l>
+            <l><milestone unit="sent"/>C’est la loix que j’impose à ton cœur trop sensible,</l>
+            <l>Un seul de tes regards peut la rendre à la mort.</l>
+            <l><milestone unit="sent"/>Fils d’Apollon, dispose de ton sort. »</l>
+            <label>Air</label>
+            <l><pb n="157" xml:id="p157"/>Peut-on refuser la victoire</l>
+            <l>Aux doux efforts du tendre amour ?</l>
+            <l><milestone unit="sent"/>Il porte ses feux et sa gloire</l>
+            <l>Jusqu’au fond du sombre séjour.</l>
+            <l><pb n="158" xml:id="p158"/><milestone unit="sent"/>On y respecte encor ces armes,</l>
+            <l>Les ombres poussent des soupirs,</l>
+            <l>Et le souvenir de leurs charmes</l>
+            <l>Fait aux Enfers tous leurs plaisirs.</l>
+            <label>Récitatif</label>
+            <l><pb n="160" xml:id="p160"/>Desja loin des forets du paisible Élisée</l>
+            <l>Euridice voloit sur les traces d’Orphée.</l>
+            <l><milestone unit="sent"/>Mais l’imprudent amour est prest à se trahir,</l>
+            <l>Orphée impatient veut revoir ce qu’il ayme,</l>
+            <l>Tendre Époux, arrestez, vous vous perdrez vous-mesme !</l>
+            <l><milestone unit="sent"/>Plustost obeir à la Loy de Pluton qu’à vostre ardeur extresme !</l>
+            <l><milestone unit="sent"/>C’en est <pb n="161" xml:id="p161"/>fait, Euridice échappe à vos desirs,</l>
+            <l>La Parque dans vos yeux contre elle prend des armes.</l>
+            <l><milestone unit="sent"/>Dieux ! en la regardant vous effacez les charmes</l>
+            <l>Et l’Enfer pour jamais est sourd à vous soupirs.</l>
+            <label>Air</label>
+            <l>Ah ! <milestone unit="sent"/>Doit-on d’un <pb n="162" xml:id="p162"/>feu trop tendre</l>
+            <l>Escouter tousjours l’ardeur ?</l>
+            <l><milestone unit="sent"/>Le plaisir qu’on veut surprendre</l>
+            <l>Trompe souvent notre cœur.</l>
+            <l><milestone unit="sent"/>Ah ! doit-on d’un feu trop <pb n="163" xml:id="p163"/>tendre</l>
+            <l>Escouter tousjours l’ardeur ?</l>
+            <l><milestone unit="sent"/>Lorsqu’on ne sçait pas l’attendre,</l>
+            <l>On perd souvent son bonheur.</l>
+        </body>
+
+    </text>
+</TEI>

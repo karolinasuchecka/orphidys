@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le grand Olympe des histoires poétiques du prince de poésie Ovide
+                    Naso en sa Métamorphose nouvellement</title>
+                <title type="sub">Œuvre authentique et de hault artifice, pleine de honneste
+                    récréation, traduyct de latin en françoys et imprimé</title>
+                <author>Ovide</author>
+                <editor>Anonyme</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/btv1b8600297j</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Ovide</author> / <title>Le grand Olympe des histoires poétiques du
+                        prince de poésie Ovide Naso en sa Métamorphose, oeuvre authentique et de
+                        hault artifice, pleine de honneste récréation , traduyct de latin en
+                        françoys et imprimé nouvellement</title> / Lyon / R. Morin / 1532 /
+                    fs. 81r-83r, fs. 2r-3r.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Le grand Olympe des histoires poétiques du prince de poésie Ovide
+                            Naso en sa Métamorphose, oeuvre authentique et de hault artifice, pleine
+                            de honneste récréation , traduyct de latin en françoys et imprimé
+                            nouvellement</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>R. Morin</publisher>
+                        <pubPlace>Lyon</pubPlace>
+                        <date when="1532"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>morin1532</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1532">1532</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Ovide</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Le grand Olympe des histoires poétiques du prince de
+                        poésie Ovide Naso en sa Métamorphose</titlePart>
+                    <titlePart type="sub">Œuvre authentique et de hault artifice, pleine de honneste
+                        récréation, traduyct de latin en françoys et imprimé
+                        nouvellement</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Anonyme</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <head>Le dixiesme livre du grant Olympe des histoires Poetiques</head>
+                <div>
+                    <head>Le mariage de Orpheus avec Eurydice lequel en chantant la tira des
+                        enfers</head>
+                    <p><pb n="81r"/><milestone unit="sent"/>Aux nopces de Iphis et Ianthe, Le dieux Hymen fut assis avecques
+                        plusieurs autres dieux et deesses. <milestone unit="sent"/>Et quant Hymen se partit, par l’air s’en
+                        volla grant erre en Cyconie, ou semons estoit de par Orpheus qui devoit
+                        espouser Eurydice. <milestone unit="sent"/>A ces nopces vint sans bon heur apporter et y donna signe
+                        de douleur advenir, et de male fortune comme je vous diray. <milestone unit="sent"/>Au printemps
+                        s’en alloit l’espouse nouvelle esbatant ung jour nudz pieds en ung pre plain
+                        d’herbes verdoyans et illec ung pasteur bel et gaillart nommé Aristeus veit
+                        la belle, laquelle il requist tantost de son amour. <milestone unit="sent"/>Mais icelle a luy ne se
+                        voulut accorder ne habandonner pour priere ne requeste qui luy sceust faire. <milestone unit="sent"/>Car trop et de bon cueur aymoit son nouvel espoux Orpheus <pb n="81v"/>ains
+                        pour pour de luy eschapper se mist a la fuyte et celluy la suyvit, mais
+                        ainsi que la belle Eurydice fuyoit elle marcha dessus ung serpent venimeux
+                        qui la mordit environ le talon dont elle mourut. <milestone unit="sent"/>Quant Orpheus sceut que par
+                        soubdaine deffortune avoit perdu sa femme et espouse, il se complaignit et
+                        se doulousa tant que trop long et trop ennuiable seroit a le racompter. <milestone unit="sent"/>Et
+                        quant par le monde l’eust longuement plouree en enfer voulut descendre et
+                        aller veoir s’il pourroir ravoir et recouvrer s’amye et se a ce pourroit
+                        mouvoir les infernaulx. <milestone unit="sent"/>Il renoit sa harpe entre ses bras et en touchoit les
+                        cordes : et de la bouche se print à chanter telle chanson.</p>
+                </div>
+                <div>
+                    <head>La chanson de Orpheus aux enfers</head>
+                    <l><milestone unit="sent"/>Dieulx infernaulx en tenebres regnans</l>
+                    <l>En la chartre plaine d’obscurité</l>
+                    <l>Où vous estes tout le monde tenans</l>
+                    <l>À ce submise est toute humanité</l>
+                    <l>Pour essaier vostre gouvernement</l>
+                    <l>Pas en ce lieu ne me suis transporté</l>
+                    <l>Eurydice demande seulement.</l>
+                    <l><milestone unit="sent"/>Quand le serpent tellement la blessa</l>
+                    <l>Qu’elle mourut et vint avecques vous</l>
+                    <l>Si asprement mon cueur se courroucea</l>
+                    <l>Que j’en souffry plus que mortel courroux.</l>
+                    <l><milestone unit="sent"/>Ma femme estoit, j’estoie son espoux</l>
+                    <l>Je viens icy succumbé de tourment</l>
+                    <l>Pour vous offrir une requeste à tous</l>
+                    <l>Eurydice demande seulement.</l>
+                    <l><milestone unit="sent"/>Jadis Pluto Proserpine ravit</l>
+                    <l>Par feu d’amours, et ceans la bouta</l>
+                    <l>Mais toutesfois quant voz tormens y vit</l>
+                    <l>Point esbahy ne suis s’elle doubta,</l>
+                    <l>Et je suis seur que ceste grande doubte a</l>
+                    <l><pb n="82r"/>Mon espouse, si vous pry doulcement</l>
+                    <l>Escoutez moy, se onc homme on escouta,</l>
+                    <l>Eurydice demande seulement.</l>
+                    <l><milestone unit="sent"/>Quant maintenant vous me la baillerez</l>
+                    <l>Pour demener avec moy train d’amours</l>
+                    <l>Rien n’y perdrez puis que vous la raurez</l>
+                    <l>Finablement, mais qu’elle ait faict son cours</l>
+                    <l>Car tous humains en la fin de leurs jours</l>
+                    <l>Viennent ceans à vostre jugement.</l>
+                    <l><milestone unit="sent"/>Mais je vous pry que me donnez secours,</l>
+                    <l>Eurydice demande seulement.</l>
+                    <p><milestone unit="sent"/>Orpheus devant l’infernal manoir, si doulcement chanta que pour la
+                        melodieuseté du son de sa voix ensemble de sa harpe, les ames tristes qui la
+                        estoient en oublierent leurs peines. <milestone unit="sent"/>Tantalus en oublia sa soif, Ixion qui
+                        pres de luy estoit en laissa la roe reposer. <milestone unit="sent"/>Sisyphus mist ius la roche qui
+                        le travailloit. <milestone unit="sent"/>Et Ticyus laissa à donner aux voultours son gisier à
+                        rongier, et les Belidiennes laissans la fontaine à espuiser mirent ius leurs
+                        cribles. <milestone unit="sent"/>Et se veritable est la renommee qui ce me faict à croire et
+                        entendre, les Eumenidiennes qui oyoient la doulceur de la harpe ploroient de
+                        Orpheus, ce que oncques paravant n’estoit advenu ne peu advenir. <milestone unit="sent"/>La royne
+                        Proserpine ne se povoit abstenir de larmoyer ; le roy d’enfer ne pouvoit par
+                        nulle maniere escondire à Orpheus chose qu’ilz luy demandast. <milestone unit="sent"/>Si fut
+                        Eurydice appellee qui estoit en la valee umbreuse avec celles qui venues y
+                        estoient nouvellement. <milestone unit="sent"/>Lors apparut Euridice laquelle alloit clochant par la
+                        playe qu’elle avoit receu ou pied par le serpent. <milestone unit="sent"/>Moult fut Orpheus joyeulx
+                        quant venir la vit. <milestone unit="sent"/>Elle luy fut rendue par tel convenant que il ne se
+                        retornast ne regardast derriere luy jusques à ce qu’elle fust totalement
+                        hors de tormens infernaulx et qu’il allast devant et elle le suyvroit
+                        derriere ou autrement jamais n’en ystroit. <milestone unit="sent"/>Lors par ung sentier moult roide
+                        et estroit et plain de tenebreuse obscurité et forvoyable chemin l’ung
+                        devant, <pb n="82v"/>et l’autre apres se mirent en la voye Orpheus et
+                        s’amye. <milestone unit="sent"/>Tant cheminerent que jà estoient pres tout dehors de pourpris
+                        infernal, quant Orpheus qui d’amour estoit espris desirant de veoir s’amye
+                        et doubtant qu’elle ne le suyvist se retourna pour elle regarder. <milestone unit="sent"/>Et
+                        incontinent elle s’esvanouyst de ses yeulx et s’en retourna en enfer. <milestone unit="sent"/>Orpheus tendit ses mains qui retenir la cuida, mais riens ne print fors
+                        vent. <milestone unit="sent"/>Et ainsi se partit Eurydice de son amy et mourut de seconde mort, mais
+                        de luy ne se peut plaindre, fors de trop aymer. <milestone unit="sent"/>Le dernier salul luy rendit
+                        que à peine l’entendit Orpheus. <milestone unit="sent"/>Forment se plaignoit de la seconde mort se
+                        s’amye, et voulut retourner pour trouver la mort, mais la porte trouva
+                        fermee. <milestone unit="sent"/>Et le portier qui la gardoit luy retarda son chemin et si luy dist
+                        que jamais recouvrer ne la pourroit. <milestone unit="sent"/>Quant Orpheus vit que plus entrer n’y
+                        pourroit, sur la rive du fleuve infernal fut sept jours plourant pour la
+                        seconde mort de s’amye et pour la perte d’icelle, sans manger et sans boyre
+                        vivoit luy sostenant de son dueil. <milestone unit="sent"/>Moult tenoit les dieux d’enfer mauvais et
+                        felons qui s’amye ainsi detenoient. <milestone unit="sent"/>Puis s’en retourna Orpheus et trois ans
+                        se tint sans femme et sans chamberiere, fuyant toute amour femenine, et
+                        mettant toutes choses en refus et en desdaing. <milestone unit="sent"/>Ce non obstant, plusieurs
+                        damoiselles l’aymerent qui en luy peu d’amour conquirent. <milestone unit="sent"/>Car jouyr n’en
+                        peurent. <milestone unit="sent"/>Il ne les daignoit ouyr dont moult de luy se plaignoient.</p>
+                </div>
+                <div>
+                    <head>La deploration du Poete Orpheus pour avoir perdue s’amye</head>
+                    <p><milestone unit="sent"/>Dessus ung terte en ung champ plain d’herbe verdoyant ou point d’umbre
+                        n’avoit s’assist Orpheus puis print sa harpe de laquelle il fist les cordes
+                        resonner par grande armonie. <milestone unit="sent"/>Lors vindrent environ luy pour le umbroier
+                        arbres de diverses manieres qui pourprindrent la place quant la doulceur
+                        ouyrent du melodieux son. <milestone unit="sent"/>À cest <pb n="83r"/>assemblement vindrent arbres
+                        portans fruitz de diverses sortes come amandiers, lauries, nesfliers,
+                        corneilliers, et meuries, chesnes, fresnes, esrables, peschiers, genestries,
+                        cerisies, pruniers et aultres arbres perdurables de verdeur. <milestone unit="sent"/>Si y vindrent
+                        figuiers : sapins et les arbres qui le basme portent. <milestone unit="sent"/>Encore y vindrent
+                        oliviers, aubespins et plusieurs aultres arbres portant noix. <milestone unit="sent"/>Le palme et le
+                        pin y furent. <milestone unit="sent"/>Cybelle y amena Athys qui fut mué en pin et vint aussi avec
+                        luy le cyprès qui jadis avoit esté enfant et nouvellement estoit mué en ung
+                        arbre, moult l’aymoit Phebus tandis qu’il estoit vif.</p>
+                    <p><milestone unit="sent"/>Entour le dessusdit poete Orpheus s’assemblerent moult grant tourbe et
+                        multitude d’arbres. <milestone unit="sent"/>Il se seoit ou millieu de la plaine come dit est ou
+                        plusieurs bestes sauvaiges et oyseaulx de divers plumages se assemblerent ou
+                        il attrempoit et accordoit les cordes da sa harpe dont il sourdoit
+                        delectable son.</p>
+                </div>
+            </div>
+            <div>
+                <head>Le onziesme livre du grant Olympe des histoires Poetiques</head>
+                <p><pb n="2r"/><milestone unit="sent"/>Pendant que le poete de Thrace Orpheus par le doux chant de son harpe
+                    armonieuse delectoit les arbres, les bestes et les pierres, vecy venir en grand
+                    multitude les femmes de Thrace qui faisoient les bacchanalles, et quant eurent
+                    commencé à veoir Orpheus, une d’elles toute eschevellee va dire : <milestone unit="sent"/>« Vecy le
+                    despriseur des femmes ». <milestone unit="sent"/>Et en ce disant lança ung dart, mais pas ne le bleça
+                    car le dart fut retenu par le son, l’autre luy rua en lieu de dart une grande
+                    pierre. <milestone unit="sent"/>Mais par la doulce melodie du chant cheut celle pierre devant les piedz
+                    Orpheus ainsi come pour se humilier et mercy prier. <milestone unit="sent"/>Adonc doubla la forcenerie
+                    des faulces femmes plaines de ire, quant elles virent les pierres ressortir par
+                    la doulceur de son instrument. <milestone unit="sent"/>Lors firent entre elles crieries et noises et
+                    sonnerent buccines pour amortir et amoindrir le son de la melodie de son harpe,
+                    affin que riens ne le ouyst, qui s’en peust esmouvoir tant que on ne eust peu
+                    ouyr tonner. <pb n="2v"/><milestone unit="sent"/>Puis luy getterent espessement pierres qui premieres du
+                    sang du Poete rougirent, car de riens ne le deporterent puis que le doulx chant
+                    de sa harpe plus ne ouyrent, ains luy firent du pis qu’elles peurent, si comme
+                    celles qui le hayoient mortellement, et qui avoient les cueurs plains d’ire et
+                    d’enuie. <milestone unit="sent"/>Oyseaulx, serpens, et saulvaigine laisserent Orpheus seul qui nagueres
+                    environ luy avoit attraict et assemblé. <milestone unit="sent"/>Celles qui grever le vouloient le
+                    rassaillirent et abbatirent. <milestone unit="sent"/>Et sans mercy les desvoyees retournerent
+                    legierement vers le Poete qui tendoit les bras en criant mercy se aulcun fust
+                    qui le ouyst, mais pour rien qu’il dist il ne pouvoir esmouvoir les folles à ce
+                    que pitié ne mercy eussent de luy, ains le meuldrirent et tuerent à leur grand
+                    reproche. <milestone unit="sent"/>Haa dieu par celle vouche ouye, des pierres entendue, des cueurs des
+                    bestes yssit l’ame du corps. <milestone unit="sent"/>Pour luy pleurerent les Nymphes qui le
+                    congoissoient. <milestone unit="sent"/>Aussi oyseaux desplumez de leurs plumes, et les arbres de leurs
+                    feuilles firent signe de dueil pour l’amour du poete. <milestone unit="sent"/>Et les fleuves s’en
+                    douloient, et tant pleurerent qu’ilz en tarirent et seicherent en plusieurs
+                    lieux. <milestone unit="sent"/>Ses membres furent en divers lieux espars. <milestone unit="sent"/>Hebrus le fleuve de Thrace
+                    receut sa teste et sa langue, qui gectoit ung pleurant plainct, et la mer
+                    donnoit la murmure en elle plaignant d’icelle injure, les rivieres du fleuve
+                    resonnerent par leurs respons. <milestone unit="sent"/>Le chief et la lire floterent tant qu’en parfonde
+                    mer parvindrent. <milestone unit="sent"/>Dessus l’herbe yssit de la riviere une merveilleuse serpente,
+                    qui trouva le chief du divin poete gisant à la rive. <milestone unit="sent"/>Si s’assist dessus la
+                    gueulle bee et manger le cuyda, mais Phebus sans demeurance voulut le chief de
+                    son filz rescourre. <milestone unit="sent"/>Et ainsi que la serpente le voulut devorer, Phebus la mua en
+                    dure pierre de telle forme et de telle laideur comme par devant la muance
+                    estoit. <milestone unit="sent"/>L’ame de Orpheus descendit en Enfer sans demeurance où il vit la vallee
+                    tenebreuse et les regnes que paravant avoit veuz. <milestone unit="sent"/>Bien recongneut les dieux et
+                    la piteuse compaignie qui la estoit, et si y trouva son espouse qu’il avoit <pb
+                        n="3r"/>desiree longuement, si l’embrassa amiablement, et la regarda seur et
+                    sans doubte de condition griefve.</p>
+            </div>
+        </body>
+
+    </text>
+</TEI>

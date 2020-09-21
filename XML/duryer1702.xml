@@ -2,158 +2,503 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title type="main">Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures. Pas mal de graphies anciennes.</title>
-            <author>Ovide</author>
-            <editor>Pierre du Ryer</editor>
-        </titleStmt>
-        <editionStmt>
-            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-            <respStmt>
-                <name>Karolina Suchecka</name>
-                <resp>Chargé de l'édition</resp>
-            </respStmt>
-            <respStmt>
-                <name>Nathalie Gasiglia</name>
-                <resp>Co-tutrice de thèse</resp>
-            </respStmt>
-            <respStmt>
-                <name>Karl Zieger</name>
-                <resp>Co-tuteur de thèse</resp>
-            </respStmt>
-        </editionStmt>
-        <publicationStmt>
-            <publisher>Karolina Suchecka</publisher>
-            <publisher>ALITHILA (Université Lille III)</publisher>
-            <date when="2019"/>
-            <availability status="restricted">
-                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-                </licence>
-            </availability>
-            <idno>https://gallica.bnf.fr/ark:/12148/bpt6k15151988/</idno>
-        </publicationStmt>
-        <sourceDesc>
-            <bibl><author>Ovide</author> / <title>Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures. Pas mal de graphies anciennes.</title> / Amsterdam / P. et J. Blaev, Janssons à Waesberge, Boome, et Goethals. / 1702 / p. 307-312, p. 343-345.</bibl> 
-            <biblFull>
-                <titleStmt>
-                    <title>Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures. Pas mal de graphies anciennes.</title>
-                </titleStmt>
-                <publicationStmt>
-                    <publisher>P. et J. Blaev, Janssons à Waesberge, Boome, et Goethals.</publisher>
-                    <pubPlace>Amsterdam</pubPlace>
-                    <date when="1702"/>
-                </publicationStmt>
-            </biblFull>
-            <genre>prose</genre>
-            <structure>duryer1702</structure>
-        </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-        <creation>
-            <date when="1702">1702</date>
-        </creation>
-        <language>
-            <language>FR</language>
-        </language>
-        <textClass>
-            <keywords>
-                <list>
-                    <item>traduction</item>
-                </list>
-            </keywords>
-        </textClass>
-    </profileDesc>
-</teiHeader><text><front><titlePage>
-        <docAuthor>Ovide</docAuthor>
-        <docTitle>
-          <titlePart type="main">Les Métamorphoses d'Ovide en latin et françois, divisées en XV. livres. Avec de nouvelles Explications Historiques, Morales et Politiques sur toutes les Fables, chacune selon son sujet. Edition nouvelle, enrichie de très-belles figures. Pas mal de graphies anciennes.</titlePart>
-        </docTitle>
-      </titlePage></front>
-        
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Métamorphoses d’Ovide en latin et françois, divisées en XV.
+                    livres</title>
+                <title type="sub"> Avec de nouvelles Explications Historiques, Morales et Politiques
+                    sur toutes les Fables, chacune selon son sujet. Édition nouvelle, enrichie de
+                    très-belles figures</title>
+                <author>Ovide</author>
+                <editor>Pierre du Ryer</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k15151988/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Ovide</author> / <title>Les Métamorphoses d’Ovide en latin et
+                        françois, divisées en XV. livres. Avec de nouvelles Explications
+                        Historiques, Morales et Politiques sur toutes les Fables, chacune selon son
+                        sujet. Édition nouvelle, enrichie de très-belles figures</title> / Pierre du
+                    Ryer (trad.) / Amsterdam / P. et J. Blaev, Janssons à Waesberge, Boome, et
+                    Goethals / 1702 / p. 307-312, p. 343-345.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les Métamorphoses d’Ovide en latin et françois, divisées en XV.
+                            livres. Avec de nouvelles Explications Historiques, Morales et
+                            Politiques sur toutes les Fables, chacune selon son sujet. Édition
+                            nouvelle, enrichie de très-belles figures</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>P. et J. Blaev, Janssons à Waesberge, Boome, et
+                            Goethals.</publisher>
+                        <pubPlace>Amsterdam</pubPlace>
+                        <date when="1702"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>duryer1702</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1702">1702</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Ovide</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Métamorphoses d’Ovide en latin et françois, divisées
+                        en XV. livres</titlePart>
+                    <titlePart type="sub">Avec de nouvelles Explications Historiques, Morales et
+                        Politiques sur toutes les Fables, chacune selon son sujet. Édition nouvelle,
+                        enrichie de très-belles figures</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Pierre du Ryer</docEdition>
+            </titlePage>
+        </front>
 
-    <body>
-      <div>
-        <head>Livre dixième</head>
-        <div>
-          <head>Fable premiere</head>
-          <argument>
-            <p>Eurydice femme d’Orphée comme elle couroit sur l’herbe avec d’autres Nymphes, meurt de la morsure d’un Serpent qui l’avoit mordu au talon.</p>
-          </argument>
-          <p><pb n="307" xml:id="p307"/>De là Hymen le Dieu des noces, vétu d’une robe de jaune-doré, s’éleva en l’air pour aller en Thrace, où l’appelloit la voix d’Orphée pour assister à son mariage. Veritablement il s’y trouva ; mais il n’y dit point les paroles qu’il a de coûtume de prononcer dans les mariages heureux, il n’y montra pas un visage riant, et n’y porta point de bons presages. La torche même qu’il tenoit, étoit fait d’une cire qui se fondoit comme en larmes ; elle ne faisoit que petiller, et au lieu d’une belle flamme, elle ne jettoit que de la fumée. En vain il secoüa plusieurs <pb n="308" xml:id="p308"/> fois, elle ne put jamais s’allumer ; Toutes choses menaçoient Orphée, et en effet le succez fut aussi triste que le presage. Car comme la nouvelle mariée couroit sur l’herbe avec une troupe de Nymphes, elle tomba morte de la morsure d’un serpent, qui l’avoit morduë au talon.</p>
-        </div>
-        <div>
-          <head>Fable deuxième</head>
-          <argument>
-            <p>Orphée descend aux Enfers pour en retirer sa femme, et l’obtint de Pluton à de certaines conditions. Mais n’aiant pû les entretenir, il est contraint de revenir seul au monde, et de laisser sa femme aux Enfers. Ovide prend ici l’occasion de conter la Fable d’un Berger qui fut changé en rocher à l’aspect de Cerbere, et celle d’Olene, et de Lethée qui furent aussi convertis en Pierres.</p>
-          </argument>
-          <p><pb n="309" xml:id="p309"/>Après qu’Orphée se fût long-tems affligé de cette perte, et que par ses pleurs et par ses plaintes, il eut tâche d’émouvoir les Divinitez celestes, enfin voiant que le Ciel ne l’écoutoit point, il implora à son secours les divinitez infernales, et eut assez de hardiesse pour descendre aux Enfers. Ainsi aiant traversé tout cét Empire, qui n’est peuplé que de fantômes, il se rendit devant le trône de Pluton et de Proserpine, à qui sa voix et sa Lyre firent entendre ces plaintes. Ô puissantes Divinitez de ce grand et vaste monde, qui s’étend par dessous la terre, et où descendent tous ceux qui naissent pour être éternellement assujettis à vôtre Empire, si vous me permettre de parler, et de vous dire des choses vrayes, je ne suis point venu en ces lieux par une vaine curiosité, où par une ambition temeraire. Je ne suis point venu ici pour aller conter au monde, que j’ai eu la satisfaction d’avoir visité l’Enfer, et de triompher de Cerbere. Eurydice qui fut ma femme, et qu’un serpent a fait mourir par une picqueure venimeuse <pb n="310" xml:id="p310"/>est le sujet de mon voiage. J’ai résisté aussi long tems que mes forces l’ont pû permettre à la violence de ma douleur ; j’ai voulu la pouvoir souffrir, et je ne nierai pas que j’ai tenté de la souffrir, mais l’amour a été le maître, et s’est rendu victorieux de ma force et de ma constance. Ce Dieu est assez connu sur la terre, je croi même qu’on le connoît dans les Enfers : Et si l’Antiquité ne nous trompe point, l’amour vous a unis ensemble. Je viens donc ici vous prier au nom de l’amour que vous ressentez, et par ces lieux menaçans, et par ce cahos effroiable, et par le silence de ce vaste Empire, de rendre la vie à Eurydice qui l’a perduë avant tems. Il n’y a rien qui ne vous soit dû de toutes les choses qui naissent. Nous descendons tous ici comme ne une demeure commune, les uns plutôt, les autres plus tard ; nous faisons en naissant le premier pas qui nous y mene, c’est nôtre derniere retraite, et vous possedez un Empire qui embrasse tout le genre humain. Quand Eurydice aura donc vêcu le tems qu’elle devoit vivre, elle sera encore à vous, vous ne la perdrez pas pour me la rendre, je ne veux pas vous ôter ce bien, je n’en demande que l’usage. Que si les destins ne veulent point faire grace à Eurydice, je suis resolu de ne point retourner au monde ; et si vous la voulez retenir, vous nous retiendrez tous deux ensemble. Ces paroles prononcées avec toute la douleur que l’on se peut imaginer, sa voix qu’il marioit avec sa lyre, enfin ses plaintes furent si sensibles, que les ombres mêmes qui n’ont point de corps, ne laisserent pas de trouver des larmes pour pleurer son avanture. Tantale fut si ravi de l’entendre, qu’il ne songea plus à sa soif, ni à prendre l’eau qui le fuit, à mesure qu’il en approche. La rouë d’Ixion s’arrêta. Ces oiseaux affamez qui se nourrissent du cœur de Titye, comme charmez de cette harmonie, lui donnerent quelque relâche. Les Belides qui travaillent sans cesse à remplir des vaisseaux percez, trouverent alors quelque repos : Et pour mieux oüir chanter Orphée, Sisyphe s’assit sur la pierre qu’il roule éternellement. On dit même que les furies vaincuës par la voix d’Orphée, jetterent en cette occasion les premieres larmes qui sortirent jamais de leurs yeux. Enfin ni Proserpine ni Pluton ne purent résister à tant de charmes, ni refuser à Orphée ce que ses plaintes lui demandoient. En même temps ils firent appeller Eurydice qui se promenoit avec les ombres nouvellement descenduës aux Enfers, boitant du pied dont elle avoit été morduë ; et la rendirent à Orphée, à condition qu’il ne se retourneroit point pour la voir qu’il ne fût sorti des Enfers, et qu’autrement la faveur qu’il lui faisoit, seroit vaine, et sans effet. Il reprit donc le chemin du monde, et monta par un lieu obscur, et rempli d’épaisses fumées. Mais lors qu’il approchoit déjà de la terre, comme il craignoit qu’Eurydice ne s’égarât parmi ces tenebres, et qu’il brûloit d’envie de la voir, il voulut se retourner, mais Eurydice s’évanoüit, et le malheureux Orphée n’embrassa que de l’air en pensant embrasser sa femme.</p>
-          <p><pb n="311" xml:id="p311"/>Cependant Eurydice qui mourut alors pour la seconde fois par la faute de son mari, ne s’en plaignit point en mourant ; et dequoi eût-elle pû se plaindre si ce n’étoit d’être trop aimée ? Elle lui dit seulement le dernier adieu d’une voix foible, et qu’il ne pût presque entendre, et retomba dans le gouffre, d’où il venoit de la retirer.</p>
-          <p>Orphée ne demeura pas moins étonné de cette seconde mort de sa femme, que ce mal-heureux Berer qui vit Cerbere chargé de chaînes, et que l’étonnement ne quitta oint, que la nature ne l’eût quitté ; son corps s’étant changé en rocher. Enfin il s’en fallut peu qu’il n’eût la fortune d’Olene qui voulut avoir part au crime, et à la punition de sa femme, lors que l’orgueil la transporta jusqu’à s’égales aux Déesses, par la grace et par la beauté. Car ces deux personnes qui s’aimoient, font aujourd’hui deux rochers, que soûtient le mont Ida. Le mal-heureux Orphée se desespere, il fait de nouveaux efforts pour passer dans les Enfers ; mais Charon peut-être honteux d’avoir été gagné par la voix d’un homme, ne voulut plus entendre, et lui refusa le passage.</p>
-          <p>Néanmoins Orphée demeura sept jours entiers sur le rivage de l’Acheron, et ses douleurs, et ses larmes furent sa seule nourriture. Enfin après s’être plaint de la crüauté des Dieux Infernaux, il se retira sur le mont Rhodope, et sur le mont Emus toûjours battu des Aquilons. Il y demeura trois ans, sans vouloir entendre parler de femmes, soit que son premier mariage lui eût été trop mal-heureux, sois qu’il eût promis à Eurydice de n’avoir jamais d’amour que pour elle. Il fut néanmoins aimé d’une infinité de Nymphes ; mais toutes ces Nymphes n’en receurent que des refus, et la mort d’Eurydice lui en fit haïr tout le sexe.</p>
-          <p>On dit que depuis il apprit aux peuples de Thrace à quitter les femmes pour les garçons, et qu’il fut le premier autheur d’une amour si detestable.</p>
-        </div>
-        <div resp="trad">
-          <head>Explication de la fable I. et II.</head>
-          <p>Nous sommes ici conviez d’aller aux noces d’Orphée et bien qu’elles soient assez funestes, il y a pourtant sujet d’y faire bonne chere, et d’en raporter quelque chose. Mais ne vous imaginez pas que ce soit un homme qui épouse une fille, et qu’Orphée et Eurydice soient ce qu’ils paroissent. Voici donc un mariage, mais c’est le mariage de l’ame et du corps : car Orphée représente ici le corps, et Eurydice représente l’ame. Et certes s’il n’y avoit rien dans cette Fable que ce qu’on y découvre d’abord, il y auroit sans doute sujet de loüer l’esprit du Poëte, mais il ne nous payeroit gueres bien de loüanges que nous lui donnerions. Car quel profit retirerions-nous de voir picquer Eurydice par un serpent, de la voir mourir de cette piqueure, et de voir ensuite descendre Orphée dans les Enfers ? Vous me répondrez peut-être qu’au moins cette avanture excite en nous de la pitié. Mais outre que ce n’est pas l’intention de la Fable d’exciter les passions, mais plutôt de les calmer, dequoi pourroit servir à Eurydice cette pitié que nous en aurions ? Car si la pitié est loüable, ce n’est pas, ce me semble, parce qu’elle nous rend sensibles à l’infortune des affligez, mais parce qu’elle nous oblige à leur donner du secours.</p>
-          <p>Au moins, me direz vous, l’on voit en l’un et en l’autre un bel exemple de l’amitié conjugale. Car Eurydice aima mieux se mettre au hazard de faire une mauvaise rencontre en fuyant, comme en effet elle la fit, que d’écouter un autre homme que son mari. Et Orphée eût tant de ressentiment de sa mort qu’il l’a suivit jusqu’aux Enfers, c’est à dire, ou qu’il en mourut en tristesse, ou qu’il en fut si affligé pendant tout le reste de sa vie, qu’on eut dit qu’il la perdoit à chaque instant : ce que l’on veut nous faire penser en feignant qu’il l’avoit deux fois perduë.</p>
-          <p>Cela sans doute a quelque apparence, et je ne voudrois pas combattre cette pensée. Je vous avoüe qu’Eurydice fait son devoir ; mais Orphée fait le sien, en se laissant aller jusqu’au desespoir, lors que la raison devroit modérer sa douleur ? N’auroit-il pas fait une chose, et plus glorieuse pour lui, et plus utile aux autres, de montrer de la modération, et de se soûmettre courageusement à la Loi de la Providence ? C’est par là que l’on instruit, c’est pas là que l’on sert d’exemple ; car quand je voi quelqu’un constant, je me persuade aussi-tôt que puis qu’il est homme comme moi, je puis être constant comme lui.</p>
-          <p>Disons donc qu’Eurydice représente l’ame qui a naturellement de l’amour pour le corpus, surquoi ces vers me sont venus dans l’esprit.</p>
-          <l>La vie est ce me semble une agréable flamme,</l>
-          <l>Une amour mutüelle, et du corpus et de l’ame ;</l>
-          <l>La mort est au contraire en rompant leurs accords,</l>
-          <l>Un haine sans fin et de l’ame et du corps.</l>
-          <p>Eurydice resprésente donc l’ame qui aime naturellement le corps, et qui méprise ce qui la rendroit elle-même heureuse pour le contenter, et lui faire les plaisirs, car il n’y a personne qui ne sçache que le corps ne sent rien que par le moyen de l’ame. Ainsi Eurydice fuit Aristée pour être tout à Orphée, c’est à dire que l’ame se donne entierement au corpus, et fuit son bien qui la fuit. Ce que l’on figure par Aristée qui court après elle : car Ariston d’où vient le mot d’Aristée, signifie le bien en langue grecque. Elle le fuit au reste par un endroit agréable et rempli d’herbes et de fleurs, pour montrer qu’elle s’arrête plutôt aux apparences et aux choses passageres qui sont représentées par les fleurs, qu’aux biens solides et veritables. Mais aussi elle rencontre parmi ces fleurs un serpent qui la fait mourir ; et cela fait voir qu’elle trouve souvent sa perte parmi les choses du monde qui lui plaisent, et qui la contentent. Ensuite elle descend aux Enfers, et en est retirée par le son et par l’harmonie de la Lyre, c’est à dire par la raison, qui la retire de ses fautes, et qui la ramene dans son devoir. Mais elle ne sort des Enfers qu’à condition que le corps la perdra facilement, si elle ne sçait obéir à la raison, et qu’elle ne se regle suivant les Loix.</p>
-          <p>L’on dit au reste qu’Orphée épousa veritablement Eurydice ; Qu’étant morte il alla en un certain lieu dans le Thesprotide, où par la force de quelques charmes on évoquoit des Enfers les ames des morts ; que le Fantôme d4eurydice se presenta à lui, mais qu’Orphée se voiant trompé se tua de douleur et de déplaisir ; et que parce qu’il étoit mort par l’amour qu’il portoit à sa femme, l’on dit qu’il avoit été déchiré par les femmes.</p>
-          <p>Quant à la Fable d’Olene qui s’attribua la faute de Lethée sa femme, et qui fut comme elle metamorphosé en pierre, elle enseigne la même chose que la regle de droit, qui dit que c’est une faute que de se méler des choses, qui ne nous regardent point.</p>
-        </div>
-        <div>
-          <head>Fable troisiéme</head>
-          <argument>
-            <p>Orphée attire les bêtes, les rochers et les arbres par la douceur de son chant, et le Pin en quoi Atys avoit été converti, s’y trouva aussi</p>
-          </argument>
-          <p><pb n="312" xml:id="p312"/>Il y avoit à l’endroit où se retira Orphée une colline, et sur cette colline une plaine, qu’une herbe molle et délicate rendoit verte de tous les côtez ; mais c’étoit un lieu sans ombre, et exposé de toutes parts à la chaleur du Soleil. Néanmoins aussi-tôt qu’Orphée s’y fut couché, et qu’il eut commencé à toucher sa Lyre, les arbres qu’il y attira, y apporterent en même tems et de l’ombre, et de la fraîcheur. On y vit venir de grands Chênes, et des forêts de Peupliers, des Cormiers et des Tilleuls, des Hestres et des Lauriers, des Coudriers et des Frênes, des Sapins et des Yeuses, des Planes, des Érables, des Saules, l’Arbre qu’on appelle Lotos, le Buis qui est toûjours verd, des Bruyeres, des Myrthes et des Figuiers.</p>
-          <p>On y vit venir aussi le Lierre, et des Ormeaux entre-laissez de seps de vigne, l’Arboisier chargé d’un fruit rouge, dont on fait le prix des vainqueurs, et le Pin qui porte ses branches retroussées depuis le pied jusqu’à la tête, et qui est cheri de Cybele. Car Atys qui étoit son Prêtre, aiant été dépoüillé de sa forme humaine, avoit été changé en cét arbre.</p>
-        </div>
-        <div>
-          <head>Fable quatriéme</head>
-          <p><pb n="313" xml:id="p313"/>Le Cyprez cette pyramide verdoyante, fut de cette grande troupe d’arbres, que la douceur de la voix d’Orphée rendit sensibles à ses plaintes.</p>
-          <p>Il étoit arbre en ce tems-là ; mais ce fut autrefois un jeune garçon appellé Cyparisse, qu’Apollon aimoit, &amp; qu’il revétit de cette forme pour le sauver de ses propres mains.</p>
-        </div>
-      </div>
-      <div>
-        <head>Livre onziéme</head>
-        <div>
-          <head>Fable I et II</head>
-          <argument>
-            <p>Orphee qui haïssoit toutes les femmes, est aussi haï de toutes les femmes. Les Dames de Thrace le tüent, pendant qu’elles celebrent les fêtes de Bacchus. Un Serpent est metamorphosé en rocher, comme il étoit prêt de devorer la tête d’Orphée; Et les Bacchantes qui l’avoient tüé, sont converties en arbres de differentes especes.</p>
-          </argument>
-          <p><pb n="342" xml:id="p342"/>Tandis qu’Orphée attiroit les Bois et les rochers, et qu’il charmoit les bêtes sauvages par la douceur de son chant, les Dames de Thrace revétuës de peaux, et transportées par les fureurs que leur inspiroit Bacchus, apperceurent de dessus une montagne ce divin Poëte qui marioit sa voix avec sa Lyre.</p>
-          <p>En même tems une d’entr’elles furieuse et échevelée, voilà, dit-il, voilà, celui qui nous</p>
-          <p>dédaigne <pb n="343" xml:id="p343"/>Et en prononçant cette parole, elle lui porta sur le visage un coup de la pique qu’elle tenoit, mais comme elle étoit couverte de feuilles, elle ne fit qu’une marque sans blessure. Une autre prit aussi-tôt une pierre, et la fit servir de trait ; mais bien qu’elle l’eut jettée avec violence, elle s’arrêta en l’air par le charme de la voix d’Orphée, et vint tomber à ses pieds, comme pour lui demander pardon de la furieuse entreprise à quoi on la faisoit servir. Mais si Orphée peut vaincre des pierres, il ne peut adoucir des femmes. La guerre qu’elles lui ont declarée, devient plus forte et plus ardente. Elles se laissent transporter jusqu’à l’excez de la rage, vous les eussiez prises pour les furies. Il ne faut pourtant point douter que sa voix n’eût eu la force de charmer toutes les armes donc on se servoit contre lui, si ce grand bruit que faisoient ces femmes avec leurs bassins et leurs flûtes, si le battement de leurs mains, et si leurs hurlemens épouvantables n’eussent étouffé le son de sa Lyre, et ne l’eussent renduë sans effet. Ainsi les pierres qui auroient respecté Orphée, commencerent à le toucher et à rougir de son sang. Premierement ces furieuses femmes écarterent les oiseaux et les serpens, et ces grandes troupes de bêtes qui étoient à l’entour de lui, et en fuite elles porteront leurs mains sanglantes sur le mal-heureux Orphée. Comme les oiseaux s’assemblent à l’entour d’un Hibou, quand ils le rencontrent de jour, comme ce nombre de chiens qu’on voit le matin dans l’amphitheatre, se vont jetter sur le Cerf qui en sera bien-tôt la proye ; Tout de même les Bacchantes se précipitent sur Orphée, et le frapent avec leurs Thyrses<note place="bottom">Batons ou Piques environnées de feüilles</note> qui n’étoient pas faits pour cét usage. L’une lui jette des mottes de terre, l’autre des branches d’arbres qu’elle vient de rompre, et la plus-part lui font la guerre avec des pierres. Mais afin que les armes ne manquassent pas à leur fureur, le hazard leur en presenta de nouvelles. Il y avoit proche de là des païsans qui labouroient, les uns avec des bœufs, et les autres à la bêche ; mais aussi-tôt qu’ils apperçurent ces furieuses, ils quitterent leur travail, et les instrumens de leur travail ; et la crainte qui les obligea de füir, leur fit laisser dans les chams leurs charruës, leurs herses, leurs bêches, et tout ce qui servoit à leur ouvrage. En même tems les Bacchantes le saisirent de toutes ces choses, et leur fureur les rendoit si fortes, qu’elles arracherent mêmes les cornes des bœufs, et avec ces nouvelles armes elles coururent sur Orphée pour achever de le perdre. Ce fut en vain qu’il leva les mains, comme pour leur demander sa grâce, et ce fut là la premiere fois que ses paroles furent vaines, et que le charme de sa voix manqua de force et de vertu. Ces sacrileges le tüerent, et son ame sortit par la bouche, qui avoit animé des rochers, qui avoit charmé les bêtes, qui avoit donné du sentiment à ce qu’il y a de plus insensible. Les oiseaux touchez de douleur, te pleurerent, malheureux Orphée ; les troupes des bêtes sauvages, les rochers et les forêts, que la douceur de ta voix avoit si souvent attirées, trouverent des pleurs pour en donner à ta mort : Les arbres <pb n="344" xml:id="p344"/>quitterent leurs feüilles de regret, ou plutôt leurs feüilles se convertirent en autant de larmes. L’on dit aussi que les fleuves crurent des pleurs qu’ils te donnerent, que les Naïades et les Dryades prirent le deüil de ta perte, et que la douleur, et l’affliction leur fit perdre le soin d’elles-mêmes.</p>
-          <p>Enfin les membres d’Orphée répandus de part et d’autre, n’eurent point d’autre tombeau, que les lieux mêmes où les Bacchantes les jetterent. Mais sa tête avec sa Lyre fut emportée par le Marise<note place="bottom">Fleuve de la Thrace</note> ; et par une merveille inoüie sa langue morte comme elle étoit, ne laissoit pas de murmurer je ne sçai quoi de lugubre. Sa Lyre même qu’entraînoient les eaux, rendoit un son qui faisoit pitié, et les rivages d’alentour y repondirent comme par des plaintes. Ainsi sa tête et sa Lyre furent portées jusques dans la mer, et les flots et les vents les pousserent fur les rivages de Lesbos.</p>
-          <p>Il y avoit là un serpent qui voiant la tête d’Orphée, s’en approcha aussi-tôt, et vint lui lécher les cheveux ; mais comme il lui alloit ronger le visage, Apollon l’en empêcha, endurcit sa gueule ouverte, et devant qu’il la pût fermer, il le convertit en rocher.</p>
-          <p>Cependant l’ombre d’Orphée devala dans les Enfers, où il reconnut tous les lieux qu’il avoit veus auparavant ; Il y chercha Eurydice qu’il rencontra dans les Élysées, et alors il l’embrassa sans appréhension de la perdre. Ainsi ils se promenent ensemble dans ce sejour des ames heureuses, et enfin Orphée satisfait regarde sa chere Eurydice impunément et sans crainte.</p>
-        </div>
-        <div resp="trad">
-          <head>Explication de la fable I. et II.</head>
-          <argument>
-            <p>D’Orphée déchiré par les Bacchantes ; d’un Serpent converti en Pierre, et des Thraciennes en Arbres.</p>
-          </argument>
-          <p>Il n’y a personne qui n’ait pitié du miserable Orphée quand il confidére son avanture, il n’y a personne qui ne lui souhaite une meilleure destinée, et qui ne voulut le voir revivre afin de le voir plus heureux. Mais il n’a rien enduré que ne souffrent tous les jours ceux qui ont de la vertu, et que des merites extraordinaires ont relevez par dessus les autres En effet l’on nous represente ici Orphée, comme un portrait achevé d’un homme parfait et vertueux ; et l’on montre par son avanture que les gens de bien sont exposez à l’envie, et pendant qu »ils vivent, et apres leur mort. L »on ne peut souffrir pendant leur vie les salutaires instructions, avec lequelles ils combatent, et le vice et les vicieux; et l’on voudroit les ruiner après leur mort, afin que le vice triomphant ne trouvât aucun obstacle au grand cours que l’on lui donne. L’on figure donc la méchanceté et la malice par ces femmes, qui n’aiant pu se laisser fléchir par les beaux airs d’Orphée, se jetterent sur lui, et le déchirerent ; et par ce Serpent qui voulut mordre sa tête apres sa mort, l’on nous represente la malice qui tâche à perdre ce qui reste des gens de bien, c’est à dire, les bons preceptes par lequels ils sont encore utiles aux hommes, lorsqu’ils ne sont plus parmi les hommes. Car on ne doute point qu’Orphée n’ait été un Sage de l’Antiquité, et l’on ne manque point de témoignages qui assurent qu’Amphion, et lui, étoient des Mages Egyptiens. Il inventa quantité de choses qui furent utiles à la vie humaine, il fut le premier qui ouvrit, pour ainsi dire, la Theologie, qui trouva les moyens d’expier les grands crimes, et d’appaiser les Dieux irritez. Il apprit aux peuples à observer les Loix, et leur enseigna les Mariages, enfin il donna des remedes non seulement pour les maladies du corps, mais aussi pour celles de l’esprit, qui sont les plus dangereuses. Il me semble apres cela que nous aurons juste raison de considérer Orphée comme le modele d’un homme de bien. Mais encore que les méchans triomphent quelquefois des Sages, ils ne gardent pas long-tems les avantages de leur victoire ; et Dieu ne permet jamais que leur violence demeure impunie. C’est ce que l’on veut faire voir par ces femmes qui assassinerent Orphée, et qui furent bien-tôt après converties en arbres. C’est ce que nous montre ce Serpent qui fut converti en pierre, comme il alloit défigurer par les atteintes, et par fes morsures une tête si précieuse. Car au point que les méchans sont tout prêts de ruiner les ouvrages de la vertu, il se presente toûjours quelque obstacle qui les convertit comme en pierre, c’est à dire, à mon avis qui leur ôte le pouvoir d’exécuter ce qu’ils voudroient. Et certes, si par un effet de la Providence cela n’arrivoit de la sorte, il n’y auroit plus dans le monde, je ne dis pas de vertu, mais seulement de marques qu’il y ait eu des vicieux.</p>
-          <p>Quelques-uns ont dit qu’après la mort d’Eurydice, il méprisa toutes les femmes ; qu’il persuada à plusieurs hommes que la femme étoit un grand mal, soit qu’elle fut méchante, soit qu’elle fut bonne ; que comme un grand nombre à son exemple ne vouloient point se marier, des femmes feignant de sacrifier à Bacchus se jetterent sur lui, et le déchirerent comme l’ennemi de leur sexe.</p>
-          <p>L’on dit au reste que sa Lyre &amp; sa tête furent transportées à Lesbos, parce qu’après sa mort, l’ignorance se répandit dans la Thrace, et que les lettres et les scienecs, et principalement la Poësie que l’on figure par la Lyre, furent florissantes dans Lesbos. Enfin par ce Serpent qui fut metamorphosé en pierre, en voulant mordre la tête d’Orphée, quelques-uns disent qu’on doit entendre quelque envieux Lesbien, qui attaqua la reputation et la science d’Orphée après sa mort. Car ceux qui déchirent la reputation des gens de bien, et principalement des morts, sont plus durs que des rochers, et plus cruels que des serpens.</p>
-        </div>
-      </div>
-    </body>
-  
-</text></TEI>
+
+        <body>
+            <div>
+                <head>Livre dixième</head>
+                <div>
+                    <head>Fable premiere</head>
+                    <argument>
+                        <p>Eurydice femme d’Orphée comme elle couroit sur l’herbe avec d’autres
+                            Nymphes, meurt de la morsure d’un Serpent qui l’avoit mordu au
+                            talon.</p>
+                    </argument>
+                    <p><pb n="307" xml:id="p307"/>De là Hymen le Dieu des noces, vétu d’une robe de
+                        jaune-doré, s’éleva en l’air pour aller en Thrace, où l’appelloit la voix
+                        d’Orphée pour assister à son mariage. Veritablement il s’y trouva ; mais il
+                        n’y dit point les paroles qu’il a de coûtume de prononcer dans les mariages
+                        heureux, il n’y montra pas un visage riant, et n’y porta point de bons
+                        presages. La torche même qu’il tenoit, étoit fait d’une cire qui se fondoit
+                        comme en larmes ; elle ne faisoit que petiller, et au lieu d’une belle
+                        flamme, elle ne jettoit que de la fumée. En vain il secoüa plusieurs <pb
+                            n="308" xml:id="p308"/> fois, elle ne put jamais s’allumer ; Toutes
+                        choses menaçoient Orphée, et en effet le succez fut aussi triste que le
+                        presage. Car comme la nouvelle mariée couroit sur l’herbe avec une troupe de
+                        Nymphes, elle tomba morte de la morsure d’un serpent, qui l’avoit morduë au
+                        talon.</p>
+                </div>
+                <div>
+                    <head>Fable deuxième</head>
+                    <argument>
+                        <p>Orphée descend aux Enfers pour en retirer sa femme, et l’obtint de Pluton
+                            à de certaines conditions. Mais n’aiant pû les entretenir, il est
+                            contraint de revenir seul au monde, et de laisser sa femme aux Enfers.
+                            Ovide prend ici l’occasion de conter la Fable d’un Berger qui fut changé
+                            en rocher à l’aspect de Cerbere, et celle d’Olene, et de Lethée qui
+                            furent aussi convertis en Pierres.</p>
+                    </argument>
+                    <p><pb n="309" xml:id="p309"/>Après qu’Orphée se fût long-tems affligé de cette
+                        perte, et que par ses pleurs et par ses plaintes, il eut tâche d’émouvoir
+                        les Divinitez celestes, enfin voiant que le Ciel ne l’écoutoit point, il
+                        implora à son secours les divinitez infernales, et eut assez de hardiesse
+                        pour descendre aux Enfers. Ainsi aiant traversé tout cét Empire, qui n’est
+                        peuplé que de fantômes, il se rendit devant le trône de Pluton et de
+                        Proserpine, à qui sa voix et sa Lyre firent entendre ces plaintes. Ô
+                        puissantes Divinitez de ce grand et vaste monde, qui s’étend par dessous la
+                        terre, et où descendent tous ceux qui naissent pour être éternellement
+                        assujettis à vôtre Empire, si vous me permettre de parler, et de vous dire
+                        des choses vrayes, je ne suis point venu en ces lieux par une vaine
+                        curiosité, où par une ambition temeraire. Je ne suis point venu ici pour
+                        aller conter au monde, que j’ai eu la satisfaction d’avoir visité l’Enfer,
+                        et de triompher de Cerbere. Eurydice qui fut ma femme, et qu’un serpent a
+                        fait mourir par une picqueure venimeuse <pb n="310" xml:id="p310"/>est le
+                        sujet de mon voiage. J’ai résisté aussi long tems que mes forces l’ont pû
+                        permettre à la violence de ma douleur ; j’ai voulu la pouvoir souffrir, et
+                        je ne nierai pas que j’ai tenté de la souffrir, mais l’amour a été le
+                        maître, et s’est rendu victorieux de ma force et de ma constance. Ce Dieu
+                        est assez connu sur la terre, je croi même qu’on le connoît dans les
+                        Enfers : Et si l’Antiquité ne nous trompe point, l’amour vous a unis
+                        ensemble. Je viens donc ici vous prier au nom de l’amour que vous ressentez,
+                        et par ces lieux menaçans, et par ce cahos effroiable, et par le silence de
+                        ce vaste Empire, de rendre la vie à Eurydice qui l’a perduë avant tems. Il
+                        n’y a rien qui ne vous soit dû de toutes les choses qui naissent. Nous
+                        descendons tous ici comme ne une demeure commune, les uns plutôt, les autres
+                        plus tard ; nous faisons en naissant le premier pas qui nous y mene, c’est
+                        nôtre derniere retraite, et vous possedez un Empire qui embrasse tout le
+                        genre humain. Quand Eurydice aura donc vêcu le tems qu’elle devoit vivre,
+                        elle sera encore à vous, vous ne la perdrez pas pour me la rendre, je ne
+                        veux pas vous ôter ce bien, je n’en demande que l’usage. Que si les destins
+                        ne veulent point faire grace à Eurydice, je suis resolu de ne point
+                        retourner au monde ; et si vous la voulez retenir, vous nous retiendrez tous
+                        deux ensemble. Ces paroles prononcées avec toute la douleur que l’on se peut
+                        imaginer, sa voix qu’il marioit avec sa lyre, enfin ses plaintes furent si
+                        sensibles, que les ombres mêmes qui n’ont point de corps, ne laisserent pas
+                        de trouver des larmes pour pleurer son avanture. Tantale fut si ravi de
+                        l’entendre, qu’il ne songea plus à sa soif, ni à prendre l’eau qui le fuit,
+                        à mesure qu’il en approche. La rouë d’Ixion s’arrêta. Ces oiseaux affamez
+                        qui se nourrissent du cœur de Titye, comme charmez de cette harmonie, lui
+                        donnerent quelque relâche. Les Belides qui travaillent sans cesse à remplir
+                        des vaisseaux percez, trouverent alors quelque repos : Et pour mieux oüir
+                        chanter Orphée, Sisyphe s’assit sur la pierre qu’il roule éternellement. On
+                        dit même que les furies vaincuës par la voix d’Orphée, jetterent en cette
+                        occasion les premieres larmes qui sortirent jamais de leurs yeux. Enfin ni
+                        Proserpine ni Pluton ne purent résister à tant de charmes, ni refuser à
+                        Orphée ce que ses plaintes lui demandoient. En même temps ils firent
+                        appeller Eurydice qui se promenoit avec les ombres nouvellement descenduës
+                        aux Enfers, boitant du pied dont elle avoit été morduë ; et la rendirent à
+                        Orphée, à condition qu’il ne se retourneroit point pour la voir qu’il ne fût
+                        sorti des Enfers, et qu’autrement la faveur qu’il lui faisoit, seroit vaine,
+                        et sans effet. Il reprit donc le chemin du monde, et monta par un lieu
+                        obscur, et rempli d’épaisses fumées. Mais lors qu’il approchoit déjà de la
+                        terre, comme il craignoit qu’Eurydice ne s’égarât parmi ces tenebres, et
+                        qu’il brûloit d’envie de la voir, il voulut se retourner, mais Eurydice
+                        s’évanoüit, et le malheureux Orphée n’embrassa que de l’air en pensant
+                        embrasser sa femme.</p>
+                    <p><pb n="311" xml:id="p311"/>Cependant Eurydice qui mourut alors pour la
+                        seconde fois par la faute de son mari, ne s’en plaignit point en mourant ;
+                        et dequoi eût-elle pû se plaindre si ce n’étoit d’être trop aimée ? Elle lui
+                        dit seulement le dernier adieu d’une voix foible, et qu’il ne pût presque
+                        entendre, et retomba dans le gouffre, d’où il venoit de la retirer.</p>
+                    <p>Orphée ne demeura pas moins étonné de cette seconde mort de sa femme, que ce
+                        mal-heureux Berer qui vit Cerbere chargé de chaînes, et que l’étonnement ne
+                        quitta oint, que la nature ne l’eût quitté ; son corps s’étant changé en
+                        rocher. Enfin il s’en fallut peu qu’il n’eût la fortune d’Olene qui voulut
+                        avoir part au crime, et à la punition de sa femme, lors que l’orgueil la
+                        transporta jusqu’à s’égales aux Déesses, par la grace et par la beauté. Car
+                        ces deux personnes qui s’aimoient, font aujourd’hui deux rochers, que
+                        soûtient le mont Ida. Le mal-heureux Orphée se desespere, il fait de
+                        nouveaux efforts pour passer dans les Enfers ; mais Charon peut-être honteux
+                        d’avoir été gagné par la voix d’un homme, ne voulut plus entendre, et lui
+                        refusa le passage.</p>
+                    <p>Néanmoins Orphée demeura sept jours entiers sur le rivage de l’Acheron, et
+                        ses douleurs, et ses larmes furent sa seule nourriture. Enfin après s’être
+                        plaint de la crüauté des Dieux Infernaux, il se retira sur le mont Rhodope,
+                        et sur le mont Emus toûjours battu des Aquilons. Il y demeura trois ans,
+                        sans vouloir entendre parler de femmes, soit que son premier mariage lui eût
+                        été trop mal-heureux, sois qu’il eût promis à Eurydice de n’avoir jamais
+                        d’amour que pour elle. Il fut néanmoins aimé d’une infinité de Nymphes ;
+                        mais toutes ces Nymphes n’en receurent que des refus, et la mort d’Eurydice
+                        lui en fit haïr tout le sexe.</p>
+                    <p>On dit que depuis il apprit aux peuples de Thrace à quitter les femmes pour
+                        les garçons, et qu’il fut le premier autheur d’une amour si detestable.</p>
+                </div>
+                <div resp="trad">
+                    <head>Explication de la fable I. et II.</head>
+                    <p>Nous sommes ici conviez d’aller aux noces d’Orphée et bien qu’elles soient
+                        assez funestes, il y a pourtant sujet d’y faire bonne chere, et d’en
+                        raporter quelque chose. Mais ne vous imaginez pas que ce soit un homme qui
+                        épouse une fille, et qu’Orphée et Eurydice soient ce qu’ils paroissent.
+                        Voici donc un mariage, mais c’est le mariage de l’ame et du corps : car
+                        Orphée représente ici le corps, et Eurydice représente l’ame. Et certes s’il
+                        n’y avoit rien dans cette Fable que ce qu’on y découvre d’abord, il y auroit
+                        sans doute sujet de loüer l’esprit du Poëte, mais il ne nous payeroit gueres
+                        bien de loüanges que nous lui donnerions. Car quel profit retirerions-nous
+                        de voir picquer Eurydice par un serpent, de la voir mourir de cette
+                        piqueure, et de voir ensuite descendre Orphée dans les Enfers ? Vous me
+                        répondrez peut-être qu’au moins cette avanture excite en nous de la pitié.
+                        Mais outre que ce n’est pas l’intention de la Fable d’exciter les passions,
+                        mais plutôt de les calmer, dequoi pourroit servir à Eurydice cette pitié que
+                        nous en aurions ? Car si la pitié est loüable, ce n’est pas, ce me semble,
+                        parce qu’elle nous rend sensibles à l’infortune des affligez, mais parce
+                        qu’elle nous oblige à leur donner du secours.</p>
+                    <p>Au moins, me direz vous, l’on voit en l’un et en l’autre un bel exemple de
+                        l’amitié conjugale. Car Eurydice aima mieux se mettre au hazard de faire une
+                        mauvaise rencontre en fuyant, comme en effet elle la fit, que d’écouter un
+                        autre homme que son mari. Et Orphée eût tant de ressentiment de sa mort
+                        qu’il l’a suivit jusqu’aux Enfers, c’est à dire, ou qu’il en mourut en
+                        tristesse, ou qu’il en fut si affligé pendant tout le reste de sa vie, qu’on
+                        eut dit qu’il la perdoit à chaque instant : ce que l’on veut nous faire
+                        penser en feignant qu’il l’avoit deux fois perduë.</p>
+                    <p>Cela sans doute a quelque apparence, et je ne voudrois pas combattre cette
+                        pensée. Je vous avoüe qu’Eurydice fait son devoir ; mais Orphée fait le
+                        sien, en se laissant aller jusqu’au desespoir, lors que la raison devroit
+                        modérer sa douleur ? N’auroit-il pas fait une chose, et plus glorieuse pour
+                        lui, et plus utile aux autres, de montrer de la modération, et de se
+                        soûmettre courageusement à la Loi de la Providence ? C’est par là que l’on
+                        instruit, c’est pas là que l’on sert d’exemple ; car quand je voi quelqu’un
+                        constant, je me persuade aussi-tôt que puis qu’il est homme comme moi, je
+                        puis être constant comme lui.</p>
+                    <p>Disons donc qu’Eurydice représente l’ame qui a naturellement de l’amour pour
+                        le corpus, surquoi ces vers me sont venus dans l’esprit.</p>
+                    <l>La vie est ce me semble une agréable flamme,</l>
+                    <l>Une amour mutüelle, et du corpus et de l’ame ;</l>
+                    <l>La mort est au contraire en rompant leurs accords,</l>
+                    <l>Un haine sans fin et de l’ame et du corps.</l>
+                    <p>Eurydice resprésente donc l’ame qui aime naturellement le corps, et qui
+                        méprise ce qui la rendroit elle-même heureuse pour le contenter, et lui
+                        faire les plaisirs, car il n’y a personne qui ne sçache que le corps ne sent
+                        rien que par le moyen de l’ame. Ainsi Eurydice fuit Aristée pour être tout à
+                        Orphée, c’est à dire que l’ame se donne entierement au corpus, et fuit son
+                        bien qui la fuit. Ce que l’on figure par Aristée qui court après elle : car
+                        Ariston d’où vient le mot d’Aristée, signifie le bien en langue grecque.
+                        Elle le fuit au reste par un endroit agréable et rempli d’herbes et de
+                        fleurs, pour montrer qu’elle s’arrête plutôt aux apparences et aux choses
+                        passageres qui sont représentées par les fleurs, qu’aux biens solides et
+                        veritables. Mais aussi elle rencontre parmi ces fleurs un serpent qui la
+                        fait mourir ; et cela fait voir qu’elle trouve souvent sa perte parmi les
+                        choses du monde qui lui plaisent, et qui la contentent. Ensuite elle descend
+                        aux Enfers, et en est retirée par le son et par l’harmonie de la Lyre, c’est
+                        à dire par la raison, qui la retire de ses fautes, et qui la ramene dans son
+                        devoir. Mais elle ne sort des Enfers qu’à condition que le corps la perdra
+                        facilement, si elle ne sçait obéir à la raison, et qu’elle ne se regle
+                        suivant les Loix.</p>
+                    <p>L’on dit au reste qu’Orphée épousa veritablement Eurydice ; Qu’étant morte il
+                        alla en un certain lieu dans le Thesprotide, où par la force de quelques
+                        charmes on évoquoit des Enfers les ames des morts ; que le Fantôme
+                        d4eurydice se presenta à lui, mais qu’Orphée se voiant trompé se tua de
+                        douleur et de déplaisir ; et que parce qu’il étoit mort par l’amour qu’il
+                        portoit à sa femme, l’on dit qu’il avoit été déchiré par les femmes.</p>
+                    <p>Quant à la Fable d’Olene qui s’attribua la faute de Lethée sa femme, et qui
+                        fut comme elle metamorphosé en pierre, elle enseigne la même chose que la
+                        regle de droit, qui dit que c’est une faute que de se méler des choses, qui
+                        ne nous regardent point.</p>
+                </div>
+                <div>
+                    <head>Fable troisiéme</head>
+                    <argument>
+                        <p>Orphée attire les bêtes, les rochers et les arbres par la douceur de son
+                            chant, et le Pin en quoi Atys avoit été converti, s’y trouva aussi</p>
+                    </argument>
+                    <p><pb n="312" xml:id="p312"/>Il y avoit à l’endroit où se retira Orphée une
+                        colline, et sur cette colline une plaine, qu’une herbe molle et délicate
+                        rendoit verte de tous les côtez ; mais c’étoit un lieu sans ombre, et exposé
+                        de toutes parts à la chaleur du Soleil. Néanmoins aussi-tôt qu’Orphée s’y
+                        fut couché, et qu’il eut commencé à toucher sa Lyre, les arbres qu’il y
+                        attira, y apporterent en même tems et de l’ombre, et de la fraîcheur. On y
+                        vit venir de grands Chênes, et des forêts de Peupliers, des Cormiers et des
+                        Tilleuls, des Hestres et des Lauriers, des Coudriers et des Frênes, des
+                        Sapins et des Yeuses, des Planes, des Érables, des Saules, l’Arbre qu’on
+                        appelle Lotos, le Buis qui est toûjours verd, des Bruyeres, des Myrthes et
+                        des Figuiers.</p>
+                    <p>On y vit venir aussi le Lierre, et des Ormeaux entre-laissez de seps de
+                        vigne, l’Arboisier chargé d’un fruit rouge, dont on fait le prix des
+                        vainqueurs, et le Pin qui porte ses branches retroussées depuis le pied
+                        jusqu’à la tête, et qui est cheri de Cybele. Car Atys qui étoit son Prêtre,
+                        aiant été dépoüillé de sa forme humaine, avoit été changé en cét arbre.</p>
+                </div>
+                <div>
+                    <head>Fable quatriéme</head>
+                    <p><pb n="313" xml:id="p313"/>Le Cyprez cette pyramide verdoyante, fut de cette
+                        grande troupe d’arbres, que la douceur de la voix d’Orphée rendit sensibles
+                        à ses plaintes.</p>
+                    <p>Il étoit arbre en ce tems-là ; mais ce fut autrefois un jeune garçon appellé
+                        Cyparisse, qu’Apollon aimoit, &amp; qu’il revétit de cette forme pour le
+                        sauver de ses propres mains.</p>
+                </div>
+            </div>
+            <div>
+                <head>Livre onziéme</head>
+                <div>
+                    <head>Fable I et II</head>
+                    <argument>
+                        <p>Orphee qui haïssoit toutes les femmes, est aussi haï de toutes les
+                            femmes. Les Dames de Thrace le tüent, pendant qu’elles celebrent les
+                            fêtes de Bacchus. Un Serpent est metamorphosé en rocher, comme il étoit
+                            prêt de devorer la tête d’Orphée ; Et les Bacchantes qui l’avoient tüé,
+                            sont converties en arbres de differentes especes.</p>
+                    </argument>
+                    <p><pb n="342" xml:id="p342"/>Tandis qu’Orphée attiroit les Bois et les rochers,
+                        et qu’il charmoit les bêtes sauvages par la douceur de son chant, les Dames
+                        de Thrace revétuës de peaux, et transportées par les fureurs que leur
+                        inspiroit Bacchus, apperceurent de dessus une montagne ce divin Poëte qui
+                        marioit sa voix avec sa Lyre.</p>
+                    <p>En même tems une d’entr’elles furieuse et échevelée, voilà, dit-il, voilà,
+                        celui qui nous</p>
+                    <p>dédaigne <pb n="343" xml:id="p343"/>Et en prononçant cette parole, elle lui
+                        porta sur le visage un coup de la pique qu’elle tenoit, mais comme elle
+                        étoit couverte de feuilles, elle ne fit qu’une marque sans blessure. Une
+                        autre prit aussi-tôt une pierre, et la fit servir de trait ; mais bien
+                        qu’elle l’eut jettée avec violence, elle s’arrêta en l’air par le charme de
+                        la voix d’Orphée, et vint tomber à ses pieds, comme pour lui demander pardon
+                        de la furieuse entreprise à quoi on la faisoit servir. Mais si Orphée peut
+                        vaincre des pierres, il ne peut adoucir des femmes. La guerre qu’elles lui
+                        ont declarée, devient plus forte et plus ardente. Elles se laissent
+                        transporter jusqu’à l’excez de la rage, vous les eussiez prises pour les
+                        furies. Il ne faut pourtant point douter que sa voix n’eût eu la force de
+                        charmer toutes les armes donc on se servoit contre lui, si ce grand bruit
+                        que faisoient ces femmes avec leurs bassins et leurs flûtes, si le battement
+                        de leurs mains, et si leurs hurlemens épouvantables n’eussent étouffé le son
+                        de sa Lyre, et ne l’eussent renduë sans effet. Ainsi les pierres qui
+                        auroient respecté Orphée, commencerent à le toucher et à rougir de son sang.
+                        Premierement ces furieuses femmes écarterent les oiseaux et les serpens, et
+                        ces grandes troupes de bêtes qui étoient à l’entour de lui, et en fuite
+                        elles porteront leurs mains sanglantes sur le mal-heureux Orphée. Comme les
+                        oiseaux s’assemblent à l’entour d’un Hibou, quand ils le rencontrent de
+                        jour, comme ce nombre de chiens qu’on voit le matin dans l’amphitheatre, se
+                        vont jetter sur le Cerf qui en sera bien-tôt la proye ; Tout de même les
+                        Bacchantes se précipitent sur Orphée, et le frapent avec leurs Thyrses<note
+                            place="bottom">Batons ou Piques environnées de feüilles</note> qui
+                        n’étoient pas faits pour cét usage. L’une lui jette des mottes de terre,
+                        l’autre des branches d’arbres qu’elle vient de rompre, et la plus-part lui
+                        font la guerre avec des pierres. Mais afin que les armes ne manquassent pas
+                        à leur fureur, le hazard leur en presenta de nouvelles. Il y avoit proche de
+                        là des païsans qui labouroient, les uns avec des bœufs, et les autres à la
+                        bêche ; mais aussi-tôt qu’ils apperçurent ces furieuses, ils quitterent leur
+                        travail, et les instrumens de leur travail ; et la crainte qui les obligea
+                        de füir, leur fit laisser dans les chams leurs charruës, leurs herses, leurs
+                        bêches, et tout ce qui servoit à leur ouvrage. En même tems les Bacchantes
+                        le saisirent de toutes ces choses, et leur fureur les rendoit si fortes,
+                        qu’elles arracherent mêmes les cornes des bœufs, et avec ces nouvelles armes
+                        elles coururent sur Orphée pour achever de le perdre. Ce fut en vain qu’il
+                        leva les mains, comme pour leur demander sa grâce, et ce fut là la premiere
+                        fois que ses paroles furent vaines, et que le charme de sa voix manqua de
+                        force et de vertu. Ces sacrileges le tüerent, et son ame sortit par la
+                        bouche, qui avoit animé des rochers, qui avoit charmé les bêtes, qui avoit
+                        donné du sentiment à ce qu’il y a de plus insensible. Les oiseaux touchez de
+                        douleur, te pleurerent, malheureux Orphée ; les troupes des bêtes sauvages,
+                        les rochers et les forêts, que la douceur de ta voix avoit si souvent
+                        attirées, trouverent des pleurs pour en donner à ta mort : Les arbres <pb
+                            n="344" xml:id="p344"/>quitterent leurs feüilles de regret, ou plutôt
+                        leurs feüilles se convertirent en autant de larmes. L’on dit aussi que les
+                        fleuves crurent des pleurs qu’ils te donnerent, que les Naïades et les
+                        Dryades prirent le deüil de ta perte, et que la douleur, et l’affliction
+                        leur fit perdre le soin d’elles-mêmes.</p>
+                    <p>Enfin les membres d’Orphée répandus de part et d’autre, n’eurent point
+                        d’autre tombeau, que les lieux mêmes où les Bacchantes les jetterent. Mais
+                        sa tête avec sa Lyre fut emportée par le Marise<note place="bottom">Fleuve
+                            de la Thrace</note> ; et par une merveille inoüie sa langue morte comme
+                        elle étoit, ne laissoit pas de murmurer je ne sçai quoi de lugubre. Sa Lyre
+                        même qu’entraînoient les eaux, rendoit un son qui faisoit pitié, et les
+                        rivages d’alentour y repondirent comme par des plaintes. Ainsi sa tête et sa
+                        Lyre furent portées jusques dans la mer, et les flots et les vents les
+                        pousserent fur les rivages de Lesbos.</p>
+                    <p>Il y avoit là un serpent qui voiant la tête d’Orphée, s’en approcha
+                        aussi-tôt, et vint lui lécher les cheveux ; mais comme il lui alloit ronger
+                        le visage, Apollon l’en empêcha, endurcit sa gueule ouverte, et devant qu’il
+                        la pût fermer, il le convertit en rocher.</p>
+                    <p>Cependant l’ombre d’Orphée devala dans les Enfers, où il reconnut tous les
+                        lieux qu’il avoit veus auparavant ; Il y chercha Eurydice qu’il rencontra
+                        dans les Élysées, et alors il l’embrassa sans appréhension de la perdre.
+                        Ainsi ils se promenent ensemble dans ce sejour des ames heureuses, et enfin
+                        Orphée satisfait regarde sa chere Eurydice impunément et sans crainte.</p>
+                </div>
+                <div resp="trad">
+                    <head>Explication de la fable I. et II.</head>
+                    <argument>
+                        <p>D’Orphée déchiré par les Bacchantes ; d’un Serpent converti en Pierre, et
+                            des Thraciennes en Arbres.</p>
+                    </argument>
+                    <p>Il n’y a personne qui n’ait pitié du miserable Orphée quand il confidére son
+                        avanture, il n’y a personne qui ne lui souhaite une meilleure destinée, et
+                        qui ne voulut le voir revivre afin de le voir plus heureux. Mais il n’a rien
+                        enduré que ne souffrent tous les jours ceux qui ont de la vertu, et que des
+                        merites extraordinaires ont relevez par dessus les autres En effet l’on nous
+                        represente ici Orphée, comme un portrait achevé d’un homme parfait et
+                        vertueux ; et l’on montre par son avanture que les gens de bien sont exposez
+                        à l’envie, et pendant qu »ils vivent, et apres leur mort. L »on ne peut
+                        souffrir pendant leur vie les salutaires instructions, avec lequelles ils
+                        combatent, et le vice et les vicieux ; et l’on voudroit les ruiner après
+                        leur mort, afin que le vice triomphant ne trouvât aucun obstacle au grand
+                        cours que l’on lui donne. L’on figure donc la méchanceté et la malice par
+                        ces femmes, qui n’aiant pu se laisser fléchir par les beaux airs d’Orphée,
+                        se jetterent sur lui, et le déchirerent ; et par ce Serpent qui voulut
+                        mordre sa tête apres sa mort, l’on nous represente la malice qui tâche à
+                        perdre ce qui reste des gens de bien, c’est à dire, les bons preceptes par
+                        lequels ils sont encore utiles aux hommes, lorsqu’ils ne sont plus parmi les
+                        hommes. Car on ne doute point qu’Orphée n’ait été un Sage de l’Antiquité, et
+                        l’on ne manque point de témoignages qui assurent qu’Amphion, et lui, étoient
+                        des Mages Egyptiens. Il inventa quantité de choses qui furent utiles à la
+                        vie humaine, il fut le premier qui ouvrit, pour ainsi dire, la Theologie,
+                        qui trouva les moyens d’expier les grands crimes, et d’appaiser les Dieux
+                        irritez. Il apprit aux peuples à observer les Loix, et leur enseigna les
+                        Mariages, enfin il donna des remedes non seulement pour les maladies du
+                        corps, mais aussi pour celles de l’esprit, qui sont les plus dangereuses. Il
+                        me semble apres cela que nous aurons juste raison de considérer Orphée comme
+                        le modele d’un homme de bien. Mais encore que les méchans triomphent
+                        quelquefois des Sages, ils ne gardent pas long-tems les avantages de leur
+                        victoire ; et Dieu ne permet jamais que leur violence demeure impunie. C’est
+                        ce que l’on veut faire voir par ces femmes qui assassinerent Orphée, et qui
+                        furent bien-tôt après converties en arbres. C’est ce que nous montre ce
+                        Serpent qui fut converti en pierre, comme il alloit défigurer par les
+                        atteintes, et par fes morsures une tête si précieuse. Car au point que les
+                        méchans sont tout prêts de ruiner les ouvrages de la vertu, il se presente
+                        toûjours quelque obstacle qui les convertit comme en pierre, c’est à dire, à
+                        mon avis qui leur ôte le pouvoir d’exécuter ce qu’ils voudroient. Et certes,
+                        si par un effet de la Providence cela n’arrivoit de la sorte, il n’y auroit
+                        plus dans le monde, je ne dis pas de vertu, mais seulement de marques qu’il
+                        y ait eu des vicieux.</p>
+                    <p>Quelques-uns ont dit qu’après la mort d’Eurydice, il méprisa toutes les
+                        femmes ; qu’il persuada à plusieurs hommes que la femme étoit un grand mal,
+                        soit qu’elle fut méchante, soit qu’elle fut bonne ; que comme un grand
+                        nombre à son exemple ne vouloient point se marier, des femmes feignant de
+                        sacrifier à Bacchus se jetterent sur lui, et le déchirerent comme l’ennemi
+                        de leur sexe.</p>
+                    <p>L’on dit au reste que sa Lyre &amp; sa tête furent transportées à Lesbos,
+                        parce qu’après sa mort, l’ignorance se répandit dans la Thrace, et que les
+                        lettres et les scienecs, et principalement la Poësie que l’on figure par la
+                        Lyre, furent florissantes dans Lesbos. Enfin par ce Serpent qui fut
+                        metamorphosé en pierre, en voulant mordre la tête d’Orphée, quelques-uns
+                        disent qu’on doit entendre quelque envieux Lesbien, qui attaqua la
+                        reputation et la science d’Orphée après sa mort. Car ceux qui déchirent la
+                        reputation des gens de bien, et principalement des morts, sont plus durs que
+                        des rochers, et plus cruels que des serpens.</p>
+                </div>
+            </div>
+        </body>
+
+    </text>
+</TEI>

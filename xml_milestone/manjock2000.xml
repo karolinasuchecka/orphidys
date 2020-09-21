@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Orphée d’Afrique, théâtre-rituel</title>
+        <author>Ma Njock Manuna</author>
+        <editor/>
+      </titleStmt>
+      <editionStmt>
+        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+          édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
+          comparative intermédiale innovante accompagnée d’une ressource pour le repérage
+          intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
+          l’Université de Lille.</edition>
+        <respStmt>
+          <name>Karolina Suchecka</name>
+          <resp>Chargé de l’édition</resp>
+        </respStmt>
+        <respStmt>
+          <name>Nathalie Gasiglia</name>
+          <resp>Co-tutrice de thèse</resp>
+        </respStmt>
+        <respStmt>
+          <name>Karl Zieger</name>
+          <resp>Co-tuteur de thèse</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karolina Suchecka</publisher>
+        <publisher>ALITHILA (Université Lille III)</publisher>
+        <date when="2019"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+              thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+              numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
+              ressource pour le repérage intertextuel »</p>
+            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+              les bases de données (L341-1) est mise à disposition de la communauté scientifique
+              internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
+              : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
+              BY-NC-ND 3.0 FR) ». </p>
+            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+              de cette ressource électroniques comportera le nom du projet et surtout l’adresse
+              Internet de la ressource. </p>
+            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+              utilisation commerciale est interdite.</p>
+            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+              électronique, notamment en intégrant toutes les contributions extérieures, la
+              diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+          </licence>
+        </availability>
+        <idno>https://www.furet.com/fr/orphee-dafric-roman-orphee-d-afrique-theatre-rituel-1034959.html</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><author>Ma Njock Manuna</author> / <title>Orphée d’Afrique, théâtre-rituel</title> /
+          Paris / L’Harmattan / 2000.</bibl>
+        <biblFull>
+          <titleStmt>
+            <title>Orphée d’Afrique, théâtre-rituel</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>L’Harmattan</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="2000"/>
+          </publicationStmt>
+        </biblFull>
+        <genre>théâtre</genre>
+        <structure>manjock2000</structure>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+        nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
+        projet. La structure des métadonnées a été établie en référence à la manière dont le
+        logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="2000-05-03">2000</date>
+      </creation>
+      <language>
+        <language>FR</language>
+      </language>
+      <textClass>
+        <keywords>
+          <list>
+            <item>modernisation</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docAuthor>Ma Njock Manuna</docAuthor>
+        <docTitle>
+          <titlePart type="main">Orphée d’Afrique, théâtre-rituel</titlePart>
+        </docTitle>
+      </titlePage>
+      <div type="dedication">
+        <salute>À Mayembe Kimkoo</salute>
+      </div>
+      <div type="introduction">
+        <head>Introduction</head>
+        <p><pb n="75" xml:id="p75"/>II y a toujours dans l’évolution humaine des périodes critiques
+          où Eurydice doit mourir de cette mort qui provoque le refus et réveille les forces
+          surhumaines pour l’affronter. Alors Orphée se lève et brave tout pour rechercher la
+          beauté, la grandeur et la vérité égarées un jour dans les méandres de l’histoire.</p>
+        <p>C’est à partir d’une méditation sur les arcanes majeurs du tarot que le roman a suivi
+          l’itinéraire de l’Orphée d’aujourd’hui dans une Afrique qui ne vit plus que des emprunts à
+          l’hier et à l’étranger.</p>
+        <p>Eurydice est encore morte et notre époque réclame à nouveau un Orphée pour retrouver une
+          raison de se battre. Il nous aidera à comprendre la lame 0, le Mat, le fou, image de
+          l’homme prédestiné au paradis et pataugeant sans fin dans les placages et les stéréotypes.
+          Cette lame-garde-fou est l’épée de Damoclès suspendue au-dessus de tout homme qui ne
+          retrouve pas d’urgence son intégrité et sa part de créativité.</p>
+        <p>Et pourquoi une adaptation scénique ? En Afrique toute idée qui s’ébauche, toute
+          philosophie voulant s’imposer avaient besoin de ces rituels qui redonnaient à la pensée
+          toute sa puissance, aux mots toute leur force, aux gestes toute leur efficacité. Nous
+          avons réinterrogé les techniques rituelles et en avons fait la base aune esthétique
+          théâtrale adaptée à l’expression dramatique nêgro-africaine, le Théâtre-Rituel.</p>
+        <p>Le rituel d’hier permettait au groupe décidé à ne pas déchoir, de redécouvrir des
+          rapports profonds et d’assurer sa propre thérapeutique : il revivait ses angoisses <pb
+            n="76" xml:id="p76"/>et ses maladies devant ses Dieux et ses Esprits depuis la cause
+          première jusqu’au retour de l’harmonie. Aussi s’est-on demandé pourquoi de nos jours où le
+          monde est particulièrement bouleversé, et le monde africain en particulier, le rituel a
+          disparu, alors qu’il devenait plus que jamais nécessaire.</p>
+        <p>Le Théâtre-Rituel d’aujourd’hui essaye de faire accéder à un niveau de conscience
+          supérieur où l’on n’attend plus rien d’en haut, mais où l’on trouve en soi le moyen de
+          liquider les forces négatives et de résoudre ses propres problèmes.</p>
+        <p>Dans le roman, Orphée passe par une série d’épreuves et de méditations aux images
+          abstraites (symbolique du livre de Thot), qu’il essaie de rendre concrètes et
+          efficaces.</p>
+        <p>Dans l’adaptation théâtrale très libre, Orphée va retrouver une ouverture plus profonde
+          en lui-même dans un combat initiatique où il traîne toute la horde bruyante et encombrante
+          de la famille et de la société qu’il faudra soutenir jusqu’au bout avant de trouver une
+          possibilité de s’affirmer seul.</p>
+        <p>Ce rite de l’épreuve du feu bassa dont on s’est inspiré ici a été observé chez Mintamak
+          Mi Miumdè, un Hidjidjingo<note place="bottom">On a rencontré ce guérisseur dans la région
+            de Bo-bok, département du Nyong et Kellé dans la province du Centre-Sud du
+            Cameroun.</note> qui soigne les fous atteints du Kong et guide les pas de ceux qui
+          décident de prendre une nouvelle orientation et ont donc besoin de se purifier par un
+          bilan exhaustif de leur vie antérieure. Le guérisseur dessinait sur le sol neuf cases à
+          l’intérieur d’un cercle. Le candidat à cette étrange initiation devait parcourir de gauche
+          à droite tout le cercle en passant par la maison des géniteurs, puis celle du dan, des
+          esprits, de la solitude, des ancêtres, des étrangers, du travail, des amis et des oncles.
+          Le meneur <pb n="77" xml:id="p77"/> de rite posait sur le cercle et sur les différents
+          compartiments un fil de cuivre pur magnétisé pour empêcher le néophyte de tricher avec
+          lui-même : au cours d’un aller il enregistrait toutes tes dettes contractées, et au retour
+          il évoquait tous ses gains sans rien omettre. Il vivait une véritable descente aux enfers
+          où plus rien ne doit rester caché à celui qui aura besoin de toute sa lucidité pour
+          vaincre le mal et choisir la bonne route. Et à la suite des initiés de la Tradition, notre
+          Orphée apprendra à se regarder, à se reconnaître pour s’inscrire à son tour dans un acte
+          fécond qui reconstruira la société chancelante. L’Orphée d’aujourd’hui devra être
+          suffisamment fort et maître de lui-même car il n’est plus l’assisté des Dieux et des
+          ancêtres, mais le seul responsable de son destin et d’un monde qui attend sa part
+          d’originalité.</p>
+        <p>Et l’Orphée des initiations souterraines et solitaires du roman redevient dans le
+          Théâtre-Rituel, le mythe actif, l’homme de là rue parmi tes siens.</p>
+      </div>
+
+      <castList>
+        <castItem xml:id="feuilles">La Voix des feuilles mortes</castItem>
+        <castItem xml:id="ancetres">La Voix des ancêtres</castItem>
+        <castItem xml:id="lumiere">La Voix de la lumière</castItem>
+        <castItem xml:id="ndinga">Le Ndinga</castItem>
+        <castItem xml:id="orphee">Orphée</castItem>
+        <castItem xml:id="nyango">Nyango</castItem>
+        <castItem xml:id="premiere__commere">Première Commère</castItem>
+        <castItem xml:id="deuxieme__commere">Deuxième Commère</castItem>
+        <castItem xml:id="troisieme__commere">Troisième Commère</castItem>
+        <castItem xml:id="commeres">D’autres commères</castItem>
+        <castItem xml:id="spectateurs">Des Spectateurs</castItem>
+        <castItem xml:id="pere">Le Père</castItem>
+        <castItem xml:id="enfant">Un Enfant</castItem>
+      </castList>
+      <set>
+        <p><pb n="78" xml:id="p78"/>L’initiation se déroule en grande partie parmi les Spectateurs
+          qui mettront à l’épreuve le néophyte et le conduiront jusqu’à « l’aube de la
+          conscience ».</p>
+        <p>Le premier cercle de « l’épreuve du feu » divisé en quatre compartiments est tracé sur
+          une scène classique légèrement en hauteur. Orphée y passera une première série d’épreuves
+          avant la mort symbolique. Ensuite il descendra dans la salle où d’autres lieux scéniques
+          circulaires délimiteront les autres cases où Orphée devra répondre de ses actes devant le
+          groupe social. Les Spectateurs créeront à leur tour des fieux scéniques improvisés et
+          bénéficieront d’un décor où ils pourront se sentir touchés et concernés. La scène
+          classique restera le domaine des projections : l’Image d’Orphée et de Nyango évoluera au
+          gré de la progression du néophyte ainsi que les trois personnages placés au trois pointes
+          du triangle, représentant les trois Voix de la conscience. Ils créeront de multiples
+          tableaux pour illustrer les différentes étapes de la prise de conscience d’Orphée et des
+          Spectateurs.</p>
+      </set>
+    </front>
+
+    <body>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Dans la salle.</stage>
+        <p><pb n="79" xml:id="p79"/><milestone unit="sent"/>Orphée ! Un nom, un poème, ou simplement un désir. <milestone unit="sent"/>Le vôtre,
+          peut-être… <milestone unit="sent"/>Notre Orphée a perdu quelque chose, une de ces choses essentielles. <milestone unit="sent"/>Il l’a
+          nommée Nyango. <milestone unit="sent"/>Ce pourrait être sa main, celle qui ouvre la porte, ce pourrait être sa
+          voix, celle qui donne la réponse. <milestone unit="sent"/>C’est Nyango et Nyango est sa femme.</p>
+        <stage><milestone unit="sent"/>Il joue de son instrument et chante au milieu des spectateurs.</stage>
+        <l><milestone unit="sent"/>Nyango, un morceau de mon rêve, un morceau de mon toit. <milestone unit="sent"/>Nyango, le plus beau que je
+          cherche, le plus beau qui m’attend.</l>
+        <l><milestone unit="sent"/>Je l’ai perdue et je marche sans âme.</l>
+        <l><milestone unit="sent"/>Je l’ai perdue et je pleure sans larme.</l>
+        <l><milestone unit="sent"/>Nyango, un morceau de mon rêve, un morceau de mon toit.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga,</speaker>
+        <stage>continuant à parcourir la salle.</stage>
+        <p><milestone unit="sent"/>Tous les noms veulent dire, tous les hommes veulent grandir. <milestone unit="sent"/>Il s’appelle « la Lumière
+          qui guérit », il s’appelle Orphée. <milestone unit="sent"/>Nyango, c’est « Madame », « celle qui s’est
+          accomplie ». <milestone unit="sent"/>Elle est au bout du chemin, elle allume la lumière.</p>
+        <p><milestone unit="sent"/>Orphée, Nyango, ils se sont mariés, mais ils ne s’étaient pas vus. <milestone unit="sent"/>Pouvaient-ils vivre ? <milestone unit="sent"/>Sans tête ? Sans bras ? Sans cœur ?</p>
+        <p><milestone unit="sent"/>Elle est partie et il apprend le vide.</p>
+        <p><milestone unit="sent"/>Il est resté et elle guide sa marche.</p>
+        <stage><milestone unit="sent"/><pb n="80" xml:id="p80"/>Le Ndinga monte sur scène et trace un large cercle avec du
+          kaolin qu’il divise en quatre compartiments. <milestone unit="sent"/>Au centre du cercle, un triangle pointe en
+          bas est éclairé de façon permanente. <milestone unit="sent"/>À chacune de ses pointes, un personnage immobile se
+          manifestera au fur et à mesure de l’évolution d’Orphée. <milestone unit="sent"/>Au fond de la scène, représentant
+          l’Est, le Couple idéal Orphée-Nyango se détache sur un grand drap blanc, comme deux ombres
+          chinoises. <milestone unit="sent"/>C’est l’Image de la Rencontre qui aura lieu. <milestone unit="sent"/>Orphée, debout, à l’avant-scène,
+          face au cercle, est perdu dans une longue rêverie. <milestone unit="sent"/>L’Image du Couple doit capter toute
+          l’attention. <milestone unit="sent"/>Sett/ un air de flûte se fait entendre. <milestone unit="sent"/>Il part de la salle et nourrit la
+          rêverie d’Orphée. <milestone unit="sent"/>À chaque intervention d’une Voix off, une des pointes du triangle
+          clignote.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi. <milestone unit="sent"/>Je suis le témoin.</l>
+        <l><milestone unit="sent"/>J’ai vu le crime, j’ai connu la peur.</l>
+        <l><milestone unit="sent"/>J’ai suivi l’étoile du sans-but et du sans-abri.</l>
+        <l><milestone unit="sent"/>J’ai affiché l’inculture et l’ignorance.</l>
+        <l><milestone unit="sent"/>Ne marche pas sur moi. <milestone unit="sent"/>Je suis le témoin.</l>
+        <l><milestone unit="sent"/>Mais je verrai l’homme de demain</l>
+        <l>Je serai la Nouvelle Race.</l>
+        <l><milestone unit="sent"/>Et tu ne marcheras plus sur moi.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Scandant sa phrase avec le mvet, se dirige vers Orphée.</stage>
+        <p><milestone unit="sent"/>Qu’est-ce que tu désires ?</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <stage>Dans la salle.</stage>
+        <p><pb n="81" xml:id="p81"/><milestone unit="sent"/>Tu as su ce qu’est devenu le fils de Dieudonné ? <milestone unit="sent"/>Hum, il ne
+          s’est pas endormi, celui-là ! <milestone unit="sent"/>Il est devenu un si grand type que tu ne le reconnaîtrais
+          pas.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Dans la salle.</stage>
+        <p><milestone unit="sent"/>C’est si facile que ça de devenir grand type ?</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <stage>Se rapprochant d’Orphée.</stage>
+        <p><milestone unit="sent"/>Le pouvoir et l’argent vont toujours là où on les appelle. <milestone unit="sent"/>Demande et on te donnera. <milestone unit="sent"/>Ça
+          ne coûte presque rien.</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <stage>Excitée.</stage>
+        <p><milestone unit="sent"/>En tous cas, quand on voit un groto de trente ans avec toute sa panoplie, on peut bien
+          faire un petit effort !</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Imagine un peu : il ne paye pas l’essence. <milestone unit="sent"/>Il ne paye pas les écoles. <milestone unit="sent"/>Il ne paye pas le
+          téléphone. <milestone unit="sent"/>Il ne paye pas les voyages. <milestone unit="sent"/>Il ne paye pas les impôts. <milestone unit="sent"/>Et il collectionne les
+          villas, les femmes, engraisse deux ou trois griots. <milestone unit="sent"/>Il est prêt alors à se faire élire à
+          l’Assemblée nationale. <milestone unit="sent"/>On lui offrira en supplément un superbe curriculum vitae, où pas un
+          titre ronflant ne manque.</p>
+        <p><milestone unit="sent"/>Orphée est secoué par le rythme du tam-tam, il balance d’un côté, de l’autre, attiré par
+          la danse des femmes, vantant les « mérites » <pb n="82" xml:id="p82"/>des grands types, en
+          chantant. <milestone unit="sent"/>La flûte tente de se faire une place dans ce joyeux tintamarre de cris et de
+          danses. <milestone unit="sent"/>Au bout d’un moment, il réussit à maîtriser sa danse et suit l’air de la flûte qui
+          prend le dessus et le guide.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <l><milestone unit="sent"/>J’aime et j’entends le chant secret de mon amour.</l>
+        <l><milestone unit="sent"/>Nul ne peut mourir s’il aime.</l>
+        <l><milestone unit="sent"/>Nul ne peut perdre s’il désire.</l>
+        <l><milestone unit="sent"/>L’amour de toi détruit l’Enfer.</l>
+        <l><milestone unit="sent"/>Et la terre affamée allume ses foyers.</l>
+        <l><milestone unit="sent"/>La source pure ne tarit pas.</l>
+        <l><milestone unit="sent"/>Et mon village a choisi la fraîcheur d’une pause.</l>
+        <stage><milestone unit="sent"/>Il fait un geste d’espoir vers l’Image et reste figé.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Jouant de son instrument et retrouvant le ton du conteur.</stage>
+        <p><milestone unit="sent"/>On a célébré les noces d’Orphée et de Nyango ; deux familles se sont réconciliées. <milestone unit="sent"/>Il
+          fallait un peu d’harmonie dans ce monde déchiré ! <milestone unit="sent"/>On aime toujours contempler une belle
+          image… <milestone unit="sent"/>Ils avaient pressenti autre chose, ils devaient être et ils seraient. <milestone unit="sent"/>Orphée
+          (rêvant) a retrouvé Nyango. <milestone unit="sent"/>Tout le monde ici en avait besoin.</p>
+        <stage><milestone unit="sent"/>L’Image d’Orphée et de Nyango s’impose de plus en plus sur scène. <milestone unit="sent"/>Orphée reste
+          toujours immobile. <milestone unit="sent"/>La salle vit les désirs d’un peuple affamé.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <stage>Portant sur la tête les restes du marché et distribuant quelques oranges.</stage>
+        <p><pb n="83" xml:id="p83"/><milestone unit="sent"/>Je n’ai presque rien vendu ce matin. <milestone unit="sent"/>Mes oranges étaient
+          flétries et le jus ne coulait plus.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Regardant l’orange qu’on vient de lui offrir.</stage>
+        <p><milestone unit="sent"/>Une orange qui n’a même plus la couleur orange ! <milestone unit="sent"/>Elle est grise, grise de saleté, grise
+          de fadeur.</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Et je parie que tu vends ça cher !… <milestone unit="sent"/>Est-ce qu’un prix ça veut même dire quelque
+          chose !</p>
+      </sp>
+      <sp who="commeres">
+        <speaker>Une autre Commère</speaker>
+        <p><milestone unit="sent"/>Un tissu de prix !… <stage><milestone unit="sent"/>(Sur un autre ton.)</stage> Ça c’est très coûteux !
+            <stage><milestone unit="sent"/>(Sur un autre ton)</stage>… <milestone unit="sent"/>Tiens, je vais te le faire à un bon prix !
+            <stage><milestone unit="sent"/>(</stage><stage><milestone unit="sent"/>Un autre ton)</stage>… <milestone unit="sent"/>Quand on aime vraiment quelque chose,
+          quand on le désire à tout prix, il faut y mettre le prix !</p>
+      </sp>
+      <sp who="commeres">
+        <speaker>Une autre Commère</speaker>
+        <p><milestone unit="sent"/>Est-ce qu’on sait encore ce qui a de la valeur ? <stage><milestone unit="sent"/>(</stage><stage><milestone unit="sent"/>Elle se dirige
+            vers un spectateur et touche un vêtement, ou un bijou.)</stage> Combien ça vaut, ça ?
+          10 000 francs CFA, si tu as bonne mine, ou 1 000 francs CFA si le vendeur est fatigué, ou
+          s’il a besoin d’un mouton pour la Tabaski ! <stage><milestone unit="sent"/>(</stage><stage><milestone unit="sent"/>Un
+          silence.)</stage></p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Près d’Orphée.</stage>
+        <p><milestone unit="sent"/>Le prix d’une chose ! <milestone unit="sent"/>Le poids d’une chose ! <milestone unit="sent"/>La valeur ! <pb n="84" xml:id="p84"
+          />Pourra-t-on encore évaluer, mesurer, compter. <milestone unit="sent"/>D’un regard bien posé, Orphée, qu’en
+          feras-tu ?</p>
+        <stage><milestone unit="sent"/>Le tam-tam répond, Orphée reprend sa danse.</stage>
+      </sp>
+      <sp who="commeres">
+        <speaker>Une Commère</speaker>
+        <stage>En transe.</stage>
+        <p><milestone unit="sent"/>La Maison d’eux s’élève sur le vallon, là où le ciel a perdu la forêt. <milestone unit="sent"/>Ils sont riches de
+          tous les biens qui nous manquent !</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Dansant.</stage>
+        <p><milestone unit="sent"/>Ils sont riches, nous sommes riches.</p>
+        <p><milestone unit="sent"/>Ils s’escriment pour notre avancement.</p>
+        <p><milestone unit="sent"/>Ils travaillent pour notre salut.</p>
+        <stage><milestone unit="sent"/>Orphée s’enivre des cris d’un peuple qui attend. <milestone unit="sent"/>Danses de plus en plus endiablées. <milestone unit="sent"/>Puis silence, Orphée s’approche du cercle et s’arrête face à l’Est, où une lumière naît
+          progressivement.</stage>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/>Je t’attends, je ne fais que t’attendre</l>
+        <l>Derrière les collines, de l’autre côté des rivières</l>
+        <l>L’appel a résonné et l’écho répond.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Dans la salle, regardant la lumière qui devient de plus en plus rouge, telle une
+          aurore radieuse.</stage>
+        <stage><milestone unit="sent"/>Il s’adresse à Orphée.</stage>
+        <l><milestone unit="sent"/>Veux-tu savoir qui tu es, d’où tu viens ?</l>
+        <l><milestone unit="sent"/>Veux-tu connaître le but de ta vie ?</l>
+        <l><milestone unit="sent"/>Désires-tu la fortune, la gloire ou la puissance ?</l>
+        <l><pb n="85" xml:id="p85"/><milestone unit="sent"/>La lumière s’étale dans tous les sens, indiquant de multiples
+          directions.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Désires-tu aller plus loin ? <milestone unit="sent"/>Ou veux-tu à ton tour propager l’illusion ?</p>
+        <stage><milestone unit="sent"/>L’Image du couple Orphée-Nyango pâlit. <milestone unit="sent"/>Une femme très belle aux gestes séducteurs se
+          lève parmi les spectateurs et tente d’entraîner Orphée dans une danse. <milestone unit="sent"/>Ils luttent
+          ensemble, tandis que la flûte imprime un rythme à Orphée qui pénètre dans le cercle. <milestone unit="sent"/>La
+          femme continue seule sa danse et s’assoit parmi les spectateurs.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+        <l><milestone unit="sent"/>J’ai vu la beauté, elle a attrapé la gale.</l>
+        <l><milestone unit="sent"/>J’ai suivi une voix de charme et un geste rassurant. <milestone unit="sent"/>Ils n’étaient que masque de
+          séduction.</l>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Arrêtant sa danse.</stage>
+        <l><milestone unit="sent"/>Je vais construire notre maison.</l>
+        <l><milestone unit="sent"/>Je vais élever un temple à notre amour.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Jouant de son instrument.</stage>
+        <p><milestone unit="sent"/>Orphée sent la main qui lui démange.</p>
+        <p><milestone unit="sent"/>Il veut connaître la vraie peine, l’angoisse implacable. <milestone unit="sent"/>Il perdra toute la sueur et les
+          larmes de son corps. <milestone unit="sent"/>Elles sont lourdes et fragiles les pierres du mur qui monte.</p>
+        <stage><milestone unit="sent"/><pb n="86" xml:id="p86"/>Orphée délimite la première case du cercle qui sera sa
+          chambre. <milestone unit="sent"/>Il montre l’effort, le dur travail. <milestone unit="sent"/>La pénombre règne sur scène et les gestes
+          sont mécaniques. <milestone unit="sent"/>La scène s’éclaire et vibre d’une vie grouillante.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <stage>Courant de droite à gauche.</stage>
+        <p><milestone unit="sent"/>Oh ! À djop ! Où c’est passé ? <milestone unit="sent"/>Mais c’était ici ! <milestone unit="sent"/>Où là ? Non, ce n’est plus ici, c’est
+          là-bas ! <stage><milestone unit="sent"/>(Elle fouille partout dans la salle.)</stage></p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Exhibant un immense pagne rouge.</stage>
+        <p><milestone unit="sent"/>Tiens, je l’ai trouvé ! <stage><milestone unit="sent"/>(Et elle court dans la salle, poursuivie par la Première
+            Commère aidée de plusieurs autres spectateurs. <milestone unit="sent"/>On assiste à une véritable poursuite
+            entrecoupée de cris de toutes sortes. <milestone unit="sent"/>Deux femmes se battent. <milestone unit="sent"/>Les mots, les gestes vont
+            dans tous les sens. <milestone unit="sent"/>On ne s’entend plus.)</stage></p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Elle est folle… La garce !</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>C’est elle qui m’a dit que lui avait dit que j’ai dit. <milestone unit="sent"/>Mais je vous dis que je n’ai rien
+          dit !</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Mais lui m’a dit que tu lui as dit.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><pb n="87" xml:id="p87"/><milestone unit="sent"/>Que j’ai dit quoi ? <milestone unit="sent"/>Il a dit, tu dis, j’ai dit quoi ? <milestone unit="sent"/>Et puis,
+          je n’ai rien à dire !</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Moi, je dis, hein ! <milestone unit="sent"/>Je répète que la femme de l’autre a volé son frère. <milestone unit="sent"/>Il a été renvoyé
+          et maintenant elle s’attaque à son mari ! <milestone unit="sent"/>Le pauvre bougre, il ne s’en relèvera pas !</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Mais c’est faux. <milestone unit="sent"/>Tu mens. <stage><milestone unit="sent"/>(Cacophonie de toutes sortes.)</stage> Menteuse ! <milestone unit="sent"/>Voleuse ! Tricheuse ! Vandale !</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Aïe, mon bras ! Mais ne te gêne pas ! <milestone unit="sent"/>Attrape-moi ça. Décoche-moi ça, bats-moi ça !</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Silence ! Elle a quelque chose à dire. <milestone unit="sent"/>Quelque chose de sensé !</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Au bout d’un moment.</stage>
+        <p><milestone unit="sent"/>Mince ! J’ai oublié la pensée du jour de notre père à tous ! <milestone unit="sent"/>C’était sur la liberté… la
+          liberté… ce n’est pas une statue (bien sûr) c’est un…</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Un comportement ! <milestone unit="sent"/>Voyons. Pourquoi aller chercher plus loin ! <milestone unit="sent"/>Ce n’est pas la peine de se
+          fatiguer. <milestone unit="sent"/>C’est <pb n="88" xml:id="p88"/>sûr qu’on n’allait pas nous bouleverser avec des
+          mots percutants ! <milestone unit="sent"/>Mais ce n’est pas ça qui va nous empêcher de te régler ton compte…</p>
+        <stage><milestone unit="sent"/>Orphée se bouche les oreilles. <milestone unit="sent"/>Sa chambre est terminée et il considère la « pièce »
+          sur un air du Ndinga qui lui fait découvrir des objets imaginaires. <milestone unit="sent"/>Orphée s’allonge comme
+          s’il était sur un Ut, il se tourne et se retourne, le mvet commentant son malaise. <milestone unit="sent"/>La
+          lumière baisse. <milestone unit="sent"/>Il se lève et fait les cent pas. <milestone unit="sent"/>Dans la salle, un bruit de sirène, des
+          appels au secours. <milestone unit="sent"/>Orphée tourne en rond. <milestone unit="sent"/>Il cherche un objet suivi par le mvet qui marque
+          sa quête. <milestone unit="sent"/>Il semble l’avoir découvert, le caresse longuement puis le « casse ». <milestone unit="sent"/>Le bruit
+          se répercute dans la salle et devient presque assourdissant. <milestone unit="sent"/>Puis le mvet calme
+          progressivement l’angoisse et Orphée s’assoit en tailleur : la lumière réapparaît
+          faiblement avec l’Image d’Orphée et Nyango.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Descend dans la salle et s’adresse à la Première Commère.</stage>
+        <l><milestone unit="sent"/>Quelle animation, mais tu es seule.</l>
+        <l><milestone unit="sent"/>Tu bouges, mais tu n’avances pas.</l>
+        <stage><milestone unit="sent"/>Il sépare deux femmes dans la salle.</stage>
+        <l>Tu cries, mais tu ne dis rien.</l>
+        <l><milestone unit="sent"/>Ton geste est suspendu dans le vide</l>
+        <l>Et tu pends, pends, lamentablement.</l>
+        <stage><milestone unit="sent"/>Le Ndinga s’arrête devant un spectateur qui lit un journal en tournant nerveusement
+          les pages, en lisant à l’endroit et à <pb n="89" xml:id="p89"/>l’envers. <milestone unit="sent"/>Devant le regard
+          insistant du Ndinga, il jette le journal et se lève.</stage>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Le Spectateur</speaker>
+        <p><milestone unit="sent"/>Et bien oui ! Tout ça ne vaut rien. <milestone unit="sent"/>Ce n’est que de l’encre qui va s’effacer à la
+          première pluie. <milestone unit="sent"/>Mais qui donc a dit que les écrits restent ? <milestone unit="sent"/>Ils s’envolent et nous
+          restons, face à face, sans avoir rien compris.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Tu restes seul ! <milestone unit="sent"/>Mais regarde-toi alors ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Sur scène.</stage>
+        <p><milestone unit="sent"/>Nyango, ta seule présence et je me sentirai complet. <milestone unit="sent"/>Il me faut vivre quelque chose de
+          total, achever, parfaire, mettre un toit à ma maison.</p>
+        <stage><milestone unit="sent"/>Le Ndinga quitte la salle et se rapproche d’Orphée, l’Image devient plus
+          nette.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Qu’elle est belle, je vois le ciel dormant dans son regard !</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Et l’Image est si belle, mais la douleur est amère…</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Le lit conserve la chaleur de son corps. <milestone unit="sent"/>Les objets ont perdu leur âme mais brillent de
+          toutes leurs facettes et parlent encore.</p>
+        <stage><milestone unit="sent"/><pb n="90" xml:id="p90"/>Bruits divers dans la salle, le Ndinga apporte un
+          objet-fétiche et le remet à Orphée. <milestone unit="sent"/>Il a circulé parmi les spectateurs et sera le symbole
+          de la quête d’Orphée, soutenue par le public.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Recevant l’objet.</stage>
+        <p><milestone unit="sent"/>N’y a-t-il pas moyen d’éviter son destin ? <milestone unit="sent"/>Ne peut-on être autre chose que ce que l’on
+          est condamné à être ?</p>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+        <l><milestone unit="sent"/>La pluie fait pousser le frangipanier.</l>
+        <l><milestone unit="sent"/>Le fruit mûr naît d’une fleur</l>
+        <l>Et l’oiseau vole dans le ciel.</l>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Jouant de son instrument.</stage>
+        <p><milestone unit="sent"/>Et l’image est si belle, qu’Orphée reproduit le modèle. <milestone unit="sent"/>Orphée construit sa maison. <milestone unit="sent"/>La
+          chambre des parents.</p>
+        <stage><milestone unit="sent"/>Orphée reprend son travail. <milestone unit="sent"/>Lorsqu’il semble terminé, le père vient s’asseoir. <milestone unit="sent"/>Orphée
+          considère longuement son père qui ne le quitte pas des yeux.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>As-tu senti la nécessité d’un père ? <milestone unit="sent"/>As-tu pensé qu’il pouvait te dire, lui ? <milestone unit="sent"/>Saurait-il
+          dompter le lion qui est en toi ?</p>
+        <stage><milestone unit="sent"/>Orphée se tient immobile dans une pose <pb n="91" xml:id="p91"/>laborieuse : il
+          pourrait se concentrer sur l’égalisation d’un « mur », ou mettre la dernière main à la
+          « peinture ».</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+        <l><milestone unit="sent"/>Nourris-toi de ma sève.</l>
+        <l><milestone unit="sent"/>Désaltère-toi de mes rêves.</l>
+        <l><milestone unit="sent"/>Tu ne m’as pas crue.</l>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+      </sp>
+      <sp who="pere">
+        <speaker>Le Père</speaker>
+        <p><milestone unit="sent"/>Tu as choisi l’astro-physique, mon fils, le mot sonne bien, il est même impressionnant. <milestone unit="sent"/>Mais sais-tu où cela te conduira ?</p>
+        <stage><milestone unit="sent"/>Orphée reprend ses gestes laborieux, il s’essuie longuement la sueur.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>S’aidant de son mvet pour créer un automatisme.</stage>
+        <p><milestone unit="sent"/>Sue, soupire, trépigne. <milestone unit="sent"/>Dans le laboratoire des autres, tu feras toujours le gros boulot,
+          dans le laboratoire des autres, ton diplôme ne pèsera pas lourd.</p>
+        <p><milestone unit="sent"/>Le Ndinga cherche dans la salle et s’arrête devant un spectateur, un gros livre sous le
+          bras.</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Oh ! Je sais ! Ça ne pèse pas lourd ! <milestone unit="sent"/>Mais ça nourrit son monde, la thèse alimentaire ! <milestone unit="sent"/>Avec ça, je meublerai des discours, des cours, des concours…</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><pb n="92" xml:id="p92"/><milestone unit="sent"/>Et après ?</p>
+        <stage><milestone unit="sent"/>Silence. Un spectateur arbore un superbe attaché-case.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Toi, tu es le fils de ton père, n’est-ce pas ? <milestone unit="sent"/>Te voilà Grand Patron avec directeur,
+          directeur-adjoint, sous-directeur, chef de service, secrétaires. <milestone unit="sent"/>Et tu signes et ta
+          signature vaut des millions.</p>
+        <stage><milestone unit="sent"/>Silence.</stage>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <stage>Mains dans les poches.</stage>
+        <p><milestone unit="sent"/>Que voulez-vous ? <milestone unit="sent"/>C’est comme ça. On n’y peut rien.</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Autre Spectateur</speaker>
+        <p><milestone unit="sent"/>Il n’y a qu’à…</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Il n’y a qu’à ! Il n’y a qu’à quoi ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Aidé du tam-tam, cherche un rythme qui l’inspire. La flûte naît de ce rythme.</stage>
+        <p><milestone unit="sent"/>L’efficacité. L’efficacité. <milestone unit="sent"/>Il nous faut être efficaces.</p>
+      </sp>
+      <sp who="pere">
+        <speaker>Le Père</speaker>
+        <p><milestone unit="sent"/>L’Astro-Physique, la Pataphysique, la Métaphysique <pb n="93" xml:id="p93"/>et autres
+          Physiques, Peut-on se payer encore ces luxes !</p>
+        <stage><milestone unit="sent"/>La Salle répond par des exclamations.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Mon fils a une maladie qu’on ne soigne pas ici. <milestone unit="sent"/>On n’a pas le matériel, on n’a pas le
+          spécialiste.</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <p><milestone unit="sent"/>Oh ! On l’évacuera à Paris !</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Les résultats du baccalauréat, au capes, sont désastreux ! <milestone unit="sent"/>Nos enseignants perdent les
+          pédales.</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <p><milestone unit="sent"/>Oh ! On réclamera des assistants techniques !</p>
+      </sp>
+      <sp who="pere">
+        <speaker>Le Père</speaker>
+        <p><milestone unit="sent"/>Mon fils, vas-tu me remplacer un jour ? <milestone unit="sent"/>Que construiras-tu à ton tour, toi qui n’as même
+          pas découvert les microbes !</p>
+        <stage><milestone unit="sent"/>Dans la salle, à nouveau sirènes, appels au secours, demandes de toutes
+          sortes :</stage>
+        <stage><milestone unit="sent"/>– Un médecin ?</stage>
+        <stage><milestone unit="sent"/>– Un plombier ?</stage>
+        <stage><milestone unit="sent"/>– Un prof ? etc.</stage>
+        <stage><milestone unit="sent"/>– Il n’y a plus de sucre, pas de gaz !</stage>
+        <stage><milestone unit="sent"/>– On ne nous envoie plus de films !</stage>
+      </sp>
+      <sp who="pere">
+        <speaker>Le Père</speaker>
+        <p><pb n="94" xml:id="p94"/><milestone unit="sent"/>J’ai suivi le chemin tracé, j’ai atteint mon but : j’ai amassé,
+          j’ai construit. <milestone unit="sent"/>À toi de prendre le relais : sélectionne, adapte, édifie. <milestone unit="sent"/>Sois ! Tu as
+          tout pour créer.</p>
+        <stage><milestone unit="sent"/>Le père quitte la scène et descend dans la salle, après avoir béni son fils, Orphée
+          prend la place de son père et fixe la lumière pendant que l’Image d’Orphée et de Nyango
+          s’intensifie.</stage>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/>Je t’attends, je ne fais que t’attendre.</l>
+        <l><milestone unit="sent"/>Je salue le jour où tu te lèveras en pleine lumière.</l>
+        <l><milestone unit="sent"/>La lumière des dieux épouvante les faibles et tue les profanateurs.</l>
+        <l><milestone unit="sent"/>Je t’attends, je ne fais que t’attendre.</l>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Un pendu pend, pend lamentablement.</l>
+        <l><milestone unit="sent"/>Il a déjà quitté la terre</l>
+        <l>Et il voit de loin l’immense foule des hommes.</l>
+        <l><milestone unit="sent"/>Il a trouvé, lui, son poste.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Jouant de son instrument.</stage>
+        <p><milestone unit="sent"/>Et l’image est si belle qu’Orphée reproduit le modèle. <milestone unit="sent"/>Orphée construit sa maison. <milestone unit="sent"/>La
+          salle de bain.</p>
+        <stage><milestone unit="sent"/>Orphée reprend son activité et il creuse, creuse jusqu’à ce qu’il trouve de
+          Veau.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/><pb n="95" xml:id="p95"/>Eau des sources, eau des lagunes, eau de mer.</l>
+        <l><milestone unit="sent"/>Si tu recueilles une goutte d’eau, qu’en feras-tu ?</l>
+        <l><milestone unit="sent"/>Tu la bois, tu l’entends, tu la touches, mais à quoi sert-elle ?</l>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Après un silence.</stage>
+        <l><milestone unit="sent"/>Eau de l’ancêtre, eau pure et sans tache.</l>
+        <l><milestone unit="sent"/>Je n’ai pas lavé d’injures, de blessures, de souillures…</l>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <l><milestone unit="sent"/>Nyango s’est noyée dans le fleuve.</l>
+        <l><milestone unit="sent"/>Orphée n’a pas pu la sauver.</l>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <l><milestone unit="sent"/>Et s’il n’était pas revenu !</l>
+        <l><milestone unit="sent"/>S’il avait tout fait pour vaincre les éléments.</l>
+        <l><milestone unit="sent"/>S’il avait préféré d’autres combats, ailleurs…</l>
+        <stage><milestone unit="sent"/>Le Ndinga allonge symboliquement Orphée sur un pagne blanc.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Sur un air de mvet.</stage>
+        <l><milestone unit="sent"/>La faux a fait son travail.</l>
+        <l><milestone unit="sent"/>Orphée meurt.</l>
+        <l><milestone unit="sent"/>Il renaîtra.</l>
+        <stage><milestone unit="sent"/>Les Commères montent sur scène et s’agenouillent près d’Orphée.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <l><milestone unit="sent"/><pb n="96" xml:id="p96"/>Il a voulu renverser tous les gouvernements.</l>
+        <l><milestone unit="sent"/>Il a voulu servir les intérêts du peuple.</l>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <l><milestone unit="sent"/>On ne massacrera plus les forêts sans reboiser.</l>
+        <l><milestone unit="sent"/>On n’exploitera plus les mines sans en bénéficier.</l>
+        <l><milestone unit="sent"/>On ne vidangera plus les pétroliers sur nos côtes.</l>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>Tu as voulu mais tu n’as pas pu.</l>
+        <l><milestone unit="sent"/>Tu n’as pas pu abattre l’ignorance</l>
+        <l>Détruire et brûler et noyer.</l>
+        <l><milestone unit="sent"/>Tu n’as pas pu secouer l’inertie</l>
+        <l>Briser et piétiner et refuser.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Sans la mort, la vie ne serait plus la vie. <stage><milestone unit="sent"/>(S’approchant d’Orphée.)</stage> Après
+          tu pourras, après tu sauras.</p>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>Il est temps que tu saches, que tu décides.</l>
+        <l><milestone unit="sent"/>Le temps est venu pour toi d’être toi-même.</l>
+        <l><milestone unit="sent"/>Tu retrouveras cette partie de toi que tu as perdue.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/>Sans la mort, la vie ne serait plus la vie.</l>
+        <l><milestone unit="sent"/>Après tu ensemenceras.</l>
+        <l><milestone unit="sent"/>Après tu récolteras.</l>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/><pb n="97" xml:id="p97"/>Ton amour n’a pas su guérir par la lumière.</l>
+        <l><milestone unit="sent"/>Ton amour n’a pas su construire une maison.</l>
+        <l><milestone unit="sent"/>Le véritable amour dissipe les obstacles.</l>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <l><milestone unit="sent"/>Il rêvait de chalets en Suisse.</l>
+        <l><milestone unit="sent"/>Il rêvait de villas sur la Côte.</l>
+        <l><milestone unit="sent"/>Il rêvait de châteaux en Espagne.</l>
+        <l><milestone unit="sent"/>Et il rançonnait, il corrompait, il falsifiait.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/>À quel modèle se raccrocher ?</l>
+        <l><milestone unit="sent"/>Quel idéal formuler ?</l>
+        <l><milestone unit="sent"/>Tu étais trop usé, Orphée.</l>
+        <l><milestone unit="sent"/>La faux a fait son travail.</l>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Implorante.</stage>
+        <l><milestone unit="sent"/>Orphée, je suis orpheline.</l>
+        <l><milestone unit="sent"/>Vois, je n’ai plus de père, il préfère le litre de vin.</l>
+        <l><milestone unit="sent"/>Je n’ai plus d’enfants, ils cherchent des maîtres lucratifs.</l>
+      </sp>
+      <sp who="enfant">
+        <speaker>Un Enfant</speaker>
+        <l><milestone unit="sent"/>Orphée, je ne sais pas où aller.</l>
+        <l><milestone unit="sent"/>Tu sais, personne ne me donne envie d’aller quelque part.</l>
+        <l><milestone unit="sent"/>Je ne sais pas, je ne sais plus.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Seul.</stage>
+        <l><milestone unit="sent"/>On ne peut pas marcher à tâtons quand le soleil brille.</l>
+        <l><pb n="98" xml:id="p98"/><milestone unit="sent"/>L’Indifférence, ah ! l’Indifférence !</l>
+        <l><milestone unit="sent"/>Mesurez-vous sa part de responsabilité ?</l>
+        <l><milestone unit="sent"/>Mesurez-vous les fosses qu’elle creuse ?</l>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>À toi de redéfinir un idéal.</l>
+        <l><milestone unit="sent"/>À toi de réinventer des valeurs.</l>
+        <l><milestone unit="sent"/>Quel prix donneras-tu à tes nouvelles marchandises ?</l>
+        <stage><milestone unit="sent"/>Le Ndinga verse de l’eau sur ta tête d’Orphée qui se relève et se dirige vers les
+          spectateurs.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Sur un air de flûte.</stage>
+        <l><milestone unit="sent"/>J’aime et j’entends le chant secret de mon amour. <milestone unit="sent"/>Ils sont des sangs forts qui marchent
+          sans se retourner.</l>
+        <l><milestone unit="sent"/>Ils sont des cœurs, ils sont des astres qui éclairent…</l>
+        <stage><milestone unit="sent"/>Tam-tam en force, les commères et la foule l’entourent en dansant.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <stage>Dansant.</stage>
+        <l><milestone unit="sent"/>Je découvrirai l’Ivresse de la chaleur</l>
+        <l>Et l’éclair m’habitera.</l>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>Dansant.</stage>
+        <l><milestone unit="sent"/>Je sèmerai les désirs et je briserai les chaînes.</l>
+      </sp>
+      <sp who="enfant">
+        <speaker>Un Enfant</speaker>
+        <stage>Dansant.</stage>
+        <l><milestone unit="sent"/>Je trouverai le modèle et je deviendrai plus grand que lui.</l>
+        <stage><milestone unit="sent"/><pb n="99" xml:id="p99"/>Orphée contemple l’Image d’Orphée et de Nyango qui s’impose
+          à nouveau.</stage>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>La faux du squelette a fait son travail,</l>
+        <l>Nyango revivra.</l>
+        <l><milestone unit="sent"/>Viennent, ô viennent les deux urnes de la Tempérance</l>
+        <l>Et le fleuve coulera sans gêne.</l>
+        <l><milestone unit="sent"/>Vous vaincrez l’espace, vous vaincrez le temps.</l>
+        <l><milestone unit="sent"/>Viennent, ô viennent les deux urnes de la Tempérance.</l>
+        <l><milestone unit="sent"/>Les forces vives luttent contre le feu du ciel.</l>
+        <stage><milestone unit="sent"/>Orphée, après avoir vaincu l’épreuve de la « Mort » continue ses épreuves dans la
+          salle où un autre cercle divisé en plusieurs compartiments l’attend parmi les
+            spectateurs<note place="bottom">On peut imaginer aussi plusieurs petits lieux scéniques
+            dispersés parmi les spectateurs.</note>. <milestone unit="sent"/>Il est maintenant revêtu d’un pagne blanc,
+          alors qu’avant, il portait un vêtement ordinaire, particulièrement usé. <milestone unit="sent"/>Il tient une flûte
+          dans ses mains pour la première fois.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/>Quel idéal reformuler ?</l>
+        <l><milestone unit="sent"/>Quel modèle imposer ?</l>
+        <l><milestone unit="sent"/>Orphée construit son sanctuaire.</l>
+        <stage><milestone unit="sent"/>Orphée joue de la flûte et les spectateurs se regroupent autour de lui.</stage>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/><pb n="100" xml:id="p100"/>Je t’attends, je ne fais que t’attendre.</l>
+        <l><milestone unit="sent"/>Que peut faire un corps divisé ?</l>
+        <l><milestone unit="sent"/>L’homme seul n’a plus de place.</l>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <stage>Sur l’air de flûte.</stage>
+        <p><milestone unit="sent"/>De toute façon tout doit sauter, tout sautera : l’Afrique du Sud, les secteurs minés du
+          Tchad, du Sahara oriental, de la Namibie. <milestone unit="sent"/>Tous les coins piégés sauteront. <milestone unit="sent"/>Tout sautera,
+          mais la relève sera prise. <milestone unit="sent"/>La matière termine son règne.</p>
+        <stage><milestone unit="sent"/>Orphée est maintenant complètement éclairé par une lumière vive.</stage>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <p><milestone unit="sent"/>La situation est préoccupante. <milestone unit="sent"/>Que faut-il faire ?</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Les Spectateurs</speaker>
+        <p><milestone unit="sent"/>Que faut-il faire ? <milestone unit="sent"/>Que faut-il faire ? <milestone unit="sent"/>Que faut-il faire ?</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Les Esprits de la brousse ont déserté. <milestone unit="sent"/>La forêt ne parle plus. <milestone unit="sent"/>Les ancêtres dorment du
+          sommeil du juste.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Se redressant.</stage>
+        <p><milestone unit="sent"/>Mes amis, nous ne pouvons plus compter sur les dieux. <milestone unit="sent"/>Tant que j’ai ce poignet, tant que
+          j’ai cette langue, tant que j’ai mes yeux, je trouverai ! <milestone unit="sent"/>Je trouverai la force de saisir,
+          le pouvoir de dire, et l’assurance <pb n="101" xml:id="p101"/>de voir. <milestone unit="sent"/>Nyango ne restera
+          plus longtemps seule.</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Les Spectateurs</speaker>
+        <p><milestone unit="sent"/>Moi aussi j’ai perdu Nyango. <milestone unit="sent"/>Moi aussi j’ai besoin de prendre des forces.</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Elle a mangé sa mère pour avoir un poste.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Il a mangé son frère pour épouser sa femme.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Ils ont tué, ils ont mangé l’homme. <milestone unit="sent"/>Ils ont souillé, ils ont lavé la place. <milestone unit="sent"/>Et ils sont
+          là riches et bien repus. <milestone unit="sent"/>Mais les masques sont inhabités et vendus aux enchères. <milestone unit="sent"/>L’Esprit
+          ne souffle plus. <milestone unit="sent"/>La bourse est pleine et la mère saigne.</p>
+      </sp>
+      <sp who="enfant">
+        <speaker>Un Enfant</speaker>
+        <p><milestone unit="sent"/>Orphée, que faut-il faire ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Jouant de la flûte.</stage>
+        <p><milestone unit="sent"/>Il faut se battre contre les typhons, sarcler les champs dévastés. <milestone unit="sent"/>La foudre ne détruira
+          plus et Nyango nous attendra au cœur de la tourmente.</p>
+        <stage><milestone unit="sent"/>Le tam-tam traduit la lutte des éléments, Orphée se bat en réclamant l’aide des
+          spectateurs.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Luttant, aidé des spectateurs.</stage>
+        <p><pb n="102" xml:id="p102"/><milestone unit="sent"/>Nyango, la descente n’est pas sans fond. <milestone unit="sent"/>Nyango, les questions
+          ne sont pas sans réponses. <milestone unit="sent"/>Nyango, la nuit n’existe pas sans le jour.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Tam-tam en force.</stage>
+        <p><milestone unit="sent"/>Nos bras s’accordent, une seule voix, un seul rythme et la puissance de UM jaillira de
+          nos cœurs réunis.</p>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <p><milestone unit="sent"/>Les esprits sont morts, mais la force vit et lutte pour s’exprimer.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Dans une transe contrôlée.</stage>
+        <p><milestone unit="sent"/>La lumière perce les ténèbres. <milestone unit="sent"/>Je ne sens plus le chaud, je ne sens plus le froid. <milestone unit="sent"/>Mais
+          je te sens, frère, tout près de moi, et ton visage se crispe !</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Chaque fois qu’il se pénètre de l’amour de Nyango, la lumière s’intensifie. <milestone unit="sent"/>Mais la
+          lumière de midi guette l’amateur de mirage. <milestone unit="sent"/>Et l’image est si belle, qu’Orphée reproduit
+          le modèle. <milestone unit="sent"/>Orphée construit la cuisine.</p>
+        <stage><milestone unit="sent"/>Des femmes apportent de la nourriture à Orphée.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Les odeurs pénètrent. <milestone unit="sent"/>Le bien-repu qui se tait, écoute et entend. <stage><milestone unit="sent"/>(Chaque femme
+            vante son plat.)</stage></p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><pb n="103" xml:id="p103"/><milestone unit="sent"/>Un bon foutou, à la sauce-graine…</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Un bon attiéké, à la sauce-claire…</p>
+        <p><milestone unit="sent"/>Troisième Commère Un bon foutou, à la sauce-foncée…</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <p><milestone unit="sent"/>Un bon attiéké, à…</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Assez ! Assez de vos foutous, attiéké, de vos sauces informes, assez de vos pauvres
+          imaginations sans saveur. <milestone unit="sent"/>Est-ce qu’il vous reste encore du goût ?</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <stage>Apportant un autre plat.</stage>
+        <p><milestone unit="sent"/>Orphée, ne fait pas le difficile, si tu goûtes à mon plat, tu auras succès et
+          richesse.</p>
+        <stage><milestone unit="sent"/>Dans la salle, le bruit du pilon devient de plus en plus lancinant et s’impose comme
+          autant de coups reçus.</stage>
+      </sp>
+      <sp who="commeres">
+        <speaker>Les Commères</speaker>
+        <stage>En chœur.</stage>
+        <p><milestone unit="sent"/>Tu as tué ta femme, tu as mangé Madame.</p>
+        <p><milestone unit="sent"/>Tu as vendu Madame, tu as découpé ta dame.</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><pb n="104" xml:id="p104"/><milestone unit="sent"/>Un peu de chair de Nyango et tu auras ta bourse. <milestone unit="sent"/>Un peu de
+          sang de Nyango et tu auras ton poste. <milestone unit="sent"/>Ta femme saigne, Orphée, et tu vis, tu réussis.</p>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <p><milestone unit="sent"/>Chaque soir, sur les bords du fleuve Va, va chercher la réponse.</p>
+        <p><milestone unit="sent"/>Chaque soir, va sur les bords du fleuve.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Si le clan t’accuse, Orphée, que lui diras-tu ?</p>
+        <p><milestone unit="sent"/>C’est la voix de ton peuple et il a toujours raison.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Nyango n’est plus là, où est-elle ? <milestone unit="sent"/>Orphée, pourquoi ne manges-tu pas tous ces mets
+          préparés pour toi ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Faisant front, s’adressant à chaque spectateur.</stage>
+        <l><milestone unit="sent"/>Je ne mangerai pas Nyango, mais je me nourrirai d’elle.</l>
+        <l><milestone unit="sent"/>Une part qui a tué le frère <stage><milestone unit="sent"/>(il la jette aux spectateurs)</stage>.</l>
+        <l><milestone unit="sent"/>Une part qui a tué la mère</l>
+        <l>Une part qui a tué le père</l>
+        <l>Et l’on mange et l’on amasse</l>
+        <l>Et l’on digère et l’on dépense.</l>
+        <l><milestone unit="sent"/>Rien, plus rien, ne grandit l’homme.</l>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Ils courent tous après le pouvoir, ils se battent pour <pb n="105" xml:id="p105"/>la
+          richesse. <milestone unit="sent"/>Orphée, tu as mangé aussi, tu t’es gavé et tu es seul pour recevoir ton salaire. <milestone unit="sent"/>Si tu vis c’est que d’autres sont morts pour toi. <milestone unit="sent"/>Tu es riche, fort e tout ce que les
+          autres ont perdu.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Orphée, le dan est encore puissant, qu’as-tu à lui répondre ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Nyango a disparu et je respire encore. <milestone unit="sent"/>Nyango n’est plus et je vis bien.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Aurais-tu accepté ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>J’ai eu l’air d’accepter et ce n’est pas mieux ! <milestone unit="sent"/>J’ai eu l’air de baisser les bras et
+          c’est le plus grave. <milestone unit="sent"/>Ils l’ont cru et j’ai eu tort.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Il avance l’étoile au front et il est aveugle. <milestone unit="sent"/>La lumière l’éclabousse mais n’éclaire
+          pas. <milestone unit="sent"/>Les ruines fument, la pierre hurle.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Excité.</stage>
+        <p><milestone unit="sent"/>Je ne crains pas les brasiers quand le bois se consume dignement. <milestone unit="sent"/>La nourriture n’en est
+          que plus appétissante. <milestone unit="sent"/>Femmes, apportez-moi à manger !</p>
+        <stage><milestone unit="sent"/><pb n="106" xml:id="p106"/>Le Ndinga joue de son instrument, tandis que les femmes,
+          s’efforçant de suivre le rythme, distribuent ta nourriture.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <l><milestone unit="sent"/>Mange et ravis ton cœur.</l>
+        <l><milestone unit="sent"/>Nourris-toi de Nyango.</l>
+        <l><milestone unit="sent"/>Tu es riche de tout ce que tu as perdu.</l>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>Chaque soir, il va sur les bords du fleuve et revient vers son peuple.</l>
+        <l><milestone unit="sent"/>Un soir, il trouvera la réponse.</l>
+        <l><milestone unit="sent"/>Le peuple sait attendre et se battre.</l>
+        <l><milestone unit="sent"/>C’est de lui que naîtra la force.</l>
+        <stage><milestone unit="sent"/>Orphée termine son repas comme un rite de manducation. <milestone unit="sent"/>Fortifié, il gravit « sept
+          marches » et atteint le grenier.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Orphée se tait, il écoute et il entend, il construit le grenier et il pense à son
+          oncle.</p>
+        <stage><milestone unit="sent"/>Orphée s’arrête au sommet de l’escalier, le regard tourné vers le ciel.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Chaque fois que je revis l’amour de Nyango, une étoile naît dans le ciel vide et je
+          reconnais mon guide. <milestone unit="sent"/>Il fait noir mais je prends ta main. <milestone unit="sent"/>Je sens les cailloux, les
+          crevasses, mais je vois ton visage prometteur et ma vie se précise devant moi.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><pb n="107" xml:id="p107"/><milestone unit="sent"/>L’Esprit stagnant et aride sera vivifié par l’énergie céleste. <milestone unit="sent"/>Venez boire à la lumière du jour, vous qui sortez de la nuit. <milestone unit="sent"/>L’étincelle divine devient
+          étoile dans le ciel. <milestone unit="sent"/>Dans l’extase des Mystères, chacun voit jusqu’au fond des âmes.</p>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <p><milestone unit="sent"/>La vie de l’ancêtre a été une longue lutte des combats sans merci. <milestone unit="sent"/>Mais il a su se
+          ménager des repos de guerrier. <milestone unit="sent"/>Des hommes étaient désignés pour réconforter, dégager la
+          belle chaleur humaine. <milestone unit="sent"/>Orphée, as-tu appelé ton oncle, as-tu eu besoin de son
+          contact ?</p>
+        <stage><milestone unit="sent"/>Durant cette réplique, Orphée recherchait un contact, certains s’esquivaient. <milestone unit="sent"/>La
+          flûte cherchait avec lui. <milestone unit="sent"/>Seule l’ombre de Nyango s’est manifestée. <milestone unit="sent"/>Mais au moment où
+          Orphée a voulu la saisir, elle s’évanouit.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+        <l><milestone unit="sent"/>J’ai connu des mains secourables,</l>
+        <l>J’ai surpris des sourires engageants,</l>
+        <l>Des paroles tendres et des pas empressés.</l>
+        <l><milestone unit="sent"/>Mais je ne vois plus rien, je n’entends plus rien,</l>
+        <l>Je n’embrasse plus rien.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Orphée, imagines-tu la chaleur d’un parent désintéressé, de cet oncle qui t’hébergeait et
+          te soutenait même quand tu étais la pire des crapules ? <milestone unit="sent"/>Un de ces hommes qui ne juge pas
+          l</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><pb n="108" xml:id="p108"/><milestone unit="sent"/>J’avais au fond de moi cette image d’une lumière et d’une
+          chaleur en pleine tempête. <milestone unit="sent"/>Et je la conservais dans les moments difficiles pour mieux la
+          fortifier. <milestone unit="sent"/>Se réalisera-t-elle un jour ?</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commére</speaker>
+        <p><milestone unit="sent"/>Tu m’épies, oui. <stage><milestone unit="sent"/>(Désaccord de mvet.)</stage></p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Tu me nargues, tu m’évites. <stage><milestone unit="sent"/>(Désaccord de mvet.)</stage></p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Et tu me gifles, tu me fouettes, tu m’étouffes. <milestone unit="sent"/>Tu m’accules. <stage><milestone unit="sent"/>(Désaccord de
+            mvet.)</stage></p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Je touche le fond, je suis au creux de la vague et je ne peux plus remonter le
+          courant.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Il n’y a plus l’oncle, mais il y a toujours ce besoin de lui, la soif de sa présence.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Et alors ?</p>
+        <stage><milestone unit="sent"/>Silence.</stage>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <p><pb n="109" xml:id="p109"/><milestone unit="sent"/>Le temps est revenu d’être toi-même, de retrouver cette partie
+          de toi que tu avais perdue.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Faute d’un regard, faute d’une pause, tu ne vois plus le fond de l’âme de ton frère.</p>
+        <p><milestone unit="sent"/>Orphée revoit l’Image de Nyango et apprend dans une gestuelle de plus en plus élaborée la
+          joie de la rencontre.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p>… <milestone unit="sent"/>Et l’image est si belle qu’Orphée reproduit le modèle. <milestone unit="sent"/>Orphée se remet au travail. <milestone unit="sent"/>Il
+          conçoit son atelier.</p>
+        <stage><milestone unit="sent"/>Orphée joue de la flûte et s’efforce de créer une harmonie. <milestone unit="sent"/>Quelques spectateurs
+          s’approchent et créent un même monde.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Ta musique, Orphée, construira un autre monde, si ton désir est suffisamment fort. <milestone unit="sent"/>Tes
+          pensées prendront corps et Nyango pourra vivre. <milestone unit="sent"/>Ah ! les temps ne croient plus à la
+          beauté !</p>
+        <stage><milestone unit="sent"/>Réaction éloquente de la foule. <milestone unit="sent"/>Orphée attend une collaboration.</stage>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Je ne peux pas rester plus longtemps. <milestone unit="sent"/>Je crains de rater mon bus.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker rend="noindent">Deuxième Commère</speaker>
+        <p><pb n="110" xml:id="p110"/><milestone unit="sent"/>Je n’ai vraiment pas le temps d’aller te voir. <milestone unit="sent"/>Oui, j’avais
+          une course urgente, puis un rendez-vous impératif, enfin l’engrenage, quoi !</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Mais enfin, la musique, à quoi ça sert ?</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Et la peinture ?</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><milestone unit="sent"/>Et si j’écrivais ? <milestone unit="sent"/>Ça me donnerait quoi ?</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Jouant du mvet, pendant de longs silences.</stage>
+        <l><milestone unit="sent"/>Ils marchaient la poitrine bombée, la tête haute,</l>
+        <l>Les Anciens.</l>
+        <l><milestone unit="sent"/>Ils répondaient à l’appel en clamant fièrement leur lignée,</l>
+        <l>Les Anciens.</l>
+        <l><milestone unit="sent"/>Ils donnaient leurs noms, en frappant le torse de la main droite,</l>
+        <l>Les Anciens.</l>
+        <l><milestone unit="sent"/>Et ils célébraient le culte du savoir, ils adoraient la pensée pure et forte.</l>
+        <l><milestone unit="sent"/>Les Anciens.</l>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Orphée, as-tu une idée de la réussite ? <milestone unit="sent"/>Moi, j’aimerais tant voir une fois une chose qui
+          aboutit, un projet qui va jusqu’à son terme.</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <p><pb n="111" xml:id="p111"/><milestone unit="sent"/>J’aimerais connaître le plaisir d’un travail bien fait, savoir
+          qu’il n’y a qu’un pas pour que ce soit parfait.</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <p><milestone unit="sent"/>Te souviens-tu de notre initiation ? <milestone unit="sent"/>On nous demandait d’abord d’avoir l’idée, l’image de
+          la perfection…</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Je garde jalousement l’image d’un bonheur accompli avec Nyango. <milestone unit="sent"/>Je vis dans les sentiers
+          fleuris de la plaine et je ne vois pas les orages sur la montagne. <milestone unit="sent"/>Et la nature est si
+          belle, qu’un souffle de vent réunit deux pétales séparés<note place="bottom" resp="KS"
+            >Nous corrigeons « séparées » par « séparés ».</note> !</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Et l’image est si belle, qu’Orphée reproduit le modèle.</p>
+        <stage><milestone unit="sent"/>L’Image d’Orphée et de Nyango s’impose de plus en plus, mais quand Orphée veut la
+          toucher, elle s’évanouit.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Mais je suis sûr que je toucherai ce que j’aime. <milestone unit="sent"/>Je donnerai vie à mes pensées les plus
+          folles, celles qui m’aideront à bâtir, à élever ces murs jusqu’au toit qui les consacrera. <milestone unit="sent"/>Il ne tient qu’à moi pour que vivent, grandissent et meurent mes rêves les plus beaux.</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><pb n="112" xml:id="p112"/><milestone unit="sent"/>Orphée, je t’en prie, en es-tu sûr ? <milestone unit="sent"/>Peut-on vivre de nos
+          désirs ?</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Es-tu sûr qu’ils seront justes ? <milestone unit="sent"/>On meurt suffisamment, pour que les rêves deviennent des
+          réalités. <milestone unit="sent"/>Rien n’est plus simple aujourd’hui que d’avoir, de posséder. <milestone unit="sent"/>« Avoir »
+          caractérise seul l’action. <milestone unit="sent"/>Tu as des troupeaux, tu as des maisons, tu as des diplômes. <milestone unit="sent"/>Mais qu’as-tu fait pour « avoir » ?</p>
+        <stage><milestone unit="sent"/>Silence.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Ne marche pas sur moi, je suis le témoin.</l>
+        <l><milestone unit="sent"/>Regarde, regarde devant toi,</l>
+        <l>La plus petite pierre te parlera.</l>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Pourquoi n’aurions-nous pas ? <milestone unit="sent"/>J’ai une maison, c’est normal, j’ai de l’argent, c’est
+          encore plus normal. <milestone unit="sent"/>C’est quand on n’a rien que c’est anormal.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Quand j’avais Nyango, elle a disparu.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Oui ; mais quand tu seras Orphée, tu retrouveras Nyango.</p>
+        <stage><milestone unit="sent"/><pb n="113" xml:id="p113"/>Le Ndinga joue doucement de son instrument.</stage>
+        <l><milestone unit="sent"/>Quand tu seras parole et savoir dire,</l>
+        <l>Quand tu seras beauté et savoir faire,</l>
+        <l>Nyango renaîtra à la force de ton amour.</l>
+        <l><milestone unit="sent"/>Parole perdue, parole de beauté</l>
+        <l>Et la forme jaillit du limon de la terre.</l>
+        <p><milestone unit="sent"/>Orphée construit de ses mains plusieurs formes, et inspire d’autres Spectateurs.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Réveillons-nous, la vie pénètre par tous les pores. <milestone unit="sent"/>La forêt saigne et les bois
+          espèrent.</p>
+        <p><milestone unit="sent"/>Le pétrole, le café, le cacao s’interrogent. <milestone unit="sent"/>Réveillons-nous, amis, la vie jaillit de nos
+          bras réunis.</p>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/>La pleine lune a bercé toute une nuit la nouvelle lune dans ses bras.</l>
+        <l><milestone unit="sent"/>Deux chiens aboient et les monstres s’évanouissent.</l>
+        <l><milestone unit="sent"/>Derrière le mur, un couple se retrouve.</l>
+        <l><milestone unit="sent"/>Venez boire à la coupe de l’amour</l>
+        <l>Vous qui sortez de la nuit.</l>
+        <l><milestone unit="sent"/>La lune cède un quartier au soleil</l>
+        <l>Et le soleil abandonne un rayon à la lune.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Et l’image est si belle, qu’Orphée reproduit le modèle. <milestone unit="sent"/>Orphée construit la chambre des
+          amis. <milestone unit="sent"/>Ici, les amis, c’est ce qui manque le moins.</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><pb n="114" xml:id="p114"/><milestone unit="sent"/>J’ai toujours voulu un salon accueillant. <milestone unit="sent"/>Je n’ai jamais
+          refusé une aide à un ami. <milestone unit="sent"/>Mes maigres moyens, je les ai toujours partagés.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Oui, l’amitié ne refuse jamais rien, l’amitié donne sans compter !</p>
+      </sp>
+      <sp who="premiere_commere">
+        <speaker>Première Commère</speaker>
+        <p><milestone unit="sent"/>Mon frère, j’ai besoin d’argent pour payer les études de mon fils. <milestone unit="sent"/>Il n’est pas très
+          doué, mais il lui faut une situation qui nous rehausse un peu. Tu comprends ?…</p>
+      </sp>
+      <sp who="deuxieme_commere">
+        <speaker>Deuxième Commère</speaker>
+        <stage>À un autre Spectateur.</stage>
+        <p><milestone unit="sent"/>Mon frère, quand mon neveu aura son diplôme, il faudra que tu m’aides à lui trouver un
+          poste.</p>
+      </sp>
+      <sp who="troisieme_commere">
+        <speaker>Troisième Commère</speaker>
+        <stage>À un autre Spectateur.</stage>
+        <p><milestone unit="sent"/>Mon frère, tu ne peux pas me refuser ton appui. <milestone unit="sent"/>Ton père et mon père étaient, même père,
+          même mère. <milestone unit="sent"/>Tu ne peux pas me laisser dans le pétrin. <milestone unit="sent"/>On va tout me prendre, si tu ne payes
+          pas mon loyer. Dis !…</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Il est heureux, il rend service. <milestone unit="sent"/>Quel bonheur de s’entourer d’amis, au sourire satisfait,
+          qui bénissent du matin au soir. <milestone unit="sent"/>Tu as fait ton devoir, tu peux avoir bonne conscience, on
+          ne te reprochera rien. <milestone unit="sent"/>Tes pères ne te maudiront pas.</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>un Spectateur</speaker>
+        <stage>Dans un autre coin de la salle</stage>
+        <p><pb n="115" xml:id="p115"/><milestone unit="sent"/>Mon frère, je n’arrive pas à décrocher mon concours. <milestone unit="sent"/>Ne
+          connais-tu pas quelqu’un d’en haut d’en haut ?</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Eh ! Oui !</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un autre Spectateur</speaker>
+        <p><milestone unit="sent"/>Et moi ? Tu sais le travail que tu m’as donné ! <milestone unit="sent"/>Eh bien on me le reprend. <milestone unit="sent"/>Ils me
+          reprochent n’importe quoi. <milestone unit="sent"/>Tu sais bien que c’est faux, ils sont jaloux !</p>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un autre Spectateur</speaker>
+        <p><milestone unit="sent"/>Et moi, et moi ! <milestone unit="sent"/>J’ai fait une mauvaise affaire avec l’argent que tu m’as prêté. <milestone unit="sent"/>Si tu
+          m’aides une dernière fois, la chance me sourira, je te le promets.</p>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Donne-moi ci, donne-moi ça. <milestone unit="sent"/>Aide-moi par-ci, aide-moi par-là. <milestone unit="sent"/>Et la fraternité est bonne,
+          et la famille est belle, et voilà notre fameux humanisme ! <milestone unit="sent"/>Mais… que construis-tu autour
+          de toi ? <stage><milestone unit="sent"/>(Silence.)</stage> Que devient notre société ?</p>
+        <stage><milestone unit="sent"/>Le Ndinga d’un geste transforme tous ces quémandeurs : un se traîne avec des
+          béquilles, un autre avec des menottes, un autre mendie, etc.</stage>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>Après un silence.</stage>
+        <p><pb n="116" xml:id="p116"/><milestone unit="sent"/>Nous sommes entourés d’infirmes loqueteux, aux regards avides
+          qui évaluent le prix d’une présence… <milestone unit="sent"/>Mais quand j’ai faim, personne ne me donne à manger. <milestone unit="sent"/>J’ai faim d’une main qui se tend sans rien attendre. <milestone unit="sent"/>J’ai soif d’un sourire qui déborde
+          sans rien réclamer. <milestone unit="sent"/>Et je guette une lueur dans le noir, un espoir de vie qui m’accueille. <milestone unit="sent"/>Nyango, je rêve de la chaleur des mauvais jours, je rêve d’un rêve qui ne sera plus un
+          rêve « Je suis devenu celle que j’aime et celle que j’aime est devenu moi. »</p>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <l><milestone unit="sent"/>Je suis la Justice de Ngué</l>
+        <l>J’unis la terre à l’eau</l>
+        <l>J’attire l’air et le feu</l>
+        <l>Et je ramène à l’Unité</l>
+        <l>La Voix de l’âme réveille celui qui dort.</l>
+        <stage><milestone unit="sent"/>Orphée entreprend un long périple dans la salle, prend de nombreux contacts. <milestone unit="sent"/>Le
+          Ndinga ferme la marche. <milestone unit="sent"/>Orphée crée une sorte de salon où il installe certains
+          spectateurs.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Et l’image est si belle qu’Orphée reproduit le modèle. <milestone unit="sent"/>Orphée organise la réception des
+          étrangers dans le salon.</p>
+        <stage><milestone unit="sent"/>Mais l’obscurité est à son comble ; on entend des cris et des chocs
+          multiples.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>De l’autre côté du mur, le monde respire.</l>
+        <l><pb n="117" xml:id="p117"/><milestone unit="sent"/>Derrière le mur, les peurs s’évanouissent.</l>
+        <l><milestone unit="sent"/>Les monstres, les djinns s’abîment dans la mare.</l>
+        <l><milestone unit="sent"/>Orphée, la lumière t’attend.</l>
+        <stage><milestone unit="sent"/>Après une ultime lutte où deux monstres se battent en ombre chinoise, l’Image
+          d’Orphée et de Nyango renaît, plus belle.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Que vois-tu encore, de ce côté-ci ?</p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <p><milestone unit="sent"/>Je vois la petite morale de la taille d’un cerveau fragile. <milestone unit="sent"/>Une liberté étriquée à la
+          mesure de nos pauvres désirs. <milestone unit="sent"/>Une imagination sordide qui s’arrête au premier tournant de
+          la grisaille de l’indifférence : des visages de peur et des regards de traître, des mains
+          molles et des voix impassibles. <milestone unit="sent"/>Et l’on dort tranquille sans entendre l’orage qui
+          gronde…</p>
+        <stage><milestone unit="sent"/>Un silence. Puis Orphée prend ta flûte et joue jusqu’à ce que l’Image d’Orphée et de
+          Nyango grandisse. <milestone unit="sent"/>Les personnages qui entouraient Orphée et qui s’exprimaient comme des
+          spectres s’animent.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <l><milestone unit="sent"/>Marche sur moi, malaxe-moi, avale-moi.</l>
+        <l><milestone unit="sent"/>Marche sur moi, mais digère-moi, nourris-toi.</l>
+        <l><milestone unit="sent"/>Je féconderai l’humus et tu rayonneras.</l>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <l><milestone unit="sent"/>Nous étions les sans-voix, les sans-yeux, les sans-rien.</l>
+        <l><pb n="118" xml:id="p118"/><milestone unit="sent"/>Nous serons des concentrés d’êtres et nous vivrons la
+          beauté.</l>
+        <l><milestone unit="sent"/>Orphée, soutenu par la flûte, anime un personnage-spectateur.</l>
+        <l><milestone unit="sent"/>Ton corps, ami, respire, il sait la force et l’élan.</l>
+        <stage><milestone unit="sent"/>À un autre Spectateur.</stage>
+        <p><milestone unit="sent"/>Ton cœur bat, il sait la chaleur d’un contact.</p>
+        <stage><milestone unit="sent"/>À un autre Spectateur.</stage>
+        <p><milestone unit="sent"/>Ton âme défend le beau et le vrai, mais tu l’ignores, n’est-ce pas ? <stage><milestone unit="sent"/>(La flûte
+            répond.)</stage></p>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <stage>chantant.</stage>
+        <l><milestone unit="sent"/>J’ai vu le ciel donnant dans son regard</l>
+        <l>J’ai vu la terre entourée de fleurs</l>
+        <l>Et l’eau claire comme une pensée</l>
+        <l>Et ce fut le jour de l’extase.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <stage>Pendant que les personnages cherchent des poses de plus en plus belles et
+          suggestives.</stage>
+        <l><milestone unit="sent"/>Si tu écris pour noircir, arrête ta main.</l>
+        <l><milestone unit="sent"/>Si tu peins pour colorer, arrête ton pinceau.</l>
+        <l><milestone unit="sent"/>Si tu parles avec l’eau dans la bouche, arrête le massacre.</l>
+        <stage><milestone unit="sent"/>Un Silence.</stage>
+        <l>Mais crée, crée l’irremplaçable et devient providence.</l>
+        <stage><milestone unit="sent"/><pb n="119" xml:id="p119"/>La Voix des Ancêtres est de plus en plus lointaine, Orphée
+          est obligé de terminer la phrase.</stage>
+        <l>Quand l’Étranger ouvre la porte</l>
+        <l>Et parle le langage des Dieux</l>
+        <l>N’entends-tu pas la voix du peuple ?</l>
+        <l><milestone unit="sent"/>Obéis-lui comme à ton Seigneur,</l>
+        <l>Et… Ne nous plaçons pas au-dessus de lui.</l>
+        <stage><milestone unit="sent"/>Un Silence ; Orphée apprend à créer des contacts avec les Spectateurs. <milestone unit="sent"/>Puis la flûte
+          renaît, suivie du mvet. <milestone unit="sent"/>La scène s’éclaire, les projecteurs pleins feux, annoncent une
+          fête. <milestone unit="sent"/>L’Image d’Orphée et de Nyango disparaît. <milestone unit="sent"/>Orphée monte sur scène et prend la place de
+          l’Image d’Orphée, tandis que Nyango, bien vivante, se tient à ses côtés.</stage>
+      </sp>
+      <sp who="nyango">
+        <speaker>Nyango</speaker>
+        <l><milestone unit="sent"/>Je t’appelle Orphée, la lumière qui guérit.</l>
+        <l><milestone unit="sent"/>La lumière libère mais bouleverse.</l>
+        <l><milestone unit="sent"/>Si tu as volé le feu sacré, accepte le prix du savoir.</l>
+        <l><milestone unit="sent"/>Orphée, je suis devenue celui que j’aime,</l>
+        <l>Tu es le fils du jour éclatant et clair.</l>
+      </sp>
+      <sp who="orphee">
+        <speaker>Orphée</speaker>
+        <l><milestone unit="sent"/>Nyango, vivante, ne m’avait donné que l’Ivresse du bonheur.</l>
+        <l><milestone unit="sent"/>Nyango, morte, me fit trouver la Vérité.</l>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/>Salut à vous tous qui êtes venus pour renaître</l>
+        <l>Après les douleurs de la terre,</l>
+        <l><pb n="120" xml:id="p120"/>Venez boire à la coupe d’Orphée et de Nyango,</l>
+        <l>Vous, qui sortez de la nuit.</l>
+        <stage><milestone unit="sent"/>À un Spectateur</stage>
+        <l>Tu es le caillou, tu es l’arbre, tu es l’océan.</l>
+        <l><milestone unit="sent"/>Tu es oiseau, tu es animal, tu es le soleil et la lune.</l>
+        <l><milestone unit="sent"/>Le jour et la nuit se penchent sur ton sommeil</l>
+        <l>Et tu t’éveilles, réconcilié.</l>
+        <stage><milestone unit="sent"/>Orphée et Nyango descendent dans la salle accompagnés de la flûte. <milestone unit="sent"/>Il s’ouvre un long
+          sentier devant eux.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <p><milestone unit="sent"/>Le chemin que tu as choisi sera long et douloureux mais les joies seront profondes. <milestone unit="sent"/>C’est
+          celui qu’emprunteront tes frères de race ; il conduit de l’autre côté du mur, là où
+          l’étoile s’est arrêtée.</p>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/>Tes frères attendent le lever du soleil.</l>
+        <l><milestone unit="sent"/>Ils espèrent la fin des lourds karmas.</l>
+        <l><milestone unit="sent"/>La journée sera, lumineuse et la moisson abondante.</l>
+        <l><milestone unit="sent"/>Les temps sont venus pour vous d’être vous-mêmes.</l>
+        <l><milestone unit="sent"/>De retrouver cette partie de vous que vous aviez perdue.</l>
+        <stage><milestone unit="sent"/>Les trois lumières clignotent une dernière fois tandis qu’Orphée et Nyango se perdent
+          dans la foule.</stage>
+      </sp>
+      <sp who="feuilles">
+        <speaker>La Voix des feuilles mortes</speaker>
+        <stage>De plus en plus faible.</stage>
+        <p><milestone unit="sent"/>Ne marche pas sur moi…</p>
+      </sp>
+      <sp who="ancetres">
+        <speaker>La Voix des Ancêtres</speaker>
+        <stage>De plus en plus inexistante.</stage>
+        <p><pb n="121" xml:id="p121"/><milestone unit="sent"/>Les temps sont venus pour vous…</p>
+      </sp>
+      <sp who="lumiere">
+        <speaker>La Voix de la Lumière</speaker>
+        <l><milestone unit="sent"/>Et la force jaillit des mains croisées.</l>
+        <l><milestone unit="sent"/>J’ai été une larme dans l’air.</l>
+        <l><milestone unit="sent"/>Je serai l’éclat d’une lumière.</l>
+        <stage><milestone unit="sent"/>La scène s’éteint. <milestone unit="sent"/>Un long silence. <milestone unit="sent"/>La salle brille de tous ses feux. <milestone unit="sent"/>Le Ndinga
+          chante. <milestone unit="sent"/>Orphée continue sa longue marche entraînant acteurs et Spectateurs dans son
+          sillage. <milestone unit="sent"/>Les paroles du Ndinga se feront entendre hors de la salle, dans la rue.</stage>
+      </sp>
+      <sp who="ndinga">
+        <speaker>Le Ndinga</speaker>
+        <l><milestone unit="sent"/>Et l’image si belle a recréé le modèle.</l>
+        <l><milestone unit="sent"/>Le rêve a pris le pouvoir et la passion s’installe</l>
+        <l>La fureur de vivre, la force d’aimer.</l>
+        <l><milestone unit="sent"/>Vous avez choisi et vous serez.</l>
+        <l><milestone unit="sent"/>Vous servirez pleinement l’homme</l>
+        <l>Et les Dieux, satisfaits, iront se coucher.</l>
+        <stage><milestone unit="sent"/>Chant du Ndinga</stage>
+      </sp>
+      <sp who="spectateurs">
+        <speaker>Un Spectateur</speaker>
+        <l><milestone unit="sent"/>Chante Ndinga, chante.</l>
+        <l><milestone unit="sent"/>Je suis l’oreille qui écoute et j’entends.</l>
+        <l><milestone unit="sent"/>Je suis la main qui touche et je saisis.</l>
+        <l><milestone unit="sent"/>Danse Ndinga, danse.</l>
+        <l><milestone unit="sent"/>La beauté naît d’un son.</l>
+        <l><milestone unit="sent"/>La vérité jaillit du rythme.</l>
+        <l><pb n="122" xml:id="p122"/><milestone unit="sent"/>Par ton regard la terre bascule et se couvre de pensées.</l>
+        <stage><milestone unit="sent"/>La foule danse d’allégresse comme à la fin de chaque étape initiatique
+          réussie.</stage>
+      </sp>
+
+    </body>
+
+  </text>
+</TEI>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Géorigiques</title>
+                <title type="book">Œuvres complètes de Virgile</title>
+                <author>Virgile</author>
+                <editor>J.-R.-T. Cabaret-Dupaty</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k859821v</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Virgile</author> / <title>Géorgiques</title> / <title>Œuvres complètes de
+                    Virgile</title> / J.-R.-T. Cabaret-Dupaty (trad.) /Paris / 1897 / p. 101-104.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Géorigiques. Œuvres complètes de Virgile</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher/>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1897"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>cabaret-dupaty1897</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1897">1897</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Géorgiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">J.-R.-T. Cabaret-Dupaty</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <head>Chant IV</head>
+            <p><pb n="101" xml:id="p101"/><milestone unit="sent"/>La vengeance d’un dieu te poursuit : tu expies un grand
+                forfait. <milestone unit="sent"/>Le malheureux Orphée, pour te punir de lui <pb n="102" xml:id="p102"/>avoir
+                ravi son épouse, t’inflige ce châtiment, qui, grâce aux Destins, n’égale pas encore
+                ton crime. <milestone unit="sent"/>Un jour, pour échapper à ta poursuite, elle fuyait à pas précipités le
+                long du fleuve ; et l’imprudente ne vit pas à ses pieds, dans les hautes herbes de
+                la rive, un énorme serpent qui lui donna la mort. <milestone unit="sent"/>Les Dryades, ses compagnes,
+                remplirent les montagnes de leurs cris ; les sommets du Rhodope la pleurèrent ; les
+                cimes du Pangée, la terre de Rhésus, consacrée à Mars, les Gètes, l’Hèbre et les
+                champs d’Orithye gémirent sur son trépas. <milestone unit="sent"/>Pour lui, consolant sa douleur par les
+                accords de sa lyre, il se tenait sur la rive solitaire, et là, tendre épouse, il te
+                chantait au lever de l’aurore, et te chantait encore au déclin du jour.</p>
+            <p><milestone unit="sent"/>Il osa pénétrer jusqu’aux portes du Ténare, dans les sombres demeures de Pluton, et,
+                traversant ces bois où règne une ténébreuse horreur, il aborda les Mânes et leur roi
+                formidable, et ces divinités que les pleurs des humains n’ont jamais attendries. <milestone unit="sent"/>Il
+                chantait, et, touchés de ses doux accords, les ombres légères, les pâles fantômes
+                accouraient du fond de l’Érèbe, aussi nombreux que ces oiseaux qui se rassemblent
+                par milliers dans les forêts, lorsque le soir ou une pluie d’orage les chasse des
+                montagnes. <milestone unit="sent"/>C’étaient des mères, des époux, des héros magnanimes, moissonnés par le
+                trépas, des enfants, de jeunes vierges, des fils à la fleur de l’âge, placés sur le
+                bûcher aux yeux de leurs parents ; victimes que le sombre marais du Cocyte, bordé
+                d’affreux roseaux, environne de ses eaux dormantes, et que le Styx enferme neuf fois
+                des replis de son onde. <milestone unit="sent"/>Ses chants émurent l’enfer lui-même et le Tartare, ce
+                profond séjour de la Mort, et les cruelles Euménides aux cheveux entrelacés de noirs
+                serpents ; Cerbère retint sa triste voix dans ses gueules béantes, et le vent cessa
+                de faire tourner la roue d’Ixion.</p>
+            <p><milestone unit="sent"/>Enfin Orphée revenait des enfers après avoir échappé à tous les périls, et Eurydice,
+                rendue à ses vœux, remontait au séjour de la lumière en suivant son époux (ainsi
+                l’avait ordonné Proserpine), quand un délire soudain s’empara de l’aveugle amant :
+                faute bien pardonnable, si l’enfer savait <pb n="103" xml:id="p103"/>pardonner. <milestone unit="sent"/>Presque aux portes du jour, il s’arrête, hélas ! il oublie sa promesse, et, vaincu
+                par l’amour, il tourne la tête pour regarder sa chère Eurydice. <milestone unit="sent"/>Au même instant
+                s’évanouit le fruit de tant de peines ; le pacte conclu avec l’impitoyable tyran est
+                rompu, et trois fois l’Averne retentit avec fracas.</p>
+            <p><milestone unit="sent"/>Ah ! malheureuse, s’écrie-t-elle ; qui donc me perd et te perd ainsi que moi, cher
+                Orphée ? <milestone unit="sent"/>Quelle fureur barbare ! <milestone unit="sent"/>Déjà les cruels Destins me rappellent, et le
+                sommeil ferme mes yeux pour jamais ! <milestone unit="sent"/>Adieu. L’éternelle nuit m’enveloppe et
+                m’entraîne, sans que je puisse te presser de mes mains défaillantes : hélas ! je ne
+                suis plus à toi.</p>
+            <p><milestone unit="sent"/>Elle dit, et disparaît à ses yeux comme une légère vapeur qui se dissipe dans les
+                airs. <milestone unit="sent"/>Orphée veut en vain la saisir et lui parler encore ; il n’embrasse qu’une
+                ombre ; il ne la revoit plus, et le nocher des enfers lui défend de repasser l’onde
+                qui les sépare. <milestone unit="sent"/>Que faire ? où porter ses pas après s’être vu deux fois ravir son
+                épouse ? <milestone unit="sent"/>Par quels pleurs, par quels accents fléchir les divinités infernales ? <milestone unit="sent"/>Déjà
+                l’ombre d’Eurydice passait dans la barque fatale.</p>
+            <p><milestone unit="sent"/>Orphée, dit-on, pleura sept mois entiers son malheur sur les bords déserts du
+                Strymon, au pied d’une roche escarpée, et fit retentir de ses gémissements les
+                antres glacés de la Thrace. <milestone unit="sent"/>Sa voix adoucissait les tigres, et les chênes
+                accouraient à ses magiques accords. <milestone unit="sent"/>Telle, à l’ombre d’un peuplier, la plaintive
+                Philomèle déplore la perte de ses petits, qu’un laboureur inhumain a surpris et
+                enlevés de leur nid, lorsqu’ils n’avaient pas encore de plumes. <milestone unit="sent"/>Elle passe la nuit à
+                gémir, et, perchée sur la branche, elle recommence sans cesse son chant de douleur,
+                et remplit de ses tristes accents tous les lieux d’alentour.</p>
+            <p><milestone unit="sent"/>Ni l’amour, ni l’hymen ne purent toucher son cœur. <milestone unit="sent"/>Seul, il errait à travers les
+                glaces des régions hyperboréennes, sur les bords neigeux du Tanaïs, et dans les
+                plaines du Riphée, couvertes d’éternels frimas, pleurant Eurydice et l’inutile
+                bienfait de Pluton. <milestone unit="sent"/>Irritées de ses dédains, les femmes de la Thrace le mirent en
+                pièces, au milieu des mystères <pb n="104" xml:id="p104"/>sacrés et des orgies
+                nocturnes de Bacchus, et dispersèrent ses membres dans les champs. <milestone unit="sent"/>Sa tête, séparée
+                de son cou d’albâtre, fut jetée dans l’Hèbre. <milestone unit="sent"/>Mais, tandis qu’elle roulait emportée
+                par l’onde rapide, sa langue glacée redisait encore d’une voix mourante : <milestone unit="sent"/>« Eurydice ! Ah ! malheureuse Eurydice ! » et l’écho des rives répétait : « Eurydice ! ».</p>
+        </body>
+
+    </text>
+</TEI>

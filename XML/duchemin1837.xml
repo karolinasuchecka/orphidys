@@ -3,20 +3,25 @@
         type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
         schematypens="http://purl.oclc.org/dsdl/schematron"?>
-        <TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Oeuvres de Virgile traduites en vers français : Bucoliques, géorgiques</title>
+                <title type="main">Les Géorgiques</title>
+                <title type="book">Œuvres de Virgile traduites en vers français : Bucoliques,
+                    géorgiques</title>
                 <author>Virgile</author>
                 <editor>Louis Duchemin</editor>
             </titleStmt>
             <editionStmt>
-                <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire 
-                dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » 
-                réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
                 <respStmt>
                     <name>Karolina Suchecka</name>
-                    <resp>Chargé de l'édition</resp>
+                    <resp>Chargé de l’édition</resp>
                 </respStmt>
                 <respStmt>
                     <name>Nathalie Gasiglia</name>
@@ -33,26 +38,38 @@
                 <date when="2019"/>
                 <availability status="restricted">
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse 
-                        « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale
-                         innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                        <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1)
-                         est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons :
-                          « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                        <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera 
-                        le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les 
-                        contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
                     </licence>
                 </availability>
                 <idno>https://numelyo.bm-lyon.fr/f_view/BML:BML_00GOO0100137001102997884#</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl><author>Virgile</author> / <title>Oeuvres de Virgile traduites en vers français : Bucoliques, géorgiques</title> / Paris / Hachette / 1837 / p. 295-301.</bibl> 
+                <bibl><author>Virgile</author> /<title>Les Géorgiques</title> / 
+                        <title>Œuvres de Virgile traduites en vers français : Bucoliques,
+                            géorgiques</title> / Louis Duchemin (trad.) / Paris / Hachette / 1837 / p. 295-301.</bibl>
                 <biblFull>
                     <titleStmt>
-                        <title>Oeuvres de Virgile traduites en vers français : Bucoliques, géorgiques</title>
+                        <title>Œuvres de Virgile traduites en vers français : Bucoliques,
+                            géorgiques</title>
                     </titleStmt>
                     <publicationStmt>
                         <publisher>Hachette</publisher>
@@ -65,9 +82,11 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et 
-            enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence 
-            à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
         </encodingDesc>
         <profileDesc>
             <creation>
@@ -84,103 +103,109 @@
                 </keywords>
             </textClass>
         </profileDesc>
-    </teiHeader><text><front><titlePage>
-            <docAuthor>Virgile</docAuthor>
-            <docTitle>
-              <titlePart type="main">Oeuvres de Virgile traduites en vers français : Bucoliques, géorgiques</titlePart>
-            </docTitle>
-          </titlePage></front>
-    <body>
-      <head>Chant IV</head>
-      <l><pb n="295" xml:id="p295"/>Vois du courroux des dieux les trop justes effets ;</l>
-      <l>Sur toi d’un crime énorme on poursuit la vengeance;</l>
-      <l>La peine eût égalé la grandeur de l’offense,</l>
-      <l>Si le sort l’eût permis. Orphée au sombre bord</l>
-      <l>D’une épouse adorée ainsi venge la mort.</l>
-      <l>Car, tandis qu’Eurydice, à périr destinée,</l>
-      <l>Te fuit d’un pied rapide aux rives du Pénée,</l>
-      <l>Entre l’épais gazon elle n’aperçoit pas</l>
-      <l>Un serpent meurtrier étendu sous ses pas.</l>
-      <l>Des dryades, ses sœurs, les plaintes retentirent,</l>
-      <l>Le sourcilleux Pangée et Rhodope en gémirent,</l>
-      <l>Et les champs de Rhésus, le farouche Gélon,</l>
-      <l>Et la belle Orithye, et l’Hèbre et le Strymon.</l>
-      <l>Lui, charmant sa douleur par les sons de sa lyre,</l>
-      <l>C’est toi, quand vient le jour, toi, quand il se retire,</l>
-      <l>Chère épouse, ah ! c’est toi que chante son amour.</l>
-      <l>Il osa de Pluton affronter le séjour,</l>
-      <l><pb n="297" xml:id="p297"/>Les gouffres infernaux, leurs bois noirs d’épouvante,</l>
-      <l>Des mânes aborder la foule pâlissante.</l>
-      <l>Leur tyran formidable, et supplier des cœurs,</l>
-      <l>Que n’ont jamais touchés ni prières, ni pleurs.</l>
-      <l>Mais, du fond de l’Erèbe, émus de ses cantiques,</l>
-      <l>Accouraient par milliers les mânes fantastiques,</l>
-      <l>Tels qu’on voit dans les bois arriver les oiseaux,</l>
-      <l>Quand la pluie ou Vesper les chasse des coteaux :</l>
-      <l>Les vierges, les enfants, innocentes victimes,</l>
-      <l>Les simulacres vains des héros magnanimes,</l>
-      <l>Les mères, les époux, et ces adolescents</l>
-      <l>Placés sur le bûcher aux yeux de leurs parents.</l>
-      <l>Le Cocyte odieux, semé d’algues hideuses,</l>
-      <l>Les enferme à jamais de ses ondes fangeuses,</l>
-      <l>Et le Styx alentour étend ses neuf replis.</l>
-      <l>De ses divins accords les enfers sont ravis,</l>
-      <l>Le Tartare s’émeut, et jusqu’aux Euménides,</l>
-      <l>Entrelaçant leurs crins de vipères livides ;</l>
-      <l>Cerbère apaise aussi ses trois gouffres béants,</l>
-      <l>Et l’orbe d’Ixion s’arrête avec les vents.</l>
-      <l>Déjà l’heureux époux revient, libre de craintes ;</l>
-      <l>Et sa chère Eurydice, accordée à ses plaintes,</l>
-      <l>Dans l’ombre sur ses pas vers les cieux retournait :</l>
-      <l>Car ainsi Proserpine à tous deux l’ordonnait ;</l>
-      <l>Quand cet amant, saisi d’une aveugle démence.</l>
-      <l>Si l’enfer pardonnait, bien pardonnable offense,</l>
-      <l>S’arrête, et, près d’atteindre au lumineux séjour,</l>
-      <l>Oubliant la défense hélas ! vaincu d’amour,</l>
-      <l>La regarde : sa peine est à jamais perdue,</l>
-      <l>Et du cruel tyran la promesse est rompue :</l>
-      <l>Trois fois le Styx de joie en fait mugir ses flots.</l>
-      <l>Mais elle : « Quel délire, hélas ! cause nos maux ?</l>
-      <l><pb n="299" xml:id="p299"/>Orphée, un sort jaloux ; me rend aux bords funèbres,</l>
-      <l>Et mes yeux se fermant nagent dans les ténèbres.</l>
-      <l>Adieu sitôt !… la nuit m’entraînant malgré moi,</l>
-      <l>J’étends ces faibles mains qui ne sont plus à toi !</l>
-      <l>Et, comme une vapeur dans les airs étouffée,</l>
-      <l>L’ombre s’évanouit, et ne voit plus Orphée,</l>
-      <l>Qui cherche à la saisir, et, malheureux amant,</l>
-      <l>Avait tant à lui dire à ce dernier moment !</l>
-      <l>Le gardien de l’Orcus, sourd à sa voix plaintive,</l>
-      <l>Ne veut plus consentir qu’il gagne l’autre rive.</l>
-      <l>Arraché par deux fois à l’amour, au bonheur,</l>
-      <l>Que faire ? à qui pourra recourir sa douleur ?</l>
-      <l>Comment fléchir Pluton, rendre l’enfer propice ?</l>
-      <l>Sur le Styx, déjà froide, hélas, vogue Eurydice !</l>
-      <l>On dit que cet amant, durant sept mois entiers,</l>
-      <l>Seul, aux bords du Strymon, ou sur des rocs altiers.</l>
-      <l>Pleura son Eurydice, et de sa tendre plainte</l>
-      <l>Fit des antres glacés gémir la sombre enceinte.</l>
-      <l>Il adoucit le tigre ; et ses touchants regrets</l>
-      <l>Des chênes, en cadence, inclinaient les sommets.</l>
-      <l>Telle, sur un ormeau, Philomèle plaintive</l>
-      <l>Redemande aux forêts sa famille captive,</l>
-      <l>Ses petits, nus encor, qu’un pâtre lui ravit ;</l>
-      <l>Sur le même rameau, la nuit, elle gémit,</l>
-      <l>Redit en vain sa perte ; et ses chants lamentables</l>
-      <l>Font résonner au loin les bois inconsolables.</l>
-      <l>Nul amour, nul hymen ne toucha ses esprits ;</l>
-      <l>Au rivage glacé du neigeux Tanaïs,</l>
-      <l>Ou dans les champs couverts des frimas du. Riphée,</l>
-      <l>Seul errait jour et nuit le malheureux Orphée,</l>
-      <l>Pleurant son Eurydice et sa fatale ardeur,</l>
-      <l>Et reprochant aux dieux leur perfide faveur.</l>
-      <l><pb n="301" xml:id="p301"/>De ses mépris enfin les bacchantes outrées,</l>
-      <l>Au milieu d’une orgie et des fêtes sacrées,</l>
-      <l>Semèrent de son corps les palpitants lambeaux,</l>
-      <l>Et sa tête de l’Hèbre ensanglanta les eaux.</l>
-      <l>Sur les ondes flottante, et malgré son supplice,</l>
-      <l>D’une langue glacée elle appelle Eurydice,</l>
-      <l>Malheureuse Eurydice !… et partout, à ces cris,</l>
-      <l>Eurydice ! disaient les échos attendris.</l>
-    </body>
-  
-</text></TEI>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Géorgiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Louis Duchemin</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <head>Chant IV</head>
+            <l><pb n="295" xml:id="p295"/>Vois du courroux des dieux les trop justes effets ;</l>
+            <l>Sur toi d’un crime énorme on poursuit la vengeance ;</l>
+            <l>La peine eût égalé la grandeur de l’offense,</l>
+            <l>Si le sort l’eût permis. Orphée au sombre bord</l>
+            <l>D’une épouse adorée ainsi venge la mort.</l>
+            <l>Car, tandis qu’Eurydice, à périr destinée,</l>
+            <l>Te fuit d’un pied rapide aux rives du Pénée,</l>
+            <l>Entre l’épais gazon elle n’aperçoit pas</l>
+            <l>Un serpent meurtrier étendu sous ses pas.</l>
+            <l>Des dryades, ses sœurs, les plaintes retentirent,</l>
+            <l>Le sourcilleux Pangée et Rhodope en gémirent,</l>
+            <l>Et les champs de Rhésus, le farouche Gélon,</l>
+            <l>Et la belle Orithye, et l’Hèbre et le Strymon.</l>
+            <l>Lui, charmant sa douleur par les sons de sa lyre,</l>
+            <l>C’est toi, quand vient le jour, toi, quand il se retire,</l>
+            <l>Chère épouse, ah ! c’est toi que chante son amour.</l>
+            <l>Il osa de Pluton affronter le séjour,</l>
+            <l><pb n="297" xml:id="p297"/>Les gouffres infernaux, leurs bois noirs d’épouvante,</l>
+            <l>Des mânes aborder la foule pâlissante.</l>
+            <l>Leur tyran formidable, et supplier des cœurs,</l>
+            <l>Que n’ont jamais touchés ni prières, ni pleurs.</l>
+            <l>Mais, du fond de l’Erèbe, émus de ses cantiques,</l>
+            <l>Accouraient par milliers les mânes fantastiques,</l>
+            <l>Tels qu’on voit dans les bois arriver les oiseaux,</l>
+            <l>Quand la pluie ou Vesper les chasse des coteaux :</l>
+            <l>Les vierges, les enfants, innocentes victimes,</l>
+            <l>Les simulacres vains des héros magnanimes,</l>
+            <l>Les mères, les époux, et ces adolescents</l>
+            <l>Placés sur le bûcher aux yeux de leurs parents.</l>
+            <l>Le Cocyte odieux, semé d’algues hideuses,</l>
+            <l>Les enferme à jamais de ses ondes fangeuses,</l>
+            <l>Et le Styx alentour étend ses neuf replis.</l>
+            <l>De ses divins accords les enfers sont ravis,</l>
+            <l>Le Tartare s’émeut, et jusqu’aux Euménides,</l>
+            <l>Entrelaçant leurs crins de vipères livides ;</l>
+            <l>Cerbère apaise aussi ses trois gouffres béants,</l>
+            <l>Et l’orbe d’Ixion s’arrête avec les vents.</l>
+            <l>Déjà l’heureux époux revient, libre de craintes ;</l>
+            <l>Et sa chère Eurydice, accordée à ses plaintes,</l>
+            <l>Dans l’ombre sur ses pas vers les cieux retournait :</l>
+            <l>Car ainsi Proserpine à tous deux l’ordonnait ;</l>
+            <l>Quand cet amant, saisi d’une aveugle démence.</l>
+            <l>Si l’enfer pardonnait, bien pardonnable offense,</l>
+            <l>S’arrête, et, près d’atteindre au lumineux séjour,</l>
+            <l>Oubliant la défense hélas ! vaincu d’amour,</l>
+            <l>La regarde : sa peine est à jamais perdue,</l>
+            <l>Et du cruel tyran la promesse est rompue :</l>
+            <l>Trois fois le Styx de joie en fait mugir ses flots.</l>
+            <l>Mais elle : « Quel délire, hélas ! cause nos maux ?</l>
+            <l><pb n="299" xml:id="p299"/>Orphée, un sort jaloux ; me rend aux bords funèbres,</l>
+            <l>Et mes yeux se fermant nagent dans les ténèbres.</l>
+            <l>Adieu sitôt !… la nuit m’entraînant malgré moi,</l>
+            <l>J’étends ces faibles mains qui ne sont plus à toi !</l>
+            <l>Et, comme une vapeur dans les airs étouffée,</l>
+            <l>L’ombre s’évanouit, et ne voit plus Orphée,</l>
+            <l>Qui cherche à la saisir, et, malheureux amant,</l>
+            <l>Avait tant à lui dire à ce dernier moment !</l>
+            <l>Le gardien de l’Orcus, sourd à sa voix plaintive,</l>
+            <l>Ne veut plus consentir qu’il gagne l’autre rive.</l>
+            <l>Arraché par deux fois à l’amour, au bonheur,</l>
+            <l>Que faire ? à qui pourra recourir sa douleur ?</l>
+            <l>Comment fléchir Pluton, rendre l’enfer propice ?</l>
+            <l>Sur le Styx, déjà froide, hélas, vogue Eurydice !</l>
+            <l>On dit que cet amant, durant sept mois entiers,</l>
+            <l>Seul, aux bords du Strymon, ou sur des rocs altiers.</l>
+            <l>Pleura son Eurydice, et de sa tendre plainte</l>
+            <l>Fit des antres glacés gémir la sombre enceinte.</l>
+            <l>Il adoucit le tigre ; et ses touchants regrets</l>
+            <l>Des chênes, en cadence, inclinaient les sommets.</l>
+            <l>Telle, sur un ormeau, Philomèle plaintive</l>
+            <l>Redemande aux forêts sa famille captive,</l>
+            <l>Ses petits, nus encor, qu’un pâtre lui ravit ;</l>
+            <l>Sur le même rameau, la nuit, elle gémit,</l>
+            <l>Redit en vain sa perte ; et ses chants lamentables</l>
+            <l>Font résonner au loin les bois inconsolables.</l>
+            <l>Nul amour, nul hymen ne toucha ses esprits ;</l>
+            <l>Au rivage glacé du neigeux Tanaïs,</l>
+            <l>Ou dans les champs couverts des frimas du. Riphée,</l>
+            <l>Seul errait jour et nuit le malheureux Orphée,</l>
+            <l>Pleurant son Eurydice et sa fatale ardeur,</l>
+            <l>Et reprochant aux dieux leur perfide faveur.</l>
+            <l><pb n="301" xml:id="p301"/>De ses mépris enfin les bacchantes outrées,</l>
+            <l>Au milieu d’une orgie et des fêtes sacrées,</l>
+            <l>Semèrent de son corps les palpitants lambeaux,</l>
+            <l>Et sa tête de l’Hèbre ensanglanta les eaux.</l>
+            <l>Sur les ondes flottante, et malgré son supplice,</l>
+            <l>D’une langue glacée elle appelle Eurydice,</l>
+            <l>Malheureuse Eurydice !… et partout, à ces cris,</l>
+            <l>Eurydice ! disaient les échos attendris.</l>
+        </body>
+
+    </text>
+</TEI>

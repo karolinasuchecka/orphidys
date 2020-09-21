@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Aristée</title>
+                <title type="sub">Épisode du quatrième livre des Géorgiques</title>
+                <author>Virgile</author>
+                <editor>Joseph Cogolin</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k1512598q</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Virgile</author> / <title>Aristée, épisode du quatrième livre des
+                    Géorgiques</title> / Joseph Cogolin (trad.) / (Paris) / 1750 / p. 19-29.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Aristée, episode du quatrieme livre des Georgiques</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher/>
+                        <pubPlace>(Paris)</pubPlace>
+                        <date when="1750"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>cogolin1750</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1750">1750</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Aristée</titlePart>
+                    <titlePart type="sub">Épisode du quatrième livre des Géorgiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Joseph Cogolin</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <head>Chant IV</head>
+            <l><milestone unit="sent"/><pb n="19" xml:id="p19"/>Reconnois, lui dit-il, qu’il est un Ciel vengeur,</l>
+            <l>Et que ton crime affreux surpasse sa fureur.</l>
+            <l><milestone unit="sent"/>C’est Orphée, ouï c’est lui dont l’ombre vengeresse</l>
+            <l>Attachée à tes pas, te poursuit et te presse,</l>
+            <l>C’est lui dont tu causas le déplorable sort,</l>
+            <l>Euridice fuyoit ton violent transport,</l>
+            <l>Lorsqu’un serpent caché sous la rive fleurie,</l>
+            <l>Dans le sein des amours la priva de la vie.</l>
+            <l><milestone unit="sent"/>Mais dans leur châtiment les Dieux encor trop doux,</l>
+            <l>N’ont pas sur tes forfaits mesuré leur courroux.</l>
+            <l><milestone unit="sent"/>Euridice mourut, les Nymphes ses compagnes</l>
+            <l><pb n="21" xml:id="p21"/>Firent de leurs sanglots retentir les montagnes.</l>
+            <l><milestone unit="sent"/>Rhodope en ses rochers fut ému de leurs cris :</l>
+            <l><milestone unit="sent"/>Les Thraces inhumains parurent attendris.</l>
+            <l><milestone unit="sent"/>Pangée en soupira : les sauvages contrées</l>
+            <l>Des Getes, et de l’Hébre en furent pénétrées.</l>
+            <l><milestone unit="sent"/>Le froid climat de l’Ourse y mêla ses douleurs,</l>
+            <l>Et toute la nature en répandit des pleurs.</l>
+            <l><milestone unit="sent"/>Le tendre souvenir d’une épouse ravie,</l>
+            <l>Dans ces déserts, Orphée, où tu traînois ta vie,</l>
+            <l>Des plus tristes accens t’inspirant le secours,</l>
+            <l>À ta Lyre faisoit soupirer tes amours :</l>
+            <l><milestone unit="sent"/>Et soit que le soleil, précipité dans l’Onde,</l>
+            <l>Aux Astres de la nuit, laisse éclairer le monde,</l>
+            <l>Ou que de ses rayons la force et la clarté,</l>
+            <l>De la voûte des Cieux perce l’obscurité,</l>
+            <l>Dévoré des regrets qui causent son supplice,</l>
+            <l>Sans cesse cet époux pleure son Euridice.</l>
+            <l><milestone unit="sent"/>Aux gouffres des enfers il dirige ses pas,</l>
+            <l>Affronte sans effroi l’empire du trépas,</l>
+            <l>Il ose pénétrer ces forêts ténébreuses,</l>
+            <l>Qu’une éternelle horreur rend encor plus affreuses.</l>
+            <l><milestone unit="sent"/>Il ose avec transport s’approcher de Pluton,</l>
+            <l>Dans son antre aborder la barbare Alecton.</l>
+            <l><milestone unit="sent"/>À ses tendres chansons, de leurs demeures sombres,</l>
+            <l>À flots tumultueux on voit sortir les ombres,</l>
+            <l>Accourir des enfers les pâles habitans,</l>
+            <l>Dans le vuide et la nuit, simulacres errans.</l>
+            <l><milestone unit="sent"/>Ainsi, lorsque les vents déchaînés sur la terre</l>
+            <l>Confondent les éclairs, la grêle, et le tonnerre</l>
+            <l>Le peuple ailé des airs vole au fond des forêts,</l>
+            <l><pb n="23" xml:id="p23"/>En foule se cacher sous les arbres épais.</l>
+            <l><milestone unit="sent"/>Des champs Élisiens les riantes prairies</l>
+            <l>Rassemblent à sa voix des épouses chéries,</l>
+            <l>Dont le cœur même encor fidéle à leur époux</l>
+            <l>Est ému de tendresse à des accens si doux.</l>
+            <l><milestone unit="sent"/>On y voit accourir des Héros magnanimes,</l>
+            <l>De Bellone et de Mars, généreuses victimes,</l>
+            <l>Des Princes moissonnés au printems de leurs jours,</l>
+            <l>De leurs peuples heureux la gloire et les amours.</l>
+            <l><milestone unit="sent"/>On voit près d’un bucher des meres éplorées,</l>
+            <l>Suivre dans le tombeau leurs filles adorées.</l>
+            <l><milestone unit="sent"/>L’Onde noire du Styx, et ses marais bourbeux</l>
+            <l>Qui baignent ce séjour de leurs flots limoneux,</l>
+            <l>Y forment neuf remparts dont l’épaisse barriére</l>
+            <l>Sépare pour jamais la nuit de la lumiére.</l>
+            <l><milestone unit="sent"/>À peine de sa lyre on entend les accords,</l>
+            <l>Les manes sont émus dans l’empire des morts.</l>
+            <l><milestone unit="sent"/>Au milieu des serpents Thisiphone ravie</l>
+            <l>Sent naître la douceur au sein d’une furie.</l>
+            <l><milestone unit="sent"/>De Cerbere en fureur les triples heurlemens</l>
+            <l>Font place tout à coup à des ravissemens.</l>
+            <l><milestone unit="sent"/>Ixion soulagé sent sa rouë arrêtée ;</l>
+            <l>Le Vautour dévorant épargne Prométhée,</l>
+            <l>Et surpris de goûter un bien inattendu,</l>
+            <l>Sisiphe respira sur son roc suspendu.</l>
+            <l><milestone unit="sent"/>Échappé des périls qui menaçoient sa tête,</l>
+            <l>Orphée en ramenant après lui sa conquête</l>
+            <l>Avoir fait le serment, au Roi de noir séjour,</l>
+            <l>De ne la regarder qu’à la clarté du jour.</l>
+            <l><milestone unit="sent"/>Lorsqu’en proie aux transports du desir qui le presse,</l>
+            <l><pb n="25" xml:id="p25"/>Par un éxcès d’amour parjure à sa promesse,</l>
+            <l>Il s’arrête, et tourné vers celle qui le fuit</l>
+            <l>Regarde en soupirant l’objet qui le séduit,</l>
+            <l>Faute aux yeux de l’amour pardonnable et légère.</l>
+            <l><milestone unit="sent"/>Mais est-il de pardon dans le cœur de Mégére ?</l>
+            <l><milestone unit="sent"/>Dès ce moment hélas ! tout fut perdu pour toi ;</l>
+            <l>De Pluton tu subis la rigoureuse Loi,</l>
+            <l>Ton amour, ta douleur, ton courage, ta peine,</l>
+            <l>Rien ne put de ce Dieu fléchir l’ame inhumaine.</l>
+            <l><milestone unit="sent"/>Des enfers tout à coup la voute s’ébranla,</l>
+            <l>Et du Styx par trois fois la vague recula.</l>
+            <l><milestone unit="sent"/>Je te perds, cher Orphée, ah ! s’écrie Euridice,</l>
+            <l>Le Ténare sous moi r’ouvre son précipice.</l>
+            <l><milestone unit="sent"/>Pour te suivre, je fais d’inutiles efforts.</l>
+            <l><milestone unit="sent"/>Le barbare destin me rend aux sombres bords.</l>
+            <l><milestone unit="sent"/>Non : je n’espére plus de revoir la lumiére.</l>
+            <l><milestone unit="sent"/>Le sommeil du trépas vient fermer ma paupiére.</l>
+            <l><milestone unit="sent"/>Pour te rejoindre hélas ! mes bras sont superflus :</l>
+            <l><milestone unit="sent"/>Cher Orphée, on m’entraîne ; adieu : je ne suis plus.</l>
+            <l><milestone unit="sent"/>Elle dit, et soudain rendue à la nuit sombre,</l>
+            <l>Aux yeux de son époux disparoît comme l’ombre</l>
+            <l>Orphée en vain la suit, et prêt à reculer,</l>
+            <l>Du séjour des mortels il voudroit s’éxiler.</l>
+            <l><milestone unit="sent"/>Il ne voit déja plus cette épouse chérie ;</l>
+            <l>Quel coup de foudre, ô Ciel ! pour son ame attendrie ?</l>
+            <l><milestone unit="sent"/>Pour la rejoindre en vain il implore Caron,</l>
+            <l>Barbare Nautonier de l’avare Acheron.</l>
+            <l><milestone unit="sent"/>Que pourroit-il du Ciel attendre de propice,</l>
+            <l>Lorsque deux fois le sort lui ravit Euridice ?</l>
+            <l><pb n="27" xml:id="p27"/><milestone unit="sent"/>Quel secours espérer de ses accents nouveaux ?</l>
+            <l><milestone unit="sent"/>L’inéxorable Dieu des infernales eaux</l>
+            <l>Ouvre-t-il son oreille au plus tendre langage ?</l>
+            <l><milestone unit="sent"/>La pitié n’entre point au séjour de la rage.</l>
+            <l><milestone unit="sent"/>Mais livrée au nocher sur sa barque accouru,</l>
+            <l>Euridice a ses yeux a déjà disparu.</l>
+            <l><milestone unit="sent"/>L’ame de déséspoir nuit et jour agitée,</l>
+            <l>Du Strymon parcourant la rive inhabitée,</l>
+            <l>Il y fait retentir les antres de ses pleurs,</l>
+            <l>Et sept mois aux échos repeter ses malheurs.</l>
+            <l><milestone unit="sent"/>Des Tigres et des Ours sa voix mélodieuse</l>
+            <l>Adoucit, et suspend la rage furieuse.</l>
+            <l><milestone unit="sent"/>Les Chênes attentifs paroissent l’écouter,</l>
+            <l>Et déjà leurs rameaux cessent de s’agiter.</l>
+            <l><milestone unit="sent"/>Ainsi, lorsqu’un barbare arrache à Philoméle</l>
+            <l>Le fruit de ses amours élevé sous son aîle.</l>
+            <l><milestone unit="sent"/>Cette mere plaintive en gémit, et ses sons</l>
+            <l>Exhalent sa douleur par de tristes chansons.</l>
+            <l><milestone unit="sent"/>De sa touchante voix tout reconnoît l’empire.</l>
+            <l><milestone unit="sent"/>Jusques dans ses rochers la nature en soupire,</l>
+            <l>Et la nuit ses accens, répandus dans les airs,</l>
+            <l>Suspendent le silence, et l’horreur des déserts.</l>
+            <l><milestone unit="sent"/>Depuis ce jour fatal, l’amour par tous ses charmes</l>
+            <l>Ne peut du cœur d’Orphée appaiser les allarmes.</l>
+            <l><milestone unit="sent"/>Solitaire, au milieu des plus rudes climats,</l>
+            <l>Au bord du Tanaïs précipitant ses pas,</l>
+            <l>Vagabond, il parcourt les monts de la Scithie,</l>
+            <l>Et les climats glacés de l’époux d’Orithie.</l>
+            <l><milestone unit="sent"/>Dans ces sauvages lieux, des humains éloigné,</l>
+            <l>Le cœur gros de soupirs, de ses larmes baigné,</l>
+            <l>Il déploroit le sort de la plus tendre épouse,</l>
+            <l>Et du Dieu des enfers la vengeance jalouse.</l>
+            <l><milestone unit="sent"/>Cependant sa froideur, qui se joint au mépris,</l>
+            <l><pb n="29" xml:id="p29"/>Des femmes de la Thrace irritant les esprits ;</l>
+            <l>Dans ces jours consacrés aux mystiques yvresses ;</l>
+            <l>Contre lui de Bacchus souléve les Prêtresses,</l>
+            <l>Qui s’armant tout à coup du Thyrse redouté,</l>
+            <l>Les yeux en feu, le cœur par la rage excité,</l>
+            <l>Déchirent en lambeaux son corps qu’elles dispersent,</l>
+            <l>Les champs sont humectés du beau sang qu’elles versent ;</l>
+            <l>De sa tête arrachée on entend les sanglots,</l>
+            <l>Et l’Hébre ensanglanté la roule avec ses flots :</l>
+            <l><milestone unit="sent"/>On entend murmurer à sa langue expirante</l>
+            <l>Les douloureux accens d’une plainte mourante ;</l>
+            <l>Répéter tendrement ce nom, cher à l’amour,</l>
+            <l>Euridice… l’écho le répéte à son tour.</l>
+            <l><milestone unit="sent"/>Il semble à ses regrets que Thétis s’attendrisse,</l>
+            <l>Et son rivage au loin rend le nom d’Euridice.</l>
+        </body>
+
+    </text>
+</TEI>

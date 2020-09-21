@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="FR">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Orphée</title>
+        <title type="sub">Tragédie lyrique en cinq actes</title>
+        <title type="book">Théâtre européen, nouvelle collection</title>
+        <author>Ange Politien</author>
+        <editor>Antoine de Latour, Théodore Muret</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+          édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
+          comparative intermédiale innovante accompagnée d’une ressource pour le repérage
+          intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
+          l’Université de Lille.</edition>
+        <respStmt>
+          <name>Karolina Suchecka</name>
+          <resp>Chargé de l’édition</resp>
+        </respStmt>
+        <respStmt>
+          <name>Nathalie Gasiglia</name>
+          <resp>Co-tutrice de thèse</resp>
+        </respStmt>
+        <respStmt>
+          <name>Karl Zieger</name>
+          <resp>Co-tuteur de thèse</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karolina Suchecka</publisher>
+        <publisher>ALITHILA (Université Lille III)</publisher>
+        <date when="2019"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+              thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+              numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
+              ressource pour le repérage intertextuel »</p>
+            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+              les bases de données (L341-1) est mise à disposition de la communauté scientifique
+              internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
+              : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
+              BY-NC-ND 3.0 FR) ». </p>
+            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+              de cette ressource électroniques comportera le nom du projet et surtout l’adresse
+              Internet de la ressource. </p>
+            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+              utilisation commerciale est interdite.</p>
+            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+              électronique, notamment en intégrant toutes les contributions extérieures, la
+              diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+          </licence>
+        </availability>
+        <idno>https://gallica.bnf.fr/ark:/12148/bpt6k97562451</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><author>Ange Politien</author> / <title>Orphée : tragédie lyrique en cinq
+            actes</title> / <title>Théâtre européen, nouvelle collection</title> / Paris / Delloye,
+          Barba, Heideloff et Campé / Antoine de Latour, Théodore Muret (éds.) / 1835 /
+          p. 1-10.</bibl>
+        <biblFull>
+          <titleStmt>
+            <title>Théâtre européen, nouvelle collection. Orphée : tragédie lyrique en cinq actes /
+              par Politien</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>Delloye, Barba, Heideloff et Campé</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="1835"/>
+          </publicationStmt>
+        </biblFull>
+        <genre>théâtre</genre>
+        <structure>politien1835</structure>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+        nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
+        projet. La structure des métadonnées a été établie en référence à la manière dont le
+        logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1835">1835</date>
+      </creation>
+      <language>
+        <language>FR</language>
+      </language>
+      <textClass>
+        <keywords>
+          <list>
+            <item>transmodalisation</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docAuthor>Ange Politien</docAuthor>
+        <docTitle>
+          <titlePart type="main">Orphée</titlePart>
+          <titlePart type="sub">Tragédie lyrique en cinq actes</titlePart>
+        </docTitle>
+      </titlePage>
+      <div type="preface">
+        <head>Notice sur le Politien et sur sa tragédie d’Orphée</head>
+        <p>
+          <pb n="1" xml:id="p1"/> En l’année 1472, le cardinal François de Gonzague, ayant été
+          envoyé à Bologne, avec le titre de légat du pape, visita Mantoue, sa patrie. On remarquait
+          à sa suite les deux Pic de la Mirandole et le jeune Ange Politien. Ce dernier qui n’avait
+          alors que dix-huit ans, composa, en deux jours, pour les fêtes qui furent données à cette
+          occasion, sa tragédie mythologique d’Orphée. Ce fut pour l’Italie le signal de la <hi
+            rend="i">renaissance</hi> dans l’art dramatique. </p>
+        <p> Avant de parler de l’œuvre, il convient d’abord de placer ici quelques détails sur
+          l’auteur. Après Dante, Pétrarque, le Tasse et l’Arioste, l’Italie nomme Politien. Si
+          Politien est moins populaire dans le reste de l’Europe, il faut s’en prendre à la fausse
+          direction qui fut donnée à son génie. Le meilleur de ce génie fut stérilement dépensé en
+          travaux d’érudition et en compositions latines. Stérilement, disons-nous, non pas certes
+          pour la poésie, mais pour la renommée et les facultés du poète. L’érudition a bonne part
+          sans doute dans le glorieux réveil de l’esprit humain au quinzième siècle. Mais plusieurs
+          contemporains de notre poète pouvaient tout aussi bien collationner des textes et publier
+          des manuscrits. Lui mort, lequel d’entre eux était digne de continuer le <hi rend="i"
+            >Tournoi de Julien</hi> , ce beau poème inachevé ? </p>
+        <p>
+          <hi rend="i">Angelo Poliziano</hi> , que nous appelons Politien, naquit le 14 juillet
+          1454, à <hi rend="i">Monte-Pulciano</hi> , d’où il a tiré le nom qui lui est resté. Celui
+          de sa famille était <hi rend="i">Bassi</hi> , <hi rend="i">Cini</hi> , quelques-uns disent
+            <hi rend="i">Ambrogini</hi> . Son père n’était pas riche ; toutefois il n’hésita pas à
+          l’envoyer aux écoles de Florence. Le jeune Politien y fit eu peu de temps des progrès
+          rapides sous les maîtres les plus célèbres de l’époque. Grâce aux leçons de Marsile Ficin,
+          cet érudit qui écrivait en si beau latin, il eut bien vite touché les hauteurs de la
+          philosophie platonicienne, et Argyropulo l’initia aux détours de la philosophie
+          d’Aristote. Les premiers chants d’Homère traduits en vers latins témoignaient déjà dans
+          cet enfant d’un sentiment poétique qui n’attendait qu’une occasion pour se produire. Elle
+          se présenta en 1648 ; ce fut un tournoi où se distingua Julien de Médicis. Le poème de
+          Politien fut-il composé cette même année ? on n’ose le croire, en vérité ; l’auteur
+          n’avait alors que quatorze ans, et le poème est un chef-d’œuvre. Il est plus facile de
+          concevoir que c’était là un beau souvenir, qui, à mesure qu’il s’éloignait dans le passé,
+          s’idéalisait dans l’imagination du jeune homme et y prenait une grandeur épique. </p>
+        <p> Le renom que ses belles stances donnèrent à Politien lui ouvrit le palais des Médicis.
+          Laurent lui confia l’éducation de ses deux enfants ; l’un, depuis, gouverna Florence,
+          l’autre fut Léon X. Lorsque Julien tomba, au pied de l’autel, sous le poignard des Pazzi,
+          Politien laissa son poème à la quarante- sixième octave du second livre, pour raconter
+          l’histoire de la conjuration qui venait de frapper son héros. </p>
+        <p> Pourvu par les Médicis d’abord d’un riche <pb n="2" xml:id="p2"/> prieuré, et ensuite
+          d’un canonicat dans l’église métropolitaine de Florence, sa vie est heureuse et enviée. Il
+          traduit Hérodien par ordre d’Innocent VIII, qui lui écrit pour le féliciter sur son
+          travail, et lui envoie deux cents écus d’or. Les érudits de son temps lui cherchent
+          souvent querelle, et il n’a pas trop pour accabler ses adversaires des mots les plus âpres
+          de la langue latine. On lui donne une chaire publique dans laquelle il enseigne d’abord la
+          littérature grecque et latine, et ensuite la philosophie, aux héritiers des plus nobles
+          familles de l’Italie. On vient d’Angleterre pour l’entendre. Les trésors de l’antiquité
+          reparaissent brillants et rajeunis, et la poussière qui les couvre s’envole au souffle de
+          Politien et de Pic de la Mirandole, ce prince homme de lettres. Par les soins de ces deux
+          grands esprits, auxquels il faut joindre Jean Lascaris, s’élève la bibliothèque
+          Laurentienne. Politien est l’âme de tous ces travaux ; mais la mort l’arrête au moment où
+          il va écrire, en latin ou en grec, les expéditions des Portugais dans les Indes. Cette
+          mort arriva le 24 septembre 1494. On a dit qu’elle le surprit dans le délire d’une passion
+          honteuse. Croirons-nous plutôt avec Balzac que, dans un accès de désespoir, le malheureux
+          poète se brisa la tête contre les murs de sa chambre ? Quoi qu’il en soit, les détails de
+          cette mort sont restés un mystère. Politien avait quarante ans. </p>
+        <p> Les critiques italiens ou autres des deux siècles derniers se sont peu occupés
+          d’Orphée ; il appartenait au nôtre de replacer cette gloire déchue au rang où tant
+          d’autres sont remontées, de nos jours, après bien des années d’un injuste oubli. C’est
+          après s’être doucement endormie au bercement de la muse de Métastase, c’est après avoir
+          longtemps tressailli au rude accent de la voix d’Alfieri, c’est après s’être contemplée
+          elle- même avec orgueil dans les deux sublimes créations de Manzoni, et avec douleur dans
+          les scènes attendrissantes de Pellico-le-Martyr, que l’Italie s’est demandé tout à coup
+          comment avaient commencé pour elle ces belles traditions du génie. </p>
+        <p> L’ <hi rend="i">Adelchi</hi> de Manzoni l’a ramenée à l’ <hi rend="i">Orphée</hi> de
+          Politien. </p>
+        <p> Qui n’éprouverait, en effet, un charme singulier à surprendre dans sa source limpide et
+          cachée ce fleuve de la poésie dramatique qui, en traversant les âges, les a réfléchis tour
+          à tour dans leur grâce mélancolique ou leur tragique magnificence ? Après tant de
+          profondes théories, de scènes ingénieusement entrelacées, de personnages heurtés avec art
+          dans le mouvement d’une action vive et compliquée, on se repose avec délices à contempler
+          une œuvre naïve. Non-seulement alors on ne reprochera pas au poète la nudité de sa fable
+          et le dessin à peine indiqué de ses caractères, mais on lui saura gré de ses efforts les
+          plus humbles, on se laissera volontiers intéresser à ses combinaisons les plus simples, on
+          se retrouvera pour les douleurs les plus communes des larmes qu’on avait cru taries. À
+          mesure que la littérature se fait plus savante il se révèle à nous, dans la primitive
+          simplicité de ses inspirations naissantes, un attrait qui nous captive. </p>
+        <p> Puis, à prendre la question par son côté scientifique, n’aimera-t-on pas à rechercher
+          sous quelle forme reparaît, après des siècles barbares, un art long-temps perdu parmi les
+          hommes ? La renaissance de l’art dramatique chez un peuple atteste dans la civilisation de
+          ce peuple un immense progrès accompli, car elle signale dans les esprits un commencement
+          d’abstraction philosophique. On sent que l’homme entrevoit enfin dans son existence
+          individuelle le type idéal de l’humanité, puisqu’il le reconnaît avec joie sous les
+          masques divers que lui impose la fantaisie du poète. Ce type, sans doute, dans l’origine,
+          a des traits vagues encore et indécis. L’homme abstrait, dans le drame nouvellement conçu,
+          tient moins de place que les croyances ou les habitudes intellectuelles de l’époque. Au
+          moyen-âge, ces habitudes seront mythologiques, ces croyances seront catholiques : Orphée
+          en Italie, en France les mystères. </p>
+        <p> On objectera peut-être que cela est vrai de la naissance de l’art, mais ne saurait
+          l’être de la renaissance ; que le présent doit avoir gardé souvenance du passé, le
+          moyen-âge enfin des chefs-d’œuvre de l’antiquité. L’antiquité sans doute n’était pas morte
+          tout entière au moyen-âge mais si elle se survivait à elle-même, ce n’était plus que dans
+          quelques esprits cultivés ; pour la foule elle n’existait pas. La Barbarie avait repris
+          possession des masses, et, par la loi de son existence, l’art dramatique se place au point
+          de vue de la foule ; c’est en ce sens qu’il constate le progrès philosophique des
+          intelligences. </p>
+        <p> Le drame en France et en Italie n’a pas eu mêmes commencements. Lorsque nos clercs de la
+          basoche montèrent sur la scène, tout dans leurs pièces, invention et style, dénonçait
+          l’enfance de l’art ; le poète bégayait sa pensée ; aucun modèle dans le passé immédiat, la
+          langue même était à faire. De là, pour le lecteur, une singulière fatigue d’esprit que
+          rachètent à peine quelques traits heureux épars ça et là. Tout au contraire, en Italie ;
+          lorsque Politien écrivit son Orphée, Dante et </p>
+        <p>
+          <pb n="3" xml:id="p3"/> Boccace avaient déjà passé, l’un dans la poésie, l’autre dans la
+          prose italienne. Il en fut de même en Grèce ; Eschyle, venu après Homère, trouva toute
+          créée une langue souple et harmonieuse. Restait, si l’on veut, au génie de Sophocle la
+          tâche de créer la langue dramatique proprement dite ; toujours est-il qu’Eschyle n’eut pas
+          à lutter contre l’indigence ou la rudesse d’un idiome informe encore. </p>
+        <p> Le charme particulier de l’Orphée, c’est ce contraste d’une expression élégante et
+          choisie avec une pensée toute naïve. </p>
+        <p> On va s’étonner, sans aucun doute, qu’avec une langue ainsi faite un génie tel que Poli
+          tien n’ait pas atteint plus haut que ce coup d’essai de l’Orphée ; mais il serait facile
+          de répondre qu’il ne faut pas chercher dans cette pièce la mesure de ce que pouvait alors
+          le génie dramatique. L’Orphée, on le sait d’ailleurs, fut écrit en deux jours, par un
+          jeune homme de dix-huit ans. Il n’est pas non plus invraisemblable que le poète, gêné par
+          le voisinage de cet admirable épisode des Géorgiques, ait regardé comme un sacrilège
+          d’ajouter quelque chose à la simplicité de la fable virgilienne. Ne disons pas : Voici ce
+          qu’au quinzième siècle l’art dramatique pouvait faire en Italie ; voici, dirais-je, ce
+          qu’il a fait. </p>
+        <p> Ce qu’il a fait c’est une simple et touchante tragédie. Comme le poète ne s’est senti
+          arrêté par aucune règle, il n’a reculé devant aucun des contrastes du sujet. Si l’action
+          commence par une fraîche et suave élégie d’amour, elle s’achève parmi les bacchantes, qui
+          s’enivrent sur la scène, autour de la tête sanglante d’Orphée. Entre ce dénouement
+          terrible et cette exposition vraiment pastorale, le drame tout entier a passé pêle-mêle
+          sous nos yeux : Orphée, Eurydice, Pluton, Minos, Proserpine. </p>
+        <p> Il semble que si le génie italien eût persévéré dans cette voie, l’Italie aurait eu
+          plutôt, comme l’Angleterre, une scène libre et hardie. Il n’en est rien pourtant ; le
+          caractère de sa civilisation ne le voulait pas ainsi. L’art dramatique se métamorphose
+          chez les peuples selon les phases successives de leur civilisation ; il commence d’abord
+          par cette facile et ignorante liberté qui est la condition nécessaire de son
+          inexpérience ; plus tard, noble et sévère, si la société se constitue aristocratiquement,
+          il se fait aristocratique avec elle, resserrant autour d’une pensée unique le cercle
+          étroit de ses personnages ; si cette société vieillit, il vieillit avec elle, et lorsque,
+          pour se rajeunir, elle se plonge tout entière dans la démocratie, il se retrempe comme
+          elle a cette source de puissante jeunesse. S’il retourne alors à la liberté, ce n’est plus
+          à l’inintelligente liberté de son premier essor, mais à cette liberté savante encore dans
+          sa fougue, qui se joue, comme la nature dans ses œuvres, autour d’une forte et saisissante
+          unité. </p>
+        <p> Comme la France, l’Italie a débuté par des inventions où se retrouve quelque chose du
+          folâtre laisser-aller de l’enfance ; comme la France encore, elle a noblement fourni la
+          carrière aristocratique du drame, et la voici, comme elle, à son âge de transformation
+          démocratique. Alfieri mort, Manzoni s’est levé, et Politien était venu avant l’un et
+          l’autre. </p>
+        <signed> Antoine de Latour </signed>
+      </div>
+      <div type="dedicace">
+        <head>Ange Politien à Messire Carlo Canale, Salut</head>
+        <p><pb n="4" xml:id="p4"/>Les Lacédémoniens avaient coutume, très gracieux messire Carlo,
+          s’il leur naissait un enfant débile ou estropié dans l’un de ses membres, de l’exposer
+          aussitôt, et de ne pas souffrir que la vie lui fût laissée, regardant un pareil rejeton
+          comme indigne de Lacédémone. Cette pièce d’Orphée ne méritait pas un autre sort. Je
+          l’avais composée pour complaire à notre révérendissime cardinal de Mantoue, en deux jours
+          de temps, au milieu d’embarras sans nombre, et je l’avais écrite en langue vulgaire, afin
+          qu’elle fût mieux comprise des spectateurs. Je désirais donc qu’à l’instar du véritable
+          Orphée elle fût incontinent déchirée, la sachant fille à rapporter à son père moins
+          d’honneur que de honte, et plus propre à lui donner de l’humeur qu’à lui inspirer de la
+          joie. Si, contre mou vœu, vous voulez la retenir en cette vie, vous et quelques autres que
+          l’amitié aveugle sur mon compte, il me faut bien avoir égard à l’amour paternel et à votre
+          désir, plutôt qu’au dessein raisonnable que j’avais formé. Ce n’est pas que ce désir n’ait
+          bien son excuse ; on peut dire en effet qu’étant née sous les auspices d’un maître si
+          dément, elle a mérité par-là d’échapper à la loi commune. Qu’elle vive donc, puisqu’il
+          vous plaît ainsi ; mais je déclare hautement que votre compassion est une cruauté
+          véritable ; c’est mon jugement, et cette épître en fera foi. Vous savez le peu de temps
+          qui m’a été donné, et si je fus maître de ne point obéir ; c’est pourquoi je vous prie
+          d’opposer votre puissant témoignage à quiconque voudrait accuser le père des imperfections
+          de la fille. Adieu<note place="bottom">Ce Carlo Canale était valet de chambre du cardinal.
+            L’Orphée resta long-temps entre ses mains avant d’être imprimé, et il ne le fut jamais
+            sous les yeux de l’auteur. De là toutes ces incertitudes du texte dont nous avons eu
+            grand’ peine à nous tirer. Nous avons suivi généralement l’édition publiée, je crois, en
+            1776, par le père Affo et collationnée sur deux manuscrits découverts de son temps
+            [trad.].</note>.</p>
+      </div>
+      <castList>
+        <castItem xml:id="mopsus">Mopsus</castItem>
+        <castItem xml:id="aristee">Aristée</castItem>
+        <castItem xml:id="tirsis">Tirsis</castItem>
+        <castItem xml:id="dryade">Une Dryade</castItem>
+        <castItem xml:id="chœur_dryades">Chœur de dryades</castItem>
+        <castItem xml:id="orphee">Orphée</castItem>
+        <castItem xml:id="mnesille">Mnésille, satyre</castItem>
+        <castItem xml:id="pluton">Pluton</castItem>
+        <castItem xml:id="minos">Minos</castItem>
+        <castItem xml:id="proserpine">Proserpine</castItem>
+        <castItem xml:id="eurydice">Eurydice</castItem>
+        <castItem xml:id="tisiphone">Tisiphone</castItem>
+        <castItem xml:id="menade">Une ménade</castItem>
+        <castItem xml:id="chœur_menades">Chœur de ménades</castItem>
+      </castList>
+    </front>
+
+    <body>
+
+      <div>
+
+        <argument>
+          <p>Silence ! écoutez. Il y eut autrefois un berger, fils d’Apollon, qui avait nom Aristée.
+            Ce berger aima d’une ardeur si violente Eurydice, l’épouse d’Orphée, qu’un jour, la
+            poursuivant par amour, il fut cause de sa cruelle et déplorable aventure ; car pendant
+            qu’Eurydice fuyait le long des eaux, un serpent la mordit, et la nymphe tomba morte.</p>
+          <p>Orphée, par ses chants, l’arracha de l’enfer ; mais il n’eut pas la force de remplir la
+            condition imposée, et celui qui avait rendu Eurydice la reprit. C’est pourquoi Orphée,
+            menant une vie sombre et désespérée, ne voulut aimer aucune autre femme, et les femmes
+            lui donnèrent la mort.</p>
+          <p>Maintenant, que chacun se tienne attentif aux actes qui vont suivre ; il y en a cinq et
+            ceci est l’argument.</p>
+        </argument>
+      </div>
+
+      <div type="act">
+        <head>Acte premier <lb/>Les Bergers</head>
+        <sp who="mopsus">
+          <speaker>Mopsus</speaker>
+          <p><pb n="5" xml:id="p5"/>As-tu vu un veau blanc de mon troupeau ? Il a sur le front une
+            tache noire, et roux est le poil qui lui couvre deux pieds, un genou et le flanc.</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Cher Mopsus, aucun troupeau n’est venu ce matin à cette fontaine ; mais j’ai entendu
+            mugir là-bas derrière la montagne.</p>
+          <p>Va, Tirsis, et regarde un peu si tu le verras. En attendant, Mopsus, tu resteras ici
+            avec moi, car je veux que tu écoutes un instant ma plainte.</p>
+          <p>Hier j’ai vu, sous cet antre ombrage, une nymphe plus belle que Diane, et un jeune
+            amant était avec elle.</p>
+          <p><pb n="6" xml:id="p6"/>À l’aspect du cette beauté surnaturelle, soudain mon cœur
+            tressaillit dans ma poitrine et mon cœur devint folle d’amour.</p>
+          <p>C’est pourquoi, cher Mopsus, pour moi il n’est plus do plaisir ; sans cesse je pleure,
+            toute nourriture m’est odieuse, et sans jamais dormir, je demeure étendu sur ma
+            couche.</p>
+        </sp>
+        <sp who="mopsus">
+          <speaker>Mopsus</speaker>
+          <p>Si tu ne te hâtes, ô mon Aristée ! d’éteindre cette torche amoureuse, bientôt tu verras
+            troublée toute la paix de tes jours.</p>
+          <p>L’amour, sache-le bien, ne m’est pas chose nouvelle ; je sais comme on le gouverne mal
+            quand il est vieux. Porte vite remède à la blessure, maintenant que le remède peut
+            guérir.</p>
+          <p>Si tu te soumets, ô Aristée ! à la dure loi de l’amour, bientôt sortiront de ta tête et
+            les abeilles, et les jardins, et les vignes, et les blés, et les pâturages, et les
+            bergeries, et les troupeaux,</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Mopsus, tu donnes des conseils aux morts. Ne prodigue pas avec moi tes paroles, car
+            aussi bien le vent les emporterait.</p>
+          <p>Aristée aime et ne veut pas cesser d’aimer ; il ne cherche pas à guérir de si douces
+            peines. Celui-là loue encore l’amour qui a le plus à s’en plaindre.</p>
+          <p>Mais si tu as quelque souci de mes désirs, accompagne ma voix avec ta flûte, et
+            ensemble nous chanterons sous ces arbres touffus.</p>
+          <p>Le chant plaît à la nymphe que j’aime.</p>
+          <label>Chant d’Aristée</label>
+          <p>Écoutez, ô forêts, écoutez mes douces paroles, puisque ma nymphe ne veut point les
+            entendre !</p>
+          <p>La belle nymphe est sourde à mes plaintes, et dédaigne le son de mon chalumeau ; mon
+            troupeau en gémit, mon troupeau armé de cornes ; il se refuse à baigner son museau dans
+            l’onde pure, à effleurer l’herbe tendre, tant il s’afflige et s’attriste aux peines de
+            son berger.</p>
+          <p>Écoutez, ô forets, écoutez mes douces paroles !</p>
+          <p>Oui, le troupeau a souci de son berger, mais non la nymphe de celui qui l’aime. La
+            belle nymphe a un cœur de rocher. De rocher ? ah ! plutôt de fer, ah ! plutôt de
+            diamant. Elle fuit toujours à mon approche, comme la jeune brebis devant le loup.</p>
+          <p>Écoutez, ô forêts, écoutez mes douces paroles !</p>
+          <p>Dis-lui, ô mon chalumeau ! dis-lui comment avec les années s’en va la beauté rapide ;
+            dis-lui comme le temps nous détruit, sans que jamais renaisse le bel âge écoulé ;
+            dis-lui qu’elle use de sa beauté, que toujours ne fleurissent pas roses et
+            violettes.</p>
+          <p>Écoutez, ô forêts, écoutez, mes douces paroles !</p>
+          <p>Portez, ô vents ! ces vers harmonieux à l’oreille de ma nymphe ; dites combien, pour
+            elle, j’ai versé de larmes, et priez-la de n’être plus cruelle ; dites que ma vie s’en
+            va et se fond comme, au soleil, la gelée blanche du matin.</p>
+          <p>Écoutez, ô forêts, écoutez mes douces paroles, puisque ma nymphe ne veut pas les</p>
+          <p>entendre !</p>
+        </sp>
+        <sp who="mopsus">
+          <speaker>Mopsus</speaker>
+          <p>Moins doux est le murmure des fraîches eaux qui tombent d’un rocher, moins douce la
+            brise légère du vent dans les cimes murmurantes des pins, que n’est l’harmonie de tes
+            chants, tes chants qui retentissent par tout le bocage. Si la nymphe les entend, elle
+            viendra comme une jeune levrette.</p>
+          <p>Mais voici Tirsis qui redescend de la montagne.</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Eh bien ! ce jeune veau, l’as-tu retrouvé ?</p>
+        </sp>
+        <sp who="tirsis">
+          <speaker>Tirsis</speaker>
+          <p>Je l’ai retrouvé, et je voudrais qu’on lui eût tranché la tête ; d’un peu plus il
+            m’éventrait, car il s’en venait se heurter violemment à moi. J’ai fini cependant par le
+            ramener à l’étable, et je puis dire qu’il n’a pas le ventre vide.</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Je voudrais bien savoir maintenant pourquoi tu as tant tardé à revenir.</p>
+        </sp>
+        <sp who="tirsis">
+          <speaker>Tirsis</speaker>
+          <p>Je me suis arrêté à contempler une charmante jeune fille qui va cueillant des fleurs
+            autour de la montagne. Non jamais je n’en verrai une aussi belle, qui ait plus de grâce
+            dans ses mouvements, plus de fierté sur le front. Son chant est si doux, si douce sa
+            parole, qu’elle ramènerait un fleuve vers sa source. Son visage est de neige et de rose,
+            sa tête d’or, ses yeux sont noirs et son vêtement blanc.</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Demeure, ô Mopsus ! je la veux suivre ; c’est la jeune fille dont je t’ai parlé.</p>
+        </sp>
+        <sp who="mopsus">
+          <speaker>Mopsus</speaker>
+          <p>Prends garde, ô Aristée ! qu’une trop grande hardiesse ne te mène a quelque triste
+            événement.</p>
+        </sp>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Il me faut mourir en ce jour ou savoir jusqu’où va la puissance de ma destinée. Reste,
+            ô Mopsus ! reste auprès de ces fontaines ; <pb n="7" xml:id="p7"/>je veux aller à sa
+            recherche derrière ces montagnes.</p>
+        </sp>
+        <sp who="mopsus">
+          <speaker>Mopsus</speaker>
+          <p>Ô Tirsis ! que te semble maintenant de ton maître ? ne vois-tu pas qu’il a perdu le
+            sens ? Tu devrais bien lui dire une fois combien cet amour est honteux.</p>
+        </sp>
+        <sp who="tirsis">
+          <speaker>Tirsis</speaker>
+          <p>Ô Mopsus ! le devoir du serviteur est d’obéir ; et celui-là est insensé qui commande à
+            son maître. Je sais qu’il est plus sage que nous. Garder mes bœufs et mes génisses, je
+            ne sais faire autre chose.</p>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Acte deuxième <lb/>Les Nymphes</head>
+        <sp who="aristee">
+          <speaker>Aristée</speaker>
+          <p>Ne me fuis pas, ô jeune fille ! je t’aime tant, je t’aime plus que ma vie, plus que mon
+            cœur !</p>
+          <p>Écoute, ô belle nymphe ! écoute ce que je viens te dire ; ne fuis pas, ô nymphe, j’ai
+            tant d’amour pour toi !</p>
+          <p>Suis-je le loup ou l’ours ravisseur ? non, je suis ton amant ; ralentis donc ta course
+            rapide.</p>
+          <p>Puisque toute prière est vaine et que toujours tu t’éloignes, il faut bien que je te
+            poursuive ; prête, amour, prête-moi tes ailes.</p>
+        </sp>
+        <sp who="dryade">
+          <speaker>Une dryade</speaker>
+          <p>Chères sœurs, ma voix vous apporte une lamentable nouvelle et telle que mon cœur se
+            refuse presque à vous le dire.</p>
+          <p>Eurydice, la nymphe, est morte an bord du fleuve ; les plantes languissent autour de sa
+            tête penchée, et l’onde émue cesse de murmurer.</p>
+          <p>L’ame voyageuse a quitté sa belle demeure, et la nymphe est là couchée, comme le blanc
+            troène ou la fleur de la blanche épine.</p>
+          <p>Et l’on m’a dit la cause de sa mort, c’est un serpent qui l’a mordue au pied. La pensée
+            de cette perte cruelle pèse tant à mon cœur que toutes je vous invite à pleurer avec
+            moi.</p>
+        </sp>
+        <sp who="chœur_dryades">
+          <speaker>Chœur des dryades</speaker>
+          <p>Que l’air résonne au loin de gémissements, car toute lumière lui est ravie, et que nos
+            larmes élèvent les fleuves au niveau de leurs rives !</p>
+          <p>La mort a pris au ciel toute sa splendeur ; les étoiles ne sont que ténèbres. Avec la
+            belle Eurydice, la mort a cueilli la fleur des nymphes.</p>
+          <p>Pleure, amour, pleure avec nous ; pleurez, bois et fontaines ; pleurez, ô montagnes !
+            et toi plante naissante sous laquelle repose celle qui n’est plus, courbe tes feuilles
+            au murmure de nos plaintes.</p>
+          <p>Que l’air résonne au loin, etc.</p>
+          <p>Ah ! fortune barbare ! ah ! serpent cruel ! ah ! inexorable destinée !</p>
+          <p>Comme une rose coupée, comme un lis cueilli, elle languit dans la prairie. Comme il est
+            pâle et inanimé ce visage dont la beauté faisait l’orgueil de notre âge ! Et maintenant
+            elle est voilée, cette lumière qui avait coutume d’éclairer le monde.</p>
+          <p>Que l’air résonne au loin, etc.</p>
+          <p>Qui désormais chantera de si doux vers ? Aux suaves accents de sa voix, les vents
+            s’apaisaient, et maintenant, dans la douleur commune, ils murmurent leur plainte.</p>
+          <p>Que de plaisirs, que de beaux jours perdus avec les yeux brillants que la mort a
+            éteints ! Que la terre s’emplisse de gémissements et que notre cri monte jusqu’au ciel,
+            retentisse jusqu’à la mer !</p>
+          <p>Que l’air résonne au loin de gémissements, car toute lumière lui est ravie, et que nos
+            larmes élèvent tes fleuves au niveau de leurs rives !</p>
+        </sp>
+        <sp who="dryade">
+          <speaker>Une dryade</speaker>
+          <p>Orphée, sans doute, est celui qui arrive à la montagne, avec sa lyre à la main ; son
+            aspect est si calme qu’il croit encore, on le voit bien, son Eurydice vivante.</p>
+          <p>Je lui apprendrai la triste et douloureuse nouvelle, et plus amère sera la peine qui
+            frappera sou cœur si la blessure est soudaine et inattendue.</p>
+          <p>La mort a brisé le nœud de l’amour le plus noble que la nature ait jamais formé dans le
+            monde : elle a éteint la flamme dans sa plus douce ardeur.</p>
+          <p>Passez, mes sœurs, allez aux pâturages ; celle qui n’est plus, Eurydice, est derrière
+            la montagne ; couvrez-la de fleurs et de verdure.</p>
+          <p>Je porte à celui-ci la déplorable nouvelle.</p>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Acte troisième <lb/>Les héros</head>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <stage>Il chante en vers latins.</stage>
+          <p><pb n="8" xml:id="p8"/>Muse, chantons les triomphes et les exploits d’Hercule, et les
+            monstres terrassés par son bras redoutable ;</p>
+          <p>Comment il étouffa deux serpents dans son berceau, et avec un fier sourire, les montra
+            à sa mère tremblante, l’intrépide enfant !</p>
+        </sp>
+        <sp who="dryade">
+          <speaker>La Dryade</speaker>
+          <p>Je t’apporte une triste nouvelle, Orphée ; ta belle nymphe n’est plus. Elle fuyait
+            devant Aristée ; lorsqu’elle est arrivée au bord du fleuve, un serpent venimeux et
+            maudit, caché parmi les herbes et les fleurs, l’a piquée au pied, et la blessure a été
+            si cruelle, si terrible, qu’une même heure a mis fin à la course et à la vie
+            d’Eurydice.</p>
+        </sp>
+        <sp who="mnesille">
+          <speaker>Mnésille</speaker>
+          <p>Vois avec quel désespoir l’infortuné s’éloigne ; la douleur lui ôte la parole. Sur
+            quelque rive solitaire, loin du monde, il s’en va déplorer sa cruelle destinée ; je veux
+            le suivre, et voir s’il est vrai qu’à ses gémissements la montagne s’émeuve.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <p>Pleurons, pleurons maintenant, ô lyre inconsolée ! le chant accoutumé ne sied plus à
+            mes lèvres. Pleurons tant que le ciel tournera sur les pôles, et que Philomèle le cède à
+            nos accents plaintifs ! Ô ciel, ô terre, ô mer ! ô sort déplorable ! où trouver la force
+            de supporter une telle douleur ! Eurydice, mon Eurydice, ma belle Eurydice, ma vie !
+            sans toi que faire en ce monde ?</p>
+          <p>Je veux aller aux portes du Tartare ; je veux éprouver si l’on trouve merci chez les
+            morts. Peut-être avec des vers pleins de larmes, ô chère lyre ! nous changerons la
+            sévère destinée. La mort peut-être deviendra sensible ; une fois déjà nos chants ont eu
+            le don d’émouvoir la pierre, d’assembler en un même lieu et le tigre et la biche,
+            d’attirer les forêts et de faire rebrousser les fleuves.</p>
+        </sp>
+        <sp who="mnesille">
+          <speaker>Mnésille</speaker>
+          <p>Moins aisément, hélas ! s’émeut le fuseau des Parques impitoyables, ou la porte
+            d’airain du Tartare, et je vois clairement qu’elle sera bien courte la vie de cet
+            infortuné. S’il descend aux enfers, jamais il ne remontera parmi les vivants. Il ne faut
+            pas s’étonner qu’il perde la lumière, celui qui a pris l’aveugle amour pour guide.</p>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Acte quatrième <lb/>Les Morts</head>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <p>Pitié, pitié, pitié, pour un malheureux amant, ô esprits de l’enfer ! L’Amour seul m’a
+            conduit vers vous ; c’est avec les ailes de l’Amour que je suis venu sur ces bords.
+            Arrête, ô Cerbère ! calme ta fureur ; lorsque tu apprendras l’excès de mes maux, tu
+            gémiras avec moi, et non-seulement toi, ô Cerbère ! mais quiconque habite le monde
+            aveugle. Pourquoi,ô Furies ! ces mugissements à ma vue ? pourquoi hérisser tous vos
+            serpents ? Que si vous saviez mes peines amères, vous uniriez vos plaintes aux miennes.
+            Laissez passer ce pauvre infortuné qui a contre lui le ciel et tous les éléments, et qui
+            vient demander merci à la mort. Ouvrez-lui donc les portes de fer.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Pluton</speaker>
+          <p>Qui donc avec une lyre d’or, a fait tourner sur ses gonds la porte redoutable et
+            arraché des larmes aux morts ? Je vois la roue d’Ixion immobile, je vois Sisyphe assis
+            sur son rocher, et les filles de Bélus, debout, leur urne vide à la main ; l’onde a
+            cessé de fuir les lèvres de Tantale ; je vois Cerbère attentif avec sa triple gueule et
+            les Euménides apaiser le cri lamentable de leur fureur.</p>
+        </sp>
+        <sp who="minos">
+          <speaker>Minos</speaker>
+          <p>Ce mortel vient à nous contre la loi des destinées, qui ne laisse pas arriver ici de
+            chair qui n’ait vécu. Peut-être, ô Pluton ! Porte-t-il <pb n="9" xml:id="p9"/>avec lui
+            quelque piége caché, pour te dérober l’empire des morts. Tous ceux qui passeront comme
+            lui cette porte qu’on ne repasse plus, l’ont toujours fait à ta honte et pour te nuire.
+            Prends bien garde, ô Pluton ! je crains ici quelque ruse perfide.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <p>Ô dominateurs de toutes les générations qui ont perdu la lumière éthérée, vous dans
+            l’empire de qui descend ce que la nature, ce que les éléments enfantent sous le ciel,
+            écoute la cause de mes plaintes ! L’Amour compatissant a guidé mes pas vers vous ; ce
+            n’est pas pour enchaîner Cerbère que je viens en ces lieux, mais pour redemander une
+            épouse bien-aimée.</p>
+          <p>Une vipère cachée entre les herbes et les fleurs m’a ravi mon épouse et mon cœur eu
+            même temps ; c’est pourquoi je passe ma vie dans la peine amère et ne puis plus résister
+            à la douleur. Ah ! s’il est encore en vous quelque souvenir de votre noble et antique
+            amour, si vous avez encore présent à la pensée cet enlèvement d’autrefois, rendez-moi ma
+            belle Eurydice, mon Eurydice.</p>
+          <p>Toute chose en son temps retourne à vous ; toute vie mortelle qui s’élève retombe aux
+            enfers ; tout ce qu’embrasse le croissant de lu lune arrive tôt ou tard à vos contrées.
+            Nous séjournons là-haut plus ou moins d’années, et il faut ensuite que chacun chemine en
+            cette route ; ce terme est le dernier qu’atteignent nos pas. Puis vous régnez sur nous,
+            et votre règne est éternel.</p>
+          <p>Que la nymphe que j’aime soit réservée à votre empire, quand la nature elle-même aura
+            voulu son trépas ; mais vous avez livré au tranchant de la faux cruelle la vigne tendre,
+            le raisin âpre encore. Quel est celui qui moissonne ses semences en herbe, et qui
+            n’attend pas leur maturité ? Rendez-moi donc mon espérance ; ce n’est pas un don, c’est
+            un prêt que j’implore de vous.</p>
+          <p>Je vous en conjure par les noirs marais du Styx et de l’Achéron, par le chaos d’où
+            sortit le monde tout entier, par la voix retentissante de l’impétueux Phlégéton, par les
+            fruits, ô Reine, qui firent ta joie, le jour où, pour la première fois, tu quittas
+            l’horizon des mortels ! Si le sort ennemi me la refuse, je ne veux pas retourner sur la
+            terre ; je demande la mort.</p>
+        </sp>
+        <sp who="proserpine">
+          <speaker>Proserpine</speaker>
+          <p>Je ne croyais pas, ô mon époux ! que la pitié dût un jour entrer dans cet empire. Main
+            tenant je la vois régner dans notre cour, et je m’en sens le cœur tout ému. Ce ne sont
+            pas les seuls condamnés, c’est la mort elle-même qui s’attendrit aux cruelles infortunes
+            de cet homme. Laisse donc se désarmer pour lui la rigueur de ta loi, en faveur de ses
+            chants, de son amour et de ses justes prières.</p>
+        </sp>
+        <sp who="pluton">
+          <speaker>Pluton</speaker>
+          <p>Je te la rends, mais à la condition que tu la précéderas dans le noir sentier des
+            ombres, et que tu ne verras pas son visage qu’elle ne soit arrivée parmi les vivants.
+            Sache donc modérer le feu de tes désirs, ô Orphée ! sinon ton Eurydice te sera aussitôt
+            ravie. J’incline avec joie devant une lyre si harmonieuse la puissance de mon
+            sceptre.</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <stage>Il chante des vers latins.</stage>
+          <p>Allez, entrelacez-vous autour de mes temples, lauriers de la victoire, car nous avons
+            vaincu. Eurydice m’a été rendue, et la vie avec Eurydice.</p>
+          <p>Est-il conquête plus digne des honneurs du triomphe ? Viens, approche, ô triomphe
+            acheté par mes chants !</p>
+          <stage>Orphée se retourne pour voir Eurydice.</stage>
+        </sp>
+        <sp who="eurydice">
+          <speaker>Eurydice</speaker>
+          <p>Hélas ! hélas ! l’excès de ton amour nous arrache l’un à l’autre ! Voici que de nouveau
+            une violence irrésistible me sépare de toi, et désormais je ne t’appartiens plus ! Je
+            veux tendre les bras vers toi ; mais je ne puis ; je sens qu’on m’entraîne en arrière.
+            Orphée, mon Orphée, adieu !</p>
+        </sp>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <p>Qui donc impose aux amants de ces lois cruelles ? N’y a-t-il aucun pardon pour un
+            regard plein d’amour et de désir ? Mon bien m’est ravi de nouveau, et la joie immense de
+            mon cœur n’est plus que deuil maintenant. Ah ! retournons à la mort une seconde
+            fois.</p>
+        </sp>
+        <sp who="tisiphone">
+          <speaker>Tisiphone</speaker>
+          <stage>l’arrêtant.</stage>
+          <p>Ne va pas plus avant ; vaines sont tes larmes et les paroles. Eurydice ne peut accuser
+            que toi de son malheur, et sa plainte est bien légitime. Inutiles sont tes vers,
+            inutiles tes chants. N’avance pas ! arrête ! La loi des enfers est inexorable.</p>
+        </sp>
+      </div>
+      <div type="act">
+        <head>Acte cinquième <lb/>Les Bacchantes</head>
+        <sp who="orphee">
+          <speaker>Orphée</speaker>
+          <p><pb n="10" xml:id="p10"/>Où trouver maintenant un chant si lamentable qu’il égale la
+            douleur de la perte que j’ai faite ? Comment trouver, hélas ! assez de larmes pour
+            pleurer éternellement ma détresse mortelle ? Je resterai triste et inconsolable dans mon
+            deuil, aussi long-temps que les dieux me tiendront dans la vie ; et puisque si cruelle
+            est ma destinée, non, je ne veux plus aimer aucune femme.</p>
+          <p>Que nul ne vienne me parler des femmes, puisqu’elle est morte celle qui eut mon cœur.
+            Si l’on veut vivre en paix avec moi, que jamais on ne me parle d’aimer aucune
+            femme !</p>
+          <p>Qu’il est à plaindre celui qui livre sa volonté au caprice d’une amante, qui s’attriste
+            ou se réjouit à cause d’elle, qui pour elle se dépouille de sa volonté, et croit à ses
+            beaux semblants ou à ses paroles ! Moins légère que la femme est la feuille qu’emporte
+            le vent ; mille fois le jour elle veut et ne veut plus. Elle s’attache à qui la fuit et
+            se dérobe à qui la recherche ; elle va et revient, comme le flot à la rive.</p>
+        </sp>
+        <sp who="menade">
+          <speaker>Une ménade</speaker>
+          <p>Ohé ! ohé ! mes sœurs ; voici celui qui méprise notre amour ; venez et donnons-lui la
+            mort. Toi, jette-lui ton thyrse ; toi, prends et lance-lui ce rameau ; toi, cette
+            pierre ; toi, cette flamme ; toi, cours et déracine cet arbre ! Ohé ! ohé ! qu’il porte
+            la peine de son crime, le farouche mortel ! Ohé ! arrachons-lui le cœur de la poitrine !
+            Meure, meure, l’impie ! qu’il meure !</p>
+        </sp>
+        <sp who="menade">
+          <speaker>La Même</speaker>
+          <stage>Après qu’Orphée a été tué.</stage>
+          <p>Ohé ! l’impie est mort ! Evohé ! Bacchus ! je te rends grâce ! Nous l’avons déchiré et
+            traîné par les bois, et tous les rejetons de la forêt sont rassasiés de son sang. Nous
+            avons, lambeau par lambeau, arraché, outragé ses membres. Qu’il vienne encore maudire
+            les torches saintes d’hyménée. Evohé ! Bacchus ! reçois cette victime !</p>
+        </sp>
+        <sp who="chœur_menades">
+          <speaker>Chœur des Ménades</speaker>
+          <p>Que chacun te suive, ô Bacchus ! Bacchus ! Bacchus ! Evohé !</p>
+          <p>C’est pour te servir, ô Bacchus ! c’est pour répondre à ton appel, que nous avons ainsi
+            couronné nos têtes du lierre verdoyant, prêtes la nuit, prêtes le jour, pour tes
+            mystères. Buvons, Bacchus est ici ; laissez-moi boire.</p>
+          <p>Que chacun te suive, ô Bacchus ! Bacchus ! Bacchus ! Evohé !</p>
+          <p>Voici déjà ma corne vidée ; passez l’amphore de ce côté ; cette montagne tourne autour
+            de moi, ou c’est ma tête qui tourne ainsi. Que chacune de vous courre de côté et
+            d’autre, comme elle me voit faire.</p>
+          <p>Que chacun te suive, ô Bacchus ! Bacchus ! Bacchus ! Evohé !</p>
+          <p>Déjà je me meurs de sommeil ; suis-je donc ivre, oui ou non ? Mes pieds ne peuvent
+            tenir plus long-temps. Vous êtes ivres, je le vois. Faites toutes ce que je fais ;
+            toutes buvez comme je bois.</p>
+          <p>Que chacun te suive, ô Bacchus ! Bacchus ! Bacchus ! Evohé !</p>
+          <p>Criez toutes, Bacchus ! Bacchus ! du vin, du vin encore ; puis nous tomberons
+            endormies. Bois, toi, et toi, et toi ; je ne puis danser plus long-temps. Crions toutes
+            Evohé !</p>
+          <p>Que chacun te suive, ô Bacchus ! Bacchus ! Bacchus ! Evohé !</p>
+        </sp>
+      </div>
+    </body>
+
+  </text>
+</TEI>

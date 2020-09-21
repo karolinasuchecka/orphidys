@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Orphée</title>
+        <title type="sub">Étude dramatique en deux parties</title>
+        <title type="book">Études dramatiques. I. Barkokébas. II. Le Vieux de la montagne. III.
+          Orphée. IV. Prométhée.</title>
+        <author>Charlemagne Ischir Defontenay</author>
+        <editor/>
+      </titleStmt>
+      <editionStmt>
+        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+          édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
+          comparative intermédiale innovante accompagnée d’une ressource pour le repérage
+          intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
+          l’Université de Lille.</edition>
+        <respStmt>
+          <name>Karolina Suchecka</name>
+          <resp>Chargé de l’édition</resp>
+        </respStmt>
+        <respStmt>
+          <name>Nathalie Gasiglia</name>
+          <resp>Co-tutrice de thèse</resp>
+        </respStmt>
+        <respStmt>
+          <name>Karl Zieger</name>
+          <resp>Co-tuteur de thèse</resp>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Karolina Suchecka</publisher>
+        <publisher>ALITHILA (Université Lille III)</publisher>
+        <date when="2019"/>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+              thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+              numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
+              ressource pour le repérage intertextuel »</p>
+            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+              les bases de données (L341-1) est mise à disposition de la communauté scientifique
+              internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
+              : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
+              BY-NC-ND 3.0 FR) ». </p>
+            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+              de cette ressource électroniques comportera le nom du projet et surtout l’adresse
+              Internet de la ressource. </p>
+            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+              utilisation commerciale est interdite.</p>
+            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+              électronique, notamment en intégrant toutes les contributions extérieures, la
+              diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+          </licence>
+        </availability>
+        <idno>https://gallica.bnf.fr/ark:/12148/bpt6k5655770f</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><author>Charlemagne Ischir Defontenay</author> / <title>Orphée. Étude dramatique en
+            deux parties</title> / <title>Études dramatiques. I. Barkokébas. II. Le Vieux de
+              la montagne. III. Orphée. IV. Prométhée</title> / Paris / Ledoyen / 1854 / p. 136-186.</bibl>
+        <biblFull>
+          <titleStmt>
+            <title>Orphée. Étude dramatique en deux parties. Études dramatiques. I. Barkokébas. II.
+              Le Vieux de la montagne. III. Orphée. IV. Prométhée.</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>Ledoyen</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="1854"/>
+          </publicationStmt>
+        </biblFull>
+        <genre>théâtre</genre>
+        <structure>defontenay1854</structure>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+        nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
+        projet. La structure des métadonnées a été établie en référence à la manière dont le
+        logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date when="1854">1854</date>
+      </creation>
+      <language>
+        <language>FR</language>
+      </language>
+      <textClass>
+        <keywords>
+          <list>
+            <item>modernisation</item>
+          </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docAuthor>Charlemagne Ischir Defontenay</docAuthor>
+        <docTitle>
+          <titlePart type="main">Orphée</titlePart>
+          <titlePart type="sub">Étude dramatique en deux parties</titlePart>
+        </docTitle>
+      </titlePage>
+      <castList>
+        <castItem xml:id="orphee">Orphée, la civilisation par l’art, le bonheur, la paix, la
+          religion</castItem>
+        <castItem xml:id="aristee">Aristée, la force éclairée, le despotisme, la guerre.</castItem>
+        <castItem xml:id="cresphone">Cresphonte, la force brutale</castItem>
+        <castItem xml:id="thamyris">Thamyris, la poésie</castItem>
+        <castItem xml:id="thersandre">Thersandre, la liberté humaine</castItem>
+        <castItem xml:id="eurydice">Eurydice, l’amour pur</castItem>
+        <castItem xml:id="phaetuse">Phaétuse, le plaisir des sens</castItem>
+        <castItem xml:id="egle">Églé, l’aspiration religieuse</castItem>
+        <castItem xml:id="musee">Musée, disciple d’Orphée</castItem>
+        <castItem xml:id="eumolpe">Eumolpe, disciple d’Orphée</castItem>
+        <castItem xml:id="thalae">Thalaé, bacchante</castItem>
+        <castItem xml:id="soldats">Soldats d’Aristée</castItem>
+        <castItem xml:id="suite_orphee">Suite d’Orphée</castItem>
+        <castItem xml:id="hommes">Hommes et femmes</castItem>
+      </castList>
+    </front>
+
+    <body>
+
+
+      <div>
+        <head>Première Partie <lb/>Eurydice</head>
+        <stage><pb n="136" xml:id="p136"/>La scène se passe en Thrace, sur les bords de
+          l’Èbre.</stage>
+        <div type="scene">
+          <head>Scène première</head>
+          <stage>Aristée, Cresphonte. Ils arrivent sur la scène.</stage>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>La nuit est encore obscure, mais il me semble cependant reconnaître ces lieux ;… oui…
+              nous voici arrivés aux bords de l’Èbre.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Enfin ! nous allons donc faire halte quelque temps… car depuis les flancs du mont
+              Ossa nous avons marché jour et nuit sans prendre haleine. <stage>(</stage><stage>Il
+                réfléchit.)</stage> Il y a maintenant près de huit lunes que nous avons quitté la
+              Thrace pour courir la Grèce, où nos aventures et nos combats nous ont fait une
+              renommée terrible. Il a fallu que le souvenir d’Eurydice vînt interrompre nos
+              exploits, en t’inspirant le désir de revenir ici.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="137" xml:id="p137"/>Oui, Cresphonte, le besoin de revoir Eurydice, cette douce
+              et mignonne enfant, qui, avant notre départ, s’était presque engagée à m’appartenir, a
+              été pour quelque chose dans ma résolution de retourner en Thrace. Mais un dessein plus
+              sérieux m’y poussait aussi.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Parle ! Aristée ; car toi, tu sais penser aussi bien qu’agir.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Cresphonte ! voici un long temps déjà que nous avons partagé les mêmes aventures.
+              Es-tu bien décidé à me suivre encore et à me seconder en toutes choses ?</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Aristée ! tu es le seul homme que j’aie jamais craint et aimé. Tu te rappelles
+              l’origine de notre liaison… Cresphonte, la terreur des plus forts et des plus braves
+              de la Thrace, n’avait jamais rencontré d’homme qu’il ne pût terrasser ; toi seul dans
+              dix combats parvins à m’accabler sous ta force. Tu le sais, malgré cela, je ne t’ai
+              point haï ; au contraire, au lieu de te dresser des embûches, j’ai mieux aimé te
+              suivre, sûr qu’à nous deux nous pourrions braver tous les périls. L’admiration que
+              j’avais pour toi m’a habitué à te laisser le commandement : Aristée ! tu peux compter
+              maintenant sur moi comme sur un ami obéissant qui ne pourrait se séparer de toi.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="138" xml:id="p138"/>Eh bien ! écoute donc. En parcourant la Grèce, je
+              dirigeais nos pas toujours vers le midi, espérant trouver sous un ciel plus chaud et
+              sur une terre plus fertile des groupes et des tribus d’hommes assemblés et vivant en
+              commun, comme on dit qu’il en existe au pays d’Égypte, par delà la mer. Tu le sais,
+              nous avons rencontré tous les champs déserts ; les bois seulement sont peuplés, ça et
+              là, de familles sauvages et solitaires que notre vue seule faisait fuir.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Timides et lâches, dans leurs huttes de terre et de feuilles aux plus épais fourrés
+              des bois sombres !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>En voyant quelle facilité nous avions à vaincre et à dépouiller à nous deux ces
+              petits groupes épars, je me suis assuré que si je parvenais à réunir à nous une troupe
+              d’hommes énergiques nous aurions bientôt l’empire sur toute la race des hommes de ces
+              contrées ; et qu’ensuite, en armant ces hommes et en leur apprenant à combattre
+              ensemble, tous les peuples de la Grèce nous craindraient, et nous respecteraient comme
+              les plus forts et comme rois.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Nous serions, dis-tu, comme ces rois des pays lointains, qui ont une grande masse de
+              peuple pour les servir et satisfaire leurs caprices ? Aristée ! tu as bien fait de
+              revenir en Thrace, car là seulement se rencontrent des hommes dignes de nous
+              seconder.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>parlant au public.</stage>
+            <p><pb n="139" xml:id="p139"/>Non ! ce n’est pas pour ma gloire ou pour mon orgueil
+              seulement que je veux user de la puissance que va me donner la force obéissante d’une
+              armée de soldats. J’obligerai les hommes, jusqu’alors farouches et occupés au fond des
+              forêts à poursuivre des animaux ou à déterrer des racines, à s’assembler pour
+              s’entr’aider et vivre côte à côte. La société va les instruire à chercher les moyens
+              de satisfaire aisément leur faim, et la guerre ensuite les enrichira du superflu.
+              Ainsi donc, par persuasion ou par force, il faut décider les plus robustes à venir se
+              joindre à nous ; car la force c’est la civilisation ; c’est la société fondée ; et
+              au-dessus de cette société, la royauté d’Aristée</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Aristée ! ta pensée, à toi, est vaste et profonde ; je suis aveugle auprès de toi ;
+              Marche donc, et sois mon guide !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Maintenant séparons-nous un instant ; car le matin commence à donner ses lueurs
+              fraîches et roses, et il faut que je cherche, dans ces bois, à quel tronc d’olivier
+              Eurydice a maintenant adossé sa cabane.</p>
+            <stage>On entend résonner la dernière partie de l’air d’Orphée. L’aurore commence à
+              poindre ; Aristée et Cresphonte sont dans la stupeur. </stage>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>As-tu entendu ?… Aristée ! toi qui sais tant de <pb n="140" xml:id="p140"/>choses,
+              dis, quels sons surnaturels ont résonné ?… Ah ! ma poitrine se serre. Je me sens
+              accablé d’attendrissement ou de terreur !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Ah ! malheur ! malheur pour nous ! je ne sais ce qui produit ces harmonies, mais
+              elles ont pénétré mon cœur et en ont chassé toute audace et toute force.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Si c’était la voix et le langage de quelque divinité du ciel, et qu’elle vint à
+              paraître menaçante devant nous !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Quelqu’un vient ; retirons-nous, car je suis si troublé que je n’oserais en ce moment
+              regarder en face un enfant.</p>
+            <stage>Ils sortent.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Tu es comme moi, Églé ; te voilà rêveuse et baignée de larmes.</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Bon Thersandre ! tu pleures donc aussi d’attendrissement ? Oh ! explique-moi, je t’en
+              prie, la puissance de ces sons cadencés qui résonnent parfois dans ces <pb n="141"
+                xml:id="p141"/>forêts depuis qu’Orphée est venu habiter ce coin de la Thrace.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Ces sons jetés aux vents par la lyre d’Orphée saluent, au lever du soleil, le retour
+              d’Apollon dont on croit ici Orphée le fils bien aimé. Car il n’y a qu’un dieu qui ait
+              pu apprendre à Orphée à trouver, dans la musique et dans sa lyre, une autre voix pour
+              en tirer ces paroles harmonieuses qui vous pénètrent en vous persuadant la douceur et
+              la bonté.</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>On dit que les bêtes féroces l’écoutent avec ravissement. Mais ce qui est plus
+              étrange encore, c’est que, depuis quelque temps, les familles éparses et isolées se
+              cherchent et s’abordent. Déjà les plus jeunes, les plus sensibles, les plus amoureux
+              peut-être, se sont réunis autour d’Orphée, et, ce qu’on n’avait jamais vu, vivent
+              ensemble et en paix.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Tu dis vrai, car cette tribu, ce groupe d’hommes, liés par l’attrait que les chants
+              d’Orphée ont pour chacun d’eux, vient, là-bas, d’élever ses tentes sur les bords du
+              fleuve.</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Eurydice, devenue depuis peu de jours l’épouse et la compagne d’Orphée, m’a bien
+              souvent entretenue des charmes émouvants de sa lyre et de ses chants… Mais serait-ce
+              une illusion ? il m’a semblé que lorsqu’ils s’étaient fait entendre, tu étais plus
+              tendre et <pb n="142" xml:id="p142"/>plus docile à mes caresses ; et, faut-il te le
+              dire, depuis qu’elle les écoute ton Églé elle-même t’aime davantage et autrement que
+              par le passé.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Oui, ma douce amie, l’amour a élargi mon cœur ; mais ces chants divins ont fait sur
+              moi une impression plus profonde encore : je me sens aujourd’hui meilleur, mais aussi
+              plus fier, plus libre ! l’art d’Orphée m’a fait homme ! Hier matin, je me réveillai
+              plein de fureur contre Thamyris, mon redoutable ennemi ; j’allais le chercher pour le
+              combattre, mais la lyre se fit entendre comme aujourd’hui, et quand elle s’est tue,
+              mon cœur, plus humain, plus fort en dignité, avait senti la clémence se glisser dans
+              mes entrailles, et, pour la première fois, Thersandre avait pardonné.</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Combien je bénis Orphée de t’avoir fait si noble ! Il faut aller nous réunir aux
+              Orphéens et accepter les lois d’Orphée ; car peut-être un jour il développera en toi
+              les sentiments qu’a éveillés dans mon cœur la charmante Eurydice.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Et quels sont donc ces sentiments que tu tiens d’Orphée par l’entremise
+              d’Eurydice ?</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Oh ! ma parole serait inhabile à te convaincre et à t’instruire. Ce que ma faible
+              raison a retenu des pensées d’Eurydice, c’est qu’en dehors de Bacchus dont le culte
+              seul est reconnu dans ces bois, Orphée connaît <pb n="143" xml:id="p143"/>d’autres
+              dieux, qu’il prononce le nom des maîtres du ciel, et qu’il enseigne leur histoire,
+              leurs lois justes et protectrices des plus faibles. Mon cœur, consolé par ces pensées,
+              les caresse avec bonheur sans les comprendre. Ah ! si nous pouvions entendre ces doux
+              mystères du ciel expliqués par la bouche d’Orphée ! On vient… c’est Thamyris… Tu ne le
+              fuis pas ?… ah ! cette conduite est digne de mon Thersandre régénéré !…</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>C’est toi, Thersandre… <stage>(Lui tendant la main.)</stage> Puisque la vue de
+              Thamyris n’excite plus ta colère comme autrefois, laisse-moi te presser la main et te
+              dire que j’ai oublié notre ancienne rivalité et nos haines, et que j’ai honte
+              aujourd’hui des stupides combats que nous nous sommes livrés dans ces forêts, en nous
+              disputant des racines ou des fruits sauvages, ou bien même le tronc d’un chêne creux
+              pour y poser notre hutte.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Et moi je ne me sens aucune animosité contre toi, car mes instincts sont adoucis, car
+              je cherche la société des hommes mes semblables, depuis que chaque jour je vais
+              entendre, caché dans les roseaux, la lyre <pb n="144" xml:id="p144"/>qui résonne vers
+              l’aube et le crépuscule sur les bords du fleuve.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Heureux enchantement de la lyre d’Orphée ! Mais toi, tu connaissais Thamyris ; sombre
+              et sauvage, la présence d’une femme ou d’un enfant l’eût fait s’éloigner. Je n’avais
+              d’autre soin que de chercher en chassant la nourriture qui soutient mes forces,
+              dédaignant même l’occupation de ces bergers solitaires du mont Rhodope, qui vivent du
+              produit des troupeaux qu’ils ont élevés… Un jour j’aperçus Orphée, jeune, beau,
+              rayonnant d’une poétique bonté et d’un amour plus qu’humain ; il m’appela, je voulus
+              fuir, mais il fit entendre sa lyre, et malgré moi je le suivis comme un chevreau suit
+              sa mère qui l’appelle de ses cris. Depuis , je suis devenu son disciple et son
+                ami<note place="bottom">L’histoire rapporte que l’ami et le compagnon d’Orphée fut
+                le poete Musée. Je lui fais ici un passe-droit dont j’avertis le lecteur.</note>. Tu
+              ne sais pas encore, Thersandre, ce que c’est que l’amitié ; mais quand c’est Orphée
+              qui vous chérit et se donne à vous, va ! il n’est pas de félicité plus complète.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Thamyris, si tu es devenu mon ami, conduis-moi vers Orphée !</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="145" xml:id="p145"/>Comment, vous deux, autrefois ennemis farouches, êtes-vous
+              réunis et en paix dans ce lieu ?</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Parce que nous nous sommes repentis de notre brutale inimitié.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Tant mieux donc ! Puisque vous voilà rendus sociables vous viendrez avec nous, car
+              vous avez souvent montré aux hommes de ces forêts quelles étaient votre valeur et vos
+              forces.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Oui, si vous voulez nous aider à devenir les maîtres de la Thrace, vous partagerez
+              avec nous les dépouilles des vaincus.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Les Thraces, un maître !… Mais ils ignorent même s’il en existe, et s’il peut en
+              exister ! Non ! ils n’ont pas pu te demander d’être leur maître !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Les Thraces barbares ont besoin d’un maître qui les dresse à la vie de société.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p><pb n="146" xml:id="p146"/>Les Thraces, libres et fiers, ne voudront vivre en commun
+              que sous le maître qu’ils se seront donné.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre,</speaker>
+            <stage>à Aristée.</stage>
+            <p>Et qui te fera, toi, le maître de la Thrace ?</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Moi d’abord, et ces soldats avec moi !</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Ces bras robustes et ces épaisses massues !</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Mais tous les Thraces sont forts et habiles à manier la massue. Serait-ce donc
+              seulement le sang des hommes ou le tien que tu voudrais répandre ?</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Les Thraces sont forts, mais barbares et isolés. Tiens ! regarde : <stage>(en
+                montrant ses soldats)</stage> pas une famille n’est aussi nombreuse que cette troupe
+              déterminée.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Aristée ! réfléchis, et laisse ce projet insensé ! Vois-tu d’avance la stupeur et
+              l’indignation de ces sauvages retirés dans des huttes ou des cavernes, quand ils
+              apprendront que tu prétends les dompter et les faire obéir à ta volonté, eux qui ne
+              savent obéir qu’aux élans capricieux de leur nature primitive ? Leurs instincts
+              révoltés lutteront contre vous, tu le sais bien, et tu ne voudras pas faire de ces
+              forêts une terre lugubre, dépeuplée et ensanglantée par tes mains.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="147" xml:id="p147"/>Le sang féconde la terre ! Celui que nous verserons
+              profitera à l’humanité par nous civilisée. Car, les Thraces une fois disciplinés pour
+              la guerre, nous pourrons à leur tour dompter les autres peuples et les faire vivre en
+              société sous notre loi. Le sang, te dis-je, peut seul transformer et améliorer le
+              monde !</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Non ! non ! ce n’est pas le sang qui doit donner le bonheur à la terre…
+                <stage>(</stage><stage>À</stage><stage> part.)</stage> Ô Orphée ! Orphée !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Nous voulons qu’à l’instant même vous nous suiviez, soumis et obéissants.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Obéissants ! mais tu n’es ni mon père ni mon aîné !</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Suis-nous et obéis, ou malheur à toi !</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Je ne veux pas vous suivre, et je ne sais pas obéir à un homme que je vois pour la
+              première fois !</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Mais si tu n’obéis pas, c’est la guerre et ta mort.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>C’est la guerre assurément… et ma mort… peut-être !</p>
+            <stage>Il se met en défense.</stage>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>à Thersandre</stage>
+            <p>Mes desseins s’accompliront, car je broierai ceux qui, comme toi, voudront y mettre
+              obstacle. <stage>(</stage><stage>À</stage><stage> Thamyris.)</stage> Quant à toi,
+              Thamyris, tu es devenu trop <pb n="148" xml:id="p148"/>amolli pour être à craindre.
+              Va-t’en, je te dédaigne.</p>
+            <stage>Une lutte s’engage entre Thersandre et la troupe d’Aristée. Thamyris, ayant
+              arraché les armes d’un soldat, se porte à la défense de Thersandre. Au moment où ils
+              vont succomber, on entend l’air d’Orphée joué sur la lyre… Les barbares s’arrêtent
+              consternés et stupéfaits, et se retirent du côté de la forêt.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <sp who="thamyris">
+            <speaker>Thamyris,</speaker>
+            <stage>à Orphée</stage>
+            <p>Notre ami protecteur, oh ! veille et chante encore, car les habitants de la forêt
+              sont pleins d’effroi. Comme une lumière qui flamboie dans la nuit éloigne les monstres
+              et les bêtes fauves, tes chants, tu le sais, ont le pouvoir de dissiper l’inquiétude
+              et d’éloigner les barbares. On a vu reparaître ici le farouche Aristée. Fais résonner
+              ta lyre, Orphée, car la douleur recommence à gémir, et le sang a coulé de nouveau.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Enfants de l’amitié et de l’art, aimez-vous et unissez-vous dans les perpétuelles
+              jouissances de l’esprit. Que rien, je vous prie, ne trouble vos doux concerts, quand
+              la poésie et la musique vous ont jetés dans <pb n="149" xml:id="p149"/>l’enthousiasme
+              du plaisir pur. J’irai moi-même me placer sur le chemin d’Aristée. Je le surprendrai à
+              son réveil par les sons les plus tendres de ma lyre, et, si je peux l’aborder,
+              peut-être achéverai-je la séduction en lui parlant le langage de la pitié humaine.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Et si Aristée, plus féroce qu’un tigre, résiste aux paroles et aux chants d’Orphée,
+              vous tous, hommes assemblés en société pour l’art et la paix, vous vous armerez un
+              instant, n’est-ce pas, pour accabler l’animal destructeur sous le nombre de vos
+              armes ? Car Aristée, abusant de sa force, n’est redoutable aux Thraces que parce
+              qu’ils sont farouches et isolés. Mais vous êtes les plus forts, vous qui vous aimez et
+              vous protégez mutuellement.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Tu l’as dit, Thersandre, la société, c’est plus que le bonheur et la joie ; c’est
+              encore la liberté de l’homme. Il faut nous réunir et le terrasser.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Malheur sur celui qui frappe ou endolorit son semblable ! La douleur, c’est la
+              vengeance bientôt, c’est la guerre. Si l’homme souffre, il fera souffrir, il tuera. Le
+              plaisir de l’âme, au contraire, appelle le désir de communiquer son bonheur. Si
+              l’homme est heureux, il fera jouir. Vous tous, premier rudiment de la société à venir,
+              choisissez : bonheur et paix absolue, ou douleur et guerre éternelle. Oh ! qu’on ne
+              dise pas que la mort et la douleur sont sorties des mains des <pb n="150"
+                xml:id="p150"/>compagnons d’Orphée ! Faire jouir, faire aimer, séduire par la
+              musique et les jeux, apôtres de la société naissante, voilà comment vous pourrez
+              transformer l’humanité sauvage et d’associer pour le bonheur de tous.</p>
+            <p>Je vous le dis, malgré l’enthousiasme d’un monde grossier et ignorant pour des
+              vainqueurs rougis de sang, inspirez le mépris et l’horreur pour le guerrier, pour
+              quiconque porte une arme de mort ; car, assassins ou soldats, ils sont maudits du Dieu
+              des Astres. La vie est le don qu’il vous a fait d’une part de son être, et celui qui
+              tue attente à sa suprême majesté.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Noble et divin Orphée ! pardonne à mon cœur qui t’aime et qui redoute pour toi
+              l’embûche et le danger. Si l’injustice et la férocité vous attaquent, vous les
+              repousseriez pourtant ?</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>avec douceur et fermeté.</stage>
+            <p>Nous recevrons le meurtrier en lui tendant une main amie, et s’il n’est pas désarmé
+              par nos paroles d’amitié et de soumission, ayant laissé fuir les femmes et les
+              enfants, nous mourrons sans nous défendre… léguant à l’assassin, pour sa lâcheté, le
+              remords qui le rendra meilleur, et au monde l’exemple palpitant de l’horreur que
+              l’homme doit avoir pour le sang versé. <stage>(Avec entraînement.)</stage> Ô mes
+              compagnons chéris ! chassez, je vous en conjure, cette tristesse et ces craintes,
+              puisque nous avons, pour éloigner les méchants du foyer de nos joies, nos
+              bienfaisantes <pb n="151" xml:id="p151"/>actions et la divine harmonie qui répand dans
+              les âmes autour de nous la douceur ou l’effroi.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Orphée ! es-tu bien un homme pour parler ainsi ?… Instruis-nous… On te croit le fils
+              du Dieu de la lumière : aussi, quand tu passes, vois-tu les malades et les malheureux
+              se presser sur ta route, et s’en aller guéris et consolés, quand ta lyre les a enivrés
+              de ses mélodies… Oh ! si tu es un Dieu, dis-le-nous, que nous t’adorions à
+              genoux !</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Oh ! non, non ! je suis d’une nature terrestre comme vous. J’eus peut-être plus
+              d’amour, plus de pitié que les autres hommes, et c’est cet amour et cette pitié qui
+              vous étonne et vous trompe. Compagnons ! ne voyez en moi ni un maître, ni un chef, car
+              la déférence que vous auriez pour Orphée empêcherait les élans de votre expansive
+              amitié ; et je ne veux être avec vous qu’un ami aimant et bien-aimé.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Cher et tendre Orphée ! tiens, voici venir Eurydice qui, en t’entourant de ses bras
+              caressants, va te remercier pour nous tous de la vie intellectuelle et du bonheur que
+              nous te devons.</p>
+            <stage>Eurydice paraît avec des femmes… Au bout de quelques instants, disciples et
+              femmes s’éloignent. Orphée reste seul avec Eurydice.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VI</head>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p><pb n="152" xml:id="p152"/>Mon noble Orphée, que ta vue m’est douce en ce moment ! En
+              traversant la forêt d’une course rapide, elle m’a semblé plus déserte et plus
+              menaçante. J’avais hâte de me sentir entourée des bras d’Orphée.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Enfant ! ton cœur soulève ta poitrine. Tu es effrayée !</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Je ne le suis plus : je suis avec toi. Mais, tout à l’heure, en courant dans les
+              prairies que baigne le fleuve, à mes yeux éblouis sans doute par la vitesse du terrain
+              qui fuyait sous mes pas, est apparue, comme un éclair qui passe, la figure sinistre
+              d’Aristée… En quelques bonds je fus près de toi.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Tes yeux ne t’ont point trompée. Aristée est de retour. Tu pâlis, douce amie !… Et
+              que peux-tu redouter de lui ?… La nuit tu reposes près d’Orphée, et le jour n’es-tu
+              pas la plus légère des jeunes filles de la Thrace, de toutes ces vierges et femmes
+              timides qui ont au moins pour se soustraire aux passions sauvages leur agilité
+              exercée ?</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p><pb n="153" xml:id="p153"/>Mais je pourrai l’apercevoir quelquefois, et sa vue fera
+              honte à mon cœur de sa faiblesse passée. Oh ! n’en rougis pas, mon bien-aimé ; quand
+              Aristée me demanda mon amour je n’étais pas Eurydice, l’Eurydice que tu as faite.
+              Comme toute femme faible et ignorante, je me laissai séduire par ce qui alors devait
+              me paraître beau et grand : la force et la valeur brutales. Va ! je ne retrouve plus
+              en moi le cœur qui fut sur le point de se donner à Aristée !…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Que la honte ne ternisse jamais la noblesse qui rayonne au front d’Eurydice ! Ta
+              nature inculte devait suivre ses instincts, et tu sais bien qu’Orphée ne pouvait
+              désirer ou accepter qu’un cœur qui battît avec le sien.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Et pour cela, tu es venu choisir Eurydice entre toutes. Ma nature simple, mais
+              aimante, déjà séduite par ton art, a été instruite à vivre et à sentir en toi. Tu as
+              façonné Eurydice, tu as soufflé sur elle jusqu’à ce qu’elle fût l’harmonie vibrante de
+              ton âme.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Aimable épouse, oui ; et cela a été la plus chère récompense de mes efforts. Oh ! si
+              tu savais ce qu’Orphée a souffert lorsqu’avec ses besoins d’aimer, avec sa tendresse
+              toujours prête à déborder, il n’avait autour de lui pas un seul cœur ouvert à une
+              affection élevée, un cœur vibrant sympathiquement aux atteintes <pb n="154"
+                xml:id="p154"/>de la poésie. En toi seule, Eurydice, j’ai fait germer tout cela, et
+              j’ai puisé ensuite aux sources de ton amour les plus délectables enchantements.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Mon esprit tout entier est ton ouvrage. Ne m’as-tu pas instruite et préparée à goûter
+              avec toi tous les plaisirs de l’âme, tous les charmes de la pensée ? Mais sois-en fier
+              et heureux, mon Orphée ! car, en élevant mon esprit en puissance et en sentiment, tu
+              m’as permis de mesurer la portée intellectuelle et sensible de l’âme d’Orphée, esprit
+              divin, portant au cœur la poésie de l’art et une immense pitié pour la nature humaine.
+              Mon amour a grandi ainsi avec les facultés que tu développais en moi, et maintenant je
+              t’aime de toute l’étendue de ma pensée et de mon cœur !…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée </speaker>
+            <p>Et moi, belle épouse, je t’aime comme la seule créature sur qui ont pu s’épancher
+              enfin les flots captifs de ma tendresse. Je t’aime comme la seule âme où mon âme
+              puisse résonner ; je t’aime comme la poésie, comme ma lyre… car ton cœur est aussi une
+              corde harmonieuse sur laquelle je puis traduire et exhaler les transports et les
+              besoins expansifs de mon âme.</p>
+            <stage>On entend des chants et des cris dans l’éloignement.</stage>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Je ne sais pourquoi, au milieu de ces chants et de ces danses joyeuses, mon oreille
+              saisit distinctement <pb n="155" xml:id="p155"/>un air lugubre qui couvre ta voix et
+              tes paroles d’amour ; mon cœur se glace dans ma poitrine !</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VII</head>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Ô vous les instituteurs et le souffle vivant de nos plaisirs et de nos jeux, nos
+              frères demandent si la fête de ce jour se passera sans que votre présence soit venue
+              l’embellir et la sanctifier ?</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>à Eurydice.</stage>
+            <p>Mes amis et tes compagnes nous réclament au milieu d’eux. Va, parmi la joie et la
+              gaieté des jeunes filles, te mêler à leurs danses. La musique et leur allégresse
+              dissiperont ta mélancolie.</p>
+            <stage>Une ronde de jeunes filles s’est approchée et a entraîné Eurydice. Orphée suit un
+              groupe de chanteurs.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VIII.</head>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Je ne puis maintenant aller confondre ma raison et mes sens dans cette effusion des
+              arts et de l’amitié. Un sentiment plus âpre me retient en ces lieux. C’est le moment
+              où les prêtresses de Bacchus courent les forêts pour recueillir aux pampres les
+              grappes du <pb n="156" xml:id="p156"/>fruit dont elles font la liqueur agréable à leur
+              Dieu. Phaëtuse est parmi elles, car mes yeux ont cru la découvrir dans cette troupe de
+              jeunes femmes suspendues là-bas aux rameaux des buissons. En effet, c’est bien elle,
+              belle, énergique et farouche… Pourquoi mon cœur s’est-il exposé à être froissé des
+              dédains de cette rude bacchante ? Quelle torture d’aimer cette femme !… La
+              voici !…</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IX</head>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Fière bacchante ! daigneras-tu aujourd’hui t’arrêter un instant pour m’entendre ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Parle ! et si tes paroles ont le pouvoir de me retenir… je resterai…</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Non ! éloigne-toi plutôt. Car tu ne comprendrais jamais le sentiment tendre, ardent
+              et désespéré qui m’attache incessamment à tes pas, qui me fait vivre de ton souvenir
+              et rêver de tes charmes… Mais il faut pourtant que je te fasse connaître le prix de
+              tout ce trésor de beauté qui, sur toute ta personne, resplendit à donner le vertige.
+              Tu ignores, enfant, toutes les grâces dont tu es douée, car tu es belle à rendre
+              jalouse la fière Diane, sœur d’Apollon. Oh ! oui, tu ignores tout cela ; car si tu le
+              savais, tu ne voudrais pas <pb n="157" xml:id="p157"/>laisser souiller ces fleurs de
+              jeunesse par les baisers avinés d’un Cresphonte !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Si tu avais seulement, avec cet esprit séducteur, le visage d’Orphée ton maître que
+              l’on dit aussi beau que Bacchus, la fantaisie me ferait peut-être céder aux louanges
+              molles et veloutées que tu viens de glisser dans mon cœur. Mais non encore ! je ne
+              resterais pas avec toi, car tu sais bien que je suis la bacchante aux sens
+              fougueux…</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Phaëtuse, viens avec moi deux jours seulement, et mon amour, que je saurai rendre
+              affable et empressé, t’aura fait vite oublier la débauche de tes amours passées.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Non, te dis-je ; ce qu’il me faut à moi ce sont les emportements et la fureur de
+              Cresphonte. Ce qui me plaît ce sont les rugissements d’un lion plutôt que les soupirs
+              d’une colombe !</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Sentiments grossiers qui ne t’ont jamais apporté ni dévouement ni fidélité.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Mais toi, poëte efféminé, me rendrais-tu la passion désordonnée de mon amant ?
+              Vois-tu, ce que j’aime plus que ma vie, ce sont surtout ses ardents caprices, et ses
+              yeux enflammés au sein de l’ivresse ; et jamais <pb n="158" xml:id="p158"/>ton
+              dévouement et ta fidélité ne me feraient oublier nos moments de folle orgie Jamais je
+              ne serai à toi, Thamyris.</p>
+            <stage>Elle veut s’en aller.</stage>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Tigresse, pour toi j’aurai toutes les violences de Chresphonte !…</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Cresphonte m’attend, je te quitte.</p>
+            <stage>On entend l’air d’Orphée. Phaëtuse subjuguée revient sur ses pas.</stage>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris,</speaker>
+            <stage>à part.</stage>
+            <p>Orphée ici ! tant mieux. Il n’y a que son art et sa voix qui puissent dompter cette
+              nature effrénée.</p>
+            <stage>Il se retire.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène X</head>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Enfant, qui repousses l’amour poétique, pourquoi t’arrêtes-tu ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Oh ! joue encore de cet instrument dont les bruits sont si différents de ceux des
+              tambourins des bacchantes. <stage>(Orphée recommence
+                </stage><stage>l’</stage><stage>air.)</stage> Tu es Orphée, je le vois à
+              l’enivrement que je ressens, et par-dessus tout à la divine beauté qui éclate dans ta
+              personne !</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>C’est Orphée lui-même qui vient de te prouver combien les délectations de l’âme
+              l’emportent sur le <pb n="159" xml:id="p159"/>plaisir des sens, car tu m’écoutes et
+              cependant Cresphonte t’attend.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Ta musique, il est vrai, m’a surprise et pénétrée, mais tes traits sont si majestueux
+              et si beaux que je ne puis m’empêcher de rester pour te voir et t’entendre.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Si cette musique t’a charmée, il n’y a donc pas seulement d’aimable sur la terre que
+              le vin et l’orgie ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Il y a ton art qui, je le sens, est rempli de molle volupté.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Femme à l’âme ardente mais inculte, quelques notes qui frappent l’air ont suffi pour
+              te faire rêver et tressaillir ; que serait-ce donc si tu pouvais deviner ce que recèle
+              de joies complètes l’art dans ses formes diverses, l’art tout entier dont la musique
+              n’est qu’une branche aux fleurs suaves ? Tu quitterais bien vite Cresphonte et les
+              bacchantes tes sœurs pour suivre les leçons, les plaisirs des compagnons d’Orphée.
+              C’est au milieu de nous que ta nature, avide de volupté, pourra puiser, dans les élans
+              de la musique et de la poésie, un délire et des transports toujours pleins de douceur
+              et de quiétude. Loin de s’abrutir comme au contact des épaisses jouissances des sens,
+              ton âme frissonnante s’élargira, sans cesse plus parfaite en bonté et en
+              intelligence ; puis, ce développement <pb n="160" xml:id="p160"/>des facultés de ton
+              esprit accroissant à son tour les sources de tes plaisirs, tu sentiras jusqu’à
+              l’infini grandir en toi l’intelligence et la volupté !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Orphée, ta parole brillante vient, vraiment, de m’ouvrir l’horizon d’une joie
+              inconnue ; mais en t’écoutant, moi, j’ai cru entrevoir un bonheur plus puissant
+              encore. Ce serait celui que savourerait si bien la femme aimée et instruite par toi à
+              ces plaisirs du ciel. J’ai senti que là était la suprême volupté, et c’est celle-là
+              qu’il me faut, à moi !… Je te suivrai : mais ce ne sera ni Thamyris, ni aucun de tes
+              amis qui fera le bonheur de Phaëtuse. Car, écoute le cri de mon cœur ! je te suivrai,
+              mais pour t’aimer et te servir… toi, seul au monde !…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Enfant des passions naïves, ignores-tu donc les serments qui attachent pour la vie à
+              Eurydice mon amour et ma fidélité ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>continuant.</stage>
+            <p>Orphée, entends-moi ! mon cœur n’a jamais su se contenir !… Tu es le plus séduisant
+              et le plus beau des hommes que j’aie encore vus. Mon amour, né de tout à l’heure, a
+              toute la violence d’une longue passion… Ah ! permets-moi d’espérer que tu m’aimeras,
+              car je n’ai jamais su que haïr quand je n’aimais plus.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Sois sans crainte ; l’art a le pouvoir d’adoucir tout sentiment de haine ou d’envie.
+              Je te le redis, enfant <pb n="161" xml:id="p161"/>aux vives aspirations, viens parmi
+              nous ; Eurydice te comptera au nombre de ses plus tendres amies. Instruite par elle à
+              la pratique des arts, tu trouveras sous nos tentes de jeunes et fraîches amours qui,
+              mieux qu’Orphée, sauront satisfaire ton âme et combler tes désirs.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>faisant effort pour se contenir.</stage>
+            <p>Orphée, toi qui es beau comme le matin et dont la voix pénètre les entrailles,
+              pourquoi mes yeux ont-ils rencontré les tiens ? Oh ! malheur sur toi qui veux séduire
+              sans pouvoir assouvir les passions que tu sais exciter i Oh ! malheur ! car tu me
+              laisses le cœur embrasé et tout à la fois plein de fureur. Malheur, te dis-je ! sur
+              toi et les tiens, car si je ne puis te servir à genoux, je te tuerai…, toi et ton
+              Eurydice !</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Reste un moment, jeune fille. Ma lyre a des sons nouveaux et merveilleux qui savent
+              porter le calme dans l’âme irritée. Écoute…</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>s’éloignant précipitamment.</stage>
+            <p>Adieu ! depuis longtemps déjà Cresphonte et les bacchantes mes sœurs m’attendent pour
+              commencer leur orgie.</p>
+            <stage>Elle sort.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène XI</head>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>seul.</stage>
+            <p>Attrait magique des arts, amour vrai de l’homme, <pb n="162" xml:id="p162"/>éloquence
+              sacrée du cœur, mélodies tombées de ma lyre, pour la première fois vous avez mal servi
+              mes desseins. Que dis-je ? pour la première fois ! mon apostolat de paix aura fait
+              surgir autour de ma tête des haines qui déjà ont enveloppé Eurydice… Je tremble
+              maintenant de ne plus l’avoir à mes côtés… Courons l’avertir et la préserver, s’il se
+              peut, des embûches que je pressens devoir la menacer… Mais, qui vient ainsi vers
+              moi ?…</p>
+            <stage>Aristée paraît.</stage>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>à part.</stage>
+            <p>Le voilà donc cet homme à qui il va me falloir disputer la possession de la Thrace et
+              l’amour d’Eurydice. Je ne sais quelle émotion s’est emparée de moi à son aspect !
+              N’importe, abordons-le.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Tu es sans doute Aristée, ou l’un de ses compagnons ?</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Tu parles à Aristée lui-même.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Si tu viens à moi comme ami, Orphée, en te tendant la main, te donne son cœur sans
+              réserve.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Je ne suis et ne veux être que ton ennemi.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Puisque tu viens comme ennemi, permets au moins que je tente de te réconcilier avec
+              moi.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Et par quels discours espères-tu détourner ma <pb n="163" xml:id="p163"/> haine,
+              quand Eurydice, la femme que j’avais choisie, a passé dans tes bras ?</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>J’ai désiré, sans te connaître, l’amour d’Eurydice ; si j’y pouvais renoncer
+              aujourd’hui, serait-il généreux de le faire et de lui refuser, à elle, le bonheur que
+              sa vie me demande, puisque, seul, je puis le lui donner au gré des besoins de son
+              cœur ?</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Si Eurydice n’eût pas connu Orphée j’aurais pu satisfaire aussi ses désirs de
+              bonheur. Mais qu’importe son bonheur même, quand l’amour et la jalousie brûlent mon
+              sang, quand pour mon contentement j’ai faim et soif d’Eurydice ?… Oui, haine et
+              vengeance sur toi jusqu’à ce que tu m’aies rendu Eurydice et l’empire de la
+              Thrace !…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>avec douceur.</stage>
+            <p>Aristée, je t’en conjure, entre nous plutôt amitié et concorde. Eurydice se chargera
+              de t’amener une compagne digne de toi ; et puisque tu rêves l’empire de la Thrace,
+              abjure la guerre et le sang, et viens au milieu de nous : Orphée te promet d’user
+              toute son éloquence auprès du peuple pour te faire décerner le rang suprême.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Quoi ! tu consentirais à me céder la domination que tu exerces sur les habitants de
+              ces forêts ?</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Je te chérirai et t’obéirai, moi-même, comme à mon père.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="164" xml:id="p164"/>Non, non ! je n’irai pas avec toi vivre dans l’indolence
+              et la paix au milieu des Thraces éclairés et instruits de tes leçons ; car, même au
+              premier rang, je serais encore le second par l’estime et la considération. Non, non,
+              te dis-je, je ne puis être quelque chose qu’après la destruction et l’anéantissement
+              de ta secte !</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Aristée, le sort des hommes et des enfants des hommes dans les âges éloignés est
+              peut-être dans tes mains. Renonce à fomenter la guerre et le meurtre au début des
+              sociétés qui naissent, et les générations vivront peut-être dans la paix du bonheur.
+              Le sang que tu vas verser coulera à travers les siècles comme un fleuve qui ira
+              grossissant toujours. Oh ! aie pitié des immenses douleurs dont tu pourrais étouffer
+              le germe ! Qu’une seule larme mouille tes yeux, et l’humanité est rachetée !…</p>
+            <stage>Aristée se tait. Moment de silence.</stage>
+            <p>Dis, que te faut-il encore pour te convaincre ?… Ton orgueil serait-il blessé de voir
+              Orphée à côté de toi ? Je m’exilerai, si tu l’exiges, sur quelque plage
+                déserte.<stage> (Nouveau silence.)</stage> Tu te tais ! Eh bien ! que je sois la
+              victime expiatoire des misères futures… prends ma vie ; mais aie pitié ! aie
+              pitié !…</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>brièvement.</stage>
+            <p>Je te l’ai dit, Aristée ne peut être rien en ce monde qu’après l’anéantissement de
+              tous ces pacifiques séducteurs qui se nomment tes disciples. C’est irrévocablement
+              entre nous guerre et mort…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p><pb n="165" xml:id="p165"/>Orphée et ses amis repoussent la douleur et le sang. Quand
+              tu viendras pour nous combattre, tu nous trouveras groupés au bord du fleuve, occupés
+              à unir les accords de nos lyres, nos voix attendries et nos âmes frémissantes dans un
+              dernier concert ; et si tu n’es pas un tigre, tu pleureras de repentir et du regret de
+              ta haine injuste.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>reculant interdit et inquiet.</stage>
+            <p>Oh ! je connais la puissance de ta voix et de ta lyre. Aussi ne crois pas triompher
+              d’Aristée par tes enchantements habituels. Va ! mes oreilles sauront fuir ton langage
+              séducteur et ta musique pernicieuse. <stage>(S’éloignant instinctivement
+                d’Orphée.)</stage> Je brave ton art et toi-même ; je ferai en sorte que tu ne me
+              rencontres qu’au moment où mon arme pourra t’atteindre, et avant que tes mains aient
+              pu toucher ces cordes <stage>(montrant la lyre)</stage> présent de l’enfer.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>le voyant s’éloigner de lui.</stage>
+            <p>Malheur ! malheur ! il sera le fléau du monde : il se défie de l’art !</p>
+            <stage>Il sort.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène XII</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Que viens-je d’apercevoir ? Eurydice se dirigeant de ce côté ! Oh ! pourquoi n’ai-je
+              pas mes gardes ou mes soldats pour me saisir d’elle ?… Mais que vois-je ? Une main
+              amie a prévenu mes désirs ; les issues <pb n="166" xml:id="p166"/>sont gardées par
+              Cresphonte et sa troupe. Enfin, cette fois, elle ne saurait m’échapper.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène XIII</head>
+          <sp who="eurydice">
+            <speaker>Eurydice,</speaker>
+            <stage>arrivant tremblante.</stage>
+            <p>Ciel ! ce n’est pas Orphée !… Et ces hommes sinistres que je viens d’éviter ? Ah !
+              Phaëtuse la bacchante m’a trompée en me conduisant ici. Que vois-je ? Aristée !
+              C’était une trahison !…Par où fuir ? <stage>(</stage><stage>Elle </stage><stage>veut
+                retourner sur ses pas, puis elle regarde autour d’elle avec effroi.)</stage> Ah !
+              qui viendra à mon secours !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Il est inutile de songer à la fuite ; les passages sont gardés par mes soldats, et tu
+              vas être contrainte de m’entendre… Ingrate !… Tu as fait naître dans mon sein une
+              passion brutale, et sans souci des tourments que tu me réservais, tu es allée porter
+              tes embrassements au détestable Orphée.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Seigneur, laissez-moi quitter ces lieux. Je suis l’épouse d’Orphée : je ne puis aimer
+              et servir que lui.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Que parles-tu d’Orphée, quand tu es en mon pouvoir, et que je prétends t’emmener
+              malgré toi !</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Oh ! non, non : toi qui es si brave et si puissant, tu feras grâce à une faible
+              femme.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="167" xml:id="p167"/>C’est parce que tu es faible que tu m’appartiendras.
+                <stage>(Il la saisit.)</stage> Je suis le maître de ta personne : obéis et
+              suis-moi.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice,</speaker>
+            <stage>effrayée.</stage>
+            <p>Orphée ! Orphée ! viens me secourir…</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>la relâchant.</stage>
+            <p>Orphée ? Et qui est-il, pour que tu le préfères au terrible Aristée ?… Pourrait-il
+              seulement soulever cette massue ?… Va ! il ne saurait pas même te délivrer en
+              combattant contre moi. Et si tu n’attends de secours que d’Orphée, sache que pas un
+              mortel n’oserait ici me disputer la femme que j’ai choisie ou désirée.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Sauvage ! je saurai t’échapper.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Je n’ignore pas qu’aussi légère à la course qu’une biche effrayée, pas un homme ne te
+              devancerait. Mais tu as bien vu… les issues sont fermées.</p>
+          </sp>
+          <sp who="eurydice">
+            <speaker>Eurydice</speaker>
+            <p>Tigre farouche ! ce serait trop de honte pour la femme qu’Orphée a illuminée de son
+              amour d’être exposée à ta féroce passion. Si je ne puis me réfugier dans ses bras, je
+              puis au moins mourir !… Orphée ! mon âme te dit un suprême adieu !… Tu seras veuf,
+              mais non déshonoré.</p>
+            <stage>En disant ces mots elle prend sa course du côté de l’Èbre, seul passage qui soit
+              resté libre ; et, avant qu’Aristée ait pu l’atteindre, elle se précipite dans le
+              fleuve.</stage>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p><pb n="168" xml:id="p168"/>Elle est perdue pour moi ! Mais puisse cette mort qui me
+              venge être douloureuse à Orphée !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>surgissant derrière Aristee.</stage>
+            <p>Tu l’as dit, puisse cette mort qui nous venge être douloureuse à Orphée !</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène XIV</head>
+          <sp who="thamyris">
+            <speaker>Thamyris,</speaker>
+            <stage>déposant au pied d’un arbre le corps inanimé d’Eurydice.</stage>
+            <p>Compagnons, Eurydice est morte ; et… <stage>(</stage><stage>montrant Aristée et sa
+                troupe)</stage> voici ses assassins !</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Amis ! est-ce assez de mansuétude et de modération ? Ah ! que ce crime odieux soit
+              puni sur l’heure, si nous, compagnons d’Orphée, nous ne voulons point que toute la
+              Thrace nous accuse de lâcheté.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris,</speaker>
+            <stage>à Phaëtuse.</stage>
+            <p>À toi, femme de l’enfer, qui as préparé ce crime, je ne puis désormais vouer que mon
+              exécration !</p>
+            <stage>À Aristée</stage>
+            <p>Quant à toi, Aristée, infâme meurtrier ! je te défie ; défends-toi !…</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre</speaker>
+            <p>Vengeance donc ! vengeance !</p>
+            <stage>Les deux troupes sont prêtes à en venir aux mains. En cet instant Orphée
+              paraît.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>étendant la main.</stage>
+            <p><pb n="169" xml:id="p169"/>De la vengeance sur la dépouille d’Eurydice ! Mais ne
+              voyez-vous pas tressaillir son ombre effrayée ? et ne savez-vous pas qu’Orphée
+              n’accepte que celle qui provoque le repentir et adoucit la cruauté.
+                <stage>(Avec douceur.)</stage> Du sang sur la tombe
+              d’Eurydice ? ah ! il y brûlerait ses fleurs aimées, que mes larmes seules doivent y
+              faire croître et y arroser doucement. Ah ! entendez-moi : lâche seul est celui qui ne
+              sait trouver en son âme ni la patience, ni l’effort du pardon. Aussi, vous, les
+              auteurs de la mort de cette enfant, soyez en son nom absous et pardonnés, de peur que
+              vous ne soyez malheureux, de peur que le souvenir de votre action ne vienne
+              quelquefois troubler en vos cœurs les élans de la joie et du plaisir…</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>à part.</stage>
+            <p>Sortons, car la parole de cet homme éveille en moi les regrets et la honte.</p>
+            <stage>Aristée se met en devoir de se retirer, et d’un signe, il entraîne à sa suite les
+              Bacchantes, Cresphonte et sa troupe.</stage>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée,</speaker>
+            <stage>laissant éclater sa douleur.</stage>
+            <p>Et maintenant, amis et frères, faites pour ces lieux silence et solitude ; laissez
+              Orphée pleurer longtemps sur ces mânes chéries, car la moitié de ma vie est morte avec
+              Eurydice !</p>
+            <stage>Les Orphéens se retirent respectueusement. La toile tombe.</stage>
+          </sp>
+        </div>
+      </div>
+      <div>
+        <head>Deuxième partie <lb/>Phaëtuse</head>
+        <div type="scene">
+          <head>Scène première</head>
+          <sp who="thamyris">
+            <speaker>Thamyris,</speaker>
+            <stage>à Orphée</stage>
+            <p><pb n="170" xml:id="p170"/>Le nombre de jours et de nuits pendant lesquels tu as
+              laissé couler tes pleurs au souvenir d’Eurydice est déjà trop grand pour tes amis
+              désespérés et pour toi que la douleur mène au tombeau.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Non, non, Thamyris, la vie ne saurait m’abandonner encore, car un dernier amour
+              palpite en mon sein : l’amour de vous tous et de la famille humaine, sauvage et
+              souffrante.</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Oh ! bonheur ! tu vivras certainement, puisque tu aimes. Oh ! aime toujours, car
+              l’amour seul est capable de faire vivre Orphée.,…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p><pb n="171" xml:id="p171"/>Merci, toutefois, ô mon cher Thamyris ; tu viens de
+              rappeler mon âme endolorie à ses devoirs, à ses affections. J’avais oublié, dans mon
+              accablement, que ma tristesse enveloppait jusqu’à la famille aimée de mes amis et de
+              mes disciples. Hélas ! au lieu de la gaieté et du bonheur qu’ils devaient attendre de
+              moi, ma faiblesse les a laissés sombres et affligés.</p>
+          </sp>
+          <sp who="musee">
+            <speaker>Musée</speaker>
+            <p>Cours donc les rassurer et calmer cette tristesse en leur montrant la tienne apaisée.
+              Mais avant que tu ne retournes auprès d’eux leur rendre l’ami qui doit les consoler,
+              souffre que ma voix t’instruise de leur angoisse et de leurs craintes. Le temps que tu
+              as passé à pleurer Eurydice a été avidement employé par Aristée à étendre sa
+              domination et à nous préparer des fers. Tendre et sublime artiste ! que ta grande âme
+              surmonte enfin sa douleur, car si tu ne veux plus chanter et séduire, le triomphe des
+              barbares est assuré.</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Oui, Musée, j’irai bientôt, comme par le passé, organiser le plaisir et continuer
+              l’œuvre de la fondation d’une société attrayante et pacifique. L’amour humain et la
+              pitié sauront encore échauffer mes accents. Mais déjà, tu l’as dit, nous avons trop
+              attendu ; c’est pourquoi je veux qu’un acte suprême de rénovation, une auguste
+              cérémonie, destinée à fixer les Thraces sous les lois de notre civilisation par les
+              arts <pb n="172" xml:id="p172"/>et la paix, signale aujourd’hui le retour d’Orphée
+              parmi ses frères. À vous donc sage conseil que je me suis choisi, à vous mes vrais
+              disciples et les dépositaires de la doctrine éternellement vraie, cherchée pendant mes
+              longs voyages au fond des plus antiques sanctuaires, et révélée à mon pur enthousiasme
+              et à mon amour profond des hommes : à vous, dis-je, je dois la pensée de cette œuvre
+              que je prépare. Lorsque dans les sombres cavernes du mont Rhodope, je vous conduisais
+              pour fonder avec votre aide ce culte mystérieux qui est tout art et plaisir
+              intellectuel, je vous ai rendu et transmis la révélation du vrai Dieu, du Dieu des
+              intelligents, du Dieu de l’avenir, du Dieu des civilisés des temps futurs, avec
+              mission de répandre et de perpétuer par initiation la loi et le nom de ce Dieu aux
+              générations qui suivront. Mais si vous, âmes sages et fortes, avez pu recevoir et
+              garder la connaissance de cet esprit activement bienfaisant et de sa loi de progrès et
+              de bonheur, le bonheur même de la masse de nos frères moins instruits exige que la
+              vérité reste voilée sous un symbole où ils puissent reposer sans effort leur raison
+              d’enfant… : raison que le temps grandira pour la conduire aux sources du vrai. Au
+              peuple donc, aujourd’hui et quelque temps encore, il faut le symbole et l’adoration.
+              Eh bien, c’est sous la bannière d’Apollon, la lumière et l’art, qu’il va nous falloir
+              relier ces croyances éparses et grossières ; et je prétends aujourd’hui lui ériger en
+              ces lieux ses premiers autels…</p>
+          </sp>
+          <sp who="musee">
+            <speaker>Musée</speaker>
+            <p><pb n="173" xml:id="p173"/>Oh ! achève, achève vite ce grand dessein qui doit ranger
+              toute la Thrace sous nos pacifiques institutions. Parais, grand-prêtre d’Apollon, et
+              le pouvoir brutal et sanguinaire d’Aristée va s’évanouir devant le laurier de
+              Phœbus !</p>
+          </sp>
+          <sp who="thamyris">
+            <speaker>Thamyris</speaker>
+            <p>Allégresse et bonheur ! tous, nous attendions ce retour, ce réveil de notre ami. Oui,
+              parais et chante, et la Grèce entraînée vers nous va venir te demander des lois et le
+              bonheur de s’enivrer de tes accords ; mais chante surtout, pour que tes disciples
+              ravis puissent encore suspendre leur âme aux cordes de ta lyre…</p>
+          </sp>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            <p>Que l’auguste cérémonie se prépare ! Je cours saluer et embrasser mes frères comme
+              autrefois.</p>
+            <stage>Orphée sort avec Eumolpe, Musée et Thamyris.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène II</head>
+          <stage>Les Orphéens dressent au fond de la scène, avec des branchages et du gazon, un
+            autel qu’Églé et les jeunes filles viennent parer de fleurs.</stage>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>à part.</stage>
+            <p>Que signifient ces étranges préparatifs ?</p>
+            <stage>à Églé</stage>
+            <p>Épouse du fier Thersandre, apprends-moi le motif de <pb n="174" xml:id="p174"/>ces
+              apprêts inusités, dont ces bois mêmes paraissent s’étonner ?</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Femme consacrée au culte de Bacchus, réjouis-toi ! Ce que tu vois est un autel qui
+              s’élève par les ordres d’Orphée ; c’est de cette estrade, bientôt consacrée, que notre
+              aimable maître va enseigner aux habitants des rives de l’Èbre à rendre hommage aux
+              dieux du ciel et à honorer particulièrement Apollon, le dieu de la lumière et des
+              arts.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Orphée, dis-tu, s’apprête à instituer ici un culte à Apollon ?</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Dans peu d’instants, prêtresse, Orphée doit venir, entouré de sa tribu, chanter des
+              prières et des hymnes autour de cet autel où doit s’offrir le sacrifice.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>aux Bacchantes.</stage>
+            <p>Vous l’avez entendu, un culte rival va se fonder ici, et Bacchus n’aura plus les
+              hommages exclusifs des habitants de ces forêts.</p>
+            <stage>À Églé, dédaigneusement.</stage>
+            <p>Des chants, des prières, des sacrifices ? Et Orphée pense ainsi être agréable à son
+              Dieu ?</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Tu ne crois donc pas qu’Apollon veuille compatir à nos misères, quand, du haut du
+              char du soleil, il verra un peuple rassemblé qui tout d’une voix le loue et le
+              prie ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p><pb n="175" xml:id="p175"/>Bacchus, le plus ancien des Dieux de la Grèce, ne vous a
+              demandé jusqu’alors que des fêtes et des festins, où le vin et la débauche engendrent
+              une furieuse ivresse. Va ! le plaisir que prend l’homme en l’honneur des Dieux est le
+              seul sacrifice qui leur soit agréable.</p>
+          </sp>
+          <sp who="egle">
+            <speaker>Églé</speaker>
+            <p>Ah ! laisse-moi plutôt avoir foi dans les doctrines douces et consolantes d’Orphée.
+              Ma faiblesse a tant besoin de s’abriter sous l’influence d’un dieu bienfaisant !
+              Laisse-moi croire que les êtres souffrants de ce monde peuvent trouver des protecteurs
+              et avoir une espérance dans les cieux.</p>
+            <stage>Elle continue de parer l’autel.</stage>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>aux Bacchantes.</stage>
+            <p>C’en est fait du culte de Bacchus chez les Thraces, si Orphée parvient à instituer sa
+              religion rivale. Nous verrons bientôt les Bacchantes méprisées du peuple, et nos
+              orgies abandonnées pour ses fêtes décorées de la pompe des arts.</p>
+          </sp>
+          <sp who="bacchantes">
+            <speaker><hi rend="sc">Première Bacchante</hi>.</speaker>
+            <p>Et qui nous empêche de fouler ces fleurs aux pieds, de renverser cet autel, et d’en
+              disperser les débris ? Phaëtuse, ne sommes-nous donc plus les Ménades au mâle
+              courage ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Thalaé, si la violence devait nous servir aujourd’hui, sois sûre que j’en aurais déjà
+              donné l’exemple. Oh ! je vous en prie plutôt, si votre sœur vous <pb n="176"
+                xml:id="p176"/>est chère, laissez-vous guider par mes conseils. Aidez-moi ; mais
+              abandonnez-moi la ruine de cet homme qui outrage à la fois mon orgueil, mon amour et
+              mon culte.</p>
+          </sp>
+          <sp who="thalae">
+            <speaker>Thalaé</speaker>
+            <p>Ô toi, si chère à toutes nos compagnes, ordonne, et nous servirons tes desseins ;
+              dusses-tu nous conduire porter le carnage et l’incendie au camp des Orphéens.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Oh ! je susciterai à Orphée un ennemi plus puissant qui nous épargnera ce soin. Je
+              veux seulement que nos embûches harcèlent et enlacent cet homme de toutes parts,
+              jusqu’au moment où il tombera désarmé sous nos coups.</p>
+          </sp>
+          <sp who="thalae">
+            <speaker>Thalaé</speaker>
+            <p>Puisque ta haine a juré la mort d’Orphée, nous le haïrons et le poursuivrons jusqu’à
+              la mort.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Va ! Thalaé, tu ne sais pas encore combien je suis altérée de son sang ! Hier, en
+              passant près du tombeau d’Eurydice, j’aperçus Orphée en pleurs. Je ne pus résister au
+              désir de regarder encore une fois, à la dérobée, cet homme qui a su remuer mon âme si
+              profondément. Or, au moment où mes yeux rencontrèrent les siens, son regard se fixa
+              sur moi plein de douleur et de regrets, mais sans nulle expression de haine !… Orage !
+              j’ai tué l’objet de l’affection de cet homme, et cet homme ne me hait pas !…</p>
+            <p>Je me sauvai en courant, la colère et la honte dans <pb n="177" xml:id="p177"/>ma
+              poitrine.</p>
+            <stage>À Thalaé</stage>
+            <p>Juge si je me vengerai délicieusement de cet Orphée, que je n’ai pu même forcer à me
+              haïr !…</p>
+          </sp>
+          <sp who="thalae">
+            <speaker>Thalaé</speaker>
+            <p>Phaëtuse, calme-toi ; nous nous dévouons toutes à ta vengeance, et nous serons prêtes
+              à te seconder quand tu nous l’ordonneras.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène III</head>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>à Aristée</stage>
+            <p>Futur conquérant de la Thrace, vois-tu cet autel ? c’est le trône où Orphée va tout à
+              l’heure asseoir et sanctifier sa pacifique et astucieuse domination. C’est au nom
+              d’Apollon, qu’il va convier les Thraces réunis à accepter ses lois et son
+              autorité.</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Je le savais, et c’est pourquoi je suis venu. Ô Orphée ! la science est à toi,
+              peut-être, mais le courage sera pour nous. Le culte d’Apollon ? c’est la lumière
+              faite, c’est la paix, c’est l’indépendance de tous. Non ! non ! la moitié des plus
+              farouches, des plus forts, est déjà aux ordres d’Aristée, et je saurai terrasser cet
+              homme, qui n’est invincible que parce qu’il ne se défend pas.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Ici les Orphéens vont se réunir tout à l’heure. L’occasion <pb n="178" xml:id="p178"
+              />est favorable pour en finir d’un seul coup. Cachons-nous derrière ces buissons ; et,
+              au milieu de leur sacrifice, que nos massues aient enfin la satisfaction de broyer
+              ces têtes qui veulent dépasser les nôtres…</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Ah ! Cresphonte, j’ai manqué te devenir infidèle ; mais décidément la trempe de ton
+              âme va mieux à la mienne : je t’aime, entends-tu, pour ta valeur, que dis-je, pour ta
+              férocité !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>On vient ; dérobons un moment notre présence, et soyons fermes à agir.</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Orphée va venir. Ah ! je ne saurais, même dans l’ombre, soutenir sa présence !
+              sortons…</p>
+            <stage>Phaëtuse sort avec les Bacchantes.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IV</head>
+          <stage>Orphée arrive suivi de ses disciples et du peuple. Il monte à l’autel et chante en
+            s’accompagnant sur la lyre.</stage>
+          <label>Hymne d’Orphée</label>
+          <sp who="orphee">
+            <speaker>Orphée</speaker>
+            
+            <l>Salut ! astre de vie, éblouissant mystère,</l>
+            <l>Dieu des arts, du bonheur, soleil ! tendre Apollon ,</l>
+            <l><pb n="179" xml:id="p179"/>Qui répands sur la terre harmonie et lumière,</l>
+            <l>Luis-nous un chant des cieux dans un tiède rayon.</l>
+            <l>Phébus ! au firmament quand ton orbe flamboie,</l>
+            <l>Dans les arceaux du ciel, tu guides nos regards ;</l>
+            <l>Ici-bas, feu sacré, tu nous montres la voie</l>
+            <l>Que doit suivre l’esprit dans l’étude et les arts.</l>
+            <l>Combien après la nuit ta chaleur est bénie !</l>
+            <l>Tu délectes les sens que le froid fit gémir.</l>
+            <l>Apollon, que souvent le soleil du génie</l>
+            <l>Dilate aussi nos cœurs aux rayons du plaisir !</l>
+            <l>Lumière de l’esprit, je fonde ici ton règne ;</l>
+            <l>Et ta science un jour charmera l’univers.</l>
+            <l>Le bonheur, Apollon, c’est ta loi qui l’enseigne :</l>
+            <l>Étude, poésie, amour, paix et concerts.</l>
+            <stage>Pendant cette prière, Aristée et Cresphonte, cachés derrière un taillis ou des
+              rochers, n’osent lever la tête et restent pétrifiés par le chant harmonieux d’Orphée.
+              Ils tombent à genoux en même temps que le peuple. Le sacrifice continue au milieu du
+              concert des instruments ; et Orphée et les siens se retirent sans avoir vu le
+              sacrifice troublé.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène V</head>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <stage>rêveur.</stage>
+            <p>Étrange fascination, puissance magique d’Orphée ! tu es bien la véritable force… que
+              dis-je ? tu es la <pb n="180" xml:id="p180"/>véritable joie… Oui ;… je le sens, les
+              satisfactions de l’orgueil et du commandement ne valent pas un seul de ces délices de
+              l’âme dont l’art d’Orphée sait vous pénétrer…</p>
+            <stage>Silence.</stage>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Notre résolution s’est trouvée enchaînée par les sortilèges de cet homme… Qui
+              l’écoute est vaincu… Malheur à nous qui avons prêté l’oreille à ses chants !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Et toi aussi !… Tu as été subjugué et attendri ?</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Honte et fureur ! le charme ne m’a pas même épargné… moi Cresphonte !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Pourquoi rougirais-tu ?… est-ce que tu n’as pas vu nos soldats les plus brutes céder
+              à cet entraînement ?</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Aristée, je te dis, moi, que ce triomphe d’Orphée sur nous tous me transporte de
+              haine et de rage. Car c’en est fait de nous si un bras déterminé ne réussit en un
+              instant à lui arracher sa langue d’enchanteur. Aristée, retiens ceci… dussé-je être
+              écrasé sous ses regards qui font défaillir le cœur, je me dévoue… je le tuerai !…</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée</speaker>
+            <p>Le tuer, Cresphonte !… je ne sais… il me semble maintenant que la mort de cet homme
+              pèsera sur nous de toute la responsabilité d’un crime immense… Et puis… son art est si
+              séduisant qu’il vaudrait peut-être <pb n="181" xml:id="p181"/>mieux lui confier nos
+              destinées… Le tuer !… mais cet homme, sur la terre, est à lui seul le génie…</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Aristée ! j’ai bien voulu te céder l’empire de la Thrace ; mais si Orphée t’a rendu
+              faible ou lâche… c’est à moi qu’il doit revenir… et je serai là, devant toi, pour te
+              le disputer !</p>
+          </sp>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>à part.</stage>
+            <p>Allons ! puisque la fatalité le veut, périsse le génie et que la force règne !</p>
+            <stage>À Cresphonte</stage>
+            <p>Ami, n’irrite pas Aristée… Si je veux bien te pardonner l’outrage que tu viens de me
+              faire, sois sûr que ta rébellion serait punie par ce bras qui maintes fois t’a
+              terrassé.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte,</speaker>
+            <stage>plus doucement.</stage>
+            <p>C’est bien, Aristée ; commande, puisque toi seul en es digne.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VI</head>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <stage>ironiquement.</stage>
+            <p>Vous êtes des hommes de cœur et de parole et vous savez mettre de la vigueur et de la
+              volonté dans vos desseins !… Courbez la tête maintenant et obéissez à Orphée. Regardez
+              autour de vous… les masses du peuple réunies pour la première fois se rallient aux
+              Orphéens. Le sacrifice aux Dieux et les chants d’Orphée ont ému toutes les faibles
+              intelligences ; il est bien vraiment le maître !… Tenez… déjà le plus grand <pb
+                n="182" xml:id="p182"/>nombre des soldats réunis par vous vient de reconnaître les
+              lois du magicien. La désertion continue, et, avant le coucher du soleil, pas un des
+              vôtres peut-être ne restera pour vous garder pendant votre sommeil.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Courons nous montrer et les retenir par des menaces ou des promesses !</p>
+            <stage>Aristée et Cresphonte sortent.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VII</head>
+          <sp who="thalae">
+            <speaker>Thalaé</speaker>
+            <stage>arrivant précipitamment.</stage>
+            <p>Phaëtuse, le destin nous offre une occasion immédiatement propice ; tu peux te
+              venger, mais venges-toi sans perdre de temps !… Tout à l’heure, des sons délicieux qui
+              venaient de la tombe d’Eurydice nous attirèrent de ce côté ; là, à travers les
+              taillis, nous vîmes Orphée qui chantait pour charmer la solitude de l’ombre de sa
+              bien-aimée. Bientôt le chant cessa ; nous le vîmes incliner sa tête sur le tertre de
+              gazon du tombeau ; et, le sommeil s’emparant de lui, il laissa échapper sa lyre de ses
+              mains. Je m’approchai, palpitant d’émotion et retenant jusqu’à mon haleine, et je
+              m’emparai du magique instrument qui est la force et le prestige d’Orphée. Le voici !
+              Orphée, maintenant dans les bras du sommeil et dépouillé de ses armes tant redoutées,
+              ne pourrait rien par enchantement <pb n="183" xml:id="p183"/>ou séduction… Dis :
+              l’heure de ta vengeance a-t-elle sonné ?</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>s’emparant vivement de la lyre</stage>
+            <p>Orphée n’a plus à cette heure l’usage de ses chants et de sa lyre !… Il dort !…oh !
+              que Cresphonte vienne maintenant.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène VIII</head>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>à Cresphonte</stage>
+            <p>Reconnais-tu cet instrument ? c’est la lyre d’Orphée ! Et Orphée lui-même est là,
+              près de nous, endormi et sans défense. Prends ta massue, et suis-moi !…</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte,</speaker>
+            <stage>transporté.</stage>
+            <p>Oh ! Phaëtuse, combien je vais t’aimer davantage, toi qui, par-dessus les plaisirs
+              que je te dois, vas me donner celui de me venger délicieusement.</p>
+            <stage>Il l’étreint dans ses bras.</stage>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Viens, et sans perdre de temps ; tantôt j’aurai pour toi du vin et des baisers.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Montre donc vite le lieu où je dois aller frapper avec un voluptueux
+              ravissement !</p>
+            <stage>Phaëtuse, Thalaé et quelques femmes de leur troupe conduisent Cresphonte au fond
+              de la scène et lui indiquent de la main l’endroit où repose Orphée, sur les bords de
+              l’Èbre.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène IX</head>
+          <stage><pb n="184" xml:id="p184"/>La nuit vient.</stage>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>à part</stage>
+            <p>Enfin, il va mourir, le superbe et dédaigneux amant d’Eurydice, cet Orphée dont
+              j’aurais sucé les embrassements avec délices et que je ne saurais voir vivant sans
+              brûler de jalousie et de haine amoureuse. Il va mourir !… Oh ! félicité ; il est mort…
+              car voici Cresphonte !…</p>
+            <stage>Cresphonte paraît dans l’ombre et avance lentement.</stage>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Ah ! viens dans mes bras, viens sur mon sein !</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Laisse-moi !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse,</speaker>
+            <stage>ricanant.</stage>
+            <p>Mais tu trembles ? dis-moi : Est-ce que le remords te prendrait ?… toi…
+              Cresphonte !</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Non, je ne tremble plus… Mais tout à l’heure… Ah ! ne m’appelle pas lâche !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Mais Orphée est mort ?</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Orphée vit !</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Et tu es venu te présenter à ta maîtresse !…</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p><pb n="185" xml:id="p185"/>Jamais encore je n’avais regardé cet homme en face… Le
+              disque du soleil qui se couchait à l’horizon encadrait son visage céleste… Il était
+              resplendissant de beauté comme un dieu !… et moi, moi j’ai eu peur de frapper Apollon
+              lui-même… Au bruit de mes pas, il fit un mouvement ;… ce mouvement me fit trembler, et
+              je m’enfuis !…</p>
+          </sp>
+          <sp who="phaetuse">
+            <speaker>Phaëtuse</speaker>
+            <p>Oui ;… et tu trembles encore… Tiens, bois de ce vin d’Ismare… il va te rassurer.
+                <stage>(Cresphonte boit.)</stage> Eh bien ! ton courage revient-il ? dis !… Bois
+              encore. <stage>(</stage><stage>Elle lui verse de nouveau.)</stage>… Et maintenant,
+              Cresphonte, tu es le plus lâche de tous les hommes !… Et c’est moi… moi, Phaëtuse, qui
+              te renie pour mon amant ; moi qui vais sur l’heure prouver à la Thrace ta lâcheté !…
+              Tiens ; cette lance, dans ma main, va faire ce que tu n’as pas su faire.</p>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte</speaker>
+            <p>Arrête, femme insensée ! Verse encore de ta liqueur… La peur en moi s’est changée en
+              fureur !… Ah ! mon bras ne faiblira pas cette fois. Viens voir si je serai lâche et
+              faible !…</p>
+            <stage>Il sort avec Phaëtuse et la troupe des bacchantes. Aristée paraît dans le fond.
+              Il fait nuit obscure.</stage>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>Scène X</head>
+          <sp who="aristee">
+            <speaker>Aristée,</speaker>
+            <stage>dans le fond de la scène,</stage>
+            <p><pb n="186" xml:id="p186"/>Cresphonte et la bacchante marchent pleins de fureur… C’en
+              est fait… Orphée, la tête fracassée par Cresphonte, est précipité dans le fleuve par
+              les mains de Phaëtuse et des bacchantes… Allons, puisque la force triomphe, que la
+              société naissante soit soumise à l’empire de la force !… Puisque l’art est mort, que
+              la guerre civilise le monde !</p>
+            <stage>Aux cris de douleur poussés par les Orphéens, le peuple se rassemble dans les
+              ténèbres. En reconnaissant Aristée, tous se prosternent devant lui.</stage>
+          </sp>
+          <sp who="cresphonte">
+            <speaker>Cresphonte,</speaker>
+            <stage>arrivant avec Phaëtuse.</stage>
+            <p>Et maintenant, Aristée, sois ici le roi, et que ton glaive soit le commandement et la
+              loi.</p>
+          </sp>
+          <sp who="thersandre">
+            <speaker>Thersandre,</speaker>
+            <stage>seul, un flambeau à la main, s’éloigne au fond de la scène.</stage>
+            <p>Sauvons en fuyant l’étincelle de la liberté, afin qu’à défaut de l’art elle puisse
+              venger quelquefois le monde des oppresseurs !…</p>
+            <stage>La toile tombe.</stage>
+          </sp>
+        </div>
+      </div>
+    </body>
+
+  </text>
+</TEI>

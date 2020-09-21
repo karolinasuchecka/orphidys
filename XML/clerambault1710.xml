@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main"> Orphée</title>
+                <title type="sub">Cantate française, à voix seule avec symphonie</title>
+                <author>Nicolas Clérambault</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k1160194g</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Nicolas Clérambault</author> / <title> Orphée, cantate française, à
+                        voix seule avec symphonie</title> / Paris / BNF, dép. Musique, FOL-VM7-3842
+                    / 1710.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title> Orphée, cantate française, à voix seule avec symphonie</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>BNF, dép. Musique, FOL-VM7-3842 </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1710"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>opéra</genre>
+                <structure>clerambault1710</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1710">1710</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Nicolas Clérambault</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée</titlePart>
+                    <titlePart type="sub">Cantate française, à voix seule avec symphonie</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+            <label>Récitatif</label>
+            <l><pb n="1" xml:id="p1"/>Le fameux chantre de la Trace,</l>
+            <l>Par les regrets les plus touchants,</l>
+            <l>Par les plus tendres chants,</l>
+            <l>Déplorait ainsi sa disgrâce.</l>
+            <label>Air tendre et piqué</label>
+            <l><pb n="2" xml:id="p2"/>Fidèles Échos des bois</l>
+            <l>Cessez de répondre à ma voix.</l>
+            <l><pb n="3" xml:id="p3"/>Cessez, cessez de répondre à ma voix.</l>
+            <l><pb n="4" xml:id="p4"/>Rien ne peut soulager la douleur qui me presse,</l>
+            <l>Je ne reverrai plus l’objet de ma tendresse.</l>
+            <l><pb n="5" xml:id="p5"/>Fut-il jamais amant plus malheureux ?</l>
+            <l>Fut-il jamais <pb n="6" xml:id="p6"/>un destin plus barbare ?</l>
+            <l>Le tendre amour nous unissait tous deux.</l>
+            <l>La mort cruelle nous sépare.</l>
+            <label>Récit</label>
+            <l><pb n="7" xml:id="p7"/>Mais que sert à mon désespoir</l>
+            <l>De gémir et me plaindre encore ?</l>
+            <l>Pluton retient les charmes que j’adore.</l>
+            <l>Allons <pb n="8" xml:id="p8"/>implorer son pouvoir.</l>
+            <l>Ce gouffre obscur m’offre un passage</l>
+            <l>Pour pénétrer aux sombres bords.</l>
+            <l>Portons-y mon amour, ma douleur, ma rage.</l>
+            <l>Ramenons <pb n="9" xml:id="p9"/>Euridice, ou restons chez les morts.</l>
+            <label>Air gai</label>
+            <l>Allez Orphée, allez, allez, <pb n="10" xml:id="p10"/>que votre amour extrême</l>
+            <l>Serve d’exemple à univers.</l>
+            <l><pb n="11" xml:id="p11"/>Il est beau qu’un mortel passe jusqu’aux Enfers</l>
+            <l>Pour se rejoindre à ce qu’il aime.</l>
+            <l><pb n="15" xml:id="p15"/>Hâtez-vous, hâtez-vous, <pb n="16" xml:id="p16"/>généreux
+                amant.</l>
+            <l>Votre amour sert à votre gloire,</l>
+            <l>L’avenir aura peine à <pb n="17" xml:id="p17"/>croire,</l>
+            <l>Qu’on ait aimé si constamment</l>
+            <l><pb n="18" xml:id="p18"/>Une tendresse conjugale</l>
+            <l>N’a point encor forcé d’époux</l>
+            <l><pb n="19" xml:id="p19"/>À passer la barque fatale.</l>
+            <l>Cet honneur n’était dû qu’à vous.</l>
+            <label>Récitatif</label>
+            <l><pb n="20" xml:id="p20"/>Cependant le héros arrive,</l>
+            <l>Sur l’infernale rive,</l>
+            <l>Et malgré les lois d’Atropos,</l>
+            <l>Au fier Dieu des Enfers <pb n="21" xml:id="p21"/>il adresse ces mots :</l>
+            <label>Air fort lent et fort tendre</label>
+            <l><pb n="22" xml:id="p22"/>Monarque redouté de ces Royaumes sombres</l>
+            <l>Je suis le fils du Dieu du jour.</l>
+            <l>Plus malheureux cent fois que vos plus tristes ombres</l>
+            <l><pb n="23" xml:id="p23"/>Et mon malheur est causé par l’amour.</l>
+            <l>Vous voyez un amant fidèle</l>
+            <l><pb n="24" xml:id="p24"/>Privé du seul objet qui l’avait enflammé.</l>
+            <l>Hélas ! le bonheur d’être aimé</l>
+            <l>Rend ma peine encore plus cruelle !</l>
+            <l><pb n="26" xml:id="p26"/>Laissez-vous toucher par mes pleurs,</l>
+            <l>D’un sort affreux <pb n="27" xml:id="p27"/>réparez le caprice ;</l>
+            <l>Rendez-moi ma chère Euridice,</l>
+            <l>Ne séparez pas nos deux cœurs.</l>
+            <l><pb n="28" xml:id="p28"/>Vous avez ressenti la flamme</l>
+            <l>Du Dieu dont j’éprouve les traits</l>
+            <l>L’aimable fille de Cérès</l>
+            <l>Par ses divins appas sut embrasser votre âme</l>
+            <label>Récitatif</label>
+            <l><pb n="35" xml:id="p35"/>Pluton surpris d’entendre des accords</l>
+            <l>Capables d’émouvoir tout l’empire des morts :</l>
+            <l>« Cesse de m’attendrir, que ta plaine finisse.</l>
+            <l>Va, dangereux mortel, sauve-toi de ces lieux,</l>
+            <l>Va, remmène <pb n="36" xml:id="p36"/>ton Eurydice.</l>
+            <l>Mais avant que de voir la lumière des cieux</l>
+            <l>Évite l’éclat de ses yeux.</l>
+            <label>Air gay</label>
+            <l><pb n="37" xml:id="p37"/>Chantez la victoire éclatante</l>
+            <l><pb n="38" xml:id="p38"/>Que remporte le tendre amour.</l>
+            <l><pb n="42" xml:id="p42"/>Jusque dans le sombre séjour</l>
+            <l>Sa flamme est triomphante.</l>
+        </body>
+
+    </text>
+</TEI>

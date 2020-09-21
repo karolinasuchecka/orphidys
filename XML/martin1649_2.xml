@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L’Orphée grotesque, avec le bal rustique. Deuxième partie</title>
+                <title type="sub">L’Orphée qui dechante, avec les rudes Joüeuses ou les Bacchantes.
+                    En vers burlesques</title>
+                <author>Anonyme</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k56658116/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Anonyme</author> / <title>L’Orphée grotesque, avec le bal rustique.
+                        Deuxième partie : L’Orphée qui dechante, avec les rudes Joüeuses ou les
+                        Bacchantes. En vers burlesques</title> / Paris / Sebastien Martin /
+                    1649.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>L’Orphée grotesque, avec le bal rustique. En vers burlesques.
+                            Deuxième partie.</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Sebastien Martin</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1649"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>martin1649_2</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1649">1649</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>parodie</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Anonyme</docAuthor>
+                <docTitle>
+                    <titlePart type="main">L’Orphée grotesque, avec le bal rustique. Deuxième
+                        partie</titlePart>
+                    <titlePart type="sub">L’Orphée qui dechante, avec les rudes Joüeuses ou les
+                        Bacchantes. En vers burlesques</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+        <body>
+            <l><pb n="3" xml:id="p3"/>Tel qui pour dormir ou pour boire</l>
+            <l>Ne lasche rien de sa memoire,</l>
+            <l>Dira que j’estois enchanté</l>
+            <l>De ce chantre que j’ay chanté ;</l>
+            <l>Que ma cervelle estoit coëffée</l>
+            <l>De cette archi-vielle d’Orphée,</l>
+            <l>Et qu’yure, ou du moins endormy,</l>
+            <l>Je ne fis d’un compte à demy :</l>
+            <l>Mais mon comptant roulle assez preste,</l>
+            <l>Pour m’acquitter bien-tost du reste,</l>
+            <l>Et puisqu’on m’en fait souvenir,</l>
+            <l>À tout bon compte revenir.</l>
+            <l>Le Vielleur veuf de sa Femelle</l>
+            <l>S’en consoloit avec sa vielle,</l>
+            <l>Et viella mieux tant qu’il fut saou</l>
+            <l>Qu’un vielleur ne fait pour un sou :</l>
+            <l>Saou qu’il fut il fut plus alaigre</l>
+            <l>Qu’un poulain gras, et qu’un chat maigre ;</l>
+            <l><pb n="4" xml:id="p4"/>Mais son foye un peu trop gourmand</l>
+            <l>Devora son soulagement ;</l>
+            <l>Cette carrelure de ventre</l>
+            <l>Ne dura guere au pauvre chantre :</l>
+            <l>À mesure qu’il dessouloit</l>
+            <l>Son veuvage renouvelloit,</l>
+            <l>Et son veuvage et sa famine</l>
+            <l>Ramena sa verve chagrine :</l>
+            <l>Quand ce veuf trop enamouré</l>
+            <l>Eust plus geint et plus soupiré</l>
+            <l>Qu’un vieux soufflet d’orgue ou de forge</l>
+            <l>Par le soupirail de sa gorge,</l>
+            <l>Et fait boüillonner les ruisseaux</l>
+            <l>De ses pleurs, dont il pleut à seaux.</l>
+            <l>De chagrin sa ratelle enceinte</l>
+            <l>Avorta d’une estrange pleinte</l>
+            <l>Que retint, et me revela</l>
+            <l>Un zephir qui venoit de là.</l>
+            <l>« Ah ! ma pauvre femme encore fille,</l>
+            <l>J’enrage, renaque et petille ;</l>
+            <l>Que nostre amour qui prend un rat</l>
+            <l>Manque au premier poinct du contract</l>
+            <l>Où je t’ay bien moins estrennée,</l>
+            <l>Que Didon ne la fut d’Énée ;</l>
+            <l>Quoy que tu vaille bien Didon ;</l>
+            <l>Beauté fraiche comme un gardon,</l>
+            <l>Tout verd-galand qui se marie</l>
+            <l>M’en fera piece ou raillerie :</l>
+            <l><pb n="5" xml:id="p5"/>Pluton en fait le goguenard,</l>
+            <l>Et Caron m’en crie au renard ;</l>
+            <l>Loin de m’en plaindre, la Burlesque</l>
+            <l>M’acheve de peindre en grotesque :</l>
+            <l>Tous les railleurs m’en railleront,</l>
+            <l>Et quand les prudes m’en loüeront</l>
+            <l>De t’avoir jusqu’au mariage</l>
+            <l>Laissé ton joyau de fillage,</l>
+            <l>Tu m’en sçauras point de gré,</l>
+            <l>Toy, qui fuyant m’as denigré,</l>
+            <l>Aussi pourquoy meurs-tu si viste,</l>
+            <l>Tu boites et quittes ton giste :</l>
+            <l>Boitant, tu cours mieux qu’un pieton</l>
+            <l>Coucher au Serrail de Pluton,</l>
+            <l>Que la Parque a fait son coup preste ;</l>
+            <l>Maudit soit-il, la male peste</l>
+            <l>Du serpent couvert d’un gazon</l>
+            <l>Qui t’a mordu en trahison,</l>
+            <l>Navrant d’une mesme morsure</l>
+            <l>Ton gros orteil et ma fressure :</l>
+            <l>J’aurois vû de moins mauvais œil</l>
+            <l>Mouche ardente sur ton orteil,</l>
+            <l>Faut-il qu’en dançant sur l’herbette</l>
+            <l>Cloton t’ait donné la gambette,</l>
+            <l>Quelle t’ait fait boiter plus bas</l>
+            <l>Qu’un encloüé cheval de bas,</l>
+            <l>Ou pour te pleindre en plus haut stile</l>
+            <l>T’ait ferve au pied comme Achile.</l>
+            <l><pb n="6" xml:id="p6"/>Pauvrette, qu’en toy j’ay perdu,</l>
+            <l>Ton lezard m’a le plus mordu,</l>
+            <l>Apres toy dans quelle trouvaille</l>
+            <l>Puis-je trouver femme qui vaille ?</l>
+            <l>Apres toy qui me valois bien</l>
+            <l>Femme ne me sera de rien ;</l>
+            <l>Par ma vielle je te proteste</l>
+            <l>D’envoyer paistre tout le reste :</l>
+            <l>Nargue du sexe et de Cypris</l>
+            <l>Si je la sers plus à tel prix,</l>
+            <l>Je veux bien qu’elle me regale</l>
+            <l>De la podagre ou de la galle ;</l>
+            <l>On me verra plus hardiment</l>
+            <l>Rompre le col que mon serment. »</l>
+            <l>Le fol, il a dit sa sentence :</l>
+            <l>Desja le beau sexe le tence ;</l>
+            <l>Belles qu’Amour fait tant valoir,</l>
+            <l>Qu’il nous range à vostre vouloir ;</l>
+            <l>S’il renaissoit beaucoup d’Orphées,</l>
+            <l>Vous seriez bien mal attristées :</l>
+            <l>À bon chat, bon rat, diriez-vous,</l>
+            <l>Vous y perdriez moins qu’eux tous.</l>
+            <l>Mais j’entends Cypris renfrognée,</l>
+            <l>Dire en ton de femme indignée,</l>
+            <l>Traistre ennemy de nos esbats,</l>
+            <l>Maraud, je t’envoyeray là-bas</l>
+            <l>Avec ta femme la boittasse</l>
+            <l>Braire et vieller de bonne grace :</l>
+            <l><pb n="7" xml:id="p7"/>Oüy, tu mouras, cela vaut fait,</l>
+            <l>J’en jure par mon attiffet,</l>
+            <l>Comme tu jures par ta vielle,</l>
+            <l>De n’aimer plus laide ny belle ;</l>
+            <l>Venus sans delay ny repit,</l>
+            <l>Va dire à Bacchus son depit :</l>
+            <l>D’abord la flatteuse goüine</l>
+            <l>L’amadoüe et l’ambaboüine,</l>
+            <l>Luy remonstre en son fin patois,</l>
+            <l>Qu’elle est courtoise aux gens courtois :</l>
+            <l>La matoise, c’est bien l’entendre,</l>
+            <l>De le piquer par le plus tendre ;</l>
+            <l>Il n’ose refuser Venus,</l>
+            <l>Craignant d’elle d’autres refus.</l>
+            <l>« Compere Bacchus, luy dit-elle,</l>
+            <l>Je te plait, je te semble belle,</l>
+            <l>Mais un ladre de musicien,</l>
+            <l>Qui beffle mon sexe et le tien,</l>
+            <l>Soüillant la gloire masculine,</l>
+            <l>Nargue la beauté feminine ;</l>
+            <l>Je te plait, j’empaume les Dieux,</l>
+            <l>Et ce faquin me crache aux yeux.</l>
+            <l>Vange nostre commune injure,</l>
+            <l>Mon gros garçon je t’en conjure ;</l>
+            <l>Mets en compotte et charcutis</l>
+            <l>Ce fleau de nos appetits :</l>
+            <l>Lasche sur cette infame engeance</l>
+            <l>Tes Bacchantes en diligence. »</l>
+            <l><pb n="8" xml:id="p8"/>Il tombe avec elle d’accord,</l>
+            <l>Orphée ils ont juré ta mort.</l>
+            <l>Quel si gueux violon t’envie,</l>
+            <l>Et voudroit donner ta vie</l>
+            <l>Les vieilles gregues d’un pendu,</l>
+            <l>Depuis que Venus t’a vendu,</l>
+            <l>À ces yvrognesses de Thrace,</l>
+            <l>Qui tiennent l’yvresse de race,</l>
+            <l>Et s’embeguinent le cerveau</l>
+            <l>D’une jatte de vin nouveau.</l>
+            <l>La moindre n’en est pas sevrée,</l>
+            <l>Bacchus leur donne sa livrée,</l>
+            <l>Vois-tu sous leurs fronts bourgeonnez</l>
+            <l>Flamber les rubis de leurs nez :</l>
+            <l>Leurs trognes d’ivresse enfumées</l>
+            <l>Et leurs mains de tyrses armées,</l>
+            <l>Avec leurs piques d’eschalas</l>
+            <l>Contrefaire icy les Pallas.</l>
+            <l>Oys-tu ces maudites Menades</l>
+            <l>Dans leurs fieres Pantalonades</l>
+            <l>Joüer sur le cul d’un chaudron</l>
+            <l>D’autres airs que ceux de Guedron,</l>
+            <l>Dont ces Amazones barbares</l>
+            <l>Sonnent leurs horribles fanfares :</l>
+            <l>Cette meutte yure court aux bois</l>
+            <l>Mettre son gibier aux abois,</l>
+            <l>Lorsqu’au son de sa vielle il berce</l>
+            <l>Sa raison cheute à la renverse ;</l>
+            <l><pb n="9" xml:id="p9"/>On va bien malgré vielle et son</l>
+            <l>Le bercer d’un autre façon,</l>
+            <l>Quand desja la meutte le fleure,</l>
+            <l>Ce fou l’attend à la malheure ;</l>
+            <l>Peust-il s’emboiter d’extrement</l>
+            <l>Dans l’estuy de son instrument ?</l>
+            <l>D’eust-elle en se donnant carriere</l>
+            <l>Rouller la boiste en la riviere.</l>
+            <l>Fremit-il point à tant d’abois,</l>
+            <l>Dont leur gueule estonne ce bois :</l>
+            <l>Ah ! j’en tremble pour ce pauvre homme</l>
+            <l>Bien luy prend si sa peur l’assomme.</l>
+            <l>La meutte d’un cry bestial</l>
+            <l>Donne à la parque le signal,</l>
+            <l>Et semond le chantre à la feste,</l>
+            <l>D’une pierre à travers la teste.</l>
+            <l>La pierre à qui le son charmant</l>
+            <l>Rompt le rapide mouvement,</l>
+            <l>Brimballe prés du nez d’Orphée</l>
+            <l>Invisiblement a graffée</l>
+            <l>Aux fredons qui la font trembler</l>
+            <l>D’avoir volé pour l’accabler.</l>
+            <l>Violons marchez en grand erre,</l>
+            <l>Parmy les gresles de la guerre,</l>
+            <l>Il n’y fait pas mauvais pour vous</l>
+            <l>Si les beaux sons parent les coups.</l>
+            <l>Alte, dans l’honneur qui vous pique</l>
+            <l>Conservez-vous pour la musique</l>
+            <l><pb n="10" xml:id="p10"/>Les perils vous pourroient heurter,</l>
+            <l>Car voicy bien à dechanter :</l>
+            <l>L’abord de ces vives Meduses</l>
+            <l>Met le Bemol hors de ses ruses ;</l>
+            <l>Ses accords fugues tremblemens</l>
+            <l>S’estouffent dans leurs hurlemens.</l>
+            <l>Il s’en mocquera s’il escampe,</l>
+            <l>Mais ses pieds de peur ont la crampe,</l>
+            <l>Plus qu’estourdy, pis que troublé,</l>
+            <l>Il est mieux pris que dans un blé.</l>
+            <l>Le pauvre chantre hors de game,</l>
+            <l>Desja pense à revoir sa femme ;</l>
+            <l>La vielle tremble sans fredon,</l>
+            <l>Pour son vielleur à l’abandon :</l>
+            <l>Car la Bacchantesque furie</l>
+            <l>N’entend point icy raillerie.</l>
+            <l rend="i">Quartier, quartier, oüy volontiers</l>
+            <l>Elle va le mettre en quartiers ;</l>
+            <l>Il sonne en vain, Bacchus estoupe</l>
+            <l>L’oreille à la brutale troupe,</l>
+            <l>Plus dure à la pitié pour luy</l>
+            <l>Qu’un Juif pour la bourse d’autruy.</l>
+            <l>Qu’un postillon pour sa mazette,</l>
+            <l>Qu’un bon drille pour la poullette,</l>
+            <l>Qu’un charcutier pour un verat</l>
+            <l>Et qu’un gros matou pour un rat.</l>
+            <l>Jamais pauvre cerf que relance,</l>
+            <l>Limier, veneur, gueule, espieu, lance,</l>
+            <l rend="i"><pb n="11" xml:id="p11"/>N’est plus noblement charcuté</l>
+            <l>Pour la garnison d’un pasté,</l>
+            <l>Qu’icy l’est le bon homme Orphée</l>
+            <l>Par cette canaille eschauffée ;</l>
+            <l>C’est à qui luy hachera mieux</l>
+            <l>Le nez, les oreilles, les yeux.</l>
+            <l>Qui l’éborgne aussi-tost l’aveugle</l>
+            <l>Dont il rugit, brait, heurle et meugle,</l>
+            <l>Bon pour luy s’il y pert les yeux</l>
+            <l>Un franc vielleur n’en vaut que mieux</l>
+            <l>Par dépit leur rage passe outre,</l>
+            <l>Mieux fait là qui plus mal l’accoustre</l>
+            <l>Les cailloux tyrses et bastons</l>
+            <l>Luy font des abrevoirs à tons ;</l>
+            <l>Pour le coup de grace on luy ruë</l>
+            <l>Les ferrailles d’une charruë,</l>
+            <l>Qui luy font à divers fendants</l>
+            <l>Voler la cervelle et les dents</l>
+            <l>On gouspille jusqu’en son ventre</l>
+            <l>La musique qui s’y concentre</l>
+            <l>Ce meurtre atroce affreux fracas</l>
+            <l>Blesse-il point les delicats ;</l>
+            <l>Ce jeu sent trop la boucherie</l>
+            <l>Pleurez-en si bien que j’en rie :</l>
+            <l>La belle esperance aux corbeaux</l>
+            <l>De voir nostre chantre en lambeaux ;</l>
+            <l>Quoy qu’à l’objet de playe et bosse</l>
+            <l>Un barbier pense estre à la noce</l>
+            <l rend="i"><pb n="12" xml:id="p12"/>Il seroit décontenancé</l>
+            <l>Prés de ce malheureux fracassé</l>
+            <l>Sur qui cette race ennemie</l>
+            <l>Fait la premiere anatomie :</l>
+            <l>Et qui pis est sans bistoury</l>
+            <l>Dont le pauvre homme estoit mary.</l>
+            <l>Mais quoy qu’au lieu de l’art l’ivresse</l>
+            <l>Le dissequast tout sans justesse</l>
+            <l>De la prend son extraction</l>
+            <l>Damoiselle dissection</l>
+            <l>Quand le gibet rend quelque obene</l>
+            <l>Aux charcutiers de viande humaine.</l>
+            <l>Concluons mieux cét entretien,</l>
+            <l>Je cognoist des femmes de bien</l>
+            <l>Ou qui du moins en ont la mine,</l>
+            <l>Qui d’une vertu pateline</l>
+            <l>Dans l’Église font oraison</l>
+            <l>Et puis font rage à la maison ;</l>
+            <l>Ces femmes folles ou meschantes</l>
+            <l>Feroient volontiers les Bacchantes,</l>
+            <l>Pourveu que Monsieur leur espoux</l>
+            <l>Fist trophée et portast les coups ;</l>
+            <l>Le vieux sujet que je rabille</l>
+            <l>D’une drosle et neuve roupille</l>
+            <l>Peut fournir dequoy censurer :</l>
+            <l>Qui joüeroit à le deschirer</l>
+            <l>Mais la censure trop picquante</l>
+            <l>Feroit un meurtre de Bacchante.</l>
+        </body>
+
+    </text>
+</TEI>

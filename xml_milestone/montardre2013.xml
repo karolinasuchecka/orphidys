@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée aux Enfers</title>
+                <author>Hélène Montardre</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://www.placedeslibraires.fr/ebook/9782092544402-orphee-aux-enfers-helene-montardre/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Hélène Montardre</author> / <title>Orphée aux Enfers</title> / Paris /
+                    Nathan / 2013.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée aux Enfers</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Nathan</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2013"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>montardre2013</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="2013">2013</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Hélène Montardre</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée aux Enfers</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+
+            <div>
+                <head>1 <lb/> Une visite et un cadeau</head>
+
+                <p><milestone unit="sent"/>Dans le jardin d’Oéagre, le roi de Thrace, une voix mélodieuse résonne. <milestone unit="sent"/>C’est
+                    celle de Calliope, l’épouse du roi. <milestone unit="sent"/>Elle est assise au bord d’un bassin ombragé
+                    et elle berce doucement un bébé. <milestone unit="sent"/>Le nourrisson ne la quitte pas du regard. <milestone unit="sent"/>Quand
+                    la voix de sa mère monte dans les aigus, il écarquille les yeux et sourit d’un
+                    air ravi. <milestone unit="sent"/>Quand, au contraire, le chant devient grave, il fronce les
+                    sourcils.</p>
+                <p><milestone unit="sent"/>Tout se tait dans le jardin. <milestone unit="sent"/>Même les oiseaux sont à l’écoute. <milestone unit="sent"/>Jamais ils n’ont
+                    entendu quelqu’un chanter comme Calliope. <milestone unit="sent"/>Normal ! Calliope est une muse. <milestone unit="sent"/>Comme
+                    ses huit sœurs, elle est fille de Zeus et, comme elles, elle est une déesse des
+                    arts, plus particulièrement de la musique.</p>
+                <p><milestone unit="sent"/>Petit à petit, la voix de Calliope se fait moins forte. <milestone unit="sent"/>Elle devient un murmure. <milestone unit="sent"/>Dans le berceau, l’enfant a fermé les yeux. <milestone unit="sent"/>Calliope souffle délicatement sur
+                    les paupières fermées.</p>
+                <p><milestone unit="sent"/>– Dors, mon petit Orphée, dit-elle. <milestone unit="sent"/>Dors et fais de beaux rêves.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Sept années ont passé et Orphée est devenu un garçon solide.</p>
+                <p><milestone unit="sent"/>D’une fenêtre de la maison, Oéagre, son père, l’observe. <milestone unit="sent"/>Voilà huit jours qu’il
+                    lui a offert un arc et Orphée n’y a pas touché ! <milestone unit="sent"/>Pire encore, l’arc gît
+                    abandonné sous un banc. <milestone unit="sent"/>Visiblement, le jeune garçon l’a complètement
+                    oublié.</p>
+                <p><milestone unit="sent"/>Oéagre se tourne vers Calliope.</p>
+                <p><milestone unit="sent"/>– Il sait s’en servir, pourtant ! clame-t-il. <milestone unit="sent"/>Je le lui ai appris.</p>
+                <p><milestone unit="sent"/>– Je crois que cela ne l’intéresse pas, répond Calliope d’une voix douce.</p>
+                <p><milestone unit="sent"/>Oéagre hausse les épaules.</p>
+                <p><milestone unit="sent"/>– Tous les garçons aiment les arcs !</p>
+                <p><milestone unit="sent"/>– La preuve que non, soupire Calliope.</p>
+                <p><milestone unit="sent"/>– Je ne le vois jamais non plus utiliser les lances que j’ai fait tailler pour
+                    lui ! <milestone unit="sent"/>Pourtant, elles sont juste à sa taille.</p>
+                <p><milestone unit="sent"/>Calliope reste silencieuse.</p>
+                <p><milestone unit="sent"/>– Et on dirait que les exercices des soldats l’ennuient. <milestone unit="sent"/>Quand je l’emmène avec
+                    moi pour les observer, il n’arrête pas de bâiller et…</p>
+                <p><milestone unit="sent"/>Une voix claire l’interrompt. <milestone unit="sent"/>C’est celle de son fils.</p>
+                <p><milestone unit="sent"/>– Qu’est-ce qu’il fait ? marmonne Oéagre.</p>
+                <p><milestone unit="sent"/>– Tu vois, réplique Calliope. <milestone unit="sent"/>Il répète un chant que je lui ai appris hier.</p>
+                <p><milestone unit="sent"/>– Un chant ! répète Oéagre.</p>
+                <p><milestone unit="sent"/>Et il tourne les talons, excédé.</p>
+                <p><milestone unit="sent"/>Calliope reste là, l’air songeur, à écouter son fils. <milestone unit="sent"/>Orphée a un don, c’est
+                    certain. <milestone unit="sent"/>Depuis tout petit, il est passionné de musique. <milestone unit="sent"/>Il apprend tout ce
+                    qu’elle lui enseigne avec une facilité étonnante. <milestone unit="sent"/>Et quand sa voix s’élève, elle
+                    attire tout ce qui vit dans le palais.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>À quelque temps de là, un visiteur se présente. <milestone unit="sent"/>Il est grand, très beau, très
+                    jeune et il a l’air si sûr de lui que nul ne songe à le contrarier quand il
+                    annonce :</p>
+                <p><milestone unit="sent"/>– Je suis venu voir Orphée. <milestone unit="sent"/>Conduisez-moi auprès de lui.</p>
+                <p><milestone unit="sent"/>Orphée est debout dans le jardin. <milestone unit="sent"/>Il écoute avec attention le chant des oiseaux
+                    et s’amuse à le reproduire en sifflant. <milestone unit="sent"/>Il y réussit si bien que les oiseaux lui
+                    répondent !</p>
+                <p><milestone unit="sent"/>Le visiteur observe la scène un moment puis appelle doucement :</p>
+                <p><milestone unit="sent"/>– Orphée !</p>
+                <p><milestone unit="sent"/>Le jeune garçon se retourne. <milestone unit="sent"/>Il n’a pas l’air surpris.</p>
+                <p><milestone unit="sent"/>– Bonjour, et bienvenue, dit-il tranquillement.</p>
+                <p><milestone unit="sent"/>– Bonjour à toi, répond le visiteur. <milestone unit="sent"/>Sais-tu qui je suis ?</p>
+                <p><milestone unit="sent"/>L’enfant secoue la tête. <milestone unit="sent"/>Non, il ne sait pas.</p>
+                <p><milestone unit="sent"/>Cela amuse le visiteur qui éclate de rire.</p>
+                <p><milestone unit="sent"/>– Cela n’a pas d’importance ! déclare-t-il. <milestone unit="sent"/>Je suis venu t’apporter un
+                    cadeau.</p>
+                <p><milestone unit="sent"/>Et d’un seul coup, sans qu’il ait fait le moindre geste, une lyre apparaît dans
+                    ses mains.</p>
+                <p><milestone unit="sent"/>Les yeux d’Orphée brillent. <milestone unit="sent"/>Jamais il n’a vu une lyre aussi belle. <milestone unit="sent"/>Ses cordes
+                    sont fines et transparentes, et son bois doux et clair accroche la lumière du
+                    soleil.</p>
+                <p><milestone unit="sent"/>– C’est pour moi ? s’exclame-t-il.</p>
+                <p><milestone unit="sent"/>– Absolument, répond le visiteur.</p>
+                <p><milestone unit="sent"/>Orphée est ébloui.</p>
+                <p><milestone unit="sent"/>– Pourquoi ? demande-t-il.</p>
+                <p><milestone unit="sent"/>– Voilà longtemps que je t’entends chanter, explique le visiteur. <milestone unit="sent"/>Ta voix est
+                    belle et tu as un sens de la musique étonnant. <milestone unit="sent"/>C’est ce qui m’a donné envie de
+                    t’offrir cette lyre. <milestone unit="sent"/>Avec elle, tu feras de grands progrès. <milestone unit="sent"/>Tu sauras en
+                    jouer ?</p>
+                <p><milestone unit="sent"/>– Je crois, dit Orphée.</p>
+                <p><milestone unit="sent"/>– Montre-moi.</p>
+                <p><milestone unit="sent"/>Le visiteur tend la lyre à l’enfant.</p>
+                <p><milestone unit="sent"/>Orphée s’assoit sur un banc et cale l’instrument sur ses genoux. <milestone unit="sent"/>Il est juste à
+                    sa taille ! <milestone unit="sent"/>Émerveillé, il pose ses doigts sur les cordes, lève les yeux vers le
+                    ciel et commence à jouer.</p>
+                <p><milestone unit="sent"/>Un sourire s’épanouit sur les lèvres du visiteur. <milestone unit="sent"/>Il ne s’est pas trompé ; Orphée
+                    a un don que personne d’autre ne possède.</p>
+                <p><milestone unit="sent"/>– C’est bien, murmure-t-il, interrompant l’enfant. <milestone unit="sent"/>Écoute-moi. Cette lyre
+                    grandira en même temps que toi. <milestone unit="sent"/>Jamais tu ne t’en sépareras. <milestone unit="sent"/>Avec elle, tu
+                    entreprendras de grands voyages et tu vivras de grandes aventures. <milestone unit="sent"/>Elle te
+                    conduira au bout du monde connu et aussi dans le royaume où aucun mortel ne
+                    va.</p>
+                <p><milestone unit="sent"/>Sur ces paroles, l’inconnu disparaît.</p>
+                <p><milestone unit="sent"/>Longtemps après, Orphée comprendra que le mystérieux visiteur n’était autre que
+                    le dieu Apollon.</p>
+            </div>
+            <div>
+                <head>2 <lb/> Coupe de foudre</head>
+
+                <p><milestone unit="sent"/>Les années ont passé et Orphée est devenu un musicien extraordinaire. <milestone unit="sent"/>Il suffit
+                    qu’il s’empare de sa lyre pour que tous se taisent et l’écoutent.</p>
+                <p><milestone unit="sent"/>Un jour, un messager arrive au palais d’Oéagre. <milestone unit="sent"/>Il vient de la part d’un certain
+                    Jason et son message est simple : <milestone unit="sent"/>« Recherche héros forts et courageux pour
+                    aller chercher une toison d’or en Colchide. <milestone unit="sent"/>Signé : Jason. »</p>
+                <p><milestone unit="sent"/>Oéagre lit le message et hausse les épaules.</p>
+                <p><milestone unit="sent"/>– Un héros fort et courageux, marmonne-t-il. <milestone unit="sent"/>Comme si cela pouvait concerner mon
+                    fils !</p>
+                <p><milestone unit="sent"/>Orphée l’a entendu et il est très vexé.</p>
+                <p><milestone unit="sent"/>– Bien sûr que cela me concerne ! <milestone unit="sent"/>J’ai entendu parler de ce Jason. <milestone unit="sent"/>Il monte une
+                    grande expédition pour aller chercher la toison d’un bélier qui a sauvé la vie à
+                    son ancêtre. <milestone unit="sent"/>Tous ceux qui veulent l’accompagner sont les bienvenus.</p>
+                <p><milestone unit="sent"/>– Que fera-t-il de toi ? interroge Oéagre. <milestone unit="sent"/>Tu ne sais ni manier l’épée ni brandir
+                    une lance. <milestone unit="sent"/>On t’attaquerait, tu ne saurais pas te défendre !</p>
+                <p><milestone unit="sent"/>Orphée a un petit sourire en caressant sa lyre.</p>
+                <p><milestone unit="sent"/>– Avec elle, affirme-t-il, je n’ai pas besoin d’épée.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Dès le lendemain, Orphée se met en route. <milestone unit="sent"/>Il marche d’un bon pas le long du
+                    chemin. <milestone unit="sent"/>Il pense à ceux qui, de toute la Grèce, ont répondu à l’appel de Jason
+                    et sont en train de rejoindre, comme lui, le lieu du rendez-vous. <milestone unit="sent"/>Et cela le
+                    fait sourire ! <milestone unit="sent"/>Car les autres sont des guerriers. <milestone unit="sent"/>Ils ont dû emporter leur épée,
+                    leur casque, leur bouclier, alors que lui n’a que sa lyre pour tout bagage.</p>
+                <p><milestone unit="sent"/>Quand le soleil descend, Orphée s’arrête au bord d’une rivière, mange un morceau
+                    et commence à jouer.</p>
+                <p><milestone unit="sent"/>Non loin de là, un couple de paysans s’apprête à rentrer chez lui. <milestone unit="sent"/>Soudain, la
+                    femme tend le bras et dit à son mari :</p>
+                <p><milestone unit="sent"/>– Regarde…</p>
+                <p><milestone unit="sent"/>Le mari n’en croit pas ses yeux.</p>
+                <p><milestone unit="sent"/>Il fixe un chêne qui se dresse au bout de son champ. <milestone unit="sent"/>Ce chêne, il l’a toujours vu
+                    là, bien sûr, comme son père avant lui, et le père de son père, et ainsi de
+                    suite depuis des générations. <milestone unit="sent"/>Mais ce qu’il n’a jamais vu, ni son père avant
+                    lui, ni le père de son père, ni personne, c’est ce qui est en train de se
+                    produire sous ses yeux.</p>
+                <p><milestone unit="sent"/>Aucun souffle de vent ne trouble le calme de cette journée d’été. <milestone unit="sent"/>Autour de lui,
+                    tout est immobile. <milestone unit="sent"/>Et pourtant, l’arbre bouge. <milestone unit="sent"/>Ses feuilles frémissent, et le
+                    bout de ses branches s’agite. <milestone unit="sent"/>Soudain, l’arbre entier est pris de mouvements,
+                    ses racines se détachent du sol, ses branches plient et se tordent… aucun doute,
+                    l’arbre danse !</p>
+                <p><milestone unit="sent"/>Le mari pose une main sur l’épaule de sa femme et murmure :</p>
+                <p><milestone unit="sent"/>– Écoute.</p>
+                <p><milestone unit="sent"/>Une étrange musique parvient à leurs oreilles. <milestone unit="sent"/>Le chêne l’a perçue avant eux et,
+                    à présent qu’ils l’entendent à leur tour, ils sont pris, comme lui, d’une
+                    furieuse envie de sauter, de danser, de suivre cet air qui vient de la
+                    rivière.</p>
+                <p><milestone unit="sent"/>Car cette musique ne ressemble à aucune autre. <milestone unit="sent"/>Elle est douce et légère,
+                    puissante et apaisante, elle se glisse tout au fond de votre cœur, impossible de
+                    l’ignorer !</p>
+                <p><milestone unit="sent"/>D’ailleurs c’est bien simple, tout, autour du couple, s’est mis à danser : les
+                    arbres, les rochers, le chien, les brebis dans le pré et même les oiseaux dans
+                    le ciel !</p>
+                <p><milestone unit="sent"/>Soudain, leurs voisins passent devant eux. Ils crient :</p>
+                <p><milestone unit="sent"/>– Venez ! Un musicien est arrivé ! <milestone unit="sent"/>Il joue là-bas, au bord de la rivière !</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Les jours suivants, Orphée poursuit son voyage.</p>
+                <p><milestone unit="sent"/>Partout où il passe, il fait sensation et, bientôt, tout le monde sait qu’un
+                    étrange musicien traverse le pays. <milestone unit="sent"/>On l’attend, on l’écoute, on le suit. <milestone unit="sent"/>Orphée
+                    voyage suivi d’un cortège d’auditeurs.</p>
+                <p><milestone unit="sent"/>Sa renommée parvient aux oreilles de Jason et, quand Orphée arrive, il
+                    l’accueille à bras ouverts.</p>
+                <p><milestone unit="sent"/>– Ton arme a l’air redoutable ! s’exclame-t-il en désignant la lyre. <milestone unit="sent"/>Aussi
+                    redoutable que toutes nos épées réunies. <milestone unit="sent"/>Tu seras des nôtres, n’est-ce pas ?</p>
+                <p><milestone unit="sent"/>Orphée sourit et répond :</p>
+                <p><milestone unit="sent"/>– C’est pour cela que je suis ici.</p>
+                <p><milestone unit="sent"/>C’est ainsi qu’Orphée devient un Argonaute, comme se désignent les compagnons de
+                    Jason, d’après le nom de leur bateau, l’Argo.</p>
+                <p><milestone unit="sent"/>Un matin, l’Argo prend la mer. <milestone unit="sent"/>Très vite, Jason réalise à quel point la présence
+                    d’Orphée est précieuse.</p>
+                <p><milestone unit="sent"/>Quand la mer est forte, il demande :</p>
+                <p><milestone unit="sent"/>– Orphée, si tu t’installais à l’avant de l’Argo pour jouer quelque chose ?</p>
+                <p><milestone unit="sent"/>Dès que le musicien touche les cordes de la lyre, les vagues s’apaisent et les
+                    dauphins viennent danser autour du navire.</p>
+                <p><milestone unit="sent"/>Quand le vent est trop puissant, Jason dit :</p>
+                <p><milestone unit="sent"/>– Orphée, si tu lançais quelques notes de musique vers le ciel ?</p>
+                <p><milestone unit="sent"/>Dès que le musicien s’exécute, le vent faiblit et les oiseaux accompagnent la
+                    marche de l’Argo.</p>
+                <p><milestone unit="sent"/>Quand une dispute éclate entre les Argonautes, Jason suggère :</p>
+                <p><milestone unit="sent"/>– Orphée, si tu t’asseyais au milieu du navire pour pincer les cordes de ta
+                    lyre ?</p>
+                <p><milestone unit="sent"/>Dès que le musicien intervient, ses compagnons s’adoucissent car sa musique calme
+                    les esprits.</p>
+                <p><milestone unit="sent"/>Au fil des jours et des dangers que les Argonautes affrontent, Orphée prend de
+                    l’assurance. <milestone unit="sent"/>Quand ils reviennent de Colchide, victorieux, le musicien sait que
+                    Jason a vu juste : sa lyre n’est pas seulement un instrument de musique ; c’est
+                    une arme, ou plutôt un outil merveilleux qui lui permet d’obtenir ce qu’il
+                    désire sans avoir à combattre.</p>
+                <p><milestone unit="sent"/>Bientôt, les Argonautes se séparent et Orphée décide de retourner en Thrace, le
+                    pays de son enfance. <milestone unit="sent"/>Il s’en va donc vers le nord et, un soir qu’il fait halte à
+                    l’orée d’un bois, il assiste à un étrange événement.</p>
+                <p><milestone unit="sent"/>Alors que le soleil descend, des jeunes filles surgissent, comme par
+                    enchantement. <milestone unit="sent"/>La seconde d’avant, le lieu était désert, et soudain elles sont
+                    là, vives et joyeuses.</p>
+                <p><milestone unit="sent"/>– Dansons ! propose l’une.</p>
+                <p><milestone unit="sent"/>– Chantons ! lance une autre.</p>
+                <p><milestone unit="sent"/>Elles éclatent de rire.</p>
+                <p><milestone unit="sent"/>Orphée ne parvient pas à en détacher son regard. <milestone unit="sent"/>Elles sont toutes plus
+                    gracieuses les unes que les autres. <milestone unit="sent"/>Pourtant l’une d’elles est plus fine, plus
+                    menue, plus jolie, plus secrète aussi. <milestone unit="sent"/>Sans la quitter des yeux, Orphée commence
+                    à jouer.</p>
+                <p><milestone unit="sent"/>Les jeunes filles ne se demandent pas d’où vient cette musique ni le chant qui
+                    l’accompagne. <milestone unit="sent"/>Elles dansent et reprennent les refrains d’une voix
+                    mélodieuse.</p>
+                <p><milestone unit="sent"/>Cela dure toute la nuit.</p>
+                <p><milestone unit="sent"/>Au matin, alors que le soleil se lève, elles disparaissent aussi vite et aussi
+                    mystérieusement qu’elles ont surgi.</p>
+                <p><milestone unit="sent"/>Une est restée cependant. <milestone unit="sent"/>La plus fine, la plus menue, la plus jolie, la plus
+                    secrète aussi. <milestone unit="sent"/>Un rayon de soleil illumine le bois de la lyre d’Orphée et la
+                    jeune fille s’approche.</p>
+                <p><milestone unit="sent"/>– Voilà donc celui qui nous a amusées ! lance-t-elle.</p>
+                <p><milestone unit="sent"/>– Qui es-tu ? murmure Orphée.</p>
+                <p><milestone unit="sent"/>– Mon nom est Eurydice, répond la jeune fille.</p>
+                <p><milestone unit="sent"/>– Tu vis dans les bois ?</p>
+                <p><milestone unit="sent"/>La jeune fille éclate de rire.</p>
+                <p><milestone unit="sent"/>– Bien sûr ! Mes sœurs et moi sommes des nymphes des chênes ! <milestone unit="sent"/>Ils sont rares, tu
+                    sais, ceux qui nous voient danser au clair de lune. <milestone unit="sent"/>Mais ta musique est si
+                    belle…</p>
+                <p><milestone unit="sent"/>– C’est toi qui es belle ! l’interrompt Orphée.</p>
+                <p><milestone unit="sent"/>Il dévisage la nymphe qui se trouble.</p>
+                <p><milestone unit="sent"/>– Tu reviendras ? interroge-t-elle.</p>
+                <p><milestone unit="sent"/>– Je ne bougerai pas d’ici, assure Orphée.</p>
+                <p><milestone unit="sent"/>Et il tient parole.</p>
+                <p><milestone unit="sent"/>Chaque soir, les nymphes arrivent et dansent au son de sa lyre.</p>
+                <p><milestone unit="sent"/>Chaque matin, à l’aube, elles disparaissent, sauf Eurydice.</p>
+                <p><milestone unit="sent"/>Chaque jour, elle passe un peu plus de temps avec le musicien.</p>
+                <p><milestone unit="sent"/>Pour elle, il chante des poèmes que personne n’a jamais entendus. <milestone unit="sent"/>Pour lui, elle
+                    danse comme jamais une nymphe n’a dansé.</p>
+                <p><milestone unit="sent"/>Parfois, elle s’assoit auprès de lui. <milestone unit="sent"/>D’autres fois, il l’accompagne dans sa
+                    danse. <milestone unit="sent"/>Ils se frôlent, ils se touchent, ils s’embrassent.</p>
+                <p><milestone unit="sent"/>Leur mariage est célébré au bord de l’eau. <milestone unit="sent"/>Toutes les nymphes y assistent et, au
+                    son de la lyre d’Orphée, les chênes se dressent sur leurs racines et virevoltent
+                    la nuit durant.</p>
+
+            </div>
+            <div>
+                <head>3 <lb/> Un chagrin immense</head>
+                <p><milestone unit="sent"/>Orphée et Eurydice s’installent dans une région isolée de la Thrace, chez les
+                    Cicones.</p>
+                <p><milestone unit="sent"/>C’est un choix curieux. <milestone unit="sent"/>Les Cicones sont connus pour être de vrais sauvages qui
+                    n’hésitent pas à massacrer les étrangers ! <milestone unit="sent"/>Mais Orphée les apprivoise grâce à sa
+                    musique et le jeune couple vit très heureux.</p>
+                <p><milestone unit="sent"/>Orphée est fou amoureux d’Eurydice et Eurydice est folle amoureuse d’Orphée. <milestone unit="sent"/>Jamais ils ne se disputent. <milestone unit="sent"/>Pour eux, chaque jour qui commence est le début
+                    d’une nouvelle vie. <milestone unit="sent"/>Ils sont sûrs que rien ni personne ne pourra les séparer. <milestone unit="sent"/>Tout à leur amour, ils ne s’aperçoivent pas que la beauté d’Eurydice attire bien
+                    des regards.</p>
+                <p><milestone unit="sent"/>Un jour que la nymphe se promène au bord de la rivière, elle croise un homme.</p>
+                <p><milestone unit="sent"/>Cet homme, elle le connaît. <milestone unit="sent"/>Son nom est Aristée. <milestone unit="sent"/>En un éclair, elle réalise que,
+                    ces derniers temps, elle l’a souvent vu sur son chemin. <milestone unit="sent"/>Il a une drôle de façon
+                    de la dévisager. <milestone unit="sent"/>Jusque-là, elle n’y a pas prêté attention, mais à présent
+                    qu’ils sont seuls, en pleine nature, un frisson d’effroi la parcourt.</p>
+                <p><milestone unit="sent"/>Une mauvaise lueur s’est allumée dans les yeux d’Aristée. <milestone unit="sent"/>Eurydice jette un coup
+                    d’œil autour d’elle. <milestone unit="sent"/>Elle est seule ! <milestone unit="sent"/>Elle n’a pas le temps de réfléchir. <milestone unit="sent"/>En un
+                    bond, Aristée est sur elle.</p>
+                <p><milestone unit="sent"/>Elle crie et se dégage d’un mouvement vif. <milestone unit="sent"/>Il est surpris et elle a le temps de
+                    s’enfuir. <milestone unit="sent"/>Il court vite ; elle aussi. <milestone unit="sent"/>Ses pieds touchent à peine le sol et la
+                    terreur lui donne de l’élan quand soudain… <milestone unit="sent"/>Une terrible douleur lui transperce
+                    le talon.</p>
+                <p><milestone unit="sent"/>Elle s’écroule dans l’herbe, terrifiée, tandis que la douleur envahit son pied,
+                    atteint sa cheville, monte le long de sa jambe.</p>
+                <p><milestone unit="sent"/>L’homme était prêt à se jeter sur elle, mais il s’arrête net.</p>
+                <p><milestone unit="sent"/>Un mince serpent se faufile entre ses pieds. <milestone unit="sent"/>Immobile, il le regarde disparaître
+                    dans les hautes herbes. <milestone unit="sent"/>Il recule alors devant le corps inanimé, lui tourne le
+                    dos et s’enfuit.</p>
+                <p><milestone unit="sent"/>Allongée sur le sol, Eurydice sent la douleur envahir son genou, s’attaquer à sa
+                    cuisse.</p>
+                <p><milestone unit="sent"/>– Orphée, murmure-t-elle.</p>
+                <p><milestone unit="sent"/>Mais Orphée est loin et ne peut pas l’entendre.</p>
+                <p><milestone unit="sent"/>Eurydice tend son visage vers le ciel, si bleu, si doux.</p>
+                <p><milestone unit="sent"/>La douleur est nichée dans son ventre et la tête lui tourne.</p>
+                <p><milestone unit="sent"/>– Orphée ! répète-t-elle en fermant les yeux.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Quand un berger découvre Eurydice sur la berge du fleuve, il est trop tard. <milestone unit="sent"/>Alerté, Orphée se précipite. <milestone unit="sent"/>Il serre celle qu’il aime contre lui, il
+                    l’embrasse, il la berce, il l’appelle, il la secoue, il invoque les dieux…</p>
+                <p><milestone unit="sent"/>Rien n’y fait. Eurydice est morte.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Orphée est seul.</p>
+                <p><milestone unit="sent"/>Il ne mange plus, il ne dort plus, il ne joue plus de la lyre, il ne parle plus à
+                    personne. <milestone unit="sent"/>Il erre le long du fleuve, imaginant qu’Eurydice va surgir devant lui,
+                    le rire aux lèvres, et que tout reprendra comme avant.</p>
+                <p><milestone unit="sent"/>Mais rien ne se produit et, sans Eurydice, la vie n’a plus aucun intérêt.</p>
+                <p><milestone unit="sent"/>Les amis d’Orphée s’inquiètent. Ils l’invitent.</p>
+                <p><milestone unit="sent"/>– Goûte ce morceau de chevreuil, propose l’un.</p>
+                <p><milestone unit="sent"/>– Bois un peu de ce vin, offre un autre.</p>
+                <p><milestone unit="sent"/>– Et si tu nous jouais quelque chose ? suggère un troisième.</p>
+                <p><milestone unit="sent"/>Orphée repousse les plats et les boissons. <milestone unit="sent"/>Il quitte la table sans même répondre,
+                    sa lyre au bout du bras, muette. <milestone unit="sent"/>Ses pas le ramènent vers le fleuve en quête
+                    d’Eurydice, de l’ombre d’Eurydice, du rire d’Eurydice, de la voix d’Eurydice… <milestone unit="sent"/>Mais seul le murmure de l’eau emplit le silence.</p>
+                <p><milestone unit="sent"/>Il caresse sa lyre et une idée folle lui vient. <milestone unit="sent"/>Et si sa musique pouvait faire
+                    revenir celle qu’il aime ? <milestone unit="sent"/>Aussitôt, il pince les cordes et se met à chanter. <milestone unit="sent"/>Il
+                    joue pendant des heures, sans aucun résultat. <milestone unit="sent"/>Il finit par s’arrêter et baisser
+                    la tête.</p>
+                <p><milestone unit="sent"/>Eurydice est morte et bien morte.</p>
+                <p><milestone unit="sent"/>C’est alors que des paroles surgissent dans son esprit. <milestone unit="sent"/>Des paroles qui viennent
+                    de loin, du temps de son enfance. <milestone unit="sent"/>Il se revoit dans le jardin de son père. <milestone unit="sent"/>Il y
+                    a ce visiteur devant lui, si grand, si puissant et qui a l’air si doux. <milestone unit="sent"/>Il vient
+                    de lui offrir sa lyre, et les mots qu’il prononce explosent dans la mémoire
+                    d’Orphée : <milestone unit="sent"/>« Cette lyre te conduira au bout du monde connu et aussi dans le
+                    royaume où aucun mortel ne va… » <milestone unit="sent"/>« Et aussi dans le royaume où aucun mortel ne
+                    va… »</p>
+                <p><milestone unit="sent"/>La phrase tourne en rond dans sa tête.</p>
+                <p><milestone unit="sent"/>Il saute sur ses pieds.</p>
+                <p><milestone unit="sent"/>Les Enfers !</p>
+                <p><milestone unit="sent"/>C’est là que se trouve l’ombre d’Eurydice et, avec l’aide de sa lyre, c’est là
+                    qu’il ira la chercher.</p>
+            </div>
+            <div>
+                <head>4 <lb/> Dröle de rencontre</head>
+                <p><milestone unit="sent"/>Descendre aux Enfers n’est pas une chose facile. <milestone unit="sent"/>Les entrées qui y conduisent
+                    sont rares et leur accès bien caché. <milestone unit="sent"/>Orphée a entendu parler de l’une d’elles. <milestone unit="sent"/>Elle se trouve au sud, sur le cap Ténare, très loin de la Thrace.</p>
+                <p><milestone unit="sent"/>Qu’importe, il se met en route.</p>
+                <p><milestone unit="sent"/>Marcher ne l’effraie pas. <milestone unit="sent"/>Cela lui donne même de l’appétit et il se remet à
+                    manger !</p>
+                <p><milestone unit="sent"/>Il marche le jour et une partie de la nuit tant il a hâte de parvenir à son but. <milestone unit="sent"/>Il longe la côte, franchit des fleuves et passe des montagnes. <milestone unit="sent"/>Il emprunte un
+                    bateau et marche encore. <milestone unit="sent"/>Il a sa lyre avec lui et parfois il s’arrête pour en
+                    jouer et chanter. <milestone unit="sent"/>Alors les gens s’assemblent autour de lui et certains
+                    l’accompagnent un bout de chemin.</p>
+                <p><milestone unit="sent"/>Enfin, il atteint son but.</p>
+                <p><milestone unit="sent"/>Le cap Ténare est un promontoire solide et dénudé qui avance sur la mer. <milestone unit="sent"/>Personne
+                    n’habite là. <milestone unit="sent"/>Les bergers se gardent bien d’y conduire leurs troupeaux et même
+                    les oiseaux n’osent s’y aventurer.</p>
+                <p><milestone unit="sent"/>Orphée n’a pas peur.</p>
+                <p><milestone unit="sent"/>Il trace son chemin parmi les rochers et les maigres buissons. <milestone unit="sent"/>Au-dessus de sa
+                    tête, le ciel s’obscurcit et, loin sur l’horizon, la mer se couvre de reflets
+                    métalliques. <milestone unit="sent"/>Il n’y prend pas garde. <milestone unit="sent"/>Il sait ce qu’il cherche : une ouverture
+                    sous l’abri d’une roche.</p>
+                <p><milestone unit="sent"/>Et il la trouve.</p>
+                <p><milestone unit="sent"/>Elle n’est pas très large, ni très haute, juste à la taille d’un homme. <milestone unit="sent"/>Une
+                    faible odeur d’humidité s’en échappe. <milestone unit="sent"/>Le cœur battant, sa lyre serrée contre sa
+                    poitrine, Orphée s’y engage à pas prudents.</p>
+                <p><milestone unit="sent"/>Le chemin s’enfonce régulièrement sous la terre. <milestone unit="sent"/>Il descend en pente douce,
+                    faiblement éclairé d’une étrange lueur.</p>
+                <p><milestone unit="sent"/>Au bout d’un temps qui lui semble interminable, le chemin s’élargit et, au-dessus
+                    de sa tête, le plafond s’élève, de plus en plus haut, si haut qu’il ne le
+                    distingue plus. <milestone unit="sent"/>Le sol est gris, la lumière est grise, le silence est profond et
+                    il se sent bien seul et bien petit dans cette immensité souterraine.</p>
+                <p><milestone unit="sent"/>Soudain, il s’arrête. <milestone unit="sent"/>Il est au bord d’un fleuve. <milestone unit="sent"/>Ses eaux sont du même gris que
+                    le sol et elles s’écoulent sans aucun son, si bien qu’il a du mal à discerner où
+                    finit le rivage et où commence la rivière. <milestone unit="sent"/>Il contemple l’eau, l’air songeur. <milestone unit="sent"/>Voici donc le Styx qui marque la frontière entre le monde des vivants et celui
+                    des morts…</p>
+                <p><milestone unit="sent"/>Il regarde à gauche, à droite, devant, derrière. <milestone unit="sent"/>Rien. Rien qui puisse lui
+                    permettre de franchir le fleuve. <milestone unit="sent"/>Devra-t-il le traverser à la nage ? <milestone unit="sent"/>Il
+                    frissonne à cette idée.</p>
+                <p><milestone unit="sent"/>C’est alors qu’un bruit léger parvient à ses oreilles, quelque chose qui vient
+                    troubler la tranquillité de l’eau. <milestone unit="sent"/>Il guette la semi-obscurité et voit une forme
+                    grise s’inscrire sur le gris du fleuve. <milestone unit="sent"/>C’est une barque, manœuvrée par un
+                    vieillard plus vieux que tous les vieillards qu’il a connus.</p>
+                <p><milestone unit="sent"/>Orphée retient son souffle. <milestone unit="sent"/>La barque avance lentement, mais régulièrement, droit
+                    sur lui ! <milestone unit="sent"/>Il a envie de faire demi-tour et de s’enfuir en courant, la pensée
+                    d’Eurydice le retient. <milestone unit="sent"/>Ce vieillard qui pose sur lui un regard perçant n’est
+                    autre que Charon, le passeur. <milestone unit="sent"/>C’est sur sa barque que les ombres des morts
+                    traversent le Styx, et lui seul est capable de le conduire à sa bien-aimée.</p>
+                <p><milestone unit="sent"/>La barque racle le sol et le vieillard se redresse. <milestone unit="sent"/>Il examine longuement Orphée
+                    avant de constater :</p>
+                <p><milestone unit="sent"/>– Tu n’es pas mort.</p>
+                <p><milestone unit="sent"/>– Euh… non, reconnaît Orphée.</p>
+                <p><milestone unit="sent"/>– Alors que fais-tu ici ?</p>
+                <p><milestone unit="sent"/>– Je suis venu chercher celle que j’aime, répond Orphée fermement.</p>
+                <p><milestone unit="sent"/>À sa grande surprise, Charon éclate de rire, d’un rire qui brise le silence de la
+                    grotte. <milestone unit="sent"/>Aussitôt, une multitude de plis rident la surface de l’eau tandis que le
+                    rire se répercute d’une muraille à l’autre.</p>
+                <p><milestone unit="sent"/>– Cher… cher… chercher celle… celle… que tu aimes ! hoquette le vieillard. <milestone unit="sent"/>Ja…
+                    jamais rien entendu d’aussi drôle…</p>
+                <p><milestone unit="sent"/>Il se calme peu à peu et Orphée confirme :</p>
+                <p><milestone unit="sent"/>– Oui. Elle se nomme Eurydice.</p>
+                <p><milestone unit="sent"/>Charon fronce les sourcils.</p>
+                <p><milestone unit="sent"/>– Eurydice… Ce nom me dit quelque chose. <milestone unit="sent"/>Oui ! J’y suis ! <milestone unit="sent"/>Je l’ai fait traverser
+                    il y a quelque temps. <milestone unit="sent"/>Une mort rapide provoquée par une morsure de serpent, si
+                    mes souvenirs sont exacts.</p>
+                <p><milestone unit="sent"/>– Tu l’as vue ! s’exclame Orphée tout joyeux.</p>
+                <p><milestone unit="sent"/>– J’ai vu son ombre, corrige le vieillard. <milestone unit="sent"/>Et je l’ai transportée de l’autre côté
+                    de la rivière, comme les ombres des morts qui étaient là.</p>
+                <p><milestone unit="sent"/>– Charon, me conduiras-tu de l’autre côté du Styx ? demande Orphée.</p>
+                <p><milestone unit="sent"/>– Tu n’as pas compris, je crois, réplique le vieillard. <milestone unit="sent"/>Aucun vivant ne peut
+                    pénétrer dans les Enfers. <milestone unit="sent"/>Reviens quand tu seras mort. <milestone unit="sent"/>Et de toute façon, une
+                    fois qu’une ombre a passé le Styx, jamais elle ne ressort des Enfers. <milestone unit="sent"/>Donc ne
+                    compte pas revoir ton Eurydice tant que tu seras en vie !</p>
+                <p><milestone unit="sent"/>« Jamais, jamais… <milestone unit="sent"/>On va bien voir ! » se dit Orphée.</p>
+                <p><milestone unit="sent"/>Charon s’apprête à pousser sa barque dans le courant quand Orphée lance :</p>
+                <p><milestone unit="sent"/>– Je sais que les morts doivent te donner une pièce en échange de tes services. <milestone unit="sent"/>Moi, je te paierai bien. <milestone unit="sent"/>Dix pièces, cela t’ira ?</p>
+                <p><milestone unit="sent"/>– C’est une bonne nouvelle ! <milestone unit="sent"/>Garde ton argent pour quand tu reviendras. <milestone unit="sent"/>Ne
+                    t’inquiète pas, nous nous reverrons, tu peux en être sûr ! ajoute-t-il en
+                    ricanant.</p>
+                <p><milestone unit="sent"/>D’un coup de rame, il met sa barque à l’eau et Orphée le regarde s’éloigner,
+                    désespéré.</p>
+                <p><milestone unit="sent"/>Alors, les doigts tremblants, il pince les cordes de sa lyre. <milestone unit="sent"/>Les notes s’élèvent
+                    dans la grotte. <milestone unit="sent"/>Orphée prend de l’assurance, suffisamment pour commencer à
+                    chanter. <milestone unit="sent"/>Sa voix résonne sur les parois, faiblement d’abord, puis de plus en
+                    plus ferme.</p>
+                <p><milestone unit="sent"/>Sur l’eau, la barque s’est arrêtée. <milestone unit="sent"/>Figé, Charon écoute. <milestone unit="sent"/>Jamais il n’a entendu
+                    une telle musique et, sans même s’en rendre compte, il se remet à ramer vers le
+                    rivage où se trouve Orphée !</p>
+                <p><milestone unit="sent"/>Quand la barque touche à nouveau la rive, Orphée cesse de chanter et la lyre se
+                    tait.</p>
+                <p><milestone unit="sent"/>– Joue encore, implore Charon.</p>
+                <p><milestone unit="sent"/>– Seulement si tu me transportes de l’autre côté, déclare Orphée.</p>
+                <p><milestone unit="sent"/>– Ça ne te servira à rien, assure Charon. <milestone unit="sent"/>Cerbère défend l’entrée des Enfers. <milestone unit="sent"/>Tu
+                    sais qui est Cerbère ?</p>
+                <p><milestone unit="sent"/>Orphée hoche la tête. <milestone unit="sent"/>Il sait. Cerbère est un énorme chien doté de plusieurs
+                    têtes, et tous s’accordent à dire qu’il est redoutable. <milestone unit="sent"/>Avec lui, les ombres des
+                    morts sont bien gardées !</p>
+                <p><milestone unit="sent"/>Il sent le découragement l’envahir, puis il se ressaisit. <milestone unit="sent"/>Auprès de Jason, il en
+                    a vu d’autres ! <milestone unit="sent"/>Il a calmé la fureur de la mer et apaisé les disputes entre les
+                    Argonautes. <milestone unit="sent"/>Pourquoi Cerbère lui résisterait-il ?</p>
+                <p><milestone unit="sent"/>– Cerbère ne m’effraie pas, affirme-t-il.</p>
+                <p><milestone unit="sent"/>– Pourtant, il n’est pas commode, insiste Charon.</p>
+                <p><milestone unit="sent"/>– J’en fais mon affaire, déclare Orphée. <milestone unit="sent"/>Je te demande juste de m’emmener.</p>
+                <p><milestone unit="sent"/>– C’est bon, monte, grommelle Charon. <milestone unit="sent"/>Mais joue et chante tant que tu seras sur
+                    ma barque !</p>
+                <p><milestone unit="sent"/>Orphée s’exécute. <milestone unit="sent"/>Il est bien trop content d’obéir !</p>
+            </div>
+            <div>
+                <head>5 <lb/> Un concert aux Enfers</head>
+                <p><milestone unit="sent"/>Charon n’a pas menti. <milestone unit="sent"/>Cerbère n’a pas l’air commode du tout.</p>
+                <p><milestone unit="sent"/>Ses multiples têtes aboient tant qu’elles peuvent et des crocs pointus
+                    jaillissent de leurs mâchoires baveuses. <milestone unit="sent"/>Le vacarme est si assourdissant
+                    qu’Orphée recule en se bouchant les oreilles.</p>
+                <p><milestone unit="sent"/>Il se reprend et examine les lieux. <milestone unit="sent"/>Impossible de contourner le monstre, il
+                    occupe toute la place ! <milestone unit="sent"/>Il n’y a plus qu’à souhaiter qu’il soit sensible à sa
+                    musique.</p>
+                <p><milestone unit="sent"/>Orphée commence à jouer. <milestone unit="sent"/>D’abord, Cerbère ne l’entend pas. <milestone unit="sent"/>Puis, sur une des
+                    têtes, les oreilles se dressent, et cette tête-là cesse d’aboyer. <milestone unit="sent"/>Les autres la
+                    regardent avec curiosité, dressent à leur tour leurs oreilles et se taisent,
+                    l’une après l’autre.</p>
+                <p><milestone unit="sent"/>Puis le chien s’accroupit et pose ses multiples têtes sur ses pattes. <milestone unit="sent"/>Tous les
+                    yeux sont fixés sur Orphée qui avance d’un pas, d’un autre, puis d’un autre
+                    encore, enjambe délicatement le monstre et s’éloigne sans cesser de jouer.</p>
+                <p><milestone unit="sent"/>L’allée qu’il suit à présent est beaucoup plus large que celle qu’il a empruntée
+                    pour descendre vers le Styx, et il n’est pas le seul à l’utiliser. <milestone unit="sent"/>Des ombres
+                    vont et viennent en silence. <milestone unit="sent"/>Orphée les dévisage avec avidité. <milestone unit="sent"/>Si Eurydice se
+                    trouvait parmi elles !</p>
+                <p><milestone unit="sent"/>Il avance en continuant à jouer, et les ombres se rassemblent sur son passage. <milestone unit="sent"/>Il
+                    est ému. <milestone unit="sent"/>Il est dans le séjour des morts et les ombres qui l’entourent sont
+                    celles de tous ceux qui ont quitté la terre.</p>
+                <p><milestone unit="sent"/>C’est suivi d’un imposant cortège qu’il parvient à l’entrée d’une vaste salle. <milestone unit="sent"/>Ses dimensions sont si impressionnantes qu’il arrête de jouer et un soupir de
+                    déception s’échappe de la multitude des ombres.</p>
+                <p><milestone unit="sent"/>Au fond de la salle, deux trônes sont dressés. <milestone unit="sent"/>Sur l’un se trouve un géant barbu
+                    aux cheveux plus noirs que la nuit et au regard flamboyant. <milestone unit="sent"/>Sur l’autre, une
+                    mince jeune femme est assise et pose sur Orphée un regard bienveillant.</p>
+                <p><milestone unit="sent"/>– Qui es-tu donc ? interroge-t-elle d’une voix douce.</p>
+                <p><milestone unit="sent"/>– Comment es-tu arrivé jusqu’ici ? tonne le géant dans le même temps.</p>
+                <p><milestone unit="sent"/>Orphée est terrorisé, mais il se dit que ce n’est pas le moment de reculer. <milestone unit="sent"/>Ceux
+                    qui siègent devant lui sont Hadès, le maître des Enfers, et Perséphone, son
+                    épouse. <milestone unit="sent"/>Ce sont eux justement qui détiennent les clés de la liberté
+                    d’Eurydice.</p>
+                <p><milestone unit="sent"/>Il se tourne d’abord vers Perséphone et dit :</p>
+                <p><milestone unit="sent"/>– Mon nom est Orphée, et je suis poète et musicien.</p>
+                <p><milestone unit="sent"/>Il poursuit, à l’intention d’Hadès :</p>
+                <p><milestone unit="sent"/>– Je suis venu par l’entrée du cap Ténare.</p>
+                <p><milestone unit="sent"/>– Charon et Cerbère t’ont laissé passer ? interroge Hadès, perplexe.</p>
+                <p><milestone unit="sent"/>– Oui ! Grâce à ceci.</p>
+                <p><milestone unit="sent"/>Orphée s’apprête à jouer, mais Hadès l’arrête :</p>
+                <p><milestone unit="sent"/>– Stop ! Pas de musique ici !</p>
+                <p><milestone unit="sent"/>Perséphone pose une main légère sur son bras et quémande :</p>
+                <p><milestone unit="sent"/>– Oh si ! Cela nous changera ! <milestone unit="sent"/>Il se passe si peu de choses aux Enfers…</p>
+                <p><milestone unit="sent"/>Hadès soupire et, d’un geste de la main, accorde :</p>
+                <p><milestone unit="sent"/>– Va ! Mais pas longtemps.</p>
+
+                <p><milestone unit="sent"/>Le concert d’Orphée dure des heures. <milestone unit="sent"/>Il enchaîne les morceaux qu’il connaît,
+                    puis, quand il a épuisé son répertoire, il improvise. <milestone unit="sent"/>Jamais il n’a aussi bien
+                    chanté, jamais il n’a tiré de sa lyre des accords aussi enchanteurs ni aussi
+                    émouvants. <milestone unit="sent"/>Des larmes coulent sur les joues des ombres des morts, sur celles de
+                    Perséphone, et même les yeux d’Hadès sont humides.</p>
+                <p><milestone unit="sent"/>Enfin, à bout de souffle, épuisé, Orphée se tait et attend, la tête baissée.</p>
+                <p><milestone unit="sent"/>Le silence s’éternise.</p>
+                <p><milestone unit="sent"/>Enfin, Hadès toussote, s’éclaircit la voix et demande :</p>
+                <p><milestone unit="sent"/>– Et… Hum, hum… Qu’est-ce qui t’a poussé à venir jusqu’ici ?</p>
+                <p><milestone unit="sent"/>– Je suis venu pour mon épouse, explique Orphée. <milestone unit="sent"/>Un serpent l’a mordue et…</p>
+                <p><milestone unit="sent"/>Sa voix s’étrangle et il achève dans un murmure :</p>
+                <p><milestone unit="sent"/>– Je ne peux pas vivre sans elle.</p>
+                <p><milestone unit="sent"/>– Quel est son nom ? interroge Perséphone.</p>
+                <p><milestone unit="sent"/>– Eurydice, répond Orphée.</p>
+                <p><milestone unit="sent"/>– Tu ne crois tout de même pas que tu vas pouvoir la ramener avec toi ! s’exclame
+                    Hadès.</p>
+                <p><milestone unit="sent"/>– Si, réplique Orphée. <milestone unit="sent"/>Sinon, c’est moi qui reste.</p>
+                <p><milestone unit="sent"/>– Mais tu n’es pas mort !</p>
+                <p><milestone unit="sent"/>– Ça ne fait rien.</p>
+                <p><milestone unit="sent"/>– Tu as perdu la tête, mortel ! tonne le géant. <milestone unit="sent"/>Ce n’est pas à toi de décider si
+                    tu peux ou pas rester ici ! <milestone unit="sent"/>Quant à ton Eurydice… <milestone unit="sent"/>Aucune ombre ne peut ressortir
+                    des Enfers.</p>
+                <p><milestone unit="sent"/>Perséphone se penche alors vers Hadès et murmure quelque chose à son oreille. <milestone unit="sent"/>Hadès secoue la tête, lève les yeux au ciel et finit par marmonner :</p>
+                <p><milestone unit="sent"/>– Bon, peut-être pouvons-nous faire une exception…</p>
+                <p><milestone unit="sent"/>Le cœur d’Orphée bat à toute allure dans sa poitrine.</p>
+                <p><milestone unit="sent"/>– Où est cette Eurydice ? enchaîne Hadès.</p>
+                <p><milestone unit="sent"/>Du fond de la grotte, une ombre s’avance. <milestone unit="sent"/>Elle boite légèrement, et l’émotion
+                    serre le cœur d’Orphée.</p>
+                <p><milestone unit="sent"/>« Elle souffre toujours de son talon ! » se dit-il, sans songer que les morts ne
+                    ressentent plus rien.</p>
+                <p><milestone unit="sent"/>Eurydice n’est plus qu’une ombre. <milestone unit="sent"/>Et pourtant elle a toujours la beauté et la
+                    vivacité de la jeune fille qui dansait autrefois avec ses compagnes. <milestone unit="sent"/>Dans ses
+                    yeux, Orphée lit tout l’amour qu’elle lui porte ; un amour aussi grand que le
+                    sien. <milestone unit="sent"/>Il voudrait se précipiter et la serrer contre lui. <milestone unit="sent"/>Il se retient. Il sait
+                    que c’est impossible. <milestone unit="sent"/>Eurydice n’a plus de corps, il n’étreindrait que du
+                    vide.</p>
+                <p><milestone unit="sent"/>L’ombre s’arrête devant Orphée, muette, et le dévore des yeux.</p>
+                <p><milestone unit="sent"/>– Nous allons faire une exception, confirme Perséphone d’une voix ferme. <milestone unit="sent"/>Tu peux
+                    ramener ton épouse avec toi, à une condition…</p>
+                <p><milestone unit="sent"/>– Tout ce que tu veux ! l’interrompt Orphée.</p>
+                <p><milestone unit="sent"/>– À une condition, reprend Perséphone. <milestone unit="sent"/>Durant le trajet vers la surface de la
+                    terre, jamais tu ne devras te retourner pour vérifier qu’Eurydice te suit. <milestone unit="sent"/>Si tu
+                    enfreins cet ordre, elle disparaîtra et nous ne ferons rien pour toi.</p>
+                <p><milestone unit="sent"/>– Je ne me retournerai pas ! promet Orphée. <milestone unit="sent"/>Pas avant que nous ayons tous deux
+                    atteint la surface de la terre. <milestone unit="sent"/>Je jouerai de la lyre, elle n’aura qu’à me
+                    suivre.</p>
+                <p><milestone unit="sent"/>– Eh bien, allez à présent, conclut Hadès.</p>
+                <p><milestone unit="sent"/>Orphée s’apprête à retourner par où il est venu quand le dieu des morts
+                    l’arrête :</p>
+                <p><milestone unit="sent"/>– Attends. Tu ne peux pas utiliser le chemin que les ombres empruntent pour venir
+                    jusqu’ici. <milestone unit="sent"/>Je vais te montrer par où tu peux sortir. <milestone unit="sent"/>Tu éviteras ainsi Cerbère,
+                    Charon et le Styx. <milestone unit="sent"/>Et tâche de tenir ta promesse, Orphée !</p>
+            </div>
+            <div>
+                <head>6 <lb/> La Promesse</head>
+
+                <p><milestone unit="sent"/>Le chemin vers la surface de la terre qu’Hadès a indiqué à Orphée est long, très
+                    long. <milestone unit="sent"/>Il ne ressemble pas à celui qu’il a utilisé à l’aller. <milestone unit="sent"/>Il est plus étroit,
+                    plus abrupt et noyé de brume.</p>
+                <p><milestone unit="sent"/>Orphée avance lentement. <milestone unit="sent"/>Il joue de la lyre et les notes de musique semblent se
+                    perdre dans le brouillard. <milestone unit="sent"/>Il a confiance cependant dans les paroles de
+                    Perséphone. <milestone unit="sent"/>Eurydice est derrière lui, il en est sûr, il sent sa présence, même
+                    s’il n’entend pas le bruit de ses pas sur le sol. <milestone unit="sent"/>Il marche lentement, sans
+                    impatience, et une petite lumière joyeuse s’est allumée dans son cœur.</p>
+                <p><milestone unit="sent"/>Pourtant, au fur et à mesure qu’il grimpe, le doute s’insinue en lui.</p>
+                <p><milestone unit="sent"/>Et si les dieux s’étaient moqués de lui ?</p>
+                <p><milestone unit="sent"/>Si, au dernier moment, ils avaient retenu Eurydice ?</p>
+                <p><milestone unit="sent"/>Non. Impossible. <milestone unit="sent"/>Jamais Perséphone ne serait capable d’une telle traîtrise.</p>
+                <p><milestone unit="sent"/>Il avance à nouveau en toute confiance, hâtant le pas cependant, et bientôt, une
+                    nouvelle crainte l’envahit. <milestone unit="sent"/>Si Eurydice, handicapée par son talon, ne pouvait
+                    plus marcher ? <milestone unit="sent"/>Ne devrait-il pas revenir sur ses pas pour l’aider ? <milestone unit="sent"/>Elle
+                    pourrait s’appuyer sur son bras, ce chemin est si raide et si glissant…</p>
+                <p><milestone unit="sent"/>Il s’arrête, s’apprête à faire demi-tour, se raisonne, se retient au dernier
+                    moment, repart, marche quelque temps l’esprit serein, jusqu’à ce que l’angoisse
+                    lui serre la gorge.</p>
+                <p><milestone unit="sent"/>Et si Eurydice se perdait dans cette brume épaisse et tenace ? <milestone unit="sent"/>Si ça se trouve,
+                    le son de sa lyre ne parvient pas à la percer ! <milestone unit="sent"/>Pour se calmer, il joue plus
+                    fort, pinçant vigoureusement les cordes de l’instrument, et son cœur bat comme
+                    un tambour à l’intérieur de sa poitrine.</p>
+                <p><milestone unit="sent"/>Peu à peu, la brume s’éclaircit, et Orphée sent l’impatience grandir dans tout
+                    son corps tandis que la petite lumière joyeuse installée dans son cœur se
+                    transforme en feu de joie. <milestone unit="sent"/>Enfin, une vague lueur apparaît devant lui. <milestone unit="sent"/>C’est
+                    celle du jour ! <milestone unit="sent"/>Le chemin longe à présent un précipice et il prend garde à
+                    rester bien près de la falaise tout en songeant :</p>
+                <p><milestone unit="sent"/>« Pourvu qu’Eurydice fasse comme moi ! <milestone unit="sent"/>Pourvu qu’elle ne trébuche pas ! <milestone unit="sent"/>Pourvu
+                    qu’elle ne tombe pas dans le vide ! »</p>
+                <p><milestone unit="sent"/>La brume se déchire d’un coup et la surface de la terre apparaît.</p>
+                <p><milestone unit="sent"/>Un rayon de soleil effleure le visage d’Orphée et il ferme les yeux sous sa
+                    chaleur tandis que sa lyre lance une série de mesures vigoureuses. <milestone unit="sent"/>Encore
+                    quelques pas et il aura réussi !</p>
+                <p><milestone unit="sent"/>Dans son cœur, ce n’est plus un feu de joie qui pétille, mais un véritable
+                    brasier. <milestone unit="sent"/>Quant à son impatience, impossible de la contenir ! <milestone unit="sent"/>Elle lui déchire le
+                    ventre, elle tambourine dans sa tête, elle fourmille dans ses doigts. <milestone unit="sent"/>Il tente
+                    de lui résister, sans y parvenir. <milestone unit="sent"/>Il ferme les yeux et essaie de se concentrer ;
+                    rien n’y fait. <milestone unit="sent"/>Une seule question le hante : <milestone unit="sent"/>Eurydice est-elle bien derrière
+                    lui ? <milestone unit="sent"/>A-t-elle, comme lui, senti la chaleur du soleil et frémi sous la brise
+                    chargée du parfum des montagnes ?</p>
+                <p><milestone unit="sent"/>Alors il fait ce qu’il ne devait pas : il se retourne.</p>
+                <p><milestone unit="sent"/>Eurydice est bien là. <milestone unit="sent"/>Aussi belle qu’au premier jour, aussi fine, aussi menue,
+                    aussi jolie, aussi secrète. <milestone unit="sent"/>Comme si le temps n’avait pas coulé, comme si le
+                    serpent n’avait pas existé, comme si jamais elle ne s’était changée en ombre
+                    grise au fond des Enfers.</p>
+                <p><milestone unit="sent"/>Le temps d’un instant, leurs regards s’accrochent l’un à l’autre. <milestone unit="sent"/>Ils échangent
+                    tout leur amour et toute leur histoire. <milestone unit="sent"/>Eurydice ébauche un geste ; elle tend le
+                    bras vers Orphée, elle amorce un cri et Orphée sait quel mot elle va prononcer :
+                    c’est son nom.</p>
+                <p><milestone unit="sent"/>Elle n’en a pas le temps. <milestone unit="sent"/>Elle s’efface doucement sous les yeux de son époux et
+                    disparaît.</p>
+                <p><milestone unit="sent"/>Un coup de vent balaie la brume et la porte des Enfers. <milestone unit="sent"/>Orphée est seul devant
+                    une haute muraille. <milestone unit="sent"/>Il se jette contre elle, tape des poings, hurle le nom de
+                    celle qu’il aime :</p>
+                <p><milestone unit="sent"/>– Eurydice !</p>
+                <p><milestone unit="sent"/>Il s’effondre enfin sur le sol, en larmes, désespéré.</p>
+
+                <p><milestone unit="sent"/>Les yeux fermés, Orphée passe et repasse la scène dans sa tête. <milestone unit="sent"/>Il se maudit. Pourquoi n’a-t-il pas attendu ? <milestone unit="sent"/>Quel besoin avait-il de se retourner ? <milestone unit="sent"/>Encore
+                    quelques mètres, et Eurydice était tirée d’affaire ! <milestone unit="sent"/>S’il avait eu assez de
+                    patience, elle serait là, à ses côtés, et il la serrerait dans ses bras. <milestone unit="sent"/>Et ce
+                    ne serait pas une ombre qu’il étreindrait, mais un corps bien vivant !</p>
+                <p><milestone unit="sent"/>Il éclate en sanglots. <milestone unit="sent"/>Il pleure tout le jour ; il pleure toute la nuit.</p>
+                <p><milestone unit="sent"/>Au matin, il se reprend. <milestone unit="sent"/>Il reste un espoir : ce qu’il a réussi une fois, il peut
+                    le refaire !</p>
+                <p><milestone unit="sent"/>Il traverse la montagne, retrouve l’entrée du cap Ténare, descend le chemin en
+                    courant, arrive au bord de l’eau, appelle :</p>
+                <p><milestone unit="sent"/>– Charon ! Charon !</p>
+                <p><milestone unit="sent"/>– Voilà, voilà, grogne le vieillard. J’arrive !</p>
+                <p><milestone unit="sent"/>Mais quand Charon aperçoit Orphée, il se garde bien d’accoster.</p>
+                <p><milestone unit="sent"/>– Encore toi ! s’exclame-t-il.</p>
+                <p><milestone unit="sent"/>– Oui, fais-moi traverser, je te prie. <milestone unit="sent"/>Vite, c’est urgent !</p>
+                <p><milestone unit="sent"/>– Certainement pas, grogne Charon. <milestone unit="sent"/>J’ai des ordres. <milestone unit="sent"/>Tu ne poseras pas un pied sur
+                    ma barque.</p>
+                <p><milestone unit="sent"/>– Je vais jouer pour toi, s’empresse Orphée.</p>
+                <p><milestone unit="sent"/>– Joue toujours ! réplique Charon.</p>
+                <p><milestone unit="sent"/>Il déchire un bout de son vêtement, en fait deux boules qu’il glisse dans ses
+                    oreilles. <milestone unit="sent"/>Puis il repart de l’autre côté du Styx.</p>
+                <p><milestone unit="sent"/>Orphée ne se lasse pas. <milestone unit="sent"/>Il attend. Il reste là sept jours et sept nuits, sans
+                    rien avaler, sans toucher aux aliments que Perséphone, émue par son chagrin, lui
+                    a fait porter. <milestone unit="sent"/>Il joue et chante. <milestone unit="sent"/>Mais Charon ne se montre pas et les eaux du
+                    Styx coulent, indifférentes.</p>
+                <p><milestone unit="sent"/>Au matin du huitième jour, Orphée comprend qu’il est inutile d’insister. <milestone unit="sent"/>Hadès ne
+                    reviendra pas sur sa parole. <milestone unit="sent"/>Il ne lui donnera pas une seconde chance. <milestone unit="sent"/>La tête
+                    basse, il remonte vers la surface de la terre, seul.</p>
+                <p><milestone unit="sent"/>C’est une silhouette voûtée et amaigrie qui ressort des Enfers.</p>
+            </div>
+            <div>
+                <head>7 <lb/> Retour aux Enfers</head>
+
+                <p><milestone unit="sent"/>À pas lents, Orphée rentre en Thrace, dans le pays des Cicones où il a vécu
+                    heureux avec Eurydice, et il se retire dans les montagnes. <milestone unit="sent"/>Il ne veut plus voir
+                    ses semblables.</p>
+                <p><milestone unit="sent"/>Ils sont nombreux pourtant ceux qui essaient de lui rendre visite. <milestone unit="sent"/>Ou plutôt,
+                    elles sont nombreuses. <milestone unit="sent"/>Car les femmes adorent Orphée ! <milestone unit="sent"/>Elles aiment sa douceur,
+                    sa poésie, sa musique. <milestone unit="sent"/>Plus d’une se dit qu’elle pourrait remplacer Eurydice
+                    dans son cœur.</p>
+                <p><milestone unit="sent"/>Il n’en est pas question.</p>
+                <p><milestone unit="sent"/>Orphée les repousse. <milestone unit="sent"/>Il ne les effleure même pas du regard. <milestone unit="sent"/>Elles s’en vont, très
+                    vexées, et finissent par l’oublier.</p>
+                <p><milestone unit="sent"/>Puis un jour, d’autres femmes l’aperçoivent depuis une hauteur, en train de
+                    réciter un poème en s’accompagnant de sa lyre.</p>
+                <p><milestone unit="sent"/>Ces femmes ne sont pas comme les autres. <milestone unit="sent"/>Ce sont des Ménades. <milestone unit="sent"/>Parfois, prises de
+                    folie, elles s’habillent de peaux de bêtes, se couronnent de lierre ou de
+                    feuilles de chêne, saisissent un long bâton et partent danser et chanter dans
+                    les montagnes.</p>
+                <p><milestone unit="sent"/>– Regardez ce fou ! crie l’une d’elles en désignant Orphée. <milestone unit="sent"/>Pour qui joue-t-il,
+                    je vous le demande ? <milestone unit="sent"/>Pour les oiseaux ?</p>
+                <p><milestone unit="sent"/>– Pas pour nous, en tout cas ! fait une autre.</p>
+                <p><milestone unit="sent"/>– Quel gâchis ! réplique une troisième avec aigreur.</p>
+                <p><milestone unit="sent"/>Chacune y va de son commentaire et la colère monte dans le groupe des
+                    Ménades.</p>
+                <p><milestone unit="sent"/>– Il ne mérite pas de vivre ! conclut celle qui a commencé.</p>
+                <p><milestone unit="sent"/>Et elle lance violemment son bâton en direction d’Orphée.</p>
+                <p><milestone unit="sent"/>Stupeur : le bâton se heurte à la musique du poète et tombe à ses pieds sans
+                    l’atteindre.</p>
+                <p><milestone unit="sent"/>Cela accentue la fureur des Ménades qui se déchaînent. <milestone unit="sent"/>Les unes se mettent à
+                    crier, à battre des mains, à taper sur des troncs avec des bâtons, couvrant
+                    ainsi la voix du chanteur et la musique de la lyre. <milestone unit="sent"/>Les autres lui lancent des
+                    projectiles : des pierres, des morceaux de bois, tout ce qui leur tombe sous la
+                    main.</p>
+                <p><milestone unit="sent"/>La folie décuple leurs forces et plus rien ne peut les arrêter. <milestone unit="sent"/>Une pierre touche
+                    Orphée au front, une autre aux mains, une troisième au cou… Le sang coule.</p>
+                <p><milestone unit="sent"/>Les Ménades s’approchent. <milestone unit="sent"/>Les animaux qui écoutaient Orphée se sont enfuis et le
+                    poète est allongé dans l’herbe, inanimé. <milestone unit="sent"/>Cela ne les calme pas. <milestone unit="sent"/>Elles le battent
+                    avec des branches arrachées aux arbres voisins.</p>
+                <p><milestone unit="sent"/>Orphée a fermé les yeux. <milestone unit="sent"/>Il ne respire plus depuis longtemps. <milestone unit="sent"/>À ses côtés, la
+                    lyre continue à jouer toute seule ! <milestone unit="sent"/>Les Ménades ne s’en aperçoivent pas. <milestone unit="sent"/>Dans
+                    leur folie, elles s’acharnent sur le poète, arrachent un bras, une jambe et
+                    finissent par le découper en morceaux qu’elles éparpillent un peu partout dans
+                    la campagne.</p>
+                <p><milestone unit="sent"/>Elles jettent la tête d’Orphée dans un fleuve. <milestone unit="sent"/>Mais la musique résonne encore ! <milestone unit="sent"/>Elles réalisent que c’est la lyre, oubliée sur le sol, qui égrène inlassablement
+                    ses notes. <milestone unit="sent"/>Alors elles s’en saisissent et hop ! elles l’envoient rejoindre la
+                    tête de son propriétaire dans le fleuve. <milestone unit="sent"/>Impossible cependant de faire taire
+                    l’instrument. <milestone unit="sent"/>Emportée par les eaux, la lyre joue toujours et couvre le
+                    mugissement de la rivière.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Longtemps, la tête et la lyre suivent le courant du fleuve, puis l’eau les dépose
+                    doucement sur une plage. <milestone unit="sent"/>Le visage d’Orphée est intact, encadré de ses boucles
+                    brunes. <milestone unit="sent"/>On dirait qu’il va se mettre à chanter ! <milestone unit="sent"/>Mais si ses lèvres pouvaient
+                    encore bouger, elles murmureraient : « Eurydice… »</p>
+                <p><milestone unit="sent"/>Curieux, un serpent s’approche. <milestone unit="sent"/>Il observe le visage paisible et s’apprête à
+                    l’attaquer. <milestone unit="sent"/>Juste au moment où il va mordre, Apollon surgit, se dresse devant le
+                    serpent et le change en pierre.</p>
+                <p><milestone unit="sent"/>L’air songeur, il contemple la tête de celui qu’il a connu enfant, dans le jardin
+                    du roi de Thrace. <milestone unit="sent"/>Plus jamais la voix magique d’Orphée ne s’élèvera vers le
+                    ciel. <milestone unit="sent"/>Plus jamais aucune voix humaine ne fera danser les arbres. <milestone unit="sent"/>La colère
+                    envahit Apollon. <milestone unit="sent"/>Pas question que le crime des Ménades reste impuni ! <milestone unit="sent"/>Elles ont
+                    eu l’audace de s’attaquer à son protégé et de priver la terre d’un fabuleux
+                    musicien ; pour cela, elles seront punies. <milestone unit="sent"/>Sans attendre, il les change en
+                    arbres. <milestone unit="sent"/>Les voilà fixées au sol par des racines solides et incapables du moindre
+                    mouvement !</p>
+                <p><milestone unit="sent"/>Il effleure la tête d’Orphée d’un dernier regard puis ramasse la lyre avec
+                    précaution. <milestone unit="sent"/>À présent que le musicien n’est plus, ce cadeau qu’il lui avait
+                    offert lui revient. <milestone unit="sent"/>Pour qu’il reste visible aux yeux de tous, il le place hors
+                    d’atteinte : dans le ciel ! <milestone unit="sent"/>La lyre d’Orphée devient la constellation… de la
+                    Lyre.</p>
+                <ab type="line"/>
+                <p><milestone unit="sent"/>Et l’ombre du musicien ? <milestone unit="sent"/>Elle est loin déjà.</p>
+                <p><milestone unit="sent"/>Elle parcourt des chemins qu’elle connaît, emprunte légèrement l’allée que le
+                    poète a autrefois suivie pour venir chercher sa bien-aimée.</p>
+                <p><milestone unit="sent"/>Au bas du chemin, les eaux grises coulent toujours en silence. <milestone unit="sent"/>L’ombre d’Orphée
+                    appelle :</p>
+                <p><milestone unit="sent"/>– Charon ! Charon !</p>
+                <p><milestone unit="sent"/>– Voilà, voilà, grogne le vieillard. J’arrive !</p>
+                <p><milestone unit="sent"/>Quand il reconnaît Orphée, Charon s’exclame :</p>
+                <p><milestone unit="sent"/>– Toujours toi ! <milestone unit="sent"/>Mais… Je me trompe ou tu es mort, cette fois ?</p>
+                <p><milestone unit="sent"/>L’ombre d’Orphée répond :</p>
+                <p><milestone unit="sent"/>– Tu ne te trompes pas ! <milestone unit="sent"/>Vite, fais-moi traverser !</p>
+                <p><milestone unit="sent"/>– Toujours pressé, hein ? grommelle Charon. <milestone unit="sent"/>Tu sais que tu as du temps devant
+                    toi, à présent ?</p>
+                <p><milestone unit="sent"/>– Je sais ! s’impatiente Orphée. On y va ?</p>
+                <p><milestone unit="sent"/>– Attends une minute. <milestone unit="sent"/>Cet argent que tu m’as promis la dernière fois, tu l’as
+                    apporté avec toi ?</p>
+                <p><milestone unit="sent"/>– Bien sûr ! réplique Orphée. <milestone unit="sent"/>Je t’avais promis une fortune, la voici !
+                    enchaîne-t-il en versant une pluie de pièces dans la barque.</p>
+                <p><milestone unit="sent"/>Les yeux de Charon brillent.</p>
+                <p><milestone unit="sent"/>– C’est bon, tu peux monter.</p>
+                <p><milestone unit="sent"/>Orphée saute à bord de la barque et Charon se lance sur le Styx en
+                    remarquant :</p>
+                <p><milestone unit="sent"/>– Jamais vu une ombre aussi pressée de traverser…</p>
+                <p><milestone unit="sent"/>De l’autre côté du Styx, Orphée salue Cerbère comme une vieille connaissance et
+                    le chien s’écarte pour le laisser passer.</p>
+                <p><milestone unit="sent"/>C’est en courant qu’il parcourt les allées des Enfers à la recherche de celle
+                    qu’il aime. <milestone unit="sent"/>Il ne peut plus attendre. <milestone unit="sent"/>Il dévisage les ombres avant de les
+                    repousser, traverse une salle, une autre. <milestone unit="sent"/>Voilà longtemps que le monde
+                    souterrain n’avait connu une telle animation !</p>
+                <p><milestone unit="sent"/>Il l’aperçoit enfin, assise sur un rocher, pensive. <milestone unit="sent"/>Il se précipite, se dresse
+                    devant elle. <milestone unit="sent"/>Elle lève les yeux vers lui et le reconnaît. <milestone unit="sent"/>La voilà debout et il
+                    la serre dans ses bras. <milestone unit="sent"/>Leurs souffles se mêlent :</p>
+                <p><milestone unit="sent"/>– Orphée…</p>
+                <p><milestone unit="sent"/>– Eurydice !</p>
+            </div>
+        </body>
+
+    </text>
+</TEI>

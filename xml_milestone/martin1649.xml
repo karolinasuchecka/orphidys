@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L’Orphée grotesque, avec le bal rustique. En vers burlesques.
+                    Première partie.</title>
+                <author>Anonyme</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k57236890/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Anonyme</author> / <title>L’Orphée grotesque, avec le bal rustique. En
+                        vers burlesques. Première partie</title> / Paris / Sebastien Martin / 1649.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>L’Orphée grotesque, avec le bal rustique. En vers burlesques.
+                            Première partie.</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Sebastien Martin</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1649"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>martin1649</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1649">1649</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>parodie</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Anonyme</docAuthor>
+                <docTitle>
+                    <titlePart type="main">L’Orphée grotesque, avec le bal rustique. En vers
+                        burlesques. Première partie.</titlePart>
+                </docTitle>
+            </titlePage>
+            <div type="preface">
+                <head>L’Imprimeur au Lecteur</head>
+                <p>
+                    <pb n="2" xml:id="p2"/>L’Orphée a tant paru dans le serieux qu’il peut donner
+                    curiosité de le voir dans le Burlesque ; aussi le plaisant personnage qu’il fait
+                    quand il se plaint en musique de son veuvage, et celebre les obseques de sa
+                    femme avec ce merveilleux instrument, au son duquel il fait dancer tout ce qui
+                    rencontre, donne une idée assez risible pour meriter qu’on le dépeingne en un
+                    stile qui l’est aussi. C’est pourquoy l’Autheur prend cette Fable par où elle
+                    commence à estre plaisamment bisare : Ce qui luy donne occasion de déguiser
+                    quelquesfois, et amplifier cette fiction par des circonstances grotesques pour
+                    la rendre plus sortable à des vers facetieux. Quoy que cette piece soit un des
+                    premiers jeux de son espit, ou je sçau qu’il ne voudroit pas s’amuser à
+                    présent ; des plus connoissans me font croire qu’elle peut plaire aux plus
+                    difficiles et divertit les plus serieux. Si elle plaist dans le public comme
+                    elle fait dans le particulier, je puis dire que ce ne sera pas la premiere de
+                    luy qui aura esté bien recouë.</p>
+            </div>
+        </front>
+
+
+        <body>
+            
+            <div>
+                <head>L’Orphée grotesque, avec le Bal rustique</head>
+                <l><milestone unit="sent"/>
+                    <pb n="3" xml:id="p3"/>Un Vilon yure à la Feste</l>
+                <l>La nuict m’a tant rompu la teste,</l>
+                <l>M’a tant lassé dans mon grabat</l>
+                <l>Par sa musique de sabat,</l>
+                <l>Qu’en dépit de sa serenade</l>
+                <l>Dont j’ay l’oreille encor malade,</l>
+                <l>Je peins d’ancre et non de couleur,</l>
+                <l>Ce Menestrier de malheur,</l>
+                <l>Qui sonnoit pour feu sa Donzelle,</l>
+                <l>Sur sa lyre en forme de vielle,</l>
+                <l>Donzelle morte à ce qu’on dit,</l>
+                <l>Par un lazard qui la mordit,</l>
+                <l>Et chantoit non l’epitalame,</l>
+                <l>Mais l’epitaphe de sa Dame :</l>
+                <l><milestone unit="sent"/>Mal damée ayant mal tasté</l>
+                <l>Des droits de la communauté.</l>
+                <l>
+                    <pb n="4" xml:id="p4"/>Orphée en l’Infernale blouze,</l>
+                <l>Avoit reclamé son espouse,</l>
+                <l>Gazoüilé mieux qu’un Rossignol,</l>
+                <l>Et par Becare, et par Bemol,</l>
+                <l>Sa chanson plaisante et plaintive,</l>
+                <l>Pitoyable et recreative,</l>
+                <l>Qu’il fredonnoit faisant pitié</l>
+                <l>En enfant de chœur chastié</l>
+                <l>Qui chante et pleure tout ensemble,</l>
+                <l>Et mieux fredonne plus il tremble ;</l>
+                <l>Ce chanteur avoit enchanté</l>
+                <l>Cerbere avec sa parenté,</l>
+                <l>D’accord avec Pluton le fourbe,</l>
+                <l>De repasser la noire bourbe :</l>
+                <l><milestone unit="sent"/>Luy le premier, sa femme apres,</l>
+                <l>Que hors la frontiere Infernale</l>
+                <l>Où de la voir trousser en malle ;</l>
+                <l>La pauvrette elargie enfin,</l>
+                <l>Il croyoit joüer au plus fin,</l>
+                <l>Mais son œil tourné par mollesse</l>
+                <l>Le fait joüer en tire-laisse,</l>
+                <l>C’est à ce beau jeu qu’il repert</l>
+                <l>Sa dône reprise sans verd ;</l>
+                <l>Elle à beau crier je suis morte</l>
+                <l>Cependant qu’un Lutin l’emporte ;</l>
+                <l>Luy sans voix, sans poux, ny couleur,</l>
+                <l>N’en ose crier au voleur ;</l>
+                <l>
+                    <pb n="5" xml:id="p5"/>Et pour la prendre à la main gourde</l>
+                <l>L’oyant dire, adieu hapelourde,</l>
+                <l>Qui laisses ta femme au cachot,</l>
+                <l>Pluton t’a bien pris pour un sot,</l>
+                <l>Il te sied bien avec ta vielle,</l>
+                <l>D’oser joüer de la prunelle,</l>
+                <l>Tu vois trop clair pour un vielleur,</l>
+                <l>T’on regard me porte malheur,</l>
+                <l>Maudit soit l’œil, foin de l’œillade,</l>
+                <l>Foin de… cependant l’Ombre evade</l>
+                <l>Et paroist à ce veuf transi,</l>
+                <l>Une larve d’air espaissi ;</l>
+                <l>Luy la court jusqu’au guichet sombre</l>
+                <l>En chien qui veut gober une ombre,</l>
+                <l>Sans luy pouvoir prendre à taston,</l>
+                <l>Poil, ny peau, gorge ny manton :</l>
+                <l><milestone unit="sent"/>Apres avoir couru l’averne</l>
+                <l>Sans trouver auberge ou taverne,</l>
+                <l>Il sort de là comme d’un four,</l>
+                <l>Et gaigne un bois pour fuir le jour,</l>
+                <l>Trop contraire à son noir desastre</l>
+                <l>Qui fait choir en Enfer son astre ;</l>
+                <l>Ce veuf plus penaud ce dit-on,</l>
+                <l>Qu’un des quinze-vingts sans baston,</l>
+                <l>Ou qu’un Pelerin en disgrace,</l>
+                <l>qui perd escarcelle ou besace,</l>
+                <l>Tout effaré, tout ahury</l>
+                <l>D’estre aussi tost veuf que mary :</l>
+                <l>
+                    <pb n="6" xml:id="p6"/>Et deux fois veuf en mois d’une heure</l>
+                <l>Il en sanglotte s’il n’en pleure,</l>
+                <l>Perdant sa femme il perd son dot,</l>
+                <l>Et la perdant il est plus sot,</l>
+                <l>« Qu’un autre n’est sot d’en prendre une</l>
+                <l>Quand elle se rend trop commune,</l>
+                <l>La deffunte qui l’a quitté</l>
+                <l>Le rend tout desorienté,</l>
+                <l>Quoy que *** rie en l’ame</l>
+                <l>De se voir deffait de sa femme ;</l>
+                <l>L’assassin amant de Procris,</l>
+                <l>Fit moins de vacarme et de cris,</l>
+                <l>Que nostre homme dont la beveuë</l>
+                <l>Occit sa belle avec la veuë :</l>
+                <l><milestone unit="sent"/>Il a beau crier, desgoiser,</l>
+                <l>Au diantre qui vient l’appaiser ;</l>
+                <l>L’escho se pleint d’estre estourdie</l>
+                <l>De sa criarde melodie ;</l>
+                <l>Car plus il crie, elle en glapit</l>
+                <l>Et luy rend ses cris par dépit :</l>
+                <l><milestone unit="sent"/>Sa plainte joüant de son reste,</l>
+                <l>Il maugrée, il fulmine, il peste,</l>
+                <l>Maudisson, injure et juron,</l>
+                <l>Contre Pluton, Parque et Caron,</l>
+                <l>Et male peste, et male bosse</l>
+                <l>De l’espousaille et de la noce ;</l>
+                <l>Mais il ne s’en prend desormais</l>
+                <l>Qu’à la barbe qui n’en peut mais,</l>
+                <l>
+                    <pb n="7" xml:id="p7"/>Et s’arrachant sa heure fauve,</l>
+                <l>De male rage devient chauve,</l>
+                <l>Ce n’est plus un veilleur dolent,</l>
+                <l>Il croit estre en fougueux Rolland :</l>
+                <l><milestone unit="sent"/>Et dans sa fougueuse eschappée,</l>
+                <l>Prend sa vielle pour une espée,</l>
+                <l>Prenant les arbres les plus verds</l>
+                <l>Pour de noirs spectres des enfers ;</l>
+                <l>Il bat, cogne, heurte et martelle,</l>
+                <l>La forest à grands coups de vielle,</l>
+                <l>Qui lasse de maint horion,</l>
+                <l>Voudroit estre aux mains d’Arion :</l>
+                <l><milestone unit="sent"/>L’atrabile où son cœur se beigne,</l>
+                <l>Tueroit deux Merciers pour un peigne</l>
+                <l>Et dourderoit le sieur Pluton</l>
+                <l>De sa lyre au lieu de baston,</l>
+                <l>Dans sa rage une faim canine</l>
+                <l>Eschauffe encor l’humeur mutine ;</l>
+                <l>Si bien, que cette eschaufaison</l>
+                <l>Luy donne aux mains demangeaison :</l>
+                <l><milestone unit="sent"/>« Parce que tant moins les gens mangent,</l>
+                <l>Et tant plus les mains leur demangent. »</l>
+                <l><milestone unit="sent"/>Jugez si sa rage en Enfer,</l>
+                <l>A trouvé dequoy s’eschauffer ;</l>
+                <l>Car chez Pluton et Proserpine</l>
+                <l>Tout est froid hormis la cuisine,</l>
+                <l>Il vient de ce maudit païs</l>
+                <l>Où les goinfres sont esbahis,</l>
+                <l>
+                    <pb n="8" xml:id="p8"/>D’une seiche et maigre contrée</l>
+                <l>Où nul vin ne paye d’entrée,</l>
+                <l>Où pain mol, ny dur, blanc ny bis,</l>
+                <l>Pié fourché, vache ny brebis,</l>
+                <l>N’y croist non plus que le fruictage,</l>
+                <l>Où l’on ne voit pot ny potage :</l>
+                <l><milestone unit="sent"/>Là s’estant fait sur son haut ton,</l>
+                <l>Le gosier sec comme coton,</l>
+                <l>Le foye et le poulmon aride,</l>
+                <l>Le cerveau creux, le ventre vuide,</l>
+                <l>Ce jour eust mis de male faim,</l>
+                <l>Ce fol et sa folie à in,</l>
+                <l>Et l’eust à terre estendu raide</l>
+                <l>« Si par hazard qui souvent aide,</l>
+                <l>Les fous, comme les estourdis, »</l>
+                <l>Il n’eust vû d’un salmigondis,</l>
+                <l>Reliquat d’un banquet de faunes</l>
+                <l>Qui ronfloient yres sous des aunes ;</l>
+                <l>Cét affamé Menestrier</l>
+                <l>Mangeant sans se faire prier,</l>
+                <l>Eust pû de rage et de famine,</l>
+                <l>Manger Pluton et sa cuisine :</l>
+                <l><milestone unit="sent"/>La soif fit à ce pauvre escroc,</l>
+                <l>Vuider, presser, succer un broc,</l>
+                <l>Et destramper de fin la lie</l>
+                <l>De sa noire melancholie.</l>
+                <l><milestone unit="sent"/>Qu’est devenu ce pauvre veuf,</l>
+                <l>Heurlant en chien, meuglant en bœuf,</l>
+                <l>
+                    <pb n="9" xml:id="p9"/>Et ses maturines tranchées</l>
+                <l>Contre hure et barbe arrachées ;</l>
+                <l>Son mal trouve un fleuve d’oubly,</l>
+                <l>Au vin Grec plus fort que chably ;</l>
+                <l>Apres cette franche lipée</l>
+                <l>Qu’il vient de prendre à la pipée,</l>
+                <l>Adieu le veuvage et l’ennuy ;</l>
+                <l>Il est changé ce n’est plus luy,</l>
+                <l>Un veuf saoul ne songe qu’à rire,</l>
+                <l>Et chante mieux qu’il ne soûpire :</l>
+                <l><milestone unit="sent"/>Ce bon repas fait au profit</l>
+                <l>Du Menestrier déconfit,</l>
+                <l>Il esbat sa panse fourée</l>
+                <l>À travers vois jusqu’à l’orée,</l>
+                <l>Chante et met sur <hi rend="i">geresolut</hi>,</l>
+                <l>Sa vielle qui fringotte en lut ;</l>
+                <l>La trouppe de faunes qui ronfle,</l>
+                <l>Vray tas d’outres que le vin gonfle,</l>
+                <l>À ce charivary charmant</l>
+                <l>Dance quasi tout en dormant ;</l>
+                <l>Desia ce trouppeau s’entre-cogne,</l>
+                <l>Parmi les SS et pas d’yvrone :</l>
+                <l><milestone unit="sent"/>Et ces bouquins de baladins</l>
+                <l>S’en vont sauter comme des dains.</l>
+                <l><milestone unit="sent"/>Ho, ho, le beau remumesnage,</l>
+                <l>Tout est meuble en ce bois sauvage ;</l>
+                <l>J’ay la berluë ou j’apperçoy</l>
+                <l>Qu’Orphée attire tout à soy.</l>
+                <l>
+                    <pb n="10" xml:id="p10"/>Sa suite est de masses mouvantes,</l>
+                <l>De rochers, de troncs et de plantes,</l>
+                <l>Je m’en r’apporte au grand Nazon,</l>
+                <l>Et n’ay pas tort s’il a raison ;</l>
+                <l>On croira le fait que je glose,</l>
+                <l>Si l’on croit la Metamorphose :</l>
+                <l><milestone unit="sent"/>Tout dance au son de ce Concert,</l>
+                <l>Les Danceurs peuplent de desert,</l>
+                <l>Voyez-vous ce Roc qui dandine</l>
+                <l>Et prend une ame baladine,</l>
+                <l>Il danse à la mode par bas,</l>
+                <l>Et dance quasi les cinq pas,</l>
+                <l>Ces vieux pins à branches pourries,</l>
+                <l>Veulent dancer les cannaries :</l>
+                <l><milestone unit="sent"/>Aussi dancent les arbrisseaux,</l>
+                <l>Les taillis, ballent par faisseaux ;</l>
+                <l>La souche que la <hi rend="i">lyre attire</hi>
+               </l>
+                <l>Suit le tronc qui <hi rend="i">tire à la lyre</hi>.</l>
+                <l><milestone unit="sent"/>L’herbe fait voir à fretiller</l>
+                <l>Qu’un fredon la sçait chatoüiller :</l>
+                <l><milestone unit="sent"/>Voyez, voyez, comme la mousse</l>
+                <l>De ravissement s’entremousse,</l>
+                <l>Et vous, champignons, potirons,</l>
+                <l>Qui sautez sur un pié tous ronds</l>
+                <l>Venez-vous payer en gambades</l>
+                <l>Ce ravissant donner d’aubades,</l>
+                <l>Voy-je pas le gaillard buisson</l>
+                <l>Tressaillant d’aise à ce beau son,</l>
+                <l>
+                    <pb n="11" xml:id="p11"/>Mener la haye sa parente</l>
+                <l>En branle bourée et courante,</l>
+                <l>Quoy la bruiere au corps leger,</l>
+                <l>Semble en gavotte voltiger.</l>
+                <l><milestone unit="sent"/>Ce halier mesme se debande</l>
+                <l>Pour s’esgayer en sarabande,</l>
+                <l>La broussaille dance pas haut,</l>
+                <l>La ronce à l’enuy va par saut,</l>
+                <l>La griesche ortie en cadence,</l>
+                <l>Fait voir que tousjours va qui dance ;</l>
+                <l>Le houx et son cousin chardon</l>
+                <l>S’emillent à chaque fredon,</l>
+                <l>Lors qu’un Asne ayant le cœur fade</l>
+                <l>Cherche le chardon pour salade :</l>
+                <l><milestone unit="sent"/>L’Asne estonnée du Bal nouveau,</l>
+                <l>Ne trouve point en son cerveau,</l>
+                <l>La raison de cette merveille,</l>
+                <l>Et son bel instinct luy conseille,</l>
+                <l>D’avertit ses parens grisons</l>
+                <l>Qui broustent dans leur garnisons ;</l>
+                <l>À cette nouvelle azinique</l>
+                <l>Un gaillard esguillon les pique,</l>
+                <l>Et jusqu’au moindre asne est tenté</l>
+                <l>De cette curiosité.</l>
+                <l><milestone unit="sent"/>L’asne semonneur de la feste</l>
+                <l>Comme guide marche à la teste :</l>
+                <l><milestone unit="sent"/>Chevaux, mulets, rosses, poulins,</l>
+                <l>Grand et petits, beaux et vilans,</l>
+                <l>
+                    <pb n="12" xml:id="p12"/>De races poussives, hargneuses,</l>
+                <l>Morveuses, retives, rogneuses,</l>
+                <l>Tout y courent, le bruit en court,</l>
+                <l>Aucun bestail n’en fait le sourd,</l>
+                <l>Chiens de chasse, chiens de cuisine,</l>
+                <l>Matous, chattes mesme en gesine,</l>
+                <l>Rats qui suivent au son les chats,</l>
+                <l>Souris franches de leurs pourchas,</l>
+                <l>Sangliers, verats, leurs sequelles,</l>
+                <l>Beliers, oüailles telles quelles,</l>
+                <l>Vaches, beaux, genisses, taureaux,</l>
+                <l>Belettes, renards et blaireaux,</l>
+                <l>Conils, lapins, levrauts et lievres,</l>
+                <l>Bouquin, cornus, chamois et chevres,</l>
+                <l>Cerfs, dains, chevreuls, biches et fans,</l>
+                <l>Licornes, chameaux, elephans,</l>
+                <l>Rincerot masle et femelle</l>
+                <l>Et sa ventrée à la mammelle,</l>
+                <l>Leopards, tigres, ours, lyons,</l>
+                <l>À centaines de millions,<note place="bottom">Transcription à la marge gauche :
+                        « vray, ny le vray semblable / as tousjours bon à qui hable / [?]ableur mon
+                        amy / [?]eur menteur et demy »</note>
+               </l>
+                <l>Monstres, centaures, hipogriffes,</l>
+                <l>Orques tous gueules et tous griffes,</l>
+                <l>Cervolans et dragons ailez,</l>
+                <l>Sarpaious, magots, culs pelez,</l>
+                <l>Tous pecores, tant lourds qu’alaigres,</l>
+                <l>Fins, grossiers, secs, pesants, gras, maigres,</l>
+                <l>Noirs, blancs, verds, gris, clairs, bruns et rous,</l>
+                <l>Gentils, laids, feroces et doux</l>
+                <l>
+                    <pb n="13" xml:id="p13"/>Tous brutes, privez etsauvages,</l>
+                <l>Quitent niches, trous, pasturages,</l>
+                <l>Se sentant chatoüiller de loin</l>
+                <l>L’oreille d’un plaisant tintoin ;</l>
+                <l>Argus qui court apres sa vache</l>
+                <l>Qu’il laissoit paistre sans attache,</l>
+                <l>Pris par l’oüye aimeroit mieux</l>
+                <l>Quatre oreilles que ses cent yeux :</l>
+                <l><milestone unit="sent"/>Il n’est pas jusques à la taupe</l>
+                <l>Qui sort de son trou noire et gaupe,</l>
+                <l>Et saute aveuglette chantant,</l>
+                <l>Qui ne voit ce vielleur l’entend.</l>
+                <l><milestone unit="sent"/>La bestialle compagnie</l>
+                <l>Desja trepigne à l’armonie,</l>
+                <l>Plus ils s’y viennent amorcer</l>
+                <l>Et mieux les fait elles dancer ;</l>
+                <l>Si le sonneur m’eust voulu croire</l>
+                <l>De les faire dancer en foire,</l>
+                <l>Il auroit plus gaigné de sous</l>
+                <l>Qu’Aubervilliers ne vend de choux.</l>
+                <l><milestone unit="sent"/>Ce bouffon de foire qui trolle,</l>
+                <l>Son chien preste à joüer son rolle,</l>
+                <l>Perdroit son honneur et son chein</l>
+                <l>Aupres du sçavant musicien,</l>
+                <l>Qui sans leçon instruit ces bestes</l>
+                <l>A friser de culs et de testes,</l>
+                <l>Le signe ny l’escurieux</l>
+                <l>Ne s’y tient sur le serieux,</l>
+                <l>
+                    <pb n="14" xml:id="p14"/>Leur agilité fretillarde</l>
+                <l>S’accorde à dancer la gaillarde.</l>
+                <l><milestone unit="sent"/>Là l’elephant, le bœuf et l’ours</l>
+                <l>Ne passent pour lourds ny balourds,</l>
+                <l>Quant aux legers c’est un prodige,</l>
+                <l>Le chat volle, et le chien voltige,</l>
+                <l>Saute crapaut, dit le serpent,</l>
+                <l>Qui bondit et n’est plus rampant ;</l>
+                <l>Et le verd lezard qui sautille</l>
+                <l>Donne bon exemple à l’anguille,</l>
+                <l>La grenoüille à menus gigots</l>
+                <l>Donne leçon aux escargots,</l>
+                <l>Voyez fretiller la tortuë</l>
+                <l>Qui dans sont estuy s’evertuë ;</l>
+                <l>En ces baladins animaux,</l>
+                <l>D’escrire leurs sauts soubresauts,</l>
+                <l>Virevoustes en giroüettes,</l>
+                <l>Et tournoyemens en piroüettes,</l>
+                <l>Leurs capriolles antrechats,</l>
+                <l>Melanges de sauts et de pas,</l>
+                <l>Leurs postures, tours de souplesse,</l>
+                <l>Leur agilité, grace, adresse,</l>
+                <l>C’est pour vous crever de plaisir</l>
+                <l>Pour quand je seray de loisir,</l>
+                <l>Sans que ce recit m’incommode,</l>
+                <l>Chaque beste balle à sa mode,</l>
+                <l>Il n’est là d’animal si fier,</l>
+                <l>Qu’aucun s’en doive deffier,</l>
+                <l>
+                    <pb n="15" xml:id="p15"/>La lyonne aupres de la mule</l>
+                <l>Perd sa rage ou la dissimule,</l>
+                <l>Le lyon, gambille en bichon,</l>
+                <l>Le bœuf dans avec le cochon,</l>
+                <l>L’ours, donnant la patte à la biche</l>
+                <l>La mene sans luy faire niche,</l>
+                <l>Le cerf et le limier voisins</l>
+                <l>À baler deviennent cousins,</l>
+                <l>Brebis dançant hoche la teste</l>
+                <l>Au loup qui saute et ne s’enqueste,</l>
+                <l>Les rats vont à l’escole aux chats</l>
+                <l>Pour apprendre des entrechats,</l>
+                <l>Le renard sautille sans noise</l>
+                <l>Prés de la poule qui s’aprivoise,</l>
+                <l>Et la poule entre ses poussins,</l>
+                <l>Bale avec l’aye et marcassins,</l>
+                <l>Antipatie ou difference</l>
+                <l>Ne les met point hors de cadence,</l>
+                <l>Ces pagnottes qui font les preux,</l>
+                <l>Et sur le pré font des fievreux,</l>
+                <l>Là tous accordez avec joye</l>
+                <l>Passeroient leurs chaleurs de foye,</l>
+                <l>À des accords si delicats</l>
+                <l>Qu’ils sont accordé chiens et chats.</l>
+                <l><milestone unit="sent"/>Tout s’y rend sans livrer bataille,</l>
+                <l>Et le bestail et la volaille ;</l>
+                <l>La vielle est un piege aux oyseaux</l>
+                <l>Plus seur que glus ny que raiseaux,</l>
+                <l>
+                    <pb n="16" xml:id="p16"/>Le plus fort n’y bat que d’une aile,</l>
+                <l>Laisse faire à la fine vielle,</l>
+                <l>Qui les met tous dans le paneau,</l>
+                <l>L’aigle aussi bien que l’estourneau :</l>
+                <l><milestone unit="sent"/>L’autour aussi bien que la proye,</l>
+                <l>L’espervier aussi bien que l’oye,</l>
+                <l>Le faucon et le guillery,</l>
+                <l>Le duc et la chauve-soury ;</l>
+                <l>L’orfraye avecque l’aloüette,</l>
+                <l>Le gerfaut avec la choüette,</l>
+                <l>Laid hibou, joly chardonnet,</l>
+                <l>Triste corbeau, guay sansonnet :</l>
+                <l><milestone unit="sent"/>Beau cygne, vilaine corneille</l>
+                <l>Viennent sangluer par l’oreille ;</l>
+                <l>Oyseaux, habitans passagers,</l>
+                <l>Doux, farouches, lourds et legers.</l>
+                <l><milestone unit="sent"/>Oyseaux babillards, taciturnes,</l>
+                <l>Oyseaux solaires et nocturnes,</l>
+                <l>Pris d’un trebuchet si charmant</l>
+                <l>Font reverence à l’instrument.</l>
+                <l><milestone unit="sent"/>Un gay pris à cette harmonie,</l>
+                <l>Se perche sans ceremonie</l>
+                <l>Sur la teste du musicien,</l>
+                <l>Pour l’oüyr d’un grave maintien.</l>
+                <l><milestone unit="sent"/>En vain ce heron se despesche</l>
+                <l>De porter à son nid la pesche,</l>
+                <l>Il s’accroche avec son poisson</l>
+                <l>À ce musical ameçon :</l>
+                <l>
+                    <pb n="17" xml:id="p17"/>Et lasche son poisson qui saute</l>
+                <l>Plus haut que la vielle n’est haute,</l>
+                <l>Pour apprendre aux estropiez</l>
+                <l>Qu’on peut icy baller sans pieds.</l>
+                <l><milestone unit="sent"/>Là, ny rossignol, ny linotte</l>
+                <l>Ne fredonne ny ne gringotte,</l>
+                <l>Là, ny caille ny perroquet</l>
+                <l>N’a plus ny jardon ny caquet.</l>
+                <l><milestone unit="sent"/>Moineau, serin, cigalle et pied</l>
+                <l>Y sentent leur gorge assoupie :</l>
+                <l><milestone unit="sent"/>Et que fait le noble phœnix,</l>
+                <l>Quand le Soleil d’un regard fix,</l>
+                <l>L’a mis sans plumer en grillade :</l>
+                <l><milestone unit="sent"/>Ou bien sans gril en carbonade,</l>
+                <l>La vielle a sçeu le depercher,</l>
+                <l>Demy roty sur son bucher ;</l>
+                <l>Ce bel oyseau trouve plus d’aise</l>
+                <l>À ce concert que sur la braise.</l>
+                <l><milestone unit="sent"/>De tous ces animaux ravis,</l>
+                <l>Quel oyseau selon vostre avis</l>
+                <l>Savoure mieux la melodie,</l>
+                <l>C’est le rossignol d’Arcadie.</l>
+                <l><milestone unit="sent"/>Que cet asne a d’attention,</l>
+                <l>Qu’il est plein de discretion ;</l>
+                <l>L’asnesse la plus temeraire</l>
+                <l>Ne le tenteroit pas de braire,</l>
+                <l>Tant il est bridé des chansons</l>
+                <l>Qui charment jusqu’aux limaçons.</l>
+                <l>
+                    <pb n="18" xml:id="p18"/>Ce Roy si peu digne de l’estre</l>
+                <l>Que ravy d’un rebec champestre,</l>
+                <l>Il le prefere au violon</l>
+                <l>Racle par messire Apollon,</l>
+                <l>Oyroit icy d’autres merveilles,</l>
+                <l>Guay d’estre asne par les oreilles,</l>
+                <l>Et riroit de son chastiment</l>
+                <l>Aupres d’un vielleur si charmant.</l>
+                <l><milestone unit="sent"/>Trouvez-moy vielleur dans l’histoire,</l>
+                <l>Suivy de plus belle auditoire,</l>
+                <l>Il tient par l’oreille attaché</l>
+                <l>Bestail acquis à bon marché,</l>
+                <l>Plus que cent nobles de village</l>
+                <l>N’en ont en cent ans de mesnage.</l>
+                <l><milestone unit="sent"/>Prés d’un gros bourg de ces quarties,</l>
+                <l>Que je nommerois volontiers</l>
+                <l>Du celebre nom de Mandosse,</l>
+                <l>Puis qu’alors il s’y faisoit noce ;</l>
+                <l>Des pitaux pour s’ébattre aux champs,</l>
+                <l>Dans leurs jeux et rustiques chants,</l>
+                <l>S’estant saisis d’une espousée,</l>
+                <l>L’y menoient la courant aisée,</l>
+                <l>Où sa jaquette à brinballer</l>
+                <l>Mettoir son bas d’estame à l’air.</l>
+                <l><milestone unit="sent"/>Eux attirez dans l’abondance</l>
+                <l>Des bestes qui vont à la dance :</l>
+                <l><milestone unit="sent"/>Orphée entraisne ces pitaux,</l>
+                <l>De leur nature assez brutaux</l>
+                <l>
+                    <pb n="19" xml:id="p19"/>Pour estre admis au bal des brutes,</l>
+                <l>Au lieu des saults et cullebutes,</l>
+                <l>La vielle stile ces butords</l>
+                <l>À battre l’air de leurs pieds torts :</l>
+                <l><milestone unit="sent"/>Et forcer leurs lourdes statures,</l>
+                <l>À de plus alaigres postures.</l>
+                <l><milestone unit="sent"/>Bref, ces pieds plats sans y penser,</l>
+                <l>Apprennent pour rien à dancer,</l>
+                <l>Pendant que la grosse espousée</l>
+                <l>Fait la cabriolle frisée,</l>
+                <l>Son homme est là fort bien venu</l>
+                <l>Pour bondir comme un bouc cornu.</l>
+                <l><milestone unit="sent"/>Ces rustaux en ce Bal rustique</l>
+                <l>Sous qu’ils sont vivroient de Musique.</l>
+                <l><milestone unit="sent"/>Et tous se voudroient marier</l>
+                <l>Pour l’employ du Menestrier.</l>
+                <l><milestone unit="sent"/>Le plus fameux d’entre les nostres,</l>
+                <l>*** qui fait danser les autres</l>
+                <l>Quoy que mal dispos à dancer,</l>
+                <l>Ne pourroit là s’en dispenser,</l>
+                <l>Il n’est lourdise ou mal adresse</l>
+                <l>Que cette vielle ne redresse.</l>
+                <l><milestone unit="sent"/>Vulcain grand patron des boiteux,</l>
+                <l>Silene Doyen des gouteux,</l>
+                <l>Sans baston, bequille, ou potence</l>
+                <l>Feroient icy rage à la dance.</l>
+                <l><milestone unit="sent"/>Un cagneux pied-bot pied tortu,</l>
+                <l>Diroit quelle dance veux-tu,</l>
+                <l>
+                    <pb n="20" xml:id="p20"/>Un impotent, un cul de jatte</l>
+                <l>Par trop bandir feroit cagatte ;</l>
+                <l>Jamais bestail tant ne dança,</l>
+                <l>Depuis trente mille mois en ça,</l>
+                <l>Orphée à la main estourdie</l>
+                <l>Sans voir teste ou jambe alourdie.</l>
+                <l><milestone unit="sent"/>Quoy ces bestes dancent encor</l>
+                <l>C’est trop, Vacher sonne du cor,</l>
+                <l>Bon soir le sonneur licencie,</l>
+                <l>Le bestail qui le remercie,</l>
+                <l>Dans sa noce on a mal dancé ;</l>
+                <l>Mais il en est recompensé,</l>
+                <l>Par ce bal grotesque et sauvage,</l>
+                <l>Qu’il fait donner à son veuvage.</l>
+            </div>
+        </body>
+
+    </text>
+</TEI>

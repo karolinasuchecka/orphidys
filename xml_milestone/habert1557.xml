@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les 15 livres de la métamorphose d’Ovide</title>
+                <title type="sub">Interprétés en rimes françoises</title>
+                <author>Ovide</author>
+                <editor>François Habert</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k72207v</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Ovide</author> / <title>Les 15 livres de la métamorphose d’Ovide,
+                    interprétés en rimes françoises</title> / François Habert (trad.) / Rouen / 1557 / p. 593-601, p. 653-658.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les 15 livres de la métamorphose d’Ovide , interprétés en rimes
+                            françoises</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher/>
+                        <pubPlace>Rouen</pubPlace>
+                        <date when="1557"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>habert1557</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1557">1557</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Ovide</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les 15 livres de la métamorphose d’Ovide</titlePart>
+                    <titlePart type="sub">Interprétés en rimes françoises</titlePart>
+                </docTitle>
+                <docEdition resp="trad">François Habert</docEdition>
+            </titlePage>
+        </front>
+
+        <body>
+            <div>
+                <head>Livre X</head>
+                <l><milestone unit="sent"/><pb n="593" xml:id="p593"/>Le Dieu Hymen de Crete s’en alla,</l>
+                <l>Et parmy l’air legerement vola,</l>
+                <l>Vestu de Pourpre et sans long intervalle</l>
+                <l>Droict au pays Thracien il devalle,</l>
+                <l>Où par Orphée aux nopces appellé,</l>
+                <l>Il s’y trouva, mais point il n’a parlé</l>
+                <l>Mots solennels, n’y monstré bon visage,</l>
+                <l>Ny apporté bon et heureux presage,</l>
+                <l>Mesmes la torche en ses mains allumee</l>
+                <l>N’a rien servi que d’obscure fumee</l>
+                <l>Sans esclairer, la fin semblablement</l>
+                <l>Pire a esté que le commencement,</l>
+                <l>Car quand l’espouse avec mainte compagne</l>
+                <l>(Qui à jouer sur l’herbe l’accompagne)</l>
+                <l>Se pourmenoit, un Serpent la mordit</l>
+                <l>Qui au talon son venin espandit.</l>
+                <l><milestone unit="sent"/>Si dangereux par sa dent et morsure,</l>
+                <l>Qu’elle mourut d’une telle blessure.</l>
+                <l><milestone unit="sent"/>Laquelle apres qu’Orphée en triste dueil</l>
+                <l>Fut deploree en jettant larmes d’œil.</l>
+                <l><milestone unit="sent"/>Il osa bien sans aucuns intervalles</l>
+                <l>Descendre aux lieux des ames infernalles,</l>
+                <l><pb n="595" xml:id="p595"/>Donc en entrant hardiment par la porte</l>
+                <l>Tenarienne, aux lieux il se transporte</l>
+                <l>Ausquels il voit les Ombres taciturnes</l>
+                <l>Qui vont par mort en ces sejours nocturnes</l>
+                <l>Puis droict il va ou se sied Proserpine</l>
+                <l>Avec Pluton qui aux Enfers domine.</l>
+                <l><milestone unit="sent"/>Lors en sonnant sur sa Lyre divers</l>
+                <l>Et doux accords, il va chanter ces vers.</l>
+                <l><milestone unit="sent"/>Ô puissans Dieux, habitateurs du Monde</l>
+                <l>Qui estes assis dessoubs la terre ronde,</l>
+                <l>Où tous nous faut descendre, qui sçavons</l>
+                <l>Qu’en corps mortel tous pris naissance avons.</l>
+                <l><milestone unit="sent"/>S’il est requis, licite, et equitable,</l>
+                <l>Et si souffrez que propos veritable</l>
+                <l>Soit recité, je vous fay sçavoir</l>
+                <l>Que je ne suis icy venu pour voir</l>
+                <l>Ces Regnes bas, obscures, et ombrageux,</l>
+                <l>Ne pour lier de ce chien outrageux</l>
+                <l>Les trois gosiers, duquel le poil horrible</l>
+                <l>Est herissé de maint Serpent terrible.</l>
+                <l><milestone unit="sent"/>Ce qui me faict icy mon chemin tendre,</l>
+                <l>C’est le regret pour mon espouse tendre,</l>
+                <l>Qui d’un Serpent piquee en grand tristesse</l>
+                <l>Est morte aux ans de sa blonde jeunesse.</l>
+                <l><milestone unit="sent"/>J’ay travaillé (nier je ne le veux)</l>
+                <l>À oublier ce lien amoureux,</l>
+                <l>Mais Cupidon a eu sur moy victoire</l>
+                <l>Qui est un Dieu sur terre fort notoire,</l>
+                <l>Et si ce Dieu d’amour grand et hautain,</l>
+                <l><pb n="596" xml:id="p596"/>Regne en ce lieu, je n’en suis pas certain</l>
+                <l>Et toutefois je pense qu’il y regne</l>
+                <l>Ainsi qu’il faict en l’autre monde, et regne,</l>
+                <l>Et si le bruit n’a de mentir envie</l>
+                <l>Qu’avez jadis Proserpine ravie.</l>
+                <l><milestone unit="sent"/>Vous avez peu l’experience avoir</l>
+                <l>Combien Amour a de force et pouvoir.</l>
+                <l><milestone unit="sent"/>Je vous supply par ces lieux detestables</l>
+                <l>Grands et obscurs, Regnes espouventables,</l>
+                <l>Que mon espouse Eurydice retourne</l>
+                <l>Encor en vie, et avec moy sejourne,</l>
+                <l>Tous les vivans sur terre vous sont deubs,</l>
+                <l>Et tard ou tost icy bas descendus,</l>
+                <l>Nous tendons tous d’y venir à quelque heure</l>
+                <l>C’est des Humains la derniere demeure,</l>
+                <l>Et vous avez en perdurable main</l>
+                <l>Auctorité sur tout le peuple humain.</l>
+                <l><milestone unit="sent"/>Vous aurez bien encor fruition</l>
+                <l>De mon espouse en jurisdition,</l>
+                <l>Quand elle aura accomply son meur âge,</l>
+                <l>D’elle tandis octroyez moy l’usage.</l>
+                <l><milestone unit="sent"/>Car si cest heur ne m’est preordonné</l>
+                <l>D’avoir ma femme en don par vous donné,</l>
+                <l>Au monde plus retourner je ne veux,</l>
+                <l>Prenez soulas de la mort de nous deux.</l>
+                <l><milestone unit="sent"/>Quand Orpheus bien doucement accorde</l>
+                <l>Ces vers piteux sur l’instrument à chorde,</l>
+                <l>Ames sans corps en espandent maint pleur,</l>
+                <l>En souspirant pour sa peine et douleur,</l>
+                <l><pb n="597" xml:id="p597"/>Et Tantalus en laisse d’entreprendre</l>
+                <l>De suivre l’eau, laquelle il ne peut prendre.</l>
+                <l><milestone unit="sent"/>Semblablement la Roue d’Ixion</l>
+                <l>Ne tourne plus en son affliction,</l>
+                <l>Et les Vautours ont receu telle joye</l>
+                <l>Qu’ils ont cessé de descirer la Foye</l>
+                <l>De Titius, les Belides aussi</l>
+                <l>De puyser l’eau ont laissé leur souci,</l>
+                <l>Sisiphe en a veu sa peine cessante</l>
+                <l>De transporter une pierre pesante.</l>
+                <l><milestone unit="sent"/>De ce Manoir les furies hydeuses</l>
+                <l>En escoutant ces chordes tant piteuses,</l>
+                <l>Et ont ploré, ce que premierement</l>
+                <l>Point n’avoient faict Pluton finablement</l>
+                <l>Et Proserpine en cela ne s’excusent,</l>
+                <l>Et à Orphée un tel don ne refusent</l>
+                <l>En appellant Eurydice la belle</l>
+                <l>Estant au rang de mainte ame nouvelle,</l>
+                <l>Qui tost survint, mais un peu lentement</l>
+                <l>Pour son talon blessé recentement.</l>
+                <l><milestone unit="sent"/>Orphée prent par grand affection</l>
+                <l>Eurydice, mais sous condition,</l>
+                <l>Qu’à son depart il s’abstienne et se garde</l>
+                <l>Derriere soy que point il ne regarde</l>
+                <l>Jusques à tant qu’elle s’en soit allée</l>
+                <l>Hors du sejour de l’obscure vallée,</l>
+                <l>Ou autrement que le don qu’on luy faict</l>
+                <l>Demeurera pour luy de nul effaict</l>
+                <l>Ainsi s’en vont en grand desir et cure</l>
+                <l><pb n="598" xml:id="p598"/>Par une grand montee et fort obscure.</l>
+                <l><milestone unit="sent"/>Desja ils sont pres de l’extremité</l>
+                <l>Pour sortir hors de l’enfer limité,</l>
+                <l>Quand l’amoureux espoux tourne les yeux</l>
+                <l>Pour regarder d’un desir curieux</l>
+                <l>Si elle vient, adonc la malheureuse</l>
+                <l>Derechef tombe en la vallee ombreuse,</l>
+                <l>Et luy tendant les deux bras bien souvent</l>
+                <l>Elle ne prent rien que l’ombre et le vent.</l>
+                <l><milestone unit="sent"/>Dont se voyant de mort seconde attaincte</l>
+                <l>Contre l’espoux elle n’use de plaincte,</l>
+                <l>Car quelle plaincte eust elle peu lors faire</l>
+                <l>Fors d’avoir sçeu à son amy complaire ?</l>
+                <l><milestone unit="sent"/>Auquel ayant dict le dernier adieu</l>
+                <l>Elle retourne en ce tenebreux lieu.</l>
+                <l><milestone unit="sent"/>Quand Orpheus qui n’a peu secourir</l>
+                <l>Eurydice, la voit encor mourir,</l>
+                <l>Moins de frayeur et craincte il ne receut</l>
+                <l>Que fit celuy qui jadis apperceut</l>
+                <l>Le Chien d’enfer, espouventable beste</l>
+                <l>Dont fut lié le col à triple teste,</l>
+                <l>Car de le voir il eut telle peur lors</l>
+                <l>Que transformé en pierre fut son corps.</l>
+                <l><milestone unit="sent"/>Orphée aussi ne fut moins irrité</l>
+                <l>Qu’Olenus fut, duquel est recité</l>
+                <l>Qu’en desirant sur soy le crime prendre</l>
+                <l>De Lethea, qui voulut entreprendre</l>
+                <l>De preferer aux Nymphes sa beauté</l>
+                <l>De pierre il prit la forme et la durté,</l>
+                <l><pb n="599" xml:id="p599"/>Et Lethea sa femme bien aymée</l>
+                <l>En pierre fut comme luy transformée.</l>
+                <l><milestone unit="sent"/>Le val Ida ces deux pierres soustient</l>
+                <l>Qu’avoir esté deux corpus humains l’on tient.</l>
+                <l><milestone unit="sent"/>Orphée encor par la Stygiale onde</l>
+                <l>Vouloit entrer en l’obscurité profonde</l>
+                <l>Des bas Enfers, mais le gardeur du port</l>
+                <l>L’en repoulsa par un robuste effort</l>
+                <l>Pres de la rive il fut sept jours et nuicts</l>
+                <l>En grand langueur et douloureux ennuis</l>
+                <l>Sans rien manger, soucy, pleurs peine dure</l>
+                <l>Tant seulement estoient sa nourriture.</l>
+                <l><milestone unit="sent"/>Puis se plaignant de la severité</l>
+                <l>Des Dieux regnans en basse obscurité</l>
+                <l>Il se retire adonc au pays sien</l>
+                <l><pb n="600" xml:id="p600"/>Sur Rhodopé le haut mon Thracien.</l>
+                <l><milestone unit="sent"/>Jà de trois ans estoit passé l’espace</l>
+                <l>Que sejournant en son pays de Thrace</l>
+                <l>D’amour de femme il s’estoit abstenu</l>
+                <l>Pour le malheur à la sienne advenu,</l>
+                <l>Ou pour autant qu’en conjugale loy</l>
+                <l>Il luy avoit promis loyalle foy.</l>
+                <l><milestone unit="sent"/>On dict qu’en Thrace (ô faict d’ouyr indigne)</l>
+                <l>Il fut autheur de l’amour masculine.</l>
+                <l><milestone unit="sent"/>Orphée un jour sur un mont arriva</l>
+                <l>Que tapissé de verdure il trouva,</l>
+                <l>Sans arbre estoit et sans ombre ce lieu,</l>
+                <l>Mais aussi tost qu’Orphée fils d’un Dieu</l>
+                <l>Là s’est assis, et de main gracieuse</l>
+                <l>A faict sonner sa Lyre armonieuse,</l>
+                <l>L’ombrage y vient, au son de l’armonie,</l>
+                <l>Le Chesne vient, arbre de Chaonie.</l>
+                <l><milestone unit="sent"/>Peupliers aussi, le porte gland Escue</l>
+                <l>Long en hauteur, d’y venir ne recule.</l>
+                <l><milestone unit="sent"/>Et le Fousteau, et le Coudryer fragile,</l>
+                <l>Le Fraysne aussi pour les Piques utile,</l>
+                <l>Le mol Tiller, le Laurier verdissant,</l>
+                <l>Et le Sapin qui sans neuds est croissant.</l>
+                <l><milestone unit="sent"/>Puis le haut Plan, l’Alisier, et l’Érable</l>
+                <l>Pour ces couleurs diverses agreable.</l>
+                <l><milestone unit="sent"/>Le Saule y vint, et le vois tousjours vert,</l>
+                <l>Et le Figuier de ses figues couvert.</l>
+                <l><milestone unit="sent"/>Le Myrte aussi, la vigne y vient grand erre,</l>
+                <l>Les petis Pins, la Bruyere, et Lierre.</l>
+                <l><pb n="601" xml:id="p601"/><milestone unit="sent"/>Aulnes Pommiers, Ormes y sont compris,</l>
+                <l>La Palme aussi des vainqueurs los et pris,</l>
+                <l>Et le haut Pin dont le seul sommet porte</l>
+                <l>Les verds rameaux qu’il produict et apporte.</l>
+                <l><milestone unit="sent"/>Arbre qui plaist à la mere des Dieux,</l>
+                <l>Pource qu’Atis jadis fort gracieux</l>
+                <l>Pour le regard de sa figure belle</l>
+                <l>Et qui servoit la Déesse Cybele,</l>
+                <l>Fut transformé en Pin un peu apres</l>
+                <l>Avecques tant d’Arbres vint le Ciprés,</l>
+                <l>Arbre à present, jadis enfant aymé</l>
+                <l>Du Dieu qui est en l’Art fort renommé,</l>
+                <l>Auquel aussi, outre l’Art et subjecte.</l>
+                <l><milestone unit="sent"/>La douce Harpe est encline et sagette.</l>
+            </div>
+            <div>
+                <head>Livre XI</head>
+                <l><milestone unit="sent"/><pb n="653" xml:id="p653"/>Quand Orpheus le Poëte de Thrace</l>
+                <l>Chantoit ces vers avecques telle grace</l>
+                <l>Qu’il delectoit sauvages animaux</l>
+                <l>Et émouvoit pierres et arbrisseaux,</l>
+                <l>Des femmes lors la troupe Thracienne</l>
+                <l>De peaux vestues à la mode ancienne</l>
+                <l>Voit Orpheus qui sa Harpe sonnoit</l>
+                <l>Dont le haut mont de ses chans resonnoit,</l>
+                <l><pb n="654" xml:id="p654"/>De ceste troupe assemblée en grand ire</l>
+                <l>Ses crins espars ainsi l’une va dire :</l>
+                <l><milestone unit="sent"/>Voicy, voicy celuy qui a pris</l>
+                <l>De nous blasmer et nous mettre à mespris.</l>
+                <l><milestone unit="sent"/>Apres ces dicts, d’un furieux courage,</l>
+                <l>Elle frappa d’Orphée le visage</l>
+                <l>De son rameau, qui de fueilles couvert</l>
+                <l>De ce coup là n’a le sang descouvert.</l>
+                <l><milestone unit="sent"/>Une autre apres une pierre luy jette</l>
+                <l>Qui tout ainsi que vaincue et subjecte</l>
+                <l>Des saincts accords de son doux instrument</l>
+                <l>Tomba aux pieds du poete humblement,</l>
+                <l>Mais de fureur ces femmes trop esprises,</l>
+                <l>Ne laissent point leurs folles entreprises</l>
+                <l>De ce combat, et sans ordre et mesure</l>
+                <l>D’elle chacune encontre luy conjure,</l>
+                <l>Qui de son chant doux et melodieux</l>
+                <l>Eust amolli leurs efforts odieux :</l>
+                <l><milestone unit="sent"/>Mais leur grand cry et haute resonnance</l>
+                <l>De leurs cornets, met telle repugnance</l>
+                <l>Aux doux accords des chordes amoureuses,</l>
+                <l>Que ses l’ouyr, les pierres rigoureuses</l>
+                <l>Vont recevoir la vermeille couleur</l>
+                <l>Du sang de luy blessé en grand douleur.</l>
+                <l><milestone unit="sent"/>De Thrase ainsi les femmes furieuses</l>
+                <l>Sur Orpheus furent vistorieuses</l>
+                <l>Qui de ses chants doux et incomparables</l>
+                <l>Avoit émeu oyseaux innumerables</l>
+                <l>Et maints Serpens, et les bestes des bois</l>
+                <l><pb n="655" xml:id="p655"/>Sçeu amollir aux accords de sa voix,</l>
+                <l>Et à present en luy ostant sa gloire</l>
+                <l>Les femmes ont sur luy force et victoire,</l>
+                <l>Et en son sang elles baignent leur mains,</l>
+                <l>En l’assaillant par efforts inhumains,</l>
+                <l>Et contre luy en grand troupe s’assemblent</l>
+                <l>Par grand fureur, et aux Oyseaux ressemblent</l>
+                <l>Qui quand de jour le Hybou ils regardent,</l>
+                <l>De l’assaillir en grand nombre ne tardent.</l>
+                <l><milestone unit="sent"/>Ou comme on voit sus le sable le Cerf</l>
+                <l>Estre au matin des Chiens captif et serf.</l>
+                <l><milestone unit="sent"/>Orphée ainsi est assailly de celles</l>
+                <l>Femmes de Thrace austerement cruelles,</l>
+                <l>Qui dessus luy jettent rameaux divers</l>
+                <l>Qui faicts ne sont pour ses actes pervers.</l>
+                <l><milestone unit="sent"/>Les unes lors pour le battre et fascher,</l>
+                <l>Vont gros rameaux des arbres arracher.</l>
+                <l><milestone unit="sent"/>Les autres ont en main les pierres dures</l>
+                <l>Pour le grever de mortelles blessures,</l>
+                <l>Et pour n’avoir faute d’armes, selon</l>
+                <l>Leur grand fureur et courage félon<note place="bottom" resp="KS">Nous corrigeons
+                        « selon » par « félon ».</note>,</l>
+                <l>Là d’adventure estoient maints Bœufs puissant</l>
+                <l>Pour labourer ou Joug obeissant,</l>
+                <l>Et soubs espoir d’utilité future</l>
+                <l>Les Laboureurs labouroient en grand cure,</l>
+                <l>Qui en voyant ses femmes assemblees,</l>
+                <l>En nombre grand terriblement troublees,</l>
+                <l>Ont pris la fuyte, en laissant promptement</l>
+                <l>Leur labourage, et chacun instrument</l>
+                <l><pb n="656" xml:id="p656"/>Propre au labour, aux champs de toutes pars</l>
+                <l>Houlete, Soc, et l’Ereau sont espars,</l>
+                <l>Ce qu’elles vont prendre selon les vœux,</l>
+                <l>Cornes aussi arrachées des Bœufs,</l>
+                <l>D’elles chacune ainsi court, et souhaitte</l>
+                <l>La dure mort de ce divin Poëte</l>
+                <l>Et quand en vain cest homme tant parfaict</l>
+                <l>Tendoit les mains, ce qu’il n’avoit onc faict,</l>
+                <l>Et que sa voix qui eut tant de pouvoir</l>
+                <l>Ne pouvoir lors ces cruelles mouvoir,</l>
+                <l>Cruellement contre tous privileges,</l>
+                <l>À mort l’ont mis ces femmes sacrileges,</l>
+                <l>Dont tout soudain (helas) par ceste bouche</l>
+                <l>Qui émouvoit mainte beste farouche,</l>
+                <l>Et mainte pierre amollisoit souvent</l>
+                <l><pb n="657" xml:id="p657"/>L’ame de luy sortit avec le vent.</l>
+                <l><milestone unit="sent"/>Ta dure mort et les Oyseaux ramages</l>
+                <l>Ont deploré, et les bestes sauvages</l>
+                <l>Ô Orpheus, et maint bois ombrageux</l>
+                <l>A deploré ton trespas outrageux,</l>
+                <l>Maint arbre aussi despouillé de verdure</l>
+                <l>T’a regretté, et mainte pierre dure.</l>
+                <l><milestone unit="sent"/>Mesmes on dit que fleuves et ruisseaux</l>
+                <l>En ont de pleurs fait augmenter leurs eaux.</l>
+                <l><milestone unit="sent"/>En habit noir t’ont ploré les Nayades</l>
+                <l>(Leurs crins espars) et les Nymphes Dryades.</l>
+                <l><milestone unit="sent"/>D’Orphée mort les membres espandus</l>
+                <l>Sont ça et là sur la terre estendus.</l>
+                <l><milestone unit="sent"/>Son chef sanglant dut jetté dedans l’Hebre,</l>
+                <l>Sa Harpe aussi, qui complainte funebre</l>
+                <l>Feit en tombant, sa langue à demy mort</l>
+                <l>En murmurant s’est plaincte en mesme sorte,</l>
+                <l>De l’Hebre aussi la rive respondit</l>
+                <l>À ceste plaincte et dueil qu’elle entendit.</l>
+                <l><milestone unit="sent"/>Apres ce faict en reproches infames</l>
+                <l>De là s’en vont les Thraciennes femmes</l>
+                <l>Parmy la Mer, et sans aucun naufrage</l>
+                <l>Droict de Lesbos parviennent au rivage.</l>
+                <l><milestone unit="sent"/>Là sur le sale estoit jà exposé</l>
+                <l>Le chef d’Orphée encor tout arrosé</l>
+                <l>Du cours de l’eau, quand un espouventable</l>
+                <l>Et grand Serpent, du poëte notable</l>
+                <l>Leschoit les crins, et sans plus demeurer</l>
+                <l>Vouloit de luy la face devorer</l>
+                <l><pb n="658" xml:id="p658"/>Qui en l’honneur des hauts Dieux magnifiques</l>
+                <l>Avoit chanté tant d’hymnes poetiques.</l>
+                <l><milestone unit="sent"/>Mais Apollon empescha ce desordre,</l>
+                <l>Car le Serpent, qui vouloit ce chef mordre,</l>
+                <l>Fut transmué par luy en pierre dure</l>
+                <l>La gueulle ouverte en premiere figure,</l>
+                <l>L’ame d’Orphée aux Enfers lors s’en va</l>
+                <l>Où les endroits encores il trouva</l>
+                <l>Qu’il avoit veus par le champ Élisée</l>
+                <l>Il a sa femme Eurydice advisee,</l>
+                <l>D’elle il s’aproche, et mutuellement</l>
+                <l>Tous deux se sont embrassez, tellement</l>
+                <l>Qu’ores là bas, sans en rien s’estonner</l>
+                <l>Ils ont tous deux loy de se pourmener,</l>
+                <l>Ores il la suyt à son vueil et plaisance</l>
+                <l>Ou va devant sans crainte et sans doubtance.</l>
+            </div>
+        </body>
+
+    </text>
+</TEI>

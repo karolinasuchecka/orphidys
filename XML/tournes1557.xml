@@ -2,244 +2,286 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title type="main">La métamorphose d'Ovide figurée</title>
-            <author>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard Salomon</author>
-        </titleStmt>
-        <editionStmt>
-            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-            <respStmt>
-                <name>Karolina Suchecka</name>
-                <resp>Chargé de l'édition</resp>
-            </respStmt>
-            <respStmt>
-                <name>Nathalie Gasiglia</name>
-                <resp>Co-tutrice de thèse</resp>
-            </respStmt>
-            <respStmt>
-                <name>Karl Zieger</name>
-                <resp>Co-tuteur de thèse</resp>
-            </respStmt>
-        </editionStmt>
-        <publicationStmt>
-            <publisher>Karolina Suchecka</publisher>
-            <publisher>ALITHILA (Université Lille III)</publisher>
-            <date when="2019"/>
-            <availability status="restricted">
-                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-                </licence>
-            </availability>
-            <idno>https://gallica.bnf.fr/ark:/12148/bpt6k1048491z?rk=21459;2</idno>
-        </publicationStmt>
-        <sourceDesc>
-            <bibl><author>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard Salomon</author> / <title>La métamorphose d'Ovide figurée</title> / Lyon / Jan de Tournes / 1557 / fs. 61r-62r, fs. 68v-69r.</bibl> 
-            <biblFull>
-                <titleStmt>
-                    <title>La métamorphose d'Ovide figurée</title>
-                </titleStmt>
-                <publicationStmt>
-                    <publisher>Jan de Tournes</publisher>
-                    <pubPlace>Lyon</pubPlace>
-                    <date when="1557"/>
-                </publicationStmt>
-            </biblFull>
-            <genre>poésie</genre>
-            <structure>tournes1557</structure>
-        </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-        <creation>
-            <date when="1557">1557</date>
-        </creation>
-        <language>
-            <language>oFR</language>
-        </language>
-        <textClass>
-            <keywords>
-                <list>
-                    <item>transmodalisation</item>
-                </list>
-            </keywords>
-        </textClass>
-    </profileDesc>
-</teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La métamorphose d’Ovide figurée</title>
+                <author>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard
+                    Salomon</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k1048491z?rk=21459;2</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard
+                        Salomon</author> / <title>La métamorphose d’Ovide figurée</title> / Lyon /
+                    Jan de Tournes / 1557 / fs. 61r-62r, fs. 68v-69r.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>La métamorphose d’Ovide figurée</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Jan de Tournes</publisher>
+                        <pubPlace>Lyon</pubPlace>
+                        <date when="1557"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>tournes1557</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1557">1557</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
     <facsimile>
-      <surface n="61r" xml:id="tournes1557_61r">
-         <graphic height="1205px" url="tournes1557_61r.jpeg" width="769px"/>
-         <zone lrx="627" lry="232" ulx="143" uly="153" xml:id="head_61r"/>
-         <zone lrx="628" lry="639" ulx="134" uly="257" xml:id="gravure_61r"/>
-         <zone lrx="633" lry="948" ulx="139" uly="655" xml:id="texte_61r"/>
-      </surface>
-      <surface n="61v" xml:id="tournes1557_61v">
-         <graphic height="1194px" url="tournes1557_61v.jpeg" width="765px"/>
-         <zone lrx="620" lry="247" ulx="135" uly="148" xml:id="head_61v"/>
-         <zone lrx="638" lry="655" ulx="140" uly="260" xml:id="gravure_61v">
-            <surface>
-               <graphic url="tournes1557_graphic2.jpg"/>
-               <zone lrx="97" lry="630" ulx="34" uly="569" xml:id="tantale"/>
-               <zone lrx="196" lry="499" ulx="72" uly="399" xml:id="danaides"/>
-               <zone lrx="239" lry="401" ulx="125" uly="312" xml:id="tityos"/>
-               <zone lrx="303" lry="280" ulx="197" uly="146" xml:id="ixion"/>
-               <zone lrx="134" lry="166" ulx="62" uly="90" xml:id="sisyphe"/>
-            </surface>
-         </zone>
-         <zone lrx="636" lry="938" ulx="142" uly="669" xml:id="texte_61v"/>
-         <zone lrx="754" lry="135" ulx="3" uly="8" xml:id="marge-haute_61v">
-            <interp>Les ornaments de ce type reviennent ailleurs, ils ne sont pas à analyser par
-               rapport au texte.</interp>
-         </zone>
-         <zone points="8,137 122,137 135,956 650,952 635,138 748,135 762,1185 29,1200" xml:id="marges-u_61v">
-            <interp>Les ornaments de ce type reviennent ailleurs, ils ne sont pas à analyser par
-               rapport au texte.</interp>
-         </zone>
-      </surface>
-      <surface xml:id="tournes1557_62r">
-         <graphic height="1172px" url="tournes1557_62r.jpeg" width="745px"/>
-         <zone lrx="603" lry="201" ulx="145" uly="133" xml:id="head_62r"/>
-         <zone lrx="625" lry="628" ulx="129" uly="236" xml:id="gravure_62r"/>
-         <zone lrx="569" lry="901" ulx="134" uly="645" xml:id="texte_62r"/>
-      </surface>
-      <surface xml:id="tournes1557_68v">
-         <graphic height="1190px" url="tournes1557_68v.jpeg" width="742px"/>
-         <zone lrx="563" lry="218" ulx="181" uly="153" xml:id="head_68v"/>
-         <zone lrx="625" lry="645" ulx="128" uly="251" xml:id="gravure_68v">
-            <surface>
-               <graphic height="682px" url="tournes1557_graphic4.jpg" width="858px"/>
-               <zone points="1,624 3,192 55,169 93,168 252,246 275,231 269,205 301,198 323,217 319,230 320,247 298,255 338,265 362,288 332,327 349,386 336,411 314,415 301,423 287,575 469,566 462,460 503,442 536,410 543,376 580,355 607,326 610,284 623,279 638,188 513,121 462,153 385,117 382,91 851,89 855,678 3,679" xml:id="orphee-vs-femmes"/>
-               <zone points="4,5 -1,179 52,153 100,152 243,230 264,221 255,205 265,182 282,186 313,184 327,201 351,91 220,2" xml:id="bachantes-dechirent"/>
-               <zone points="367,291 458,252 569,279 574,340 481,447 377,450 353,388 339,331" xml:id="agriculteurs"/>
-            </surface>
-         </zone>
-         <zone lrx="586" lry="918" ulx="148" uly="668" xml:id="texte_68v"/>
-      </surface>
-      <surface xml:id="tournes1557_69r">
-         <graphic height="1180px" url="tournes1557_69r.jpeg" width="739px"/>
-         <zone lrx="600" lry="243" ulx="132" uly="145" xml:id="head_69r"/>
-         <zone lrx="614" lry="644" ulx="123" uly="256" xml:id="gravure_69r">
-            <surface>
-               <graphic height="651px" url="tournes1557_graphic5.jpg" width="838px"/>
-               <zone lrx="450" lry="612" ulx="2" uly="153" xml:id="bacchantes"/>
-               <zone lrx="795" lry="642" ulx="542" uly="556" xml:id="tete-orphee"/>
-               <zone lrx="835" lry="378" ulx="543" uly="90" xml:id="phebus-serpent"/>
-            </surface>
-         </zone>
-         <zone lrx="615" lry="909" ulx="132" uly="656" xml:id="texte_69r"/>
-      </surface>
-   </facsimile>
-    
-    <text><front><titlePage>
-        <docAuthor>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard Salomon</docAuthor>
-        <docTitle>
-          <titlePart type="main">La métamorphose d'Ovide figurée</titlePart>
-        </docTitle>
-      </titlePage></front>
-      <body>
-         <div>
-            <pb facs="#tournes1557_61r" n="61r"/>
-            <head facs="#head_61r">Eurydice morte du Serpent</head>
-            <figure facs="#gravure_61r">
-               <graphic url="tournes1557_graphic1.jpg"/>
-               <figDesc>Eurydice mordue par le serpent en premier plan, les naïades en arrière plan,
-                  en train de cueillir des fleurs. On voit le lac, les montagnes au loin. Les arbres
-                  sont les saules?</figDesc>
-            </figure>
-            <div facs="#texte_61r" type="poem">
-               <l>Orphee ayant pour espouse Eurydice</l>
-               <l>Pas n’eut faveur du Dieu de mariage :</l>
-               <l>Car un Serpent, à son grand prejudice,</l>
-               <l>Lui ha tollu son amoureus partage :</l>
-               <l>Sans qu’en amours il ust grant avantage</l>
-               <l>En ce point donq, du faus Serpent pinsee</l>
-               <l>Par le talon, en un champ sur l’herbage,</l>
-               <l>Tot trespassa cette povre espousee.</l>
+        <surface n="61r" xml:id="tournes1557_61r">
+            <graphic height="1205px" url="tournes1557_61r.jpeg" width="769px"/>
+            <zone lrx="627" lry="232" ulx="143" uly="153" xml:id="head_61r"/>
+            <zone lrx="628" lry="639" ulx="134" uly="257" xml:id="gravure_61r"/>
+            <zone lrx="633" lry="948" ulx="139" uly="655" xml:id="texte_61r"/>
+        </surface>
+        <surface n="61v" xml:id="tournes1557_61v">
+            <graphic height="1194px" url="tournes1557_61v.jpeg" width="765px"/>
+            <zone lrx="620" lry="247" ulx="135" uly="148" xml:id="head_61v"/>
+            <zone lrx="638" lry="655" ulx="140" uly="260" xml:id="gravure_61v">
+                <surface>
+                    <graphic url="tournes1557_graphic2.jpg"/>
+                    <zone lrx="97" lry="630" ulx="34" uly="569" xml:id="tantale"/>
+                    <zone lrx="196" lry="499" ulx="72" uly="399" xml:id="danaides"/>
+                    <zone lrx="239" lry="401" ulx="125" uly="312" xml:id="tityos"/>
+                    <zone lrx="303" lry="280" ulx="197" uly="146" xml:id="ixion"/>
+                    <zone lrx="134" lry="166" ulx="62" uly="90" xml:id="sisyphe"/>
+                </surface>
+            </zone>
+            <zone lrx="636" lry="938" ulx="142" uly="669" xml:id="texte_61v"/>
+            <zone lrx="754" lry="135" ulx="3" uly="8" xml:id="marge-haute_61v">
+                <interp>Les ornaments de ce type reviennent ailleurs, ils ne sont pas à analyser par
+                    rapport au texte.</interp>
+            </zone>
+            <zone points="8,137 122,137 135,956 650,952 635,138 748,135 762,1185 29,1200"
+                xml:id="marges-u_61v">
+                <interp>Les ornaments de ce type reviennent ailleurs, ils ne sont pas à analyser par
+                    rapport au texte.</interp>
+            </zone>
+        </surface>
+        <surface xml:id="tournes1557_62r">
+            <graphic height="1172px" url="tournes1557_62r.jpeg" width="745px"/>
+            <zone lrx="603" lry="201" ulx="145" uly="133" xml:id="head_62r"/>
+            <zone lrx="625" lry="628" ulx="129" uly="236" xml:id="gravure_62r"/>
+            <zone lrx="569" lry="901" ulx="134" uly="645" xml:id="texte_62r"/>
+        </surface>
+        <surface xml:id="tournes1557_68v">
+            <graphic height="1190px" url="tournes1557_68v.jpeg" width="742px"/>
+            <zone lrx="563" lry="218" ulx="181" uly="153" xml:id="head_68v"/>
+            <zone lrx="625" lry="645" ulx="128" uly="251" xml:id="gravure_68v">
+                <surface>
+                    <graphic height="682px" url="tournes1557_graphic4.jpg" width="858px"/>
+                    <zone
+                        points="1,624 3,192 55,169 93,168 252,246 275,231 269,205 301,198 323,217 319,230 320,247 298,255 338,265 362,288 332,327 349,386 336,411 314,415 301,423 287,575 469,566 462,460 503,442 536,410 543,376 580,355 607,326 610,284 623,279 638,188 513,121 462,153 385,117 382,91 851,89 855,678 3,679"
+                        xml:id="orphee-vs-femmes"/>
+                    <zone
+                        points="4,5 -1,179 52,153 100,152 243,230 264,221 255,205 265,182 282,186 313,184 327,201 351,91 220,2"
+                        xml:id="bachantes-dechirent"/>
+                    <zone points="367,291 458,252 569,279 574,340 481,447 377,450 353,388 339,331"
+                        xml:id="agriculteurs"/>
+                </surface>
+            </zone>
+            <zone lrx="586" lry="918" ulx="148" uly="668" xml:id="texte_68v"/>
+        </surface>
+        <surface xml:id="tournes1557_69r">
+            <graphic height="1180px" url="tournes1557_69r.jpeg" width="739px"/>
+            <zone lrx="600" lry="243" ulx="132" uly="145" xml:id="head_69r"/>
+            <zone lrx="614" lry="644" ulx="123" uly="256" xml:id="gravure_69r">
+                <surface>
+                    <graphic height="651px" url="tournes1557_graphic5.jpg" width="838px"/>
+                    <zone lrx="450" lry="612" ulx="2" uly="153" xml:id="bacchantes"/>
+                    <zone lrx="795" lry="642" ulx="542" uly="556" xml:id="tete-orphee"/>
+                    <zone lrx="835" lry="378" ulx="543" uly="90" xml:id="phebus-serpent"/>
+                </surface>
+            </zone>
+            <zone lrx="615" lry="909" ulx="132" uly="656" xml:id="texte_69r"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Barthelemy Aneau, Charles Fontaine, Jean de Vauzelles, Bernard
+                    Salomon</docAuthor>
+                <docTitle>
+                    <titlePart type="main">La métamorphose d’Ovide figurée</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <pb facs="#tournes1557_61r" n="61r"/>
+                <head facs="#head_61r">Eurydice morte du Serpent</head>
+                <figure facs="#gravure_61r">
+                    <graphic url="tournes1557_graphic1.jpg"/>
+                    <figDesc>Eurydice mordue par le serpent en premier plan, les naïades en arrière
+                        plan, en train de cueillir des fleurs. On voit le lac, les montagnes au
+                        loin. Les arbres sont les saules?</figDesc>
+                </figure>
+                <div facs="#texte_61r" type="poem">
+                    <l>Orphee ayant pour espouse Eurydice</l>
+                    <l>Pas n’eut faveur du Dieu de mariage :</l>
+                    <l>Car un Serpent, à son grand prejudice,</l>
+                    <l>Lui ha tollu son amoureus partage :</l>
+                    <l>Sans qu’en amours il ust grant avantage</l>
+                    <l>En ce point donq, du faus Serpent pinsee</l>
+                    <l>Par le talon, en un champ sur l’herbage,</l>
+                    <l>Tot trespassa cette povre espousee.</l>
+                </div>
             </div>
-         </div>
-         <div>
-            <pb facs="#tournes1557_61v" n="61v"/>
-            <head facs="#head_61v">Orphee aux Enfers</head>
-            <figure facs="#gravure_61v">
-               <graphic url="tournes1557_graphic2.jpeg"/>
-               <figDesc>Orphée chante devant Pluton et Proserpine. On voit au loin les âmes
-                  énumérées par Ovide (où est Sisyphe?) et Charon.</figDesc>
-            </figure>
-            <div facs="#texte_61v" type="poem">
-               <l>Orphee avoit jà fort ploré la perte</l>
-               <l>De sa nouvelle espouse bien aymee,</l>
-               <l>Quand prend sa harpe, et d’une main experte</l>
-               <l>Bien jointe avec sa voix vive animee,</l>
-               <l>Il vient jouer en la sale enfumee</l>
-               <l>Du Roy d’Enfer, et de la Royne aussi:</l>
-               <l>Desquels obtient sa requeste estimee,</l>
-               <l>D’avoir sa femme : et cela, sous un si.</l>
+            <div>
+                <pb facs="#tournes1557_61v" n="61v"/>
+                <head facs="#head_61v">Orphee aux Enfers</head>
+                <figure facs="#gravure_61v">
+                    <graphic url="tournes1557_graphic2.jpeg"/>
+                    <figDesc>Orphée chante devant Pluton et Proserpine. On voit au loin les âmes
+                        énumérées par Ovide (où est Sisyphe?) et Charon.</figDesc>
+                </figure>
+                <div facs="#texte_61v" type="poem">
+                    <l>Orphee avoit jà fort ploré la perte</l>
+                    <l>De sa nouvelle espouse bien aymee,</l>
+                    <l>Quand prend sa harpe, et d’une main experte</l>
+                    <l>Bien jointe avec sa voix vive animee,</l>
+                    <l>Il vient jouer en la sale enfumee</l>
+                    <l>Du Roy d’Enfer, et de la Royne aussi:</l>
+                    <l>Desquels obtient sa requeste estimee,</l>
+                    <l>D’avoir sa femme : et cela, sous un si.</l>
+                </div>
             </div>
-         </div>
-         <div>
-            <pb facs="#tournes1557_62r" n="62r"/>
-            <head facs="#head_62r">Orphee Harpeur excellent</head>
-            <figure facs="#gravure_62r">
-               <graphic height="674px" url="tournes1557_graphic3.jpg" width="850px"/>
-               <figDesc>Orphée chante et joue sur sa lyre entouré des arbres, oiseaux et animaux.</figDesc>
-            </figure>
-            <div facs="#texte_62r" type="poem">
-               <l>Sur petit mon, ayant sa plate forme,</l>
-               <l>Orphee assis vient jouer de sa Lyre,</l>
-               <l>Si bravement, et d’un ton si conforme</l>
-               <l>Que tous les bois d’alentour il attire :</l>
-               <l>Et mesmement les bestes pleines d'ire,</l>
-               <l>Avec douceur le viennent escouter :</l>
-               <l>Et les oiseaus y volent sans mot dire,</l>
-               <l>Ravis du chant qu'ils veulent bien noter.</l>
+            <div>
+                <pb facs="#tournes1557_62r" n="62r"/>
+                <head facs="#head_62r">Orphee Harpeur excellent</head>
+                <figure facs="#gravure_62r">
+                    <graphic height="674px" url="tournes1557_graphic3.jpg" width="850px"/>
+                    <figDesc>Orphée chante et joue sur sa lyre entouré des arbres, oiseaux et
+                        animaux.</figDesc>
+                </figure>
+                <div facs="#texte_62r" type="poem">
+                    <l>Sur petit mon, ayant sa plate forme,</l>
+                    <l>Orphee assis vient jouer de sa Lyre,</l>
+                    <l>Si bravement, et d’un ton si conforme</l>
+                    <l>Que tous les bois d’alentour il attire :</l>
+                    <l>Et mesmement les bestes pleines d’ire,</l>
+                    <l>Avec douceur le viennent escouter :</l>
+                    <l>Et les oiseaus y volent sans mot dire,</l>
+                    <l>Ravis du chant qu’ils veulent bien noter.</l>
+                </div>
             </div>
-         </div>
-         <div>
-            <pb facs="#tournes1557_68v" n="68v"/>
-            <head facs="#head_68v">Orphee mis en pieces</head>
-            <figure facs="#gravure_68v">
-               <graphic height="682px" url="tournes1557_graphic4.jpg" width="858px"/>
-               <figDesc>En premier plan, Orphée attaqué par les femmes. En arrière-plan, à gauche,
-                  Orphée déchiré en morceaux par les Bacchantes, à droite : les paysans qui
-                  s'enfuient.</figDesc>
-            </figure>
-            <div facs="#texte_68v" type="poem">
-               <l>Ainsi qu’Orphee et les bestes et bois</l>
-               <l>(Cas mervueillous) à son doux chant attire,</l>
-               <l>Voici, voici urlans à haute voix</l>
-               <l>Par devers lui courir tout d’une tire</l>
-               <l>Meinte Baccante : et avecques grand' ire</l>
-               <l>En l’assaillant tresfurieusement,</l>
-               <l>L’une avec une pierre, et l’autre un dard lui tire :</l>
-               <l>Il meurt chantant melodieusement.</l>
+            <div>
+                <pb facs="#tournes1557_68v" n="68v"/>
+                <head facs="#head_68v">Orphee mis en pieces</head>
+                <figure facs="#gravure_68v">
+                    <graphic height="682px" url="tournes1557_graphic4.jpg" width="858px"/>
+                    <figDesc>En premier plan, Orphée attaqué par les femmes. En arrière-plan, à
+                        gauche, Orphée déchiré en morceaux par les Bacchantes, à droite : les
+                        paysans qui s’enfuient.</figDesc>
+                </figure>
+                <div facs="#texte_68v" type="poem">
+                    <l>Ainsi qu’Orphee et les bestes et bois</l>
+                    <l>(Cas mervueillous) à son doux chant attire,</l>
+                    <l>Voici, voici urlans à haute voix</l>
+                    <l>Par devers lui courir tout d’une tire</l>
+                    <l>Meinte Baccante : et avecques grand’ ire</l>
+                    <l>En l’assaillant tresfurieusement,</l>
+                    <l>L’une avec une pierre, et l’autre un dard lui tire :</l>
+                    <l>Il meurt chantant melodieusement.</l>
+                </div>
             </div>
-         </div>
-         
-         <div>
-            <pb facs="#tournes1557_69r" n="69r"/>
-            <head facs="#head_69r">La langue et Lyre d'Orphee mort, font pleints</head>
-            <figure facs="#gravure_69r">
-               <graphic height="651px" url="tournes1557_graphic5.jpg" width="838px"/>
-               <figDesc>Les Bacchantes, enragées, éparpillent les membres d'Orphée. A droite un bas, on voit sa tête et sa lyre dans la rive, en train de chanter. En arrière-plan, à droite, Phébus qui empêche le serpent de manger la tête d'Orphée.</figDesc>
-            </figure>
-            <div facs="#texte_69r" type="poem">
-               <l>Hebre la fleuve et la teste et la Lyre</l>
-               <l>Reçoit d’Orphee : or cette Lyre sonne</l>
-               <l>Toute à part elle, et son piteus dire</l>
-               <l>Se compleingnant, piteusement resonne.</l>
-               <l>La langue aussi à demi morte, donne</l>
-               <l>Quelque piteus murmur qui correspond :</l>
-               <l>Puis à tels pleints que l’une et l'autre entonne,</l>
-               <l>Piteusement le rivage respond.</l>
+
+            <div>
+                <pb facs="#tournes1557_69r" n="69r"/>
+                <head facs="#head_69r">La langue et Lyre d’Orphee mort, font pleints</head>
+                <figure facs="#gravure_69r">
+                    <graphic height="651px" url="tournes1557_graphic5.jpg" width="838px"/>
+                    <figDesc>Les Bacchantes, enragées, éparpillent les membres d’Orphée. A droite un
+                        bas, on voit sa tête et sa lyre dans la rive, en train de chanter. En
+                        arrière-plan, à droite, Phébus qui empêche le serpent de manger la tête
+                        d’Orphée.</figDesc>
+                </figure>
+                <div facs="#texte_69r" type="poem">
+                    <l>Hebre la fleuve et la teste et la Lyre</l>
+                    <l>Reçoit d’Orphee : or cette Lyre sonne</l>
+                    <l>Toute à part elle, et son piteus dire</l>
+                    <l>Se compleingnant, piteusement resonne.</l>
+                    <l>La langue aussi à demi morte, donne</l>
+                    <l>Quelque piteus murmur qui correspond :</l>
+                    <l>Puis à tels pleints que l’une et l’autre entonne,</l>
+                    <l>Piteusement le rivage respond.</l>
+                </div>
             </div>
-         </div>
-      </body>
-   
-</text></TEI>
+        </body>
+
+    </text>
+</TEI>

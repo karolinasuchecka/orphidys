@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Métamorphoses d’Ovide</title>
+                <title type="sub">Traduction nouvelle, avec le texte
+                    latin, suivie d’une analyse, de l’explication des fables, de notes
+                    géographiques, historiques, mythologiques et critiques.</title>
+                <author>Ovide</author>
+                <editor>Mathieu-Guillaume-Thérèse Villenave</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k1525155s/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Ovide</author> / <title>Les Métamorphoses d’Ovide, traduction
+                        nouvelle, avec le texte latin, suivie d’une analyse, de l’explication des
+                        fables, de notes géographiques, historiques, mythologiques et
+                        critiques</title> / Mathieu-Guillaume-Thérèse Villenave (trad.) / Paris / F. Gay, Ch. Guestard / 1806 / p. 296-306, p. 380-386.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les Métamorphoses d’Ovide, traduction nouvelle, avec le texte latin,
+                            suivie d’une analyse, de l’explication des fables, de notes
+                            géographiques, historiques, mythologiques et critiques.</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>F. Gay, Ch. Guestard</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1806"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>villenave1806</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1806">1806</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Ovide</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Métamorphoses d’Ovide</titlePart>
+                    <titlePart type="sub">Traduction nouvelle, avec le
+                        texte latin, suivie d’une analyse, de l’explication des fables, de notes
+                        géographiques, historiques, mythologiques et critiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Mathieu-Guillaume-Thérèse Villenave</docEdition>
+            </titlePage>
+        </front>
+
+
+        <body>
+            <div>
+                <head>Livre X</head>
+                <argument>
+                    <p><milestone unit="sent"/>Orphée descend aux Enfers. <milestone unit="sent"/>Eurydice lui est rendue et reprise par le dieu des
+                        morts. <milestone unit="sent"/>Métamorphoses d’Atys, en pin ; de Cyparisse, en cyprès ; d’Hyacinthe,
+                        en fleur ; de Cérastes, en taureaux ; des Propétides, en rochers. <milestone unit="sent"/>La statue
+                        de Pygmalion animée. <milestone unit="sent"/>Myrrha et Cinyre. <milestone unit="sent"/>Atalante et Hippomene changés en
+                        lion ; Adonis, en anémone ; Mentha, en mente.</p>
+                </argument>
+                <p>
+                    <pb n="296" xml:id="p296"/>L’Hymen, vêtu d’une robe de pourpre, s’élève des
+                    champs de Crète dans les airs, et vole vers la Thrace, où la voix d’Orphée<note
+                        place="bottom">
+                        <p>Orphée, un des plus célèbres personnages des temps fabuleux, législateur,
+                            théologien, poëte, musicien, voyageur, et guerrier.</p>
+                        <p>Il étoit fils d’Œagre, roi de Thrace, et de la muse Calliope, selon
+                            Apollodore, Diodore de Sicile, Hygin, et plusieurs autres auteurs ;
+                            mais, pour donner plus d’éclat à sa naissance et à ses talents, on
+                            publia dans la suite qu’il étoit fils d’Apollon ; et cette opinion,
+                            adoptée par quelques poëtes, devient bientôt l’opinion généralement
+                            reçue.</p>
+                        <p>On rapporte qu’Apollon ou Mercure fit présent à Orphée d’une lyre à
+                            laquelle il ajouta deux cordes ; et qu’il marioit si bien sa voix au son
+                            de cet instrument qu’il enchantoit les hommes et les Dieux ; suspendoit
+                            dans leur cours les fleuves les plus rapides ; apprivoisoit les hôtes
+                            sauvages des forêts ; animoit et attiroit les rochers, les bois, les
+                            montagnes ; et charmoit enfin toute nature.</p>
+                        <p>Les Nymphes des eaux et des bois le suivoient en tous lieux pour
+                            l’entendre, et le désiroient pour époux. Mais la seule Eurydice eut le
+                            don de lui plaire, et reçut son cœur et sa main. La fable de la descente
+                            d’Orphée aux Enfers, et de sa mort tragique sur les bords de l’Hebre,
+                            fable si célebre dans les poëtes, est rapportée par Apollodore (l. I, c.
+                            7), Diodore de Sicile (l. IV), Pausanias (l. IX, c. 30), Diogene-Laerce
+                            (l. I, c. 5), et par plusieurs autres auteurs.</p>
+                        <p>Apollonius de Rhodes, Valérius-Flaccus, Apollodore, et Hygin, mettent
+                            Orphée au nombre des Argonautes. Au retour de la fameuse expédition de
+                            Colchos, il gouverna les Thraces, leur donna des lois, et leur apprit à
+                            respecter le sang humain, dont ils se nourrissoient ; ce qui fit dire,
+                            comme l’observe Horace, qu’il avoit su apprivoiser les tigres et les
+                            lions. On croit que, le premier, il établit dans la Thrace, des dogmes,
+                            des mysteres, un culte ; qu’il composa des prieres et des hymnes en
+                            l’honneur des Dieux, et qu’il réunit la dignité de pontife à celle de
+                            roi. C’est sur-tout par l’établissement d’une religion, frein nécessaire
+                            aux passions, plus sacré, plus puissant que les lois, qu’Orphée devint
+                            le bienfaiteur des hommes.</p>
+                        <p>Diodore de Sicile, qui vivoit sous Auguste et sous Tibere, met Orphée
+                            au-dessus de tous les mortels dont les noms étoient alors connus. Il
+                            rapporte qu’il avoit voyagé en Égypte, qu’il s’y étoit fait initier dans
+                            les mysteres d’Isis et d’Osiris (Cérès et Bacchus) ; et qu’il apporta,
+                            des bords du Nil, dans la Grece, la fable des Enfers, le dogme des
+                            expiations, celui de la nécessité de la sépulture, et d’autres usages
+                            qu’il mêla à la religion des Grecs et qu’il consacra dans ses poésies. Il enseigna, suivant Pausanias, que les hommes pouvoient expier les
+                            crimes par le repentir ; appaiser, par des purifisations, les Dieux
+                            qu’ils irritoient par des injustices, etc., etc.</p>
+                        <p>Suivant Apollodore, Orphée fut enterrré à Piérie, ville de Macédoine. Les
+                            habitants de Dion, autre ville de la même contrée, les Libéthriens, et
+                            les Thraces, se vantoient d’avoir son tombeau. Les Thraces disoient, au
+                            rapport de Pausanias, que les rossignols qui avoient leur nid aux
+                            environs du tombeau d’Orphée, chantoient avec plus de force et de
+                            mélodie que les autres.</p>
+                        <p>Après sa mort, Orphée fur mis au rang des Dieux (<hi rend="i">S. Augustin, de Civitate Dei, l. XVIII, ch. 14</hi> et <hi rend="i"
+                                >Albricus, de Deor. Imag. , c. 18</hi>).</p>
+                        <p>Après tant de témoignages si positifs, qui font d’Orphée un personnage
+                            réel, on est étonné de lire dans le traité <hi rend="i">de la nature des
+                                Dieux</hi>, de Cicéron (l. I, c. 38), qu’Aristote nioit l’existence
+                            d’Orphée, et qu’on attribuoit les poésies qui portent son nom à un
+                            Pythagoricien nommé Cercops. Les modernes les attribuent à Onomacrite,
+                            poëte contemporain de Pisistrate, tyran d’Athenes. Elles consistent en
+                            un poëme sur l’expédition des Argonautes ; en un autre poëme sur les
+                            différentes especes de pierres, et en des hymnes souvent cités par les
+                            anciens sous le nom d’Orphée : « Son érudition, et son habileté dans la
+                            poésie et na la musique, dit Diodore de Sicile (l. IV), l’ont élevé
+                            au-dessus de tous les hommes connus. Ses talents lui acquirent une si
+                            grande réputation, qu’on lui attribuoit le don de charmer, par sa
+                            mélodie, les bêtes féroces et les arbres mêmes ». « Quant à ses hymnes,
+                            dit Pausanias (l. IX, c. 30), ceux à qui les poëtes sont familiers,
+                            n’ignorent pas qu’ils sont courts et en petit nombre. Les Lycomides les
+                            savent par cœur, et les chantent en célébrant les mysteres. Du côté de
+                            l’élégance, ils n’ont que le second rang, ceux d’Homere leur étant
+                            supérieurs ; mais la religion a adopté ceux d’Orphée, et n’a pas fait le
+                            même honneur aux hymnes d’Homere ».</p>
+                    </note> l’appelle en vain à ses autels. <milestone unit="sent"/>L’Hymen est présent à son union avec
+                        Eurydice<note place="bottom">Eurydice étoit fille de Nérée et de Doris,
+                        divinités de la mer.</note>, mais il ne profère point les mots sacrés ; il
+                    ne porte ni visage serein, ni présages heureux. <milestone unit="sent"/>La torche qu’il tient pétille,
+                    répand une fumée humide, et le dieu qui l’agite ne peut ranimer ses mourantes
+                    clartés. <milestone unit="sent"/>Un affreux événement <pb n="298" xml:id="p298"/>suit de près cet augure
+                    sinistre. <milestone unit="sent"/>Tandis que la nouvelle épouse court sur l’herbe fleurie, un serpent la
+                    blesse au talon ; elle pâlit, tombe et meurt au milieu de ses compagnes<note
+                        place="bottom">Ovide a souvent imité Virgile dans son poëme. On peut
+                        comparer la descente d’Orphée aux Enfers, décrite dans les Métamorphoses,
+                        avec celle que l’auteur des Géorgiques a chantée en si beaux vers, dans son
+                            IV<hi rend="sup">e</hi> livre.</note>.</p>
+                <p><milestone unit="sent"/>Après avoir longtemps imploré par ses pleurs les divinités de l’Olympe, le
+                    chantre du Rhodope osa franchir les portes du Ténare<note place="bottom">Ténare,
+                        en grec <hi rend="i">Tainaros</hi>, étoit un promontoire du Péloponnese,
+                        dans la Laconie. À ses pieds de trouvoit une caverne profonde d’où sortoient
+                        de noires vapeurs. C’est ce qui donna lieu aux poëtes de dire que c’étoit un
+                        soupirail des Enfers. Plusieurs même ont souvent désigné les Enfers sous le
+                        nom de Ténare. C’est par là que Thésée et Pirithoüs descendirent dans le
+                        ténébreux empire de Pluton ; c’est par là qu’Hercule amena le chien de ce
+                        monarque à Eurysthée. Pausanias croit que cette caverne du Ténare servoit de
+                        repaire à un serpent effroyable que l’on appeloit le chien des Enfers,
+                        parceque les morsures de ce reptile étoient mortelles, et que c’est ce
+                        serpent qui fut conduit par Hercule à Eurysthée. Il y avoit sur le cap
+                        Ténare un temple, en forme de grotte, consacré au dieu des mers.</note>, et
+                    passer les noirs torrents du Styx, pour fléchir les dieux du royaume des morts. <milestone unit="sent"/>Il marche à travers les ombres légères, fantômes errants dont les corps ont reçu
+                    les honneurs du tombeau. <milestone unit="sent"/>Il arrive au pied du trône de Proserpine et de Pluton,
+                    souverains de ce triste et ténébreux empire. <milestone unit="sent"/>Là, unissant sa voix plaintive aux
+                    accords de sa lyre, il fait entendre ces chants : <milestone unit="sent"/>« Divinités du monde
+                    souterrain où descendent successivement tous les mortels, souffrez que je laisse
+                    les vains détours d’une éloquence trompeuse. <milestone unit="sent"/>Ce n’est ni pour visiter le sombre
+                        Tartare<note place="bottom">Tartare, en grec <hi rend="i">Tartaros</hi> ; en
+                        latin <hi rend="i">Tartarus</hi> ou <hi rend="i">Tartara</hi>. C’est une des
+                        régions des Enfers, dans lesquelles l’antiquité païenne plaçoit les ombres
+                        des impies et des scélérats dont les crimes ne pouvoient s’expier. Selon
+                        Hésoide, le Tartare est une prison séparée des Enfers, et si profonde
+                        qu’elle est aussi éloignée de la terre, que la terre l’est du ciel. Un mur
+                        d’airain l’environne, et des ténebres trois fois plus épaisses que la nuit
+                        en dérobent l’entrée. Homere ne sépare point le Tartare des Enfers. Virgile
+                        fait du Tartare une vaste prison, fortifiée d’une triple enceinte de murs,
+                        et entourée du Phlégéton, torrent impétueux qui roule des ondes enflammées. L’entrée en est défendue par une tour extrêmement élevée, et la porte est
+                        soutenue par deux colonnes de diamant, qui ne pourroient briser les efforts
+                        réunis des mortels et des Dieux.</note>, ni pour enchaîner le monstre à
+                    trois têtes, né du sang de Méduse, et gardien des Enfers, que je suis descendu
+                    dans votre empire. <milestone unit="sent"/>Je viens chercher mon épouse. <milestone unit="sent"/>La dent d’une vipère me l’a
+                    ravie au printemps de ses jours.</p>
+                <p><milestone unit="sent"/>J’ai voulu supporter cette perte ; j’ai voulu, je l’avoue, vaincre ma douleur. <milestone unit="sent"/>L’Amour a triomphé. <milestone unit="sent"/>La puissance de ce dieu est établie sur la terre et dans le
+                    ciel ; je ne sais si elle l’est aux enfers : mais je crois qu’elle n’y est pas
+                    inconnue ; et, si la renommée d’un enlèvement antique n’a rien de mensonger,
+                    c’est l’amour qui vous a soumis ; c’est lui qui vous unit. <milestone unit="sent"/>Je vous en conjure
+                    donc par ces lieux pleins d’effroi, par ce chaos immense, par le vaste silence
+                    de ces régions de <pb n="300" xml:id="p300"/>la nuit, rendez-moi mon Eurydice ;
+                    renouez le fil de ses jours trop tôt par la Parque coupé.</p>
+                <p><milestone unit="sent"/>Les mortels vous sont tous soumis. <milestone unit="sent"/>Après un court séjour sur la terre, un peu
+                    plus tôt ou un peu plus tard, nous arrivons dans cet asile ténébreux ; nous y
+                    tendons tous également<note place="bottom">
+                        <p>Quia hæc est natura terræ ut in eam recidant omnia (Jul. Firmicus, <hi
+                                rend="i">Contra gentes</hi>)</p>
+                        <p>Debemur mort nos nostraque (Horat.)</p>
+                        <p>Hanc ex diverso sedem veniemus ad unam. (Virg., <hi rend="i">Aen. XI.</hi>)</p>
+                        <p>Longiùs aut propiùs sors sua quemque manet (Propert., <hi rend="i">Lib. II, eleg.</hi> 28.)</p>
+                    </note> ; c’est ici notre dernière demeure. <milestone unit="sent"/>Vous tenez sous vos lois le vaste
+                    empire du genre humain. <milestone unit="sent"/>Lorsqu’Eurydice aura rempli la mesure ordinaire de la
+                    vie, elle rentrera sous votre puissance. <milestone unit="sent"/>Hélas ! c’est un simple délai que je
+                    demande ; et si les Destins s’opposent à mes vœux, je renonce moi-même à
+                    retourner sur la terre. <milestone unit="sent"/>Prenez aussi ma vie, et réjouissez-vous d’avoir deux
+                    ombres à-la-fois. »</p>
+                <p><milestone unit="sent"/>Aux tristes accents de sa voix, accompagnés des sons plaintifs de sa lyre, les
+                    ombres et les mânes pleurent attendris. <milestone unit="sent"/>Tantale cesse de poursuivre l’onde qui
+                    le fuit. <milestone unit="sent"/>Ixion s’arrête sur sa roue. <milestone unit="sent"/>Les vautours ne rongent plus les entrailles
+                    de Titye. <milestone unit="sent"/>L’urne échappe aux mains des filles de Bélus, et toi, Sisyphe, tu
+                    t’assieds sur ta roche fatale. <milestone unit="sent"/>On dit même que, vaincues par le charme des vers,
+                    les inflexibles Euménides s’étonnèrent de pleurer pour la première fois. <milestone unit="sent"/>Ni le
+                    dieu de l’empire des morts, ni son épouse ne peuvent résister aux accords
+                    puissants du chantre de la Thrace<note place="bottom">
+                        <p>Quand pour ravoir son épouse Eurydice</p>
+                        <p>Le bon Orphée alla jusqu’aux Enfers,</p>
+                        <p>L’étonnement d’un si rare caprice</p>
+                        <p>En fit cesser tous les tourments divers.</p>
+                        <p>On admira, bien plus que ses concerts,</p>
+                        <p>D’un tel amour la bizarre saillie ;</p>
+                        <p>Et Pluton même, embarrassé du choix,</p>
+                        <p>La lui rendit pour prix de sa folie,</p>
+                        <p>Puis la retint en faveur de sa voix.</p>
+                    </note>. <milestone unit="sent"/>Ils appellent Eurydice. <milestone unit="sent"/>Elle étoit parmi les ombres récemment arrivées
+                    au ténébreux séjour. <milestone unit="sent"/>Elle s’avance d’un pas lent, retardé par sa
+                        blessure. <milestone unit="sent"/>Elle est rendue à son époux : mais, telle
+                    est la loi qu’il reçoit : si, avant d’avoir franchi les sombres détours de
+                        l’Averne<note place="bottom">Averne, autrefois <hi rend="i">Aorne</hi>, mot
+                        qui signifie sans oiseaux. C’est le nom d’un lac d’Italie, dans la Campanie,
+                        dont les eaux étoient si infectées et si mal-saines, que les oiseaux s’en
+                        éloignoient. Les anciens poëtes firent de l’Averne une entrée et un des
+                        fleuves des Enfers.</note>, il détourne la tête pour regarder Eurydice, <pb
+                        n="302" xml:id="p302"/>sa grâce est révoquée ; Eurydice est perdue pour lui
+                    sans retour.</p>
+                <p><milestone unit="sent"/>À travers le vaste silence du royaume des ombres, ils remontent par un sentier
+                    escarpé, tortueux, couvert de longues ténèbres. <milestone unit="sent"/>Ils approchoient des portes du
+                    Ténare. <milestone unit="sent"/>Orphée, impatient de crainte et d’amour, se détourne, regarde, et
+                    soudain Eurydice lui est encore ravie.</p>
+                <p><milestone unit="sent"/>Le malheureux Orphée lui tend les bras, Il veut se jeter dans les siens : il
+                    n’embrasse qu’une vapeur légère. <milestone unit="sent"/>Eurydice meurt une seconde fois, mais sans se
+                    plaindre ; et quelle plainte eût-elle pu former ? <milestone unit="sent"/>Étoit-ce pour Orphée un crime
+                    de l’avoir trop aimée ! <milestone unit="sent"/>Adieu, lui dit-elle d’une voix foible qui fut à peine
+                    entendue ; et elle rentre dans les abymes du trépas.</p>
+                <p><milestone unit="sent"/>Privé d’une épouse qui lui est deux fois ravie, Orphée est immobile, étonné, tel
+                    que ce berger timide<note place="bottom">Plusieurs auteurs racontent qu’un
+                        berger, effrayé de voir Hercule traîner Cerbere enchaîne hors de la porte
+                        des Enfers, se cacha dans une caverne, et que tandis qu’il alongeoit sa tête
+                        à travers les broussailles, pour observer ce prodige, il fut changé en
+                        rocher.</note> qui voyant le triple Cerbere, chargé de chaînes, traîné par
+                    le grand Alcide jusqu’aux portes du jour, ne cessa d’être frappé de stupeur que
+                    lorsqu’il fut transformé en rocher. <milestone unit="sent"/>Tel encore Olénus<note place="bottom"
+                        >Léthea, Phrygienne, femme d’Olenus, fils de Jupiter et d’Anaxithée, une des
+                        Danaïdes, étoit si fière de sa beauté qu’elle osa se préférer aux Déesses de
+                        l’Olympe. Les Déesses voulurent la punir ; Olénus, époux tendre, et
+                        tendrement aimé, s’offrit pour victime à sa place. Mais l’un et l’autre
+                        furent changés en rochers sur le mont Ida. (<hi rend="i">Turneb, l. I,
+                            c.</hi> 23.)</note>, ce tendre époux qui voulut se charger de ton crime,
+                    infortunée Léthœa, trop vaine de ta beauté. <milestone unit="sent"/>Jadis unis par l’hymen, ils ne font
+                    qu’un même rocher, soutenu par l’Ida sur son humide sommet.</p>
+                <p><milestone unit="sent"/>En vain le chantre de la Thrace veut repasser le Styx et fléchir l’inflexible
+                        Caron<note place="bottom">
+                        <p>Septem illum totos perhibent ex ordine menses</p>
+                        <p>Rupe sub aëria, deserti ad Strymonis undam,</p>
+                        <p>Flevisse, et gelidis hæc evolvisse sub antris,</p>
+                        <p>Mulcentem tigres, et agentem carmine quercus.</p>
+                        <p>Qualis populeâ mœrens Philomela, etc. (Virg., <hi rend="i">Georg ?, l. IV.</hi>)</p>
+                    </note>. <milestone unit="sent"/>Toujours refusé, il reste assis sur la rive infernale, ne se
+                    nourrissant que de ses larmes, du trouble de son âme, et de sa douleur. <milestone unit="sent"/>Enfin,
+                    las d’accuser la cruauté <pb n="304" xml:id="p304"/>des Dieux de l’Érèbe<note
+                        place="bottom">
+                        <p>Érèbe, mot formé du verbe grec <hi rend="i">erepherin</hi>, qui veut dire
+                                <hi rend="i">voiler, obscurcir</hi>. C’est le nom d’un dieu des
+                            Enfers, fils du Chaos et des Ténebres. Il épousa la Nuit, sa sœur, et
+                            ils donnerent naissance au Jour et à l’<hi rend="i">Ether</hi>, ou la
+                            Lumiere. Les poëtes prennent quelquefois l’Érèbe pour le lieu où sont
+                            les Enfers et pour les Enfers même. <hi rend="i">Erebi Dii crudeles. Regina Erebi.</hi> (Ovid., Métam., l. X.)</p>
+                        <p>Vel pater omnipotens adigat me fulmine ad umbras,</p>
+                        <p>Pallentes umbras Erebi. (Virg., <hi rend="i">AEn., l. IV, v. 25</hi>)</p>
+                        <p>Claudieu appelle Pluton souverain de l’Érèbe, <hi rend="i">Dux Erebi (de
+                                raptu Proserpinœ.)</hi>
+                        </p>
+                        <p>Servius croit que l’Érèbe est cette partie des Enfers où étoient
+                            purifiées les ames de ceux qui avoient bien vécu, avant de passer dans
+                            l’Élysée. (<hi rend="i">In lib. VI, Æneid.</hi>, v. 404.)</p>
+                    </note>, il se retire sur le mont Rhodope, et sur l’Hémus battu des
+                    Aquilons.</p>
+                <p><milestone unit="sent"/>Trois fois le soleil avait ramené les saisons. <milestone unit="sent"/>Orphée fuyoit les femmes et
+                    l’amour : soit qu’il déplorât le sort de sa première flamme, soit qu’il eût fait
+                    serment d’être fidèle à Eurydice. <milestone unit="sent"/>En vain pour lui mille beautés soupirent ;
+                    toutes se plaignent de ses refus.</p>
+                <p><milestone unit="sent"/>Mais ce fut lui qui, par son exemple, apprit aux Thraces à rechercher ce
+                    printemps fugitif de l’âge placé entre l’enfance et la jeunesse, et à s’égarer
+                    dans des amours que la nature désavoue.</p>
+                <p><milestone unit="sent"/>Une colline à son sommet se terminoit en plaine. <milestone unit="sent"/>Elle étoit couverte d’un gazon
+                    toujours verd ; mais c’étoit un lieu sans ombre. <milestone unit="sent"/>Dès que le chantre immortel,
+                    fils des Dieux, s’y fut assis, et qu’il eut agité les cordes de sa lyre, l’ombre
+                    vint d’elle-même. <milestone unit="sent"/>Attirés par la voix d’Orphée, les arbres accoururent ; on y
+                    vit soudain le chêne de Chaonie<note place="bottom">Chaonie ou Molossie, contrée
+                        de l’Epire, bornée au nord par les monts Acraucérauniens. <hi rend="i"
+                            >Canina</hi> est maintenant le nom de cette contrée.</note>, le peuplier
+                    célèbre par les pleurs des Héliades, le hêtre dont le haut feuillage est balancé
+                    dans les airs, le tilleul à l’ombrage frais, le coudrier noueux, le chaste
+                    laurier, le noisetier fragile ; on y vit le frêne qui sert à façonner les lances
+                    des combats, le sapin qui n’a point de nœuds, l’yeuse courbée sous ses fruits,
+                    le platane dont l’ombre est chère aux amants, l’érable marqué de diverses
+                    couleurs, le saule qui se plaît sur le bord des fontaines, l’aquatique lotos, le
+                    buis dont la verdure brave les hivers, la bruyère légère, le myrthe à deux
+                    couleurs, le figuier aux fruits savoureux. <milestone unit="sent"/>Vous accourûtes aussi, lierres aux
+                    bras flexibles, et avec <pb n="306" xml:id="p306"/>vous parurent le pampre
+                    amoureux et le robuste ormeau qu’embrasse la vigne. <milestone unit="sent"/>La lyre attire enfin l’arbre
+                    d’où la poix découle, l’arboisier aux fruits rouges, le palmier dont la feuille
+                    est le prix du vainqueur, et le pin aux branches hérissées, à la courte
+                    chevelure ; le <anchor xml:id="pin"/>pin cher à Cybele, depuis qu’Atys<note
+                        place="bottom">Atys, berger phrygien d’une grande beauté. Il fut aimé de
+                        Cybele, qui lui donna la garde du temple qu’elle avoit en Phrygie. Son
+                        origine et son histoire sont rapportées diversement par les mythographes et
+                        par les poëtes. Ce qui paroît hors de doute, c’est qu’il reçut les honneurs
+                        divins. Selon Pausanias, il y avoit à Dyme un temple qui lui étoit consacrée
+                            (<hi rend="i">L. VII, c. 17</hi>).</note>, prêtre de ses autels, dans le
+                    tronc de cet arbre fut par elle enfermé.</p>
+                <p><milestone unit="sent"/>Au milieu de cette forêt qu’on vit obéissante au charme des vers, parut aussi le
+                    cyprès, verdoyante pyramide, jadis jeune mortel cher au dieu dont la main sait
+                    également manier l’arc et la lyre.</p>
+            </div>
+            <div>
+                <head>Livre XI</head>
+                <argument>
+                    <p><milestone unit="sent"/>Orphée est déchiré par les Bacchantes. <milestone unit="sent"/>Changement d’un serpent en pierre ;
+                        des Ménades en arbres. <milestone unit="sent"/>Midas change tout en or. <milestone unit="sent"/>Il reçoit des oreilles
+                        d’âne. <milestone unit="sent"/>Neptune et Apollon bâtissent les murs de Troie. <milestone unit="sent"/>Thétis épouse de
+                        Pélée. <milestone unit="sent"/>Parjure de Laomédon. <milestone unit="sent"/>Hésione délivrée épouse Télamon. <milestone unit="sent"/>Métamorphoses
+                        de Dédalion en épervier, et d’un loup en rocher. <milestone unit="sent"/>Ceyx et Alcyone. <milestone unit="sent"/>Palais du
+                        Sommeil. <milestone unit="sent"/>Esaque changé en plongeon.</p>
+                </argument>
+                <p>
+                    <pb n="380" xml:id="p380"/>Tandis qu’autour de lui, par le charme de ses vers,
+                    Orphée entraîne les hôtes des forêts et les forêts et les rochers<note
+                        place="bottom">
+                        <p>Tous les poëtes de l’antiquité ont chanté les prodiges opérés par la voix
+                            et par la lyre d’Orphée. Horace dit :</p>
+                        <p>Tu potes tigres domitasque silvas</p>
+                        <p>Ducere (<hi rend="i">Lib. III, od. II)</hi>
+                        </p>
+                        <p>Properce s’exprime en ces termes :</p>
+                        <p>Orpheu, te duxisse feras et concita dicunt</p>
+                        <p>Flumina Treïcia detinuisse lyrâ (<hi rend="i">Lib. III, eleg. II.</hi>)</p>
+                    </note>, les Ménades, qu’agitent les fureurs de Bacchus, et qui portent en
+                    écharpe la dépouille des tigres et des léopards, aperçoivent, du haut. d’une
+                    colline, le chantre de la Thrace, des sons divins de sa lyre accompagnant sa
+                    voix. <milestone unit="sent"/>Une d’elles, dont les cheveux <pb n="382" xml:id="p382"/>épars flottent
+                    abandonnés aux vents, s’écrie « Le voilà ! le voilà celui qui nous méprise ! » <milestone unit="sent"/>Et soudain son thyrse va frapper la tête du prêtre d’Apollon. <milestone unit="sent"/>Mais, enveloppé de
+                    pampre et de verdure, le thyrse n’y fait qu’une empreinte légère, sans la
+                    blesser. <milestone unit="sent"/>Une autre lance un dur caillou, qui fend les airs, mais, vaincu par les
+                    sons de la lyre, tombe aux pieds du poëte, et semble implorer le pardon de cette
+                    indigne offense. <milestone unit="sent"/>Cependant le trouble augmente. <milestone unit="sent"/>La fureur des Ménades est
+                    poussée à l’excès. <milestone unit="sent"/>La terrible Érynnis les échauffe. <milestone unit="sent"/>Sans doute les chants
+                    d’Orphée auroient émoussé tous les traits ; mais leurs cris, et leurs flûtes, et
+                    leurs tymbales, et le bruit qu’elles font en frappant dans leurs mains, et les
+                    hurlements affreux dont elles remplissent les airs, étouffent les sons de la
+                    lyre : la voix d’Orphée n’est plus entendue, et les rochers du Rhodope sont
+                    teints de son sang.</p>
+                <p><milestone unit="sent"/>D’abord, dans leur fureur, les Bacchantes ont chassé ces oiseaux sans nombre, ces
+                    serpents, et ces hôtes des forêts, qu’en cercle autour du poëte la lyre avait
+                    rangés. <milestone unit="sent"/>Alors elles portent sur lui leurs mains criminelles. <milestone unit="sent"/>Tel l’oiseau de
+                    Pallas, si par hasard il erre à la lumière du jour, voit les oiseaux se réunir
+                    contre lui, et le poursuivre dans les plaines de l’air. <milestone unit="sent"/>Tel le matin, dans le
+                    cirque romain, où il va devenir la proie des chiens, un cerf léger est entouré
+                    d’une meute barbare<note place="bottom">Ovide fait allusion ici aux spectacles
+                        des Romains. Il faisoit combattre le matin, dans l’amphithéâtre, des animaux
+                        communs et apprivoisés ; le soir, des animaux étrangers et sauvages. (<hi
+                            rend="i">Voyez</hi> Juste-Lipse, <hi rend="i">Saturn. Liv. III, c.
+                            15.)</hi>
+                    </note>. <milestone unit="sent"/>On voit les Ménades à l’envi attaquer Orphée, et le frapper de leurs
+                    thyrses façonnés pour un autre usage. <milestone unit="sent"/>Elles font voler contre lui des pierres,
+                    des masses de terre, des branches d’arbre violemment arrachées. <milestone unit="sent"/>Les armes ne
+                    manquent point à leur fureur.</p>
+                <p>
+                    <pb n="384" xml:id="p384"/>Non loin de là, des bœufs paisibles, courbés sous le
+                    joug, traçoient dans les champs de larges sillons. <milestone unit="sent"/>D’agrestes laboureurs, d’un
+                    bras nerveux, avec la bêche ouvroient la terre, et préparoient les doux fruits
+                    de leurs pénibles sueurs. <milestone unit="sent"/>À l’aspect des Ménades, ils ont fui, épouvantés,
+                    abandonnant, épars dans les champs, leurs bêches, leurs longs râteaux, et leurs
+                    hoyaux pesants : chacune s’en empare. <milestone unit="sent"/>Dans leur fureur, elles arrachent aux
+                    bœufs même leurs cornes menaçantes, et reviennent de l’interprete des dieux
+                    achever les destins. <milestone unit="sent"/>Il leur tendoit des mains désarmées. <milestone unit="sent"/>Ses prieres les
+                    irritent. <milestone unit="sent"/>Pour la premiere fois, les sons de sa voix ont perdu leur pouvoir. <milestone unit="sent"/>Ces
+                    femmes sacrileges consomment leur crime ; il expire, et son âme, grands dieux !
+                    s’exhale à travers cette bouche dont les accents étoient entendus par les
+                    rochers, et qui apprivoisoit les hôtes sauvages des forêts.</p>
+                <p><milestone unit="sent"/>Chantre divin, les oiseaux instruits par tes chants, les monstres des déserts,
+                    les rochers du Rhodope, les bois qui te suivoient, tout pleure ta mort<note
+                        place="bottom">Virgile fait ainsi pleurer la mort de Daphnis, dans sa
+                        cinquieme églogue ; et celle d’Orphée dans le quatrieme livre des
+                        Géorgiques. Le sage rollin analyse avec beaucoup de goût l’épisode d’Orphée
+                        dans les Géorgiques, et ajoute : « Ovide, en traitant la même matiere, a
+                        rendu cette derniere beauté (<hi rend="i">Ah miseram Eurydicen</hi>, etc.)
+                        d’une maniere différente, mais qui a aussi beaucoup de grace et de
+                        délicatesse » (<hi rend="i">Traite des Etudes</hi>, édit. De 1732, in-12,
+                        tome I, page 368. Le Franc de Pompignan a heureusement imité Virgile et
+                        Ovide dans les deux premieres strophes de son ode sur la mort de J. B. Rousseau.</note>. <milestone unit="sent"/>Les arbres en deuil se dépouillent de leur feuillage. <milestone unit="sent"/>De
+                    leurs pleurs les fleuves se grossissent. <milestone unit="sent"/>Les Naïades, les Dryades, couvertes de
+                    voiles funebres, gémissent les cheveux épars.</p>
+                <p><milestone unit="sent"/>Ses membres sont dispersés<note place="bottom">Pausanias rapporte, dans ses <hi
+                            rend="i">Boeotiques</hi>, que les membres dispersés du chantre de la
+                        Thrace furent recueillis par les Muses, et ensevelis dans la Macédoine. Lesbos conserva sa tête ; elle y rendoit des oracles dans le temple
+                        d’Apollon. Sa lyre, qui devint une constellation, étoit aussi déposée dans
+                        le même temple. Lucien prétend qu’on en racontoit tant de merveilles, que
+                        Néanthus, fils du tyran Pittacus, l’acheta des prêtres d’Apollon. Il étoit
+                        persuadé qu’il suffisoit d’en toucher les cordes pour attirer les arbres et
+                        les rochers ; mais ayant voulu chanter au son de cette lyre, les chiens de
+                        Lesbos se jeterent sur lui, et le mirent en pieces.</note>. <milestone unit="sent"/>Hèbre glacé, tu
+                    reçois dans ton sein et sa tête et sa lyre. <milestone unit="sent"/>Ô prodige ! et sa lyre et sa tête
+                    roulant sur les flots, murmurent je ne sais quels sons lugubres et quels
+                    sanglots plaintifs, et la rive attendrie répond à ces tristes accents<note
+                        place="bottom">
+                        <p>Ah ! miseram Eurydicen animâ fugiente vocabat :</p>
+                        <p>Eurydicen toto referebant littore ripæ (<hi rend="i">Georg., l. IV.</hi>)</p>
+                    </note>. <milestone unit="sent"/>Déjà entraînées au vaste sein des mers, elles quittent le lit du fleuve
+                    bordé de peupliers, et sont portées sur le rivage de Méthymne<note
+                        place="bottom">Méthymne, ville de Lesbos, fameuse pour sees bons vins, et
+                        pour avoir donné naissance au célebre Arion. Elle reçut son nom de Métymne,
+                        fille de Macarée et femme de Lepydnus.</note>, dans l’isle de Lesbos. <milestone unit="sent"/>Déjà
+                    un affreux serpent <pb n="386" xml:id="p386"/>menace cette tête exposée sur des
+                    bords étrangers. <milestone unit="sent"/>Il leche ses cheveux épars, par les vagues mouillés, et va
+                    déchirer cette bouche harmonieuse qui chantoit les louanges des immortels. <milestone unit="sent"/>Apollon paroît, et prévient cet outrage. <milestone unit="sent"/>Il arrête le reptile prêt à mordre ; il
+                    le change en pierre, la gueule béante, et conservant son attitude<note
+                        place="bottom">
+                        <p>Plusieurs mythologues prétendent que, par la fable du serpent changé en
+                            pierre, les anciens ont voulu parler d’un habitant de Lesbos qui fut
+                            puni pour avoir attaqué la réputation d’Orphée. On regarda ce critique
+                            comme un insecte qui veut se nourrir du sang de celui qu’il déchire, et
+                            l’on peignit sa stupidité, en disant qu’il fut changé en rocher.</p>
+                        <p>On a voulu aussi expliquer la fable des Ménades changées en arbres, en
+                            disant qu’elle désigne un châtiment quelconque subi par ces femmes
+                            cruelles ; ou bien qu’elle périrent dans les cavernes où elles s’étoient
+                            cachées pour éviter les peines qu’elles méritoient. Mais cette
+                            explication peut paroître peu satisfaisante ; et il faut convenir qu’on
+                            a tort de vouloir tout expliquer, sur-tout dans les fables antiques.</p>
+                    </note>.</p>
+                <p><milestone unit="sent"/>L’ombre<note place="bottom">Dans le système de la théologie païenne, les ombres
+                        tenoient le milieu entre l’ame ou l’esprit, la matiere ou le corps. Selon
+                        Servius, les anciens distinguoient dans l’homme trois parties, le corps
+                        matériel, qui étoit enterré ou réduit en cendres sur le bûcher ; l’esprit,
+                        c’est-à-dire l’ame spirituelle, qui retournoit au ciel, lieu de son
+                        origine ; et l’ame corporelle, c’est-à-dire un corps subtil dont l’esprit
+                        étoit revêtu, et qui avoit la figure et les qualités du corps de l’homme. Ils croyoient que cette partie descendoit aux Enfers. Les Grecs la nommoient
+                            <hi rend="i">Idolos</hi> ou <hi rend="i">Phantasmata</hi> ; les Latins
+                        l’appeloient <hi rend="i">umbra, simulacrum, imago</hi>, comme qui diroit
+                        l’ombre du corps, sa figure, son extérieur. Suivant l’auteur de l’Odyssée
+                            (<hi rend="i">liv. II</hi>), quoiqu’Hercule fût monté dans les cieux,
+                        après sa mort, Ulysse ne laissa pas de voir l’ombre de ce héros dans les
+                        Champs-Élysées.</note> d’Orphée descend dans l’empire des morts. <milestone unit="sent"/>Il
+                    reconnoît ces mêmes lieux qu’il avoit déjà parcourus. <milestone unit="sent"/>Errant dans le séjour
+                    qu’habitent les mânes pieux, il y retrouve Eurydice, et vole dans ses bras. <milestone unit="sent"/>Dès
+                    lors, l’amour sans cesse les rassemble. <milestone unit="sent"/>Ils se promenent à côté l’un de l’autre. <milestone unit="sent"/>Quelquefois il la suit, quelquefois il marche devant elle. <milestone unit="sent"/>Il la regarde, et la
+                    voit sans craindre que désormais elle lui soit ravie.</p>
+            </div>
+        </body>
+
+    </text>
+</TEI>

@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée, l’ensorceleur</title>
+                <author>Martine Laffon</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://www.placedeslibraires.fr/ebook/9782081392199-orphee-l-ensorceleur-martine-laffon/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Martine Laffon</author> / <title>Orphée, l’ensorceleur</title> / Paris
+                    / Flammarion Jeunesse / 2016.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée, l’ensorceleur</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Flammarion Jeunesse</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2016"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>laffon2016</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="2016">2016</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Martine Laffon</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée, l’ensorceleur</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+
+            <div>
+                <head>1 <lb/> Le chant d’Orphée</head>
+                <p>L’aube se lève sur le rivage et éclaire peu à peu la mer. Il est temps de partir.
+                    Les Argonautes sont prêts.</p>
+                <p>— Compagnons, le moment que nous attendions tous est arrivé. Embarquons pour la
+                    Colchide sur le plus beau et le plus grand des navires : notre <hi rend="i"
+                        >Argo</hi>. Nous l’avons construit ensemble et ensemble nous traverserons
+                    les mers. Tout le monde connaîtra nos aventures et nos exploits pour conquérir
+                    la Toison d’or ! En avant !</p>
+                <p>Jason, le chef de l’expédition, est impatient de voir l’<hi rend="i">Argo</hi>,
+                    le « Rapide », glisser sur le sable et entrer enfin dans les vagues. Ses
+                    compagnons s’activent. Ils sont au moins cinquante héros venus de tous les coins
+                    de Grèce pour participer à cet incroyable voyage. Mais ils ont beau tirer sur
+                    les cordages, le navire ne bouge pas…</p>
+                <p>— Que se passe-t-il, crie Jason, toutes les cales sont retirées ?</p>
+                <p>— La coque s’est ensablée, prévient Pelée, dégageons l’avant !</p>
+                <p>— Cela ne sert à rien, elle est trop enfoncée et prise dans des algues sèches.
+                    Elles bloquent les billes de bois sur lesquelles elle devait rouler, constate
+                    Hippios. Même en unissant nos forces, nous n’arriverons pas à la mettre à
+                    l’eau.</p>
+                <p>Jason regarde impuissant la solide coque de chêne provenant de la forêt sacrée de
+                    Dodone. Tant d’efforts pour en arriver là ! La déesse Athéna les a pourtant
+                    aidés en révélant à Argos comment réaliser un navire aussi grand. Elle ne va
+                    tout de même pas les abandonner maintenant.</p>
+                <p>Tous les hommes s’arc-boutent dans un même élan :</p>
+                <p>— Ha han ! Ha han ! scande Héraclès en tirant de toutes ses forces avec la moitié
+                    de l’équipage, les amarres attachées à la proue, pendant que l’autre moitié
+                    pousse la poupe.</p>
+                <p>— Impossible ! crient certains, dépités.</p>
+                <p>— Et si j’essayais ? propose Orphée.</p>
+                <p>— Toi ? Et comment ? grogne Héraclès.</p>
+                <p>— Avec ma lyre !</p>
+                <p>— Avec ta lyre ? ironise Astrios. Tu veux jouer de la musique ? Ce n’est vraiment
+                    pas le moment !</p>
+                <p>— Pourquoi pas ? reprend Orphée en gardant son calme.</p>
+                <p>— Ne le provoque pas, chuchote quelqu’un, c’est le fils du roi de Thrace, Oéagre.
+                    Sa mère, Calliope, est une divinité, une des neuf Muses. N’oublie pas que Zeus
+                    est leur père…</p>
+                <p>— Peut-être, mais je ne vois pas comment tirer l’<hi rend="i">Argo</hi> avec une
+                    corde de lyre ! s’entête Astrios.</p>
+                <p>— Orphée a été initié aux rites magiques en Égypte, reprend l’autre. Méfie-toi,
+                    ce n’est pas un hasard s’il est l’un des nôtres.</p>
+                <p>— Eh bien Jason, que décides-tu ? Est-ce un mauvais présage envoyé par les dieux
+                    contre notre expédition ? l’interpelle Hippios.</p>
+                <p>— Non. Les vents sont favorables. Orphée, prends ta lyre et chante pour fêter
+                    notre départ. Vous, mettez les rames en place. Et toi Tiphys, attache le
+                    gouvernail.</p>
+                <p>— Mais le navire est à sec, s’étonne Astrios.</p>
+                <p>— Plus pour longtemps, réplique Jason.</p>
+                <ab type="line"/>
+                <p>Jamais je n’oublierai ce que j’ai vu : Orphée au bord des vagues blanches entonne
+                    de sa voix puissante un hymne à la mer. Les plus belles notes de sa lyre
+                    résonnent jusqu’au ciel. Alors les grands goélands qui traversent l’océan se
+                    posent sur les rochers pour l’écouter. Le vent s’arrête, le clapotis de la houle
+                    s’apaise et l’immense coque noire de l’<hi rend="i">Argo</hi> glisse lentement
+                    sur le sable. Tous les héros fascinés, émus jusqu’aux larmes, admirent leur <hi
+                        rend="i">Argo</hi> qui danse maintenant sur la mer. Personne n’ose parler,
+                    encore moins bouger au risque de rompre le charme et je crois voir l’œil bleu
+                    peint à la proue du navire pour conjurer le mauvais sort, s’écarquiller devant
+                    un tel prodige.</p>
+                <ab type="line"/>
+                <p>— Embarquons ! murmure Orphée, quelques instants plus tard, le regard perdu au
+                    loin, étrangement pâle.</p>
+                <p>Ses cheveux blonds bouclés encadrant son visage lui donnent un éclat mystérieux.
+                    Il égrène encore plusieurs notes sur sa lyre. Les goélands lui répondent de
+                    leurs cris rauques comme un adieu avant de reprendre leur route.</p>
+                <p>Un à un, les hommes montent sur le bateau par les échelles de bois. Chacun
+                    rejoint la place que le sort lui a attribuée, heureux de quitter enfin le
+                    rivage. Bientôt, ils rament en cadence et se dirigent vers le large où ils
+                    hisseront le grand mât et la voile. L’aventure commence…</p>
+                <p>Orphée se tient debout à la proue du navire. Il remercie sans doute le dieu
+                    Apollon de l’avoir aidé, à moins qu’il ne pense à sa mère, la divine Calliope et
+                    à toutes les Muses qui, dès sa naissance, l’ont initié aux secrets de la
+                    musique. N’a-t-il pas d’ailleurs ajouté deux cordes à sa lyre pour leur rendre
+                    hommage ? Neuf Muses, neuf cordes pour dévoiler aux hommes la beauté du Monde.
+                    Orphée a mis toutes ses forces dans ce chant magique.</p>
+                <ab type="line"/>
+                <p>La nuit descend à peine lorsque Jason décide de faire une première étape :</p>
+                <p>— Dormons à bord ce soir, propose-t-il, nous ferons le point demain pour repérer
+                    un port favorable et nous ravitailler en eau douce.</p>
+                <p>Les hommes, fatigués d’avoir ramé sous le soleil brûlant, se rassemblent près des
+                    trépieds de bronze où brûlent des branches de cèdre. Bientôt des viandes bien
+                    grasses cuisent sur les braises. Le vin coule dans les coupes, les langues se
+                    délient et les Argonautes discutent entre eux de cette lointaine Colchide.</p>
+                <p>Orphée et moi sommes restés à l’écart. Il me regarde, amusé.</p>
+                <p>— Tu n’as jamais navigué aussi loin, n’est-ce pas, Circos ? Depuis ce matin je
+                    t’observe, Jason a eu raison de t’accepter à bord.</p>
+                <p>— Où sommes-nous ?</p>
+                <p>— Peu importe.</p>
+                <p>— Regarde plutôt le ciel, ne t’inquiète pas de la route. Jason sait où il va.
+                    Tiphys tient bon la barre. Profite de la nuit. Écoute, tu n’entends pas le chant
+                    de la mer ? Tu ne sens pas son odeur d’écume et de sel ? Laisse-toi aller à la
+                    douceur du crépuscule. De quoi as-tu peur ?</p>
+                <p>— Je ne sais pas. Je ne suis pas un héros, comme vous tous sur l’<hi rend="i"
+                        >Argo</hi>, ni mon père ni ma mère ne sont divins…</p>
+                <p>— Si les dieux t’ont choisi pour cette expédition, c’est qu’ils te protègent. Ils
+                    connaissent ton courage, ils savent qui tu es. Ne doute pas de toi. Tiens, c’est
+                    pour toi, un talisman contre la mort, ajoute Orphée en me passant autour du cou
+                    une cordelette rouge où pend un petit dauphin en ivoire.</p>
+                <p>— Le signe d’Apollon !</p>
+                <p>— Tu en auras besoin contre les monstres marins, et la violence des hommes. Un
+                    jour, je t’initierai aux secrets de la divination, mais pour l’instant, ne dis
+                    rien à personne. Cache ce talisman sous ta tunique et ne t’en sépare sous aucun
+                    prétexte.</p>
+                <ab type="line"/>
+                <p>Orphée a appris auprès des grands prêtres égyptiens à utiliser des charmes et des
+                    amulettes contre ses ennemis. Il connaît les mystères divins et sait interpréter
+                    les signes des dieux. Mais je n’ose pas l’interroger. Comment la musique
+                    peut-elle attirer un navire comme si c’était un être vivant, sans posséder de
+                    puissants pouvoirs ?</p>
+                <p>Orphée devine mes pensées.</p>
+                <p>— Dionysos ! me souffle-t-il à l’oreille.</p>
+                <p>— Je ne comprends pas !</p>
+                <p>— Le dieu de la Vigne et du Vin endort nos sens avec son breuvage aussi doux que
+                    le miel et tout n’est qu’illusion.</p>
+                <p>— Comment cela ?</p>
+                <p>— Cherche Circos ! Tu trouveras.</p>
+                <p>— Explique-moi ! Orphée…</p>
+                <p>Mais il a déjà rejoint Jason et d’autres compagnons.</p>
+            </div>
+            <div>
+                <head>2 <lb/> Les argonautes rencontrent le centaure Chiron</head>
+                <p>Cela fait quelques jours que nous naviguons avec l’<hi rend="i">Argo</hi>,
+                    longeant les côtes, évitant les écueils, jouant avec le vent quand il est
+                    favorable pour hisser la voile. Les Argonautes forment un équipage solide, mais
+                    si Jason est notre chef désigné à l’unanimité, malgré tout, il y a des tensions.
+                    Les héros sont courageux mais aussi orgueilleux et fiers. Ils n’ont pas
+                    l’habitude d’être commandés. Leur passé est parfois noir et ils peuvent être
+                    violents.</p>
+                <p>Un matin, Pelée, apercevant au loin le mont Pélion où habite le Centaure Chiron,
+                    nous interpelle :</p>
+                <p>— Compagnons, arrêtons-nous dans cette crique, et débarquons pour saluer le plus
+                    célèbre des Centaures.</p>
+                <p>— Cette halte va nous retarder ! s’emporte Astrios, les Centaures sont des brutes
+                    sauvages sans foi ni loi. Pourquoi nous jeter dans la gueule du loup ?</p>
+                <p>— Chiron n’a rien à voir avec eux, il n’en a que l’apparence, s’indigne Pelée. Je
+                    lui ai confié mon fils, Achille, pour qu’il l’élève et j’aimerais le serrer dans
+                    mes bras une dernière fois. La route est longue jusqu’en Colchide !</p>
+                <p>— Laissons Chiron dans sa grotte à jouer les nourrices, ricane Astrios. Il sait
+                    qu’autrefois sur ce même mont Pélion, le Centaure a sauvé Pelée des bêtes
+                    sauvages et des hommes qui voulaient l’assassiner. Une sombre histoire qu’il
+                    vaut mieux éviter de raconter.</p>
+                <p>— Qu’est-ce que tu insinues ? s’écrie Pelée.</p>
+                <p>— Moi ? Rien, pourquoi ? le nargue Astrios.</p>
+                <p>— Pelée a raison, le soutient Héraclès, allons voir Chiron. Il sera de bon
+                    conseil pour cette expédition. Moi, il m’a appris à observer les étoiles et à
+                    soigner avec des herbes, quand j’étais enfant.</p>
+                <p>Et Héraclès se range aux côtés de Pelée.</p>
+                <p>— Astrios, l’interroge Orphée, tu as peur de Chiron ? Qu’est-ce que tu as à te
+                    reprocher ? On dit qu’il est voyant, il pourrait deviner tes pensées secrètes ou
+                    te révéler ce que tu ne veux pas connaître : ton heure de gloire ou peut-être
+                    celle de ta mort.</p>
+                <p>Astrios est furieux mais il ne bronche pas.</p>
+                <p>— Eh bien, décide Jason, Tiphys, lève le gouvernail et accostons. Astrios, tu
+                    garderas le navire en notre absence avec dix hommes. Choisis tes compagnons. Que
+                    chacun garde son épée au côté. Orphée, prends ta lyre. Tu le sais, Chiron aime
+                    la musique et il est bon musicien.</p>
+                <p>— Décidément, ce centaure a toutes les qualités ! Il joue avec ses pattes ou avec
+                    ses mains ?</p>
+                <p>Héraclès empoigne Astrios mais Orphée les sépare :</p>
+                <p>— Un jour, Chiron te jettera un sort pour l’avoir insulté. Souviens-t’en ! le
+                    menace-t-il.</p>
+                <ab type="line"/>
+                <p>Quand enfin nous débarquons, Jason donne ses ordres :</p>
+                <p>— Héraclès et Pelée, passez en tête et frayez-nous un chemin jusqu’au sommet. Moi
+                    aussi Chiron m’a appris tout ce que je dois savoir pour un jour devenir roi,
+                    ajoute-t-il. C’est le but de notre expédition en Colchide pour rapporter la
+                    Toison d’or. Alors, compagnons, en avant ! s’écrie-t-il joyeusement.</p>
+                <ab type="line"/>
+                <p>Nous grimpons vite, traçant une piste à travers les herbes et les arbres sombres
+                    d’une immense forêt. Le soleil est déjà haut lorsque enfin nous atteignons la
+                    grotte de Chiron.</p>
+                <p>— Je vous attendais, héros de toute la Grèce ! Héraclès, Ulysse, Orphée et toi
+                    aussi Circos dont je connais la loyauté. Bienvenue dans mon royaume ! Pelée,
+                    viens admirer Achille. Quand il grandira, tu seras fier de lui, il deviendra un
+                    homme accompli, un guerrier redoutable et invincible.</p>
+                <p>— Que les dieux t’entendent ! Et ce sera grâce à toi, le remercie Pelée, ému de
+                    retrouver son fils. Aujourd’hui, nous avons besoin de tes conseils, avant de
+                    reprendre la mer. Dis-nous quelles épreuves nous attendent avant de conquérir la
+                    Toison d’or ?</p>
+                <p>Le Centaure a recouvert ses épaules d’une grande étoffe de lin ; elle descend sur
+                    l’autre moitié de son corps, celle d’un cheval à la croupe puissante, aux jambes
+                    fines et rapides avec quatre sabots d’un noir étincelant. Ce n’est pas cette
+                    anormalité qui m’attire mais le regard perçant de Chiron. Il nous observe tour à
+                    tour avec bienveillance comme s’il voyait en nous.</p>
+                <p>— Mes amis, que les dieux vous bénissent et vous gardent sains et saufs pendant
+                    cette aventure. Puisque vous êtes mes hôtes, mangeons et buvons ensemble. Je
+                    vous révélerai plus tard ce que je sais, mais le destin des hommes appartient
+                    aux divinités.</p>
+                <ab type="line"/>
+                <p>À la fin du repas, le vin mêlé de miel nous a rendus joyeux. Nous oublions les
+                    pirates et les barbares qui rôdent le long des côtes. Un de nos compagnons
+                    demande même :</p>
+                <p>— Orphée et Chiron, jouez de la lyre pour nous !</p>
+                <p>Tout le monde applaudit.</p>
+                <p>Chiron accepte et prend son instrument.</p>
+                <p>— Chante, Orphée, pendant que je joue, lui propose-t-il.</p>
+                <p>Mais par respect, Orphée préfère chanter après le Centaure.</p>
+                <p>Lorsque ensuite Orphée entonne l’histoire des commencements du Monde, la
+                    naissance du Ciel, de la Terre et des Mers si profondes, sa voix mélodieuse
+                    accompagnée par sa lyre emplit soudain l’immensité de la caverne. Elle résonne
+                    jusqu’en haut des sommets, vibre jusque dans les vallées. Les bêtes sauvages aux
+                    aguets tentent de repérer d’où vient ce son étrange et inconnu. Biches, cerfs,
+                    sangliers, fauves tapis dans les buissons, tous sortent de leurs tanières et
+                    courent jusqu’à la grotte pour écouter Orphée. Les oiseaux quittent leurs nids
+                    et volent en bandes jusqu’aux grands chênes près de la grotte de Chiron. Même
+                    les arbres marchent à petits pas sur leurs racines pour se rapprocher d’Orphée.
+                    Quant aux rochers, ils roulent sur eux-mêmes pour arriver les premiers. La
+                    nature tout entière se rassemble, ensorcelée par son chant. Sa voix s’insinue
+                    dans tous les êtres, qu’ils soient de pierre, de feuille ou de sang, comme une
+                    étrange force de vie. Nul ne peut échapper à ce sortilège. Chiron retient son
+                    souffle, étonné par un tel enchantement, mais soudain un des Argonautes resté à
+                    bord arrive en courant :</p>
+                <p>— Il faut partir, s’écrie-t-il, nous avons repéré des navires au loin,
+                    certainement des pirates et nous voulons les combattre.</p>
+                <p>Orphée interrompt brusquement son chant et nous saisissons aussitôt nos armes.
+                    Mais où sont les bêtes, les arbres, les rochers ? Ils ont disparu !</p>
+                <p>Je m’interroge : « Dionysos nous aurait-il tous trompés ? »</p>
+                <p>— Non, chuchote Chiron, tu n’as pas rêvé Circos, regarde les empreintes sur le
+                    sol et ces plumes laissées par les aigles lorsqu’ils ont pris leur envol.</p>
+                <ab type="line"/>
+                <p>Avant que nous repartions vers le navire, Chiron rejoint Orphée.</p>
+                <p>— En souvenir de cet instant où tu m’as fait revivre les premiers matins du
+                    Monde, je t’offre cette peau de léopard. Porte-la pour en revêtir la force et
+                    l’intelligence, dit Chiron, ému, en le serrant dans ses bras. Orphée, n’oublie
+                    jamais, poursuit-il, que l’harmonie de l’Univers et le destin de l’Homme sont
+                    liés. Ce qui la détruit nous détruit aussi.</p>
+                <p>Orphée jette la peau de léopard sur ses épaules et s’incline devant Chiron :</p>
+                <p>— Je ne l’oublierai pas, lui promet-il, le visage grave. Ma musique, je l’espère,
+                    embellira le Monde.</p>
+                <p>Le temps presse. Pelée embrasse son fils en pleurant. Quand le reverra-t-il ?
+                    Nous redescendons vers le navire, je me retourne une dernière fois avant
+                    d’entrer dans la forêt et j’aperçois là-haut Chiron, les mains levées vers le
+                    Ciel, implorant les dieux.</p>
+                <ab type="line"/>
+                <p>Dès que nous sommes à bord, Tiphys abaisse le gouvernail. Nous saisissons les
+                    rames et nous manœuvrons de toutes nos forces. Bientôt, l’écume blanchit la mer
+                    et la coque noire de l’<hi rend="i">Argo</hi> fend les vagues. Mais les pirates
+                    disparaissent déjà au loin, inutile de les poursuivre plus longtemps. Alors,
+                    nous mettons le cap sur un autre rivage. Quand enfin nous pouvons démonter le
+                    mât et affaler la voile, la brume se lève à l’horizon tandis que le soleil se
+                    couche lentement. Où débarquerons-nous pour la nuit ? Je ne sais pas. Je viens
+                    de vivre le plus beau jour de ma vie là-haut sur le Pélion. Le talisman d’Orphée
+                    effleure doucement ma peau. Je cherche son regard. Il me dévisage sans me voir,
+                    mélancolique et perdu dans ses songes.</p>
+            </div>
+            <div>
+                <head>3 <lb/> Orphée, maître des éléments</head>
+                <p>Les petites entailles gravées sur le bois de ma rame indiquent le nombre de jours
+                    depuis notre départ de Thrace. La Colchide est encore loin et la Toison d’or
+                    aussi. Notre mission réussira-t-elle ? Le roi de Colchide, Éétès, offrira-t-il à
+                    Jason la peau de ce bélier ailé et magique, toute pailletée d’or ? Ou bien
+                    finirons-nous sans connaître la gloire au fond de l’eau dans le Royaume du dieu
+                    Poséidon ?</p>
+                <p>La fatigue creuse les visages. L’effort rend les muscles douloureux. Le sel des
+                    embruns et le soleil craquellent la peau. Cela fait longtemps que les oiseaux
+                    des mers accompagnant notre voyage ont disparu. Nous sommes seuls sur la mer
+                    sombre et profonde.</p>
+                <p>Depuis notre rencontre avec Chiron sur le mont Pélion, personne à bord n’a
+                    entendu Orphée chanter ni jouer de sa lyre. Il semble ailleurs. Lorsque
+                    j’interroge Jason pour savoir ce qui se passe, il me répond agacé qu’il n’en
+                    sait rien.</p>
+                <p>— Orphée a parfois des moments de tristesse inexplicables. Sans doute parce que
+                    les dieux lui ont permis de voir ce que les autres ne voient pas. C’est comme
+                    ça. Parle-lui toi, bougonne-t-il.</p>
+                <p>— Je n’ose pas.</p>
+                <p>— Eh bien moi non plus. En attendant, impossible de demander à Héraclès de nous
+                    donner la cadence pour ramer. Les sons de sa lyre ressemblent aux cris d’une oie
+                    sauvage ! reprend Jason.</p>
+                <p>— L’<hi rend="i">Argo</hi> a ralenti son allure, pas moyen de hisser la voile,
+                    les vents ne sont pas favorables ! signale Tiphys. On ferait mieux de trouver un
+                    rivage où aborder et se reposer quelques jours. Chasser et trouver une source
+                    d’eau fraîche feraient le plus grand bien à tous.</p>
+                <p>Jason l’approuve et décide de réunir un conseil.</p>
+                <p>— Compagnons, arrêtons-nous pour reprendre des forces et sacrifier aux dieux sur
+                    une terre où les hommes respectent peut-être les lois de l’hospitalité, comme le
+                    veut Zeus.</p>
+                <p>— Comment sauras-tu qu’elle n’est pas habitée par des monstres ? claironne
+                    Astrios. Demandons à notre devin ce qu’il en pense. Orphée ?</p>
+                <p>— Ça suffit ! s’écrie Jason. Monstres ou pas, personne ici sur l’<hi rend="i"
+                        >Argo</hi> n’a peur de se battre et chacun sait aussi défendre son honneur.
+                    Arrête tes insultes et tes provocations, cela pourrait te coûter cher.</p>
+                <p>— Tu me menaces ! ironise Astrios, mais c’est lui que j’interpelle…</p>
+                <p>Orphée ne lui répond pas.</p>
+                <p>— Île en vue, prévient Tiphys, démontez le mât et affalez la voile, tous à vos
+                    rames. Nous allons longer la côte pour débarquer. Préparez-vous.</p>
+                <p>Que nous réserve cette halte ? s’interrogent certains, excités par l’inconnu. Ils
+                    aiguisent leur lance, sortent leurs boucliers, prêts à combattre.</p>
+                <ab type="line"/>
+                <p>Dès qu’ils sont installés sur le rivage, plat et désert, le ciel se charge de
+                    nuages. L’orage arrive, le tonnerre gronde.</p>
+                <p>— Quelqu’un aurait-il offensé Zeus ? murmure Jason.</p>
+                <p>— Il n’y a que des marais et des nuées d’insectes ici, remontons à bord et
+                    trouvons une autre crique plus loin, propose Ulysse.</p>
+                <p>Trop tard ! Des éclaireurs s’éloignent déjà pour explorer cette terre étrangère.
+                    Ils espèrent bien voler quelques troupeaux de bœufs bien gras ou chasser le
+                    cerf. Mais le vent se lève en bourrasque. Un épais brouillard monte soudain des
+                    marécages. Les éclairs strient le ciel noir.</p>
+                <p>— Nos éclaireurs vont se perdre, s’inquiète Pelée. Où est Orphée ? S’ils
+                    entendent sa lyre ils pourront se repérer.</p>
+                <p>— Pourquoi n’est-il pas avec nous ? s’énerve Jason. Circos, trouve-le. Nous avons
+                    besoin de lui.</p>
+                <p>Astrios, sans s’en rendre compte, a entraîné les Argonautes vers les marais.
+                    Impossible maintenant de faire demi-tour, ils s’enlisent dans la vase même en
+                    s’agrippant aux roseaux. Si l’un d’eux tombe, il sera englouti par cette masse
+                    verdâtre qui s’accroche à chacun de leurs pas.</p>
+                <p>— Astrios, crie Hippios, Hadès, le dieu des Enfers, nous a tendu un piège, nous
+                    allons tous mourir.</p>
+                <p>Astrios ne répond rien. Il a de la vase jusqu’aux genoux et ne peut pas bouger :
+                    plus il se débat, plus il s’enfonce. Son arc et sa lance ne lui sont d’aucun
+                    secours. Il entend les cris désespérés des Argonautes qui l’ont suivi, sans
+                    pouvoir les aider. Astrios tremble de froid et de peur, quand brusquement son
+                    instinct de chasseur l’avertit. Il distingue un grognement sauvage dans le
+                    bruissement des herbes. La bête est proche. Elle rôde tout près de lui. Elle a
+                    dû le flairer depuis longtemps et attend pour bondir. Les roseaux s’écartent
+                    dangereusement. Non ! hurle-t-il, terrifié. Mais le vent en rafales étouffe sa
+                    voix. Prisonnier du marécage, Astrios sait qu’il va mourir piétiné par la harde
+                    de sangliers que le fracas de l’ouragan a débusquée. L’énorme laie qui la
+                    dirige, suivie par d’autres femelles et leurs marcassins, ne changera pas de
+                    trajectoire. Elle connaît son territoire et, quoi qu’il arrive, elle
+                    passera.</p>
+                <p>Astrios pense à son père qui rêvait de gloire pour son fils et voilà aujourd’hui
+                    quel est son destin. Pleurant de rage, il maudit Jason, son expédition, et tous
+                    ses compagnons, des héros incapables de le secourir malgré leur force, leur
+                    adresse à l’arc et leurs ruses. Il se souvient des menaces d’Orphée et regrette
+                    amèrement maintenant d’avoir insulté le Centaure. Mais que peuvent les mortels
+                    quand les dieux décident de leur destin ?</p>
+                <p>La laie, furieuse de trouver un ennemi sur son passage, fonce sur Astrios. Ses
+                    défenses le frappent comme deux poignards, le blessant profondément au torse et
+                    à l’épaule. Sous le choc et la douleur, il perd connaissance.</p>
+                <ab type="line"/>
+                <p>Le sable tourbillonne, cinglant nos visages. Les vagues déchaînées se fracassent
+                    à nos pieds. Je hurle dans la tornade :</p>
+                <p>— Orphée a disparu ! Jason, j’ai interrogé ceux qui sont restés sur le rivage,
+                    prêts à rejoindre l’<hi rend="i">Argo</hi> si tu en donnes l’ordre. Mais
+                    personne ne l’a vu et tous se contredisent. Les uns affirment qu’il a débarqué
+                    avec eux ; les autres qu’il est resté à bord.</p>
+                <p>— Fuyons cette île maudite, Jason, ou nous allons tous mourir, conseille l’un des
+                    nôtres.</p>
+                <p>— Impossible de reprendre la mer avec l’<hi rend="i">Argo</hi>, elle est trop
+                    dangereuse et comment embarquer ? La force des vagues est telle que nous
+                    risquerions de nous noyer, prévient Tiphys.</p>
+                <p>— De toute façon, nous ne pouvons pas abandonner nos compagnons, s’écrie Jason.
+                    Orphée n’est pas resté à bord ! J’en suis certain. Circos, trouve-le, c’est une
+                    question de vie ou de mort !</p>
+                <p>Sa voix trahit son inquiétude. Qu’attend-il d’Orphée ? Je repars sur mes pas et
+                    lutte contre la tempête, tenant à peine debout. Quel dieu furieux contre nous
+                    a-t-il déchaîné cette tornade ? Astrios s’en est pris à Chiron, aurait-il aussi
+                    défié Dionysos, Apollon ou bien Poséidon ? Je cherche fiévreusement sous ma
+                    tunique mon talisman. Je ne le sens plus. Je l’ai perdu ! Mon cœur s’affole, mes
+                    jambes tremblent. Je pense, désespéré : Apollon nous punit tous, à cause de moi.
+                    Je n’ai pas su l’honorer comme il se doit. Je m’effondre en larmes sur le sable,
+                    quand dans un éclair, j’aperçois Orphée. Il se tient debout sur un rocher, face
+                    à la mer grise, les mains levées vers le ciel. Son visage exalté, ruisselant de
+                    pluie, est d’une beauté inquiétante. Je murmure troublé : il est la Mer, la
+                    Tempête et le Vent… Peu lui importe l’orage et les éclairs, il est le Maître des
+                    éléments, par le pouvoir des dieux.</p>
+                <p>Je l’appelle, exténué, mais une vague me submerge ; je roule sur moi-même,
+                    entraîné par la mer. Ensuite, tout va très vite. Je m’entends crier : Orphée !
+                    Le dauphin d’Apollon ! Puis plus rien, je sombre sous l’eau, assommé par la
+                    violence d’une lame de fond.</p>
+                <ab type="line"/>
+                <p>— Circos ! hurle Orphée.</p>
+                <p>Mais son ami ne l’entend plus. Brusquement, la mer se retire, rejetant sur le
+                    sable le corps inanimé de Circos. L’ouragan s’éloigne aussi vite qu’il les avait
+                    surpris sur le rivage. Le ciel peu à peu s’éclaircit. Bientôt, le clapotis des
+                    vagues répond aux premiers chants d’oiseaux.</p>
+                <p>Orphée serre Circos dans ses bras :</p>
+                <p>— Vis ! Tu m’entends, vis ! implore-t-il.</p>
+                <p>Mais Circos respire à peine. Alors, doucement, comme l’on berce un enfant, Orphée
+                    lui chante à l’oreille les merveilles du Monde et l’amour de la Vie, les
+                    amandiers en fleur, les reflets argentés des oliviers, le vent sauvage de
+                    l’hiver et la douceur de l’été. Orphée guette le moindre souffle de Circos, le
+                    plus infime mouvement de paupière. Lorsque son ami ouvre enfin les yeux, Orphée
+                    y lit un désespoir qu’il ne lui connaît pas.</p>
+                <p>— Je l’ai perdu, avoue Circos dans un murmure, avant de sombrer de nouveau.</p>
+                <p>Avec d’infinies précautions, Orphée entrouvre la tunique de son ami, dénoue la
+                    cordelette autour de son cou et glisse le dauphin d’Apollon au creux de sa main.
+                    Circos sent l’ivoire lisse sur sa peau et sourit, apaisé. Alors, Orphée le
+                    soulève avec d’infinies précautions et le porte dans ses bras, pour rejoindre
+                    Jason.</p>
+                <p>— Orphée, où étais-tu ? Nous avions besoin de toi ! s’écrie Jason en colère. Les
+                    éclaireurs se sont perdus dans les marais. Ton chant aurait pu les guider.</p>
+                <p>Mais Orphée ne lui répond pas. Il dépose Circos sur le sable.</p>
+                <p>— Occupez-vous de lui, demande-t-il à ses compagnons, et faites-lui boire du vin
+                    mélangé avec du miel.</p>
+                <p>Se tournant vers Jason, il ajoute :</p>
+                <p>— Pourquoi m’agresses-tu, ce n’est pas moi qui décide du sort des humains, ni mon
+                    chant, ni ma lyre, ce sont les dieux. Tout ce que j’accomplis, je l’accomplis en
+                    leur nom.</p>
+                <p>Jason se reprend aussitôt.</p>
+                <p>— Je ne voulais pas t’offenser, mais…</p>
+                <p>— Ceux que tu cherches sont sains et saufs, l’interrompt Orphée, ils vont
+                    rebrousser chemin et revenir au bateau. Astrios est grièvement blessé, mais les
+                    divinités lui ont laissé une chance de se racheter. La vase du marais est sèche,
+                    demande à Héraclès de le tirer de là et je le soignerai.</p>
+                <p>— Mais comment le sait-il ? pense Jason, stupéfait.</p>
+                <p>— Fais allumer des feux, et maintenant, laisse-moi, ce que tu voulais savoir tu
+                    le sais.</p>
+                <p>Et, sur ces paroles énigmatiques, Orphée disparaît.</p>
+                <ab type="line"/>
+                <p>La nuit est claire. Les compagnons se sont rassemblés près des feux. Ils ont
+                    versé au sol les libations réservées aux dieux mais ils ne leur offriront pas de
+                    viandes bien grasses grillées sur les brasiers. Les argonautes non plus ne
+                    mangeront pas la part qui leur est due, dans le sacrifice fait aux divinités.
+                    Jason, craignant de réveiller la colère des bêtes ou des monstres des lieux, a
+                    ordonné de ne rien chasser sur cette terre maudite. Ce soir, chacun semble
+                    plongé dans ses pensées, car ils ont beau être fils de dieux ou de déesses,
+                    avoir combattu avec courage leurs ennemis, bravé les pires dangers et même la
+                    mort en brandissant leurs lances et leurs boucliers, qui sont-ils face à la mer,
+                    l’orage, le vent ? Que peuvent-ils contre les forces de l’Univers ? Pas
+                    grand-chose. À la lueur des flammes, leurs visages tristes et fatigués reflètent
+                    leurs doutes et seuls les gémissements plaintifs d’Astrios répondent à leur
+                    angoisse.</p>
+                <p>— Demain, dès l’aube, annonce Jason, l’air grave, nous reprendrons la mer.</p>
+                <p>Et tous acquiescent en silence.</p>
+            </div>
+            <div>
+                <head>4 <lb/> Jason demande conseil</head>
+                <p>Orphée m’a veillé jour et nuit. Il m’a fait boire et manger avec patience, me
+                    répétant secrètement : « Oublie tout ce que tu as vu et entendu, oublie ! » Mais
+                    c’est impossible. Tout est inscrit dans ma mémoire !</p>
+                <p>Lorsque j’ai pu me mettre debout et enfin tenir ma place de rameur, Orphée a
+                    repris sa lyre sous les cris de joie des Argonautes, heureux qu’il leur donne de
+                    la cadence. L’<hi rend="i">Argo</hi> avancera maintenant à un bon rythme. Ils
+                    ont déjà fait escale à Samothrace, cette île où les mystères des choses secrètes
+                    sont révélés aux initiés et aux héros qui le méritent. Orphée voulait dans le
+                    sanctuaire sacré des Grands Dieux, protecteurs des navigateurs, que chacun se
+                    purifie de ses haines, de ses crimes avant de continuer l’aventure. Héraclès,
+                    Pelée, Ulysse, Jason, chacun avait de bonnes raisons d’accepter. J’aurais aimé
+                    être des leurs mais j’étais encore trop faible pour quitter l’Argo et puis, je
+                    n’aurais pas résisté à Borée, le vent du Nord qui ce jour-là comme tant
+                    d’autres, balayait l’île. Orphée me racontera plus tard les histoires divines,
+                    celles de la déesse Déméter et de sa fille Perséphone. Il m’enseignera les rites
+                    sacrés, ceux que je dois connaître pour vivre éternellement. Il me l’a affirmé
+                    après ma noyade : l’homme renaîtra après sa mort, les héros et les initiés
+                    connaîtront un bonheur sans fin dans l’île des Bienheureux et je serai de
+                    ceux-là. Mais pour l’instant, notre objectif, c’est la Toison d’or pour que
+                    Jason puisse reprendre le trône de son père usurpé par le roi Pélias. Rapporter
+                    la Toison d’or sera une rude épreuve car elle est sous la garde d’un dragon et,
+                    après bien des événements, nous avons dû partir de l’île de Mysie avant
+                    qu’Héraclès ne monte à bord… Sans lui, sans sa force et son adresse, ce sera
+                    difficile. Et comment Héraclès reviendra-t-il sur sa terre natale ?</p>
+                <p>— Eh bien Circos, à quoi rêves-tu ? m’interpelle Orphée, devinant mes
+                    pensées.</p>
+                <p>— Héraclès se débrouillera seul. C’était son destin de nous quitter là. Sa force
+                    prodigieuse l’aidera à revenir dans son pays. Il ne craint rien ni personne.
+                    Pollux aussi saura nous défendre ! C’est notre champion ! Tu as vu pendant notre
+                    escale dans ce royaume, comment il a battu le roi Amycos à la boxe. Avec Pollux,
+                    que peut-il nous arriver ?</p>
+                <p>J’ajoute, peu convaincu :</p>
+                <p>— Oui, mais…</p>
+                <p>— Mais quoi ? se moque-t-il en riant. Récapitulons : jusqu’à maintenant, nous
+                    avons su naviguer en haute mer, affronter les pirates, les tempêtes, réussir les
+                    épreuves imposées par les dieux. Nous avons débarrassé le devin Phinée des
+                    horribles harpies qui le persécutaient, franchis la passe des Roches Bleues sans
+                    que l’<hi rend="i">Argo</hi> ne soit écrasé… Que te faut-il encore comme preuves
+                    de notre courage à tous ?</p>
+                <p>— Oui, tu as raison !</p>
+                <p>— Ah, j’oubliais Astrios ! tente encore Orphée pour me convaincre.</p>
+                <p>— Astrios ?</p>
+                <p>— Je l’ai guéri non seulement de ses blessures mais de son agressivité, et ça
+                    aussi c’est un exploit ! Alors ? Dis-moi ? Tu redoutes quoi encore ? Ça ?
+                    reprend-il, en mimant un monstre.</p>
+                <p>J’éclate de rire et ajoute plus sérieusement :</p>
+                <p>— Jason nous a prévenus qu’un dragon gardait la Toison d’or.</p>
+                <p>— Jason n’en fera qu’une bouchée, crois-moi ! Maintenant que nous approchons de
+                    la Colchide, garde ton sang-froid ! Ton talisman ne t’a-t-il pas sauvé ?
+                    Fais-moi confiance. Je devrais plutôt t’apprendre à jouer de la lyre,
+                    ajoute-t-il en me la tendant.</p>
+                <p>Mais je ne la prends pas car ce sont les dieux qui lui ont offerte.</p>
+                <p>— Comme tu veux, alors je joue pour toi un dernier chant. Il raconte l’histoire
+                    de deux amis embarqués dans une grande expédition, tu la connais peut-être ?</p>
+                <p>— Arrête de te moquer de moi.</p>
+                <p>— Moi ? Oh non !</p>
+                <p>Et il se met à égrener quelques notes joyeuses en hommage à la mer. Penché
+                    par-dessus bord, je contemple rêveur les dauphins et les poissons bleutés. Ils
+                    sautent dans les vagues et accompagnent l’<hi rend="i">Argo</hi> pour écouter
+                    eux aussi Orphée chanter.</p>
+                <ab type="line"/>
+                <p>— Mes amis, nous allons atteindre l’embouchure du fleuve qui mène en Colchide,
+                    nous sommes proches du but. Mais cette étape de notre expédition reste la plus
+                    difficile. Je dois convaincre le roi Éétès de m’offrir la Toison d’or, par la
+                    ruse mais peut-être aussi par la force. Si je la rapporte à Pélias, il rendra à
+                    mon père le pouvoir qu’il lui a usurpé.</p>
+                <p>Jason nous a tous réunis. Demain nous serons à terre après des mois de
+                    navigation. Le grand mât a été démonté et la voile roulée. Tiphys qui a sillonné
+                    la mer et gardé le cap quoi qu’il arrive est mort il y a quelques jours. Orphée
+                    n’a rien pu faire pour lui. Ancée le remplace maintenant et nous avons confiance
+                    en lui.</p>
+                <p>— J’ai besoin de vos conseils, poursuit Jason.</p>
+                <p>Nous le sentons tendu et inquiet.</p>
+                <p>— Faut-il que je parte seul trouver le roi ou avec vous, pour me protéger ? Ne
+                    risque-t-il pas de croire en me voyant escorté par de tels héros que je le
+                    menace et cherche à m’emparer de son trône ?</p>
+                <p>— Tu dois y aller seul, répond Ulysse, mais convenons d’un signal. Si jamais tu
+                    es en danger, préviens-nous et nous accourrons avec nos lances et nos arcs.</p>
+                <p>— Et toi, qu’en penses-tu, Orphée ? l’interroge Jason.</p>
+                <p>— Tu devras ruser car ce roi est hypocrite, menteur et fourbe. Ce qu’il
+                    t’accordera d’une main, il te le reprendra de l’autre. Méfie-toi.</p>
+                <p>— Tu nous as dit qu’un dragon surveillait la Toison d’or et que personne ne
+                    pouvait s’en approcher, alors, comment vas-tu faire ? demande Astrios.</p>
+                <p>— C’est exact, répond Jason, eh bien je le tuerai, avec l’aide des dieux.</p>
+                <p>— Nous resterons donc à bord, prêts à repartir si tu es poursuivi, conclut Pelée.
+                    Pour ce dernier soir avant que tu ne rencontres le roi de Colchide, mangeons et
+                    buvons ensemble à ton succès et à notre arrivée sains et saufs jusqu’ici !</p>
+                <p>Je lève ma coupe en l’honneur de Jason et de notre regretté Tiphys qui a su
+                    naviguer en haute mer, comme personne.</p>
+                <p>Tous les Argonautes l’imitent dans un brouhaha indescriptible, évoquant entre eux
+                    leurs combats contre les pirates des mers, les pillages des barbares, les
+                    chasses aux cerfs magnifiques et tant d’autres péripéties.</p>
+                <p>Astrios a rejoint Orphée.</p>
+                <p>— Je peux te l’avouer maintenant, je t’ai entendu lorsque tu étais chez Chiron et
+                    ta poésie m’a ému jusqu’aux larmes. Ta musique a aussi soigné mes blessures. Je
+                    t’écoutais jouer de la lyre pour Circos. Un jour, j’ai senti que quelque chose
+                    en moi changeait, ma vieille carapace se fissurait, lui confie Astrios. Orphée,
+                    chante pour nous ce soir, le sollicite-t-il.</p>
+                <p>— Non, pas ce soir, mon chant serait peut-être triste et tous ont besoin de
+                    s’amuser. Mais que ma musique te rende heureux encore longtemps, répond Orphée,
+                    troublé.</p>
+                <p>Il a brusquement changé d’humeur, cela lui arrive souvent. Son visage se ferme
+                    comme si soudain il connaissait l’avenir.</p>
+                <ab type="line"/>
+                <p>La nuit est claire. Allongés sur des peaux de bêtes à l’avant du navire, Orphée
+                    et moi scrutons les constellations.</p>
+                <p>— Tu vois là, c’est celle du Capricorne, la bonne chèvre Amalthée qui a nourri de
+                    son lait Zeus, le dieu des dieux, me montre-t-il.</p>
+                <p>Mais je ne l’écoute pas et le questionne, inquiet :</p>
+                <p>— Pourquoi étais-tu triste tout à l’heure ? Qu’as-tu vu de sombre dans notre
+                    avenir ? Jason va-t-il mourir ou peut-être l’un de nous ?</p>
+                <p>— La violence, le crime, les larmes et le sang, murmure Orphée en frissonnant. Et
+                    si la beauté du Monde ne pouvait pas vaincre le mal ?</p>
+                <p>— Je ne comprends pas ?</p>
+                <p>— Un jour tu comprendras, affirme Orphée, énigmatique.</p>
+                <p>Mais je m’entête :</p>
+                <p>— Tu dis cela pour toi ? Tu es en danger ? Ici, sur l’<hi rend="i">Argo</hi> ? Je
+                    serai toujours à tes côtés, je te protégerai, il ne t’arrivera rien. Les dieux
+                    m’écouteront…</p>
+                <p>Je ne sais plus quoi lui promettre. Je me sens stupide et désemparé.</p>
+                <p>— Je sais quel ami tu es Circos. Sans toi, cette expédition aurait été bien
+                    différente, ajoute Orphée.</p>
+                <p>— Alors, raconte-moi encore comment Apollon s’est changé en dauphin pour trouver
+                    les grands prêtres qui lui rendraient un culte dans son temple…</p>
+                <p>— Je te l’ai déjà raconté mille fois, soupire Orphée, amusé.</p>
+                <p>— Eh bien ça fera mille et une fois !</p>
+            </div>
+            <div>
+                <head>5 <lb/> Jason et la Toison d’or</head>
+                <p>Cela fait des jours et des nuits que nous attendons, aux aguets, écoutant le
+                    moindre bruit de lance ou de boucliers, craignant les guerriers du roi Éétès.
+                    Nous sommes prêts à bondir les armes à la main si nous entendons le signal de
+                    Jason. Nous avons posté des guetteurs à l’embouchure du fleuve et, à bord de
+                        l’<hi rend="i">Argo</hi>, nous veillons toute la nuit en nous relayant pour
+                    dormir. Que se passe-t-il à terre, au palais du roi ? Nous imaginons le pire,
+                    sans oser entrer en force dans la ville.</p>
+                <p>— Orphée, l’interpelle Pelée, les dieux t’ont-ils révélé en songe quelles
+                    épreuves attendent Jason ? A-t-il réussi à tuer le dragon ?</p>
+                <p>— Jason ne tuera pas le dragon, l’avertit Orphée d’une voix rauque et saccadée
+                    que je ne lui connais pas.</p>
+                <p>Tous les Argonautes font aussitôt cercle autour de lui.</p>
+                <p>— Arès est le plus terrible de tous les dieux, celui de la haine et de la guerre.
+                    Son dragon souffle la mort dès qu’il aperçoit un humain. Jason ne tuera pas le
+                    dragon, il ne le tuera pas ! répète Orphée.</p>
+                <p>— Tu aurais dû le prévenir, s’écrie Hippios, il va se faire massacrer.</p>
+                <p>— L’oracle ! L’oracle lui a prédit qu’il régnerait tant que la Toison d’or serait
+                    accrochée au chêne sacré, sa laine d’or étincelle comme un miroir au soleil,
+                    reprend Orphée.</p>
+                <p>— Qui régnera ? s’impatiente Pelée. Le roi de Colchide ?</p>
+                <p>Mais Orphée ne l’entend pas.</p>
+                <p>Il tremble en se balançant d’avant en arrière, ses yeux tournent comme deux
+                    globes dans ses orbites.</p>
+                <p>— Des taureaux de feu, un sillon, les dents d’un dragon, des géants surgis de la
+                    Terre, Médée la Magicienne et le sang ! Le sang ! hurle Orphée.</p>
+                <p>— Ses paroles sont incohérentes, murmure Ulysse.</p>
+                <p>— Apollon lui parle, s’exclame Pelée.</p>
+                <p>Orphée s’écroule sur le sol, pâle à faire peur. Il a du sang sur les lèvres, son
+                    corps est raide et glacé. Tous reculent, effrayés.</p>
+                <p>— Orphée ! Orphée ! Ne restez pas là, laissez-le seul qu’il reprenne ses esprits.
+                    Ulysse apporte du vin mêlé de miel.</p>
+                <p>Les Argonautes sont sous le choc. Certains chuchotent que c’est un mauvais
+                    présage. Orphée va nous porter malheur.</p>
+                <p>Je m’écrie, en colère :</p>
+                <p>— Ceux qui sont contre lui sont contre Apollon. Orphée vous a révélé ce que vous
+                    vouliez savoir.</p>
+                <p>— Et toi tu peux l’interpréter mieux que tout le monde ! Alors va, dis-le, me
+                    défie Hippios, au moins tu serviras à quelque chose.</p>
+                <p>— Tu m’insultes en insinuant que je ne suis pas des vôtres ? Zeus m’a choisi pour
+                    accompagner Orphée.</p>
+                <p>— Tu prétends parler au nom du dieu des dieux, d’Apollon ou d’Orphée ? ricane
+                    Hippios, choisis !</p>
+                <p>J’enrage :</p>
+                <p>— Vous n’avez pas compris son message car vous êtes toujours prêts à la violence,
+                    à combattre non pas pour vous défendre, mais pour tuer, voler, piller ! Voilà
+                    toute votre gloire. Qu’avez-vous fait de votre honneur et de votre justice ?</p>
+                <p>— Ce n’est pas à toi de nous juger mais aux divinités, méfie-toi, je n’aime pas
+                    tes insultes moi non plus ; ma lance est aiguisée et je n’hésiterai pas à te
+                    transpercer !</p>
+                <p>À peine a-t-il fini sa phrase que dans le ciel calme et sans nuages le tonnerre
+                    gronde trois fois.</p>
+                <p>— Zeus les protège tous deux, Orphée et Circos, l’avertit Pelée.</p>
+                <p>— Ah vraiment ? s’entête Hippios, et il enfonce la pointe de sa lance sous ma
+                    gorge. Mon talisman l’empêche de pénétrer.</p>
+                <p>— Arrête, tu deviens fou Hippios, s’emporte Ulysse.</p>
+                <p>Trop tard ! Dans un fracas épouvantable, une boule de feu foudroie Hippios
+                    sur-le-champ.</p>
+                <p>— La colère de Zeus est sans pitié, reprend Ulysse, troublé, nous le savons tous.
+                    Hippios l’a provoquée en ne tenant pas compte de l’avertissement du dieu des
+                    dieux.</p>
+                <p>— Nous ne devons pas nous battre si près d’accomplir notre mission, intervient
+                    Pelée. Jason a besoin de nous tous. Réconcilions-nous en offrant un sacrifice à
+                    Zeus et toi, Circos, dis-nous ce que signifient les paroles d’Orphée.</p>
+                <p>Je tente de leur expliquer ce que je crois être la vérité :</p>
+                <p>— Le roi Éétès a fait subir à Jason de terribles épreuves avant qu’il puisse
+                    s’emparer de la Toison d’or. L’une d’elles était de combattre des guerriers
+                    géants. Jason en est sorti vainqueur mais cela ne suffit pas au roi. Un oracle
+                    lui a prédit que si un étranger emporte la Toison d’or, il ne régnera plus.
+                    Voilà ce que cela signifie.</p>
+                <p>Mes compagnons m’observent, stupéfaits, comme si j’étais capable moi aussi de
+                    déchiffrer l’avenir.</p>
+                <p>— Jason doit encore affronter le dragon, mais comment peut-il sortir vivant d’une
+                    telle lutte ? Médée la fille du roi est une magicienne. Elle l’aidera car elle
+                    est amoureuse de lui, en préparant un philtre pour endormir le monstre.</p>
+                <p>— Qui t’a révélé tout cela ? s’étonne Pelée, et pourquoi Orphée a-t-il hurlé « le
+                    sang, le sang » ?</p>
+                <p>— Je ne suis pas devin mais ce que je sais je le sais.</p>
+                <p>— Tu parles par énigmes toi aussi, constate Ulysse.</p>
+                <p>— Tout cela me dépasse. Je n’ai jamais voulu la mort d’Hippios.</p>
+                <p>— Tu n’es pas responsable de ce qui est arrivé, me réconforte Pelée, je sais que
+                    tu es un homme droit, sans doute meilleur que nous… C’était le destin d’Hippios
+                    de mourir ici, Zeus l’a voulu ainsi. Orphée l’avait sans doute vu dans ses
+                    songes.</p>
+                <p>— Si nous sommes tous d’accord, propose Ulysse, à l’aube nous brûlerons son corps
+                    sur un bûcher et nous rapporterons ses cendres à son père.</p>
+                <ab type="line"/>
+                <p>Tard dans la nuit, Orphée se réveille enfin de son étrange sommeil. Il semble
+                    fiévreux et agité.</p>
+                <p>— Le philtre de Médée ne suffira pas, me confie-t-il, comme s’il m’avait entendu
+                    parler aux argonautes. Quand Jason croira le monstre terrassé, il se redressera
+                    pour le tuer. Mais moi, caché dans le bois consacré à Arès, je chanterai pour
+                    l’endormir. Et Jason aura le temps d’emporter la Toison d’or.</p>
+                <p>Déconcerté, je tente de le dissuader :</p>
+                <p>— C’est trop risqué, tu n’y arriveras pas. Des gardes sont certainement postés
+                    partout, tu te feras arrêter ou tuer.</p>
+                <p>— Non, Éétès a confiance en son gardien, avec un dragon pas besoin de soldats,
+                    affirme Orphée.</p>
+                <p>Je renchéris, inquiet :</p>
+                <p>— Ce monstre te flairera, t’entendra, avant que tu ne l’endormes.</p>
+                <p>— Je porterai la peau de guépard que m’a offerte Chiron. Une odeur de fauve ne le
+                    surprendra pas.</p>
+                <p>J’essaie de le convaincre pour qu’il renonce :</p>
+                <p>— Arès ! Tu as pensé à Arès ? S’il t’aperçoit du haut de l’Olympe, il
+                    t’attaquera.</p>
+                <p>— Impossible, me rassure Orphée, je connais des Muses qui vont le distraire
+                    pendant ce temps-là. Je suis certain de mon plan.</p>
+                <p>J’hésite encore.</p>
+                <p>— Mais tu ne sais pas quand Jason s’emparera de cette Toison ?</p>
+                <p>— Je l’ai vu en rêve : demain à l’aube, affirme-t-il.</p>
+                <p>J’observe son visage déterminé, ses yeux brillants ; rien ne l’arrêtera.</p>
+                <p>Tout se bouscule dans ma tête…</p>
+                <p>— Orphée !</p>
+                <p>— Ne dis rien, je sais. Quand Ulysse, Pelée et d’autres compagnons dresseront le
+                    bûcher pour les funérailles d’Hippios, je serai déjà dans le bois sacré.
+                    Personne ne s’apercevra de mon absence car personne n’osera s’approcher de ce
+                    qui ressemblera à mon corps étendu sous une couverture de lin.</p>
+                <p>— Je viens avec toi.</p>
+                <p>— Non, toi tu dois rester avec les Argonautes pour qu’ils ne se doutent de rien.
+                    Ne leur montre surtout pas que tu es inquiet.</p>
+                <ab type="line"/>
+                <p>Toute la nuit, je guette l’aube. Quand enfin le soleil éclaire les rives du
+                    fleuve, une seule question m’obsède : Orphée a-t-il réussi à se cacher dans le
+                    bois sacré ? Et si Jason refusait l’aide d’Orphée, le privant d’une gloire qu’il
+                    voulait être le seul à mériter ?</p>
+                <p>À bord de l’<hi rend="i">Argo</hi>, j’évite que quelqu’un ne s’approche de la
+                    poupe du navire où Orphée est supposé dormir. Certains me demandent s’il va
+                    mieux, d’autres veulent le réconforter, souvent les mêmes qui prétendaient hier
+                    qu’Orphée leur porterait malheur. À chaque fois, la gorge sèche, les mains
+                    moites, la sueur au front, je cache la vérité, mais pendant combien de temps
+                    encore cela sera-t-il possible ? Orphée ne peut revenir sur l’<hi rend="i"
+                        >Argo</hi> qu’à la nuit tombée. À bord, les torches brûlent déjà et ceux qui
+                    sont de garde à terre ont allumé des feux pour éloigner les bêtes sauvages quand
+                    nous entendons des hurlements au loin.</p>
+                <p>— Que chacun prenne sa place de rameur, ordonne Ulysse, avec ses armes ! Nous
+                    devons fuir rapidement en cas d’attaque si Jason est poursuivi ! Mettez en place
+                    les échelles de bois à l’avant de l’<hi rend="i">Argo</hi>. Les guetteurs y
+                    grimperont les derniers après Jason.</p>
+                <p>Tous l’approuvent et chacun prend son poste en silence. L’heure est grave. Nous
+                    sommes peu nombreux face à l’armée du roi Éétès.</p>
+                <p>— Réveille Orphée, nous avons besoin de lui pour nous donner du courage, me
+                    demande Ulysse, j’ai l’impression que Jason est pourchassé.</p>
+                <p>— Je suis prêt !</p>
+                <p>La voix d’Orphée, surgissant de l’ombre derrière moi, me fait sursauter.</p>
+                <p>— Ne dis rien, chuchote-t-il. Jason a réussi. Il s’est emparé de la Toison d’or
+                    mais, à terre, c’est un carnage…</p>
+                <p>À peine a-t-il fini de parler que Jason, couvert de sang, monte sur le pont de
+                        l’<hi rend="i">Argo</hi>.</p>
+                <p>— Fuyons, crie-t-il, ce roi est un fou furieux !</p>
+                <p>Après bien des épreuves pour éprouver mon courage, je m’empare de la Toison d’or.
+                    Je retourne au palais certain que le roi tiendra sa promesse, quand soudain, il
+                    appelle son armée à la rescousse pour me tuer et reprendre la Toison. Sans
+                    l’aide de Médée qui a les a retardés je serais mort. Elle part avec moi.</p>
+                <p>À la lueur des torches, nous dévisageons Médée la magicienne, le visage farouche
+                    rougi de sang, les yeux exorbités, les mains souillées du crime qu’elle vient de
+                    commettre en assassinant son propre frère, pour sauver Jason. Je suis à la fois
+                    terrifié et fasciné par cette meurtrière, prête à tout sacrifier par amour pour
+                    lui. Quel songe lui a fait croire que Jason était venu en Colchide rien que pour
+                    elle, pour l’épouser en lui jurant fidélité ?</p>
+                <p>Orphée l’avait prédit : le sang, le sang ! Il tombe goutte à goutte sur le pont
+                    de l’<hi rend="i">Argo</hi> et la lame tranchante du poignard de Médée brille
+                    sous les reflets de la Lune. Médée n’est-elle pas la fille et la prêtresse de la
+                    divine Hécate ? Cette déesse s’amuse parfois à chasser les hommes comme du
+                    gibier et envoie sur la terre des créatures maléfiques pour les poursuivre comme
+                    une meute hurlante.</p>
+                <p>Je frissonne d’horreur.</p>
+                <p>— Tel est le prix de la Toison d’or et de la gloire ! murmure Orphée, le prix du
+                    sang, des mensonges et des trahisons.</p>
+                <p>— À vos rames ! crie Ulysse, redescendons le fleuve avant qu’il ne soit trop
+                    tard. Si Éétès et ses troupes nous repèrent, ils armeront aussi leurs
+                    navires.</p>
+                <p>— Chante, Orphée, pour que les Argonautes accélèrent la cadence, chante aussi ma
+                    victoire sur les monstres, lui demande Jason, excité tout autant par l’odeur du
+                    sang que par ses exploits.</p>
+                <p>— Je ne célèbre que la beauté du Monde, lui répond sèchement Orphée avant de lui
+                    tourner le dos.</p>
+                <ab type="line"/>
+                <p>Il faudra bien des jours avant que les Argonautes écoutent le récit de Jason :
+                    comment il a vaincu les guerriers géants sortis du sol, endormi le dragon avec
+                    le philtre magique de Médée. Il leur montrera la Toison du bélier toute
+                    pailletée d’or, leur affirmant que désormais leurs noms seront sur toutes les
+                    lèvres car leurs aventures sur l’<hi rend="i">Argo</hi> seront célèbres. Le vin
+                    mêlé de miel, les cuissots de bœufs bien gras du banquet donneront alors aux
+                    Argonautes l’illusion qu’ils sont des héros invincibles. Orphée haussera les
+                    épaules devant tant d’orgueil car ce sont les dieux qui décident du destin de
+                    chacun.</p>
+                <p>Une nuit, il me racontera comment, dans le bois sacré d’Arès, il a vaincu la
+                    colère du dragon, un monstre aux écailles d’or, au cou long et puissant, aux
+                    yeux étincelants, qui souffle la mort. Rien que par son chant ? Non ! Je sais
+                    maintenant qu’il a utilisé la magie noire, celle que les devins égyptiens
+                    utilisaient pour terrasser le Mal. Jason sait aussi ce qu’il doit à Orphée ;
+                    pourtant, il ne parle que de sa propre force et des pouvoirs de Médée…</p>
+                <ab type="line"/>
+                <p>Quelque temps plus tard, poursuivant sa course pour rentrer vers la Grèce, notre
+                    navire croise le repaire des sirènes. Un immense rocher creusé de gouffres où la
+                    mer en hurlant vient se fracasser. C’est là que trois monstres, mi-femmes,
+                    mi-oiseaux, attirent les hommes ; l’une en jouant de la lyre, l’autre de la
+                    flûte et la troisième en chantant. Dès qu’ils entendent les sirènes, les
+                    Argonautes sont aussitôt séduits. Ils veulent s’arrêter pour les écouter et
+                    abandonnent leurs rames. Ancée dirige déjà le navire vers le rocher quand Orphée
+                    saisit sa lyre. Soudain, elle résonne si parfaitement que nous sommes tous émus
+                    aux larmes. Il chante l’histoire de Poséidon et raconte comment, frappant la
+                    terre de son trident, le dieu fit naître les îles dans l’immense Océan. Les
+                    sirènes l’écoutent stupéfaites et, bientôt, vaincues par une telle musique,
+                    elles jettent cithare et flûte à la mer. Elles ne peuvent rivaliser avec
+                    Orphée.</p>
+                <p>— À vos rames ! commande Jason, reprenant ses esprits. Vous ne voyez donc pas les
+                    ossements des marins qui ont péri charmés par leur sortilège ? Ils ont brisé
+                    leurs navires sur leur rocher. Mais cette fois les sirènes ne nous dévoreront
+                    pas, Orphée nous a sauvés ! Ancée, change de cap, reprend la haute mer et dès
+                    que le vent sera favorable, fais hisser le mât et la voile !</p>
+                <ab type="line"/>
+                <p>Ce sera le dernier chant d’Orphée. Les Argonautes, honteux de s’être laissé
+                    prendre au piège de ces créatures qu’ils ont pris de loin pour des femmes,
+                    inventeront toutes sortes d’histoires prouvant qu’ils ont résisté aux sirènes.
+                    Ainsi mentent les héros soucieux de leur gloire. Mais pour Orphée, peu importe.
+                    Sa voix lui vient des dieux et les accords de sa lyre lui sont inspirés par
+                    Dionysos et Apollon. C’est pour eux qu’il chante. Et pour moi aussi, il me l’a
+                    dit.</p>
+                <p>Pendant le long voyage du retour, Orphée m’apprendra à repérer les
+                    constellations, à déchiffrer la course des nuages, à écouter le bruit de la mer
+                    sur la coque noire de l’<hi rend="i">Argo</hi>. Et dans la lumière du soir, nous
+                    saluerons les dauphins blancs jouant dans l’écume des vagues, tout en remerciant
+                    Apollon de nous ramener tous deux sains et saufs dans notre patrie…</p>
+            </div>
+            <div>
+                <head>6 <lb/> La mort d’Eurydice</head>
+                <p>Chante encore Orphée, chante pour moi, chante !</p>
+                <p>Combien de fois depuis notre retour en Piérie, notre pays natal, n’ai-je pas
+                    murmuré ces mots, espérant que les Muses, Orphée ou Apollon entendent ma prière.
+                    Chaque jour, je me souviens de nos aventures en Colchide, de Chiron, de la
+                    Toison d’or, d’Astrios et du terrible châtiment infligé par Zeus à Hippios.
+                    Chaque jour, je crois entendre la voix d’Orphée. Je parcours le cœur triste les
+                    champs d’oliviers de mon domaine, regardant au loin l’Olympe où les dieux
+                    décident de la vie des hommes. Que fait Orphée, où est-il ? J’ai l’étrange
+                    sentiment qu’il m’est proche et lointain à la fois. Dans mon sommeil, je vois en
+                    songe son visage, penché sur moi. Il porte sur ses épaules une peau de guépard
+                    et sur ses cheveux aux boucles blondes une couronne de lierre. Tout à coup, il
+                    brandit sa lyre en riant et je sais alors qu’il est heureux. Au petit matin, le
+                    dauphin en ivoire accroché à mon cou et que je ne quitte jamais me rassure :
+                    demain, peut-être, il viendra chez moi.</p>
+                <p>Mais cette nuit, Orphée m’est apparu en pleurs. Le visage sombre, couvert de
+                    larmes et de cendres, il me regardait fixement. Dans ses yeux inquiets, j’ai
+                    saisi l’horreur et la douleur et j’ai compris aussitôt qu’un malheur était
+                    arrivé.</p>
+                <p>— Circos, ne me laisse pas seul ! suppliait-il.</p>
+                <p>— Où es-tu, Orphée ?</p>
+                <p>Mais, au lieu de me répondre, il appelait : « Eurydice ! Eurydice ! » en
+                    sanglotant. Un nom que je ne connaissais pas. Peut-être celui de sa femme ? Je
+                    me suis réveillé le dos trempé de sueur, la bouche amère, le sang battant aux
+                    tempes. Comment retrouver Orphée avec ce seul message dont je ne comprends pas
+                    le sens ? « Suis les oiseaux d’Apollon ! »</p>
+                <p>Ô dieux de l’Olympe ! Le temps presse, aidez-moi, envoyez-moi Iris votre
+                    messagère pour qu’elle me dise quel chemin prendre !</p>
+                <p>Je marche, vais, viens… J’erre dans ma demeure, bouleversé, cherchant la
+                    signification de ce rêve. J’étouffe. Il faut que je sorte, que je respire.
+                    L’aurore paraît à peine, les premiers chants d’oiseaux se répondent, un vent
+                    léger passe dans les oliviers. Peu à peu, je reprends souffle. Quel mauvais rêve
+                    j’ai fait ! Je décide d’oublier cette nuit agitée, quand sept cygnes majestueux
+                    traversent le ciel et se dirigent vers le soleil levant : les oiseaux d’Apollon
+                    me montrent la route.</p>
+                <ab type="line"/>
+                <p>— Circos ! Tu m’as manqué. Je pense tous les jours à toi, à ce que nous avons
+                    vécu ensemble sur l’<hi rend="i">Argo</hi> et te voilà.</p>
+                <p>Orphée m’accueille joyeusement.</p>
+                <p>— La distance n’a pas séparé nos cœurs et les dieux t’ont prévenu que tu étais le
+                    bienvenu. Qu’ils soient bénis. Allons, montre-moi ton précieux talisman ! Tu
+                    l’as toujours, j’espère, continue-t-il.</p>
+                <ab type="line"/>
+                <p>Je ne comprends rien, Orphée a l’air si heureux, si insouciant. Les songes sont
+                    trompeurs ; pourtant, j’aurais juré qu’il avait besoin de moi. Je lui montre le
+                    petit dauphin en ivoire accroché à mon cou.</p>
+                <p>— C’est lui mon messager, chuchote Orphée, mais ne le répète à personne,
+                    ajoute-t-il en mettant son index sur sa bouche comme le font les enfants.</p>
+                <p>Je ne sais pas comment lui raconter pourquoi je suis là. Mais Apollon m’a conduit
+                    jusqu’ici et il a sans doute une bonne raison.</p>
+                <p>— Eh bien, Circos, tu ne me demandes pas ce qui me rend si heureux ? poursuit
+                    Orphée. Mon amour, mon seul amour, ma femme, ma beauté, ma douceur ! Elle me
+                    rend fou, ajoute-t-il en riant. C’est la plus séduisante des nymphes et je suis
+                    prêt à tout pour elle.</p>
+                <p>Je plaisante avec lui sur le même ton :</p>
+                <p>— Oh ! oh, je vois ! Dis-moi, comment s’appelle celle que tu aimes ? Je suis
+                    impatient de la connaître…</p>
+                <p>— Eurydice ! Mon Eurydice ! fanfaronne Orphée.</p>
+                <p>Tout à coup, mes forces me trahissent.</p>
+                <p>— Circos, que se passe-t-il ? Tu es pâle comme la mort. Que l’on apporte du
+                    camphre et de l’hydromel ! Repose-toi. Ah, tu reprends des couleurs. Tu m’as
+                    fait peur. Le voyage a été rude n’est-ce pas ? Et moi qui ne pense qu’à mon
+                    bonheur ! Je suis un hôte bien peu attentionné. Reste à l’ombre de ces chênes.
+                    Je vais chercher Eurydice. Il faut qu’elle sache que mon ami Circos est là.</p>
+                <p>Eurydice ! À l’instant où il a prononcé ce nom, j’ai revu clairement le visage
+                    d’Orphée, couvert de cendres. J’ai entendu distinctement sa voix qui appelait
+                    Eurydice, Eurydice, en sanglotant.</p>
+                <p>J’essaie de sourire. Je ne peux pas lui révéler ce qui me bouleverse.</p>
+                <p>Orphée a pris son arc et rassemblé ses chiens. Il me fait un petit signe avant de
+                    s’éloigner.</p>
+                <p>Je murmure :</p>
+                <p>— Qu’Apollon te protège, en serrant mon talisman. J’ai un mauvais
+                    pressentiment.</p>
+                <ab type="line"/>
+                <p>Les chiens ont hurlé à la mort. Le ciel tout à coup s’est obscurci. Les animaux
+                    épouvantés se sont terrés dans leurs tanières, en entendant le hurlement de
+                    désespoir d’Orphée. Aussitôt, j’ai compris qu’un grand malheur était arrivé.
+                    J’ai couru à sa rencontre aussi vite que j’ai pu, en écartant les ronces et les
+                    broussailles, en me frayant un passage à travers la forêt. J’ai suivi les traces
+                    d’Orphée en me repérant aux hautes herbes piétinées, qui conduisaient à une
+                    clairière.</p>
+                <p>— Je n’ai rien pu faire, c’était trop tard.</p>
+                <p>Orphée sanglote. Il serre dans ses bras Eurydice, les yeux clos, les lèvres
+                    pâles. Il caresse ses longs cheveux noirs dénoués autour de son visage sans vie.
+                    Il berce la femme qu’il aime comme une enfant, embrasse son front, ses joues, sa
+                    bouche.</p>
+                <p>— Eurydice, mon amour, murmure-t-il.</p>
+                <p>Puis il l’allonge sur un lit de feuilles et de fleurs parfumées et lui tresse une
+                    couronne d’asphodèles.</p>
+                <ab type="line"/>
+                <p>Un serpent a mordu Eurydice au talon droit et le venin s’est propagé dans tout
+                    son corps. Elle a sûrement couru pour éviter un danger mais Orphée cherche en
+                    vain lequel, avant de découvrir un peu plus loin d’autres traces et d’autres
+                    pas.</p>
+                <p>— Non, c’est impossible ! gronde-t-il en colère.</p>
+                <p>Quelques gouttes de miel que butinent encore les abeilles sont tombées sur le
+                    sol. Aristée ! Ce berger de malheur, ce fils d’Apollon que les dieux protègent,
+                    est le seul ici à savoir récolter le miel sauvage. C’est lui qui a poursuivi
+                    Eurydice jusqu’ici, pour la séduire. En s’enfuyant, elle a marché sur un
+                    serpent.</p>
+                <p>— Ô nymphes, vengez votre sœur Eurydice ! s’écrie-t-il furieux, sinon c’est moi
+                    qui le tuerai.</p>
+                <p>Orphée ne sait pas encore que les nymphes furieuses ont exterminé toutes les
+                    abeilles d’Aristée. Il lui faudra demander pardon aux dieux d’avoir provoqué la
+                    mort d’Eurydice et sacrifié quatre taureaux et quatre génisses aux nymphes,
+                    avant que des milliers d’abeilles ne renaissent…</p>
+                <ab type="line"/>
+                <p>Le soleil décline, les ombres des arbres s’allongent quand Orphée accepte enfin
+                    de revenir dans sa demeure.</p>
+                <p>Il marche lentement, portant dans ses bras le corps d’Eurydice, suivi par une
+                    étrange procession. Ses chiens l’entourent en geignant. Peu à peu, les bêtes
+                    sauvages attristées sortent de leur repère pour accompagner Orphée jusqu’à la
+                    limite où le domaine des humains et le leur se sépare. La nuit vient. Les
+                    serviteurs accourent, ils ont allumé les premières torches et se joignent à
+                    cette marche funèbre.</p>
+                <ab type="line"/>
+                <p>Cela fait trois jours qu’Eurydice a rejoint les Enfers, guidée par le dieu
+                    Hermès. Elle a sans doute traversé le Styx sur la barque du passeur Charon.
+                    Orphée a placé sous la langue de sa femme une obole. Cette pièce de monnaie
+                    servira à payer Charon pour son passage sur l’autre rive du fleuve, menant au
+                    royaume d’Hadès. Mais Orphée refuse d’être séparé d’Eurydice. Tout lui rappelle
+                    celle qu’il aime et sans cesse il me raconte ce qu’il a vécu auprès d’elle.</p>
+                <p>— Eurydice est si belle Circos, si jeune ! Sa place n’est pas parmi les Ombres.
+                    Qu’a-t-elle fait pour mériter un tel sort, elle qui honorait les dieux chaque
+                    jour ?</p>
+                <p>Et, se couvrant le visage et la tête de cendres en signe de deuil, Orphée appelle
+                    la voix nouée par la douleur :</p>
+                <p>— Eurydice ! Eurydice ! espérant entendre son amour lui répondre depuis
+                    l’au-delà.</p>
+            </div>
+            <div>
+                <head>7 <lb/> Délivrer Eurydice</head>
+                <p>Qui reconnaîtrait Orphée dans cet homme brisé par le chagrin ? Il a coupé ses
+                    cheveux blonds pour les déposer sur le linceul qui recouvrait Eurydice. Il ne
+                    mange plus, ne dort plus, reste prostré dans sa demeure. Il espère mourir lui
+                    aussi pour retrouver enfin sa femme.</p>
+                <p>Une nuit, sa mère, la muse Calliope, lui apparaît dans son sommeil. « Orphée mon
+                    fils, lui demande-t-elle, comment peux-tu gémir et te lamenter sans chercher à
+                    délivrer Eurydice du Monde souterrain ? Toi qui sais par ton chant et ta lyre
+                    déplacer les rochers, apprivoiser les fauves et émouvoir jusqu’aux larmes les
+                    hommes les plus durs et les divinités. Descends aux enfers et convaincs par la
+                    beauté de ta voix le terrible Hadès de te rendre Eurydice pour qu’elle puisse à
+                    nouveau vivre avec toi. »</p>
+                <ab type="line"/>
+                <p>Orphée me raconte ce songe, bien décidé à suivre les conseils de Calliope.</p>
+                <p>— C’est impossible, aucun humain, Orphée, n’est revenu vivant des Enfers. Hadès
+                    est impitoyable. Tous les humains le redoutent. Mieux vaut éviter de prononcer
+                    son nom.</p>
+                <p>— Je n’ai plus rien à perdre Circos, tu dois m’aider. La nuit où je descendrai
+                    dans son royaume, sacrifie en son honneur deux taureaux et deux béliers noirs et
+                    incline leurs têtes vers le sol pour que leur sang, imprégnant la terre, se
+                    répande dans le Monde souterrain.</p>
+                <p>— Non ! Je ne peux pas. Je ne te laisserai pas partir.</p>
+                <p>— Circos, je dois aller chercher Eurydice, je dois y aller, me répète Orphée,
+                    désespéré.</p>
+                <p>Je refuse de l’écouter et je lui rétorque, en colère :</p>
+                <p>— Hadès est cruel. Il est insensible, même à la douleur d’une mère, alors celle
+                    d’un mari ! Tu oublies donc qu’il a enlevé Perséphone, la fille de la déesse
+                    Déméter ? Un rapt odieux et brutal parce qu’il ne supportait pas d’être seul et
+                    laid à faire peur. Voilà de quoi il est capable. Il surgit brusquement des
+                    profondeurs et entraîne sur son char une jeune fille innocente, la condamnant à
+                    vivre dans les Ténèbres. Crois-tu qu’il se préoccupe du sort d’Eurydice et du
+                    tien ?</p>
+                <p>— Tais-toi Circos, tu vas t’attirer sa malédiction, m’interrompt Orphée, effrayé
+                    soudain par la violence de mes paroles.</p>
+                <p>— Il a fallu que Déméter menace toute la terre de famine, que plus une graine ne
+                    pousse, que les bêtes et les hommes mangent la poussière du sol, pour que Zeus
+                    trouve enfin un compromis avec Hadès. Sinon, aurait-il accepté que Perséphone
+                    revive et retrouve sa mère six mois par an ? Pourquoi libérerait-il Eurydice ?
+                    Parce que tu l’aimes ? Toi qui connais les mystères des dieux, comment peux-tu
+                    imaginer que tu reviendras sain et sauf des Enfers avec elle ?</p>
+                <p>Orphée se tait et, après un long silence, il avoue :</p>
+                <p>— Je n’ai pas d’autre choix.</p>
+                <p>Puis il ajoute, hésitant :</p>
+                <p>— Perséphone a connu la douleur de la séparation, elle me soutiendra.</p>
+                <p>Désarmé par la force de son amour, je murmure :</p>
+                <p>— Perséphone est devenue aussi terrible que lui, crois-moi.</p>
+                <p>Et puis je précise, la voix brisée :</p>
+                <p>— Puisque c’est ce que tu veux… je t’aiderai.</p>
+                <p>Orphée aussitôt me serre dans ses bras.</p>
+                <ab type="line"/>
+                <p>Orphée met au point son plan. Il compte sur la puissance magique de son chant et
+                    de sa lyre et se prépare à toutes les épreuves du Monde souterrain.</p>
+                <p>Je tente de l’encourager dans cette descente aux Enfers :</p>
+                <p>— Ne montre jamais que tu as peur, ne recule jamais non plus, ce serait un signe
+                    de faiblesse.</p>
+                <p>Mes conseils sonnent faux car je suis persuadé que je ne le reverrai jamais
+                    vivant.</p>
+                <p>Orphée tient bon malgré tout.</p>
+                <p>— Cerbère, répète-t-il avec entêtement, tel un enfant apprenant sa leçon :
+                    gardien des Enfers, fils de Typhon et d’Echidna, les plus monstrueuses des
+                    créatures de tout l’univers. Il a trois têtes, une queue de serpent, des vipères
+                    autour du cou.</p>
+                <p>— Surtout ne le fixe pas dans les yeux, ils t’aveugleraient, méfie-toi aussi de
+                    ses pattes griffues. Mais à vrai dire, qu’est-ce que j’en sais ? Personne n’est
+                    revenu sur terre pour nous le décrire. Nous devons nous fier à ce que les devins
+                    nous révèlent.</p>
+                <p>— Cerbère, reprend Orphée, est posté à l’endroit le plus sombre du Styx, là où
+                    Charon débarque les âmes des morts, à la Porte principale du royaume
+                    d’Hadès.</p>
+                <p>Soudain, tout se bouscule dans ma tête et je m’écrie :</p>
+                <p>— C’est de la folie Orphée, n’y va pas ! Cerbère ne dort jamais, il est à l’affût
+                    jour et nuit sur son rocher ; dès qu’il te flairera, il te dévorera.</p>
+                <p>— Je l’endormirai lui aussi comme le dragon de la Toison d’or, souviens-toi,
+                    réplique Orphée, confiant. Je suis revenu vivant sur l’<hi rend="i">Argo</hi>,
+                    oui ou non ? s’impatiente-t-il brusquement. Avant de m’occuper de Cerbère, il y
+                    a Charon… Tu ne m’en parles pas ? reprend-il en ricanant bizarrement. Tu sais,
+                    Charon, ce vieillard barbu, sale, intraitable lui aussi, quand il s’agit de
+                    faire traverser les fleuves des Enfers à un mortel. Qu’est-ce que tu me
+                    proposes ? Je l’assomme d’un coup de poing ? J’achète mon passage, aller et
+                    retour, avec des pièces ou un rameau d’or ? Eh bien Circos, que me
+                    conseilles-tu ? Qu’est-ce que je fais !</p>
+                <p>Je me tais, blessé par son ironie mordante. Il ne comprend donc pas : je ne veux
+                    pas qu’il meure ! Je ne veux pas qu’il meure. À bout de nerfs, je lui tourne le
+                    dos pour pleurer sans bruit.</p>
+                <p>Orphée se précipite vers moi.</p>
+                <p>— Pardonne-moi ! Je n’ai pas voulu te blesser, murmure-t-il. En réalité, j’ai
+                    peur de Charon, de Cerbère, d’Hadès et peut-être aussi de Perséphone. J’ai peur
+                    qu’Eurydice ne soit plus maintenant qu’une Ombre, errant parmi les Ombres.</p>
+                <p>Je secoue la tête, désemparé.</p>
+                <p>— Mais quel sens aurait ma vie sans Eurydice ? me demande Orphée d’une voix calme
+                    et douce. Je sais ce que tu ressens, mais je ne reculerai pas. Je ne supporte
+                    plus de ne pas l’entendre rire, de ne pas sentir son parfum, de ne pas voir ses
+                    yeux, de ne pas caresser ses cheveux… À l’intérieur de moi, Circos, c’est comme
+                    si j’étais déjà mort. Alors, peu importe si je ne reviens pas. Je serai auprès
+                    d’elle.</p>
+                <p>— Tu réussiras. J’en suis certain ! Apollon te guidera.</p>
+                <p>D’un geste rapide, je passe autour du cou d’Orphée mon talisman, celui qu’il m’a
+                    offert pour traverser les mers, le petit dauphin en ivoire :</p>
+                <p>— Tu reviendras, vous reviendrez. Je vous attendrai.</p>
+                <p>Nous tombons dans les bras l’un de l’autre.</p>
+                <p>— Je pars ce soir, ajoute Orphée.</p>
+                <p>Cette nuit, Orphée rejoindra le Monde des Ténèbres. Il attendra la barque de
+                    Charon sur la rive glacée de l’Achéron, le fleuve noir qui serpente
+                    dangereusement entre d’énormes rochers, avant de se jeter dans le Styx. Il
+                    espère bien franchir la Porte des Enfers.</p>
+                <ab type="line"/>
+                <p>Comme je lui ai promis, dans la clairière où Eurydice a été mordue par le
+                    serpent, j’ai allumé quatre feux. Quand la lune sera au plus haut dans le ciel,
+                    je sacrifierai deux taureaux et deux béliers noirs, en l’honneur d’Hadès et de
+                    Perséphone. Que leur sang versé sur le sol permette à Eurydice de retrouver les
+                    vivants ! J’ai offert au dieu Apollon une libation de vin mêlé de miel et je
+                    l’implore en répétant sans fin cette prière : « Ô dieu bienfaisant qui fais
+                    germer la vie et rend les cœurs heureux par le son de ta lyre et par ta poésie,
+                    dieu de la Lumière qui combat l’Obscurité, aide celui que tu as initié à la
+                    beauté du chant et de la musique, éclaire la route d’Orphée dans les
+                    Ténèbres. »</p>
+                <ab type="line"/>
+                <p>Apollon m’exaucera-t-il en réparant le grand malheur que son fils Aristée a
+                    provoqué ?</p>
+                <ab type="line"/>
+                <p>Orphée est enfin arrivé sur les bords de l’Achéron. Un épais brouillard monte de
+                    l’eau, rendant la nuit plus noire encore.</p>
+                <p>« Je sais qu’en ce moment tu pries Apollon pour moi, Circos, pense Orphée. Oui,
+                    qu’une force divine accompagne ma voix car je n’ai pas d’autres armes que ma
+                    lyre, mon chant et mon amour. »</p>
+            </div>
+            <div>
+                <head>8 <lb/> La descente aux Enfers</head>
+                <p>— Arrière ! Qui est là ? Qui prétend monter dans ma barque sans mourir ? Un coup
+                    de rame parviendrait à faire changer ton destin, qui que tu sois, misérable
+                    mortel ! Personne ne doit descendre aux Enfers pour connaître le sort réservé
+                    aux Ombres dans l’Autre Monde, gronde Charon.</p>
+                <p>— Je suis Orphée, initié aux mystères des grands dieux et…</p>
+                <p>— Tu ne traverseras pas. Et si tu es initié comme tu le prétends, continue
+                    Charon, tu dois savoir qu’il y a une barrière entre la vie et la mort. Si tu
+                    entres dans le royaume d’Hadès, tu n’en ressortiras pas, le menace-t-il.</p>
+                <p>Orphée distingue à peine le vieillard sur sa barque. Il faut que Charon le fasse
+                    traverser.</p>
+                <p>— Écoute, reprend Orphée, je ne suis pas là pour dérober les secrets des dieux ni
+                    pour découvrir ce qu’il est impossible de connaître. Ma femme Eurydice est
+                    montée sur ta barque il y a à peine quatre jours et je viens la chercher.</p>
+                <p>— La chercher ! s’esclaffe Charon. Tu voudrais qu’elle revive parmi les vivants
+                    c’est ça ! Mais c’est une Ombre maintenant. Tu ne pourras même pas la prendre
+                    par la main, ni l’embrasser, si c’est cela ton désir caché.</p>
+                <p>— Tu n’as donc jamais aimé, Charon, ni même été aimé ? réplique Orphée. Que ton
+                    destin doit être dur à supporter ! Tu vas, tu viens, avec ta barque chargée de
+                    morts rejoignant peut-être dans les Ténèbres une mère, un mari, un fils, un ami,
+                    et toi, personne, nulle part, ne t’attend, ni ne pense à toi, ni ne s’inquiète
+                    pour toi…</p>
+                <p>— N’essaie pas de m’attendrir avec ces histoires de vivants !</p>
+                <p>— Charon, oui moi j’aime, j’aime Eurydice, ma seule raison de vivre et… Regarde.
+                    J’ai apporté pour toi des pièces et un rameau d’or, mais aussi des coupes
+                    ciselées pour boire du vin doux, un vase et des trépieds de bronze qui ont servi
+                    à honorer Apollon, le dieu qui me protège, pour payer mon passage.</p>
+                <p>— Tu aurais dû commencer cette petite conversation par cette énumération-là.
+                    Voilà qui peut m’intéresser, fais voir, demande Charon en s’approchant du bord.
+                    Quant à Apollon, marmonne-t-il, tu crois que sa lumière va t’éclairer ? Tu as
+                    déjà oublié que son fils Aristée poursuivait ta femme parce qu’il la désirait,
+                    ricane Charon. Le père ne vaut peut-être pas mieux que le fils…</p>
+                <p>— Les dieux ne m’ont-ils pas rendu justice en m’autorisant à descendre aux
+                    Enfers ? l’interroge Orphée, prudemment.</p>
+                <p>Charon n’est plus très loin de moi. Il me suffirait d’un bond pour sauter dans sa
+                    barque, mais c’est risqué : si le vieillard s’avance trop près, il découvrira
+                    que je n’ai que ma lyre sur l’épaule, pense Orphée.</p>
+                <p>Il s’élance, retombe dans la barque qui tangue sous le choc. Charon perd
+                    l’équilibre, rattrape une rame à la dérive.</p>
+                <p>— Tu vas me le payer ! s’écrie-t-il, l’œil mauvais, les cheveux en bataille.</p>
+                <p>— Te payer mon passage aller et retour ? ironise Orphée en lui tendant trois
+                    pièces et un rameau d’or. Le reste était trop lourd à porter et le voyage est
+                    long.</p>
+                <p>— Rira bien qui rira le dernier ! s’exclame Charon en crachant par terre, juste
+                    au pied d’Orphée.</p>
+                <p>— Ne me maudis pas Charon, réplique Orphée, soudain grave, si je n’avais pas
+                    rusé, tu ne m’aurais jamais embarqué. Laisse-moi chanter pour toi, ce sera le
+                    prix de mon passage.</p>
+                <p>— Chanter, ah oui, vraiment ? s’emporte Charon. De chant, je ne connais que celui
+                    des grenouilles qui peuplent les marécages. Tu ne les entends pas ?</p>
+                <p>— Charon, conduis-moi maintenant, le temps presse. Eurydice m’attend.</p>
+                <p>— La mort aussi t’attend, ronchonne Charon, mais il rame et sa barque glisse sur
+                    les eaux noires de l’Achéron pour rejoindre le Styx.</p>
+                <p>Orphée prend alors sa lyre et d’une voix claire chante les vignes en fleur, les
+                    oliviers écrasés de soleil, le parfum de la terre après les pluies d’été, dans
+                    un Monde que Charon ne connaîtra jamais. Il chante la beauté d’Eurydice, l’éclat
+                    de son regard, la douceur de ses lèvres. Il chante un long et triste poème
+                    racontant la douleur de perdre celle qu’il aime. Sa voix d’or vibre, résonne sur
+                    les rochers, monte vers le Monde des divinités, comme une dernière prière avant
+                    d’entrer dans les Enfers.</p>
+                <p>Et Charon, le vieillard barbu, sale et repoussant, le vieillard intraitable que
+                    rien ne peut émouvoir, pleure sans bruit dans les Ténèbres.</p>
+                <ab type="line"/>
+                <p>— Eh bien Charon, que se passe-t-il ? D’où vient cette musique ? aboie Cerbère
+                    furieux.</p>
+                <p>Il balance ses trois têtes de tous côtés. Ses yeux lancent des éclairs et les
+                    vipères à la langue fourchue se hérissent sur son cou. Il gratte le sol de ses
+                    pattes griffues, prêt à bondir sur qui voudrait entrer par l’immense Porte des
+                    Enfers sans y être admis.</p>
+                <p>— Réponds Charon, qui chante ainsi ? Ici c’est interdit, la beauté est bannie,
+                    grogne le monstre menaçant.</p>
+                <p>Mais Orphée chante, chante encore… La barque de Charon s’approche lentement du
+                    rocher de Cerbère.</p>
+                <p>— Arrête cette musique ! hurle le chien maléfique soudain fou de douleur, car ce
+                    que chante Orphée, peu à peu, lui transperce le cœur, paralyse la haine que son
+                    sang charrie dans ses veines.</p>
+                <p>— Non ! crie Cerbère. Non ! crie-t-il, quand il reconnaît Orphée. Je vais te
+                    tuer. Tu ne dois pas passer vivant dans le Monde de l’au-delà ni en connaître
+                    ses mystères. Tu crois pouvoir sauver celle que tu aimes mais tu mens. Personne
+                    n’est capable d’aimer. C’est un rêve, une folie.</p>
+                <p>— Laisse Eurydice parmi les Ombres, lui ordonne-t-il, et ses yeux phosphorescents
+                    jettent d’inquiétantes lueurs. Oublie-la, retourne chez les vivants tant qu’il
+                    en est encore temps, avant que les dieux ne te punissent d’avoir emprunté le
+                    chemin de la Mort, l’avertit Cerbère, toutes griffes dehors.</p>
+                <p>Mais Orphée chante, chante encore… Déjà, il descend de la barque du vieux Charon
+                    et rejoint la rive du Styx. Il prend le sentier bordé de saules et de peupliers
+                    qui mène au rocher, là où Cerbère se démène pour ne pas entendre sa lyre, ni
+                    écouter ses chants maudits. Les vipères tout à l’heure dressées comme des furies
+                    dorment maintenant paisiblement, bercées par la voix douce d’Orphée. Le monstre
+                    sent tout à coup ses trois têtes peser sur son énorme cou. Il se couche sur la
+                    pierre, tentant d’aboyer, mais aucun son ne sort de ses gueules entrouvertes.
+                    Cerbère, dans un dernier sursaut, essaie de se relever. Il marmonne encore
+                    quelques menaces contre Charon qui s’est laissé prendre au piège des chants
+                    d’Orphée, avant de s’effondrer. Alors, saluant le gardien des Enfers endormi,
+                    Orphée franchit l’immense Porte et s’enfonce dans la nuit des Ténèbres.</p>
+                <ab type="line"/>
+                <p>L’obscurité est si profonde dans cette caverne humide, étroite comme un chemin
+                    sans fin, qu’Orphée tremble de froid et cesse de chanter. Il marche à tâtons, le
+                    cœur serré, s’accrochant aux parois visqueuses pour ne pas tomber. « Ô dieux,
+                    supplie-t-il, ne m’abandonnez pas dans ce tombeau glacé. » D’une main hésitante,
+                    il cherche sous sa tunique le talisman que Circos lui a confié. Il pense à son
+                    ami là-haut sur terre, sans doute dans la clairière et qui nourrit le feu des
+                    brasiers. Il revoit Eurydice, si belle, allongée dans les herbes avec sa
+                    couronne blanche d’asphodèles. Il croit entendre japper ses bons chiens, rapides
+                    à la chasse, et sentir le parfum âcre de la mer se brisant sur la coque noire de
+                        l’<hi rend="i">Argo</hi>. Le visage bienveillant de Chiron, le plus sage des
+                    Centaures, lui apparaît aussi. Mais tout n’est qu’illusion. Orphée est seul. Les
+                    plaintes et les gémissements des Ombres, prisonnières du Monde infernal,
+                    résonnent en écho jusque dans ses os.</p>
+                <p>— Eurydice ! Eurydice ! appelle-t-il soudain perdu, effrayé, doutant un instant
+                    de la retrouver, dans le labyrinthe du Monde souterrain. Je dois chanter pour
+                    elle. Elle reconnaîtra ma voix. Elle viendra à ma rencontre. Elle me guidera et
+                    nous repasserons ensemble la Porte des Enfers pour retrouver la lumière et le
+                    bonheur d’être vivants.</p>
+                <p>Orphée prend sa lyre. Ses doigts engourdis par le froid effleurent les cordes et
+                    il entonne son plus beau chant d’amour.</p>
+                <ab type="line"/>
+                <p>De l’autre côté des Enfers, là où l’Ombre des justes se promène tristement sur de
+                    pâles prairies, Eurydice erre comme une âme en peine. Elle n’a pas oublié
+                    Orphée, la beauté de son visage et ses boucles retombant sur son front, ses yeux
+                    si doux, ses lèvres minces bien dessinées. Elle se souvient de sa tendresse, de
+                    son amour si passionné. Bientôt tout cela ne sera plus que du passé, puisque les
+                    dieux l’ont décidé… Elle en veut à Aristée. Sans lui, Orphée et elle seraient
+                    encore heureux, riant des mêmes choses, partageant les mêmes désirs. Certes, ses
+                    sœurs les nymphes l’ont vengée en détruisant les abeilles d’Aristée, privant
+                    ainsi les dieux et les humains de leur miel. Voilà pourquoi les divinités,
+                    elles, lui ont bien vite pardonné. Aristée retrouvera ses abeilles. Mais pour
+                    moi, pense Eurydice, tout est fini. Qui me consolera d’être ici, au moins pour
+                    mille ans, et de ne plus avoir Orphée à mes côtés ? Elle parcourt cette prairie,
+                    Ombre parmi d’autres Ombres, en regrettant le temps où elle écoutait dans la
+                    clairière aux asphodèles Orphée jouer de la lyre pour elle. Elle ne sait pas
+                    encore à cet instant qu’Orphée brave tous les dangers pour venir la chercher.
+                    Entendra-t-elle sa voix une dernière fois ?</p>
+                <ab type="line"/>
+                <p>Depuis combien de temps Orphée marche-t-il dans l’obscurité ? Ses pieds sont en
+                    sang et ses doigts blessés par les cordes de sa lyre. Pourtant, il chante d’une
+                    voix forte et sereine. Il faut qu’il retrouve sa femme. Dès qu’Eurydice
+                    franchira à nouveau la Porte des Enfers, elle reprendra sa forme humaine. Et si
+                    par malheur elle revient défigurée de son séjour chez les morts, Orphée l’aimera
+                    mieux encore…</p>
+            </div>
+            <div>
+                <head>9 <lb/> Hadès, dieu des Enfers</head>
+                <p>Toute la nuit, j’ai entretenu les feux dans la clairière, frissonnant au moindre
+                    souffle de vent, écoutant les bruits de la nuit, cherchant à discerner un chant,
+                    une note de musique, des pas froissant les herbes. On dirait que les bêtes
+                    savent ce qui se passe, qu’elles retiennent leur souffle. Même les feuilles des
+                    arbres sont immobiles, comme les épis blancs des asphodèles qui s’élancent vers
+                    le ciel. Tout est fini maintenant. Je n’aurais jamais dû le laisser partir.
+                    Orphée ne reviendra pas. Comme je voudrais que l’aube ne se lève jamais, que le
+                    temps s’arrête. Je ne supporterai pas d’apprendre qu’il est mort.</p>
+                <p>Et puis, après tant de tristesse, je me raisonne. Il faut du temps pour descendre
+                    aux Enfers, pour parcourir le Monde souterrain, pour convaincre Hadès et
+                    Perséphone. Et ensuite pour revenir ensemble sur terre. Je dessine dans ma tête
+                    tout un itinéraire : ici le Styx, là Cerbère, les marais, le séjour des
+                    condamnés à mort, celui des Innocents, le champ de guerriers et, bien plus loin
+                    encore, le séjour des Bienheureux. Combien de temps faut-il ? Je n’en sais rien.
+                    Je l’attendrai dans la clairière, une nuit, deux, trois, peu importe, je
+                    l’attendrai.</p>
+                <p>L’aube se lève à peine, ce soir j’allumerai les feux et je prierai une fois
+                    encore les dieux.</p>
+                <ab type="line"/>
+                <p>— Enfer et damnation ! rugit Hadès. Quel mortel s’est introduit dans mon
+                    royaume ? Qu’il arrête de chanter ! Jetez sa lyre au feu et lui avec ! Je parie
+                    que c’est encore Zeus qui me l’envoie. Ce n’est pas parce que mon frère est le
+                    dieu des dieux qu’il a tous les droits. Il suffirait maintenant d’un peu de
+                    musique pour entrer ici vivant ! Qu’on traîne ce misérable amoureux avec ses
+                    poèmes à pleurer au pied de mon trône.</p>
+                <p>Orphée n’imaginait pas ainsi Hadès, le mystérieux, le terrifiant, l’impitoyable
+                    souverain des Enfers que tout le monde sur terre hait. À le voir assis sur son
+                    trône d’ébène et de soufre, grognant, vociférant, menaçant, Orphée le trouve
+                    moins inquiétant. Certes, ce dieu est affreusement laid, avec une barbe
+                    déformant sa grande bouche, son nez tordu et ses yeux sans éclat à trop rester
+                    dans les Ténèbres. Il sent mauvais, à moins que ce ne soit le soufre, mais il
+                    n’est pas si effrayant. C’était donc cela les mystères divins que les grands
+                    prêtres égyptiens et les devins ne voulaient pas me révéler, pense Orphée. Ce
+                    serait rassurant si la situation n’était pas tragique. J’ai terrassé le Dragon
+                    qui surveillait la Toison d’or, charmé les sirènes, ensorcelé les arbres, les
+                    rochers et les fauves, les plus cruels, fait pleurer Charon, endormi Cerbère,
+                    mais Hadès ? Si Hadès déteste la musique, je suis perdu. Ô Calliope, ma mère,
+                    réunis tes sœurs les muses, et inspirez à ce dieu le goût des chants d’amour, le
+                    temps que je retrouve mon Eurydice.</p>
+                <p>— Eh bien, poète maudit, qu’as-tu à dire pour ta défense ? Tu t’introduis dans
+                    mon royaume alors que c’est interdit. Tu le sais ! Ne mens pas. Tu crois qu’avec
+                    ta lyre à neuf cordes, tu vas m’impressionner ? Je connais ta mère et toutes ses
+                    sœurs, toujours prêtes à transmettre aux mortels le plaisir des belles choses.
+                    Mais moi, ce sont la laideur, la violence, la haine qui m’intéressent,
+                    l’interpelle Hadès, changeant brusquement d’attitude. Il fixe Orphée de ses yeux
+                    laiteux et délavés qui lui donnent un regard de spectre.</p>
+                <p>— Apollon te protège toi aussi, j’aperçois à ton cou ton dauphin en ivoire. Tu
+                    crois vraiment que ce talisman a des pouvoirs contre moi ? Je décide de faire
+                    mourir qui je veux, quand je veux et où je veux ! hurle Hadès en colère. De quoi
+                    se mêle le bel Apollon, qui joue si bien de sa lyre d’or pour réjouir les
+                    immortels ! continue-t-il, furieux. Son instrument a sept cordes seulement !
+                    Parce que les cygnes ont chanté sept fois le jour de sa naissance ! Quelle
+                    stupidité ! ironise-t-il en retroussant ses lèvres épaisses comme des babines,
+                    laissant apparaître ses dents pointues, de véritables crocs. Moi, mon père, le
+                    dieu Cronos, m’a dévoré quand je suis né, poursuit Hadès, et l’on voudrait que
+                    je ne sois que tendresse et bonté ?</p>
+                <p>Il se lève brusquement et sautille comme un enfant tout autour de son trône. Il
+                    grimace et ses traits déjà si laids sont déformés par la cruauté.</p>
+                <p>« Voici donc son vrai visage ! » comprend Orphée. « Je suis pris au piège. Il
+                    sait qui je suis, qui je cherche et pourquoi. Hadès m’attendait dans son palais
+                    comme un fauve guette sa proie… Et je suis sa proie. »</p>
+                <p>— Ah oui, le dieu Dionysos, l’ivrogne qui fait la fête, en appelant cela vivre,
+                    lui aussi c’est ton ami ? reprend-il en ricanant. Reste Eurydice, la belle
+                    nymphe aux couronnes d’asphodèle. Tu n’es tout de même pas là pour m’accuser de
+                    sa mort ! Je ne suis pas Aristée, le charmant berger apiculteur, qui aime bien
+                    trop les femmes des autres.</p>
+                <p>Au nom d’Eurydice, Orphée prend peur. « Jamais Hadès ne la libérera. Ce dieu
+                    déteste Apollon, Dionysos, ma mère, tous ceux qui inspirent mes poèmes et ma
+                    musique », se dit-il en serrant sa lyre contre lui. Mais il doit sauver son
+                    amour.</p>
+                <p>Alors, avec courage, il chante, il n’a pas d’autre arme pour vaincre Hadès, le
+                    dieu monstrueux des Enfers.</p>
+                <ab type="line"/>
+                <p>Au fond des Ténèbres, Perséphone s’ennuie avec son terrible mari. Elle compte les
+                    jours qui la séparent de sa mère chérie, la déesse Déméter. Bientôt, elles
+                    parcourront la terre ensemble, riant, courant, semant des graines à tout vent.
+                    Ah ! Retrouver le soleil, la lumière, le Monde des vivants qui vont et viennent,
+                    insouciants. Il fait si froid et si noir ici. Les gémissements, les plaintes,
+                    les cris, les hurlements des Ombres ne s’arrêtent jamais. Et les torches
+                    allumées dans tout le palais n’éclairent pas vraiment tant d’obscurité. Mais
+                    soudain, elle croit entendre chanter dans la salle du trône. Quel vivant ose
+                    troubler par sa voix les Enfers, rappelant ainsi à chaque Ombre qu’elle est
+                    morte pour longtemps ? Perséphone accourt. Elle est redoutable elle aussi et
+                    fait payer à Hadès son mariage infernal.</p>
+                <p>— Qui chante Hadès ? Comment peux-tu écouter ce vivant ! hurle la reine en se
+                    bouchant les oreilles. C’est insupportable !</p>
+                <p>Elle tape du pied et grince des dents.</p>
+                <p>Orphée chante, chante encore…</p>
+                <p>« Ô dieux, comprenez ma souffrance. Eurydice, je t’appelle, c’est moi Orphée
+                    celui qui t’aime. Réponds ! Bientôt nous serons heureux ensemble, pour
+                    toujours. »</p>
+                <p>Son chant accompagné par les accords bouleversants de sa lyre résonne dans le
+                    palais. Par quel mystère en franchissent-ils les hautes murailles, comment
+                    traversent-ils aussi les brouillards entourant le séjour des Ombres ? Tout à
+                    coup, Eurydice entend ces notes de musique, comme autrefois les mots doux
+                    chuchotés par Orphée au creux de son oreille. C’est impossible, ce n’est pas
+                    lui, pense-t-elle en pleurant. Orphée est donc mort s’il est ici ? Et pourtant,
+                    je reconnais sa voix, c’est bien celle d’un vivant.</p>
+                <ab type="line"/>
+                <p>Hadès et Perséphone, le visage grave, les sourcils froncés, écoutent sans bouger
+                    cet hymne à l’Amour. Eux, les plus intraitables des dieux que rien ne semble
+                    émouvoir, ni le crime, ni la haine, ni l’odeur immonde de la mort, sont
+                    bouleversés par ce chant inattendu dans leur palais. Ici, ils n’ont jamais
+                    entendu de mots célébrant l’amour humain. Ils n’ont jamais cru non plus que l’on
+                    pouvait pleurer. Et ce qu’ils pensaient réservé aux mortels, maintenant ils
+                    l’éprouvent eux aussi. C’est sans doute une faiblesse…</p>
+                <p>Hadès se reprend le premier.</p>
+                <p>— Cela suffit ! s’écrie-t-il fermement. Orphée, ton courage me séduit plus que
+                    ton chant d’amour réservé aux humains toujours prêts à pleurnicher qu’ils
+                    s’aiment, sans en croire un mot. Leur infidélité, leurs mensonges, leur
+                    malveillance les uns envers les autres en sont les preuves, mais…</p>
+                <p>Perséphone lui coupe la parole, car c’est Orphée lui-même qu’elle trouve
+                    séduisant. Ses grands yeux tristes, son visage d’une pâleur extrême et sa bouche
+                    l’attirent, surtout quand elle regarde Hadès si laid, si arrogant…</p>
+                <p>— Hadès a raison ! Aux Enfers, tout le monde le sait, il a toujours raison,
+                    ironise-t-elle. Moi, ce qui me touche, c’est ta passion pour Eurydice et je
+                    pourrais bien en être jalouse, avoue-t-elle.</p>
+                <p>— Perséphone ! la reprend Hadès.</p>
+                <p>— Quoi, <hi rend="i">Perséphone</hi> ! répond-elle en imitant son mari. (Puis
+                    elle continue.) Qu’a-t-elle de plus que moi, cette nymphe que tu aimes ? Un
+                    serpent l’a mordue, elle est morte, et alors ? Comment es-tu certain qu’en vie
+                    elle t’aimera toujours ? Que les yeux dans les yeux vous ne penserez qu’à votre
+                    bonheur ? Tu te trompes Orphée ! Il n’y a pas d’amour heureux ni chez les hommes
+                    ni chez les dieux, l’avertit Perséphone en s’approchant de lui. Un jour, vous
+                    vous séparez en vous demandant pourquoi vous vous êtes aimés, poursuit-elle.</p>
+                <p>— Perséphone ! grogne Hadès, doutant parfois de la fidélité de son épouse.</p>
+                <p>— Tais-toi Hadès ! s’emporte la reine.</p>
+                <p>Orphée n’ose pas lui répondre, ni chanter. Il a peur qu’un mot maladroit ne
+                    provoque une dispute entre eux deux.</p>
+                <p>— Eh bien, puisque tu crois être le premier à aimer éternellement une femme,
+                    reste donc ici. Tu te plairas auprès d’elle… Moi je ne suis pas contre, ajoute
+                    Perséphone avec un sourire charmeur.</p>
+                <p>— Perséphone ! s’écrie Hadès, furieux. Le roi sent que la reine est attirée par
+                    le bel Orphée. Il vaut mieux, décide-t-il, que cet amoureux inconsolable aille
+                    jouer de la lyre ailleurs et quitte les Enfers au plus vite, avec son Eurydice,
+                    plutôt que d’y séjourner pendant mille ans. Sinon, je crains le pire.</p>
+                <p>— C’est moi qui commande, reprend Hadès vexé. Viens t’asseoir ici, Perséphone, à
+                    côté de moi !</p>
+                <p>— C’est vrai, j’oubliais : je suis ta reine chérie, grimace-t-elle en colère,
+                    mais elle lui obéit.</p>
+                <p>— Orphée, est-ce que ta femme aime les grenades juteuses et bien mûres, les
+                    fruits préférés des morts ? ajoute Perséphone, provocante. Si elle en goûte un
+                    grain, adieu la lumière, adieu les vivants. Finis les rêves des amoureux ! Vous
+                    serez séparés à jamais, rugit-elle furieuse, réalisant qu’Orphée va lui échapper
+                    et qu’Eurydice pourrait bien rentrer chez elle au bras de son poète.</p>
+                <p>— Ça suffit Perséphone ! la menace Hadès. Tu n’as pas besoin de lui raconter ta
+                    vie. Ça n’intéresse personne. Dis tout de suite que je t’ai forcée à manger des
+                    grains de grenade pour que tu restes avec moi.</p>
+                <p>Orphée ne comprend rien à leurs querelles. Les torches éclairant le visage des
+                    dieux les rendent encore plus hideux. Il n’en peut plus. Sa longue descente aux
+                    Enfers a été tellement éprouvante. Sa gorge le brûle d’avoir trop chanté. Ses
+                    doigts couverts de sang lui font mal. Il est épuisé.</p>
+                <p>— Orphée ! reprend Hadès, brusquement solennel. Tu es parvenu jusqu’ici en
+                    rusant, c’est interdit. Tu chantes, interdit. Tu joues de la musique, interdit.
+                    Tu parles d’amour, interdit. Tu appelles Eurydice, interdit. Et en plus, tu me
+                    nargues en portant à ton cou le talisman d’Apollon, le dieu de la Lumière !
+                    énumère Hadès, comme un juge les crimes d’un condamné.</p>
+                <p>Tout est perdu, réalise Orphée, et il a envie de mourir.</p>
+                <p>— Interdit ! Interdit ! Tout est interdit ! s’étrangle Perséphone, imitant Hadès
+                    mais il continue :</p>
+                <p>— Mais… Puisque Perséphone apprécie ta musique et ta voix magnifique et moi ton
+                    courage et la noblesse de tes sentiments… Si, l’amour c’est beau, déclare-t-il
+                    en se tournant vers Perséphone qui enrage.</p>
+                <p>— Nous t’autorisons à sortir vivant du Monde souterrain, avec Eurydice, conclut
+                    Hadès sur un ton théâtral.</p>
+                <p>Orphée se réjouit déjà.</p>
+                <p>— Mais…, ajoute aussitôt Hadès sévèrement, à une seule condition, ne te retourne
+                    jamais pour voir ta femme, jusqu’à ce que vous ayez franchi la Porte des Enfers.
+                    Si tu ne respectes pas ce contrat, Eurydice restera à jamais dans mon royaume à
+                    errer comme une Ombre.</p>
+                <p>Orphée se jette à ses pieds pour le remercier. Il va revoir Eurydice ! Ils vont
+                    vivre tous les deux.</p>
+                <p>— En chemin, n’oublie pas que les dieux des Enfers sont cruels, persifle
+                    Perséphone. Hadès a toujours aimé les pièges… Ne te crois pas plus fort que tu
+                    ne l’es.</p>
+                <p>Et, sur ces mots énigmatiques, Perséphone quitte le palais.</p>
+                <p>« Regarder devant, ne jamais me retourner, regarder devant, répète Orphée
+                    inlassablement. Devant… »</p>
+            </div>
+            <div>
+                <head>10 <lb/> Ne pas se retourner</head>
+                <p>Depuis combien de nuits je veille ainsi dans la clairière aux asphodèles ? Je ne
+                    sais plus. C’est la dernière fois. Demain au crépuscule, je n’allumerai aucun
+                    feu.</p>
+                <p>Personne n’est jamais revenu du royaume des Morts. Pourquoi lui ? Orphée ne
+                    reviendra pas, que ce soit seul ou avec Eurydice. J’ai décidé pour quelques
+                    jours encore de rester ici dans sa demeure. J’erre dans son domaine en
+                    l’appelant. Parfois je crois l’entendre chanter. Et si soudain, sans raison, ses
+                    bons chiens détalent joyeusement, je cours dans la même direction. Mais ils ont
+                    beau flairer le sol, humer le vent, ils me rejoignent, tristes de s’être
+                    trompés. Parfois, j’ai peur. Si j’avais tout imaginé : mon aventure sur l’<hi
+                        rend="i">Argo</hi> avec Orphée, Jason, Ulysse et les autres. Si je n’avais
+                    jamais traversé les mers ? Si Orphée n’avait jamais chanté pour moi ? Si le
+                    talisman d’Apollon n’existait pas ? Cette demeure, ce domaine, ces chiens ne
+                    sont peut-être pas les siens mais ils m’appartiennent. Je deviens fou, c’est ça,
+                    fou de douleur. Mais je me reprends vite, ce que nous avons vécu ensemble,
+                    Orphée et moi, est bien réel. Un jour, il reviendra avec Eurydice dans le plein
+                    soleil de l’été ou aux premières couleurs de l’automne, ou encore au printemps,
+                    quand les arbres bourgeonnent, ou bien quand l’hiver blanchit de givre les
+                    petits matins. J’entendrai son rire, les cordes de sa lyre. Il sera là et je
+                    serai là.</p>
+                <ab type="line"/>
+                <p>Dans la caverne obscure où il avance sans repères, Orphée reprend le chemin qui
+                    monte vers la lumière. Il serre le talisman dans une main, sa lyre de l’autre et
+                    marche lentement dans ce couloir étroit. Eurydice le suit. Il entend sa
+                    respiration. Est-elle encore une Ombre aussi légère que la brume ou a-t-elle
+                    déjà repris son visage et son corps humain ? A-t-elle dénoué ses cheveux,
+                    sourit-elle, me tend-elle la main ? Orphée se pose tant de questions depuis
+                    qu’il l’a retrouvée. Ne pas se retourner. Regarder devant. Comme il voudrait la
+                    serrer dans ses bras. Ni l’un ni l’autre ne se parlent. Ils doivent tenir bon
+                    jusqu’à la grande Porte des Enfers.</p>
+                <p>Eurydice marche, devinant dans les Ténèbres la silhouette d’Orphée, juste devant
+                    elle. Son cœur bat fort, elle est si heureuse de le retrouver après cette mort
+                    affreuse. Combien de temps leur faut-il encore pour atteindre la Grande Porte ?
+                    Surtout ne pas appeler, ne pas pleurer. Orphée ne doit pas se retourner. Alors
+                    Eurydice imagine la clairière aux asphodèles, les champs d’oliviers, les enfants
+                    qu’ils auront ensemble, les nuages, la caresse du vent bientôt sur sa peau, et
+                    elle marche, en serrant les dents.</p>
+                <ab type="line"/>
+                <p>Ne pas se retourner. Regarder devant, quoi qu’il arrive. Orphée et Eurydice
+                    avancent pas à pas. Soudain, il distingue la lourde Porte des Enfers. Bientôt la
+                    lumière, espère-t-il, et nous serons sauvés. Ses jambes tremblent, ses forces le
+                    trahissent, Orphée est si ému.</p>
+                <p>Il est maintenant devant la Porte. Elle s’entrouvre pour les laisser passer.
+                    Eurydice le suit, il le sait, il l’entend.</p>
+                <p>Orphée avance d’un pas pour franchir le seuil. Il voit déjà le ciel.</p>
+                <p>La lumière éclaire son visage… Orphée ! Eurydice !</p>
+                <p>Personne ne les a jamais revus.</p>
+                <ab type="line"/>
+                <p>Non. C’est faux. C’est un mensonge. Orphée ne s’est pas retourné. Il n’a pas
+                    regardé en arrière. Il n’a pas cherché à découvrir les mystères des Enfers
+                    qu’aucun vivant ne doit connaître. Hadès n’a pas condamné Eurydice à errer aux
+                    Enfers et Orphée sur Terre. Ni rien ni personne ne les ont séparés.</p>
+                <p>Orphée ne s’est pas retourné.</p>
+                <p>C’est un héros. Il a sauvé sa femme grâce à sa voix, sa seule arme pour affronter
+                    Hadès et Perséphone. Pourquoi aurait-il voulu revoir le visage d’Eurydice avant
+                    qu’elle soit sortie du Monde souterrain ? C’est stupide, indigne, de penser cela
+                    de lui. Les faits ne se sont pas passés ainsi. Cette fois, dans l’éternel combat
+                    de la Lumière contre les Ténèbres, Apollon a vaincu Hadès. Et l’Amour a triomphé
+                    de la Mort. Orphée ne s’est pas retourné. Eurydice a été sauvée.</p>
+                <p>Ceux qui ont inventé cette mauvaise légende d’Orphée et d’Eurydice, éternellement
+                    prisonnière des Enfers, l’ont fait contraints et forcés par Perséphone. La reine
+                    du Monde souterrain ne supporte pas le bonheur des amoureux. Elle a même
+                    déclaré, à tout le monde et partout, que le bel et inconsolable Orphée était
+                    mort assassiné. Bien fait pour lui, puisqu’il refusait de s’intéresser à
+                    d’autres femmes, toutes plus jolies les unes que les autres. Alors Perséphone
+                    les a rendues folles furieuses, elles ont tué Orphée, l’ont coupé en morceaux
+                    qu’elles ont jetés ensuite dans un fleuve, avec sa lyre. Mais, par un dernier
+                    sortilège, sa tête appelait encore : « Eurydice ! Eurydice ! »</p>
+                <p>Voilà quels détails horribles les conteurs ont trouvés pour effrayer leur
+                    auditoire. Mais qui peut les croire ? Une grande histoire d’amour ne finit pas
+                    par un crime atroce. À la fin, le héros ne meurt pas, l’héroïne non plus. Ils se
+                    marient et ont beaucoup d’enfants. Donc, au moment où Eurydice fragile, apeurée,
+                    éblouie par la lumière, franchit le seuil de la Grande Porte, elle se referme
+                    après elle (et non pas devant elle). Alors, Orphée se retourne pour serrer sa
+                    femme dans ses bras. Et cette fois il en a le droit.</p>
+                <ab type="line"/>
+                <p>Au fond de leur Royaume des Ténèbres, Perséphone a accusé Hadès d’avoir laissé
+                    une morte revivre, tout ça pour un joueur de musique. Hadès a répliqué :</p>
+                <p>— Orphée est le fils d’une muse et le petit-fils de mon frère Zeus.</p>
+                <p>— Et alors ? a répondu la reine, moi je suis sa fille !</p>
+                <p>— C’est bien toi qui as pleuré en l’entendant chanter ?</p>
+                <p>— Jamais, au grand jamais, je n’ai été émue ! De toute façon, je ne comprends pas
+                    pourquoi Orphée aimait cette Eurydice, qui avait voulu séduire Aristée,
+                    insista-t-elle, et non pas l’inverse. Logique que le serpent ait mordu cette
+                    infidèle !</p>
+                <p>— Ah oui ! a rétorqué Hadès, alors pourquoi les nymphes, ses sœurs, l’ont-elles
+                    vengée en tuant toutes les abeilles d’Aristée ?</p>
+                <p>— Tu ne comprends rien ! a hurlé Perséphone.</p>
+                <p>— Je comprends que tu es jalouse de leur amour ! a hurlé Hadès à son tour. Je te
+                    laisse remonter sur Terre six mois de l’année, et voilà comment je suis
+                    remercié…</p>
+                <p>Perséphone, déchaînée, est partie en claquant la porte de ce palais glacial.</p>
+                <p>« Hadès a raison, a conclu la reine, je suis jalouse de leur bonheur mais j’ai
+                    mes petits secrets pour que leur histoire se termine mal et qu’on déteste cet
+                    Orphée et son Eurydice. Et les conteurs vont bien m’aider… »</p>
+            </div>
+            <div>
+                <head>Épilogue</head>
+                <p>À vrai dire, que s’est-il vraiment passé ?</p>
+                <p>Moi, Circos, je ne suis pas un héros, ni un guerrier couvert de gloire ni un
+                    devin aux pouvoirs extraordinaires. Si j’ai accompagné Orphée dans ses
+                    aventures, c’est parce que les Muses me l’ont demandé. Et pour que chacun
+                    connaisse la vérité, elles me l’ont révélée, ou plutôt Orphée lui-même me l’a
+                    révélée.</p>
+                <p>Une nuit donc, Orphée m’est apparu en songe.</p>
+                <p>— Circos ! m’appelait-il, ne crois pas les mensonges que l’on raconte sur
+                    moi !</p>
+                <p>— Où es-tu ? Et Eurydice ?</p>
+                <p>— Écoute-moi. Nous avons franchi tous les deux sains et saufs la Grande Porte des
+                    Enfers. Mais aussitôt, nous nous sommes enfuis loin de la violence des hommes et
+                    sous la protection des dieux, car nous avions peur de la colère d’Hadès et de
+                    Perséphone. Que se passerait-il quand ils apprendraient que nous avions réussi à
+                    nous sauver ?</p>
+                <p>— Quand reviendrez-vous ici ? Je t’attends depuis si longtemps, tes serviteurs et
+                    tes bons chiens aussi. Tes vignes sont en fleur, les vendanges seront
+                    belles.</p>
+                <p>— Circos ! Je ne reviendrai pas dans le Monde des humains. Là où je vis caché
+                    avec Eurydice, tout est calme et harmonie. Les parfums et les sons se répondent
+                    et les couleurs aussi. Ne sois pas triste. Souviens-toi de ce que nous avons
+                    vécu ensemble.</p>
+                <p>— Joue Orphée, joue pour moi, une dernière fois…</p>
+                <p>Alors il entonna le chant des premiers commencements du Monde qui m’avait tant
+                    ému chez le centaure Chiron. Je me mis à pleurer, sachant que désormais j’allais
+                    devoir vivre seul avec mes souvenirs. Et je lui murmurai :</p>
+                <p>— Sois heureux Orphée, avec celle que tu aimes.</p>
+                <p>— Ne pleure pas Circos. Je serai toujours avec toi. Écoute le vent qui danse et
+                    le chant des oiseaux, le bruit du feu qui crépite le soir. Respire le parfum
+                    âcre de la mer et celui des asphodèles blancs. Regarde les ciels d’été, et tu
+                    découvriras que je suis là, tout près de toi.</p>
+                <p>— Orphée ! Orphée !</p>
+                <p>J’aurais voulu le retenir encore, le prendre dans mes bras, mais il avait
+                    disparu.</p>
+                <p>Aussitôt, je me suis réveillé, ne sachant plus si j’avais rêvé, tout avait l’air
+                    si vrai, son visage, sa voix, sa musique.</p>
+                <ab type="line"/>
+                <p>Je suis sorti pour le chercher dans la nuit et, soudain, j’ai senti quelque chose
+                    dans la paume de ma main. J’ai desserré le poing : le dauphin en ivoire brillait
+                    sous l’éclat de la lune. Dans le ciel illuminé, la lyre d’Orphée dansait parmi
+                    les étoiles.</p>
+                <p>Orphée, l’ensorceleur, l’amoureux passionné que rien, pas même la Mort, ne put
+                    arrêter, était revenu me voir et me saluait.</p>
+                <p>Jamais je ne l’oublierai.</p>
+
+            </div>
+        </body>
+
+    </text>
+</TEI>

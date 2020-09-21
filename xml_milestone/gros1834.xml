@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Métamorphoses</title>
+                <title type="book">Œuvres complètes d’Ovide</title>
+                <author>Ovide</author>
+                <editor>Étienne Gros</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k5804610m</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Ovide</author> / <title>Les Métamorphoses</title> /
+                    <title>Œuvres complètes d’Ovide</title> / Étienne Gros (trad.) / Paris / 1834-1836 / p. 290-299,
+                    p. 4-10.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les Métamorphoses. Oeuvres complètes d’Ovide</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher/>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1834"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>gros1834</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1834">1834-1836</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Ovide</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Métamorphoses</titlePart>
+                </docTitle>
+                <docEdition>Étienne Gros</docEdition>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <head>Livre dixième</head>
+                <div>
+                    <head>I.</head>
+                    <p><pb n="291" xml:id="p291"/><milestone unit="sent"/>Des champs de la Crète l’Hymen, vêtu d’une robe de
+                        pourpre, s’élance dans les vastes plaines de l’air et dirige son vol vers la
+                        Thrace, où, d’une voix impuissante, Orphée invoque son appui. <milestone unit="sent"/>L’Hymen est
+                        présent à son union avec Eurydice, mais il ne fait point entendre les
+                        chants solennels : il ne porte ni un front serein, ni un heureux présage. <milestone unit="sent"/>La
+                        torche qu’il tient dans ses mains jette incessamment une humide fumée qui
+                        frémit : le dieu l’agite, sans pouvoir ranimer ses clartés. <milestone unit="sent"/>Cet augure
+                        sinistre est suivi d’un évènement plus sinistre encore. <milestone unit="sent"/>Tandis que la
+                        nouvelle épouse fuit, entourée des Naïades, ses compagnes, elle tombe sur le
+                        gazon et meurt, blessée au talon par la morsure d’un serpent. <milestone unit="sent"/>Long-temps le
+                        chantre du Rhodope la pleura sur la terre ; il voulut essayer aussi
+                        d’émouvoir les Ombres, et osa descendre jusqu’aux rives du Styx, par la
+                        porte du Ténare : à travers les Mânes légers des mortels qui reçurent les
+                        honneurs d’un tombeau, il arrive devant Proserpine et le roi qui dicte des
+                        lois au ténébreux <pb n="293" xml:id="p293"/>empire. <milestone unit="sent"/>Sous ses doigts, les
+                        cordes de la lyre vibrent et marient leurs sons à ces chants : <milestone unit="sent"/>« Ô vous,
+                        divinités du royaume placé au sein de la terre, vous qui voyez tout le genre
+                        humain arriver dans ce séjour ; si vous permettez de dire la vérité, sans
+                        recourir à de fallacieux détours, je ne suis venu aux enfers ni pour
+                        contempler le sombre Tartare, ni pour enchaîner la triple tête du monstre né
+                        du sang de Méduse, et dont le front est hérissé de reptiles. <milestone unit="sent"/>Mon épouse
+                        m’appelle sur ces bords : une vipère, foulée sous ses pieds, l’infecta de
+                        ses poisons, et me la ravit au printemps de ses jours. <milestone unit="sent"/>J’ai voulu supporter
+                        ma douleur oui ; je l’ai tenté, je ne saurais le nier. <milestone unit="sent"/>L’Amour a triomphé ;
+                        ce dieu est bien connu sur la terre : j’ignore s’il l’est également parmi
+                        vous ; mais je le crois. <milestone unit="sent"/>Si un antique enlèvement n’est pas une fiction de
+                        la renommée, l’Amour vous unit aussi. <milestone unit="sent"/>Par ces lieux pleins d’effroi, par cet
+                        immense chaos, par le vaste silence de cet empire, je vous en conjure,
+                        renouez le fil des jours d’Eurydice, trop tôt coupé. <milestone unit="sent"/>Tous les hommes vous
+                        appartiennent : après un court délai, tous nous accourons, tôt ou tard,
+                        vers la même demeure; tous nous tendons vers ces rives ; c’est notre dernier
+                        asile. <milestone unit="sent"/>Les contrées qu’habitent les humains sont toutes soumises à votre
+                        sceptre. <milestone unit="sent"/>Eurydice elle-même, lorsque la révolution du temps l’aura conduite
+                        à une certaine maturité, tombera sous vos lois : le seul bienfait que je
+                        demande, c’est de la posséder un moment. <milestone unit="sent"/>Si les destins me refusent la
+                        faveur de l’emmener d’ici, je ne retournerai point sur la terre :
+                        réjouissez-vous de sa mort et de la mienne. » <milestone unit="sent"/>Il dit, et les cordes de sa
+                        lyre s’agitent sous ses doigts : à sa voix, les pâles Ombres pleurent,
+                        Tantale ne poursuit <pb n="295" xml:id="p295"/>plus l’onde qui le fuit, la
+                        roue d’Ixion s’arrête étonnée, les vautours ne déchirent plus les
+                        entrailles de Titye, les filles de Bélus déposent leurs urnes ; et toi,
+                        Sisyphe, tu t’assieds sur ton rocher. <milestone unit="sent"/>Alors, pour la première fois, des
+                        larmes baignèrent, dit-on, les joues des Euménides fléchies par le charme
+                        des vers. <milestone unit="sent"/>La reine des enfers, et le dieu qui tient l’enfer sous sa
+                        puissance, ne peuvent résister aux prières d’Orphée : ils appellent
+                        Eurydice, qui errait parmi les morts récemment descendus chez Pluton : elle
+                        s’avance d’un pas retardé par sa blessure.</p>
+                    <p><milestone unit="sent"/>Le chantre de Thrace la reçoit, à condition qu’il ne tournera point ses
+                        regards vers elle, jusqu’à ce qu’il ait franchi les détours de l’Averne ;
+                        sinon, la faveur qui lui est accordée sera perdue. <milestone unit="sent"/>Ils gravissent, à
+                        travers le plus profond silence, un sentier rapide, escarpé, obscur,
+                        couvert d’épais brouillards. <milestone unit="sent"/>Déjà ils touchaient presque aux régions
+                        habitées par l’homme, lorsque Orphée, craignant qu’Eurydice ne l’abandonne,
+                        et impatient de la voir, cède à son amour et lui lance un regard : elle lui
+                        échappe au même instant. <milestone unit="sent"/>Il lui tend les bras, il veut se jeter dans les
+                        siens et l’embrasser. <milestone unit="sent"/>Malheureux ! il ne saisit qu’une vapeur qui
+                        s’évanouit ! <milestone unit="sent"/>Eurydice meurt une seconde fois, mais sans se plaindre de son
+                        époux. <milestone unit="sent"/>Et de quoi pouvait-elle se plaindre, excepté de son trop grand
+                        amour ? <milestone unit="sent"/>Pour dernier adieu, elle lui adresse des paroles qui frappent à
+                        peine son oreille, et rentre dans le séjour des Ombres. <milestone unit="sent"/>En perdant de
+                        nouveau son épouse, Orphée reste immobile d’effroi : tel le berger timide
+                        qui vit Cerbère avec ses trois têtes, dont une seule, celle du milieu, était
+                        chargée de chaînes, éprouva la plus grande frayeur : il n’en fut affranchi
+                        qu’au moment où il changea de <pb n="297" xml:id="p297"/>nature pour être
+                        transformé en rocher ; tel encore fut Olénus, pour avoir voulu paraître
+                        coupable ; telle, tu fus aussi, malheureuse Léthéa, que ta beauté remplit
+                        d’une vaine présomption : jadis unis par les liens les plus étroits, vous
+                        êtes maintenant un même rocher soutenu par l’Ida sur son humide front. <milestone unit="sent"/>Orphée prie : plusieurs fois il tente de repasser le Styx, mais en vain ;
+                        Charon le repousse. <milestone unit="sent"/>Cependant, plongé dans le deuil, il reste sept jours sur
+                        l’infernale plage, sans prendre de nourriture. <milestone unit="sent"/>Les soucis, le trouble de
+                        son âme et les larmes sont ses seuls alimens. <milestone unit="sent"/>Enfin, las d’accuser la
+                        cruauté des dieux de l’Érèbe, il se retire sur le Rhodope, dont le sommet
+                        frappe les nues, et sur l’Hémus, battu par les aquilons. <milestone unit="sent"/>Trois fois le
+                        soleil avait ramené la marche de l’année aux limites marquées par les
+                        Poissons ; et Orphée fuyait les femmes et l’amour, soit à cause du malheur
+                        causé par sa première flamme, soit qu’il eût à jamais engagé sa foi. <milestone unit="sent"/>Plusieurs beautés brûlèrent pour lui ; mais toutes essuyèrent ses refus. <milestone unit="sent"/>Il
+                        apprit même aux peuples de la Thrace, à concevoir des feux désavoués par la
+                        nature, et à rechercher la fleur de cet âge qui précède la jeunesse, et
+                        forme le véritable printemps de la vie.</p>
+                </div>
+                <div>
+                    <head>II.</head>
+                    <p><milestone unit="sent"/>Là était une colline dont la cime se terminait en une vaste plaine : le gazon
+                        la couvrait d’un tapis de verdure ; mais elle n’était pas ombragée par des
+                        arbres. <milestone unit="sent"/>À peine le chantre issu du sang des dieux y eut-il séjourné, à peine
+                        eut-il fait résonner les cordes de sa lyre, qu’une <pb n="299" xml:id="p299"
+                        />forêt naît autour de lui : c’était l’arbre de Chaonie, les peupliers nés
+                        des filles du Soleil, le chêne dont la tête s’élève jusqu’aux nues, le
+                        tilleul délicat, le hêtre, le chaste laurier, le noisetier fragile, le frêne
+                        qui fournit la hache des combats, le sapin sans nœuds, l’yeuse courbée sous
+                        le poids des glands, le platane propice aux banquets joyeux, l’érable avec
+                        ses diverses couleurs, le saule ami des fontaines, le lotos aquatique, le
+                        buis toujours vert, la légère bruyère, le myrte aux deux couleurs, et le
+                        laurier-thym à la baie azurée. <milestone unit="sent"/>Là vous parûtes aussi, lierre flexible,
+                        vignes couronnées de pampres, ormeaux unis à la vigne, frênes sauvages, et
+                        vous, arbres d’où la poix découlé, et vous arbousiers chargés de fruits qui
+                        ont l’éclat de la pourpre, et vous palmiers dont les branches flexibles
+                        parent le front des vainqueurs, et toi pin dont le rare feuillage, pressé
+                        sur ton front, l’entoure de pointes hérissées : heureux arbre, tu es
+                        consacré à la mère des dieux depuis qu’Attis, aimé de cette déesse,
+                        dépouilla la forme humaine pour se renfermer dans tes flancs. <milestone unit="sent"/>Parmi les
+                        arbres accourus à la voix d’Orphée, se trouvait encore le cyprès, taillé en
+                        cône- comme la borne des champs : arbre maintenant, il fut jadis un enfant
+                        aimé du dieu qui manie également l’arc et la lyre.</p>
+                </div>
+            </div>
+            <div>
+                <head>Livre onzième</head>
+                <div>
+                    <head>I.</head>
+                    <p><pb n="5" xml:id="p5"/><milestone unit="sent"/>Tandis que, par ces chants, Orphée entraîne les
+                        forêts, leurs hôtes et les rochers dociles à ses accords, les Ménades,
+                        couvertes de la dépouille des animaux et agitées des fureurs de Bacchus,
+                        l’aperçoivent du haut d’une montagne, mariant sa voix à sa lyre. <milestone unit="sent"/>L’une
+                        d’elles, les cheveux épars au gré des vents, s’écrie : <milestone unit="sent"/>« Voilà, oui, voilà
+                        celui qui nous méprise. » <milestone unit="sent"/>À ces mots, elle frappe de son thyrse la tête du
+                        fils d’Apollon aux accens mélodieux : cette arme, entourée de feuilles, n’y
+                        fait qu’une empreinte légère sans la blesser. <milestone unit="sent"/>Une autre lui lance une
+                        pierre ; mais au moment même ou elle fend les airs, vaincue par la voix et
+                        la lyre harmonieuse d’Orphée, elle tombe à ses pieds et semble demander
+                        grâce pour une si cruelle offense. <milestone unit="sent"/>Cependant le trouble augmente, et
+                        l’audace de ces femmes franchit toutes les bornes : dans leurs cœurs règne
+                        l’aveugle Érinnys. <milestone unit="sent"/>Les traits auraient été émoussés par le chantre de
+                        Thrace ; mais les cris tumultueux des Bacchantes, le son des flûtes
+                        recourbées, le bruit des tambours, les battemens <pb n="7" xml:id="p7"/>de
+                        leurs mains et mille hurlemens affreux, étouffent les sons de la lyre : les
+                        rochers alors sont rougis du sang d’Orphée, qui ne saurait plus se faire
+                        entendre. <milestone unit="sent"/>Charmés encore par sa voix, d’innombrables oiseaux, des serpens
+                        et les hôtes des bois, se pressaient à ses côtés, pour lui rendre hommage :
+                        les Ménades les mettent en lambeaux, et portent sur Orphée lui-même des
+                        mains ensanglantées. <milestone unit="sent"/>Elles se réunissent, comme on voit les oiseaux
+                        s’attrouper quand ils ont aperçu la chouette, amie de la nuit, errer à la
+                        clarté du jour : telle encore, le matin, dans l’amphithéâtre où le cerf doit
+                        périr sur l’arène, une meute s’élance. <milestone unit="sent"/>Elles l’attaquent, et le frappent de
+                        leurs thyrses parés de pampres verts, destinés à un autre usage. <milestone unit="sent"/>Celles-ci
+                        font voler contre lui des masses de terre, celles-là des branches d’arbres
+                        violemment arrachées ; d’autres, des pierres : les armes ne manquent pas à
+                        leur fureur. <milestone unit="sent"/>Non loin de là, des bœufs attachés à la charrue traçaient de
+                        vastes sillons, et de vigoureux laboureurs, préparant par d’abondantes
+                        sueurs la récolte de l’année, ouvraient le sein rebelle de la terre. <milestone unit="sent"/>Ils
+                        fuient à la vue des Bacchantes, et abandonnent les instrumens de leurs
+                        travaux : sur les champs déserts gisent le sarcloir, les pesans râteaux et
+                        la longue houe. <milestone unit="sent"/>Les Ménades, toujours hors d’elles- mêmes, s’en emparent :
+                        elles arrachent du front des bœufs les cornes menaçantes, et courent donner
+                        la mort à l’interprète des dieux. <milestone unit="sent"/>Il leur tend les mains : pour la première
+                        fois ses paroles sont impuissantes ; les Bacchantes sacrilèges restent
+                        inflexibles et le plongent dans la nuit du trépas. <milestone unit="sent"/>Ô Jupiter ! à travers
+                        cette bouche dont les accens furent entendus des rochers, et compris même
+                        par la brute, son âme s’échappe dans les <pb n="9" xml:id="p9"/>airs. <milestone unit="sent"/>Orphée, les oiseaux en deuil, les animaux, les rochers insensibles, les
+                        forêts si souvent attirées par ta voix, tout pleura ta perte. <milestone unit="sent"/>Les arbres,
+                        dépouillés de leur feuillage, te l’offrirent comme un tribut de douleur ;
+                        les fleuves eux-mêmes se grossirent, dit-on, de leurs propres larmes ; les
+                        Naïades et les Dryades gémirent, couvertes de voiles funèbres et les
+                        cheveux épars.</p>
+                    <p><milestone unit="sent"/>Ses membres sont dispersés : <milestone unit="sent"/>Hèbre, tu reçus sa tête et sa lyre. <milestone unit="sent"/>Ô prodige !
+                        cette lyre, en roulant au sein des flots, fait entendre je ne sais quelles
+                        plaintes ; cette langue déjà glacée murmure des sons lugubres, et la rive
+                        répond à ces lugubres accens. <milestone unit="sent"/>Bientôt emportées vers la mer, elles quittent
+                        le fleuve qui baigne la patrie du chantre divin, et touchent au rivage de
+                        Méthymne, dans l’île de Lesbos. <milestone unit="sent"/>Un horrible serpent menace sa tête sur ces
+                        bords étrangers, et lèche ses cheveux humides. <milestone unit="sent"/>Apollon paraît enfin : il
+                        arrête le reptile prêt à mordre ; et au moment où il ouvre la bouche, le
+                        dieu le change en un dur rocher qui le représente la gueule encore béante. <milestone unit="sent"/>L’ombre d’Orphée descend dans le séjour des morts, et reconnaît les lieux
+                        par lui déjà visités. <milestone unit="sent"/>Il cherche Eurydice dans les champs réservés aux Mânes
+                        pieux ; il la trouve et la presse avidement dans ses bras. <milestone unit="sent"/>Là, ils se
+                        promènent à côté l’un de l’autre ; tantôt il la suit, tantôt il marche
+                        devant elle et se plaît à regarder son Eurydice, sans craindre de la
+                        perdre !</p>
+                </div>
+            </div>
+        </body>
+
+    </text>
+</TEI>

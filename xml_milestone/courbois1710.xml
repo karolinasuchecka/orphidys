@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Orphée</title>
+                <title type="sub">Cantate à voix seule et un violon</title>
+                <title type="book">Cantates françoises à I et II voix sans simphonie et avec
+                    simphonie</title>
+                <author>Philippe Courbois, Louis Fuzelier</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/btv1b9009725b/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Philippe Courbois, Louis Fuzelier</author> / <title>Orphée</title>
+                    / <title>Cantate à voix seule et un violon. Cantates françoises à I et II
+                        voix sans simphonie et avec simphonie</title> / Paris / BNF, dép. Musique,
+                    VM7-162 / 1710 / p. 32-46.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Orphée. Cantate à voix seule et un violon. Cantates françoises à I et
+                            II voix sans simphonie et avec simphonie</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>BNF, dép. Musique, VM7-162</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1710"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>opéra</genre>
+                <structure>courbois1710</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1710">1710</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>transmodalisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Philippe Courbois, Louis Fuzelier</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Orphée</titlePart>
+                    <titlePart type="sub">Cantate à voix seule et un violon</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+          
+            <label rend="i">Récitatif</label>
+            <l><milestone unit="sent"/><pb n="32" xml:id="p32"/>Ô Ciel, disoit Orphée, ô disgrace fatale !</l>
+            <l><milestone unit="sent"/>Vous mourez Euridice, hélas !</l>
+            <l><milestone unit="sent"/>Attendez, je descend sur la rive infernale</l>
+            <l>Que ma lyre en ce jour ne m’abandonne pas.</l>
+            <l><pb n="33" xml:id="p33"/><milestone unit="sent"/>Je voy déja le terrible rivage</l>
+            <l>Où Mercure confond les bergers et les Rois.</l>
+            <l><milestone unit="sent"/>Caron est attendry pour la premiere <pb n="34" xml:id="p34"/>fois.</l>
+            <l><milestone unit="sent"/>Il m’ofre dans sa barque un facile passage.</l>
+            <l><milestone unit="sent"/>Et Cerbère attentif dans son antre sauvage</l>
+            <l>Du Monarque des<pb/>morts trahit les dures Loix.</l>
+            <l><milestone unit="sent"/>Je voy Pluton. Amour viens animer ma voix.</l>
+            <label>Air</label>
+            <l><pb n="35" xml:id="p35"/>Dieu redouté qui régnez sur les ombres,</l>
+            <l>Terminez mon funeste sort.</l>
+            <label>Récitatif</label>
+            <l><pb n="37" xml:id="p37"/>À ces accords mélodieux</l>
+            <l>Pluton éprouve une douceur nouvelle.</l>
+            <l><milestone unit="sent"/>« Fils d’Apollon, dit-il, que la parque cruelle</l>
+            <l>Cède à ton feu victorieux.</l>
+            <l><milestone unit="sent"/>Il éface l’horreur de la nuit éternelle,</l>
+            <l>Euridice avec toy peut sortir de ces lieux.</l>
+            <l><milestone unit="sent"/>Mais atens pour la voir qu’elle ait reveu les cieux,</l>
+            <l>C’est la loi que j’impose à ton amour fidelle,</l>
+            <l>Un seul de tes <pb n="38" xml:id="p38"/>regards doit la rendre au trépas.</l>
+            <l><milestone unit="sent"/>Difère de ton bonheur pour ne le perdre pas. »</l>
+            <label>Air</label>
+            <l><pb n="39" xml:id="p39"/>Peut-on refuser la victoire</l>
+            <l>Aux doux éforts du tendre amour ?</l>
+            <l><pb n="40" xml:id="p40"/><milestone unit="sent"/>Il porte ses feux et sa gloire</l>
+            <l>Jusqu’au fond du sombre séjour.</l>
+            <l><pb n="41" xml:id="p41"/><milestone unit="sent"/>On y respecte encor ses armes,</l>
+            <l>Les ombres poussent des soupirs,</l>
+            <l>Et le souvenir de ses charmes</l>
+            <l>Fait aux Enfers tous leurs plaisirs.</l>
+            <label>Récitatif</label>
+            <l><pb n="42" xml:id="p42"/>Déja loin des forêts du paisible Élisée</l>
+            <l>Euridice voloit sur les traces d’Orphée.</l>
+            <l><milestone unit="sent"/>Mais l’amour imprudent est prêt à se trahir,</l>
+            <l>Orphée impatient veut revoir ce qu’il aime,</l>
+            <l><pb n="43" xml:id="p43"/>Tendre époux, arrestez-vous, vous perdez vous-même !</l>
+            <l><milestone unit="sent"/>Vous devez plutôt obeïr</l>
+            <l>À la loi de Pluton qu’à vostre ardeur extrême !</l>
+            <l><milestone unit="sent"/>C’en est fait, Euridice échappe à vos souhaits,</l>
+            <l>La Parque dans vos yeux contr’ elle prend des armes.</l>
+            <l><milestone unit="sent"/>Dieux ! en la regardant vous effacez ses charmes</l>
+            <l>Et l’Enfer à vos vœux se ferme pour jamais.</l>
+            <label>Air</label>
+            <l><pb n="44" xml:id="p44"/>Ah ! <milestone unit="sent"/>Doit-on d’un feu trop tendre</l>
+            <l>Écouter tousjours l’ardeur ?</l>
+            <l><milestone unit="sent"/>Lorsqu’on ne sçait pas l’atendre</l>
+            <l>On perd souvent son bonheur.</l>
+            <l><pb n="46" xml:id="p46"/><milestone unit="sent"/>Quel est d’un cœur qui soupire</l>
+            <l>Le fatal égarement ?</l>
+            <l><milestone unit="sent"/>Il rit qu’un bien qu’il désire</l>
+            <l>Pour l’avancer d’un moment.</l>
+        </body>
+
+    </text>
+</TEI>

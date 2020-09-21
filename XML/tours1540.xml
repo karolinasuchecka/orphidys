@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Géorgiques</title>
+                <title type="book">Les oeuvres de Virgile. Translatees de latin en [vers]
+                    francoyses</title>
+                <author>Virgile</author>
+                <editor>Michel de Tours</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://books.google.fr/books?id=EeksmgevUeoC&amp;hl=fr&amp;pg=PA3#v=onepage&amp;q&amp;f=false</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Virgile</author> / <title>Géorgiques. Les oeuvres de Virgile.
+                        Translatees de latin en [vers] francoyses</title> / Paris / Jean Petit,
+                    Pierre Vidoue / 1540 / p. 19-29.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Géorgiques. Les oeuvres de Virgile. Translatees de latin en [vers]
+                            francoyses</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Jean Petit, Pierre Vidoue</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1540"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>poésie</genre>
+                <structure>tours1540</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1540">1540</date>
+            </creation>
+            <language>
+                <language>oFR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Géorgiques</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+
+        <body>
+            <l><pb n="72rb"/>Entendz, entendz, dist-il, à ta demande</l>
+            <l>Les dieux ont pris contre toy hayne grande.</l>
+            <l>De jour en jour mettant peine sur peine</l>
+            <l>Par ton peché et fureur trop villaine.</l>
+            <l>Cil Orpheus qui tant est miserable</l>
+            <l>D’avoir perdu son espouse notable</l>
+            <l>Tes maulx accroist et tes labeurs suscite,</l>
+            <l>Si que ton bien du tout plus ne profite.</l>
+            <l>Ce que tu as, tu le dessers assez</l>
+            <l>Et encor plus par labeurs amassez.</l>
+            <l>Pis tu auras si des dieux le vouloir</l>
+            <l>Bien briefvement ne se change. Douloir</l>
+            <l>Tu te pourras encore griefvement</l>
+            <l>Pour ton peché. Car celluy tristement</l>
+            <l>Dessus nommé Orpheus or desvie</l>
+            <l>Te menassant pour sa femme ravye.</l>
+            <l>Pis te seroit si les dieux permettoient</l>
+            <l>Cela courir sur toy et commettoient.</l>
+            <l>Cause tu es par ton cruel diffame</l>
+            <l>De celle mort qui a prise sa femme.</l>
+            <l>Quant il fuyoit precipitantement</l>
+            <l>Dessus les prez et autour mesmement</l>
+            <l>Des grans ruisseaulx et fleuves malheureux</l>
+            <l>Point n’apperceut le serpent tortueux</l>
+            <l>Estre mussé soubz l’herbe qui tardoit</l>
+            <l>Joignant de l’eaue et les rives gardoit.</l>
+            <l>Elle fuyoit quant tu la voulois prendre</l>
+            <l>Par force lors et à cela contendre.</l>
+            <l><pb n="72va"/>Tu convoitois sa tres-chaste despoisse,</l>
+            <l>Par quoy mourut la pucelle. Confeisse</l>
+            <l>Dedans ton cueur ceste chose pollue,</l>
+            <l>Puis tu diras que la mort l’a tollue.</l>
+            <l>Par ton moyen les nymphes ses compaignes</l>
+            <l>L’ont approuvé plorant jusqu’aux montaignes.</l>
+            <l>Qui ont oüy les clamours des drïades,</l>
+            <l>Pareillement les fontaines non fades</l>
+            <l>Retentissant et doublant leurs clamours</l>
+            <l>Quant tu pensois les villaines amours.</l>
+            <l>Le hault coupeau de Rodope le mont</l>
+            <l>À trop gemir or a esté semont,</l>
+            <l>Echo l’a fait esbranler et respondre</l>
+            <l>Selon les voix qu’on ne sçauroit abscondre</l>
+            <l>Quant quelqu’un est en son cueur trop dolent</l>
+            <l>Plorant le pres. Et cecy recolent</l>
+            <l>Ung autre mont Pangea de Thracie</l>
+            <l>Dit et nommé la terre <corr>mavortie</corr></l>
+            <l>Du roy Rhesus. Ebrus semblablement,</l>
+            <l>Fleuve courant de Thrace mesmement,</l>
+            <l>Les Getes lors, Orithïa jolye,</l>
+            <l>Nymphe jadis des Athenes saillye</l>
+            <l>Que Boreas ravit en marïage</l>
+            <l>Belle du tout et haultain personnage.</l>
+            <l>Celluy divin Orpheus cythariste,</l>
+            <l>Pour consoler son amour si fort triste,</l>
+            <l>Il<note place="bottom" resp="KS">Nous corrigeons « La » par «  Il».</note> te
+                cherchoit par tout, ô Eurydice,</l>
+            <l>Frappant les sons de sa harpe propice</l>
+            <l>Si doulcement sur fleuves et ruisseaulx,</l>
+            <l>Que lors sa voix s’espandit à monceaulx,</l>
+            <l>Par l’air vollant jusques dedans la bouche</l>
+            <l>D’Echo cryant quant quelque voix luy touche.</l>
+            <l>Point n’espargnoit la labeur de sa harpe</l>
+            <l>Chercher partout derriere pin ou charpe.</l>
+            <l>La nuict estoit te cherchant empeschée,</l>
+            <l>Le jour aussi et toute matinée.</l>
+            <l>Jusques aux lieux et obscures cavernes</l>
+            <l>De Tenarus et trop tenebreux cernes</l>
+            <l>Il descendit où il trouva les portes</l>
+            <l>Du roy <corr>Dytis</corr> et Pluto assez fortes</l>
+            <l>Qui dieu d’enfer est nommé, si fort noires</l>
+            <l>Que de clarté bien se monstroient contraires.</l>
+            <l>Par les forests paoureuses il passa,</l>
+            <l>Pleines d’horreur et umbres. Tant trassa</l>
+            <l>Son bas chemin et dur pelerinage,</l>
+            <l>Les lieux trouva où estoit le mesnage</l>
+            <l>Des esperitz et ames infernalles</l>
+            <l>Qui la estoient en leurs chambres trop palles.</l>
+            <l>Le roy trouva de celle regïon</l>
+            <l>Qu’oncques vivant par sa precatïon</l>
+            <l>N’a sçeu freyer, et humaines prïeres</l>
+            <l><pb n="72vb"/>Tant fussent or dignes et singulieres.</l>
+            <l>Mais toutesfoys les umbres si tendrettes</l>
+            <l>C’est <corr>assavoir</corr> simulachres complettes</l>
+            <l>D’horeur subit partirent de leurs sieges</l>
+            <l>Et d’Herebus les lieux plus noirs que peges.</l>
+            <l>Ses umbres vont en aussi parfaict nombre</l>
+            <l>Que les oyseaulx qui se couchent à l’ombre</l>
+            <l>Des francz rameaulx sur le soir à milliers.</l>
+            <l>Ou quant alors que les ruisseaulx entiers</l>
+            <l>Des eaues du ciel et fleuves pluvieux</l>
+            <l>Tombent de l’air, chassent de lieux en lieux</l>
+            <l>Les oysillons, et des montaignes verdes</l>
+            <l>Vers les forestz sur champaignes et terdes,</l>
+            <l>À celle fin que mieulx en ton cueur punctes</l>
+            <l>Que c’est cela, ce sont ames defunctes</l>
+            <l>Des corps mortelz des femmes et des hommes,</l>
+            <l>La tourmentez par trop cruelles sommes.</l>
+            <l>Divers seigneurs, heroas et grands princes.</l>
+            <l>Jeunes enfans et seigneurs des provinces,</l>
+            <l>Semblablement à ces jeunes pucelles</l>
+            <l>Souffrent là-bas maintz tormens et procelles</l>
+            <l>Devant les yeulx et faces de leurs peres,</l>
+            <l>Progeniteurs et bien certaines meres.</l>
+            <l>Sont maintz enfans dedans le feu gectez</l>
+            <l>Autour desquelz lymons intergectez,</l>
+            <l>Roseaulx fengeux et difformes arundes,</l>
+            <l>Marins, caretz, herbez plates et rondes</l>
+            <l>Du Cocythus le pallut infernal.</l>
+            <l>Par le vouloir de Pluto supernal</l>
+            <l>Sont tristement et si les environne</l>
+            <l>L’eaue tardant, à courir non consonne,</l>
+            <l>Le fleuve creux et le Stix de tristesse</l>
+            <l>Les tient lyez et si trefort les presse</l>
+            <l>De neufs fossez, cercles ou circuys</l>
+            <l>Que de saillir ne trouvent les apuys</l>
+            <l>Par habondant toute la maison brune</l>
+            <l>Des bas enfers et manoir importune</l>
+            <l>De Tartarus et aussi les Furies</l>
+            <l>Portant cheveulx serpentins tant bruyes.</l>
+            <l>D’air obfusqué Eumenides nommees</l>
+            <l>Furent aussi esmeues et troublees</l>
+            <l>Des sons joyeulx d’Orpheus liriquant.</l>
+            <l>Et Cerberus à tout mal s’appliquant</l>
+            <l>Plus ne hurla de ses trois bouches salles.</l>
+            <l>Semblablement les peines infernalles</l>
+            <l>Cesserent lors et d’Ixïon la roe</l>
+            <l>Plus ne tourna oingte de salle boe</l>
+            <l>Pour escouter la souefve melodie</l>
+            <l>Du vate sainct sonnant son armonie.</l>
+            <l>Brief chascun fut d’Orpheus si joyeulx</l>
+            <l><pb n="73ra"/>Que tout forment tant fust si larmoyeux</l>
+            <l>Adonc cessa et furent repaisez</l>
+            <l>Tous ceulx d’enfer et pour ce temps aisez.</l>
+            <l>Desja avoit Orpheus rachaptee</l>
+            <l>Sa femme lors et par les sons trouvee</l>
+            <l>Tous les dangiers et difficultez toutes</l>
+            <l>Monstres divers et maintes bestes gloutes.</l>
+            <l>Desja estoient hors des regions basses,</l>
+            <l>Manoirs hydeux et mansions fort grasses</l>
+            <l>Du feu ardant et pouldres sulphurees.</l>
+            <l>Et or venoit à travers les vallees,</l>
+            <l>Euridices suyvant son amoureux</l>
+            <l>Cil Orpheus plaisant et sonnoreux</l>
+            <l>Car el estoit tout à <corr>plain</corr> delivree</l>
+            <l>Par le vouloir et par sentence donnee</l>
+            <l>Des infernaulx, mesmes de Proserpine</l>
+            <l>Qui de Ceres estoit fille, saisine</l>
+            <l>D’enfer tenant et estoit l’espousee</l>
+            <l>Du dieu Pluto et royne renommee.</l>
+            <l>Par tel moyen que son espoux chantant</l>
+            <l>Derriere soy ne seroit frequentant</l>
+            <l>La regardant. Celle loy la couloit</l>
+            <l>Tout ainsi com Proserpine vouloit.</l>
+            <l>Mais toutesfoys cil Orpheus gement</l>
+            <l>De grant amour fut ung peu trop dement</l>
+            <l>Et regarda contre loy ordonnee.</l>
+            <l>Ce qu’il aymoit son espouse, douee</l>
+            <l>De grant beaulté. Mais toutesfoys les dieux</l>
+            <l>Estre debvoient misericordieux.</l>
+            <l>Veu et congneu qu’on ne doibt point donner</l>
+            <l>Sur les amans decret ou ordonner ;</l>
+            <l>Consideré aussi pareillement</l>
+            <l>Que cela fist non pas injustement ;</l>
+            <l>C’est assavoir par cas de pravité,</l>
+            <l>Ains par amour et longue charité</l>
+            <l>Du feu d’amours trop fut vaincu celuy,</l>
+            <l>Du feu d’amours et perdit tout l’apuy</l>
+            <l>De meriter son espouse tant belle</l>
+            <l>Pour regarder sa forme corporelle,</l>
+            <l>Lors fut perdu le labeur du Lirique,</l>
+            <l>Dit Orpheus doulx et suavitique.</l>
+            <l>L’appoinctement et federatïon</l>
+            <l>Du dieu Pluto fut à destructïon.</l>
+            <l>Tous les enfers et ceulx de flegeton</l>
+            <l>Chanterent tous haultement et de ton</l>
+            <l>Si haut levé que les eaues avernalles</l>
+            <l>Peurent ouyr, et rives stigïalles</l>
+            <l>Les bruitz et sons que faisoient les furies,</l>
+            <l>Âmes, espritz de ses souldes parties,</l>
+            <l>Pour la raison qu’ils veoyent retourner</l>
+            <l><pb n="73rb"/>Euridices et la-bas se borner</l>
+            <l>À tousjours. Mais cela voyant la gente</l>
+            <l>Fort s’escrya et dist à voix dolente :</l>
+            <l>« Las, quesse cy, quesse cy, doulx Orphee ?</l>
+            <l>Suis-je pour toy pourquoy desheritee ?</l>
+            <l>Las, las ! pourquoy me pers-tu, miserable ?</l>
+            <l>Quelle fureur t’a pris ? ô lachrymable</l>
+            <l>Suis-je sans plus estre de ta congneue.</l>
+            <l>Pourquoy me vient ceste desconvenue ?</l>
+            <l>Dois-je mourir, pourquoy ? Les ordonnances</l>
+            <l>Des dieulx cruelz par injustes sentences</l>
+            <l>Trop de rechef m’apellent et retirent</l>
+            <l>Vers les Enfers qui tant les gens martyrent.</l>
+            <l>Le long dormir de la mort me detient</l>
+            <l>Les yeulx lyez, et en soy les contient</l>
+            <l>Tant arrousez de l’humeur stigïeux</l>
+            <l>Qu’à tousjours, mais seray dedans les lieux. »</l>
+            <l>Cela tiray de sa triste poictrine,</l>
+            <l>Puis pour congé prendre bien bas s’encline</l>
+            <l>Disant ainsi : « Adieu amy tant cher,</l>
+            <l>Adieu te diz, mon amant singulier.</l>
+            <l>Adieu, adieu, il est temps que je parte</l>
+            <l>Car la nuict vient qui veult que je departe.</l>
+            <l>D’avecques toy. à suis environnee</l>
+            <l>De celle nuict qui ne sera cessee</l>
+            <l>Jusques à tant que les dieux despiteux</l>
+            <l>Seront peris qui point ne sont piteux.</l>
+            <l>Les bras te tendz, je qui plus ne suis tienne,</l>
+            <l>Les bras te tendz, je qui trop ancienne</l>
+            <l>Suis de douleur, et pour derniere trasse</l>
+            <l>D’amour il fault, il fault que je t’embrasse. »</l>
+            <l>Cela tout dit, par la bouche tremblante</l>
+            <l>D’Euridices com fumee volante</l>
+            <l>Subitement l’ung l’autre pas ne veirent</l>
+            <l>Car or le temps des tenebres sentirent</l>
+            <l>Les disparsant, et non pourtant la force</l>
+            <l>Qui l’amoureux Orpheus tant efforce</l>
+            <l>Pour la ravoir si fut-elle perdue</l>
+            <l>Totallement, sans plus estre rendue</l>
+            <l>Car Acharon, d’enfer vil nautonnier,</l>
+            <l>Ne souffrit pas qu’il passast le bourbier</l>
+            <l>Du fleuve bas estant entrejecté</l>
+            <l>Entre les deux, comme s’il fust là getté</l>
+            <l>Pour diviser les gens vives des mortes</l>
+            <l>Et separer regïons et cohortes.</l>
+            <l>Plus ne sçavoit comment se maintenir</l>
+            <l>Cil Orpheus et du tout contenir</l>
+            <l>En luy pensoit que par deux fois sa femme</l>
+            <l><pb n="73va"/>Perdue lors il avoit. A diffame</l>
+            <l>Dedans sont cueur aussi, par quelle sorte</l>
+            <l>Retourneroit encor jusqu’à la porte</l>
+            <l>Du grant Pluto, et par quelle maniere</l>
+            <l>Gemissement, pleur, et sort ou priere</l>
+            <l>Les infernaulx à pitié flexeroit</l>
+            <l>Et les divins de <corr>l’assus</corr> mouveroit.</l>
+            <l>En vain alloit sa cymbe sur les eaues</l>
+            <l>Sans meriter par ses chants et rondeaulx,</l>
+            <l>Orpheus fut sept moys sur ung rochier</l>
+            <l>Haut eslevé pour les plaintz parier</l>
+            <l>Prés et joignant des eaues de Strimonie,</l>
+            <l>Fleuve courant du païs de Thracie,</l>
+            <l>La desplora entre fosses gelees,</l>
+            <l>Son train d’amours et dures destinees.</l>
+            <l>Il <corr>demussoit</corr> les tigres et les bestes</l>
+            <l>Et par ses chantz faisoit telles enquestes</l>
+            <l>Des joyeulx sons qu’il trouvoit en sa harpe,</l>
+            <l>Qu’il fist dancer maintz chesnes et maint charpe.</l>
+            <l>Son chant plouroit, sa voix de pleurs couverte</l>
+            <l>Tant s’escrya et lamenta sa perte</l>
+            <l>Qu’il ressembloit la tendre Philomelle</l>
+            <l>Plourant le cas de sa prolle nouvelle,</l>
+            <l>Ses rossignolz et petitz enfanteaulx,</l>
+            <l>Quant desrobez luy sont entre rameaulx</l>
+            <l>Du peuple franc à l’ombre se tenant,</l>
+            <l>Sans plus espoir, lyesse contenant,</l>
+            <l>Lequel a pris le cruel orateur</l>
+            <l>Dedans son nid comme dissipateur</l>
+            <l>Lors qu’ilz estoient encor sans plume forte,</l>
+            <l>Si que pour bray du tout se desconforte.</l>
+            <l>Toute la nuict gemist et tristement</l>
+            <l>Se sied plorant sur l’arbre mesmement</l>
+            <l>Que perdu sont les petitz, et integre</l>
+            <l>Son triste chant qui tant estoit alegre</l>
+            <l>Premierement, et si remplist les lieux</l>
+            <l>De ses douleurs prochains tant gracïeux.</l>
+            <l>Le temps d’amour et le jeu de luxure</l>
+            <l>Ne peult jamais adoulcir son injure.</l>
+            <l>Le tressubtil Orpheus en la forme</l>
+            <l>Gemist la mort d’Euridices, et forme</l>
+            <l>Dedans son cueur, et or d’Iperboree</l>
+            <l>Lustre les montz et l’eaue congelee</l>
+            <l>De Tanain fleuve froit et nivial</l>
+            <l>Quant ilz fondent au soleil estival.</l>
+            <l>Semblablement les champs plains de bruynes</l>
+            <l>Non <corr>viduez</corr> des Riphees ruynes.</l>
+            <l>D’Euridice en la pree ravie</l>
+            <l><pb n="73vb"/>Dolorosoit la meste maladie.</l>
+            <l>Les dons ploroit dedans ses vers gemens</l>
+            <l>Du dieu Pluto com ung homme demens.</l>
+            <l>Tant longuement portoit en son courage</l>
+            <l>Son dueil errant ce noble personnage</l>
+            <l>Que non pourtant que fussent amoureuses</l>
+            <l>Les femmes lors des Cycones joyeuses,</l>
+            <l>Si ne peult-il oncques son cueur destendre</l>
+            <l>De sa douleur, ne leur amour entendre.</l>
+            <l>Si qu’en faignant d’aller lors aux offices</l>
+            <l>Du dieu Bacchus et divins sacrifices</l>
+            <l>Dessus la nuict lesdictes femmes belles</l>
+            <l>Misrent à mort Orpheus par rebelles</l>
+            <l>Mains et le corps par les champs disperserent,</l>
+            <l>Et puis apres la teste lors getterent</l>
+            <l>Dedans Hebrus, le fleuve de son pere,</l>
+            <l>Qui en portant celle teste tant chere</l>
+            <l>Le long du cours des undes resonnoit</l>
+            <l>En respondant à la voix qui sonnoit</l>
+            <l>D’icelluy chief et langue palpitante</l>
+            <l>Qui or estoit par mort trop vehemente.</l>
+            <l>La voix cryoit et faisoit son office</l>
+            <l>D’appeller or haultement Euridice,</l>
+            <l>L’ame fuyant queroit les regïons,</l>
+            <l>Lieux et manoirs et situatïons,</l>
+            <l>Là où estoit Euridice gemente,</l>
+            <l>Tant l’appellant que l’eaue resonante</l>
+            <l>Fut de son son, et les rives de l’eau</l>
+            <l>Firent souspirs par trop triste ditteau.</l>
+        </body>
+
+    </text>
+</TEI>

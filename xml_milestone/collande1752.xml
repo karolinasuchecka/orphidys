@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Opuscule d’un célébre auteur égyptien</title>
+                <title type="sub">Contenant l’histoire d’Orphée, par laquelle on pourroit soupçonner
+                    qu’il est peu de femmes fideles</title>
+                <author>Alexandre-Jacques-Pierre Le Gendre Collande</author>
+                <editor/>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k9743521f</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Alexandre-Jacques-Pierre Le Gendre Collande</author> / <title>Opuscule
+                        d’un célébre auteur egyptien. Contenant l’histoire d’Orphée, par laquelle on
+                        pourroit soupçonner qu’il est peu de femmes fideles</title> / Paris /
+                    Sébastien Jorry / 1752 / p. 25-83.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Opuscule d’un célébre auteur egyptien. Contenant l’histoire d’Orphée,
+                            par laquelle on pourroit soupçonner qu’il est peu de femmes
+                            fideles</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Sébastien Jorry</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1752"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>collande1752</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1752">1752</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>modernisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Alexandre-Jacques-Pierre Le Gendre Collande</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Opuscule d’un célébre auteur égyptien</titlePart>
+                    <titlePart type="sub">Contenant l’histoire d’Orphée, par laquelle on pourroit
+                        soupçonner qu’il est peu de femmes fideles</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+        <body>
+
+            <p><pb n="25" xml:id="p25"/> Le seul désir qui m’embarassoit étoit de rencontrer l’ame
+                de l’adorable Reine d’Égypte ; j’errois de tous les côtés pour y parvenir : j’en vis
+                une qui voltigeoit, je la joignis ; mais hélas ce n’étoit pas Zeleusis : c’étoit
+                celle qui autrefois occupoit le corps d’Orphée. <milestone unit="sent"/>Je m’attachai à la considérer ; elle
+                s’arrêta et me parla en ces termes : <milestone unit="sent"/>Tu vois en moi la substance divine<pb n="26"
+                    xml:id="p26"/> qui présidoit à l’Être du Chantre de la Thrace, né d’Apollon et
+                de Clio. <milestone unit="sent"/>La Divinité puissante que nous adorons donna aux organes du corps dans
+                lequel j’habitois cette disposition nécessaire à la perfection des talens. <milestone unit="sent"/>En peu de
+                tems je devins le plus habile Musicien<note place="bottom"><p>On trouve écrit dans
+                        l’Histoire qui a pour titre les <hi rend="i">Amusemens des Dieux</hi>, les
+                        merveilles que la douceur des sons d’Orphée opéra dans tous les lieux où son
+                        destin le conduist. Voici quelques particularités sur ce sujet qui ne sont
+                        pas connues. Orphée entrant un jour dans une grande Ville où l’on
+                        solemnisoit la fête de son pere Apollon, il se sentit épris d’un si grand
+                        zélé, qu’après avoir fait trois cullebuttes au milieu de la place, où toute
+                        laVille étoit assemblée, il prit sa lyre et en tira des sons si pressans que
+                        trois mille huit cens femmes grosses que la solemnité du jour y avoient
+                        attirées y accouchèrent à la fois en chantant l’hymne du divin Orphée. Ce
+                        prodige fut suivi d’un autre, à peine les nouveaux nés furent-ils délivrés,
+                        qu’ils se prirent par la main, et dansèrent un Rondeau autour du Chantre de
+                        la Thrace. Le peuple persuadé par cette merveille qu’Orphée étoit un Dieu,
+                        l’enlevèrent et le placèrent pour l’adorer au-dessus d’une Tour. L’Auteur
+                        remarque habilement que c’est cet événement qui a donné lieu dans les suites
+                        de placer des chœurs dans les Tragédies, et autrefois ils étoient chantés
+                        par des enfans.</p>
+                    <p>À la sortie d’un sombre bois dans lequel Orphée
+                        s’étoit enfoncé un jour pour faire un sacrifice à Priape, il trouva dans la
+                        plaine deux armées qui en étoient aux mains. Il crut devoir unir sa lyre aux
+                        instrumens de guerre qui excitoient les troupes au combat. À peine en eut-il
+                        touché que tous les arbres de l’épaisse forêt qu’il venoit de quitter
+                        accoururent et se mirent à danser, les armées effrayées de ce prodige
+                        voulurent s’enfuir, mais la met voisine qui avoit été aussi attirée par ces
+                        sons merveilleux arrivant à grands flots les submergea, et sans la main
+                        d’Apollon, Orphée en auroit été englouti : dans son effroi il demanda au
+                        Dieu son Pere que la Nature fût à l’avenir insensible à ses chants, et c’est
+                        depuis ce tems que ces prodiges tant vantés n’eurent plus lieu.</p></note>
+                de la Thrace ; <pb n="27" xml:id="p27"/> ma voix enchantoit les cœurs, et le son de
+                ma lyre remplissoit <pb n="28" xml:id="p28"/> les esprits de cette aimable volupté
+                qui ne laissant <pb n="29" xml:id="p29"/> plus de place à aucune autre sensation
+                suspend les chagrins les plus violens. <milestone unit="sent"/>Je <pb n="30" xml:id="p30"/> ne bornois
+                cependant pas là les dons que le Ciel m’avoit prodigué, l’étude de la Philosophie
+                faisoit ma plus chére occupation, et je ne regardois la Musique que comme un
+                amusement propre à rassembler les esprits dissipés par un travail plus abstrait. <milestone unit="sent"/>Cet
+                Art que j’avois poussé à sa perfection, s’il est possible à un mortel d’y atteindre,
+                délassoit mon imagination et renouvelloit pour ainsi dire à mes organes leur
+                aptitude aux impressions de l’ame : mon <pb n="31" xml:id="p31"/> premier soin fut
+                de connoître le principe de ma création. <milestone unit="sent"/>L’existence me paroissoit si précieuse, que
+                je ne pouvois comparer à rien l’obligation que j’avois à l’Être supérieur qui en
+                étoit la première cause ; je voulus approfondir toutes les obligations que j’avois
+                au Créateur, la vérité se présentant à mon esprit par degré, j’apperçus le rayon de
+                    lumiere<note place="bottom">Tous les Philosophes ont prétendu que le rayon de
+                    lumiere dont il est ici parle, est une de ces pensées innées qui ne deviennent
+                    efficaces qu’autant que des méditations profondes les développent, mais c’est un
+                    pur galimathias ; voici le mot de l’énigme. Il y avoit un Temple en Égypte
+                    consacré à la Vérité. Il étoit élevé dans un labyrinthe, peu de Mortels en
+                    connoissoient les détours ; au lever du Soleil on prétendoit que le troisième de
+                    ses rayons en indiquoit la route, et c est de ce rayon qu’Orphée prétend ici
+                    parler.</note> qui y conduit. <milestone unit="sent"/>Je <pb n="32" xml:id="p32"/> ne vis plus ces Êtres
+                malfaisans et imparfaits qui induisent les hommes au mal et qui les entraînent. <milestone unit="sent"/>Je
+                ne vis plus <pb n="33" xml:id="p33"/>cet assemblage défectueux de crimes, de vertus,
+                de bonté, de caprice, enfin le caractère odieux, qu’on imprime à ces Divinités
+                payennes et fantastiques qu’on s’étoit efforcé de me persuader supérieures en tout à
+                mon espece ; je ne vis plus dis-je dans Taikma<note place="bottom">Les Égyptiens
+                    croyoient que Taikma étoit le Dieu Chef de toutes les Divinités et le Créateur
+                    de l’Univers. Ils prétendoient qu’il ne l’avoit créé que pour le rendre heureux,
+                    et qu’à la fin du monde tout ce qui existe auroit une sensation propre à goûter
+                    le bonheur.</note>
+                <pb n="34" xml:id="p34"/> qu’un être bon, parfait, insusceptible d’aucun défaut, un
+                Être qui ne m’avoit produit à la lumière que pour faire ma félicité ; enfin je
+                conçus tout le bonheur<note place="bottom">Rien de plus malheureux qu’un Mortel qui
+                    se croit délivré des préjugés : il veut en vain le persuader, il se décéle en
+                    proposant sans cesse les doutes et les remords qui l’accompagnent en tous lieux. Il n’y a pas longtems qu’un de ces prétendus esprits-forts, se trouvant à
+                    l’extrêmité, déclara hautement que dans le fond du cœur, il avoit toujours crû à
+                    la Justice Divine, et que c’étoit par air et pour se faire considérer qu’il
+                    avoit toujours voulu la nier.</note> de le servir. <pb n="35" xml:id="p35"/><milestone unit="sent"/>Je
+                ne fus pas longtems sans comprendre que la vertu est le seul bien après lequel on
+                doit soupirer. <milestone unit="sent"/>J’étois rempli de cette idée lorsque le fils de Vénus se présenta à
+                moi avec tous ses charmes, ce Dieu parla à mon cœur, il l’inspira, et sa victoire
+                fut complette. <milestone unit="sent"/>La charmante Zirphée fut la premiere qui conduisit mes pas encore
+                chancelans <pb n="36" xml:id="p36"/> sur le chemin des plaisirs : elle n’avoit point
+                cette beauté dont l’élégante régularité inspire plutôt le respect que l’amour : elle
+                n’en plaisoit que d’avantage ; les graces l’avoient formée pour être aimable, tout
+                peignoit en elle le sentiment, et ce même sentiment répandu sur son visage donnoit
+                un heureux préjugé de la tendresse de son cœur.</p>
+            <p><milestone unit="sent"/>Je l’aimai : que ce mot exprime foiblement l’ardeur de l’amour que j’avois pour
+                elle ; peu accoutumé au désir de <pb n="37" xml:id="p37"/> plaire, je craignois de
+                ne pas réussir ; la timidité me donnoit cet air de contrainte qu’on prend si souvent
+                pour la modestie, et qui ajoute de nouveaux charmes à la jeunesse, Zirphée vouloit
+                être aimée, mais elle craignoit l’amour<note place="bottom">Le portrait que fait ici
+                    Orphée de sa premiere Maîtresse est bien peu ressemblant. Zirphée étoit la fille
+                    du Berger Coridan si célèbre par ses malheurs : elle étoit vaine, artificieuse
+                    et l’une des plus coquettes de la contrée : c’étoit par vanité qu’elle feignit
+                    des complaisances pour Orphée : elle ménageoit dans ce tems-là trois amans
+                    ausquels elle faisoit accroire que chacun d’eux étoit le préféré.</note> : ce
+                Dieu pour se <pb n="38" xml:id="p38"/>vanger de son insensibilité lui fit partager
+                avec moi la flamme qui me consumoit : trop sensible pour ne le pas paraître ; elle
+                me donnoit en tout tems la préférence sur mes rivaux. <milestone unit="sent"/>Elle prêtoit une oreille
+                attentive à mes chansons, elle les écoutoit avec plaisir et cherchoit à les
+                apprendre : quelquefois elle me faisoit l’aveu de sa tendresse, bientôt <pb n="39"
+                    xml:id="p39"/>elle rougissoit, et son trouble m’assuroit de la vérité de ses
+                paroles : l’amour qui nous enflammoit s’augmentant par degré, nous ne fûmes pas
+                longtems maîtres de nous cacher nos sentimens : elle ne me laissoit plus ignorer
+                ceux qu’elle avoit pour moi sans être épouvantée de son aveu, elle me le répétoit et
+                se trouvoit soulagée par cette confidence ; depuis que je vous connois<note
+                    place="bottom">Toute femme qui écoute et qui répond, veut qu’on lui parle encore
+                    et qu’on espère davantage. On a répété tant de fois à ce sexe imprudent que tout
+                    amant est un séducteur, un trompeur qui cherche à le surprendre ; d’où vient
+                    donc que tant de femmes sont séduites et qu’elles s’en plaignent ? Est-ce qu’il
+                    y a du plaisir à être trahies, ou seroit-ce un prétexte pour s’en consoler avec
+                    un seducteur plus aimable !</note>, me disoit-elle un <pb n="40" xml:id="p40"/>
+                jour, j’aime la solitude, les louanges que donnent les autres hommes à ma beauté ne
+                me touchent plus… <milestone unit="sent"/>Ah mon cher Orphée si vous me trouvez belle, que m’importe leurs
+                suffrages ! <milestone unit="sent"/>Le vôtre ne <pb n="41" xml:id="p41"/> me suffit-il pas, puisque je vois
+                tout dans vous seul : mon amour ne peut être plus grand, il fait mon bonheur,
+                puissez-vous le partager avec moi ; je désire trop ardemment pour ne pas craindre… <milestone unit="sent"/>Arrêtez Belle Zirphée, m’écriai-je, cessez d’accabler par vos soupçons l’Amant le
+                plus tendre ; si vous m’aimiez comme vous le dites ne me croiriez-vous pas digne de
+                vous, et le serois-je si je cessois jamais de vous aimer ? <milestone unit="sent"/>Ah détournez de votre
+                esprit cette <pb n="42" xml:id="p42"/> pensée qui me fait injure : rendez plus de
+                justice à ma fidélité, et connoissez mieux la puissance de vos charmes ; non, vous
+                ne m’aimez pas, continuai-je ; peut-être un autre occupe-t-il dans votre cœur une
+                place qui n’est due qu’à ma tendresse en effet, ne m’en avez vous pas cent fois
+                refusez le prix. <milestone unit="sent"/>Cruelle Zirphée vous êtes insensible à ma douleur, mes larmes ne
+                vous touchent pas. <milestone unit="sent"/>J’en répandois pendant ce dialogue : attendrie par ces propos, ma
+                    <pb n="43" xml:id="p43"/> Maîtresse avoit les yeux baissés, sa respiration
+                précipitée m’étoit une preuve de l’agitation de son ame ; son cœur palpitant me
+                donnoit un heureux préjugé de l’effet de mon discours : je voulus en recueillir le
+                fruit ; je pris sa main tremblante ; je la portai à ma bouche, je la couvris des
+                baisers les plus amoureux ; bientôt revenu de mon extase je levai les yeux pour
+                chercher les siens, et y lire mon bonheur : mais quel fut mon embarras quand je la
+                trouvai évanouie<note place="bottom">Une Princesse du Pérou née extraordinairement
+                    curieuse s’avisa un jour après son dîner de se jetter sur son sopha et de
+                    feindre d’y dormir, un jeune Écuyer qui par les devoirs de sa Charge ne la
+                    quittoit jamais s’éloigna d’abord par respect : la jeune Princesse fâchée de
+                    cette retenue changea d’attitude, mit son beau bras pardessus sa tête, sous
+                    lequel elle entrevoyoit sans être vuë le jeune homme ; une partie de ses charmes
+                    l’attira auprès d’elle, il étoit dangereux de les considérer : il alloit
+                    hazarder un baiser, il s’étoit mit à genoux pour le dérober, la Princesse en fut
+                    si émuë qu’elle s’évanouit…</note>. <pb n="44" xml:id="p44"/><milestone unit="sent"/>Les pâleurs
+                messagères de la mort n’étoient pas peintes sur son visage, il sembloit seulement
+                qu’elle dormoit. <pb n="45" xml:id="p45"/><milestone unit="sent"/>Peu accoutumé à ces sortes d’événemens,
+                son état m’effraya : aller chercher du secours, c’étoit trop risquer. <milestone unit="sent"/>Quel parti
+                prendre ? <milestone unit="sent"/>Je crus que le feu qui me consumoit pourroit rappeller ses esprits : je
+                colai sur sa bouche un baiser de flâme ; ce premier expédient ne m’ayant pas réussi,
+                j’en essayai plusieurs autres ; le Dieu cause de cet accident m’inspira, je <pb
+                    n="46" xml:id="p46"/> suivis son conseil, et bientôt ma Maîtresse revenant à
+                elle-même : <milestone unit="sent"/>Ah cruel, s’écria-t-elle, que t’avois-je fait pour profiter de ma
+                foiblesse. <milestone unit="sent"/>Crains la colere de Diane, protectrice de l’innocence : sans doute elle
+                se vangera sur toi du crime que tu viens de commettre, et moi malheureuse, que
+                vais-je devenir : comment oserai-je paroître devant les hommes après m’être rendu
+                l’objet de leur mépris !</p>
+            <p><milestone unit="sent"/>Appaisez votre colére, belle <pb n="47" xml:id="p47"/> Zirphée, répondis-je,
+                pardonnez une faute que vous ne regarderiez pas comme telle, si vous aviez pour moi
+                les mêmes sentimens que j’ai pour vous : ne craignez pas Diane, ne brûla-t-elle<note
+                    place="bottom">Rien de plus adroit que cette manière de consoler une jeune
+                    personne qui se reproche d’abord une foiblesse ; l’exemple prouve si bien que
+                    lorsque la galante Rasimé monta sur le Trône de Bagdad, toutes les femmes de la
+                    Ville qui jusques-là ignoraient jusqu’au nom de l’amour, devinrent si sçavantes
+                    dans ses mystères qu’avant la fin de l’année elles en donnoient des leçons
+                    publiques.</note> pas des mêmes feux pour Endimion, et put-elle résister aux
+                traits de l’amour : qu’avons- nous à appréhender, puisque ce Dieu m’inspire, il nous
+                    <pb n="48" xml:id="p48"/> protégera sans doute : les yeux de ma maîtresse
+                étoient cependant baignés de larmes, elle ne me répondoit rien, et je voyois avec
+                chagrin les marques de la douleur répandues sur son beau visage. <milestone unit="sent"/>Je commençois
+                moi-même à me <pb n="49" xml:id="p49"/> repentir d’avoir suivi les conseils de ma
+                passion, lorsque Zirphée me regardant tendrement sembla me demander de me rendre une
+                seconde fois coupable ; j’obéis : mais loin de m’attirer sa colère : <milestone unit="sent"/>Mon cher
+                Orphée, me dit- elle, que je serois heureuse, si je pouvois compter sur votre
+                constance, cette vertu me seroit d’autant plus agréable en vous qu’elle est rare
+                dans les autres hommes. <milestone unit="sent"/>Pour moi je sens<note place="bottom">La premiere condition
+                    que met une femme en pareil cas, c’est qu’on lui sera fidéle, et se propose pour
+                    exemple ; pourquoi ? C’est qu’elle croit dans ce moment son état le plus
+                    heureux ; mais à peine a-t-elle réfléchi sur les circonstances de son bonheur
+                    qu’elle conçoit qu’il pourroit l’être davantage : l’impossibilité de la chose
+                    avec un seul amant qui peut venir à manquer, fait qu’elle assigne d’abord la
+                    survivance de son cœur, et cela se fait sans y penser.</note> que je vous <pb
+                    n="50" xml:id="p50"/> serai toujours fidèle, rien ne pourra jamais me faire
+                changer : j’en atteste les Dieux témoins de notre bonheur réciproque, ils sont trop
+                justes <pb n="51" xml:id="p51"/> pour ne me pas punir si je devenois parjure ; ah
+                puissent sur moi les Divinités épuiser les supplices du Tartare, m’écriai-je
+                aussitôt si je cesse un instant de vous adorer, oui je vous adore, c’est l’hommage
+                qu’on doit aux Dieux, et vous êtes la seule Mortelle qui ressemble parfaitement à
+                Vénus.</p>
+            <p><milestone unit="sent"/>Le crépuscule du soir qui préparoit à l’obscurité, mit fin à notre conversation, et
+                nous obligea de nous séparer, non sans répandre des larmes <pb n="52" xml:id="p52"/>
+                et nous promettre de renouveller nos plaisirs. <milestone unit="sent"/>Le matin les vit renaître comme le
+                soir les avoit vû finir. <milestone unit="sent"/>L’aimable volupté le présentant à moi avec tous les
+                charmes, je concevois alors toute la reconnoissance que je devois à l’amour. <milestone unit="sent"/>Cet
+                agréable commerce dura trois mois : pendant cet espace de tems nos désirs loin de
+                s’affoiblir prenoient de nouvelles forces<note place="bottom">Oui du côté de
+                    Zirphée, mais à l’égard de l’Amant, pure présomption de sa part. La preuve en va
+                    suivre. La Bergere qui en jugea bien plus sainement prit ses mesures pour que
+                    ses plaisirs ne souffrissent pas du déchet. C’est Orphée lui-même qui va nous
+                    l’apprendre.</note> : <pb n="53" xml:id="p53"/> j’aimois Zirphée, elle
+                partageoit l’amour que j’avois pour elle ; pouvoit-il manquer quelque chose à mon
+                bonheur. <milestone unit="sent"/>L’inconstance seule pouvoit y mettre obstacle ; mais hélas, Zirphée que
+                j’adorois, qui m’avoit cent fois juré l’amour le plus tendre, devint parjure.</p>
+            <p><pb n="54" xml:id="p54"/> Je la trouvai un jour triste et rêveuse : <milestone unit="sent"/>Qu’avez-vous
+                belle Zirphée, lui dis-je, vous craignez de me regarder ; je ne vois plus en vous
+                cette tendre amante prête à me faire éprouver de nouveaux plaisirs ; ne suis-je donc
+                plus digne de votre tendresse ; ai-je fait quelque chose qui puisse vous déplaire ?
+                parlez, je sçaurai punir le coupable ; je préférerois la mort à votre indifférence :
+                elle me regardoit d’un air interdit, et son silence ne me prouvoit que trop son
+                changement : <pb n="55" xml:id="p55"/> vous ne me répondez pas, continuai-je, vous
+                m’assurez donc que je suis le plus malheureux de tous les hommes ; c’en est assez,
+                vous voulez<note place="bottom">Denys le Tyran en dit un jour autant à la femme d’un
+                    Sénateur qui avoit eu quelque complaisance pour lui, et qui s’en repentant ne
+                    vouloit plus le revoir. Elle lui répondit, <hi rend="i">Mourez</hi> si vous en
+                    avez le courage, nous y gagnerons tous deux. Le Tyran étonné repartit, il n’y a
+                    qu’une femme capable de répondre avec cette inhumanité.</note> ma mort, vous
+                serez contente : croyez-vous que je <pb n="56" xml:id="p56"/> puisse survivre à
+                votre infidélité. <milestone unit="sent"/>Ne m’accusez pas, repliqua-t-elle : si je suis inconstante, m’en
+                croyez-vous la cause ? l’Amour<note place="bottom">Les Égyptiens prétendoient que
+                    l’Amour étoit de toutes les Divinités la principale, et leur opinion étoit qu’il
+                    falloit céder au penchant qui entraînoit, à moins qu’on ne voulût encourir
+                    l’indignation de cette Divinité.</note> conduit mon inclination à un autre
+                objet ; j’aime Iphis : ce jeune Berger a sçû l’emporter sur vous : cet ascendant
+                qu’il a sur moi part <pb n="57" xml:id="p57"/> de la Divinité qui a sçû nous unir ;
+                vous devez respecter ses decrets : c’est elle qui parle, obéissez : il faut nous
+                séparer, et laisser le champ libre au nouveau vainqueur.</p>
+            <p><milestone unit="sent"/>Croyez-vous que je puisse vous obéir, cruelle Zirphée, m’écriai-je ; non, je vous
+                suivrai par-tout, et je troublerai du moins les plaisirs de mon rival, si je ne puis
+                être assez heureux pour vous toucher. <milestone unit="sent"/>Votre conduite ne serviroit qu’à m’irriter,
+                reprit la parjure avec vivacité, et loin de <pb n="58" xml:id="p58"/> conserver pour
+                vous aucun sentiment de tendresse ; je vous regarderois comme un tyran qui me
+                deviendroit odieux ; oubliez-moi, si vous pouvez, et sur-tout ne me voyez
+                jamais.</p>
+            <p><milestone unit="sent"/>Elle n’eut pas plutôt prononcé ces derniers mots qu’elle s’éloigna de moi. <milestone unit="sent"/>Je restai
+                alors dans une situation peu facile à être définie ; j’étois, pour ainsi dire,
+                accablé sous le poids du chagrin qui me dévoroit. <milestone unit="sent"/>Zirphée infidèle, me disois-je en
+                moi-même, <pb n="59" xml:id="p59"/> Zirphée qui craignoit mon inconstance, qui me
+                juroit, il y a peu de jours, un amour éternel, elle est heureuse et je languis :
+                pourrai-je survivre à mon infortune ! <milestone unit="sent"/>Non, sans doute, mais si je succombe, je veux
+                entraîner dans ma perte un rival odieux ; je percerai le sein de l’Amant et de
+                l’Amante et je mourrai content : mais je m’égare, reprenois-je aussitôt, oublions
+                cette inconstante Maîtresse, les justes Dieux puniront son parjure par le repentir,
+                et je serai vengé.</p>
+            <p><pb n="60" xml:id="p60"/><milestone unit="sent"/>Mon esprit agité flottoit ainsi entre le désir de la
+                vengeance et le mépris ; le tems mit fin à l’embarras de mon ame, je commençai alors
+                à jouir de cette aimable sécurité, heureux fruit de l’indifférence, les doux
+                plaisirs de l’étude avoient succédé à toute autre passion : je me félicitois de mon
+                retour ; plus j’envisageois les peines de l’Amour, plus je chérissois mon état
+                présent ; je vouois aux Muses un culte détaché d’aucun autre sentiment ; je bravois
+                l’Amour, il <pb n="61" xml:id="p61"/> me paroissoit n’avoir plus aucune puissance
+                sur mon ame ; que je connoissois peu ce Dieu ! il sçut bientôt me prouver son empire
+                sur les cœurs.</p>
+            <p><milestone unit="sent"/>Euridice étoit charmante, on ne pouvoit la voir sans l’adorer ; mais le respect qu’on
+                avoit pour elle épouvantoit l’Amour. <milestone unit="sent"/>Elle étoit l’image de la sagesse ; cette
+                aimable naiveté, simbole de l’innocence, étoit peinte sur son visage. <milestone unit="sent"/>Elle plaisoit
+                parce qu’elle ne se <pb n="62" xml:id="p62"/> soucioit<note place="bottom">Éloge
+                    outré. Il n’y a point de femmes jolies qui ne s’occupent du soin de plaire et de
+                    celui d’être aimées. Laodice Prêtresse du Temple de Delphes, la plus sage de
+                    toutes les femmes comme la plus belle, étoit deux heures tous les matins à sa
+                    toilette pour être vue deux minutes, d’un jeune Ministre du Temple qui en étoit
+                    épris, et auquel elle n’accorda jamais que cette faveur.</note> point de
+                plaire : elle n’étoit point semblable à ses compagnes : celles ci demandoient les
+                suffrages, et sembloient les exiger : <milestone unit="sent"/>Euridice, au contraire, étoit redevable <pb
+                    n="63" xml:id="p63"/> de sa beauté à la seule nature ; son esprit trop
+                    supérieur<note place="bottom">M. de Voltaire tout admirable qu’il est, n’a
+                    peut-être jamais écrit une plus jolie phrase si ce n’est point là du persifflage
+                    comme nos écrits modernes en sont remplis ; tout est aujourd’hui vernis, plus ou
+                    moins beau, le reste est misère et pauvreté.</note> pour n’être pas simple,
+                étoit toujours au niveau de ceux à qui elle parloit : on sortoit d’auprès d’elle
+                pénétré d’amour-propre ; elle pensoit pour les esprits médiocres, et <pb n="64"
+                    xml:id="p64"/> leur approprioit ses pensées : elle raisonnoit avec ceux dont
+                l’imagination plus élevée approchoit davantage de sa perfection : les Dieux enfin en
+                la formant avoient voulu donner une preuve de leur puissance.</p>
+            <p><milestone unit="sent"/>J’allois souvent les soirs pour me délasser des fatigues de l’étude de la journée me
+                promener dans une prairie : là je cherchois à rassembler mes esprits dissipez par le
+                travail, en répétant sur ma Lyre les airs les plus agréables ; les jeunes filles de
+                cette contrée <pb n="65" xml:id="p65"/> venoient écouter mes chansons, et Euridice
+                s’y trouvoit quelquefois avec ses compagnes, elle m’animoit par sa présence, et
+                sembloit prendre plaisir à mes concerts.</p>
+            <p><milestone unit="sent"/>Je m’apperçus bientôt de l’effet que produisoit sur mon cœur les charmes d’Euridice,
+                je voulus me servir de ma Philosophie<note place="bottom">La véritable Philosophie
+                    n’est pas de raisonner mais de s’éloigner des occasions qui mettent en danger le
+                    cœur ou la probité. Le mot de Philosophe doit signifier un mortel plus rempli
+                    d’orgueil et d’amour- propre qu’un homme ordinaire : j’ai examiné, considéré,
+                    étudié, ceux qui se sont crûs Philosophes et qui se le disent, je n’ai trouvé
+                    que des sots qui ne croyent ni ne pratiquent aucune des maximes dont ils font le
+                    pompeux étalage.</note> pour conserver <pb n="66" xml:id="p66"/> l’état
+                d’indifférence dont je faisois tant de cas ; vains efforts, est-il possible de
+                résister à l’amour ? <milestone unit="sent"/>La raison est un foible obstacle à ses progrès : l’expérience
+                même de sa fatalité ne put rien contre sa puissance. <milestone unit="sent"/>J’aimois Euridice, mais <pb
+                    n="67" xml:id="p67"/> je l’aimois trop pour oser espérer. <milestone unit="sent"/>Je devins triste, et
+                la maladie de mon ame plongea bientôt mon corps dans un anéantissement presque
+                total. <milestone unit="sent"/>Je cherchois la solitude, je fuyois tout ce qui n’étoit point Euridice, je la
+                cherchois partout : lorsque je la trouvois, sa présence m’inspiroit l’amour et le
+                respect, et ces deux sentimens se combattant mutuellement me plongeoient dans les
+                réfléxions les plus cruelles. <milestone unit="sent"/>Rien n’est plus affreux sans doute que d’aimer sans
+                espérance <pb n="68" xml:id="p68"/> de retour. <milestone unit="sent"/>Le propre de l’amour vertueux est
+                d’inspirer la timidité. <milestone unit="sent"/>Plus on estime l’objet aimé, plus on craint et moins on
+                espere : <milestone unit="sent"/>Euridice s’apperçut de mon accablement.</p>
+            <p><milestone unit="sent"/>Un jour que je me promenois à l’écart rêvant à la situation de mon ame, elle
+                m’aborda : <milestone unit="sent"/>Orphée, me dit-elle, vous êtes plongé depuis quelques tems dans une
+                tristesse continuelle : quels sont les chagrins qui agitent votre ame ? <milestone unit="sent"/>Votre lyre
+                ne raisonne <pb n="69" xml:id="p69"/> plus que de languissans accens : vous cherchez
+                la solitude ; mes compagnes étonnées de votre changement, me chargent de vous en
+                demander la cause : cruelle Euridice, repartis-je aussitôt, ne pouvez-vous lire dans
+                mes yeux les sentimens de mon cœur ; je jouissois de la plus douce tranquillité. <milestone unit="sent"/>Cet
+                état si désirable repandoit dans mon ame l’aimable sérénité qui paroissoit sur mon
+                visage, ce n’est plus cela : j’aime, et quel objet est ici digne d’amour <pb n="70"
+                    xml:id="p70"/> que vous-même, pourriez-vous vous y méprendre… <milestone unit="sent"/>Je ne pus
+                continuer, les larmes coupérent ma respiration, et perdant connoissance, je ne
+                revins à moi que quelque tems après par les soins que prit Euridice elle-même de me
+                rappeller à la lumière.</p>
+            <p><milestone unit="sent"/>Ah cruelle, lui dis-je, pourquoi me rendre une vie, qui ne peut m’être que
+                désagréable, si vous refusez de vous intéresser à mon amour : votre état me fait
+                pitié, repartit Euridice ; mais que vous serviroit-il <pb n="71" xml:id="p71"/>que
+                j’eusse pour vous les mêmes sentimens que vous avez pour moi. <milestone unit="sent"/>La vertu s’oppose à
+                votre bonheur, n’espérez jamais que je manque aux loix qu’elle m’impose, cessez de
+                m’aimer Orphée, laissez-vous guider par la sagesse, je veux bien même vous avouer
+                que je ne m’opposerois point à votre amour si cette Déesse y pouvoit consentir.</p>
+            <p><milestone unit="sent"/>Je voulus ramener Euridice, mais confuse de son aveu elle s’échappa, et ma foiblesse
+                    <pb n="72" xml:id="p72"/>ne me permit pas de la suivre.</p>
+            <p><milestone unit="sent"/>Cependant les dernieres paroles de cette adorable personne m’avoient donné quelque
+                espérance, je voulois m’unir à elle par les liens les plus sacrés, et rien dans mon
+                amour ne pouvoit allarmer sa pudeur : je cherchai donc l’occasion de lui déclarer
+                mes sentimens, mais elle évitoit avec un tel soin de se trouver seule avec moi que
+                je fus fort longtems sans pouvoir y réussir : j’y réussis enfin. <milestone unit="sent"/>Je l’apperçus <pb
+                    n="73" xml:id="p73"/> assise au bord d’une Fontaine ; je m’approchai, elle
+                voulut encore m’échapper : je la poursuivis ; je la joignis, et me jettant à ses
+                genoux, vous voulez donc ma mort, lui dis-je, ç’en est fait, vous allez me voir
+                expirer à vos pieds si vous ne consentez pas à mon bonheur : ma passion n’a rien de
+                contraire à l’austére vertu que vous vous êtes imposée ; je veux m’unir à vous par
+                les liens les plus indissolubles, allons aux pieds des Autels <pb n="74"
+                    xml:id="p74"/> de Minerve : c’est-là où je veux vous jurer une foi éternelle. <milestone unit="sent"/>Euridice étonnée de mes transports ne s’opposa pas à mes désirs : elle y mit
+                cependant pour condition que nous irions consulter l’Oracle de la Déesse, et que
+                nous obéirions absolument à ses ordres : elle m’accompagna au Temple, l’Oracle fit
+                une réponse conforme à nos vœux. <milestone unit="sent"/>Nous nous jurâmes mutuellement un amour
+                constant.</p>
+            <p><milestone unit="sent"/>La vertu seule fait naître des plaisirs parfaits. <milestone unit="sent"/>Je n’ai <pb n="75" xml:id="p75"/>
+                jamais mieux reconnu cette vérité que dans cet instant. <milestone unit="sent"/>Je jouissois d’un bien que
+                les remords ne rendoient point amer : j’aimois, et la pureté de mon amour lui
+                donnoit de nouvelles forces, une félicité si parfaite ne pouvoit pas durer
+                longtems ; les Dieux jaloux de mon bonheur sçurent m’en priver bientôt, le Soleil
+                avoit à peine parcouru les douze signes du Zodiaque depuis notre union, qu’un Roi
+                voisin de la partie de la terre que nous habitons, ayant entendu <pb n="76"
+                    xml:id="p76"/> vanter les charmes d’Euridice<note place="bottom">On sera
+                    peut-être étonné que ceci soit contraire aux sentimens des Poëstes, qui
+                    prétendent qu’Euridice fut piquée par un Serpent, qu’elle mourut de cette
+                    blessure, qu’Orphée la retira ensuite des Enfers, et la reperdit par son
+                    imprudence. Mais je prie le Lecteur de faire attention que je ne suis
+                    précisément que le Traducteur ; je laisse à juger qui a tort ou des Poëtes ou du
+                    Manuscrit Égyptien qui me sert d’original.</note>, se travestit et voulut en
+                juger par lui- même. <milestone unit="sent"/>Il la trouva si belle qu’il voulut la posseder. <milestone unit="sent"/>Il la fit
+                enlever un jour qu’elle se <pb n="77" xml:id="p77"/> baignoit dans une Fontaine, une
+                de ses compagnes qui en fut témoin vint m’annoncer cette triste nouvelle : j’en
+                pensai mourir de douleur, et je fus quelques instans accablé sous le poids de mon
+                chagrin, je formai d’abord cent résolutions plus violentes les unes que les autres
+                et qui tendoient toutes à m’arracher la vie ; enfin je m’arrêtai à celle- ci, je
+                pris le parti d’aller trouver le Roi, cause de mes malheurs, ne doutant pas que
+                touché par mes larmes, il ne <pb n="78" xml:id="p78"/> me rendit Euridice ; je
+                parvins à son Palais ; je me jettai à ses pieds ; je les embrassai et je le suppliai
+                en répandant un torrent de larmes de ne pas me séparer d’une épouse qui m’étoit plus
+                chere que la vie, et de rendre Euridice à ma tendresse, la vraie douleur a une
+                éloquence d’autant plus persuasive, qu’elle est fille de la vérité : elle fit
+                l’effet que j’en avois attendu, le Roi touché de mon amour me permit de voir
+                Euridice et de la ramener avec moi : <pb n="79" xml:id="p79"/> mais il y mit pour
+                condition que je ne ferois valoir auprès d’elle que mon amour et non les droits
+                d’époux, que pouvois-je désirer de plus ! persuadé de la vive tendresse de mon
+                adorable Euridice, je m’en cru déjà possesseur ; je volai à son appartement, bien
+                persuadé de son consentement, mais quelle fut ma surprise lorsque loin de me montrer
+                ces empressemens si naturels quand on a été longtems séparé d’un objet chéri, elle
+                me reçut avec l’abord le plus <pb n="80" xml:id="p80"/> glacé. <milestone unit="sent"/>Je lui rendis compte
+                de la grace que le Roi m’avoit accordée, et je la pressai de me suivre : <milestone unit="sent"/>Orphée, me
+                dit-elle, je vous ai aimé, et je vous aimerois sans doute encore si je ne
+                connoissois pas le Prince qui nous a séparé ; mais un penchant invincible m’entraîne
+                vers lui, et je ne pourrois vivre si j’en étois éloigné, pardonnez cependant mon
+                inconstance ; je voulus repliquer, ne m’accablez pas, poursuivit-elle, de reproches
+                inutiles, oubliez <pb n="81" xml:id="p81"/> Euridice, elle ne mérite plus les
+                tendres sentimens que vous aviez pour elle : à ces mots les Gardes qui étoient
+                restés présens à notre entrevûë m’obligèrent de sortir, et me laissèrent hors des
+                portes du Palais livré au désespoir le plus affreux. <milestone unit="sent"/>Je revins dans mon pays
+                transporté de fureur, là je formai la résolution de détester toutes les femmes,
+                persuadé qu’il ne pouvoit en avoir de fidéles ; je fuyois tous les lieux où elles se
+                trouvoient et je les évitois <pb n="82" xml:id="p82"/> avec soin. <milestone unit="sent"/>Le mépris que
+                j’avois pour elles fut cause de ma mort : un jour qu’elles célébraient les fêtes de
+                Bacchus, elles me trouvèrent au pied d’un arbre chantant sur ma Lyre les douceurs de
+                la paisible indifférence, et les dangers de l’amour ; animées par le Dieu qui les
+                inspiroit et par la haine qu’elles avoient pour moi, les Bacchantes me déchirèrent
+                et emportèrent avec elles chacune une partie de mon corps.</p>
+            <p><milestone unit="sent"/>Tel fut le récit que me fit <pb n="83" xml:id="p83"/> Orphée de ses malheurs, et de
+                sa fin déplorable.</p>
+
+        </body>
+
+    </text>
+</TEI>

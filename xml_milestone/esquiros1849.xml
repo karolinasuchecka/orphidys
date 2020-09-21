@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Histoire des amants célèbres dans l’antiquité</title>
+                <author>Alphonse Esquiros, Adèle Esquiros</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k30455214/</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Alphonse Esquiros, Adèle Esquiros</author> / <title>Histoire des
+                        amants célèbres dans l’antiquité</title> / Paris / Bureau de la Société
+                    Fraternelle de l’Intelligence et du Travail réunis / 1849 / p. 101-146.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Histoire des amants célèbres dans l’antiquité</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Bureau de la Société Fraternelle de l’Intelligence et du Travail
+                            réunis.</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1849"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>esquiros1849</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1849">1849</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>modernisation</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Alphonse Esquiros, Adèle Esquiros</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Histoire des amants célèbres dans l’antiquité</titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+
+
+        <body>
+            <div>
+                <head>V.</head>
+                <p><pb n="101" xml:id="p101"/><milestone unit="sent"/>Les soirées du <hi rend="i">Club des Exaltés</hi>
+                    étaient de plus en plus suivies. <milestone unit="sent"/>Le docteur mystérieux avait annoncé qu’il
+                    raconterait les amours d’Orphée et d’Eurydice.</p>
+                <p><milestone unit="sent"/>– Voilà une bien vieille histoire, s’écria une blonde très-pâle, qui avait dans
+                    les yeux des langueurs amoureuses.</p>
+                <p><milestone unit="sent"/>– Vieille histoire, j’en conviens, reprit le docteur en faisant crier sa
+                    tabatière d’or. <milestone unit="sent"/>Mais les choses les plus anciennes sont quelquefois les plus
+                    nouvelles, quand on les savait sans les savoir. <milestone unit="sent"/>Vos historiens ont tout
+                    défiguré.</p>
+                <p><milestone unit="sent"/>Je commence :</p>
+                <p><milestone unit="sent"/>« Orphée était, comme vous le savez toutes, mesdames, un très-habile joueur de
+                    lyre : les arbres et les rochers quittaient leur place, les fleuves suspendaient
+                    leur cours et les bêtes féroces s’attroupaient autour de lui, émerveillés de
+                    l’entendre. <milestone unit="sent"/>Il faut croire que les rochers et les arbres ont le cœur plus dur
+                    maintenant que dans ce temps-là ; car on ne les voit plus guère s’émouvoir pour
+                    des chansons. <milestone unit="sent"/>On le disait fils d’Apollon et de la muse Calliope. <milestone unit="sent"/>Les anciens
+                    voulaient montrer, au moyen de cette origine fabuleuse, que le don de la lyre et
+                    celui des vers sont véritablement l’ouvrage des dieux, qui nous les transmettent
+                    par la naissance.</p>
+                <p><pb n="102" xml:id="p102"/><milestone unit="sent"/>Orphée avait ouvert les yeux sous le ciel de Thrace ;
+                    – ciel inclément, nature sauvage. <milestone unit="sent"/>Les habitants de cette contrée, race dure et
+                    née pour la guerre, se montraient sans doute plus insensibles au talent d’Orphée
+                    que les chênes des forêts impénétrables. <milestone unit="sent"/>Nul n’est poëte dans son pays. <milestone unit="sent"/>Orphée,
+                    las du caractère de ses compatriotes et de la férocité de cette nature sans
+                    agréments, alla s’établir dans la Thessalie, où les mœurs étaient douces comme
+                    le ciel ; le fleuve Pénée répandait sur son chemin la verdure et la fécondité. <milestone unit="sent"/>C’est là qu’Orphée rencontra Eurydice. <milestone unit="sent"/>C’était une beauté tendre et
+                    mélancolique. <milestone unit="sent"/>Je ne puis mieux la comparer qu’à vous, miss Jenny ; elle avait
+                    vos yeux, votre sourire triste et le son affligé de votre voix. <milestone unit="sent"/>Je pense
+                    toujours à elle en vous regardant. <milestone unit="sent"/>Écoutez-moi donc avec intérêt ; car son
+                    histoire pourrait bien être la vôtre. <milestone unit="sent"/>Orphée s’était acquis en Grèce une
+                    réputation qui s’accrût bientôt par les récits fabuleux qu’on mêlait à l’éloge
+                    de ses talents. <milestone unit="sent"/>Mais les Grecs n’étaient point alors ce qu’ils devinrent par la
+                    suite ; c’étaient de vrais barbares par la coutume qu’ils avaient d’enfermer
+                    leurs femmes, par l’éducation plutôt féroce que guerrière qu’ils
+                    imposaient à leurs enfants, et par la préférence qu’ils donnaient aux forces du
+                    corps sur les vertus de l’âme. <milestone unit="sent"/>L’Égypte rayonnait au contraire sur le monde. <milestone unit="sent"/>Ces
+                    grands centres de civilisation attirent, dans tous les siècles, les
+                    intelligences d’élite. <milestone unit="sent"/>On allait à Thèbes ou à Memphis, comme on vient
+                    maintenant à Paris. <milestone unit="sent"/>Les Égyptiens passaient surtout pour des maîtres en morale
+                    et en connaissance de la nature ; Orphée conçut le dessein d’aller puiser chez
+                    eux la science qui lui manquait. <milestone unit="sent"/>Il se dit que la poésie sans une doctrine
+                    religieuse pouvait bien attendrir les ours et les crocodiles ; mais qu’elle ne
+                    saurait éclairer les <pb n="103" xml:id="p103"/>hommes. <milestone unit="sent"/>Les talents supérieurs
+                    se grandissent encore par l’élévation des idées et par les sentiments qu’ils
+                    tirent du mystère mieux conçu de la divinité. <milestone unit="sent"/>Orphée n’avait qu’un regret,
+                    c’était de quitter son Eurydice. <milestone unit="sent"/>Cette femme, encore moins célèbre par sa beauté
+                    que par son amour, se montra plongée à cette nouvelle dans une tristesse
+                    inconsolable. <milestone unit="sent"/>En vain, pour adoucir une peine si amère, Orphée lui
+                    représenta-t-il les difficultés d’un pareil voyage et les agréments de la
+                    contrée où il la laissait. <milestone unit="sent"/>Ces lieux, si attrayants par eux-mêmes, excitaient en
+                    elle des émotions tout opposées. <milestone unit="sent"/>Il y avait quelque temps qu’Aristée était venu
+                    s’établir dans cette contrée heureuse. <milestone unit="sent"/>Il se disait fils d’Apollon et de la
+                    nymphe Cyrène. À peine fut-il arrivé en Thessalie, qu’il jeta les yeux sur
+                    Eurydice. <milestone unit="sent"/>Il fit auprès d’elle des poursuites, que, par délicatesse, elle
+                    jugea à propos de cacher à son mari. <milestone unit="sent"/>Les mœurs étaient encore si grossières et
+                    si brutales, que le rapt semblait, comme chez les sauvages, une forme tout
+                    ordinaire de la galanterie. <milestone unit="sent"/>Un jour qu’Eurydice se promenait au bord du fleuve
+                    Pénée, elle rencontra tout éperdu Aristée, qui courait sur elle. <milestone unit="sent"/>La pauvre
+                    Eurydice s’enfuit et se cacha dans les hautes herbes, où il fut impossible à son
+                    ravisseur de la découvrir. <milestone unit="sent"/>Cette aventure lui ouvrit les yeux sur les dangers
+                    qu’elle courait, en l’absence de son mari, dans cette contrée perfide. <milestone unit="sent"/>Ne
+                    pouvant détourner Orphée du dessein qu’il avait conçu de voir l’Égypte, elle lui
+                    déclara qu’elle le suivrait partout où il irait. <milestone unit="sent"/>Nos deux amants s’embarquèrent
+                    donc ensemble ; après tous les travaux et tous les dangers d’un long voyage, ils
+                    arrivèrent à Canope dans le Delta, et par le canal héraeleotique, jusqu’à un
+                    port de Memphis. <milestone unit="sent"/>Comme le soleil était couché depuis longtemps, ils résolurent
+                    do passer cette première nuit hors de la ville.</p>
+                <p><pb n="104" xml:id="p104"/><milestone unit="sent"/>Ils marchèrent côte à côte, par un chemin à peine
+                    frayé, où de grandes herbes embarrassaient leurs pas. <milestone unit="sent"/>Eurydice se plaignit
+                    subitement à Orphée d’un malaise indéfinissable. <milestone unit="sent"/>À peine furent-ils entrés dans
+                    une hôtellerie, qu’elle se montra saisie d’un profond assoupissement et refusa
+                    toute nourriture. <milestone unit="sent"/>Elle s’endormit en effet : jamais statue de marbre ne fut plus
+                    blanche, ni plus touchante dans son évanouissement éternel. <milestone unit="sent"/>Au bout d’une
+                    demi-heure, dans le silence de la nuit, Orphée entendit une respiration violente
+                    et forcée qui le fit courir à elle. <milestone unit="sent"/>Le visage d’Eurydice était livide ; son sein
+                    suffoqué se soulevait péniblement. <milestone unit="sent"/>Alarmé, il l’apelle :</p>
+                <p><milestone unit="sent"/>– Eurydice, réveille-toi ! <milestone unit="sent"/>Tu souffres, reviens, c’est moi, c’est Orphée qui te
+                    parle.</p>
+                <p><milestone unit="sent"/>Vains efforts ; il ne put réussir à secouer le sommeil qui enveloppait les
+                    membres délicats de son Eurydice. <milestone unit="sent"/>L’hôte, éveillé par ces cris mêlés de
+                    sanglots, arrive. <milestone unit="sent"/>Il considère quelques instants, en silence, la femme qui ne
+                    donnait plus aucun signe de vie.</p>
+                <p><milestone unit="sent"/>– Étranger, dit-il, je tremble de découvrir la cause du triste état où languit
+                    votre compagne adorée, et d’ajouter ainsi à votre désespoir ; mais l’expérience
+                    que j’ai du climat de l’Égypte, me fait craindre quelque malheur sans
+                    remède.</p>
+                <p><milestone unit="sent"/>En disant ces mots, il écarta le voile qui couvrait le corps d’Eurydice, et
+                    montra au pied droit une piqûre légère et presque imperceptible.</p>
+                <p><milestone unit="sent"/>– Voilà, dit-il la trace d’une morsure ; votre femme aura marché sur quelque bête
+                    venimeuse.</p>
+                <p><milestone unit="sent"/>Orphée tomba dès-lors dans un horrible accablement ; car à l’air de son hôte et
+                    aux réponses qui lui furent faites, il jugea que la blessure d’Eurydice était
+                    mortelle.</p>
+                <p><pb n="105" xml:id="p105"/><milestone unit="sent"/>Vous peindre le désespoir de cet amant malheureux,
+                    passerait les forces du langage humain. <milestone unit="sent"/>Il accusa les dieux, son funeste destin
+                    et l’impitoyable terre d’Égypte. <milestone unit="sent"/>Orphée demeura ainsi plusieurs jours sans
+                    connaissance, ne distinguant pas la lumière des ténèbres, et couvrant toute la
+                    nature du voile de sa douleur lugubre. <milestone unit="sent"/>D’autres fois, il cherchait à tromper son
+                    amour malade par la triste mélodie de ses vers ; assis mélancolique et seul au
+                    bord du Nil : <milestone unit="sent"/>C’est toi, Eurydice ! qu’il appelait au lever du jour : c’est
+                    encore toi ! qu’il chantait au tomber de la nuit.</p>
+                <p><milestone unit="sent"/>Eurydice fut portée dans le tombeau des étrangers sans cérémonie funèbre. <milestone unit="sent"/>On ne
+                    pratiqua sur elle aucune des incisions que l’art des embaumeurs infligeait aux
+                    naturels du pays. <milestone unit="sent"/>Ce tombeau des étrangers était hors des murs de Memphis, du
+                    côté des pyramides, dans le même lieu que la sépulture commune des habitants de
+                    l’Égypte. <milestone unit="sent"/>Là dormaient ces morts, qui durent encore à cette heure, et qui, par
+                    la puissance des embaumements, ont usé leur tombeau même. <milestone unit="sent"/>C’étaient des
+                    catacombes immenses ; on y descendait les étrangers par une ouverture
+                    particulière. À l’entrée de ces souterrains était le lac Acherusia, sur le bord
+                    duquel on jugeait les Égyptiens morts, comme on jugeait les rois au Labyrinthe. <milestone unit="sent"/>Mais on ne s’informait pas des actions des étrangers ; on les inhumait
+                    simplement, sans se soucier de donner à leur froide dépouille cette couleur
+                    d’immortalité qu’on retrouve sur toutes les momies.</p>
+                <p><milestone unit="sent"/>Possédé de sa douleur, Orphée ne recherchait sous le ciel d’Égypte que les objets
+                    capables de l’entretenir dans le sentiment de sa perte. <milestone unit="sent"/>Il avait ouï parler de
+                    ces catacombes fameuses où un peuple de momies semblait attendre le retour de la
+                    lumière. <milestone unit="sent"/>Une tradition populaire voulait que les âmes des morts se <pb n="106"
+                        xml:id="p106"/>promenassent dans tout l’espace souterrain qui s’étendait
+                    entre les catacombes et les pyramides. <milestone unit="sent"/>On ajoutait que des vivants assez
+                    courageux pour entrer dans ces pyramides par une des ouvertures, y avaient
+                    entendu les voix et les chants des ombres heureuses. <milestone unit="sent"/>Cette opinion flatta
+                    beaucoup la douleur d’Orphée. <milestone unit="sent"/>Les poètes et les infortunés sont aisément
+                    crédules. <milestone unit="sent"/>Son imagination s’enflamma à l’espoir de rejoindre Eurydice dans ces
+                    demeures ténébreuses. <milestone unit="sent"/>Comme tous les amants qui n’ont aimé qu’une fois, il
+                    portait l’idée de sa persévérance au-delà même de la vie. <milestone unit="sent"/>Orphée s’abandonnant à
+                    cette illusion et comptant sur un sentiment semblable dans le cœur de son
+                    Eurydice, espéra la rencontrer au fond de ces tombeaux ou de l’attirer à lui par
+                    le son de sa voix et de sa lyre. <milestone unit="sent"/>Prétention fort excusable, à coup sûr, dans un
+                    homme qui savait se faire reconnaître des tigres eux-mêmes et les attendrir avec
+                    ses chants !</p>
+                <p><milestone unit="sent"/>Les sages qu’il consulta le confirmèrent dans cette pensée. <milestone unit="sent"/>L’amertume de son
+                    amour éternel ne pouvait d’ailleurs s’adoucir que par la vue de ces lieux
+                    lamentables. <milestone unit="sent"/>Comme tous les malheureux, il avait besoin de s’enivrer de sa
+                    douleur. <milestone unit="sent"/>Orphée prit donc une lampe avec sa lyre qu’il laissait depuis longtemps
+                    oisive, et s’achemina vers le noir séjour des ombres. <milestone unit="sent"/>Ayant erré autour de ces
+                    pyramides, ouvrage des rois frustrés dans leur ambition posthume, il considéra
+                    moins le faste et la magnificence extérieure de ces tombeaux, que l’idée de la
+                    mort, avec laquelle ces immenses constructions familiarisaient ses yeux avides. <milestone unit="sent"/>Il attendit que le soleil fut évanoui de l’horizon. <milestone unit="sent"/>Alors il entra seul dans les
+                    effroyables détours de ce labyrinthe inconnu. <milestone unit="sent"/>Le silence nocturne de ces lieux
+                    profonds, loin de glacer ses forces, ne fit que l’encourager dans sa résolution
+                    suprême. <milestone unit="sent"/>Trois fois, il osa faire retentir du nom d’Eurydice <pb n="107"
+                        xml:id="p107"/>les longs et taciturnes échos de ces voûtes. <milestone unit="sent"/>Après des
+                    efforts et des tâtonnements infinis, il découvrit l’embouchure d’un puits.</p>
+                <p><milestone unit="sent"/>Accoudé sur le rebord en pierre, il considéra quelque temps l’horreur de ce
+                    gouffre plein de ténèbres ; mais le désir de revoir Eurydice l’emportant en lui
+                    sur la révolte de la nature, il descendit. <milestone unit="sent"/>Une échelle fixée au mur conduisait
+                    dans les entrailles de la terre. <milestone unit="sent"/>Ce puits était une image de la science, dans
+                    laquelle l’esprit de l’homme descend, descend toujours, sans jamais voir
+                    distinctement ce qui est au fond.</p>
+                <p><milestone unit="sent"/>Orphée, pas plus que tout autre mortel, n’atteignit le terme de cette spirale
+                    ténébreuse. <milestone unit="sent"/>– Mais, après avoir descendu environ une soixantaine d’échelons, il
+                    trouva une fenêtre : c’était l’entrée d’un chemin creusé dans la roche vive, qui
+                    descendait, en tournoyant, la longueur de cent vingt-quatre pieds. <milestone unit="sent"/>Ce chemin
+                    conduisait à une porte grillée, dont les deux battants d’airain s’ouvraient au
+                    moindre effort qu’on faisait pour les pousser, et sans donner le moindre bruit. <milestone unit="sent"/>Mais, en retombant d’eux-mêmes pour se joindre, ils rendaient par un artifice
+                    imposant, un son très-fort, qui semblait se porter successivement de voûte en
+                    voûte, et se perdre au loin dans le fond d’un vaste édifice. <milestone unit="sent"/>Vis-à-vis de cette
+                    porte, qui était du côté du nord, il y en avait une autre du côté du midi. <milestone unit="sent"/>Elle
+                    était fermée d’une grille de fer dormante, dont chaque barreau avait la grosseur
+                    du bras. <milestone unit="sent"/>À travers ces barreaux, Orphée aperçut une allée à perte de vue, bordée
+                    à gauche et du côté de l’Orient, d’une longue suite d’arcades, d’où sortaient de
+                    grandes lueurs de lampes et de torches. <milestone unit="sent"/>Prêtant l’oreille, il entendit dans la
+                    profondeur de ces arcades des voix d’hommes et de femmes, qui formaient une
+                    musique très-harmonieuse. <milestone unit="sent"/>Mais de plus, il crut reconnaître parmi ces voix
+                    douces et virginales celle de son Eurydice.</p>
+                <p><pb n="108" xml:id="p108"/><milestone unit="sent"/>Quand vous saurez le but de ce voyage souterrain, vous
+                    admirerez avec moi la haute sagesse des prêtres d’Égypte, qui avaient concerté
+                    entre eux d’attirer Orphée à la science par l’amour qu’il avait pour sa
+                    femme.</p>
+                <p><milestone unit="sent"/>Si enveloppée de deuil que fût l’âme d’Orphée, il ne put se défendre d’admirer la
+                    grandeur de ces ouvrages souterrains, inconnus à la plupart des Égyptiens même,
+                    et dans lesquels respirait vraiment le génie de cette nation extraordinaire. <milestone unit="sent"/>Mais il fut bientôt tiré de cette contemplation muette par le souvenir de sa
+                    douleur qui l’amenait dans ce séjour formidable. <milestone unit="sent"/>Il regarda tout autour de lui
+                    comme pour se reconnaître. <milestone unit="sent"/>Le silence remplissait l’immensité de ces lieux
+                    voilés à la lumière du jour. <milestone unit="sent"/>Un chemin de six pieds de large, très-uni, tiré en
+                    droite ligne et voûté en plein-cintre conduisait aux enfoncements des arcades. <milestone unit="sent"/>Orphée vit alors ces paroles écrites en caractères noirs sur une page de marbre
+                    blanc : <milestone unit="sent"/>« Quiconque fera cette route seul, et sans regarder derrière lui sera
+                    purifié par le feu, par l’eau et par l’air ; et s’il peut vaincre la frayeur de
+                    la mort, il sortira du sein de la terre, il reverra la lumière, et il aura droit
+                    de préparer son âme à la révélation des mystères de la grande déesse Isis. »</p>
+                <p><milestone unit="sent"/>La lecture de cette inscription mélancolique, loin de porter dans l’âme d’Orphée,
+                    comme dans celle des autres hommes, une impression de tristesse et d’effroi, ne
+                    fit que réveiller la flamme de ses sombres désirs. <milestone unit="sent"/>Il se vit à la porte de
+                    l’Initiation, qui avait été l’objet de son voyage. <milestone unit="sent"/>On croyait dans le peuple que
+                    les Aspirants admis aux épreuves descendaient vivants aux enfers, et qu’il leur
+                    en fallait revenir par des travaux effroyables. <milestone unit="sent"/>Joignant alors l’idée des saints
+                    mystères à celle d’Eurydice, Orphée se dit que l’Initiation même le conduirait
+                    au séjour des <pb n="109" xml:id="p109"/>âmes heureuses, et que, peut-être, il
+                    en ramènerait son amante. <milestone unit="sent"/>Il se plongea donc avec une joie amère dans cette
+                    nuit, image du deuil de son cœur. <milestone unit="sent"/>Il entra dans le chemin étroit. <milestone unit="sent"/>L’amour est
+                    plus fort que toutes les terreurs de la mort.</p>
+                <p><milestone unit="sent"/>Il marcha longtemps sous ces arcades mornes, où la nuit, enlevant toute couleur
+                    aux objets, répandait partout sa présence uniforme. <milestone unit="sent"/>Bientôt, cependant, des
+                    spectres vinrent peupler la solitude de ces ténèbres. <milestone unit="sent"/>C’étaient des ombres qui
+                    s’éclairaient elles-mêmes d’une lumière sépulchrale. <milestone unit="sent"/>Les Chagrins et les
+                    Remords, les pâles Maladies, la triste Vieillesse, la Peur, la Faim, la honteuse
+                    Indigence, les Joies impures, toutes formes terribles, à voir, occupaient le
+                    sombre vestibule de l’Initiation. <milestone unit="sent"/>Quoique rendu intrépide par sa douleur, Orphée
+                    ne put se défendre d’un mouvement d’effroi, quand il aperçut toutes ces figures
+                    monstrueuses : la Discorde qui tordait des serpents pour cheveux, les Furies, la
+                    Chimère, les Gorgones, les Illusions, qui fouettaient son front livide du bout
+                    de leurs ailes, et quantité d’autres images, qui s’évanouissaient au toucher. <milestone unit="sent"/>Tout cela n’était que des apparences, auxquelles l’art des prêtres égyptiens
+                    donnait le prestige de la réalité. <milestone unit="sent"/>Ces fantômes n’en portaient pas moins autour
+                    d’eux l’épouvante ; et si Orphée n’eût été préparé d’avance, à toutes les
+                    visions funèbres, il eut manqué de cœur pour continuer sa route.</p>
+                <p><milestone unit="sent"/>Là, commençait le chemin qui conduisit Orphée à ce marais sombre et stagnant, sur
+                    le bord duquel était un nautonier que les Égyptiens, dans leur langue, nommaient
+                    Caron. <milestone unit="sent"/>Orphée, bien résolu à étouffer dans son cœur toute lâcheté indigne d’un
+                    homme, aborda la fatale barque. <milestone unit="sent"/>Un vieillard au poil blanc gardait le passage : <milestone unit="sent"/>« Arrière, s’écria-t-il, mortel qui descend dans ces royaumes sombres, si tu <pb
+                        n="110" xml:id="p110"/>n’apportes ici une force d’âme supérieure à toutes
+                    les épreuves, tu n’atteindras pas le terme de ton périlleux voyage. » <milestone unit="sent"/>Sans se
+                    laisser émouvoir par ces menaces, Orphée sauta résolument dans la barque. <milestone unit="sent"/>Le
+                    triste nocher, après avoir reçu de celui qui devait désormais se considérer
+                    comme mort, une pièce de monnaie, dénoua l’anneau de fer qui maintenait la
+                    barque au noir rivage et saisit l’aviron. <milestone unit="sent"/>À peine la rame eut-elle battu les
+                    flots, qu’Orphée vit accourir sur le bord quantité d’ombres affligées qui
+                    semblaient réclamer la grâce du passage. <milestone unit="sent"/>Elles tendaient vers l’autre rive des
+                    mains suppliantes. <milestone unit="sent"/>Mais, le monstre velu, sourd à ces tendres prières, ramait,
+                    ramait froidement. <milestone unit="sent"/>Parmi la foule taciturne qui se pressait autour de la barque,
+                    Orphée reconnut des mères, des époux, de jeunes femmes que la mort avait
+                    moissonnées à la fleur de leur mariage : mais, parmi elles, il ne découvrit
+                    point Eurydice. <milestone unit="sent"/>Toutes ces ombres retenues sur le rivage morne se lamentaient
+                    avec des gestes désespérés. <milestone unit="sent"/>On voulait par là faire entendre à l’Aspirant que
+                    l’Initiation était une faveur particulière des dieux.</p>
+                <p><milestone unit="sent"/>Orphée passa heureusement de l’autre côté du fleuve ; après avoir marché quelque
+                    temps sur une terre humide et couverte de roseaux, il rencontra dans un mur à
+                    droite, une petite porte toute de fer. <milestone unit="sent"/>À côté de cette porte, qui était fermée,
+                    veillaient continuellement trois hommes, dont la tête était couverte d’un casque
+                    surmonté d’une tête d’anubis. <milestone unit="sent"/>Vous voyez d’ici l’origine de votre cerbère, ce
+                    monstrueux gardien du Tartare, sur lequel le poëte Virgile m’a lu, dans le
+                    temps, de très beaux vers latins. <milestone unit="sent"/>Orphée, le divin auteur de la <hi rend="i"
+                        >Mythologie des Grecs</hi>, sur laquelle les Romains ont modelé la leur,
+                    a pris, (comme vous le devinez déjà), dans les épreuves de l’Initiation, les
+                    principaux traits de son enfer. <milestone unit="sent"/>Cet emprunt est d’autant <pb n="111"
+                        xml:id="p111"/>plus légitime, que dans la révélation des mystères on se
+                    proposait surtout d’instruire l’Initié sur les récompenses et les peines de la
+                    vie future.</p>
+                <p><milestone unit="sent"/>Un de ces trois hommes, qui portaient une tête de chien, s’avançant vers Orphée,
+                    lui dit : <milestone unit="sent"/>« Nous ne sommes point ici pour vous arrêter dans votre course
+                    téméraire. <milestone unit="sent"/>Vous êtes libre de passer outre, si les dieux vous donnent la force
+                    d’accomplir cette œuvre difficile. <milestone unit="sent"/>Mais réfléchissez-y. <milestone unit="sent"/>Si vous êtes assez
+                    malheureux pour échouer dans votre sombre pèlerinage, nul retour. <milestone unit="sent"/>Un pas de plus
+                    et vous ne sortirez jamais de ces lieux, à moins d’en sortir par le passage que
+                    vous aurez ouvert devant vous, sans tourner la tête et sans reculer. <milestone unit="sent"/>C’est à vous de décider ce que vous devez faire. <milestone unit="sent"/>Entrez, si vous vous en sentez
+                    le courage, mais laissez derrière vous toute espérance de revoir la
+                    lumière. »</p>
+                <p><milestone unit="sent"/>Orphée, qui voulait Eurydice ou la mort, ne se laissa point ébranler par cet
+                    avis ; il passa.</p>
+                <p><milestone unit="sent"/>L’horreur de ces lieux voilés à la lumière du jour augmentait de moment en
+                    moment. <milestone unit="sent"/>Ici des pleurs et des cris d’enfants agitaient éternellement l’air sans
+                    étoiles. <milestone unit="sent"/>Orphée, surpris du bruit de ces voix, supposa que ces plaintes étaient
+                    celles des enfants morts à la mamelle, que le sort cruel a plongés dans
+                    l’éternelle nuit, avant même qu’ils eussent vécu. <milestone unit="sent"/>Moi, qui, en ma qualité
+                    d’ancien Initié, ai pénétré tous ces mystères, et imposé aux autres toutes ces
+                    épreuves, après les avoir subies, moi-même, je vous dirai entre nous que ces
+                    enfants étaient ceux des prêtres. <milestone unit="sent"/>Une coutume, que n’approuvera sans doute pas
+                    la tendresse maternelle, ordonnait que ces nouveaux nés du sacerdoce fussent
+                    élevés dans les lieux bas de la terre. <milestone unit="sent"/>On voulait par une telle pratique,
+                    habituer leur tempérament à ces habitations souterraines, dans lesquelles ils
+                    devaient passer une <pb n="112" xml:id="p112"/>grande partie de leur existence. <milestone unit="sent"/>Les vagissements de ces petits êtres, élevés en commun et réunis dans les mêmes
+                    salles répandaient tout à l’entour un bruit naturel en lui-même, mais surprenant
+                    et lugubre, pour les oreilles qui n’en savaient pas l’origine.</p>
+                <p><milestone unit="sent"/>Plus loin était le <hi rend="i">Champ des Larmes</hi>. <milestone unit="sent"/>Orphée distingua
+                    confusément des formes humaines, attachées à des supplices qu’exagéraient encore
+                    l’imagination de l’Aspirant et l’horreur propre à ces lieux infernaux. <milestone unit="sent"/>Ici,
+                    c’étaient des femmes qui puisaient de l’eau pour la verser dans des vaisseaux
+                    percés, d’où cette eau s’échappait sans cesse. <milestone unit="sent"/>Là, des hommes roulaient un
+                    cylindre de pierre sur une espèce de colline, le remontaient, le faisaient
+                    descendre de nouveau, et le remontaient encore. <milestone unit="sent"/>Vous reconnaissez dans ces
+                    diverses expiations l’origine du rocher de Sisyphe, et les tonneaux des Danaïdes
+                    qu’Orphée introduisit plus tard dans la fable. <milestone unit="sent"/>Ces hommes et ces femmes étaient
+                    des officiers, et des officières du second ordre, qui se trouvaient là par suite
+                    de fautes plus ou moins graves. <milestone unit="sent"/>On les occupait, en manière de châtiment, à des
+                    ouvrages pénibles et inutiles, pour montrer à l’Aspirant, que si le travail est
+                    jamais une punition, c’est quand il ne s’applique à rien qui puisse rendre
+                    service à la société.</p>
+                <p><milestone unit="sent"/>Tous ces damnés étaient nus jusqu’à la ceinture et souffraient en silence. <milestone unit="sent"/>La
+                    plupart se faisaient un devoir d’accomplir leur pénitence avec une ardeur qui
+                    donnait plus de mérite au châtiment. <milestone unit="sent"/>Ce peuple consterné ne sembla pas même
+                    s’apercevoir de la présence d’un étranger dans ce royaume des pleurs. <milestone unit="sent"/>Orphée
+                    crut découvrir parmi les femmes – quelques-unes étaient encore belles sous leur
+                    tristesse – des amantes affligées, dont les affections n’avaient point été
+                    jugées assez pures par le collège <pb n="113" xml:id="p113"/>des prêtres. <milestone unit="sent"/>On
+                    n’exposait guère aux yeux de l’Aspirant que des coupables choisis parmi les
+                    officiers subalternes. <milestone unit="sent"/>Pour sauver l’honneur des prêtres, on cachait exactement
+                    les fautes et les punitions de leur ordre ; si l’on s’écartait de cette
+                    précaution, c’était pour les scandales publics qui avaient compromis la dignité
+                    du sacerdoce. <milestone unit="sent"/>Orphée vit quelques prêtres et quelques prêtresses vêtues de noir,
+                    privés de la tunique sacerdotale, qui se promenaient tristement autour du Champ
+                    des larmes en se cachant le visage. <milestone unit="sent"/>Enfin, il y avait un crime que les lois
+                    avaient prévu et auquel on infligeait le plus terrible des supplices, c’était le
+                    violement du secret des Initiations. <milestone unit="sent"/>Le prêtre, l’Initié, ou l’officier,
+                    coupable d’avoir trahi les mystères, était soumis à un châtiment effroyable : on
+                    lui ouvrait la poitrine, et on lui arrachait le cœur qu’on jetait en
+                    pâture à des oiseaux carnassiers. <milestone unit="sent"/>À peine s’il y avait, depuis des siècles, un
+                    ou deux exemples de malheureux qui eussent encouru cette peine révoltante ;
+                    mais, comme on tenait à frapper l’imagination de l’Aspirant, on ne manquait
+                    point à mettre sous ses yeux une représentation animée du supplice des
+                    révélateurs. <milestone unit="sent"/>Orphée distingua – non sans pâlir– deux prêtres indiscrets,
+                    enchaînés l’un et l’autre sur des quartiers de rochers ; un vautour leur
+                    dévorait le flanc ; il y avait à côté deux poteaux : sur l’un, était écrit <hi
+                        rend="sc">Prométhée</hi> ; sur l’autre, on lisait <hi rend="sc">Tityus</hi>. <milestone unit="sent"/>Un effet de jour, pratiqué à dessein, donnait au corps de ce dernier, étendu par
+                    terre, une longueur gigantesque. <milestone unit="sent"/>La connaissance que ces anciens prêtres avaient
+                    de la nature de l’homme, les engageait à graver ainsi, par des impressions vives
+                    et dramatiques, les leçons de morale dans le cœur de l’Aspirant.</p>
+                <p><milestone unit="sent"/>On avait trouvé le moyen de perpétuer aux yeux, par des artifices semblables, le
+                    crime et le supplice d’autres prévaricateurs. <pb n="114" xml:id="p114"/><milestone unit="sent"/>Orphée
+                    entendit retentir dans l’ombre des coups de fouet et des bruits de chaînes. <milestone unit="sent"/>Les
+                    vices qu’on montrait, comme punis avec plus de rigueur, sont ceux qui se
+                    rapportent le plus directement à la société, comme le suicide, l’amour
+                    extravagant, l’ambition guerrière. <milestone unit="sent"/>On y voyait aussi l’Avarice, assise sur des
+                    sacs d’or, le visage maigre et les mains crispées. <milestone unit="sent"/>Les gens de bonne chère, qui
+                    avaient laissé périr de faim les autres hommes, étaient représentés étendus sur
+                    des lits richement ornés ; devant eux se dressaient des tables servies avec un
+                    luxe royal ; mais, une grande Furie, accoudée près d’eux, les empêchait de
+                    porter les mains sur les mets délicats, et haussant d’un air terrible son bras
+                    armé d’un flambeau, les effrayait parle tonnerre de sa voix. <milestone unit="sent"/>On comptait sur de
+                    tels spectacles, qui avaient toute la vraisemblance de la nature, pour faire
+                    naître chez l’Aspirant l’horreur des vices qu’on lui montrait comme si
+                    terriblement châtiés. <milestone unit="sent"/>Il y avait surtout des crimes que l’on tenait à prévenir
+                    par l’idée des peines que ces crimes encouraient, je veux parler des révoltes
+                    contre le dogme. <milestone unit="sent"/>La grande maxime des prêtres de l’Égypte était, qu’en fait de
+                    religion, il ne faut absolument rien innover. <milestone unit="sent"/>C’est la raison pour laquelle ils
+                    conservèrent dans leurs rits publics ou secrets quantité de superstitions et de
+                    pratiques ridicules qui venaient des anciens sauvages du pays, sous prétexte
+                    qu’on ne doit jamais toucher au culte d’une nation. <milestone unit="sent"/>Ils inspirèrent cette
+                    maxime à tous leurs Initiés ; aussi, les plus célèbres législateurs de
+                    l’antiquité se sont-ils faits<note place="bottom" resp="KS">Nous corrigeons
+                        « fait » par « faits ».</note> une règle de conduite de ne rien changer aux
+                    cérémonies religieuses. <milestone unit="sent"/>La seule réforme que l’adoucissement des mœurs
+                    introduisit en Égypte, fut celle des sacrifices humains ; encore cette réforme
+                    fut-elle consentie par le suffrage unanime des membres du sacerdoce.</p>
+                <p><pb n="115" xml:id="p115"/><milestone unit="sent"/>Pour mettre l’Initié en garde contre ses propres
+                    lumières, on avait soin d’étaler d’avance sous ses yeux la punition mémorable de
+                    différents prêtres qui avaient voulu secouer le joug des croyances établies. <milestone unit="sent"/>Cette révolte contre la religion était personnifiée dans le supplice des Titans. <milestone unit="sent"/>Orphée vit, précipités et entassés au fond d’un abîme, ces géants audacieux ; il
+                    distingua parmi eux les deux fils d’Aloëus, qui passaient pour avoir voulu
+                    arracher à force de bras la voûte du ciel. <milestone unit="sent"/>On désignait, sous ces diverses
+                    allégories, des opinions personnelles, qui avaient manqué de diviser le collège
+                    des prêtres. <milestone unit="sent"/>Il y avait aussi Salmonée, qu’on montrait livré à de cruels
+                    supplices, pour avoir osé contrefaire l’éclat et la voix du tonnerre. <milestone unit="sent"/>Rien
+                    n’était plus en usage, parmi les prêtres d’Égypte, que de tromper les oreilles
+                    de la multitude par ces bruits imités de la foudre ou des autres phénomènes de
+                    la nature ; mais, on était convenu d’employer de tels moyens pour appuyer les
+                    croyances reçues, tandis que le novateur s’en était servi pour attirer le
+                    peuple à ses rêveries. <milestone unit="sent"/>Monté sur un char, traîné par quatre chevaux, une torche
+                    ardente à la main, il parcourait les villes en s’attribuant le rôle et les
+                    fonctions d’un révélateur. <milestone unit="sent"/>Cette usurpation de la divinité fit trembler le
+                    collège de Memphis ; les prêtres et les Initiés des autres villes de l’Égypte se
+                    réunirent pour perdre Salmonée, et comme l’autorité qu’ils exerçaient sur les
+                    esprits était fort grande, ils parvinrent à détruire les suites de cette
+                    révolte. <milestone unit="sent"/>On profita de sa défaite pour effrayer à l’avenir tous ceux qui
+                    auraient encore la fantaisie d’entreprendre contre l’immobilité du dogme. <milestone unit="sent"/>Comme
+                    les prêtres tenaient surtout à enlever de l’esprit de celui qui abordait les
+                    saints mystères, toute curiosité propre, tout attachement à ses vues
+                    personnelles, ils avaient eu soin de marquer <pb n="116" xml:id="p116"/>la chute
+                    de cet impie par un châtiment rigoureux. <milestone unit="sent"/>Orphée l’entendit crier d’une grande
+                    voix, qui courait d’écho en écho sous ces voûtes éternelles : <milestone unit="sent"/>« Apprenez, par
+                    mon exemple, à respecter les lois et à ne point mépriser les dieux ! »</p>
+                <p><milestone unit="sent"/>Orphée avait laissé derrière lui le Champ des larmes. <milestone unit="sent"/>Ici
+                    commençaient, à proprement parler, les épreuves de l’Initiation. <milestone unit="sent"/>Une rivière de
+                    feu, qui roulait dans son cours des rochers incandescents, soulevait de toutes
+                    parts ses vagues enflammées. <milestone unit="sent"/>Les prêtres d’Égypte excellaient, comme je vous
+                    l’ai déjà dit, dans l’art des illusions théâtrales. <milestone unit="sent"/>Votre opéra reproduit, je le
+                    sais, des effets semblables ; mais, je doute que ce soit avec cette vérité
+                    effrayante, qui montrait à l’Aspirant une mort inévitable sous les couleurs de
+                    l’incendie. <milestone unit="sent"/>Les figures hideuses qu’Orphée avait rencontrées dans les premiers
+                    cercles de l’Initiation reparurent à ses yeux. <milestone unit="sent"/>Il vit au milieu des flammes
+                    l’hydre, les dragons, les salamandres et le groupe sinistre des Furies. <milestone unit="sent"/>Un
+                    instant, Orphée sentit en lui la nature frémir ; mais, comme la volonté,
+                    soutenue d’un grand dessein, triomphe de tous les obstacles, il s’avança
+                    résolument à travers cette mer ignée, et sortit victorieux d’entre les flammes. <milestone unit="sent"/>Par cette épreuve du feu et par celles qui vont suivre, les prêtres voulaient
+                    faire entendre à l’Aspirant que la souffrance est la condition essentielle du
+                    perfectionnement de l’esprit et du corps.</p>
+                <p><milestone unit="sent"/>Le séjour ténébreux et souterrain des mânes a été plus d’une fois comparé, par
+                    les poëtes anciens, à un serpent qui engloutit les âmes dans sa gueule. <milestone unit="sent"/>Cette
+                    image est tirée, comme les autres, des lieux bas et rampants qui conduisaient
+                    l’Aspirant à la cérémonie des Initiations. <milestone unit="sent"/>Chaque cycle était, pour ainsi dire,
+                    comme un des anneaux de ce serpent caverneux. <milestone unit="sent"/>Orphée, étant sorti avec joie de
+                    l’épreuve du feu, trouva, quelque pas plus loin, un <pb n="117" xml:id="p117"
+                    />canal dont la largeur réelle était doublée par l’obscurité des lieux. <milestone unit="sent"/>L’eau
+                    entrait d’un côté dans le souterrain à travers des barreaux de fer et en sortait
+                    de l’autre côté par une grille. <milestone unit="sent"/>Ce canal, tiré du Nil, faisait à son entrée un
+                    grand bruit de cascade, qui se confondait avec les derniers pétillements des
+                    flammes. <milestone unit="sent"/>À la lueur projetée par la réverbération affaiblie de cette fournaise
+                    ardente, Orphée put découvrir au-delà du canal une arcade au dedans de laquelle
+                    il y avait des marches, dont les plus hautes se perdaient dans les ténèbres. <milestone unit="sent"/>Orphée jugea que c’était la porte par laquelle il devait revenir au jour. <milestone unit="sent"/>Il se
+                    dépouilla de ses vêtements qu’il mit sur sa tête après les avoir liés avec sa
+                    ceinture. <milestone unit="sent"/>Cela fait, il descendit dans le canal qu’il traversa à la nage, tenant
+                    toujours d’une main sa lyre hors de l’eau. <milestone unit="sent"/>– Je vous demande bien pardon de ce
+                    détail rococo ; mais, il faut que je me conforme en tout à la vérité
+                    historique.<milestone unit="sent"/>– Arrivé au bord opposé, il secoua sa chevelure mouillée, reprit ses
+                    vêtements, et s’engagea, en montant, sous l’arcade. <milestone unit="sent"/>C’était ici la seconde
+                    épreuve ; par sa victoire sur le feu et sur l’eau, l’âme de l’Aspirant montrait
+                    qu’elle était capable de dompter la violence même des éléments.</p>
+                <p><milestone unit="sent"/>Il ne lui restait plus qu’une épreuve à subir ; mais, c’était la plus difficile
+                    de toutes, l’épreuve par l’air. <milestone unit="sent"/>– Orphée trouva devant lui une porte recouverte
+                    tout entière de l’ivoire le plus blanc, et garnie dans le milieu de deux
+                    lisières d’or. <milestone unit="sent"/>Il tenta plusieurs fois de pousser les battants de cette porte,
+                    mais en vain ; la porte résista. <milestone unit="sent"/>Cependant, deux gros anneaux d’acier poli,
+                    attachés au linteau, brillaient comme le plus fin diamant. <milestone unit="sent"/>L’Aspirant ne pouvait
+                    manquer d’y porter les deux mains tendues, pour essayer si, par ce moyen, il
+                    pourrait forcer le passage. <milestone unit="sent"/>Ici des bouleversements fantastiques pour
+                    l’imagination <pb n="118" xml:id="p118"/>étonnée. <milestone unit="sent"/>Le premier mouvement qu’Orphée
+                    imprima à ces anneaux fit lever la détente de deux roues, qui, emportées par un
+                    poids énorme, produisirent plusieurs effets très-effrayants. <milestone unit="sent"/>La porte s’éleva
+                    aussi comme d’elle-même, en sorte qu’Orphée demeura suspendu en l’air. <milestone unit="sent"/>Au même
+                    instant un roulis de machines, pareil à l’éclat de la foudre, tonna sur sa tête,
+                    tandis que les flots se déchaînèrent sous ses pieds comme une tempête. <milestone unit="sent"/>Cette
+                    épreuve était véritablement la présence même de la mort par l’effroi du bruit et
+                    des ténèbres. <milestone unit="sent"/>Une roue, placée dans un grand vide, au-dessus de la porte,
+                    s’agita : ici, Orphée perdit la tête, et faute d’avoir saisi à temps les anneaux
+                    de cette roue, il sévit rejeté sur les marches de l’arcade.<milestone unit="sent"/>– Comment vous
+                    peindre sa confusion et sa douleur ? <milestone unit="sent"/>Tout était perdu à jamais, tout jusqu’à
+                    l’espoir de retrouver Eurydice. <milestone unit="sent"/>Dans sa tristesse, il prît son instrument et en
+                    toucha pour adoucir la rigueur des arbitres qui allaient présider à sa destinée. <milestone unit="sent"/>Les vers qu’il récitait, en s’accompagnant de la lyre, étaient remplis du nom
+                    des dieux.</p>
+                <p><milestone unit="sent"/>Ces lieux souterrains qui semblaient déserts étaient continuellement surveillés
+                    par les prêtres. <milestone unit="sent"/>Là, les ténèbres avaient des yeux ; le silence avait des
+                    oreilles. <milestone unit="sent"/>Il fut décidé qu’on se désisterait de la sévérité ordinaire des
+                    règlements, envers un étranger qui excellait à ce point dans la haute poésie. <milestone unit="sent"/>Le
+                    collège des prêtres de Memphis tenait à s’attacher ainsi tous les hommes doués
+                    de talents extraordinaires. <milestone unit="sent"/>À peine Orphée eut-il fait entendre l’harmonie de
+                    ses vers, que la fatale roue s’arrêta ; les flots courroucés se calmèrent ;
+                    forage de bruit qu’avait amené le choc des machines s’apaisa comme par
+                    enchantement ; on n’entendit plus que cette voix inspirée à laquelle le silence
+                    même semblait attentif.</p>
+                <p><milestone unit="sent"/>Alors le Grand-Prêtre, qui avait nom Minos, parût ; étendant <pb n="119"
+                        xml:id="p119"/>la main vers l’étranger qui conservait toujours l’altitude de
+                    la prière et de la douleur : <milestone unit="sent"/>« Orphée, lui dit-il, – car nous savons maintenant
+                    qui vous êtes – vos vers témoignent que vous révérez les dieux et que les dieux
+                    vous chérissent. <milestone unit="sent"/>Nous pardonnons à votre méprise en faveur de l’excellence de
+                    vos talents. <milestone unit="sent"/>Puisque vous êtes entré dans les abîmes, avec une intention droite,
+                    il est juste que vous voyiez enfin la lumière des âmes. <milestone unit="sent"/>Vous ne serez plus
+                    jamais prêtre ; – car cette dignité est réservée à ceux-là seuls qui n’ont
+                    manqué aucune des épreuves : <milestone unit="sent"/>– Mais, si vous sortez heureusement des épreuves
+                    morales qui vous restent à parcourir, vous pouvez encore atteindre au plus haut
+                    degré de l’Initiation. <milestone unit="sent"/>Nous exigeons seulement que, pour réparer votre faute,
+                    vous portiez nos doctrines dans la Grèce, votre patrie, dont la réputation nous
+                    est connue depuis longtemps, mais dont les mœurs et les croyances sont encore
+                    voisines de la barbarie. <milestone unit="sent"/>Vous êtes sans doute appelé à lui transmettre les vrais
+                    principes des choses que la grande Déesse vous révélera par notre bouche. <milestone unit="sent"/>Nous
+                    connaissons déjà le sujet de votre juste douleur et le but de votre voyage
+                    ténébreux ; vous pourrez retrouver ici Eurydice et la ramener avec vous à la
+                    lumière ; mais, il faut que vous commenciez par purifier votre âme. <milestone unit="sent"/>Préparez-vous donc à recevoir la communication des mystères. » <milestone unit="sent"/>Orphée ne
+                    répondit à ce discours que par des larmes de reconnaissance et de joie.</p>
+                <p><milestone unit="sent"/>Le Grand-Prêtre acheva sur Orphée les cérémonies de l’admission. <milestone unit="sent"/>L’ayant
+                    embrassé, il lui présenta une coupe pleine d’eau, et lui dit : <milestone unit="sent"/>« Buvez : que
+                    cette eau soit pour vous un breuvage de Léthé ou d’oubli à l’égard de toutes les
+                    maximes fausses que vous avez ouïes de la bouche des hommes profanes. » <milestone unit="sent"/>Il lui
+                    commanda ensuite de se prosterner du côté de <pb n="120" xml:id="p120"/>la
+                    triple statue d’Osiris, d’Isis et d’Horus. <milestone unit="sent"/>Le Grand-Prêtre ayant alors levé les
+                    yeux au ciel, prononça ces paroles sur l’Aspirant : <milestone unit="sent"/>« Isis, ô grande déesse des
+                    Égyptiens, donnez votre esprit au nouveau serviteur qui a surmonté tant de
+                    périls et de travaux pour se présenter à vous. <milestone unit="sent"/>Il est vrai que le jugement lui a
+                    manqué dans la dernière épreuve ; mais vous lui avez fait grâce en considération
+                    de la beauté de ses chants. <milestone unit="sent"/>Rendez-le maintenant docile à vos lois et
+                    attentif à vos oracles, afin qu’il mérite d’être admis à vos mystères. » <milestone unit="sent"/>– Tous
+                    les prêtres répétèrent en chœur les premières paroles de cette invocation : <milestone unit="sent"/>« Isis, ô grande déesse des Égyptiens !… » <milestone unit="sent"/>L’écho clapotant de leurs voix alla
+                    mourir de voûte en voûte dans la profondeur des souterrains. <milestone unit="sent"/>Le Grand-Prêtre
+                    offrit de nouveau, dans la même coupe, à Orphée, une liqueur composée, que les
+                    Grecs ont nommé <hi rend="i">Cyceon</hi>, en lui disant : <milestone unit="sent"/>« Que ceci vous soit
+                    maintenant un breuvage de Mnemosyne ou de mémoire pour les leçons que vous
+                    recevrez de la sagesse. » <milestone unit="sent"/>Les cérémonies n’allèrent pas plus loin, et Orphée fut
+                    invité à réparer ses forces en goûtant les douceurs du sommeil. <milestone unit="sent"/>Quoiqu’il n’eût
+                    encore passé qu’un jour dans ces abîmes, il lui semblait avoir marché plus d’un
+                    siècle, tant la succession rapide des images et des impressions effrayantes
+                    prolongeait, au-delà de toute idée, dans ces demeures ténébreuses, la durée
+                    réelle du temps.</p>
+                <p><milestone unit="sent"/>Vous voyez ici, à quelques nuances près, l’origine de toutes les Initiations en
+                    usage chez les peuples anciens et modernes. <milestone unit="sent"/>La première condition qu’on exigeait
+                    de l’Aspirant était de mourir à lui-même et de commencer une vie cherchée dans
+                    l’étude des mystères. <milestone unit="sent"/>C’est ce que les premiers chrétiens – dont quelques-uns
+                    étaient des Initiés, ou qui, du moins, avaient eu connaissance des anciennes
+                    pratiques du culte d’Isis – nomment, <pb n="121" xml:id="p121"/>dans un langage
+                    figuré, le dépouillement du vieil homme et le revêtement de l’homme nouveau.</p>
+                <p><milestone unit="sent"/>Les épreuves morales étaient extrêmement rudes ; elles consistaient en travaux de
+                    l’esprit, en jeûnes et en silence prolongés. <milestone unit="sent"/>On imposait à l’Aspirant les
+                    pratiques les plus bizarres, afin de broyer sa volonté propre sous une
+                    discipline inexorable. <milestone unit="sent"/>Comme l’Initié était quelquefois destiné à vivre dans des
+                    pays étrangers, et que les usages des différents peuples sont toujours des
+                    conventions, on voulait qu’il apprît d’avance à se conformer aux coutumes les
+                    plus singulières ou les moins importantes des lieux où il se trouverait. <milestone unit="sent"/>Dans
+                    l’austérité des veilles et de la retraite, on se proposait toujours le
+                    perfectionnement de l’adepte. <milestone unit="sent"/>Les Initiations aux mystères étaient une école
+                    pratique de religion et de morale, instituée par les anciens pour apprendre aux
+                    hommes à vivre, selon les principes de la sagesse. <milestone unit="sent"/>Les deux principaux exercices
+                    auxquels on soumettait l’Aspirant, avaient pour objet la purification de l’âme
+                    et la manifestation. <milestone unit="sent"/>– Je ne veux point exagérer ici le mérite ni la science des
+                    prêtres de Memphis ; ce serait nier la loi du progrès, que de leur supposer des
+                    lumières égales à celles des philosophes modernes. <milestone unit="sent"/>On peut dire, toutefois,
+                    qu’ils avaient des connaissances fort étendues, relativement à leur époque. <milestone unit="sent"/>Mais
+                    c’est un besoin de toutes les civilisations primitives de concentrer le noyau
+                    des traditions humaines et religieuses. <milestone unit="sent"/>L’ignorance est alors si générale et si
+                    contagieuse que les ténèbres ne manqueraient point d’offusquer la lumière, si
+                    l’on n’avait pas la précaution de la tenir sous le boisseau. <milestone unit="sent"/>On jette, dans ce
+                    cas, un voile impénétrable pour le vulgaire sur toutes les notions de la nature,
+                    de la morale et de la divinité. <milestone unit="sent"/>– Si ce voile se soulève pour quelques-uns, ce
+                    n’est que par une faveur singulière. <milestone unit="sent"/>Encore <pb n="122" xml:id="p122"/>faut-il
+                    que l’Initié acquière cette faveur, au prix de sacrifices et de violences sur
+                    lui-même. <milestone unit="sent"/>Toute idée se dérobait, en Égypte, sous un symbole ; et le trésor des
+                    connaissances humaines était enfoui dans des criptes fermés à la lumière du
+                    soleil. <milestone unit="sent"/>– La révélation des mystères exigeant un séjour plus ou moins long dans
+                    ces habitations souterraines, vous voyez d’ici l’origine de cette allégorie des
+                    anciens, qui représentait la vérité comme sortant de la bouche d’un puits.</p>
+                <p><milestone unit="sent"/>Je passe beaucoup des épreuves morales et des exercices qu’on faisait
+                    subir à l’Aspirant ; il est cependant une pratique d’austérité, que je ne dois
+                    point laisser dans l’oubli. <milestone unit="sent"/>On avait soin de lui ménager, dans les galeries, la
+                    rencontre assez fréquente des prêtresses. <milestone unit="sent"/>Ces femmes, dont la plupart étaient
+                    d’une grande beauté, ne manquaient jamais de lui faire, en passant, des
+                    révérences très-flatteuses. <milestone unit="sent"/>Il était défendu à l’Aspirant de leur parler et même
+                    de leur rendre le salut. <milestone unit="sent"/>On voulait que l’Initié s’habituât par cette réserve,
+                    qui dans tout autre cas eût été une impolitesse, à se tenir en garde contre les
+                    embûches d’un sexe trop charmant, – surtout quand ces attraits perfides se
+                    trouvent en concurrence avec le devoir. <milestone unit="sent"/>Cette épreuve, qui coûtait beaucoup aux
+                    honnêtes gens de Thèbes et de Memphis, ne fut d’ailleurs pas très-pénible pour
+                    Orphée ; car, il était tellement possédé de l’idée et de l’image d’Eurydice
+                    qu’il ne voyait même plus les autres femmes.</p>
+                <p><milestone unit="sent"/>Vous n’attendez pas de moi que je vous introduise dans tous les secrets de
+                    l’Initiation. <milestone unit="sent"/>Il me suffira de vous dire qu’Orphée traversa les jours suivant
+                    une foule de merveilles. <milestone unit="sent"/>Parcourir sous la direction d’un guide les souterrains
+                    et les édifices sacerdotaux, qui se continuaient pendant plus d’une lieue,
+                    c’était voyager dans un autre monde. <milestone unit="sent"/>Comme les anciens prêtres de <pb n="123"
+                        xml:id="p123"/>l’Égypte étaient fort versés dans l’histoire naturelle, dans
+                    la chimie et dans les sciences astronomiques, ils avaient des observatoires,
+                    avec des musées remplis d’instruments et de curiosités très-rares. <milestone unit="sent"/>La renommée
+                    qu’ils s’étaient acquise dans la connaissance du mouvement des astres leur a
+                    valu de mon ami Pline cet éloge légitime : qu’ils ont, pour ainsi dire, laissé
+                    le ciel en héritage à la postérité.</p>
+                <p><milestone unit="sent"/>Je dois aussi vous dire un mot du bœuf Apis, qu’Orphée aperçut entre les barreaux
+                    de son étable. <milestone unit="sent"/>Ce bœuf célèbre, qu’on noyait tous les vingt-cinq ans, était
+                    alors remplacé par un autre animal absolument semblable. <milestone unit="sent"/>– Vos écrivains ont
+                    beaucoup déraisonné sur les cérémonies indécentes qu’on
+                    pratiquait à l’installation du nouveau dieu. <milestone unit="sent"/>Des femmes du bas peuple et perdues
+                    de mœurs venaient, pendant les premiers jours, se présenter devant la face du
+                    bœuf, et là, debout, elles découvraient, en les lui montrant, des parties du
+                    corps que l’on n’ose même nommer. <milestone unit="sent"/>Les prêtres, qui, pour la plupart,
+                    condamnaient secrètement cette superstition infâme, jugeaient pourtant à propos
+                    de la conserver. <milestone unit="sent"/>La raison de cette conduite, je vous l’ai déjà exposée : les
+                    prêtres d’Égypte avaient pour principe de ne point toucher au culte, dans la
+                    crainte qu’un premier changement n’en entraînât d’autres plus considérables et
+                    qu’ainsi le dépôt des croyances nationales ne vînt à s’altérer. <milestone unit="sent"/>Ce qui leur
+                    aurait fait perdre à la longue leur crédit et leur influence sur l’esprit des
+                    autres hommes. <milestone unit="sent"/>Enfin, le goût de l’immobilité n’était point le seul motif qui
+                    fit tolérer ces pratiques scandaleuses. <milestone unit="sent"/>Les prêtres tenaient à perpétuer dans
+                    les rites religieux l’histoire des commencements de l’humanité. <milestone unit="sent"/>À la fête de
+                    Bubaste, à la procession de Canope, des femmes de la dernière classe, ivres
+                    d’opium, et oubliant toute loi naturelle <pb n="124" xml:id="p124"/>dans leurs
+                    accès de fureur, se livraient en public à des boucs. <milestone unit="sent"/>Ce n’est point, comme on
+                    l’a dit, un simple délire de religion : mais, en consacrant dans le culte ces
+                    actes qui révoltent toute morale, les prêtres voulaient montrer une des formes
+                    les plus abominables de l’amour, en usage chez presque tous les peuples
+                    barbares, et qui avait même longtemps régnée en Égypte. <milestone unit="sent"/>Il est bon de remettre
+                    de temps en temps sous les yeux de l’humanité son point de départ, pour qu’elle
+                    ne s’enfle pas trop de son origine et que, par les progrès accomplis, elle juge
+                    du chemin qui lui reste à parcourir encore.</p>
+                <p><milestone unit="sent"/>La population des demeures sacerdotales, se composait des prêtres avec leurs
+                    femmes – des Initiés – et des officiers voués au service des deux premiers
+                    ordres. <milestone unit="sent"/>Ces officiers étaient des Aspirants qui avaient manqué une des épreuves. <milestone unit="sent"/>Une loi sévère leur interdisait de revoir la lumière et de rentrer dans le
+                    monde. <milestone unit="sent"/>Ils habitaient les temples souterrains d’où ils ne sortaient jamais,
+                    parce qu’on ne voulait pas qu’ils pussent divulguer la nature des cérémonies
+                    auxquelles on soumettait l’Initié. <milestone unit="sent"/>Leur prison d’ailleurs n’avait rien de
+                    très-austère. <milestone unit="sent"/>Ils pouvaient se marier aux filles de leur ordre. <milestone unit="sent"/>On les
+                    obligeait, avant toutes choses, de faire savoir leur état à leur famille par
+                    cette formule obscure qu’ils écrivaient et signaient de leur main : <milestone unit="sent"/>« Pour avoir
+                    tenté une entreprise téméraire, les dieux justes et miséricordieux me retiennent
+                    à jamais dans une prison favorable ; craignez et aimez les dieux. » <milestone unit="sent"/>Cette
+                    formule les faisait regarder comme morts et délivrait les familles de tout
+                    engagement à leur égard. <milestone unit="sent"/>Ils étaient condamnés, en effet, à ne parler de leur
+                    vie avec aucun profane. <milestone unit="sent"/>Leurs enfants avaient plus tard la liberté de servir
+                    dans les temples supérieurs et même de parler à tout le monde comme les enfants
+                    des prêtres. <milestone unit="sent"/>On les contraignait préalablement <pb n="125" xml:id="p125"/>au
+                    secret par un serment qu’on ne daignait pas tirer de ceux qui, ayant failli
+                    à leurs épreuves, s’étaient, pour ainsi dire, manqué de parole à eux-mêmes. <milestone unit="sent"/>Orphée, qui aurait dû être retenu dans ces lieux souterrains, se montra touché
+                    du sort de ces hommes entreprenants et malheureux. <milestone unit="sent"/>Il en consacra même le
+                    souvenir dans la fable des Grecs. <milestone unit="sent"/>Hercule revenant avec Alceste des enfers, et
+                    Thésée condamné à y être éternellement assis, sont les deux symboles différents
+                    de ceux qui surmontaient leurs épreuves ou de ceux qui y succombaient.</p>
+                <p><milestone unit="sent"/>Les prêtres, ayant averti Orphée que la faveur de revoir Eurydice, était au prix
+                    de sa constance et de sa fermeté d’âme, rengagèrent à chercher surtout des
+                    forces dans l’étude de la théologie et de la morale. <milestone unit="sent"/>Comme ils avaient enveloppé
+                    toutes les connaissances divines et humaines sous des allégories, l’instruction
+                    du futur Initié consistait à lui dévoiler successivement le sens mystique des
+                    figures que le vulgaire adorait sans les comprendre. <milestone unit="sent"/>On n’avançait, d’ailleurs,
+                    que pas à pas dans cette voie ardue. <milestone unit="sent"/>La sagesse des prêtres avait même soin de
+                    modérer la curiosité inquiète de l’Aspirant, qui aurait voulu absorber tout de
+                    suite et, pour ainsi dire, d’un trait, les flots de lumières cachées derrière
+                    les symboles. <milestone unit="sent"/>On mettait sous ses yeux une image de la réserve qu’on doit
+                    apporter dans la recherche des secrets de la religion. <milestone unit="sent"/>Isis, couronnée d’un
+                    boisseau, était couverte d’un voile jusque vers le bas du visage ; Horus, son
+                    fils, tenait le doigt sur la bouche. <milestone unit="sent"/>Ces figures du mystère et du silence
+                    invitaient l’Aspirant à ne point vouloir pénétrer ce qui est impénétrable. <milestone unit="sent"/>Orphée trouvait un charme qu’on ne peut décrire à la manifestation de ces
+                    vérités obscurcies jusque-là, par d’épaisses ténèbres. <milestone unit="sent"/>L’élévation naturelle de
+                    son âme et de ses talents s’accrut de la grandeur même des dogmes religieux ;
+                        <pb n="126" xml:id="p126"/>appliquant alors le don des vers à des idées
+                    sublimes, il symbolisa dans des hymnes aujourd’hui perdues, le débrouillement du
+                    chaos, l’incompréhensibilité de Dieu, son état antérieur à la création du monde
+                    et quantité d’autres vues fort surprenantes. <milestone unit="sent"/>Il existe encore un dialogue entre
+                    Dieu et la Nuit, faussement attribué à ce poëte, mais dans lequel on a imité de
+                    loin le tour incomparable de son style.</p>
+                <p><milestone unit="sent"/>Connaître les croyances d’une nation, c’est connaître son esprit, ses mœurs. <milestone unit="sent"/>Cette considération seule m’engage à vous dire un mot de la religion des
+                    Égyptiens. <milestone unit="sent"/>– Ne vous effrayez pas, mesdames, je ne ferai qu’effleurer une
+                    matière si grave.<milestone unit="sent"/>– Quelques-uns de vos savants ont avancé que les Égyptiens
+                    étaient un peuple d’athées. <milestone unit="sent"/>Cette assertion est pour le moins légère. <milestone unit="sent"/>Il n’y a
+                    guère de peuples athées, en ce sens, qu’ils nient méthodiquement la nécessité
+                    d’un être supérieur à l’homme ; tout au plus, y a-t-il des tribus sauvages qui
+                    ignorent son existence. <milestone unit="sent"/>Les Égyptiens n’en étaient pas là. <milestone unit="sent"/>Si l’on rencontre
+                    quelque obscurité dans l’idée qu’ils se faisaient de cet Être unique, c’est que
+                    leur Dieu, comme celui de toutes les anciennes religions de la nature, était
+                    masqué par la puissance secondaire des agents créateurs.</p>
+                <p><milestone unit="sent"/>Ils avaient en effet divinisé tous ces agents subalternes, et de là vient
+                    l’idolâtrie dans laquelle le gros de la nation était réellement plongé. <milestone unit="sent"/>Selon la
+                    théologie admise dans les temples, le Chaos était le plus ancien des dieux du
+                    second ordre ; il figurait la matière première dont tous les êtres ont été
+                    formés. <milestone unit="sent"/>Par Vulcain, auquel ils n’assignaient point de commencement, les
+                    philosophes de l’Égypte entendaient le feu élémentaire répandu partout. <milestone unit="sent"/>Saturne
+                    personnifiait l’action du temps dans l’arrangement des phénomènes de l’univers. <milestone unit="sent"/>Isis et Osiris représentaient <pb n="127" xml:id="p127"/>les deux sexes de la
+                    nature. <milestone unit="sent"/>Typhon était le mauvais principe ; c’est à lui qu’on rapportait
+                    l’origine des plantes vénéneuses, des trombes marines, en un mot, de tous les
+                    fléaux qui désolent la terre. <milestone unit="sent"/>Mais, derrière ces dieux du second ordre, qui
+                    n’étaient guère que des énergies de la nature, déifiées sous une apparence
+                    humaine, il y avait un dieu distinct de la matière. <milestone unit="sent"/>Ce dieu unique était, je
+                    l’avoue, mal défini des savants eux-mêmes ; on ne le communiquait qu’aux
+                    prêtres, et par une faveur singulière, à quelques Initiés considérables. <milestone unit="sent"/>Ils le
+                    nommaient <hi rend="i">Phtha</hi> ; c’était l’architecte de l’univers, le dieu
+                    vivant, dont ils avaient personnifié la sagesse sous le nom de <hi rend="i"
+                        >Neith</hi>, qu’on représentait comme une femme qui sort d’un lion ; un
+                    autre attribut de cet Être suprême, que les Égyptiens avaient aussi personnifié,
+                    c’est la bonté divine ; ils l’appelaient <hi rend="i">Cnuph</hi> : <milestone unit="sent"/>– Vous voyez
+                    ici comme une esquisse de la trinité. <milestone unit="sent"/>À en croire quelques-uns de mes anciens
+                    collègues, cette notion triple de la divinité aurait été révélée aux Égyptiens
+                    par la vue du soleil, – lequel est en même temps forme, lumière et chaleur.</p>
+                <p><milestone unit="sent"/>Loin de perfectionner cette notion abstraite de l’unité divine, les prêtres
+                    cherchaient sans cesse dans la pratique à voiler les attributs de l’Être suprême
+                    sous toutes sortes de rapports avec les étoiles, la lune, les plantes, les
+                    animaux. <milestone unit="sent"/>Ces objets, honorés à leur tour comme des divinités mêmes,
+                    constituaient le culte symbolique, le seul auquel la majorité de la nation
+                    participât réellement. <milestone unit="sent"/>La nature n’était de la sorte qu’un vaste temple, où tout
+                    figurait, sous un style énigmatique, les innombrables propriétés de l’Être
+                    universel. <milestone unit="sent"/>De là vint la langue sacrée et l’écriture hiéroglyphique ; de
+                    là aussi ce culte de l’oignon et autres légumes, sur lequel vos modernes se sont
+                    fort égayés, mais dont ils ont perverti le sens, parce qu’ils n’ont point
+                    compris <pb n="128" xml:id="p128"/>la relation de ces objets, – dans l’idée des
+                    Égyptiens, – avec la théologie, c’est-à-dire avec la science secrète des
+                    puissances qui sont en Dieu.</p>
+                <p><milestone unit="sent"/>Orphée avait heureusement traversé la plupart des épreuves morales, quand les
+                    prêtres lui firent comprendre qu’il eut à purifier son amour même pour Eurydice. <milestone unit="sent"/>Ils le mirent en garde contre le désespoir qui pourrait naître d’une séparation
+                    éternelle, lui disant que l’homme vertueux doit toujours trouver des
+                    consolations dans l’étude de la sagesse. <milestone unit="sent"/>– Ces réticences inquiétaient fortement
+                    Orphée. <milestone unit="sent"/>Pour la première fois depuis son entrée au milieu de ces habitations
+                    souterraines, il versa des larmes dans la solitude et le silence. <milestone unit="sent"/>Les prêtres
+                    lui marquèrent par un visage sévère qu’ils avaient connaissance de sa faiblesse. <milestone unit="sent"/>On le prépara néanmoins à recevoir la communication des mystères touchant l’état
+                    des âmes après la mort. <milestone unit="sent"/>Un sujet, qui avait une relation si directe à Eurydice,
+                    ne pouvait qu’intéresser vivement Orphée.</p>
+                <p><milestone unit="sent"/>La magnificence de leurs tombeaux a fait dire que les Égyptiens s’occupaient plus
+                    du séjour éternel de l’autre vie que des maisons de passage où l’on habite sur
+                    la terre. <milestone unit="sent"/>Les prêtres avaient néanmoins diverses opinions sur la vie future, ou,
+                    pour mieux dire, ils communiquaient des notions différentes, suivant le degré
+                    d’avancement de leurs adeptes. À les en croire, l’âme passe d’animaux en animaux
+                    jusqu’à ce qu’elle s’incarne dans un corps humain, au bout de trois mille ans. <milestone unit="sent"/>Qu’advient-il ensuite à la mort de l’individu ? <milestone unit="sent"/>Tout le monde était d’accord sur
+                    ce point que le principe immatériel de la vie persistait ; mais les uns
+                    voulaient que l’âme retournât dans le corps des bêtes pour s’y purifier de
+                    nouveau ; les autres soutenaient que l’homme, ayant vécu une fois, ne pouvait
+                    renaître que dans <pb n="129" xml:id="p129"/>l’humanité ; enfin, les derniers
+                    admettaient un système de peines et de récompenses fondé sur l’existence d’une
+                    autre vie. <milestone unit="sent"/>Les Égyptiens ne reconnaissaient pas de châtiments éternels : tous
+                    les crimes étaient, selon eux, susceptibles d’expiation. <milestone unit="sent"/>Ils croyaient, en
+                    conséquence, à un purgatoire appelé en leur langue <hi rend="i">Amenthès</hi> ;
+                    mais, de cet endroit mystérieux, aucun chemin ne conduisait directement au
+                    ciel ; tous ceux qui entraient dans l’Amenthès devaient un jour ressusciter et
+                    ranimer le même corps ou la même matière qu’ils avaient animée une première
+                    fois. <milestone unit="sent"/>Vous voyez d’ici l’origine de la pratique des embaumements. <milestone unit="sent"/>Les
+                    philosophes et ceux qui avaient embrassé la vertu la plus rigide, étaient les
+                    seuls dont l’âme allât directement habiter avec les dieux, sans passer par la
+                    résurrection. <milestone unit="sent"/>Mais, comme aucun n’était assuré d’avance de cette faveur
+                    extraordinaire, tout le monde se faisait embaumer par précaution ; afin que
+                    l’âme, de retour sur la terre, au sortir de ses purifications et de ses
+                    épreuves, trouvât un corps bien conservé et tout prêt à la recevoir. <milestone unit="sent"/>L’Initié
+                    était censé jouir de grands avantages sur les autres hommes ; il transportait
+                    dans l’autre vie la supériorité intellectuelle et morale qu’il avait acquise
+                    dans le commerce des prêtres ; encore fallait-il qu’il conformât sa vie aux
+                    vrais principes ; car l’Initiation, sans la vertu, ne servait de rien.</p>
+                <p><milestone unit="sent"/>Orphée fut ravi de cette doctrine sur l’immortalité des âmes. <milestone unit="sent"/>Le Grand-Prêtre,
+                    vêtu d’une robe de lin, avec une couronne de lotos sur sa tête rasée, et une
+                    chaussure aux pieds, faite de la tige du papyrus, montra soudain à l’Aspirant
+                    une figure solennelle</p>
+                <p><milestone unit="sent"/>– Vous touchez, lui dit-il, au moment décisif de votre entreprise. <milestone unit="sent"/>Préparez-vous à entrer dans ce séjour surnaturel, où les âmes des justes qui
+                    n’ont point été trouvées dignes néanmoins <pb n="130" xml:id="p130"/>de la vue
+                    immédiate des dieux, achèvent de se dépouiller de la rouille d’une vie
+                    terrestre. <milestone unit="sent"/>Vous y reverrez Eurydice. <milestone unit="sent"/>Il ne tiendra qu’à vous de la ramener à la
+                    lumière : mais, comme aucun chemin ne conduit directement de cet endroit-là au
+                    tombeau des Étrangers, il vous faudra repasser avec elle dans les souterrains où
+                    vous avez passé, et sortir par la bouche du puits où vous êtes entré. <milestone unit="sent"/>Les dieux,
+                    touchés de l’excellence de vos chants, vous accordent ce qu’ils refusent aux
+                    autres mortels. <milestone unit="sent"/>Ils ne mettent à cette faveur extraordinaire qu’une condition,
+                    c’est qu’Eurydice vous suivra par derrière et que vous ne retournerez point la
+                    tête pour la regarder. »</p>
+                <p><milestone unit="sent"/>Il dit : la femme du Grand-Prêtre, qui était d’une beauté austère et rigide,
+                    confirma ce pacte en levant la main vers le ciel avec un geste d’autorité
+                    divine.</p>
+                <p><milestone unit="sent"/>Un jeûne de plusieurs jours précéda l’entrée d’Orphée dans ces lieux interdits
+                    aux profanes. <milestone unit="sent"/>Durant le silence de cette retraite, qui durait quelquefois deux
+                    semaines, on préparait les sens de l’Initié à toutes sortes d’impressions
+                    fantastiques. <milestone unit="sent"/>Les prêtres de l’Égypte excellaient à produire des hallucinations
+                    artificielles. <milestone unit="sent"/>Ils se servaient pour cela de moyens combinés. <milestone unit="sent"/>Je me souviens, en
+                    ce moment, d’un baume qui avait la propriété de garantir les membres de l’action
+                    du feu, en sorte que les Aspirants, frottés de cette substance préservatrice,
+                    traversaient les flammes sans brûlure et sans douleur. <milestone unit="sent"/>Ils avaient quantité
+                    d’autres secrets pour troubler ou suspendre, du moins en apparence, les lois de
+                    la nature. <milestone unit="sent"/>Certains breuvages, extraits du suc des plantes narcotiques,
+                    procuraient à l’Initié des visions fort délicates. <milestone unit="sent"/>Ils agissaient de même sur
+                    les sens par les seules forces de la volonté, par des signes ou par des paroles
+                    auxquels ils attachaient une vertu occulte. <milestone unit="sent"/>Il leur arrivait ainsi <pb n="131"
+                        xml:id="p131"/>d’exercer toutes sortes de fascinations magnétiques. <milestone unit="sent"/>Vous me
+                    direz peut-être que de telles influences étaient de véritables supercheries ;
+                    j’en conviens : mais, comme nous ne nous servions de ces ruses innocentes que
+                    pour graver plus fortement des leçons de morale dans l’esprit de l’Initié, le
+                    but excusait les moyens.</p>
+                <p><milestone unit="sent"/>Quand<note place="bottom" resp="KS">Nous corrigeons « Quant » par
+                        « Quand ».</note> Orphée fut jugé en état d’aborder ces lieux enchantés,
+                    auxquels vos poëtes ont donné le nom de Champs-Élysées, le Grand-Prêtre lui
+                    rappela une dernière fois le commandement des dieux. <milestone unit="sent"/>– Il faut se représenter
+                    ici un jardin d’environ trois quarts de lieue de longueur, du nord au midi,
+                    suivant l’enfilade des pyramides, sur neuf cents pas de largeur d’Orient en
+                    Occident. <milestone unit="sent"/>On était amené dans l’Élysée par huit grandes allées parallèles qui
+                    touchaient à distances égales toute la ville souterraine, et qui commençaient en
+                    quelque sorte le jardin, puisqu’elles étaient ornées aux deux côtés de grands
+                    vases de fleurs ou d’arbrisseaux odoriférants. <milestone unit="sent"/>Les prêtres avaient employé, pour
+                    embellir ces lieux, tout ce que peut inventer l’imagination humaine, élevée aux
+                    idées poétiques. <milestone unit="sent"/>Le jour se tirait d’en haut dans toute l’étendue du jardin ;
+                    mais, comme cette lumière tombait jusqu’au sol d’une hauteur de cent quarante
+                    pieds, elle était un peu affaiblie ; les ombres des arbres, dont ce jardin était
+                    rempli, la modérant encore, on croyait jouir constamment d’un clair de lune. <milestone unit="sent"/>Ce
+                    jour, égal et mystérieux, qui semblait moins fait pour les yeux du corps que
+                    pour la vision de l’âme, répandait sur les êtres et sur les objets présents dans
+                    cet endroit un air d’éternité. <milestone unit="sent"/>Orphée pénétra dans ces demeures secrètes, dans
+                    ces bocages verts où les âmes pieuses goûtent une félicité tranquille. <milestone unit="sent"/>À la vue
+                    de cette lumière tempérée si favorable aux douces rêveries, il donna
+                    mentalement à l’Élysée des <pb n="132" xml:id="p132"/>astres et un soleil
+                    particulier, quoique ce jardin ne fût éclairé, après tout, que par le soleil et
+                    les astres de notre monde.</p>
+                <p><milestone unit="sent"/>Une erreur, dans laquelle tous vos écrivains sont tombés, est de croire que les
+                    Champs-Élysées fussent le terme de la béatitude de l’âme après la mort. <milestone unit="sent"/>Non, ce
+                    n’était encore qu’un lieu d’épreuves et de purifications. <milestone unit="sent"/>J’avoue que la
+                    pénitence y était fort douce ; mais, toutes ces âmes n’en devaient pas moins
+                    retourner sur la terre, quand elles auraient accompli leur évolution expiatoire. <milestone unit="sent"/>J’avais mis le poëte Virgile en garde contre cette méprise. <milestone unit="sent"/>Aussi, a-t-il fort
+                    bien indiqué, dans ses vers sur l’Élysée, que les âmes, après avoir dépouillé
+                    toutes les souillures de leur existence terrestre, se portaient
+                    d’elles-mêmes à vouloir rentrer dans leurs corps :</p>
+                <quote>
+                    <l><milestone unit="sent"/>Rursus et incipiant in corpora velle reverti.</l>
+                </quote>
+                <p><milestone unit="sent"/>Ce délicieux jardin était partagé en allées, en bosquets, en labyrinthes, ornés
+                    de statues admirables et de merveilleux groupes de bronze, de marbre ou de
+                    porphyre. <milestone unit="sent"/>Les planches des parterres étaient de longues caisses enfoncées
+                    jusqu’aux bords, et remplies de terres apportées, où croissaient non-seulement
+                    les fleurs les plus brillantes, mais encore des arbrisseaux délicats comme le
+                    myrthe, le laurier et l’oranger. <milestone unit="sent"/>Dans le milieu de tout le terrain, on avait
+                    conservé de grands espaces qui servaient d’arène ou de cirque pour divers
+                    exercices du corps. <milestone unit="sent"/>On accoutumait à ces jeux les enfants des prêtres et ceux
+                    des officiers secondaires qui avaient besoin, dans leurs différentes fonctions,
+                    de beaucoup d’adresse. <milestone unit="sent"/>Le but d’une telle gymnastique, était de perfectionner
+                    tous leurs mouvements ; ces jeunes gens, ainsi formés, attiraient plus tard dans
+                    les temples un grand concours de peuple, par l’élégance et la noblesse avec
+                    laquelle ils exécutaient <pb n="133" xml:id="p133"/>les nombreuses cérémonies de
+                    la religion. <milestone unit="sent"/>L’Initié, dont toutes les sensations étaient préparées d’avance
+                    pour des effets surnaturels, voyait dans ces différents spectacles les exercices
+                    et les amusements des ombres heureuses. <milestone unit="sent"/>Orphée crut même reconnaître parmi ces
+                    lutteurs, et à côté d’eux, des guerriers célèbres dans l’histoire. Il fut
+                    surpris de voir, à portée de leurs mains, différentes armes et des chars dont
+                    ils étaient descendus. <milestone unit="sent"/>Leurs lances étaient plantées en terre et leurs chevaux
+                    dételés paissaient librement dans la prairie. <milestone unit="sent"/>Les prêtres voulaient montrer par
+                    cette similitude que les goûts de l’homme, les nobles inclinations qui l’avaient
+                    animé dans ce monde, se continuaient au-delà du trépas. <milestone unit="sent"/>La vie future était
+                    ainsi dans leurs idées une suite, un prolongement de l’existence de l’homme sur
+                    la terre.</p>
+                <p><milestone unit="sent"/>Plus loin s’étendait une prodigieuse nappe d’eau, que les yeux, trompés par
+                    l’élévation et la distance, voyaient sortir du sein des nues, et qui, après
+                    avoir formé de grands canaux s’écoulait, comme toutes les eaux du souterrain,
+                    dans des puits perdus. <milestone unit="sent"/>Orphée vit assis à droite et à gauche de ce lac fortuné,
+                    d’autres ombres couchées sur des lits de gazon, qui se livraient à des
+                    collations frugales et qui chantaient en chœur des cantiques à la gloire des
+                    dieux. <milestone unit="sent"/>Là, étaient les poëtes touchés du vrai rayon, qui avaient composé,
+                    pendant leur vie, des vers dignes de mémoire, et les anciens mortels qui avaient
+                    contribué au bien-être de la société par l’invention des arts. <milestone unit="sent"/>Orphée, tout en
+                    marchant, remarqua la beauté des campagnes d’alentour, dont un vent léger
+                    agitait les arbrisseaux et les fleurs. <milestone unit="sent"/>– Les prêtres avaient, pour ainsi dire,
+                    trouvé le moyen de retenir l’haleine des vents par la disposition de ces lieux
+                    qu’abritait la masse puissante des constructions circulaires. <milestone unit="sent"/>Par-dessus tous
+                    ces édifices dominait le Panthéon ; c’est là que les élus du sacerdoce <pb
+                        n="134" xml:id="p134"/>entraient, après un séjour et une retraite de
+                    plusieurs mois dans l’Élysée. <milestone unit="sent"/>On y recevait le complément de la science et des
+                    traditions religieuses. <milestone unit="sent"/>Les Aspirants, qui arrivaient jusqu’à ce dernier degré
+                    de l’Initiation, étaient censés les plus parfaits des hommes ; ils jouissaient
+                    de tout le bonheur et de la considération qu’on peut avoir sur la terre. <milestone unit="sent"/>Mais,
+                    Orphée, à cause de sa faute, ne devait point parvenir jusqu’au terme des
+                    épreuves. <milestone unit="sent"/>Sa fatale passion pour Eurydice allait l’arrêter à cette limite de la
+                    révélation des mystères.</p>
+                <p><milestone unit="sent"/>« Eurydice, ah ! chère Eurydice ! » <milestone unit="sent"/>– Ce fut le cri d’Orphée, en voyant une forme
+                    blanche comme la lumière du matin voltiger dans l’épaisseur d’un bois, qui
+                    versait tout à l’entour une fraîcheur éternelle. <milestone unit="sent"/>Il saisit sa lyre et tâcha par
+                    l’harmonie de ses vers de fixer l’incertitude de cette ombre flottante. <milestone unit="sent"/>L’âme,
+                    qui descendait dans les Enfers, était, selon la théologie des anciens prêtres de
+                    l’Égypte, la partie déliée et subtile dont l’esprit était revêtu ; ils
+                    l’appelaient <hi rend="i">idole</hi> ou <hi rend="i">image</hi>. <milestone unit="sent"/>Elle conservait
+                    la figure et les qualités du corps qu’elle avait habité. <milestone unit="sent"/>À peine Orphée eut-il
+                    fait reconnaître à Eurydice l’air de sa figure et le son de sa voix, qu’il se
+                    souvint de la formidable défense du Grand-Prêtre. Il retint ses mains
+                    tremblantes, il refoula dans sa poitrine émue les accents de surprise et de joie
+                    qu’allait lui arracher la vue de son amante ; fut-il jamais au monde situation
+                    plus pathétique ?… <milestone unit="sent"/>Il ne fallut rien moins que la crainte de la perdre de
+                    nouveau pour lui imposer cette réserve cruelle. <milestone unit="sent"/>Loin de courir à Eurydice, il
+                    lui tourna brusquement le dos et marcha devant elle pour lui ouvrir un chemin
+                    vers la vie. <milestone unit="sent"/>Orphée revenait sur ses pas ; un peu plus, il avait évité tous les
+                    dangers et surmonté toutes les fatigues de ce pénible voyage. <milestone unit="sent"/>Il précédait
+                    Eurydice en silence – sans la voir. <milestone unit="sent"/>– C’était la <pb n="135" xml:id="p135"
+                    />condition dictée par le Grand-Prêtre. <milestone unit="sent"/>Déjà les deux amants avaient repassé ces
+                    lieux obscurcis par les ténèbres et par l’horreur de la mort ; ils
+                    s’acheminaient vers la lumière ; quand je ne sais quelle démence saisit le trop
+                    faible amoureux : faute bien pardonnable sans doute, si les prêtres savaient
+                    pardonner ! <milestone unit="sent"/>Arrivé presque à l’embouchure du puits, au moment où une demi-
+                    clarté annonçait un retour prochain au monde extérieur, il s’arrêta. <milestone unit="sent"/>Puis,
+                    soudain, oublieux des ordres qu’on lui avait donnés, vaincu par ses désirs,
+                    impatient de la voir, il se retourne. <milestone unit="sent"/>– Ici, tout s’évanouit, ses travaux, ses
+                    efforts ; le pacte juré se rompt, et l’abîme tressaille par trois fois, avec un
+                    bruit épouvantable. <milestone unit="sent"/>Un moment d’oubli avait détruit son bonheur. <milestone unit="sent"/>Alors Eurydice,
+                    tournant vers lui des yeux mourants : <milestone unit="sent"/>« Quel délire nous a perdu tous deux, cher
+                    Orphée ? <milestone unit="sent"/>Je te revois, mais pour jamais. <milestone unit="sent"/>Les cruels destins me rappellent au
+                    fond de l’abîme. <milestone unit="sent"/>L’éternelle nuit presse mes yeux noyés par le sommeil. <milestone unit="sent"/>Adieu. Je suis emportée malgré moi dans les épaisses ténèbres, et je ne puis que te
+                    tendre mes mains impuissantes – ces mains qui ne sont déjà plus celles de ton
+                    épouse. » <milestone unit="sent"/>Elle dit ; en vain Orphée veut se jeter sur elle pour la retenir. <milestone unit="sent"/>Il
+                    ne la voit plus. <milestone unit="sent"/>Un horrible artifice l’avait soustraite à ses yeux. <milestone unit="sent"/>Éploré, il
+                    demande à repasser le marais odieux, pour rejoindre Eurydice dans le fond de ces
+                    demeures souterraines. <milestone unit="sent"/>Vaine prière ! l’impitoyable nocher lui défend
+                    d’approcher de ces bords. <milestone unit="sent"/>Pour comble de douleur, il revoit alors son Eurydice
+                    qui voguait pâle et froide sur la fatale barque.</p>
+                <p><milestone unit="sent"/>Accablé par son désastre, Orphée ne bougeait pas plus que s’il eût été frappé de
+                    la foudre. <milestone unit="sent"/>Alors, le Grand-Prêtre intervint avec une gravité mêlée de
+                    tristesse : <milestone unit="sent"/>« Orphée, lui dit-il, la volonté des dieux est inflexible ; leurs
+                    arrêts sont irrévocables.</p>
+                <p><pb n="136" xml:id="p136"/><milestone unit="sent"/>Vous avez manqué la dernière et la plus
+                        importante<note place="bottom" resp="KS">Nous corrigeons « importantes » par
+                        « importante ».</note> des épreuves : vous ne pouvez remmener de ces lieux
+                    votre amante. <milestone unit="sent"/>Nous vous avons appris à chercher des consolations dons la sagesse
+                    et dans l’étude des mystères de la nature. <milestone unit="sent"/>Retournez présentement en Grèce,
+                    où vous serez honoré dans la suite des temps comme un demi-dieu. <milestone unit="sent"/>Que la poésie
+                    ait désormais tous vos amours : elle seule vous tiendra lieu de cette femme trop
+                    chérie, que vous avez perdue par votre faute. »</p>
+                <p><milestone unit="sent"/>Le Grand-Prêtre le salua ; Orphée, voyant que toute résistance était inutile,
+                    quitta tristement ces lieux complices de sa faiblesse. »</p>
+                <p><milestone unit="sent"/>Ici, le docteur mystérieux promena sur le cercle des auditeurs un regard
+                    pénétrant. – « Je lis, continua-t-il, que votre curiosité n’est pas satisfaite. <milestone unit="sent"/>Vous vous demandez si cette femme, qu’Orphée rencontra dans l’Élysée, était une
+                    de ces images illusoires auxquelles un art, fort cultivé dans les temples
+                    d’Égypte, savait donner une ressemblance avec les personnes vivantes, – ou bien
+                    si c’était Eurydice elle-même, qui avait été transportée par la main des prêtres
+                    dans les souterrains de l’Initiation. »</p>
+                <p><milestone unit="sent"/>Le docteur s’arrêta comme troublé.</p>
+                <p><milestone unit="sent"/>« Les serments qu’on nous faisait jurer, reprit-il, étaient tellement solennels,
+                    la violation de ces serments entraînait des peines si effroyables, que j’hésite
+                    encore, après plusieurs existences successives, à trahir les secrets de notre
+                    Ordre. <milestone unit="sent"/>Tout ce que je puis vous dire, c’est qu’Eurydice n’était point morte, au
+                    moment où elle fut descendue dans le tombeau des Étrangers ; elle était
+                    seulement évanouie. <milestone unit="sent"/>Le venin du serpent, qui l’avait mordue au talon, avait pour
+                    propriété de verser dans le sang un sommeil et un engourdissement léthargique. <milestone unit="sent"/>Cet état <pb n="137" xml:id="p137"/>présentait aux yeux les mieux exercés toutes
+                    les apparences d’une mort réelle. <milestone unit="sent"/>Mais les prêtres d’Égypte, par la connaissance
+                    qu’ils avaient acquise depuis plusieurs siècles de leur climat, étaient les
+                    premiers médecins de la terre. <milestone unit="sent"/>Ils possédaient surtout, contre la blessure des
+                    différents reptiles, des remèdes occultes dont la vertu était infaillible. <milestone unit="sent"/>À l’aide de frictions énergiques, ils rappelèrent la chaleur et la vie sur les
+                    membres glacés de la jeune femme. <milestone unit="sent"/>Eurydice mena quelque temps une vie
+                    très-douce, parmi les femmes des prêtres, dans cet endroit ouvert à la lumière
+                    du jour, qu’on nommait les Champs-Élysées. <milestone unit="sent"/>Ignorante du sort réservé à son mari,
+                    elle charmait les ennuis de cette séparation par les agréments dont on jouissait
+                    dans une retraite si paisible. <milestone unit="sent"/>Cependant les prêtres qui s’étaient servis, comme
+                    nous l’avons vu, d’un amour inconsolable, pour attirer Orphée dans les
+                    profondeurs de l’Initiation, découvrirent bientôt par l’étude attentive de son
+                    caractère, qu’il était faible et voluptueux, comme la plupart des poètes. <milestone unit="sent"/>Ils
+                    craignirent que l’attrait d’une vie molle n’étouffât chez lui le don
+                    inappréciable des vers. <milestone unit="sent"/>Ces hommes sévères avaient pour principe de sacrifier
+                    constamment la nature à la société. <milestone unit="sent"/>En imposant à Orphée une dernière épreuve,
+                    qui passait peut-être ses forces, ils avaient tout concerté pour le cas où il
+                    viendrait à faillir. <milestone unit="sent"/>Je les soupçonne même d’avoir fait boire
+                    d’avance à Eurydice une de ces liqueurs narcotiques, d’un effet si puissant
+                    entre leurs mains, que de tels breuvages plongeaient au bout de quelques heures
+                    les personnes délicates, dans un pâle sommeil, voisin de la mort. <milestone unit="sent"/>– C’est ainsi
+                    qu’Orphée, après sa faute, ne trouva plus devant ses yeux qu’une femme
+                    prête à s’évanouir.</p>
+                <p><milestone unit="sent"/>Je termine, en quelques mots, l’histoire de cet amant malheureux. <milestone unit="sent"/>Exilé de ville
+                    en ville par l’exès de sa douleur, il institua <pb n="138" xml:id="p138"
+                    />pourtant en Grèce les mystères de Cérés Éleusine. <milestone unit="sent"/>Ces mystères sont
+                    visiblement imités des cérémonies qu’Orphée avait vu pratiquer dans l’Initiation
+                    isiaque. <milestone unit="sent"/>La tristesse de ces anciens rites est une suite de l’humeur noire des
+                    Égyptiens ; Orphée y ajouta sa mélancolie propre et une doctrine particulière
+                    sur la nature des dieux. <milestone unit="sent"/>Plus tard, les hiérophantes grecs firent de grands
+                    changements à cette institution qui dégénéra comme toutes les autres. <milestone unit="sent"/>Avec le
+                    temps, les Initiations perdirent le caractère sombre et dur qu’elles
+                    avaient à l’origine ; les mystères où elles conduisaient ne furent plus tenus si
+                    secrets, et la lumière se répandit sur le monde à travers les fentes du
+                    boisseau.</p>
+                <p><milestone unit="sent"/>Cependant, Orphée ne pouvait ni vaincre ni adoucir son tourment ; il se retira de
+                    nouveau en Thrace, sur les bords déserts du Strymon. <milestone unit="sent"/>Le caractère âpre de ces
+                    rocs et de ces antres glacés convenait à sa douleur rigide. <milestone unit="sent"/>La triste conformité
+                    d’une telle nature avec son âme désolée lui inspira de l’amitié pour ces lieux
+                    sauvages. <milestone unit="sent"/>Il trouva aussi quelque soulagement à son chagrin dans la poésie, où
+                    il excella si fort, que l’écho de ses chants survit encore à la perte totale de
+                    ses vers. <milestone unit="sent"/>La souffrance lui fit découvrir des notes profondes et stridentes,
+                    qu’il avait sans doute dans le cœur, mais qu’il ne s’était point
+                    révélées à lui-même. <milestone unit="sent"/>La privation, en doublant la valeur réelle des objets,
+                    donne aux sentiments et aux désirs une puissance infinie. <milestone unit="sent"/>Aussi la Providence,
+                    qui a fait les poètes pour chanter, les réduit-elle le plus souvent à des
+                    épreuves douloureuses, en leur refusant tous les biens réels et imaginaires. <milestone unit="sent"/>Elle n’en agit si rudement à leur égard que par respect et par amour de leurs
+                    talents, qui s’énerveraient dans le bonheur. <milestone unit="sent"/>La grappe foulée dans le pressoir
+                    verse le jus qui réjouit l’homme ; le grain broyé sous la meule donne la
+                    nourriture de chaque jour : de même <pb n="139" xml:id="p139"/>les beaux vers,
+                    qui sont l’ambroisie des connaisseurs, ont-ils besoin d’être préparés par des
+                    angoisses morales. <milestone unit="sent"/>L’âme du poëte est comme la chicorée sauvage, qui, privée
+                    d’air et de jour au fond des caves, comprimée sous une rude couche de sable,
+                    trouve encore moyen de croître, et revêt alors une couleur délicate qui
+                    plaît à l’œil.</p>
+                <p><milestone unit="sent"/>De là vient que les poëtes ne sont généralement pas heureux en amour :
+                    <milestone unit="sent"/>– Permettez-moi à ce sujet, mesdames, une digression qui me semble un des
+                    chapitres les plus intéressants de l’histoire du cœur humain.</p>
+                <p><milestone unit="sent"/>Les maîtres de la lyre passent généralement dans le monde pour des
+                    hommes à bonnes fortunes ; or, mon avis est, qu’ils sont au contraire pour la
+                    plupart fort maltraités des femmes. <milestone unit="sent"/>Leur seuil, qu’on se figure assailli nuit et
+                    jour par de pâles colombes blessées au cœur, est, au contraire, le plus
+                    abandonné qui soit au monde ; leur valet de chambre n’aurait que faire d’être
+                    eunuque ; leur table a beau être chargée de <hi rend="i">Bouquets à Chloris
+                        ou à Daphné</hi>, ce sont là des fleurs qu’on voit se faner et vieillir chez
+                    eux sans qu’une blanche main les cueille. <milestone unit="sent"/>L’amour est la terre promise des
+                    poëtes ; comme Moïse, ils la chantent, ils la poursuivent, ils la voient du haut
+                    de la colline, mais ils n’y entrent pas.</p>
+                <p><milestone unit="sent"/>Si quelqu’un pourtant devait être aimé, c’est le poëte, sans contredit, ce prêtre
+                    de la forme et de l’esprit, ce dieu qui peut rendre immortel le sujet de sa
+                    passion. <milestone unit="sent"/>Comment se fait-il que les choses se passent tout autrement depuis des
+                    temps fort anciens ? <milestone unit="sent"/>Ceux qui, parmi les Grecs, ont le mieux chanté Cythéréa, la
+                    blonde déesse, et son divin fils, le dieu Erôs, le petit enfant à la flèche, en
+                    ont tous été fort mal récompensés. <milestone unit="sent"/>Les poëtes érotiques que le lecteur bénévole
+                    se figure, sur quelques vains <pb n="140" xml:id="p140"/>récits, couchés toute
+                    leur vie dans des lits de pourpre teinte deux fois, avec une ceinture de deux
+                    bras blancs et polis autour du cou, n’ont jamais obtenu que des faveurs
+                    vulgaires et achetées à prix d’or. <milestone unit="sent"/>Anacréon, le poëte de Théos, qui, les tempes
+                    humides et couronnées d’ache, les cheveux noirs mi-bouclés, la barbe taillée,
+                    parfumée et onctueuse, la coupe d’or pleine de vin de Lesbos ou de Schio sur sa
+                    table, chantait en s’accompagnant de sa petite lyre d’ivoire à sept cordes, un
+                    hymne, à la colombe ou à l’amour, mourut sans avoir séduit aucune honnête femme
+                    de son temps. <milestone unit="sent"/>Nous ne comptons pas, en effet, les beautés qu’il eut comme
+                    esclaves à prix d’argent, et que tout autre, sans être poëte érotique, Ionien et
+                    melliflu eût pu se procurer aussi bien qu’Anacréon de Théos. <milestone unit="sent"/>Mais, nulle fille
+                    d’Athènes, de Corinthe ou de Crête, où les filles étaient blanches, ne
+                    vint à lui librement ; et parmi les deux ou trois cents beautés dont il fut
+                    très-amoureux, le poëte oublie, et pour cause, de nous dire le nom de la femme
+                    qui l’aima.</p>
+                <p><milestone unit="sent"/>Euripide, le plus tendre des tragiques grecs, épousa deux femmes à la fois, sans
+                    doute, dans la crainte d’en manquer. <milestone unit="sent"/>– Toutes les deux l’abandonnèrent pour
+                    d’autres hommes. <milestone unit="sent"/>Il s’en vengea par de longues déclamations contre le sexe, où
+                    perce l’âcreté d’un amour aigri et tourné en haine. <milestone unit="sent"/>Ses deux femmes venaient
+                    assister aux représentations dramatiques du poëte et applaudissaient, je les ai
+                    vues, pour montrer leurs mains qui étaient blanches.</p>
+                <p><milestone unit="sent"/>Horace, chez lequel j’ai fait de très-bons dîners dans sa petite maison de
+                    campagne, à Tusculum, désespérant des dames romaines, ne s’adressa guère qu’à
+                    des courtisanes où à des affranchies, et encore en fut-il fort maltraité. <milestone unit="sent"/>Pyrrha
+                    le laissa <pb n="141" xml:id="p141"/>pour un jeune garçon mieux parfumé que lui. <milestone unit="sent"/>Lydie lui préféra Téléphe, qui avait le cou rose et les bras blancs comme la
+                    cire. <milestone unit="sent"/>Glycère se montra intraitable malgré les sacrifices, les serments et les
+                    beaux vers que le poëte lui fit. <milestone unit="sent"/>Chloé le fuyait, comme une jeune biche qui sent
+                    le souffle du lion. <milestone unit="sent"/>Myrtale, l’affranchie, avait pour lui l’humeur plus mobile,
+                    plus irritable et plus tempétueuse que la mer adriatique. <milestone unit="sent"/>Lycoris, qu’Horace
+                    aimait pour son petit front lisse et poli, le repoussait en vue de Cyrus, qui
+                    était laid. <milestone unit="sent"/>Barine lui faisait chaque soir, au bord du Tibre, de beaux serments,
+                    où elle attestait les astres ; mais ces serments, elle les oubliait le jour,
+                    lorsque ces mêmes astres étaient couchés. <milestone unit="sent"/>Lycée le laissait dans la rue en
+                    proie à la pluie, à la neige et aux sarcasmes des passants, polir de ses baisers
+                    un seuil fort dur, et conjurer avec larmes, une porte inexorable. <milestone unit="sent"/>Lydé, belle et
+                    farouche, s’éloignait comme une jeune cavale à son approche, quoique l’infortuné
+                    Flaccus eût souvent demandé à Mercure de beaux vers pour la dompter, et que
+                    Mercure ne les eût point refusés, au contraire. <milestone unit="sent"/>Néobule le dédaignait pour le
+                    jeune Hébrus, un cavalier frotté d’huile, qui se baignait tout en sueur dans
+                    l’eau du Tibre. <milestone unit="sent"/>Galatée le quitta, malgré ses prières pour un long voyage sur
+                    l’Océan. <milestone unit="sent"/>Phryné, l’affranchie, qui ne voulait pas se contenter d’un amant, lui
+                    torturait le cœur, <hi rend="i">nec uno contenta Phryne macerat</hi>, et
+                    l’empêchait de finir des vers promis à Mécène. <milestone unit="sent"/>Néère, la belle paresseuse aux
+                    longs cheveux, feignait d’avoir oublié l’amour juré à Horace, une nuit au bord
+                    de l’Anio. <milestone unit="sent"/>Phylis, à qui le chansonnier latin offre dans ses vers son vin d’Albe
+                    de neuf feuilles, ses lierres à faire des couronnes, l’ombre de son Tibur, un
+                    autel paré de verveine et rougi du sang d’un agneau, une maison pleine
+                    d’esclaves, de meubles et d’argenterie, Phylis, à <pb n="142" xml:id="p142"/>qui
+                    Horace écrivait : <milestone unit="sent"/>« Vous serez la dernière des femmes que j’aurai aimées ! »
+                    était charmée d’un autre jeune romain, qui la dédaignait, et demeurait sourde
+                    aux avances du poëte.</p>
+                <p><milestone unit="sent"/>Vous voyez déjà, mesdames, par ce dénombrement de beautés rebelles, mercenaires
+                    ou infidèles dont se compose le sérail d’Horace, que le grand lyrique n’était
+                    pas plus triomphant qu’un autre aux doux combats du cœur. <milestone unit="sent"/>Nous devons pourtant
+                    déclarer que comme la plupart des poëtes, Horace n’était pas très-difficile en
+                    amour. <milestone unit="sent"/>N’engage-t-il pas Phocéus à épouser une esclave, sous prétexte qu’une
+                    fille qui a des bras, une figure, et des jambes faites au tour, <hi rend="i"
+                        >brachia et vultum teretesque seras</hi>, ne peut manquer d’être noble ou de
+                    l’avoir été.</p>
+                <p><milestone unit="sent"/>Horace, s’il faut l’en croire, avait cependant obtenu, <hi rend="i">une
+                    fois</hi>, gratuitement et pour lui-même les faveurs de la rapace Cinara, une
+                    affranchie ; aussi, faut-il voir avec quels transports le poëte en
+                    parle à Vénus, et comme il déplore la fin prématurée de cette <hi rend="i"
+                        >bonne</hi> fille, qui s’était contentée de vers, monnaie fort
+                    creuse, à laquelle les autres courtisanes faisaient, comme nous venons de le
+                    voir, un médiocre accueil. <milestone unit="sent"/>Cette Cinara était, en effet, un vrai prodige que le
+                    poëte a eu grande raison d’embaumer dans ses belles strophes, quoiqu’en vérité
+                    elle lui ait accordé ce qu’elle accordait à bien d’autres.</p>
+                <p><milestone unit="sent"/>La Corinne qu’Ovide a rendue si célèbre, était, selon que j’en ai ouï dire, la
+                    fille de l’empereur Auguste. <milestone unit="sent"/>Cet amour mal placé devint la source de tous ses
+                    malheurs. <milestone unit="sent"/>Il fut banni de Rome, comme on sait, et s’en alla écrire sous le ciel
+                    de Thrace, ses <hi rend="i">Tristes</hi>, élégies brumeuses et touchantes, où
+                    l’auteur s’écrie à tout propos : <milestone unit="sent"/>« Oh ! pourquoi ai-je vu ce que je n’aurais pas
+                    dû voir ? » <hi rend="i">vu</hi> et rien de plus.</p>
+                <p><milestone unit="sent"/>Virgile était naturellement timide et mélancolique, deux <pb n="143"
+                        xml:id="p143"/>qualités qui réussissent très-peu auprès des femmes ; ajoutez
+                    à cela un teint fauve, une tournure rustique, une parole lente, un œil
+                    chassieux, et vous comprendrez aisément qu’il ait été surnommé, à bon droit, la
+                        <hi rend="i">Vierge de l’Italie</hi>.</p>
+                <p><milestone unit="sent"/>Lesbie, la pleureuse au moineau, l’amante de Catulle, était une affranchie qu’il
+                    entretenait, et qui lui préféra tour à tour Lesbius, Quintius, Gellius et
+                    quelques autres. <milestone unit="sent"/>Le poëte l’aimait pourtant de tout cœur. Il est vrai qu’elle
+                    était très-blanche, et qu’elle avait à elle seule, s’il faut en croire Catulle,
+                    toute la beauté des autres femmes. Il ne lui restait plus pour être heureux que
+                    de s’en faire aimer ; ses épigrammes à ses amis montrent assez qu’il n’y pût
+                    jamais réussir. <milestone unit="sent"/>Il la menaça plusieurs fois de la quitter : <milestone unit="sent"/>Lesbie n’en tint
+                    aucun compte ; ses jolis yeux pouvaient bien rougir et se gonfler de larmes pour
+                    la mort d’un passereau, mais non pour la perte d’un amant, surtout d’un amant
+                    poëte.</p>
+                <p><milestone unit="sent"/>Tibulle aima successivement Délie, Némésis, Néère et Sulpicia…, faute de trouver
+                    dans aucune d’entr’elles un cœur où s’arrêter. <milestone unit="sent"/>Délie avait une jambe mignonne et
+                    des bras de l’ivoire le plus fin, mais elle était nonchalante en amour. <milestone unit="sent"/>Elle
+                    perdait son temps à toutes sortes de soins étrangers, quoique le poëte lui ait
+                    souvent dit qu’il fallait se hâter et que les plus belles roses se fanaient
+                    comme les autres fleurs. <milestone unit="sent"/>Elle le quitta pour un autre Romain qui était riche. <milestone unit="sent"/>Némésis, affolée d’éméraudes, de perles et de pourpre de Tyr, lui rendait les
+                    jours et les nuits amers. <milestone unit="sent"/>Néère, la fille aux longs cheveux, lui faisait maudire
+                    le plus perfide des sexes : <hi rend="i">O crudele genus</hi> ! <milestone unit="sent"/>Enfin, le poëte
+                    demande quelque part aux dieux des oreilles fermées avec de la cire, comme
+                    celles des compagnons d’Ulysse, pour ne point entendre les bruits qui
+                    couraient à Rome sur la conduite de <pb n="144" xml:id="p144"/>Sulpicia, sa
+                    dernière maîtresse. <milestone unit="sent"/>Horace l’engage quelque part à prendre son parti des rebuts
+                    d’une certaine Glycère. <milestone unit="sent"/>Cette créature lui préférait Cyrus, un rival plus jeune
+                    que Catulle. <milestone unit="sent"/>Les raisons qu’Horace donne à son ami pour le consoler, sont que
+                    Vénus aime à se jouer des mortels, et que lui-même n’est guère plus heureux
+                    auprès de l’affranchie Myrtale, toujours récalcitrante et inexorable. <milestone unit="sent"/>Glycère
+                    avait tout ce qu’il faut pour plaire à un Romain, les doigts allongés, le front
+                    petit et mince, les yeux légèrement arrondis, la chevelure d’un blond doré et
+                    tournant au roux. <milestone unit="sent"/>– Les anciens ne pensaient pas tout-à-fait comme nous sur la
+                    beauté des femmes.</p>
+                <p><milestone unit="sent"/>Properce et Gallus sont connus par leurs amours malheureux envers l’affranchie
+                    Cynthia et pour la comédienne Cythéris ; ils se consumaient l’un et l’autre en
+                    soupirs inutiles, tandis que Catilina et les autres vauriens de Rome vivaient
+                    avec les premières dames de la république.</p>
+                <p><milestone unit="sent"/>Dans la fable même, Apollon, le plus beau des dieux, le maître de la poésie et
+                    des beaux arts, fut de tous les immortels le plus maltraité en fait d’amour ;
+                    tout ce qu’il touchait de ses mains et de ses lèvres divines se métamorphosait
+                    sur-le-champ en olivier ; allégorie très-ingénieuse et fort transparente, qui
+                    veut dire que les femmes les plus belles et les plus tendres se montrent presque
+                    toujours de bois pour les poëtes.</p>
+                <p><milestone unit="sent"/>Peut-être la Providence a-t-elle une intention, en faisant ainsi souffrir les
+                    poëtes par le côté où ils sont le plus sensibles. <milestone unit="sent"/>Elle craint sans doute qu’ils
+                    ne viennent à s’endormir dans une passion heureuse et qu’ils ne perdent alors en
+                    jeux, en caresses, en folles causeries les trésors de sentiment qu’ils mettent
+                    dans leurs vers. <milestone unit="sent"/>On ne dit bien que ce qu’on ne possède pas entièrement. <milestone unit="sent"/>La
+                    poésie est un désir inquiet vers l’impossible <pb n="145" xml:id="p145"/>et
+                    idéal, un rêve qui ne saurait se joindre à son objet, une lèvre altérée et avide
+                    qui ne rencontre jamais les bords de la coupe – sinon, pour s’y couper.</p>
+                <p><milestone unit="sent"/>Anacréaon de Théos cessa de célébrer le vin, les banquets et les femmes, du jour
+                    où le tyran Polycrate lui eut fait don de cent talents d’or ; aussi vint-il les
+                    rapporter à son bienfaiteur comme un présent funeste, qui tuait la gaîté et un
+                    don plus précieux, celui des vers. <milestone unit="sent"/>Il en est de même de l’amour : si les poëtes
+                    le rencontraient jamais sur la terre, ils y perdraient leur voix, – comme il
+                    arrive aux rossignols quand ils ont touché les rigueurs de leur compagne. <milestone unit="sent"/>Qui
+                    sait ? peut-être que ces chantres muets viendraient alors se plaindre à Dieu de
+                    ses faveurs. <milestone unit="sent"/>« Reprenez, lu diraient-ils, reprenez mon bonheur et me laissez mes
+                    chants ! »</p>
+                <p><milestone unit="sent"/>Je reviens à Orphée.</p>
+                <p><milestone unit="sent"/>Le caractère du véritable amour est d’exclure du cœur humain toutes les
+                    affections du même ordre ; il élève tellement au-dessus de la nature, que grâce
+                    à lui, un sexe n’est plus rien pour l’autre. <milestone unit="sent"/>Orphée errait seul dans les glaces
+                    de la Scythie, le long des bords du Tanaïs, et dans les campagnes voisines des
+                    monts Riphées éternellement couverts de neige. <milestone unit="sent"/>Tout au souvenir de sa chère
+                    Eurydice, il accusait les faveurs vaines de prêtres d’Isis. <milestone unit="sent"/>Cependant, les
+                    femmes de cette contrée ne pouvaient souffrir qu’Orphée se montrât insensible à
+                    leurs charmes. <milestone unit="sent"/>Irritées de sa froideur et de ses dédains, elles conspirèrent sa
+                    perte. <milestone unit="sent"/>Il n’y a pas de plus grande injure aux yeux de certaines femmes que
+                    l’indifférence qu’on montre pour leur personne. <milestone unit="sent"/>Ces malheureuses prirent le
+                    temps des fêtes nocturnes, célébrées en l’honneur de Bacchus, pour exercer leur
+                    vengeance. <milestone unit="sent"/>Elles eurent beau le mettre en pièces, elles ne <pb n="146"
+                        xml:id="p146"/>purent écarter se ses lèvres déjà froides le nom qu’il avait
+                    encore dans le cœur. <milestone unit="sent"/>« Eurydice, Eurydice », répétait-il encore. <milestone unit="sent"/>L’Èbre roula sa
+                    tête. <milestone unit="sent"/>Ses membres blancs comme la neige furent semés dans les campagnes
+                    voisines. <milestone unit="sent"/>Ainsi mourut, victime de sa fidélité, le plus tendre et les plus
+                    harmonieux des amants.</p>
+                <p><milestone unit="sent"/>La réputation d’Orphée valut à Eurydice l’honneur de revivre dans les monuments
+                    de la mythologie grecque. <milestone unit="sent"/>Elle devint un mythe, un emblême. <milestone unit="sent"/>La statue d’Eurydice
+                    blessée au talon est une figure de sort de la femme dans les sociétés anciennes. <milestone unit="sent"/>Par le serpent, la plupart des cabalistes entendaient effectivement représenter
+                    la tyrannie du vieux monde. <milestone unit="sent"/>Cette amante célèbre, enlevée à l’amour de son mari
+                    et à la liberté pour une légère désobéissance, symbolise une idée qui se
+                    rencontre dans toutes les vieilles théogonies, <milestone unit="sent"/>– Eurydice, c’est l’Ève
+                    payenne.</p>
+                <p><milestone unit="sent"/>Ne vous étonnez pas, si j’appuie sur le sens de ces allégories, conservées dans
+                    la mémoire de tous les peuples ; faire l’histoire de l’amour, c’est écrire le
+                    roman de l’humanité.</p>
+            </div>
+        </body>
+
+    </text>
+</TEI>

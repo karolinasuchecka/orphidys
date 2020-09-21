@@ -2,91 +2,185 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title type="main">Les Bucoliques et les Géorgiques</title>
-            <author>Virgile</author>
-            <editor>Maurice Rat</editor>
-        </titleStmt>
-        <editionStmt>
-            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-            <respStmt>
-                <name>Karolina Suchecka</name>
-                <resp>Chargé de l'édition</resp>
-            </respStmt>
-            <respStmt>
-                <name>Nathalie Gasiglia</name>
-                <resp>Co-tutrice de thèse</resp>
-            </respStmt>
-            <respStmt>
-                <name>Karl Zieger</name>
-                <resp>Co-tuteur de thèse</resp>
-            </respStmt>
-        </editionStmt>
-        <publicationStmt>
-            <publisher>Karolina Suchecka</publisher>
-            <publisher>ALITHILA (Université Lille III)</publisher>
-            <date when="2019"/>
-            <availability status="restricted">
-                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-                </licence>
-            </availability>
-            <idno>http://bcs.fltr.ucl.ac.be/Virg/georg/georgiv.html</idno>
-        </publicationStmt>
-        <sourceDesc>
-            <bibl><author>Virgile</author> / <title>Les Bucoliques et les Géorgiques</title> / Paris / Classiques Garnier / 1932 / .</bibl> 
-            <biblFull>
-                <titleStmt>
-                    <title>Les Bucoliques et les Géorgiques</title>
-                </titleStmt>
-                <publicationStmt>
-                    <publisher>Classiques Garnier</publisher>
-                    <pubPlace>Paris</pubPlace>
-                    <date when="1932"/>
-                </publicationStmt>
-            </biblFull>
-            <genre>prose</genre>
-            <structure>rat1932</structure>
-        </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-        <creation>
-            <date when="1932">1932</date>
-        </creation>
-        <language>
-            <language>FR</language>
-        </language>
-        <textClass>
-            <keywords>
-                <list>
-                    <item>traduction</item>
-                </list>
-            </keywords>
-        </textClass>
-    </profileDesc>
-</teiHeader><text><front><titlePage>
-        <docAuthor>Virgile</docAuthor>
-        <docTitle>
-          <titlePart type="main">Les Bucoliques et les Géorgiques</titlePart>
-        </docTitle>
-      </titlePage></front>
-        
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Géorgiques</title>
+                <title type="book">Les Bucoliques et les Géorgiques</title>
+                <author>Virgile</author>
+                <editor>Maurice Rat</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+                    numériques. Vers une édition comparative intermédiale innovante accompagnée
+                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+                <respStmt>
+                    <name>Karolina Suchecka</name>
+                    <resp>Chargé de l’édition</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Nathalie Gasiglia</name>
+                    <resp>Co-tutrice de thèse</resp>
+                </respStmt>
+                <respStmt>
+                    <name>Karl Zieger</name>
+                    <resp>Co-tuteur de thèse</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Karolina Suchecka</publisher>
+                <publisher>ALITHILA (Université Lille III)</publisher>
+                <date when="2019"/>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+                            projet de thèse « Analyse et édition d’un corpus littéraire dans
+                            l’esprit des humanités numériques. Vers une édition comparative
+                            intermédiale innovante accompagnée d’une ressource pour le repérage
+                            intertextuel »</p>
+                        <p> Cette ressource électronique protégée par le code de la propriété
+                            intellectuelle sur les bases de données (L341-1) est mise à disposition
+                            de la communauté scientifique internationale par Karolina Suchecka,
+                            selon les termes de la licence Creative Commons : « Attribution - Pas
+                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+                            3.0 FR) ». </p>
+                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                            publication dérivée de cette ressource électroniques comportera le nom
+                            du projet et surtout l’adresse Internet de la ressource. </p>
+                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                            scientifique, toute utilisation commerciale est interdite.</p>
+                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                            cette ressource électronique, notamment en intégrant toutes les
+                            contributions extérieures, la diffusion de versions modifiées de cette
+                            ressource n’est pas souhaitable.</p>
+                    </licence>
+                </availability>
+                <idno>http://bcs.fltr.ucl.ac.be/Virg/georg/georgiv.html</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><author>Virgile</author> / <title>Les Bucoliques et les Géorgiques</title> /
+                    Maurice Rat (trad.) / Paris / Classiques Garnier / 1932.</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Les Bucoliques et les Géorgiques</title>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>Classiques Garnier</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="1932"/>
+                    </publicationStmt>
+                </biblFull>
+                <genre>prose</genre>
+                <structure>rat1932</structure>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+                conçus au sein du projet. La structure des métadonnées a été établie en référence à
+                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+                son traitement.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <date when="1932">1932</date>
+            </creation>
+            <language>
+                <language>FR</language>
+            </language>
+            <textClass>
+                <keywords>
+                    <list>
+                        <item>traduction</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docAuthor>Virgile</docAuthor>
+                <docTitle>
+                    <titlePart type="main">Les Géorgiques</titlePart>
+                </docTitle>
+                <docEdition resp="trad">Maurice Rat</docEdition>
+            </titlePage>
+        </front>
 
-    <body>
-      <p>C’est une divinité qui te poursuit de sa colère : tu expies un grand forfait ; ce châtiment, c’est Orphée, qu’il faut plaindre pour son sort immérité, qui le suscite contre toi, à moins que les Destins ne s’y opposent, et, qui exerce des sévices cruels pour l’épouse qu’on lui a ravie. Tandis qu’elle te fuyait en se précipitant le long du fleuve, la jeune femme, – et elle allait en mourir, – ne vit pas devant ses pieds une hydre monstrueuse qui hantait les rives dans l’herbe haute.Le chœur des Dryades de son âge <pb n="4,460" xml:id="l4_460"/>emplit alors de sa clameur le sommet des montagnes; on entendit pleurer les contreforts du Rhodope, et les hauteurs du Pangée, et la terre martiale de Rhésus, et les Gètes, et l’Hèbre, et Orithye l’Actiade. Lui, consolant son douloureux amour sur la creuse écaille de sa lyre, c’est toi qu’il chantait, douce épouse, seul avec lui-même sur le rivage solitaire, toi qu’il chantait à la venue du jour, toi qu’il chantait quand le jour s’éloignait.</p>
-      <p>Il entra même aux gorges du Ténare, portes profondes de Dis, et dans le bois obscur à la noire épouvante, et il aborda les Mânes, leur roi redoutable, et ces cœurs qui ne savent pas s’attendrir aux prières humaines. <pb n="4,470" xml:id="l4_470"/>Alors, émues par ses chants, du fond des séjours de l’Érèbe, on put voir s’avancer les ombres minces et les fantômes des êtres qui ne voient plus la lumière, aussi nombreux que les milliers d’oiseaux qui se cachent dans les feuilles, quand le soir ou une pluie d’orage les chasse des montagnes : des mères, des maris, des corps de héros magnanimes qui se sont acquittés de la vie, des enfants, des jeunes filles qui ne connurent point les noces, des jeunes gens mis sur des bûchers devant les yeux de leurs parents, autour de qui s’étendent le limon noir et le hideux roseau du Cocyte, et le marais détesté avec son onde paresseuse qui les enserre, et le Styx qui neuf fois les enferme dans ses plis. <pb n="4,480" xml:id="l4_480"/>Bien plus, la stupeur saisit les demeures elles-mêmes et les profondeurs Tartaréennes de la Mort, et les Euménides aux cheveux entrelacés de serpents d’azur ; Cerbère retint, béant, ses trois gueules, et la roue d’Ixion s’arrêta avec le vent qui la faisait tourner.</p>
-      <p>Déjà, revenant sur ses pas, il avait échappé à tous les périls, et Eurydice lui étant rendue s’en venait aux souffles d’en haut en marchant derrière son mari (car telle était la loi fixée par Proserpine), quand un accès de démence subite s’empara de l’imprudent amant – démence bien pardonnable, si les Mânes savaient pardonner ! Il s’arrêta, et juste au moment où son Eurydice arrivait à la lumière, <pb n="4,490" xml:id="l4_490"/>oubliant tout, hélas ! et vaincu dans son âme, il se tourna pour la regarder. Sur-le-champ tout son effort s’écroula, et son pacte avec le cruel tyran fut rompu, et trois fois un bruit éclatant se fit entendre aux étangs de l’Averne. Elle alors : « Quel est donc, dit-elle, cet accès de folie, qui m’a perdue, malheureuse que je suis, et qui t’a perdu, toi, Orphée ? Quel est ce grand accès de folie ? Voici que pour la seconde fois les destins cruels me rappellent en arrière et que le sommeil ferme mes yeux flottants. Adieu à présent ; je suis emportée dans la nuit immense qui m’entoure et je te tends des paumes sans force, moi, hélas ! qui ne suis plus tienne. » Elle dit, et loin de ses yeux tout à coup, comme une fumée mêlée aux brises ténues, elle s’enfuit dans la direction opposée ; <pb n="4,500" xml:id="l4_500"/>et il eut beau tenter de saisir les ombres, beau vouloir lui parler encore, il ne la vit plus, et le nocher de l’Orcus ne le laissa plus franchir le marais qui la séparait d’elle. Que faire ? où porter ses pas, après s’être vu deux fois ravir son épouse ? Par quels pleurs émouvoir les Mânes, par quelles paroles les Divinités ? Elle, déjà froide, voguait dans la barque Stygienne.</p>
-      <p>On conte qu’il pleura durant sept mois entiers sous une roche aérienne, aux bords du Strymon désert, charmant les tigres et entraînant les chênes avec son chant. <pb n="4,510" xml:id="l4_510"/>Telle, sous l’ombre d’un peuplier, la plaintive Philomèle gémit sur la perte de ses petits, qu’un dur laboureur aux aguets a arrachés de leur nid, alors qu’ils n’avaient point encore de plumes, elle passe la nuit à pleurer, et, posée sur une branche, elle recommence son chant lamentable, et de ses plaintes douloureuses emplit au loin l’espace. Ni Vénus, ni aucun hymen ne fléchirent son cœur ; seul, errant à travers les glaces hyperboréennes et le Tanaïs neigeux et les guérets du Riphée que les frimas ne désertent jamais, il pleurait Eurydice perdue et les dons inutiles de Dis.</p>
-      <p><pb n="4,520" xml:id="l4_520"/>Les mères des Cicones, voyant dans cet hommage une marque de mépris, déchirèrent le jeune homme au milieu des sacrifices offerts aux dieux et des orgies du Bacchus nocturne, et dispersèrent au loin dans les champs ses membres en lambeaux. Même alors, comme sa tête, arrachée de son col de marbre, roulait au milieu du gouffre, emportée par l’<anchor xml:id="l4_524"/>Hèbre Œagrien, « Eurydice ! » criaient encore sa voix et sa langue glacée, « Ah ! malheureuse Eurydice ! » tandis que sa vie fuyait, et, tout le long du fleuve, les rives répétaient en écho : « Eurydice ! »</p>
-    </body>
-  
-</text></TEI>
+
+        <body>
+            <p>C’est une divinité qui te poursuit de sa colère : tu expies un grand forfait ; ce
+                châtiment, c’est Orphée, qu’il faut plaindre pour son sort immérité, qui le suscite
+                contre toi, à moins que les Destins ne s’y opposent, et, qui exerce des sévices
+                cruels pour l’épouse qu’on lui a ravie. Tandis qu’elle te fuyait en se précipitant
+                le long du fleuve, la jeune femme, – et elle allait en mourir, – ne vit pas devant
+                ses pieds une hydre monstrueuse qui hantait les rives dans l’herbe haute.Le chœur
+                des Dryades de son âge <pb n="4,460" xml:id="l4_460"/>emplit alors de sa clameur le
+                sommet des montagnes; on entendit pleurer les contreforts du Rhodope, et les
+                hauteurs du Pangée, et la terre martiale de Rhésus, et les Gètes, et l’Hèbre, et
+                Orithye l’Actiade. Lui, consolant son douloureux amour sur la creuse écaille de sa
+                lyre, c’est toi qu’il chantait, douce épouse, seul avec lui-même sur le rivage
+                solitaire, toi qu’il chantait à la venue du jour, toi qu’il chantait quand le jour
+                s’éloignait.</p>
+            <p>Il entra même aux gorges du Ténare, portes profondes de Dis, et dans le bois obscur à
+                la noire épouvante, et il aborda les Mânes, leur roi redoutable, et ces cœurs qui ne
+                savent pas s’attendrir aux prières humaines. <pb n="4,470" xml:id="l4_470"/>Alors,
+                émues par ses chants, du fond des séjours de l’Érèbe, on put voir s’avancer les
+                ombres minces et les fantômes des êtres qui ne voient plus la lumière, aussi
+                nombreux que les milliers d’oiseaux qui se cachent dans les feuilles, quand le soir
+                ou une pluie d’orage les chasse des montagnes : des mères, des maris, des corps de
+                héros magnanimes qui se sont acquittés de la vie, des enfants, des jeunes filles qui
+                ne connurent point les noces, des jeunes gens mis sur des bûchers devant les yeux de
+                leurs parents, autour de qui s’étendent le limon noir et le hideux roseau du Cocyte,
+                et le marais détesté avec son onde paresseuse qui les enserre, et le Styx qui neuf
+                fois les enferme dans ses plis. <pb n="4,480" xml:id="l4_480"/>Bien plus, la stupeur
+                saisit les demeures elles-mêmes et les profondeurs Tartaréennes de la Mort, et les
+                Euménides aux cheveux entrelacés de serpents d’azur ; Cerbère retint, béant, ses
+                trois gueules, et la roue d’Ixion s’arrêta avec le vent qui la faisait tourner.</p>
+            <p>Déjà, revenant sur ses pas, il avait échappé à tous les périls, et Eurydice lui étant
+                rendue s’en venait aux souffles d’en haut en marchant derrière son mari (car telle
+                était la loi fixée par Proserpine), quand un accès de démence subite s’empara de
+                l’imprudent amant – démence bien pardonnable, si les Mânes savaient pardonner ! Il
+                s’arrêta, et juste au moment où son Eurydice arrivait à la lumière, <pb n="4,490"
+                    xml:id="l4_490"/>oubliant tout, hélas ! et vaincu dans son âme, il se tourna
+                pour la regarder. Sur-le-champ tout son effort s’écroula, et son pacte avec le cruel
+                tyran fut rompu, et trois fois un bruit éclatant se fit entendre aux étangs de
+                l’Averne. Elle alors : « Quel est donc, dit-elle, cet accès de folie, qui m’a
+                perdue, malheureuse que je suis, et qui t’a perdu, toi, Orphée ? Quel est ce grand
+                accès de folie ? Voici que pour la seconde fois les destins cruels me rappellent en
+                arrière et que le sommeil ferme mes yeux flottants. Adieu à présent ; je suis
+                emportée dans la nuit immense qui m’entoure et je te tends des paumes sans force,
+                moi, hélas ! qui ne suis plus tienne. » Elle dit, et loin de ses yeux tout à coup,
+                comme une fumée mêlée aux brises ténues, elle s’enfuit dans la direction opposée ;
+                    <pb n="4,500" xml:id="l4_500"/>et il eut beau tenter de saisir les ombres, beau
+                vouloir lui parler encore, il ne la vit plus, et le nocher de l’Orcus ne le laissa
+                plus franchir le marais qui la séparait d’elle. Que faire ? où porter ses pas, après
+                s’être vu deux fois ravir son épouse ? Par quels pleurs émouvoir les Mânes, par
+                quelles paroles les Divinités ? Elle, déjà froide, voguait dans la barque
+                Stygienne.</p>
+            <p>On conte qu’il pleura durant sept mois entiers sous une roche aérienne, aux bords du
+                Strymon désert, charmant les tigres et entraînant les chênes avec son chant. <pb
+                    n="4,510" xml:id="l4_510"/>Telle, sous l’ombre d’un peuplier, la plaintive
+                Philomèle gémit sur la perte de ses petits, qu’un dur laboureur aux aguets a
+                arrachés de leur nid, alors qu’ils n’avaient point encore de plumes, elle passe la
+                nuit à pleurer, et, posée sur une branche, elle recommence son chant lamentable, et
+                de ses plaintes douloureuses emplit au loin l’espace. Ni Vénus, ni aucun hymen ne
+                fléchirent son cœur ; seul, errant à travers les glaces hyperboréennes et le Tanaïs
+                neigeux et les guérets du Riphée que les frimas ne désertent jamais, il pleurait
+                Eurydice perdue et les dons inutiles de Dis.</p>
+            <p><pb n="4,520" xml:id="l4_520"/>Les mères des Cicones, voyant dans cet hommage une
+                marque de mépris, déchirèrent le jeune homme au milieu des sacrifices offerts aux
+                dieux et des orgies du Bacchus nocturne, et dispersèrent au loin dans les champs ses
+                membres en lambeaux. Même alors, comme sa tête, arrachée de son col de marbre,
+                roulait au milieu du gouffre, emportée par l’<anchor xml:id="l4_524"/>Hèbre Œagrien,
+                « Eurydice ! » criaient encore sa voix et sa langue glacée, « Ah ! malheureuse
+                Eurydice ! » tandis que sa vie fuyait, et, tout le long du fleuve, les rives
+                répétaient en écho : « Eurydice ! »</p>
+        </body>
+
+    </text>
+</TEI>

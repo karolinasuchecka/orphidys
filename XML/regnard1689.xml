@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Arlequin aux Enfers</title>
+				<title type="sub">Comédie représentée pour la première fois le 5 mars 1689 à l’Hôtel
+					de Bourgogne</title>
+				<author>Jean-François Regnard</author>
+				<editor>Paul Fièvre</editor>
+			</titleStmt>
+			<editionStmt>
+				<edition>Cette édition électronique fait partie du projet de thèse intitulé
+					« Analyse et édition d’un corpus littéraire dans l’esprit des humanités
+					numériques. Vers une édition comparative intermédiale innovante accompagnée
+					d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
+					sein du laboratoire ALITHILA à l’Université de Lille.</edition>
+				<respStmt>
+					<name>Karolina Suchecka</name>
+					<resp>Chargé de l’édition</resp>
+				</respStmt>
+				<respStmt>
+					<name>Nathalie Gasiglia</name>
+					<resp>Co-tutrice de thèse</resp>
+				</respStmt>
+				<respStmt>
+					<name>Karl Zieger</name>
+					<resp>Co-tuteur de thèse</resp>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>Karolina Suchecka</publisher>
+				<publisher>ALITHILA (Université Lille III)</publisher>
+				<date when="2019"/>
+				<availability status="restricted">
+					<licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+						<p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+							projet de thèse « Analyse et édition d’un corpus littéraire dans
+							l’esprit des humanités numériques. Vers une édition comparative
+							intermédiale innovante accompagnée d’une ressource pour le repérage
+							intertextuel »</p>
+						<p> Cette ressource électronique protégée par le code de la propriété
+							intellectuelle sur les bases de données (L341-1) est mise à disposition
+							de la communauté scientifique internationale par Karolina Suchecka,
+							selon les termes de la licence Creative Commons : « Attribution - Pas
+							d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
+							3.0 FR) ». </p>
+						<p> Attribution : afin de référencer la source, toute utilisation ou
+							publication dérivée de cette ressource électroniques comportera le nom
+							du projet et surtout l’adresse Internet de la ressource. </p>
+						<p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+							scientifique, toute utilisation commerciale est interdite.</p>
+						<p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+							cette ressource électronique, notamment en intégrant toutes les
+							contributions extérieures, la diffusion de versions modifiées de cette
+							ressource n’est pas souhaitable.</p>
+					</licence>
+				</availability>
+				<idno>http://www.theatre-classique.fr/pages/programmes/edition.php?t=../documents/REGNARD_ARLEQUINAUXENFERS.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl><author>Jean-François Regnard</author> / <title>Arlequin aux Enfers, comédie
+						représentée pour la première fois le 5 mars 1689 à l’Hôtel de
+						Bourgogne</title> / Paris / 1689.</bibl>
+				<biblFull>
+					<titleStmt>
+						<title>Arlequin aux Enfers, comédie représentée pour la première fois le 5
+							mars 1689 à l’Hôtel de Bourgogne</title>
+					</titleStmt>
+					<publicationStmt>
+						<publisher/>
+						<pubPlace>Paris</pubPlace>
+						<date when="1689"/>
+					</publicationStmt>
+				</biblFull>
+				<genre>théâtre</genre>
+				<structure>regnard1689</structure>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+				Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
+				conçus au sein du projet. La structure des métadonnées a été établie en référence à
+				la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
+				son traitement.</p>
+		</encodingDesc>
+		<profileDesc>
+			<creation>
+				<date when="1689">1689</date>
+			</creation>
+			<language>
+				<language>FR</language>
+			</language>
+			<textClass>
+				<keywords>
+					<list>
+						<item>parodie</item>
+					</list>
+				</keywords>
+			</textClass>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<titlePage>
+				<docAuthor>Jean-François Regnard</docAuthor>
+				<docTitle>
+					<titlePart type="main">Arlequin aux Enfers</titlePart>
+					<titlePart type="sub">Comédie représentée pour la première fois le 5 mars 1689 à
+						l’Hôtel de Bourgogne</titlePart>
+				</docTitle>
+			</titlePage>
+			<div type="preface">
+				<head>Avertissement sur La Descente d’Arlequin aux Enfers</head>
+				<p>La Descente d’Arlequin aux Enfers, comédie italienne, mêlée de scènes françaises,
+					en trois actes et en prose, a été représentée pour la première fois sur le
+					théâtre de l’hôtel de Bourgogne, le 5 mars 1689, sous le titre de la Descente de
+					Mezzetin aux Enfers. </p>
+				<p>Il n’y avait point d’Arlequin alors; Angelo Constantini, acteur de la troupe
+					italienne, qui avait quelquefois doublé le fameux Dominique, en avait pris
+					l’habit et les rôles, en paraissant toutefois sous le nom de Mezzetin; mais
+					après les débuts de Ghérardi, ces rôles ont été rendus à l’Arlequin, et il les a
+					conservés jusqu’à la suppression de la troupe. </p>
+				<p>La mort de Dominique ayant obligé ses camarades à cesser leur spectacle, ce temps
+					fut employé à chercher des moyens pour remplacer le vide que cet excellent
+					acteur faisait à la troupe. Enfin, le mercredi 1er septembre 1688, les comédiens
+					italiens rouvrirent leur théâtre; et Angelo Constantini, dans une scène
+					préparée, reçut de Colombine l’habillement et le masque d’Arlequin, caractère
+					qu’il joua sous le nom de Mezzetin. Comme il était, quoique très brun, d’une
+					figure gracieuse, et qu’il avait plu infiniment jusqu’alors à visage découvert,
+					le public lui marqua que, s’il continuait à porter le masque d’Arlequin, on
+					perdrait en lui un acteur très varié ; en un mot, une espèce de Protée. Angelo
+					Constantini continua cependant de remplir l’emploi qu’il avait pris après la
+					mort de Dominique, et ne le quitta que lorsque Ghérardi (fils de Flautin) eut
+					joué le rôle d’Arlequin, et que cet acteur fut agréé du public : alors il ne
+					joua plus qu’à visage découvert, ce qu’il continua jusqu’à la suppression de ce
+					théâtre, en 1697. (Histoire de I’ancien Théâtre italien, page 84.) </p>
+				<p>Cette pièce est la plus informe de toutes celles qui composent le théâtre italien
+					de Regnard ; les scènes n’ont entre elles aucune liaison, et l’on a beaucoup de
+					peine à démêler l’intrigue principale. Il parait cependant que le poète a
+					travesti Orphée et Amphion en deux musiciens de l’Opéra, qui descendent ans
+					enfers pour demander leurs femmes. </p>
+				<p>Nous aurions désiré pouvoir nous procurer le canevas italien de cette comédie;
+					mais nos recherches à cet égard ont été infructueuses.</p>
+				<p>La Descente d’Arlequin aux Enfers n’a point été remise au théâtre depuis le
+					rétablissement de la troupe, en 1716.</p>
+			</div>
+			<castList>
+				<castItem xml:id="arlequin">Arlequin</castItem>
+				<castItem xml:id="colombine">Colombine, femme d’Arlequin</castItem>
+				<castItem xml:id="pierrot">Pierrot, valet d’Arlequin</castItem>
+				<castItem xml:id="orphee">Orphée, Aurélien</castItem>
+				<castItem xml:id="isabelle">Isabelle</castItem>
+				<castItem xml:id="vendeur_tisane">Un vendeur de tisane, Pierrot</castItem>
+				<castItem xml:id="auteur">Un auteur, Colombine</castItem>
+				<castItem xml:id="pluton">Pluton</castItem>
+				<castItem xml:id="proserpine">Proserpine</castItem>
+				<castItem xml:id="caron">Caron</castItem>
+				<castItem xml:id="amphion">Amphion</castItem>
+			</castList>
+		</front>
+		<body>
+			<div n="1" type="scene">
+				<head>Scène I <lb/>Arlequin, Colombine, Pierrot.</head>
+				<note type="C">Toute cette première scène a été remplacée par un exposé sommaire,
+					dans toutes les éditions. On trouvera que le dialogue de cette scène et de
+					plusieurs autres qui sont rétablies, est tant soit peu libre et même trivial.
+					Cependant, suivant Horace, nous ne sommes pas meilleurs, et nous ne devons donc
+					pas être plus susceptibles que nos pères, qui apparemment s’égayaient à entendre
+					toutes ces plaisanteries débitées avec autant de vivacité que de comique.
+					(G.A.C.)</note>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<stage>, botté, dans le ventre d’une baleine.</stage>
+					<p> Hoé, hoé, madame la Baleine ; ouvrez, s’il vous plaît, votre petite gueule.
+						La, la, voilà qui est bien. Les jolies petites quenottes ! <milestone
+							unit="line"/>Je suis votre serviteur ; vous pouvez aller à tous les
+						diables. </p>
+					<stage type="entrance">Sortant de la mer.</stage>
+					<p> Ouf ! Les chemins sont diaboliques ; je croyais que je ne me tirerais jamais
+						des ornières. Mais je crois que voilà ma femme qui arrive ! Je suis bien
+						malheureux ! J’espérais que Neptune lui ferait boire rasade. </p>
+					<stage type="ride">Colombine parait en pleine mer, montée sur le dos d’un gros
+						poisson, et accompagnée de Pierrot, monté sur la queue du même
+						poisson.</stage>
+				</sp>
+				<sp who="pierrot">
+					<speaker>Pierrot</speaker>
+					<p> Serre la botte, serre la botte. </p>
+					<stage type="toward">À Colombine.</stage>
+					<p> Madame, tenez-vous bien aux crins. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Il faut l’aller attendre à la descente du coche, pour lui donner la main. -
+						Bonjour, ma petite femme ; d’où vient donc que vous n’êtes pas noyée ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ah ! Je n’en puis plus ; je suis toute rompue. Quelle maudite voiture ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> C’est la poste de ce pays-ci. </p>
+				</sp>
+				<sp who="pierrot">
+					<speaker>Pierrot</speaker>
+					<p> Par ma foi, monsieur, nous avons eu bien de la peine. J’ai cru vingt fois
+						que madame accoucherait de quelque sole entre mes bras. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Je suis tombée plus de cent fois ; et sans Pierrot... </p>
+				</sp>
+				<sp who="pierrot">
+					<speaker>Pierrot</speaker>
+					<p> Cela est vrai, monsieur, c’est moi qui l’ai repêchée. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Tu n’avais que faire de te donner tant de peine. Les méchantes femmes sont
+						de liège, et ne vont jamais à fond. </p>
+				</sp>
+				<sp who="pierrot">
+					<speaker>Pierrot</speaker>
+					<p> Voilà un pauvre poisson qui n’en peut plus. </p>
+					<stage type="toward">À Arlequin.</stage>
+					<p> Tenez, monsieur, voyez, il est sur les dents ; il sera fourbu de ce voyage.
+						Il y a huit jours que nous marchons sans débrider. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Hé bien, mène-le à l’écurie. Quel poisson est-ce cela ? </p>
+				</sp>
+				<sp who="pierrot">
+					<speaker>Pierrot</speaker>
+					<p> C’est un maquereau, monsieur. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Un maquereau ? Voilà une bonne voiture pour une femme ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Dis-moi donc présentement ce que nous venons faire ici, et pourquoi on nous
+						a fait déménager aussi vite que si nous avions dix commissaires à nos
+						trousses. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Cela a été un peu chaud ; mais est-ce qu’on vous a pris pour du train dans
+						notre quartier ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Non pas tout à fait ; mais on a jeté nos meubles par la fenêtre. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Diable ! Cela est scandaleux. Mais rien ne peut m’arrêter quand la gloire
+						m’appelle. Nous sommes en Thrace, et j’ai quitté la Grèce pour venir ici
+						disputer avec Orphée de la musique. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Quoi ! Ce ménétrier de village ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Il a eu l’effronterie de m’appeler en duel. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> En duel ? Et depuis quand donc les musiciens sont-ils devenus si braves ?
+					</p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Bon, bon ! Ils enragent de se battre quand ils ne voient personne. Tiens,
+						voilà la lettre que je lui ai écrite. </p>
+				</sp>
+				<sp who="amphion">
+					<speaker>Amphion</speaker>
+					<stage>, à Orphée.</stage>
+					<p> « J’ai appris, mon petit mignon, que vous vous mêlez de chanter et de racler
+						le boyau. Que cela ne vous arrive plus ; car je vous ferais chanter sur un
+						diable de ton. Je veux vous voir les instruments à la main, quoique vous ne
+						soyez qu’un chantre du Pont-Neuf, et que vous ne deviez chanter qu’avec des
+						grenouilles, ou braire avec des ânes comme vous. » </p>
+				</sp>
+			</div>
+			<div n="2" type="scene">
+				<head>Scène II <lb/>Arlequin, Colombine.</head>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> De quoi vivrons-nous en ce pays-ci ? Car nous n’avons point d’argent. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Cela m’embarrasse un peu ; car ce diable d’argent, c’est la cheville
+						ouvrière d’un ménage. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Si tu voulais me laisser faire, je ferais de bonnes connaissances, et nous
+						n’en serions pas plus mal. Autrefois, quand tu étais absent, je ne manquais
+						de rien. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Morbleu : Sorte de jurement en usage même parmi les gens de bon
+						ton. [L]</note>
+					<p> Tant pis, morbleu, tant pis ! Je me défie diablement de ces femmes qui
+						battent monnaie en l’absence de leurs maris. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ne voilà-t-il pas ? Ces maris se mettent d’abord cent choses dans la tête.
+						C’est bien cela ! J’ai des secrets merveilleux, qui m’ont été donnés par un
+						chimiste qui m’aimait autrefois. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Les Quatre-Nations, ou le collège des Quatre-Nations : collège
+						fondé à Paris par Mazarin, pour l’éducation et l’entretien de 60 enfants
+						originaires des pays conquis par Louis XIV. [L]</note>
+					<p> N’est-ce pas celui qui a le laboratoire au collège des Quatre-Nations, qui
+						vend du chocolat volatil, de la crème de perle et du sirop de diamants ?
+					</p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Je compose une huile, que j’appelle élixir de patience, dont une goutte,
+						appliquée sur le front d’un mari, le délivre pour jamais du mal de tête.
+					</p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Diable ! Voilà qui est beau ! Mais je crois que tu gagnerais bien davantage
+						si ton secret le délivrait de sa femme. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> J’en ai un autre bien plus beau pour les femmes d’aujourd’hui : je compose
+						la poudre de bonne réputation. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oh, oh ! Je crois qu’elle est diablement difficile à faire ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<note type="L">Raboteux : Inégal, qui n’est pas poli, ni uni. Scabrosus, scaber.
+						Le bois qui a beaucoup de nœuds, est raboteux, difficile à raboter, à unir.
+						Raboteux, au figuré, signifie, Rude, grossier, mal poli, mal digéré.
+						[T]</note>
+					<note type="L">Vestale : Nom doné chez les Romains à des vierges, consacrées à
+						la Déesse Vesta. [FC]</note>
+					<p> Qu’une coquette soit décriée, que sa conduite soit la plus raboteuse du
+						inonde, elle n’a qu’à changer de quartier, ne plus voir d’hommes, et prendre
+						une pincée de ma poudre dans un bouillon, en trois mois elle fera assaut de
+						vertu avec les plus vestales. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Voilà le plus beau secret du inonde. Mais peux-tu faire assez de cette
+						poudre-là ? J’en ai un pour le moins aussi beau. Qu’un homme ait une colique
+						enragée, en un moment je la lui fais passer ; je le couche par terre, je
+						fais chauffer une meule de moulin, et je la lui applique sur l’estomac :
+						n’ayez pas peur qu’il ait jamais la colique. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ni la colique ni autre mal. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Le malade meurt ordinairement ; mais s’il ne mourait pas, ce serait le plus
+						beau secret du monde. J’ai encore un autre moyen pour gagner de l’argent. Tu
+						sais bien que, quand je joue de ma lyre, je fais tout venir à moi. Je n’ai
+						qu’à aller aux Invalides, je servirai de grue pour monter les pierres, et on
+						me paiera comme trente manœuvres ensemble. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<note type="L">Grippe : Terme familier. Fantaisie, goût passager, capricieux.
+						[L]</note>
+					<p> Fi ! Voilà un vilain métier ! Je ne veux point d’un mari grue. <milestone
+							unit="line"/>Fais-toi plutôt maître à chanter ; on te donnera deux louis
+						d’or par mois, et tu trouveras peut-être quelque écolière à qui tu ne
+						déplairas pas ; car voilà la grippe des femmes d’aujourd’hui. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Quoi ! Est-ce un si bon métier ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<note type="L">Vacation : Profession d’un certain métier auquel on vaque, on
+						s’exerce. [T]</note>
+					<p> Je te dis qu’il n’y a pas une plus jolie vacation au monde ; on est de tous
+						les bons repas ; jamais de promenades sans le maître à chanter : on se donne
+						de petits airs de familiarité avec l’écolière ; on lui prend la main pour
+						lui faire battre la mesure : le mari passe tout sur la foi de la musique, et
+						il ne se doute pas, bien souvent, de la partie qu’on fait chanter à sa
+						femme. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Voilà mon affaire : il n’y a qu’une chose qui m’embarrasse ; il me semble
+						que je ne suis pas assez bien habillé. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ne te mets pas en peine ; tu n’auras pas montré trois mois, que tu seras
+						aussi doré que les maîtres à danser. Bon ! Une écolière, en levant une jupe
+						chez un marchand ; ne lève-t-elle pas aussi une veste pour son maître de
+						musique ? Qu’est-ce qu’il lui en coûte ? C’est le mari qui paye cela ; la
+						bête a bon dos. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> ’Voilà de jolis profits ; mais aussi on a bien de la peine : c’est un rude
+						métier : il faut quelquefois chanter quand on a envie de boire. Mais
+						n’importe, voilà qui est fait ; quand l’argent me manquera, je me jette dans
+						la musique. Adieu ; je m’en vais chercher Orphée ; il n’a qu’à se bien
+						tenir ; je lui ferai manger son violon jusqu’au manche. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Et moi, je vais travailler à ma poudre de bonne réputation. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Ne manque pas d’en garder pour toi. À propos, qu’as-tu fait de nos enfants ?
+					</p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Pour les cacher à cette âme damnée de Jupiter, qui nous en a tué déjà deux,
+						j’en ai fait un ballot, que j’ai porté à la douane ; et je vais voir s’il
+						est arrivé, pour en payer les droits. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Cette marchandise-là ne devrait pas beaucoup payer d’entrée ; elle paye
+						assez à la sortie. </p>
+				</sp>
+			</div>
+			<div n="3" type="scene">
+				<head>Scène III <lb/>Arlequin, Isabelle.</head>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Il y a longtemps, madame, que la tapisserie de mes inclinations est pendue
+						au clou à crochet de vos beautés. C’est l’amour qui en a été le tapissier ;
+						et cela est si vrai que le mérite... votre mine, d’un côté... mais
+						d’ailleurs. À propos, mademoiselle, est-ce vous que j’aime ? Car vous me
+						paraissez bien petite aujourd’hui. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Il est assez difficile, monsieur, de vous répondre juste sur ce que vous me
+						demandez. Tout ce que je puis vous dire, c’est que je ne me souviens pas
+						d’avoir été plus grande. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oui, charmante princesse, c’est vous. Je vous reconnais à vos flamboyantes
+						prunelles.</p>
+					<stage type="turn">Il tourne autour d’elle.</stage>
+					<note type="L">Chiffon : Vieux morceaux d’étoffe, de linge, vieille guenille, et
+						généralement chose de nulle valeur. [T]</note>
+					<p> J’en suis pourtant toujours pour ce que j’ai dit, voilà qui est diablement
+						chiffon. Si nous nous marions ensemble, jamais nos enfants n’entreront dans
+						le régiment des gardes. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Cela n’est pas encore fait. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<stage>, la mesurant avec une corde.</stage>
+					<note type="L">Paume : Mesure dont on se sert pour la taille des chevaux, et qui
+						consiste dans la hauteur d’un poing fermé. Un cheval de seize paumes.
+						[L]</note>
+					<p> Je ne pense pas que vous ayez dix-sept paumes. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Apparemment, monsieur, que vous avez quelque cheval à assortir, ou bien vous
+						me voulez prendre la mesure d’un habit. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Que je serais heureux si je pouvais être le tailleur fortuné qui prendra la
+						mesure d’une si aimable personne ! Mais je crains bien que les ciseaux de
+						mon amour... vous m’entendez bien ? </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Point du tout ; je vous avoue que je n’ai point le don de deviner. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Comme mon amour ne vise qu’au mariage, plus je vous regarde, et plus je
+						trouve que vous êtes assez mon fait. Quand on a une femme à prendre, les
+						plus petites sont toujours les meilleures. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Suivant cette maxime-là, je suis donc fort bonne à marier ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Embryon : Fœtus qui commence à se former dans le ventre de la
+						mère. On dit figurément ou par mépris, d’un fort petit homme. [Ac]</note>
+					<p> Oh ! Vous l’êtes de reste. Allons, la belle, dites la vérité ; n’est-il pas
+						vrai que vous serez bien aise d’être ma moitié ? Voyez, regardez-moi ; cet
+						air, ce port ; eh ! J’enrage quand je vois ces petits embryons de cour
+						vouloir faire assaut avec moi. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<note type="L">Marmouset : En termes de mépris, petit garçon, ou petit homme mal
+						fait. [FC]</note>
+					<p> Il faut qu’ils aient perdu l’esprit ! Ce sont de plaisantes marmousettes !
+					</p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> J’ai le derrière un peu gros, tirant même sur le porteur de chaise ; mais
+						mon médecin m’a promis qu’il me ferait en aller cela ; il m’a ordonné de
+						prendre du petit-lait. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Oh ! Je crois ce remède-là sûr. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Il m’a dit que c’était une humeur âcre, répandue dans le diaphragme du
+						mésentère, et qui tombe sur l’omoplate. Mais laissons cela, et parlons du
+						plaisir que nous aurons. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> On se trompe quelquefois dans ce calcul-là, et l’on n’y trouve pas souvent
+						tout le bonheur qu’on s’y était proposé. </p>
+					<note type="C">Tout ce qui précède, à partir du commencement de cette troisième
+						scène, a été supprimé dans toutes les éditions. Comme ces suppressions sont
+						très multipliées dans cette pièce et dans les suivantes, je crois inutile
+						d’en avertir davantage le lecteur. (G. A. C.) </note>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je suis doux, pacifique, aisé à vivre, l’humeur satinée, veloutée : j’ai
+						vécu six ans avec ma première femme, sans avoir le moindre petit démêlé.
+					</p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Cela est assez extraordinaire. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Une fois seulement, après avoir pris du tabac, je voulais éternuer, elle me
+						fit manquer mon coup ; de dépit, je pris un chandelier, je lui cassai la
+						tête, et elle mourut un quart d’heure après. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Ah ciel ! Est-il possible ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Voilà le seul différend que nous ayons jamais eu ensemble, et qui ne dura
+						pas longtemps, comme vous voyez. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Cela est fort expéditif, je vous l’avoue. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Quand une femme doit mourir, il vaut bien mieux que ce soit de la main de
+						son mari que de celle d’un médecin, qu’il faut bien payer, et qui vous la
+						traînera six mois ou un an. Je n’aime point à voir languir le inonde ; et
+						puis l’on gagne son argent par ses mains. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Et vous n’avez point d’horreur d’avoir commis un crime aussi noir que
+						celui-là ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Moi ? Point du tout : je suis accoutumé au sang de jeunesse. Mon père a fait
+						mille combats en sa vie, où il a toujours tué son homme. <milestone
+							unit="line"/>Il a servi le roi trente-deux années. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Sur terre, ou sur mer ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> En l’air. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Comment, en l’air ? Je n’ai jamais ouï parler de ces officiers-là. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> C’est que, comme il était fort charitable, lorsqu’il rencontrait quelque
+						agonisant que l’on menait à la Grève, il se mettait avec lui dans la
+						charrette, et l’aidait à mourir du mieux qu’il pouvait. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Ah, l’horreur ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Tous ses confrères les médecins (car il avait pris ses licences dans leur
+						école) disaient qu’il n’y avait jamais eu un homme aussi adroit, et qu’on ne
+						voyait point de besogne faite comme la sienne : aussi l’avaient-ils fait
+						recteur de la Faculté. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Voilà, je vous assure, des talents bien merveilleux. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je vous dis, madame, que si vous l’aviez vu travailler, il vous aurait fait
+						envie de vous faire pendre. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Comme ce sont peut-être des talents de famille, vous deviez prendre la
+						charge de monsieur votre père. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je m’y sentais assez d’inclination ; mais vous savez qu’il faut qu’un
+						gentilhomme voie le pays. J’ai couru par toutes les sept parties du monde,
+						et me voilà enfin à vos pieds, ma divine princesse, le coeur en braise, pour
+						vous dire que je me pendrai assurément, si vous n’êtes unie avec moi par le
+						lien conjugal. </p>
+				</sp>
+			</div>
+			<div n="4" type="scene">
+				<head>Scène IV <lb/>Arlequin, Isabelle, Colombine, qui survient et écoute sans être
+					vue.</head>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, à part.</stage>
+					<p> Ah ! Traître ! </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Je ne trouve qu’une petite difficulté à notre mariage, c’est que je suis
+						déjà mariée. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Mariée ? Bon, voilà une belle affaire ! Est-ce cela qui vous embarrasse ? Je
+						le suis aussi ; mais il n’y a rien de si aisé que d’être veuf ; cinq sous de
+						mort aux rats en font l’affaire. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, à part.</stage>
+					<p> Ciel ! Qu’entends-je ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Allons donc, épine de mon âme, touchez là ; commençons les préliminaires de
+						notre mariage. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, à part.</stage>
+					<p> Le traître ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<stage>, s’approchant d’Isabelle, et lui levant sa coiffe.</stage>
+					<note type="L">Petite-oie : Les bas, le chapeau, et les autres ajustements pour
+						rendre un habillement complet ; ainsi dit par comparaison avec l’abatis
+						d’une volaille. Fig. Les petites faveurs que les femmes accordent à leurs
+						amants. [L]</note>
+					<p> Je ne demande que la petite oie. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Tout doucement, monsieur ; réservez ces caresses-là pour votre femme. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Carogne : Terme injurieux, qui se dit entre les femmes de basse
+						condition, pour se reprocher leur mauvaise vie, leurs ordures, leur
+						puanteur. [F]</note>
+					<p> Pour ma femme ? Je vous ai déjà dit que c’était une carogne que je hais
+						comme le diable. Je voudrais qu’elle fût pendue. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, à part.</stage>
+					<p> Scélérat ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Et dans peu j’espère lui donner d’une potion cordiale qui l’empêchera
+						d’avoir faim de longtemps. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> C’est-à-dire que voilà la manière dont vous traitez vos femmes, quand vous
+						voulez les régaler : je suis votre très humble servante, je n’aime point la
+						mort aux rats. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<stage>, l’arrêtant.</stage>
+					<note type="L">Mousquet : Arme à feu qu’on porte sur l’épaule, qui sert à la
+						guerre, qui prend feu avec une mèche. [F]</note>
+					<note type="L">Léopard : Quadrupède carnassier qui a la peau marquetée.
+						Adjectivement et par plaisanterie. [L]</note>
+					<p> Vous me fuyez ! Oui, si vous voulez me promettre de m’épouser, je vous
+						promets, moi, de la faire crever dans deux jours comme un vieux mousquet.
+						Arrêtez donc, beauté léoparde ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, le prend par le bras.</stage>
+					<p> Comme un vieux mousquet ! </p>
+					<stage type="exit">Isabelle s’en va.</stage>
+				</sp>
+			</div>
+			<div n="5" type="scene">
+				<head>Scène V <lb/>Arlequin, Colombine.</head>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Bouchon : Fig. et familièrement. Mon petit bouchon, terme de
+						tendresse et de caresse. Vieux en ce sens. [L]</note>
+					<p> Ah, ma petite femme ! Te voilà ? Hé ! Que j’ai de joie de te voir, mon petit
+						bouchon ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ah, scélérat ! Voilà donc les transports de ton amour ? Je vous promets de
+						la faire crever dans deux jours. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Hé ! Ne vois-tu pas bien que je disais cela pour rire ? Il faut bien plus de
+						temps pour faire crever une femme. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ali, malheureux ! Il faut que je te dévisage. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> C’est elle qui me voulait mettre à mal. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Non, je ne serai pas contente que je ne t’aie étranglé de mes propres mains. </p>
+					<stage type="threat/hit">Elle se jette sur lui et le bat.</stage>
+				</sp>
+			</div>
+			<div n="6" type="scene">
+				<head>Scène VI <lb/>Arlequin, Colombine, Un Vendeur de tisane.</head>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Au meurtre ! Au guet, au guet ! On égorge un bourgeois. </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<p> Chalands, chalands, qui est-ce qui veut boire ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, se met à pleurer aussitôt qu’elle voit le Vendeur de tisane.</stage>
+					<p> Ah, ah, ah ! </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<p> Quel vacarme faites-vous donc là ? Fi donc ! Quelle honte d’estropier une
+						pauvre femme ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> C’est ma femme : de quoi vous mêlez-vous ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ah, ah, ah, ah ! </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<p> Le sac à vin ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, toujours pleurant.</stage>
+					<p> Je suis... hi, hi. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Par ma foi, voilà une méchante carogne. </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<stage>, à Arlequin.</stage>
+					<note type="L">Morgué : Sorte de juron de paysan. [L]</note>
+					<p> Çà n’est morgué pas bien, tout franc. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Je suis toute brisée, hé, hé, hé, hé. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> La, la, la, ma petite femme, ce ne sera rien ; cela ne m’arrivera plus. </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<note type="L">Sangler : Familièrement. Appliquer avec force un coup. [L]</note>
+					<p> Hé, le brutal ! Quand vous voulez battre une femme, que ne lui sanglez-vous
+						un coup de bâton sur la tête, sans vous amuser à la faire crier deux
+						heures ! </p>
+					<stage type="toward">À Colombine.</stage>
+					<p> Qu’est-ce donc qu’il vous a fait ? </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Il m’a..., il m’a... Ah ! Je ne saurais parler, er, er, er. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Par ma foi, je commence à croire que c’est moi qui l’ai battue. </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<p> Allons, je veux faire la paix : je n’aime pas à voir de noise dans un
+						ménage ; je veux vous raccommoder : venez çà. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Non, je ne lui pardonnerai jamais. </p>
+					<stage type="hit">Le Vendeur de tisane donne un bâton à Colombine, qui en frappe
+						Arlequin.</stage>
+					<p> Allons, vous voilà quittes. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oui, tout d’un côté et rien de l’autre. </p>
+				</sp>
+				<sp who="vendeur_tisane">
+					<speaker>Le Vendeur de Tisane</speaker>
+					<p> Sans moi, vous vous seriez battus, et vous voilà les meilleurs amis du
+						monde. À la fraîche, à la fraîche ; qui est-ce qui veut boire ? </p>
+				</sp>
+			</div>
+			<div n="7" type="scene">
+				<head>Scène VII <lb/>Arlequin, Un Auteur.</head>
+				<stage type="costume">C’est Colombine sous le costume approprié au rôle
+					d’auteur.</stage>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<stage>, apercevant l’auteur qui gesticule beaucoup sans rien dire.</stage>
+					<p> Voilà un sac de charbon de l’enfer qui va à la promenade. Monsieur ou
+						madame, car je ne sais si vous êtes mâle ou femelle, je ne vous vois que par
+						derrière... </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<note type="L">Vade retro : Expression latine, cite par Jésus dans la Bible:
+						Vade retro, Satanas: Va en arrière, Satan. </note>
+					<p> Vade retro, profane. Qui t’a fait si téméraire que de m’interrompre ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je vous demande pardon. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Une personne de mon savoir... </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Tâcher : Faire des efforts pour venir à bout de. Familièrement.
+						Il n’y tâchait pas, il ne l’a pas fait exprès, avec intention. [L]</note>
+					<p> Je n’y tâchais pas. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Qui fait les madrigaux de Proserpine. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je ne le ferai plus. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<note type="C">Il est facile de voir que Regnard se permet, dans ce passage et
+						le suivant, une épigramme contre l’Académie terrestre et française, dont il
+						ne fut jamais membre. Mais sans doute qu’un autre motif le priva de cette
+						honorable distinction due à son mérite. Sa Satire sanglante contre le
+						cardinal de Richelieu (voyez Ép. vi, tome. iv) était un obstacle plus
+						sérieux à son admission ; car il s’était mis dans l’impossibilité de
+						prononcer l’éloge obligé du fondateur de l’Académie, dont la mémoire, à ce
+						titre, et à cette époque si rapprochée de Regnard commandait les justes et
+						sincères hommages des littérateurs et des savants. On sait que c’est au
+						cardinal de Richelieu que l’on doit aussi l’établissement de l’Imprimerie
+						royale. (G. A. C.) </note>
+					<note type="L">Consigner : Assurer le paiement de quelque somme sur laquelle il
+						y a quelque contestation, en la mettant en main tierce jusqu’à la décision
+						de la difficulté qui empêche qu’on ne la délivre sur le champ. [T]</note>
+					<p> Et qui est le premier consignant pour entrer ici-bas à l’Académie. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> À l’Académie ? Quoi ! Il y en a une ici ? C’est donc une académie de malins
+						esprits. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Je me promenais sur les bords du Cocyte, pour travailler plus en repos à ma
+						harangue, et tu viens te jeter au travers de mes conceptions ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Comment donc ! Est-ce que vous faites vos harangues vous-même ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Je sais bien que la plupart des académiciens, là-haut, ne se donnent pas
+						cette peine-là, et que, pourvu qu’ils la sachent lire, on les reçoit tout
+						d’une voix ; mais ce n’est pas de même ici ; et il ne suffit pas de savoir
+						faire l’anatomie d’un mot, pour être l’interprète des mystères de notre
+						diabolique Académie. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Apparemment que vous en étiez là-haut ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Que j’en étais là-haut ! Que j’en étais ! Est-ce qu’on me recevrait ici, si
+						j’en avais été ? Ce n’est pas que je n’aie eu cent fois plus de mérite qu’il
+						ne faut pour en être. J’ai été le plus bel esprit de mon temps, et j’ai fait
+						en ma vie plus de cent comédies. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Plus de cent comédies ! </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Oui, cent ; cent cinquante, si vous me fâchez. Il n’y eut jamais un meilleur
+						naturel que le mien ; je rendais une comédie aussi facilement qu’un autre
+						rend un lavement. C’est moi qui ai enrichi les comédiens français ; et il
+						n’y avait point d’hiver que je ne leur donnasse sept ou huit pièces, tant
+						sérieuses que comiques. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Et les jouait-on longtemps ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Jamais qu’une fois ; mais aussi tout Paris venait se crever à la première
+						représentation ; car personne ne voulait attendre la seconde, de peur de ne
+						la point voir. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> J’aurais cru que c’eût été là le moyen d’envoyer les comédiens à l’hôpital.
+					</p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> C’est ce qui vous trompe. Une comédie nouvelle, pour être bonne, ne doit se
+						jouer qu’une fois ; quand elle va jusqu’à deux, ma foi, on s’ennuie. J’ai
+						mis le siècle dans ce goût-là ; et, si vous y prenez garde, depuis moi, tous
+						les auteurs donnent là-dedans. Ils ont raison, au bout du compte ; car,
+						comme les bonnes choses aujourd’hui n’ont point de cours, pour peu qu’une
+						méchante pièce puisse être représentée une fois, voilà les comédiens riches.
+					</p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Les vôtres étaient donc sur ce pied-là ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Vous pouvez croire que je me suis mis à la mode tout des premiers. De plus,
+						je n’ai jamais voulu ôter au public l’usage récréatif des sifflets. Tout au
+						contraire, je marquai, dans mes rôles, les endroits où l’on devait siffler,
+						afin que l’acteur se reposât et qu’il reprit haleine. C’est le jugement qui
+						conduit tout cela. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Et moi je voudrais que les sifflets fussent au diable. Quand cette quinte-là
+						prend au parterre, il démonterait Titus et Bérénice. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Je m’étais, de mon vivant, abonné avec un marchand de sifflets, qui était,
+						dans son métier, le premier homme du monde. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Les comédiens vous ont bien de l’obligation. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Il en faisait pour la prose, pour les vers, pour les Français, pour les
+						Italiens ; mais, ma foi, où il triomphait, c’était pour l’Opéra. Pour le
+						mettre en crédit, j’avais fait un opéra, moi, qu’on allait jouer quand je
+						mourus. Ce devait être la plus belle chose qu’on eût jamais vue sur le
+						théâtre. Je ne l’avais pas pris de la métamorphose comme ces chardons du
+						Parnasse ; fi ! Cela sent le collège : je l’avais tiré tout entier de
+						l’histoire de France ; il portait pour titre : les Aventures du Pont-Neuf.
+						La fable n’a rien de si magnifique. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Les Aventures du Pont-Neuf ! Un sujet tiré de l’histoire de France ! </p>
+					<stage type="aparte">À part.</stage>
+					<note type="L">Petites maisons : nom donné autrefois à un hôpital de Paris où
+						l’on renfermait les aliénés. Il est à mettre aux Petites-Maisons c’est un
+						échappé des Petites-Maisons, c’est un homme sans raison, qui fait ou dit des
+						choses folles. [L]</note>
+					<p> Voilà un auteur échappé des Petites-Maisons des enfers. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<note type="L">Synecdoche : Figure de Rhétorique, qui fait entendre un tout pour
+						une de ses parties, ou une partie pour le tout, ou la matière pour la chose.
+						[T] actuellement graphié synecdoque</note>
+					<p> Comment donc ! Est-ce que je dis des impertinences ? Paris n’est-il pas la
+						plus belle ville de France ? Le Pont-Neuf n’est-il pas le plus bel endroit
+						de Paris ? Ergo, les Aventures du Pont-Neuf sont les plus beaux traits de
+						l’histoire de France. C’est une figure, ignorant, que nous appelons en
+						latin, pars pro toto ; et en grec synecdoche... </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Et en français, la folie. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Mais vous me faites perdre bien du temps. Que voulez-vous de moi ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je veux apprendre le chemin des enfers, et je vais y chercher ma femme. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Vous allez chercher votre femme ? Ah, ah ! </p>
+					<stage type="touch">Il se touche le front du bout du doigt.</stage>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Comment donc ! Est-ce que je suis barbouillé ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<note type="L">Ellébore : Plante, dite dans l’Avranchin herbe enragée, très
+						usitée dans la médecine des anciens comme cathartique et qui passait pour
+						guérir la folie. Avoir besoin d’ellébore, avoir l’esprit troublé. [L]</note>
+					<p> Chercher sa femme ! Il vous faut cinq ou six grains d’ellébore. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Le diable m’emporte si je ne vais la chercher. Je ne me moque point. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Ah ! Pour la rareté du fait, je veux vous y mener. Suivez-moi : je veux
+						entendre ce compliment-là. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Diablement : Adverbe qui sert à augmenter la force d’une
+						expression. [T]</note>
+					<p> Avant que d’aller plus avant, je voudrais bien savoir une chose de vous ;
+						car on dit que l’on est si savant quand on est mort ! Ma femme a toujours
+						été diablement coquette : dites-moi, je vous prie, si je ne suis point...
+						Là... Là... Vous m’entendez bien ? </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Oui-da, cela est bien aisé. Voyons : là, levez le nez, l’air fixe, le corps
+						ferme, la tête droite ; montrez la langue. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Ah ! Je tremble. </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Montrez-moi votre main ; ah, ah ! Tirez la langue ; eh, eh ! </p>
+					<stage type="touch">Il lui tâte le pouls.</stage>
+					<p> Oh, oh ! </p>
+					<stage type="touch">Il lui touche le front.</stage>
+					<p> Hu, hu ! </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Ah, la carogne ! </p>
+				</sp>
+				<sp who="auteur">
+					<speaker>L’Auteur</speaker>
+					<p> Que cela ne vous fasse point de peine : c’est un mal de famille. Votre père
+						l’était, votre grand-père l’était, votre bisaïeul l’était. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je vous remercie : quand on fera des chevaliers de cet ordre, je vous
+						prierai de faire mes preuves. </p>
+				</sp>
+			</div>
+			<div n="8" type="scene">
+				<head>Scène VIII <lb/>Pluton, Proserpine, assis sur un trône de flamme, au milieu de
+					leur Cour.</head>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<note type="L">Phlégéton : Terme de la mythologie. Nom d’un des fleuves des
+						enfers. </note>
+					<p> C’est une chose étonnante, phlégétontique assemblée, que de voir l’affluence
+						d’âmes qui tombent journellement par vos soins dans mon royaume : il faut
+						désormais refuser l’entrée aux survenants, ou faire bâtir des appartements
+						nouveaux ; et, pour cela, je crois qu’il sera bon de lever un droit sur le
+						bois et le charbon qui se brûlent ici-bas : voilà le sujet pour lequel je
+						vous assemble. </p>
+				</sp>
+				<sp who="proserpine">
+					<speaker>Proserpine</speaker>
+					<note type="L">Maltôtier : Celui qui fait la maltôte : impôt levé sous Philippe
+						le Bel, pour la guerre contre les Anglais. Perception d’un droit qui n’est
+						pas dû. Toute espèce de perception d’impôts.</note>
+					<p> Ali ! Fi, m’amour ! Ne parlons point d’impôt : c’est quelque nouveau venu de
+						maltôtier qui vous a soufflé cet avis-là. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> J’ai vu autrefois le temps si misérable, qu’il ne venait pas ici le moindre
+						petit griffonneur de sergent, qu’il ne fallût députer un diable tout exprès
+						pour aller le quérir ; et présentement, nous ne sommes employés qu’à les
+						chasser : il faut que les greffiers attendent des années entières à la
+						porte, parce qu’ils ne veulent pas passer devant les conseillers, qui
+						pleuvent ici de toutes parts. </p>
+				</sp>
+				<sp who="proserpine">
+					<speaker>Proserpine</speaker>
+					<note type="L">Prédicament : Terme de Logique. C’est une des Catégories, une
+						division qui se fait de la nature des substances, ou des qualités des êtres.
+						Les Philosophes ne sont pas d’accord sur le nombre des prédicaments. On dit
+						proverbialement, qu’une personne est en un bon, ou mauvais prédicament,
+						selon qu’elle s’est mise en bonne, ou en mauvaise réputation. [F]</note>
+					<p> Il ne faut plus recevoir de gens de robe ; l’enfer est déjà assez lugubre ;
+						et surtout, point de greffiers, car ces gens-là mettent l’enfer en mauvais
+						prédicament. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<note type="L">Querelle : on dit proverbialement, Faire une querelle d’Allemand
+						à quelqu’un, pour dire, l’attaquer sans sujet et de gaîté de coeur.
+						[F]</note>
+					<p> Oui ; mais vous ne savez pas que, moi qui suis Pluton, je n’ai pas plus de
+						droit en enfer que ces messieurs-là. Bienheureux si, quelque jour, ils ne
+						m’en chassent pas. Je suis si soûl des gens de chicane, que dernièrement je
+						fis une querelle d’Allemand à un diable de qualité, qui revenait de Paris ;
+						et je lui fis fermer la porte, parce qu’il avait hanté mauvaise compagnie
+						là-haut, et qu’il sortait du corps d’un procureur. </p>
+				</sp>
+				<sp who="proserpine">
+					<speaker>Proserpine</speaker>
+					<p> Vous avez eu raison ; ce serait le moyen de gâter bientôt tout ici. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Je veux que vous soyez témoins de ce que je dis, et que Caron apporte devant
+						vous le livre journal des âmes qu’il a passées aujourd’hui. </p>
+				</sp>
+			</div>
+			<div n="9" type="scene">
+				<head>Scène IX <lb/>Pluton, Proserpine, Caron, Suite de Pluton.</head>
+				<stage type="carry">Deux Diables apportent un gros livre sur leur dos ; Caron le
+					feuillette et lit.</stage>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<stage>, lisant.</stage>
+					<p> Du dix-sept, passé deux mille sept cent treize médecins avec leurs mules.
+					</p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Ces messieurs-là font mieux nos affaires là-haut : il les faut renvoyer. Je
+						ne veux plus qu’on en reçoive aucun à l’avenir qu’il n’ait une attestation
+						de service et un certificat des fossoyeurs, comme il a bien et fidèlement
+						exercé sa charge de médecin, et tué pour le moins dix mille personnes à sa
+						part. </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Du même jour, quatorze cents apothicaires. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Pour les apothicaires, passe. On est échauffé en ce pays-ci, et on a besoin
+						de lavements pour se déconstiper. </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<stage>, toujours lisant.</stage>
+					<note type="L">Rat de cave : On appelle ironiquement rat de cave, un Commis des
+						aides qui va visiter et marquer les tonneaux des Cabaretiers, pour en faire
+						payer le Gros et Huitiéme. [L] </note>
+					<p> Dudit jour, cinquante-sept mille deux cent dix sept, tant fermiers,
+						sous-fermiers, que commis et rats-de-cave. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Il est vrai qu’il en est tombé ce matin une bruine ; on ne se voyait pas en
+						enfer. </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Pour les fermiers, tout franc, il n’y a plus moyen de les passer ; ils sont
+						si gros et si gras, que ma barque enfonce. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Comment voulez-vous faire ? Nous ne pouvons pas les refuser, c’est ici leur
+						apanage. </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Plus, quinze mille sept cents, tant clercs que procureurs. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Pour ceux-là, il faut en faire provision ; c’est le bois d’andelle de
+						l’enfer ; et je ne veux pas que l’on brûle autre chose dans mon cabinet.
+					</p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Quatorze mille douzaines de femmes tant grandes que petites. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Ah ! Voilà ce que je craignais ! Et pourquoi les laisse-t-on passer ? </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<stage>, lisant.</stage>
+					<p> Item. Passé, en corps et en âme, deux carabins de symphonie, soi-disant
+						musiciens de l’Opéra, qui viennent redemander leurs femmes. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Ils sont donc fous ? Qu’on les fasse venir au plus vite, je veux les voir ;
+						voilà du fruit nouveau. </p>
+				</sp>
+				<sp who="proserpine">
+					<speaker>Proserpine</speaker>
+					<p> Il y a longtemps que je suis en ce pays-ci, mais je n’ai point encore vu une
+						pareille ambassade. </p>
+				</sp>
+			</div>
+			<div n="10" type="scene">
+				<head>Scène X <lb/>Pluton, Proserpine, Orphée, Isabelle, femme d’Orphée, Arlequin,
+					Colombine.</head>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<stage>, à Orphée, montrant Isabelle.</stage>
+					<p> Est-ce là votre femme ? Elle valait bien la peine de faire le voyage. </p>
+					<stage type="foreign/sing">Orphée fait un compliment à Pluton, en italien ;
+						ensuite il chante un air pour redemander sa femme.</stage>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> S’il ne tient qu’à une chanson pour avoir sa femme, je vais en dire une
+						nouvelle. </p>
+					<stage type="sing/title">Il chante sur l’air : Dupont, mon ami.</stage>
+					<l>Pluton, mon ami, </l>
+					<l>J’ai fait ce voyage, </l>
+					<l>Pour tirer d’ici </l>
+					<l>Celle qui m’engage : </l>
+					<l>Si tu ne veux me la donner, </l>
+					<l>Il faudra bien s’en consoler.</l>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> S’il est étonnant de voir un mari chercher sa femme jusqu’aux enfers, il ne
+						l’est pas moins de voir une femme souhaiter avec empressement de retourner
+						avec son mari, quand une fois elle en a été séparée. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Voilà un petit début qui n’est point sot. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Débuteuse : mot formé avec le mot début de la phrase précédente.
+						Après le compliment pour la phrase d’Isabelle, par Pluton, Arlequin fait un
+						autre compliment à celle qui a fait ce petit début. </note>
+					<p> Ni la débuteuse non plus. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<p> Pour moi, je ne suis point de celles qui regardent la séparation d’avec un
+						mari comme la porte de leur félicité ; et j’avoue franchement que je suis
+						d’assez mauvais goût pour trouver qu’il n’y a point de bonheur égal à celui
+						de vivre avec un époux que l’on aime et dont on est tendrement aimé. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Eh ! Fi donc ; faites-la taire : elle prêche là une nouvelle doctrine. </p>
+				</sp>
+				<sp who="isabelle">
+					<speaker>Isabelle</speaker>
+					<note type="L">Surtout : Grosse casaque ou juste-au-corps qu’on met en hiver par
+						dessus ses autres habits. Ce mot n’est en usage que depuis fort peu
+						d’années. C’est à peu prés ce qu’on appelait anciennement Souravis, comme
+						qui aurait dit Surhabits. [Th. Corneille]</note>
+					<p> Je sais que je ne suis pas du goût d’aujourd’hui, et que pour être
+						présentement femme du bel air, il ne faut prendre un mari que comme un
+						surtout de bienséance, et un paravent de réputation ; mais j’aime mieux
+						n’être pas tout à fait à la mode, et être un peu plus dans la route de mon
+						devoir. C’est ce qui fait que je viens implorer votre clémence, et vous
+						prier, par tout ce que vous avez de plus cher, au nom de l’amour que vous
+						vous êtes porté l’un et l’autre, de m’accorder la grâce que je vous demande,
+						de me rendre à un mari que je chéris plus que toute chose au monde, et je
+						serai obligée de faire le reste de ma vie des voeux pour la santé et la
+						prospérité de vos majestés diaboliques. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<note type="L">Malepeste : Imprécation qu’on fait contre quelque chose, et
+						quelquefois avec admiration. [F]</note>
+					<p> Malepeste ! Voilà du plus beau récitatif. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Qu’est-ce que c’est que ce bruit-là ? </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Ce sont des anciens marguilliers qui veulent passer devant des avocats. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Le procès n’a-t-il pas été jugé là-haut ? </p>
+				</sp>
+				<sp who="caron">
+					<speaker>Caron</speaker>
+					<p> Oui ; mais ils en appellent devant vous. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Huissier, faites faire silence ; nous verrons cela tantôt. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<stage>, déclamant.</stage>
+					<p> Les femmes d’aujourd’hui sont si malheureuses, et l’empire des maris si
+						absolu, que je ne m’étonne plus qu’il y ait tant de filles à marier, et qui
+						regardent le mariage comme l’écueil de leurs plaisirs et le tombeau de leur
+						liberté. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Bon ! Bon ! Toute la journée les filles ont le gosier ouvert pour
+						chanter :</p>
+					<lg>
+						<l>Ma mère, mariez-moi, </l>
+						<l>Vous savez la raison pourquoi.</l>
+					</lg>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> En effet, n’est-ce pas une chose qui crie vengeance, de voir l’inhumanité
+						avec laquelle les pauvres femmes, ces moutons d’amour, sont traitées par ces
+						loups dévorants ! </p>
+					<stage type="shout">Elle crie.</stage>
+					<p> Ne dirait-on pas... </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oh ! Je vois bien que nous sommes ici sur le patrimoine des avocats. Comme
+						elle a appris à crier ! </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ne dirait-on pas, dis-je, que le mariage, qui devrait être l’union, le noeud
+						et la soudure des volontés, soit présentement un champ de bataille, où le
+						mari s’exerce à chagriner sa femme, et où la femme est toujours la
+						malheureuse exposée aux insultes, et bien souvent aux coups de celui qui
+						devrait être le rempart de sa faiblesse ? </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<note type="L">Chinforgnaux : mot dérivé de Chinfreneau. Coup à la tête ou au
+						visage. Terme populaire. [L]</note>
+					<p> Nous voyons pourtant souvent ici des maris qui portent de vilains
+						chinforgnaux sur leur tête. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Hé ! Ce n’est que pour entretenir la paix. Ne savez-vous pas bien que qui
+						bat sa femme, il la fait braire ; qui la rebat, il la fait taire. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Pour moi, je vous déclare que, si heureusement mon mari était mort le
+						premier, j’aurais crié ; je me serais couverte, jusqu’au bout des ongles,
+						d’un deuil où le coeur n’aurait pas eu grande part ; mais loin de le venir
+						trouver aux enfers, je me serais bien donné de garde de le chercher. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oh ! Ma petite femme, je n’ai jamais douté de votre affection. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Ainsi, puisqu’il vient me chercher de si loin : c’est une marque qu’il ne
+						saurait se passer de moi ; mais il ne m’aura que par le bon bout : je
+						prétends avoir des conditions si avantageuses, qu’on ne puisse pas me
+						reprocher d’avoir gâté le métier... Comme c’est une chose qui crie
+						vengeance, de voir le peu de dépenses que les femmes font aujourd’hui, je
+						veux avoir plus d’argent que par le passé, et que chacun ait, sa semaine, la
+						clef du coffre-fort. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Si vous l’aviez une semaine, je courrais grand risque la suivante de ne pas
+						entrer en exercice. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Item. Oh ! Voilà un grand item celui-ci : point de jolies femmes de chambre,
+						c’est-à-dire, que je les choisirai moi-même les plus laides que faire se
+						pourra, et qui auront au moins quarante-cinq ans. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Fi ! On n’est jamais bien servi par ces vieilles-là. Il faut donc que vous
+						retranchiez aussi les grands laquais. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<note type="L">Tudieu : Juron de l’ancienne comédie. [L] Euphémime pour "Tue
+						Dieu".</note>
+					<p> Tudieu ! Cet oiseau-ci sait bien sa leçon. Voilà une pèlerine qui a
+						diablement d’esprit. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Elle a encore six fois plus de tête. La la, voyons : j’ai aussi à proposer
+						mes conditions, moi, et voilà des articles que nous ferons signer par des
+						notaires de ce pays-ci ; car je crois qu’il n’y en manque pas. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Oui, tu le prends comme cela ? Et moi, je ne veux pas sortir. Une jolie
+						femme comme moi, en tout pays, ne manque point de mari. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Oh ! Je sais bien qu’il y a partout assez de gens qui se mêlent de ces
+						emplois-là. Primo. Puisque je ne profite pas de votre mort, je prétends que
+						vous me rendiez les frais du deuil et de l’enterrement que j’ai payés au
+						crieur. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Cela est juste ; mais il n’en coûte pas grand’chose gour faire enterrer une
+						petite femme. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Ah ! Ces diables de corbeaux-là ne les mesurent pas B la toise, et ils
+						rançonnent si exorbitamment un pauvre mari, que souvent il aimerait presque
+						autant que sa femme ne mourût pas. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Ils gagnent assez d’ailleurs. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je prétends à l’avenir que vous baissiez votre rayon d’un grand demi-pied au
+						moins. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> D’un demi-pied ! Je me ferais plutôt couper la tête. Non, non, je demeurerai
+						ici. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Il vous en restera encore plus d’un grand pied ; et un grand pied de rayon
+						doit suffire à la femme d’un musicien. </p>
+				</sp>
+				<sp who="proserpine">
+					<speaker>Proserpine</speaker>
+					<p> Oh, oh ! Je le crois bien ; je m’en contenterais bien, moi qui suis
+						Proserpine. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je veux que vous soyez beaucoup plus sage que par le passé, et que vous
+						promettiez de n’aimer désormais que moi. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Oh ! Pour cet article-là, néant. Je ne veux point engager ma conscience.
+						Dans le temps où nous sommes, il n’y a point de femmes qui puissent
+						promettre cela. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Je veux que les enfants que j’aurai dans ln suite (car il faut recommencer
+						sur nouveaux frais) soient élevés à ma fantaisie, et j’en disposerai comme
+						de chose à moi appartenante. </p>
+				</sp>
+				<sp who="colombine">
+					<speaker>Colombine</speaker>
+					<p> Cela s’en va sans dire. </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Hé ! De quoi vous embarrassez-vous ? Puisqu’elle est votre femme, tous les
+						enfants qu’elle aura ne seront-ils pas les vôtres ? </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Nego consequentiam. Vous ne savez pas tout le manège de là-haut, monsieur
+						Pluton : il y a tant de pères qui n’ont jamais eu d’enfants ! </p>
+				</sp>
+				<sp who="pluton">
+					<speaker>Pluton</speaker>
+					<p> Après avoir entendu les raisons des uns et des autres, pour vous défrayer
+						des frais de votre voyage, moi Pluton, prince des ténèbres, souverain du
+						Styx et du Phlégéton, gouverneur des pays-bas, président du sabbat, et
+						correcteur né des arts, métiers et professions, je vous permets non
+						seulement d’emmener chacun votre femme, mais toutes celles qui sont en
+						enfer, sans même en excepter Proserpine. </p>
+				</sp>
+				<sp who="arlequin">
+					<speaker>Arlequin</speaker>
+					<p> Pour moi, je n’en ai que trop de celle-ci ; mais il y a bien des gens qui ne
+						demanderont pas mieux que de troquer avec vous. </p>
+				</sp>
+			</div>
+		</body>
+
+	</text>
+</TEI>
