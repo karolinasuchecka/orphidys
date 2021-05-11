@@ -1,0 +1,77 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT LexicalRessource (GlobalInformation,Lexicon)>
+<!ATTLIST LexicalRessource>
+
+<!ELEMENT GlobalInformation EMPTY>
+<!ATTLIST GlobalInformation
+  characterCoding NMTOKEN #REQUIRED
+  entrySource CDATA #REQUIRED
+  languageCoding CDATA #REQUIRED
+  resourceName NMTOKEN #REQUIRED
+  version CDATA #REQUIRED>
+
+<!ELEMENT Lexicon (placeName|persName|orgName|objetName)+>
+<!ATTLIST Lexicon
+  languageIdentifier NMTOKEN #REQUIRED
+  script NMTOKEN #REQUIRED>
+
+<!ELEMENT placeName (w)+>
+<!ATTLIST placeName
+  xml:id ID #REQUIRED
+  ana (méronyme|synonyme|hyperonyme|métaphorique|ancien) #IMPLIED
+  join (true) #IMPLIED 
+  sameAs (administration|air|armée|culture|éducation|nature|navigation|règne|religion|science|société|technologie) #IMPLIED
+  subtype (urbain|enfer|rural|habitat|bord|mort|cours|étendue|île|région|supranational|pays|direction) #IMPLIED
+  type (commune|édifice|abstrait|souterrain|territoire|terre_mer|voie|meuble|agricole|astronyme|délimiteur|destination|forestier|hydronyme|oronyme) #REQUIRED>
+<!--Les types et les subtypes se repartissent de manière suivante : 
+abstrait -> enfer?
+commune -> (urbain|rural)?
+délimiteur -> (bord|direction)?
+destination -> habitat?
+édifice -> (habitat|bord|mort)?
+forestier, voie -> (urbain|rural)?
+hydronyme -> (cours|étendue)?
+oronyme -> bord?
+souterrain -> enfer?
+terre_merr -> (ile|bord)?
+territoire -> (supranational|région|pays)?-->
+
+<!ELEMENT persName (w)+>
+<!ATTLIST persName
+ xml:id ID #REQUIRED
+ ana (méronyme|synonyme|hyperonyme|métaphorique|ancien|familier) #IMPLIED
+ join (true) #IMPLIED
+ sameAs (administration|âme|amour|armée|arts|construction|éducation|littérature|magie|musique|nature|navigation|règne|religion|science|société|technologie) #IMPLIED
+ type (homme|créature|dieu|général) #REQUIRED
+ corresp (profession|fonction|statut|titre|parenté|partie|liaison|classe|nationalité) #IMPLIED
+ synch (ancêtre|descendant|frère) #IMPLIED
+ subtype (enfer|fictif|adversaire|allié|corps|mort) #IMPLIED>
+<!-- Il y a quelques attributs qui vont ensemble :
+@corresp=parenté + @synch
+@corresp=liaison + @sameAs=amour
+@subtype=corps + @corresp=partie + @ana=méronyme
+-->
+<!ELEMENT orgName (w)+>
+<!ATTLIST orgName
+ xml:id ID #REQUIRED
+ type (fête|manifestation|tradition|histoire|météorologie) #REQUIRED
+ sameAs (religion) #IMPLIED
+ ana (méronyme|synonyme|hyperonyme|métaphorique|ancien|familier) #IMPLIED
+ corresp (statut) #IMPLIED>
+ 
+<!ELEMENT objetName (w)+>
+<!ATTLIST objetName
+ xml:id ID #REQUIRED
+ type (œuvre|vaisseau) #REQUIRED
+ sameAs (littérature|arts|musique|navigation|religion) #IMPLIED
+ ana (méronyme|synonyme|hyperonyme|métaphorique|ancien|familier) #IMPLIED>
+ 
+<!ELEMENT w (#PCDATA)>
+<!ATTLIST w
+  msd (ms|fs|mp|fp|mfs|mfp|msp|fsp) #REQUIRED
+  pos (NOM|NAM) #REQUIRED
+  select (coll) #IMPLIED
+  xml:lang (oFR) #IMPLIED>
+
+

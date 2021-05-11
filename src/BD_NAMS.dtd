@@ -1,0 +1,78 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT TEI (teiHeader,text)>
+<!ATTLIST TEI
+  xmlns CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+
+<!ELEMENT teiHeader (fileDesc)>
+
+<!ELEMENT text (body)>
+
+<!ELEMENT fileDesc (titleStmt,publicationStmt,
+                        sourceDesc)>
+
+<!ELEMENT body (listNym)>
+
+<!ELEMENT titleStmt (title)>
+
+<!ELEMENT publicationStmt (p)>
+
+<!ELEMENT sourceDesc (p)>
+
+<!ELEMENT listNym (nym)+>
+
+<!ELEMENT title (#PCDATA)>
+
+
+
+<!ELEMENT nym (form+,gramGrp,subc?,def?)>
+<!ATTLIST nym
+  xml:id ID #REQUIRED
+  type (homme|femme|terre_mer|hydronyme|fête|oronyme|territoire|commune|créature|vaisseau|médicament|édifice|tradition|artefact|astronyme) #REQUIRED
+  subtype (heros|nymphe|île|déesse|dieu|cours|princesse|roi|reine|prince|historique|géant|prêtre|étendue|temple|quartier|satyre|montagne|muse|région|cap|ville|titan|monstre|pays|mort|continent|prénom|animal|hybride|personnage|magicien|oracle) #IMPLIED
+  sameAs CDATA #IMPLIED 
+  join (true) 'true'
+  sortKey (1|2|3) '1'
+  >
+  <!--SAMEAS = (administration | air |armée|culture|éducation|nature|navigation|règne|religion|science|société|technologie|âme|amour|arts|construction|littérature|magie|musique)-->
+<!ELEMENT def (#PCDATA)>
+<!ELEMENT form (orth|form+|(w+, gloss?))>
+<!ATTLIST form
+  corresp IDREFS #IMPLIED
+  type (simple|lemma|variant|derivative|compound) #REQUIRED
+  xml:lang NMTOKEN #IMPLIED
+  subtype (antonomase|habitant|specifique) #IMPLIED>
+
+<!ELEMENT subc (listRelation)>
+<!ELEMENT gloss (#PCDATA)>
+<!ELEMENT orth (#PCDATA)>
+
+<!ELEMENT listRelation (relation)+>
+
+<!ELEMENT relation EMPTY>
+<!ATTLIST relation
+  corresp IDREFS #IMPLIED
+  join IDREFS #IMPLIED 
+  name (fils|fille|règne|père|mère|liaison|fratrie|specificationGenre|patrie|territoire|source|navigation|confusion|métamorphose|prêtre|adversaire|célébration|descendant|ancêtre|destination|disciple|maître|séjour|allié|auteur|prénom|capitale) #REQUIRED
+  type (dieu|déesse|nymphe|nature|entrée|muse|monstre|satyre|animal|biblique|moyen_age) #IMPLIED
+  subtype (naïade|dryade|olympe|érèbe|arbre|fleur|oiseau|bœuf|cheval) #IMPLIED>
+<!--@corresp pour partie->tout (rivière->pays), @join pour tout->partie (pays->rivère)-->
+<!ELEMENT p (#PCDATA)>
+
+<!ELEMENT gramGrp (pos,(gen,number)?)>
+
+<!ELEMENT pos EMPTY>
+<!ATTLIST pos
+ norm (persName|placeName|orgName|objetName|ADJ|NOM|VER|ADV) #REQUIRED >
+
+<!ELEMENT gen EMPTY>
+<!ATTLIST gen
+ norm (m|f|mf) #REQUIRED>
+
+<!ELEMENT w (#PCDATA)>
+<!ATTLIST w
+ pos (persName|placeName|orgName|objetName|ADJ|NOM|VER|ADV) #REQUIRED
+ msd (ms|mp|fs|fp|mfs|mfp) #REQUIRED>
+<!ELEMENT number EMPTY>
+<!ATTLIST number
+  norm (s|p|sp) #REQUIRED>
