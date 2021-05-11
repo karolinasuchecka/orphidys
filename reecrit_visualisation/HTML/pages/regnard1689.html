@@ -1,0 +1,1214 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/regnard1689.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Jean-François Regnard <em>Arlequin aux EnfersComédie représentée pour la première fois le 5 mars 1689 à
+               						l’Hôtel de Bourgogne</em>, Paul Fièvre [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène I Arlequin, Colombine, Pierrot.</h2>Toute cette première scène a été remplacée par un exposé sommaire,
+                     					dans toutes les éditions. On trouvera que le dialogue de cette scène et de
+                     					plusieurs autres qui sont rétablies, est tant soit peu libre et même trivial.
+                     					Cependant, suivant Horace, nous ne sommes pas meilleurs, et nous ne devons donc
+                     					pas être plus susceptibles que nos pères, qui apparemment s’égayaient à entendre
+                     					toutes ces plaisanteries débitées avec autant de vivacité que de comique.
+                     					(G.A.C.)
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="" class="stage">, botté, dans le ventre d’une baleine.</p>
+                     <p xmlns="">Hoé, hoé, madame la Baleine&nbsp;; ouvrez, s’il vous plaît, votre petite gueule. Là, là, voilà qui est bien. Les jolies petites quenottes&nbsp;! Je suis votre serviteur&nbsp;; vous pouvez aller à tous les
+                        						diables. </p>
+                     <p xmlns="" class="stage">Sortant de la mer.</p>
+                     <p xmlns="">Ouf&nbsp;! Les chemins sont diaboliques&nbsp;; je croyais que je ne me tirerais jamais
+                        						des ornières. Mais je crois que voilà ma femme qui arrive&nbsp;! Je suis bien
+                        						malheureux&nbsp;! J’espérais que Neptune lui ferait boire rasade. </p>
+                     <p xmlns="" class="stage">Colombine parait en pleine mer, montée sur le dos d’un gros
+                        						poisson, et accompagnée de Pierrot, monté sur la queue du même
+                        						poisson.</p>
+                     <p xmlns="" class="speaker">Pierrot</p>
+                     <p xmlns="">Serre la botte, serre la botte. </p>
+                     <p xmlns="" class="stage">À Colombine.</p>
+                     <p xmlns="">Madame, tenez-vous bien aux crins. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Il faut l’aller attendre à la descente du coche, pour lui donner la main. -
+                        						Bonjour, ma petite femme&nbsp;; d’où vient donc que vous n’êtes pas noyée&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ah&nbsp;! Je n’en puis plus&nbsp;; je suis toute rompue. Quelle maudite voiture&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">C’est la poste de ce pays-ci. </p>
+                     <p xmlns="" class="speaker">Pierrot</p>
+                     <p xmlns="">Par ma foi, monsieur, nous avons eu bien de la peine. J’ai cru vingt fois
+                        						que madame accoucherait de quelque sole entre mes bras. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Je suis tombée plus de cent fois&nbsp;; et sans Pierrot… </p>
+                     <p xmlns="" class="speaker">Pierrot</p>
+                     <p xmlns="">Cela est vrai, monsieur, c’est moi qui l’ai repêchée. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Tu n’avais que faire de te donner tant de peine. Les méchantes femmes sont
+                        						de liège, et ne vont jamais à fond. </p>
+                     <p xmlns="" class="speaker">Pierrot</p>
+                     <p xmlns="">Voilà un pauvre poisson qui n’en peut plus. </p>
+                     <p xmlns="" class="stage">À Arlequin.</p>
+                     <p xmlns="">Tenez, monsieur, voyez, il est sur les dents&nbsp;; il sera fourbu de ce voyage. Il y a huit jours que nous marchons sans débrider. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Hé bien, mène-le à l’écurie. Quel poisson est-ce cela&nbsp;? </p>
+                     <p xmlns="" class="speaker">Pierrot</p>
+                     <p xmlns="">C’est un maquereau, monsieur. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Un maquereau&nbsp;? Voilà une bonne voiture pour une femme&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Dis-moi donc présentement ce que nous venons faire ici, et pourquoi on nous
+                        						a fait déménager aussi vite que si nous avions dix commissaires à nos
+                        						trousses. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Cela a été un peu chaud&nbsp;; mais est-ce qu’on vous a pris pour du train dans
+                        						notre quartier&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Non pas tout à fait&nbsp;; mais on a jeté nos meubles par la fenêtre. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Diable&nbsp;! Cela est scandaleux. Mais rien ne peut m’arrêter quand la gloire
+                        						m’appelle. <a class="note" onclick="affiche('whGfkZI')">✱</a>Nous sommes en Thrace, et j’ai quitté la Grèce pour venir ici
+                        						disputer avec Orphée de la musique. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Quoi&nbsp;! Ce ménétrier de village&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Il a eu l’effronterie de m’appeler en duel. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">En duel&nbsp;? Et depuis quand donc les musiciens sont-ils devenus si braves&nbsp;?
+                        					</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Bon, bon&nbsp;! Ils enragent de se battre quand ils ne voient personne. Tiens,
+                        						voilà la lettre que je lui ai écrite. </p>
+                     <p xmlns="" class="speaker">Amphion</p>
+                     <p xmlns="" class="stage">, à Orphée.</p>
+                     <p xmlns="">«&nbsp;J’ai appris, mon petit mignon, que vous vous mêlez de chanter et de racler
+                        						le boyau. Que cela ne vous arrive plus&nbsp;; car je vous ferais chanter sur un
+                        						diable de ton. Je veux vous voir les instruments à la main, quoique vous ne
+                        						soyez qu’un chantre du Pont-Neuf, et que vous ne deviez chanter qu’avec des
+                        						grenouilles, ou braire avec des ânes comme vous.&nbsp;» </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène II Arlequin, Colombine.</h2>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">De quoi vivrons-nous en ce pays-ci&nbsp;? Car nous n’avons point d’argent. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Cela m’embarrasse un peu&nbsp;; car ce diable d’argent, c’est la cheville
+                        						ouvrière d’un ménage. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Si tu voulais me laisser faire, je ferais de bonnes connaissances, et nous
+                        						n’en serions pas plus mal. Autrefois, quand tu étais absent, je ne manquais
+                        						de rien. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Morbleu&nbsp;: Sorte de jurement en usage même parmi les gens de bon
+                     						ton. [L]
+                     <p xmlns="">Tant pis, morbleu, tant pis&nbsp;! Je me défie diablement de ces femmes qui
+                        						battent monnaie en l’absence de leurs maris. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ne voilà-t-il pas&nbsp;? Ces maris se mettent d’abord cent choses dans la tête. C’est bien cela&nbsp;! J’ai des secrets merveilleux, qui m’ont été donnés par un
+                        						chimiste qui m’aimait autrefois. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Les Quatre-Nations, ou le collège des Quatre-Nations&nbsp;: collège
+                     						fondé à Paris par Mazarin, pour l’éducation et l’entretien de 60 enfants
+                     						originaires des pays conquis par Louis XIV. [L]
+                     <p xmlns="">N’est-ce pas celui qui a le laboratoire au collège des Quatre-Nations, qui
+                        						vend du chocolat volatil, de la crème de perle et du sirop de diamants&nbsp;?
+                        					</p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Je compose une huile, que j’appelle élixir de patience, dont une goutte,
+                        						appliquée sur le front d’un mari, le délivre pour jamais du mal de tête.
+                        					</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Diable&nbsp;! Voilà qui est beau&nbsp;! Mais je crois que tu gagnerais bien davantage
+                        						si ton secret le délivrait de sa femme. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">J’en ai un autre bien plus beau pour les femmes d’aujourd’hui&nbsp;: je compose
+                        						la poudre de bonne réputation. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oh, oh&nbsp;! Je crois qu’elle est diablement difficile à faire&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>Raboteux&nbsp;: Inégal, qui n’est pas poli, ni uni. Scabrosus, scaber.
+                     						Le bois qui a beaucoup de nœuds, est raboteux, difficile à raboter, à unir.
+                     						Raboteux, au figuré, signifie, Rude, grossier, mal poli, mal digéré.
+                     						[T]Vestale&nbsp;: Nom doné chez les Romains à des vierges, consacrées à
+                     						la Déesse Vesta. [FC]
+                     <p xmlns="">Qu’une coquette soit décriée, que sa conduite soit la plus raboteuse du
+                        						inonde, elle n’a qu’à changer de quartier, ne plus voir d’hommes, et prendre
+                        						une pincée de ma poudre dans un bouillon, en trois mois elle fera assaut de
+                        						vertu avec les plus vestales. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Voilà le plus beau secret du inonde. Mais peux-tu faire assez de cette
+                        						poudre-là&nbsp;? J’en ai un pour le moins aussi beau. <a class="note" onclick="affiche('QuNASCu')">✱</a>Qu’un homme ait une colique
+                        						enragée, en un moment je la lui fais passer&nbsp;; je le couche par terre, je
+                        						fais chauffer une meule de moulin, et je la lui applique sur l’estomac&nbsp;:
+                        						n’ayez pas peur qu’il ait jamais la colique. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ni la colique ni autre mal. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Le malade meurt ordinairement&nbsp;; mais s’il ne mourait pas, ce serait le plus
+                        						beau secret du monde. J’ai encore un autre moyen pour gagner de l’argent. Tu
+                        						sais bien que, quand je joue de ma lyre, je fais tout venir à moi. Je n’ai
+                        						qu’à aller aux Invalides, je servirai de grue pour monter les pierres, et on
+                        						me paiera comme trente manœuvres ensemble. </p>
+                     <p xmlns="" class="speaker">Colombine</p>Grippe&nbsp;: Terme familier. Fantaisie, goût passager, capricieux.
+                     						[L]
+                     <p xmlns="">Fi&nbsp;! Voilà un vilain métier&nbsp;! Je ne veux point d’un mari grue. Fais-toi plutôt maître à chanter&nbsp;; on te donnera deux louis
+                        						d’or par mois, et tu trouveras peut-être quelque écolière à qui tu ne
+                        						déplairas pas&nbsp;; car voilà la grippe des femmes d’aujourd’hui. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Quoi&nbsp;! Est-ce un si bon métier&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>Vacation&nbsp;: Profession d’un certain métier auquel on vaque, on
+                     						s’exerce. [T]
+                     <p xmlns="">Je te dis qu’il n’y a pas une plus jolie vacation au monde&nbsp;; on est de tous
+                        						les bons repas&nbsp;; jamais de promenades sans le maître à chanter&nbsp;: on se donne
+                        						de petits airs de familiarité avec l’écolière&nbsp;; on lui prend la main pour
+                        						lui faire battre la mesure&nbsp;: le mari passe tout sur la foi de la musique, et
+                        						il ne se doute pas, bien souvent, de la partie qu’on fait chanter à sa
+                        						femme. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Voilà mon affaire&nbsp;: il n’y a qu’une chose qui m’embarrasse&nbsp;; il me semble
+                        						que je ne suis pas assez bien habillé. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ne te mets pas en peine&nbsp;; tu n’auras pas montré trois mois, que tu seras
+                        						aussi doré que les maîtres à danser. Bon&nbsp;! Une écolière, en levant une jupe
+                        						chez un marchand&nbsp;; ne lève-t-elle pas aussi une veste pour son maître de
+                        						musique&nbsp;? Qu’est-ce qu’il lui en coûte&nbsp;? C’est le mari qui paye cela&nbsp;; la
+                        						bête a bon dos. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Voilà de jolis profits&nbsp;; mais aussi on a bien de la peine&nbsp;: c’est un rude
+                        						métier&nbsp;: il faut quelquefois chanter quand on a envie de boire. Mais
+                        						n’importe, voilà qui est fait&nbsp;; quand l’argent me manquera, je me jette dans
+                        						la musique. Adieu&nbsp;; je m’en vais chercher Orphée&nbsp;; il n’a qu’à se bien
+                        						tenir&nbsp;; je lui ferai manger son violon jusqu’au manche. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Et moi, je vais travailler à ma poudre de bonne réputation. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Ne manque pas d’en garder pour toi. À propos, qu’as-tu fait de nos enfants&nbsp;?
+                        					</p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Pour les cacher à cette âme damnée de Jupiter, qui nous en a tué déjà deux,
+                        						j’en ai fait un ballot, que j’ai porté à la douane&nbsp;; et je vais voir s’il
+                        						est arrivé, pour en payer les droits. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Cette marchandise-là ne devrait pas beaucoup payer d’entrée&nbsp;; elle paye
+                        						assez à la sortie. </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène III Arlequin, Isabelle.</h2>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Il y a longtemps, madame, que la tapisserie de mes inclinations est pendue
+                        						au clou à crochet de vos beautés. C’est l’amour qui en a été le tapissier&nbsp;;
+                        						et cela est si vrai que le mérite… votre mine, d’un côté… mais
+                        						d’ailleurs. À propos, mademoiselle, est-ce vous que j’aime&nbsp;? Car vous me
+                        						paraissez bien petite aujourd’hui. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Il est assez difficile, monsieur, de vous répondre juste sur ce que vous me
+                        						demandez. Tout ce que je puis vous dire, c’est que je ne me souviens pas
+                        						d’avoir été plus grande. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oui, charmante princesse, c’est vous. Je vous reconnais à vos flamboyantes
+                        						prunelles.</p>
+                     <p xmlns="" class="stage">Il tourne autour d’elle.</p>Chiffon&nbsp;: Vieux morceaux d’étoffe, de linge, vieille guenille, et
+                     						généralement chose de nulle valeur. [T]
+                     <p xmlns="">J’en suis pourtant toujours pour ce que j’ai dit, voilà qui est diablement
+                        						chiffon. Si nous nous marions ensemble, jamais nos enfants n’entreront dans
+                        						le régiment des gardes. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Cela n’est pas encore fait. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="" class="stage">, la mesurant avec une corde.</p>Paume&nbsp;: Mesure dont on se sert pour la taille des chevaux, et qui
+                     						consiste dans la hauteur d’un poing fermé. Un cheval de seize paumes.
+                     						[L]
+                     <p xmlns="">Je ne pense pas que vous ayez dix-sept paumes. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Apparemment, monsieur, que vous avez quelque cheval à assortir, ou bien vous
+                        						me voulez prendre la mesure d’un habit. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Que je serais heureux si je pouvais être le tailleur fortuné qui prendra la
+                        						mesure d’une si aimable personne&nbsp;! Mais je crains bien que les ciseaux de
+                        						mon amour… vous m’entendez bien&nbsp;? </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Point du tout&nbsp;; je vous avoue que je n’ai point le don de deviner. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Comme mon amour ne vise qu’au mariage, plus je vous regarde, et plus je
+                        						trouve que vous êtes assez mon fait. Quand on a une femme à prendre, les
+                        						plus petites sont toujours les meilleures. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Suivant cette maxime-là, je suis donc fort bonne à marier&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Embryon&nbsp;: Fœtus qui commence à se former dans le ventre de la
+                     						mère. On dit figurément ou par mépris, d’un fort petit homme. [Ac]
+                     <p xmlns="">Oh&nbsp;! Vous l’êtes de reste. Allons, la belle, dites la vérité&nbsp;; n’est-il pas
+                        						vrai que vous serez bien aise d’être ma moitié&nbsp;? Voyez, regardez-moi&nbsp;; cet
+                        						air, ce port&nbsp;; eh&nbsp;! J’enrage quand je vois ces petits embryons de cour
+                        						vouloir faire assaut avec moi. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>Marmouset&nbsp;: En termes de mépris, petit garçon, ou petit homme mal
+                     						fait. [FC]
+                     <p xmlns="">Il faut qu’ils aient perdu l’esprit&nbsp;! Ce sont de plaisantes marmousettes&nbsp;!
+                        					</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">J’ai le derrière un peu gros, tirant même sur le porteur de chaise&nbsp;; mais
+                        						mon médecin m’a promis qu’il me ferait en aller cela&nbsp;; il m’a ordonné de
+                        						prendre du petit-lait. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Oh&nbsp;! Je crois ce remède-là sûr. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Il m’a dit que c’était une humeur âcre, répandue dans le diaphragme du
+                        						mésentère, et qui tombe sur l’omoplate. Mais laissons cela, et parlons du
+                        						plaisir que nous aurons. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">On se trompe quelquefois dans ce calcul-là, et l’on n’y trouve pas souvent
+                        						tout le bonheur qu’on s’y était proposé. </p>Tout ce qui précède, à partir du commencement de cette troisième
+                     						scène, a été supprimé dans toutes les éditions. Comme ces suppressions sont
+                     						très multipliées dans cette pièce et dans les suivantes, je crois inutile
+                     						d’en avertir davantage le lecteur. (G. A. C.) 
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je suis doux, pacifique, aisé à vivre, l’humeur satinée, veloutée&nbsp;: j’ai
+                        						vécu six ans avec ma première femme, sans avoir le moindre petit démêlé.
+                        					</p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Cela est assez extraordinaire. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Une fois seulement, après avoir pris du tabac, je voulais éternuer, elle me
+                        						fit manquer mon coup&nbsp;; de dépit, je pris un chandelier, je lui cassai la
+                        						tête, et elle mourut un quart d’heure après. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Ah ciel&nbsp;! Est-il possible&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Voilà le seul différend que nous ayons jamais eu ensemble, et qui ne dura
+                        						pas longtemps, comme vous voyez. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Cela est fort expéditif, je vous l’avoue. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns=""><a class="note" onclick="affiche('ZPcYUDx')">✱</a>Quand une femme doit mourir, il vaut bien mieux que ce soit de la main de
+                        						son mari que de celle d’un médecin, qu’il faut bien payer, et qui vous la
+                        						traînera six mois ou un an. Je n’aime point à voir languir le inonde&nbsp;; et
+                        						puis l’on gagne son argent par ses mains. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Et vous n’avez point d’horreur d’avoir commis un crime aussi noir que
+                        						celui-là&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Moi&nbsp;? Point du tout&nbsp;: je suis accoutumé au sang de jeunesse. Mon père a fait
+                        						mille combats en sa vie, où il a toujours tué son homme. Il a servi le roi trente-deux années. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Sur terre, ou sur mer&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">En l’air. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Comment, en l’air&nbsp;? Je n’ai jamais ouï parler de ces officiers-là. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns=""><a class="note" onclick="affiche('yHWOTrS')">✱</a>C’est que, comme il était fort charitable, lorsqu’il rencontrait quelque
+                        						agonisant que l’on menait à la Grève, il se mettait avec lui dans la
+                        						charrette, et l’aidait à mourir du mieux qu’il pouvait. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Ah, l’horreur&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Tous ses confrères les médecins (car il avait pris ses licences dans leur
+                        						école) disaient qu’il n’y avait jamais eu un homme aussi adroit, et qu’on ne
+                        						voyait point de besogne faite comme la sienne&nbsp;: aussi l’avaient-ils fait
+                        						recteur de la Faculté. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Voilà, je vous assure, des talents bien merveilleux. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je vous dis, madame, que si vous l’aviez vu travailler, il vous aurait fait
+                        						envie de vous faire pendre. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Comme ce sont peut-être des talents de famille, vous deviez prendre la
+                        						charge de monsieur votre père. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je m’y sentais assez d’inclination&nbsp;; mais vous savez qu’il faut qu’un
+                        						gentilhomme voie le pays. J’ai couru par toutes les sept parties du monde,
+                        						et me voilà enfin à vos pieds, ma divine princesse, le coeur en braise, pour
+                        						vous dire que je me pendrai assurément, si vous n’êtes unie avec moi par le
+                        						lien conjugal. </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène IV Arlequin, Isabelle, Colombine, qui survient et écoute sans être
+                        					vue.</h2>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, à part.</p>
+                     <p xmlns="">Ah&nbsp;! Traître&nbsp;! </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Je ne trouve qu’une petite difficulté à notre mariage, c’est que je suis
+                        						déjà mariée. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Mariée&nbsp;? Bon, voilà une belle affaire&nbsp;! Est-ce cela qui vous embarrasse&nbsp;? Je
+                        						le suis aussi&nbsp;; mais il n’y a rien de si aisé que d’être veuf&nbsp;; cinq sous de
+                        						mort aux rats en font l’affaire. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, à part.</p>
+                     <p xmlns="">Ciel&nbsp;! Qu’entends-je&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Allons donc, épine de mon âme, touchez là&nbsp;; commençons les préliminaires de
+                        						notre mariage. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, à part.</p>
+                     <p xmlns="">Le traître&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="" class="stage">, s’approchant d’Isabelle, et lui levant sa coiffe.</p>Petite-oie&nbsp;: Les bas, le chapeau, et les autres ajustements pour
+                     						rendre un habillement complet&nbsp;; ainsi dit par comparaison avec l’abatis
+                     						d’une volaille. Fig. Les petites faveurs que les femmes accordent à leurs
+                     						amants. [L]
+                     <p xmlns="">Je ne demande que la petite oie. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">Tout doucement, monsieur&nbsp;; réservez ces caresses-là pour votre femme. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Carogne&nbsp;: Terme injurieux, qui se dit entre les femmes de basse
+                     						condition, pour se reprocher leur mauvaise vie, leurs ordures, leur
+                     						puanteur. [F]
+                     <p xmlns="">Pour ma femme&nbsp;? Je vous ai déjà dit que c’était une carogne que je hais
+                        						comme le diable. Je voudrais qu’elle fût pendue. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, à part.</p>
+                     <p xmlns="">Scélérat&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Et dans peu j’espère lui donner d’une potion cordiale qui l’empêchera
+                        						d’avoir faim de longtemps. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">C’est-à-dire que voilà la manière dont vous traitez vos femmes, quand vous
+                        						voulez les régaler&nbsp;: je suis votre très humble servante, je n’aime point la
+                        						mort aux rats. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="" class="stage">, l’arrêtant.</p>Mousquet&nbsp;: Arme à feu qu’on porte sur l’épaule, qui sert à la
+                     						guerre, qui prend feu avec une mèche. [F]Léopard&nbsp;: Quadrupède carnassier qui a la peau marquetée.
+                     						Adjectivement et par plaisanterie. [L]
+                     <p xmlns="">Vous me fuyez&nbsp;! Oui, si vous voulez me promettre de m’épouser, je vous
+                        						promets, moi, de la faire crever dans deux jours comme un vieux mousquet. Arrêtez donc, beauté léoparde&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, le prend par le bras.</p>
+                     <p xmlns="">Comme un vieux mousquet&nbsp;! </p>
+                     <p xmlns="" class="stage">Isabelle s’en va.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène V Arlequin, Colombine.</h2>
+                     <p xmlns="" class="speaker">Arlequin</p>Bouchon&nbsp;: Fig. et familièrement. Mon petit bouchon, terme de
+                     						tendresse et de caresse. Vieux en ce sens. [L]
+                     <p xmlns="">Ah, ma petite femme&nbsp;! Te voilà&nbsp;? Hé&nbsp;! Que j’ai de joie de te voir, mon petit
+                        						bouchon&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ah, scélérat&nbsp;! Voilà donc les transports de ton amour&nbsp;? Je vous promets de
+                        						la faire crever dans deux jours. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Hé&nbsp;! Ne vois-tu pas bien que je disais cela pour rire&nbsp;? Il faut bien plus de
+                        						temps pour faire crever une femme. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ah, malheureux&nbsp;! Il faut que je te dévisage. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">C’est elle qui me voulait mettre à mal. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Non, je ne serai pas contente que je ne t’aie étranglé de mes propres mains. </p>
+                     <p xmlns="" class="stage">Elle se jette sur lui et le bat.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène VI Arlequin, Colombine, Un Vendeur de tisane.</h2>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Au meurtre&nbsp;! Au guet, au guet&nbsp;! On égorge un bourgeois. </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="">Chalands, chalands, qui est-ce qui veut boire&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, se met à pleurer aussitôt qu’elle voit le Vendeur de tisane.</p>
+                     <p xmlns="">Ah, ah, ah&nbsp;! </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="">Quel vacarme faites-vous donc là&nbsp;? Fi donc&nbsp;! Quelle honte d’estropier une
+                        						pauvre femme&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">C’est ma femme&nbsp;: de quoi vous mêlez-vous&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ah, ah, ah, ah&nbsp;! </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="">Le sac à vin&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, toujours pleurant.</p>
+                     <p xmlns="">Je suis… hi, hi. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Par ma foi, voilà une méchante carogne. </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="" class="stage">, à Arlequin.</p>Morgué&nbsp;: Sorte de juron de paysan. [L]
+                     <p xmlns="">Çà n’est morgué pas bien, tout franc. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Je suis toute brisée, hé, hé, hé, hé. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">La, la, la, ma petite femme, ce ne sera rien&nbsp;; cela ne m’arrivera plus. </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>Sangler&nbsp;: Familièrement. Appliquer avec force un coup. [L]
+                     <p xmlns="">Hé, le brutal&nbsp;! Quand vous voulez battre une femme, que ne lui sanglez-vous
+                        						un coup de bâton sur la tête, sans vous amuser à la faire crier deux
+                        						heures&nbsp;! </p>
+                     <p xmlns="" class="stage">À Colombine.</p>
+                     <p xmlns="">Qu’est-ce donc qu’il vous a fait&nbsp;? </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Il m’a…, il m’a… Ah&nbsp;! Je ne saurais parler, er, er, er. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Par ma foi, je commence à croire que c’est moi qui l’ai battue. </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="">Allons, je veux faire la paix&nbsp;: je n’aime pas à voir de noise dans un
+                        						ménage&nbsp;; je veux vous raccommoder&nbsp;: venez çà. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Non, je ne lui pardonnerai jamais. </p>
+                     <p xmlns="" class="stage">Le Vendeur de tisane donne un bâton à Colombine, qui en frappe
+                        						Arlequin.</p>
+                     <p xmlns="">Allons, vous voilà quittes. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oui, tout d’un côté et rien de l’autre. </p>
+                     <p xmlns="" class="speaker">Le Vendeur de Tisane</p>
+                     <p xmlns="">Sans moi, vous vous seriez battus, et vous voilà les meilleurs amis du
+                        						monde. À la fraîche, à la fraîche&nbsp;; qui est-ce qui veut boire&nbsp;? </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène VII Arlequin, Un Auteur.</h2>
+                     <p xmlns="" class="stage">C’est Colombine sous le costume approprié au rôle
+                        					d’auteur.</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="" class="stage">, apercevant l’auteur qui gesticule beaucoup sans rien dire.</p>
+                     <p xmlns="">Voilà un sac de charbon de l’enfer qui va à la promenade. Monsieur ou
+                        						madame, car je ne sais si vous êtes mâle ou femelle, je ne vous vois que par
+                        						derrière… </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>Vade retro&nbsp;: Expression latine, cite par Jésus dans la Bible:
+                     						Vade retro, Satanas: Va en arrière, Satan. 
+                     <p xmlns="">Vade retro, profane. Qui t’a fait si téméraire que de m’interrompre&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je vous demande pardon. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Une personne de mon savoir… </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Tâcher&nbsp;: Faire des efforts pour venir à bout de. Familièrement.
+                     						Il n’y tâchait pas, il ne l’a pas fait exprès, avec intention. [L]
+                     <p xmlns="">Je n’y tâchais pas. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Qui fait les madrigaux de Proserpine. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je ne le ferai plus. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>Il est facile de voir que Regnard se permet, dans ce passage et
+                     						le suivant, une épigramme contre l’Académie terrestre et française, dont il
+                     						ne fut jamais membre. Mais sans doute qu’un autre motif le priva de cette
+                     						honorable distinction due à son mérite. Sa Satire sanglante contre le
+                     						cardinal de Richelieu (voyez Ép. vi, tome. iv) était un obstacle plus
+                     						sérieux à son admission&nbsp;; car il s’était mis dans l’impossibilité de
+                     						prononcer l’éloge obligé du fondateur de l’Académie, dont la mémoire, à ce
+                     						titre, et à cette époque si rapprochée de Regnard commandait les justes et
+                     						sincères hommages des littérateurs et des savants. On sait que c’est au
+                     						cardinal de Richelieu que l’on doit aussi l’établissement de l’Imprimerie
+                     						royale. (G. A. C.) Consigner&nbsp;: Assurer le paiement de quelque somme sur laquelle il
+                     						y a quelque contestation, en la mettant en main tierce jusqu’à la décision
+                     						de la difficulté qui empêche qu’on ne la délivre sur le champ. [T]
+                     <p xmlns="">Et qui est le premier consignant pour entrer ici-bas à l’Académie. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">À l’Académie&nbsp;? Quoi&nbsp;! Il y en a une ici&nbsp;? C’est donc une académie de malins
+                        						esprits. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Je me promenais sur les bords du Cocyte, pour travailler plus en repos à ma
+                        						harangue, et tu viens te jeter au travers de mes conceptions&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Comment donc&nbsp;! Est-ce que vous faites vos harangues vous-même&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Je sais bien que la plupart des académiciens, là-haut, ne se donnent pas
+                        						cette peine-là, et que, pourvu qu’ils la sachent lire, on les reçoit tout
+                        						d’une voix&nbsp;; mais ce n’est pas de même ici&nbsp;; et il ne suffit pas de savoir
+                        						faire l’anatomie d’un mot, pour être l’interprète des mystères de notre
+                        						diabolique Académie. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Apparemment que vous en étiez là-haut&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Que j’en étais là-haut&nbsp;! Que j’en étais&nbsp;! Est-ce qu’on me recevrait ici, si
+                        						j’en avais été&nbsp;? Ce n’est pas que je n’aie eu cent fois plus de mérite qu’il
+                        						ne faut pour en être. J’ai été le plus bel esprit de mon temps, et j’ai fait
+                        						en ma vie plus de cent comédies. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Plus de cent comédies&nbsp;! </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Oui, cent&nbsp;; cent cinquante, si vous me fâchez. Il n’y eut jamais un meilleur
+                        						naturel que le mien&nbsp;; je rendais une comédie aussi facilement qu’un autre
+                        						rend un lavement. C’est moi qui ai enrichi les comédiens français&nbsp;; et il
+                        						n’y avait point d’hiver que je ne leur donnasse sept ou huit pièces, tant
+                        						sérieuses que comiques. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Et les jouait-on longtemps&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Jamais qu’une fois&nbsp;; mais aussi tout Paris venait se crever à la première
+                        						représentation&nbsp;; car personne ne voulait attendre la seconde, de peur de ne
+                        						la point voir. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">J’aurais cru que c’eût été là le moyen d’envoyer les comédiens à l’hôpital.
+                        					</p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">C’est ce qui vous trompe. <a class="note" onclick="affiche('EuroYdX')">✱</a>Une comédie nouvelle, pour être bonne, ne doit se
+                        						jouer qu’une fois&nbsp;; quand elle va jusqu’à deux, ma foi, on s’ennuie. J’ai
+                        						mis le siècle dans ce goût-là&nbsp;; et, si vous y prenez garde, depuis moi, tous
+                        						les auteurs donnent là-dedans. Ils ont raison, au bout du compte&nbsp;; car,
+                        						comme les bonnes choses aujourd’hui n’ont point de cours, pour peu qu’une
+                        						méchante pièce puisse être représentée une fois, voilà les comédiens riches.
+                        					</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Les vôtres étaient donc sur ce pied-là&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Vous pouvez croire que je me suis mis à la mode tout des premiers. De plus,
+                        						je n’ai jamais voulu ôter au public l’usage récréatif des sifflets. Tout au
+                        						contraire, je marquai, dans mes rôles, les endroits où l’on devait siffler,
+                        						afin que l’acteur se reposât et qu’il reprit haleine. C’est le jugement qui
+                        						conduit tout cela. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Et moi je voudrais que les sifflets fussent au diable. Quand cette quinte-là
+                        						prend au parterre, il démonterait Titus et Bérénice. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Je m’étais, de mon vivant, abonné avec un marchand de sifflets, qui était,
+                        						dans son métier, le premier homme du monde. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Les comédiens vous ont bien de l’obligation. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Il en faisait pour la prose, pour les vers, pour les Français, pour les
+                        						Italiens&nbsp;; mais, ma foi, où il triomphait, c’était pour l’Opéra. Pour le
+                        						mettre en crédit, j’avais fait un opéra, moi, qu’on allait jouer quand je
+                        						mourus. Ce devait être la plus belle chose qu’on eût jamais vue sur le
+                        						théâtre. Je ne l’avais pas pris de la métamorphose comme ces chardons du
+                        						Parnasse&nbsp;; fi&nbsp;! Cela sent le collège&nbsp;: je l’avais tiré tout entier de
+                        						l’histoire de France&nbsp;; il portait pour titre&nbsp;: les Aventures du Pont-Neuf. La fable n’a rien de si magnifique. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Les Aventures du Pont-Neuf&nbsp;! Un sujet tiré de l’histoire de France&nbsp;! </p>
+                     <p xmlns="" class="stage">À part.</p>Petites maisons&nbsp;: nom donné autrefois à un hôpital de Paris où
+                     						l’on renfermait les aliénés. Il est à mettre aux Petites-Maisons c’est un
+                     						échappé des Petites-Maisons, c’est un homme sans raison, qui fait ou dit des
+                     						choses folles. [L]
+                     <p xmlns="">Voilà un auteur échappé des Petites-Maisons des enfers. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>Synecdoche&nbsp;: Figure de Rhétorique, qui fait entendre un tout pour
+                     						une de ses parties, ou une partie pour le tout, ou la matière pour la chose.
+                     						[T] actuellement graphié synecdoque
+                     <p xmlns="">Comment donc&nbsp;! Est-ce que je dis des impertinences&nbsp;? Paris n’est-il pas la
+                        						plus belle ville de France&nbsp;? Le Pont-Neuf n’est-il pas le plus bel endroit
+                        						de Paris&nbsp;? Ergo, les Aventures du Pont-Neuf sont les plus beaux traits de
+                        						l’histoire de France. C’est une figure, ignorant, que nous appelons en
+                        						latin, pars pro toto&nbsp;; et en grec synecdoche… </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Et en français, la folie. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Mais vous me faites perdre bien du temps. Que voulez-vous de moi&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je veux apprendre le chemin des enfers, et je vais y chercher ma femme. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Vous allez chercher votre femme&nbsp;? Ah, ah&nbsp;! </p>
+                     <p xmlns="" class="stage">Il se touche le front du bout du doigt.</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Comment donc&nbsp;! Est-ce que je suis barbouillé&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>Ellébore&nbsp;: Plante, dite dans l’Avranchin herbe enragée, très
+                     						usitée dans la médecine des anciens comme cathartique et qui passait pour
+                     						guérir la folie. Avoir besoin d’ellébore, avoir l’esprit troublé. [L]
+                     <p xmlns="">Chercher sa femme&nbsp;! Il vous faut cinq ou six grains d’ellébore. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Le diable m’emporte si je ne vais la chercher. Je ne me moque point. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Ah&nbsp;! Pour la rareté du fait, je veux vous y mener. Suivez-moi&nbsp;: je veux
+                        						entendre ce compliment-là. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Diablement&nbsp;: Adverbe qui sert à augmenter la force d’une
+                     						expression. [T]
+                     <p xmlns="">Avant que d’aller plus avant, je voudrais bien savoir une chose de vous&nbsp;;
+                        						car on dit que l’on est si savant quand on est mort&nbsp;! Ma femme a toujours
+                        						été diablement coquette&nbsp;: dites-moi, je vous prie, si je ne suis point… Là… Là… Vous m’entendez bien&nbsp;? </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Oui-da, cela est bien aisé. Voyons&nbsp;: là, levez le nez, l’air fixe, le corps
+                        						ferme, la tête droite&nbsp;; montrez la langue. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Ah&nbsp;! Je tremble. </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Montrez-moi votre main&nbsp;; ah, ah&nbsp;! Tirez la langue&nbsp;; eh, eh&nbsp;! </p>
+                     <p xmlns="" class="stage">Il lui tâte le pouls.</p>
+                     <p xmlns="">Oh, oh&nbsp;! </p>
+                     <p xmlns="" class="stage">Il lui touche le front.</p>
+                     <p xmlns="">Hu, hu&nbsp;! </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Ah, la carogne&nbsp;! </p>
+                     <p xmlns="" class="speaker">L’Auteur</p>
+                     <p xmlns="">Que cela ne vous fasse point de peine&nbsp;: c’est un mal de famille. Votre père
+                        						l’était, votre grand-père l’était, votre bisaïeul l’était. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je vous remercie&nbsp;: quand on fera des chevaliers de cet ordre, je vous
+                        						prierai de faire mes preuves. </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène VIII Pluton, Proserpine, assis sur un trône de flamme, au milieu de
+                        					leur Cour.</h2>
+                     <p xmlns="" class="speaker">Pluton</p>Phlégéton&nbsp;: Terme de la mythologie. Nom d’un des fleuves des
+                     						enfers. 
+                     <p xmlns="">C’est une chose étonnante, phlégétontique assemblée, que de voir l’affluence
+                        						d’âmes qui tombent journellement par vos soins dans mon royaume&nbsp;: il faut
+                        						désormais refuser l’entrée aux survenants, ou faire bâtir des appartements
+                        						nouveaux&nbsp;; et, pour cela, je crois qu’il sera bon de lever un droit sur le
+                        						bois et le charbon qui se brûlent ici-bas&nbsp;: voilà le sujet pour lequel je
+                        						vous assemble. </p>
+                     <p xmlns="" class="speaker">Proserpine</p>Maltôtier&nbsp;: Celui qui fait la maltôte&nbsp;: impôt levé sous Philippe
+                     						le Bel, pour la guerre contre les Anglais. Perception d’un droit qui n’est
+                     						pas dû. Toute espèce de perception d’impôts.
+                     <p xmlns="">Ah&nbsp;! Fi, m’amour&nbsp;! Ne parlons point d’impôt&nbsp;: c’est quelque nouveau venu de
+                        						maltôtier qui vous a soufflé cet avis-là. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">J’ai vu autrefois le temps si misérable, qu’il ne venait pas ici le moindre
+                        						petit griffonneur de sergent, qu’il ne fallût députer un diable tout exprès
+                        						pour aller le quérir&nbsp;; et présentement, nous ne sommes employés qu’à les
+                        						chasser&nbsp;: il faut que les greffiers attendent des années entières à la
+                        						porte, parce qu’ils ne veulent pas passer devant les conseillers, qui
+                        						pleuvent ici de toutes parts. </p>
+                     <p xmlns="" class="speaker">Proserpine</p>Prédicament&nbsp;: Terme de Logique. C’est une des Catégories, une
+                     						division qui se fait de la nature des substances, ou des qualités des êtres.
+                     						Les Philosophes ne sont pas d’accord sur le nombre des prédicaments. On dit
+                     						proverbialement, qu’une personne est en un bon, ou mauvais prédicament,
+                     						selon qu’elle s’est mise en bonne, ou en mauvaise réputation. [F]
+                     <p xmlns="">Il ne faut plus recevoir de gens de robe&nbsp;; l’enfer est déjà assez lugubre&nbsp;;
+                        						et surtout, point de greffiers, car ces gens-là mettent l’enfer en mauvais
+                        						prédicament. </p>
+                     <p xmlns="" class="speaker">Pluton</p>Querelle&nbsp;: on dit proverbialement, Faire une querelle d’Allemand
+                     						à quelqu’un, pour dire, l’attaquer sans sujet et de gaîté de coeur.
+                     						[F]
+                     <p xmlns="">Oui&nbsp;; mais vous ne savez pas que, moi qui suis Pluton, je n’ai pas plus de
+                        						droit en enfer que ces messieurs-là. Bienheureux si, quelque jour, ils ne
+                        						m’en chassent pas. Je suis si soûl des gens de chicane, que dernièrement je
+                        						fis une querelle d’Allemand à un diable de qualité, qui revenait de Paris&nbsp;;
+                        						et je lui fis fermer la porte, parce qu’il avait hanté mauvaise compagnie
+                        						là-haut, et qu’il sortait du corps d’un procureur. </p>
+                     <p xmlns="" class="speaker">Proserpine</p>
+                     <p xmlns="">Vous avez eu raison&nbsp;; ce serait le moyen de gâter bientôt tout ici. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Je veux que vous soyez témoins de ce que je dis, et que Caron apporte devant
+                        						vous le livre journal des âmes qu’il a passées aujourd’hui. </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène IX Pluton, Proserpine, Caron, Suite de Pluton.</h2>
+                     <p xmlns="" class="stage">Deux Diables apportent un gros livre sur leur dos&nbsp;; Caron le
+                        					feuillette et lit.</p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="" class="stage">, lisant.</p>
+                     <p xmlns="">Du dix-sept, passé deux mille sept cent treize médecins avec leurs mules.
+                        					</p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Ces messieurs-là font mieux nos affaires là-haut&nbsp;: il les faut renvoyer. Je
+                        						ne veux plus qu’on en reçoive aucun à l’avenir qu’il n’ait une attestation
+                        						de service et un certificat des fossoyeurs, comme il a bien et fidèlement
+                        						exercé sa charge de médecin, et tué pour le moins dix mille personnes à sa
+                        						part. </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Du même jour, quatorze cents apothicaires. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Pour les apothicaires, passe. On est échauffé en ce pays-ci, et on a besoin
+                        						de lavements pour se déconstiper. </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="" class="stage">, toujours lisant.</p>Rat de cave&nbsp;: On appelle ironiquement rat de cave, un Commis des
+                     						aides qui va visiter et marquer les tonneaux des Cabaretiers, pour en faire
+                     						payer le Gros et Huitiéme. [L] 
+                     <p xmlns="">Dudit jour, cinquante-sept mille deux cent dix sept, tant fermiers,
+                        						sous-fermiers, que commis et rats-de-cave. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Il est vrai qu’il en est tombé ce matin une bruine&nbsp;; on ne se voyait pas en
+                        						enfer. </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Pour les fermiers, tout franc, il n’y a plus moyen de les passer&nbsp;; ils sont
+                        						si gros et si gras, que ma barque enfonce. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Comment voulez-vous faire&nbsp;? Nous ne pouvons pas les refuser, c’est ici leur
+                        						apanage. </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Plus, quinze mille sept cents, tant clercs que procureurs. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Pour ceux-là, il faut en faire provision&nbsp;; c’est le bois d’andelle de
+                        						l’enfer&nbsp;; et je ne veux pas que l’on brûle autre chose dans mon cabinet.
+                        					</p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Quatorze mille douzaines de femmes tant grandes que petites. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Ah&nbsp;! Voilà ce que je craignais&nbsp;! Et pourquoi les laisse-t-on passer&nbsp;? </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="" class="stage">, lisant.</p>
+                     <p xmlns="">Item. Passé, en corps et en âme, deux carabins de symphonie, soi-disant
+                        						musiciens de l’Opéra, qui viennent redemander leurs femmes. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Ils sont donc fous&nbsp;? Qu’on les fasse venir au plus vite, je veux les voir&nbsp;;
+                        						voilà du fruit nouveau. </p>
+                     <p xmlns="" class="speaker">Proserpine</p>
+                     <p xmlns="">Il y a longtemps que je suis en ce pays-ci, mais je n’ai point encore vu une
+                        						pareille ambassade. </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène X Pluton, Proserpine, Orphée, Isabelle, femme d’Orphée, Arlequin,
+                        					Colombine.</h2>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="" class="stage">, à Orphée, montrant Isabelle.</p>
+                     <p xmlns="">Est-ce là votre femme&nbsp;? Elle valait bien la peine de faire le voyage. </p>
+                     <p xmlns="" class="stage">Orphée fait un compliment à Pluton, en italien&nbsp;;
+                        						ensuite il chante un air pour redemander sa femme.</p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">S’il ne tient qu’à une chanson pour avoir sa femme, je vais en dire une
+                        						nouvelle. </p>
+                     <p xmlns="" class="stage">Il chante sur l’air&nbsp;: Dupont, mon ami.</p>
+                     <ul xmlns="" class="poem">
+                        <li>Pluton, mon ami,</li>
+                        <li>J’ai fait ce voyage,</li>
+                        <li>Pour tirer d’ici</li>
+                        <li>Celle qui m’engage&nbsp;:</li>
+                        <li>Si tu ne veux me la donner,</li>
+                        <li>Il faudra bien s’en consoler.</li>
+                     </ul>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns="">S’il est étonnant de voir un mari chercher sa femme jusqu’aux enfers, il ne
+                        						l’est pas moins de voir une femme souhaiter avec empressement de retourner
+                        						avec son mari, quand une fois elle en a été séparée. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Voilà un petit début qui n’est point sot. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Débuteuse&nbsp;: mot formé avec le mot début de la phrase précédente.
+                     						Après le compliment pour la phrase d’Isabelle, par Pluton, Arlequin fait un
+                     						autre compliment à celle qui a fait ce petit début. 
+                     <p xmlns="">Ni la débuteuse non plus. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>
+                     <p xmlns=""><a class="note" onclick="affiche('puYUtMs')">✱</a>Pour moi, je ne suis point de celles qui regardent la séparation d’avec un
+                        						mari comme la porte de leur félicité&nbsp;; et j’avoue franchement que je suis
+                        						d’assez mauvais goût pour trouver qu’il n’y a point de bonheur égal à celui
+                        						de vivre avec un époux que l’on aime et dont on est tendrement aimé. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Eh&nbsp;! Fi donc&nbsp;; faites-la taire&nbsp;: elle prêche là une nouvelle doctrine. </p>
+                     <p xmlns="" class="speaker">Isabelle</p>Surtout&nbsp;: Grosse casaque ou juste-au-corps qu’on met en hiver par
+                     						dessus ses autres habits. Ce mot n’est en usage que depuis fort peu
+                     						d’années. C’est à peu prés ce qu’on appelait anciennement Souravis, comme
+                     						qui aurait dit Surhabits. [Th. Corneille]
+                     <p xmlns="">Je sais que je ne suis pas du goût d’aujourd’hui, et que pour être
+                        						présentement femme du bel air, il ne faut prendre un mari que comme un
+                        						surtout de bienséance, et un paravent de réputation&nbsp;; mais j’aime mieux
+                        						n’être pas tout à fait à la mode, et être un peu plus dans la route de mon
+                        						devoir. C’est ce qui fait que je viens implorer votre clémence, et vous
+                        						prier, par tout ce que vous avez de plus cher, au nom de l’amour que vous
+                        						vous êtes porté l’un et l’autre, de m’accorder la grâce que je vous demande,
+                        						de me rendre à un mari que je chéris plus que toute chose au monde, et je
+                        						serai obligée de faire le reste de ma vie des voeux pour la santé et la
+                        						prospérité de vos majestés diaboliques. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>Malepeste&nbsp;: Imprécation qu’on fait contre quelque chose, et
+                     						quelquefois avec admiration. [F]
+                     <p xmlns="">Malepeste&nbsp;! Voilà du plus beau récitatif. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Qu’est-ce que c’est que ce bruit-là&nbsp;? </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Ce sont des anciens marguilliers qui veulent passer devant des avocats. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Le procès n’a-t-il pas été jugé là-haut&nbsp;? </p>
+                     <p xmlns="" class="speaker">Caron</p>
+                     <p xmlns="">Oui&nbsp;; mais ils en appellent devant vous. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Huissier, faites faire silence&nbsp;; nous verrons cela tantôt. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="" class="stage">, déclamant.</p>
+                     <p xmlns="">Les femmes d’aujourd’hui sont si malheureuses, et l’empire des maris si
+                        						absolu, que je ne m’étonne plus qu’il y ait tant de filles à marier, et qui
+                        						regardent le mariage comme l’écueil de leurs plaisirs et le tombeau de leur
+                        						liberté. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Bon&nbsp;! Bon&nbsp;! Toute la journée les filles ont le gosier ouvert pour
+                        						chanter&nbsp;:</p>
+                     <ul xmlns="" class="poem">
+                        <li>Ma mère, mariez-moi,</li>
+                        <li>Vous savez la raison pourquoi.</li>
+                     </ul>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">En effet, n’est-ce pas une chose qui crie vengeance, de voir l’inhumanité
+                        						avec laquelle les pauvres femmes, ces moutons d’amour, sont traitées par ces
+                        						loups dévorants&nbsp;! </p>
+                     <p xmlns="" class="stage">Elle crie.</p>
+                     <p xmlns="">Ne dirait-on pas… </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oh&nbsp;! Je vois bien que nous sommes ici sur le patrimoine des avocats. Comme
+                        						elle a appris à crier&nbsp;! </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns=""><a class="note" onclick="affiche('FaVPmcp')">✱</a>Ne dirait-on pas, dis-je, que le mariage, qui devrait être l’union, le noeud
+                        						et la soudure des volontés, soit présentement un champ de bataille, où le
+                        						mari s’exerce à chagriner sa femme, et où la femme est toujours la
+                        						malheureuse exposée aux insultes, et bien souvent aux coups de celui qui
+                        						devrait être le rempart de sa faiblesse&nbsp;? </p>
+                     <p xmlns="" class="speaker">Pluton</p>Chinforgnaux&nbsp;: mot dérivé de Chinfreneau. Coup à la tête ou au
+                     						visage. Terme populaire. [L]
+                     <p xmlns="">Nous voyons pourtant souvent ici des maris qui portent de vilains
+                        						chinforgnaux sur leur tête. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Hé&nbsp;! Ce n’est que pour entretenir la paix. Ne savez-vous pas bien que qui
+                        						bat sa femme, il la fait braire&nbsp;; qui la rebat, il la fait taire. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Pour moi, je vous déclare que, si heureusement mon mari était mort le
+                        						premier, j’aurais crié&nbsp;; je me serais couverte, jusqu’au bout des ongles,
+                        						d’un deuil où le coeur n’aurait pas eu grande part&nbsp;; mais loin de le venir
+                        						trouver aux enfers, je me serais bien donné de garde de le chercher. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oh&nbsp;! Ma petite femme, je n’ai jamais douté de votre affection. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Ainsi, puisqu’il vient me chercher de si loin&nbsp;: c’est une marque qu’il ne
+                        						saurait se passer de moi&nbsp;; mais il ne m’aura que par le bon bout&nbsp;: je
+                        						prétends avoir des conditions si avantageuses, qu’on ne puisse pas me
+                        						reprocher d’avoir gâté le métier… Comme c’est une chose qui crie
+                        						vengeance, de voir le peu de dépenses que les femmes font aujourd’hui, je
+                        						veux avoir plus d’argent que par le passé, et que chacun ait, sa semaine, la
+                        						clef du coffre-fort. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Si vous l’aviez une semaine, je courrais grand risque la suivante de ne pas
+                        						entrer en exercice. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Item. Oh&nbsp;! Voilà un grand item celui-ci&nbsp;: point de jolies femmes de chambre,
+                        						c’est-à-dire, que je les choisirai moi-même les plus laides que faire se
+                        						pourra, et qui auront au moins quarante-cinq ans. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Fi&nbsp;! On n’est jamais bien servi par ces vieilles-là. Il faut donc que vous
+                        						retranchiez aussi les grands laquais. </p>
+                     <p xmlns="" class="speaker">Pluton</p>Tudieu&nbsp;: Juron de l’ancienne comédie. [L] Euphémime pour "Tue
+                     						Dieu".
+                     <p xmlns="">Tudieu&nbsp;! Cet oiseau-ci sait bien sa leçon. Voilà une pèlerine qui a
+                        						diablement d’esprit. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Elle a encore six fois plus de tête. La la, voyons&nbsp;: j’ai aussi à proposer
+                        						mes conditions, moi, et voilà des articles que nous ferons signer par des
+                        						notaires de ce pays-ci&nbsp;; car je crois qu’il n’y en manque pas. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Oui, tu le prends comme cela&nbsp;? Et moi, je ne veux pas sortir. Une jolie
+                        						femme comme moi, en tout pays, ne manque point de mari. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Oh&nbsp;! Je sais bien qu’il y a partout assez de gens qui se mêlent de ces
+                        						emplois-là. Primo. Puisque je ne profite pas de votre mort, je prétends que
+                        						vous me rendiez les frais du deuil et de l’enterrement que j’ai payés au
+                        						crieur. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Cela est juste&nbsp;; mais il n’en coûte pas grand’chose gour faire enterrer une
+                        						petite femme. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Ah&nbsp;! Ces diables de corbeaux-là ne les mesurent pas B la toise, et ils
+                        						rançonnent si exorbitamment un pauvre mari, que souvent il aimerait presque
+                        						autant que sa femme ne mourût pas. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Ils gagnent assez d’ailleurs. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je prétends à l’avenir que vous baissiez votre rayon d’un grand demi-pied au
+                        						moins. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">D’un demi-pied&nbsp;! Je me ferais plutôt couper la tête. Non, non, je demeurerai
+                        						ici. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Il vous en restera encore plus d’un grand pied&nbsp;; et un grand pied de rayon
+                        						doit suffire à la femme d’un musicien. </p>
+                     <p xmlns="" class="speaker">Proserpine</p>
+                     <p xmlns="">Oh, oh&nbsp;! Je le crois bien&nbsp;; je m’en contenterais bien, moi qui suis
+                        						Proserpine. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je veux que vous soyez beaucoup plus sage que par le passé, et que vous
+                        						promettiez de n’aimer désormais que moi. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Oh&nbsp;! Pour cet article-là, néant. Je ne veux point engager ma conscience. Dans le temps où nous sommes, il n’y a point de femmes qui puissent
+                        						promettre cela. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Je veux que les enfants que j’aurai dans ln suite (car il faut recommencer
+                        						sur nouveaux frais) soient élevés à ma fantaisie, et j’en disposerai comme
+                        						de chose à moi appartenante. </p>
+                     <p xmlns="" class="speaker">Colombine</p>
+                     <p xmlns="">Cela s’en va sans dire. </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Hé&nbsp;! De quoi vous embarrassez-vous&nbsp;? Puisqu’elle est votre femme, tous les
+                        						enfants qu’elle aura ne seront-ils pas les vôtres&nbsp;? </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Nego consequentiam. Vous ne savez pas tout le manège de là-haut, monsieur
+                        						Pluton&nbsp;: il y a tant de pères qui n’ont jamais eu d’enfants&nbsp;! </p>
+                     <p xmlns="" class="speaker">Pluton</p>
+                     <p xmlns="">Après avoir entendu les raisons des uns et des autres, pour vous défrayer
+                        						des frais de votre voyage, moi Pluton, prince des ténèbres, souverain du
+                        						Styx et du Phlégéton, gouverneur des pays-bas, président du sabbat, et
+                        						correcteur né des arts, métiers et professions, je vous permets non
+                        						seulement d’emmener chacun votre femme, mais toutes celles qui sont en
+                        						enfer, sans même en excepter Proserpine. </p>
+                     <p xmlns="" class="speaker">Arlequin</p>
+                     <p xmlns="">Pour moi, je n’en ai que trop de celle-ci&nbsp;; mais il y a bien des gens qui ne
+                        						demanderont pas mieux que de troquer avec vous. </p>
+                  </section>
+               </div>
+            </div>
+         </div>
+         <div id="ZPcYUDx" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ZPcYUDx').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ZPcYUDx')">
+                     <option value="launay1922_1901111">launay1922, phrase 1111</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ZPcYUDx',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ZPcYUDx',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500126">
+               <h5>regnard1689, phrase 126</h5>
+               <p><span class="w">Quand </span><span data-type="GN"><span class="w">une </span><span class="w">femme</span> </span><span data-type="GV"><span class="synos" data-href="1901111_47" data-corresp="launay1922_1901111">doit </span><span class="lemmes" data-href="1901111_18" data-corresp="launay1922_1901111">mourir</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">vaut </span><span class="mots" data-href="1901111_22" data-corresp="launay1922_1901111">bien </span><span class="w">mieux</span> </span><span class="w">que </span><span data-type="GV"><span class="w">ce </span><span class="w">soit </span><span class="w">de</span> </span><span data-type="GN"><span class="w">la </span><span class="w">main </span><span class="w">de </span><span class="w">son </span><span data-type="GN"><span class="w">mari</span></span> </span><span class="w">que </span><span class="w">de </span><span class="w">celle </span><span class="w">d’</span><span data-type="GN"><span class="w">un </span><span class="w">médecin</span></span>, <span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="lemmes" data-href="1901111_15" data-corresp="launay1922_1901111">faut </span><span class="mots" data-href="1901111_22" data-corresp="launay1922_1901111">bien </span><span class="synos" data-href="1901111_47" data-corresp="launay1922_1901111">payer</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">qui </span><span class="w">vous </span><span class="w">la </span><span class="w">traînera</span> </span><span data-type="GN"><span class="w">six </span><span class="w">mois</span> </span><span class="w">ou </span><span data-type="GN"><span class="w">un </span><span class="lemmes" data-href="1901111_34" data-corresp="launay1922_1901111">an</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="launay1922_1901111" data-id="1901111">
+                  <h5>launay1922, phrase 1111</h5>
+                  <p><span data-type="GV"><span>Je </span><span>le </span><span>sais</span></span>, <span>dans </span><span data-type="GN"><span>une </span><span>heure</span></span>, <span>plus </span><span>tôt </span><span>même </span><span>peut-être</span>, <span data-type="GV"><span>il </span><span class="lemmes" data-id="1901111_15">faudra</span> </span><span>que </span><span data-type="GV"><span>je </span><span class="lemmes" data-id="1901111_18">meure</span></span>&nbsp;; <span data-type="GV"><span>c’</span><span>est </span><span class="mots mots" data-id="1901111_22">bien</span></span>&nbsp;: <span data-type="GV"><span>j’</span><span>ai</span></span>, <span data-type="GAdj"><span>trop </span><span>hâtif</span></span>, <span>avant </span><span data-type="GN"><span>le </span><span>cours </span><span>des </span><span data-type="GN"><span class="lemmes" data-id="1901111_34">ans </span><span>voulu</span></span> </span><span data-type="GV"><span>dompter</span> </span><span data-type="GN"><span>la </span><span>chair</span> </span><span>et </span><span data-type="GV"><span>maîtriser</span> </span><span data-type="GN"><span>les </span><span>sens</span></span>&nbsp;; <span data-type="GV"><span>j’</span><span>ai </span><span class="synos" data-id="1901111_47">cru </span><span>de</span> </span><span data-type="GN"><span>son </span><span>trop </span><span>lourd </span><span data-type="GN"><span>fardeau</span></span> </span><span data-type="GV"><span>délivrer</span> </span><span data-type="GN"><span>l’</span><span>âme</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="yHWOTrS" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('yHWOTrS').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('yHWOTrS')">
+                     <option value="duryer1702_2400104">duryer1702, phrase 104</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('yHWOTrS',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('yHWOTrS',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500135">
+               <h5>regnard1689, phrase 135</h5>
+               <p><span data-type="GV"><span class="w">C’</span><span class="w">est</span> </span><span class="w">que</span>, <span class="synos" data-href="2400104_80" data-corresp="duryer1702_2400104">comme </span><span data-type="GV"><span class="w">il </span><span class="w">était </span><span class="synos" data-href="2400104_74" data-corresp="duryer1702_2400104">fort</span> </span><span data-type="GAdj"><span class="synos" data-href="2400104_74" data-corresp="duryer1702_2400104">charitable</span></span>, <span class="mots" data-href="2400104_85" data-corresp="duryer1702_2400104">lorsqu’</span><span data-type="GV"><span class="w">il </span><span class="synos" data-href="2400104_53" data-corresp="duryer1702_2400104">rencontrait</span> </span><span class="synos" data-href="2400104_66" data-corresp="duryer1702_2400104">quelque </span><span data-type="GN"><span class="w">agonisant</span> </span><span data-type="GV"><span class="w">que </span><span class="w">l’</span><span class="w">on </span><span class="synos" data-href="2400104_53" data-corresp="duryer1702_2400104">menait </span><span class="w">à</span> </span><span data-type="GN"><span class="w">la </span><span class="w">Grève</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">se </span><span class="synos" data-href="2400104_53" data-corresp="duryer1702_2400104">mettait </span><span class="w">avec </span><span class="w">lui</span> </span><span class="w">dans </span><span data-type="GN"><span class="w">la </span><span class="w">charrette</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">l’</span><span class="synos" data-href="2400104_29" data-corresp="duryer1702_2400104">aidait </span><span class="w">à </span><span class="synos" data-href="2400104_71" data-corresp="duryer1702_2400104">mourir</span> </span><span class="w">du </span><span class="w">mieux </span><span class="w">qu’</span><span data-type="GV"><span class="w">il </span><span class="lemmes" data-href="2400104_17" data-corresp="duryer1702_2400104">pouvait</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="duryer1702_2400104" data-id="2400104">
+                  <h5>duryer1702, phrase 104</h5>
+                  <p><span data-type="GV"><span>L’</span><span>on </span><span>figure </span><span>donc</span> </span><span data-type="GN"><span>la </span><span>méchanceté</span> </span><span>et </span><span data-type="GN"><span>la </span><span>malice</span> </span><span>par </span><span data-type="GN"><span>ces </span><span>femmes</span></span>, <span data-type="GV"><span>qui </span><span>n’</span><span>aiant </span><span class="lemmes" data-id="2400104_17">pu </span><span>se</span> </span><span data-type="GV"><span>laisser</span> </span><span data-type="GV"><span>fléchir </span><span>par</span> </span><span data-type="GN"><span>les </span><span>beaux </span><span>airs </span><span>d’</span><span data-type="GN"><span>Orphée</span></span></span>, <span data-type="GV"><span>se </span><span class="synos" data-id="2400104_29">jetterent </span><span>sur </span><span>lui</span></span>, <span>et </span><span data-type="GV"><span>le </span><span>déchirerent</span></span>&nbsp;; <span>et </span><span>par </span><span data-type="GN"><span>ce </span><span>Serpent</span> </span><span data-type="GV"><span>qui </span><span>voulut </span><span>mordre</span> </span><span data-type="GN"><span>sa </span><span>tête</span> </span><span>apres </span><span data-type="GN"><span>sa </span><span>mort</span></span>, <span data-type="GV"><span>l’</span><span>on </span><span>nous </span><span class="synos" data-id="2400104_53">represente</span> </span><span data-type="GN"><span>la </span><span>malice</span> </span><span data-type="GV"><span>qui </span><span>tâche </span><span>à </span><span>perdre</span> </span><span data-type="GV"><span>ce </span><span>qui </span><span>reste </span><span>des</span> </span><span data-type="GN"><span>gens</span> </span><span>de </span><span class="synos" data-id="2400104_66">bien</span>, <span data-type="GV"><span>c’</span><span>est </span><span>à </span><span class="synos" data-id="2400104_71">dire</span></span>, <span data-type="GN"><span>les </span><span class="synos" data-id="2400104_74">bons </span><span>preceptes</span> </span><span data-type="GV"><span>par </span><span>lequels </span><span>ils </span><span>sont </span><span class="synos" data-id="2400104_80">encore</span> </span><span data-type="GAdj"><span>utiles </span><span>aux</span> </span><span data-type="GN"><span>hommes</span></span>, <span class="mots" data-id="2400104_85">lorsqu' </span><span data-type="GV"><span>ils </span><span>ne </span><span>sont </span><span>plus </span><span>parmi</span> </span><span data-type="GN"><span>les </span><span>hommes</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="whGfkZI" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('whGfkZI').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('whGfkZI')">
+                     <option value="defontenay1854_6100458">defontenay1854, phrase 458</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('whGfkZI',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('whGfkZI',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500037">
+               <h5>regnard1689, phrase 37</h5>
+               <p><span data-type="GV"><span class="w">Nous </span><span class="w">sommes </span><span class="w">en</span> </span><span data-type="GN"><span class="mots" data-href="6100458_13" data-corresp="defontenay1854_6100458">Thrace</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="synos" data-href="6100458_20" data-corresp="defontenay1854_6100458">quitté</span> </span><span data-type="GN"><span class="w">la </span><span class="w">Grèce</span> </span><span data-type="GV"><span class="w">pour </span><span class="synos" data-href="6100458_20" data-corresp="defontenay1854_6100458">venir </span><span class="w">ici </span><span class="mots" data-href="6100458_45" data-corresp="defontenay1854_6100458">disputer</span> </span><span class="w">avec </span><span data-type="GN"><span class="mots" data-href="6100458_17" data-corresp="defontenay1854_6100458">Orphée </span><span class="w">de </span><span class="w">la </span><span data-type="GN"><span class="w">musique</span></span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="defontenay1854_6100458" data-id="6100458">
+                  <h5>defontenay1854, phrase 458</h5>
+                  <p><span data-type="GN"><span>Aristée</span></span>&nbsp;! <span data-type="GV"><span>j’</span><span>ai </span><span>bien </span><span>voulu</span> </span><span data-type="GV"><span>te </span><span>céder</span> </span><span data-type="GN"><span>l’</span><span>empire </span><span>de </span><span>la </span><span data-type="GN"><span class="mots" data-id="6100458_13">Thrace</span></span></span>&nbsp;; <span>mais </span><span>si </span><span data-type="GN"><span class="mots" data-id="6100458_17">Orphée</span> </span><span data-type="GV"><span>t’</span><span>a </span><span class="synos" data-id="6100458_20">rendu</span> </span><span data-type="GAdj"><span>faible</span> </span><span>ou </span><span data-type="GAdj"><span>lâche</span></span>... <span data-type="GV"><span>c’</span><span>est </span><span>à </span><span>moi</span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>doit </span><span>revenir</span></span>... <span>et </span><span data-type="GV"><span>je </span><span>serai </span><span>là</span></span>, <span>devant </span><span>toi</span>, <span>pour </span><span data-type="GV"><span>te </span><span>le </span><span class="mots" data-id="6100458_45">disputer</span></span>&nbsp;! </p>
+               </div>
+            </div>
+         </div>
+         <div id="QuNASCu" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('QuNASCu').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('QuNASCu')">
+                     <option value="hermite1662_7100080">hermite1662, phrase 80</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('QuNASCu',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('QuNASCu',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500065">
+               <h5>regnard1689, phrase 65</h5>
+               <p><span class="w">Qu’</span><span data-type="GN"><span class="w">un </span><span class="w">homme</span> </span><span data-type="GV"><span class="w">ait</span> </span><span data-type="GN"><span class="w">une </span><span class="w">colique </span><span class="mots" data-href="7100080_4" data-corresp="hermite1662_7100080">enragée</span></span>, <span class="w">en </span><span data-type="GN"><span class="w">un </span><span class="w">moment</span> </span><span data-type="GV"><span class="w">je </span><span class="w">la </span><span class="w">lui </span><span class="synos" data-href="7100080_16" data-corresp="hermite1662_7100080">fais </span><span class="synos" data-href="7100080_16" data-corresp="hermite1662_7100080">passer</span></span>&nbsp;; <span class="w">je </span><span data-type="GN"><span class="w">le </span><span class="w">couche</span> </span><span class="w">par </span><span data-type="GN"><span class="synos" data-href="7100080_72" data-corresp="hermite1662_7100080">terre</span></span>, <span data-type="GV"><span class="w">je </span><span class="synos" data-href="7100080_16" data-corresp="hermite1662_7100080">fais </span><span class="synos" data-href="7100080_16" data-corresp="hermite1662_7100080">chauffer</span> </span><span data-type="GN"><span class="w">une </span><span class="w">meule </span><span class="w">de </span><span data-type="GN"><span class="w">moulin</span></span></span>, <span class="w">et </span><span data-type="GV"><span class="w">je </span><span class="w">la </span><span class="w">lui </span><span class="lemmes" data-href="7100080_73" data-corresp="hermite1662_7100080">applique </span><span class="w">sur</span> </span><span data-type="GN"><span class="w">l’</span><span class="synos" data-href="7100080_59" data-corresp="hermite1662_7100080">estomac</span></span>&nbsp;: <span data-type="GV"><span class="w">n’</span><span class="w">ayez </span><span class="w">pas</span> </span><span data-type="GN"><span class="mots" data-href="7100080_10" data-corresp="hermite1662_7100080">peur</span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">ait </span><span class="antos" data-href="7100080_64" data-corresp="hermite1662_7100080">jamais</span> </span><span data-type="GN"><span class="w">la </span><span class="w">colique</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="hermite1662_7100080" data-id="7100080">
+                  <h5>hermite1662, phrase 80</h5>
+                  <p><span>Lors </span><span data-type="GN"><span>la </span><span>Nimphe </span><span class="mots" data-id="7100080_4">enragée</span> </span><span>au </span><span data-type="GN"><span>desespoir </span><span>réduite</span></span>, <span>de </span><span data-type="GN"><span class="mots" data-id="7100080_10">peur </span><span>des </span><span data-type="GN"><span>Animaux</span></span> </span><span>à </span><span data-type="GN"><span>la </span><span>fin</span> </span><span data-type="GV"><span class="synos" data-id="7100080_16">prend</span> </span><span data-type="GN"><span>la </span><span>fuite</span></span>&nbsp;; <span data-type="GV"><span>en </span><span>blasphemant</span> </span><span data-type="GN"><span>le </span><span>Ciel</span> </span><span>et </span><span data-type="GN"><span>le </span><span>coeur </span><span>inhumain</span> </span><span>qu’</span><span data-type="GV"><span>elle </span><span>n’</span><span>a </span><span>pü </span><span>blesser</span> </span><span>des </span><span data-type="GN"><span>yeux</span> </span><span>ny </span><span>de </span><span data-type="GN"><span>la </span><span>main</span></span>. <span>luy </span><span>par </span><span data-type="GN"><span>cette </span><span>merveille </span><span>échapé </span><span>de </span><span>l’</span><span data-type="GN"><span>Orage</span></span></span>, <span>de </span><span data-type="GN"><span>l’</span><span>effet </span><span>de </span><span>sa </span><span data-type="GN"><span>voix</span></span> </span><span data-type="GV"><span>tient </span><span>grossir</span> </span><span data-type="GN"><span>son </span><span class="synos" data-id="7100080_59">courage</span></span>&nbsp;; <span>et </span><span data-type="GV"><span>s’</span><span>asseure </span><span class="antos" data-id="7100080_64">desja </span><span>de</span> </span><span data-type="GV"><span>vaincre</span> </span><span data-type="GN"><span>son </span><span>malheur</span> </span><span data-type="GV"><span>s’</span><span>il </span><span>peut </span><span class="synos" data-id="7100080_72">bien </span><span class="lemmes" data-id="7100080_73">appliquer</span> </span><span data-type="GN"><span>ce </span><span>charme</span> </span><span>à </span><span data-type="GN"><span>sa </span><span>douleur</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="EuroYdX" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('EuroYdX').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('EuroYdX')">
+                     <option value="drouot1930_4200466">drouot1930, phrase 466</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('EuroYdX',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('EuroYdX',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500226">
+               <h5>regnard1689, phrase 226</h5>
+               <p><span data-type="GN"><span class="w">Une </span><span class="mots" data-href="4200466_14" data-corresp="drouot1930_4200466">comédie </span><span class="synos" data-href="4200466_5" data-corresp="drouot1930_4200466">nouvelle</span></span>, <span data-type="GV"><span class="w">pour </span><span class="w">être</span> </span><span data-type="GAdj"><span class="synos" data-href="4200466_55" data-corresp="drouot1930_4200466">bonne</span></span>, <span data-type="GV"><span class="w">ne </span><span class="synos" data-href="4200466_62" data-corresp="drouot1930_4200466">doit </span><span class="w">se </span><span class="lemmes" data-href="4200466_12" data-corresp="drouot1930_4200466">jouer</span> </span><span class="w">qu’</span><span data-type="GN"><span class="w">une </span><span class="w">fois</span></span>&nbsp;; <span class="w">quand </span><span data-type="GV"><span class="w">elle </span><span class="synos" data-href="4200466_8" data-corresp="drouot1930_4200466">va</span> </span><span class="mots" data-href="4200466_22" data-corresp="drouot1930_4200466">jusqu’</span><span class="w">à </span><span class="w">deux</span>, <span data-type="GN"><span class="w">ma </span><span class="synos" data-href="4200466_48" data-corresp="drouot1930_4200466">foi</span></span>, <span data-type="GV"><span class="w">on </span><span class="w">s’</span><span class="synos" data-href="4200466_57" data-corresp="drouot1930_4200466">ennuie</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="drouot1930_4200466" data-id="4200466">
+                  <h5>drouot1930, phrase 466</h5>
+                  <p><span data-type="GV"><span>C’</span><span>est </span><span>comme</span> </span><span data-type="GN"><span>le </span><span class="synos" data-id="4200466_5">jeune </span><span>homme</span> </span><span data-type="GV"><span>qui </span><span class="synos" data-id="4200466_8">meurt</span></span>, <span>et </span><span data-type="GV"><span>il </span><span class="lemmes" data-id="4200466_12">joue</span> </span><span data-type="GN"><span>la </span><span class="mots" data-id="4200466_14">comédie </span><span>de </span><span>la </span><span data-type="GN"><span>gaieté</span></span></span>, <span>et </span><span data-type="GV"><span>il </span><span>trompe</span> </span><span class="mots" data-id="4200466_22">jusqu’</span><span>à </span><span data-type="GN"><span>son </span><span>père</span></span>, <span>et </span><span data-type="GV"><span>il </span><span>demande</span> </span><span>qu’</span><span data-type="GV"><span>on </span><span>le </span><span>laisse</span> </span><span data-type="GAdj"><span>seul</span></span>, <span data-type="GV"><span>qu’</span><span>on </span><span>éteigne </span><span>tout</span></span>&nbsp;; <span data-type="GV"><span>il </span><span>veut </span><span>dormir</span></span>, <span data-type="GV"><span>il </span><span>n’</span><span>en </span><span class="synos" data-id="4200466_48">peut </span><span>plus</span></span>, <span>tout </span><span data-type="GN"><span>le </span><span>fatigue</span></span>, <span data-type="GV"><span class="synos" data-id="4200466_55">tout </span><span>l’</span><span class="synos" data-id="4200466_57">excède</span></span>, <span>et </span><span data-type="GV"><span>on </span><span>le </span><span class="synos" data-id="4200466_62">laisse</span></span>&nbsp;; <span>et </span><span data-type="GV"><span>il </span><span>enfonce</span> </span><span data-type="GN"><span>la </span><span>bouche</span> </span><span>dans </span><span data-type="GN"><span>sa </span><span>douleur</span> </span><span>comme </span><span>dans </span><span data-type="GN"><span>une </span><span>pomme</span></span>, <span>et </span><span data-type="GV"><span>il </span><span>éclate </span><span>en</span> </span><span data-type="GN"><span>sanglots</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="puYUtMs" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('puYUtMs').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('puYUtMs')">
+                     <option value="pommaux2009_6700142">pommaux2009, phrase 142</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('puYUtMs',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('puYUtMs',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500322">
+               <h5>regnard1689, phrase 322</h5>
+               <p><span class="w">Pour </span><span class="w">moi</span>, <span data-type="GV"><span class="w">je </span><span class="w">ne </span><span class="w">suis </span><span class="w">point </span><span class="w">de</span> </span><span data-type="GV"><span class="w">celles </span><span class="w">qui </span><span class="synos" data-href="6700142_3" data-corresp="pommaux2009_6700142">regardent</span> </span><span data-type="GN"><span class="w">la </span><span class="w">séparation</span> </span><span class="w">d’</span><span class="w">avec </span><span data-type="GN"><span class="w">un </span><span class="w">mari</span> </span><span class="synos" data-href="6700142_6" data-corresp="pommaux2009_6700142">comme </span><span data-type="GN"><span class="w">la </span><span class="w">porte </span><span class="w">de </span><span class="w">leur </span><span data-type="GN"><span class="w">félicité</span></span></span>&nbsp;; <span class="w">et </span><span data-type="GV"><span class="w">j’</span><span class="w">avoue </span><span class="w">franchement</span> </span><span class="w">que </span><span data-type="GV"><span class="w">je </span><span class="w">suis </span><span class="w">d’</span><span class="w">assez</span> </span><span data-type="GN"><span class="synos" data-href="6700142_19" data-corresp="pommaux2009_6700142">mauvais </span><span class="w">goût</span> </span><span data-type="GV"><span class="w">pour </span><span class="synos" data-href="6700142_3" data-corresp="pommaux2009_6700142">trouver</span> </span><span class="w">qu’</span><span data-type="GV"><span class="w">il </span><span class="w">n’</span><span class="w">y </span><span class="w">a </span><span class="w">point </span><span class="w">de</span> </span><span data-type="GN"><span class="w">bonheur </span><span class="w">égal</span> </span><span data-type="GV"><span class="w">à </span><span class="w">celui </span><span class="w">de </span><span class="w">vivre </span><span class="w">avec</span> </span><span data-type="GN"><span class="w">un </span><span class="w">époux</span> </span><span data-type="GV"><span class="w">que </span><span class="w">l’</span><span class="w">on </span><span class="lemmes" data-href="6700142_1" data-corresp="pommaux2009_6700142">aime</span> </span><span class="w">et </span><span data-type="GV"><span class="w">dont </span><span class="w">on </span><span class="w">est </span><span class="w">tendrement </span><span class="lemmes" data-href="6700142_1" data-corresp="pommaux2009_6700142">aimé</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="pommaux2009_6700142" data-id="6700142">
+                  <h5>pommaux2009, phrase 142</h5>
+                  <p><span data-type="GV"><span class="lemmes lemmes" data-id="6700142_1">Aimer</span></span>... <span data-type="GV"><span class="synos" data-id="6700142_3">Aimer </span><span>toujours</span></span>, <span class="synos" data-id="6700142_6">envers </span><span>et </span><span>contre </span><span>tout</span>, <span>que </span><span data-type="GV"><span>l’</span><span>on </span><span>soit</span> </span><span data-type="GN"><span>vivant</span></span>, <span data-type="GN"><span>mort </span><span class="synos" data-id="6700142_19">jeune </span><span>vieux </span><span>poète</span> </span><span>ou </span><span data-type="GN"><span>nautonier </span><span>des </span><span data-type="GN"><span>Enfers</span></span></span>... </p>
+               </div>
+            </div>
+         </div>
+         <div id="FaVPmcp" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('FaVPmcp').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('FaVPmcp')">
+                     <option value="puget1624_3600105">puget1624, phrase 105</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('FaVPmcp',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('FaVPmcp',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2500340">
+               <h5>regnard1689, phrase 340</h5>
+               <p><span data-type="GV"><span class="w">Ne </span><span class="lemmes" data-href="3600105_2" data-corresp="puget1624_3600105">dirait </span><span class="w">-on </span><span class="w">pas</span></span>, <span data-type="GV"><span class="mots" data-href="3600105_2" data-corresp="puget1624_3600105">dis </span><span class="w">-je</span></span>, <span class="w">que </span><span data-type="GN"><span class="w">le </span><span class="synos" data-href="3600105_69" data-corresp="puget1624_3600105">mariage</span></span>, <span data-type="GV"><span class="w">qui </span><span class="lemmes" data-href="3600105_50" data-corresp="puget1624_3600105">devrait </span><span class="w">être</span> </span><span data-type="GN"><span class="w">l’</span><span class="synos" data-href="3600105_69" data-corresp="puget1624_3600105">union</span></span>, <span data-type="GN"><span class="w">le </span><span class="w">noeud</span> </span><span class="w">et </span><span data-type="GN"><span class="w">la </span><span class="w">soudure </span><span class="w">des </span><span data-type="GN"><span class="lemmes" data-href="3600105_79" data-corresp="puget1624_3600105">volontés</span></span></span>, <span class="w">soit </span><span class="w">présentement </span><span data-type="GN"><span class="w">un </span><span class="synos" data-href="3600105_60" data-corresp="puget1624_3600105">champ </span><span class="w">de </span><span data-type="GN"><span class="w">bataille</span></span></span>, <span data-type="GN"><span class="w">où </span><span class="w">le </span><span class="w">mari</span> </span><span data-type="GV"><span class="w">s’</span><span class="synos" data-href="3600105_71" data-corresp="puget1624_3600105">exerce </span><span class="w">à </span><span class="w">chagriner</span> </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="3600105_58" data-corresp="puget1624_3600105">femme</span></span>, <span class="w">et </span><span data-type="GN"><span class="w">où </span><span class="w">la </span><span class="synos" data-href="3600105_58" data-corresp="puget1624_3600105">femme</span> </span><span data-type="GV"><span class="w">est </span><span class="w">toujours</span> </span><span data-type="GN"><span class="w">la </span><span class="w">malheureuse </span><span class="synos" data-href="3600105_71" data-corresp="puget1624_3600105">exposée</span> </span><span class="w">aux </span><span data-type="GN"><span class="w">insultes</span></span>, <span class="w">et </span><span class="synos" data-href="3600105_58" data-corresp="puget1624_3600105">bien </span><span class="w">souvent </span><span class="w">aux </span><span data-type="GN"><span class="synos" data-href="3600105_66" data-corresp="puget1624_3600105">coups</span> </span><span data-type="GV"><span class="w">de </span><span class="lemmes" data-href="3600105_23" data-corresp="puget1624_3600105">celui </span><span class="w">qui </span><span class="lemmes" data-href="3600105_50" data-corresp="puget1624_3600105">devrait </span><span class="w">être</span> </span><span data-type="GN"><span class="w">le </span><span class="synos" data-href="3600105_21" data-corresp="puget1624_3600105">rempart </span><span class="w">de </span><span class="w">sa </span><span data-type="GN"><span class="synos" data-href="3600105_9" data-corresp="puget1624_3600105">faiblesse</span></span></span>&nbsp;? </p>
+            </div>
+            <div class="target">
+               <div id="puget1624_3600105" data-id="3600105">
+                  <h5>puget1624, phrase 105</h5>
+                  <p><span>Que </span><span data-type="GV"><span class="lemmes mots" data-id="3600105_2">dis </span><span>-je</span></span>, <span data-type="GN"><span>ces </span><span>considerations</span> </span><span data-type="GV"><span>sont </span><span>trop</span> </span><span data-type="GAdj"><span class="synos" data-id="3600105_9">foibles</span> </span><span data-type="GV"><span>pour </span><span>vous </span><span>arrester</span></span>, <span data-type="GV"><span>il </span><span>faut </span><span>rendre</span> </span><span data-type="GN"><span>le </span><span>dernier </span><span>hommage </span><span>de </span><span data-type="GN"><span class="synos" data-id="3600105_21">secours</span></span> </span><span>à </span><span data-type="GV"><span class="lemmes" data-id="3600105_23">ceux </span><span>que </span><span>nous </span><span>aymons</span></span>, <span>alors </span><span>qu’</span><span data-type="GV"><span>ils </span><span>sont </span><span>reduits </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>extremité</span></span>&nbsp;: <span>et </span><span data-type="GV"><span>je </span><span>veux </span><span>croire</span> </span><span>qu’</span><span data-type="GV"><span>il </span><span>n’</span><span>est </span><span>pas</span> </span><span data-type="GN"><span>besoin</span> </span><span data-type="GV"><span>de </span><span>publier</span> </span><span data-type="GN"><span>ce </span><span class="lemmes lemmes" data-id="3600105_50">devoir</span> </span><span>comme </span><span data-type="GN"><span>une </span><span>loy</span> </span><span data-type="GV"><span>pour </span><span>le </span><span>prescrire </span><span>à</span> </span><span class="synos" data-id="3600105_58">tout </span><span data-type="GN"><span>le </span><span class="synos" data-id="3600105_60">monde </span><span>veu</span> </span><span>que </span><span data-type="GN"><span>les </span><span>particuliers </span><span class="synos" data-id="3600105_66">sentimens</span> </span><span>qu’</span><span data-type="GN"><span>une </span><span class="synos" data-id="3600105_69">affection </span><span>extreme </span><span class="synos" data-id="3600105_71">produit </span><span>dans</span> </span><span data-type="GN"><span>nos </span><span>ames</span></span>, <span data-type="GV"><span>nous </span><span>portent </span><span>de</span> </span><span data-type="GN"><span class="lemmes" data-id="3600105_79">volonté</span> </span><span>au-delà </span><span>mesme </span><span>de </span><span data-type="GN"><span>nostre </span><span>puissance</span></span>. </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

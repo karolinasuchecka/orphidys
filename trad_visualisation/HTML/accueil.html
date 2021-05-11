@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway&display=swap" rel="stylesheet"> 
+    <title></title>
+    <script src="node_modules/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js">
+    </script>
+    <script src="node_modules/jquery/dist/randomColor.js"></script>
+    <script src="node_modules/jquery/dist/jquery.canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="js/graphe_general.js"></script>
+    
+</head>
+
+<style>
+    /*ELEMENTS DE BASE*/
+    body{
+        font-family: 'Raleway', sans-serif;
+        font-size : 16px
+    }
+    
+    /*GRAPHE*/
+    
+    #cy{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #34495e;
+        z-index: 0
+            
+
+
+    }
+   
+    #info {
+		position: relative;
+		/*margin: 0.5em;*/
+		background: #fff;
+		border: 10px solid #2980B9;
+		/*box-shadow: inset 0 0 0 0.25em rgba(240, 240, 240, 0.9);*/
+		display: none;
+		overflow-x: hidden; 
+		overflow-x: auto; 
+		/*text-align:justify;*/ 
+  		font-size: 16px;	
+		font-family: 'Raleway', sans-serif;
+	}
+    
+    #legende{
+        position: absolute;
+		right: 1%;
+		top: 5%;
+        /*margin: 0.5em;*/
+		background: #fff;
+		border: 10px solid #2980B9;
+		/*box-shadow: inset 0 0 0 0.25em rgba(240, 240, 240, 0.9);*/
+        width: 12%;
+		overflow-x: hidden; 
+		overflow-x: auto; 
+		/*text-align:justify; */
+  		font-size: 16px;	
+		font-family: 'Raleway', sans-serif;
+        z-index: 1;
+        padding: 10px;
+    }
+    #correspondances{
+        position: relative;
+		/*margin: 0.5em;*/
+		background: #fff;
+		border: 10px solid #2980B9;
+		/*box-shadow: inset 0 0 0 0.25em rgba(240, 240, 240, 0.9);*/
+		display: none;
+		overflow-x: hidden; 
+		overflow-y: auto; 
+		/*text-align:justify;*/ 
+  		font-size: 14px;	
+		font-family: 'Raleway', sans-serif;
+        max-height: 90%;
+        margin-top: 10%;
+        padding: 10px;
+        
+    }
+    #gauche{
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        width: 20%;
+        height: 70vh;
+    }
+		
+	#info p{
+		margin: 5px;	
+	}
+    li svg{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px
+    }
+    ul{
+        list-style: none;
+        padding-left: 1%;
+    }
+    
+    #fermeture{
+        float: right;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    h3{
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+    }
+    strong{
+        font-family: 'Dosis', sans-serif;}
+    
+    #fermeture{
+        font-family: 'Dosis', sans-serif;
+        color: #2980B9;
+        font-size: 1.2em;
+        background-color: gainsboro;
+        padding: 2px;
+        
+    }
+    #fermeture:hover{
+        color: gainsboro;
+        background-color: #2980B9;
+    }
+    legend, button{
+        font-family: 'Dosis', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center
+    }
+    button{
+        margin-top: 20px;
+        color: #2980B9;
+        background-color: gainsboro;
+    }
+    button:hover{
+        color: gainsboro;
+        background-color: #2980B9;
+    }
+    fieldset div{
+        margin-bottom: 10px;
+    }
+</style>
+  <body>
+      <div id="legende">
+          <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+          <h3>Légende</h3>
+      <ul class="type">
+          <li><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.804016mm"
+   height="26.644562mm"
+   viewBox="0 0 26.804016 26.644562"
+   version="1.1"
+   id="svg1044"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="diamond.svg">
+  <defs
+     id="defs1038" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-736.48959"
+     inkscape:cy="-223.93379"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1041">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-121.15751,-62.939624)">
+    <path
+       style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z"
+       id="path52"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-28.726191"
+       inkscape:transform-center-y="-6.0476196" />
+  </g>
+</svg>Traduction d'Ovide</li>
+          <li><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27.214403mm"
+   height="27.503075mm"
+   viewBox="0 0 27.214403 27.503075"
+   version="1.1"
+   id="svg928"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="hexagone.svg">
+  <defs
+     id="defs922" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-535.71406"
+     inkscape:cy="-142.31149"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata925">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-68.035655,-83.677011)">
+    <path
+       style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z"
+       id="path66"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>Traduction de Virgile</li>
+          <li><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.804016mm"
+   height="26.644562mm"
+   viewBox="0 0 26.804016 26.644562"
+   version="1.1"
+   id="svg1044"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="triangle.svg">
+  <defs
+     id="defs1038" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-736.48959"
+     inkscape:cy="-223.93379"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1041">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-121.15751,-62.939624)">
+    <path
+       style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z"
+       id="path64"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>Modernisation</li>
+          <li><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27.214403mm"
+   height="27.503075mm"
+   viewBox="0 0 27.214403 27.503075"
+   version="1.1"
+   id="svg928"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="rond.svg">
+  <defs
+     id="defs922" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="188.94674"
+     inkscape:cy="-26.22114"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata925">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-68.035655,-83.677011)">
+    <ellipse
+       style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path60"
+       cx="81.645042"
+       cy="97.508041"
+       rx="12.690681"
+       ry="12.42014" />
+  </g>
+</svg>Transmodalisation</li>
+          <li><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27.214403mm"
+   height="27.503075mm"
+   viewBox="0 0 27.214403 27.503075"
+   version="1.1"
+   id="svg928"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="star.svg">
+  <defs
+     id="defs922" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-535.71406"
+     inkscape:cy="-142.31149"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata925">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-68.035655,-83.677011)">
+    <path
+       style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z"
+       id="path68"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>Parodie</li>
+          </ul>
+          <ul class="subtype">
+              <li><span style="color: #C0392B"> &#x25A0;</span> Poésie</li>
+              <li><span style="color: #2980B9"> &#x25A0;</span> Prose</li>
+              <li><span style="color: #FFFF00"> &#x25A0;</span> Opéra</li>
+              <li><span style="color: #27AE60"> &#x25A0;</span> Théâtre</li>
+              <li><span style="color: #E67E22"> &#x25A0;</span> Bande dessinée</li>
+              <li><span style="color: #8E44AD"> &#x25A0;</span> Autre</li>
+          </ul>
+      </div>
+      
+	<div id="cy"></div>
+      <div id="gauche">
+      <div id="info"></div>
+      <div id="correspondances"></div>
+          </div>
+  </body>
+</HTML>

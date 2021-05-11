@@ -1,0 +1,417 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/chambon2016.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Jacques Chambon, Franck-Emmanuel Comte <em>Episode 1 : le mythe d’Orphée et Eurydice. Web-série Les nouvelles
+               Métamorphoses</em></h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Vous vous y connaissez en Antiquité&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ah non, j’suis une bille. J’ai jamais été foutu de reconnaître un buffet Henri&nbsp;II d’une
+                     commode Louis&nbsp;XIII.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Mais je vous parle pas de meuble, je vous parle de mythes.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ah ben les mites, j’connais. Alors c’est des vraies saloperies ça. Il faut pas hésiter à
+                     employer la manière forte. Deux bonnes couches de xylophène et vous êtes tranquilles.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Mais vous le faites exprès ou quoi, je vous parle des mythes de l’Antiquité. La
+                     mythologie.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Les dieux&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Oui&nbsp;! Les dieux, les héros…</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ah ! mais bien sur j’connais, vous voulez que je vous explique&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Oui.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Bon ben ça c’est pas compliqué. Alors, vous avez les Dieux, bon bah, ça c’est le top
+                     niveau, ça c’est des cadors, des tauliers, si vous voulez, hein&nbsp;? Ensuite, vous avez les
+                     demi-dieux. Bon, là on est niveau super-héros. Ensuite, vous avez les héros. Bon, alors là
+                     c’est genre Mohamed Ali, Djokovic, tout ça. Et puis, vous avez les mortels, les pauvres
+                     types comme vous.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah ouais. Ouais, il n’y a pas à dire, vous m’avez l’air d’être un expert hein&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ben exactement. Et pourquoi vous me demandez ça&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ben parce que, c’est ça la répèt’ ce soir</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Quoi, c’est de la musique de l’Antiquité&nbsp;?!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Oui.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Avec de la flûte de Pan et tout&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>La flûte de Pan&nbsp;? Mais oh ! vous vous croyez au Machu Picchu&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Je vous signale quand même que Pan, c’était un Dieu de l’Antiquité et qu’il jouait
+                     de la
+                     flûte&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Oui, mais c’est pas de la musique de l’Antiquité. C’est de la musique baroque qui évoque
+                     les légendes de l’Antiquité.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ah…</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Les Métamorphoses</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Non&nbsp;! Ovide&nbsp;? Mais j’adore&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah&nbsp;! mais vous vous y connaissez vraiment&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Mais puisque je vous le dis&nbsp;! Et c’est quoi comme métamorphose&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah&nbsp;! j’crois qu’il y a Orphée&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Non&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Si.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Oh la vache&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Qu’est-ce qui vous arrive&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Non mais Orphée, c’est… ça Orphée, ça me donne la chair de poule, regardez,
+                     regardez&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah ben ouais mais faut pas vous mettre dans un état pareil&nbsp;! J’croyais que c’était
+                     juste
+                     une légende&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Et alors&nbsp;? Une légende, c’est la vie en plus grand, en plus beau, en plus fort, en
+                     plus
+                     tragique&nbsp;! Une légende, c’est la projection cosmique des cataclysmes microscopiques qui se
+                     produisent dans le plus intime du cœur des hommes et qu’ils arrivent pas à nommer&nbsp;!
+                     Et
+                     Orphée, c’est…</p>
+                  <p class="stage">(Geste de la main droite vers le haut au-dessus de la tête)</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Vous êtes sûr que ça va&nbsp;? Vous faites flipper là&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Imaginez&nbsp;: deux jeunes, des gamins, des adolescents. Elle, c’est Eurydice, nymphe de la
+                     forêt. Elle est belle, elle est lumineuse, elle est pure&nbsp;! <a class="note" onclick="affiche('fAkyKdg')">✱</a>Orphée, lui, c’est le fils de
+                     la nymphe Calliope et du roi Thrace. Ou d’Apollon, on sait pas trop parce qu’à l’époque,
+                     il y avait pas de test de paternité.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ouais.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>En tout cas, Orphée, c’est un génie de la musique&nbsp;! Il joue de la lyre comme un Dieu. Il
+                     est capable de faire fondre les pierres et d’attendrir les animaux les plus féroces
+                     rien
+                     qu’en leur jouant un morceau sur son crincrin. Bref, Orphée est en train de revenir d’un
+                     voyage avec Jason des Argonautes quand il tombe nez à nez avec Eurydice, et là, PAF&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Coup de foudre.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Exactement.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>C’est vrai que ça aide quand même de savoir jouer d’un truc. Moi j’ai un copain, dès
+                     qu’il joue de la guitare, il y a toutes les filles qui le regardent avec des yeux
+                     brillants. Pourtant, il a vraiment une sale gueule, hein.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Et bah Orphée, il avait une belle gueule, lui&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Eh oui. Alors bon, ben, ils tombent amoureux l’un de l’autre, ils sortent ensemble,
+                     ils
+                     se marient, tout va bien, lui, il joue de la lyre, elle, tous les matins, elle va
+                     se
+                     baigner dans la rivière avec ses copines naïades, bref, la belle vie.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>J’sais pas pourquoi mais… je sens que ça va se gâter.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ben évidemment que ça va se gâter sinon il y aurait pas de légende.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah oui. Ah je sais, elle sait pas nager et elle va se noyer.</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Bon dites, vous me laissez raconter là, hein&nbsp;? Parce que si c’est pour vous entendre
+                     sortir des trucs genre <em>Alerte à Malibu</em>, moi j’aime autant plier les
+                     gaules et rentrer chez moi&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Non, non, excusez-moi, allez-y, allez-y…</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Bon, alors il se trouve que dans le coin, il y a une espèce de petit vicelard de berger
+                     qui s’appelle Aristée. Et ce petit pervers, il en pince pour la petite Eurydice. Il va
+                     jusqu’à même la mater pendant qu’elle se baigne&nbsp;! Mais elle, elle le calcule même pas&nbsp;! Alors lui, il devient comme un fou&nbsp;! <a class="note" onclick="affiche('FtqfIWd')">✱</a>Il veut la posséder, il la pourchasse, il la poursuit
+                     et elle va pour s’échapper et au moment où elle s’échappe, elle marche sur un serpent
+                     venimeux qui la mord et elle meurt&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah merde… il y avait pas d’Aspivenin…</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Non mais dites&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Excusez-moi, mais on peut bien rigoler un peu, non&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Non&nbsp;! On rigole pas, pas avec Orphée et Eurydice, j’suis désolé&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah… et ensuite&nbsp;? J’imagine que ça a dû lui mettre un sacré coup à Orphée&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Pensez&nbsp;! Il était complètement désespéré le pauvre. Alors il décide d’aller dans les
+                     Enfers, dans le Royaume des morts, pour ramener Eurydice. Et le voilà parti avec sa lyre. Il arrive à charmer Charon, le passeur, et il arrive à charmer Cerbère, le chien de
+                     garde,
+                     une espèce de pitbull à trois têtes&nbsp;! Vous voyez, horrible&nbsp;! Il arrive même à charmer
+                     Pluton, le dieu des morts.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Pourtant, ça a pas l’air d’être un rigolo celui-là&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ah ben non, ça je vous garantis que non. N’empêche que la musique d’Orphée, elle est
+                     tellement belle que Pluton, il autorise à ramener Eurydice à une condition&nbsp;! Qu’il se
+                     retourne pas sur elle avant d’avoir atteint le Royaume des vivants.</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ben fastoche&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Fastoche, fastoche, c’est ce que croit Orphée. Et les voilà partis. Lui devant, avec sa
+                     lyre, toujours, et elle qui suit derrière. Et au moment, au moment où ils vont atteindre
+                     la lumière du jour, Orphée n’entend plus Eurydice… Il panique, et là…</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Il se retourne&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Exactement&nbsp;! Et là, Eurydice disparaît dans les profondeurs des enfers en poussant
+                     un cri
+                     horrible&nbsp;: haaaa&nbsp;!</p>
+                  <p class="stage">(Il pousse un cri de détresse)</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Et alors, il est retourné la chercher&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Mais non&nbsp;! Il avait le droit qu’à une seule chance&nbsp;!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Mais c’est horrible, vous imaginez la culpabilité&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Alors, je vous l’avais pas dit que c’était tragique&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ben si, mais là, à ce point-là… et ensuite, qu’est-ce qu’il est devenu&nbsp;?</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ben, il est allé s’installer sur une montagne pour cacher son chagrin et chanter son
+                     amour pour Eurydice. Alors Dionysos, qui était un brave type, a décidé de le consoler un
+                     petit peu et il lui a envoyé ses ménades. Alors les ménades, je vous explique, les
+                     ménades, c’est des filles très très gentilles, très très jolies, pas très farouches
+                     et pas
+                     très habillées si vous voyez ce que je veux dire&nbsp;!</p>
+                  <p class="stage">(Rires)</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Ah oui&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Seulement, Orphée, il les regarde même pas&nbsp;! Il continue à chanter son amour pour
+                     Eurydice. C’est beau, non&nbsp;?</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>Oui, c’est beau. Bon en même temps, il faut savoir tourner la page. La vie continue. Surtout avec des filles comme les ménades&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Ouais ben Orphée, il veut pas la tourner la page, lui&nbsp;! Seulement, les ménades, du coup,
+                     elles se vexent&nbsp;! Et comme elles prennent des substances pas très nettes, elles se
+                     laissent entraîner dans une frénésie de violence, elles déchiquettent le corps d’Orphée
+                     en
+                     tout petits morceaux, un peu comme des lardons, vous voyez, et elles balancent le
+                     tout à
+                     la rivière&nbsp;! Seulement, la tête d’Orphée, elle continue à flotter et à chanter son amour
+                     pour Eurydice… Alors là, les muses, elles se prennent de pitié pour lui et elles décident
+                     de l’enterrer au pied du mont Olympe. Mais attention, même enterré, même enterré, Orphée
+                     continue à chanter son amour pour Eurydice&nbsp;! Alors, on fait moins le malin, là&nbsp;?!</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p class="stage">(Pleurant)</p>
+                  <p>Ben là, j’dois dire, que ça m’a secoué un peu votre histoire…</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Allez, vous avez du travail, allez…</p>
+                  <p class="speaker">Ingénieur-son</p>
+                  <p>J’peux pas avancer, j’peux plus avancer&nbsp;!</p>
+                  <p class="speaker">Agent de sécurité</p>
+                  <p>Si, allez-y, vous laissez pas…, voilà, allez&nbsp;!</p>Orphée, cantate J-P. Rameau&nbsp;:
+                  <ul class="poem">
+                     <li>Amour,</li>
+                     <li>Amour, c’est toi qui fais mon crime.</li>
+                     <li>Ne saurais-tu le réparer&nbsp;?</li>
+                     <li>Amour,</li>
+                     <li>Amour, c’est toi qui fais mon crime.</li>
+                     <li>Ne saurais-tu le réparer&nbsp;?</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div id="FtqfIWd" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('FtqfIWd').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('FtqfIWd')">
+                     <option value="walleys1493_7400008">walleys1493, phrase 8</option>
+                     <option value="chapoton1648_3300026">chapoton1648, phrase 26</option>
+                     <option value="morin1532_0200006">morin1532, phrase 6</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('FtqfIWd',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('FtqfIWd',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="4900076">
+               <h5>chambon2016, phrase 76</h5>
+               <p><span data-type="GV"><span class="w">Il </span><span class="synos" data-href="0200006_7" data-corresp="morin1532_0200006"><span class="mots" data-href="3300026_32" data-corresp="chapoton1648_3300026"><span class="synos" data-href="7400008_7" data-corresp="walleys1493_7400008">veut </span></span></span><span class="w">la </span><span class="synos" data-href="0200006_19" data-corresp="morin1532_0200006"><span class="lemmes" data-href="3300026_44" data-corresp="chapoton1648_3300026"><span class="synos" data-href="7400008_7" data-corresp="walleys1493_7400008">posséder</span></span></span></span>, <span data-type="GV"><span class="w">il </span><span class="w">la </span><span class="synos" data-href="0200006_26" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_39" data-corresp="chapoton1648_3300026"><span class="synos" data-href="7400008_15" data-corresp="walleys1493_7400008">pourchasse</span></span></span></span>, <span data-type="GV"><span class="w">il </span><span class="w">la </span><span class="synos" data-href="0200006_26" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_39" data-corresp="chapoton1648_3300026"><span class="synos" data-href="7400008_15" data-corresp="walleys1493_7400008">poursuit</span></span></span> </span><span class="w">et </span><span data-type="GV"><span class="w">elle </span><span class="synos" data-href="0200006_26" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_54" data-corresp="chapoton1648_3300026"><span class="synos" data-href="7400008_15" data-corresp="walleys1493_7400008">va </span></span></span><span class="w">pour </span><span class="w">s’</span> </span><span data-type="GV"><span class="lemmes" data-href="0200006_17" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_84" data-corresp="chapoton1648_3300026"><span class="lemmes" data-href="7400008_5" data-corresp="walleys1493_7400008">échapper</span></span></span> </span><span class="w">et </span><span class="w">au </span><span data-type="GN"><span class="w">moment</span> </span><span data-type="GV"><span class="w">où </span><span class="w">elle </span><span class="w">s’</span><span class="lemmes" data-href="0200006_17" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_84" data-corresp="chapoton1648_3300026"><span class="lemmes" data-href="7400008_5" data-corresp="walleys1493_7400008">échappe</span></span></span></span>, <span data-type="GV"><span class="w">elle </span><span class="lemmes" data-href="0200006_36" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_54" data-corresp="chapoton1648_3300026"><span class="lemmes" data-href="7400008_25" data-corresp="walleys1493_7400008">marche </span></span></span><span class="w">sur</span> </span><span data-type="GN"><span class="w">un </span><span class="mots" data-href="0200006_39" data-corresp="morin1532_0200006"><span class="mots" data-href="3300026_60" data-corresp="chapoton1648_3300026"><span class="mots" data-href="7400008_28" data-corresp="walleys1493_7400008">serpent </span></span></span><span class="mots" data-href="0200006_40" data-corresp="morin1532_0200006"><span class="mots" data-href="3300026_61" data-corresp="chapoton1648_3300026"><span class="mots" data-href="7400008_29" data-corresp="walleys1493_7400008">venimeux</span></span></span> </span><span data-type="GV"><span class="w">qui </span><span class="w">la </span><span class="lemmes" data-href="0200006_43" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_1" data-corresp="chapoton1648_3300026"><span class="lemmes" data-href="7400008_32" data-corresp="walleys1493_7400008">mord</span></span></span> </span><span class="w">et </span><span data-type="GV"><span class="w">elle </span><span class="lemmes" data-href="0200006_49" data-corresp="morin1532_0200006"><span class="synos" data-href="3300026_84" data-corresp="chapoton1648_3300026"><span class="lemmes" data-href="7400008_38" data-corresp="walleys1493_7400008">meurt</span></span></span></span>&nbsp;! </p>
+            </div>
+            <div class="target">
+               <div id="walleys1493_7400008" data-id="7400008" style="display:none">
+                  <h5>walleys1493, phrase 8</h5>
+                  <p><span>Ains </span><span>pour </span><span data-type="GV"><span>de </span><span>lui </span><span class="lemmes lemmes" data-id="7400008_5">eschapper </span><span>se</span> </span><span data-type="GV"><span class="synos" data-id="7400008_7">mist</span> </span><span data-type="GV"><span>a</span> </span><span data-type="GN"><span>la </span><span>fuytte</span></span>, <span>et </span><span data-type="GV"><span>cellui </span><span>la </span><span class="synos" data-id="7400008_15">suyvit</span></span>. <span>Mais </span><span>ainsi </span><span>que </span><span data-type="GN"><span>la </span><span>belle </span><span>Eridice</span> </span><span data-type="GV"><span>fuyoit </span><span>elle</span> </span><span data-type="GV"><span class="lemmes" data-id="7400008_25">marcha </span><span>dessus</span> </span><span data-type="GN"><span>ung </span><span class="mots" data-id="7400008_28">serpent </span><span class="mots" data-id="7400008_29">venimeux</span> </span><span data-type="GV"><span>qui </span><span>la </span><span class="lemmes" data-id="7400008_32">mordit </span><span>environ</span> </span><span data-type="GN"><span>le </span><span>talon</span> </span><span data-type="GV"><span>dont </span><span>elle </span><span class="lemmes" data-id="7400008_38">mourut</span></span>. </p>
+               </div>
+               <div id="chapoton1648_3300026" data-id="3300026" style="display:none">
+                  <h5>chapoton1648, phrase 26</h5>
+                  <p><span data-type="GV"><span class="synos" data-id="3300026_1">Prends</span> </span><span data-type="GN"><span>ton </span><span>vol</span> </span><span>parmy </span><span data-type="GN"><span>l’</span><span>air</span> </span><span>jusqu’</span><span>aux </span><span>ceux </span><span>de </span><span data-type="GN"><span>Penee</span></span>, <span data-type="GV"><span>là </span><span>tu </span><span>rencontreras</span> </span><span data-type="GN"><span>Aristee </span><span>amoureux</span></span>, <span data-type="GV"><span>qui </span><span>se </span><span>plaint </span><span>du</span> </span><span data-type="GN"><span>destin</span> </span><span data-type="GV"><span>qui </span><span>le </span><span>rend</span> </span><span data-type="GAdj"><span>malheureux</span></span>, <span>et </span><span data-type="GV"><span>qui </span><span>se </span><span class="mots" data-id="3300026_32">veut </span><span>vanger </span><span>dans</span> </span><span data-type="GN"><span>le </span><span>mal</span> </span><span data-type="GV"><span>qui </span><span>le </span><span class="synos" data-id="3300026_39">presse </span><span>d’</span> </span><span data-type="GN"><span>un </span><span>Rival</span> </span><span data-type="GV"><span>qui </span><span class="lemmes" data-id="3300026_44">possede </span><span>aujourd'huy</span> </span><span data-type="GN"><span>sa </span><span>maistresse</span></span>, <span>entre </span><span>dans </span><span data-type="GN"><span>son </span><span>esprit</span></span>, <span data-type="GV"><span class="synos" data-id="3300026_54">fais </span><span>couler </span><span>dans</span> </span><span data-type="GN"><span>son </span><span>flanc</span> </span><span data-type="GN"><span>un </span><span class="mots" data-id="3300026_60">serpent </span><span class="mots" data-id="3300026_61">venimeux</span> </span><span data-type="GV"><span>qui </span><span>corrompe</span> </span><span data-type="GN"><span>son </span><span>sang</span></span>, <span>et </span><span>lors </span><span>que </span><span data-type="GV"><span>tu </span><span>verras</span> </span><span data-type="GN"><span>sa </span><span>poictrine </span><span>eschaufee </span><span data-type="GN"><span>arme</span></span> </span><span>le </span><span>promptement </span><span>pour </span><span data-type="GN"><span>la </span><span>perte </span><span>d’</span><span data-type="GN"><span>Orphee</span></span></span>&nbsp;; <span data-type="GV"><span class="synos" data-id="3300026_84">pars</span> </span><span data-type="GN"><span>sas</span> </span><span data-type="GV"><span>plus </span><span>differer</span></span>, <span>car </span><span>du </span><span>plus </span><span>haut </span><span>des </span><span data-type="GN"><span>Cieux</span> </span><span>jusques </span><span>à </span><span data-type="GN"><span>ton </span><span>retour</span> </span><span data-type="GV"><span>je </span><span>te </span><span>suivray </span><span>des</span> </span><span data-type="GN"><span>yeux</span></span>. </p>
+               </div>
+               <div id="morin1532_0200006" data-id="0200006">
+                  <h5>morin1532, phrase 6</h5>
+                  <p><span>Car </span><span>trop </span><span>et </span><span>de </span><span data-type="GN"><span>bon </span><span>cueur</span> </span><span data-type="GV"><span class="synos" data-id="0200006_7">aymoit</span> </span><span data-type="GN"><span>son </span><span>nouvel </span><span>espoux </span><span data-type="GN"><span>Orpheus</span></span> </span><span>ains </span><span>pour </span><span>pour </span><span data-type="GV"><span>de </span><span>luy </span><span class="lemmes lemmes" data-id="0200006_17">eschapper </span><span>se</span> </span><span data-type="GV"><span class="synos" data-id="0200006_19">mist</span> </span><span data-type="GV"><span>a</span> </span><span data-type="GN"><span>la </span><span>fuyte</span> </span><span>et </span><span data-type="GV"><span>celluy </span><span>la </span><span class="synos" data-id="0200006_26">suyvit</span></span>, <span>mais </span><span>ainsi </span><span>que </span><span data-type="GN"><span>la </span><span>belle </span><span>Eurydice</span> </span><span data-type="GV"><span>fuyoit </span><span>elle</span> </span><span data-type="GV"><span class="lemmes" data-id="0200006_36">marcha </span><span>dessus</span> </span><span data-type="GN"><span>ung </span><span class="mots" data-id="0200006_39">serpent </span><span class="mots" data-id="0200006_40">venimeux</span> </span><span data-type="GV"><span>qui </span><span>la </span><span class="lemmes" data-id="0200006_43">mordit </span><span>environ</span> </span><span data-type="GN"><span>le </span><span>talon</span> </span><span data-type="GV"><span>dont </span><span>elle </span><span class="lemmes" data-id="0200006_49">mourut</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="fAkyKdg" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('fAkyKdg').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('fAkyKdg')">
+                     <option value="eimann1854_1500045">eimann1854, phrase 45</option>
+                     <option value="ballanche1829_3201112">ballanche1829, phrase 1112</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('fAkyKdg',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('fAkyKdg',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="4900050">
+               <h5>chambon2016, phrase 50</h5>
+               <p><span data-type="GN"><span class="w">Orphée</span></span>, <span class="w">lui</span>, <span data-type="GV"><span class="w">c’</span><span class="w">est</span> </span><span data-type="GN"><span class="w">le </span><span class="mots" data-href="3201112_5" data-corresp="ballanche1829_3201112"><span class="mots" data-href="1500045_13" data-corresp="eimann1854_1500045">fils </span></span><span class="w">de </span><span class="w">la </span><span data-type="GN"><span class="w">nymphe</span></span> </span><span data-type="GN"><span class="mots" data-href="3201112_9" data-corresp="ballanche1829_3201112"><span class="mots" data-href="1500045_23" data-corresp="eimann1854_1500045">Calliope</span></span> </span><span class="w">et </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="1500045_17" data-corresp="eimann1854_1500045">roi </span><span data-type="GN"><span class="mots" data-href="3201112_51" data-corresp="ballanche1829_3201112"><span class="mots" data-href="1500045_19" data-corresp="eimann1854_1500045">Thrace</span></span></span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="eimann1854_1500045" data-id="1500045" style="display:none">
+                  <h5>eimann1854, phrase 45</h5>
+                  <p><span>En </span><span data-type="GN"><span>ce </span><span>temps</span> </span><span>-là</span>, <span data-type="GV"><span>vivait </span><span>chez</span> </span><span data-type="GN"><span>les </span><span>Grecs</span> </span><span data-type="GN"><span>un </span><span>homme</span></span>, <span data-type="GN"><span class="mots" data-id="1500045_13">fils </span><span>d’</span><span data-type="GN"><span>Œagre</span></span></span>, <span data-type="GN"><span class="mots" data-id="1500045_17">roi </span><span>de </span><span data-type="GN"><span class="mots" data-id="1500045_19">Thrace</span></span></span>, <span>et </span><span>de </span><span data-type="GN"><span class="mots" data-id="1500045_23">Calliope</span></span>. </p>
+               </div>
+               <div id="ballanche1829_3201112" data-id="3201112">
+                  <h5>ballanche1829, phrase 1112</h5>
+                  <p><span data-type="GN"><span>Les </span><span>uns</span> </span><span data-type="GV"><span>le </span><span>disent</span> </span><span data-type="GN"><span class="mots" data-id="3201112_5">fils </span><span>de </span><span>la </span><span data-type="GN"><span>muse </span><span class="mots" data-id="3201112_9">Calliope </span><span>d’</span><span>autres</span></span> </span><span data-type="GV"><span>le </span><span>font </span><span>naître </span><span>d’</span> </span><span data-type="GN"><span>un </span><span>fils </span><span>d’</span><span data-type="GN"><span>Atlas</span></span></span>. <span>quelques-uns </span><span data-type="GV"><span>le </span><span>croient </span><span>né </span><span>dans</span> </span><span data-type="GN"><span>la </span><span>Scythie</span></span>, <span data-type="GN"><span>région </span><span>de </span><span>l’</span><span data-type="GN"><span>exil</span></span> </span><span>et </span><span>du </span><span data-type="GN"><span>silence</span></span>, <span>et </span><span data-type="GV"><span>pensent</span> </span><span>que </span><span data-type="GN"><span>son </span><span>berceau</span> </span><span data-type="GV"><span>fût </span><span>merveilleusement </span><span>apporté</span> </span><span>à </span><span data-type="GN"><span>Lébethra</span></span>, <span>dans </span><span data-type="GN"><span>la </span><span class="mots" data-id="3201112_51">Thrace</span></span>, <span data-type="GV"><span>où </span><span>il </span><span>devait </span><span>instruire</span> </span><span data-type="GN"><span>les </span><span>hommes</span></span>. </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

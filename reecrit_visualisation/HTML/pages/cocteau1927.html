@@ -1,0 +1,1833 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/cocteau1927.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Jean Cocteau <em>Orphée</em>,  [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Prologue</h2>
+                     <p xmlns="" class="stage">L’acteur chargé du rôle d’Orphée paraît devant le rideau.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mesdames, Messieurs, ce prologue n’est pas de l’auteur. Sans doute sera-t-il surpris de m’entendre. La tragédie dont il nous a confié les rôles est d’une marche très délicate. Je vous demanderai donc d’attendre la fin pour vous exprimer si notre travail vous
+                        mécontente. Voici la cause de ma requête&nbsp;: nous jouons très haut et sans filet de secours. Le moindre bruit intempestif risque de nous faire tuer, mes camarades et moi.</p>
+                     <p xmlns="" class="stage">Exit</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène première  Orphée, Eurydice, le Cheval</h2>
+                     <p xmlns="" class="stage">Orphée derrière la table de gauche. Il consulte un alphabet spirite. Eurydice assise à droite, près de la table servie.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je peux bouger&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Attends encore une seconde.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il ne tape plus.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il met quelquefois très longtemps entre la première lettre et les autres.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">On prévoit les autres&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je t’en prie, n’est-ce pas&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Avoue que ce mot revient toujours.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">M, M… Cheval, continue. Allons, vite, après la lettre M… Je t’écoute.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Quelle patience&nbsp;! Toi qui n’as aucune tête, tu en trouves pour ton cheval.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’écoute. Allons, cheval&nbsp;! M.&nbsp;M, après M.&nbsp;
+                        <p class="stage">(Le cheval bouge.)</p> Tu bouges. Tu vas parler. Parle. Dicte-nous la lettre après la lettre M.&nbsp;
+                        <p class="stage">(Le cheval frappe avec son sabot, Orphée compte.)</p>A. B. C. D. E. E, c’est la lettre E&nbsp;? 
+                        <p class="stage">(Le cheval remue la tête de haut en bas.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Naturellement.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, furieux.</p>
+                     <p xmlns="">Chut&nbsp;! 
+                        <p class="stage">(Le cheval frappe.)</p> A. B. C. D. E. F. G. H. I. J. K. L. M.&nbsp;N. O. P. Q. R. 
+                        <p class="stage">(À Eurydice.)</p> Je te défends de rire. R, c’est bien la lettre R&nbsp;? M, E, R, mer&nbsp;? J’ai mal compté. Cheval&nbsp;! est-ce bien la lettre R&nbsp;? Si c’est oui frappe un coup, deux si c’est non. 
+                        <p class="stage">(Le cheval frappe un coup.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">N’insiste pas.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Écoute, je te demande en grâce de te tenir tranquille. Rien ne dérange ce cheval comme les personnes incrédules. Va dans ta chambre ou tais-toi.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je n’ouvrirai plus la bouche.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns=""><a class="note" onclick="affiche('OqhtOfP')">✱</a>Tant mieux. 
+                        <p class="stage">(Au cheval.)</p> Mer. Mer… et après mer&nbsp;? M.&nbsp;E. R., mer. J’écoute. Parle. Parle-moi, cheval. Cheval&nbsp;!
+                        Allons, un peu de courage. Après la lettre R&nbsp;? 
+                        <p class="stage">(Le cheval frappe. Orphée compte.)</p> A.B.C. 
+                        <p class="stage">(Silence.)</p> C. La lettre C. La lettre C, chère Madame&nbsp;! 
+                        <p class="stage">(Le cheval frappe.)</p> A. B. C. D. E. F. G. H. I. Merci. Merci&nbsp;! C’était merci&nbsp;! Est-ce tout&nbsp;? Est-ce merci tout court&nbsp;? 
+                        <p class="stage">(Le cheval remue la tête de haut en bas.)</p> C’est for-mi-da-ble. Tu vois, Eurydice&nbsp;! Avec ton esprit mal tourné, j’aurais pu te croire, j’aurais pu
+                        avoir la faiblesse de me laisser convaincre… Merci tout court, c’est for-mi-da-ble&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Pourquoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Comment, pourquoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Pourquoi est-ce formidable&nbsp;? Ce merci n’a aucun sens.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Par exemple&nbsp;! Ce cheval me dicte la semaine dernière une des phrases les plus émouvantes
+                        du monde.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Oh&nbsp;!…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">… Me dicte une des phrases les plus émouvantes du monde. Je me propose de la mettre en œuvre pour transfigurer la poésie. J’immortalise mon cheval et tu t’étonnes de l’entendre me dire merci. Ce merci est un chef-d’œuvre de tact. Et moi qui croyais… 
+                        <p class="stage">(Il enlace le cou du cheval.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Écoute, Orphée, mon amour, ne me gronde pas. Sois juste. Avoue que depuis cette fameuse phrase tu obtiens un mot, un seul, et que ce mot n’est
+                        guère poétique.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Sait-on ce qui est poétique et pas poétique.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Aglaonice faisait tourner les tables, et sa table répondait toujours ce mot-là.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Allons bon&nbsp;! Il ne manquait plus que de mêler cette personne à nos affaires. Je t’ai déjà dit que je ne voulais plus qu’on me parle d’elle. Une femme dont l’influence a failli te perdre&nbsp;! Une femme qui boit, qui promène des tigres, qui tourne la tête de nos épouses, qui
+                        empêche les jeunes filles de se marier.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Mais c’est le culte de la lune&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Bravo&nbsp;! Je t’engage à la défendre. Retourne chez les Bacchantes puisque leurs mœurs te plaisent.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je te taquine. Tu sais bien que je n’aime que toi et que tu n’as eu qu’un signe à
+                        faire pour que je quitte ce milieu.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Joli milieu. Je n’oublierai jamais la voix avec laquelle Aglaonice m’a dit&nbsp;: «&nbsp;Emmenez-la
+                        puisqu’elle accepte. Les femmes bêtes adorent les artistes. Rira bien qui rira le dernier.&nbsp;»</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">J’en ai eu froid dans le dos.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Si je la retrouve&nbsp;! 
+                        <p class="stage">(Il frappe l’encrier contre la table.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Orphée, mon poète… Regarde comme tu es nerveux depuis ton cheval. Avant tu riais, tu m’embrassais, tu me berçais&nbsp;; tu avais une situation superbe. Tu étais chargé de gloire, de fortune. Tu écrivais des poèmes qu’on s’arrachait et que toute la Thrace récitait par cœur.
+                        Tu glorifiais le soleil. Tu étais son prêtre et un chef. Mais depuis le cheval tout est fini. Nous habitons la campagne. Tu as abandonné ton poste et tu refuses d’écrire. <a class="note" onclick="affiche('ZyXeHAQ')">✱</a>Ta vie se passe à dorloter ce cheval, à interroger ce cheval, à espérer que ce cheval
+                        va te répondre. Ce n’est pas sérieux.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Pas sérieux&nbsp;? Ma vie commençait à se faisander, à être à point, à puer la réussite
+                        et la mort. Je mets le soleil et la lune dans le même sac. Il me reste la nuit. Et pas la nuit des autres&nbsp;! Ma nuit. Ce cheval entre dans ma nuit et il en sort comme un plongeur. Il en rapporte des phrases. Ne sens-tu pas que la moindre de ces phrases est plus étonnante que tous les poèmes&nbsp;?
+                        Je donnerais mes œuvres complètes pour une seule de ces petites phrases où je m’écoute
+                        comme on écoute la mer dans un coquillage. Pas sérieux&nbsp;? Que te faut-il, ma petite&nbsp;! Je découvre un monde. Je retourne ma peau.
+                        Je traque l’inconnu.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Tu vas encore me citer la fameuse phrase.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, grave</p>
+                     <p xmlns="">Oui. 
+                        <p class="stage">(Il remonte vers le cheval et récite.)</p>Madame Eurydice reviendra des enfers.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Elle n’a aucun sens, cette phrase.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il s’agit bien de sens. Colle ton oreille contre cette phrase. Écoute le mystère. «&nbsp;Eurydice reviendra&nbsp;» serait quelconque –&nbsp;mais Madame Eurydice&nbsp;!
+                        Madame Eurydice reviendra&nbsp;– ce revien<em>dra</em>&nbsp;! ce futur&nbsp;! et la chute&nbsp;: des enfers. Tu devrais être contente que je parle de toi.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ce n’est pas toi qui en parles… 
+                        <p class="stage">(Montrant le cheval.)</p> C’est lui.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Ni lui, ni moi, ni personne. Que savons-nous&nbsp;? Qui parle&nbsp;? Nous nous cognons dans le noir&nbsp;; nous sommes dans le surnaturel jusqu’au cou. Nous jouons à cache-cache avec les dieux. Nous ne savons rien, rien, rien. «&nbsp;Madame Eurydice reviendra des enfers&nbsp;», ce n’est pas une phrase. C’est un poème, un poème du rêve, une fleur du fond de la mort.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Et tu espères convaincre le monde&nbsp;? Faire admettre que la poésie consiste à écrire une phrase&nbsp;; avoir du succès avec ta
+                        phrase de cheval.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il ne s’agit pas de succès, ni de cheval, ni de convaincre le monde. Du reste, je ne suis pas seul.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ne me parle pas de ton public. Quatre ou cinq jeunes brutes sans cœur qui te croient un anarchiste et une douzaine
+                        d’imbéciles qui cherchent à se faire remarquer.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’aurai mieux. J’espère un jour charmer les vraies bêtes.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Puisque tu méprises le succès, pourquoi envoyer cette phrase au concours de Thrace&nbsp;?
+                        Pourquoi attacher une importance pareille à remporter le prix&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il faut jeter une bombe. Il faut obtenir un scandale. Il faut un de ces orages qui rafraîchissent l’air. On étouffe. On ne respire plus.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Nous étions si calmes.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Trop calmes.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Tu m’aimais.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je t’aime.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Tu aimes le cheval. Je passe en second.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tu es stupide. Il n’y a aucun rapport. 
+                        <p class="stage">(Il&nbsp;embrasse distraitement Eurydice et s’approche du cheval.)</p>N’est-ce pas, mon vieux&nbsp;? N’est-ce pas, mon vieux frère&nbsp;? Hein&nbsp;? On l’aime, son ami&nbsp;? Tu veux un sucre&nbsp;? Alors, embrasse-moi. Non, mieux. Là… là… qu’il est beau&nbsp;! Tiens.
+                        
+                        <p class="stage">(Il sort du sucre de sa poche et le donne au cheval.)</p> C’est bon.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je n’existe plus. Je mourrais que tu ne t’en apercevrais pas.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Nous étions morts sans nous en apercevoir.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Viens près de moi.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Hélas&nbsp;! Il faut que je sorte. Je vais en ville me mettre en règle pour le concours. C’est demain la date limite. Je n’ai pas une minute à perdre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">, dans un élan.</p>
+                     <p xmlns="">Orphée&nbsp;! mon Orphée&nbsp;!…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tu vois ce socle vide. Je n’y poserai qu’un buste digne de moi.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ils te lanceront des pierres.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je ferai mon buste avec.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Méfie-toi des Bacchantes.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je les ignore.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Elles existent. Elles plaisent. Je connais leurs méthodes. Aglaonice te hait. Elle doit prendre part au concours.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oh&nbsp;! cette femme&nbsp;! cette femme&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Sois juste… Elle a du talent.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Hein&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Dans un genre affreux, c’est entendu. Mais sous un certain angle, sur un certain plan, elle en a. Elle a de belles images.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Voyez-vous cela. Sous un certain angle… sur un certain plan… C’est chez les Bacchantes que tu as appris cette façon de parler&nbsp;? Alors sur un certain plan ses images te plaisent. Sous un certain angle tu approuves mes ennemis mortels. Et tu m’aimes, et tu prétends que tu m’aimes. Eh bien, par cet angle et par ce plan, je déclare que j’en ai assez, qu’on me persécute,
+                        et que ce cheval est la seule personne qui sache me prendre ici. 
+                        <p class="stage">(Coup de poing sur la table.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ce n’est pas la peine de casser tout.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Casser tout. C’est le comble&nbsp;! Madame casse un carreau par jour, et maintenant c’est
+                        moi qui casse tout.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">D’abord…</p>
+                     <p xmlns="" class="speaker">Orphée, </p>
+                     <p xmlns="" class="stage">qui marche de long en large.</p>
+                     <p xmlns="">Je sais ce que tu vas dire. Tu vas dire que tu n’as pas encore cassé de carreau aujourd’hui.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Mais…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Eh bien, casse, casse-le, casse le carreau.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Comment peux-tu te mettre dans un état pareil&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Voyez la fine mouche. Tu ne casses pas de carreau parce que je sors…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">, vivement</p>
+                     <p xmlns="">Que veux-tu insinuer&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tu me crois donc aveugle&nbsp;! Tu casses chaque jour un carreau pour que le vitrier monte.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Eh bien oui, je casse un carreau pour que le vitrier monte. C’est un brave garçon plein de cœur. Il m’écoute. Il t’admire.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Trop aimable.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Et quand tu interroges le cheval et que tu me laisses toute seule, je casse le carreau.
+                        Tu n’es pas jaloux, je suppose&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Jaloux, moi&nbsp;? Jaloux d’un garçon vitrier&nbsp;? Pourquoi ne serais-je pas aussi jaloux d’Aglaonice&nbsp;! Par exemple&nbsp;! Tiens, puisque tu refuses de casser le carreau, c’est moi qui le casserai. Cela me soulagera. 
+                        <p class="stage">(Il casse un carreau. On entend&nbsp;: Vitrier&nbsp;! Vitrier&nbsp;! Vitrier&nbsp;!)</p> Hep&nbsp;! Vitrier&nbsp;! –&nbsp;Il monte. Jaloux&nbsp;?</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;II  Les mêmes, Heurtebise</h2>
+                     <p xmlns="" class="stage">Heurtebise apparaît sur le balcon. Le soleil frappe ses vitres. Il entre, plie un genou et croise les mains sur son cœur.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Bonjour, messieurs et dames.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Bonjour, mon ami. C’est moi, MOI qui ai cassé ce carreau. Remettez-le. Je vous laisse.
+                        
+                        <p class="stage">(À Eurydice.)</p> Ma chère, vous surveillerez le travail. 
+                        <p class="stage">(Au cheval.)</p> On l’aime, son poète&nbsp;? 
+                        <p class="stage">(Il l’embrasse.)</p> À ce soir. 
+                        <p class="stage">(Il sort.)</p>
+                     </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène III  Eurydice, Heurtebise</h2>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous voyez. Je n’invente rien.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est inouï.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous me comprenez.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Ma pauvre dame.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Depuis que ce cheval l’a suivi dans la rue, depuis qu’il l’a ramené à la maison, depuis
+                        qu’il habite chez nous, depuis qu’ils se parlent…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Le cheval lui a encore parlé&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il lui a dit merci.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il sait le prendre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Bref, depuis un mois, notre existence est devenue un supplice.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous ne pouvez pas être jalouse d’un cheval&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">J’aimerais mieux lui savoir une maîtresse.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous le dites…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Sans vous, sans votre amitié, je serais déjà folle.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Chère Eurydice.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">Elle se regarde dans le miroir. Sourire</p>
+                     <p xmlns="">Figurez-vous que j’ai une petite lueur. Il&nbsp;s’est rendu compte que je cassais un carreau chaque jour. Alors, au lieu de dire que je casse du verre blanc pour me porter la chance, j’ai
+                        dit que je le cassais pour que vous montiez me voir.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">J’aurais cru…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Attendez. Il m’a fait une scène et il a cassé le carreau. Je le crois encore jaloux.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Comme vous l’aimez…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Plus il me maltraite, plus je l’aime. Il m’avait déjà semblé qu’il était jaloux d’Aglaonice.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">D’Aglaonice&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il déteste tout ce qui se rapporte à mon ancien milieu. C’est pourquoi je crains que nous ne commettions une imprudence terrible. Parlons bas. J’ai toujours peur que ce cheval ne m’écoute.</p>
+                     <p xmlns="" class="stage">Ils remontent sur la pointe des pieds jusqu’à la niche</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il dort.</p>
+                     <p xmlns="" class="stage">Ils redescendent au premier plan</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous avez vu Aglaonice&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Oui.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Orphée vous tuerait s’il l’apprenait.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il ne l’apprendra pas.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">Elle l’entraîne encore plus loin du cheval, vers sa chambre.</p>
+                     <p xmlns="">Vous avez… la chose&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je l’ai.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Sous quelle forme&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Sous la forme d’un morceau de sucre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Quelle attitude avait-elle&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Très simple. Elle m’a dit&nbsp;: Donnant, donnant. Voici le poison, rapportez-moi la lettre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">C’est une lettre fort ennuyeuse pour elle.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle a même ajouté&nbsp;: Pour que la petite ne se compromette pas, je vous remets une
+                        enveloppe. Mon adresse est de ma propre écriture. Elle n’aura qu’à introduire la lettre dedans et à coller. Il ne restera aucune trace de notre échange.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Orphée est injuste. Elle est capable de choses très bien. Elle était seule&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Avec une amie. Ce n’était pas un milieu pour vous.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Certes. Mais je ne trouve pas que Aglaonice soit une mauvaise fille.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Méfiez-vous des bonnes filles et des braves garçons. Voilà votre sucre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Merci… 
+                        <p class="stage">(Elle prend le sucre avec crainte et s’approche du cheval.)</p> J’ai peur.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous reculez&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je ne recule pas, mais j’ai peur. À froid, nez à nez avec l’acte, j’avoue que je manque de courage. 
+                        <p class="stage">(Elle redescend devant la table à écrire.)</p> Heurtebise&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Quoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Mon petit Heurtebise. Vous ne consentiriez pas…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Ho&nbsp;! ho&nbsp;! Vous me demandez une chose bien grave.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous m’avez dit que vous feriez n’importe quoi pour me rendre service.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je le répète, mais…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Oh&nbsp;! mon cher, si cela vous gêne le moins du monde… n’en parlons plus.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Passez-moi le sucre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Merci. Vous êtes un brave cœur.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Seulement, l’acceptera-t-il de ma main&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Essayez toujours.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">, près du cheval.</p>
+                     <p xmlns="">Je vous avoue ne pas me sentir très fort sur mes jambes.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Soyez un homme&nbsp;! 
+                        <p class="stage">(Elle passe à droite et s’arrête près de la porte de sa chambre.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Allons-y. 
+                        <p class="stage">(D’une voix faible.)</p> Cheval… Cheval…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">, regardant par la fenêtre.</p>
+                     <p xmlns="">Ciel, Orphée&nbsp;! il rentre. Il traverse le jardin. Vite, vite, ayez l’air de travailler.</p>
+                     <p xmlns="" class="stage">Heurtebise jette le sucre sur la table servie et la pousse contre le mur entre la
+                        fenêtre et la porte de la chambre.</p>
+                     <p xmlns="">Montez sur cette chaise.</p>
+                     <p xmlns="" class="stage">Heurtebise monte sur la chaise dans le cadre de la porte-fenêtre et feint de prendre
+                        des mesures. Eurydice tombe assise sur la chaise de la table à écrire.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène IV  Les mêmes, Orphée</h2>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’ai oublié mon acte de naissance. Où l’ai-je mis&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">En haut de la bibliothèque, à gauche. Veux-tu que je le cherche&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Reste assise. Je le trouverai bien moi-même. 
+                        <p class="stage">(Il passe devant le cheval, le caresse, prend la chaise sur laquelle Heurtebise se
+                           tient debout et l’emporte. Heurtebise reste dans sa pose, suspendu en l’air. Eurydice étouffe un cri. Orphée, sans s’apercevoir de rien, monte sur la chaise devant la bibliothèque, dit&nbsp;:
+                           «&nbsp;Le voilà&nbsp;», prend l’acte de naissance, descend de la chaise, la reporte à sa place
+                           sous les pieds d’Heurtebise et sort.)</p>
+                     </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène V  Eurydice, Heurtebise</h2>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Heurtebise&nbsp;! M’expliquerez-vous ce prodige&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Quel prodige&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous n’allez pas me dire que vous ne vous êtes aperçu de rien et qu’il est naturel
+                        qu’un homme sous lequel on ôte une chaise reste suspendu en l’air au lieu de tomber.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Suspendu en l’air&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Jouez la surprise, je vous ai vu. Vous teniez en l’air. Vous restiez en l’air à cinquante centimètres du sol. Il y avait le vide autour.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous m’étonnez beaucoup.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Vous êtes demeuré une bonne minute entre terre et ciel.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est impossible.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Justement parce que c’est impossible, vous me devez une explication.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous prétendez que je me tenais sans support entre le plancher et le plafond&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ne mentez pas, Heurtebise&nbsp;! Je vous ai vu, de mes yeux vu. J’ai eu toutes les peines du monde à étouffer un cri. Dans cette maison de fous, vous étiez mon dernier refuge, la seule personne qui ne
+                        m’effrayait pas, auprès de laquelle je retrouvais mon équilibre. Mais on a beau vivre avec un cheval qui parle, un ami qui flotte en l’air devient
+                        forcément suspect. Ne m’approchez pas&nbsp;! Jusqu’à nouvel ordre, même votre lumière dans le dos me donne la chair de poule. Expliquez-vous, Heurtebise&nbsp;: je vous écoute.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je n’ai pas à me défendre. Ou je rêve, ou vous avez rêvé.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Oui, en rêve, il arrive qu’on fasse ce que vous avez fait, mais nous ne dormions ni
+                        l’un ni l’autre.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous devez être le jouet d’un mirage entre mes vitres et les vôtres. Il arrive que les objets mentent. J’ai vu à la foire une dame nue marcher au plafond.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il ne s’agissait pas d’une machine. C’était beau et atroce. L’espace d’une seconde je vous ai vu atroce comme un accident et beau comme l’arc-en-ciel.
+                        Vous étiez le cri d’un homme qui tombe par la fenêtre et le silence des étoiles. Vous me faites peur. Je suis trop franche pour ne pas vous le dire. Si vous voulez vous taire, taisez-vous&nbsp;; mais nos rapports ne peuvent plus être les
+                        mêmes. Je vous croyais simple, vous êtes compliqué. Je vous croyais de ma race, vous êtes de celle du cheval.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Eurydice, ne me torturez pas… Vous avez une voix de somnambule. C’est vous qui me faites peur.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">N’employez pas le système d’Orphée. Ne retournez pas les rôles. N’essayez pas de me faire croire que je suis folle.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Eurydice, je vous jure…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Inutile, Heurtebise. J’ai perdu ma confiance en vous.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Que faire&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Attendez. 
+                        <p class="stage">(Elle se dirige vers la bibliothèque, monte sur la chaise, prend un livre, l’ouvre,
+                           en retire une lettre et le remet en place.)</p>Donnez-moi l’enveloppe d’Aglaonice. 
+                        <p class="stage">(Il la donne.)</p>Merci. 
+                        <p class="stage">(Elle met la lettre dans l’enveloppe et lèche la colle.)</p> Oh&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous vous êtes coupé la langue&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Non, mais cette colle a un drôle de goût. Prenez l’enveloppe. Vous la porterez chez Aglaonice. Allez.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">La vitre n’est pas remise.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je me passerai de vitre. Allez.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous voulez que je parte.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">J’ai besoin de rester seule.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous êtes méchante.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je n’aime pas les fournisseurs qui volent.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Ce jeu de mots cruel est indigne de vous.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ce n’est pas un jeu de mots.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">Il ramasse son sac</p>
+                     <p xmlns="">Vous regretterez de m’avoir fait du mal. 
+                        <p class="stage">(Silence.)</p> Vous me chassez&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Le mystère est mon ennemi. Je suis décidée à le combattre.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je sors. Je veux vous plaire par mon obéissance. Adieu, Madame.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Adieu. 
+                        <p class="stage">(Ils se croisent. Eurydice se dirige vers sa chambre. Heurtebise ouvre la porte et sort. La porte reste ouverte. On voit son dos briller immobile au soleil. Tout à coup Eurydice s’arrête et change de visage. Elle chancelle, porte la main à son cœur et se met à crier.)</p> Heurtebise&nbsp;! Heurtebise&nbsp;! vite, vite…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">, rentrant.</p>
+                     <p xmlns="">Qu’y a-t-il&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Au secours&nbsp;!…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous êtes glacée, vous êtes verte&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je me paralyse. Mon cœur saute. Mon ventre brûle.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">L’enveloppe&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Quoi, l’enveloppe&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise, </p>
+                     <p xmlns="" class="stage">criant.</p>
+                     <p xmlns="">L’enveloppe d’Aglaonice. Vous l’avez léchée. Vous avez dit qu’elle avait un drôle de goût.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ah&nbsp;! La misérable&nbsp;! Courez vite. Ramenez Orphée. Je meurs. Je veux revoir Orphée.
+                        Orphée&nbsp;! Orphée&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je ne peux pas vous laisser seule. Il doit y avoir quelque chose à faire, un contrepoison à prendre.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je connais ce poison des Bacchantes. Il paralyse. Rien ne me sauvera. Courez vite. Ramenez Orphée. Je veux le revoir. Je veux qu’il me pardonne. Je l’aime, Heurtebise. Je souffre. Si vous hésitez, il sera trop tard. Je vous le demande à genoux. Heurtebise, Heurtebise, vous êtes bon, vous me plaignez. Ah&nbsp;! on m’enfonce des pointes entre les côtes. Vite, vite, courez, volez&nbsp;! Prenez le raccourci. S’il rentre, vous le rencontrerez en route. Je vais me coucher dans ma chambre pour vous attendre. Aidez-moi. 
+                        <p class="stage">(Heurtebise la mène jusqu’à sa chambre.)</p> Vite, vite, vite. 
+                        <p class="stage">(Elle disparaît. Au moment où Heurtebise va ouvrir la porte, elle sort de la chambre.)</p>Heurtebise, écoutez, si vous savez des choses… enfin… des choses comme tout à l’heure…
+                        qui permettent de se transporter instantanément d’un point à un autre… Il ne faut pas m’en vouloir, j’étais nerveuse, j’étais sotte… Je vous aime bien, Heurtebise… Essayez tout. Ah&nbsp;! 
+                        <p class="stage">(Elle rentre dans la chambre.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je le ramènerai, je vous le promets.</p>
+                     <p xmlns="" class="stage">Il sort.</p>
+                     <p xmlns="" class="stage">La scène reste vide un instant. La lumière change. Roulements et syncopes de tambours qui accompagnent en sourdine
+                        toute la scène suivante</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;VI  La Mort, Azraël, Raphaël</h2>
+                     <p xmlns="" class="stage">La Mort entre en scène par le miroir, suivie de ses deux aides. Elle est en robe de bal sous un manteau. Ses aides ont l’uniforme des chirurgiens. On devine leurs yeux. Le reste du visage est recouvert par du linge. Gants de caoutchouc. Ils portent deux grandes valises noires très élégantes. La Mort marche vite et s’arrête au milieu de la chambre.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Dépêchons-nous.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Où Madame veut-elle qu’on pose les sacs&nbsp;?</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Par terre, n’importe où. Azraël vous expliquera. Azraël, mon manteau.</p>
+                     <p xmlns="" class="stage">Il enlève le manteau.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">C’est la peur de me tromper qui me fait faire des bêtises.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Vous ne pouvez pas apprendre en deux jours le métier d’Azraël. Azraël est à mon service depuis des siècles. Il était comme vous au début. Ma blouse.</p>
+                     <p xmlns="" class="stage">Azraël sort la blouse blanche d’un des sacs et aide la Mort à la passer sur sa robe
+                        de bal.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="" class="stage">, à Raphaël</p>
+                     <p xmlns="">Prends les boîtes de métal et mets-les sur la table. Non, d’abord les serviettes. Couvre la table avec les serviettes.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">, se dirigeant vers le lavabo.</p>
+                     <p xmlns="">Azraël vous dira que j’exige l’ordre et la propreté comme sur un bateau.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Oui, Madame. Que Madame me pardonne… mais j’étais distrait&nbsp;; je regardais ce cheval.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">, qui se lave les mains</p>
+                     <p xmlns="">Il vous plaît, ce cheval&nbsp;?</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Oh&nbsp;! oui, Madame, beaucoup.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Quel enfant&nbsp;! Je suis sûre que vous aimeriez l’avoir. C’est très simple. Azraël, l’alcool. 
+                        <p class="stage">(À Raphaël.)</p>Vous trouverez un morceau de sucre sur l’autre table.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Oui, Madame, il y est.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Donnez-le-lui. S’il refuse, je le lui donnerai moi-même. Azraël, mes gants de caoutchouc. Merci. 
+                        <p class="stage">(Elle met le gant de la main droite.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Madame, le cheval refuse le sucre.</p>
+                     <p xmlns="" class="speaker">La Mort </p>
+                     <p xmlns="" class="stage">prend le sucre</p>
+                     <p xmlns="">Mange, cheval, je le veux. 
+                        <p class="stage">(Le cheval mange, recule et disparaît. Un rideau noir ferme la niche.)</p>Et voilà. 
+                        <p class="stage">(À Raphaël.)</p> Il est à vous.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Madame est trop bonne.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">, mettant le gant de la main gauche.</p>
+                     <p xmlns="">Il y a encore une semaine, vous pensiez que j’étais un squelette avec un suaire et
+                        une faux. Vous vous représentiez un croquemitaine, un épouvantail…</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Oh&nbsp;! Madame…</p>
+                     <p xmlns="" class="stage">Pendant ces répliques, Azraël cache le miroir avec un linge.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">, allant prendre la chaise laissée par Heurtebise dans la porte-fenêtre</p>
+                     <p xmlns="">Si, si, si. Tous le croient. Mais, mon pauvre garçon, si j’étais comme les gens veulent
+                        me voir, ils me verraient. Et je dois entrer chez eux sans être vue. 
+                        <p class="stage">(Elle pose la chaise, près de la rampe, au milieu.)</p>Azraël, essayez le contact.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Il marche, Madame.</p>
+                     <p xmlns="" class="stage">Rumeur profonde d’une machine électrique.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">Elle tire un mouchoir de sa blouse.</p>
+                     <p xmlns="">Parfait. Raphaël, voulez-vous avoir l’obligeance de me bander les yeux avec ce mouchoir.
+                        
+                        <p class="stage">(Pendant que Raphaël lui bande les yeux.)</p>Nous avons une onde sept et une zone sept-douze. Réglez tout sur quatre. Si j’augmente, vous irez jusqu’à cinq. Ne dépassez cinq sous aucun prétexte. Serrez fort. Faites un nœud double. Merci. Vous êtes à vos postes&nbsp;? 
+                        <p class="stage">(Azraël et Raphaël se tiennent derrière la table, côte à côte, debout, les mains à
+                           l’intérieur des boîtes de métal.)</p>Je commence. 
+                        <p class="stage">(Elle s’approche de la chaise. Gesticulation lente de masseuse et d’hypnotiseur autour d’une tête invisible.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="" class="stage">, très bas</p>
+                     <p xmlns="">Azraël…</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="" class="stage">, même jeu</p>
+                     <p xmlns="">Chut…</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Parlez, parlez, vous ne me dérangez pas.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Azraël, où est Eurydice&nbsp;?</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Je m’y attendais. Tu vois, Azraël, tous la même question&nbsp;! Explique-lui.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">La Mort, pour toucher les choses de la vie, traverse un élément qui les déforme et
+                        les déplace. Nos appareils lui permettent de les toucher où elle les voit, ce qui évite des calculs
+                        et une perte de temps considérable.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">C’est comme pour tirer un poisson dans l’eau avec une arme à feu.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="" class="stage">, riant.</p>
+                     <p xmlns="">Si vous voulez. 
+                        <p class="stage">(Grave.)</p> Azraël, prépare-moi la bobine.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Oui, Madame… Madame sait-elle où est Heurtebise&nbsp;?</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Il ramène Orphée de la ville.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">S’ils courent, aurons-nous le temps de finir&nbsp;?</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Ceci regarde Azraël. Il change nos vitesses. Une heure pour moi doit être une minute pour eux.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">L’aiguille dépasse cinq. Madame veut-elle la bobine&nbsp;?</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Amorce-la et donne-la-moi.</p>
+                     <p xmlns="" class="stage">Azraël disparaît chez Eurydice et rentre en scène avec la bobine. La Mort compte les pas entre sa chaise et la chambre. Puis elle s’arrête face à la porte. Azraël lui remet la bobine, sorte de mètre automatique où s’enroulera un fil blanc
+                        qui sort de la chambre.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Raphaël, vous avez le chronomètre&nbsp;?</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Je l’ai oublié&nbsp;!</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Nous voilà propres.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Ne vous énervez pas. Il y a un moyen très simple. 
+                        <p class="stage">(Elle parle bas à Azraël
+                           <p>Le metteur en scène qui craindrait de déchirer un rideau de mystère par un geste entre
+                              la scène et la salle peut substituer à ce passage un conciliabule obscur.</p>1°
+                           <p class="speaker">La Mort</p>
+                           <p>Il y a un moyen très simple.</p>
+                           <p class="stage">(Elle parle bas à Azraël. Azraël retourne à la table, parle bas à Raphaël.)</p>
+                           <p>Vous y êtes&nbsp;?</p>2°&nbsp;(p.&nbsp;71)
+                           <p class="speaker">La Mort</p>
+                           <p>Alors, en route.</p>
+                           <p class="speaker">Azraël</p>
+                           <p>Raphaël&nbsp;!</p>
+                           <p class="speaker">La Mort</p>
+                           <p>Qu’est-ce que c’est&nbsp;?</p>
+                           <p class="speaker">Raphaël</p>
+                           <p>C’est juste.</p>
+                           <p class="stage">(Il entre dans la chambre d’Eurydice.)</p>
+                           <p class="speaker">La Mort</p>
+                           <p>Raphaël, dépêchez-vous, dépêchez-vous…</p>.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="" class="stage">Il s’approche de la rampe.</p>
+                     <p xmlns="">Mesdames, Messieurs. La Mort me charge de demander à l’assistance si un spectateur
+                        serait assez aimable pour lui prêter une montre&nbsp;? 
+                        <p class="stage">(À un monsieur qui, au premier rang, lève la main.)</p>Merci, Monsieur. Raphaël, voulez-vous prendre la montre de Monsieur.</p>
+                     <p xmlns="" class="stage">Jeu de scène.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Vous y êtes&nbsp;?</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Partez&nbsp;! 
+                        <p class="stage">(Roulement de tambour. Le fil s’échappe de la chambre et entre dans la boîte tenue par la Mort. Azraël et Raphaël, au fond, tournent le dos. Azraël compte avec une main en l’air comme un arbitre de boxe. Raphaël exécute lentement des signaux pareils à ceux du code naval.)</p>Hop&nbsp;! 
+                        <p class="stage">(Le roulement de tambour s’arrête. Raphaël s’immobilise. Le fil résiste. La Mort se rue dans la chambre. Elle en sort sans le bandeau qui lui couvrait les yeux avec une colombe qui se débat,
+                           attachée au bout du fil. On n’entend plus la machine.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Ouf&nbsp;! Vite, vite, Raphaël, les ciseaux. 
+                        <p class="stage">(Elle court sur le balcon.)</p>Venez ici, coupez. 
+                        <p class="stage">(Il coupe le fil&nbsp;; la colombe s’envole.)</p>Rangez la bande. Azraël, montre-lui. C’est très simple. Laisse-le faire, il faut qu’il
+                        apprenne.</p>
+                     <p xmlns="" class="stage">Azraël et Raphaël enferment les boîtes de métal, la blouse, etc.</p>
+                     <p xmlns="" class="stage">La Mort s’appuie contre la table de droite. Elle regarde le vide avec une fatigue profonde. Elle passe lentement son bras droit et sa main sur son front comme un somnambule qui
+                        se réveille, comme pour se sortir de l’hypnose.</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Tout est en place, Madame.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Et maintenant, fermez, bouclez. Je suis prête. Mon manteau. 
+                        <p class="stage">(Azraël lui pose le manteau sur les épaules pendant que Raphaël ferme les sacs.)</p>Nous n’oublions rien&nbsp;?</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Non, Madame.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Alors, en route.</p>
+                     <p xmlns="" class="speaker">Le Monsieur de l’orchestre</p>
+                     <p xmlns="">Psst&nbsp;!</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">Ah&nbsp;! c’est juste.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Qu’est-ce que c’est&nbsp;?</p>
+                     <p xmlns="" class="speaker">Azraël</p>
+                     <p xmlns="">La montre. Raphaël, reportez la montre à Monsieur en le remerciant.</p>
+                     <p xmlns="" class="stage">Jeu de scène.</p>
+                     <p xmlns="" class="speaker">La Mort</p>
+                     <p xmlns="">Raphaël, dépêchez-vous, dépêchez-vous.</p>
+                     <p xmlns="" class="speaker">Raphaël</p>
+                     <p xmlns="">Voilà, Madame, j’arrive.</p>
+                     <p xmlns="" class="stage">La Mort se hâte et s’immobilise, le bras tendu, devant le miroir. Puis elle y pénètre. Ses aides la suivent. Ils exécutent la même manœuvre. Sur la table de droite, bien en évidence, elle a oublié ses gants de caoutchouc.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;VII Orphée, Heurtebise</h2>
+                     <p xmlns="" class="stage">Aussitôt après la dernière réplique de la Mort, on entend la voix d’Orphée dans le
+                        jardin.</p>
+                     <p xmlns="" class="speaker">La voix d’Orphée</p>
+                     <p xmlns="">Vous ne la connaissez pas. Vous ne savez pas de quoi elle est capable. Ce sont des comédies pour me faire rentrer à la maison.</p>
+                     <p xmlns="" class="stage">La porte s’ouvre, ils entrent. Heurtebise se précipite vers la chambre, regarde, recule et se met à genoux sur le
+                        seuil.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Où est-elle&nbsp;? Eurydice&nbsp;!… Elle boude. Ah&nbsp;! ça… Je deviens fou&nbsp;! Le cheval&nbsp;! Où est
+                        le cheval&nbsp;? 
+                        <p class="stage">(Il découvre la niche.)</p>Parti&nbsp;! Je suis perdu. On lui aura ouvert la porte, on l’aura effrayé&nbsp;; ce doit être
+                        un coup d’Eurydice. Elle me le payera&nbsp;!</p>
+                     <p xmlns="" class="stage">Il s’élance.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Halte&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous m’empêchez d’entrer chez ma femme&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Regardez.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Où&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Regardez à travers mes vitres.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">Il regarde</p>
+                     <p xmlns="">Elle est assise. Elle dort.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle est morte.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Quoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Morte. Nous sommes arrivés trop tard.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">C’est impossible. 
+                        <p class="stage">(Il frappe aux vitres.)</p>Eurydice, ma chérie&nbsp;! Réponds-moi&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Inutile.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous&nbsp;! Laissez-moi entrer. 
+                        <p class="stage">(Il écarte Heurtebise.)</p> Où est-elle&nbsp;? 
+                        <p class="stage">(À la cantonade.)</p> Je viens de la voir, assise, près du lit. La chambre est vide. 
+                        <p class="stage">(Il rentre en scène.)</p> Eurydice&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous avez cru la voir. Eurydice habite chez la Mort.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Ah&nbsp;! peu importe le cheval&nbsp;! Je veux revoir Eurydice. Je veux qu’elle me pardonne de l’avoir ainsi négligée, mal comprise. Aidez-moi. Sauvez-moi. Que faire&nbsp;? Nous perdons un temps précieux.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Ces bonnes paroles vous sauvent, Orphée…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, pleurant, effondré sur la table.</p>
+                     <p xmlns="">Morte. Eurydice est morte. 
+                        <p class="stage">(Il se lève.)</p> Eh bien… je l’arracherai à la mort&nbsp;! S’il le faut, j’irai la chercher jusqu’aux enfers&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Orphée… écoutez-moi. Du calme. Vous m’écouterez…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oui… Je serai calme. Réfléchissons. Trouvons un plan…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je connais un moyen.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Mais il faut m’obéir et ne pas perdre une minute.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oui.</p>
+                     <p xmlns="" class="stage">Toutes ces répliques d’Orphée, il les prononce dans la fièvre et la docilité. La scène se déroule avec une extrême vitesse.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">La Mort est entrée chez vous pour prendre Eurydice.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oui…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle a oublié ses gants de caoutchouc. 
+                        <p class="stage">(Un silence. Il s’approche de la table, hésite et prend les gants de loin comme on
+                           touche un objet sacré.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, avec terreur</p>
+                     <p xmlns="">Ah&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous allez les mettre.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Bon.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Mettez-les. 
+                        <p class="stage">(Il les lui passe. Orphée les met.)</p>Vous irez voir la Mort sous prétexte de les lui rendre, et grâce à eux vous pourrez
+                        parvenir jusqu’à elle.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Bien…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">La Mort va chercher ses gants. Si vous les lui rapportez, elle vous donnera une récompense. Elle est avare, elle aime mieux prendre que donner, et comme elle ne rend jamais ce
+                        qu’on lui laisse prendre, votre démarche l’étonnera beaucoup. Sans doute vous obtiendrez peu, mais vous obtiendrez toujours quelque chose.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Bon.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">Il le mène devant le miroir</p>
+                     <p xmlns="">Voilà votre route.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Ce miroir&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je vous livre le secret des secrets. Les miroirs sont les portes par lesquelles la Mort va et vient. Ne le dites à personne. Du reste, regardez-vous toute votre vie dans une glace et vous verrez la Mort travailler
+                        comme des abeilles dans une ruche de verre. Adieu. Bonne chance&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mais un miroir, c’est dur.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">, la main haute</p>
+                     <p xmlns="">Avec ces gants vous traverserez les miroirs comme de l’eau.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Où avez-vous appris toutes ces choses redoutables&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">, sa main retombe</p>
+                     <p xmlns="">Vous savez, les miroirs, ça rentre un peu dans la vitre. C’est notre métier.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et une fois passée cette… porte…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Respirez lentement, régulièrement. Marchez sans crainte devant vous. Prenez à droite, puis à gauche, puis à droite, puis tout droit. Là, comment vous expliquer… Il n’y a plus de sens… on tourne&nbsp;; c’est un peu pénible au premier abord.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et après&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Après&nbsp;? Personne au monde ne peut vous renseigner. La Mort commence.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je ne la crains pas.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Adieu. Je vous attends à la sortie.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je serai peut-être long.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Long… pour vous. Pour nous, vous ne ferez guère qu’entrer et sortir.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je ne peux croire que cette glace soit molle. Enfin, j’essaye.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Essayez. 
+                        <p class="stage">(Orphée se met en marche.)</p> D’abord les mains&nbsp;!</p>
+                     <p xmlns="" class="stage">Orphée, les mains en avant, gantées de rouge, s’enfonce dans la glace.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Eurydice&nbsp;!… 
+                        <p class="stage">(Il disparaît.)</p>
+                     </p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;VIII  Heurtebise seul, puis le facteur</h2>
+                     <p xmlns="" class="stage">Heurtebise resté seul s’agenouille devant la niche du cheval. On frappe.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Qu’est-ce que c’est&nbsp;?</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Le facteur. J’ai une lettre pour vous.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Monsieur n’est pas là.</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Et Madame&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Madame non plus. Glissez votre lettre sous la porte.</p>
+                     <p xmlns="" class="stage">Une lettre passe sous la porte.</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Ils sont sortis&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Non… Ils dorment.</p>
+                     <p xmlns="" class="stage">Le rideau de l’intervalle tombe lentement et se relève tout de suite.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène VIII&nbsp;bis Heurtebise, le facteur</h2>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Qu’est-ce que c’est&nbsp;?</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Le facteur. J’ai une lettre pour vous.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Monsieur n’est pas là.</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Et Madame&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Madame non plus. Glissez votre lettre sous la porte.</p>
+                     <p xmlns="" class="speaker">La voix du facteur</p>
+                     <p xmlns="">Ils sont sortis&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Non… Ils dorment.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;IX  Heurtebise Orphée, puis Eurydice</h2>
+                     <p xmlns="" class="stage">Orphée sort de la glace.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous êtes encore là&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Eh bien, racontez vite.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mon cher, vous êtes un ange.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Pas du tout.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Si, si, un ange, un vrai ange. Vous m’avez sauvé.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Eurydice.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Une surprise. Regardez bien.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Où&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">La glace. Une, deux, trois. 
+                        <p class="stage">(Eurydice sort de la glace.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Oui, moi. Moi la plus heureuse des épouses, moi la première femme que son mari ait
+                        eu l’audace de venir reprendre chez les morts.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">«&nbsp;Madame Eurydice reviendra des enfers.&nbsp;» Et nous qui refusions un sens à cette phrase.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Chut, mon chéri&nbsp;; rappelle-toi ta promesse. On ne reparlera plus jamais du cheval.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Où avais-je la tête&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Et vous savez, Heurtebise, il a découvert le chemin tout seul. Il n’a pas hésité une seconde. Il a eu l’idée géniale de mettre les gants de la Mort.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est ce qu’on appelle, si je ne me trompe, se donner des gants.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, très vite.</p>
+                     <p xmlns="">Enfin… le principal était de réussir. 
+                        <p class="stage">(Il fait mine de se retourner vers Eurydice.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Attention&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oh&nbsp;! 
+                        <p class="stage">(Il se fige.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Qu’avez-vous&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Un détail, un simple détail. Au premier moment la chose paraît effrayante, mais avec un peu de prudence tout s’arrangera.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ce sera une affaire d’habitude.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">De quoi s’agit-il&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">D’un pacte. J’ai le droit de reprendre Eurydice, je n’ai pas le droit de la regarder.
+                        Si je la regarde, elle disparaît.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Quelle horreur&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">C’est intelligent de décourager mon mari&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, faisant passer Heurtebise devant lui.</p>
+                     <p xmlns="">Laisse, laisse, je ne me décourage pas. Il lui arrive ce qui nous est arrivé. Vous pensez bien qu’après avoir accepté cette clause –&nbsp;il le fallait coûte que coûte&nbsp;–,
+                        nous avons passé par toutes vos transes. Or, je le répète, c’est faisable. Ce n’est pas facile, certes non, mais c’est faisable. J’estime que c’est moins dur que de devenir aveugle.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ou que de perdre une jambe.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et puis… nous n’avions pas le choix.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il y a même des avantages. Orphée ne connaîtra pas mes rides.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Bravo&nbsp;! Il ne me reste plus qu’à vous souhaiter bonne chance.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous nous quittez&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je crains que ma présence ne vous dérange. Vous devez avoir tant de choses à vous dire.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Nous nous les dirons après le déjeuner. La table est mise. J’ai grand-faim. Vous êtes trop de notre aventure pour ne pas rester déjeuner avec nous.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je crains que la présence d’un tiers ne contrarie votre femme.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Non, Heurtebise. 
+                        <p class="stage">(En insistant sur les mots.)</p>Le voyage d’où je reviens transforme la face du monde. J’ai appris beaucoup. J’ai honte de moi. Orphée aura dorénavant une épouse méconnaissable, une épouse de lune de miel.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Eurydice&nbsp;! Ta promesse. On ne parlera plus jamais de la lune.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">C’est mon tour de n’avoir aucune tête. À table&nbsp;! À table&nbsp;! Heurtebise à ma droite. Asseyez-vous. Orphée en face de moi.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Pas en face&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Dieux&nbsp;! J’ai eu raison de retenir Heurtebise. Je m’installe à ta gauche et je te tourne le dos. Je mange sur mes genoux.</p>
+                     <p xmlns="" class="stage">Eurydice les sert.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je brûle d’entendre le récit de votre voyage.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Ma foi, j’aurai du mal à le raconter. Il me semble que je sors d’une opération. J’ai le vague souvenir d’un de mes poèmes que je récite pour me tenir éveillé et de
+                        bêtes immondes qui s’endorment. Ensuite un trou noir. Ensuite, j’ai parlé avec une dame invisible. Elle m’a remercié pour les gants. Une sorte de chirurgien est venu les reprendre et m’a dit de partir, qu’Eurydice me
+                        suivrait et que je ne devais la regarder sous aucun prétexte. J’ai soif&nbsp;! 
+                        <p class="stage">(Il prend son verre et se retourne.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice et Heurtebise</p>
+                     <p xmlns="" class="stage">, ensemble.</p>
+                     <p xmlns="">Attention&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">J’ai eu une de ces peurs&nbsp;! Sans te retourner, mon chéri, tâte comme mon cœur bat.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">C’est stupide. Si je me bandais les yeux&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je ne vous le conseille pas. Vous ne savez pas les règles exactes. Si vous trichez, tout est perdu.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">On se représente mal la difficulté, la tension d’esprit qu’exige une bêtise pareille.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Que veux-tu, mon pauvre chéri, tu es toujours dans la lune…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Encore la lune&nbsp;! Autant me traiter d’idiot.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Orphée&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je laisse la lune à tes ex-compagnes.</p>
+                     <p xmlns="" class="stage">Silence.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Monsieur Orphée&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je suis hiérophante du soleil.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Tu ne l’es plus, mon amour.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Soit. Mais je défends qu’on parle de lune dans ma maison.</p>
+                     <p xmlns="" class="stage">Silence.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Si tu savais comme ces histoires de lune et de soleil ont peu d’importance.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Madame est au-dessus de ces choses-là.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Si je pouvais parler…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il me semble que pour une personne qui ne peut pas parler, tu parles beaucoup. Beaucoup&nbsp;!
+                        Beaucoup trop&nbsp;!</p>
+                     <p xmlns="" class="stage">Eurydice pleure. Silence</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous faites pleurer votre femme.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, menaçant</p>
+                     <p xmlns="">Vous&nbsp;! 
+                        <p class="stage">(Il se retourne.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ah&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Prenez garde&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">C’est de sa faute. Elle ferait retourner un mort.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Il valait mieux rester morte.</p>
+                     <p xmlns="" class="stage">Silence</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">La lune&nbsp;! Si je la laissais dire, où irions-nous&nbsp;? Je vous le demande. L’époque du cheval recommencerait.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous exagérez…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’exagère&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Oui.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et même en admettant que j’exagère. 
+                        <p class="stage">(Il se retourne.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Attention&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="" class="stage">, à Eurydice.</p>
+                     <p xmlns="">Du calme. Ne pleurez pas. La difficulté vous énerve. Orphée, mettez-y du vôtre. Vous finirez par faire un malheur.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et même en admettant que j’exagère, qui commence&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ce n’est pas moi.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Pas toi&nbsp;! Pas toi&nbsp;! 
+                        <p class="stage">(Il se retourne.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Eurydice et Heurtebise</p>
+                     <p xmlns="">Ho&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous êtes dangereux, mon cher.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Vous avez raison. Le plus simple est que je sorte de table et que je vous débarrasse
+                        de ma présence puisque vous me trouvez dangereux.</p>
+                     <p xmlns="" class="stage">Il se lève. Eurydice et Heurtebise le retiennent par sa veste.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Mon ami…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Orphée…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Non, non. Laissez-moi.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Soyez raisonnable.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je serai ce qu’il me convient d’être.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Reste. 
+                        <p class="stage">(Elle le tire, il perd l’équilibre, et&nbsp;la regarde. Il pousse un cri. Eurydice, pétrifiée, se lève. Son visage exprime l’épouvante. La lumière baisse. Eurydice s’enfonce lentement et disparaît. La lumière revient.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’était fatal.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, pâle, sans forces, avec une grimace de fausse désinvolture.</p>
+                     <p xmlns="">Ouf&nbsp;! on se sent mieux.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Quoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, même jeu.</p>
+                     <p xmlns="">On respire.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il est fou&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, cachant de plus en plus sa gêne sous la colère.</p>
+                     <p xmlns="">Il faut se montrer dur avec les femmes. Il faut leur prouver qu’on ne tient pas à elles. Il ne faut pas se laisser conduire par le bout du nez.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Voilà qui est fort&nbsp;! Vous prétendez me laisser entendre que vous avez regardé Eurydice exprès&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Suis-je un homme à distractions&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous ne manquez pas d’audace&nbsp;! Vous avez regardé par distraction. Vous avez perdu l’équilibre. Vous avez tourné la tête par distraction. Je vous ai vu.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’ai perdu l’équilibre exprès. J’ai tourné la tête exprès, et je défends qu’on me contredise.</p>
+                     <p xmlns="" class="stage">Silence.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Eh bien, si vous avez tourné la tête exprès, je ne vous félicite pas.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je me passe de vos félicitations. Je me félicite, moi, d’avoir tourné la tête exprès vers ma femme. Cela vaut mieux que d’essayer de tourner la tête aux femmes des autres.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Est-ce pour moi, cette phrase&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Prenez-la comme bon vous semble.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous êtes trop injuste. Jamais je ne me suis permis de faire la cour à votre femme. Elle m’aurait vite envoyé promener. Votre femme était une femme modèle. <a class="note" onclick="affiche('gxfqpmx')">✱</a>Il vous a fallu la perdre une première fois pour vous en rendre compte, et vous venez
+                        de la perdre une seconde fois, de la perdre lâchement et de la perdre tragiquement,
+                        de vous perdre, de tuer une morte, de commettre de gaieté de cœur un acte irréparable.
+                        Car elle est morte, morte, remorte. Elle ne reviendra plus.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Allons donc&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Comment, allons donc&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Où avez-vous vu une femme quitter la table en criant et ne pas venir se remettre à
+                        table&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je vous laisse cinq minutes pour comprendre votre infortune.</p>
+                     <p xmlns="" class="stage">Orphée lance sa serviette par terre, se lève, contourne la table, va regarder la glace,
+                        la touche, se dirige vers la porte et ramasse la lettre.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">Il ouvre la lettre.</p>
+                     <p xmlns="">Qu’est-ce que c’est que ça&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Une mauvaise nouvelle&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je ne peux pas lire, la lettre est écrite à l’envers.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est un moyen de déguiser l’écriture. Lisez dans la glace.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, devant la glace, lit.</p>
+                     <div xmlns="" class="q letter">
+                        <p class="opener">Monsieur,</p>
+                        <p>Excusez-moi de conserver l’incognito. Aglaonice a découvert que l’ensemble des lettres qui commencent les mots de votre
+                           phrase&nbsp;: <em>Madame Eurydice Reviendra Des Enfers</em> forme un mot injurieux pour le tribunal du concours. Elle a convaincu le jury que vous étiez un mystificateur. Elle a soulevé contre vous la moitié des femmes de la ville. Bref, une énorme troupe de folles sous ses ordres se dirige vers votre maison. Les Bacchantes ouvrent la marche et réclament votre mort. Sauvez-vous, cachez-vous. Ne perdez pas une minute.</p>
+                        <p class="signed">Une personne qui vous veut du bien.</p>
+                     </div>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il ne doit pas y avoir un mot de vrai.</p>
+                     <p xmlns="" class="stage">On entend au loin des tambours qui s’approchent et battent un rythme furieux.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Écoutez…</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Des tambours.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns=""><em>Leurs</em> tambours. Eurydice voyait juste. Heurtebise, le cheval m’a joué&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">On n’écharpe pas un homme pour un mot.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Le mot est un prétexte qui cache une haine profonde, une haine religieuse. Aglaonice guettait son heure. Je suis perdu.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Les tambours approchent.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Comment n’ai-je pas vu cette lettre&nbsp;? Depuis quand l’a-t-on glissée sous la porte&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Orphée, je suis bien coupable. On a glissé la lettre pendant votre visite chez les morts. Le retour de votre femme m’a saisi. J’ai oublié de vous prévenir. Sauvez-vous&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Trop tard. 
+                        <p class="stage">(L’envoûtement du cheval est fini. Orphée se transfigure.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Cachez-vous derrière les massifs, je dirai que vous êtes en voyage…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Inutile, Heurtebise. Les choses arrivent comme elles doivent arriver.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je vous sauverai de force&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je refuse.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est fou&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">La glace est dure. Elle m’a lu la lettre. Je sais ce qu’il me reste à faire.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Que voulez-vous faire&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Rejoindre Eurydice.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous ne le pouvez plus.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je le peux.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Même si vous y parvenez, les scènes recommenceront entre vous.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, en extase.</p>
+                     <p xmlns="">Pas où elle me fait signe de la rejoindre.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous souffrez. Votre figure se contracte. Je ne vous laisserai pas vous perdre à plaisir.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oh&nbsp;! ces tambours, ces tambours&nbsp;! Ils approchent, Heurtebise, ils tonnent, ils éclatent,
+                        ils vont être là.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous avez déjà fait l’impossible.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">À l’impossible je suis tenu.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous avez résisté à d’autres cabales.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je n’ai pas encore résisté jusqu’au sang.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous m’effrayez…</p>
+                     <p xmlns="" class="stage">Le visage d’Heurtebise exprime une peur surhumaine.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Que pense le marbre dans lequel un sculpteur taille un chef-d’œuvre&nbsp;? Il pense&nbsp;: on me frappe, on m’abîme, on m’insulte, on me brise, je suis perdu. Ce marbre est idiot. La vie me taille, Heurtebise&nbsp;! Elle fait un chef-d’œuvre. Il faut que je supporte ses coups sans les comprendre. Il faut que je me raidisse. Il faut que j’accepte, que je me tienne tranquille, que je l’aide, que je collabore,
+                        que je lui laisse finir son travail.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Les pierres&nbsp;!</p>
+                     <p xmlns="" class="stage">Des pierres brisent les vitres et tombent dans la chambre.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Du verre blanc. C’est la chance&nbsp;! la chance&nbsp;! J’aurai le buste que je voulais.</p>
+                     <p xmlns="" class="stage">Une pierre casse la glace.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">La glace&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Pas la glace&nbsp;! 
+                        <p class="stage">(Il s’élance sur le balcon.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elles vont vous écharper.</p>
+                     <p xmlns="" class="stage">On entend des clameurs et des tambours.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, de dos sur le balcon, il se penche</p>
+                     <p xmlns="">Mesdames&nbsp;! 
+                        <p class="stage">(Rafale de tambours.)</p>Mesdames&nbsp;! 
+                        <p class="stage">(Rafale de tambours.)</p>Mesdames&nbsp;! 
+                        <p class="stage">(Rafale de tambours.)</p>
+                     </p>
+                     <p xmlns="" class="stage">Il se précipite vers la droite, partie invisible du balcon. Les tambours couvrent sa voix. Ténèbres. Heurtebise tombe à genoux et se cache le visage.</p>
+                     <p xmlns="" class="stage">Tout à coup une chose vole par la fenêtre et tombe dans la chambre. C’est la tête d’Orphée. Elle roule vers la droite et s’arrête au premier plan. Heurtebise pousse un faible cri. Les tambours s’éloignent.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène X  Heurtebise, la tête d’Orphée, puis Eurydice</h2>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="" class="stage">Elle parle avec la voix d’un grand blessé</p>
+                     <p xmlns="">Où suis-je&nbsp;? Comme il fait noir… Comme j’ai la tête lourde. Et mon corps, mon corps me fait si mal. J’ai dû tomber du balcon. J’ai dû tomber de très haut, de très haut, très haut sur la tête. Et ma tête…&nbsp;? Au fait, oui… je parle de ma tête… Où est-elle, ma tête&nbsp;? Eurydice&nbsp;! Heurtebise&nbsp;! Aidez-moi&nbsp;! Où êtes-vous&nbsp;? Allumez la lampe. Eurydice&nbsp;! Je ne vois pas mon corps. Je ne trouve plus ma tête. Je n’ai plus ni tête ni corps. Je ne comprends plus. <a class="note" onclick="affiche('ydMmVDN')">✱</a>Et j’ai du vide, j’ai du vide partout. Expliquez-moi. Réveillez-moi. Au secours&nbsp;! Au secours&nbsp;! Eurydice&nbsp;! 
+                        <p class="stage"><a class="note" onclick="affiche('FbrZPEv')">✱</a>(Comme une plainte.)</p> Eurydice… Eurydice… Eurydice… Eurydice… Eurydice…</p>
+                     <p xmlns="" class="stage">Entre Eurydice, sortant du miroir. Elle reste sur place</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Mon chéri&nbsp;?</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Eurydice… c’est toi&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">C’est moi.</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Où est mon corps&nbsp;? Où ai-je mis mon corps&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Ne cherche pas. Ne t’agace pas. Donne-moi la main.</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Où est ma tête&nbsp;?…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="" class="stage">, prenant le corps invisible par la main</p>
+                     <p xmlns="">J’ai ta main dans ma main. Marche. N’aie pas peur. Laisse-toi conduire…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Où est mon corps&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Près de moi. Contre moi. Maintenant, tu ne peux plus me voir, et j’ai la permission de t’emmener.</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Et ma tête, Eurydice… ma tête… Où ai-je mis ma tête&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Laisse, mon amour, ne t’occupe plus de ta tête…</p>
+                     <p xmlns="" class="stage">Eurydice et le corps invisible d’Orphée s’enfoncent dans le miroir</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;XI  Heurtebise, la tête d’Orphée, puis le Commissaire de Police, le Greffier</h2>
+                     <p xmlns="" class="stage">On frappe à la porte. Silence. On frappe. Silence.</p>
+                     <p xmlns="" class="speaker">La voix du commissaire</p>
+                     <p xmlns="">Au nom de la loi, ouvrez.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Qui êtes-vous&nbsp;?</p>
+                     <p xmlns="" class="speaker">La voix du commissaire</p>
+                     <p xmlns="">La police. Ouvrez ou j’enfonce la porte.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">J’ouvre. 
+                        <p class="stage">(Il s’élance vers la tête d’Orphée, la ramasse, hésite, la pose sur le socle et ouvre
+                           la porte. Le battant cache le socle. C’est alors que l’acteur qui joue le rôle d’Orphée substitue sa tête à la tête de
+                           carton.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Pourquoi n’avez-vous pas répondu à ma première sommation&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Monsieur le Juge…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Commissaire.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Monsieur le Commissaire, je suis un ami de la famille… J’étais encore sous le coup d’un saisissement compréhensible…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Un coup. Quel coup&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Il faut vous dire que j’étais seul avec Orphée au moment du drame.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Quel drame&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Le meurtre d’Orphée par les Bacchantes.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="" class="stage">, se retournant vers le Greffier</p>
+                     <p xmlns="">Je m’attendais à cette version. Et… la femme de la victime… Où est-elle&nbsp;? J’aimerais la confronter avec vous.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle est absente.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">De mieux en mieux.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Elle avait même abandonné le domicile conjugal.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Voyez-vous cela&nbsp;! 
+                        <p class="stage">(Au Greffier.)</p>Veuillez vous mettre à cette table 
+                        <p class="stage">(Il désigne la table de gauche.)</p> et prendre note. 
+                        <p class="stage">(Le Greffier s’installe. Papiers, plumes. Il tourne le dos à la glace. Heurtebise est debout près de la glace. Pour être plus à l’aise le Greffier tire la table en arrière de sorte que cette table
+                           rende l’accès de la porte impossible.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">J’ai…</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Silence.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Procédons par ordre. Ne parlez que si je vous interroge. Où est le corps&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Quel corps&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Quand il y a crime, il y a corps. Je vous demande où se trouve le corps&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Mais, Monsieur le Commissaire, il n’y a pas de corps. Il a été déchiré, décapité, emporté par ces folles&nbsp;!</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Primo, je vous dispense de porter un jugement injurieux sur des femmes qui exercent
+                        un sacerdoce. Secundo, votre version est contredite par cinq cents témoignages visuels.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Vous prétendez…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Silence&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="" class="stage">, débit prétentieux.</p>
+                     <p xmlns="">Silence. Écoutez-moi bien, mon gaillard. Nous sommes aujourd’hui jour d’éclipse. Cette éclipse de soleil est cause d’un formidable revirement populaire en faveur d’Orphée.
+                        On porte le deuil. On organise son triomphe. Les autorités réclament sa dépouille mortelle. Or, les Bacchantes ont vu Orphée paraître à son balcon couvert de sang et criant au
+                        secours. Surprises, car elles venaient sous ses fenêtres à seule fin de lui faire un charivari,
+                        elles eussent volé à son aide s’il n’était, racontent-elles (et cinq cents bouches
+                        le racontent), s’il n’était, disais-je, tombé mort sous leurs yeux.</p>
+                     <p xmlns="">Je me résume. Ces dames organisent un monôme. Elles arrivent aux cris de «&nbsp;conspuez Orphée&nbsp;». Soudain la fenêtre s’ouvre. Orphée ensanglanté s’élance et appelle au secours. Ces dames s’apprêtent à gravir les marches&nbsp;; il est trop tard&nbsp;! Orphée tombe, et toute la troupe –&nbsp;n’oublions pas que ce sont des femmes… des femmes
+                        qui aiment crier, mais que la vue du sang effraye&nbsp;– toute la troupe, dis-je, rebrousse
+                        chemin. Éclipse. La ville voit dans cette éclipse la colère du soleil, parce qu’on moque un
+                        de ses anciens prêtres. Les autorités s’avancent à la rencontre des femmes, et les femmes, par l’entremise
+                        d’Aglaonice, racontent le crime étrange dont elles viennent d’être témoins. La ville entière voulait se ruer sur les lieux. Des mesures sévères furent prises afin de réprimer le désordre et on m’a dépêché,
+                        moi, moi le chef de la police, moi qui vous interroge et qui ne supporterai pas qu’on
+                        me traite comme un garde champêtre. Tenez-vous-le pour dit.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Mais je ne vous…</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Silence. On ne vous interroge pas.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Procédons par ordre. 
+                        <p class="stage">(Au Greffier.)</p> Où en étais-je&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Le buste. Je me permets de vous rappeler le buste…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Ah&nbsp;! oui. 
+                        <p class="stage">(À Heurtebise.)</p> Vous êtes de la maison&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Un ami de la maison.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">On demande un buste d’Orphée pour le triomphe. En connaissez-vous un&nbsp;?</p>
+                     <p xmlns="" class="stage">Heurtebise se dirige vers la porte et la ferme. On voit la tête sur le socle. Le Commissaire et le Greffier se retournent.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Il n’est pas ressemblant.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">C’est une très belle chose.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">De qui&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je l’ignore.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Il n’est pas signé, ce buste&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Non.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="" class="stage">, au Greffier</p>
+                     <p xmlns="">Prenez note&nbsp;: Tête présumée d’Orphée.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Non, non. C’est Orphée, de cela on est certain. Le doute ne porte que sur l’auteur.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Alors, mettez&nbsp;: Tête d’Orphée, par X. 
+                        <p class="stage">(À Heurtebise.)</p> Vos noms.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Plaît-il&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">On vous demande vos noms.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Car, pour le métier, on ne me trompe pas. J’ai l’œil. 
+                        <p class="stage">(Il s’approche et tapote les vitres.)</p> Vous êtes vitrier, mon gaillard&nbsp;!</p>
+                     <p xmlns="" class="speaker">Heurtebise, </p>
+                     <p xmlns="" class="stage">souriant.</p>
+                     <p xmlns="">Vitrier, je l’avoue.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Avouez, avouez, c’est encore le seul système de défense qui tienne debout.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Excusez-moi, Monsieur le Commissaire, mais, si nous lui demandions ses papiers…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Très juste. 
+                        <p class="stage">(Il s’assoit.)</p> Vos papiers.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je… je n’en ai pas.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Hein&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Oh&nbsp;! oh&nbsp;!</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Vous circulez sans vos papiers&nbsp;? Où sont-ils&nbsp;? Où demeurez-vous&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je demeure… C’est-à-dire, voilà&nbsp;: je demeurais…</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Je ne vous demande pas où vous demeuriez. Je vous demande l’adresse de votre domicile actuel.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Actuellement&nbsp;?… Actuellement je me trouve… sans domicile.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Pas de papiers, pas de domicile. Parfait. Vagabondage. Un ambulant&nbsp;! Votre affaire est claire, mon ami. Votre âge&nbsp;?</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">J’ai… 
+                        <p class="stage">(Il hésite.)</p>
+                     </p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="" class="stage">Il interroge en tournant le dos, les yeux au ciel, remuant le pied, comme les examinateurs.</p>
+                     <p xmlns="">Je suppose que vous avez du moins un âge…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Dix-huit ans.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="" class="stage">Il écrit.</p>
+                     <p xmlns="">Dix-sept ans.</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Dix-huit.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Né à…</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Une petite minute, Monsieur le Commissaire. Je gratte le chiffre. 
+                        <p class="stage">(Il gratte.)</p>
+                     </p>
+                     <p xmlns="" class="stage">Eurydice sort à moitié du miroir</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Heurtebise… Heurtebise. Je sais qui vous êtes. Venez, entrez, nous vous attendions. Il ne manque plus que vous.</p>
+                     <p xmlns="" class="stage">Heurtebise hésite.</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Dépêchez-vous, Heurtebise. Suivez ma femme. Je vais répondre à votre place. J’inventerai n’importe quoi.</p>
+                     <p xmlns="" class="stage">Heurtebise plonge dans le miroir.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène XII  La tête d’Orphée, Le Commissaire.Le Greffier</h2>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Monsieur le Commissaire, à vos ordres.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Né à…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Maisons-Laffitte.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Maison quoi&nbsp;?</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Maisons-Laffitte, deux f, deux t.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Puisque vous me dites votre lieu de naissance, vous ne refuserez plus de dire votre
+                        nom. Vous vous appelez…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Jean.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Jean comment&nbsp;?</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Jean Cocteau.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Coc…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">C. O. C. T. E. A. U. Cocteau.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">C’est un nom à coucher dehors. Il est vrai que vous couchez dehors. À moins que vous ne consentiez, maintenant, à nous dire votre domicile…</p>
+                     <p xmlns="" class="speaker">La tête d’Orphée</p>
+                     <p xmlns="">Rue d’Anjou, dix.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Vous devenez raisonnable.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">La signature.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Préparez une plume. 
+                        <p class="stage">(À Heurtebise.)</p>Approchez. Approchez, on ne vous mangera pas. 
+                        <p class="stage">(Il se retourne.)</p> Oh&nbsp;!</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Qu’y a-t-il&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Tonnerre&nbsp;! L’inculpé a disparu.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">C’est prodigieux&nbsp;!</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Prodigieux… Prodigieux… Il n’y a rien de prodigieux. 
+                        <p class="stage">(Il arpente la scène.)</p>Je ne crois pas aux prodiges. Une éclipse est une éclipse. Une table est une table. Un inculpé est un inculpé. Procédons par ordre. Cette porte…</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Impossible, Monsieur le Commissaire, pour sortir par cette porte il fallait bousculer
+                        ma chaise.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Reste la fenêtre.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Pour la fenêtre, il fallait passer devant nous. D’ailleurs, l’inculpé répondait. Il a répondu jusqu’à la dernière minute.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Alors&nbsp;?</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Alors, je n’y comprends rien.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Il faut qu’il existe quelque issue secrète dont l’assassin –&nbsp;car cette fuite nous
+                        apporte la preuve du crime&nbsp;–, dont l’assassin, disais-je, devait connaître l’existence.
+                        Sondez le mur.</p>
+                     <p xmlns="" class="stage">Le Greffier cogne. Recherches.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Le mur sonne plein.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Parfait. Puisque ce gaillard nous brûle la politesse et se cache, ne lui donnons pas
+                        la satisfaction de le chercher sous ses propres yeux. 
+                        <p class="stage">(À tue-tête.)</p> J’ai des hommes autour de la maison. Il ne peut faire deux pas dehors sans être pris et, s’il s’obstine, on le cernera
+                        jusqu’à ce que la faim l’oblige à sortir. Venez.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Quelle histoire&nbsp;!</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Il n’y a pas la moindre histoire. Vous voyez toujours des histoires partout.</p>
+                     <p xmlns="" class="stage">Ils sortent. Pendant qu’ils sortent et que le battant de la porte cache le buste,
+                        l’acteur substitue à sa tête la fausse tête. La scène reste vide</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="" class="stage">Il rentre.</p>
+                     <p xmlns="">Nous oublions le buste.</p>
+                     <p xmlns="" class="speaker">Le Greffier</p>
+                     <p xmlns="">Il ne faut pas revenir les mains vides.</p>
+                     <p xmlns="" class="speaker">Le Commissaire</p>
+                     <p xmlns="">Prenez-le.</p>
+                     <p xmlns="" class="stage">Le Greffier prend la tête. Ils sortent.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Scène&nbsp;XIII</h2>
+                     <p xmlns="" class="stage">Le décor monte au ciel. Entrent par la glace Eurydice et Orphée. Heurtebise les mène. Ils regardent leur maison comme s’ils&nbsp;la voyaient pour la première
+                        fois. Ils s’asseyent à table. Eurydice désigne sa droite à Heurtebise. Ils sourient. Ils respirent le calme.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Tu voulais du vin, je crois, mon chéri.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns=""><a class="note" onclick="affiche('neDpRYj')">✱</a>Attends. D’abord la prière. 
+                        <p class="stage">(Il se lève ainsi qu’Eurydice et Heurtebise. Il récite.)</p>Mon Dieu, nous vous remercions de nous avoir assigné notre demeure et notre ménage
+                        comme seul paradis et de nous avoir ouvert votre paradis. Nous vous remercions de nous avoir envoyé Heurtebise et nous nous accusons de n’avoir
+                        pas reconnu notre ange gardien. Nous vous remercions d’avoir sauvé Eurydice parce que, par amour, elle a tué le diable
+                        sous la forme d’un cheval et qu’elle en est morte. Nous vous remercions de m’avoir sauvé parce que j’adorais la poésie et que la poésie
+                        c’est vous. Ainsi soit-il.</p>
+                     <p xmlns="" class="stage">Ils se rasseyent.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Je vous sers&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="" class="stage">, respectueusement</p>
+                     <p xmlns="">Laissez Eurydice…</p>
+                     <p xmlns="" class="stage">Eurydice lui verse à boire.</p>
+                     <p xmlns="" class="speaker">Heurtebise</p>
+                     <p xmlns="">Peut-être arriverons-nous enfin à déjeuner.</p>Villefranche-sur-Mer, 24&nbsp;septembre 1925.</section>
+               </div>
+            </div>
+         </div>
+         <div id="OqhtOfP" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('OqhtOfP').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('OqhtOfP')">
+                     <option value="divoire1922_2300115">divoire1922, phrase 115</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('OqhtOfP',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('OqhtOfP',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8300035">
+               <h5>cocteau1927, phrase 35</h5>
+               <p><span class="w">Tant </span><span class="w">mieux</span>. (<span class="w">Au </span><span data-type="GN"><span class="w">cheval</span></span>.) <span data-type="GN"><span class="mots" data-href="2300115_2" data-corresp="divoire1922_2300115">Mer</span></span>. <span data-type="GN"><span class="mots" data-href="2300115_2" data-corresp="divoire1922_2300115">Mer</span></span>... <span class="w">et </span><span class="w">après </span><span data-type="GN"><span class="lemmes" data-href="2300115_2" data-corresp="divoire1922_2300115">mer</span></span>&nbsp;? <span class="w">M</span>. <span class="w">E</span>. <span class="w">R</span>., <span data-type="GN"><span class="lemmes" data-href="2300115_2" data-corresp="divoire1922_2300115">mer</span></span>. <span data-type="GV"><span class="w">J’</span><span class="w">écoute</span></span>. <span data-type="GV"><span class="w">Parle</span></span>. <span data-type="GV"><span class="w">Parle </span><span class="w">-moi</span></span>, <span data-type="GN"><span class="w">cheval</span></span>. <span data-type="GN"><span class="w">Cheval</span></span>&nbsp;! </p>
+            </div>
+            <div class="target">
+               <div id="divoire1922_2300115" data-id="2300115">
+                  <h5>divoire1922, phrase 115</h5>
+                  <p><span>Et </span><span data-type="GN"><span class="mots mots lemmes lemmes" data-id="2300115_2">Mer</span></span>, <span data-type="GN"><span>chant </span><span>de </span><span>la </span><span data-type="GN"><span>mer</span></span></span>, <span data-type="GN"><span>horizon </span><span>de </span><span>la </span><span data-type="GN"><span>mer</span></span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="gxfqpmx" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('gxfqpmx').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('gxfqpmx')">
+                     <option value="duryer1702_2400051">duryer1702, phrase 51</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('gxfqpmx',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('gxfqpmx',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8300762">
+               <h5>cocteau1927, phrase 762</h5>
+               <p><span data-type="GV"><span class="w">Il </span><span class="w">vous </span><span class="w">a </span><span class="w">fallu </span><span class="w">la</span> </span><span data-type="GV"><span class="lemmes" data-href="2400051_54" data-corresp="duryer1702_2400051">perdre</span> </span><span data-type="GN"><span class="w">une </span><span class="w">première </span><span class="mots" data-href="2400051_74" data-corresp="duryer1702_2400051">fois</span> </span><span class="w">pour </span><span data-type="GV"><span class="w">vous </span><span class="w">en </span><span class="synos" data-href="2400051_65" data-corresp="duryer1702_2400051">rendre</span> </span><span data-type="GN"><span class="synos" data-href="2400051_42" data-corresp="duryer1702_2400051">compte</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">vous </span><span class="synos" data-href="2400051_65" data-corresp="duryer1702_2400051">venez </span><span class="w">de </span><span class="w">la</span> </span><span data-type="GV"><span class="lemmes" data-href="2400051_54" data-corresp="duryer1702_2400051">perdre</span> </span><span data-type="GN"><span class="w">une </span><span class="w">seconde </span><span class="mots" data-href="2400051_74" data-corresp="duryer1702_2400051">fois</span></span>, <span data-type="GV"><span class="w">de </span><span class="w">la </span><span class="lemmes" data-href="2400051_54" data-corresp="duryer1702_2400051">perdre </span><span class="w">lâchement</span> </span><span class="w">et </span><span data-type="GV"><span class="w">de </span><span class="w">la </span><span class="lemmes" data-href="2400051_54" data-corresp="duryer1702_2400051">perdre </span><span class="w">tragiquement</span></span>, <span data-type="GV"><span class="w">de </span><span class="w">vous </span><span class="lemmes" data-href="2400051_54" data-corresp="duryer1702_2400051">perdre</span></span>, <span data-type="GV"><span class="w">de </span><span class="synos" data-href="2400051_28" data-corresp="duryer1702_2400051">tuer</span> </span><span data-type="GN"><span class="w">une </span><span class="lemmes" data-href="2400051_9" data-corresp="duryer1702_2400051">morte</span></span>, <span data-type="GV"><span class="w">de </span><span class="synos" data-href="2400051_65" data-corresp="duryer1702_2400051">commettre </span><span class="w">de</span> </span><span data-type="GN"><span class="synos" data-href="2400051_45" data-corresp="duryer1702_2400051">gaieté </span><span class="w">de </span><span data-type="GN"><span class="w">coeur</span></span> </span><span data-type="GN"><span class="w">un </span><span class="w">acte </span><span class="w">irréparable</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="duryer1702_2400051" data-id="2400051">
+                  <h5>duryer1702, phrase 51</h5>
+                  <p><span>Et </span><span data-type="GN"><span>Orphée</span> </span><span data-type="GV"><span>eût </span><span>tant </span><span>de</span> </span><span data-type="GN"><span>ressentiment </span><span>de </span><span>sa </span><span data-type="GN"><span class="lemmes" data-id="2400051_9">mort</span></span> </span><span>qu’</span><span data-type="GV"><span>il </span><span>l’</span><span>a</span> </span><span data-type="GV"><span>suivit</span> </span><span>jusqu’</span><span>aux </span><span data-type="GN"><span>Enfers</span></span>, <span data-type="GV"><span>c’</span><span>est </span><span>à </span><span>dire</span></span>, <span>ou </span><span>qu’</span><span data-type="GV"><span>il </span><span>en </span><span class="synos" data-id="2400051_28">mourut </span><span>en</span> </span><span data-type="GN"><span>tristesse</span></span>, <span>ou </span><span>qu’</span><span data-type="GV"><span>il </span><span>en </span><span>fut </span><span>si </span><span>affligé</span> </span><span>pendant </span><span>tout </span><span data-type="GN"><span>le </span><span class="synos" data-id="2400051_42">reste </span><span>de </span><span>sa </span><span data-type="GN"><span class="synos" data-id="2400051_45">vie</span></span></span>, <span data-type="GV"><span>qu’</span><span>on </span><span>eut </span><span>dit</span> </span><span>qu’</span><span data-type="GV"><span>il </span><span>la </span><span class="lemmes lemmes lemmes lemmes lemmes" data-id="2400051_54">perdoit </span><span>à</span> </span><span>chaque </span><span data-type="GN"><span>instant</span></span>&nbsp;: <span>ce </span><span data-type="GV"><span>que </span><span>l’</span><span>on </span><span>veut </span><span>nous </span><span class="synos" data-id="2400051_65">faire</span> </span><span data-type="GV"><span>penser </span><span>en </span><span>feignant</span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>l’</span><span>avoit</span> </span><span data-type="GN"><span>deux </span><span class="mots mots" data-id="2400051_74">fois </span><span>perduë</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="ZyXeHAQ" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ZyXeHAQ').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ZyXeHAQ')">
+                     <option value="ballanche1829_3200955">ballanche1829, phrase 955</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ZyXeHAQ',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ZyXeHAQ',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8300077">
+               <h5>cocteau1927, phrase 77</h5>
+               <p><span data-type="GN"><span class="w">Ta </span><span class="synos" data-href="3200955_15" data-corresp="ballanche1829_3200955">vie</span> </span><span data-type="GV"><span class="w">se </span><span class="synos" data-href="3200955_5" data-corresp="ballanche1829_3200955">passe </span><span class="w">à </span><span class="w">dorloter</span> </span><span data-type="GN"><span class="w">ce </span><span class="w">cheval</span></span>, <span data-type="GV"><span class="w">à </span><span class="lemmes" data-href="3200955_29" data-corresp="ballanche1829_3200955">interroger</span> </span><span data-type="GN"><span class="w">ce </span><span class="w">cheval</span></span>, <span data-type="GV"><span class="w">à </span><span class="w">espérer</span> </span><span class="w">que </span><span data-type="GN"><span class="w">ce </span><span class="w">cheval</span> </span><span data-type="GV"><span class="synos" data-href="3200955_5" data-corresp="ballanche1829_3200955">va </span><span class="w">te </span><span class="mots" data-href="3200955_20" data-corresp="ballanche1829_3200955">répondre</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200955" data-id="3200955">
+                  <h5>ballanche1829, phrase 955</h5>
+                  <p><span>Tous </span><span data-type="GN"><span>ces </span><span>prodiges</span> </span><span data-type="GV"><span>furent </span><span class="synos" data-id="3200955_5">opérés </span><span>en</span> </span><span data-type="GN"><span>un </span><span>instant</span></span>, <span>car </span><span data-type="GN"><span>le </span><span>coeur </span><span>de </span><span>l’</span><span data-type="GN"><span class="synos" data-id="3200955_15">homme</span></span> </span><span data-type="GV"><span>ne </span><span>refrise </span><span>jamais </span><span>de</span> </span><span data-type="GV"><span class="mots" data-id="3200955_20">répondre </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>instant </span><span>même</span></span>, <span>lorsqu’</span><span data-type="GV"><span>il </span><span>est </span><span class="lemmes" data-id="3200955_29">interrogé </span><span>par</span> </span><span data-type="GN"><span>la </span><span>voix </span><span>toute </span><span>puissante </span><span>de</span> </span><span data-type="GN"><span>la </span><span>vérité</span></span>, <span>lorsque </span><span>toutes </span><span data-type="GN"><span>ses </span><span>facultés</span> </span><span data-type="GV"><span>sont </span><span>interrogées </span><span>à-la-fois</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="neDpRYj" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('neDpRYj').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('neDpRYj')">
+                     <option value="collande1752_6200077">collande1752, phrase 77</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('neDpRYj',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('neDpRYj',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8301057">
+               <h5>cocteau1927, phrase 1057</h5>
+               <p><span data-type="GV"><span class="lemmes" data-href="6200077_189" data-corresp="collande1752_6200077">Attends</span></span>. <span class="w">D’</span><span data-type="GN"><span class="mots" data-href="6200077_53" data-corresp="collande1752_6200077">abord</span> </span><span data-type="GN"><span class="w">la </span><span class="w">prière</span></span>. (<span data-type="GV"><span class="w">Il </span><span class="w">se </span><span class="synos" data-href="6200077_82" data-corresp="collande1752_6200077">lève </span><span class="w">ainsi</span> </span><span class="w">qu’</span><span data-type="GN"><span class="lemmes" data-href="6200077_109" data-corresp="collande1752_6200077">Eurydice</span> </span><span class="w">et </span><span data-type="GN"><span class="w">Heurtebise</span></span>. <span data-type="GV"><span class="w">Il </span><span class="synos" data-href="6200077_278" data-corresp="collande1752_6200077">récite</span></span>.) </p>
+            </div>
+            <div class="target">
+               <div id="collande1752_6200077" data-id="6200077">
+                  <h5>collande1752, phrase 77</h5>
+                  <p><span data-type="GV"><span>Il </span><span>la </span><span>fit </span><span>enlever</span> </span><span data-type="GN"><span>un </span><span>jour</span> </span><span data-type="GV"><span>qu’</span><span>elle </span><span>se </span><span>baignoit </span><span>dans</span> </span><span data-type="GN"><span>une </span><span>Fontaine</span></span>, <span>une </span><span>de </span><span data-type="GN"><span>ses </span><span>compagnes</span> </span><span data-type="GV"><span>qui </span><span>en </span><span>fut</span> </span><span data-type="GN"><span>témoin</span> </span><span data-type="GV"><span>vint </span><span>m’</span><span>annoncer</span> </span><span data-type="GN"><span>cette </span><span>triste </span><span>nouvelle</span></span>&nbsp;: <span data-type="GV"><span>j’</span><span>en </span><span>pensai </span><span>mourir </span><span>de</span> </span><span data-type="GN"><span>douleur</span></span>, <span>et </span><span data-type="GV"><span>je </span><span>fus</span> </span><span>quelques </span><span data-type="GN"><span>instans </span><span>accablé </span><span>sous </span><span>le </span><span data-type="GN"><span>poids </span><span>de </span><span>mon </span><span>chagrin</span></span></span>, <span data-type="GV"><span>je </span><span>formai </span><span>d’</span> </span><span data-type="GN"><span class="mots" data-id="6200077_53">abord</span> </span><span data-type="GN"><span>cent </span><span>résolutions </span><span>plus </span><span>violentes</span> </span><span data-type="GN"><span>les </span><span>unes </span><span>que </span><span>les </span><span data-type="GN"><span>autres</span></span> </span><span>et </span><span data-type="GV"><span>qui </span><span>tendoient</span> </span><span>toutes </span><span data-type="GV"><span>à </span><span>m’</span><span>arracher</span> </span><span data-type="GN"><span>la </span><span>vie</span></span>&nbsp;; <span data-type="GV"><span>enfin </span><span>je </span><span>m’</span><span>arrêtai </span><span>à </span><span>celle</span> </span><span>-ci</span>, <span data-type="GAdj"><span>je </span><span class="synos" data-id="6200077_82">pris</span> </span><span data-type="GN"><span>le </span><span>parti</span> </span><span data-type="GV"><span>d’</span><span>aller</span> </span><span data-type="GV"><span>trouver</span> </span><span data-type="GN"><span>le </span><span>Roi</span></span>, <span data-type="GN"><span>cause </span><span>de </span><span>mes </span><span data-type="GN"><span>malheurs</span></span></span>, <span data-type="GV"><span>ne </span><span>doutant </span><span>pas</span> </span><span>que </span><span data-type="GAdj"><span>touché </span><span>par</span> </span><span data-type="GN"><span>mes </span><span>larmes</span></span>, <span data-type="GV"><span>il </span><span>ne </span><span>me </span><span>rendit</span> </span><span data-type="GN"><span class="lemmes" data-id="6200077_109">Euridice</span></span>&nbsp;; <span data-type="GV"><span>je </span><span>parvins </span><span>à</span> </span><span data-type="GN"><span>son </span><span>Palais</span></span>&nbsp;; <span data-type="GV"><span>je </span><span>me </span><span>jettai </span><span>à</span> </span><span data-type="GN"><span>ses </span><span>pieds</span></span>&nbsp;; <span data-type="GV"><span>je </span><span>les </span><span>embrassai</span> </span><span>et </span><span data-type="GV"><span>je </span><span>le </span><span>suppliai </span><span>en </span><span>répandant</span> </span><span data-type="GN"><span>un </span><span>torrent </span><span>de </span><span data-type="GN"><span>larmes</span></span> </span><span>de </span><span data-type="GV"><span>ne </span><span>pas </span><span>me </span><span>séparer </span><span>d’</span> </span><span data-type="GN"><span>une </span><span>épouse</span> </span><span data-type="GV"><span>qui </span><span>m’</span><span>étoit </span><span>plus</span> </span><span data-type="GAdj"><span>chere</span> </span><span>que </span><span data-type="GN"><span>la </span><span>vie</span></span>, <span>et </span><span data-type="GV"><span>de </span><span>rendre</span> </span><span data-type="GN"><span>Euridice</span> </span><span>à </span><span data-type="GN"><span>ma </span><span>tendresse</span></span>, <span data-type="GN"><span>la </span><span>vraie </span><span>douleur</span> </span><span data-type="GV"><span>a</span> </span><span data-type="GN"><span>une </span><span>éloquence </span><span>d’</span><span>autant </span><span>plus </span><span>persuasive</span></span>, <span data-type="GV"><span>qu’</span><span>elle </span><span>est</span> </span><span data-type="GN"><span>fille </span><span>de </span><span>la </span><span data-type="GN"><span>vérité</span></span></span>&nbsp;: <span data-type="GV"><span>elle </span><span>fit</span> </span><span data-type="GN"><span>l’</span><span>effet</span> </span><span data-type="GV"><span>que </span><span>j’</span><span>en </span><span>avois </span><span class="lemmes" data-id="6200077_189">attendu</span></span>, <span data-type="GN"><span>le </span><span>Roi </span><span>touché </span><span>de </span><span>mon </span><span data-type="GN"><span>amour</span></span> </span><span data-type="GV"><span>me </span><span>permit </span><span>de </span><span>voir</span> </span><span data-type="GN"><span>Euridice</span> </span><span>et </span><span>de </span><span data-type="GN"><span>la </span><span>ramener</span> </span><span>avec </span><span>moi</span>&nbsp;: <span>mais </span><span data-type="GV"><span>il </span><span>y </span><span>mit </span><span>pour</span> </span><span data-type="GN"><span>condition</span> </span><span>que </span><span data-type="GV"><span>je </span><span>ne </span><span>ferois </span><span>valoir </span><span>auprès</span> </span><span>d’</span><span>elle </span><span>que </span><span data-type="GN"><span>mon </span><span>amour</span> </span><span>et </span><span>non </span><span data-type="GN"><span>les </span><span>droits </span><span>d’</span><span data-type="GN"><span>époux</span></span></span>, <span data-type="GV"><span>que </span><span>pouvois </span><span>-je </span><span>désirer</span> </span><span>de </span><span>plus</span>&nbsp;! <span data-type="GAdj"><span>persuadé </span><span>de</span> </span><span data-type="GN"><span>la </span><span>vive </span><span>tendresse </span><span>de </span><span>mon </span><span>adorable </span><span data-type="GN"><span>Euridice</span></span></span>, <span>je </span><span data-type="GAdj"><span>m’</span><span>en </span><span>cru </span><span>déjà</span> </span><span data-type="GN"><span>possesseur</span></span>&nbsp;; <span data-type="GV"><span>je </span><span>volai </span><span>à</span> </span><span data-type="GN"><span>son </span><span>appartement </span><span>bien </span><span>persuadé </span><span>de</span> </span><span data-type="GN"><span>son </span><span>consentement</span></span>, <span>mais </span><span data-type="GV"><span>quelle </span><span>fut</span> </span><span data-type="GN"><span>ma </span><span>surprise</span> </span><span>lorsque </span><span data-type="GV"><span>loin </span><span>de </span><span>me </span><span class="synos" data-id="6200077_278">montrer</span> </span><span data-type="GN"><span>ces </span><span>empressemens </span><span>si </span><span>naturels</span> </span><span>quand </span><span data-type="GV"><span>on </span><span>a </span><span>été </span><span>longtems</span> </span><span data-type="GAdj"><span>séparé </span><span>d’</span> </span><span data-type="GN"><span>un </span><span>objet </span><span>chéri</span></span>, <span data-type="GV"><span>elle </span><span>me </span><span>reçut </span><span>avec</span> </span><span data-type="GN"><span>l’</span><span>abord </span><span>le </span><span>plus </span><span>glacé</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="ydMmVDN" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ydMmVDN').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ydMmVDN')">
+                     <option value="liking2000_6500713">liking2000, phrase 713</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ydMmVDN',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ydMmVDN',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8300860">
+               <h5>cocteau1927, phrase 860</h5>
+               <p><span class="w">Et </span><span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="w">du</span> </span><span data-type="GN"><span class="mots" data-href="6500713_53" data-corresp="liking2000_6500713">vide</span></span>, <span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="w">du</span> </span><span data-type="GN"><span class="mots" data-href="6500713_53" data-corresp="liking2000_6500713">vide</span> </span><span class="mots" data-href="6500713_25" data-corresp="liking2000_6500713">partout</span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500713" data-id="6500713">
+                  <h5>liking2000, phrase 713</h5>
+                  <p><span data-type="GV"><span>Je </span><span>vois</span> </span><span data-type="GN"><span>les </span><span>sacrifices</span></span>&nbsp;: <span data-type="GV"><span>je </span><span>suis </span><span>condamné</span></span>&nbsp;; <span data-type="GAdj"><span>condamné</span> </span><span data-type="GV"><span>à </span><span>marcher</span></span>&nbsp;; <span>toujours </span><span>de </span><span data-type="GN"><span>l’</span><span>avant</span></span>. <span data-type="GV"><span>partir </span><span>de</span> </span><span data-type="GN"><span>nulle </span><span>part</span> </span><span>et </span><span data-type="GV"><span>de </span><span class="mots" data-id="6500713_25">partout </span><span>partir </span><span>de </span><span>tout</span> </span><span>et </span><span>de </span><span data-type="GN"><span>mes </span><span>riens</span> </span><span data-type="GV"><span>partir </span><span>enraciné </span><span>dans</span> </span><span data-type="GN"><span>mon </span><span>désenracinement</span> </span><span data-type="GV"><span>me </span><span>développer </span><span>dans</span> </span><span data-type="GN"><span>mon </span><span>sous-développement</span> </span><span data-type="GV"><span>alphabétiser</span> </span><span data-type="GN"><span>mon </span><span>analphabétisme </span><span>partir </span><span>vide </span><span>de</span> </span><span data-type="GN"><span>mon </span><span>trop </span><span>plein </span><span>de </span><span data-type="GN"><span class="mots mots" data-id="6500713_53">vide</span></span> </span><span data-type="GV"><span>partir </span><span>fort </span><span>de</span> </span><span data-type="GN"><span>ma </span><span>faiblesse</span> </span><span data-type="GV"><span>partir </span><span>mort </span><span>de</span> </span><span data-type="GN"><span>ma </span><span>vie </span><span>de </span><span data-type="GN"><span>mort</span></span> </span><span data-type="GV"><span>marcher</span> </span><span>et </span><span data-type="GV"><span>vivre </span><span>éternellement</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="FbrZPEv" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('FbrZPEv').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('FbrZPEv')">
+                     <option value="deshayes1792_7800011">deshayes1792, phrase 11</option>
+                     <option value="ferry2019_8200036">ferry2019, phrase 36</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('FbrZPEv',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('FbrZPEv',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8300862">
+               <h5>cocteau1927, phrase 862</h5>
+               <p> (<span class="w">Comme </span><span data-type="GN"><span class="w">une </span><span class="synos" data-href="7800011_13" data-corresp="deshayes1792_7800011">plainte</span></span>.) <span data-type="GN"><span class="mots" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>... <span data-type="GN"><span class="mots" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>... <span data-type="GN"><span class="mots" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>... <span data-type="GN"><span class="mots" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>... <span data-type="GN"><span class="mots" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>... </p>
+            </div>
+            <div class="target">
+               <div id="deshayes1792_7800011" data-id="7800011" style="display:none">
+                  <h5>deshayes1792, phrase 11</h5>
+                  <p><span data-type="GN"><span class="lemmes lemmes lemmes lemmes lemmes" data-id="7800011_1">Euridice</span></span>&nbsp;! <span data-type="GN"><span>euridice</span></span>&nbsp;! <span data-type="GV"><span>tu </span><span>te </span><span>plaisais </span><span>dans</span> </span><span data-type="GN"><span>ce </span><span>bois </span><span>de </span><span>ma </span><span data-type="GN"><span class="synos" data-id="7800011_13">voix</span></span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>retentisse</span></span>, <span data-type="GN"><span>euridice</span></span>&nbsp;! <span data-type="GN"><span>euridice</span></span>&nbsp;! </p>
+               </div>
+               <div id="ferry2019_8200036" data-id="8200036">
+                  <h5>ferry2019, phrase 36</h5>
+                  <p><span data-type="GN"><span class="mots mots mots mots mots" data-id="8200036_1">Eurydice</span></span>&nbsp;!?! <span data-type="GN"><span>Eurydice</span></span>&nbsp;! <span data-type="GN"><span>Eury</span></span>... <span>Non</span>... <span data-type="GN"><span>Eurydice</span></span>, <span>non</span>... <span data-type="GV"><span>reviens</span></span>... </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

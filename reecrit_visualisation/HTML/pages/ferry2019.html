@@ -1,0 +1,547 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/ferry2019.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Luc Ferry, Clotilde Bruneau, Diego Oddi <em>Orphée et EurydicePrécédé de Déméter de Pérséphone</em></h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Orphée&nbsp;?</p>
+                     <p xmlns="">Réveille-toi, mon amour&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mmmh…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je meurs de faim&nbsp;!</p>
+                     <p xmlns="">Je vais aller cueillir quelques fruits.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">À peine levée, tu m’abandonnes déjà&nbsp;!&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je ne peux malheureusement pas survivre en me
+                        nourrissant seulement de ta musique.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mais Hélios a tout juste commencé sa course&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Parfait, je verrai mieux les figues et les
+                        noisettes&nbsp;!</p>
+                     <p xmlns="">Et ton appétit aura le temps de grandir en mon
+                        absence&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mon appétit pour toi est constant, Eurydice, tu le
+                        sais. Le reste ne m’intéresse pas&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Heureusement que je m’y intéresse pour deux, sinon
+                        nous aurions bien vite rejoint le royaume d’Hadès.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">J’ai rêvé d’un chant cette nuit. Tu ne veux pas l’entendre avant de me quitter&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Hahaha, tu tiens vraiment à me faire dépérir&nbsp;?
+                        Tu sais que je ne pourrai plus partir si je
+                        t’entends jouer, sorcier que tu es&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Très bien, je me rends&nbsp;! Va chercher ces maudits fruits&nbsp;!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Sois un peu patient.</p>
+                     <p xmlns="">Nous mangerons des figues ensemble, et nous
+                        pourrons nous remettre au lit&nbsp;!</p>
+                     <p xmlns="">Je ne pars pas longtemps…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Le temps sera toujours trop long, en ton
+                        absence.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Allons, mon amour…</p>
+                     <p xmlns="">…Nous avons toute une vie devant nous.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Aristée</p>
+                     <p xmlns="">Où cours-tu comme ça, belle dryadeLes dryades sont des nymphes liées aux arbres.&nbsp;?</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je rentre chez moi.</p>
+                     <p xmlns="" class="speaker">Aristée</p>
+                     <p xmlns="">Tu ne préférerais pas rester en ma compagnie&nbsp;?
+                        Tu ne le regretteras pas.</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je suis attendue.</p>
+                     <p xmlns="" class="speaker">Aristée</p>
+                     <p xmlns="">Allons, tu sais à qui tu t’adresses&nbsp;? Je suis Aristée, fils d’Apollon et…</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Je m’en moque, laisse-moi.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Que…</p>
+                     <p xmlns="" class="speaker">Aristée</p>
+                     <p xmlns="">Reste là&nbsp;!! Je n’en ai pas fini avec toi&nbsp;!!</p>
+                     <p xmlns="">Tu ne m’échapperas pas&nbsp;!!</p>
+                     <p xmlns="" class="speaker">Eurydice</p>
+                     <p xmlns="">Aah&nbsp;!</p>
+                     <p xmlns="">Orphée…</p>
+                     <section class="div level3">
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="">Hélios est si haut dans le ciel… Où
+                           est-elle&nbsp;?</p>
+                        <p xmlns=""><a class="note" onclick="affiche('EttAuMp')">✱</a>Eurydice&nbsp;!?!</p>
+                        <p xmlns="">Eurydice&nbsp;!</p>
+                        <p xmlns="">Eury…</p>
+                        <p xmlns="">Non…</p>
+                        <p xmlns="">Eurydice, non… reviens…</p>
+                        <p xmlns="">Je ne peux pas vivre sans toi&nbsp;!</p>
+                     </section>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Une femme</p>
+                     <p xmlns="">Orphée&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Va-t’en.</p>
+                     <p xmlns="" class="speaker">Une femme</p>
+                     <p xmlns="">Allons, reprends-toi… Ce n’est pas raisonnable&nbsp;!
+                        Ça fait des semaines, maintenant…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Et alors&nbsp;?</p>
+                     <p xmlns="" class="speaker">Une femme</p>
+                     <p xmlns="">Tu devrais essayer d’accepter sa mort, tu ne crois
+                        pas&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tais-toi, ou tu regretteras d’avoir passé cette
+                        porte.</p>
+                     <p xmlns="" class="speaker">Une femme</p>
+                     <p xmlns="">Tu n’es pas le seul à souffrir, tu sais&nbsp;!
+                        Toutes les nymphes sont boulversées par sa
+                        mort&nbsp;! Mais elle est au Royaume souterrain,
+                        maintenant.</p>
+                     <p xmlns="">Elle ne peut pas plus en sortir que toi y
+                        entrer&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="stage">Sur les berges du fleuve Achéron.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tu es Charon, le nocher des Enfers, n’est-ce
+                        pas&nbsp;?</p>
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">Que me veux-tu, mortel&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Prends-moi sur ta barque, je t’en supplie&nbsp;! Je dois
+                        entrer aux Enfers&nbsp;!</p>
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">C’est impossible. Seules les âmes peuvent monter
+                        sur ma barque. Ce sont les ordres.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je te donnerai ce que tu veux, je suis…</p>
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">N’insiste pas&nbsp;!</p>
+                     <p xmlns="">Tu ne franchiras jamais la porte des Enfers… D’ailleurs, si tu t’y aventuras, Cerbère se chargerait de te mettre en
+                        pièces&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">Retourne d’où tu viens.</p>
+                     <p xmlns="">Que…</p>
+                     <p xmlns="">Cette voix…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Il est temps pour moi de partir, Charon, puisque
+                        c’est ce que tu souhaites.</p>
+                     <p xmlns="">Je t’ai assez dérangé.</p>
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">Non&nbsp;!! Je t’en prie, joue encore pour moi&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Alors accepte de me conduire jusqu’à la porte des
+                        Enfers&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Charon</p>
+                     <p xmlns="">Si c’est vraiment ce que tu veux… Continue à jouer
+                        et tu pourras monter.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <section class="div level3">
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="">Merci Charon.</p>
+                        <p xmlns="" class="speaker">Charon</p>
+                        <p xmlns="">Je ne suis qu’un passeur. Des dangers dont tu n’as pas idée t’attendent, en descendant de
+                           cette barque.</p>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="">Je n’ai pas peur.</p>
+                        <p xmlns="">J’ai l’amour d’Eurydice avec moi.</p>
+                     </section>
+                     <section class="div level3">
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">, à Cerbère.</p>
+                        <p xmlns="">Alors, c’est toi, Cerbère, hein&nbsp;? On dirait que tu aimes ma musique, toi aussi…</p>
+                     </section>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2"></section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2"></section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2"></section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Approche, Orphée.</p>
+                     <p xmlns="">Ta musique résonne partout dans les Enfers&nbsp;! Il
+                        paraît même que mes suppliciés ont obtenu quelques secondes de répit grâce à
+                        elle…</p>
+                     <p xmlns="">…Rien que pour cet exploit, tu mérites bien que
+                        j’écoute ce qui tu as à me dire.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns=""><a class="note" onclick="affiche('JdYXvnp')">✱</a>Merci, ô Hadès. C’est poussé par le désespoir que
+                        j’ai fait tout ce chemin… Et toi seul peux y
+                        remédier&nbsp;!</p>
+                     <p xmlns="">Je t’en supplie, rends-moi Eurydice&nbsp;! J’ai traversé ton royaume sans crainte pour ma vie, parce
+                        que, sans elle, je suis comme l’une des âmes qui hantes ces lieux.</p>
+                     <p xmlns="">Si je ne peux repartir d’ici à ses côtés, autant me
+                        garder avec toi.</p>
+                     <p xmlns="">Je serais plus à ma place parmi les morts qu’à la
+                        surface.</p>
+                     <p xmlns="">Sans Eurydice, je ressemble un peu plus à tes
+                        ombres chaque jour qui passe.</p>
+                     <p xmlns="" class="speaker">Perséphone</p>
+                     <p xmlns="">Tu en as assez dit.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Perséphone</p>
+                     <p xmlns="">C’est bien la première fois qu’un mortel ose
+                        s’aventurer ici avec des sentiments si purs comme bouclier… Ton entêtement n’a d’égal que ta naïveté&nbsp;!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je…</p>
+                     <p xmlns="" class="speaker">Perséphone</p>
+                     <p xmlns="">Tu as réussi à nous toucher. Si ta musique ne
+                        l’avait pas déjà fait, ton amour s’en serait chargé.</p>
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Nous voulons récompenser la noblesse de tes
+                        sentiments…</p>
+                     <p xmlns="">Nous allons te laisser une chance. Eurydice quittera les Enfers à tes côtés.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Oh merci, merci&nbsp;!! Ma musique chantera à jamais vos
+                        louanges&nbsp;!</p>
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Eurydice&nbsp;!</p>
+                     <p xmlns="" class="speaker">Perséphone</p>
+                     <p xmlns="">Fais attention, Orphée, il te faudra respecter une
+                        règle.</p>
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Ce présent ne vient pas sans contrainte…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Tout ce que vous voudrez&nbsp;!</p>
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Alors écoute-moi attentivement, ou tu perdras
+                        Eurydice, et à jamais cette fois-ci&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Hadès</p>
+                     <p xmlns="">Eurydice marchera en silence derrière toi.
+                        Ne te retourne pas, pas une seule fois&nbsp;!</p>
+                     <p xmlns="">Jamais, tant que vous n’aurez rejoint la surface,
+                        tu ne devras la voir.</p>
+                     <p xmlns="">Si tu ne respectes pas cette règle, elle retournera
+                        parmi les ombres et elle sera perdue.</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Alors c’est ici…</p>
+                     <p xmlns="">Si j’en crois Hadès, il n’y a qu’à prendre ce
+                        passage et nous rejoindrons la surface… Nous y sommes presque, Eurydice&nbsp;!</p>
+                     <p xmlns="">Tu es prête à retrouver la vie&nbsp;?</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Haa.. haa…</p>
+                     <p xmlns="">Je… je n’en peux plus&nbsp;!</p>
+                     <p xmlns="">Je reprends mon souffle… Juste quelques
+                        instants…</p>
+                     <p xmlns="">Je pense qu’on doit être environ à moitié.
+                        Courage, mon amour&nbsp;!</p>
+                     <p xmlns="">Enfin si tu me suis toujours… Si les monarques
+                        infernaux ne se sont pas moqués de moi&nbsp;!</p>
+                     <p xmlns="">J’ai tellement hâte d’entendre de nouveau ta
+                        voix…</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Je ne sens pas ta présence. Je… j’ai peur de t’avoir perdue en chemin&nbsp;! Et si tu t’est perdue, comment faire&nbsp;?</p>
+                     <p xmlns="">Eurydice&nbsp;? Eurydice, tu es là&nbsp;?</p>
+                     <p xmlns="">Je… je ne sais pas si tu es vraiment derrière moi.
+                        Peut-être que tu peux me faire un signe,
+                        quelque chose qui…</p>
+                     <p xmlns="">… Ah&nbsp;!</p>
+                     <p xmlns="">Ça y est!&nbsp;! Vite&nbsp;!</p>
+                     <p xmlns="">Tu… tu me suis&nbsp;? Eurydice&nbsp;!</p>
+                     <p xmlns="">Eurydice&nbsp;?</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2"></section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="stage">Quelques mois plus tard…</p>
+                     <p xmlns="" class="speaker">Un homme</p>
+                     <p xmlns="">Orphée&nbsp;?</p>
+                     <p xmlns="">Orphée…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Mmmh…</p>
+                     <p xmlns="" class="speaker">Un homme</p>
+                     <p xmlns="">Je dois rentrer chez moi…</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">D’accord.</p>
+                     <p xmlns="">Quand revendras-tu&nbsp;?</p>
+                     <p xmlns="" class="speaker">Un homme</p>
+                     <p xmlns="">Dès que je pourrai… Mais je dois tout de même
+                        rendre visite à ma femme ou elle va finir par envoyer la garde&nbsp;!</p>
+                     <p xmlns="">Tu m’attendras&nbsp;?</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Qui sait… Je penserai peut-être même à toi en
+                        chantant.</p>
+                     <p xmlns="" class="speaker">Un homme</p>
+                     <p xmlns="">Toi, tu occupes déjà toutes mes pensées.</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Un homme</p>
+                     <p xmlns="">Tâche de ne pas me remplacer trop vite&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Encore un…</p>
+                     <p xmlns="" class="speaker">Deuxième femme</p>
+                     <p xmlns="">Il les lui faut tous, à ce qu’on dirait&nbsp;!&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Dire que je le plaignais à la mort
+                        d’Eurydice&nbsp;!</p>
+                     <p xmlns="" class="speaker">Troisième femme</p>
+                     <p xmlns="">Peuh, quel hypocrite&nbsp;!</p>
+                     <p xmlns="">À toutes, il a fait qu’aucune ne saurait la
+                        remplacer&nbsp;! Il nous a toutes humiliées&nbsp;!</p>
+                     <p xmlns="" class="speaker">Quatrième femme</p>
+                     <p xmlns="">Par contre, il veut bien de nos maris&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Et de nos fils…</p>
+                     <p xmlns="" class="speaker">Quatrième femme</p>
+                     <p xmlns="">Ça ne peut plus durer&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Je ne sais pas comment faire pour l’arrêter…</p>
+                     <p xmlns="">…Mais il faut agir maintenant…</p>
+                     <p xmlns="" class="speaker">Deuxième femme</p>
+                     <p xmlns="">Il ne faut pas juste y mettre un terme, il faut le
+                        punir&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Ça y est… Il est seul&nbsp;!</p>
+                     <p xmlns="">Rappelez-vous, il ne faut pas qu’on entende ses
+                        cris…</p>
+                     <p xmlns="" class="speaker">Deuxième femme</p>
+                     <p xmlns="">Compte sur moi, j’ai de que le bâillonner&nbsp;!</p>
+                     <p xmlns="" class="speaker">Troisième femme</p>
+                     <p xmlns="">Avec un peu de chance, il ne sera pas conscient
+                        très longtemps&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Parfait…</p>
+                     <p xmlns="">…on va voir si nos hommes veulent toujours de lui avec un nouveau visage&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Orphée&nbsp;!!</p>
+                     <p xmlns="" class="speaker">Orphée</p>
+                     <p xmlns="">Qu’est-ce que tu veux&nbsp;?</p>
+                     <p xmlns="" class="speaker">Deuxième femme</p>
+                     <p xmlns="">Juste t’apprendre à rester à ta place…</p>
+                     <p xmlns="" class="speaker">Première femme</p>
+                     <p xmlns="">Tu as eu tort de nous rejeter, Orphée&nbsp;!</p>
+                     <p xmlns="" class="speaker">Troisième femme</p>
+                     <p xmlns="">Reste tranquille, ce sera fini plus vite&nbsp;!</p>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <p xmlns="" class="stage">Lesbos</p>
+                     <p xmlns="" class="speaker">Première nymphe</p>
+                     <p xmlns="">Il a été mis en pièces puis jeté dans le fleuve,
+                        comme un animal&nbsp;! Qui… qui a pu…</p>
+                     <p xmlns="" class="speaker">Deuxième nymphe</p>
+                     <p xmlns="">Dire que plus jamais nous n’entendrons sa
+                        voix&nbsp;!</p>
+                     <p xmlns="" class="speaker">Première nymphe</p>
+                     <p xmlns="">Qu’on transporte ses restes au temple d’Apollon
+                        pour que tous puissent lui rendre un dernier hommage&nbsp;!</p>
+                     <p xmlns="" class="speaker">Deuxième nymphe</p>
+                     <p xmlns="">Au temple… Mais les dieux…</p>
+                     <p xmlns="" class="speaker">Première nymphe</p>
+                     <p xmlns="">Orphée n’était pas un dieu, mais il était loin
+                        d’être un simple humain. Crois-moi, les dieux
+                        eux-même doivent être affligés de sa mort&nbsp;! C’est
+                        maintenant aux Enfers qu’il chantera, sur l’île des bienheureux.</p>
+                     <p xmlns="">Mais je doute qu’il soit jamais oublié ici…
+                        Oui, sa musique résonnera encore dans le cœur
+                        des hommes&nbsp;! Elle fera de lui un immortel.</p>
+                  </section>
+               </div>
+            </div>
+         </div>
+         <div id="JdYXvnp" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('JdYXvnp').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('JdYXvnp')">
+                     <option value="baudry1648_6400027">baudry1648, phrase 27</option>
+                     <option value="puget1624_3600096">puget1624, phrase 96</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('JdYXvnp',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('JdYXvnp',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8200074">
+               <h5>ferry2019, phrase 74</h5>
+               <p><span data-type="GN"><span class="lemmes" data-href="3600096_44" data-corresp="puget1624_3600096">Merci</span></span>, <span class="w">ô </span><span data-type="GN"><span class="lemmes" data-href="6400027_60" data-corresp="baudry1648_6400027">Hadès</span></span>. <span data-type="GV"><span class="w">C’</span><span class="w">est </span><span class="synos" data-href="3600096_14" data-corresp="puget1624_3600096"><span class="lemmes" data-href="6400027_38" data-corresp="baudry1648_6400027">poussé </span></span><span class="w">par</span> </span><span data-type="GN"><span class="w">le </span><span class="lemmes" data-href="3600096_29" data-corresp="puget1624_3600096"><span class="lemmes" data-href="6400027_41" data-corresp="baudry1648_6400027">désespoir</span></span> </span><span data-type="GV"><span class="w">que </span><span class="w">j’</span><span class="w">ai </span><span class="synos" data-href="3600096_23" data-corresp="puget1624_3600096"><span class="lemmes" data-href="6400027_133" data-corresp="baudry1648_6400027">fait</span></span> </span><span class="lemmes" data-href="3600096_46" data-corresp="puget1624_3600096"><span class="mots" data-href="6400027_186" data-corresp="baudry1648_6400027">tout </span></span><span data-type="GN"><span class="w">ce </span><span class="mots" data-href="3600096_27" data-corresp="puget1624_3600096"><span class="synos" data-href="6400027_34" data-corresp="baudry1648_6400027">chemin</span></span></span>... </p>
+            </div>
+            <div class="target">
+               <div id="baudry1648_6400027" data-id="6400027" style="display:none">
+                  <h5>baudry1648, phrase 27</h5>
+                  <p><span data-type="GN"><span>Ces </span><span>belles </span><span>Decorations</span> </span><span data-type="GV"><span>finiront</span> </span><span data-type="GN"><span>le </span><span>troisieme </span><span>Acte</span></span>, <span data-type="GV"><span>dont </span><span>les </span><span>Vers </span><span>sont </span><span>aussi</span> </span><span data-type="GAdj"><span>beaux</span> </span><span>que </span><span data-type="GN"><span>le </span><span>Sujet </span><span>est </span><span>magnifique</span></span>, <span>soit </span><span>en </span><span data-type="GN"><span>la </span><span>description</span> </span><span>de </span><span>toutes </span><span data-type="GN"><span>les </span><span>Puissances </span><span>Infernalles</span></span>, <span>soit </span><span>dans </span><span data-type="GN"><span>les </span><span class="synos" data-id="6400027_34">Transports </span><span>d’</span><span data-type="GN"><span>Aristéequi</span></span> </span><span data-type="GV"><span>le </span><span class="lemmes" data-id="6400027_38">poussent </span><span>en</span> </span><span data-type="GN"><span>un </span><span class="lemmes" data-id="6400027_41">desespoir </span><span>espouvantable</span></span>, <span data-type="GV"><span>sçachant</span> </span><span>qu’</span><span data-type="GV"><span>il </span><span>estoit</span> </span><span data-type="GN"><span>cause </span><span>de </span><span>la </span><span data-type="GN"><span>mort </span><span>d’</span><span>Eurydice</span></span></span>. <span data-type="GN"><span>Orphéearrive</span> </span><span>devant </span><span data-type="GN"><span>le </span><span>palais </span><span>de </span><span data-type="GN"><span class="lemmes" data-id="6400027_60">Pluton</span></span> </span><span data-type="GV"><span>qui </span><span>s’</span><span>ouvre </span><span>aussi </span><span>tost</span> </span><span>et </span><span data-type="GN"><span>fait</span> </span><span>que </span><span data-type="GN"><span>le </span><span>Theatre</span> </span><span data-type="GV"><span>changeant </span><span>de</span> </span><span data-type="GN"><span>face</span></span>, <span data-type="GV"><span>l’</span><span>on </span><span>void </span><span>parroistre</span> </span><span data-type="GN"><span>Pluton</span> </span><span>sur </span><span data-type="GN"><span>son </span><span>Trosne </span><span>d’</span><span data-type="GN"><span>Airain</span></span></span>, <span data-type="GV"><span>ayant</span> </span><span data-type="GN"><span>Minos</span></span>, <span data-type="GN"><span>Éaque</span> </span><span>et </span><span data-type="GN"><span>Rhamadante</span> </span><span>à </span><span data-type="GN"><span>ses </span><span>costez</span></span>, <span>et </span><span data-type="GN"><span>Proserpine </span><span>assize</span> </span><span>aupres </span><span>de </span><span>luy</span>, <span>Et </span><span data-type="GV"><span>s’</span><span>enquerant </span><span>du</span> </span><span data-type="GN"><span>bruit</span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>entendoit</span></span>, <span data-type="GV"><span>il </span><span>aprend</span> </span><span>qu’</span><span data-type="GN"><span>un </span><span>mortel</span> </span><span data-type="GV"><span>sans </span><span>mourir</span> </span><span data-type="GV"><span>a </span><span>traversé</span> </span><span data-type="GN"><span>son </span><span>Empire</span></span>, <span>et </span><span data-type="GV"><span>void </span><span>entrer</span> </span><span data-type="GN"><span>Orphée</span> </span><span data-type="GV"><span>qui </span><span>n’</span><span>a </span><span>pas </span><span>plustost</span> </span><span data-type="GAdj"><span class="lemmes" data-id="6400027_133">faict</span> </span><span data-type="GN"><span>sa </span><span>harangue</span></span>, <span>que </span><span>par </span><span data-type="GN"><span>les </span><span>doux </span><span>accords </span><span>de </span><span>sa </span><span data-type="GN"><span>Lyre</span></span> </span><span>et </span><span>de </span><span data-type="GN"><span>la </span><span>voix</span></span>, <span data-type="GV"><span>il </span><span>oblige</span> </span><span data-type="GN"><span>ces </span><span>cruelles</span> </span><span data-type="GN"><span>Divinitez</span> </span><span data-type="GV"><span>de </span><span>se </span><span>rendre</span> </span><span data-type="GAdj"><span>sensibles </span><span>à</span> </span><span data-type="GN"><span>ses </span><span>plaintes</span></span>, <span>et </span><span>leur </span><span data-type="GV"><span>declarant</span> </span><span data-type="GN"><span>le </span><span>sujet </span><span>de </span><span>ses </span><span data-type="GN"><span>inquietudes</span></span> </span><span>par </span><span>des </span><span data-type="GN"><span>tons</span> </span><span data-type="GV"><span>languissants</span></span>, <span>des </span><span data-type="GN"><span>cadances </span><span>mesurées</span> </span><span>et </span><span>des </span><span data-type="GN"><span>mouvemens</span> </span><span>si </span><span data-type="GV"><span>touchans</span></span>, <span>que </span><span class="mots" data-id="6400027_186">tout </span><span data-type="GN"><span>le </span><span>Royaume </span><span>Infernal </span><span>charmé </span><span>des</span> </span><span data-type="GN"><span>douceurs </span><span>de </span><span>ses </span><span data-type="GN"><span>Chansons</span></span></span>, <span data-type="GV"><span>en </span><span>suspend</span> </span><span data-type="GN"><span>les </span><span>chastimens</span> </span><span data-type="GV"><span>dont </span><span>il </span><span>afflige</span> </span><span data-type="GN"><span>les </span><span>criminels</span></span>, <span>et </span><span data-type="GN"><span>force</span> </span><span data-type="GN"><span>ce </span><span>Monarque </span><span>inflexible</span> </span><span data-type="GV"><span>d’</span><span>accorder</span> </span><span data-type="GN"><span>la </span><span>priere </span><span>d’</span><span data-type="GN"><span>Orphée</span></span></span>, <span>aux </span><span data-type="GN"><span>conditions</span> </span><span>qu’</span><span>il </span><span>ne </span><span>regarderoit </span><span>point </span><span data-type="GN"><span>Eurydice</span></span>, <span>qu’</span><span data-type="GV"><span>elle </span><span>ne </span><span>fust </span><span>repassée </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>autre </span><span>bord </span><span>du </span><span data-type="GN"><span>Fleuve </span><span>de </span><span>Stix</span></span></span>. </p>
+               </div>
+               <div id="puget1624_3600096" data-id="3600096">
+                  <h5>puget1624, phrase 96</h5>
+                  <p><span>Sur </span><span data-type="GN"><span>ces </span><span>mots </span><span>animé </span><span>d’</span> </span><span data-type="GN"><span>un </span><span>colere</span> </span><span data-type="GN"><span>ressentiment</span> </span><span>contre </span><span>luy-mesme</span>, <span data-type="GV"><span>il </span><span class="synos" data-id="3600096_14">abandonne</span> </span><span data-type="GN"><span>ce </span><span>corps</span> </span><span data-type="GV"><span>tousjours </span><span>mourant</span></span>, <span>à </span><span data-type="GN"><span>dessain</span> </span><span data-type="GV"><span>de </span><span class="synos" data-id="3600096_23">trouver</span> </span><span data-type="GN"><span>la </span><span>mort </span><span>au </span><span data-type="GN"><span class="mots" data-id="3600096_27">chemin </span><span>du </span><span class="lemmes" data-id="3600096_29">desespoir</span></span></span>, <span data-type="GV"><span>dont </span><span>il </span><span>suit</span> </span><span data-type="GN"><span>les </span><span>traces</span></span>, <span>apres </span><span>s’</span><span data-type="GV"><span>estre </span><span>entierement </span><span>livré</span> </span><span>à </span><span data-type="GN"><span>la </span><span class="lemmes" data-id="3600096_44">mercy</span> </span><span>de </span><span class="lemmes" data-id="3600096_46">toutes </span><span data-type="GN"><span>les </span><span>douleurs</span> </span><span data-type="GV"><span>qui </span><span>peuvent </span><span>marthiriser</span> </span><span data-type="GN"><span>une </span><span>ame </span><span>affligee</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="EttAuMp" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('EttAuMp').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('EttAuMp')">
+                     <option value="deshayes1792_7800011">deshayes1792, phrase 11</option>
+                     <option value="cocteau1927_8300862">cocteau1927, phrase 862</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('EttAuMp',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('EttAuMp',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="8200036">
+               <h5>ferry2019, phrase 36</h5>
+               <p><span data-type="GN"><span class="mots" data-href="8300862_7" data-corresp="cocteau1927_8300862"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>&nbsp;!?! <span data-type="GN"><span class="mots" data-href="8300862_7" data-corresp="cocteau1927_8300862"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>&nbsp;! <span data-type="GN"><span class="lemmes" data-href="8300862_7" data-corresp="cocteau1927_8300862"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eury</span></span></span>... <span class="w">Non</span>... <span data-type="GN"><span class="mots" data-href="8300862_7" data-corresp="cocteau1927_8300862"><span class="lemmes" data-href="7800011_1" data-corresp="deshayes1792_7800011">Eurydice</span></span></span>, <span class="w">non</span>... <span data-type="GV"><span class="synos" data-href="7800011_7" data-corresp="deshayes1792_7800011">reviens</span></span>... </p>
+            </div>
+            <div class="target">
+               <div id="deshayes1792_7800011" data-id="7800011" style="display:none">
+                  <h5>deshayes1792, phrase 11</h5>
+                  <p><span data-type="GN"><span class="lemmes lemmes lemmes lemmes" data-id="7800011_1">Euridice</span></span>&nbsp;! <span data-type="GN"><span>euridice</span></span>&nbsp;! <span data-type="GV"><span>tu </span><span>te </span><span class="synos" data-id="7800011_7">plaisais </span><span>dans</span> </span><span data-type="GN"><span>ce </span><span>bois </span><span>de </span><span>ma </span><span data-type="GN"><span>voix</span></span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>retentisse</span></span>, <span data-type="GN"><span>euridice</span></span>&nbsp;! <span data-type="GN"><span>euridice</span></span>&nbsp;! </p>
+               </div>
+               <div id="cocteau1927_8300862" data-id="8300862">
+                  <h5>cocteau1927, phrase 862</h5>
+                  <p> (<span>Comme </span><span data-type="GN"><span>une </span><span>plainte</span></span>.) <span data-type="GN"><span class="mots mots lemmes mots" data-id="8300862_7">Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

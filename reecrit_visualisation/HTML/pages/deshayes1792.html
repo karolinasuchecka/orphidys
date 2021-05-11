@@ -1,0 +1,2218 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/deshayes1792.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Prosper-Didier Deshayes, J. Rouhier-Deschamps <em>Le Petit OrphéeOpéra-Comique En quatre Actes et en Vaudevilles : Représenté, pour
+               la première fois le 13 juin 1792</em>,  [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Acte I</h2>
+                     <p xmlns="" class="stage">Le Théâtre représente un bois au milieu duquel on a élevé un
+                        tombeau rustique&nbsp;: c’est une urne sur un terre de gason, la scène est occuppée par
+                        des
+                        paysans et paysannes amis d’Orphée et Euridice. Orphée est couché au pied du tombeau. Son
+                        chappeau et son flageolet sont suspendus à un arbre.</p>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène première</h3>Air&nbsp;: ah&nbsp;! Madame Anroux
+                        <p xmlns="" class="speaker">Chœur d’hommes</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! le pauvre Époux,</li>
+                           <li>Il se plaint des coups</li>
+                           <li>Qui frappent son ame&nbsp;!</li>
+                           <li>Trop heureux Époux,</li>
+                           <li>Tu n’as plus de femme</li>
+                           <li>Que ton sort est doux.</li>
+                        </ul>Air&nbsp;: Je tu saurais danser
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Laissez moi pleurer</li>
+                           <li>J’ai perdu mon Euridice</li>
+                           <li>Laissez moi pleurer</li>
+                           <li>La douleur doit m’déchirer.</li>
+                           <li>Sans en murmurer</li>
+                           <li>Je n’puis subir mon supplice&nbsp;;</li>
+                           <li>Mais j’peux assurer</li>
+                           <li>Qu’c’est un plaisir de pleurer&nbsp;!</li>
+                        </ul>Air&nbsp;: ah&nbsp;! mad. Auroux
+                        <p xmlns="" class="speaker">Chœur de femmes</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! le bon mari,</li>
+                           <li>Qui déplore ainsi</li>
+                           <li>La mort de sa femme&nbsp;!</li>
+                           <li>Ah&nbsp;! Le bon mari&nbsp;!</li>
+                           <li>Une aussi bonne ame</li>
+                           <li>Ne se voit qu’ici.</li>
+                        </ul>Air&nbsp;: belle brune
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">s’élève et parcourt la scène d’un air égaré</p>
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('slcQYKe')">✱</a>Euridice&nbsp;!</li>
+                           <li>Euridice&nbsp;!</li>
+                           <li>Tu te plaisais dans ce bois</li>
+                           <li>De ma voix</li>
+                           <li>Qu’il retentisse,</li>
+                           <li>Euridice&nbsp;!</li>
+                           <li>Euridice&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Un paysan</p>Air&nbsp;: le petit mot pour rire
+                        <ul xmlns="" class="poem">
+                           <li>Orphée a perdu sa moitié</li>
+                           <li>Sur son sort, digne de pitié</li>
+                           <li>On n’en saurait trop dire.</li>
+                           <li>Mais enfin tout doit s’oublier&nbsp;;</li>
+                           <li>Pour essayer</li>
+                           <li>De l’égayer,</li>
+                           <li>Disons le mot, le petit mot pour rire.</li>
+                        </ul>Air&nbsp;: du citoyen Deshayes
+                        <ul xmlns="" class="poem">
+                           <li>Pour faire honneur à la défunte</li>
+                           <li>Dansons autour de son tombeau,</li>
+                           <li>J’tons lui des fleurs, ça s’ra plus beau</li>
+                           <li>Que chacun de nous en emprunte.</li>
+                           <li>De ces honneurs le bel accord</li>
+                           <li>Fait beaucoup d’bien quand on est mort.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Marche sur laquelle les Paysans et Paysannes sortent pour aller chercher des fleurs
+                           et des guirlandes.</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène II</h3>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">seul</p>Air&nbsp;: réveillez-vous, belle endormie
+                        <ul xmlns="" class="poem">
+                           <li>Au désespoir livrons mon ame,</li>
+                           <li>Je puis m’affliger sans témoins.</li>
+                           <li>Malheureux, j’ai perdu ma famme,</li>
+                           <li>Et je la vois dans tout les coins.</li>
+                        </ul>Air&nbsp;: charmantes fleurs
+                        <ul xmlns="" class="poem">
+                           <li>Je la demande à la nature entière,</li>
+                           <li>La nuit, le jour, partout je vais rêvant.</li>
+                           <li><a class="note" onclick="affiche('mjirgar')">✱</a>À tous les Dieux j’adresse ma priere,</li>
+                           <li>Hélas&nbsp;! autant en emporte le vent.</li>
+                        </ul>Air&nbsp;: nous sommes precepteurs d’amour.
+                        <ul xmlns="" class="poem">
+                           <li>Du sentiment de sa douleur</li>
+                           <li>Mon ame toujours possédée,</li>
+                           <li>Pour braver le sorte en fureur</li>
+                           <li>M’inspire une excellente idée.</li>
+                        </ul>Air&nbsp;: du citoyen Deshayes
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('PrUsvvO')">✱</a>Malgré Cerbere et l’vieux Caron,</li>
+                           <li>Jusques dans les demeures sombres</li>
+                           <li>J’irai faire pleurer les ombres,</li>
+                           <li>Sans même en excepter Pluton.</li>
+                           <li>M’voyant là tout vif on s’écrira,</li>
+                           <li>La chose n’est pas douteuse,</li>
+                           <li>V’la la rareté merveilleuse,</li>
+                           <li>V’la la piece curieuse.</li>
+                        </ul>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène III</h3>
+                        <p xmlns="" class="stage">Reprise de la marche pour deposer les fleurs et les guirlandes sur le tombeau
+                           d’Euridice</p>Air&nbsp;: ah&nbsp;! Madame Avroux
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <p xmlns="" class="stage">après la marche</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! Le pauvre époux</li>
+                           <li>Il se plaint des coups</li>
+                           <li>Qui frappentNous corrigeons «&nbsp;frappe&nbsp;» par «&nbsp;frappent&nbsp;». son ame&nbsp;!</li>
+                           <li>Ah&nbsp;!…</li>
+                           <li>Ah&nbsp;! Le bon mari,</li>
+                           <li>Qui déplore ainsi</li>
+                           <li>La mort de sa femme&nbsp;!</li>
+                           <li>Ah&nbsp;!….</li>
+                        </ul>Air&nbsp;: l’autre jour la petit’ Isabelle
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">les interrompans</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais morguenne, il est incroyable</li>
+                           <li>Qu’on ne puisse pas pleurer un moment.</li>
+                           <li>Finissez c’vacarme effroyable</li>
+                           <li>Ça n’fait qu’augmenter mon tourment.</li>
+                           <li>Laissez moi, sous c’t’épais feuillage</li>
+                           <li>Méditer un superbe projet</li>
+                           <li>Tout ce tapage</li>
+                           <li>M’dérang’rait</li>
+                           <li>Ne troublez pas ma bonne amie</li>
+                           <li>Laissez la dormir en repos, d’avoir acheté pour elle</li>
+                           <li>Toutes ces fleurs vous avez grand tort</li>
+                           <li>Un’ femm’ s’en par’ pendant sa vie</li>
+                           <li>Ell’ n’en a qu’faire après sa mort.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(parlé)</p>
+                        <p xmlns="" class="stage">(chanté)</p>
+                        <p xmlns="" class="stage">(Les Paysans et Paysannes sortent sur la ritournelle de l’air suivant.)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène IV</h3>Air&nbsp;: Jupiter un jour en fureur
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">seul un instant</p>
+                        <ul xmlns="" class="poem">
+                           <li>Aux regards de tout l’univers</li>
+                           <li>Terminons, ou comblons ma peine.</li>
+                           <li>Dans le délire qui m’entraîne,</li>
+                           <li>Je vais descendre aux enfers.</li>
+                           <li>Le projet est hardi sans doute…</li>
+                           <li>Mais que veut ce petit garçon&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="stage">(appercevant l’Amour)</p>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Rien.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vous mentez,</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>monsieur, non.</li>
+                           <li>Étranger dans ce canton.</li>
+                           <li>Je poursuivois ma route,</li>
+                        </ul>Air&nbsp;: pourriez vous bien douter encore
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais vous n’y voyez goute.</li>
+                           <li>Si jeune aveugle&nbsp;! Quel dommage&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quoique privé de mes deux yeux,</li>
+                           <li>Avec moi souvent on voyage,</li>
+                           <li>Et, j’y vois clair, au moins pour deux.</li>
+                           <li>Essayez.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ce n’est pas la peine</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Donnez-moi, hardiment la main.</li>
+                           <li>Ami, de tous ceux que je mène,</li>
+                           <li>Pas un ne s’égare en chemin.</li>
+                        </ul>Refrain
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">reconnoissant l’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quoi&nbsp;! C’est l’amour,</li>
+                           <li>Ah&nbsp;! Le bon tour&nbsp;!</li>
+                        </ul>Air&nbsp;: regards vifs et Joli maintien
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Apprends, qu’enfin, fléchi par moi</li>
+                           <li>Jupiter rend à la lumière</li>
+                           <li>La beauté qui reçut ta foi&nbsp;;</li>
+                           <li>C’est une grace singulière.</li>
+                           <li>Mais surtout, prends bien garde à toi&nbsp;!</li>
+                           <li>Ton espoir peut être frivole.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Dieux&nbsp;! Je la reverrais&nbsp;! Eh&nbsp;! Quoi,</li>
+                           <li>Vous l’avez obtenu&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Pourquoi</li>
+                           <li>Me couper ainsi, la parole&nbsp;?</li>
+                        </ul>Air&nbsp;: on compterait les diamans.
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('VdXTvif')">✱</a>Si par tes son mélodieux</li>
+                           <li>Pluton laisse attendrir son ame,</li>
+                           <li>Et qu’il daigne r’ouvrir les yeux</li>
+                           <li>Du charmant objet de ta flame,</li>
+                           <li>Songe que le sort te défend</li>
+                           <li>Jusqu’à ton retour sur la terre,</li>
+                           <li>De jetter un œil seulement</li>
+                           <li>Sur une épouse qui t’est chère.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>La retrouver, n’oser la voir</li>
+                           <li>Ce n’est que changer de supplice.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>En dépit de ton désespoir</li>
+                           <li>Obéis, ou perds Euridice.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Obéir&nbsp;! Comment&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>tiens, nigaud,</li>
+                           <li>Près d’Eurydice, qui t’enflâme&nbsp;;</li>
+                           <li>Pour être prudent, il ne faut</li>
+                           <li>Que bien songer qu’elle est ta femme.</li>
+                        </ul>Air&nbsp;: des filets qu’Hirza lui prepare
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>D’une voix tendre et languissante</li>
+                           <li>Euridice m’appellera</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <p xmlns="" class="stage">parle</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il faut être sourd.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>D’une main timide et tremblante</li>
+                           <li>La friponne me pressera.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <p xmlns="" class="stage">parle</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il faut être insensible.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Brusquerai-je qui me caresse&nbsp;?</li>
+                           <li>Dites, cela serait-il beau&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Pour te sauver de ta faiblesse</li>
+                           <li>Je vais te prêter mon bandeau.</li>
+                        </ul>Air du Citoyen Deshayes
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oh&nbsp;! N’craignez rien. Je vous assure</li>
+                           <li>Que j’puis bientôt[ill.] tenir le choc.</li>
+                           <li>Près d’ses appas, près d’sa figure,</li>
+                           <li>Je serai plus ferme qu’un roc.</li>
+                           <li>Pour me tenter, pour me confondre</li>
+                           <li>Elle aura beau m’app’ler tout bas,</li>
+                           <li>À chaque mot j’vais lui répondre</li>
+                           <li>Ça n’se peut pas.</li>
+                        </ul>Même air
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>I’ te faudra bien du courage.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Dans not’ famille on n’en manqu’ pas.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Pour peu qu’on te presse je gage</li>
+                           <li>Qu’au même instant tu céderas.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Elle aura beau jouer d’ la prunelle,</li>
+                           <li>M’caresser, m’serrer dans ses bras.</li>
+                           <li>Sans m’déranger, j’lui dis, la belle,</li>
+                           <li>Ça n’se peut pas.</li>
+                        </ul>Air&nbsp;: daigne écouter l’amant fidèle
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Et, moi, je vais secondant ton courage</li>
+                           <li>Incognito planer sur les enfers.</li>
+                           <li>Dès ce moment entreprends le voyage,</li>
+                           <li>L’amour te suit, ne crains aucun revers.</li>
+                        </ul>Même air
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oh&nbsp;! Je n’ai pas le moindre inquiétude,</li>
+                           <li>Mais il est tems, cousin, de nous quitter.</li>
+                           <li>En m’eloignant de cette solitude</li>
+                           <li>J’y veux encor chanter un petit air.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>Air&nbsp;: on n’aime point dans nos forêts
+                        <ul xmlns="" class="poem">
+                           <li>C’est agir assez finement</li>
+                           <li>Et la sortie est plus brillante&nbsp;;</li>
+                           <li>D’après cela conséquemment</li>
+                           <li>Il est à propos que je chante</li>
+                           <li>Avant que de sortir d’ici</li>
+                           <li>La chansonnette que voici.</li>
+                        </ul>Air&nbsp;: point de sévérité pour les amours d’été
+                        <ul xmlns="" class="poem">
+                           <li>Souvent</li>
+                           <li>L’Amant</li>
+                           <li>Pétulent</li>
+                           <li>Et trop ardent</li>
+                           <li>Perd le moment</li>
+                           <li>Doux et charmant</li>
+                           <li>Qu’il attend.</li>
+                           <li>Il faut discrettement</li>
+                           <li>Et finement</li>
+                           <li>Se conduire,</li>
+                           <li>Pour voir heureusement</li>
+                           <li>Dénouer le roman.</li>
+                        </ul>Même air
+                        <ul xmlns="" class="poem">
+                           <li>Ainsi,</li>
+                           <li>L’ami</li>
+                           <li>Sois vigilant&nbsp;;</li>
+                           <li>Mais prudent.</li>
+                           <li>Ferme les yeux</li>
+                           <li>Si tu veux</li>
+                           <li>Te voir heureux.</li>
+                           <li>Fait tout ce que les Dieux,</li>
+                           <li>Par ma voix te font prescrire.</li>
+                           <li>Tu ne m’écoutesNous corrigeons «&nbsp;écoute&nbsp;» par «&nbsp;écoutes&nbsp;». pas…</li>
+                           <li>À dieu donc&nbsp;; je m’en vas.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Orphée baille)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène V</h3>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">seul</p>
+                        <p xmlns="" class="stage">(Il détache son chappeau et son flageolet.)</p>Air des Feuillantines
+                        <ul xmlns="" class="poem">
+                           <li>Mon équipage est complet</li>
+                           <li>Et parfait</li>
+                           <li>Chantons vîte, mon couplet.</li>
+                           <li>C’est un prélude agréable.</li>
+                           <li>Pour aller gayement au diable.</li>
+                        </ul>Air&nbsp;: la Bourbonnaise
+                        <ul xmlns="" class="poem">
+                           <li>L’espoir nait dans mon ame&nbsp;;</li>
+                           <li>Pour l’objet qui m’enflame</li>
+                           <li>L’Amour accroit ma flâme&nbsp;;</li>
+                           <li>Euridice, ô ma femme,</li>
+                           <li>Je verrais tes appas&nbsp;!</li>
+                           <li>Ah, ah, ah&nbsp;!</li>
+                           <li>Bannissons les allarmes,</li>
+                           <li>Ne versons plus de larmes&nbsp;;</li>
+                           <li>Je vais revoir ses charmes,</li>
+                           <li>Ô moment plein d’appas.</li>
+                           <li>Ah, ah, ah&nbsp;!</li>
+                           <li>Je vole dans ses bras.</li>
+                        </ul>Même Air.
+                        <ul xmlns="" class="poem">
+                           <li>Chut… ma femme est aimable&nbsp;;</li>
+                           <li>Mais suis-je raisonnable&nbsp;?</li>
+                           <li>Quoi que ça c’est admirable,</li>
+                           <li>Aller pour elle au diable…</li>
+                           <li>Et si j’n’en r’venons pas…</li>
+                           <li>Ah, ah, ah&nbsp;!</li>
+                           <li>N’importe, il faut du courage,</li>
+                           <li>N’tardons pas davantage,</li>
+                           <li>Mettons-nous en voyage,</li>
+                           <li>Et descendons la bas.</li>
+                           <li>Ah, ah, ah&nbsp;!</li>
+                           <li>Ô&nbsp;! moment plein d’appas.</li>
+                        </ul>
+                     </section>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Acte II</h2>
+                     <p xmlns="" class="stage"><a class="note" onclick="affiche('WtljGnm')">✱</a>Le Théâtre représente le vestibule du Palais de Pluton. Il
+                        sort des flammes de tous les côtés de la Scène.</p>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène I</h3>Air&nbsp;: Chantons Laetamini
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Depuis une semaine</li>
+                           <li>Nous nous reposons tous.</li>
+                           <li>La mort qui se promène</li>
+                           <li>Ne pense point à nous</li>
+                        </ul>Air de mussette dans l’éloignement et par intervalle
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <p xmlns="" class="stage">allant regarder à la coulisse</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais j’entends… J’apperçois…</li>
+                           <li>Me trompais-je dois-moi&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="stage">au deuxième démon</p>
+                        <p xmlns="" class="speaker">Deuxième démon</p>
+                        <p xmlns="" class="stage">regardant aussi</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non, c’est quelqu’un je crois.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Tous</p>
+                        <ul xmlns="" class="poem">
+                           <li>Bon&nbsp;! Voici de l’emploi.</li>
+                        </ul>Même air
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <p xmlns="" class="stage">regardant</p>
+                        <ul xmlns="" class="poem">
+                           <li>Par le Styx, quel prodige</li>
+                           <li>L’arrivant est vivant.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Deuxième démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Eh&nbsp;! Quoi&nbsp;! Cela t’afflige&nbsp;!</li>
+                           <li>Courons vite au devant.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Le voici quel plaisir&nbsp;!</li>
+                           <li>Il faut nous en saisir</li>
+                           <li>Charmons notre loisir</li>
+                           <li>En le faisantNous corrigeons «&nbsp;fesant&nbsp;» par «&nbsp;faisant&nbsp;». souffrir.</li>
+                        </ul>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène II</h3>Air précédent
+                        <p xmlns="" class="speaker">Démons, spectres, furies</p>
+                        <p xmlns="" class="stage">Ils l’environnent et cherchent à l’épouvanter</p>
+                        <ul xmlns="" class="poem">
+                           <li>Insensé, téméraire,</li>
+                           <li>Mortel presomptueux</li>
+                           <li>Dis-nous, que viens-tu faire</li>
+                           <li>Dans ces terribles lieux&nbsp;?</li>
+                           <li>Mortel présomptueux,</li>
+                           <li>Mortel audacieux,</li>
+                           <li>Dans ces terribles lieux</li>
+                           <li>Dis-nous ce que tu veux.</li>
+                        </ul>Air&nbsp;: courez vite, prenez le patron
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>De séans je cherche le patron.</li>
+                           <li>Messieurs, serait-il visible&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>De grace, faites-moi voir Pluton,</li>
+                           <li>Je suis en honneur brave garçon</li>
+                           <li>Et bon luron&nbsp;;</li>
+                           <li>Nous boirons ensemble sans façon</li>
+                           <li>Et j’prétends payer l’écot moi-seul.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non, non, non.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quoi&nbsp;! Chez vous la pitié se tait donc&nbsp;?</li>
+                           <li>Vous ne voulez pas m’obliger&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Que je dise un seul mot au Daron&nbsp;!</li>
+                           <li>Allons vîte, courez m’annoncer.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non.</li>
+                        </ul>Air&nbsp;: ce fut par la faute du sort.
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je fus Greffier.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Deuxième démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Moi procureur.</li>
+                           <li>Comment serais-je pitoyable&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Troisième démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Chacun sait qu’un Sergent d’honneur</li>
+                           <li>Doit toujours être inexorable.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('ovtozwC')">✱</a>À votre mine j’vous reconnais</li>
+                           <li>Et j’vois qu’dans sa sagesse profonde</li>
+                           <li>Pour tourmenter tous ses sujets</li>
+                           <li>Pluton sait bien choisir son monde.</li>
+                        </ul>Air du citoyen Deshayes
+                        <ul xmlns="" class="poem">
+                           <li>Hélas&nbsp;! Le malheureux Orphée…</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Parbleu ce drôle est bien hardi&nbsp;!</li>
+                           <li>Cette ruse est mal concertée.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je m’étais sur ce démenti.</li>
+                           <li>Mais croyez en mon témoignage,</li>
+                           <li>Je suis Orphée, homme à talent</li>
+                           <li>Et renommé dans mon village pour ménêtrier excellent.</li>
+                        </ul>Air&nbsp;: Mon petit cœur à chaque instant soupire
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Si tu l’es, dis&nbsp;; qu’as-tu fait de ta lyre&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mon frère ainé s’en sert à l’Opéra.</li>
+                           <li>Grace au talent de ce <em>Gluck</em> qu’on admire,</li>
+                           <li>Avec transport toujours on l’entendra.</li>
+                           <li>Mais mon projet n’est pas de vous surprendre&nbsp;;</li>
+                           <li>D’Orphée en moi, vous voyez le cadet.</li>
+                           <li>Et je m’en vais, messieurs, vous faire entendre,</li>
+                           <li>Modestement un air de flageolet.</li>
+                        </ul>Air&nbsp;: Prends ma Philis, prends mon verre (accompagnement de flageolet)
+                        <ul xmlns="" class="poem">
+                           <li>Du Ténare</li>
+                           <li>Du Tartare</li>
+                           <li>On connaît les passe-tems&nbsp;;</li>
+                           <li>Les Furies</li>
+                           <li>Les Harpies,</li>
+                           <li>Y font enrager les gens.</li>
+                           <li>Mais le feu qui me dévore</li>
+                           <li>Est bien plus cruel encore,</li>
+                           <li>Messieurs, que tous vos tourmens.</li>
+                        </ul>Refrain du Laetamini
+                        <p xmlns="" class="speaker">Chœur de démons</p>
+                        <p xmlns="" class="stage">s’attendrissant par dégrés.</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! Que ce flageollet</li>
+                           <li>Fait un charmant effet&nbsp;!</li>
+                           <li>Il nous endormira</li>
+                           <li>Tout comme à l’Opéra.</li>
+                        </ul>Reprise de l’air ci-dessus
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma conjugale constance</li>
+                           <li>Qui, là haut me fait honneur</li>
+                           <li>Sans tirer à conséquence</li>
+                           <li>Doit calmer votre fureur.</li>
+                        </ul>Refrain du Leatamini
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('ZkxJceF')">✱</a>Il nous endormira</li>
+                           <li>Tout comme à l’Opéra&nbsp;;</li>
+                           <li>Qu’il descende aux enfers</li>
+                           <li>Les chemins sont ouvertsNous corrigeons «&nbsp;ouvert&nbsp;» par «&nbsp;ouverts&nbsp;»..</li>
+                        </ul>
+                        <p xmlns="" class="stage">Ils conduisent Orphée&nbsp;; le fond du Théâtre s’ouvre et laisse voir l’intérieur des
+                           enfers. C’est une caverne entamée.</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène II</h3>Air&nbsp;: ciel l’univers va-t-il donc se dissoudre
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tout l’univers va-t-il donc se dissoudre&nbsp;?</li>
+                           <li>Quel baccanal</li>
+                           <li>Dans l’empire infernal&nbsp;!</li>
+                           <li>Faudra-t-il avec la foudre,</li>
+                           <li>Vous empêcher de danser,</li>
+                           <li>Ou me résoudre</li>
+                           <li>À vous chasser&nbsp;?</li>
+                           <li>C’est bien chez nous, ma foi,</li>
+                           <li>Que doit éclater l’allégresse&nbsp;!</li>
+                           <li>Rage, tristesse,</li>
+                           <li>Ici donnent la loi.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">à part</p>Air&nbsp;: des billets doux
+                        <ul xmlns="" class="poem">
+                           <li>Tâchons de m’esquiver.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <p xmlns="" class="stage">l’arrêtant</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tout doux&nbsp;;</li>
+                           <li>Le beau garçon, où courez-vous&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est, ne vous en déplaise,</li>
+                           <li>Que ces messieurs m’avaient permis</li>
+                           <li>De faire un tour dans ce pays.</li>
+                        </ul>Air&nbsp;: On me disait souvent (Mazet)
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je suis donc un zéro&nbsp;?</li>
+                           <li>Un vrai Roi de Carreau&nbsp;?</li>
+                           <li>L’eût-on jamais pu croire&nbsp;!</li>
+                           <li>Vous ouvrez les enfers&nbsp;!</li>
+                           <li>Je vais vous mettre aux fers,</li>
+                           <li>Esprits pervers&nbsp;?</li>
+                           <li>Vous mettre aux fers.</li>
+                           <li>Ah&nbsp;! La plaisante histoire&nbsp;!</li>
+                           <li>Je suis donc un zéro,</li>
+                           <li>Un vrai Roi de Carreau&nbsp;!</li>
+                        </ul>Air&nbsp;: l’Occassion fait le larron
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Écoutez-moi…</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Qu’oseras-tu me dire&nbsp;?</li>
+                           <li>Je vois qu’ici le premier diablotin</li>
+                           <li>Va disposer des droits de mon empire,</li>
+                           <li>Comme des choux de son jardin.</li>
+                        </ul>Air&nbsp;: Monseigneur vous ne voyez rien
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Puissant Monarque, sachez donc</li>
+                           <li>Que cet enchanteur, est Orphée…</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Orphée&nbsp;!… ah&nbsp;! Je sens à ce nom</li>
+                           <li>Toute ma colère étouffée.</li>
+                           <li>Orphée&nbsp;! Hé, mais c’est mon neveu</li>
+                           <li>Que vient-il chercher en ce lieu&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">à part</p>
+                        <ul xmlns="" class="poem">
+                           <li>J’avais bien raison</li>
+                           <li>De vouloir parler à Pluton.</li>
+                        </ul>Air&nbsp;: Non je ne ferai pas
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>En lui je ne remarque aucuns traits de son frère.</li>
+                           <li>Sa figure est pour moi tout-à-fait étrangère.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>N’importe&nbsp;; cet air grand, ce port majestueux,</li>
+                           <li>Prouvent évidemment qu’il est du sang des Dieux.</li>
+                        </ul>Refrain
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il est gentil,</li>
+                           <li>Il est joli,</li>
+                           <li>Il ressemble à son oncle, on dirait que c’est lui.</li>
+                        </ul>Air&nbsp;: chansons, chansons
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>En faveur de ta ressemblance</li>
+                           <li>N’oublirez-vous pas notre offense&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('ZBqPKKY')">✱</a>Je suis trop bon&nbsp;;</li>
+                           <li>Mais si pareille chose arrive,</li>
+                           <li>Jure, par l’infernale rive,</li>
+                           <li>Plus de pardon.</li>
+                        </ul>Air&nbsp;: En Jupon court, en blanc corset.
+                        <ul xmlns="" class="poem">
+                           <li>Toi, l’ami&nbsp;; si tu veux m’en croire</li>
+                           <li>Il faut aller te reffraichir.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Écoutez plutôt mon histoire&nbsp;;</li>
+                           <li>Car je suis pressé de partir.</li>
+                        </ul>Même air
+                        <ul xmlns="" class="poem">
+                           <li>J’ai mis en vous mon espérance.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Sois sûr d’un favorable accueil…</li>
+                           <li>Parle donc.</li>
+                           <li>Vous, par bienséance</li>
+                           <li>Approchez-moi mon grand fauteuil.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Aux Démons)</p>Refrain
+                        <ul xmlns="" class="poem">
+                           <li>Commence, commence, commence,</li>
+                           <li>Je vais te donner audience.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>Air&nbsp;: Valet chez une fermiere
+                        <ul xmlns="" class="poem">
+                           <li>Du village une fermiere</li>
+                           <li>Jeune, belle, faite au tour,</li>
+                           <li>Formée en tout point pour l’amour,</li>
+                           <li>D’une rose printannière</li>
+                           <li>M’offrant l’éclat enchanteur</li>
+                           <li>Avoit su fixer mon ardeur.</li>
+                           <li>À mes vœux l’hymen propice,</li>
+                           <li>Depuis trois jours d’Euridice</li>
+                           <li>Me rendant possesseur,</li>
+                           <li>Je possedais d’Euridice</li>
+                           <li>Et les attraits et le cœur.</li>
+                        </ul>Air&nbsp;: Triste raison
+                        <ul xmlns="" class="poem">
+                           <li>À divertir ma charmante conquête</li>
+                           <li>Tout le hameau consacrant ses loisirs,</li>
+                           <li>Pour Euridice on annonce une fête,</li>
+                           <li>Où nous volons guidés par les plaisirs.</li>
+                        </ul>Air&nbsp;: Des Pendus
+                        <ul xmlns="" class="poem">
+                           <li>Sur des près émaillés de fleurs</li>
+                           <li>Se rendent nos meilleurs danseurs&nbsp;;</li>
+                           <li>Là, par un seul qui ne choisisse</li>
+                           <li>Pour danser ma chere Euridice,</li>
+                           <li>Et la belle se trémoussait</li>
+                           <li>Aux doux sonsNous corrigeons «&nbsp;son&nbsp;» par «&nbsp;sons&nbsp;». de mon flageolet.</li>
+                        </ul>Air&nbsp;: En amour c’est au village
+                        <ul xmlns="" class="poem">
+                           <li>Par un excès de malice,</li>
+                           <li>Un serpent, le croira-t-on&nbsp;!</li>
+                           <li>Envoya mon Euridice</li>
+                           <li>Sur les bords du Phlégéton.</li>
+                           <li>Depuis ce moment funeste</li>
+                           <li>Je ne fais que lamenter&nbsp;;</li>
+                           <li>Malheureux&nbsp;! Il ne me reste</li>
+                           <li>Que le plaisirs de chanter.</li>
+                        </ul>Air&nbsp;: l’avez-vous vu, mon bien aimé&nbsp;!
+                        <ul xmlns="" class="poem">
+                           <li>Dieu des enfers,</li>
+                           <li>Dans ce revers</li>
+                           <li>C’est vous que je réclame</li>
+                           <li>De mes amours</li>
+                           <li>De nos beaux jours</li>
+                           <li>Ah&nbsp;! Renouez la trâme.</li>
+                           <li>Euridice, objet de mes vœux</li>
+                           <li>Est inutile dans ces lieux&nbsp;!</li>
+                           <li>Mais pour mes feux</li>
+                           <li>Elle est sans prix,</li>
+                           <li>Et de toute mon âme,</li>
+                           <li>J’en rougis&nbsp;;</li>
+                           <li>Mais je la chéris…</li>
+                           <li>Quoiqu’elle soit ma femme.</li>
+                        </ul>Air&nbsp;: Résonnez ma musette
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Redemander sa dame&nbsp;!</li>
+                           <li>Ce trait de grandeur d’âme</li>
+                           <li>Assurément est beau.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oui, c’est du fruit nouveau</li>
+                        </ul>Air&nbsp;: chantez, dansez, etc.
+                        <ul xmlns="" class="poem">
+                           <li>Mais si tous les maris d’en haut</li>
+                           <li>Sollicitaient faveur semblable,</li>
+                           <li>Mes amis, nous verrions bientôt</li>
+                           <li>Aux enfers un vuide effroyable.</li>
+                           <li>Or, vous savez comme ici-bas</li>
+                           <li>D’un sujet femelle on fait cas.</li>
+                        </ul>Air&nbsp;: Que je regrette mon amant
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">Au premier démon qu’il tire à l’écart</p>
+                        <ul xmlns="" class="poem">
+                           <li>Monsieur, dites un mot pour moi.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il est entêté comme un diable.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais il va prononcer.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier démon</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma foi,</li>
+                           <li>Pour te le rendre favorable</li>
+                           <li>Et pour aller plus vîte au fait&nbsp;;</li>
+                           <li>Hazarde un air de flageolet.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Orphée prélude la fricassée. Pluton écoute, admire. Les Démons se rapprochent,
+                           environnent Orphée, qui continue de jouer. Pluton temoigne sa satisfaction par des
+                           gestes.</p>Air&nbsp;: Quand on va boire à l’Eau
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais, mais finissez donc&nbsp;;</li>
+                           <li>Quel accens</li>
+                           <li>Séduisans&nbsp;!</li>
+                           <li>On pâme.</li>
+                           <li>Mais, mais, finissez donc&nbsp;;</li>
+                           <li>En honneur, c’est pis qu’Apollon.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vous avez ben d’la bonté.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais non, c’est qu’en vérité,</li>
+                           <li>Je suis ravi, transporté,</li>
+                           <li>Je m’y connais de reste est c’est sans vanité.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Orphée joue quelques mesures.</p>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <p xmlns="" class="stage">interrompt avec transport en s’adressant à sa suite.</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais, mais, écoutez donc,</li>
+                           <li>Ces accens</li>
+                           <li>Touchans</li>
+                           <li>Vont à l’âme.</li>
+                           <li>Mais, mais, écoutez donc</li>
+                           <li>Ce que va décider Pluton.</li>
+                           <li>Ces concerts mélodieux,</li>
+                           <li>Ces accords harmonieux,</li>
+                           <li>Ont trouvé grace à mes yeux,</li>
+                           <li>Qu’on lui rende sa femme, il suffit… Je le veux.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Orphée continue à jouer.</p>
+                        <p xmlns="" class="speaker">Pluton</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oh&nbsp;! Mais, mais qu’est-ce que donc&nbsp;?</li>
+                           <li>Malgré moi je marche en cadence,</li>
+                           <li>Ouvrez donc au fripon</li>
+                           <li>Qui fait danser jusqu’à Pluton.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Ils conduisent Orphée en dansant)</p>
+                     </section>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Acte III</h2>
+                     <p xmlns="" class="stage">Le Théâtre représente les Champs Élisées.</p>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène I</h3>
+                        <p xmlns="" class="stage">Euridice voilée, ombres heureuses dispersées au fond du Théâtre</p>
+                        <p xmlns="" class="stage">(Les Ombres se rapprochent pendant le couplet suivant)</p>Air&nbsp;: Ô toi qui n’eus jamais dû naître
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">sur le bord de la Scène</p>
+                        <ul xmlns="" class="poem">
+                           <li>Lieux enchantés, rians boccages,</li>
+                           <li>Brillant asyle de la paix,</li>
+                           <li>L’ennui d’un éternel veuvage</li>
+                           <li>Vous ôte à mes yeux mille attraits.</li>
+                           <li>Rives fleuries</li>
+                           <li>Vertes prairies,</li>
+                           <li>Ruisseaux, qui baignez ce séjour,</li>
+                           <li>Je vous admire&nbsp;;</li>
+                           <li>Mais je soupire,</li>
+                           <li>On n’est heureux qu’avec l’amour.</li>
+                        </ul>Air&nbsp;: Vous venez de Chantilly
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vous vous déplaisez ici&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vraiment, ma commère, oui.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vous regrettez donc la terre&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Assurément, ma commère.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma commère, nous aussi.</li>
+                        </ul>Euridice se promène tristement.Air&nbsp;: Guillot un Jour trouve Lisette
+                        <p xmlns="" class="speaker">Deuxième ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Puisqu’enfin notre unique étude</li>
+                           <li>Est d’employer bien nos loisirs,</li>
+                           <li>Pour charmer notre solitude.</li>
+                           <li>Varions un peu nos plaisirs,</li>
+                           <li>Ici, comme dans l’autre monde,</li>
+                           <li>Nous ne craignons pas que l’on fronde</li>
+                           <li>Le genre et l’ordre de nos jeux&nbsp;;</li>
+                           <li>Formons pêle-mêle une ronde&nbsp;;</li>
+                           <li>Dansons, ne pouvant faire mieux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Dansons ne pouvant faire mieux.</li>
+                        </ul>Ronde du citoyen Deshayes
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Bannissons de notre vie</li>
+                           <li>La froide uniformité.</li>
+                           <li>Que l’on aime et que l’on rie.</li>
+                           <li>Sans amour point de gaieté.</li>
+                           <li>Ces retraites sont fort belles&nbsp;;</li>
+                           <li>Mais les jours y sont bien longs.</li>
+                           <li>Allons donc, mesdemoiselles,</li>
+                           <li>Remuez vos cottillons.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Allons donc, etc.</li>
+                        </ul>Deuxième couplet
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Jouissons de l’avantage</li>
+                           <li>D’une heureuse liberté.</li>
+                           <li>L’amour peut être volage,</li>
+                           <li>Sans offenser la beauté,</li>
+                           <li>L’éclat des roses nouvelles</li>
+                           <li>Fixe-t-il le papillon&nbsp;?</li>
+                           <li>Allons donc, mesdemoiselles,</li>
+                           <li>Remuez le cottillon.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Allons donc, etc.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Ballet d’Ombres)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène II</h3>Air&nbsp;: Du serein qui t’a fait envie
+                        <p xmlns="" class="speaker">Troisième ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Nouvelle étonnante et fâcheuse</li>
+                           <li>Un mortel venu d’aujourd’hui,</li>
+                           <li>Croyant sa femme trop heureuse&nbsp;;</li>
+                           <li>Veut la ramener avec lui.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Partie du chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est mon mari, j’en suis certaine</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Autre partie du chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Moi je gage que c’est le mien.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est lui, je le sens à ma haine,</li>
+                           <li>Hélas&nbsp;! Sans lui j’étais si bien.</li>
+                        </ul>Air du Citoyen Deshayes
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! Si l’objet de ma constante flamme</li>
+                           <li>Bravait pour moi la mort et les enfers,</li>
+                           <li>Heureuse encor de régner sur son âme</li>
+                           <li>Je le suivrais au bout de l’Univers.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Elle sort)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène III</h3>Air&nbsp;: Un mouvement de curiosité
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quelle ennuieuse et sotte perronnelle&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Deuxième ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Elle a pourtant, je crois, de la beauté.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Laissons cela, parlons de votre nouvelle.</li>
+                           <li>Quoi&nbsp;! Cet époux&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Troisième ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oui, le fait est attesté.</li>
+                           <li>Jupiter permet qu’il emmène sa belle[ill.].</li>
+                           <li>Eh&nbsp;! mais… tenez. Il vient de ce côté.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Orphée paraît.</p>Refrain
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Allons, gai, rejouissons-nous&nbsp;!</li>
+                           <li>Ce n’est pas mon époux.</li>
+                        </ul>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène IV</h3>
+                        <p xmlns="" class="speaker">Orphée</p>Air&nbsp;: Guillot auprès de sa Guillemette
+                        <ul xmlns="" class="poem">
+                           <li>Je n’aurais jamais cru, mesdames,</li>
+                           <li>Les morts si mal disciplinés,</li>
+                           <li>Vos âmes,</li>
+                           <li>Tant hommes que femmes,</li>
+                           <li>Ne cessent de me rire au nez.</li>
+                           <li>Chacune dit, ah&nbsp;! le Jocrisse&nbsp;!</li>
+                           <li>La bonne dupe que voici,</li>
+                           <li>Qui, pour r’avoir Euridice,</li>
+                           <li>Vient nous relancer jusqu’ici&nbsp;!</li>
+                        </ul>Air&nbsp;: du nouveau confitéor
+                        <ul xmlns="" class="poem">
+                           <li>Contre un martyr de loyauté,</li>
+                           <li>Se peut-il qu’ainsi l’on déclame,</li>
+                           <li>L’objet pour qui j’ai tant trotté.</li>
+                           <li>Sachez enfin que c’est ma femme,</li>
+                           <li>Rendez-la-moi, par charité,</li>
+                           <li>En faveur de la nouveauté.</li>
+                        </ul>Air&nbsp;: du Citoyen Deshayes
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Reposez-vous, mon bel ami,</li>
+                           <li>Calmez, calmez votre tristesse,</li>
+                           <li>Cachez, cachez votre tristesse,</li>
+                           <li>Nous allons vers vous jusqu’ici</li>
+                           <li>Guider votre maîtresse.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Les Ombres sortent)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène V</h3>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">seul</p>Air&nbsp;: Que j’aime mon cher Arlequin&nbsp;!
+                        <ul xmlns="" class="poem">
+                           <li>Mais comme elles m’on reluqué,</li>
+                           <li>Ah&nbsp;! que c’est drôle,</li>
+                           <li>De Chacune j’ai remarqué</li>
+                           <li>Un petit coup-d’œil bien marqué&nbsp;;</li>
+                           <li>En vérité c’est drôle&nbsp;!</li>
+                           <li>Peste&nbsp;! le nouveau débarqué</li>
+                           <li>Ici joue un grand rôle.</li>
+                        </ul>Air&nbsp;: Non je ne ferai pas
+                        <ul xmlns="" class="poem">
+                           <li>J’ai dit que je brûlais d’une ardeur vive et pure&nbsp;;</li>
+                           <li>Il faut jusques au bout soutenir la gageure.</li>
+                           <li>Cependant j’ai vu là plus d’un joli minois,</li>
+                           <li>À qui j’en dirais bien deux mots en tapinois.</li>
+                        </ul>Air&nbsp;: Toujours, toujours, il est toujours le même.
+                        <ul xmlns="" class="poem">
+                           <li>Dieux&nbsp;! j’en rougis, quelle foiblesse extrême&nbsp;!</li>
+                           <li>Moi, le héros des époux, des amans,</li>
+                           <li>J’oubliais mes sermens,</li>
+                           <li>J’abjurais mon système&nbsp;!</li>
+                           <li>En vain je m’en repens&nbsp;:</li>
+                           <li>Je vois bien qu’en tout tems,</li>
+                           <li>En fait d’amour, l’homme est toujours le même.</li>
+                        </ul>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène VI</h3>Air&nbsp;: Amant fidèle et volage
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Époux fidèle et sensible</li>
+                           <li>Ton Euridice me suit.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Euridice&nbsp;!… est-il possible&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ne fais donc pas tant de bruit,</li>
+                           <li>Euridice va paraître</li>
+                           <li>Avec de nouveaux attraits.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je serai sage.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Premier ombre</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il faut l’être&nbsp;;</li>
+                           <li>Ou tu la perds à jamais.</li>
+                        </ul>Fin d’Air
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je vais la voir, ah quel plaisir, ah quel moment charmant&nbsp;!</li>
+                        </ul>
+                     </section>
+                  </section>
+                  <section xmlns="http://www.w3.org/1999/xhtml" class="div level2">
+                     <h2 xmlns="">Acte IV</h2>
+                     <p xmlns="" class="stage">Le Théâtre représente une caverne obscure et inhabitée des
+                        rochers, des torrens, etc.</p>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène I</h3>
+                        <p xmlns="" class="stage">Orphée tient Euridice par la main, elle détourne la tête.</p>Air&nbsp;: Dans un détour
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Est-ce bien toi</li>
+                           <li>Que je revoisNous corrigeons «&nbsp;revoi&nbsp;» par «&nbsp;revois&nbsp;».&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oui&nbsp;; c’est bien moi.</li>
+                           <li>Quel jour plein d’appas&nbsp;!</li>
+                           <li>Je te presse dans mes bras.</li>
+                           <li>Ah&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Arrêtons-nous ici</li>
+                           <li>Reposons-nous y,</li>
+                           <li>Mon cher ami.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Pourquoi cela&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il me semble qu’on est bien là.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il est tard déjà.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Asseyons-nous.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>M’y voilà.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(soupirant)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;!</li>
+                        </ul>Air&nbsp;: Lisette éclipse son aurore
+                        <ul xmlns="" class="poem">
+                           <li>N’aurais-tu donc rien à me dire&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma chère, il faut nous-en aller.</li>
+                           <li>Hélas&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je crois que tu soupires.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je voudrais et ne puis parler.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais de renaître à la lumière</li>
+                           <li>Pourquoi donc me donner l’espoir&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! ce n’est pas ici, ma chère,</li>
+                           <li>L’instant, ni le lieu de nous voir.</li>
+                        </ul>(mineur)
+                        <ul xmlns="" class="poem">
+                           <li>Euridice&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Eh&nbsp;! bien&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ô ma femme&nbsp;!</li>
+                           <li>C’est trop nous arrêter&nbsp;; suis-moi.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je ne règne plus sur ton ame.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Dieux&nbsp;! elle doute de ma foi&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>J’ai quitté la demeure sombre,</li>
+                           <li>Où m’enchaînait l’ordre des Dieux,</li>
+                           <li>Mais je crois n’être encor qu’une ombre,</li>
+                           <li>Puisque je déplais à tes yeux.</li>
+                        </ul>Air&nbsp;: Quel désespoir
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Plus que jamais,</li>
+                           <li>Cruelle, ton époux t’adore.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non tu me hais…</li>
+                           <li>Ou tu doutes de mes attraits.</li>
+                           <li>Si tu m’aimais…</li>
+                           <li>Que dis-je aimer&nbsp;?… Non, tu m’abhorres…</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Si je voulais</li>
+                           <li>Dire un mot… mais non je me tais.</li>
+                        </ul>Air&nbsp;: Je connais un berger discret
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Comment donc&nbsp;! tu fais le discret&nbsp;!</li>
+                           <li>Ah&nbsp;! rien n’est plus risible.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je saurai garder mon secret.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Cela n’est pas possible</li>
+                           <li>Nous sommes seuls ici tous deux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est trop me faire attendre.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Que ces momens seraient heureux</li>
+                           <li>Si tu voulais m’entendre&nbsp;!</li>
+                        </ul>Refrain
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je suis fâché, mais j’dis ma femme,</li>
+                           <li>Ça n’se peut pas, ça n’se peut pas.</li>
+                        </ul>Air&nbsp;: ne v’la-t-il pas que j’aime&nbsp;!
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Soupirons.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quel trouble je sens.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Hélas&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quelle est touchante&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Hélas&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ouf&nbsp;! je sens la dedans</li>
+                           <li>Le diable qui me tente.</li>
+                        </ul>Air&nbsp;: Ce mouchoir belle Raymonde
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tu fuis ta petite femme</li>
+                           <li>Qui t’aime si tendrement.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Hà&nbsp;! si j’en croyais ma flame…</li>
+                           <li>Mais il faut être prudent.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vois ma tristesse profonde.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Pour votre propre intérêt,</li>
+                           <li>Ne dérangez pas le monde,</li>
+                           <li>Laissez chacun comme il est.</li>
+                        </ul>Air&nbsp;: Va-t’en voir s’ils viennent
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(passant doucement autour d’Orphée)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais je suis en vérité</li>
+                           <li>Bien mal avisée.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(l’entendant marcher)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Bon, j’entends de ce côté</li>
+                           <li>Venir la rusée.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(approchant toujours)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je veux que subtilement</li>
+                           <li>Mes yeux le surprennent.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <p xmlns="" class="stage">(tournant tout à coup la tête)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Va t’en voir s’ils viennent,</li>
+                           <li>Jean,</li>
+                           <li>Va t’en voir s’ils viennent.</li>
+                        </ul>(après l’Air des trembleurs)
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ne soufrons pas davantage</li>
+                           <li>Un aussi sensible outrage&nbsp;;</li>
+                           <li>Redoute tout de ma rage.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je me ris de vos fureurs.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tiens je serai si méchante…</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Vous étiez plus éloquente</li>
+                           <li>Et beaucoup plus séduisante</li>
+                           <li>Lors que vous versiez des pleurs.</li>
+                        </ul>Air&nbsp;: Je sens un certain je ne sais qu’est-ce
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Jouons l’évanouissement,</li>
+                           <li>C’est le dernier remede.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Il faut partir dans le moment.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tant de hauteur m’excède.</li>
+                           <li>Oui, je succombe à ma tristesse.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Chère Euridice&nbsp;!…. foin de moi&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(Se laissant tomber sur un siege de gason)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je sens un certain je ne sais qu’est-ce.</li>
+                           <li>Je sens un certain je ne sais quoi.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Elle se releve et chante très haut)</p>Air&nbsp;: Quand le péril est agréable
+                        <ul xmlns="" class="poem">
+                           <li>Ô Ciel&nbsp;! ô&nbsp;! fortune ennemie.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quel port de voix, quel carillon&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>À la fin vous m’entendez donc&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Partons, ma chère amie.</li>
+                        </ul>Air&nbsp;: Ninete dit qu’on me fait politesse
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quoi, moi&nbsp;! partir&nbsp;! ah&nbsp;! ce n’est pas la peine</li>
+                           <li>Je vois pâlir le flambeau de mes jours.</li>
+                           <li>Je m’affaiblis.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(elle se rasseoit)</p>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ciel&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>La parque m’entraine.</li>
+                           <li>Orphée, Adieu. Songez à nos amours.</li>
+                           <li>Il s’attendrit.</li>
+                           <li>Quelles douleurs&nbsp;!</li>
+                           <li>Orphée&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <p xmlns="" class="stage">(haut)</p>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! quel martyre.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Hélas&nbsp;! je n’ai plus rien à dire.</li>
+                           <li>J’ai des vapeurs.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ciel&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je me meurs.</li>
+                        </ul>Air&nbsp;: À cetNous corrigeons «&nbsp;cette&nbsp;» par «&nbsp;cet&nbsp;». arrêt devions-nous nous
+                        attendre&nbsp;?
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je m’imposais un trop grand Sacrifice.</li>
+                           <li>Je ne puis plus résister à ses pleurs.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(à part)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Bon&nbsp;! je le tiens.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Oh&nbsp;! ma chère Euridice,</li>
+                           <li>Apprends…</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Il la regarde)</p>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(Tombant sur le banc de gason)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ô, ciel&nbsp;! qu’il est changé… Je meurs.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>Air&nbsp;: c’est la petite Thérese
+                        <ul xmlns="" class="poem">
+                           <li><a class="note" onclick="affiche('qphlWyw')">✱</a>J’ai perdu mon Euridice,</li>
+                           <li>Rien n’égale mon malheur.</li>
+                           <li>Sort cruel, ton injustice</li>
+                           <li>M’accable de sa rigueur.</li>
+                           <li>Oui&nbsp;; par ce trait de malice</li>
+                           <li>Tu veux déchirer mon cœur.</li>
+                           <li><a class="note" onclick="affiche('GYdBHkz')">✱</a>J’ai perdu mon Euridice</li>
+                           <li>Rien n’égale ma douleur.</li>
+                        </ul>Air&nbsp;: des Fraises
+                        <ul xmlns="" class="poem">
+                           <li>Ce revers qui m’est bien dû,</li>
+                           <li>Semble combler ma peine&nbsp;;</li>
+                           <li>Mais avec ce fer pointu</li>
+                           <li>Je vais…</li>
+                        </ul>
+                        <p xmlns="" class="stage">(Il tire son couteau.)</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène II</h3>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <p xmlns="" class="stage">(arrêtant le bras d’Orphée)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ture lu tu tu.</li>
+                           <li>Rengaîne, rengaîne, rengaîne.</li>
+                        </ul>Air&nbsp;: C’est un enfant.
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Amour, tu vois ma douce amie</li>
+                           <li>Qui dans mes bras vient expirer.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Et, près cette ombre chérie</li>
+                           <li>Tu ne sais donc que soupirer&nbsp;?</li>
+                           <li>Apprends donc, novice,</li>
+                           <li>Que c’est un caprice</li>
+                           <li>Et que pour le passer, souvent</li>
+                           <li>On fait l’enfant.</li>
+                        </ul>Air&nbsp;: du cit. Deshayes
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je ne puis qu’invoquer les Dieux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Quoi qu’enfant je saurai mieux faire</li>
+                           <li>Je vais r’ouvrir sa paupiere</li>
+                           <li>Par mon art miraculeux.</li>
+                           <li>En pareil cas femme jolie</li>
+                           <li>Peut-être eût péri sans retour&nbsp;;</li>
+                           <li>Sans le flambeau de l’Amour</li>
+                           <li>qui lui rendit la vie.</li>
+                        </ul>Air&nbsp;: Des deux Limousins
+                        <ul xmlns="" class="poem">
+                           <li>Viens par ici.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>V’là qu’ m’y voici.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Prends-lui la main.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>J’la tiens, cousin.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma bonne ami’.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ma bonne ami’.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je vous en pri’&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Je vous en pri’&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est votre époux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est votre époux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Embrassons-nous.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Embrassons-nous.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! que c’est doux&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(revenant à elle)</p>Fin d’air
+                        <ul xmlns="" class="poem">
+                           <li>Ciel&nbsp;! que vois-je là&nbsp;?</li>
+                        </ul>Air&nbsp;: quel voile importun
+                        <ul xmlns="" class="poem">
+                           <li>Que je faisais un beau songe&nbsp;!</li>
+                           <li>J’avais un mari</li>
+                           <li>Complaisant et poli.</li>
+                           <li>Mais, hélas&nbsp;! C’est un mensonge</li>
+                           <li>Les Époux</li>
+                           <li>Sont tous</li>
+                           <li>Fantasques ou jaloux.</li>
+                        </ul>Air&nbsp;: Un peu de tricherie
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tu vois que le remede opère.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Elle s’anime la commère.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Eh&nbsp;! Bon, bon, bon&nbsp;;</li>
+                           <li>Je t’en répondsNous corrigeons «&nbsp;répond&nbsp;» par «&nbsp;réponds&nbsp;».&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Avait-elle perdu la vie&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">(se levant)</p>
+                        <ul xmlns="" class="poem">
+                           <li>Non. Je n’étais qu’évanouie.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Eh&nbsp;! Bon, bon, bon,</li>
+                           <li>Ah, ah&nbsp;! mais voyez donc.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice et l’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Un peu de tricherie</li>
+                           <li>Dans la vie</li>
+                           <li>Est toujours de saison.</li>
+                        </ul>Air&nbsp;: Nous nous marirons dimanche
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mais pour à présent c’est du sérieux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Euridice&nbsp;! ô bien suprême&nbsp;!</li>
+                           <li>Ce jour heureux</li>
+                           <li>Comble mes vœux.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Moi d’ même.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Est-ce bien toi&nbsp;?</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Eh&nbsp;! oui. C’est moi.</li>
+                           <li>Moi-même.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Tous deux, sans façon,</li>
+                           <li>Embrassez-vous donc.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mon Euridice.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Mon cher Orphée.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Orphée et Euridice</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ah&nbsp;! que je t’aime&nbsp;!</li>
+                        </ul>
+                        <p xmlns="" class="speaker">L’Amour</p>Air&nbsp;: Réveillez-vous belle endormie
+                        <ul xmlns="" class="poem">
+                           <li>Pour que la fête soit complette&nbsp;;</li>
+                           <li>(Car je ne fais rien à demi.)</li>
+                           <li>Je m’en vais d’un coup de baguette</li>
+                           <li>Enjoliver ce canton-ci.</li>
+                        </ul>Air&nbsp;: Qu’il pleuve, qu’il vente
+                        <ul xmlns="" class="poem">
+                           <li>Qu’il pleuve, qu’il tonne, qu’il neige,</li>
+                           <li>Quand la route est longue, on l’abrège,</li>
+                           <li>Galant cortège de l’Amour,</li>
+                           <li>En ce lieu transportez ma cour.</li>
+                        </ul>
+                        <p xmlns="" class="stage"><a class="note" onclick="affiche('hTbFocI')">✱</a>Le Théâtre change et représente un Paysage agréable, dont le fond est rempli par
+                           des berceaux de Myrthe et de Roses sous lesquels se trouve réunie la suite de l’Amour
+                           figurée par des Bergers, des Pâtres et des Pastourelles.</p>
+                     </section>
+                     <section class="div level3">
+                        <h3 xmlns="">Scène dernière</h3>
+                        <p xmlns="" class="stage">Suite de l’Amour</p>Air du Cit. Deshayes
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Chantez, célébrez la beauté,</li>
+                           <li>Elle est l’appuy de mon empire.</li>
+                           <li>C’est au sentiment qu’elle inspire</li>
+                           <li>Que je dois l’immortalité.</li>
+                           <li>Dans tous les climats que j’éclaire</li>
+                           <li>Elle dispense mes Bienfaits&nbsp;;</li>
+                           <li>Que la beauté regne à jamais</li>
+                           <li>Et dans les cieux et sur la terre.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(On danse)</p>Air du Cit. Deshayes
+                        <p xmlns="" class="speaker">L’Amour</p>
+                        <ul xmlns="" class="poem">
+                           <li>Venez célébrer en ces lieux</li>
+                           <li>Un évenement merveilleux.</li>
+                           <li>Voici la curiosité</li>
+                           <li>La nouveauté</li>
+                           <li>La rareté.</li>
+                           <li>C’est une femme jeune et belle,</li>
+                           <li>Qui sacrifie à son époux</li>
+                           <li>La Liberté, ce bien si doux,</li>
+                           <li>Dont elle jouissait dans la nuit éternelle.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>La curiosité</li>
+                           <li>La nouveauté, etc.</li>
+                        </ul>Même air
+                        <p xmlns="" class="speaker">Un pâtre</p>
+                        <ul xmlns="" class="poem">
+                           <li>C’est un époux tendre et fidèle</li>
+                           <li>Dont le sort fait peu de jaloux</li>
+                           <li>Des Enfers, il revient chez nous</li>
+                           <li>Faire admirer un fou d’une espèce nouvelle.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>La curiosité, etc.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(On danse)</p>Couplets, air du Cit. Deshayes
+                        <p xmlns="" class="speaker">Une bergère</p>
+                        <ul xmlns="" class="poem">
+                           <li>La fête se passera</li>
+                           <li>Ici comme à l’Opéra.</li>
+                           <li>Jeunes garçons, jeunes filles</li>
+                           <li>Formes des danses gentilles,</li>
+                           <li>Allons gay, trémoussez-vous</li>
+                           <li>En l’honneur de ces époux.</li>
+                           <li>Oh, oh, oh. Vraiment, la belle,</li>
+                           <li>C’ n’est pas bagatelle.</li>
+                           <li>Ici l’on vous fêtera</li>
+                           <li>Aussi bien qu’à l’Opéra.</li>
+                        </ul>
+                        <p xmlns="" class="stage">(à Euridice)</p>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Ici l’on vous fêtera, etc.</li>
+                        </ul>Deuxième couplet
+                        <p xmlns="" class="speaker">Un pâtre</p>
+                        <ul xmlns="" class="poem">
+                           <li>S’en aller courir au diable</li>
+                           <li>Après une femme aimable</li>
+                           <li>Le fait est, dit-on, vrai&nbsp;; mais</li>
+                           <li>On ne le croira jamais.</li>
+                           <li>Oh, oh, oh, s’lon vous, la belle,</li>
+                           <li>C’est un’ bagatelle,</li>
+                           <li>Chaque femme admirera</li>
+                           <li>Nul époux m’imitera.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>Chaque femme, etc.</li>
+                        </ul>Troisième couplet
+                        <p xmlns="" class="speaker">Orphée</p>
+                        <ul xmlns="" class="poem">
+                           <li>Sexe aimé, sexe adorable,</li>
+                           <li>Ton empire est préférable</li>
+                           <li>À ce calme si trompeur</li>
+                           <li>Qu’on nomme la paix du cœur.</li>
+                           <li>Il est bien plus doux d’aimer, la belle.</li>
+                           <li>C’est une chose naturelle.</li>
+                           <li>La beauté commandera,</li>
+                           <li>L’univers obéira.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>La beauté, etc.</li>
+                        </ul>Quatrième couplet
+                        <p xmlns="" class="speaker">Euridice</p>
+                        <p xmlns="" class="stage">au Public</p>
+                        <ul xmlns="" class="poem">
+                           <li>Juge équitable et sévère,</li>
+                           <li>Nous ne cherchons qu’à vous plaire.</li>
+                           <li>Daignez sourire à nos jeux,</li>
+                           <li>Ici l’on fait de son mieux.</li>
+                           <li>Oh, oh, devant vous Citoyens, le zèle</li>
+                           <li>N’est pas bagatelle.</li>
+                           <li>L’indulgence applaudira,</li>
+                           <li>La critique se taira.</li>
+                        </ul>
+                        <p xmlns="" class="speaker">Chœur</p>
+                        <ul xmlns="" class="poem">
+                           <li>L’indulgence applaudira</li>
+                           <li>La critique se taira.</li>
+                        </ul>
+                        <p xmlns="" class="stage">Ballet général.</p>
+                     </section>
+                  </section>
+               </div>
+            </div>
+         </div>
+         <div id="PrUsvvO" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('PrUsvvO').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('PrUsvvO')">
+                     <option value="lespine1623_0100216">lespine1623, phrase 216</option>
+                     <option value="puget1624_3600333">puget1624, phrase 333</option>
+                     <option value="montardre2013_2800414">montardre2013, phrase 414</option>
+                     <option value="laffon2016_5701011">laffon2016, phrase 1011</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('PrUsvvO',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('PrUsvvO',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800022">
+               <h5>deshayes1792, phrase 22</h5>
+               <p><span class="w">Malgré </span><span data-type="GN"><span class="lemmes" data-href="5701011_36" data-corresp="laffon2016_5701011"><span class="lemmes" data-href="2800414_4" data-corresp="montardre2013_2800414"><span class="mots" data-href="3600333_39" data-corresp="puget1624_3600333"><span class="lemmes" data-href="0100216_23" data-corresp="lespine1623_0100216">Cerbere</span></span></span></span> </span><span class="w">et </span><span data-type="GN"><span class="w">l’</span><span class="w">vieux </span><span class="lemmes" data-href="5701011_33" data-corresp="laffon2016_5701011"><span class="lemmes" data-href="2800414_2" data-corresp="montardre2013_2800414"><span class="mots" data-href="3600333_1" data-corresp="puget1624_3600333"><span class="lemmes" data-href="0100216_32" data-corresp="lespine1623_0100216">Caron</span></span></span></span></span>, <span class="mots" data-href="3600333_31" data-corresp="puget1624_3600333">jusques </span><span class="w">dans </span><span data-type="GN"><span class="w">les </span><span class="w">demeures </span><span class="synos" data-href="5701011_29" data-corresp="laffon2016_5701011"><span class="synos" data-href="3600333_30" data-corresp="puget1624_3600333">sombres</span></span> </span><span data-type="GV"><span class="w">j’</span><span class="synos" data-href="5701011_7" data-corresp="laffon2016_5701011"><span class="synos" data-href="2800414_8" data-corresp="montardre2013_2800414"><span class="synos" data-href="3600333_3" data-corresp="puget1624_3600333"><span class="lemmes" data-href="0100216_30" data-corresp="lespine1623_0100216">irai </span></span></span></span><span class="lemmes" data-href="5701011_31" data-corresp="laffon2016_5701011"><span class="synos" data-href="2800414_8" data-corresp="montardre2013_2800414"><span class="lemmes" data-href="3600333_60" data-corresp="puget1624_3600333"><span class="synos" data-href="0100216_36" data-corresp="lespine1623_0100216">faire </span></span></span></span><span class="mots" data-href="5701011_32" data-corresp="laffon2016_5701011"><span class="synos" data-href="0100216_31" data-corresp="lespine1623_0100216">pleurer</span></span> </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="3600333_30" data-corresp="puget1624_3600333"><span class="synos" data-href="0100216_8" data-corresp="lespine1623_0100216">ombres</span></span></span>, <span data-type="GV"><span class="w">sans </span><span class="w">même </span><span class="w">en </span><span class="synos" data-href="2800414_8" data-corresp="montardre2013_2800414"><span class="synos" data-href="3600333_3" data-corresp="puget1624_3600333"><span class="synos" data-href="0100216_36" data-corresp="lespine1623_0100216">excepter</span></span></span> </span><span data-type="GN"><span class="lemmes" data-href="5701011_39" data-corresp="laffon2016_5701011"><span class="lemmes" data-href="2800414_11" data-corresp="montardre2013_2800414"><span class="mots" data-href="0100216_21" data-corresp="lespine1623_0100216">Pluton</span></span></span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="lespine1623_0100216" data-id="0100216" style="display:none">
+                  <h5>lespine1623, phrase 216</h5>
+                  <p><span data-type="GN"><span>En </span><span>despit </span><span>du </span><span data-type="GN"><span>destin</span></span> </span><span>et </span><span>de </span><span data-type="GN"><span>mes </span><span class="synos" data-id="0100216_8">maux </span><span>soufferts</span> </span><span data-type="GV"><span>je </span><span>veux </span><span>pour </span><span>te</span> </span><span data-type="GV"><span>revoir</span> </span><span data-type="GV"><span>devaller </span><span>aux</span> </span><span data-type="GN"><span>Enfers</span></span>, <span data-type="GV"><span>sans </span><span>redouter</span> </span><span data-type="GN"><span class="mots" data-id="0100216_21">Pluton</span></span>, <span data-type="GN"><span class="lemmes" data-id="0100216_23">Cerbère</span></span>, <span>ny </span><span data-type="GN"><span>la </span><span>Parque</span></span>, <span data-type="GV"><span>j’</span><span class="lemmes" data-id="0100216_30">iray </span><span class="synos" data-id="0100216_31">prier</span> </span><span data-type="GN"><span class="lemmes" data-id="0100216_32">Charon</span> </span><span data-type="GV"><span>qu’</span><span>il </span><span>me </span><span class="synos" data-id="0100216_36">passe </span><span>en</span> </span><span data-type="GN"><span>sa </span><span>barque</span></span>. </p>
+               </div>
+               <div id="puget1624_3600333" data-id="3600333" style="display:none">
+                  <h5>puget1624, phrase 333</h5>
+                  <p><span data-type="GN"><span class="mots" data-id="3600333_1">Caron</span> </span><span data-type="GV"><span>avoit </span><span class="synos" data-id="3600333_3">abandonné</span> </span><span data-type="GN"><span>sa </span><span>barque</span> </span><span>sur </span><span data-type="GN"><span>le </span><span>rivage</span> </span><span data-type="GV"><span>pour </span><span>ouïr</span> </span><span data-type="GN"><span>cette </span><span>musique</span></span>&nbsp;: <span>mais </span><span data-type="GV"><span>elle </span><span>le </span><span>suivit </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>instant</span> </span><span>avec </span><span data-type="GN"><span>le </span><span>fleuve</span></span>&nbsp;: <span>car </span><span data-type="GV"><span>il </span><span>porta</span> </span><span data-type="GN"><span>ses </span><span>ondes </span><span class="synos" data-id="3600333_30">noires</span> </span><span class="mots" data-id="3600333_31">jusques </span><span>aux </span><span data-type="GN"><span>portes </span><span>de </span><span>l’</span><span data-type="GN"><span>Enfer</span></span></span>, <span>ou </span><span data-type="GN"><span class="mots" data-id="3600333_39">Cerbere</span> </span><span data-type="GV"><span>estoit </span><span>delié </span><span>ayant</span> </span><span data-type="GAdj"><span>rompu</span> </span><span data-type="GN"><span>ses </span><span>chaisnes</span></span>, <span>et </span><span data-type="GAdj"><span>toutesfois </span><span>garrotté </span><span>par</span> </span><span data-type="GN"><span>un </span><span>lien </span><span>de </span><span data-type="GN"><span>charmes</span></span></span>, <span data-type="GN"><span>dont </span><span>les </span><span>douceurs</span> </span><span data-type="GV"><span>luy </span><span class="lemmes" data-id="3600333_60">firent </span><span>cognoistre</span></span>, <span>à </span><span data-type="GN"><span>sa </span><span>façon</span></span>, <span data-type="GV"><span>qu’</span><span>il </span><span>estoit</span> </span><span data-type="GAdj"><span>heureux</span> </span><span data-type="GV"><span>d’</span><span>avoir</span> </span><span data-type="GN"><span>trois </span><span>testes</span></span>, <span data-type="GV"><span>pour </span><span>avoir</span> </span><span data-type="GN"><span>six </span><span>oreilles</span></span>. </p>
+               </div>
+               <div id="montardre2013_2800414" data-id="2800414" style="display:none">
+                  <h5>montardre2013, phrase 414</h5>
+                  <p>&nbsp;– <span data-type="GN"><span class="lemmes" data-id="2800414_2">Charon</span> </span><span>et </span><span data-type="GN"><span class="lemmes" data-id="2800414_4">Cerbère</span> </span><span data-type="GV"><span>t’</span><span>ont </span><span>laissé </span><span class="synos" data-id="2800414_8">passer</span></span>&nbsp;? <span data-type="GV"><span>interroge</span> </span><span data-type="GN"><span class="lemmes" data-id="2800414_11">Hadès </span><span>perplexe</span></span>. </p>
+               </div>
+               <div id="laffon2016_5701011" data-id="5701011">
+                  <h5>laffon2016, phrase 1011</h5>
+                  <p><span data-type="GV"><span>J’</span><span>ai </span><span>terrassé</span> </span><span data-type="GN"><span>le </span><span>Dragon</span> </span><span data-type="GV"><span>qui </span><span class="synos" data-id="5701011_7">surveillait</span> </span><span data-type="GN"><span>la </span><span>Toison </span><span>d’</span><span data-type="GN"><span>or </span><span>charmé</span></span> </span><span data-type="GN"><span>les </span><span>sirènes </span><span>ensorcelé</span> </span><span data-type="GN"><span>les </span><span>arbres</span></span>, <span data-type="GN"><span>les </span><span>rochers</span> </span><span>et </span><span data-type="GN"><span>les </span><span>fauves </span><span>les </span><span>plus </span><span data-type="GN"><span class="synos" data-id="5701011_29">cruels</span></span></span>, <span data-type="GV"><span class="lemmes" data-id="5701011_31">fait </span><span class="mots" data-id="5701011_32">pleurer</span> </span><span data-type="GN"><span class="lemmes" data-id="5701011_33">Charon </span><span>endormi</span> </span><span data-type="GN"><span class="lemmes" data-id="5701011_36">Cerbère</span></span>, <span>mais </span><span data-type="GN"><span class="lemmes" data-id="5701011_39">Hadès</span></span>&nbsp;? </p>
+               </div>
+            </div>
+         </div>
+         <div id="VdXTvif" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('VdXTvif').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('VdXTvif')">
+                     <option value="desfontaines1810_4600020">desfontaines1810, phrase 20</option>
+                     <option value="duboullay1690_3500337">duboullay1690, phrase 337</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('VdXTvif',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('VdXTvif',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800055">
+               <h5>deshayes1792, phrase 55</h5>
+               <p><span class="w">Si </span><span class="w">par </span><span data-type="GN"><span class="w">tes </span><span class="w">son </span><span class="w">mélodieux </span><span data-type="GN"><span class="lemmes" data-href="3500337_17" data-corresp="duboullay1690_3500337">pluton</span></span> </span><span data-type="GV"><span class="synos" data-href="3500337_18" data-corresp="duboullay1690_3500337"><span class="synos" data-href="4600020_10" data-corresp="desfontaines1810_4600020">laisse </span></span><span class="w">attendrir</span> </span><span data-type="GN"><span class="w">son </span><span class="synos" data-href="3500337_20" data-corresp="duboullay1690_3500337"><span class="synos" data-href="4600020_12" data-corresp="desfontaines1810_4600020">ame</span></span></span>, <span class="w">et </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="antos" data-href="3500337_18" data-corresp="duboullay1690_3500337">daigne </span><span class="w">r'ouvrir</span> </span><span data-type="GN"><span class="w">les </span><span class="mots" data-href="4600020_18" data-corresp="desfontaines1810_4600020">yeux </span><span class="w">du </span><span class="mots" data-href="3500337_12" data-corresp="duboullay1690_3500337">charmant </span><span data-type="GN"><span class="mots" data-href="3500337_10" data-corresp="duboullay1690_3500337">objet </span><span class="w">de </span><span class="w">ta </span><span class="synos" data-href="4600020_5" data-corresp="desfontaines1810_4600020">flame</span></span></span>, <span data-type="GN"><span class="w">songe</span> </span><span class="w">que </span><span data-type="GN"><span class="w">le </span><span class="synos" data-href="3500337_20" data-corresp="duboullay1690_3500337">sort</span> </span><span data-type="GV"><span class="w">te </span><span class="lemmes" data-href="3500337_6" data-corresp="duboullay1690_3500337"><span class="lemmes" data-href="4600020_8" data-corresp="desfontaines1810_4600020">défend</span></span> </span><span class="w">jusqu’</span><span class="w">à </span><span data-type="GN"><span class="w">ton </span><span class="antos" data-href="3500337_20" data-corresp="duboullay1690_3500337">retour</span> </span><span class="w">sur </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3500337_15" data-corresp="duboullay1690_3500337">terre</span></span>, <span data-type="GV"><span class="w">de </span><span class="synos" data-href="3500337_8" data-corresp="duboullay1690_3500337"><span class="lemmes" data-href="4600020_16" data-corresp="desfontaines1810_4600020">jetter</span></span> </span><span data-type="GN"><span class="w">un </span><span class="lemmes" data-href="4600020_18" data-corresp="desfontaines1810_4600020">oeil</span> </span><span class="mots" data-href="3500337_4" data-corresp="duboullay1690_3500337">seulement </span><span class="w">sur </span><span data-type="GN"><span class="w">une </span><span class="mots" data-href="4600020_21" data-corresp="desfontaines1810_4600020">épouse</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">t’</span><span class="w">est</span> </span><span data-type="GAdj"><span class="w">chère</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="desfontaines1810_4600020" data-id="4600020" style="display:none">
+                  <h5>desfontaines1810, phrase 20</h5>
+                  <p><span>Mais </span><span data-type="GN"><span>la </span><span>reine </span><span>des </span><span data-type="GN"><span class="synos" data-id="4600020_5">enfers</span></span> </span><span data-type="GV"><span>lui </span><span>avoit </span><span class="lemmes" data-id="4600020_8">défendu </span><span>de</span> </span><span data-type="GV"><span class="synos" data-id="4600020_10">tourner</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="4600020_12">tête</span></span>, <span>et </span><span data-type="GV"><span>de </span><span class="lemmes" data-id="4600020_16">jeter</span> </span><span data-type="GN"><span>les </span><span class="mots lemmes" data-id="4600020_18">yeux</span> </span><span>sur </span><span data-type="GN"><span>son </span><span class="mots" data-id="4600020_21">épouse</span></span>. </p>
+               </div>
+               <div id="duboullay1690_3500337" data-id="3500337">
+                  <h5>duboullay1690, phrase 337</h5>
+                  <p><span data-type="GN"><span>Une </span><span>dure </span><span>loy</span> </span><span data-type="GV"><span class="mots" data-id="3500337_4">seulement </span><span>me </span><span class="lemmes" data-id="3500337_6">deffendoit </span><span>de </span><span class="synos" data-id="3500337_8">voir</span> </span><span data-type="GN"><span>cét </span><span class="mots" data-id="3500337_10">objet</span> </span><span>si </span><span data-type="GV"><span class="mots" data-id="3500337_12">charmant </span><span>dans</span> </span><span data-type="GN"><span>les </span><span class="synos" data-id="3500337_15">lieux</span> </span><span data-type="GN"><span>où </span><span class="lemmes" data-id="3500337_17">Pluton</span> </span><span data-type="GV"><span class="synos" data-id="3500337_18">exerce</span> </span><span data-type="GN"><span>sa </span><span class="synos" data-id="3500337_20">puissance</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="mjirgar" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('mjirgar').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('mjirgar')">
+                     <option value="gluck1774_2100017">gluck1774, phrase 17</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('mjirgar',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('mjirgar',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800020">
+               <h5>deshayes1792, phrase 20</h5>
+               <p><span class="w">À </span><span class="synos" data-href="2100017_16" data-corresp="gluck1774_2100017">tous </span><span data-type="GN"><span class="w">les </span><span class="w">Dieux</span> </span><span data-type="GV"><span class="w">j’</span><span class="synos" data-href="2100017_10" data-corresp="gluck1774_2100017">adresse</span> </span><span data-type="GN"><span class="w">ma </span><span class="lemmes" data-href="2100017_24" data-corresp="gluck1774_2100017">priere</span></span>, <span class="mots" data-href="2100017_20" data-corresp="gluck1774_2100017">hélas</span>&nbsp;! <span data-type="GV"><span class="w">autant </span><span class="w">en </span><span class="lemmes" data-href="2100017_22" data-corresp="gluck1774_2100017">emporte</span> </span><span data-type="GN"><span class="w">le </span><span class="lemmes" data-href="2100017_18" data-corresp="gluck1774_2100017">vent</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="gluck1774_2100017" data-id="2100017">
+                  <h5>gluck1774, phrase 17</h5>
+                  <p><span data-type="GN"><span>Ton </span><span>époux </span><span>gémissant </span><span>interdit </span><span>éperdu</span></span>, <span data-type="GV"><span>te </span><span class="synos" data-id="2100017_10">demande </span><span>sans</span> </span><span data-type="GN"><span>cesse</span> </span><span>à </span><span data-type="GN"><span>la </span><span>nature </span><span class="synos" data-id="2100017_16">entière</span> </span><span data-type="GN"><span>les </span><span class="lemmes" data-id="2100017_18">vents</span></span>, <span class="mots" data-id="2100017_20">hélas</span>&nbsp;! <span data-type="GV"><span class="lemmes" data-id="2100017_22">emportent</span> </span><span data-type="GN"><span>sa </span><span class="lemmes" data-id="2100017_24">prière </span><span>accablé </span><span>de</span> </span><span data-type="GN"><span>regrets</span></span>, <span data-type="GV"><span>je </span><span>parcours </span><span>des</span> </span><span data-type="GN"><span>forêts</span> </span><span data-type="GN"><span>la </span><span>vaste </span><span>enceinte</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="qphlWyw" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('qphlWyw').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('qphlWyw')">
+                     <option value="gluck1774_2100218">gluck1774, phrase 218</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('qphlWyw',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('qphlWyw',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800372">
+               <h5>deshayes1792, phrase 372</h5>
+               <p><span data-type="GV"><span class="w">J’</span><span class="w">ai </span><span class="mots" data-href="2100218_3" data-corresp="gluck1774_2100218">perdu</span> </span><span data-type="GN"><span class="w">mon </span><span class="lemmes" data-href="2100218_5" data-corresp="gluck1774_2100218">Euridice</span></span>, <span data-type="GN"><span class="mots" data-href="2100218_7" data-corresp="gluck1774_2100218">rien</span> </span><span data-type="GV"><span class="w">n’</span><span class="mots" data-href="2100218_9" data-corresp="gluck1774_2100218">égale</span> </span><span data-type="GN"><span class="w">mon </span><span class="mots" data-href="2100218_11" data-corresp="gluck1774_2100218">malheur</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="gluck1774_2100218" data-id="2100218">
+                  <h5>gluck1774, phrase 218</h5>
+                  <p><span data-type="GV"><span>J’</span><span>ai </span><span class="mots" data-id="2100218_3">perdu</span> </span><span data-type="GN"><span>mon </span><span class="lemmes" data-id="2100218_5">Eurydice</span></span>, <span data-type="GN"><span class="mots" data-id="2100218_7">rien</span> </span><span data-type="GV"><span>n’</span><span class="mots" data-id="2100218_9">égale</span> </span><span data-type="GN"><span>mon </span><span class="mots" data-id="2100218_11">malheur</span></span>&nbsp;; <span data-type="GV"><span>sort</span> </span><span data-type="GAdj"><span>cruel</span></span>&nbsp;! <span data-type="GN"><span>quelle </span><span>rigueur</span></span>&nbsp;! </p>
+               </div>
+            </div>
+         </div>
+         <div id="GYdBHkz" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('GYdBHkz').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('GYdBHkz')">
+                     <option value="gluck1774_2100218">gluck1774, phrase 218</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('GYdBHkz',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('GYdBHkz',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800375">
+               <h5>deshayes1792, phrase 375</h5>
+               <p><span data-type="GV"><span class="w">J’</span><span class="w">ai </span><span class="mots" data-href="2100218_3" data-corresp="gluck1774_2100218">perdu</span> </span><span data-type="GN"><span class="w">mon </span><span class="lemmes" data-href="2100218_5" data-corresp="gluck1774_2100218">Euridice</span> </span><span data-type="GV"><span class="mots" data-href="2100218_7" data-corresp="gluck1774_2100218">rien </span><span class="w">n’</span><span class="mots" data-href="2100218_9" data-corresp="gluck1774_2100218">égale</span> </span><span data-type="GN"><span class="w">ma </span><span class="synos" data-href="2100218_11" data-corresp="gluck1774_2100218">douleur</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="gluck1774_2100218" data-id="2100218">
+                  <h5>gluck1774, phrase 218</h5>
+                  <p><span data-type="GV"><span>J’</span><span>ai </span><span class="mots" data-id="2100218_3">perdu</span> </span><span data-type="GN"><span>mon </span><span class="lemmes" data-id="2100218_5">Eurydice</span></span>, <span data-type="GN"><span class="mots" data-id="2100218_7">rien</span> </span><span data-type="GV"><span>n’</span><span class="mots" data-id="2100218_9">égale</span> </span><span data-type="GN"><span>mon </span><span class="synos" data-id="2100218_11">malheur</span></span>&nbsp;; <span data-type="GV"><span>sort</span> </span><span data-type="GAdj"><span>cruel</span></span>&nbsp;! <span data-type="GN"><span>quelle </span><span>rigueur</span></span>&nbsp;! </p>
+               </div>
+            </div>
+         </div>
+         <div id="ZkxJceF" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ZkxJceF').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ZkxJceF')">
+                     <option value="chapoton1648_3300329">chapoton1648, phrase 329</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ZkxJceF',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ZkxJceF',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800150">
+               <h5>deshayes1792, phrase 150</h5>
+               <p><span data-type="GV"><span class="w">Il </span><span class="w">nous </span><span class="synos" data-href="3300329_47" data-corresp="chapoton1648_3300329">endormira </span><span class="mots" data-href="3300329_10" data-corresp="chapoton1648_3300329">tout </span><span class="synos" data-href="3300329_14" data-corresp="chapoton1648_3300329">comme</span> </span><span class="w">à </span><span data-type="GN"><span class="w">l’</span><span class="w">Opéra</span></span>&nbsp;; <span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="synos" data-href="3300329_42" data-corresp="chapoton1648_3300329">descende </span><span class="w">aux</span> </span><span data-type="GN"><span class="synos" data-href="3300329_3" data-corresp="chapoton1648_3300329">enfers</span> </span><span data-type="GN"><span class="w">les </span><span class="lemmes" data-href="3300329_36" data-corresp="chapoton1648_3300329">chemins</span> </span><span data-type="GV"><span class="w">sont </span><span class="lemmes" data-href="3300329_34" data-corresp="chapoton1648_3300329">ouverts</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="chapoton1648_3300329" data-id="3300329">
+                  <h5>chapoton1648, phrase 329</h5>
+                  <p><span>De </span><span data-type="GN"><span>ceste </span><span class="synos" data-id="3300329_3">abisme </span><span>affreux</span> </span><span data-type="GV"><span>soyez</span> </span><span data-type="GV"><span>benit</span> </span><span data-type="GN"><span>mon </span><span>pere</span></span>, <span data-type="GV"><span class="mots" data-id="3300329_10">tout </span><span>me </span><span>va </span><span>succeder</span> </span><span class="synos" data-id="3300329_14">ainsi </span><span>que </span><span data-type="GV"><span>je </span><span>l’</span><span>espere</span></span>, <span data-type="GN"><span>les </span><span>Parques</span> </span><span>aujourd'huy </span><span>d’</span><span data-type="GN"><span>une </span><span>fatale </span><span>main</span></span>, <span data-type="GV"><span>pour </span><span>aller </span><span>chez</span> </span><span data-type="GN"><span>Pluton</span> </span><span data-type="GV"><span>m’</span><span>ont </span><span class="lemmes" data-id="3300329_34">ouvert</span> </span><span data-type="GN"><span>un </span><span class="lemmes" data-id="3300329_36">chemin</span></span>, <span>alors </span><span>que </span><span data-type="GV"><span>j’</span><span>ay </span><span class="synos" data-id="3300329_42">passé</span> </span><span data-type="GN"><span>l’</span><span>effroyable </span><span>Cerbere </span><span class="synos" data-id="3300329_47">surpris </span><span>de</span> </span><span data-type="GN"><span>mes </span><span>chansons</span> </span><span data-type="GV"><span>a </span><span>perdu</span> </span><span data-type="GN"><span>sa </span><span>colere</span></span>, <span data-type="GV"><span>je </span><span>l’</span><span>ay </span><span>veu</span> </span><span data-type="GN"><span>prés </span><span>de </span><span>moy </span><span>plein </span><span>de</span> </span><span data-type="GN"><span>ravissement </span><span>aux </span><span data-type="GN"><span>portes </span><span>des </span><span>Enfers</span></span> </span><span data-type="GV"><span>dormir </span><span>profondement</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="hTbFocI" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('hTbFocI').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('hTbFocI')">
+                     <option value="duboullay1690_3500044">duboullay1690, phrase 44</option>
+                     <option value="dorvigny1775_5400001">dorvigny1775, phrase 1</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('hTbFocI',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('hTbFocI',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800423">
+               <h5>deshayes1792, phrase 423</h5>
+               <p><span data-type="GN"><span class="w">Le </span><span class="mots" data-href="5400001_2" data-corresp="dorvigny1775_5400001"><span class="lemmes" data-href="3500044_2" data-corresp="duboullay1690_3500044">Théâtre</span></span> </span><span data-type="GV"><span class="w">change</span> </span><span class="w">et </span><span data-type="GV"><span class="mots" data-href="5400001_3" data-corresp="dorvigny1775_5400001"><span class="lemmes" data-href="3500044_3" data-corresp="duboullay1690_3500044">représente</span></span> </span><span data-type="GN"><span class="w">un </span><span class="mots" data-href="5400001_5" data-corresp="dorvigny1775_5400001"><span class="synos" data-href="3500044_5" data-corresp="duboullay1690_3500044">Paysage </span></span><span class="mots" data-href="5400001_6" data-corresp="dorvigny1775_5400001"><span class="lemmes" data-href="3500044_6" data-corresp="duboullay1690_3500044">agréable</span></span></span>, <span data-type="GN"><span class="mots" data-href="5400001_22" data-corresp="dorvigny1775_5400001">dont </span><span class="w">le </span><span class="synos" data-href="5400001_8" data-corresp="dorvigny1775_5400001">fond</span> </span><span data-type="GV"><span class="w">est </span><span class="w">rempli </span><span class="w">par</span> </span><span class="w">des </span><span data-type="GN"><span class="w">berceaux </span><span class="w">de </span><span data-type="GN"><span class="w">Myrthe</span></span> </span><span class="w">et </span><span class="w">de </span><span data-type="GN"><span class="w">Roses</span> </span><span data-type="GV"><span class="w">sous </span><span class="w">lesquels </span><span class="w">se </span><span class="w">trouve </span><span class="w">réunie</span> </span><span data-type="GN"><span class="w">la </span><span class="w">suite </span><span class="w">de </span><span class="w">l’</span><span data-type="GN"><span class="w">Amour </span><span class="w">figurée</span></span> </span><span class="w">par </span><span class="w">des </span><span data-type="GN"><span class="w">Bergers</span></span>, <span class="w">des </span><span data-type="GN"><span class="w">Pâtres</span> </span><span class="w">et </span><span class="w">des </span><span data-type="GN"><span class="w">Pastourelles</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="duboullay1690_3500044" data-id="3500044" style="display:none">
+                  <h5>duboullay1690, phrase 44</h5>
+                  <p><span data-type="GN"><span>Le </span><span class="lemmes" data-id="3500044_2">Theatre</span> </span><span data-type="GV"><span class="lemmes" data-id="3500044_3">represente</span> </span><span data-type="GN"><span>une </span><span class="synos" data-id="3500044_5">Campagne </span><span class="lemmes" data-id="3500044_6">agreable </span><span>dans </span><span>le </span><span data-type="GN"><span>voisinage </span><span>de </span><span>la </span><span>Capitale </span><span>de </span><span>la </span><span>Thrace</span></span></span>. </p>
+               </div>
+               <div id="dorvigny1775_5400001" data-id="5400001">
+                  <h5>dorvigny1775, phrase 1</h5>
+                  <p><span data-type="GN"><span>Le </span><span class="mots" data-id="5400001_2">Théâtre</span> </span><span data-type="GV"><span class="mots" data-id="5400001_3">représente</span> </span><span data-type="GN"><span>un </span><span class="mots" data-id="5400001_5">Paysage </span><span class="mots" data-id="5400001_6">agréable </span><span>et </span><span class="synos" data-id="5400001_8">lointain</span></span>, <span>d’</span><span data-type="GN"><span>un </span><span>côté </span><span>de </span><span>l’</span><span>autre</span> </span><span data-type="GV"><span>on </span><span>apperçoit</span> </span><span data-type="GN"><span>une </span><span>Forge</span></span>, <span data-type="GN"><span class="mots" data-id="5400001_22">dont </span><span>les </span><span>travaux</span> </span><span data-type="GV"><span>ne </span><span>sont </span><span>pas </span><span>animés</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="WtljGnm" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('WtljGnm').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('WtljGnm')">
+                     <option value="fuzelier1711_5100016">fuzelier1711, phrase 16</option>
+                     <option value="duboullay1690_3500176">duboullay1690, phrase 176</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('WtljGnm',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('WtljGnm',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800104">
+               <h5>deshayes1792, phrase 104</h5>
+               <p><span data-type="GN"><span class="w">Le </span><span class="lemmes" data-href="3500176_2" data-corresp="duboullay1690_3500176"><span class="lemmes" data-href="5100016_2" data-corresp="fuzelier1711_5100016">Théâtre</span></span> </span><span data-type="GV"><span class="lemmes" data-href="3500176_3" data-corresp="duboullay1690_3500176"><span class="mots" data-href="5100016_5" data-corresp="fuzelier1711_5100016">représente</span></span> </span><span data-type="GN"><span class="w">le </span><span class="lemmes" data-href="3500176_5" data-corresp="duboullay1690_3500176">vestibule </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="5100016_7" data-corresp="fuzelier1711_5100016">Palais </span><span class="w">de </span><span class="mots" data-href="3500176_9" data-corresp="duboullay1690_3500176"><span class="mots" data-href="5100016_9" data-corresp="fuzelier1711_5100016">Pluton</span></span></span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="fuzelier1711_5100016" data-id="5100016" style="display:none">
+                  <h5>fuzelier1711, phrase 16</h5>
+                  <p><span data-type="GN"><span>Le </span><span class="lemmes" data-id="5100016_2">théâtre</span> </span><span data-type="GV"><span>change</span> </span><span>et </span><span data-type="GV"><span class="mots" data-id="5100016_5">représente</span> </span><span data-type="GN"><span>le </span><span class="mots" data-id="5100016_7">Palais </span><span>de </span><span data-type="GN"><span class="mots" data-id="5100016_9">Pluton</span></span></span>. </p>
+               </div>
+               <div id="duboullay1690_3500176" data-id="3500176">
+                  <h5>duboullay1690, phrase 176</h5>
+                  <p><span data-type="GN"><span>Le </span><span class="lemmes" data-id="3500176_2">Theatre</span> </span><span data-type="GV"><span class="lemmes" data-id="3500176_3">represente</span> </span><span data-type="GN"><span>un </span><span class="lemmes" data-id="3500176_5">Vestibule </span><span>magnifique</span></span>, <span data-type="GN"><span>où </span><span class="mots" data-id="3500176_9">Pluton</span> </span><span>sur </span><span data-type="GN"><span>son </span><span>Thrône</span> </span><span data-type="GV"><span>a</span> </span><span data-type="GN"><span>coûtume</span> </span><span data-type="GV"><span>de </span><span>juger</span> </span><span data-type="GN"><span>les </span><span>Ombres</span> </span><span data-type="GV"><span>qui </span><span>viennent </span><span>de </span><span>passer</span> </span><span data-type="GN"><span>le </span><span>Styx</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="ZBqPKKY" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ZBqPKKY').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ZBqPKKY')">
+                     <option value="clerambault1710_3800018">clerambault1710, phrase 18</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ZBqPKKY',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ZBqPKKY',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800181">
+               <h5>deshayes1792, phrase 181</h5>
+               <p><span data-type="GV"><span class="w">Je </span><span class="w">suis </span><span class="w">trop</span> </span><span data-type="GAdj"><span class="synos" data-href="3800018_19" data-corresp="clerambault1710_3800018">bon</span></span>&nbsp;; <span class="w">mais </span><span class="w">si </span><span data-type="GN"><span class="w">pareille </span><span class="w">chose</span> </span><span data-type="GV"><span class="mots" data-href="3800018_4" data-corresp="clerambault1710_3800018">arrive</span></span>, <span data-type="GN"><span class="w">jure</span></span>, <span class="w">par </span><span data-type="GN"><span class="w">l’</span><span class="mots" data-href="3800018_8" data-corresp="clerambault1710_3800018">infernale </span><span class="mots" data-href="3800018_9" data-corresp="clerambault1710_3800018">rive</span></span>, <span class="w">plus </span><span class="w">de </span><span data-type="GN"><span class="w">pardon</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="clerambault1710_3800018" data-id="3800018">
+                  <h5>clerambault1710, phrase 18</h5>
+                  <p><span>Cependant </span><span data-type="GN"><span>le </span><span>héros</span> </span><span data-type="GV"><span class="mots" data-id="3800018_4">arrive</span></span>, <span>sur </span><span data-type="GN"><span>l’</span><span class="mots" data-id="3800018_8">infernale </span><span class="mots" data-id="3800018_9">rive</span></span>, <span>et </span><span>malgré </span><span data-type="GN"><span>les </span><span>lois </span><span>d’</span><span data-type="GN"><span>Atropos</span></span></span>, <span>au </span><span data-type="GN"><span class="synos" data-id="3800018_19">fier </span><span>Dieu </span><span>des </span><span data-type="GN"><span>Enfers</span></span> </span><span data-type="GV"><span>il </span><span>adresse</span> </span><span data-type="GN"><span>ces </span><span>mots</span></span>&nbsp;: </p>
+               </div>
+            </div>
+         </div>
+         <div id="ovtozwC" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('ovtozwC').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('ovtozwC')">
+                     <option value="legouais1301_7600048">legouais1301, phrase 48</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('ovtozwC',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('ovtozwC',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800134">
+               <h5>deshayes1792, phrase 134</h5>
+               <p><span class="w">À </span><span data-type="GN"><span class="w">votre </span><span class="synos" data-href="7600048_252" data-corresp="legouais1301_7600048">mine</span> </span><span data-type="GV"><span class="w">j’</span><span class="w">vous </span><span class="synos" data-href="7600048_228" data-corresp="legouais1301_7600048">reconnais</span> </span><span class="w">et </span><span data-type="GV"><span class="w">j’</span><span class="lemmes" data-href="7600048_10" data-corresp="legouais1301_7600048">vois</span> </span><span class="w">qu’</span><span class="w">dans </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="7600048_185" data-corresp="legouais1301_7600048">sagesse </span><span class="lemmes" data-href="7600048_295" data-corresp="legouais1301_7600048">profonde</span> </span><span data-type="GV"><span class="w">pour </span><span class="lemmes" data-href="7600048_319" data-corresp="legouais1301_7600048">tourmenter</span> </span><span class="lemmes" data-href="7600048_229" data-corresp="legouais1301_7600048">tous </span><span data-type="GN"><span class="w">ses </span><span class="synos" data-href="7600048_82" data-corresp="legouais1301_7600048">sujets </span><span class="w">pluton</span> </span><span data-type="GV"><span class="lemmes" data-href="7600048_190" data-corresp="legouais1301_7600048">sait </span><span class="mots" data-href="7600048_187" data-corresp="legouais1301_7600048">bien </span><span class="synos" data-href="7600048_19" data-corresp="legouais1301_7600048">choisir</span> </span><span data-type="GN"><span class="w">son </span><span class="synos" data-href="7600048_117" data-corresp="legouais1301_7600048">monde</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="legouais1301_7600048" data-id="7600048">
+                  <h5>legouais1301, phrase 48</h5>
+                  <p><span data-type="GN"><span>Historial </span><span>sens</span> </span><span data-type="GV"><span>puet </span><span>avoir</span> </span><span data-type="GN"><span>ceste </span><span>fable</span> </span><span>et </span><span data-type="GN"><span>pot</span> </span><span data-type="GV"><span>estre</span> </span><span data-type="GV"><span class="lemmes" data-id="7600048_10">voir</span> </span><span>si </span><span>com </span><span data-type="GN"><span>li </span><span>contes</span> </span><span data-type="GV"><span>le </span><span>recite</span> </span><span data-type="GN"><span>c’</span><span>Orpheus</span> </span><span data-type="GV"><span class="synos" data-id="7600048_19">prist </span><span>la </span><span>devant</span> </span><span data-type="GN"><span>dite </span><span>euridicen</span> </span><span>par </span><span data-type="GN"><span>espousailles</span> </span><span>et </span><span>que </span><span data-type="GN"><span>la </span><span>dame</span> </span><span>en </span><span data-type="GN"><span>ces </span><span>nocailles </span><span>mori </span><span>dou </span><span data-type="GN"><span>serpent</span></span> </span><span data-type="GN"><span>qui </span><span>le </span><span>mort</span> </span><span data-type="GN"><span>dont </span><span>le </span><span>poestes</span> </span><span>par </span><span data-type="GN"><span>sa </span><span>mort</span> </span><span data-type="GV"><span>se </span><span>dolut </span><span>tant </span><span>outre</span> </span><span data-type="GN"><span>mesure</span> </span><span>c’</span><span data-type="GV"><span>onques </span><span>puis </span><span>n’</span><span>ot </span><span>de</span> </span><span data-type="GN"><span>feme</span> </span><span data-type="GN"><span>cure</span> </span><span>toute </span><span data-type="GN"><span>amour </span><span>de </span><span data-type="GN"><span>feme</span></span> </span><span data-type="GV"><span>fuioit</span> </span><span>et </span><span>tout </span><span data-type="GN"><span>feme</span> </span><span data-type="GV"><span>li </span><span>prioit</span> </span><span>mes </span><span>pour </span><span data-type="GN"><span>son </span><span>duel</span> </span><span data-type="GN"><span>reconforter</span> </span><span data-type="GV"><span>se </span><span>vault </span><span>aux</span> </span><span data-type="GN"><span>malles</span> </span><span data-type="GV"><span>deporter </span><span>dont </span><span>il</span> </span><span data-type="GV"><span>usoit </span><span>en</span> </span><span data-type="GN"><span class="synos" data-id="7600048_82">leu </span><span>de </span><span data-type="GN"><span>fame</span></span> </span><span data-type="GV"><span>s’</span><span>en </span><span>perdi </span><span>puis</span> </span><span data-type="GN"><span>le </span><span>cors</span> </span><span>et </span><span data-type="GN"><span>l’</span><span>ame</span> </span><span>si </span><span data-type="GV"><span>com </span><span>porroit </span><span>oir</span> </span><span>ou </span><span data-type="GAdj"><span>conté</span> </span><span data-type="GV"><span>s’</span><span>il </span><span>est </span><span>qui </span><span>avant</span> </span><span data-type="GN"><span>le </span><span>vous </span><span>conté</span> </span><span data-type="GV"><span>trop </span><span>est</span> </span><span data-type="GAdj"><span>crueulz</span> </span><span data-type="GV"><span>a</span> </span><span data-type="GN"><span>desmesure</span> </span><span data-type="GN"><span>ceulz </span><span>amours</span> </span><span>ou </span><span>contre </span><span data-type="GN"><span class="synos" data-id="7600048_117">nature</span> </span><span data-type="GV"><span>fet </span><span>l’</span><span>en</span> </span><span data-type="GN"><span>dou </span><span>malle </span><span>femelin </span><span>sans </span><span>nulle </span><span data-type="GN"><span>esperance </span><span>de </span><span>lin</span></span> </span><span data-type="GV"><span>n’</span><span>ar</span> </span><span data-type="GV"><span>fet</span> </span><span data-type="GN"><span>tele </span><span>amour</span> </span><span data-type="GV"><span>maintenir </span><span>dont </span><span>l’</span> </span><span data-type="GV"><span>en </span><span>puet</span> </span><span data-type="GV"><span>a </span><span>mal</span> </span><span data-type="GN"><span>fin</span> </span><span data-type="GV"><span>venir </span><span>par</span> </span><span data-type="GN"><span>Orpheus</span> </span><span data-type="GV"><span>puis </span><span>droitement </span><span>noter</span> </span><span data-type="GN"><span>regnable </span><span>entendement</span> </span><span>et </span><span>par </span><span data-type="GN"><span>Euridice</span> </span><span data-type="GN"><span>sa </span><span>fame</span> </span><span data-type="GN"><span>la </span><span>sensualité </span><span>de </span><span>l’</span><span data-type="GN"><span>ame</span></span> </span><span data-type="GN"><span>ces </span><span>deux </span><span>choses</span> </span><span>par </span><span data-type="GN"><span>mariage</span> </span><span data-type="GV"><span>sont </span><span>jointes </span><span>en</span> </span><span data-type="GN"><span>l’</span><span>umain</span> </span><span data-type="GN"><span>lignage</span> </span><span data-type="GN"><span>li </span><span>pastours</span> </span><span data-type="GN"><span>qui </span><span>l’</span><span>espouse</span> </span><span data-type="GV"><span>prie</span> </span><span>et </span><span data-type="GV"><span>requiert </span><span>quele</span> </span><span>soit </span><span data-type="GAdj"><span>s’</span><span>amie</span> </span><span data-type="GV"><span>puet </span><span>noter</span> </span><span data-type="GN"><span class="synos" data-id="7600048_185">vertu</span> </span><span data-type="GV"><span>de </span><span class="mots" data-id="7600048_187">bien </span><span>vivre </span><span>qui</span> </span><span data-type="GV"><span class="lemmes" data-id="7600048_190">seult</span> </span><span data-type="GN"><span>l’</span><span>ame</span> </span><span data-type="GV"><span>enchanter</span> </span><span>sivre </span><span>et </span><span>sivre </span><span data-type="GV"><span>pour </span><span>traire </span><span>a</span> </span><span data-type="GN"><span>virtuosité</span> </span><span>mes </span><span>quant </span><span data-type="GN"><span>la </span><span>sensualité</span> </span><span data-type="GV"><span>qui </span><span>trop </span><span>s’</span><span>esloigne </span><span>folement </span><span>se</span> </span><span data-type="GN"><span>raisonable </span><span>entendement</span> </span><span data-type="GV"><span>est</span> </span><span data-type="GN"><span>teulz</span> </span><span>que </span><span data-type="GN"><span>vertus</span> </span><span data-type="GV"><span>li </span><span>envie</span> </span><span>et </span><span data-type="GN"><span>tele </span><span>amour</span> </span><span data-type="GV"><span>refuse</span> </span><span>et </span><span data-type="GV"><span>fuie </span><span>si</span> </span><span data-type="GV"><span>vait </span><span>corant</span> </span><span data-type="GV"><span>a </span><span class="synos" data-id="7600048_228">descouvert</span> </span><span class="lemmes" data-id="7600048_229">toute </span><span data-type="GN"><span>nuz </span><span>préz</span> </span><span>en </span><span data-type="GN"><span>l’</span><span>erbe </span><span>vert</span> </span><span data-type="GV"><span>c’</span><span>est </span><span>à </span><span>dire</span> </span><span>par </span><span data-type="GN"><span>les </span><span>malices </span><span>de </span><span>ces </span><span>terriennes </span><span data-type="GN"><span>delices</span></span> </span><span data-type="GV"><span>dont </span><span>elle </span><span>abuse </span><span>folement</span> </span><span>et </span><span data-type="GN"><span class="synos" data-id="7600048_252">marche</span> </span><span>par </span><span data-type="GN"><span>consentement</span> </span><span>sor </span><span data-type="GN"><span>le </span><span>serpent </span><span>de </span><span>mortel </span><span data-type="GN"><span>vice</span></span> </span><span data-type="GV"><span>qui </span><span>gist </span><span>souz</span> </span><span data-type="GN"><span>la </span><span>vaine </span><span>delice</span> </span><span data-type="GN"><span>cil </span><span>serpens</span> </span><span>par </span><span data-type="GN"><span>le </span><span>pié</span> </span><span data-type="GN"><span>la </span><span>mort</span> </span><span>si </span><span data-type="GV"><span>l’</span><span>envenime</span> </span><span>et </span><span data-type="GV"><span>met </span><span>à</span> </span><span data-type="GN"><span>mort </span><span>de </span><span data-type="GN"><span>pechié</span></span> </span><span>par </span><span data-type="GN"><span>consentement</span> </span><span data-type="GV"><span>lors </span><span>chiet</span> </span><span data-type="GN"><span>l’</span><span>ame</span> </span><span>dolentement </span><span>en </span><span data-type="GN"><span>la </span><span>tenebreuse </span><span>obscurté </span><span>de </span><span class="lemmes" data-id="7600048_295">parfonde </span><span data-type="GN"><span>maleurté</span></span> </span><span data-type="GN"><span>cil </span><span>enfers</span> </span><span data-type="GV"><span>est </span><span>en </span><span>lui</span> </span><span>meismes </span><span>quar </span><span data-type="GN"><span>mannes </span><span data-type="GN"><span>cuers</span></span> </span><span data-type="GV"><span>est</span> </span><span data-type="GN"><span>uns</span> </span><span data-type="GN"><span>abismes </span><span>plains </span><span>de</span> </span><span data-type="GN"><span>tormens </span><span>et </span><span>plains </span><span>de</span> </span><span data-type="GN"><span>paine</span> </span><span data-type="GN"><span>qui </span><span>pecheor</span> </span><span data-type="GV"><span class="lemmes" data-id="7600048_319">tormente</span> </span><span>et </span><span data-type="GN"><span>paine</span> </span><span data-type="GN"><span>jor</span> </span><span>et </span><span data-type="GN"><span>nuit</span> </span><span>dolereusement </span><span>et </span><span>se </span><span>macrobez </span><span data-type="GV"><span>ne </span><span>meinent</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="slcQYKe" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('slcQYKe').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('slcQYKe')">
+                     <option value="cocteau1927_8300862">cocteau1927, phrase 862</option>
+                     <option value="ferry2019_8200036">ferry2019, phrase 36</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('slcQYKe',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('slcQYKe',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="7800011">
+               <h5>deshayes1792, phrase 11</h5>
+               <p><span data-type="GN"><span class="lemmes" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="8300862_7" data-corresp="cocteau1927_8300862">Euridice</span></span></span>&nbsp;! <span data-type="GN"><span class="lemmes" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="8300862_7" data-corresp="cocteau1927_8300862">euridice</span></span></span>&nbsp;! <span data-type="GV"><span class="w">tu </span><span class="w">te </span><span class="synos" data-href="8200036_15" data-corresp="ferry2019_8200036">plaisais </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">ce </span><span class="w">bois </span><span class="w">de </span><span class="w">ma </span><span data-type="GN"><span class="synos" data-href="8300862_4" data-corresp="cocteau1927_8300862">voix</span></span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">retentisse</span></span>, <span data-type="GN"><span class="lemmes" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="8300862_7" data-corresp="cocteau1927_8300862">euridice</span></span></span>&nbsp;! <span data-type="GN"><span class="lemmes" data-href="8200036_1" data-corresp="ferry2019_8200036"><span class="lemmes" data-href="8300862_7" data-corresp="cocteau1927_8300862">euridice</span></span></span>&nbsp;! </p>
+            </div>
+            <div class="target">
+               <div id="cocteau1927_8300862" data-id="8300862" style="display:none">
+                  <h5>cocteau1927, phrase 862</h5>
+                  <p> (<span>Comme </span><span data-type="GN"><span>une </span><span class="synos" data-id="8300862_4">plainte</span></span>.) <span data-type="GN"><span class="lemmes lemmes lemmes lemmes" data-id="8300862_7">Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... <span data-type="GN"><span>Eurydice</span></span>... </p>
+               </div>
+               <div id="ferry2019_8200036" data-id="8200036">
+                  <h5>ferry2019, phrase 36</h5>
+                  <p><span data-type="GN"><span class="lemmes lemmes lemmes lemmes" data-id="8200036_1">Eurydice</span></span>&nbsp;!?! <span data-type="GN"><span>Eurydice</span></span>&nbsp;! <span data-type="GN"><span>Eury</span></span>... <span>Non</span>... <span data-type="GN"><span>Eurydice</span></span>, <span>non</span>... <span data-type="GV"><span class="synos" data-id="8200036_15">reviens</span></span>... </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

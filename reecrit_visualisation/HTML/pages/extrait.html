@@ -1,0 +1,809 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/ballanche1809_TP.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Pierre-Simon Ballanche <em>Sixième Fragment</em>,  [trad.]
+         </h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <h1>Sixième fragment</h1>
+                  <p>Un des plus beaux récits que nous ait laissé l’antiquité,
+                     est celui des malheurs d’Orphée. Qui n’a pas été ému par les chants du cygne de
+                     Mantoue&nbsp;? qui n’a pas senti résonner au fond de l’ame cette douce musique, cette
+                     harmonie touchante d’une poésie si mélodieuse&nbsp;?
+                  </p>
+                  <p>L’ancien législateur de la Thrace éprouva un autre sentiment plus doux que celui du
+                     désir de la gloire&nbsp;: il puisait sur les lèvres d’Eurydice le double enchantement de
+                     l’amour et du génie&nbsp;; mais bientôt il connut la douleur, la douleur, ce terrible
+                     tribut qui est levé indistinctement sur tous les hommes. La mort lui enleva son
+                     épouse&nbsp;: elle était dans tout l’éclat de la jeunesse et de la beauté&nbsp;; et elle
+                     disparut de dessus la terre, comme une de ces ombres aimables qui apparaissent
+                     quelquefois sur un rayon du soir, et que les ténèbres
+                     enveloppent, à l’instant même, de leur lugubre manteau.
+                  </p>
+                  <p>Orphée resta seul. Sa lyre alors, au lieu de redire, comme auparavant, les charmes de
+                     l’amour, les douceurs de cette vie de l’homme uni à la compagne que son cœur a
+                     choisie, sa lyre était devenue muette. Il se plaignait de son malheur aux arbres de
+                     la forêt, il s’en plaignait aux astres silencieux de la nuit, il s’en plaignait à
+                     la
+                     nature entière.
+                  </p>
+                  <p>Enfin, il résolut d’aller chez les morts pour y retrouver Eurydice, et la ramener
+                     sur
+                     la terre, ou errer avec elle sur les tristes bords du Léthé. <a class="note" onclick="affiche('QYuqaaI')">✱</a>Le dieu du sombre
+                     empire se laissa attendrir, et il rendit à Orphée l’épouse que pleurait ce poëte
+                     inconsolable&nbsp;; mais il mit à ce bienfait une condition qui devait le rendre bien
+                     amer. <a class="note" onclick="affiche('IeielUL')">✱</a>Image trop vraie des destinées humaines, qui n’accordent jamais de faveur pure
+                     et sans mélange&nbsp;!
+                  </p>
+                  <p><a class="note" onclick="affiche('xHkeetM')">✱</a>«&nbsp;Va, emmène ton épouse&nbsp;; mais garde-toi de jeter sur elle un œil indiscret, tant
+                     que
+                     tu seras dans ces affreuses demeures où l’amour est ignoré. <a class="note" onclick="affiche('UhBboZi')">✱</a>Tes regards, qui
+                     exprimeraient toute l’ivresse d’un bonheur qu’on ne connaît plus ici, et où se
+                     pendraient toutes les illusions de l’espérance auxquelles on a renoncé&nbsp;; tes regards
+                     attristeraient encore les mânes lamentables, malheureux habitants  de mes déplorables royaumes. Va, c’est à regret que je rends ma
+                     proie.&nbsp;»
+                  </p>
+                  <p>Orphée se soumit à cet arrêt rigoureux. Il marchait en silence&nbsp;: étonnée de tant de
+                     merveilles, les paupières encore oppressées du sommeil de la tombe, et le cœur plein
+                     d’une joie dont ses sens qui commençaient seulement à renaître, ne pouvaient
+                     savourer toute la plénitude, Eurydice suivait son époux. S’il était possible de dire
+                     tout le charme de ce voyage merveilleux, et d’exprimer ce trouble ravissant, ce
+                     calme plein d’inquiétude qui accompagnait le couple mélancolique, il serait possible
+                     aussi de raconter le rêve du jeune homme qui s’est endormi au fond de la vallée
+                     solitaire, après avoir vu pour la première fois celle qui doit faire le destin de
+                     sa
+                     vie.
+                  </p>
+                  <p><a class="note" onclick="affiche('oTWpRUT')">✱</a>Déjà les ombres devenaient moins opaques&nbsp;; déjà un faible crépuscule, détaché des
+                     rayons du soleil, arrivait jusqu’aux yeux des deux nobles créatures qui s’avançaient
+                     jusqu’aux yeux des deux nobles créatures qui s’avançaient vers la lumière du jour.
+                     <a class="note" onclick="affiche('YaZTYzw')">✱</a>Un instant encore, et elles échappaient à la puissance du dieu des morts&nbsp;: elles
+                     touchaient au seuil du séjour des vivants. Mais, ô faiblesse d’un cœur qui aime&nbsp;! Orphée s’arrête pour écouter le soupir qui errait sur les lèvres d’Eurydice, pour
+                     prêter l’oreille au léger frôlement de ses vêtements aériens. <a class="note" onclick="affiche('MtjBrXE')">✱</a>Vaincu par cette
+                     puissance contre laquelle l’homme lutte en vain, il se retourne&nbsp;; et, oubliant sa
+                     fatale promesse, il permet à son regard d’interroger, à
+                     la faveur de la clarté naissante, les plis du voile qui lui cachait le visage de son
+                     épouse, de cette touchante victime qu’il avait tant pleurée.
+                  </p>
+                  <p>Hélas&nbsp;! il l’entrevoit à peine. <a class="note" onclick="affiche('wbuDIIg')">✱</a>Eurydice lui est ravie de nouveau, et lui est ravie à
+                     jamais. <a class="note" onclick="affiche('RONfCPZ')">✱</a>Elle s’évanouit comme un songe vain qui fuit aux premiers rayons de
+                     l’aurore&nbsp;; et sa parole plaintive, inarticulée, meurt dans le vague des airs,
+                     semblable à la dernière vibration d’une corde harmonieuse.
+                  </p>
+                  <p><a class="note" onclick="affiche('iqOSTMW')">✱</a>Telle est l’histoire d’Orphée, racontée d’âge en âge. <a class="note" onclick="affiche('utbxzEj')">✱</a>La fable y a mêlé ses aimables
+                     mensonges&nbsp;; mais le fond en est vrai, car les larmes sont de tous les temps. <a class="note" onclick="affiche('UrroXCN')">✱</a>L’antiquité nous fait la confidence de ses ennuis, pour charmer les nôtres, sans
+                     doute. <a class="note" onclick="affiche('TPZtilc')">✱</a>Il y a sur la terre comme un long gémissement qui se traîne de génération en
+                     génération, depuis les premiers mortels jusqu’à nous. <a class="note" onclick="affiche('HpqTMFi')">✱</a>La poitrine de l’homme est un
+                     instrument qui n’a su rendre jamais que des sons plaintifs, et son cœur ne peut se
+                     mettre en harmonie qu’avec la douleur. <a class="note" onclick="affiche('VlHfrqC')">✱</a>Voilà pourquoi les récits empreints de
+                     tristesse et de souffrance vivent dans sa mémoire. <a class="note" onclick="affiche('YQVAnOY')">✱</a>Les autres sont dénués de charme
+                     et de poésie&nbsp;; ce sont des contes qui amusent un instant son enfance, alors que
+                     l’expérience n’a pas encore détruit ses illusions, alors que sa jeune imagination
+                     sourit à l’avenir.
+                  </p>
+                  <p><a class="note" onclick="affiche('VLHmxwr')">✱</a>Comme que nous fassions, quelle que soit la route que nous
+                     ayons choisie, nous sommes toujours déçus&nbsp;: la douleur, sentinelle vigilante, garde
+                     toutes les avenues du bonheur&nbsp;; c’est l’épée de feu du chérubin qui défend l’entrée
+                     d’Éden.
+                  </p>
+                  <p><a class="note" onclick="affiche('vpqcSvL')">✱</a>Si Orphée n’eût point connu Eurydice, il aurait ignoré ce qu’il y a de plus amers
+                     dans la source des larmes&nbsp;; mais aurait-il pu étouffer en lui cette voix intime, si
+                     impérieuse, qui demande une compagne et une postérité, une compagne pour lui
+                     raconter toutes les choses secrètes qui sont au fond du cœur&nbsp;; une postérité, pour
+                     continuer ses espérances au-delà du tombeau&nbsp;? <a class="note" onclick="affiche('oKzPsWH')">✱</a>Son existence fût demeurée
+                     incomplète&nbsp;; et il aurait, au lieu de la douleur dont il fit une épreuve si cruelle,
+                     connu cette autre douleur qui n’a pas moins d’intensité, la solitude de l’ame.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="oTWpRUT" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('oTWpRUT').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('oTWpRUT')">
+                     <option value="ballanche1829_3200215">ballanche1829, phrases 215-217</option>
+                     <option value="ballanche1829_3200219">ballanche1829, phrase 219</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('oTWpRUT',2)" checked><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('oTWpRUT',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600017">
+               <h5>ballanche1809, phrases 17-23</h5>
+               <p><span class="mots">Déjà</span> les ombres devenaient moins opaques ; déjà un faible crépuscule, détaché des rayons du soleil, arrivait jusqu’aux yeux des deux nobles créatures qui s’avançaient vers la lumière du jour.</p>
+               <p>Un instant encore, et elles échappaient à la puissance du dieu des morts : elles touchaient au seuil du séjour des vivants.</p>
+               <p>Mais, ô faiblesse d’un cœur qui aime !</p>
+               <p>Orphée s’arrête pour écouter le soupir qui errait sur les lèvres d’Eurydice, pour prêter l’oreille au léger frôlement de ses vêtements aériens.</p>
+               <p>Vaincu par cette puissance contre laquelle l’homme lutte en vain, il se retourne ; et, oubliant sa fatale promesse, il permet à son regard d’interroger, à la faveur de la clarté naissante, les plis du voile qui lui cachait le visage de son épouse, de cette touchante victime qu’il avait tant pleurée.</p>
+               <p>Hélas ! Il l’entrevoit à peine.</p>
+               <p>Eurydice lui est ravie de nouveau, et lui est ravie à jamais.</p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200215" data-id="3200215" style="display:none">
+                  <h5>ballanche1829, phrases 215-217</h5>
+                  <p>Déjà un crépuscule douteux commençait à remplacer l’obscurité immense ; un rayon de pâle lumière, qui vint flotter autour de ses yeux, lui fit oublier le passé et l’avenir : ce n’était pas une lueur trompeuse, c’était bien un rayon détaché de la clarté du jour ; la marque de son salut devint le signe de sa perte.</p>
+                  <p>Ainsi donc il touchait au seuil qui sépare l’empire des morts du séjour des vivants, lorsqu’il s’arrêta involontairement pour jeter un regard d’amour sur l’épouse qui lui était rendue, hélas ! rendue et ravie à-la-fois.</p>
+                  <p>Si, du moins, il eût eu le temps de soulever le voile qui retombait sur le visage d’Eurydice !</p>
+            </div>
+         </div>
+         <div id="YaZTYzw" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('YaZTYzw').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('YaZTYzw')">
+                     <option value="ballanche1829_3200219">ballanche1829, phrase 219</option>
+                     <option value="ballanche1829_3200216">ballanche1829, phrase 216</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('YaZTYzw',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('YaZTYzw',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600018">
+               <h5>ballanche1809, phrase 18</h5>
+               <p><span data-type="GN"><span class="w">Un </span><span class="w">instant</span> </span><span class="synos" data-href="3200219_35" data-corresp="ballanche1829_3200219"><span class="synos" data-href="3200219_16" data-corresp="ballanche1829_3200219"><span class="synos" data-href="3200219_1" data-corresp="ballanche1829_3200219">encore</span></span></span>, <span class="w">et </span><span data-type="GV"><span class="w">elles </span><span class="synos" data-href="3200219_5" data-corresp="ballanche1829_3200219">échappaient </span><span class="w">à</span> </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3200219_28" data-corresp="ballanche1829_3200219">puissance </span><span class="w">du </span><span data-type="GN"><span class="w">dieu </span><span class="w">des </span><span class="mots" data-href="3200219_11" data-corresp="ballanche1829_3200219">morts</span></span></span>&nbsp;: <span data-type="GV"><span class="w">elles </span><span class="lemmes" data-href="3200216_4" data-corresp="ballanche1829_3200216">touchaient </span><span class="w">au</span> </span><span data-type="GN"><span class="mots" data-href="3200216_6" data-corresp="ballanche1829_3200216">seuil </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="3200216_14" data-corresp="ballanche1829_3200216">séjour </span><span class="w">des </span><span class="mots" data-href="3200216_16" data-corresp="ballanche1829_3200216">vivants</span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200219" data-id="3200219" style="display:none">
+                  <h5>ballanche1829, phrase 219</h5>
+                  <p><span class="synos" data-id="3200219_1">Alors </span><span data-type="GN"><span>le </span><span>pacte</span> </span><span data-type="GV"><span>fut </span><span class="synos" data-id="3200219_5">rompu</span></span>, <span>et </span><span data-type="GN"><span>le </span><span>tyran </span><span>des </span><span data-type="GN"><span class="mots" data-id="3200219_11">morts</span></span> </span><span data-type="GV"><span>reprit</span> </span><span data-type="GN"><span>ses </span><span>droits</span></span>&nbsp;; <span class="synos" data-id="3200219_16">alors </span><span>toutes </span><span data-type="GN"><span>les </span><span>voûtes </span><span>de </span><span>l’</span><span data-type="GN"><span>Averne</span></span> </span><span data-type="GV"><span>retentirent</span></span>, <span>dans </span><span data-type="GN"><span>leurs </span><span>vastes </span><span class="synos" data-id="3200219_28">profondeurs</span></span>, <span>d’</span><span data-type="GN"><span>un </span><span>long </span><span>gémissement</span></span>&nbsp;; <span class="synos" data-id="3200219_35">alors </span><span data-type="GN"><span>les </span><span>supplices </span><span>des </span><span data-type="GN"><span>coupables</span></span></span>, <span data-type="GV"><span>qui </span><span>avaient </span><span>été </span><span>suspendus</span></span>, <span data-type="GV"><span>reprirent</span> </span><span data-type="GN"><span>une </span><span>activité </span><span>nouvelle</span></span>&nbsp;; <span>alors </span><span data-type="GN"><span>le </span><span>terrible </span><span>gardien </span><span>des </span><span data-type="GN"><span>demeures </span><span>désolées</span></span> </span><span data-type="GV"><span>poussa </span><span>d’</span> </span><span data-type="GN"><span>affreux </span><span>rugissements</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200216" data-id="3200216">
+                  <h5>ballanche1829, phrase 216</h5>
+                  <p><span data-type="GV"><span>Ainsi </span><span>donc </span><span>il </span><span class="lemmes" data-id="3200216_4">touchait </span><span>au</span> </span><span data-type="GN"><span class="mots" data-id="3200216_6">seuil</span> </span><span data-type="GV"><span>qui </span><span>sépare</span> </span><span data-type="GN"><span>l’</span><span>empire </span><span>des </span><span data-type="GN"><span>morts </span><span>du </span><span class="mots" data-id="3200216_14">séjour </span><span>des </span><span class="mots" data-id="3200216_16">vivants</span></span></span>, <span>lorsqu' </span><span data-type="GV"><span>il </span><span>s’</span><span>arrêta </span><span>involontairement </span><span>pour</span> </span><span data-type="GV"><span>jeter</span> </span><span data-type="GN"><span>un </span><span>regard </span><span>d’</span><span data-type="GN"><span>amour</span></span> </span><span>sur </span><span data-type="GN"><span>l’</span><span>épouse</span> </span><span data-type="GV"><span>qui </span><span>lui </span><span>était </span><span>rendue</span></span>, <span>hélas</span>&nbsp;! <span data-type="GAdj"><span>rendue</span> </span><span>et </span><span data-type="GAdj"><span>ravie </span><span>à-la-fois</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="MtjBrXE" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('MtjBrXE').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('MtjBrXE')">
+                     <option value="ballanche1829_3200219">ballanche1829, phrase 219</option>
+                     <option value="ballanche1829_3200215">ballanche1829, phrase 215</option>
+                     <option value="ballanche1829_3200216">ballanche1829, phrase 216</option>
+                     <option value="ballanche1829_3200217">ballanche1829, phrase 217</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('MtjBrXE',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('MtjBrXE',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600021">
+               <h5>ballanche1809, phrase 21</h5>
+               <p><span data-type="GAdj"><span class="synos" data-href="3200219_58" data-corresp="ballanche1829_3200219">Vaincu </span><span class="w">par</span> </span><span data-type="GN"><span class="w">cette </span><span class="synos" data-href="3200219_28" data-corresp="ballanche1829_3200219">puissance</span> </span><span class="w">contre </span><span data-type="GN"><span class="w">laquelle </span><span class="w">l’</span><span class="w">homme</span> </span><span data-type="GV"><span class="synos" data-href="3200219_58" data-corresp="ballanche1829_3200219">lutte </span><span class="w">en</span> </span><span data-type="GAdj"><span class="synos" data-href="3200215_41" data-corresp="ballanche1829_3200215">vain</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">se </span><span class="synos" data-href="3200216_35" data-corresp="ballanche1829_3200216">retourne</span></span>&nbsp;; <span class="w">et</span>, <span data-type="GV"><span class="lemmes" data-href="3200215_28" data-corresp="ballanche1829_3200215">oubliant</span> </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="3200219_53" data-corresp="ballanche1829_3200219">fatale </span><span class="synos" data-href="3200215_62" data-corresp="ballanche1829_3200215">promesse</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">permet </span><span class="w">à</span> </span><span data-type="GN"><span class="w">son </span><span class="mots" data-href="3200216_26" data-corresp="ballanche1829_3200216">regard</span> </span><span data-type="GV"><span class="w">d’</span><span class="synos" data-href="3200215_27" data-corresp="ballanche1829_3200215">interroger</span></span>, <span class="w">à </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3200215_45" data-corresp="ballanche1829_3200215">faveur </span><span class="w">de </span><span class="w">la </span><span data-type="GN"><span class="mots" data-href="3200215_51" data-corresp="ballanche1829_3200215">clarté </span><span class="w">naissante</span></span></span>, <span data-type="GN"><span class="w">les </span><span class="synos" data-href="3200215_56" data-corresp="ballanche1829_3200215">plis </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="3200217_14" data-corresp="ballanche1829_3200217">voile</span></span> </span><span data-type="GV"><span class="w">qui </span><span class="w">lui </span><span class="synos" data-href="3200219_12" data-corresp="ballanche1829_3200219">cachait</span> </span><span data-type="GN"><span class="w">le </span><span class="mots" data-href="3200217_19" data-corresp="ballanche1829_3200217">visage </span><span class="w">de </span><span class="w">son </span><span data-type="GN"><span class="mots" data-href="3200216_31" data-corresp="ballanche1829_3200216">épouse</span></span></span>, <span class="w">de </span><span data-type="GN"><span class="w">cette </span><span class="synos" data-href="3200219_53" data-corresp="ballanche1829_3200219">touchante </span><span class="w">victime</span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">avait </span><span class="synos" data-href="3200216_18" data-corresp="ballanche1829_3200216">tant </span><span class="antos" data-href="3200219_57" data-corresp="ballanche1829_3200219">pleurée</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200219" data-id="3200219" style="display:none">
+                  <h5>ballanche1829, phrase 219</h5>
+                  <p><span>Alors </span><span data-type="GN"><span>le </span><span>pacte</span> </span><span data-type="GV"><span>fut </span><span>rompu</span></span>, <span>et </span><span data-type="GN"><span>le </span><span>tyran </span><span>des </span><span data-type="GN"><span>morts</span></span> </span><span data-type="GV"><span class="synos" data-id="3200219_12">reprit</span> </span><span data-type="GN"><span>ses </span><span>droits</span></span>&nbsp;; <span>alors </span><span>toutes </span><span data-type="GN"><span>les </span><span>voûtes </span><span>de </span><span>l’</span><span data-type="GN"><span>Averne</span></span> </span><span data-type="GV"><span>retentirent</span></span>, <span>dans </span><span data-type="GN"><span>leurs </span><span>vastes </span><span class="synos" data-id="3200219_28">profondeurs</span></span>, <span>d’</span><span data-type="GN"><span>un </span><span>long </span><span>gémissement</span></span>&nbsp;; <span>alors </span><span data-type="GN"><span>les </span><span>supplices </span><span>des </span><span data-type="GN"><span>coupables</span></span></span>, <span data-type="GV"><span>qui </span><span>avaient </span><span>été </span><span>suspendus</span></span>, <span data-type="GV"><span>reprirent</span> </span><span data-type="GN"><span>une </span><span>activité </span><span>nouvelle</span></span>&nbsp;; <span>alors </span><span data-type="GN"><span>le </span><span class="synos" data-id="3200219_53">terrible </span><span>gardien </span><span>des </span><span data-type="GN"><span>demeures </span><span class="antos" data-id="3200219_57">désolées</span></span> </span><span data-type="GV"><span class="synos" data-id="3200219_58">poussa </span><span>d’</span> </span><span data-type="GN"><span>affreux </span><span>rugissements</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200215" data-id="3200215" style="display:none">
+                  <h5>ballanche1829, phrase 215</h5>
+                  <p><span>Déjà </span><span data-type="GN"><span>un </span><span>crépuscule </span><span>douteux</span> </span><span data-type="GV"><span>commençait </span><span>à </span><span>remplacer</span> </span><span data-type="GN"><span>l’</span><span>obscurité </span><span>immense</span></span>&nbsp;; <span data-type="GN"><span>un </span><span>rayon </span><span>de </span><span>pâle </span><span data-type="GN"><span>lumière</span></span></span>, <span data-type="GV"><span>qui </span><span>vint </span><span>flotter </span><span>autour</span> </span><span>de </span><span data-type="GN"><span>ses </span><span>yeux</span></span>, <span data-type="GV"><span>lui </span><span class="synos" data-id="3200215_27">fit </span><span class="lemmes" data-id="3200215_28">oublier</span> </span><span data-type="GN"><span>le </span><span>passé</span> </span><span>et </span><span data-type="GN"><span>l’</span><span>avenir</span></span>&nbsp;: <span data-type="GV"><span>ce </span><span>n’</span><span>était </span><span>pas</span> </span><span data-type="GN"><span>une </span><span>lueur </span><span class="synos" data-id="3200215_41">trompeuse</span></span>, <span data-type="GV"><span>c’</span><span>était </span><span class="synos" data-id="3200215_45">bien</span> </span><span data-type="GN"><span>un </span><span>rayon </span><span>détaché </span><span>de </span><span>la </span><span data-type="GN"><span class="mots" data-id="3200215_51">clarté </span><span>du </span><span>jour</span></span></span>&nbsp;; <span data-type="GN"><span>la </span><span class="synos" data-id="3200215_56">marque </span><span>de </span><span>son </span><span data-type="GN"><span>salut</span></span> </span><span data-type="GV"><span>devint</span> </span><span data-type="GN"><span>le </span><span class="synos" data-id="3200215_62">signe </span><span>de </span><span>sa </span><span data-type="GN"><span>perte</span></span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200216" data-id="3200216" style="display:none">
+                  <h5>ballanche1829, phrase 216</h5>
+                  <p><span data-type="GV"><span>Ainsi </span><span>donc </span><span>il </span><span>touchait </span><span>au</span> </span><span data-type="GN"><span>seuil</span> </span><span data-type="GV"><span>qui </span><span>sépare</span> </span><span data-type="GN"><span>l’</span><span>empire </span><span>des </span><span data-type="GN"><span>morts </span><span>du </span><span>séjour </span><span>des </span><span>vivants</span></span></span>, <span class="synos" data-id="3200216_18">lorsqu' </span><span data-type="GV"><span>il </span><span>s’</span><span>arrêta </span><span>involontairement </span><span>pour</span> </span><span data-type="GV"><span>jeter</span> </span><span data-type="GN"><span>un </span><span class="mots" data-id="3200216_26">regard </span><span>d’</span><span data-type="GN"><span>amour</span></span> </span><span>sur </span><span data-type="GN"><span>l’</span><span class="mots" data-id="3200216_31">épouse</span> </span><span data-type="GV"><span>qui </span><span>lui </span><span>était </span><span class="synos" data-id="3200216_35">rendue</span></span>, <span>hélas</span>&nbsp;! <span data-type="GAdj"><span>rendue</span> </span><span>et </span><span data-type="GAdj"><span>ravie </span><span>à-la-fois</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200217" data-id="3200217">
+                  <h5>ballanche1829, phrase 217</h5>
+                  <p><span>Si</span>, <span>du </span><span>moins</span>, <span data-type="GV"><span>il </span><span>eût </span><span>eu</span> </span><span data-type="GN"><span>le </span><span>temps</span> </span><span data-type="GV"><span>de </span><span>soulever</span> </span><span data-type="GN"><span>le </span><span class="mots" data-id="3200217_14">voile</span> </span><span data-type="GV"><span>qui </span><span>retombait </span><span>sur</span> </span><span data-type="GN"><span>le </span><span class="mots" data-id="3200217_19">visage </span><span>d’</span><span data-type="GN"><span>Eurydice</span></span></span>&nbsp;! 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="UrroXCN" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('UrroXCN').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('UrroXCN')">
+                     <option value="ballanche1829_3200695">ballanche1829, phrase 695</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('UrroXCN',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('UrroXCN',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600027">
+               <h5>ballanche1809, phrase 27</h5>
+               <p><span data-type="GN"><span class="w">L’</span><span class="w">antiquité</span> </span><span data-type="GV"><span class="w">nous </span><span class="lemmes" data-href="3200695_20" data-corresp="ballanche1829_3200695">fait</span> </span><span data-type="GN"><span class="w">la </span><span class="w">confidence </span><span class="w">de </span><span class="w">ses </span><span data-type="GN"><span class="synos" data-href="3200695_15" data-corresp="ballanche1829_3200695">ennuis</span></span></span>, <span data-type="GV"><span class="w">pour </span><span class="synos" data-href="3200695_13" data-corresp="ballanche1829_3200695">charmer </span><span class="w">les</span> </span><span class="w">nôtres</span>, <span class="w">sans </span><span data-type="GN"><span class="w">doute</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200695" data-id="3200695">
+                  <h5>ballanche1829, phrase 695</h5>
+                  <p><span data-type="GN"><span>Orphée</span></span>, <span data-type="GN"><span>Eurydice</span></span>, <span data-type="GN"><span>couple </span><span>divin</span></span>, <span data-type="GV"><span>consentez </span><span>à </span><span>être</span> </span><span data-type="GAdj"><span>misérables</span> </span><span data-type="GV"><span>pour </span><span class="synos" data-id="3200695_13">diminuer</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="3200695_15">misère </span><span>du </span><span data-type="GN"><span>genre </span><span>humain</span></span></span>&nbsp;; <span data-type="GV"><span class="lemmes" data-id="3200695_20">faites </span><span>comprendre </span><span>aux</span> </span><span data-type="GAdj"><span>autres</span> </span><span data-type="GN"><span>la </span><span>sainteté </span><span>du </span><span data-type="GN"><span>lien </span><span>conjugal</span></span></span>, <span data-type="GV"><span>avant </span><span>de </span><span>le </span><span>former</span> </span><span>pour </span><span>vous-mêmes</span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="TPZtilc" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('TPZtilc').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('TPZtilc')">
+                     <option value="ballanche1829_3200694">ballanche1829, phrase 694</option>
+                     <option value="ballanche1829_3202446">ballanche1829, phrase 2446</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('TPZtilc',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('TPZtilc',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600028">
+               <h5>ballanche1809, phrase 28</h5>
+               <p><span data-type="GV"><span class="w">Il </span><span class="w">y </span><span class="w">a </span><span class="w">sur</span> </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3200694_7" data-corresp="ballanche1829_3200694">terre</span> </span><span class="synos" data-href="3202446_18" data-corresp="ballanche1829_3202446">comme </span><span data-type="GN"><span class="w">un </span><span class="synos" data-href="3200694_19" data-corresp="ballanche1829_3200694">long </span><span class="mots" data-href="3202446_41" data-corresp="ballanche1829_3202446">gémissement</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">se </span><span class="synos" data-href="3202446_43" data-corresp="ballanche1829_3202446"><span class="synos" data-href="3200694_6" data-corresp="ballanche1829_3200694">traîne </span></span><span class="w">de</span> </span><span data-type="GN"><span class="mots" data-href="3202446_45" data-corresp="ballanche1829_3202446"><span class="synos" data-href="3200694_13" data-corresp="ballanche1829_3200694">génération</span></span> </span><span class="w">en </span><span data-type="GN"><span class="mots" data-href="3202446_45" data-corresp="ballanche1829_3202446"><span class="synos" data-href="3200694_13" data-corresp="ballanche1829_3200694">génération</span></span></span>, <span class="w">depuis </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="3200694_9" data-corresp="ballanche1829_3200694">premiers </span><span class="synos" data-href="3200694_16" data-corresp="ballanche1829_3200694">mortels</span> </span><span class="w">jusqu’</span><span class="w">à </span><span class="w">nous</span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200694" data-id="3200694" style="display:none">
+                  <h5>ballanche1829, phrase 694</h5>
+                  <p><span>Que </span><span data-type="GN"><span>Jupiter </span><span>et </span><span>Métis</span> </span><span data-type="GV"><span>te </span><span class="synos" data-id="3200694_6">tiennent</span> </span><span data-type="GN"><span class="synos" data-id="3200694_7">lieu </span><span>d’</span><span data-type="GN"><span class="synos" data-id="3200694_9">ancêtres</span></span></span>&nbsp;; <span>que </span><span data-type="GN"><span>la </span><span class="synos" data-id="3200694_13">race </span><span>améliorée</span> </span><span>des </span><span data-type="GN"><span class="synos" data-id="3200694_16">hommes</span> </span><span data-type="GV"><span>soit</span> </span><span data-type="GN"><span>ta </span><span class="synos" data-id="3200694_19">noble </span><span>postérité</span></span>&nbsp;! 
+                  </p>
+               </div>
+               <div id="ballanche1829_3202446" data-id="3202446">
+                  <h5>ballanche1829, phrase 2446</h5>
+                  <p><span data-type="GN"><span>L’</span><span>homme</span> </span><span data-type="GV"><span>n’</span><span>a</span> </span><span>qu’</span><span data-type="GN"><span>une </span><span>voix</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>cette </span><span>voix</span> </span><span data-type="GV"><span>est </span><span>entendue </span><span>non</span> </span><span>seulement </span><span>par </span><span>ses </span><span data-type="GAdj"><span class="synos" data-id="3202446_18">semblables</span></span>, <span>mais </span><span>encore </span><span>par </span><span data-type="GN"><span>les </span><span>animaux</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>cette </span><span>voix</span></span>, <span data-type="GV"><span>qui </span><span>n’</span><span>est</span></span>, <span>le </span><span>plus </span><span>souvent</span>, <span>que </span><span data-type="GN"><span>celle </span><span>du </span><span class="mots" data-id="3202446_41">gémissement</span></span>, <span data-type="GV"><span class="synos" data-id="3202446_43">passe </span><span>de</span> </span><span data-type="GN"><span class="mots mots" data-id="3202446_45">génération</span> </span><span>en </span><span data-type="GN"><span>génération</span></span>, <span>et </span><span data-type="GV"><span>retentit </span><span>dans</span> </span><span data-type="GN"><span>les </span><span>siècles</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="HpqTMFi" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('HpqTMFi').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('HpqTMFi')">
+                     <option value="ballanche1829_3200693">ballanche1829, phrase 693</option>
+                     <option value="ballanche1829_3202445">ballanche1829, phrase 2445</option>
+                     <option value="ballanche1829_3202447">ballanche1829, phrase 2447</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('HpqTMFi',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('HpqTMFi',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600029">
+               <h5>ballanche1809, phrase 29</h5>
+               <p><span data-type="GN"><span class="w">La </span><span class="w">poitrine </span><span class="w">de </span><span class="w">l’</span><span data-type="GN"><span class="mots" data-href="3202445_7" data-corresp="ballanche1829_3202445"><span class="lemmes" data-href="3200693_2" data-corresp="ballanche1829_3200693">homme</span></span></span> </span><span data-type="GV"><span class="w">est</span> </span><span data-type="GN"><span class="w">un </span><span class="w">instrument</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">n’</span><span class="w">a </span><span class="lemmes" data-href="3202447_2" data-corresp="ballanche1829_3202447"><span class="lemmes" data-href="3200693_38" data-corresp="ballanche1829_3200693">su </span></span><span class="synos" data-href="3200693_32" data-corresp="ballanche1829_3200693"><span class="synos" data-href="3202447_9" data-corresp="ballanche1829_3202447">rendre</span></span> </span><span class="mots" data-href="3200693_43" data-corresp="ballanche1829_3200693">jamais </span><span class="w">que </span><span class="w">des </span><span data-type="GN"><span class="w">sons </span><span class="w">plaintifs</span></span>, <span class="w">et </span><span data-type="GN"><span class="w">son </span><span class="w">coeur</span> </span><span data-type="GV"><span class="w">ne </span><span class="synos" data-href="3202447_14" data-corresp="ballanche1829_3202447"><span class="lemmes" data-href="3200693_30" data-corresp="ballanche1829_3200693">peut </span></span><span class="w">se </span><span class="synos" data-href="3202445_27" data-corresp="ballanche1829_3202445"><span class="synos" data-href="3202445_5" data-corresp="ballanche1829_3202445"><span class="synos" data-href="3200693_44" data-corresp="ballanche1829_3200693">mettre</span></span></span> </span><span class="w">en </span><span data-type="GN"><span class="synos" data-href="3202447_11" data-corresp="ballanche1829_3202447"><span class="synos" data-href="3200693_24" data-corresp="ballanche1829_3200693">harmonie</span></span> </span><span class="w">qu’</span><span class="w">avec </span><span data-type="GN"><span class="w">la </span><span class="w">douleur</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200693" data-id="3200693" style="display:none">
+                  <h5>ballanche1829, phrase 693</h5>
+                  <p><span data-type="GN"><span>Les </span><span class="lemmes" data-id="3200693_2">hommes</span> </span><span data-type="GV"><span>que </span><span>tu </span><span>formeras</span> </span><span data-type="GV"><span>auront </span><span>des</span> </span><span data-type="GN"><span>ancêtres</span> </span><span>par </span><span data-type="GN"><span>la </span><span>foi </span><span>des </span><span data-type="GN"><span>tombeaux</span></span></span>&nbsp;; <span data-type="GV"><span>ils </span><span>auront </span><span>des</span> </span><span data-type="GN"><span>descendants</span></span>, <span>par </span><span data-type="GN"><span>la </span><span>sainteté </span><span>des </span><span data-type="GN"><span class="synos" data-id="3200693_24">mariages</span></span></span>&nbsp;; <span>toi</span>&nbsp;; <span data-type="GV"><span>tu </span><span>ne </span><span class="lemmes" data-id="3200693_30">peux </span><span>point </span><span class="synos" data-id="3200693_32">avoir</span> </span><span>d’</span><span data-type="GN"><span>ancêtres</span></span>&nbsp;! <span>et </span><span data-type="GV"><span>qui </span><span class="lemmes" data-id="3200693_38">sait </span><span>s’</span><span>il</span> </span><span data-type="GV"><span>te </span><span>sera </span><span class="mots" data-id="3200693_43">jamais </span><span class="synos" data-id="3200693_44">donné</span> </span><span data-type="GV"><span>d’</span><span>avoir </span><span>des</span> </span><span data-type="GN"><span>enfants</span></span>&nbsp;? 
+                  </p>
+               </div>
+               <div id="ballanche1829_3202445" data-id="3202445" style="display:none">
+                  <h5>ballanche1829, phrase 2445</h5>
+                  <p><span data-type="GN"><span>Le </span><span>grand-prêtre</span> </span><span data-type="GV"><span>nous </span><span>a </span><span class="synos" data-id="3202445_5">présenté</span> </span><span data-type="GN"><span>l’</span><span class="mots" data-id="3202445_7">homme</span></span>, <span>dans </span><span data-type="GN"><span>son </span><span>enfance</span></span>, <span>dans </span><span data-type="GN"><span>son </span><span>âge </span><span>mûr</span></span>, <span>dans </span><span data-type="GN"><span>sa </span><span>vieillesse</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>le </span><span>phénix</span> </span><span data-type="GV"><span>nous </span><span>le </span><span class="synos" data-id="3202445_27">présentera </span><span>aujourd'hui </span><span>dans</span> </span><span data-type="GN"><span>sa </span><span>mort</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3202447" data-id="3202447">
+                  <h5>ballanche1829, phrase 2447</h5>
+                  <p><span>Qui </span><span data-type="GV"><span class="lemmes" data-id="3202447_2">sait</span> </span><span>s’</span><span data-type="GV"><span>il </span><span>ne </span><span>parviendra </span><span>pas </span><span>à</span> </span><span data-type="GV"><span class="synos" data-id="3202447_9">être </span><span>en</span> </span><span data-type="GN"><span class="synos" data-id="3202447_11">rapport</span> </span><span>avec </span><span data-type="GN"><span>les </span><span class="synos" data-id="3202447_14">intelligences </span><span>supérieures</span></span>&nbsp;; <span>et </span><span>si </span><span>déjà </span><span data-type="GV"><span>il </span><span>n’</span><span>en </span><span>est </span><span>pas </span><span>entendu</span></span>&nbsp;? 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="VlHfrqC" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('VlHfrqC').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('VlHfrqC')">
+                     <option value="ballanche1829_3200695">ballanche1829, phrase 695</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('VlHfrqC',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('VlHfrqC',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600030">
+               <h5>ballanche1809, phrase 30</h5>
+               <p><span class="w">Voilà </span><span class="w">pourquoi </span><span data-type="GN"><span class="w">les </span><span class="w">récits </span><span class="w">empreints </span><span class="w">de </span><span data-type="GN"><span class="synos" data-href="3200695_15" data-corresp="ballanche1829_3200695">tristesse</span></span> </span><span class="w">et </span><span class="w">de </span><span data-type="GN"><span class="synos" data-href="3200695_15" data-corresp="ballanche1829_3200695">souffrance</span> </span><span data-type="GV"><span class="synos" data-href="3200695_10" data-corresp="ballanche1829_3200695">vivent </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">sa </span><span class="w">mémoire</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200695" data-id="3200695">
+                  <h5>ballanche1829, phrase 695</h5>
+                  <p><span data-type="GN"><span>Orphée</span></span>, <span data-type="GN"><span>Eurydice</span></span>, <span data-type="GN"><span>couple </span><span>divin</span></span>, <span data-type="GV"><span>consentez </span><span>à </span><span class="synos" data-id="3200695_10">être</span> </span><span data-type="GAdj"><span>misérables</span> </span><span data-type="GV"><span>pour </span><span>diminuer</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="3200695_15">misère </span><span>du </span><span data-type="GN"><span>genre </span><span>humain</span></span></span>&nbsp;; <span data-type="GV"><span>faites </span><span>comprendre </span><span>aux</span> </span><span data-type="GAdj"><span>autres</span> </span><span data-type="GN"><span>la </span><span>sainteté </span><span>du </span><span data-type="GN"><span>lien </span><span>conjugal</span></span></span>, <span data-type="GV"><span>avant </span><span>de </span><span>le </span><span>former</span> </span><span>pour </span><span>vous-mêmes</span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="YQVAnOY" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('YQVAnOY').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('YQVAnOY')">
+                     <option value="ballanche1829_3200695">ballanche1829, phrase 695</option>
+                     <option value="ballanche1829_3202446">ballanche1829, phrase 2446</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('YQVAnOY',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('YQVAnOY',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600031">
+               <h5>ballanche1809, phrase 31</h5>
+               <p><span data-type="GN"><span class="w">Les </span><span class="synos" data-href="3202446_18" data-corresp="ballanche1829_3202446"><span class="mots" data-href="3200695_23" data-corresp="ballanche1829_3200695">autres</span></span> </span><span data-type="GV"><span class="w">sont </span><span class="w">dénués </span><span class="w">de</span> </span><span data-type="GN"><span class="w">charme</span> </span><span class="w">et </span><span class="w">de </span><span data-type="GN"><span class="w">poésie</span></span>&nbsp;; <span data-type="GV"><span class="w">ce </span><span class="w">sont </span><span class="w">des</span> </span><span data-type="GN"><span class="w">contes</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">amusent</span> </span><span data-type="GN"><span class="w">un </span><span class="w">instant</span> </span><span data-type="GN"><span class="w">son </span><span class="w">enfance</span></span>, <span class="w">alors </span><span class="w">que </span><span data-type="GN"><span class="w">l’</span><span class="w">expérience</span> </span><span data-type="GV"><span class="w">n’</span><span class="w">a </span><span class="w">pas </span><span class="mots" data-href="3202446_21" data-corresp="ballanche1829_3202446">encore</span> </span><span data-type="GAdj"><span class="synos" data-href="3202446_43" data-corresp="ballanche1829_3202446"><span class="synos" data-href="3200695_13" data-corresp="ballanche1829_3200695">détruit</span></span> </span><span data-type="GN"><span class="w">ses </span><span class="w">illusions</span></span>, <span class="w">alors </span><span class="w">que </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="3202446_2" data-corresp="ballanche1829_3202446">jeune </span><span class="w">imagination</span> </span><span data-type="GV"><span class="w">sourit </span><span class="w">à</span> </span><span data-type="GN"><span class="w">l’</span><span class="w">avenir</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200695" data-id="3200695" style="display:none">
+                  <h5>ballanche1829, phrase 695</h5>
+                  <p><span data-type="GN"><span>Orphée</span></span>, <span data-type="GN"><span>Eurydice</span></span>, <span data-type="GN"><span>couple </span><span>divin</span></span>, <span data-type="GV"><span>consentez </span><span>à </span><span>être</span> </span><span data-type="GAdj"><span>misérables</span> </span><span data-type="GV"><span>pour </span><span class="synos" data-id="3200695_13">diminuer</span> </span><span data-type="GN"><span>la </span><span>misère </span><span>du </span><span data-type="GN"><span>genre </span><span>humain</span></span></span>&nbsp;; <span data-type="GV"><span>faites </span><span>comprendre </span><span>aux</span> </span><span data-type="GAdj"><span class="mots" data-id="3200695_23">autres</span> </span><span data-type="GN"><span>la </span><span>sainteté </span><span>du </span><span data-type="GN"><span>lien </span><span>conjugal</span></span></span>, <span data-type="GV"><span>avant </span><span>de </span><span>le </span><span>former</span> </span><span>pour </span><span>vous-mêmes</span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3202446" data-id="3202446">
+                  <h5>ballanche1829, phrase 2446</h5>
+                  <p><span data-type="GN"><span>L’</span><span class="synos" data-id="3202446_2">homme</span> </span><span data-type="GV"><span>n’</span><span>a</span> </span><span>qu’</span><span data-type="GN"><span>une </span><span>voix</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>cette </span><span>voix</span> </span><span data-type="GV"><span>est </span><span>entendue </span><span>non</span> </span><span>seulement </span><span>par </span><span>ses </span><span data-type="GAdj"><span class="synos" data-id="3202446_18">semblables</span></span>, <span>mais </span><span class="mots" data-id="3202446_21">encore </span><span>par </span><span data-type="GN"><span>les </span><span>animaux</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>cette </span><span>voix</span></span>, <span data-type="GV"><span>qui </span><span>n’</span><span>est</span></span>, <span>le </span><span>plus </span><span>souvent</span>, <span>que </span><span data-type="GN"><span>celle </span><span>du </span><span>gémissement</span></span>, <span data-type="GV"><span class="synos" data-id="3202446_43">passe </span><span>de</span> </span><span data-type="GN"><span>génération</span> </span><span>en </span><span data-type="GN"><span>génération</span></span>, <span>et </span><span data-type="GV"><span>retentit </span><span>dans</span> </span><span data-type="GN"><span>les </span><span>siècles</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="wbuDIIg" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('wbuDIIg').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('wbuDIIg')"></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('wbuDIIg',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('wbuDIIg',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600023">
+               <h5>ballanche1809, phrase 23</h5>
+               <p><span data-type="GN"><span class="w">Eurydice</span> </span><span data-type="GV"><span class="w">lui </span><span class="w">est </span><span class="synos" data-href="1900098_53" data-corresp="_1900098">ravie </span><span class="w">de</span> </span><span data-type="GAdj"><span class="w">nouveau</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">lui </span><span class="w">est </span><span class="synos" data-href="1900098_53" data-corresp="_1900098">ravie </span><span class="w">à</span> </span><span class="w">jamais</span>. 
+               </p>
+            </div>
+            <div class="target"></div>
+         </div>
+         <div id="RONfCPZ" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('RONfCPZ').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('RONfCPZ')">
+                     <option value="ballanche1829_3201035">ballanche1829, phrase 1035</option>
+                     <option value="ballanche1829_3201038">ballanche1829, phrase 1038</option>
+                     <option value="launay1922_1900210">launay1922, phrase 210</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('RONfCPZ',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('RONfCPZ',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600024">
+               <h5>ballanche1809, phrase 24</h5>
+               <p><span data-type="GV"><span class="w">Elle </span><span class="w">s’</span><span class="lemmes" data-href="3201035_37" data-corresp="ballanche1829_3201035">évanouit </span><span class="mots" data-href="3201035_38" data-corresp="ballanche1829_3201035">comme</span> </span><span data-type="GN"><span class="w">un </span><span class="mots" data-href="3201035_40" data-corresp="ballanche1829_3201035">songe </span><span class="synos" data-href="3201035_34" data-corresp="ballanche1829_3201035">vain</span> </span><span data-type="GV"><span class="w">qui </span><span class="synos" data-href="3201038_33" data-corresp="ballanche1829_3201038">fuit </span><span class="w">aux</span> </span><span data-type="GN"><span class="w">premiers </span><span class="w">rayons </span><span class="w">de </span><span class="w">l’</span><span data-type="GN"><span class="mots" data-href="3201035_44" data-corresp="ballanche1829_3201035">aurore</span></span></span>&nbsp;; <span class="w">et </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="3201038_8" data-corresp="ballanche1829_3201038">parole </span><span class="w">plaintive </span><span class="w">inarticulée</span></span>, <span data-type="GV"><span class="synos" data-href="3201038_33" data-corresp="ballanche1829_3201038">meurt </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">le </span><span class="w">vague </span><span class="w">des </span><span data-type="GN"><span class="w">airs </span><span class="w">semblable </span><span class="w">à</span></span> </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3201038_18" data-corresp="ballanche1829_3201038">dernière </span><span class="w">vibration </span><span class="w">d’</span><span class="w">une </span><span data-type="GN"><span class="mots" data-href="1900210_21" data-corresp="launay1922_1900210">corde </span><span class="synos" data-href="1900210_23" data-corresp="launay1922_1900210"><span class="synos" data-href="3201035_34" data-corresp="ballanche1829_3201035">harmonieuse</span></span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3201035" data-id="3201035" style="display:none">
+                  <h5>ballanche1829, phrase 1035</h5>
+                  <p><span>Mais </span><span data-type="GV"><span>bientôt </span><span>elle </span><span>fut </span><span>plus </span><span>éclairée</span> </span><span>sur </span><span data-type="GN"><span>les </span><span>causes </span><span>de </span><span>cette </span><span data-type="GN"><span>anxiété </span><span>croissante</span></span> </span><span data-type="GV"><span>qui </span><span>s’</span><span>emparait </span><span>de</span> </span><span>tout </span><span data-type="GN"><span>son </span><span>être</span></span>&nbsp;; <span data-type="GV"><span>elle </span><span>sentit</span> </span><span>que </span><span data-type="GN"><span>la </span><span>vie</span> </span><span data-type="GV"><span>se </span><span>retirait </span><span>d’</span><span>elle</span></span>, <span>que </span><span data-type="GN"><span>sa </span><span class="synos" data-id="3201035_34">belle </span><span>existence</span> </span><span data-type="GV"><span>s’</span><span class="lemmes" data-id="3201035_37">évanouissait </span><span class="mots" data-id="3201035_38">comme</span> </span><span data-type="GN"><span>le </span><span class="mots" data-id="3201035_40">songe </span><span>d’</span><span>une </span><span>radieuse </span><span data-type="GN"><span class="mots" data-id="3201035_44">aurore </span><span>de </span><span>printemps</span></span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3201038" data-id="3201038" style="display:none">
+                  <h5>ballanche1829, phrase 1038</h5>
+                  <p>«&nbsp;<span data-type="GN"><span>Orphée </span><span>dit </span><span>-elle </span><span>d’</span> </span><span data-type="GN"><span>une </span><span class="synos" data-id="3201038_8">voix </span><span>affaiblie</span></span>, <span data-type="GV"><span>j’</span><span>ai </span><span>voulu </span><span>te</span> </span><span data-type="GV"><span>distraire </span><span>de</span> </span><span data-type="GN"><span>tes </span><span class="synos" data-id="3201038_18">grandes </span><span>pensées</span></span>, <span>au </span><span data-type="GN"><span>lieu</span> </span><span data-type="GV"><span>de </span><span>me </span><span>borner </span><span>à </span><span>les</span> </span><span data-type="GV"><span>embellir</span></span>, <span>et </span><span data-type="GV"><span>à </span><span>leur </span><span class="synos" data-id="3201038_33">donner </span><span>du</span> </span><span data-type="GN"><span>charme</span></span>&nbsp;; <span>et </span><span>voilà </span><span>que </span><span data-type="GN"><span>les </span><span>dieux</span> </span><span data-type="GV"><span>m’</span><span>en </span><span>punissent</span></span>. 
+                  </p>
+               </div>
+               <div id="launay1922_1900210" data-id="1900210">
+                  <h5>launay1922, phrase 210</h5>
+                  <p><span>Et</span>, <span data-type="GV"><span>faisant </span><span>travailler </span><span>même</span> </span><span data-type="GN"><span>le </span><span>vent </span><span>hideux</span></span>, <span data-type="GN"><span>orphée</span> </span><span>à </span><span data-type="GN"><span>sa </span><span>fureur</span> </span><span data-type="GV"><span>offre</span> </span><span data-type="GN"><span>sa </span><span>grande </span><span>lyre</span></span>, <span data-type="GN"><span>dont </span><span>la </span><span class="mots" data-id="1900210_21">corde </span><span>répond </span><span class="synos" data-id="1900210_23">suave </span><span>à</span> </span><span data-type="GN"><span>son </span><span>délire</span></span>&nbsp;: 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="iqOSTMW" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('iqOSTMW').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('iqOSTMW')">
+                     <option value="ballanche1829_3201035">ballanche1829, phrase 1035</option>
+                     <option value="ballanche1829_3201038">ballanche1829, phrase 1038</option>
+                     <option value="ballanche1829_3202445">ballanche1829, phrase 2445</option>
+                     <option value="launay1922_1900097">launay1922, phrase 97</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('iqOSTMW',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('iqOSTMW',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600025">
+               <h5>ballanche1809, phrase 25</h5>
+               <p><span data-type="GV"><span class="w">Telle </span><span class="w">est</span> </span><span data-type="GN"><span class="w">l’</span><span class="synos" data-href="3201035_26" data-corresp="ballanche1829_3201035">histoire </span><span class="w">d’</span><span data-type="GN"><span class="mots" data-href="3201038_2" data-corresp="ballanche1829_3201038">Orphée </span><span class="synos" data-href="3202445_5" data-corresp="ballanche1829_3202445"><span class="synos" data-href="3201038_4" data-corresp="ballanche1829_3201038">racontée </span></span><span class="w">d’</span></span> </span><span data-type="GN"><span class="mots" data-href="1900097_25" data-corresp="launay1922_1900097"><span class="mots" data-href="3202445_15" data-corresp="ballanche1829_3202445"><span class="synos" data-href="3201035_26" data-corresp="ballanche1829_3201035">âge</span></span></span> </span><span class="w">en </span><span data-type="GN"><span class="mots" data-href="1900097_25" data-corresp="launay1922_1900097"><span class="mots" data-href="3202445_15" data-corresp="ballanche1829_3202445"><span class="synos" data-href="3201035_26" data-corresp="ballanche1829_3201035">âge</span></span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3201035" data-id="3201035" style="display:none">
+                  <h5>ballanche1829, phrase 1035</h5>
+                  <p><span>Mais </span><span data-type="GV"><span>bientôt </span><span>elle </span><span>fut </span><span>plus </span><span>éclairée</span> </span><span>sur </span><span data-type="GN"><span>les </span><span>causes </span><span>de </span><span>cette </span><span data-type="GN"><span>anxiété </span><span>croissante</span></span> </span><span data-type="GV"><span>qui </span><span>s’</span><span>emparait </span><span>de</span> </span><span>tout </span><span data-type="GN"><span>son </span><span>être</span></span>&nbsp;; <span data-type="GV"><span>elle </span><span>sentit</span> </span><span>que </span><span data-type="GN"><span>la </span><span class="synos" data-id="3201035_26">vie</span> </span><span data-type="GV"><span>se </span><span>retirait </span><span>d’</span><span>elle</span></span>, <span>que </span><span data-type="GN"><span>sa </span><span>belle </span><span>existence</span> </span><span data-type="GV"><span>s’</span><span>évanouissait </span><span>comme</span> </span><span data-type="GN"><span>le </span><span>songe </span><span>d’</span><span>une </span><span>radieuse </span><span data-type="GN"><span>aurore </span><span>de </span><span>printemps</span></span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3201038" data-id="3201038" style="display:none">
+                  <h5>ballanche1829, phrase 1038</h5>
+                  <p>«&nbsp;<span data-type="GN"><span class="mots" data-id="3201038_2">Orphée </span><span class="synos" data-id="3201038_4">dit </span><span>-elle </span><span>d’</span> </span><span data-type="GN"><span>une </span><span>voix </span><span>affaiblie</span></span>, <span data-type="GV"><span>j’</span><span>ai </span><span>voulu </span><span>te</span> </span><span data-type="GV"><span>distraire </span><span>de</span> </span><span data-type="GN"><span>tes </span><span>grandes </span><span>pensées</span></span>, <span>au </span><span data-type="GN"><span>lieu</span> </span><span data-type="GV"><span>de </span><span>me </span><span>borner </span><span>à </span><span>les</span> </span><span data-type="GV"><span>embellir</span></span>, <span>et </span><span data-type="GV"><span>à </span><span>leur </span><span>donner </span><span>du</span> </span><span data-type="GN"><span>charme</span></span>&nbsp;; <span>et </span><span>voilà </span><span>que </span><span data-type="GN"><span>les </span><span>dieux</span> </span><span data-type="GV"><span>m’</span><span>en </span><span>punissent</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3202445" data-id="3202445" style="display:none">
+                  <h5>ballanche1829, phrase 2445</h5>
+                  <p><span data-type="GN"><span>Le </span><span>grand-prêtre</span> </span><span data-type="GV"><span>nous </span><span>a </span><span class="synos" data-id="3202445_5">présenté</span> </span><span data-type="GN"><span>l’</span><span>homme</span></span>, <span>dans </span><span data-type="GN"><span>son </span><span>enfance</span></span>, <span>dans </span><span data-type="GN"><span>son </span><span class="mots mots" data-id="3202445_15">âge </span><span>mûr</span></span>, <span>dans </span><span data-type="GN"><span>sa </span><span>vieillesse</span></span>&nbsp;; <span>et </span><span data-type="GN"><span>le </span><span>phénix</span> </span><span data-type="GV"><span>nous </span><span>le </span><span>présentera </span><span>aujourd'hui </span><span>dans</span> </span><span data-type="GN"><span>sa </span><span>mort</span></span>. 
+                  </p>
+               </div>
+               <div id="launay1922_1900097" data-id="1900097">
+                  <h5>launay1922, phrase 97</h5>
+                  <p><span data-type="GN"><span>chasseur </span><span>sauvage</span></span>, <span data-type="GN"><span>guerrier </span><span>brutal</span></span>, <span data-type="GV"><span>croyant</span> </span><span data-type="GAdj"><span>superbe</span> </span><span data-type="GN"><span>le </span><span>carnage </span><span>enivré </span><span>de</span> </span><span data-type="GN"><span>sa </span><span>force </span><span>ensanglanté</span></span>, <span data-type="GV"><span>méchant</span></span>, <span data-type="GN"><span>un </span><span>Orphée</span> </span><span>à </span><span data-type="GN"><span>cet </span><span class="mots mots" data-id="1900097_25">âge</span></span>, <span>hélas</span>&nbsp;! <span data-type="GV"><span>est</span> </span><span data-type="GAdj"><span>sourd </span><span>au</span> </span><span data-type="GN"><span>chant</span> </span><span>que </span><span data-type="GN"><span>l’</span><span>avenir</span> </span><span>en </span><span>lui</span>, <span>tout </span><span data-type="GN"><span>tas </span><span>bien </span><span>bas</span></span>, <span data-type="GN"><span>murmure</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="utbxzEj" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('utbxzEj').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('utbxzEj')">
+                     <option value="ballanche1829_3201035">ballanche1829, phrase 1035</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('utbxzEj',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('utbxzEj',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600026">
+               <h5>ballanche1809, phrase 26</h5>
+               <p><span data-type="GN"><span class="w">La </span><span class="w">fable</span> </span><span data-type="GV"><span class="w">y </span><span class="w">a </span><span class="w">mêlé</span> </span><span data-type="GN"><span class="w">ses </span><span class="synos" data-href="3201035_34" data-corresp="ballanche1829_3201035">aimables </span><span class="w">mensonges</span></span>&nbsp;; <span class="w">mais </span><span data-type="GN"><span class="w">le </span><span class="synos" data-href="3201035_9" data-corresp="ballanche1829_3201035">fond</span> </span><span data-type="GV"><span class="w">en </span><span class="w">est</span> </span><span data-type="GAdj"><span class="synos" data-href="3201035_34" data-corresp="ballanche1829_3201035">vrai</span></span>, <span class="w">car </span><span data-type="GN"><span class="w">les </span><span class="w">larmes</span> </span><span data-type="GV"><span class="w">sont </span><span class="w">de</span> </span><span class="lemmes" data-href="3201035_18" data-corresp="ballanche1829_3201035">tous </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="3201035_26" data-corresp="ballanche1829_3201035">temps</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3201035" data-id="3201035">
+                  <h5>ballanche1829, phrase 1035</h5>
+                  <p><span>Mais </span><span data-type="GV"><span>bientôt </span><span>elle </span><span>fut </span><span>plus </span><span>éclairée</span> </span><span>sur </span><span data-type="GN"><span>les </span><span class="synos" data-id="3201035_9">causes </span><span>de </span><span>cette </span><span data-type="GN"><span>anxiété </span><span>croissante</span></span> </span><span data-type="GV"><span>qui </span><span>s’</span><span>emparait </span><span>de</span> </span><span class="lemmes" data-id="3201035_18">tout </span><span data-type="GN"><span>son </span><span>être</span></span>&nbsp;; <span data-type="GV"><span>elle </span><span>sentit</span> </span><span>que </span><span data-type="GN"><span>la </span><span class="synos" data-id="3201035_26">vie</span> </span><span data-type="GV"><span>se </span><span>retirait </span><span>d’</span><span>elle</span></span>, <span>que </span><span data-type="GN"><span>sa </span><span class="synos" data-id="3201035_34">belle </span><span>existence</span> </span><span data-type="GV"><span>s’</span><span>évanouissait </span><span>comme</span> </span><span data-type="GN"><span>le </span><span>songe </span><span>d’</span><span>une </span><span>radieuse </span><span data-type="GN"><span>aurore </span><span>de </span><span>printemps</span></span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="QYuqaaI" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('QYuqaaI').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('QYuqaaI')">
+                     <option value="ballanche1829_3200172">ballanche1829, phrase 172</option>
+                     <option value="ballanche1829_3200173">ballanche1829, phrase 173</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('QYuqaaI',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('QYuqaaI',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600009">
+               <h5>ballanche1809, phrase 9</h5>
+               <p><span data-type="GN"><span class="w">Le </span><span class="w">dieu </span><span class="w">du </span><span class="synos" data-href="3200172_6" data-corresp="ballanche1829_3200172">sombre </span><span data-type="GN"><span class="synos" data-href="3200172_36" data-corresp="ballanche1829_3200172">empire</span></span> </span><span data-type="GV"><span class="w">se </span><span class="w">laissa </span><span class="w">attendrir</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">il </span><span class="synos" data-href="3200173_24" data-corresp="ballanche1829_3200173">rendit </span><span class="w">à</span> </span><span data-type="GN"><span class="mots" data-href="3200173_41" data-corresp="ballanche1829_3200173">Orphée</span> </span><span data-type="GN"><span class="w">l’</span><span class="w">épouse</span> </span><span data-type="GV"><span class="w">que </span><span class="w">pleurait</span> </span><span data-type="GN"><span class="w">ce </span><span class="w">poëte </span><span class="w">inconsolable</span></span>&nbsp;; <span class="w">mais </span><span data-type="GV"><span class="w">il </span><span class="synos" data-href="3200173_24" data-corresp="ballanche1829_3200173">mit </span><span class="w">à</span> </span><span data-type="GN"><span class="w">ce </span><span class="synos" data-href="3200173_46" data-corresp="ballanche1829_3200173">bienfait</span> </span><span data-type="GN"><span class="w">une </span><span class="synos" data-href="3200172_37" data-corresp="ballanche1829_3200172">condition</span> </span><span data-type="GV"><span class="w">qui </span><span class="lemmes" data-href="3200173_23" data-corresp="ballanche1829_3200173">devait </span><span class="w">le </span><span class="synos" data-href="3200173_24" data-corresp="ballanche1829_3200173">rendre</span> </span><span data-type="GAdj"><span class="mots" data-href="3200173_48" data-corresp="ballanche1829_3200173">bien </span><span class="synos" data-href="3200172_6" data-corresp="ballanche1829_3200172">amer</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200172" data-id="3200172" style="display:none">
+                  <h5>ballanche1829, phrase 172</h5>
+                  <p><span data-type="GN"><span>Une </span><span>image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi </span><span class="synos" data-id="3200172_6">terrible</span></span> </span><span>des </span><span data-type="GN"><span>destinées </span><span>humaines</span></span>, <span data-type="GV"><span>qui </span><span>fonde</span> </span><span data-type="GN"><span>la </span><span>vie</span> </span><span>sur </span><span data-type="GN"><span>la </span><span>mort</span></span>, <span data-type="GN"><span>une </span><span>image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi</span></span> </span><span data-type="GV"><span>se </span><span>rencontre </span><span>chez </span><span>vous</span></span>&nbsp;: <span data-type="GN"><span>le </span><span>prêtre </span><span>de </span><span>la </span><span data-type="GN"><span>Diane </span><span>farouche</span></span> </span><span data-type="GV"><span>ne </span><span class="synos" data-id="3200172_36">peut </span><span class="synos" data-id="3200172_37">être </span><span>remplacé</span> </span><span>que </span><span>par </span><span data-type="GN"><span>son </span><span>propre </span><span>meurtrier</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200173" data-id="3200173">
+                  <h5>ballanche1829, phrase 173</h5>
+                  <p><span>Quoi </span><span>qu’</span><span data-type="GV"><span>il </span><span>en </span><span>soit</span></span>, <span data-type="GN"><span>cette </span><span>nouvelle </span><span>race </span><span>humaine</span></span>, <span data-type="GV"><span>dont </span><span>je </span><span>vous </span><span>parlais </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>heure</span></span>, <span>et </span><span data-type="GN"><span>que </span><span>Bacchus</span> </span><span data-type="GV"><span class="lemmes" data-id="3200173_23">doit </span><span class="synos" data-id="3200173_24">faire </span><span>admettre</span></span>, <span data-type="GN"><span>un </span><span>jour</span></span>, <span>aux </span><span data-type="GN"><span>banquets </span><span>de </span><span>la </span><span data-type="GN"><span>cité</span></span></span>, <span data-type="GV"><span>c’</span><span>est </span><span>à </span><span>elle</span> </span><span>qu’</span><span data-type="GN"><span class="mots" data-id="3200173_41">Orphée</span> </span><span data-type="GV"><span>est </span><span>venu </span><span>donner</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="3200173_46">capacité </span><span>du </span><span data-type="GN"><span class="mots" data-id="3200173_48">bien</span></span> </span><span>et </span><span>du </span><span data-type="GN"><span>mal</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="IeielUL" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('IeielUL').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('IeielUL')">
+                     <option value="ballanche1829_3200172">ballanche1829, phrase 172</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('IeielUL',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('IeielUL',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600010">
+               <h5>ballanche1809, phrase 10</h5>
+               <p><span data-type="GN"><span class="lemmes" data-href="3200172_2" data-corresp="ballanche1829_3200172">Image </span><span class="w">trop </span><span class="synos" data-href="3200172_42" data-corresp="ballanche1829_3200172">vraie </span><span class="w">des</span> </span><span data-type="GN"><span class="mots" data-href="3200172_8" data-corresp="ballanche1829_3200172">destinées </span><span class="mots" data-href="3200172_9" data-corresp="ballanche1829_3200172">humaines</span></span>, <span data-type="GV"><span class="w">qui </span><span class="w">n’</span><span class="w">accordent </span><span class="w">jamais </span><span class="w">de</span> </span><span data-type="GN"><span class="synos" data-href="3200172_36" data-corresp="ballanche1829_3200172">faveur </span><span class="synos" data-href="3200172_42" data-corresp="ballanche1829_3200172">pure</span> </span><span class="w">et </span><span class="w">sans </span><span data-type="GN"><span class="w">mélange</span></span>&nbsp;! 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200172" data-id="3200172">
+                  <h5>ballanche1829, phrase 172</h5>
+                  <p><span data-type="GN"><span>Une </span><span class="lemmes" data-id="3200172_2">image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi </span><span>terrible</span></span> </span><span>des </span><span data-type="GN"><span class="mots" data-id="3200172_8">destinées </span><span class="mots" data-id="3200172_9">humaines</span></span>, <span data-type="GV"><span>qui </span><span>fonde</span> </span><span data-type="GN"><span>la </span><span>vie</span> </span><span>sur </span><span data-type="GN"><span>la </span><span>mort</span></span>, <span data-type="GN"><span>une </span><span>image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi</span></span> </span><span data-type="GV"><span>se </span><span>rencontre </span><span>chez </span><span>vous</span></span>&nbsp;: <span data-type="GN"><span>le </span><span>prêtre </span><span>de </span><span>la </span><span data-type="GN"><span>Diane </span><span>farouche</span></span> </span><span data-type="GV"><span>ne </span><span class="synos" data-id="3200172_36">peut </span><span>être </span><span>remplacé</span> </span><span>que </span><span>par </span><span data-type="GN"><span>son </span><span class="synos" data-id="3200172_42">propre </span><span>meurtrier</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="xHkeetM" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('xHkeetM').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('xHkeetM')">
+                     <option value="ballanche1829_3200173">ballanche1829, phrase 173</option>
+                     <option value="ballanche1829_3200171">ballanche1829, phrase 171</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('xHkeetM',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('xHkeetM',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600011">
+               <h5>ballanche1809, phrase 11</h5>
+               <p>«&nbsp;<span data-type="GV"><span class="synos" data-href="3200173_24" data-corresp="ballanche1829_3200173">Va</span></span>, <span data-type="GV"><span class="synos" data-href="3200171_14" data-corresp="ballanche1829_3200171">emmène</span> </span><span data-type="GN"><span class="w">ton </span><span class="w">épouse</span></span>&nbsp;; <span class="w">mais </span><span data-type="GV"><span class="synos" data-href="3200171_5" data-corresp="ballanche1829_3200171">garde </span><span class="w">-toi </span><span class="w">de</span> </span><span data-type="GV"><span class="synos" data-href="3200171_14" data-corresp="ballanche1829_3200171">jeter </span><span class="w">sur </span><span class="w">elle</span> </span><span data-type="GN"><span class="w">un </span><span class="w">oeil </span><span class="w">indiscret</span></span>, <span class="synos" data-href="3200173_51" data-corresp="ballanche1829_3200173">tant </span><span class="w">que </span><span data-type="GV"><span class="w">tu </span><span class="w">seras </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">ces </span><span class="w">affreuses </span><span class="w">demeures</span> </span><span data-type="GN"><span class="w">où </span><span class="w">l’</span><span class="synos" data-href="3200171_18" data-corresp="ballanche1829_3200171">amour</span> </span><span data-type="GV"><span class="w">est </span><span class="w">ignoré</span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200173" data-id="3200173" style="display:none">
+                  <h5>ballanche1829, phrase 173</h5>
+                  <p><span>Quoi </span><span>qu’</span><span data-type="GV"><span>il </span><span>en </span><span>soit</span></span>, <span data-type="GN"><span>cette </span><span>nouvelle </span><span>race </span><span>humaine</span></span>, <span data-type="GV"><span>dont </span><span>je </span><span>vous </span><span>parlais </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>heure</span></span>, <span>et </span><span data-type="GN"><span>que </span><span>Bacchus</span> </span><span data-type="GV"><span>doit </span><span class="synos" data-id="3200173_24">faire </span><span>admettre</span></span>, <span data-type="GN"><span>un </span><span>jour</span></span>, <span>aux </span><span data-type="GN"><span>banquets </span><span>de </span><span>la </span><span data-type="GN"><span>cité</span></span></span>, <span data-type="GV"><span>c’</span><span>est </span><span>à </span><span>elle</span> </span><span>qu’</span><span data-type="GN"><span>Orphée</span> </span><span data-type="GV"><span>est </span><span>venu </span><span>donner</span> </span><span data-type="GN"><span>la </span><span>capacité </span><span>du </span><span data-type="GN"><span>bien</span></span> </span><span>et </span><span>du </span><span data-type="GN"><span class="synos" data-id="3200173_51">mal</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200171" data-id="3200171">
+                  <h5>ballanche1829, phrase 171</h5>
+                  <p><span>Encore</span>, <span data-type="GN"><span>votre </span><span>initiation </span><span class="synos" data-id="3200171_5">restera </span><span>incomplète</span></span>, <span>car </span><span data-type="GV"><span>il </span><span>ne </span><span>vous </span><span>sera </span><span>pas </span><span class="synos" data-id="3200171_14">donné</span> </span><span data-type="GV"><span>d’</span><span>ôter</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="3200171_18">vie </span><span>au </span><span data-type="GN"><span>vieillard </span><span>malheureux</span></span> </span><span data-type="GV"><span>qui </span><span>vous </span><span>aura </span><span>initié</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="UhBboZi" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('UhBboZi').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('UhBboZi')">
+                     <option value="ballanche1829_3200172">ballanche1829, phrase 172</option>
+                     <option value="ballanche1829_3200171">ballanche1829, phrase 171</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('UhBboZi',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('UhBboZi',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600012">
+               <h5>ballanche1809, phrase 12</h5>
+               <p><span data-type="GN"><span class="w">Tes </span><span class="synos" data-href="3200172_37" data-corresp="ballanche1829_3200172">regards</span></span>, <span data-type="GV"><span class="w">qui </span><span class="w">exprimeraient</span> </span><span class="w">toute </span><span data-type="GN"><span class="w">l’</span><span class="w">ivresse </span><span class="w">d’</span><span class="w">un </span><span data-type="GN"><span class="w">bonheur</span></span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">on </span><span class="w">ne </span><span class="w">connaît </span><span class="w">plus </span><span class="w">ici</span></span>, <span class="w">et </span><span data-type="GV"><span class="w">où </span><span class="w">se </span><span class="synos" data-href="3200171_14" data-corresp="ballanche1829_3200171">pendraient</span> </span><span class="w">toutes </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="3200172_20" data-corresp="ballanche1829_3200172">illusions </span><span class="w">de </span><span class="w">l’</span><span data-type="GN"><span class="w">espérance</span></span> </span><span data-type="GV"><span class="w">auxquelles </span><span class="w">on </span><span class="w">a </span><span class="synos" data-href="3200171_14" data-corresp="ballanche1829_3200171">renoncé</span></span>&nbsp;; <span data-type="GN"><span class="w">tes </span><span class="synos" data-href="3200172_37" data-corresp="ballanche1829_3200172">regards</span> </span><span data-type="GV"><span class="w">attristeraient </span><span class="lemmes" data-href="3200171_1" data-corresp="ballanche1829_3200171">encore</span> </span><span data-type="GN"><span class="w">les </span><span class="w">mânes </span><span class="synos" data-href="3200172_6" data-corresp="ballanche1829_3200172">lamentables </span><span class="mots" data-href="3200171_21" data-corresp="ballanche1829_3200171">malheureux </span><span data-type="GN"><span class="synos" data-href="3200172_37" data-corresp="ballanche1829_3200172">habitants </span><span class="w">de </span><span class="w">mes </span><span class="synos" data-href="3200172_6" data-corresp="ballanche1829_3200172">déplorables </span><span class="synos" data-href="3200172_36" data-corresp="ballanche1829_3200172">royaumes</span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200172" data-id="3200172" style="display:none">
+                  <h5>ballanche1829, phrase 172</h5>
+                  <p><span data-type="GN"><span>Une </span><span>image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi </span><span class="synos" data-id="3200172_6">terrible</span></span> </span><span>des </span><span data-type="GN"><span>destinées </span><span>humaines</span></span>, <span data-type="GV"><span>qui </span><span>fonde</span> </span><span data-type="GN"><span>la </span><span>vie</span> </span><span>sur </span><span data-type="GN"><span>la </span><span>mort</span></span>, <span data-type="GN"><span>une </span><span class="synos" data-id="3200172_20">image </span><span>de </span><span>cette </span><span data-type="GN"><span>loi</span></span> </span><span data-type="GV"><span>se </span><span>rencontre </span><span>chez </span><span>vous</span></span>&nbsp;: <span data-type="GN"><span>le </span><span>prêtre </span><span>de </span><span>la </span><span data-type="GN"><span>Diane </span><span>farouche</span></span> </span><span data-type="GV"><span>ne </span><span class="synos" data-id="3200172_36">peut </span><span class="synos" data-id="3200172_37">être </span><span>remplacé</span> </span><span>que </span><span>par </span><span data-type="GN"><span>son </span><span>propre </span><span>meurtrier</span></span>. 
+                  </p>
+               </div>
+               <div id="ballanche1829_3200171" data-id="3200171">
+                  <h5>ballanche1829, phrase 171</h5>
+                  <p><span class="lemmes" data-id="3200171_1">Encore</span>, <span data-type="GN"><span>votre </span><span>initiation </span><span>restera </span><span>incomplète</span></span>, <span>car </span><span data-type="GV"><span>il </span><span>ne </span><span>vous </span><span>sera </span><span>pas </span><span class="synos" data-id="3200171_14">donné</span> </span><span data-type="GV"><span>d’</span><span>ôter</span> </span><span data-type="GN"><span>la </span><span>vie </span><span>au </span><span data-type="GN"><span>vieillard </span><span class="mots" data-id="3200171_21">malheureux</span></span> </span><span data-type="GV"><span>qui </span><span>vous </span><span>aura </span><span>initié</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="VLHmxwr" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('VLHmxwr').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('VLHmxwr')">
+                     <option value="goudot2003_4500950">goudot2003, phrase 950</option>
+                     <option value="goudot2003_4500951">goudot2003, phrase 951</option>
+                     <option value="goudot2003_4500944">goudot2003, phrase 944</option>
+                     <option value="goudot2003_4500947">goudot2003, phrase 947</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('VLHmxwr',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('VLHmxwr',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600032">
+               <h5>ballanche1809, phrase 32</h5>
+               <p><span class="w">Comme </span><span class="w">que </span><span data-type="GV"><span class="w">nous </span><span class="synos" data-href="4500950_5" data-corresp="goudot2003_4500950">fassions</span></span>, <span class="w">quelle </span><span class="w">que </span><span class="w">soit </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="4500944_15" data-corresp="goudot2003_4500944"><span class="synos" data-href="4500951_9" data-corresp="goudot2003_4500951">route</span></span> </span><span data-type="GV"><span class="w">que </span><span class="w">nous </span><span class="w">ayons </span><span class="w">choisie</span></span>, <span data-type="GV"><span class="w">nous </span><span class="w">sommes </span><span class="synos" data-href="4500944_6" data-corresp="goudot2003_4500944">toujours </span><span class="w">déçus</span></span>&nbsp;: <span data-type="GN"><span class="w">la </span><span class="synos" data-href="4500947_13" data-corresp="goudot2003_4500947">douleur</span></span>, <span data-type="GN"><span class="w">sentinelle </span><span class="w">vigilante</span></span>, <span data-type="GV"><span class="synos" data-href="4500951_12" data-corresp="goudot2003_4500951">garde</span> </span><span class="synos" data-href="4500947_15" data-corresp="goudot2003_4500947">toutes </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="4500944_15" data-corresp="goudot2003_4500944"><span class="synos" data-href="4500951_9" data-corresp="goudot2003_4500951">avenues </span></span><span class="w">du </span><span data-type="GN"><span class="synos" data-href="4500947_5" data-corresp="goudot2003_4500947">bonheur</span></span></span>&nbsp;; <span data-type="GV"><span class="w">c’</span><span class="w">est</span> </span><span data-type="GN"><span class="w">l’</span><span class="w">épée </span><span class="w">de </span><span data-type="GN"><span class="synos" data-href="4500950_2" data-corresp="goudot2003_4500950">feu </span><span class="w">du </span><span class="w">chérubin</span></span> </span><span data-type="GV"><span class="w">qui </span><span class="w">défend</span> </span><span data-type="GN"><span class="w">l’</span><span class="synos" data-href="4500944_12" data-corresp="goudot2003_4500944">entrée </span><span class="w">d’</span><span data-type="GN"><span class="w">Éden</span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="goudot2003_4500950" data-id="4500950" style="display:none">
+                  <h5>goudot2003, phrase 950</h5>
+                  <p><span data-type="GN"><span>Un </span><span class="synos" data-id="4500950_2">amour</span> </span><span data-type="GV"><span>peut </span><span>en </span><span class="synos" data-id="4500950_5">mourir</span></span>.» 
+                  </p>
+               </div>
+               <div id="goudot2003_4500951" data-id="4500951" style="display:none">
+                  <h5>goudot2003, phrase 951</h5>
+                  <p><span data-type="GV"><span>Il </span><span>essaya </span><span>de </span><span>concentrer</span> </span><span data-type="GN"><span>son </span><span>attention</span> </span><span>sur </span><span data-type="GN"><span>le </span><span class="synos" data-id="4500951_9">chemin</span></span>, <span data-type="GV"><span>d’</span><span class="synos" data-id="4500951_12">éviter</span> </span><span data-type="GN"><span>les </span><span>arbustes</span> </span><span data-type="GV"><span>qui </span><span>risquaient </span><span>d’</span><span>égratigner</span> </span><span data-type="GN"><span>le </span><span>visage </span><span>de </span><span>sa </span><span data-type="GN"><span>femme</span></span></span>. 
+                  </p>
+               </div>
+               <div id="goudot2003_4500944" data-id="4500944" style="display:none">
+                  <h5>goudot2003, phrase 944</h5>
+                  <p><span data-type="GN"><span>La </span><span>voix </span><span>d’</span><span data-type="GN"><span>Hermès</span></span> </span><span data-type="GV"><span>vibra </span><span class="synos" data-id="4500944_6">encore</span> </span><span>quelques </span><span data-type="GN"><span>instants </span><span>au </span><span data-type="GN"><span>milieu </span><span>des</span></span> </span><span data-type="GN"><span class="synos" data-id="4500944_12">premiers </span><span>rochers </span><span>du </span><span data-type="GN"><span class="synos" data-id="4500944_15">chemin</span></span></span>, <span data-type="GV"><span>puis </span><span>s’</span><span>éteignit</span></span>. 
+                  </p>
+               </div>
+               <div id="goudot2003_4500947" data-id="4500947">
+                  <h5>goudot2003, phrase 947</h5>
+                  <p>«&nbsp;<span data-type="GN"><span>Eurydice</span> </span><span data-type="GV"><span>est </span><span>-elle </span><span class="synos" data-id="4500947_5">bien</span> </span><span>là</span>&nbsp;?» <span data-type="GV"><span>se </span><span>demandait </span><span>-il </span><span>avec</span> </span><span data-type="GN"><span class="synos" data-id="4500947_13">angoisse</span> </span><span>à </span><span class="synos" data-id="4500947_15">chaque </span><span data-type="GN"><span>pas</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="vpqcSvL" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('vpqcSvL').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('vpqcSvL')">
+                     <option value="goudot2003_4500944">goudot2003, phrase 944</option>
+                     <option value="goudot2003_4500946">goudot2003, phrase 946</option>
+                     <option value="goudot2003_4500947">goudot2003, phrase 947</option>
+                     <option value="goudot2003_4500950">goudot2003, phrase 950</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('vpqcSvL',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('vpqcSvL',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600033">
+               <h5>ballanche1809, phrase 33</h5>
+               <p><span class="synos" data-href="4500944_7" data-corresp="goudot2003_4500944">Si </span><span data-type="GN"><span class="mots" data-href="4500946_6" data-corresp="goudot2003_4500946">Orphée</span> </span><span data-type="GV"><span class="w">n’</span><span class="w">eût </span><span class="synos" data-href="4500944_8" data-corresp="goudot2003_4500944">point </span><span class="mots" data-href="4500946_11" data-corresp="goudot2003_4500946">connu</span> </span><span data-type="GN"><span class="mots" data-href="4500947_2" data-corresp="goudot2003_4500947">Eurydice</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">aurait </span><span class="w">ignoré </span><span class="w">ce</span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">y </span><span class="w">a </span><span class="w">de </span><span class="synos" data-href="4500944_6" data-corresp="goudot2003_4500944">plus</span> </span><span data-type="GAdj"><span class="synos" data-href="4500946_3" data-corresp="goudot2003_4500946">amers </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">la </span><span class="w">source </span><span class="w">des </span><span data-type="GN"><span class="synos" data-href="4500947_13" data-corresp="goudot2003_4500947">larmes</span></span></span>&nbsp;; <span class="w">mais </span><span data-type="GV"><span class="w">aurait </span><span class="w">-il </span><span class="lemmes" data-href="4500950_3" data-corresp="goudot2003_4500950">pu</span> </span><span data-type="GV"><span class="synos" data-href="4500944_19" data-corresp="goudot2003_4500944">étouffer </span><span class="w">en </span><span class="w">lui</span> </span><span data-type="GN"><span class="w">cette </span><span class="mots" data-href="4500944_2" data-corresp="goudot2003_4500944">voix </span><span class="w">intime </span><span class="synos" data-href="4500944_7" data-corresp="goudot2003_4500944">si </span><span class="w">impérieuse</span></span>, <span data-type="GV"><span class="w">qui </span><span class="lemmes" data-href="4500947_10" data-corresp="goudot2003_4500947">demande</span> </span><span data-type="GN"><span class="w">une </span><span class="w">compagne</span> </span><span class="w">et </span><span data-type="GN"><span class="w">une </span><span class="w">postérité</span></span>, <span data-type="GN"><span class="w">une </span><span class="w">compagne</span> </span><span data-type="GV"><span class="w">pour </span><span class="w">lui </span><span class="w">raconter</span> </span><span class="synos" data-href="4500947_15" data-corresp="goudot2003_4500947">toutes </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="4500947_5" data-corresp="goudot2003_4500947">choses </span><span class="w">secrètes</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">sont </span><span class="w">au</span> </span><span data-type="GN"><span class="synos" data-href="4500944_10" data-corresp="goudot2003_4500944">fond </span><span class="w">du </span><span data-type="GN"><span class="w">coeur</span></span></span>&nbsp;; <span data-type="GN"><span class="w">une </span><span class="w">postérité</span></span>, <span data-type="GV"><span class="w">pour </span><span class="synos" data-href="4500950_5" data-corresp="goudot2003_4500950">continuer</span> </span><span data-type="GN"><span class="w">ses </span><span class="w">espérances</span> </span><span class="w">au-delà </span><span class="w">du </span><span data-type="GN"><span class="w">tombeau</span></span>&nbsp;? 
+               </p>
+            </div>
+            <div class="target">
+               <div id="goudot2003_4500944" data-id="4500944" style="display:none">
+                  <h5>goudot2003, phrase 944</h5>
+                  <p><span data-type="GN"><span>La </span><span class="mots" data-id="4500944_2">voix </span><span>d’</span><span data-type="GN"><span>Hermès</span></span> </span><span data-type="GV"><span>vibra </span><span class="synos" data-id="4500944_6">encore</span> </span><span class="synos" data-id="4500944_7">quelques </span><span data-type="GN"><span class="synos" data-id="4500944_8">instants </span><span>au </span><span data-type="GN"><span class="synos" data-id="4500944_10">milieu </span><span>des</span></span> </span><span data-type="GN"><span>premiers </span><span>rochers </span><span>du </span><span data-type="GN"><span>chemin</span></span></span>, <span data-type="GV"><span>puis </span><span>s’</span><span class="synos" data-id="4500944_19">éteignit</span></span>. 
+                  </p>
+               </div>
+               <div id="goudot2003_4500946" data-id="4500946" style="display:none">
+                  <h5>goudot2003, phrase 946</h5>
+                  <p><span data-type="GN"><span>Un </span><span>silence </span><span class="synos" data-id="4500946_3">lourd</span></span>, <span>comme </span><span data-type="GN"><span class="mots" data-id="4500946_6">Orphée</span> </span><span data-type="GV"><span>n’</span><span>en </span><span>avait </span><span>jamais </span><span class="mots" data-id="4500946_11">connu</span></span>. 
+                  </p>
+               </div>
+               <div id="goudot2003_4500947" data-id="4500947" style="display:none">
+                  <h5>goudot2003, phrase 947</h5>
+                  <p>«&nbsp;<span data-type="GN"><span class="mots" data-id="4500947_2">Eurydice</span> </span><span data-type="GV"><span>est </span><span>-elle </span><span class="synos" data-id="4500947_5">bien</span> </span><span>là</span>&nbsp;?» <span data-type="GV"><span>se </span><span class="lemmes" data-id="4500947_10">demandait </span><span>-il </span><span>avec</span> </span><span data-type="GN"><span class="synos" data-id="4500947_13">angoisse</span> </span><span>à </span><span class="synos" data-id="4500947_15">chaque </span><span data-type="GN"><span>pas</span></span>. 
+                  </p>
+               </div>
+               <div id="goudot2003_4500950" data-id="4500950">
+                  <h5>goudot2003, phrase 950</h5>
+                  <p><span data-type="GN"><span>Un </span><span>amour</span> </span><span data-type="GV"><span class="lemmes" data-id="4500950_3">peut </span><span>en </span><span class="synos" data-id="4500950_5">mourir</span></span>.» 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="oKzPsWH" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('oKzPsWH').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('oKzPsWH')">
+                     <option value="goudot2003_4500947">goudot2003, phrase 947</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('oKzPsWH',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('oKzPsWH',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="2600034">
+               <h5>ballanche1809, phrase 34</h5>
+               <p><span data-type="GN"><span class="w">Son </span><span class="w">existence</span> </span><span data-type="GV"><span class="w">fût </span><span class="w">demeurée</span> </span><span data-type="GAdj"><span class="w">incomplète</span></span>&nbsp;; <span class="w">et </span><span data-type="GV"><span class="w">il </span><span class="w">aurait</span></span>, <span class="w">au </span><span data-type="GN"><span class="w">lieu </span><span class="w">de </span><span class="w">la </span><span data-type="GN"><span class="synos" data-href="4500947_13" data-corresp="goudot2003_4500947">douleur</span></span> </span><span data-type="GV"><span class="w">dont </span><span class="w">il </span><span class="w">fit</span> </span><span data-type="GN"><span class="w">une </span><span class="synos" data-href="4500947_13" data-corresp="goudot2003_4500947">épreuve </span><span class="w">si </span><span class="w">cruelle </span><span class="w">connu</span> </span><span data-type="GN"><span class="w">cette </span><span class="w">autre </span><span class="synos" data-href="4500947_13" data-corresp="goudot2003_4500947">douleur</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">n’</span><span class="w">a </span><span class="w">pas </span><span class="w">moins</span> </span><span class="w">d’</span><span data-type="GN"><span class="w">intensité</span></span>, <span data-type="GN"><span class="w">la </span><span class="w">solitude </span><span class="w">de </span><span class="w">l’</span><span data-type="GN"><span class="w">ame</span></span></span>. 
+               </p>
+            </div>
+            <div class="target">
+               <div id="goudot2003_4500947" data-id="4500947">
+                  <h5>goudot2003, phrase 947</h5>
+                  <p>«&nbsp;<span data-type="GN"><span>Eurydice</span> </span><span data-type="GV"><span>est </span><span>-elle </span><span>bien</span> </span><span>là</span>&nbsp;?» <span data-type="GV"><span>se </span><span>demandait </span><span>-il </span><span>avec</span> </span><span data-type="GN"><span class="synos" data-id="4500947_13">angoisse</span> </span><span>à </span><span>chaque </span><span data-type="GN"><span>pas</span></span>. 
+                  </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

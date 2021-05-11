@@ -1,0 +1,1597 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/manjock2000.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Ma Njock Manuna <em>Orphée d’Afrique, théâtre-rituel</em>,  [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Dans la salle.</p>
+                  <p>Orphée&nbsp;! Un nom, un poème, ou simplement un désir. Le vôtre,
+                     peut-être… Notre Orphée a perdu quelque chose, une de ces choses essentielles. Il l’a
+                     nommée Nyango. Ce pourrait être sa main, celle qui ouvre la porte, ce pourrait être sa
+                     voix, celle qui donne la réponse. C’est Nyango et Nyango est sa femme.</p>
+                  <p class="stage">Il joue de son instrument et chante au milieu des spectateurs.</p>
+                  <ul class="poem">
+                     <li>Nyango, un morceau de mon rêve, un morceau de mon toit. Nyango, le plus beau que je
+                        cherche, le plus beau qui m’attend.</li>
+                     <li>Je l’ai perdue et je marche sans âme.</li>
+                     <li>Je l’ai perdue et je pleure sans larme.</li>
+                     <li>Nyango, un morceau de mon rêve, un morceau de mon toit.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga,</p>
+                  <p class="stage">continuant à parcourir la salle.</p>
+                  <p>Tous les noms veulent dire, tous les hommes veulent grandir. <a class="note" onclick="affiche('wFrqVAF')">✱</a>Il s’appelle «&nbsp;la Lumière
+                     qui guérit&nbsp;», il s’appelle Orphée. Nyango, c’est «&nbsp;Madame&nbsp;», «&nbsp;celle qui s’est
+                     accomplie&nbsp;». Elle est au bout du chemin, elle allume la lumière.</p>
+                  <p>Orphée, Nyango, ils se sont mariés, mais ils ne s’étaient pas vus. Pouvaient-ils vivre&nbsp;? Sans tête&nbsp;? Sans bras&nbsp;? Sans cœur&nbsp;?</p>
+                  <p>Elle est partie et il apprend le vide.</p>
+                  <p>Il est resté et elle guide sa marche.</p>
+                  <p class="stage">Le Ndinga monte sur scène et trace un large cercle avec du
+                     kaolin qu’il divise en quatre compartiments. Au centre du cercle, un triangle pointe en
+                     bas est éclairé de façon permanente. À chacune de ses pointes, un personnage immobile se
+                     manifestera au fur et à mesure de l’évolution d’Orphée. Au fond de la scène, représentant
+                     l’Est, le Couple idéal Orphée-Nyango se détache sur un grand drap blanc, comme deux
+                     ombres
+                     chinoises. C’est l’Image de la Rencontre qui aura lieu. Orphée, debout, à l’avant-scène,
+                     face au cercle, est perdu dans une longue rêverie. L’Image du Couple doit capter toute
+                     l’attention. Sett/ un air de flûte se fait entendre. Il part de la salle et nourrit la
+                     rêverie d’Orphée. À chaque intervention d’une Voix off, une des pointes du triangle
+                     clignote.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi. Je suis le témoin.</li>
+                     <li>J’ai vu le crime, j’ai connu la peur.</li>
+                     <li>J’ai suivi l’étoile du sans-but et du sans-abri.</li>
+                     <li>J’ai affiché l’inculture et l’ignorance.</li>
+                     <li>Ne marche pas sur moi. Je suis le témoin.</li>
+                     <li>Mais je verrai l’homme de demain</li>
+                     <li>Je serai la Nouvelle Race.</li>
+                     <li>Et tu ne marcheras plus sur moi.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Scandant sa phrase avec le mvet, se dirige vers Orphée.</p>
+                  <p>Qu’est-ce que tu désires&nbsp;?</p>
+                  <p class="speaker">Première Commère</p>
+                  <p class="stage">Dans la salle.</p>
+                  <p>Tu as su ce qu’est devenu le fils de Dieudonné&nbsp;? Hum, il ne
+                     s’est pas endormi, celui-là&nbsp;! Il est devenu un si grand type que tu ne le reconnaîtrais
+                     pas.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Dans la salle.</p>
+                  <p>C’est si facile que ça de devenir grand type&nbsp;?</p>
+                  <p class="speaker">Première Commère</p>
+                  <p class="stage">Se rapprochant d’Orphée.</p>
+                  <p>Le pouvoir et l’argent vont toujours là où on les appelle. Demande et on te donnera. Ça
+                     ne coûte presque rien.</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p class="stage">Excitée.</p>
+                  <p>En tous cas, quand on voit un groto de trente ans avec toute sa panoplie, on peut
+                     bien
+                     faire un petit effort&nbsp;!</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Imagine un peu&nbsp;: il ne paye pas l’essence. Il ne paye pas les écoles. Il ne paye pas le
+                     téléphone. Il ne paye pas les voyages. Il ne paye pas les impôts. Et il collectionne les
+                     villas, les femmes, engraisse deux ou trois griots. Il est prêt alors à se faire élire à
+                     l’Assemblée nationale. On lui offrira en supplément un superbe curriculum vitae, où pas un
+                     titre ronflant ne manque.</p>
+                  <p>Orphée est secoué par le rythme du tam-tam, il balance d’un côté, de l’autre, attiré
+                     par
+                     la danse des femmes, vantant les «&nbsp;mérites&nbsp;» des grands types, en
+                     chantant. La flûte tente de se faire une place dans ce joyeux tintamarre de cris et de
+                     danses. Au bout d’un moment, il réussit à maîtriser sa danse et suit l’air de la flûte qui
+                     prend le dessus et le guide.</p>
+                  <p class="speaker">Orphée</p>
+                  <ul class="poem">
+                     <li>J’aime et j’entends le chant secret de mon amour.</li>
+                     <li>Nul ne peut mourir s’il aime.</li>
+                     <li>Nul ne peut perdre s’il désire.</li>
+                     <li>L’amour de toi détruit l’Enfer.</li>
+                     <li>Et la terre affamée allume ses foyers.</li>
+                     <li>La source pure ne tarit pas.</li>
+                     <li>Et mon village a choisi la fraîcheur d’une pause.</li>
+                  </ul>
+                  <p class="stage">Il fait un geste d’espoir vers l’Image et reste figé.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Jouant de son instrument et retrouvant le ton du conteur.</p>
+                  <p>On a célébré les noces d’Orphée et de Nyango&nbsp;; deux familles se sont réconciliées.
+                     Il
+                     fallait un peu d’harmonie dans ce monde déchiré&nbsp;! On aime toujours contempler une belle
+                     image… Ils avaient pressenti autre chose, ils devaient être et ils seraient. Orphée
+                     (rêvant) a retrouvé Nyango. Tout le monde ici en avait besoin.</p>
+                  <p class="stage">L’Image d’Orphée et de Nyango s’impose de plus en plus sur scène. Orphée reste
+                     toujours immobile. La salle vit les désirs d’un peuple affamé.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p class="stage">Portant sur la tête les restes du marché et distribuant quelques oranges.</p>
+                  <p>Je n’ai presque rien vendu ce matin. Mes oranges étaient
+                     flétries et le jus ne coulait plus.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Regardant l’orange qu’on vient de lui offrir.</p>
+                  <p>Une orange qui n’a même plus la couleur orange&nbsp;! Elle est grise, grise de saleté, grise
+                     de fadeur.</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Et je parie que tu vends ça cher&nbsp;!… Est-ce qu’un prix ça veut même dire quelque
+                     chose&nbsp;!</p>
+                  <p class="speaker">Une autre Commère</p>
+                  <p>Un tissu de prix&nbsp;!… 
+                     <p class="stage">(Sur un autre ton.)</p> Ça c’est très coûteux&nbsp;!
+                     
+                     <p class="stage">(Sur un autre ton)</p>… Tiens, je vais te le faire à un bon prix&nbsp;!
+                     
+                     <p class="stage">(Un autre ton)</p> …Quand on aime vraiment quelque chose,
+                     quand on le désire à tout prix, il faut y mettre le prix&nbsp;!</p>
+                  <p class="speaker">Une autre Commère</p>
+                  <p>Est-ce qu’on sait encore ce qui a de la valeur&nbsp;?
+                     <p class="stage">(Elle se dirige
+                        vers un spectateur et touche un vêtement, ou un bijou.)</p>Combien ça vaut, ça&nbsp;?
+                     10&nbsp;000 francs CFA, si tu as bonne mine, ou 1&nbsp;000 francs CFA si le vendeur est fatigué,
+                     ou
+                     s’il a besoin d’un mouton pour la Tabaski&nbsp;!
+                     <p class="stage">(Un
+                        silence.)</p>
+                  </p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Près d’Orphée.</p>
+                  <p>Le prix d’une chose&nbsp;! Le poids d’une chose&nbsp;! La valeur&nbsp;! Pourra-t-on encore évaluer, mesurer, compter. D’un regard bien posé, Orphée, qu’en
+                     feras-tu&nbsp;?</p>
+                  <p class="stage">Le tam-tam répond, Orphée reprend sa danse.</p>
+                  <p class="speaker">Une Commère</p>
+                  <p class="stage">En transe.</p>
+                  <p>La Maison d’eux s’élève sur le vallon, là où le ciel a perdu la forêt. Ils sont riches de
+                     tous les biens qui nous manquent&nbsp;!</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Dansant.</p>
+                  <p>Ils sont riches, nous sommes riches.</p>
+                  <p>Ils s’escriment pour notre avancement.</p>
+                  <p>Ils travaillent pour notre salut.</p>
+                  <p class="stage">Orphée s’enivre des cris d’un peuple qui attend. Danses de plus en plus endiablées. Puis silence, Orphée s’approche du cercle et s’arrête face à l’Est, où une lumière
+                     naît
+                     progressivement.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>Je t’attends, je ne fais que t’attendre</li>
+                     <li>Derrière les collines, de l’autre côté des rivières</li>
+                     <li>L’appel a résonné et l’écho répond.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Dans la salle, regardant la lumière qui devient de plus en plus rouge, telle une
+                     aurore radieuse.</p>
+                  <p class="stage">Il s’adresse à Orphée.</p>
+                  <ul class="poem">
+                     <li>Veux-tu savoir qui tu es, d’où tu viens&nbsp;?</li>
+                     <li>Veux-tu connaître le but de ta vie&nbsp;?</li>
+                     <li>Désires-tu la fortune, la gloire ou la puissance&nbsp;?</li>
+                     <li>La lumière s’étale dans tous les sens, indiquant de multiples
+                        directions.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Désires-tu aller plus loin&nbsp;? Ou veux-tu à ton tour propager l’illusion&nbsp;?</p>
+                  <p class="stage">L’Image du couple Orphée-Nyango pâlit. Une femme très belle aux gestes séducteurs se
+                     lève parmi les spectateurs et tente d’entraîner Orphée dans une danse. Ils luttent
+                     ensemble, tandis que la flûte imprime un rythme à Orphée qui pénètre dans le cercle.
+                     La
+                     femme continue seule sa danse et s’assoit parmi les spectateurs.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                     <li>J’ai vu la beauté, elle a attrapé la gale.</li>
+                     <li>J’ai suivi une voix de charme et un geste rassurant. Ils n’étaient que masque de
+                        séduction.</li>
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                  </ul>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Arrêtant sa danse.</p>
+                  <ul class="poem">
+                     <li>Je vais construire notre maison.</li>
+                     <li>Je vais élever un temple à notre amour.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Jouant de son instrument.</p>
+                  <p>Orphée sent la main qui lui démange.</p>
+                  <p>Il veut connaître la vraie peine, l’angoisse implacable. Il perdra toute la sueur et les
+                     larmes de son corps. Elles sont lourdes et fragiles les pierres du mur qui monte.</p>
+                  <p class="stage">Orphée délimite la première case du cercle qui sera sa
+                     chambre. Il montre l’effort, le dur travail. La pénombre règne sur scène et les gestes
+                     sont mécaniques. La scène s’éclaire et vibre d’une vie grouillante.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p class="stage">Courant de droite à gauche.</p>
+                  <p>Oh&nbsp;! À djop&nbsp;! Où c’est passé&nbsp;? Mais c’était ici&nbsp;! Où là&nbsp;? Non, ce n’est plus ici, c’est
+                     là-bas&nbsp;! 
+                     <p class="stage">(Elle fouille partout dans la salle.)</p>
+                  </p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Exhibant un immense pagne rouge.</p>
+                  <p>Tiens, je l’ai trouvé&nbsp;! 
+                     <p class="stage">(Et elle court dans la salle, poursuivie par la Première
+                        Commère aidée de plusieurs autres spectateurs. On assiste à une véritable poursuite
+                        entrecoupée de cris de toutes sortes. Deux femmes se battent. Les mots, les gestes vont
+                        dans tous les sens. On ne s’entend plus.)</p>
+                  </p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Elle est folle… La garce&nbsp;!</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>C’est elle qui m’a dit que lui avait dit que j’ai dit. Mais je vous dis que je n’ai rien
+                     dit&nbsp;!</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Mais lui m’a dit que tu lui as dit.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Que j’ai dit quoi&nbsp;? Il a dit, tu dis, j’ai dit quoi&nbsp;? Et puis,
+                     je n’ai rien à dire&nbsp;!</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Moi, je dis, hein&nbsp;! Je répète que la femme de l’autre a volé son frère. Il a été renvoyé
+                     et maintenant elle s’attaque à son mari&nbsp;! Le pauvre bougre, il ne s’en relèvera pas&nbsp;!</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Mais c’est faux. Tu mens. 
+                     <p class="stage">(Cacophonie de toutes sortes.)</p> Menteuse&nbsp;! Voleuse&nbsp;! Tricheuse&nbsp;! Vandale&nbsp;!</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Aïe, mon bras&nbsp;! Mais ne te gêne pas&nbsp;! Attrape-moi ça. Décoche-moi ça, bats-moi ça&nbsp;!</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Silence&nbsp;! Elle a quelque chose à dire. Quelque chose de sensé&nbsp;!</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Au bout d’un moment.</p>
+                  <p>Mince&nbsp;! J’ai oublié la pensée du jour de notre père à tous&nbsp;! C’était sur la liberté… la
+                     liberté… ce n’est pas une statue (bien sûr) c’est un…</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Un comportement&nbsp;! Voyons. Pourquoi aller chercher plus loin&nbsp;! Ce n’est pas la peine de se
+                     fatiguer. C’est sûr qu’on n’allait pas nous bouleverser avec des
+                     mots percutants&nbsp;! Mais ce n’est pas ça qui va nous empêcher de te régler ton compte…</p>
+                  <p class="stage">Orphée se bouche les oreilles. Sa chambre est terminée et il considère la «&nbsp;pièce&nbsp;»
+                     sur un air du Ndinga qui lui fait découvrir des objets imaginaires. Orphée s’allonge comme
+                     s’il était sur un Ut, il se tourne et se retourne, le mvet commentant son malaise.
+                     La
+                     lumière baisse. Il se lève et fait les cent pas. Dans la salle, un bruit de sirène, des
+                     appels au secours. Orphée tourne en rond. Il cherche un objet suivi par le mvet qui marque
+                     sa quête. Il semble l’avoir découvert, le caresse longuement puis le «&nbsp;casse&nbsp;». Le bruit
+                     se répercute dans la salle et devient presque assourdissant. Puis le mvet calme
+                     progressivement l’angoisse et Orphée s’assoit en tailleur&nbsp;: la lumière réapparaît
+                     faiblement avec l’Image d’Orphée et Nyango.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Descend dans la salle et s’adresse à la Première Commère.</p>
+                  <ul class="poem">
+                     <li>Quelle animation, mais tu es seule.</li>
+                     <li>Tu bouges, mais tu n’avances pas.</li>
+                     <li>Tu cries, mais tu ne dis rien.</li>
+                     <li>Ton geste est suspendu dans le vide</li>
+                     <li>Et tu pends, pends, lamentablement.</li>
+                  </ul>
+                  <p class="stage">Il sépare deux femmes dans la salle.</p>
+                  <p class="stage">Le Ndinga s’arrête devant un spectateur qui lit un journal en tournant nerveusement
+                     les pages, en lisant à l’endroit et à l’envers. Devant le regard
+                     insistant du Ndinga, il jette le journal et se lève.</p>
+                  <p class="speaker">Le Spectateur</p>
+                  <p>Et bien oui&nbsp;! Tout ça ne vaut rien. Ce n’est que de l’encre qui va s’effacer à la
+                     première pluie. Mais qui donc a dit que les écrits restent&nbsp;? Ils s’envolent et nous
+                     restons, face à face, sans avoir rien compris.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Tu restes seul&nbsp;! Mais regarde-toi alors&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Sur scène.</p>
+                  <p>Nyango, ta seule présence et je me sentirai complet. Il me faut vivre quelque chose de
+                     total, achever, parfaire, mettre un toit à ma maison.</p>
+                  <p class="stage">Le Ndinga quitte la salle et se rapproche d’Orphée, l’Image devient plus
+                     nette.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Qu’elle est belle, je vois le ciel dormant dans son regard&nbsp;!</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et l’Image est si belle, mais la douleur est amère…</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Le lit conserve la chaleur de son corps. Les objets ont perdu leur âme mais brillent de
+                     toutes leurs facettes et parlent encore.</p>
+                  <p class="stage">Bruits divers dans la salle, le Ndinga apporte un
+                     objet-fétiche et le remet à Orphée. Il a circulé parmi les spectateurs et sera le symbole
+                     de la quête d’Orphée, soutenue par le public.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Recevant l’objet.</p>
+                  <p>N’y a-t-il pas moyen d’éviter son destin&nbsp;? Ne peut-on être autre chose que ce que l’on
+                     est condamné à être&nbsp;?</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                     <li>La pluie fait pousser le frangipanier.</li>
+                     <li>Le fruit mûr naît d’une fleur</li>
+                     <li>Et l’oiseau vole dans le ciel.</li>
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Jouant de son instrument.</p>
+                  <p>Et l’image est si belle, qu’Orphée reproduit le modèle. Orphée construit sa maison. La
+                     chambre des parents.</p>
+                  <p class="stage">Orphée reprend son travail. Lorsqu’il semble terminé, le père vient s’asseoir. Orphée
+                     considère longuement son père qui ne le quitte pas des yeux.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>As-tu senti la nécessité d’un père&nbsp;? As-tu pensé qu’il pouvait te dire, lui&nbsp;? Saurait-il
+                     dompter le lion qui est en toi&nbsp;?</p>
+                  <p class="stage">Orphée se tient immobile dans une pose laborieuse&nbsp;: il
+                     pourrait se concentrer sur l’égalisation d’un «&nbsp;mur&nbsp;», ou mettre la dernière main
+                     à la
+                     «&nbsp;peinture&nbsp;».</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                     <li>Nourris-toi de ma sève.</li>
+                     <li>Désaltère-toi de mes rêves.</li>
+                     <li>Tu ne m’as pas crue.</li>
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                  </ul>
+                  <p class="speaker">Le Père</p>
+                  <p>Tu as choisi l’astro-physique, mon fils, le mot sonne bien, il est même impressionnant.
+                     Mais sais-tu où cela te conduira&nbsp;?</p>
+                  <p class="stage">Orphée reprend ses gestes laborieux, il s’essuie longuement la sueur.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">S’aidant de son mvet pour créer un automatisme.</p>
+                  <p>Sue, soupire, trépigne. <a class="note" onclick="affiche('CAQbBaM')">✱</a>Dans le laboratoire des autres, tu feras toujours le gros boulot,
+                     dans le laboratoire des autres, ton diplôme ne pèsera pas lourd.</p>
+                  <p>Le Ndinga cherche dans la salle et s’arrête devant un spectateur, un gros livre sous
+                     le
+                     bras.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Oh&nbsp;! Je sais&nbsp;! Ça ne pèse pas lourd&nbsp;! Mais ça nourrit son monde, la thèse alimentaire&nbsp;! Avec ça, je meublerai des discours, des cours, des concours…</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et après&nbsp;?</p>
+                  <p class="stage">Silence. Un spectateur arbore un superbe attaché-case.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Toi, tu es le fils de ton père, n’est-ce pas&nbsp;? Te voilà Grand Patron avec directeur,
+                     directeur-adjoint, sous-directeur, chef de service, secrétaires. Et tu signes et ta
+                     signature vaut des millions.</p>
+                  <p class="stage">Silence.</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <p class="stage">Mains dans les poches.</p>
+                  <p>Que voulez-vous&nbsp;? C’est comme ça. On n’y peut rien.</p>
+                  <p class="speaker">Un Autre Spectateur</p>
+                  <p>Il n’y a qu’à…</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Il n’y a qu’à&nbsp;! Il n’y a qu’à quoi&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Aidé du tam-tam, cherche un rythme qui l’inspire. La flûte naît de ce rythme.</p>
+                  <p>L’efficacité. L’efficacité. Il nous faut être efficaces.</p>
+                  <p class="speaker">Le Père</p>
+                  <p>L’Astro-Physique, la Pataphysique, la Métaphysique et autres
+                     Physiques, Peut-on se payer encore ces luxes&nbsp;!</p>
+                  <p class="stage">La Salle répond par des exclamations.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Mon fils a une maladie qu’on ne soigne pas ici. On n’a pas le matériel, on n’a pas le
+                     spécialiste.</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <p>Oh&nbsp;! On l’évacuera à Paris&nbsp;!</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Les résultats du baccalauréat, au capes, sont désastreux&nbsp;! Nos enseignants perdent les
+                     pédales.</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <p>Oh&nbsp;! On réclamera des assistants techniques&nbsp;!</p>
+                  <p class="speaker">Le Père</p>
+                  <p>Mon fils, vas-tu me remplacer un jour&nbsp;? Que construiras-tu à ton tour, toi qui n’as même
+                     pas découvert les microbes&nbsp;!</p>
+                  <p class="stage">Dans la salle, à nouveau sirènes, appels au secours, demandes de toutes
+                     sortes&nbsp;:</p>
+                  <p class="stage">–&nbsp;Un médecin&nbsp;?</p>
+                  <p class="stage">–&nbsp;Un plombier&nbsp;?</p>
+                  <p class="stage">–&nbsp;Un prof&nbsp;? etc.</p>
+                  <p class="stage">–&nbsp;Il n’y a plus de sucre, pas de gaz&nbsp;!</p>
+                  <p class="stage">–&nbsp;On ne nous envoie plus de films&nbsp;!</p>
+                  <p class="speaker">Le Père</p>
+                  <p><a class="note" onclick="affiche('QXgnBYj')">✱</a>J’ai suivi le chemin tracé, j’ai atteint mon but&nbsp;: j’ai amassé,
+                     j’ai construit. À toi de prendre le relais&nbsp;: sélectionne, adapte, édifie. Sois&nbsp;! Tu as
+                     tout pour créer.</p>
+                  <p class="stage"><a class="note" onclick="affiche('VSCObOl')">✱</a>Le père quitte la scène et descend dans la salle, après avoir béni son fils, Orphée
+                     prend la place de son père et fixe la lumière pendant que l’Image d’Orphée et de Nyango
+                     s’intensifie.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>Je t’attends, je ne fais que t’attendre.</li>
+                     <li>Je salue le jour où tu te lèveras en pleine lumière.</li>
+                     <li><a class="note" onclick="affiche('gCkduCT')">✱</a>La lumière des dieux épouvante les faibles et tue les profanateurs.</li>
+                     <li>Je t’attends, je ne fais que t’attendre.</li>
+                  </ul>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Un pendu pend, pend lamentablement.</li>
+                     <li>Il a déjà quitté la terre</li>
+                     <li>Et il voit de loin l’immense foule des hommes.</li>
+                     <li>Il a trouvé, lui, son poste.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Jouant de son instrument.</p>
+                  <p>Et l’image est si belle qu’Orphée reproduit le modèle. Orphée construit sa maison. La
+                     salle de bain.</p>
+                  <p class="stage">Orphée reprend son activité et il creuse, creuse jusqu’à ce qu’il trouve de
+                     Veau.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>Eau des sources, eau des lagunes, eau de mer.</li>
+                     <li>Si tu recueilles une goutte d’eau, qu’en feras-tu&nbsp;?</li>
+                     <li>Tu la bois, tu l’entends, tu la touches, mais à quoi sert-elle&nbsp;?</li>
+                  </ul>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Après un silence.</p>
+                  <ul class="poem">
+                     <li>Eau de l’ancêtre, eau pure et sans tache.</li>
+                     <li>Je n’ai pas lavé d’injures, de blessures, de souillures…</li>
+                  </ul>
+                  <p class="speaker">Première Commère</p>
+                  <ul class="poem">
+                     <li>Nyango s’est noyée dans le fleuve.</li>
+                     <li>Orphée n’a pas pu la sauver.</li>
+                  </ul>
+                  <p class="speaker">Deuxième Commère</p>
+                  <ul class="poem">
+                     <li>Et s’il n’était pas revenu&nbsp;!</li>
+                     <li>S’il avait tout fait pour vaincre les éléments.</li>
+                     <li>S’il avait préféré d’autres combats, ailleurs…</li>
+                  </ul>
+                  <p class="stage">Le Ndinga allonge symboliquement Orphée sur un pagne blanc.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Sur un air de mvet.</p>
+                  <ul class="poem">
+                     <li>La faux a fait son travail.</li>
+                     <li>Orphée meurt.</li>
+                     <li>Il renaîtra.</li>
+                  </ul>
+                  <p class="stage">Les Commères montent sur scène et s’agenouillent près d’Orphée.</p>
+                  <p class="speaker">Première Commère</p>
+                  <ul class="poem">
+                     <li>Il a voulu renverser tous les gouvernements.</li>
+                     <li>Il a voulu servir les intérêts du peuple.</li>
+                  </ul>
+                  <p class="speaker">Deuxième Commère</p>
+                  <ul class="poem">
+                     <li>On ne massacrera plus les forêts sans reboiser.</li>
+                     <li>On n’exploitera plus les mines sans en bénéficier.</li>
+                     <li>On ne vidangera plus les pétroliers sur nos côtes.</li>
+                  </ul>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>Tu as voulu mais tu n’as pas pu.</li>
+                     <li>Tu n’as pas pu abattre l’ignorance</li>
+                     <li>Détruire et brûler et noyer.</li>
+                     <li>Tu n’as pas pu secouer l’inertie</li>
+                     <li>Briser et piétiner et refuser.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Sans la mort, la vie ne serait plus la vie. 
+                     <p class="stage">(S’approchant d’Orphée.)</p> Après
+                     tu pourras, après tu sauras.</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>Il est temps que tu saches, que tu décides.</li>
+                     <li>Le temps est venu pour toi d’être toi-même.</li>
+                     <li>Tu retrouveras cette partie de toi que tu as perdue.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>Sans la mort, la vie ne serait plus la vie.</li>
+                     <li>Après tu ensemenceras.</li>
+                     <li>Après tu récolteras.</li>
+                  </ul>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>Ton amour n’a pas su guérir par la lumière.</li>
+                     <li>Ton amour n’a pas su construire une maison.</li>
+                     <li>Le véritable amour dissipe les obstacles.</li>
+                  </ul>
+                  <p class="speaker">Première Commère</p>
+                  <ul class="poem">
+                     <li>Il rêvait de chalets en Suisse.</li>
+                     <li>Il rêvait de villas sur la Côte.</li>
+                     <li>Il rêvait de châteaux en Espagne.</li>
+                     <li>Et il rançonnait, il corrompait, il falsifiait.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>À quel modèle se raccrocher&nbsp;?</li>
+                     <li>Quel idéal formuler&nbsp;?</li>
+                     <li>Tu étais trop usé, Orphée.</li>
+                     <li>La faux a fait son travail.</li>
+                  </ul>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Implorante.</p>
+                  <ul class="poem">
+                     <li>Orphée, je suis orpheline.</li>
+                     <li>Vois, je n’ai plus de père, il préfère le litre de vin.</li>
+                     <li>Je n’ai plus d’enfants, ils cherchent des maîtres lucratifs.</li>
+                  </ul>
+                  <p class="speaker">Un Enfant</p>
+                  <ul class="poem">
+                     <li>Orphée, je ne sais pas où aller.</li>
+                     <li>Tu sais, personne ne me donne envie d’aller quelque part.</li>
+                     <li>Je ne sais pas, je ne sais plus.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Seul.</p>
+                  <ul class="poem">
+                     <li>On ne peut pas marcher à tâtons quand le soleil brille.</li>
+                     <li>L’Indifférence, ah&nbsp;! l’Indifférence&nbsp;!</li>
+                     <li>Mesurez-vous sa part de responsabilité&nbsp;?</li>
+                     <li>Mesurez-vous les fosses qu’elle creuse&nbsp;?</li>
+                  </ul>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>À toi de redéfinir un idéal.</li>
+                     <li>À toi de réinventer des valeurs.</li>
+                     <li>Quel prix donneras-tu à tes nouvelles marchandises&nbsp;?</li>
+                  </ul>
+                  <p class="stage">Le Ndinga verse de l’eau sur ta tête d’Orphée qui se relève et se dirige vers les
+                     spectateurs.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Sur un air de flûte.</p>
+                  <ul class="poem">
+                     <li>J’aime et j’entends le chant secret de mon amour. Ils sont des sangs forts qui marchent
+                        sans se retourner.</li>
+                     <li>Ils sont des cœurs, ils sont des astres qui éclairent…</li>
+                  </ul>
+                  <p class="stage">Tam-tam en force, les commères et la foule l’entourent en dansant.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p class="stage">Dansant.</p>
+                  <ul class="poem">
+                     <li>Je découvrirai l’Ivresse de la chaleur</li>
+                     <li>Et l’éclair m’habitera.</li>
+                  </ul>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">Dansant.</p>
+                  <ul class="poem">
+                     <li>Je sèmerai les désirs et je briserai les chaînes.</li>
+                  </ul>
+                  <p class="speaker">Un Enfant</p>
+                  <p class="stage">Dansant.</p>
+                  <ul class="poem">
+                     <li>Je trouverai le modèle et je deviendrai plus grand que lui.</li>
+                  </ul>
+                  <p class="stage">Orphée contemple l’Image d’Orphée et de Nyango qui s’impose
+                     à nouveau.</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>La faux du squelette a fait son travail,</li>
+                     <li>Nyango revivra.</li>
+                     <li>Viennent, ô viennent les deux urnes de la Tempérance</li>
+                     <li>Et le fleuve coulera sans gêne.</li>
+                     <li>Vous vaincrez l’espace, vous vaincrez le temps.</li>
+                     <li>Viennent, ô viennent les deux urnes de la Tempérance.</li>
+                     <li>Les forces vives luttent contre le feu du ciel.</li>
+                  </ul>
+                  <p class="stage">Orphée, après avoir vaincu l’épreuve de la «&nbsp;Mort&nbsp;» continue ses épreuves dans la
+                     salle où un autre cercle divisé en plusieurs compartiments l’attend parmi les
+                     spectateursOn peut imaginer aussi plusieurs petits lieux scéniques
+                     dispersés parmi les spectateurs.. Il est maintenant revêtu d’un pagne blanc,
+                     alors qu’avant, il portait un vêtement ordinaire, particulièrement usé. Il tient une flûte
+                     dans ses mains pour la première fois.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>Quel idéal reformuler&nbsp;?</li>
+                     <li>Quel modèle imposer&nbsp;?</li>
+                     <li>Orphée construit son sanctuaire.</li>
+                  </ul>
+                  <p class="stage">Orphée joue de la flûte et les spectateurs se regroupent autour de lui.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>Je t’attends, je ne fais que t’attendre.</li>
+                     <li>Que peut faire un corps divisé&nbsp;?</li>
+                     <li>L’homme seul n’a plus de place.</li>
+                  </ul>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <p class="stage">Sur l’air de flûte.</p>
+                  <p><a class="note" onclick="affiche('yUuEbIt')">✱</a>De toute façon tout doit sauter, tout sautera&nbsp;: l’Afrique du Sud, les secteurs minés
+                     du
+                     Tchad, du Sahara oriental, de la Namibie. Tous les coins piégés sauteront. Tout sautera,
+                     mais la relève sera prise. La matière termine son règne.</p>
+                  <p class="stage">Orphée est maintenant complètement éclairé par une lumière vive.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <p>La situation est préoccupante. Que faut-il faire&nbsp;?</p>
+                  <p class="speaker">Les Spectateurs</p>
+                  <p>Que faut-il faire&nbsp;? Que faut-il faire&nbsp;? Que faut-il faire&nbsp;?</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Les Esprits de la brousse ont déserté. La forêt ne parle plus. Les ancêtres dorment du
+                     sommeil du juste.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Se redressant.</p>
+                  <p>Mes amis, nous ne pouvons plus compter sur les dieux. <a class="note" onclick="affiche('hFnxHal')">✱</a>Tant que j’ai ce poignet, tant que
+                     j’ai cette langue, tant que j’ai mes yeux, je trouverai&nbsp;! Je trouverai la force de saisir,
+                     le pouvoir de dire, et l’assurance de voir. Nyango ne restera
+                     plus longtemps seule.</p>
+                  <p class="speaker">Les Spectateurs</p>
+                  <p>Moi aussi j’ai perdu Nyango. Moi aussi j’ai besoin de prendre des forces.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Elle a mangé sa mère pour avoir un poste.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Il a mangé son frère pour épouser sa femme.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Ils ont tué, ils ont mangé l’homme. Ils ont souillé, ils ont lavé la place. Et ils sont
+                     là riches et bien repus. Mais les masques sont inhabités et vendus aux enchères. L’Esprit
+                     ne souffle plus. La bourse est pleine et la mère saigne.</p>
+                  <p class="speaker">Un Enfant</p>
+                  <p>Orphée, que faut-il faire&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Jouant de la flûte.</p>
+                  <p>Il faut se battre contre les typhons, sarcler les champs dévastés. La foudre ne détruira
+                     plus et Nyango nous attendra au cœur de la tourmente.</p>
+                  <p class="stage">Le tam-tam traduit la lutte des éléments, Orphée se bat en réclamant l’aide des
+                     spectateurs.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Luttant, aidé des spectateurs.</p>
+                  <p>Nyango, la descente n’est pas sans fond. Nyango, les questions
+                     ne sont pas sans réponses. Nyango, la nuit n’existe pas sans le jour.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Tam-tam en force.</p>
+                  <p>Nos bras s’accordent, une seule voix, un seul rythme et la puissance de UM jaillira
+                     de
+                     nos cœurs réunis.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <p>Les esprits sont morts, mais la force vit et lutte pour s’exprimer.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Dans une transe contrôlée.</p>
+                  <p>La lumière perce les ténèbres. Je ne sens plus le chaud, je ne sens plus le froid. Mais
+                     je te sens, frère, tout près de moi, et ton visage se crispe&nbsp;!</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p><a class="note" onclick="affiche('OoKLGdF')">✱</a>Chaque fois qu’il se pénètre de l’amour de Nyango, la lumière s’intensifie. Mais la
+                     lumière de midi guette l’amateur de mirage. Et l’image est si belle, qu’Orphée reproduit
+                     le modèle. Orphée construit la cuisine.</p>
+                  <p class="stage">Des femmes apportent de la nourriture à Orphée.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Les odeurs pénètrent. Le bien-repu qui se tait, écoute et entend. 
+                     <p class="stage">(Chaque femme
+                        vante son plat.)</p>
+                  </p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Un bon foutou, à la sauce-graine…</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Un bon attiéké, à la sauce-claire…</p>
+                  <p>Troisième Commère Un bon foutou, à la sauce-foncée…</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <p>Un bon attiéké, à…</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Assez&nbsp;! Assez de vos foutous, attiéké, de vos sauces informes, assez de vos pauvres
+                     imaginations sans saveur. Est-ce qu’il vous reste encore du goût&nbsp;?</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <p class="stage">Apportant un autre plat.</p>
+                  <p>Orphée, ne fait pas le difficile, si tu goûtes à mon plat, tu auras succès et
+                     richesse.</p>
+                  <p class="stage">Dans la salle, le bruit du pilon devient de plus en plus lancinant et s’impose comme
+                     autant de coups reçus.</p>
+                  <p class="speaker">Les Commères</p>
+                  <p class="stage">En chœur.</p>
+                  <p>Tu as tué ta femme, tu as mangé Madame.</p>
+                  <p>Tu as vendu Madame, tu as découpé ta dame.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Un peu de chair de Nyango et tu auras ta bourse. Un peu de
+                     sang de Nyango et tu auras ton poste. Ta femme saigne, Orphée, et tu vis, tu réussis.</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <p>Chaque soir, sur les bords du fleuve Va, va chercher la réponse.</p>
+                  <p>Chaque soir, va sur les bords du fleuve.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Si le clan t’accuse, Orphée, que lui diras-tu&nbsp;?</p>
+                  <p>C’est la voix de ton peuple et il a toujours raison.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Nyango n’est plus là, où est-elle&nbsp;? Orphée, pourquoi ne manges-tu pas tous ces mets
+                     préparés pour toi&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Faisant front, s’adressant à chaque spectateur.</p>
+                  <ul class="poem">
+                     <li>Je ne mangerai pas Nyango, mais je me nourrirai d’elle.</li>
+                     <li>Une part qui a tué le frère.</li>
+                     <li><a class="note" onclick="affiche('RcMNSxM')">✱</a>Une part qui a tué la mère</li>
+                     <li>Une part qui a tué le père</li>
+                     <li>Et l’on mange et l’on amasse</li>
+                     <li>Et l’on digère et l’on dépense.</li>
+                     <li>Rien, plus rien, ne grandit l’homme.</li>
+                  </ul>
+                  <p class="stage">(il la jette aux spectateurs)</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Ils courent tous après le pouvoir, ils se battent pour la
+                     richesse. Orphée, tu as mangé aussi, tu t’es gavé et tu es seul pour recevoir ton salaire. Si tu vis c’est que d’autres sont morts pour toi. Tu es riche, fort e tout ce que les
+                     autres ont perdu.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Orphée, le dan est encore puissant, qu’as-tu à lui répondre&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Nyango a disparu et je respire encore. Nyango n’est plus et je vis bien.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Aurais-tu accepté&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p>J’ai eu l’air d’accepter et ce n’est pas mieux&nbsp;! J’ai eu l’air de baisser les bras et
+                     c’est le plus grave. Ils l’ont cru et j’ai eu tort.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Il avance l’étoile au front et il est aveugle. La lumière l’éclabousse mais n’éclaire
+                     pas. Les ruines fument, la pierre hurle.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Excité.</p>
+                  <p>Je ne crains pas les brasiers quand le bois se consume dignement. La nourriture n’en est
+                     que plus appétissante. Femmes, apportez-moi à manger&nbsp;!</p>
+                  <p class="stage">Le Ndinga joue de son instrument, tandis que les femmes,
+                     s’efforçant de suivre le rythme, distribuent ta nourriture.</p>
+                  <p class="speaker">Première Commère</p>
+                  <ul class="poem">
+                     <li>Mange et ravis ton cœur.</li>
+                     <li>Nourris-toi de Nyango.</li>
+                     <li>Tu es riche de tout ce que tu as perdu.</li>
+                  </ul>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li><a class="note" onclick="affiche('izlQuNz')">✱</a>Chaque soir, il va sur les bords du fleuve et revient vers son peuple.</li>
+                     <li>Un soir, il trouvera la réponse.</li>
+                     <li>Le peuple sait attendre et se battre.</li>
+                     <li>C’est de lui que naîtra la force.</li>
+                  </ul>
+                  <p class="stage">Orphée termine son repas comme un rite de manducation. Fortifié, il gravit «&nbsp;sept
+                     marches&nbsp;» et atteint le grenier.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Orphée se tait, il écoute et il entend, il construit le grenier et il pense à son
+                     oncle.</p>
+                  <p class="stage">Orphée s’arrête au sommet de l’escalier, le regard tourné vers le ciel.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Chaque fois que je revis l’amour de Nyango, une étoile naît dans le ciel vide et je
+                     reconnais mon guide. Il fait noir mais je prends ta main. Je sens les cailloux, les
+                     crevasses, mais je vois ton visage prometteur et ma vie se précise devant moi.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>L’Esprit stagnant et aride sera vivifié par l’énergie céleste. Venez boire à la lumière du jour, vous qui sortez de la nuit. L’étincelle divine devient
+                     étoile dans le ciel. <a class="note" onclick="affiche('dddBAUy')">✱</a>Dans l’extase des Mystères, chacun voit jusqu’au fond des âmes.</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <p>La vie de l’ancêtre a été une longue lutte des combats sans merci. Mais il a su se
+                     ménager des repos de guerrier. Des hommes étaient désignés pour réconforter, dégager la
+                     belle chaleur humaine. Orphée, as-tu appelé ton oncle, as-tu eu besoin de son
+                     contact&nbsp;?</p>
+                  <p class="stage">Durant cette réplique, Orphée recherchait un contact, certains s’esquivaient. La
+                     flûte cherchait avec lui. Seule l’ombre de Nyango s’est manifestée. Mais au moment où
+                     Orphée a voulu la saisir, elle s’évanouit.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                     <li>J’ai connu des mains secourables,</li>
+                     <li>J’ai surpris des sourires engageants,</li>
+                     <li>Des paroles tendres et des pas empressés.</li>
+                     <li>Mais je ne vois plus rien, je n’entends plus rien,</li>
+                     <li>Je n’embrasse plus rien.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Orphée, imagines-tu la chaleur d’un parent désintéressé, de cet oncle qui t’hébergeait
+                     et
+                     te soutenait même quand tu étais la pire des crapules&nbsp;? Un de ces hommes qui ne juge pas
+                     l</p>
+                  <p class="speaker">Orphée</p>
+                  <p>J’avais au fond de moi cette image d’une lumière et d’une
+                     chaleur en pleine tempête. Et je la conservais dans les moments difficiles pour mieux la
+                     fortifier. Se réalisera-t-elle un jour&nbsp;?</p>
+                  <p class="speaker">Première Commére</p>
+                  <p>Tu m’épies, oui. 
+                     <p class="stage">(Désaccord de mvet.)</p>
+                  </p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Tu me nargues, tu m’évites. 
+                     <p class="stage">(Désaccord de mvet.)</p>
+                  </p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Et tu me gifles, tu me fouettes, tu m’étouffes. Tu m’accules. 
+                     <p class="stage">(Désaccord de
+                        mvet.)</p>
+                  </p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Je touche le fond, je suis au creux de la vague et je ne peux plus remonter le
+                     courant.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Il n’y a plus l’oncle, mais il y a toujours ce besoin de lui, la soif de sa présence.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et alors&nbsp;?</p>
+                  <p class="stage">Silence.</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <p>Le temps est revenu d’être toi-même, de retrouver cette partie
+                     de toi que tu avais perdue.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Faute d’un regard, faute d’une pause, tu ne vois plus le fond de l’âme de ton frère.</p>
+                  <p>Orphée revoit l’Image de Nyango et apprend dans une gestuelle de plus en plus élaborée
+                     la
+                     joie de la rencontre.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>… Et l’image est si belle qu’Orphée reproduit le modèle. Orphée se remet au travail. Il
+                     conçoit son atelier.</p>
+                  <p class="stage">Orphée joue de la flûte et s’efforce de créer une harmonie. Quelques spectateurs
+                     s’approchent et créent un même monde.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Ta musique, Orphée, construira un autre monde, si ton désir est suffisamment fort.
+                     Tes
+                     pensées prendront corps et Nyango pourra vivre. Ah&nbsp;! les temps ne croient plus à la
+                     beauté&nbsp;!</p>
+                  <p class="stage">Réaction éloquente de la foule. Orphée attend une collaboration.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Je ne peux pas rester plus longtemps. Je crains de rater mon bus.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Je n’ai vraiment pas le temps d’aller te voir. Oui, j’avais
+                     une course urgente, puis un rendez-vous impératif, enfin l’engrenage, quoi&nbsp;!</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Mais enfin, la musique, à quoi ça sert&nbsp;?</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Et la peinture&nbsp;?</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>Et si j’écrivais&nbsp;? Ça me donnerait quoi&nbsp;?</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Jouant du mvet, pendant de longs silences.</p>
+                  <ul class="poem">
+                     <li>Ils marchaient la poitrine bombée, la tête haute,</li>
+                     <li>Les Anciens.</li>
+                     <li><a class="note" onclick="affiche('KBzhoYq')">✱</a>Ils répondaient à l’appel en clamant fièrement leur lignée,</li>
+                     <li>Les Anciens.</li>
+                     <li>Ils donnaient leurs noms, en frappant le torse de la main droite,</li>
+                     <li>Les Anciens.</li>
+                     <li>Et ils célébraient le culte du savoir, ils adoraient la pensée pure et forte.</li>
+                     <li>Les Anciens.</li>
+                  </ul>
+                  <p class="speaker">Première Commère</p>
+                  <p>Orphée, as-tu une idée de la réussite&nbsp;? Moi, j’aimerais tant voir une fois une chose qui
+                     aboutit, un projet qui va jusqu’à son terme.</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p>J’aimerais connaître le plaisir d’un travail bien fait, savoir
+                     qu’il n’y a qu’un pas pour que ce soit parfait.</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p>Te souviens-tu de notre initiation&nbsp;? On nous demandait d’abord d’avoir l’idée, l’image de
+                     la perfection…</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Je garde jalousement l’image d’un bonheur accompli avec Nyango. Je vis dans les sentiers
+                     fleuris de la plaine et je ne vois pas les orages sur la montagne. Et la nature est si
+                     belle, qu’un souffle de vent réunit deux pétales séparésNous corrigeons «&nbsp;séparées&nbsp;» par «&nbsp;séparés&nbsp;».&nbsp;!</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et l’image est si belle, qu’Orphée reproduit le modèle.</p>
+                  <p class="stage">L’Image d’Orphée et de Nyango s’impose de plus en plus, mais quand Orphée veut la
+                     toucher, elle s’évanouit.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Mais je suis sûr que je toucherai ce que j’aime. Je donnerai vie à mes pensées les plus
+                     folles, celles qui m’aideront à bâtir, à élever ces murs jusqu’au toit qui les consacrera.
+                     Il ne tient qu’à moi pour que vivent, grandissent et meurent mes rêves les plus beaux.</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Orphée, je t’en prie, en es-tu sûr&nbsp;? Peut-on vivre de nos
+                     désirs&nbsp;?</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Es-tu sûr qu’ils seront justes&nbsp;? On meurt suffisamment, pour que les rêves deviennent des
+                     réalités. Rien n’est plus simple aujourd’hui que d’avoir, de posséder. «&nbsp;Avoir&nbsp;»
+                     caractérise seul l’action. Tu as des troupeaux, tu as des maisons, tu as des diplômes. Mais qu’as-tu fait pour «&nbsp;avoir&nbsp;»&nbsp;?</p>
+                  <p class="stage">Silence.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Ne marche pas sur moi, je suis le témoin.</li>
+                     <li>Regarde, regarde devant toi,</li>
+                     <li>La plus petite pierre te parlera.</li>
+                  </ul>
+                  <p class="speaker">Première Commère</p>
+                  <p>Pourquoi n’aurions-nous pas&nbsp;? J’ai une maison, c’est normal, j’ai de l’argent, c’est
+                     encore plus normal. C’est quand on n’a rien que c’est anormal.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Quand j’avais Nyango, elle a disparu.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Oui&nbsp;; mais quand tu seras Orphée, tu retrouveras Nyango.</p>
+                  <p class="stage">Le Ndinga joue doucement de son instrument.</p>
+                  <ul class="poem">
+                     <li>Quand tu seras parole et savoir dire,</li>
+                     <li>Quand tu seras beauté et savoir faire,</li>
+                     <li>Nyango renaîtra à la force de ton amour.</li>
+                     <li>Parole perdue, parole de beauté</li>
+                     <li>Et la forme jaillit du limon de la terre.</li>
+                  </ul>
+                  <p>Orphée construit de ses mains plusieurs formes, et inspire d’autres Spectateurs.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Réveillons-nous, la vie pénètre par tous les pores. La forêt saigne et les bois
+                     espèrent.</p>
+                  <p>Le pétrole, le café, le cacao s’interrogent. Réveillons-nous, amis, la vie jaillit de nos
+                     bras réunis.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>La pleine lune a bercé toute une nuit la nouvelle lune dans ses bras.</li>
+                     <li>Deux chiens aboient et les monstres s’évanouissent.</li>
+                     <li>Derrière le mur, un couple se retrouve.</li>
+                     <li>Venez boire à la coupe de l’amour</li>
+                     <li>Vous qui sortez de la nuit.</li>
+                     <li>La lune cède un quartier au soleil</li>
+                     <li>Et le soleil abandonne un rayon à la lune.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et l’image est si belle, qu’Orphée reproduit le modèle. Orphée construit la chambre des
+                     amis. Ici, les amis, c’est ce qui manque le moins.</p>
+                  <p class="speaker">Orphée</p>
+                  <p>J’ai toujours voulu un salon accueillant. Je n’ai jamais
+                     refusé une aide à un ami. Mes maigres moyens, je les ai toujours partagés.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Oui, l’amitié ne refuse jamais rien, l’amitié donne sans compter&nbsp;!</p>
+                  <p class="speaker">Première Commère</p>
+                  <p>Mon frère, j’ai besoin d’argent pour payer les études de mon fils. Il n’est pas très
+                     doué, mais il lui faut une situation qui nous rehausse un peu. Tu comprends&nbsp;?…</p>
+                  <p class="speaker">Deuxième Commère</p>
+                  <p class="stage">À un autre Spectateur.</p>
+                  <p>Mon frère, quand mon neveu aura son diplôme, il faudra que tu m’aides à lui trouver
+                     un
+                     poste.</p>
+                  <p class="speaker">Troisième Commère</p>
+                  <p class="stage">À un autre Spectateur.</p>
+                  <p>Mon frère, tu ne peux pas me refuser ton appui. Ton père et mon père étaient, même père,
+                     même mère. Tu ne peux pas me laisser dans le pétrin. On va tout me prendre, si tu ne payes
+                     pas mon loyer. Dis&nbsp;!…</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Il est heureux, il rend service. Quel bonheur de s’entourer d’amis, au sourire satisfait,
+                     qui bénissent du matin au soir. Tu as fait ton devoir, tu peux avoir bonne conscience, on
+                     ne te reprochera rien. Tes pères ne te maudiront pas.</p>
+                  <p class="speaker">un Spectateur</p>
+                  <p class="stage">Dans un autre coin de la salle</p>
+                  <p>Mon frère, je n’arrive pas à décrocher mon concours. Ne
+                     connais-tu pas quelqu’un d’en haut d’en haut&nbsp;?</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Eh&nbsp;! Oui&nbsp;!</p>
+                  <p class="speaker">Un autre Spectateur</p>
+                  <p>Et moi&nbsp;? Tu sais le travail que tu m’as donné&nbsp;! Eh bien on me le reprend. Ils me
+                     reprochent n’importe quoi. Tu sais bien que c’est faux, ils sont jaloux&nbsp;!</p>
+                  <p class="speaker">Un autre Spectateur</p>
+                  <p>Et moi, et moi&nbsp;! J’ai fait une mauvaise affaire avec l’argent que tu m’as prêté. Si tu
+                     m’aides une dernière fois, la chance me sourira, je te le promets.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Donne-moi ci, donne-moi ça. Aide-moi par-ci, aide-moi par-là. Et la fraternité est bonne,
+                     et la famille est belle, et voilà notre fameux humanisme&nbsp;! Mais… que construis-tu autour
+                     de toi&nbsp;? 
+                     <p class="stage">(Silence.)</p> Que devient notre société&nbsp;?</p>
+                  <p class="stage">Le Ndinga d’un geste transforme tous ces quémandeurs&nbsp;: un se traîne avec des
+                     béquilles, un autre avec des menottes, un autre mendie, etc.</p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">Après un silence.</p>
+                  <p>Nous sommes entourés d’infirmes loqueteux, aux regards avides
+                     qui évaluent le prix d’une présence… Mais quand j’ai faim, personne ne me donne à manger. J’ai faim d’une main qui se tend sans rien attendre. J’ai soif d’un sourire qui déborde
+                     sans rien réclamer. Et je guette une lueur dans le noir, un espoir de vie qui m’accueille. <a class="note" onclick="affiche('UAIaQkQ')">✱</a>Nyango, je rêve de la chaleur des mauvais jours, je rêve d’un rêve qui ne sera plus
+                     un
+                     rêve «&nbsp;Je suis devenu celle que j’aime et celle que j’aime est devenu moi.&nbsp;»</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <ul class="poem">
+                     <li>Je suis la Justice de Ngué</li>
+                     <li>J’unis la terre à l’eau</li>
+                     <li>J’attire l’air et le feu</li>
+                     <li>Et je ramène à l’Unité</li>
+                     <li>La Voix de l’âme réveille celui qui dort.</li>
+                  </ul>
+                  <p class="stage">Orphée entreprend un long périple dans la salle, prend de nombreux contacts. Le
+                     Ndinga ferme la marche. Orphée crée une sorte de salon où il installe certains
+                     spectateurs.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Et l’image est si belle qu’Orphée reproduit le modèle. Orphée organise la réception des
+                     étrangers dans le salon.</p>
+                  <p class="stage">Mais l’obscurité est à son comble&nbsp;; on entend des cris et des chocs
+                     multiples.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>De l’autre côté du mur, le monde respire.</li>
+                     <li>Derrière le mur, les peurs s’évanouissent.</li>
+                     <li>Les monstres, les djinns s’abîment dans la mare.</li>
+                     <li>Orphée, la lumière t’attend.</li>
+                  </ul>
+                  <p class="stage">Après une ultime lutte où deux monstres se battent en ombre chinoise, l’Image
+                     d’Orphée et de Nyango renaît, plus belle.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Que vois-tu encore, de ce côté-ci&nbsp;?</p>
+                  <p class="speaker">Orphée</p>
+                  <p>Je vois la petite morale de la taille d’un cerveau fragile. Une liberté étriquée à la
+                     mesure de nos pauvres désirs. Une imagination sordide qui s’arrête au premier tournant de
+                     la grisaille de l’indifférence&nbsp;: des visages de peur et des regards de traître, des
+                     mains
+                     molles et des voix impassibles. Et l’on dort tranquille sans entendre l’orage qui
+                     gronde…</p>
+                  <p class="stage">Un silence. Puis Orphée prend ta flûte et joue jusqu’à ce que l’Image d’Orphée et
+                     de
+                     Nyango grandisse. Les personnages qui entouraient Orphée et qui s’exprimaient comme des
+                     spectres s’animent.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <ul class="poem">
+                     <li>Marche sur moi, malaxe-moi, avale-moi.</li>
+                     <li>Marche sur moi, mais digère-moi, nourris-toi.</li>
+                     <li>Je féconderai l’humus et tu rayonneras.</li>
+                  </ul>
+                  <p class="speaker">Orphée</p>
+                  <ul class="poem">
+                     <li>Nous étions les sans-voix, les sans-yeux, les sans-rien.</li>
+                     <li>Nous serons des concentrés d’êtres et nous vivrons la
+                        beauté.</li>
+                     <li>Orphée, soutenu par la flûte, anime un personnage-spectateur.</li>
+                     <li>Ton corps, ami, respire, il sait la force et l’élan.</li>
+                  </ul>
+                  <p class="stage">À un autre Spectateur.</p>
+                  <p>Ton cœur bat, il sait la chaleur d’un contact.</p>
+                  <p class="stage">À un autre Spectateur.</p>
+                  <p>Ton âme défend le beau et le vrai, mais tu l’ignores, n’est-ce pas&nbsp;? 
+                     <p class="stage">(La flûte
+                        répond.)</p>
+                  </p>
+                  <p class="speaker">Orphée</p>
+                  <p class="stage">chantant.</p>
+                  <ul class="poem">
+                     <li>J’ai vu le ciel donnant dans son regard</li>
+                     <li>J’ai vu la terre entourée de fleurs</li>
+                     <li>Et l’eau claire comme une pensée</li>
+                     <li>Et ce fut le jour de l’extase.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <p class="stage">Pendant que les personnages cherchent des poses de plus en plus belles et
+                     suggestives.</p>
+                  <ul class="poem">
+                     <li>Si tu écris pour noircir, arrête ta main.</li>
+                     <li>Si tu peins pour colorer, arrête ton pinceau.</li>
+                     <li>Si tu parles avec l’eau dans la bouche, arrête le massacre.</li>
+                     <li>Mais crée, crée l’irremplaçable et devient providence.</li>
+                     <li>Quand l’Étranger ouvre la porte</li>
+                     <li>Et parle le langage des Dieux</li>
+                     <li>N’entends-tu pas la voix du peuple&nbsp;?</li>
+                     <li>Obéis-lui comme à ton Seigneur,</li>
+                     <li>Et… Ne nous plaçons pas au-dessus de lui.</li>
+                  </ul>
+                  <p class="stage">Un Silence.</p>
+                  <p class="stage">La Voix des Ancêtres est de plus en plus lointaine, Orphée
+                     est obligé de terminer la phrase.</p>
+                  <p class="stage">Un Silence&nbsp;; Orphée apprend à créer des contacts avec les Spectateurs. Puis la flûte
+                     renaît, suivie du mvet. La scène s’éclaire, les projecteurs pleins feux, annoncent une
+                     fête. L’Image d’Orphée et de Nyango disparaît. Orphée monte sur scène et prend la place de
+                     l’Image d’Orphée, tandis que Nyango, bien vivante, se tient à ses côtés.</p>
+                  <p class="speaker">Nyango</p>
+                  <ul class="poem">
+                     <li><a class="note" onclick="affiche('qXUOZMV')">✱</a>Je t’appelle Orphée, la lumière qui guérit.</li>
+                     <li>La lumière libère mais bouleverse.</li>
+                     <li>Si tu as volé le feu sacré, accepte le prix du savoir.</li>
+                     <li>Orphée, je suis devenue celui que j’aime,</li>
+                     <li>Tu es le fils du jour éclatant et clair.</li>
+                  </ul>
+                  <p class="speaker">Orphée</p>
+                  <ul class="poem">
+                     <li>Nyango, vivante, ne m’avait donné que l’Ivresse du bonheur.</li>
+                     <li>Nyango, morte, me fit trouver la Vérité.</li>
+                  </ul>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>Salut à vous tous qui êtes venus pour renaître</li>
+                     <li>Après les douleurs de la terre,</li>
+                     <li>Venez boire à la coupe d’Orphée et de Nyango,</li>
+                     <li>Vous, qui sortez de la nuit.</li>
+                     <li>Tu es le caillou, tu es l’arbre, tu es l’océan.</li>
+                     <li>Tu es oiseau, tu es animal, tu es le soleil et la lune.</li>
+                     <li>Le jour et la nuit se penchent sur ton sommeil</li>
+                     <li>Et tu t’éveilles, réconcilié.</li>
+                  </ul>
+                  <p class="stage">À un Spectateur</p>
+                  <p class="stage">Orphée et Nyango descendent dans la salle accompagnés de la flûte. Il s’ouvre un long
+                     sentier devant eux.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <p>Le chemin que tu as choisi sera long et douloureux mais les joies seront profondes.
+                     C’est
+                     celui qu’emprunteront tes frères de race&nbsp;; il conduit de l’autre côté du mur, là où
+                     l’étoile s’est arrêtée.</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>Tes frères attendent le lever du soleil.</li>
+                     <li>Ils espèrent la fin des lourds karmas.</li>
+                     <li>La journée sera, lumineuse et la moisson abondante.</li>
+                     <li>Les temps sont venus pour vous d’être vous-mêmes.</li>
+                     <li>De retrouver cette partie de vous que vous aviez perdue.</li>
+                  </ul>
+                  <p class="stage">Les trois lumières clignotent une dernière fois tandis qu’Orphée et Nyango se perdent
+                     dans la foule.</p>
+                  <p class="speaker">La Voix des feuilles mortes</p>
+                  <p class="stage">De plus en plus faible.</p>
+                  <p>Ne marche pas sur moi…</p>
+                  <p class="speaker">La Voix des Ancêtres</p>
+                  <p class="stage">De plus en plus inexistante.</p>
+                  <p>Les temps sont venus pour vous…</p>
+                  <p class="speaker">La Voix de la Lumière</p>
+                  <ul class="poem">
+                     <li>Et la force jaillit des mains croisées.</li>
+                     <li>J’ai été une larme dans l’air.</li>
+                     <li>Je serai l’éclat d’une lumière.</li>
+                  </ul>
+                  <p class="stage">La scène s’éteint. Un long silence. La salle brille de tous ses feux. Le Ndinga
+                     chante. Orphée continue sa longue marche entraînant acteurs et Spectateurs dans son
+                     sillage. Les paroles du Ndinga se feront entendre hors de la salle, dans la rue.</p>
+                  <p class="speaker">Le Ndinga</p>
+                  <ul class="poem">
+                     <li>Et l’image si belle a recréé le modèle.</li>
+                     <li>Le rêve a pris le pouvoir et la passion s’installe</li>
+                     <li>La fureur de vivre, la force d’aimer.</li>
+                     <li>Vous avez choisi et vous serez.</li>
+                     <li>Vous servirez pleinement l’homme</li>
+                     <li>Et les Dieux, satisfaits, iront se coucher.</li>
+                  </ul>
+                  <p class="stage">Chant du Ndinga</p>
+                  <p class="speaker">Un Spectateur</p>
+                  <ul class="poem">
+                     <li>Chante Ndinga, chante.</li>
+                     <li>Je suis l’oreille qui écoute et j’entends.</li>
+                     <li>Je suis la main qui touche et je saisis.</li>
+                     <li>Danse Ndinga, danse.</li>
+                     <li>La beauté naît d’un son.</li>
+                     <li>La vérité jaillit du rythme.</li>
+                     <li>Par ton regard la terre bascule et se couvre de pensées.</li>
+                  </ul>
+                  <p class="stage">La foule danse d’allégresse comme à la fin de chaque étape initiatique
+                     réussie.</p>
+               </div>
+            </div>
+         </div>
+         <div id="UAIaQkQ" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('UAIaQkQ').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('UAIaQkQ')">
+                     <option value="launay1922_1900008">launay1922, phrase 8</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('UAIaQkQ',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('UAIaQkQ',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500580">
+               <h5>manjock2000, phrase 580</h5>
+               <p><span data-type="GN"><span class="w">Nyango</span></span>, <span data-type="GV"><span class="w">je </span><span class="synos" data-href="1900008_16" data-corresp="launay1922_1900008">rêve </span><span class="w">de</span> </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="1900008_13" data-corresp="launay1922_1900008">chaleur </span><span class="w">des </span><span class="synos" data-href="1900008_56" data-corresp="launay1922_1900008">mauvais</span> </span><span data-type="GN"><span class="lemmes" data-href="1900008_50" data-corresp="launay1922_1900008">jours</span></span>, <span data-type="GV"><span class="w">je </span><span class="synos" data-href="1900008_16" data-corresp="launay1922_1900008">rêve </span><span class="w">d’</span> </span><span data-type="GN"><span class="w">un </span><span class="lemmes" data-href="1900008_73" data-corresp="launay1922_1900008">rêve</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">ne </span><span class="w">sera </span><span class="w">plus</span> </span><span data-type="GN"><span class="w">un </span><span class="lemmes" data-href="1900008_73" data-corresp="launay1922_1900008">rêve</span></span>«&nbsp;<span data-type="GV"><span class="w">Je </span><span class="w">suis </span><span class="synos" data-href="1900008_66" data-corresp="launay1922_1900008">devenu </span><span class="w">celle</span> </span><span data-type="GV"><span class="w">que </span><span class="w">j’</span><span class="mots" data-href="1900008_54" data-corresp="launay1922_1900008">aime</span> </span><span class="w">et </span><span data-type="GV"><span class="w">celle </span><span class="w">que </span><span class="w">j’</span><span class="mots" data-href="1900008_54" data-corresp="launay1922_1900008">aime</span> </span><span data-type="GV"><span class="w">est </span><span class="synos" data-href="1900008_66" data-corresp="launay1922_1900008">devenu</span> </span><span data-type="GN"><span class="w">moi</span></span>.» </p>
+            </div>
+            <div class="target">
+               <div id="launay1922_1900008" data-id="1900008">
+                  <h5>launay1922, phrase 8</h5>
+                  <p><span data-type="GN"><span>L’</span><span>humanité</span> </span><span data-type="GV"><span>partage</span></span>, <span>elle </span><span>aussi</span>, <span data-type="GN"><span>ce </span><span>penchant</span> </span><span data-type="GV"><span>qu’</span><span>a</span> </span><span data-type="GN"><span>l’</span><span class="synos" data-id="1900008_13">esprit</span></span>, <span data-type="GV"><span>de </span><span class="synos" data-id="1900008_16">songer </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>étape</span> </span><span data-type="GV"><span>en </span><span>marchant</span> </span><span>et </span><span data-type="GV"><span>veut</span> </span><span data-type="GN"><span>un </span><span>âge </span><span>d’</span><span data-type="GN"><span>or </span><span>au </span><span>terme </span><span>de </span><span>sa </span><span>route</span></span></span>&nbsp;; <span>mais</span>, <span>plus </span><span>que </span><span data-type="GN"><span>ce </span><span>Futur</span></span>, <span data-type="GN"><span>dont </span><span>notre </span><span>angoisse</span> </span><span data-type="GV"><span>écoute </span><span>longuement </span><span>préluder</span> </span><span data-type="GN"><span>l’</span><span>hymne</span> </span><span data-type="GN"><span>un </span><span class="lemmes" data-id="1900008_50">jour </span><span>triomphant</span></span>, <span data-type="GV"><span>j’</span><span class="mots mots" data-id="1900008_54">aime</span> </span><span data-type="GN"><span>la </span><span class="synos" data-id="1900008_56">vague </span><span>brume</span></span>, <span data-type="GN"><span>où </span><span>l’</span><span>homme</span></span>, <span>encore </span><span data-type="GN"><span>enfant</span></span>, <span data-type="GV"><span class="synos" data-id="1900008_66">grandit</span></span>, <span data-type="GV"><span>balbutiant </span><span>en</span> </span><span data-type="GN"><span>contes</span> </span><span data-type="GN"><span>bleus</span> </span><span data-type="GN"><span>ses </span><span class="lemmes lemmes" data-id="1900008_73">rêves</span></span>, <span>comme </span><span data-type="GV"><span>j’</span><span>aime</span> </span><span data-type="GN"><span>les </span><span>chants </span><span>ébauchés </span><span>sur </span><span>les </span><span data-type="GN"><span>grèves</span></span> </span><span>par </span><span data-type="GN"><span>le </span><span>frisson </span><span>des </span><span data-type="GN"><span>flots</span></span></span>, <span>ou </span><span data-type="GN"><span>l’</span><span>écho </span><span>décevant</span> </span><span data-type="GV"><span>qu’</span><span>éveille</span></span>, <span>au </span><span data-type="GN"><span>fond </span><span>des </span><span data-type="GN"><span>bois</span></span></span>, <span data-type="GN"><span>la </span><span>caresse </span><span>du </span><span data-type="GN"><span>vent</span></span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="RcMNSxM" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('RcMNSxM').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('RcMNSxM')">
+                     <option value="duryer1702_2400065">duryer1702, phrase 65</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('RcMNSxM',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('RcMNSxM',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500411">
+               <h5>manjock2000, phrase 411</h5>
+               <p><span data-type="GN"><span class="w">Une </span><span class="synos" data-href="2400065_20" data-corresp="duryer1702_2400065">part</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">a </span><span class="lemmes" data-href="2400065_57" data-corresp="duryer1702_2400065">tué</span> </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="2400065_20" data-corresp="duryer1702_2400065">mère</span> </span><span data-type="GN"><span class="w">une </span><span class="synos" data-href="2400065_20" data-corresp="duryer1702_2400065">part</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">a </span><span class="lemmes" data-href="2400065_57" data-corresp="duryer1702_2400065">tué</span> </span><span data-type="GN"><span class="w">le </span><span class="synos" data-href="2400065_37" data-corresp="duryer1702_2400065">père</span> </span><span class="w">et </span><span data-type="GV"><span class="w">l’</span><span class="w">on </span><span class="synos" data-href="2400065_76" data-corresp="duryer1702_2400065">mange</span> </span><span class="w">et </span><span data-type="GV"><span class="w">l’</span><span class="w">on </span><span class="w">amasse</span> </span><span class="w">et </span><span data-type="GV"><span class="w">l’</span><span class="w">on </span><span class="synos" data-href="2400065_76" data-corresp="duryer1702_2400065">digère</span> </span><span class="w">et </span><span data-type="GV"><span class="w">l’</span><span class="w">on </span><span class="w">dépense</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="duryer1702_2400065" data-id="2400065">
+                  <h5>duryer1702, phrase 65</h5>
+                  <p><span data-type="GV"><span>L’</span><span>on </span><span>dit </span><span>au</span> </span><span data-type="GN"><span>reste</span> </span><span>qu’</span><span data-type="GN"><span>Orphée</span> </span><span data-type="GV"><span>épousa </span><span>veritablement</span> </span><span data-type="GN"><span>Eurydice</span></span>&nbsp;; <span>Qu’</span><span data-type="GV"><span>étant </span><span>morte </span><span>il</span> </span><span data-type="GV"><span>alla </span><span>en </span><span>un</span> </span><span>certain </span><span data-type="GN"><span class="synos" data-id="2400065_20">lieu</span> </span><span>dans </span><span data-type="GN"><span>le </span><span>Thesprotide</span></span>, <span>où </span><span>par </span><span data-type="GN"><span>la </span><span>force</span> </span><span>de </span><span>quelques </span><span data-type="GN"><span>charmes</span> </span><span data-type="GV"><span>on </span><span>évoquoit </span><span>des</span> </span><span data-type="GN"><span>Enfers</span> </span><span data-type="GN"><span>les </span><span class="synos" data-id="2400065_37">ames </span><span>des </span><span data-type="GN"><span>morts</span></span></span>&nbsp;; <span>que </span><span data-type="GN"><span>le </span><span>Fantôme</span> </span><span data-type="GN"><span>d4eurydice</span> </span><span data-type="GV"><span>se </span><span>presenta </span><span>à </span><span>lui</span></span>, <span>mais </span><span>qu’</span><span data-type="GN"><span>Orphée</span> </span><span data-type="GV"><span>se </span><span>voiant </span><span>trompé </span><span>se</span> </span><span data-type="GV"><span class="lemmes lemmes" data-id="2400065_57">tua </span><span>de</span> </span><span data-type="GN"><span>douleur</span> </span><span>et </span><span>de </span><span data-type="GN"><span>déplaisir</span></span>&nbsp;; <span>et </span><span>que </span><span>parce </span><span data-type="GV"><span>qu’</span><span>il </span><span>étoit </span><span>mort </span><span>par</span> </span><span data-type="GN"><span>l’</span><span>amour</span> </span><span data-type="GV"><span>qu’</span><span>il </span><span class="synos" data-id="2400065_76">portoit </span><span>à</span> </span><span data-type="GN"><span>sa </span><span>femme</span></span>, <span data-type="GV"><span>l’</span><span>on </span><span>dit</span> </span><span>qu’</span><span data-type="GV"><span>il </span><span>avoit </span><span>été </span><span>déchiré</span> </span><span>par </span><span data-type="GN"><span>les </span><span>femmes</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="hFnxHal" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('hFnxHal').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('hFnxHal')">
+                     <option value="ballanche1829_3200457">ballanche1829, phrase 457</option>
+                     <option value="schure1921_8500630">schure1921, phrase 630</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('hFnxHal',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('hFnxHal',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500356">
+               <h5>manjock2000, phrase 356</h5>
+               <p><span class="synos" data-href="3200457_27" data-corresp="ballanche1829_3200457">Tant </span><span class="w">que </span><span data-type="GV"><span class="w">j’</span><span class="w">ai</span> </span><span data-type="GN"><span class="w">ce </span><span class="w">poignet</span></span>, <span class="synos" data-href="3200457_27" data-corresp="ballanche1829_3200457">tant </span><span class="w">que </span><span data-type="GV"><span class="w">j’</span><span class="w">ai</span> </span><span data-type="GN"><span class="w">cette </span><span class="synos" data-href="8500630_5" data-corresp="schure1921_8500630">langue</span></span>, <span class="synos" data-href="3200457_27" data-corresp="ballanche1829_3200457">tant </span><span class="w">que </span><span data-type="GV"><span class="w">j’</span><span class="w">ai</span> </span><span data-type="GN"><span class="w">mes </span><span class="w">yeux</span></span>, <span data-type="GV"><span class="w">je </span><span class="synos" data-href="3200457_14" data-corresp="ballanche1829_3200457">trouverai</span></span>&nbsp;! </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200457" data-id="3200457" style="display:none">
+                  <h5>ballanche1829, phrase 457</h5>
+                  <p><span data-type="GV"><span>J’</span><span>ai </span><span>cru </span><span>à</span> </span><span data-type="GN"><span>l’</span><span>instinct</span> </span><span data-type="GV"><span>qui </span><span>était </span><span>en </span><span>moi</span></span>, <span data-type="GV"><span>j’</span><span>ai </span><span class="synos" data-id="3200457_14">cru </span><span>à</span> </span><span data-type="GN"><span>la </span><span>puissance </span><span>fatidique </span><span>de </span><span>ma </span><span data-type="GN"><span>lyre</span></span></span>, <span>et </span><span data-type="GV"><span>j’</span><span>ai </span><span>été </span><span class="synos" data-id="3200457_27">également</span> </span><span data-type="GAdj"><span>trompé </span><span>par</span> </span><span data-type="GN"><span>mon </span><span>génie</span> </span><span>et </span><span>par </span><span data-type="GN"><span>ma </span><span>lyre</span></span>. </p>
+               </div>
+               <div id="schure1921_8500630" data-id="8500630">
+                  <h5>schure1921, phrase 630</h5>
+                  <p><span data-type="GV"><span>Par </span><span>lui </span><span>j’</span><span>ai </span><span class="synos" data-id="8500630_5">parlé</span></span>, <span data-type="GV"><span>j’</span><span>ai </span><span>chanté</span></span>, <span data-type="GV"><span>j’</span><span>ai </span><span>vaincu</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="QXgnBYj" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('QXgnBYj').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('QXgnBYj')">
+                     <option value="puget1624_3600018">puget1624, phrase 18</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('QXgnBYj',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('QXgnBYj',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500249">
+               <h5>manjock2000, phrase 249</h5>
+               <p><span data-type="GV"><span class="w">J’</span><span class="w">ai </span><span class="lemmes" data-href="3600018_144" data-corresp="puget1624_3600018">suivi</span> </span><span data-type="GN"><span class="w">le </span><span class="mots" data-href="3600018_172" data-corresp="puget1624_3600018">chemin </span><span class="lemmes" data-href="3600018_170" data-corresp="puget1624_3600018">tracé</span></span>, <span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="mots" data-href="3600018_49" data-corresp="puget1624_3600018">atteint</span> </span><span data-type="GN"><span class="w">mon </span><span class="synos" data-href="3600018_114" data-corresp="puget1624_3600018">but</span></span>&nbsp;: <span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="synos" data-href="3600018_127" data-corresp="puget1624_3600018">amassé</span></span>, <span data-type="GV"><span class="w">j’</span><span class="w">ai </span><span class="synos" data-href="3600018_32" data-corresp="puget1624_3600018">construit</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="puget1624_3600018" data-id="3600018">
+                  <h5>puget1624, phrase 18</h5>
+                  <p><span data-type="GN"><span>Ces </span><span>impatiences</span></span>, <span data-type="GN"><span>ces </span><span>inquietudes</span></span>, <span data-type="GN"><span>ces </span><span>douleurs</span></span>, <span data-type="GN"><span>ces </span><span>regrets</span></span>, <span>et </span><span>enfin </span><span>toutes </span><span data-type="GN"><span>ces </span><span>actions</span> </span><span data-type="GN"><span>tesmoins </span><span>irreprochables</span> </span><span>ou </span><span>de </span><span data-type="GN"><span>nostre </span><span>amour</span></span>, <span>ou </span><span>de </span><span data-type="GN"><span>nostre </span><span>tristesse</span></span>, <span data-type="GV"><span>sont </span><span>naïfvement</span> </span><span data-type="GV"><span class="synos" data-id="3600018_32">representez </span><span>comme </span><span>dans</span> </span><span data-type="GN"><span>un </span><span>tableau</span></span>, <span>dans </span><span data-type="GN"><span>cette </span><span>Fable</span></span>, <span>par </span><span data-type="GN"><span>l’</span><span>exemple </span><span>du </span><span>mal-heureux </span><span data-type="GN"><span>Orphée </span><span class="mots" data-id="3600018_49">atteint </span><span>du </span><span>plus</span></span> </span><span data-type="GN"><span>cuisant </span><span>desplaisir</span> </span><span data-type="GV"><span>qui </span><span>blessa </span><span>jamais</span> </span><span data-type="GN"><span>une </span><span>ame </span><span>passionnément </span><span>amoureuse</span></span>&nbsp;: <span>car </span><span data-type="GV"><span>il </span><span>descendit </span><span>aux</span> </span><span data-type="GN"><span>Enfers</span> </span><span data-type="GV"><span>pour </span><span>trouver</span> </span><span data-type="GN"><span>son </span><span>paradis</span></span>, <span data-type="GV"><span>croyant</span> </span><span>que </span><span data-type="GN"><span>les </span><span>peines </span><span>de </span><span>ces </span><span data-type="GN"><span>esprits </span><span>infortunez</span></span> </span><span data-type="GV"><span>n’</span><span>avoient </span><span>rien </span><span>de</span> </span><span data-type="GAdj"><span>rigoureux</span></span>, <span data-type="GAdj"><span>à </span><span>l’</span><span>égal </span><span>de</span> </span><span data-type="GN"><span>ses </span><span>peines</span></span>, <span data-type="GV"><span>estant</span> </span><span data-type="GAdj"><span>privé </span><span>des</span> </span><span data-type="GN"><span>beaux </span><span>yeux </span><span>de </span><span>sa </span><span>chere </span><span data-type="GN"><span>Eurydice</span></span></span>, <span data-type="GN"><span>dont </span><span>le </span><span>trespas</span> </span><span data-type="GV"><span>l’</span><span>ensevelit </span><span>dans</span> </span><span data-type="GN"><span>un </span><span>tombeau</span> </span><span data-type="GV"><span>vivant</span></span>, <span data-type="GN"><span>où </span><span class="synos" data-id="3600018_114">mille </span><span>morts</span> </span><span data-type="GV"><span>tyrrannisoient </span><span>continuellement</span> </span><span data-type="GN"><span>sa </span><span>vie</span></span>, <span data-type="GV"><span>sans </span><span>pouvoir</span> </span><span data-type="GV"><span>mourir</span></span>, <span data-type="GV"><span>d’</span><span>où </span><span class="synos" data-id="3600018_127">procedoit</span> </span><span data-type="GN"><span>un </span><span>mal</span> </span><span data-type="GV"><span>qui </span><span>estoit </span><span>plus</span> </span><span data-type="GAdj"><span>grand</span> </span><span>que </span><span>tous </span><span data-type="GN"><span>ses </span><span>maux</span></span>, <span>d’</span><span>autant </span><span>qu’</span><span data-type="GV"><span>il </span><span>vouloit </span><span class="lemmes" data-id="3600018_144">suivre</span> </span><span data-type="GN"><span>l’</span><span>ame</span></span>, <span data-type="GV"><span>dont </span><span>il </span><span>estoit</span> </span><span data-type="GN"><span>le </span><span>corps</span></span>, <span data-type="GN"><span>tesmoin</span> </span><span data-type="GN"><span>sa </span><span>descente</span> </span><span>en </span><span data-type="GN"><span>ces </span><span>lieux</span> </span><span data-type="GN"><span>tenebreux</span></span>, <span data-type="GN"><span>où </span><span>l’</span><span>armonie </span><span>de </span><span>sa </span><span data-type="GN"><span>Lyre </span><span>charmante</span></span> </span><span data-type="GV"><span>luy </span><span class="lemmes" data-id="3600018_170">traça</span> </span><span data-type="GN"><span>un </span><span class="mots" data-id="3600018_172">chemin</span></span>, <span>non </span><span data-type="GAdj"><span>jamais </span><span>cogneu</span></span>, <span>selon </span><span>que </span><span data-type="GV"><span>vous </span><span>verrez </span><span>par</span> </span><span data-type="GN"><span>la </span><span>suicte </span><span>de </span><span>la </span><span data-type="GN"><span>Fable</span></span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="wFrqVAF" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('wFrqVAF').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('wFrqVAF')">
+                     <option value="schure1921_8500111">schure1921, phrase 111</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('wFrqVAF',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('wFrqVAF',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500014">
+               <h5>manjock2000, phrase 14</h5>
+               <p><span data-type="GV"><span class="w">Il </span><span class="w">s’</span><span class="lemmes" data-href="8500111_3" data-corresp="schure1921_8500111">appelle</span></span>«&nbsp;<span data-type="GN"><span class="w">la </span><span class="lemmes" data-href="8500111_19" data-corresp="schure1921_8500111">Lumière</span> </span><span data-type="GV"><span class="w">qui </span><span class="mots" data-href="8500111_16" data-corresp="schure1921_8500111">guérit</span></span>&nbsp;», <span data-type="GV"><span class="w">il </span><span class="w">s’</span><span class="lemmes" data-href="8500111_3" data-corresp="schure1921_8500111">appelle</span> </span><span data-type="GN"><span class="mots" data-href="8500111_5" data-corresp="schure1921_8500111">Orphée</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="schure1921_8500111" data-id="8500111">
+                  <h5>schure1921, phrase 111</h5>
+                  <p><span data-type="GV"><span>Il </span><span>s’</span><span class="lemmes lemmes" data-id="8500111_3">appelait </span><span>maintenant</span> </span><span data-type="GN"><span class="mots" data-id="8500111_5">Orphée</span> </span><span>ou </span><span data-type="GN"><span>Arpha</span></span>, <span data-type="GV"><span>ce </span><span>qui </span><span>veut </span><span>dire</span></span>&nbsp;: <span data-type="GV"><span>celui </span><span>qui </span><span class="mots" data-id="8500111_16">guérit </span><span>par</span> </span><span data-type="GN"><span>la </span><span class="lemmes" data-id="8500111_19">lumière</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="CAQbBaM" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('CAQbBaM').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('CAQbBaM')">
+                     <option value="liking2000_6500560">liking2000, phrase 560</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('CAQbBaM',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('CAQbBaM',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500219">
+               <h5>manjock2000, phrase 219</h5>
+               <p><span class="w">Dans </span><span data-type="GN"><span class="w">le </span><span class="lemmes" data-href="6500560_20" data-corresp="liking2000_6500560">laboratoire </span><span class="w">des </span><span class="mots" data-href="6500560_22" data-corresp="liking2000_6500560">autres</span></span>, <span data-type="GV"><span class="w">tu </span><span class="lemmes" data-href="6500560_12" data-corresp="liking2000_6500560">feras </span><span class="w">toujours</span> </span><span data-type="GN"><span class="w">le </span><span class="mots" data-href="6500560_15" data-corresp="liking2000_6500560">gros </span><span class="mots" data-href="6500560_16" data-corresp="liking2000_6500560">boulot</span></span>, <span class="w">dans </span><span data-type="GN"><span class="w">le </span><span class="lemmes" data-href="6500560_20" data-corresp="liking2000_6500560">laboratoire </span><span class="w">des </span><span class="mots" data-href="6500560_22" data-corresp="liking2000_6500560">autres</span></span>, <span data-type="GN"><span class="w">ton </span><span class="w">diplôme</span> </span><span data-type="GV"><span class="w">ne </span><span class="synos" data-href="6500560_11" data-corresp="liking2000_6500560">pèsera </span><span class="w">pas</span> </span><span data-type="GAdj"><span class="w">lourd</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500560" data-id="6500560">
+                  <h5>liking2000, phrase 560</h5>
+                  <p><span>À </span><span data-type="GN"><span>la </span><span>fin </span><span>de </span><span>leurs </span><span data-type="GN"><span>études </span><span>les </span><span>plus </span><span>doués</span></span> </span><span data-type="GV"><span class="synos" data-id="6500560_11">vont </span><span class="lemmes" data-id="6500560_12">faire </span><span>le</span></span>«&nbsp;<span data-type="GN"><span class="mots" data-id="6500560_15">gros </span><span class="mots" data-id="6500560_16">boulot</span></span>&nbsp;» <span>dans </span><span data-type="GN"><span>les </span><span class="lemmes lemmes" data-id="6500560_20">laboratoires </span><span>des </span><span class="mots mots" data-id="6500560_22">autres</span></span> (<span data-type="GV"><span>soulever</span> </span><span data-type="GN"><span>les </span><span>engins</span> </span><span>par </span><span data-type="GN"><span>exemple</span></span>), <span>et </span><span data-type="GN"><span>les </span><span>moyens</span> </span><span data-type="GV"><span>rentrent </span><span>chez </span><span>eux</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="VSCObOl" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('VSCObOl').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('VSCObOl')">
+                     <option value="liking2000_6500834">liking2000, phrase 834</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('VSCObOl',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('VSCObOl',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500252">
+               <h5>manjock2000, phrase 252</h5>
+               <p><span data-type="GN"><span class="w">Le </span><span class="w">père</span> </span><span data-type="GV"><span class="synos" data-href="6500834_6" data-corresp="liking2000_6500834">quitte</span> </span><span data-type="GN"><span class="w">la </span><span class="w">scène</span> </span><span class="w">et </span><span data-type="GV"><span class="synos" data-href="6500834_6" data-corresp="liking2000_6500834">descend </span><span class="w">dans</span> </span><span data-type="GN"><span class="w">la </span><span class="w">salle</span></span>, <span data-type="GV"><span class="w">après </span><span class="w">avoir </span><span class="w">béni</span> </span><span data-type="GN"><span class="w">son </span><span class="w">fils</span></span>, <span data-type="GN"><span class="w">Orphée</span> </span><span data-type="GV"><span class="synos" data-href="6500834_6" data-corresp="liking2000_6500834">prend</span> </span><span data-type="GN"><span class="w">la </span><span class="w">place </span><span class="w">de </span><span class="w">son </span><span data-type="GN"><span class="w">père</span></span> </span><span class="w">et </span><span data-type="GV"><span class="synos" data-href="6500834_6" data-corresp="liking2000_6500834">fixe</span> </span><span data-type="GN"><span class="w">la </span><span class="mots" data-href="6500834_17" data-corresp="liking2000_6500834">lumière</span> </span><span class="w">pendant </span><span data-type="GN"><span class="w">que </span><span class="w">l’</span><span class="w">Image </span><span class="w">d’</span><span data-type="GN"><span class="w">Orphée</span></span> </span><span class="w">et </span><span class="w">de </span><span data-type="GN"><span class="mots" data-href="6500834_14" data-corresp="liking2000_6500834">Nyango</span> </span><span data-type="GV"><span class="w">s’</span><span class="mots" data-href="6500834_19" data-corresp="liking2000_6500834">intensifie</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500834" data-id="6500834">
+                  <h5>liking2000, phrase 834</h5>
+                  <p><span>Chaque </span><span data-type="GN"><span>fois</span> </span><span data-type="GV"><span>que </span><span>je </span><span>me </span><span class="synos" data-id="6500834_6">pénètre </span><span>d’</span> </span><span data-type="GN"><span>amour</span></span>, <span>de </span><span data-type="GN"><span>l’</span><span>amour </span><span>de </span><span data-type="GN"><span class="mots" data-id="6500834_14">Nyango</span></span></span>, <span data-type="GN"><span>la </span><span class="mots" data-id="6500834_17">lumière</span> </span><span data-type="GV"><span>s’</span><span class="mots" data-id="6500834_19">intensifie </span><span>en </span><span>moi</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="gCkduCT" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('gCkduCT').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('gCkduCT')">
+                     <option value="schure1921_8500226">schure1921, phrase 226</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('gCkduCT',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('gCkduCT',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500255">
+               <h5>manjock2000, phrase 255</h5>
+               <p><span data-type="GN"><span class="w">La </span><span class="mots" data-href="8500226_5" data-corresp="schure1921_8500226">lumière </span><span class="w">des </span><span data-type="GN"><span class="lemmes" data-href="8500226_7" data-corresp="schure1921_8500226">dieux</span></span> </span><span data-type="GV"><span class="mots" data-href="8500226_8" data-corresp="schure1921_8500226">épouvante</span> </span><span data-type="GN"><span class="w">les </span><span class="mots" data-href="8500226_10" data-corresp="schure1921_8500226">faibles </span><span class="w">et </span><span class="mots" data-href="8500226_12" data-corresp="schure1921_8500226">tue</span> </span><span data-type="GN"><span class="w">les </span><span class="mots" data-href="8500226_14" data-corresp="schure1921_8500226">profanateurs</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="schure1921_8500226" data-id="8500226">
+                  <h5>schure1921, phrase 226</h5>
+                  <p><span>Car </span><span data-type="GV"><span>sache</span> </span><span>que </span><span data-type="GN"><span>la </span><span class="mots" data-id="8500226_5">lumière </span><span>des </span><span data-type="GN"><span class="lemmes" data-id="8500226_7">Dieux</span></span> </span><span data-type="GV"><span class="mots" data-id="8500226_8">épouvante</span> </span><span data-type="GN"><span>les </span><span class="mots" data-id="8500226_10">faibles </span><span>et </span><span class="mots" data-id="8500226_12">tue</span> </span><span data-type="GN"><span>les </span><span class="mots" data-id="8500226_14">profanateurs</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="yUuEbIt" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('yUuEbIt').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('yUuEbIt')">
+                     <option value="liking2000_6500806">liking2000, phrase 806</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('yUuEbIt',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('yUuEbIt',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500342">
+               <h5>manjock2000, phrase 342</h5>
+               <p><span class="w">De </span><span class="lemmes" data-href="6500806_5" data-corresp="liking2000_6500806">toute </span><span data-type="GN"><span class="lemmes" data-href="6500806_3" data-corresp="liking2000_6500806">façon</span> </span><span data-type="GV"><span class="mots" data-href="6500806_9" data-corresp="liking2000_6500806">tout </span><span class="mots" data-href="6500806_6" data-corresp="liking2000_6500806">doit </span><span class="mots" data-href="6500806_7" data-corresp="liking2000_6500806">sauter</span></span>, <span data-type="GV"><span class="mots" data-href="6500806_9" data-corresp="liking2000_6500806">tout </span><span class="lemmes" data-href="6500806_7" data-corresp="liking2000_6500806">sautera</span></span>&nbsp;: <span data-type="GN"><span class="w">l’</span><span class="mots" data-href="6500806_13" data-corresp="liking2000_6500806">Afrique </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="6500806_15" data-corresp="liking2000_6500806">Sud</span></span></span>, <span data-type="GN"><span class="w">les </span><span class="mots" data-href="6500806_24" data-corresp="liking2000_6500806">secteurs </span><span class="mots" data-href="6500806_25" data-corresp="liking2000_6500806">minés</span> </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="6500806_27" data-corresp="liking2000_6500806">Tchad</span></span>, <span class="w">du </span><span data-type="GN"><span class="mots" data-href="6500806_30" data-corresp="liking2000_6500806">Sahara </span><span class="w">oriental</span></span>, <span class="w">de </span><span data-type="GN"><span class="w">la </span><span class="mots" data-href="6500806_35" data-corresp="liking2000_6500806">Namibie</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500806" data-id="6500806">
+                  <h5>liking2000, phrase 806</h5>
+                  <p><span>De </span><span>toutes </span><span data-type="GN"><span class="lemmes" data-id="6500806_3">façons</span></span>, <span class="lemmes" data-id="6500806_5">tout </span><span data-type="GV"><span class="mots" data-id="6500806_6">doit </span><span class="mots lemmes" data-id="6500806_7">sauter</span></span>, <span data-type="GV"><span class="mots mots" data-id="6500806_9">tout </span><span>sautera</span></span>&nbsp;: <span data-type="GN"><span>l’</span><span class="mots" data-id="6500806_13">Afrique </span><span>du </span><span data-type="GN"><span class="mots" data-id="6500806_15">Sud</span></span></span>, <span data-type="GN"><span>les </span><span>loges </span><span>de </span><span>la </span><span data-type="GN"><span>séquestration</span></span></span>, <span data-type="GN"><span>les </span><span class="mots" data-id="6500806_24">secteurs </span><span class="mots" data-id="6500806_25">minés</span> </span><span>du </span><span data-type="GN"><span class="mots" data-id="6500806_27">Tchad</span></span>, <span>du </span><span data-type="GN"><span class="mots" data-id="6500806_30">Sahara </span><span>Occidental</span></span>, <span>de </span><span data-type="GN"><span>la </span><span class="mots" data-id="6500806_35">Namibie</span></span>, <span>et </span><span>tous </span><span data-type="GN"><span>les </span><span>autres</span></span>«&nbsp;<span data-type="GN"><span>coins </span><span>piégés</span></span>&nbsp;»... </p>
+               </div>
+            </div>
+         </div>
+         <div id="OoKLGdF" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('OoKLGdF').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('OoKLGdF')">
+                     <option value="liking2000_6500834">liking2000, phrase 834</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('OoKLGdF',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('OoKLGdF',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500381">
+               <h5>manjock2000, phrase 381</h5>
+               <p><span class="mots" data-href="6500834_1" data-corresp="liking2000_6500834">Chaque </span><span data-type="GN"><span class="mots" data-href="6500834_2" data-corresp="liking2000_6500834">fois</span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">se </span><span class="mots" data-href="6500834_6" data-corresp="liking2000_6500834">pénètre </span><span class="w">de</span> </span><span data-type="GN"><span class="w">l’</span><span class="mots" data-href="6500834_8" data-corresp="liking2000_6500834">amour </span><span class="w">de </span><span data-type="GN"><span class="mots" data-href="6500834_14" data-corresp="liking2000_6500834">Nyango</span></span></span>, <span data-type="GN"><span class="w">la </span><span class="mots" data-href="6500834_17" data-corresp="liking2000_6500834">lumière</span> </span><span data-type="GV"><span class="w">s’</span><span class="mots" data-href="6500834_19" data-corresp="liking2000_6500834">intensifie</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500834" data-id="6500834">
+                  <h5>liking2000, phrase 834</h5>
+                  <p><span class="mots" data-id="6500834_1">Chaque </span><span data-type="GN"><span class="mots" data-id="6500834_2">fois</span> </span><span data-type="GV"><span>que </span><span>je </span><span>me </span><span class="mots" data-id="6500834_6">pénètre </span><span>d’</span> </span><span data-type="GN"><span class="mots" data-id="6500834_8">amour</span></span>, <span>de </span><span data-type="GN"><span>l’</span><span>amour </span><span>de </span><span data-type="GN"><span class="mots" data-id="6500834_14">Nyango</span></span></span>, <span data-type="GN"><span>la </span><span class="mots" data-id="6500834_17">lumière</span> </span><span data-type="GV"><span>s’</span><span class="mots" data-id="6500834_19">intensifie </span><span>en </span><span>moi</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="izlQuNz" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('izlQuNz').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('izlQuNz')">
+                     <option value="schure1921_8500248">schure1921, phrase 248</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('izlQuNz',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('izlQuNz',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500434">
+               <h5>manjock2000, phrase 434</h5>
+               <p><span class="synos" data-href="8500248_1" data-corresp="schure1921_8500248">Chaque </span><span data-type="GN"><span class="w">soir</span></span>, <span data-type="GV"><span class="w">il </span><span class="synos" data-href="8500248_7" data-corresp="schure1921_8500248">va </span><span class="w">sur</span> </span><span data-type="GN"><span class="w">les </span><span class="lemmes" data-href="8500248_27" data-corresp="schure1921_8500248">bords </span><span class="w">du </span><span data-type="GN"><span class="mots" data-href="8500248_29" data-corresp="schure1921_8500248">fleuve</span></span> </span><span class="w">et </span><span data-type="GV"><span class="synos" data-href="8500248_7" data-corresp="schure1921_8500248">revient </span><span class="synos" data-href="8500248_20" data-corresp="schure1921_8500248">vers</span> </span><span data-type="GN"><span class="w">son </span><span class="w">peuple</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="schure1921_8500248" data-id="8500248">
+                  <h5>schure1921, phrase 248</h5>
+                  <p><span class="synos" data-id="8500248_1">Tout </span><span data-type="GV"><span>redevint</span> </span><span data-type="GAdj"><span>noir</span></span>&nbsp;; <span data-type="GN"><span>les </span><span>rochers</span> </span><span data-type="GV"><span class="synos" data-id="8500248_7">reprirent</span> </span><span data-type="GN"><span>leurs </span><span>formes </span><span>menaçantes</span></span>&nbsp;: <span>et </span><span>des </span><span data-type="GN"><span>lumières </span><span>errantes</span> </span><span data-type="GV"><span>brillèrent </span><span>de</span> </span><span>tous </span><span data-type="GN"><span>côtés</span> </span><span class="synos" data-id="8500248_20">sous </span><span data-type="GN"><span>l’</span><span>épaisseur </span><span>des </span><span data-type="GN"><span>arbres</span></span></span>, <span>au </span><span data-type="GN"><span class="lemmes" data-id="8500248_27">bord </span><span>du </span><span data-type="GN"><span class="mots" data-id="8500248_29">fleuve</span></span> </span><span>et </span><span>dans </span><span data-type="GN"><span>les </span><span>profondeurs </span><span>de </span><span>la </span><span data-type="GN"><span>vallée</span></span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="dddBAUy" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('dddBAUy').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('dddBAUy')">
+                     <option value="schure1921_8500361">schure1921, phrase 361</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('dddBAUy',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('dddBAUy',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500448">
+               <h5>manjock2000, phrase 448</h5>
+               <p><span class="w">Dans </span><span data-type="GN"><span class="w">l’</span><span class="mots" data-href="8500361_4" data-corresp="schure1921_8500361">extase </span><span class="w">des </span><span data-type="GN"><span class="mots" data-href="8500361_6" data-corresp="schure1921_8500361">Mystères</span></span></span>, <span class="mots" data-href="8500361_8" data-corresp="schure1921_8500361">chacun </span><span data-type="GV"><span class="mots" data-href="8500361_9" data-corresp="schure1921_8500361">voit</span> </span><span class="mots" data-href="8500361_10" data-corresp="schure1921_8500361">jusqu’</span><span class="w">au </span><span data-type="GN"><span class="mots" data-href="8500361_12" data-corresp="schure1921_8500361">fond </span><span class="w">des </span><span data-type="GN"><span class="lemmes" data-href="8500361_14" data-corresp="schure1921_8500361">âmes</span></span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="schure1921_8500361" data-id="8500361">
+                  <h5>schure1921, phrase 361</h5>
+                  <p><span>Car </span><span>dans </span><span data-type="GN"><span>l’</span><span class="mots" data-id="8500361_4">extase </span><span>des </span><span data-type="GN"><span class="mots" data-id="8500361_6">Mystères</span></span></span>, <span class="mots" data-id="8500361_8">chacun </span><span data-type="GV"><span class="mots" data-id="8500361_9">voit</span> </span><span class="mots" data-id="8500361_10">jusqu’</span><span>au </span><span data-type="GN"><span class="mots" data-id="8500361_12">fond</span> </span><span data-type="GN"><span>l’</span><span class="lemmes" data-id="8500361_14">âme </span><span>de </span><span>l’</span><span>autre</span></span>. </p>
+               </div>
+            </div>
+         </div>
+         <div id="KBzhoYq" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('KBzhoYq').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('KBzhoYq')">
+                     <option value="liking2000_6500225">liking2000, phrase 225</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('KBzhoYq',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('KBzhoYq',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500497">
+               <h5>manjock2000, phrase 497</h5>
+               <p><span data-type="GV"><span class="w">Ils </span><span class="mots" data-href="6500225_14" data-corresp="liking2000_6500225">répondaient </span><span class="w">à</span> </span><span data-type="GN"><span class="w">l’</span><span class="mots" data-href="6500225_17" data-corresp="liking2000_6500225">appel</span> </span><span data-type="GV"><span class="w">en </span><span class="mots" data-href="6500225_19" data-corresp="liking2000_6500225">clamant </span><span class="mots" data-href="6500225_20" data-corresp="liking2000_6500225">fièrement</span> </span><span data-type="GN"><span class="w">leur </span><span class="mots" data-href="6500225_22" data-corresp="liking2000_6500225">lignée</span></span>, <span data-type="GN"><span class="w">les </span><span class="synos" data-href="6500225_11" data-corresp="liking2000_6500225">Anciens</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="liking2000_6500225" data-id="6500225">
+                  <h5>liking2000, phrase 225</h5>
+                  <p><span>Et </span><span data-type="GV"><span>ils </span><span>marchaient</span></span>, <span data-type="GN"><span>la </span><span>poitrine </span><span>bombée</span></span>, <span data-type="GN"><span>la </span><span>tête </span><span class="synos" data-id="6500225_11">haute</span></span>&nbsp;; <span data-type="GV"><span>ils </span><span class="mots" data-id="6500225_14">répondaient </span><span>à</span> </span><span data-type="GN"><span>l’</span><span class="mots" data-id="6500225_17">appel</span> </span><span data-type="GV"><span>en </span><span class="mots" data-id="6500225_19">clamant </span><span class="mots" data-id="6500225_20">fièrement</span> </span><span data-type="GN"><span>leur </span><span class="mots" data-id="6500225_22">lignée</span> </span><span>et </span><span data-type="GV"><span>en </span><span>frappant </span><span>finalement</span> </span><span data-type="GN"><span>la </span><span>main </span><span>droite </span><span>sur </span><span>le </span><span data-type="GN"><span>torse</span></span> </span><span data-type="GV"><span>pour </span><span>dire</span> </span><span data-type="GN"><span>leur </span><span>nom</span></span>... </p>
+               </div>
+            </div>
+         </div>
+         <div id="qXUOZMV" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('qXUOZMV').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('qXUOZMV')">
+                     <option value="schure1921_8500111">schure1921, phrase 111</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('qXUOZMV',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('qXUOZMV',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="5500625">
+               <h5>manjock2000, phrase 625</h5>
+               <p><span data-type="GV"><span class="w">Je </span><span class="w">t’</span><span class="lemmes" data-href="8500111_3" data-corresp="schure1921_8500111">appelle</span> </span><span data-type="GN"><span class="mots" data-href="8500111_5" data-corresp="schure1921_8500111">Orphée</span></span>, <span data-type="GN"><span class="w">la </span><span class="mots" data-href="8500111_19" data-corresp="schure1921_8500111">lumière</span> </span><span data-type="GV"><span class="w">qui </span><span class="mots" data-href="8500111_16" data-corresp="schure1921_8500111">guérit</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="schure1921_8500111" data-id="8500111">
+                  <h5>schure1921, phrase 111</h5>
+                  <p><span data-type="GV"><span>Il </span><span>s’</span><span class="lemmes" data-id="8500111_3">appelait </span><span>maintenant</span> </span><span data-type="GN"><span class="mots" data-id="8500111_5">Orphée</span> </span><span>ou </span><span data-type="GN"><span>Arpha</span></span>, <span data-type="GV"><span>ce </span><span>qui </span><span>veut </span><span>dire</span></span>&nbsp;: <span data-type="GV"><span>celui </span><span>qui </span><span class="mots" data-id="8500111_16">guérit </span><span>par</span> </span><span data-type="GN"><span>la </span><span class="mots" data-id="8500111_19">lumière</span></span>. </p>
+               </div>
+            </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

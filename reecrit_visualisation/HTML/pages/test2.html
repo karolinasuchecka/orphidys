@@ -1,0 +1,465 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/ballanche1809.js"></script>
+
+      <style type="text/css">
+        [data-id="pop"]{
+          width: 60%
+        }
+        .source, .target{
+          margin-left: 1%;
+          padding: 2px; 
+        }
+        .source p, .target p{
+          margin: 5px;
+        }
+        .no{
+          font-family: 'Dosis', sans-serif;
+          color: #34495e;
+          margin-right: 5px;
+
+        }
+        .groupe.mots:before{
+          content: '[';
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+          color: #C0392B
+        }
+        .groupe.mots:after{
+          content: ']'attr(data-root);
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+          color: #C0392B
+
+        }
+        .groupe.roots:before{
+          content: '[';
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+           color: #E67E22
+        }
+        .groupe.roots:after{
+          content: ']'attr(data-root);
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+           color: #E67E22
+
+        }
+        .groupe.synos:before{
+          content: '[';
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+          color: #28b463
+        }
+        .groupe.synos:after{
+          content: ']'attr(data-root);
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+          color: #28b463
+
+        }
+        .groupe:before{
+          content: '[';
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+
+        }
+        .groupe:after{
+          content: ']'attr(data-root);
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold;
+
+        }
+        .ind{
+          font-variant-position: super;
+          font-family: 'Dosis', sans-serif;
+          font-weight: bold; 
+        }
+        .ind.mots, li.groupe.mots, span.mots sup{
+          color: #C0392B
+        }
+        .ind.roots, li.groupe.roots, span.lemmes sup{
+          color: #E67E22
+        }
+        .ind.synos, li.groupe.synos, span.synos sup{
+          color: #28b463
+        }
+        span.roots, li.roots{
+        	background-color: #2980B9;
+        	color: #fff
+        }
+        span.roots sup{
+        	color: #2980B9
+        }
+       span sup{
+        background-color: white;
+        font-weight: bolder;
+        padding-bottom: 6px;
+       }
+      </style>
+
+
+    </head>
+   <body onload="init()">
+      <header>
+         <h1>Pierre-Simon Ballanche <em>Sixième Fragment</em>,  [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <h1>Sixième fragment</h1>
+                  <p>Un des plus beaux récits que nous
+                     ait laissé l’antiquité, est celui des malheurs d’Orphée. Qui
+                     n’a pas été ému par les chants du cygne de Mantoue&nbsp;? qui n’a pas senti résonner au
+                     fond de
+                     l’ame cette douce musique, cette harmonie touchante d’une poésie si mélodieuse&nbsp;?</p>
+                  <p>L’ancien législateur de la Thrace éprouva un autre sentiment
+                     plus doux que celui du désir de la gloire&nbsp;: il puisait sur les lèvres d’Eurydice le
+                     double
+                     enchantement de l’amour et du génie&nbsp;; mais bientôt il connut la douleur, la douleur,
+                     ce
+                     terrible tribut qui est levé indistinctement sur tous les hommes. La mort lui enleva son épouse&nbsp;: elle était dans tout l’éclat de la jeunesse et de
+                     la beauté&nbsp;; et elle disparut de dessus la terre, comme une de ces ombres aimables
+                     qui
+                     apparaissent quelquefois sur un rayon du soir, et que les
+                     ténèbres enveloppent, à l’instant même, de leur lugubre manteau.</p>
+                  <p>Orphée resta seul. Sa lyre
+                     alors, au lieu de redire, comme auparavant, les charmes de l’amour, les douceurs de
+                     cette
+                     vie de l’homme uni à la compagne que son cœur a choisie, sa lyre était devenue muette.
+                     Il se plaignait de son malheur aux arbres de la forêt, il
+                     s’en plaignait aux astres silencieux de la nuit, il s’en plaignait à la nature entière.</p>
+                  <p>Enfin, il résolut d’aller chez les morts pour y retrouver
+                     Eurydice, et la ramener sur la terre, ou errer avec elle sur les tristes bords du
+                     Léthé.
+                     <a class="note" onclick="affiche('QYuqaaI')">✱</a>Le dieu du sombre empire se laissa
+                     attendrir, et il rendit à Orphée l’épouse que pleurait ce poëte inconsolable&nbsp;; mais
+                     il mit à
+                     ce bienfait une condition qui devait le rendre bien amer. <a class="note" onclick="affiche('IeielUL')">✱</a>Image trop vraie des destinées humaines, qui n’accordent jamais de
+                     faveur pure et sans mélange&nbsp;!</p>
+                  <p><a class="note" onclick="affiche('xHkeetM')">✱</a>«&nbsp;Va, emmène ton épouse&nbsp;; mais garde-toi
+                     de jeter sur elle un œil indiscret, tant que tu seras dans ces affreuses demeures
+                     où l’amour
+                     est ignoré. <a class="note" onclick="affiche('UhBboZi')">✱</a>Tes regards, qui exprimeraient
+                     toute l’ivresse d’un bonheur qu’on ne connaît plus ici, et où se pendraient toutes
+                     les
+                     illusions de l’espérance auxquelles on a renoncé&nbsp;; tes regards attristeraient encore
+                     les
+                     mânes lamentables, malheureux habitants  de mes déplorables
+                     royaumes. Va, c’est à regret que je rends ma proie.&nbsp;»</p>
+                  <p>Orphée se soumit à cet arrêt rigoureux. Il marchait en silence&nbsp;: étonnée de tant de merveilles, les paupières
+                     encore oppressées du sommeil de la tombe, et le cœur plein d’une joie dont ses sens
+                     qui
+                     commençaient seulement à renaître, ne pouvaient savourer toute la plénitude, Eurydice
+                     suivait son époux. S’il était possible de dire tout le charme
+                     de ce voyage merveilleux, et d’exprimer ce trouble ravissant, ce calme plein d’inquiétude
+                     qui accompagnait le couple mélancolique, il serait possible aussi de raconter le rêve
+                     du
+                     jeune homme qui s’est endormi au fond de la vallée solitaire, après avoir vu pour
+                     la
+                     première fois celle qui doit faire le destin de sa vie.</p>
+                  <p><a class="note" onclick="affiche('oTWpRUT')">✱</a>Déjà les ombres devenaient moins opaques&nbsp;;
+                     déjà un faible crépuscule, détaché des rayons du soleil, arrivait jusqu’aux yeux des
+                     deux
+                     nobles créatures qui s’avançaient jusqu’aux yeux des deux nobles créatures qui s’avançaient
+                     vers la lumière du jour. <a class="note" onclick="affiche('YaZTYzw')">✱</a>Un instant encore,
+                     et elles échappaient à la puissance du dieu des morts&nbsp;: elles touchaient au seuil
+                     du séjour
+                     des vivants. Mais, ô faiblesse d’un cœur qui aime&nbsp;!
+                     Orphée s’arrête pour écouter le soupir qui errait sur les
+                     lèvres d’Eurydice, pour prêter l’oreille au léger frôlement de ses vêtements aériens.
+                     <a class="note" onclick="affiche('MtjBrXE')">✱</a>Vaincu par cette puissance contre
+                     laquelle l’homme lutte en vain, il se retourne&nbsp;; et, oubliant sa fatale promesse,
+                     il permet à son regard d’interroger, à la faveur de la clarté
+                     naissante, les plis du voile qui lui cachait le visage de son épouse, de cette touchante
+                     victime qu’il avait tant pleurée.</p>
+                  <p>Hélas&nbsp;! il l’entrevoit à peine. <a class="note" onclick="affiche('wbuDIIg')">✱</a>Eurydice lui est ravie de nouveau, et lui est ravie à jamais.
+                     <a class="note" onclick="affiche('RONfCPZ')">✱</a>Elle s’évanouit comme un songe vain qui
+                     fuit aux premiers rayons de l’aurore&nbsp;; et sa parole plaintive, inarticulée, meurt
+                     dans le
+                     vague des airs, semblable à la dernière vibration d’une corde harmonieuse.</p>
+                  <p><a class="note" onclick="affiche('iqOSTMW')">✱</a>Telle est l’histoire d’Orphée, racontée
+                     d’âge en âge. <a class="note" onclick="affiche('utbxzEj')">✱</a>La fable y a mêlé ses
+                     aimables mensonges&nbsp;; mais le fond en est vrai, car les larmes sont de tous les temps.
+                     <a class="note" onclick="affiche('UrroXCN')">✱</a>L’antiquité nous fait la confidence de
+                     ses ennuis, pour charmer les nôtres, sans doute. <a class="note" onclick="affiche('TPZtilc')">✱</a>Il y a sur la terre comme un long gémissement qui se traîne de
+                     génération en génération, depuis les premiers mortels jusqu’à nous. <a class="note" onclick="affiche('HpqTMFi')">✱</a>La poitrine de l’homme est un instrument qui n’a su rendre
+                     jamais que des sons plaintifs, et son cœur ne peut se mettre en harmonie qu’avec la
+                     douleur.
+                     <a class="note" onclick="affiche('VlHfrqC')">✱</a>Voilà pourquoi les récits empreints de
+                     tristesse et de souffrance vivent dans sa mémoire. <a class="note" onclick="affiche('YQVAnOY')">✱</a>Les autres sont dénués de charme et de poésie&nbsp;; ce sont des contes qui
+                     amusent un instant son enfance, alors que l’expérience n’a pas encore détruit ses
+                     illusions,
+                     alors que sa jeune imagination sourit à l’avenir.</p>
+                  <p><a class="note" onclick="affiche('VLHmxwr')">✱</a>Comme que nous
+                     fassions, quelle que soit la route que nous ayons choisie, nous sommes toujours déçus&nbsp;:
+                     la
+                     douleur, sentinelle vigilante, garde toutes les avenues du bonheur&nbsp;; c’est l’épée
+                     de feu du
+                     chérubin qui défend l’entrée d’Éden.</p>
+                  <p><a class="note" onclick="affiche('vpqcSvL')">✱</a>Si Orphée n’eût point connu Eurydice, il
+                     aurait ignoré ce qu’il y a de plus amers dans la source des larmes&nbsp;; mais aurait-il
+                     pu
+                     étouffer en lui cette voix intime, si impérieuse, qui demande une compagne et une
+                     postérité,
+                     une compagne pour lui raconter toutes les choses secrètes qui sont au fond du cœur&nbsp;;
+                     une
+                     postérité, pour continuer ses espérances au-delà du tombeau&nbsp;? <a class="note" onclick="affiche('oKzPsWH')">✱</a>Son existence fût demeurée incomplète&nbsp;; et il aurait, au lieu de la
+                     douleur dont il fit une épreuve si cruelle, connu cette autre douleur qui n’a pas
+                     moins
+                     d’intensité, la solitude de l’ame.</p>
+               </div>
+            </div>
+         </div>
+         <div id="MtjBrXE" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('MtjBrXE').style.display='inline-flex'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir la correspondance</legend><select id="corresps" name="corresps" onchange="change_corresp('MtjBrXE')">
+                     <option value="ballanche1829_3200219">ballanche1829, ph. 215-217</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('MtjBrXE',2)"><label for="mots">Relations lexicales</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">forme~forme</li>
+                  <li style="background-color:#E67E22; color:#fff">lemme~lemme</li>
+                  <li style="background-color:#2980B9; color:#fff">radical~radical</li>
+                  <li style="background-color:#28b463; color:#fff">synonyme~synonyme ou mixte</li>
+               </ul>
+            </div>
+            <div class="source" id="2600021">
+               <h5>ballanche1809, phrases 17-21</h5>
+                <p><span class="no">[17]</span><span class="mots active" data-href="3200215_1" data-corresp="ballanche1829_3200215">Déjà<sup>1</sup></span> <span data-type="GN"><span class="w">les </span><span class="synos active" data-href="3200215_9" data-corresp="ballanche1829_3200215">ombres<sup>2</sup></span> </span><span data-type="GV"><span class="lemmes active" data-href="3200215_60" data-corresp="ballanche1829_3200215">devenaient<sup>3</sup></span > <span class="w">moins</span> </span><span data-type="GAdj"><span class="w">opaques</span></span>&nbsp;; <span class="lemmes" data-href="3200215_1" data-corresp="ballanche1829_3200215">déjà </span><span data-type="GN"><span class="w">un </span><span class="synos active" data-href="3200215_4" data-corresp="ballanche1829_3200215">faible<sup>4</sup></span> <span class="mots active" data-href="3200215_3" data-corresp="ballanche1829_3200215">crépuscule<sup>5</sup></span> <span class="mots active" data-href="3200215_48" data-corresp="ballanche1829_3200215">détaché<sup>6</sup></span> <span class="w">des</span> </span><span data-type="GN"><span class="lemmes active" data-href="3200215_13" data-corresp="ballanche1829_3200215">rayons<sup>7</sup></span> <span class="w">du </span><span data-type="GN"><span class="synos active" data-href="3200215_16" data-corresp="ballanche1829_3200215">soleil<sup>8</sup></span></span></span>, <span data-type="GV"><span class="synos" data-href="3200215_19" data-corresp="ballanche1829_3200215">arrivait</span> </span><span class="w">jusqu’</span><span class="w">aux </span><span data-type="GN"><span class="mots active" data-href="3200215_24" data-corresp="ballanche1829_3200215">yeux<sup>9</sup></span> <span class="w">des </span><span class="w">deux </span><span data-type="GN"><span class="synos" data-href="3200215_45" data-corresp="ballanche1829_3200215">nobles</span></span> </span><span data-type="GN"><span class="w">créatures</span> </span><span data-type="GV"><span class="w">qui </span><span class="w">s’</span><span class="synos" data-href="3200219_58" data-corresp="ballanche1829_3200219">avançaient</span> <span class="w">vers</span> </span><span data-type="GN"><span class="w">la </span><span class="mots active" data-href="3200215_16" data-corresp="ballanche1829_3200215">lumière<sup>10</sup></span> <span class="w">du </span><span data-type="GN"><span class="mots active" data-href="3200215_53" data-corresp="ballanche1829_3200215">jour<sup>11</sup></span></span></span>. </p>
+               <p><span class="no">[18]</span><span data-type="GN"><span class="w">Un </span><span class="w">instant</span> </span><span class="synos" data-href="3200219_35" data-corresp="ballanche1829_3200219"><span class="synos" data-href="3200219_16" data-corresp="ballanche1829_3200219"><span class="synos" data-href="3200219_1" data-corresp="ballanche1829_3200219">encore</span></span></span>, <span class="w">et </span><span data-type="GV"><span class="w">elles </span><span class="synos" data-href="3200219_5" data-corresp="ballanche1829_3200219">échappaient </span><span class="w">à</span> </span><span data-type="GN"><span class="w">la </span><span class="synos  active" data-href="3200219_28" data-corresp="ballanche1829_3200219">puissance<sup>12</sup></span> <span class="w">du </span><span data-type="GN"><span class="w">dieu </span><span class="w">des </span><span class="mots active" data-href="3200219_11" data-corresp="ballanche1829_3200219">morts<sup>13</sup></span></span></span>&nbsp;: <span data-type="GV"><span class="w">elles </span><span class="lemmes active" data-href="3200216_4" data-corresp="ballanche1829_3200216">touchaient<sup>14</sup></span> <span class="w">au</span> </span><span data-type="GN"><span class="mots active" data-href="3200216_6" data-corresp="ballanche1829_3200216">seuil<sup>15</sup></span> <span class="w">du </span><span data-type="GN"><span class="mots active" data-href="3200216_14" data-corresp="ballanche1829_3200216">séjour<sup>16</sup></span> <span class="w">des </span><span class="mots active" data-href="3200216_16" data-corresp="ballanche1829_3200216">vivants<sup>17</sup></span></span></span>. </p>
+               <p><span class="no">[19]</span>Mais, ô faiblesse d’un <span class="synos active">cœur<sup>18</sup></span> qui aime&nbsp;!</p>
+               <p><span class="no">[20]</span>Orphée <span class="lemmes active">s’arrête<sup>19</sup></span> pour écouter le soupir qui errait sur les lèvres d’<span class="mots active">Eurydice<sup>20</sup></span>, pour prêter l’oreille au léger frôlement de ses vêtements aériens.</p>
+               <p><span class="no">[21]</span><span data-type="GAdj"><span class="synos" data-href="3200219_58" data-corresp="ballanche1829_3200219">Vaincu </span><span class="w">par</span> </span><span data-type="GN"><span class="w">cette </span><span class="synos" data-href="3200219_28" data-corresp="ballanche1829_3200219">puissance</span> </span><span class="w">contre </span><span data-type="GN"><span class="w">laquelle </span><span class="w">l’</span><span class="w">homme</span> </span><span data-type="GV"><span class="synos" data-href="3200219_58" data-corresp="ballanche1829_3200219">lutte </span><span class="w">en</span> </span><span data-type="GAdj"><span class="synos" data-href="3200215_41" data-corresp="ballanche1829_3200215">vain</span></span>, <span data-type="GV"><span class="w">il se </span><span class="synos active" data-href="3200216_35" data-corresp="ballanche1829_3200216">retourne<sup>21</sup></span></span>&nbsp;; <span class="w">et</span>, <span data-type="GV"><span class="lemmes active" data-href="3200215_28" data-corresp="ballanche1829_3200215">oubliant<sup>22</sup></span> </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="3200219_53" data-corresp="ballanche1829_3200219">fatale </span><span class="synos" data-href="3200215_62" data-corresp="ballanche1829_3200215">promesse</span></span>, <span data-type="GV"><span class="w">il </span><span class="w">permet </span><span class="w">à</span> </span><span data-type="GN"><span class="w">son </span><span class="mots active" data-href="3200216_26" data-corresp="ballanche1829_3200216">regard<sup>23</sup></span> </span><span data-type="GV"><span class="w">d’</span><span class="synos" data-href="3200215_27" data-corresp="ballanche1829_3200215">interroger</span></span>, <span class="w">à </span><span data-type="GN"><span class="w">la </span><span class="synos" data-href="3200215_45" data-corresp="ballanche1829_3200215">faveur </span><span class="w">de </span><span class="w">la </span><span data-type="GN"><span class="mots" data-href="3200215_51" data-corresp="ballanche1829_3200215">clarté </span><span class="w">naissante</span></span></span>, <span data-type="GN"><span class="w">les </span><span class="synos" data-href="3200215_56" data-corresp="ballanche1829_3200215">plis </span><span class="w">du </span><span data-type="GN"><span class="mots active" data-href="3200217_14" data-corresp="ballanche1829_3200217">voile<sup>24</sup></span></span> </span><span data-type="GV"><span class="w">qui </span><span class="w">lui </span><span class="synos" data-href="3200219_12" data-corresp="ballanche1829_3200219">cachait</span> </span><span data-type="GN"><span class="w">le </span><span class="mots active" data-href="3200217_19" data-corresp="ballanche1829_3200217">visage<sup>25</sup></span> <span class="w">de </span><span class="w">son </span><span data-type="GN"><span class="mots active" data-href="3200216_31" data-corresp="ballanche1829_3200216">épouse<sup>26</sup></span></span></span>, <span class="w">de </span><span data-type="GN"><span class="w">cette </span><span class="synos" data-href="3200219_53" data-corresp="ballanche1829_3200219">touchante </span><span class="w">victime</span> </span><span data-type="GV"><span class="w">qu’</span><span class="w">il </span><span class="w">avait </span><span class="synos" data-href="3200216_18" data-corresp="ballanche1829_3200216">tant </span><span class="antos" data-href="3200219_57" data-corresp="ballanche1829_3200219">pleurée</span></span>. </p>
+            </div>
+            <div class="target">
+               <div id="ballanche1829_3200219" data-id="3200219">
+                  <h5>ballanche1829, phrases 215-217</h5>
+                  
+                  <p><span class="no">[215]</span><span class="mots active">Déjà<sup>1</sup></span> <span data-type="GN"><span>un </span><span class="mots active">crépuscule<sup>5</sup></span> <span class="synos active">douteux<sup>4</sup></span> </span><span data-type="GV"><span>commençait </span><span>à </span><span>remplacer</span> </span><span data-type="GN"><span>l’</span><span class="synos active">obscurité<sup>2</sup></span> <span>immense</span></span>&nbsp;; <span data-type="GN"><span>un </span><span>rayon </span><span>de </span><span>pâle </span><span data-type="GN"><span class="mots active">lumière<sup>10</sup></span> </span></span>, <span data-type="GV"><span>qui </span><span>vint </span><span>flotter </span><span>autour</span> </span><span>de </span><span data-type="GN"><span>ses </span><span class="mots active">yeux<sup>9</sup></span></span>, <span data-type="GV"><span>lui </span><span class="synos" data-id="3200215_27">fit </span><span class="lemmes active" data-id="3200215_28">oublier<sup>22</sup></span> </span><span data-type="GN"><span>le </span><span>passé</span> </span><span>et </span><span data-type="GN"><span>l’</span><span>avenir</span></span>&nbsp;: <span data-type="GV"><span>ce </span><span>n’</span><span>était </span><span>pas</span> </span><span data-type="GN"><span>une </span><span class="synos active">lueur<sup>8</sup></span> <span class="synos" data-id="3200215_41">trompeuse</span></span>, <span data-type="GV"><span>c’</span><span>était </span><span class="synos" data-id="3200215_45">bien</span> </span><span data-type="GN"><span>un </span><span class="lemmes active">rayon<sup>7</sup></span> <span class="mots active">détaché<sup>6</sup></span> <span>de </span><span>la </span><span data-type="GN"><span class="mots" data-id="3200215_51">clarté </span><span>du </span><span class="mots active">jour<sup>11</sup></span> </span></span>&nbsp;; <span data-type="GN"><span>la </span><span class="synos" data-id="3200215_56">marque </span><span>de </span><span>son </span><span data-type="GN"><span>salut</span></span> </span><span data-type="GV"><span class="lemmes active">devint<sup>3</sup></span> </span><span data-type="GN"><span>le </span><span class="synos" data-id="3200215_62">signe </span><span>de </span><span>sa </span><span data-type="GN"><span>perte</span></span></span>. </p>
+                  <p><span class="no">[216]</span><span data-type="GV"><span>Ainsi </span><span>donc </span><span>il </span><span class="lemmes active">touchait<sup>14</sup></span> <span>au</span> </span><span data-type="GN"><span class="mots active">seuil<sup>15</sup></span> </span><span data-type="GV"><span>qui </span><span>sépare</span> </span><span data-type="GN"><span>l’</span><span class="synos active">empire<sup>12</sup></span> <span>des </span><span data-type="GN"><span class="mots active">morts<sup>13</sup></span> <span>du </span><span class="mots active">séjour<sup>16</sup></span> <span>des </span><span class="mots active">vivants<sup>17</sup></span></span></span>, <span class="synos" data-id="3200216_18">lorsqu' </span><span data-type="GV"><span>il </span><span class="lemmes active">s’arrêta<sup>19</sup></span> <span>involontairement </span><span>pour</span> </span><span data-type="GV"><span>jeter</span> </span><span data-type="GN"><span>un </span><span class="mots active" data-id="3200216_26">regard<sup>23</sup></span> <span>d’</span><span data-type="GN"><span class="synos active">amour<sup>18</sup></span></span> </span><span>sur </span><span data-type="GN"><span>l’</span><span class="mots active" data-id="3200216_31">épouse<sup>26</sup></span> </span><span data-type="GV"><span>qui </span><span>lui </span><span>était </span><span class="synos active" data-id="3200216_35">rendue<sup>21</sup></span></span>, <span>hélas</span>&nbsp;! <span data-type="GAdj"><span>rendue</span> </span><span>et </span><span data-type="GAdj"><span>ravie </span><span>à-la-fois</span></span>. </p>
+                  <p><span class="no">[217]</span><span>Si</span>, <span>du </span><span>moins</span>, <span data-type="GV"><span>il </span><span>eût </span><span>eu</span> </span><span data-type="GN"><span>le </span><span>temps</span> </span><span data-type="GV"><span>de </span><span>soulever</span> </span><span data-type="GN"><span>le </span><span class="mots active" data-id="3200217_14">voile<sup>24</sup></span> </span><span data-type="GV"><span>qui </span><span>retombait </span><span>sur</span> </span><span data-type="GN"><span>le </span><span class="mots active" data-id="3200217_19">visage<sup>25</sup></span> <span>d’</span><span data-type="GN"><span class="mots active">Eurydice<sup>20</sup></span></span></span>&nbsp;! </p>
+               </div>
+            </div>
+          </div>
+
+            <div id="TIHGHjC" data-id="pop" style="display:none">
+            <div id="fermeture" onclick="document.getElementById('TIHGHjC').style.display='none'">X</div>
+            <div class="infos" style="margin-top:10%">
+              <input id="mots" type="checkbox" value="MT" onchange="optionChange('MtjBrXE',2)" checked="checked"><label for="mots" style="margin-left: 5px">Heads of constituent lemmatized</label><ul class="legende" id="legendeMots" style="list-style: none; margin:0; padding: 10px">
+                  <li class="groupe mots">Identical heads</li>
+                  <li class="groupe synos">Synonymic heads</li>
+                  <li class="groupe roots">Heads in inflectional or derivational relation</li>
+               </ul>
+            </div>
+            <div class="source" id="2600021">
+               <h5>duryer1702</h5>
+              
+               <p>Cependant <span class="groupe" data-root="Eurydice">Eurydice</span> qui <span class="ind mots">AB</span><span class="groupe" data-root="mourir">mourut alors</span> pour <span class="ind mots">AB</span><span class="groupe" data-root="fois">la seconde fois</span> par <span class="groupe" data-root="faute">la faute de <span class="ind synos">A</span><span class="ind mots">B</span><span class="groupe" data-root="mari">son mari</span></span>, <span class="ind mots">ABC</span><span class="groupe" data-root="plaindre">ne s'en plaignit point</span> <span class="groupe" data-root="mourir">en mourant</span> ; et de quoi <span class="ind mots">A</span><span class="ind roots">B</span><span class="ind mots"></span><span class="groupe" data-root="plaindre">eût-elle pû se plaindre</span> si <span class="ind mots">AB</span><span class="groupe" data-root="aimer">ce n'étoit d'être trop aimée</span> ?</p>
+                <p style="font-style: italic;"><emph>However, Eurydice who <span class="ind mots">AB</span><span class="groupe" data-root="to die">dies</span> for <span class="ind mots">AB</span><span class="groupe" data-root="time">a second time</span> by <span class="groupe" data-root="fault">the fault of <span class="ind synos">A</span><span class="ind mots">B</span><span class="groupe" data-root="husband">her husband</span></span>, <span class="ind mots">ABC</span><span class="groupe" data-root="to complain">does not complain</span> <span class="groupe" data-root="to die">while dying</span>; what, then <span class="ind mots">A</span><span class="ind roots">B</span><span class="ind mots"></span><span class="groupe" data-root="to complain">could she complain</span> of <span class="ind mots">AB</span><span class="groupe" data-root="to love">except being loved too much</span>?</p>
+            </div>
+
+           
+              <div class="target" style="width:86%">
+               <div id="ballanche1829_3201014" data-id="3201014">
+                  <h5>bellegarde1701 [A]</h5>
+                  <p><span class="groupe mots" data-root="mourir">Mourant</span> pour <span class="groupe mots" data-root="fois">la seconde fois</span>, elle <span class="groupe mots" data-root="plaindre">ne se plaignit point</span> de <span class="groupe synos" data-root="époux">son époux</span> ; car de quoi <span class="groupe mots" data-root="plaindre">eût-elle pû se plaindre</span>, sinon qu'il <span class="groupe mots" data-root="aimer">l'avoit trop aimée</span> ?</p>
+                  <p style="font-style: italic;"><emph><span class="groupe mots" data-root="to die">Dying</span>  <span class="groupe mots" data-root="time">a second time</span>, she <span class="groupe mots" data-root="to complain">did not complain</span> of <span class="groupe synos" data-root="spouse">her spouse</span>; what, then, <span class="groupe mots" data-root="to complain">could she complain of</span>, except that he <span class="groupe mots" data-root="to love">loved her too much</span> ?</emph></p>
+               </div>
+               <div id="cabaret-dupaty1897_5600011" data-id="5600011">
+                  <h5>corneille1687 [B]</h5>
+                  
+                  <p><span class="groupe" data-root="observer">Pour avoir de <span class="groupe" data-root="Pluton">Pluton</span> mal observé</span> <span class="groupe" data-root="loi">les loix</span>, il <span class="groupe" data-root="tuer">la tuë</span>, elle <span class="groupe mots" data-root="mourir">meurt</span> <span class="groupe mots" data-root="fois">pour une seconde fois</span>, mais  <span class="groupe" data-root="vie">cette courte vie aussi tost étoufée</span> <span class="groupe mots" data-root="plaindre">ne l'autorise point à se plaindre</span> d'<span class="groupe" data-root="Orphée">Orphée</span> : et <span class="groupe roots" data-roots="plainte">quelle juste plainte</span> <span class="groupe" data-root="former">auroit-elle à former</span> d'<span class="groupe mots" data-root="mari">un Mary</span> qui <span class="groupe" data-root="perdre">la perd</span> pour <span class="groupe mots" data-root="aimer">sçavoir aimer</span> ?</p>
+                  <p style="font-style: italic;"><span class="groupe" data-root="to respect">For he did not respect</span> <span class="groupe" data-root="Pluto">Pluto's</span> <span class="groupe" data-root="law">laws</span>, he <span class="groupe" data-root="to kill">kills her</span>, she <span class="groupe mots" data-root="to die">dies</span> <span class="groupe mots" data-root="time">for a second time</span>, but  <span class="groupe" data-root="life">this short life, to soon stifled,</span> <span class="groupe mots" data-root="to complain">do not allows her to complain</span> of <span class="groupe" data-root="Orpheus">Orpheus</span>: and <span class="groupe roots" data-roots="complaint">what fair complaint</span> <span class="groupe" data-root="to express">would she have to express</span> of <span class="groupe mots" data-root="husband">a husband</span> that <span class="groupe" data-root="to lose">loses her</span> for <span class="groupe mots" data-root="to love">knowing how to love</span>?</p>
+               </div>
+               <div id="charpentier1831_5600011" data-id="5600011" >
+                <h5>ballanche1809 [C]</h5>
+                <p>Il <span class="groupe mots" data-root="plaindre">se plaignait</span> de <span class="groupe" data-root="malheur">son malheur</span> aux <span class="groupe" data-root="arbres">arbres <span class="groupe" data-root="forêt">de la forêt</span></span>, il <span class="groupe mots" data-root="plaindre">s'en plaignait</span> aux <span class="groupe" data-root="astre">astres silencieux de <span class="groupe" data-root="nuit">la nuit</span></span>, il <span class="groupe" data-root="plaindre">se plaignait</span> à <span class="groupe" data-root="nature">la nature entière</span>.</p>
+                <p style="font-style: italic;">He <span class="groupe mots" data-root="to complain">was complaining</span> of <span class="groupe" data-root="misfortune">his misfortune</span> to <span class="groupe" data-root="tree">the trees <span class="groupe" data-root="forest">of the forest</span></span>, he <span class="groupe mots" data-root="to complain">was complaining</span> to <span class="groupe" data-root="star">the silent stars of <span class="groupe" data-root="night">the night</span></span>, he <span class="groupe" data-root="to complain">was complaining</span> to <span class="groupe" data-root="nature">all the nature</span>.</p>
+            </div>
+         </div>
+     </div>
+
+         <div id="TIHGHjD" data-id="pop" style="display:none;">
+            <div id="fermeture" onclick="document.getElementById('TIHGHjC').style.display='none'">X</div>
+            <div class="infos" style="margin-top:10%">
+              <input id="mots" type="checkbox" value="MT" onchange="optionChange('MtjBrXE',2)" checked="checked"><label for="mots" style="margin-left: 5px">Lexical relations</label><ul class="legende" id="legendeMots" style="list-style: none; margin:0; padding: 10px">
+                  <li class="mots active">form~form</li>
+                  <li class="lemmes active">lemma~lemma</li>
+                  <li class="roots active">root~root</li>
+                  <li class="synos active">synonym~synonym or mixted</li>
+               </ul>
+            </div>
+            <div class="source" id="2600021">
+               <h5>duryer1702</h5>
+              
+               <p>Cependant Eurydice qui <span class="lemmes active">mourut<sup>1</sup></span> alors pour la <span class="mots active">seconde<sup>2</sup></span> <span class="mots active">fois<sup>3</sup></span> par la faute de son <span class="lemmes active">mari<sup>4</sup></span>, ne s'en <span class="roots active">plaignit<sup>5</sup></span> <span class="mots active">point<sup>6</sup></span> en mourant ; et de quoi eût-elle pû se <span class="mots active">plaindre<sup>7</sup></span> si ce n'étoit d'être trop <span class="lemmes active">aimée<sup>8</sup></span> ?</p>
+                <p style="font-style: italic;"><emph>However, Eurydice who <span class="lemmes active">dies<sup>1</sup></span> for a <span class="mots active">second<sup>2</sup></span> <span class="mots active">time<sup>3</sup></span> by the fault of her <span class="lemmes active">husband<sup>4</sup></span>, does not <span class="roots active">complain<sup>5</sup></span> <span class="mots active">at all<sup>6</sup></span> while dying ; what, then could she <span class="mots active">complain<sup>7</sup></span> of, except being <span class="lemmes active">loved<sup>8</sup></span> too much?</p>
+            </div>
+           
+              <div class="target" style="width:86%">
+               <!--<div id="ballanche1829_3201014" data-id="3201014">
+                  <h5>bellegarde1701 [A]</h5>
+                  <p><span class="groupe mots" data-root="mourir">Mourant</span> pour <span class="groupe mots" data-root="fois">la seconde fois</span>, elle <span class="groupe mots" data-root="plaindre">ne se plaignit point</span> de <span class="groupe synos" data-root="époux">son époux</span> ; car de quoi <span class="groupe mots" data-root="plaindre">eût-elle pû se plaindre</span>, sinon qu'il <span class="groupe mots" data-root="aimer">l'avoit trop aimée</span> ?</p>
+                  <p style="font-style: italic;"><emph><span class="groupe mots" data-root="to die">Dying</span>  <span class="groupe mots" data-root="time">a second time</span>, she <span class="groupe mots" data-root="to complain">did not complain</span> of <span class="groupe synos" data-root="spouse">her spouse</span>; what, then, <span class="groupe mots" data-root="to complain">could she complain of</span>, except that he <span class="groupe mots" data-root="to love">loved her too much</span> ?</emph></p>
+               </div>-->
+               <div id="cabaret-dupaty1897_5600011" data-id="5600011">
+                  <h5>corneille1687 [B]</h5>
+                  
+                  <p>Pour avoir de Pluton mal observé les loix, il la tuë, elle <span class="lemmes active">meurt<sup>1</sup></span> pour une <span class="mots active">seconde<sup>2</sup></span> <span class="mots active">fois<sup>3</sup></span>, mais  cette courte vie aussi tost étoufée ne l'autorise <span class="mots active">point<sup>6</sup></span> à se <span class="mots active">plaindre<sup>7</sup></span> d'Orphée : et quelle juste <span class="roots active">plainte<sup>5</sup></span> auroit-elle à former d'un <span class="lemmes active">Mary<sup>4</sup></span> qui la perd pour sçavoir <span class="lemmes active">aimer<sup>8</sup></span> ?</p>
+                  <p style="font-style: italic;">For he did not respect Pluto's laws, he kills her, she <span class="lemmes active">dies<sup>1</sup></span> for a <span class="mots active">second<sup>2</sup></span> <span class="mots active">time<sup>3</sup></span>, but this short life, to soon stifled, do not allows her <span class="mots active">at all<sup>6</sup></span> to <span class="mots active">complain<sup>7</sup></span> of Orpheus : and what fair <span class="roots active">complaint</span> would she have to express of a <span class="lemmes active">husband<sup>4</sup></span> that loses her for knowing how to <span class="lemmes active">love<sup>8</sup></span>?</p>
+               </div>
+               <!--<div id="charpentier1831_5600011" data-id="5600011" >
+                <h5>ballanche1809 [C]</h5>
+                <p>Il <span class="groupe mots" data-root="plaindre">se plaignait</span> de <span class="groupe" data-root="malheur">son malheur</span> aux <span class="groupe" data-root="arbres">arbres <span class="groupe" data-root="forêt">de la forêt</span></span>, il <span class="groupe mots" data-root="plaindre">s'en plaignait</span> aux <span class="groupe" data-root="astre">astres silencieux de <span class="groupe" data-root="nuit">la nuit</span></span>, il <span class="groupe" data-root="plaindre">se plaignait</span> à <span class="groupe" data-root="nature">la nature entière</span>.</p>
+                <p style="font-style: italic;">He <span class="groupe mots" data-root="to complain">was complaining</span> of <span class="groupe" data-root="misfortune">his misfortune</span> to <span class="groupe" data-root="tree">the trees <span class="groupe" data-root="forest">of the forest</span></span>, he <span class="groupe mots" data-root="to complain">was complaining</span> to <span class="groupe" data-root="star">the silent stars of <span class="groupe" data-root="night">the night</span></span>, he <span class="groupe" data-root="to complain">was complaining</span> to <span class="groupe" data-root="nature">all the nature</span>.</p>
+            </div>-->
+         </div>
+         </div>
+        <div id="TIHGHjE" data-id="pop" style="display:inline-flex;">
+            <div id="fermeture" onclick="document.getElementById('TIHGHjC').style.display='none'">X</div>
+            <div class="infos" style="margin-top:10%">
+              <input id="mots" type="checkbox" value="MT" onchange="optionChange('MtjBrXE',2)" checked="checked"><label for="mots" style="margin-left: 5px">Lexical relations</label><ul class="legende" id="legendeMots" style="list-style: none; margin:0; padding: 10px">
+                  <li class="mots active">form~form</li>
+                  <li class="lemmes active">lemma~lemma</li>
+                  <li class="roots active">root~root</li>
+                  <li class="synos active">synonym~synonym or mixted</li>
+               </ul>
+            </div>
+            <div class="source" id="2600021">
+               <h5>duryer1702</h5>
+              
+               <p>Cependant Eurydice qui mourut alors pour la <span class="mots active">seconde<sup>1</sup></span> <span class="mots active">fois<sup>2</sup></span> par la faute de son <span class="synos active">mari<sup>3</sup></span>, ne s'en <span class="mots active">plaignit<sup>4</sup></span> <span class="mots active">point<sup>5</sup></span> en <span class="mots active">mourant<sup>6</sup></span> ; et de quoi eût-elle <span class="mots active">pû<sup>7</sup></span> se <span class="mots active">plaindre<sup>8</sup></span> si ce n'étoit d'être trop <span class="mots active">aimée<sup>9</sup></span> ?</p>
+                <p style="font-style: italic;"><emph>However, Eurydice who dies for a <span class="mots active">second<sup>1</sup></span> <span class="mots active">time<sup>2</sup></span> by the fault of her <span class="synos active">husband<sup>3</sup></span>, does not <span class="mots active">complain<sup>4</sup></span> <span class="mots active">at all<sup>5</sup></span> while <span class="mots active">dying<sup>6</sup></span> ; what, then <span class="mots active">could<sup>7</sup></span> she <span class="mots active">complain<sup>8</sup></span> of, except being <span class="mots active">loved<sup>9</sup></span> too much?</p>
+            </div>
+           
+              <div class="target" style="width:86%">
+               <div id="ballanche1829_3201014" data-id="3201014">
+                  <h5>bellegarde1701 [A]</h5>
+                  <p><span class="active mots">Mourant<sup>6</sup></span> pour la <span class="active mots">seconde<sup>1</sup></span> <span class="active mots">fois<sup>2</sup></span>, elle ne se <span class="active mots">plaignit<sup>4</sup></span> <span class="active mots">point<sup>5</sup></span> de son <span class="active synos">époux<sup>3</sup></span> ; car de quoi eût-elle <span class="active mots">pû<sup>7</sup></span> se <span class="active mots">plaindre<sup>8</sup></span>, sinon qu'il l'avoit trop <span class="active mots">aimée<sup>9</sup></span> ?</p>
+                  <p style="font-style: italic;"><emph><span class="active mots">Dying<sup>6</sup></span>  a <span class="active mots">second<sup>1</sup></span> <span class="active mots">time<sup>2</sup></span>, she did not <span class="active mots">complain<sup>4</sup></span> <span class="active mots">at all<sup>5</sup></span> of her <span class="active synos">spouse<sup>3</sup></span>; what, then, <span class="active mots">could<sup>7</sup></span> she <span class="active mots">complain<sup>8</sup></span> of, except that he <span class="active mots">loved<sup>9</sup></span> her too much ?</emph></p>
+               </div>
+               <!--<div id="cabaret-dupaty1897_5600011" data-id="5600011">
+                  <h5>corneille1687 [B]</h5>
+                  
+                  <p>Pour avoir de Pluton mal observé les loix, il la tuë, elle <span class="lemmes active">meurt<sup>1</sup></span> pour une <span class="mots active">seconde<sup>2</sup></span> <span class="mots active">fois<sup>3</sup></span>, mais  cette courte vie aussi tost étoufée ne l'autorise <span class="mots active">point<sup>6</sup></span> à se <span class="mots active">plaindre<sup>7</sup></span> d'Orphée : et quelle juste <span class="roots active">plainte<sup>5</sup></span> auroit-elle à former d'un <span class="lemmes active">Mary<sup>4</sup></span> qui la perd pour sçavoir <span class="lemmes active">aimer<sup>8</sup></span> ?</p>
+                  <p style="font-style: italic;">For he did not respect Pluto's laws, he kills her, she <span class="lemmes active">dies<sup>1</sup></span> for a <span class="mots active">second<sup>2</sup></span> <span class="mots active">time<sup>3</sup></span>, but this short life, to soon stifled, do not allows her <span class="mots active">at all<sup>6</sup></span> to <span class="mots active">complain<sup>7</sup></span> of Orpheus : and what fair <span class="roots active">complaint</span> would she have to express of a <span class="lemmes active">husband<sup>4</sup></span> that loses her for knowing how to <span class="lemmes active">love<sup>8</sup></span>?</p>
+               </div>
+               <div id="charpentier1831_5600011" data-id="5600011" >
+                <h5>ballanche1809 [C]</h5>
+                <p>Il <span class="groupe mots" data-root="plaindre">se plaignait</span> de <span class="groupe" data-root="malheur">son malheur</span> aux <span class="groupe" data-root="arbres">arbres <span class="groupe" data-root="forêt">de la forêt</span></span>, il <span class="groupe mots" data-root="plaindre">s'en plaignait</span> aux <span class="groupe" data-root="astre">astres silencieux de <span class="groupe" data-root="nuit">la nuit</span></span>, il <span class="groupe" data-root="plaindre">se plaignait</span> à <span class="groupe" data-root="nature">la nature entière</span>.</p>
+                <p style="font-style: italic;">He <span class="groupe mots" data-root="to complain">was complaining</span> of <span class="groupe" data-root="misfortune">his misfortune</span> to <span class="groupe" data-root="tree">the trees <span class="groupe" data-root="forest">of the forest</span></span>, he <span class="groupe mots" data-root="to complain">was complaining</span> to <span class="groupe" data-root="star">the silent stars of <span class="groupe" data-root="night">the night</span></span>, he <span class="groupe" data-root="to complain">was complaining</span> to <span class="groupe" data-root="nature">all the nature</span>.</p>
+            </div>-->
+         </div>
+         </div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>

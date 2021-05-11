@@ -1,0 +1,309 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="../css/style.css" rel="stylesheet" type="text/css"><script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/layout-base/layout-base.js"></script><script src="https://unpkg.com/cose-base/cose-base.js"></script><script src="../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script><script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script><script src="../node_modules/cytoscape.cola/cytoscape-cola.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script><script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script><script src="../node_modules/cytoscape-avsdf/cytoscape-avsdf.js"></script><script src="https://unpkg.com/cytoscape-graphml/cytoscape-graphml.js"></script><script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script><script src="../node_modules/cytoscape-cise/cytoscape-cise.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.0/bluebird.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script><script src="../node_modules/cytoscape-euler/cytoscape-euler.js"></script><script src="../node_modules/jquery/dist/jquery.min.js"></script><script src="../node_modules/jquery/dist/randomColor.js"></script><script src="../node_modules/jquery/dist/jquery.canvasjs.min.js"></script><script src="../js/script.js"></script><script src="json/duchemin1837.js"></script></head>
+   <body onload="init()">
+      <header>
+         <h1>Virgile <em>Les Géorgiques</em>, Louis Duchemin [trad.]</h1>
+         <nav class="menu">
+            <ul>
+               <li><a href="../accueil.html">Graphe général</a></li>
+               <li><a onclick="graphe()" href="#">Galaxie</a></li>
+               <li><a onclick="alignement()" href="#">Alignement</a></li>
+               <li><a onclick="champs()" href="#">Champs lexicaux</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="graph">
+         <div id="cy"></div>
+         <div id="legende">
+            <div id="fermeture" onclick="document.getElementById('legende').style.display = 'none'">X</div>
+            <h3>Légende</h3>
+            <ul class="type">
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="diamond.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 120.96852,76.73299 13.70164,-13.79613 13.89062,13.79613 -13.89062,13.796141 z" id="path52" inkscape:connector-curvature="0" inkscape:transform-center-x="-28.726191" inkscape:transform-center-y="-6.0476196"></path>
+                     </g></svg>Traduction d'Ovide</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="hexagone.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 71.400697,104.32744 -3.365042,-6.852705 3.447889,-6.898861 3.447886,-6.898863 3.780967,0.025 c 2.079532,0.01376 5.085273,0.07754 6.679427,0.141739 l 2.89846,0.116729 3.479888,6.575417 c 1.913937,3.616478 3.479887,6.64378 3.479887,6.727338 0,0.360865 -6.632525,13.645566 -6.848247,13.716776 -0.131342,0.0434 -3.25319,0.10613 -6.937439,0.13948 l -6.698636,0.0606 z" id="path66" inkscape:connector-curvature="0"></path>
+                     </g></svg>Traduction de Virgile</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="26.804016mm" height="26.644562mm" viewBox="0 0 26.804016 26.644562" version="1.1" id="svg1044" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="triangle.svg">
+                     <defs id="defs1038"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-736.48959" inkscape:cy="-223.93379" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata1041">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-121.15751,-62.939624)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 121.44584,89.4519 c -0.18765,-0.04864 -0.31522,-0.154938 -0.28348,-0.236207 0.23982,-0.614087 13.30797,-26.273921 13.38199,-26.276069 0.0523,-0.0016 3.09258,5.992889 6.75615,13.320902 l 6.66103,13.32366 -13.08725,-0.02193 c -7.19798,-0.01207 -13.24078,-0.06172 -13.42844,-0.110367 z" id="path64" inkscape:connector-curvature="0"></path>
+                     </g></svg>Modernisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="rond.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="2.8" inkscape:cx="188.94674" inkscape:cy="-26.22114" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <ellipse style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.27912214;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path60" cx="81.645042" cy="97.508041" rx="12.690681" ry="12.42014"></ellipse>
+                     </g></svg>Transmodalisation</li>
+               <li><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="27.214403mm" height="27.503075mm" viewBox="0 0 27.214403 27.503075" version="1.1" id="svg928" inkscape:version="0.92.4 (f8dce91, 2019-08-02)" sodipodi:docname="star.svg">
+                     <defs id="defs922"></defs>
+                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="-535.71406" inkscape:cy="-142.31149" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1850" inkscape:window-height="1016" inkscape:window-x="70" inkscape:window-y="27" inkscape:window-maximized="1"></sodipodi:namedview>
+                     <metadata id="metadata925">
+                        <rdf:RDF>
+                           <cc:Work rdf:about="">
+                              <dc:format>image/svg+xml</dc:format>
+                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                              <dc:title></dc:title>
+                           </cc:Work>
+                        </rdf:RDF>
+                     </metadata>
+                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.035655,-83.677011)">
+                        <path style="opacity:0.97399998;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.17857143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 73.446945,106.42936 0.128109,-4.5835 -1.597557,-2.267718 C 71.098842,98.330905 69.945912,96.667234 69.41543,95.881096 l -0.964509,-1.429346 3.99819,-1.096065 c 2.199003,-0.602837 4.135837,-1.235125 4.304073,-1.405089 0.168235,-0.16996 1.222943,-1.797301 2.3438,-3.616311 1.120855,-1.819011 2.142654,-3.421904 2.270665,-3.561985 0.189344,-0.207198 0.712581,0.461174 2.805973,3.584281 l 2.573226,3.838975 1.275821,0.342072 c 3.718904,0.997108 4.955786,1.343175 5.839301,1.633786 l 0.972704,0.319947 -2.640256,3.677785 -2.640259,3.677794 0.110117,2.36235 c 0.06056,1.2993 0.162796,3.36163 0.227179,4.58296 0.07575,1.43699 0.05015,2.22061 -0.07254,2.22061 -0.104278,0 -2.059483,-0.67417 -4.344892,-1.49817 l -4.15529,-1.49817 -3.915288,1.49817 c -2.153407,0.824 -3.953383,1.49817 -3.999944,1.49817 -0.04656,0 -0.02701,-2.06257 0.04345,-4.5835 z" id="path68" inkscape:connector-curvature="0"></path>
+                     </g></svg>Parodie</li>
+            </ul>
+            <ul class="subtype">
+               <li><span style="color: #c44e52"> ■</span> Poésie</li>
+               <li><span style="color: #4c72b0"> ■</span> Prose</li>
+               <li><span style="color: #ccb974"> ■</span> Opéra</li>
+               <li><span style="color: #55a868"> ■</span> Théâtre</li>
+               <li><span style="color: #dd8452"> ■</span> Bande dessinée</li>
+               <li><span style="color: #8172b3"> ■</span> Autre</li>
+            </ul>
+         </div>
+      </section>
+      <article id="texte_principal">
+         <div id="center">
+            <div id="main">
+               <div id="body" class="body">
+                  <h1>Chant IV</h1>
+                  <ul class="poem">
+                     <li>Vois du courroux des dieux les trop justes effets&nbsp;;</li>
+                     <li>Sur toi d’un crime énorme on poursuit la vengeance&nbsp;;</li>
+                     <li>La peine eût égalé la grandeur de l’offense,</li>
+                     <li>Si le sort l’eût permis. Orphée au sombre bord</li>
+                     <li>D’une épouse adorée ainsi venge la mort.</li>
+                     <li>Car, tandis qu’Eurydice, à périr destinée,</li>
+                     <li>Te fuit d’un pied rapide aux rives du Pénée,</li>
+                     <li>Entre l’épais gazon elle n’aperçoit pas</li>
+                     <li>Un serpent meurtrier étendu sous ses pas.</li>
+                     <li>Des dryades, ses sœurs, les plaintes retentirent,</li>
+                     <li>Le sourcilleux Pangée et Rhodope en gémirent,</li>
+                     <li>Et les champs de Rhésus, le farouche Gélon,</li>
+                     <li>Et la belle Orithye, et l’Hèbre et le Strymon.</li>
+                     <li><a class="note" onclick="affiche('JxMrVRr')">✱</a>Lui, charmant sa douleur par les sons de sa lyre,</li>
+                     <li>C’est toi, quand vient le jour, toi, quand il se retire,</li>
+                     <li>Chère épouse, ah&nbsp;! c’est toi que chante son amour.</li>
+                     <li>Il osa de Pluton affronter le séjour,</li>
+                     <li>Les gouffres infernaux, leurs bois noirs d’épouvante,</li>
+                     <li>Des mânes aborder la foule pâlissante.</li>
+                     <li>Leur tyran formidable, et supplier des cœurs,</li>
+                     <li>Que n’ont jamais touchés ni prières, ni pleurs.</li>
+                     <li>Mais, du fond de l’Erèbe, émus de ses cantiques,</li>
+                     <li>Accouraient par milliers les mânes fantastiques,</li>
+                     <li>Tels qu’on voit dans les bois arriver les oiseaux,</li>
+                     <li>Quand la pluie ou Vesper les chasse des coteaux&nbsp;:</li>
+                     <li>Les vierges, les enfants, innocentes victimes,</li>
+                     <li>Les simulacres vains des héros magnanimes,</li>
+                     <li>Les mères, les époux, et ces adolescents</li>
+                     <li>Placés sur le bûcher aux yeux de leurs parents.</li>
+                     <li>Le Cocyte odieux, semé d’algues hideuses,</li>
+                     <li>Les enferme à jamais de ses ondes fangeuses,</li>
+                     <li>Et le Styx alentour étend ses neuf replis.</li>
+                     <li>De ses divins accords les enfers sont ravis,</li>
+                     <li>Le Tartare s’émeut, et jusqu’aux Euménides,</li>
+                     <li>Entrelaçant leurs crins de vipères livides&nbsp;;</li>
+                     <li>Cerbère apaise aussi ses trois gouffres béants,</li>
+                     <li>Et l’orbe d’Ixion s’arrête avec les vents.</li>
+                     <li>Déjà l’heureux époux revient, libre de craintes&nbsp;;</li>
+                     <li>Et sa chère Eurydice, accordée à ses plaintes,</li>
+                     <li>Dans l’ombre sur ses pas vers les cieux retournait&nbsp;:</li>
+                     <li>Car ainsi Proserpine à tous deux l’ordonnait&nbsp;;</li>
+                     <li>Quand cet amant, saisi d’une aveugle démence.</li>
+                     <li>Si l’enfer pardonnait, bien pardonnable offense,</li>
+                     <li>S’arrête, et, près d’atteindre au lumineux séjour,</li>
+                     <li>Oubliant la défense hélas&nbsp;! vaincu d’amour,</li>
+                     <li>La regarde&nbsp;: sa peine est à jamais perdue,</li>
+                     <li>Et du cruel tyran la promesse est rompue&nbsp;:</li>
+                     <li>Trois fois le Styx de joie en fait mugir ses flots.</li>
+                     <li>Mais elle&nbsp;: «&nbsp;Quel délire, hélas&nbsp;! cause nos maux&nbsp;?</li>
+                     <li>Orphée, un sort jaloux&nbsp;; me rend aux bords funèbres,</li>
+                     <li>Et mes yeux se fermant nagent dans les ténèbres.</li>
+                     <li>Adieu sitôt&nbsp;!… la nuit m’entraînant malgré moi,</li>
+                     <li>J’étends ces faibles mains qui ne sont plus à toi&nbsp;!</li>
+                     <li>Et, comme une vapeur dans les airs étouffée,</li>
+                     <li>L’ombre s’évanouit, et ne voit plus Orphée,</li>
+                     <li>Qui cherche à la saisir, et, malheureux amant,</li>
+                     <li>Avait tant à lui dire à ce dernier moment&nbsp;!</li>
+                     <li>Le gardien de l’Orcus, sourd à sa voix plaintive,</li>
+                     <li>Ne veut plus consentir qu’il gagne l’autre rive.</li>
+                     <li>Arraché par deux fois à l’amour, au bonheur,</li>
+                     <li>Que faire&nbsp;? à qui pourra recourir sa douleur&nbsp;?</li>
+                     <li>Comment fléchir Pluton, rendre l’enfer propice&nbsp;?</li>
+                     <li><a class="note" onclick="affiche('uldwydR')">✱</a>Sur le Styx, déjà froide, hélas, vogue Eurydice&nbsp;!</li>
+                     <li>On dit que cet amant, durant sept mois entiers,</li>
+                     <li>Seul, aux bords du Strymon, ou sur des rocs altiers.</li>
+                     <li>Pleura son Eurydice, et de sa tendre plainte</li>
+                     <li>Fit des antres glacés gémir la sombre enceinte.</li>
+                     <li>Il adoucit le tigre&nbsp;; et ses touchants regrets</li>
+                     <li>Des chênes, en cadence, inclinaient les sommets.</li>
+                     <li><a class="note" onclick="affiche('QgHwFla')">✱</a>Telle, sur un ormeau, Philomèle plaintive</li>
+                     <li>Redemande aux forêts sa famille captive,</li>
+                     <li>Ses petits, nus encor, qu’un pâtre lui ravit&nbsp;;</li>
+                     <li>Sur le même rameau, la nuit, elle gémit,</li>
+                     <li>Redit en vain sa perte&nbsp;; et ses chants lamentables</li>
+                     <li>Font résonner au loin les bois inconsolables.</li>
+                     <li>Nul amour, nul hymen ne toucha ses esprits&nbsp;;</li>
+                     <li>Au rivage glacé du neigeux Tanaïs,</li>
+                     <li>Ou dans les champs couverts des frimas du. Riphée,</li>
+                     <li>Seul errait jour et nuit le malheureux Orphée,</li>
+                     <li>Pleurant son Eurydice et sa fatale ardeur,</li>
+                     <li>Et reprochant aux dieux leur perfide faveur.</li>
+                     <li>De ses mépris enfin les bacchantes outrées,</li>
+                     <li>Au milieu d’une orgie et des fêtes sacrées,</li>
+                     <li>Semèrent de son corps les palpitants lambeaux,</li>
+                     <li>Et sa tête de l’Hèbre ensanglanta les eaux.</li>
+                     <li>Sur les ondes flottante, et malgré son supplice,</li>
+                     <li>D’une langue glacée elle appelle Eurydice,</li>
+                     <li>Malheureuse Eurydice&nbsp;!… et partout, à ces cris,</li>
+                     <li>Eurydice&nbsp;! disaient les échos attendris.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div id="uldwydR" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('uldwydR').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('uldwydR')">
+                     <option value="rat1932_0200018">rat1932, phrase 18</option>
+                     <option value="heguin1827_0700026">heguin1827, phrase 26</option>
+                     <option value="desportes1846_prose_2500027">desportes1846_prose, phrase 27</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('uldwydR',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('uldwydR',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="1600023">
+               <h5>duchemin1837, phrase 23</h5>
+               <p><span class="w">Sur </span><span data-type="GN"><span class="w">le </span><span class="w">Styx </span><span class="lemmes" data-href="2500027_1" data-corresp="desportes1846_prose_2500027"><span class="mots" data-href="0700026_3" data-corresp="heguin1827_0700026"><span class="mots" data-href="0200018_3" data-corresp="rat1932_0200018">déjà </span></span></span><span class="mots" data-href="2500027_4" data-corresp="desportes1846_prose_2500027"><span class="mots" data-href="0700026_10" data-corresp="heguin1827_0700026"><span class="mots" data-href="0200018_4" data-corresp="rat1932_0200018">froide</span></span></span></span>, <span data-type="GV"><span class="w">hélas</span></span>, <span data-type="GV"><span class="lemmes" data-href="2500027_5" data-corresp="desportes1846_prose_2500027"><span class="lemmes" data-href="0200018_6" data-corresp="rat1932_0200018">vogue</span></span> </span><span data-type="GN"><span class="mots" data-href="0700026_12" data-corresp="heguin1827_0700026">Eurydice</span></span></p>
+            </div>
+            <div class="target">
+               <div id="rat1932_0200018" data-id="0200018" style="display:none">
+                  <h5>rat1932, phrase 18</h5>
+                  <p><span>Elle</span>, <span data-type="GAdj"><span class="mots" data-id="0200018_3">déjà </span><span class="mots" data-id="0200018_4">froide</span></span>, <span data-type="GV"><span class="lemmes" data-id="0200018_6">voguait </span><span>dans</span> </span><span data-type="GN"><span>la </span><span>barque </span><span>Stygienne</span></span></p>
+               </div>
+               <div id="heguin1827_0700026" data-id="0700026" style="display:none">
+                  <h5>heguin1827, phrase 26</h5>
+                  <p><span>Hélas</span>&nbsp;! <span class="mots" data-id="0700026_3">déjà </span><span data-type="GN"><span>la </span><span>barque </span><span>fatale</span> </span><span data-type="GV"><span>entraînait</span> </span><span data-type="GN"><span>l’</span><span>ombre </span><span class="mots" data-id="0700026_10">froide </span><span>d’</span><span data-type="GN"><span class="mots" data-id="0700026_12">Eurydice</span></span></span></p>
+               </div>
+               <div id="desportes1846_prose_2500027" data-id="2500027">
+                  <h5>desportes1846_prose, phrase 27</h5>
+                  <p><span class="lemmes" data-id="2500027_1">Déjà </span><span data-type="GN"><span>l’</span><span>ombre </span><span class="mots" data-id="2500027_4">froide</span> </span><span data-type="GV"><span class="lemmes" data-id="2500027_5">voguait </span><span>sur</span> </span><span data-type="GN"><span>la </span><span>barque </span><span>fatale</span></span></p>
+               </div>
+            </div>
+         </div>
+         <div id="QgHwFla" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('QgHwFla').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('QgHwFla')">
+                     <option value="rat1932_0200020">rat1932, phrase 20</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('QgHwFla',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('QgHwFla',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="1600027">
+               <h5>duchemin1837, phrase 27</h5>
+               <p><span class="w">Telle</span>, <span class="w">sur </span><span data-type="GN"><span class="w">un </span><span class="w">ormeau</span></span>, <span data-type="GN"><span class="mots" data-href="0200020_12" data-corresp="rat1932_0200020">Philomèle </span><span class="mots" data-href="0200020_11" data-corresp="rat1932_0200020">plaintive</span> </span><span data-type="GV"><span class="synos" data-href="0200020_44" data-corresp="rat1932_0200020">redemande </span><span class="w">aux</span> </span><span data-type="GN"><span class="w">forêts</span> </span><span data-type="GN"><span class="w">sa </span><span class="synos" data-href="0200020_55" data-corresp="rat1932_0200020">famille </span><span class="w">captive</span></span>, <span data-type="GN"><span class="w">ses </span><span class="mots" data-href="0200020_19" data-corresp="rat1932_0200020">petits</span></span>, <span data-type="GN"><span class="w">nus</span> </span><span class="w">encor</span>, <span class="w">qu’</span><span data-type="GN"><span class="w">un </span><span class="w">pâtre</span> </span><span data-type="GV"><span class="w">lui </span><span class="synos" data-href="0200020_28" data-corresp="rat1932_0200020">ravit</span></span>&nbsp;; <span class="w">sur </span><span data-type="GN"><span class="w">le </span><span class="w">même </span><span class="synos" data-href="0200020_55" data-corresp="rat1932_0200020">rameau</span></span>, <span data-type="GN"><span class="w">la </span><span class="mots" data-href="0200020_46" data-corresp="rat1932_0200020">nuit</span></span>, <span data-type="GV"><span class="w">elle </span><span class="mots" data-href="0200020_13" data-corresp="rat1932_0200020">gémit</span></span>, <span data-type="GAdj"><span class="synos" data-href="0200020_58" data-corresp="rat1932_0200020">redit </span><span class="w">en </span><span class="w">vain</span> </span><span data-type="GN"><span class="w">sa </span><span class="mots" data-href="0200020_16" data-corresp="rat1932_0200020">perte</span></span>&nbsp;; <span class="w">et </span><span data-type="GN"><span class="w">ses </span><span class="lemmes" data-href="0200020_60" data-corresp="rat1932_0200020">chants </span><span class="lemmes" data-href="0200020_61" data-corresp="rat1932_0200020">lamentables</span> </span><span data-type="GV"><span class="synos" data-href="0200020_44" data-corresp="rat1932_0200020">font </span><span class="w">résonner </span><span class="w">au</span> </span><span class="mots" data-href="0200020_70" data-corresp="rat1932_0200020">loin </span><span data-type="GN"><span class="w">les </span><span class="synos" data-href="0200020_55" data-corresp="rat1932_0200020">bois </span><span class="w">inconsolables</span></span></p>
+            </div>
+            <div class="target">
+               <div id="rat1932_0200020" data-id="0200020">
+                  <h5>rat1932, phrase 20</h5>
+                  <p><span>Telle</span>, <span>sous </span><span data-type="GN"><span>l’</span><span>ombre </span><span>d’</span><span>un </span><span data-type="GN"><span>peuplier</span></span></span>, <span data-type="GN"><span>la </span><span class="mots" data-id="0200020_11">plaintive </span><span class="mots" data-id="0200020_12">Philomèle</span> </span><span data-type="GV"><span class="mots" data-id="0200020_13">gémit </span><span>sur</span> </span><span data-type="GN"><span>la </span><span class="mots" data-id="0200020_16">perte </span><span>de </span><span>ses </span><span data-type="GN"><span class="mots" data-id="0200020_19">petits</span></span></span>, <span>qu’</span><span data-type="GN"><span>un </span><span>dur </span><span>laboureur </span><span>aux </span><span data-type="GN"><span>aguets</span></span> </span><span data-type="GV"><span>a </span><span class="synos" data-id="0200020_28">arrachés </span><span>de</span> </span><span data-type="GN"><span>leur </span><span>nid</span></span>, <span>alors </span><span>qu’</span><span>ils </span><span>n’</span><span data-type="GV"><span>avaient </span><span>point </span><span>encore</span> </span><span>de </span><span data-type="GN"><span>plumes</span></span>, <span data-type="GV"><span>elle </span><span class="synos" data-id="0200020_44">passe</span> </span><span data-type="GN"><span>la </span><span class="mots" data-id="0200020_46">nuit</span> </span><span>à </span><span data-type="GN"><span>pleurer</span></span>, <span>et</span>, <span data-type="GAdj"><span>posée </span><span>sur</span> </span><span data-type="GN"><span>une </span><span class="synos" data-id="0200020_55">branche</span></span>, <span data-type="GV"><span>elle </span><span class="synos" data-id="0200020_58">recommence</span> </span><span data-type="GN"><span>son </span><span class="lemmes" data-id="0200020_60">chant </span><span class="lemmes" data-id="0200020_61">lamentable</span></span>, <span>et </span><span>de </span><span data-type="GN"><span>ses </span><span>plaintes </span><span>douloureuses</span> </span><span data-type="GV"><span>emplit </span><span>au </span><span class="mots" data-id="0200020_70">loin</span> </span><span data-type="GN"><span>l’</span><span>espace</span></span></p>
+               </div>
+            </div>
+         </div>
+         <div id="JxMrVRr" data-id="pop">
+            <div id="fermeture" onclick="document.getElementById('JxMrVRr').style.display='none'">X</div>
+            <div class="infos">
+               <form action="affiche-correspondance()">
+                  <legend>Choisir le texte correspondant</legend><select id="corresps" name="corresps" onchange="change_corresp('JxMrVRr')">
+                     <option value="nisard1868_2600005">nisard1868, phrase 5</option></select></form><input id="mots" type="checkbox" value="MT" onchange="optionChange('JxMrVRr',2)"><label for="mots">Mots</label><ul class="legende" id="legendeMots" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Synonymie</li>
+                  <li style="background-color:#E67E22; color:#fff">Relations lexicales flextionnelles et dérivationnelles</li>
+               </ul><input id="groupes" type="checkbox" value="GR" onchange="optionChange('JxMrVRr',1)"><label for="groupes">Groupes des mots et noms propres</label><ul class="legende" id="legendeGroupes" style="display:none">
+                  <li style="background-color:#C0392B; color:#fff">Reprise mot à mot</li>
+                  <li style="background-color:#28b463; color:#fff">Reformulation</li>
+                  <li style="background-color:#3498db; color:#fff">Métaphore</li>
+                  <li style="background-color:#8e44ad; color: #fff">Changement ou périphrase d'un nom propre</li>
+               </ul>
+            </div>
+            <div class="source" id="1600005">
+               <h5>duchemin1837, phrase 5</h5>
+               <p><span class="w">Lui</span>, <span data-type="GV"><span class="mots" data-href="2600005_7" data-corresp="nisard1868_2600005">charmant</span> </span><span data-type="GN"><span class="w">sa </span><span class="lemmes" data-href="2600005_12" data-corresp="nisard1868_2600005">douleur</span> </span><span class="w">par </span><span data-type="GN"><span class="w">les </span><span class="w">sons </span><span class="w">de </span><span class="w">sa </span><span data-type="GN"><span class="mots" data-href="2600005_10" data-corresp="nisard1868_2600005">lyre</span></span></span>, <span data-type="GV"><span class="w">c’</span><span class="w">est </span><span class="w">toi</span></span>, <span class="w">quand </span><span data-type="GV"><span class="lemmes" data-href="2600005_31" data-corresp="nisard1868_2600005">vient</span> </span><span data-type="GN"><span class="w">le </span><span class="mots" data-href="2600005_33" data-corresp="nisard1868_2600005">jour</span></span>, <span class="w">toi</span>, <span class="w">quand </span><span data-type="GV"><span class="w">il </span><span class="w">se </span><span class="synos" data-href="2600005_37" data-corresp="nisard1868_2600005">retire</span></span>, <span data-type="GN"><span class="mots" data-href="2600005_26" data-corresp="nisard1868_2600005">chère </span><span class="mots" data-href="2600005_27" data-corresp="nisard1868_2600005">épouse</span></span>, <span class="w">ah</span>&nbsp;! <span data-type="GV"><span class="w">c’</span><span class="w">est </span><span class="w">toi </span><span class="w">que</span> </span><span data-type="GV"><span class="lemmes" data-href="2600005_22" data-corresp="nisard1868_2600005">chante</span> </span><span data-type="GN"><span class="w">son </span><span class="w">amour</span></span></p>
+            </div>
+            <div class="target">
+               <div id="nisard1868_2600005" data-id="2600005">
+                  <h5>nisard1868, phrase 5</h5>
+                  <p><span data-type="GN"><span>Orphée</span></span>, <span data-type="GN"><span>le </span><span>triste </span><span>Orphée</span></span>, <span data-type="GV"><span class="mots" data-id="2600005_7">charmant </span><span>avec</span> </span><span data-type="GN"><span>sa </span><span class="mots" data-id="2600005_10">lyre</span> </span><span data-type="GN"><span>les </span><span class="lemmes" data-id="2600005_12">douleurs </span><span>du </span><span data-type="GN"><span>veuvage </span><span>seul </span><span>sur</span></span> </span><span data-type="GN"><span>la </span><span>rive </span><span>déserte</span> </span><span>ne </span><span data-type="GV"><span class="lemmes" data-id="2600005_22">chantait</span> </span><span>que </span><span>toi</span>, <span data-type="GN"><span class="mots" data-id="2600005_26">chère </span><span class="mots" data-id="2600005_27">épouse</span></span>, <span data-type="GV"><span>toi </span><span>quand </span><span class="lemmes" data-id="2600005_31">venait</span> </span><span data-type="GN"><span>le </span><span class="mots" data-id="2600005_33">jour</span></span>, <span data-type="GV"><span>toi </span><span>quand </span><span class="synos" data-id="2600005_37">revenait</span> </span><span data-type="GN"><span>la </span><span>nuit</span></span></p>
+               </div>
+            </div>
+         </div>
+         <div class="footnotes"></div>
+      </article>
+      <section id="champ">
+         <div id="cy2"></div>
+      </section>
+   </body><script>
+                function init(){
+                change_corresp();
+                surlignerMots()
+                }
+            </script></html>
