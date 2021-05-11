@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -93,7 +91,7 @@
       </textClass>
     </profileDesc>
   </teiHeader>
-  <text>
+  <text >
     <front>
       <titlePage>
         <docAuthor>Fernand Divoire</docAuthor>
@@ -102,20 +100,18 @@
         </docTitle>
       </titlePage>
     </front>
-
-
     <body>
       <div>
         <head>Chant I <lb/>Orphée et la mort</head>
         <div>
           <head>1 <lb/>Solitude solaire</head>
-          <l><pb n="9" xml:id="p9"/>La dryade Eurydice est morte.</l>
-          <l>Devant la mer de Thrace et ses vagues d’hiver</l>
-          <l>Orphée est seul. Ses pleurs sèchent au vent amer.</l>
-          <l>Eurydice, Eurydice est morte.</l>
-          <l>La fuyante Koré l’emporte</l>
+          <l><milestone unit="sent" n="1"/><pb n="9" xml:id="p9"/>La dryade Eurydice est morte.</l>
+          <l><milestone unit="sent" n="2"/>Devant la mer de Thrace et ses vagues d’hiver</l>
+          <l>Orphée est seul. <milestone unit="sent" n="3"/>Ses pleurs sèchent au vent amer.</l>
+          <l><milestone unit="sent" n="4"/>Eurydice, Eurydice est morte.</l>
+          <l><milestone unit="sent" n="5"/>La fuyante Koré l’emporte</l>
           <l>Au tourbillon de son escorte.</l>
-          <l>Orphée, Orphée est seul et connaît la douleur,</l>
+          <l><milestone unit="sent" n="6"/>Orphée, Orphée est seul et connaît la douleur,</l>
           <l>Car il n’est pas permis de livrer aux vendanges</l>
           <l>Un cœur où le soleil reflète sa ferveur</l>
           <l>Et de recevoir en échange</l>
@@ -123,26 +119,26 @@
         </div>
         <div>
           <head>2 <lb/>Orphée le pur</head>
-          <l><pb n="11" xml:id="p11"/>Quand Orphée accepta l’amour de la dryade</l>
+          <l><milestone unit="sent" n="7"/><pb n="11" xml:id="p11"/>Quand Orphée accepta l’amour de la dryade</l>
           <l>Austère dieu jaloux, il vivait sous ta loi.</l>
-          <l>Les noires panthères nomades</l>
+          <l><milestone unit="sent" n="8"/>Les noires panthères nomades</l>
           <l>Entendaient alors dans sa voix</l>
           <l>La voix juste qui persuade.</l>
-          <l>Alors s’ouvrait devant son calme éclat</l>
-          <l>– Rayonnement modérateur du solitaire –</l>
+          <l><milestone unit="sent" n="9"/>Alors s’ouvrait devant son calme éclat</l>
+          <l><milestone unit="sent" n="10"/>– Rayonnement modérateur du solitaire –</l>
           <l>La foule barbare et prompte aux colères</l>
           <l>Des Hyperboréens rieurs, ses frères.</l>
-          <l>Mais il passait, ne les connaissant pas</l>
+          <l><milestone unit="sent" n="11"/>Mais il passait, ne les connaissant pas</l>
         </div>
         <div>
           <head>3 <lb/>Orphée le constructeur</head>
-          <l><pb n="13" xml:id="p13"/>Il connut Eurydice.</l>
-          <l>Présence féconde, Eurydice.</l>
-          <l>Alors, avec sagesse, il construisit.</l>
-          <l>Elle veillait auprès de lui,</l>
+          <l><milestone unit="sent" n="12"/><pb n="13" xml:id="p13"/>Il connut Eurydice.</l>
+          <l><milestone unit="sent" n="13"/>Présence féconde, Eurydice.</l>
+          <l><milestone unit="sent" n="14"/>Alors, avec sagesse, il construisit.</l>
+          <l><milestone unit="sent" n="15"/>Elle veillait auprès de lui,</l>
           <l>Entre le monde et lui médiatrice.</l>
-          <l>Et lui, dans ses poèmes, témoignant.</l>
-          <l>Expliquait le monde. Et tout ce que nomme</l>
+          <l><milestone unit="sent" n="16"/>Et lui, dans ses poèmes, témoignant.</l>
+          <l><milestone unit="sent" n="17"/>Expliquait le monde. <milestone unit="sent" n="18"/>Et tout ce que nomme</l>
           <l>L’ardente angoisse des vivants</l>
           <l>Il le mesurait dans ses chants,</l>
           <l>Fixant les règles, enseignant</l>
@@ -150,7 +146,7 @@
         </div>
         <div>
           <head>4 <lb/>Solitude solaire</head>
-          <l><pb n="15" xml:id="p15"/>Eurydice n’est plus. Fille de Talaon,</l>
+          <l><milestone unit="sent" n="19"/><pb n="15" xml:id="p15"/>Eurydice n’est plus. <milestone unit="sent" n="20"/>Fille de Talaon,</l>
           <l>Il fallait que l’élu connût les stations</l>
           <l>Qui marquent leur voie aux fils d’Apollon,</l>
           <l>Le bel et triste dieu blond</l>
@@ -162,41 +158,41 @@
           <l>Dont le chant mène l’homme, et qui ne juge point</l>
           <l>Et qui seulement porte</l>
           <l>Témoignage…</l>
-          <l>Hélas, Eurydice est morte.</l>
-          <l>Orphée est seul, puni par ses vœux de bonheur,</l>
+          <l><milestone unit="sent" n="21"/>Hélas, Eurydice est morte.</l>
+          <l><milestone unit="sent" n="22"/>Orphée est seul, puni par ses vœux de bonheur,</l>
           <l>Qui retombent en pluie de pleurs.</l>
         </div>
         <div>
           <head>5 <lb/>Le poids des ombres</head>
-          <l><pb n="17" xml:id="p17"/>Orphée est vaincu par les ombres.</l>
-          <l>Son regard a cessé de tendre vers le ciel,</l>
+          <l><milestone unit="sent" n="23"/><pb n="17" xml:id="p17"/>Orphée est vaincu par les ombres.</l>
+          <l><milestone unit="sent" n="24"/>Son regard a cessé de tendre vers le ciel,</l>
           <l>Vers les solitudes du ciel</l>
           <l>Et l’abstrait domaine des nombres.</l>
-          <l>Depuis qu’il s’est penché vers ton monde charnel,</l>
+          <l><milestone unit="sent" n="25"/>Depuis qu’il s’est penché vers ton monde charnel,</l>
           <l>Eurydice, le Pur est sorti de la voie ;</l>
           <l>Son pouvoir l’a quitté ; la Mort</l>
           <l>A pu saisir la douce proie.</l>
-          <l>Orphée n’était plus assez fort</l>
+          <l><milestone unit="sent" n="26"/>Orphée n’était plus assez fort</l>
           <l>Pour écarter le flot des larves sombres,</l>
           <l>Pour élever au jour le poids d’une ombre.</l>
         </div>
         <div>
           <head>6 <lb/>Eurydice deux fois perdue</head>
-          <l><pb n="19" xml:id="p19"/>Orphée regardait Eurydice</l>
+          <l><milestone unit="sent" n="27"/><pb n="19" xml:id="p19"/>Orphée regardait Eurydice</l>
           <l>Et non point le précipice</l>
           <l>Plein de fantômes innommés.</l>
-          <l>Eurydice montant auprès du guide aimé</l>
+          <l><milestone unit="sent" n="28"/>Eurydice montant auprès du guide aimé</l>
           <l>N’avait de cœur que pour le guide</l>
           <l>Et non pour le voyage et la montée aride.</l>
-          <l>« Sois mon égale et marche seule à mes côtés,</l>
+          <l><milestone unit="sent" n="29"/>« Sois mon égale et marche seule à mes côtés,</l>
           <l>Disait-il ; Eurydice, Eurydice, sois forte. »</l>
-          <l>Eurydice, Eurydice est morte ;</l>
+          <l><milestone unit="sent" n="30"/>Eurydice, Eurydice est morte ;</l>
           <l>Le mauvais maître qui n’a su que l’exhorter</l>
           <l>Demeure seul, bonheur ôté.</l>
         </div>
         <div>
           <head>7 <lb/>L’Harmonie déchirée</head>
-          <l><pb n="21" xml:id="p21"/>L’unité de deux cœurs que voici déliée,</l>
+          <l><milestone unit="sent" n="31"/><pb n="21" xml:id="p21"/>L’unité de deux cœurs que voici déliée,</l>
           <l>L’harmonieux amour que la mort a détruit,</l>
           <l>Orphée en songe le recrée</l>
           <l>De lui seul et de la tendre âme déchirée</l>
@@ -205,35 +201,35 @@
         </div>
         <div>
           <head>8 <lb/>Orphée errant</head>
-          <l><pb n="23" xml:id="p23"/>Le fils du dieu connaît de sombres stations.</l>
-          <l>Seul devant la lyre muette</l>
+          <l><milestone unit="sent" n="32"/><pb n="23" xml:id="p23"/>Le fils du dieu connaît de sombres stations.</l>
+          <l><milestone unit="sent" n="33"/>Seul devant la lyre muette</l>
           <l>Et les tentations</l>
           <l>D’une âme où librement les ombres se reflètent ;</l>
           <l>Tourné toujours vers les rampantes visions</l>
           <l>De l’ombre, Orphée erra de retraite en retraite.</l>
-          <l>Ah ! que ce soient comme autrefois</l>
+          <l><milestone unit="sent" n="34"/>Ah ! que ce soient comme autrefois</l>
           <l>Les ombres éblouies qui se tournent vers-toi !</l>
-          <l>Ô poète errant, souviens-toi</l>
+          <l><milestone unit="sent" n="35"/>Ô poète errant, souviens-toi</l>
           <l>De ce lumineux autrefois,</l>
           <l><pb n="24" xml:id="p24"/>Quand Orphée était pur et dans la plénitude</l>
           <l>Paisible de la certitude.</l>
-          <l>Alors l’absolu de la foi</l>
-          <l>Aveuglait son regard. Mains douces de la foi</l>
-          <l>Qui vous posez sur les paupières. Souples doigts</l>
+          <l><milestone unit="sent" n="36"/>Alors l’absolu de la foi</l>
+          <l>Aveuglait son regard. <milestone unit="sent" n="37"/>Mains douces de la foi</l>
+          <l>Qui vous posez sur les paupières. <milestone unit="sent" n="38"/>Souples doigts</l>
           <l>Maternels qui chassez les vagues multitudes</l>
-          <l>De l’ombre. Absolu… Plénitude…</l>
-          <l>Ah ! baigne-toi de solitude.</l>
+          <l>De l’ombre. <milestone unit="sent" n="39"/>Absolu… Plénitude…</l>
+          <l><milestone unit="sent" n="40"/>Ah ! baigne-toi de solitude.</l>
         </div>
         <div>
           <head>9 <lb/>Orphée aux ménades</head>
-          <l><pb n="25" xml:id="p25"/>Errant, prends garde de trahir.</l>
-          <l>De sourire aux ménades folles, dévêtues.</l>
-          <l>De traîner parmi leurs désirs</l>
+          <l><milestone unit="sent" n="41"/><pb n="25" xml:id="p25"/>Errant, prends garde de trahir.</l>
+          <l><milestone unit="sent" n="42"/>De sourire aux ménades folles, dévêtues.</l>
+          <l><milestone unit="sent" n="43"/>De traîner parmi leurs désirs</l>
           <l>Ton inutile harpe, détendue.</l>
-          <l>Ne sois pas l’Orphée aux chaînes de fleurs,</l>
+          <l><milestone unit="sent" n="44"/>Ne sois pas l’Orphée aux chaînes de fleurs,</l>
           <l>Couronné de fleurs d’Ionie</l>
           <l>Et qui renie, et qui oublie…</l>
-          <l><hi rend="sc">Orpheus</hi>. Mais célébrer la sereine splendeur,</l>
+          <l><hi rend="sc">Orpheus</hi>. <milestone unit="sent" n="45"/>Mais célébrer la sereine splendeur,</l>
           <l>Et guider d’un fil d’harmonie</l>
           <l>Le vol de l’humaine âme en pleurs ;</l>
           <l><pb n="26" xml:id="p26"/>Mais gouverner les panthères dociles,</l>
@@ -241,64 +237,64 @@
           <l>Dont la harpe construit les villes,</l>
           <l>Voilà le grand Orphée ; et goûter la douceur,</l>
           <l>L’âpre douceur où baigne une âme toute seule.</l>
-          <l>Les folles rôdent, c’est ton cœur,</l>
+          <l><milestone unit="sent" n="46"/>Les folles rôdent, c’est ton cœur,</l>
           <l>Ton cœur,</l>
           <l>Ah ! ton cœur divin qu’elles veulent.</l>
         </div>
         <div>
           <head>10 <lb/>Le seul entouré d’amour</head>
-          <l><pb n="27" xml:id="p27"/>Oh ! sois fidèle au souvenir</l>
+          <l><milestone unit="sent" n="47"/><pb n="27" xml:id="p27"/>Oh ! sois fidèle au souvenir</l>
           <l>D’Eurydice l’inoubliée…</l>
-          <l>Mais toutes se sont fiancées</l>
+          <l><milestone unit="sent" n="48"/>Mais toutes se sont fiancées</l>
           <l>Avec Eurydice à ta destinée ;</l>
           <l>Et ton corps à leurs corps n’a cessé de s’unir</l>
           <l>Dès qu’au corps d’Eurydice il dut appartenir.</l>
-          <l>Eurydice l’inoubliée…</l>
-          <l>Souvenir aimé qu’éloigne la mort…</l>
-          <l>Épargne l’amour de celles encor</l>
+          <l><milestone unit="sent" n="49"/>Eurydice l’inoubliée…</l>
+          <l><milestone unit="sent" n="50"/>Souvenir aimé qu’éloigne la mort…</l>
+          <l><milestone unit="sent" n="51"/>Épargne l’amour de celles encor</l>
           <l>Qui se déchirent la poitrine</l>
           <l>En prononçant ton nom,</l>
           <l><pb n="28" xml:id="p28"/>Orphée aux yeux lointains, Orphée aux cheveux blonds</l>
           <l>Que la tristesse incline</l>
           <l>Au-devant de ton front.</l>
-          <l>Chastement fidèle aux prières vaines</l>
+          <l><milestone unit="sent" n="52"/>Chastement fidèle aux prières vaines</l>
           <l>Qui rayonnent vers ton nom,</l>
           <l>Vers ta triste douceur lointaine,</l>
           <l>Épargne aux mille aveux fiancés à ton nom</l>
           <l>L’espoir, le dépit et la haine.</l>
-          <l>Qu’un même doux refus s’oppose au même don</l>
+          <l><milestone unit="sent" n="53"/>Qu’un même doux refus s’oppose au même don</l>
           <l>Des ménades aux fureurs vaines</l>
           <l>Et des femmes doriennes.</l>
         </div>
         <div>
           <head>11 <lb/>Les ménades et le secret</head>
-          <l><pb n="29" xml:id="p29"/>Et dis-leur ton divin secret</l>
+          <l><milestone unit="sent" n="54"/><pb n="29" xml:id="p29"/>Et dis-leur ton divin secret</l>
           <l>Afin que, livré désormais</l>
           <l>Aux furieux sabots de la cohue,</l>
           <l>Tu sois foulé ; et que ta force répandue</l>
           <l>Remonte vers toi, débridée, et tue.</l>
-          <l>Car c’est le prix que doit payer celui qui sait</l>
+          <l><milestone unit="sent" n="55"/>Car c’est le prix que doit payer celui qui sait</l>
           <l>Et dont le rôle est de verser à la cohue</l>
           <l>Le vin dangereux de l’abstrait.</l>
-          <l>Partage ta science, Orphée ;</l>
+          <l><milestone unit="sent" n="56"/>Partage ta science, Orphée ;</l>
           <l>Et ta tête, sanglant trophée</l>
           <l><pb n="30" xml:id="p30"/>Au poing d’une ménade ivre de ton secret,</l>
           <l>Tournoie, et roule aux flots de l’Hèbre.</l>
-          <l>Tandis qu’une ronde funèbre</l>
+          <l><milestone unit="sent" n="57"/>Tandis qu’une ronde funèbre</l>
           <l>Qui de cris scandés se repaît</l>
           <l>Agite la foule enivrée</l>
           <l>Autour de ta chair déchirée.</l>
         </div>
         <div>
           <head>12 <lb/>Le Désert d’Orphée</head>
-          <l><pb n="31" xml:id="p31"/>Entre les rochers et la mer,</l>
+          <l><milestone unit="sent" n="58"/><pb n="31" xml:id="p31"/>Entre les rochers et la mer,</l>
           <l>Où la Thrace barbare arrête son rivage,</l>
           <l>Orphée erre, sauvage.</l>
-          <l>Il aspire le vent amer.</l>
+          <l><milestone unit="sent" n="59"/>Il aspire le vent amer.</l>
           <l>…Et tu voudrais, ô poète sauvage,</l>
           <l>Avoir assez d’espace en ton cœur ruiné</l>
           <l>Pour contenir un désert calciné.</l>
-          <l>Ô, que ce ne soit plus le désert qui t’accable,</l>
+          <l><milestone unit="sent" n="60"/>Ô, que ce ne soit plus le désert qui t’accable,</l>
           <l>Mais plutôt cette plaine où chemine sans fin</l>
           <l>L inquiète troupe innombrable</l>
           <l>Errant sans fin</l>
@@ -306,198 +302,198 @@
         </div>
         <div>
           <head>13 <lb/>Le Prix du chant</head>
-          <l><pb n="33" xml:id="p33"/>Le chant ne trouve sa naissance</l>
+          <l><milestone unit="sent" n="61"/><pb n="33" xml:id="p33"/>Le chant ne trouve sa naissance</l>
           <l>Que dans le cœur où la douleur et le silence</l>
           <l>Attendent en veillant sa soudaine présence.</l>
-          <l>Donc, tais-toi, cœur d’Orphée ; éloigne tes regrets.</l>
-          <l>Ô cœur, tais-toi… Eurydice, Eurydice,</l>
+          <l><milestone unit="sent" n="62"/>Donc, tais-toi, cœur d’Orphée ; éloigne tes regrets.</l>
+          <l><milestone unit="sent" n="63"/>Ô cœur, tais-toi… Eurydice, Eurydice,</l>
           <l>Orphée est prêt.</l>
-          <l>Ménades, il paiera le prix du sacrifice ;</l>
+          <l><milestone unit="sent" n="64"/>Ménades, il paiera le prix du sacrifice ;</l>
           <l>Il paiera pour le chant où vivra le secret</l>
           <l>Et qui vous guidera de loin, clair édifice.</l>
         </div>
         <div>
           <head>14 <lb/>Les Cendres du cœur</head>
-          <l><pb n="35" xml:id="p35"/>Et s’il se tient, silencieux, devant la mer,</l>
+          <l><milestone unit="sent" n="65"/><pb n="35" xml:id="p35"/>Et s’il se tient, silencieux, devant la mer,</l>
           <l>C’est encore qu’il a, pour notre exemple, offert</l>
           <l>Au vent du large un peu de cendres.</l>
-          <l>Tout ce qui lui restait d’un faible cœur de chair.</l>
-          <l>Qu’ainsi chacun sache répandre</l>
+          <l><milestone unit="sent" n="66"/>Tout ce qui lui restait d’un faible cœur de chair.</l>
+          <l><milestone unit="sent" n="67"/>Qu’ainsi chacun sache répandre</l>
           <l>Loin de son cœur l’impure et lourde cendre</l>
           <l>Des Titans foudroyés.</l>
-          <l>Et dans la paix et le silence</l>
+          <l><milestone unit="sent" n="68"/>Et dans la paix et le silence</l>
           <l>Qu’ainsi chacun reforme avec piété</l>
           <l>Une harmonieuse substance</l>
           <l>Autour d’un cœur purifié.</l>
         </div>
         <div>
           <head>15 <lb/>Orphée purifié</head>
-          <l><pb n="37" xml:id="p37"/>Cœur pur. Il n’a plus rien à donner que sa lyre.</l>
-          <l>Mais c’est là le dépôt sacré,</l>
+          <l><milestone unit="sent" n="69"/><pb n="37" xml:id="p37"/>Cœur pur. <milestone unit="sent" n="70"/>Il n’a plus rien à donner que sa lyre.</l>
+          <l><milestone unit="sent" n="71"/>Mais c’est là le dépôt sacré,</l>
           <l>La clef du monde aux intervalles mesurés,</l>
           <l>Qu’il ne faut pas livrer</l>
           <l>Au délire.</l>
-          <l>Orphée est en paix. Le chant attendu</l>
+          <l><milestone unit="sent" n="72"/>Orphée est en paix. <milestone unit="sent" n="73"/>Le chant attendu</l>
           <l>Peut s’élever ; le cœur du poète s’est tu.</l>
-          <l>On n’entend plus</l>
+          <l><milestone unit="sent" n="74"/>On n’entend plus</l>
           <l>Que le vent dans l’espace</l>
           <l>Et le bruit de la mer sur les rochers de Thrace.</l>
         </div>
         <div>
           <head>16 <lb/>L’Attente des ménades</head>
-          <l><pb n="39" xml:id="p39"/>Les ménades, par les forêts,</l>
+          <l><milestone unit="sent" n="75"/><pb n="39" xml:id="p39"/>Les ménades, par les forêts,</l>
           <l>Courent avec des cris d’ivresse.</l>
-          <l>Oïoh ! Ho ! leurs appels de sommet en sommet</l>
+          <l><milestone unit="sent" n="76"/>Oïoh ! Ho ! leurs appels de sommet en sommet</l>
           <l>Se répondent sans fin ; mais aussitôt renaissent.</l>
-          <l>Insatisfaits.</l>
-          <l>Elles souffrent, Orphée.</l>
-          <l>Elles se frappent, assoiffées</l>
+          <l><milestone unit="sent" n="77"/>Insatisfaits.</l>
+          <l><milestone unit="sent" n="78"/>Elles souffrent, Orphée.</l>
+          <l><milestone unit="sent" n="79"/>Elles se frappent, assoiffées</l>
           <l>De paroles et de secrets.</l>
-          <l>Leur chœur épars attend le coryphée ;</l>
+          <l><milestone unit="sent" n="80"/>Leur chœur épars attend le coryphée ;</l>
           <l>Leurs poings sanglants attendent le trophée</l>
           <l>Et la coupe où luira le vin pur de l’Abstrait.</l>
-          <l>Les ménades ont soif du sang pur de l’Abstrait.</l>
-          <l>Quand chanterons-nous ton poème, Orphée ?</l>
+          <l><milestone unit="sent" n="81"/>Les ménades ont soif du sang pur de l’Abstrait.</l>
+          <l><milestone unit="sent" n="82"/>Quand chanterons-nous ton poème, Orphée ?</l>
         </div>
       </div>
       <div>
         <head>Chant II <lb/>La Sérénité d’Orphée</head>
         <div>
           <head>17 <lb/>Les Mortes autour d’Orphée</head>
-          <l><pb n="43" xml:id="p43"/>Ton chant est doux, Souvenir apaisé.</l>
-          <l>Le Silence veillant, le cœur a reposé.</l>
-          <l>La morte n’est pas morte.</l>
-          <l>Aucune des mortes n’est morte.</l>
-          <l>Les mains du Souvenir sont fortes ;</l>
+          <l><milestone unit="sent" n="83"/><pb n="43" xml:id="p43"/>Ton chant est doux, Souvenir apaisé.</l>
+          <l><milestone unit="sent" n="84"/>Le Silence veillant, le cœur a reposé.</l>
+          <l><milestone unit="sent" n="85"/>La morte n’est pas morte.</l>
+          <l><milestone unit="sent" n="86"/>Aucune des mortes n’est morte.</l>
+          <l><milestone unit="sent" n="87"/>Les mains du Souvenir sont fortes ;</l>
           <l>L’une tient le poète et l’autre tient les mortes.</l>
-          <l>Personne ici n’est mort</l>
+          <l><milestone unit="sent" n="88"/>Personne ici n’est mort</l>
           <l>Que tous ceux qui sont morts.</l>
-          <l>Les vivants ne sont que des corps</l>
+          <l><milestone unit="sent" n="89"/>Les vivants ne sont que des corps</l>
           <l>Dociles, poursuivant l’effort têtu des morts.</l>
-          <l><pb n="44" xml:id="p44"/>Les morts autour de nous sont de la vie.</l>
-          <l>Et saisie et rendue il n’y a qu’une vie</l>
+          <l><pb n="44" xml:id="p44"/><milestone unit="sent" n="90"/>Les morts autour de nous sont de la vie.</l>
+          <l><milestone unit="sent" n="91"/>Et saisie et rendue il n’y a qu’une vie</l>
           <l>Comme il n’y a qu’un fil de temps qui lie</l>
           <l>Les siècles morts à la minute en vie.</l>
-          <l>Tes mortes sont auprès de toi.</l>
-          <l>Leur chant est doux. Le Souvenir donne sa voix</l>
+          <l><milestone unit="sent" n="92"/>Tes mortes sont auprès de toi.</l>
+          <l><milestone unit="sent" n="93"/>Leur chant est doux. <milestone unit="sent" n="94"/>Le Souvenir donne sa voix</l>
           <l>À ces mortes autour de toi.</l>
-          <l>Ah ! que de vie, Orphée, autour de toi.</l>
+          <l><milestone unit="sent" n="95"/>Ah ! que de vie, Orphée, autour de toi.</l>
         </div>
         <div>
           <head>18 <lb/>Douceur des mortes</head>
-          <l><pb n="45" xml:id="p45"/>Toute cette mort vivante, fluide.</l>
-          <l>T’enfante sans fin, t’apaise, te guide.</l>
-          <l>Toute cette vie, amoureusement,</l>
+          <l><milestone unit="sent" n="96"/><pb n="45" xml:id="p45"/>Toute cette mort vivante, fluide.</l>
+          <l><milestone unit="sent" n="97"/>T’enfante sans fin, t’apaise, te guide.</l>
+          <l><milestone unit="sent" n="98"/>Toute cette vie, amoureusement,</l>
           <l>Obéit à ton chant !</l>
-          <l>Sérénité. Toutes tes heures</l>
+          <l><milestone unit="sent" n="99"/>Sérénité. Toutes tes heures</l>
           <l>T’entourent, demeurent.</l>
-          <l>Chère guirlande inoubliée : efforts,</l>
+          <l><milestone unit="sent" n="100"/>Chère guirlande inoubliée : efforts,</l>
           <l>Silences dorés, parfum des remords ;</l>
           <l>Fragile guirlande que porte</l>
           <l>Le long cortège de tes morts,</l>
           <l>Des si présentes mortes.</l>
-          <l>De tes chers amis morts ;</l>
+          <l><milestone unit="sent" n="101"/>De tes chers amis morts ;</l>
           <l><pb n="46" xml:id="p46"/>Toi tout entier, années et paysages.</l>
-          <l>Tout toi-même dans leurs visages.</l>
-          <l>Ah ! souriant aux ombres, ton visage</l>
+          <l><milestone unit="sent" n="102"/>Tout toi-même dans leurs visages.</l>
+          <l><milestone unit="sent" n="103"/>Ah ! souriant aux ombres, ton visage</l>
           <l>– <hi rend="sc">Sérénité</hi> – rayonne de douceur.</l>
-          <l>Tout ce qui a touché ton cœur</l>
+          <l><milestone unit="sent" n="104"/>Tout ce qui a touché ton cœur</l>
           <l>Lui reste infini de douceur.</l>
         </div>
         <div>
           <head>19 <lb/>Le Spectacle hors du cœur</head>
-          <l><pb n="47" xml:id="p47"/>Mortes, mortes, baisers suprêmes…</l>
-          <l>Mais n’aimeras-tu point au-delà de toi-même ?</l>
-          <l>Maintenant, tu es nu,</l>
+          <l><milestone unit="sent" n="105"/><pb n="47" xml:id="p47"/>Mortes, mortes, baisers suprêmes…</l>
+          <l><milestone unit="sent" n="106"/>Mais n’aimeras-tu point au-delà de toi-même ?</l>
+          <l><milestone unit="sent" n="107"/>Maintenant, tu es nu,</l>
           <l>Nécromant de l’amour perdu, resteras-tu</l>
           <l>Seulement quelqu’un qui a survécu ?</l>
-          <l>Mortes, mortes, baisers suprêmes…</l>
-          <l>Tu n’avais que ton cœur et l’as sacrifié,</l>
+          <l><milestone unit="sent" n="108"/>Mortes, mortes, baisers suprêmes…</l>
+          <l><milestone unit="sent" n="109"/>Tu n’avais que ton cœur et l’as sacrifié,</l>
           <l>pur, purifié, mais pauvre, dépouillé,</l>
           <l>Et tu meurs de ta pauvreté. <hi rend="sc">Hors de toi-même !</hi></l>
           <l>Mortes, baisers suprêmes, baisers froids…</l>
           <l><pb n="48" xml:id="p48"/>Regarde le spectacle au-delà de toi-même ;</l>
           <l>Il n’y a plus rien à aimer en toi.</l>
-          <l>Monde, vivant poème ;</l>
+          <l><milestone unit="sent" n="110"/>Monde, vivant poème ;</l>
           <l>Air vif, monde clair ;</l>
           <l>Musique du monde ;</l>
-          <l>C’est de cela qu’il faut pleurer. Grand chant du monde ;</l>
+          <l>C’est de cela qu’il faut pleurer. <milestone unit="sent" n="111"/>Grand chant du monde ;</l>
           <l>C’est cela qui féconde.</l>
-          <l>Danse des univers</l>
+          <l><milestone unit="sent" n="112"/>Danse des univers</l>
           <l>Sur toi, au ciel de Thrace.</l>
-          <l>Saltation des rythmes dans l’espace.</l>
-          <l>Entrechoc dansant des vagues. Et Mer,</l>
+          <l><milestone unit="sent" n="113"/>Saltation des rythmes dans l’espace.</l>
+          <l><milestone unit="sent" n="114"/>Entrechoc dansant des vagues. <milestone unit="sent" n="115"/>Et Mer,</l>
           <l>Chant de la mer, horizon de la mer.</l>
-          <l>Plénitude. Air vif. Monde clair.</l>
-          <l>Ah ! sont-ce d’autres pleurs, maintenant, sur ta face ?</l>
+          <l><milestone unit="sent" n="116"/>Plénitude. Air vif. Monde clair.</l>
+          <l><milestone unit="sent" n="117"/>Ah ! sont-ce d’autres pleurs, maintenant, sur ta face ?</l>
         </div>
         <div>
           <head>20 <lb/>Le Rythme fraternel</head>
-          <l><pb n="49" xml:id="p49"/>Et dis, en toi. quel rythme fraternel ?</l>
-          <l>Écoute, en toi, l’unisson des appels.</l>
-          <l>Oh ! fraternité du poète</l>
+          <l><milestone unit="sent" n="118"/><pb n="49" xml:id="p49"/>Et dis, en toi. quel rythme fraternel ?</l>
+          <l><milestone unit="sent" n="119"/>Écoute, en toi, l’unisson des appels.</l>
+          <l><milestone unit="sent" n="120"/>Oh ! fraternité du poète</l>
           <l>Et des vivants de la terre et du ciel.</l>
-          <l>Battements fraternels :</l>
-          <l>Rythme de ton cœur ; rythme universel</l>
+          <l><milestone unit="sent" n="121"/>Battements fraternels :</l>
+          <l><milestone unit="sent" n="122"/>Rythme de ton cœur ; rythme universel</l>
           <l>Et rythme dansant des hommes en fête.</l>
-          <l>Fraternité. Ô cœur fraternel du poète.</l>
-          <l>Fraternelle ferveur</l>
+          <l><milestone unit="sent" n="123"/>Fraternité. Ô cœur fraternel du poète.</l>
+          <l><milestone unit="sent" n="124"/>Fraternelle ferveur</l>
           <l>En qui toute harmonie</l>
           <l><pb n="50" xml:id="p50"/>Renaît et communie.</l>
-          <l>Cœur où toute harmonie</l>
+          <l><milestone unit="sent" n="125"/>Cœur où toute harmonie</l>
           <l>Trouve sa corde et vibre et communie</l>
           <l>Avec les ronflements de la danse infinie.</l>
-          <l>Ô Dorien, laisse faire ton cœur.</l>
+          <l><milestone unit="sent" n="126"/>Ô Dorien, laisse faire ton cœur.</l>
         </div>
         <div>
           <head>21 <lb/>Cœur retrouvé</head>
-          <l><pb n="51" xml:id="p51"/>Trouver la paix. Trouver le sage asile…</l>
-          <l>Ah ! puisque tu n’es plus que froide ombre stérile,</l>
+          <l><milestone unit="sent" n="127"/><pb n="51" xml:id="p51"/>Trouver la paix. <milestone unit="sent" n="128"/>Trouver le sage asile…</l>
+          <l><milestone unit="sent" n="129"/>Ah ! puisque tu n’es plus que froide ombre stérile,</l>
           <l>Solitude, sortir de ton ombre stérile.</l>
-          <l>Retrouver son cœur, qui se reconnaît.</l>
-          <l>Oh ! retrouver des liens pour son cœur, qui renaît.</l>
-          <l>Ô Cœur perdu, te rassembler ; te garder prêt ;</l>
-          <l>Trouver la paix. Et puis, donner la paix.</l>
-          <l>Orphée, ô constructeur de villes.</l>
-          <l>Donner la paix, entr’ouvrir un asile</l>
+          <l><milestone unit="sent" n="130"/>Retrouver son cœur, qui se reconnaît.</l>
+          <l><milestone unit="sent" n="131"/>Oh ! retrouver des liens pour son cœur, qui renaît.</l>
+          <l><milestone unit="sent" n="132"/>Ô Cœur perdu, te rassembler ; te garder prêt ;</l>
+          <l>Trouver la paix. <milestone unit="sent" n="133"/>Et puis, donner la paix.</l>
+          <l><milestone unit="sent" n="134"/>Orphée, ô constructeur de villes.</l>
+          <l><milestone unit="sent" n="135"/>Donner la paix, entr’ouvrir un asile</l>
           <l>À ces errants cœurs imparfaits.</l>
         </div>
         <div>
           <head>22 <lb/>La Nouvelle alliance</head>
-          <l><pb n="53" xml:id="p53"/>Orphée, admettre l’homme et refaire alliance.</l>
-          <l>Trouver enfin sa propre ressemblance</l>
+          <l><milestone unit="sent" n="136"/><pb n="53" xml:id="p53"/>Orphée, admettre l’homme et refaire alliance.</l>
+          <l><milestone unit="sent" n="137"/>Trouver enfin sa propre ressemblance</l>
           <l>Sur les muets visages de souffrance.</l>
-          <l>Se rapprocher, par sa faiblesse et sa souffrance,</l>
+          <l><milestone unit="sent" n="138"/>Se rapprocher, par sa faiblesse et sa souffrance,</l>
           <l>Et souhaiter aux passants le bonjour,</l>
           <l>Ô maître du cœur des bêtes sauvages !</l>
-          <l>Retrouver de l’amour,</l>
+          <l><milestone unit="sent" n="139"/>Retrouver de l’amour,</l>
           <l>Mettre sa part dans l’offrande d’amour,</l>
           <l>Donner ses mains à la ronde d’amour,</l>
           <l>Se donner enfin, Orphée, à l’amour.</l>
-          <l>Entre ces poings disjoints, pesants, prêts à l’outrage,</l>
+          <l><milestone unit="sent" n="140"/>Entre ces poings disjoints, pesants, prêts à l’outrage,</l>
           <l>Créer l’harmonie de l’amour.</l>
         </div>
         <div>
           <head>23 <lb/>Le Don clairvoyant</head>
-          <l><pb n="55" xml:id="p55"/>Ô clairvoyant, vision belle et claire…</l>
-          <l>Toi qui soupesas la pierre des cœurs,</l>
+          <l><milestone unit="sent" n="141"/><pb n="55" xml:id="p55"/>Ô clairvoyant, vision belle et claire…</l>
+          <l><milestone unit="sent" n="142"/>Toi qui soupesas la pierre des cœurs,</l>
           <l>La faire battre au rythme créateur.</l>
-          <l>La faire vivre enfin, lui rendre une ferveur</l>
+          <l><milestone unit="sent" n="143"/>La faire vivre enfin, lui rendre une ferveur</l>
           <l>Et lier la pierre à la pierre.</l>
-          <l>Clairvoyant, animer de ton âme ces pierres</l>
+          <l><milestone unit="sent" n="144"/>Clairvoyant, animer de ton âme ces pierres</l>
           <l>Qui forment le collier vivant</l>
           <l>Du monde et se renvoient son sang</l>
           <l>D’âge en âge… Perpétuel collier vivant</l>
           <l>Qui lie autour du temps et de la terre</l>
           <l>La ronde des douleurs et de l’espoir dansant,</l>
           <l>Et de l’espoir naissant.</l>
-          <l><pb n="56" xml:id="p56"/>Que tu sois tout donné à la tâche reçue,</l>
+          <l><pb n="56" xml:id="p56"/><milestone unit="sent" n="145"/>Que tu sois tout donné à la tâche reçue,</l>
           <l>Il le faut bien ; et tout voué au lourd labour</l>
           <l>Il le faut bien, puisque tels sont le doux et lourd</l>
           <l>Labeur d’Orphée et sa souffrance élue –</l>
           <l>Puisqu’il faut forcer sa foi détendue</l>
           <l>Pour féconder son cœur et fleurir en amour.</l>
-          <l>Orphée, ah ! sois tout amour</l>
+          <l><milestone unit="sent" n="146"/>Orphée, ah ! sois tout amour</l>
           <l>Puisqu’Eurydice est perdue.</l>
         </div>
       </div>
@@ -505,113 +501,113 @@
         <head>Chant III <lb/>La Lyre d’Orphée</head>
         <div>
           <head>24 <lb/>Orphée à la voix juste</head>
-          <l><pb n="59" xml:id="p59"/>Tu es l’homme à la voix juste.</l>
-          <l>Infaillible voix</l>
+          <l><milestone unit="sent" n="147"/><pb n="59" xml:id="p59"/>Tu es l’homme à la voix juste.</l>
+          <l><milestone unit="sent" n="148"/>Infaillible voix</l>
           <l>Que suivent couronnés de myrtes les poètes</l>
           <l>Et les blancs prêtres-prophètes</l>
           <l>Et les danseuses parfaites.</l>
-          <l>Maître, et ta lyre parfaite</l>
+          <l><milestone unit="sent" n="149"/>Maître, et ta lyre parfaite</l>
           <l>Sachant obéir à ta voix.</l>
-          <l>Tu l’accordes selon les lois</l>
+          <l><milestone unit="sent" n="150"/>Tu l’accordes selon les lois</l>
           <l>Qui sagement gouvernent l’ordonnance</l>
           <l>Mystique des cités, l’ordre des douze mois</l>
           <l>Et l’harmonieuse cadence</l>
           <l>Des sphères, et des chants divins, et de la danse.</l>
-          <l>Puissante donc comme ces lois</l>
+          <l><milestone unit="sent" n="151"/>Puissante donc comme ces lois</l>
           <l>Se mesure, selon ton cœur, ta juste voix.</l>
         </div>
         <div>
           <head>25 <lb/>La Lyre, la harpe</head>
-          <l><pb n="61" xml:id="p61"/>Lyre : sept cordes se répondent.</l>
-          <l>Sept pouvoirs sur sept mondes.</l>
-          <l>Mais sur la harpe gronde</l>
+          <l><milestone unit="sent" n="152"/><pb n="61" xml:id="p61"/>Lyre : sept cordes se répondent.</l>
+          <l><milestone unit="sent" n="153"/>Sept pouvoirs sur sept mondes.</l>
+          <l><milestone unit="sent" n="154"/>Mais sur la harpe gronde</l>
           <l>Un chant plus vaste et plus vivant.</l>
-          <l>Par les vertus des sept sons de la lyre</l>
+          <l><milestone unit="sent" n="155"/>Par les vertus des sept sons de la lyre</l>
           <l>Le poète, chantant,</l>
           <l>Voit les murailles se construire.</l>
-          <l>Mais sur la harpe au chant mouvant</l>
+          <l><milestone unit="sent" n="156"/>Mais sur la harpe au chant mouvant</l>
           <l>Toute son âme au-delà des sept notes</l>
           <l>Rêve pour elle-même, et rugit, ou sanglote.</l>
-          <l>Quelle règle ? Quelle couleur de l’Océan ?</l>
-          <l>Écoute les sons se répandre</l>
+          <l><milestone unit="sent" n="157"/>Quelle règle ? Quelle couleur de l’Océan ?</l>
+          <l><milestone unit="sent" n="158"/>Écoute les sons se répandre</l>
           <l><pb n="62" xml:id="p62"/>Largement, au rythme du vent.</l>
-          <l>C’est toute l’âme avec ses flots et ses méandres,</l>
+          <l><milestone unit="sent" n="159"/>C’est toute l’âme avec ses flots et ses méandres,</l>
           <l>Toute la harpe, tout le chant</l>
           <l>Que le Barbare veut entendre.</l>
         </div>
         <div>
           <head>26 <lb/>L’Eau mêlée au vin</head>
-          <l><pb n="63" xml:id="p63"/>Que la Fable soit le sourire peint</l>
+          <l><milestone unit="sent" n="160"/><pb n="63" xml:id="p63"/>Que la Fable soit le sourire peint</l>
           <l>Qui masque la pensée austère.</l>
-          <l>Un jour, Orphée, on nommera tes chants <hi rend="i">Cratères</hi>,</l>
+          <l><milestone unit="sent" n="161"/>Un jour, Orphée, on nommera tes chants <hi rend="i">Cratères</hi>,</l>
           <l>Comme ces vases où l’eau claire</l>
           <l>Est mêlée au vin.</l>
-          <l>Eau des sources, légère,</l>
+          <l><milestone unit="sent" n="162"/>Eau des sources, légère,</l>
           <l>Qu’animent la profonde et vivante lumière</l>
           <l>Les rythmes éternels et simples de la terre.</l>
-          <l>Tu n’y mêles qu’un peu de vin,</l>
+          <l><milestone unit="sent" n="163"/>Tu n’y mêles qu’un peu de vin,</l>
           <l><pb n="64" xml:id="p64"/>Qu’un peu du vin brûlant, lourd des secrets divins</l>
           <l>Conquis par la sauvage audace de l’humain.</l>
-          <l>Le feu pur de ton vin dessécherait les bouches.</l>
-          <l>Le vin fermente en toi, farouche,</l>
+          <l><milestone unit="sent" n="164"/>Le feu pur de ton vin dessécherait les bouches.</l>
+          <l><milestone unit="sent" n="165"/>Le vin fermente en toi, farouche,</l>
           <l>Lourd de secrets et de fureurs.</l>
-          <l>Vois se pencher la soif horrible des bacchantes</l>
+          <l><milestone unit="sent" n="166"/>Vois se pencher la soif horrible des bacchantes</l>
           <l>Vers ton cœur douloureux où le vin pur fermente.</l>
-          <l>Les hommes ne sont faits que pour la douce eau lente,</l>
+          <l><milestone unit="sent" n="167"/>Les hommes ne sont faits que pour la douce eau lente,</l>
           <l>L’eau régulière, sans couleur,</l>
           <l>L’eau qui tient dans leurs pots, l’eau lente.</l>
-          <l>Orphée, il faut oser leur enseigner le vin</l>
+          <l><milestone unit="sent" n="168"/>Orphée, il faut oser leur enseigner le vin</l>
           <l>Lourd de fureur humaine et de secrets divins.</l>
         </div>
         <div>
           <head>27 <lb/>Orphée hors de la cité</head>
-          <l><pb n="65" xml:id="p65"/>Mais c’est chacun de nous qui doit faire âme neuve.</l>
-          <l>Et la foule ? Regarde… Ayant initié</l>
+          <l><milestone unit="sent" n="169"/><pb n="65" xml:id="p65"/>Mais c’est chacun de nous qui doit faire âme neuve.</l>
+          <l><milestone unit="sent" n="170"/>Et la foule ? Regarde… Ayant initié</l>
           <l>Sans épreuves,</l>
-          <l>Tu dois mourir. La foule attend que, châtié.</l>
-          <l>L’homme prométhéen tombe enfin, foudroyé.</l>
-          <l>Marqués d’infamie.</l>
-          <l>Tes disciples sont rejetés</l>
+          <l>Tu dois mourir. <milestone unit="sent" n="171"/>La foule attend que, châtié.</l>
+          <l><milestone unit="sent" n="172"/>L’homme prométhéen tombe enfin, foudroyé.</l>
+          <l><milestone unit="sent" n="173"/>Marqués d’infamie.</l>
+          <l><milestone unit="sent" n="174"/>Tes disciples sont rejetés</l>
           <l>Hors du temple et de la cité</l>
           <l>Et la foule est ton ennemie.</l>
-          <l>Il faut l’aimer, Orphée, et donner ton génie.</l>
-          <l>Et, sans voir, donner ton génie.</l>
+          <l><milestone unit="sent" n="175"/>Il faut l’aimer, Orphée, et donner ton génie.</l>
+          <l><milestone unit="sent" n="176"/>Et, sans voir, donner ton génie.</l>
         </div>
         <div>
           <head>28 <lb/>La Lyre et les hommes</head>
-          <l><pb n="67" xml:id="p67"/>Arrachée à l’arbre fleuri,</l>
+          <l><milestone unit="sent" n="177"/><pb n="67" xml:id="p67"/>Arrachée à l’arbre fleuri,</l>
           <l>La fleur que plus rien ne nourrit</l>
           <l>Voit la faiblesse de sa tige</l>
           <l>Abaisser son hautain prestige.</l>
-          <l>Qui se veut clore en soi ne sera pas nourri</l>
+          <l><milestone unit="sent" n="178"/>Qui se veut clore en soi ne sera pas nourri</l>
           <l>Comme un cœur que les cœurs abreuvent d’eau profonde.</l>
-          <l>Orphée, ah ! ne soit point le dieu hautain proscrit</l>
+          <l><milestone unit="sent" n="179"/>Orphée, ah ! ne soit point le dieu hautain proscrit</l>
           <l>De la communion des puissances fécondes,</l>
           <l>Que l’homme en toi sur les hommes se fonde.</l>
-          <l>Ouvre ton cœur au sang des hommes et du monde.</l>
-          <l>Ouvre. Et ton cœur sera nourri.</l>
+          <l><milestone unit="sent" n="180"/>Ouvre ton cœur au sang des hommes et du monde.</l>
+          <l><milestone unit="sent" n="181"/>Ouvre. Et ton cœur sera nourri.</l>
         </div>
         <div>
           <head>29 <lb/>La Statue gainée</head>
-          <l><pb n="69" xml:id="p69"/>Les âges,</l>
+          <l><milestone unit="sent" n="182"/><pb n="69" xml:id="p69"/>Les âges,</l>
           <l>Longue chaîne où les vivants</l>
           <l>Traînent les morts et leurs défunts mirages.</l>
-          <l>La lyre conduira les âges.</l>
-          <l>Chacun des temps la nourrissant.</l>
-          <l>Elle crée à chacun son verbe et son image.</l>
-          <l>Qu’un âge meure, elle a formé d’autres visages ;</l>
+          <l><milestone unit="sent" n="183"/>La lyre conduira les âges.</l>
+          <l><milestone unit="sent" n="184"/>Chacun des temps la nourrissant.</l>
+          <l><milestone unit="sent" n="185"/>Elle crée à chacun son verbe et son image.</l>
+          <l><milestone unit="sent" n="186"/>Qu’un âge meure, elle a formé d’autres visages ;</l>
           <l>Elle chante aux nouveaux élus le chant suivant.</l>
-          <l>Et d’espoir en espoir, de langage en langage.</l>
-          <l>Le dieu gainé s’éveille et déchire ses liens.</l>
-          <l>Portant déjà le chant des hommes de demain,</l>
+          <l><milestone unit="sent" n="187"/>Et d’espoir en espoir, de langage en langage.</l>
+          <l><milestone unit="sent" n="188"/>Le dieu gainé s’éveille et déchire ses liens.</l>
+          <l><milestone unit="sent" n="189"/>Portant déjà le chant des hommes de demain,</l>
           <l>Le Poète leur appartient,</l>
         </div>
         <div>
           <head>30 <lb/>Les chercheurs de fables</head>
-          <l><pb n="71" xml:id="p71"/>Pour éveiller en nous le besoin de connaître,</l>
+          <l><milestone unit="sent" n="190"/><pb n="71" xml:id="p71"/>Pour éveiller en nous le besoin de connaître,</l>
           <l>Quelles fables sais-tu conter ?</l>
-          <l>Que des voiles brodés drapent ta vérité.</l>
-          <l>Conte, Orphée, et dis-nous ta patrie et tes maîtres ;</l>
+          <l><milestone unit="sent" n="191"/>Que des voiles brodés drapent ta vérité.</l>
+          <l><milestone unit="sent" n="192"/>Conte, Orphée, et dis-nous ta patrie et tes maîtres ;</l>
           <l>De quels dieux naquirent tes dieux ;</l>
           <l>Sous quels aspects changeants l’on doit naître et renaître</l>
           <l>Dans les combats où s’équilibrent les douze Êtres,</l>
@@ -621,80 +617,80 @@
         </div>
         <div>
           <head>31 <lb/>Orphée le Thrace blond</head>
-          <l><pb n="73" xml:id="p73"/>Orphée, assis au pied du saule, vous répond.</l>
-          <l>Il sait que vous craignez la sagesse implacable,</l>
+          <l><milestone unit="sent" n="193"/><pb n="73" xml:id="p73"/>Orphée, assis au pied du saule, vous répond.</l>
+          <l><milestone unit="sent" n="194"/>Il sait que vous craignez la sagesse implacable,</l>
           <l>La nudité pâle de la raison ;</l>
           <l>Il vous dira toutes ses fables.</l>
-          <l>Il est le Thrace blond.</l>
-          <l>Le fils de la Thrace sacrée,</l>
+          <l><milestone unit="sent" n="195"/>Il est le Thrace blond.</l>
+          <l><milestone unit="sent" n="196"/>Le fils de la Thrace sacrée,</l>
           <l>Terre sauvage aux roches embrumées.</l>
-          <l>Les Hyperboréens, favoris d’Apollon,</l>
+          <l><milestone unit="sent" n="197"/>Les Hyperboréens, favoris d’Apollon,</l>
           <l>Sont ses frères humains ; et ses mères divines</l>
           <l>Sont Calliope et l’infernale Proserpine.</l>
-          <l>Son père est Zeus l’impérieux.</l>
-          <l>Car le Poète est fils de dieu</l>
+          <l><milestone unit="sent" n="198"/>Son père est Zeus l’impérieux.</l>
+          <l><milestone unit="sent" n="199"/>Car le Poète est fils de dieu</l>
           <l>Et reprendra son rang de dieu.</l>
         </div>
         <div>
           <head>32 <lb/>Orphée revenu des enfers</head>
-          <l><pb n="75" xml:id="p75"/>Qui t’instruisit dans les divins symboles ?</l>
-          <l>Qui t’enseigna les secrets et les noms ?</l>
-          <l>Car le sage est celui qui redit les paroles…</l>
-          <l>Orphée, assis au pied du saule, vous répond :</l>
-          <l>Il a subi les épreuves, docile.</l>
-          <l>Aux rites crétois des Dactyles</l>
+          <l><milestone unit="sent" n="200"/><pb n="75" xml:id="p75"/>Qui t’instruisit dans les divins symboles ?</l>
+          <l><milestone unit="sent" n="201"/>Qui t’enseigna les secrets et les noms ?</l>
+          <l><milestone unit="sent" n="202"/>Car le sage est celui qui redit les paroles…</l>
+          <l><milestone unit="sent" n="203"/>Orphée, assis au pied du saule, vous répond :</l>
+          <l><milestone unit="sent" n="204"/>Il a subi les épreuves, docile.</l>
+          <l><milestone unit="sent" n="205"/>Aux rites crétois des Dactyles</l>
           <l>Il n’a trouvé ni l’extase, ni la terreur.</l>
-          <l>Juste harmonie, il est descendu pour te suivre</l>
+          <l><milestone unit="sent" n="206"/>Juste harmonie, il est descendu pour te suivre</l>
           <l>Aux enfers divins des vieux livres.</l>
-          <l>Puis te cherchant encore, a médité, meilleur.</l>
-          <l>Dans la caverne obscure de son cœur.</l>
+          <l><milestone unit="sent" n="207"/>Puis te cherchant encore, a médité, meilleur.</l>
+          <l><milestone unit="sent" n="208"/>Dans la caverne obscure de son cœur.</l>
         </div>
         <div>
           <head>33 <lb/>Orphée et les disciples</head>
-          <l><pb n="77" xml:id="p77"/>Qu’enseigne-t-il ? Quels mystérieux artifices ?</l>
-          <l>Ses disciples sont près de lui, vêtus de blanc.</l>
-          <l>Les Purs, les Saints, qui n’offrent point de sacrifice</l>
+          <l><milestone unit="sent" n="209"/><pb n="77" xml:id="p77"/>Qu’enseigne-t-il ? <milestone unit="sent" n="210"/>Quels mystérieux artifices ?</l>
+          <l><milestone unit="sent" n="211"/>Ses disciples sont près de lui, vêtus de blanc.</l>
+          <l><milestone unit="sent" n="212"/>Les Purs, les Saints, qui n’offrent point de sacrifice</l>
           <l>Mais écoutent d’un cœur fervent,</l>
           <l>Mais reçoivent d’un cœur fervent</l>
           <l>Le paisible pollen des discours fécondants.</l>
-          <l>Et la sagesse en eux voit croître ses prémices.</l>
-          <l>À quoi bon des colliers de mots pétrifiés</l>
+          <l><milestone unit="sent" n="213"/>Et la sagesse en eux voit croître ses prémices.</l>
+          <l><milestone unit="sent" n="214"/>À quoi bon des colliers de mots pétrifiés</l>
           <l>Grain à grain reliés et vite éparpillés ?</l>
-          <l>Mémoire, grelot mort, et qui s’évertue…</l>
-          <l>Ils attendent purifiés,</l>
+          <l><milestone unit="sent" n="215"/>Mémoire, grelot mort, et qui s’évertue…</l>
+          <l><milestone unit="sent" n="216"/>Ils attendent purifiés,</l>
           <l><pb n="78" xml:id="p78"/>Nourris du pain sacré, dédiant la chair crue</l>
           <l>Des taureaux, où revit Zagreus, le dieu qu’on tue.</l>
-          <l>Qu’apprennent-ils ? À rester éveillés,</l>
+          <l><milestone unit="sent" n="217"/>Qu’apprennent-ils ? <milestone unit="sent" n="218"/>À rester éveillés,</l>
           <l>À garder une âme légère,</l>
           <l>En attendant qu’un jour leur cœur s’éclaire.</l>
         </div>
         <div>
           <head>34 <lb/>Les Bateleurs</head>
-          <l><pb n="79" xml:id="p79"/>La Pureté les clôt dans leur blancheur,</l>
+          <l><milestone unit="sent" n="219"/><pb n="79" xml:id="p79"/>La Pureté les clôt dans leur blancheur,</l>
           <l>Les disciples fervents qu’on ignore et qu’on raille</l>
           <l>Parce que, sous leur blanc manteau, des bateleurs</l>
           <l>Vendent de faux secrets et d’impures médailles.</l>
         </div>
         <div>
           <head>35 <lb/>Orphée au pied du saule</head>
-          <l><pb n="81" xml:id="p81"/>Maître, en quels farouches décors</l>
+          <l><milestone unit="sent" n="220"/><pb n="81" xml:id="p81"/>Maître, en quels farouches décors</l>
           <l>Déroules-tu, la nuit, l’ordre de tes mystères ?</l>
-          <l>Non. Point de lieu secret, de sanctuaire ;</l>
+          <l><milestone unit="sent" n="221"/>Non. Point de lieu secret, de sanctuaire ;</l>
           <l>Non plus, à la lueur des torches, de mystères</l>
           <l>Simulant à grand bruit le cycle de la mort.</l>
-          <l>Qu’il suffise de méditer, et de se taire.</l>
-          <l>Assis sous le saule infernal</l>
+          <l><milestone unit="sent" n="222"/>Qu’il suffise de méditer, et de se taire.</l>
+          <l><milestone unit="sent" n="223"/>Assis sous le saule infernal</l>
           <l>Du bois sacré de Proserpine,</l>
           <l>Orphée explique les doctrines :</l>
-          <l>Comment l’Impur se mêle au Pur initial,</l>
+          <l><milestone unit="sent" n="224"/>Comment l’Impur se mêle au Pur initial,</l>
           <l>Comment Psyché renaît dans notre cri final.</l>
-          <l><pb n="82" xml:id="p82"/>Homme d’un dieu, je ne veux pas que tu renies.</l>
-          <l>Que m’importe l’eau qui te purifie.</l>
-          <l>Pourvu qu’un lieu pur en toi s’édifie ?</l>
-          <l>Sous la majesté des théogonies.</l>
-          <l>Le vrai paraît, rose sourire offert</l>
+          <l><pb n="82" xml:id="p82"/><milestone unit="sent" n="225"/>Homme d’un dieu, je ne veux pas que tu renies.</l>
+          <l><milestone unit="sent" n="226"/>Que m’importe l’eau qui te purifie.</l>
+          <l><milestone unit="sent" n="227"/>Pourvu qu’un lieu pur en toi s’édifie ?</l>
+          <l><milestone unit="sent" n="228"/>Sous la majesté des théogonies.</l>
+          <l><milestone unit="sent" n="229"/>Le vrai paraît, rose sourire offert</l>
           <l>Au sage attentif qui jamais ne nie.</l>
-          <l>Orphée est près du saule et son cœur est ouvert,</l>
+          <l><milestone unit="sent" n="230"/>Orphée est près du saule et son cœur est ouvert,</l>
           <l>Ouvert à tout le vrai, ouvert</l>
           <l>À l’ordre, la paix, l’harmonie.</l>
         </div>
@@ -703,175 +699,175 @@
         <head>Chant IV <lb/>Les Fables d’Orphée</head>
         <div>
           <head>36 <lb/>Une fable d’Orphée</head>
-          <l><pb n="85" xml:id="p85"/>« Premièrement, le temps : moteur de l’Univers,</l>
+          <l><milestone unit="sent" n="231"/><pb n="85" xml:id="p85"/>« Premièrement, le temps : moteur de l’Univers,</l>
           <l>Créateur incréé, vibration qui fonde.</l>
-          <l>Naissent du Temps (ceux-ci) : le Chaos et l’Éther.</l>
-          <l>Du Chaos recevant l’Éther naît l’Œuf du Monde,</l>
+          <l><milestone unit="sent" n="232"/>Naissent du Temps (ceux-ci) : le Chaos et l’Éther.</l>
+          <l><milestone unit="sent" n="233"/>Du Chaos recevant l’Éther naît l’Œuf du Monde,</l>
           <l>Et chaque point vivant est comme l’Œuf du Monde.</l>
-          <l>Se divisant, l’Œuf, le Cosmos,</l>
+          <l><milestone unit="sent" n="234"/>Se divisant, l’Œuf, le Cosmos,</l>
           <l>Dégage le subtil, le Ciel, du lourd, la Terre.</l>
-          <l>Ainsi naît un domaine à la Déesse-Mère.</l>
-          <l>Mais le Démiurge est Éros.</l>
-          <l>Éros ! Il dispose avec harmonie</l>
+          <l><milestone unit="sent" n="235"/>Ainsi naît un domaine à la Déesse-Mère.</l>
+          <l><milestone unit="sent" n="236"/>Mais le Démiurge est Éros.</l>
+          <l><milestone unit="sent" n="237"/>Éros ! Il dispose avec harmonie</l>
           <l>Sur la frondaison du grand chêne ailé</l>
           <l>Le beau voile peint où sont révélés</l>
           <l>L’abîme vert d’Ogen et la Terre fleurie. »</l>
         </div>
         <div>
           <head>37 <lb/>Une fable d’Orphée</head>
-          <l><pb n="87" xml:id="p87"/>Devant elle flottant et par elle porté</l>
+          <l><milestone unit="sent" n="238"/><pb n="87" xml:id="p87"/>Devant elle flottant et par elle porté</l>
           <l>Un Péplos éternel couvre l’Humanité</l>
           <l>Et la tient tissue en sa trame ;</l>
           <l>Et chaque homme est un fil du grand peplos vivant,</l>
           <l>Un battement léger du grand rythme mouvant.</l>
-          <l>Un reflet merveilleux de l’immortelle flamme</l>
+          <l><milestone unit="sent" n="239"/>Un reflet merveilleux de l’immortelle flamme</l>
           <l>Par qui tout le peplos s’anime, cœur fervent,</l>
           <l>Et brille de l’intime et haute ardeur de l’âme.</l>
-          <l>Ô grand Peplos humain, vivant,</l>
+          <l><milestone unit="sent" n="240"/>Ô grand Peplos humain, vivant,</l>
           <l>Ô beau Peplos de feu vivant.</l>
         </div>
         <div>
           <head>37 <lb/>Une fable d’Orphée : le passé meurtrier</head>
-          <l><pb n="89" xml:id="p89"/>Les Titans, lourd passé grognant. Bondis, Jeunesse,</l>
+          <l><milestone unit="sent" n="241"/><pb n="89" xml:id="p89"/>Les Titans, lourd passé grognant. <milestone unit="sent" n="242"/>Bondis, Jeunesse,</l>
           <l>Et qu’ils s’écroulent sous ta foudre vengeresse.</l>
-          <l>Dans la caverne, mal veillé, dormait l’Enfant,</l>
+          <l><milestone unit="sent" n="243"/>Dans la caverne, mal veillé, dormait l’Enfant,</l>
           <l>Le dieu qui doit payer son trône de son Sang.</l>
-          <l>Ils ont déchiré le corps de l’Enfant,</l>
-          <l>Ils l’ont fait bouillir. Ils ont bu le Sang.</l>
-          <l>Mais le cœur leur échappe et le cœur de l’Enfant</l>
+          <l><milestone unit="sent" n="244"/>Ils ont déchiré le corps de l’Enfant,</l>
+          <l>Ils l’ont fait bouillir. <milestone unit="sent" n="245"/>Ils ont bu le Sang.</l>
+          <l><milestone unit="sent" n="246"/>Mais le cœur leur échappe et le cœur de l’Enfant</l>
           <l>Reforme sa substance immortelle et son Sang.</l>
-          <l>Roule la foudre et croulent les Titans.</l>
-          <l>Et l’homme est né des cendres des Titans.</l>
-          <l><pb n="90" xml:id="p90"/>Cendres du lourd passé, où brille par parcelles</l>
+          <l><milestone unit="sent" n="247"/>Roule la foudre et croulent les Titans.</l>
+          <l><milestone unit="sent" n="248"/>Et l’homme est né des cendres des Titans.</l>
+          <l><pb n="90" xml:id="p90"/><milestone unit="sent" n="249"/>Cendres du lourd passé, où brille par parcelles</l>
           <l>La substance du dieu, Dionysos enfant.</l>
-          <l>Ô dégage-toi, substance immortelle.</l>
-          <l>Cœur, échappe-toi. Renais, Dieu-Enfant.</l>
+          <l><milestone unit="sent" n="250"/>Ô dégage-toi, substance immortelle.</l>
+          <l><milestone unit="sent" n="251"/>Cœur, échappe-toi. <milestone unit="sent" n="252"/>Renais, Dieu-Enfant.</l>
         </div>
         <div>
           <head>39 <lb/>Orphée explique</head>
-          <l><pb n="91" xml:id="p91"/>Enseigne-nous. Que les mystères se dépouillent.</l>
-          <l>L’étrangère Psyché se désole et se souille</l>
+          <l><milestone unit="sent" n="253"/><pb n="91" xml:id="p91"/>Enseigne-nous. <milestone unit="sent" n="254"/>Que les mystères se dépouillent.</l>
+          <l><milestone unit="sent" n="255"/>L’étrangère Psyché se désole et se souille</l>
           <l>Dans notre corps depuis toujours souillé</l>
           <l>Du lourd limon des Titans foudroyés.</l>
-          <l>Lave ton âme, sans attendre</l>
+          <l><milestone unit="sent" n="256"/>Lave ton âme, sans attendre</l>
           <l>De renaître à travers les douloureux méandres.</l>
-          <l>Ah ! lave-toi, pieusement, des lourdes cendres.</l>
-          <l>Fils des Titans et fils du dieu, purifie-toi.</l>
-          <l>Choisis ton père, et tends vers lui ton cœur. Haut. Droit.</l>
-          <l>Et jette tes démons à l’immonde. Nais. Sois.</l>
+          <l><milestone unit="sent" n="257"/>Ah ! lave-toi, pieusement, des lourdes cendres.</l>
+          <l><milestone unit="sent" n="258"/>Fils des Titans et fils du dieu, purifie-toi.</l>
+          <l><milestone unit="sent" n="259"/>Choisis ton père, et tends vers lui ton cœur. Haut. Droit.</l>
+          <l><milestone unit="sent" n="260"/>Et jette tes démons à l’immonde. Nais. Sois.</l>
         </div>
         <div>
           <head>40 <lb/>L’Épreuve pour l’harmonie</head>
-          <l><pb n="93" xml:id="p93"/>Ô pacte harmonieux des êtres,</l>
+          <l><milestone unit="sent" n="261"/><pb n="93" xml:id="p93"/>Ô pacte harmonieux des êtres,</l>
           <l><hi rend="sc">Épreuve</hi> ce désir que guide ton appel</l>
           <l>Et qui s’égare et tombe avant de te connaître.</l>
-          <l>Ô pacte harmonieux des êtres,</l>
+          <l><milestone unit="sent" n="262"/>Ô pacte harmonieux des êtres,</l>
           <l>Souffrirons-nous longtemps de ne pas te connaître ?</l>
-          <l>Amour équilibré, lien qui lie aux ancêtres,</l>
+          <l><milestone unit="sent" n="263"/>Amour équilibré, lien qui lie aux ancêtres,</l>
           <l>Souffrirons-nous longtemps de ton obscur appel ?</l>
-          <l>Ô pacte harmonieux des êtres,</l>
+          <l><milestone unit="sent" n="264"/>Ô pacte harmonieux des êtres,</l>
           <l>Une coupe épandue en l’honneur des ancêtres</l>
           <l>Ne suffit pas pour que ton règne puisse naître.</l>
-          <l><pb n="94" xml:id="p94"/>Une coupe épandue en l’honneur des ancêtres</l>
+          <l><pb n="94" xml:id="p94"/><milestone unit="sent" n="265"/>Une coupe épandue en l’honneur des ancêtres</l>
           <l>Ne satisfait pas ton autel.</l>
-          <l>Il faut l’Ordre. Il faut l’Harmonie.</l>
-          <l>Até, qui nous aveugle et nous fait criminels,</l>
+          <l><milestone unit="sent" n="266"/>Il faut l’Ordre. <milestone unit="sent" n="267"/>Il faut l’Harmonie.</l>
+          <l><milestone unit="sent" n="268"/>Até, qui nous aveugle et nous fait criminels,</l>
           <l>Qu’elle ôte de nos yeux son bandeau de folie ;</l>
           <l>Horcos, divin serment, violé, qu’on expie,</l>
           <l>Plutôt soutiens-nous, serment solennel.</l>
-          <l>Il faut l’Ordre. Il faut l’Harmonie.</l>
-          <l>Mais il faut, attendant que tu sois obéie.</l>
-          <l>Dans notre chaos te craindre, Harmonie.</l>
-          <l>Et lourds, et grossiers, il faut qu’on expie</l>
+          <l><milestone unit="sent" n="269"/>Il faut l’Ordre. <milestone unit="sent" n="270"/>Il faut l’Harmonie.</l>
+          <l><milestone unit="sent" n="271"/>Mais il faut, attendant que tu sois obéie.</l>
+          <l><milestone unit="sent" n="272"/>Dans notre chaos te craindre, Harmonie.</l>
+          <l><milestone unit="sent" n="273"/>Et lourds, et grossiers, il faut qu’on expie</l>
           <l>Le malheur d’ignorer ton spectre fraternel</l>
           <l>Dont le rythme parfait convie</l>
           <l>À chanter les grands chants du ciel.</l>
-          <l>Dis, auras-tu toujours besoin des Érinnyes ?</l>
-          <l>La faute au criminel se lie.</l>
-          <l>Le fouet des Gardiennes châtie</l>
+          <l><milestone unit="sent" n="274"/>Dis, auras-tu toujours besoin des Érinnyes ?</l>
+          <l><milestone unit="sent" n="275"/>La faute au criminel se lie.</l>
+          <l><milestone unit="sent" n="276"/>Le fouet des Gardiennes châtie</l>
           <l>Le parjure, parjure au pacte d’harmonie.</l>
-          <l>Les ongles de fer des Harpies.</l>
-          <l>Harmonie, Harmonie,</l>
+          <l><milestone unit="sent" n="277"/>Les ongles de fer des Harpies.</l>
+          <l><milestone unit="sent" n="278"/>Harmonie, Harmonie,</l>
           <l>Dis, auras-tu toujours besoin des Érinnyes</l>
           <l><pb n="95" xml:id="p95"/>Et du sang des jeunes héros</l>
           <l>Qui t’ont fait le don de leur destinée ?</l>
-          <l>Hautes âmes données</l>
+          <l><milestone unit="sent" n="279"/>Hautes âmes données</l>
           <l>Et pour ton progrès âmes moissonnées.</l>
-          <l>Tu leur donnes paix et repos</l>
+          <l><milestone unit="sent" n="280"/>Tu leur donnes paix et repos</l>
           <l>Par les triples moissons des îles Fortunées.</l>
         </div>
         <div>
           <head>41 <lb/>Le Message clos</head>
-          <l><pb n="97" xml:id="p97"/>Lamelles puissantes de l’or.</l>
-          <l>Sur votre vierge éclat, le fugitif délire</l>
+          <l><milestone unit="sent" n="281"/><pb n="97" xml:id="p97"/>Lamelles puissantes de l’or.</l>
+          <l><milestone unit="sent" n="282"/>Sur votre vierge éclat, le fugitif délire</l>
           <l>Qui reçut les secrets du rythme et de l’accord</l>
           <l>En mots lourds de richesse obscure vient s’inscrire.</l>
-          <l>Délire formulé, porte des hauts essors.</l>
-          <l>Ainsi se garde, Rituel, en lames d’or</l>
+          <l><milestone unit="sent" n="283"/>Délire formulé, porte des hauts essors.</l>
+          <l><milestone unit="sent" n="284"/>Ainsi se garde, Rituel, en lames d’or</l>
           <l>Pesantes, le sublime et fugitif apport.</l>
-          <l>Relis. Apprends les mots : Apprends à les redire,</l>
+          <l><milestone unit="sent" n="285"/>Relis. Apprends les mots : Apprends à les redire,</l>
           <l>Porte le talisman des mots,</l>
           <l>Mystérieux message clos</l>
           <l>Dont plus tard, en péril, tu briseras la cire.</l>
-          <l>Ouvre ta mémoire. Écoute. Reçois.</l>
-          <l>Les mots s’ouvriront, beaux fruits mûrs, en toi.</l>
+          <l><milestone unit="sent" n="286"/>Ouvre ta mémoire. Écoute. Reçois.</l>
+          <l><milestone unit="sent" n="287"/>Les mots s’ouvriront, beaux fruits mûrs, en toi.</l>
         </div>
         <div>
           <head>42 <lb/>La Source de mémoire</head>
-          <l><pb n="99" xml:id="p99"/>« Heureux l’errant qui par l’image des mystères</l>
+          <l><milestone unit="sent" n="288"/><pb n="99" xml:id="p99"/>« Heureux l’errant qui par l’image des mystères</l>
           <l>Vit le chemin, avant de descendre sous terre. »</l>
-          <l>Chez Hadès, tu retrouveras le cyprès blanc.</l>
-          <l>Ayant franchi des eaux maudites, lourdes, noires.</l>
-          <l>N’ayant point bu l’eau d’oubliance, lourde et noire,</l>
+          <l><milestone unit="sent" n="289"/>Chez Hadès, tu retrouveras le cyprès blanc.</l>
+          <l><milestone unit="sent" n="290"/>Ayant franchi des eaux maudites, lourdes, noires.</l>
+          <l><milestone unit="sent" n="291"/>N’ayant point bu l’eau d’oubliance, lourde et noire,</l>
           <l>Tu retrouveras près du cyprès blanc</l>
           <l>Une source qui te rendra l’ardeur de boire,</l>
           <l>La source où reparaît l’eau du lac de Mémoire.</l>
-          <l>Tu parleras aux monstres vigilants</l>
+          <l><milestone unit="sent" n="292"/>Tu parleras aux monstres vigilants</l>
           <l>Qui doivent éprouver, hurlants,</l>
           <l>La soif d’ascension que ta présence atteste,</l>
           <l>Car il faut que ta soif elle-même s’atteste.</l>
-          <l><pb n="100" xml:id="p100"/>Et tu diras aux gardiens vigilants :</l>
+          <l><pb n="100" xml:id="p100"/><milestone unit="sent" n="293"/>Et tu diras aux gardiens vigilants :</l>
           <l rend="i">« Je suis fils de la terre et du ciel scintillant</l>
           <l rend="i">Et mon origine est céleste. »</l>
-          <l>Et t’approchent de ton image, tu boiras.</l>
-          <l>Avant bu tu verras enfin ! Tu reverras !</l>
+          <l><milestone unit="sent" n="294"/>Et t’approchent de ton image, tu boiras.</l>
+          <l><milestone unit="sent" n="295"/>Avant bu tu verras enfin ! Tu reverras !</l>
         </div>
         <div>
           <head>43 <lb/>Les Deux routes</head>
-          <l><pb n="101" xml:id="p101"/>Devant l’errant se bifurque la route.</l>
-          <l>À gauche, rouge. Bleue à droite. Doute.</l>
-          <l>De laquelle entendre l’appel ?</l>
-          <l>Deux routes. L’une monte, étroite,</l>
+          <l><milestone unit="sent" n="296"/><pb n="101" xml:id="p101"/>Devant l’errant se bifurque la route.</l>
+          <l><milestone unit="sent" n="297"/>À gauche, rouge. <milestone unit="sent" n="298"/>Bleue à droite. Doute.</l>
+          <l><milestone unit="sent" n="299"/>De laquelle entendre l’appel ?</l>
+          <l><milestone unit="sent" n="300"/>Deux routes. L’une monte, étroite,</l>
           <l>L’ouranienne, la haute et bleue, ô fils du Ciel.</l>
-          <l>Mais la rouge, ô fils du limon charnel.</l>
-          <l>S’ouvre, sol compact… Deux chemins. Lequel ?</l>
-          <l>Fils du Ciel, connais-toi. Reconnais. <hi rend="sc">Prends à droite</hi>.</l>
+          <l><milestone unit="sent" n="301"/>Mais la rouge, ô fils du limon charnel.</l>
+          <l><milestone unit="sent" n="302"/>S’ouvre, sol compact… Deux chemins. Lequel ?</l>
+          <l><milestone unit="sent" n="303"/>Fils du Ciel, connais-toi. <milestone unit="sent" n="304"/>Reconnais. <hi rend="sc">Prends à droite</hi>.</l>
         </div>
         <div>
           <head>44 <lb/>Le Voyage de l’âme</head>
-          <l><pb n="103" xml:id="p103"/>En deux troupes vont les âmes des morts.</l>
-          <l>L’une s’attache, obstinée, à la terre ;</l>
+          <l><milestone unit="sent" n="305"/><pb n="103" xml:id="p103"/>En deux troupes vont les âmes des morts.</l>
+          <l><milestone unit="sent" n="306"/>L’une s’attache, obstinée, à la terre ;</l>
           <l>Autour de nous, lourde, affligée, elle erre.</l>
-          <l>Et l’autre, au sur et prompt essor,</l>
+          <l><milestone unit="sent" n="307"/>Et l’autre, au sur et prompt essor,</l>
           <l>Forme des chœurs et des rondes splendides</l>
           <l>Dans la lumière où vit pour le total accord</l>
           <l>Chaque étoile et son nombre et son chantant essor.</l>
-          <l>Errant, errant, avoir un guide !</l>
+          <l><milestone unit="sent" n="308"/>Errant, errant, avoir un guide !</l>
         </div>
         <div>
           <head>45 <lb/>La Couronne de Psyché</head>
-          <l><pb n="105" xml:id="p105"/>Psyché voguant parmi les mille astres chanteurs,</l>
+          <l><milestone unit="sent" n="309"/><pb n="105" xml:id="p105"/>Psyché voguant parmi les mille astres chanteurs,</l>
           <l>Mélodieusement aux sept chants accordée,</l>
           <l>Chantera son bonheur, ayant été guidée :</l>
-          <l>« Je me suis envolée du cercle de rigueur.</l>
-          <l>Du cercle descendant des profondes douleurs.</l>
-          <l>Et rapide je suis entrée</l>
+          <l><milestone unit="sent" n="310"/>« Je me suis envolée du cercle de rigueur.</l>
+          <l><milestone unit="sent" n="311"/>Du cercle descendant des profondes douleurs.</l>
+          <l><milestone unit="sent" n="312"/>Et rapide je suis entrée</l>
           <l>Dans la Couronne désirée.</l>
-          <l>Ainsi mon chemin s’est ouvert :</l>
-          <l>J’ai traversé le sein de Perséphone,</l>
+          <l><milestone unit="sent" n="313"/>Ainsi mon chemin s’est ouvert :</l>
+          <l><milestone unit="sent" n="314"/>J’ai traversé le sein de Perséphone,</l>
           <l>Terrestre reine des enfers :</l>
-          <l>Je m’élève. Cercle montant. Passage ouvert. »</l>
-          <l>Souviens-toi de Psyché, naissant papillon clair,</l>
+          <l><milestone unit="sent" n="315"/>Je m’élève. Cercle montant. Passage ouvert. »</l>
+          <l><milestone unit="sent" n="316"/>Souviens-toi de Psyché, naissant papillon clair,</l>
           <l>Et tu contempleras le mot de feu : <hi rend="sc">Couronne</hi>.</l>
         </div>
       </div>
@@ -879,154 +875,154 @@
         <head>Chant V <lb/>Le Cratère de Dionysos et d’Apollon</head>
         <div>
           <head>46 <lb/>Les Chercheurs de vérité</head>
-          <l><pb n="109" xml:id="p109"/>La vérité ! Dis-nous toutes les vérités.</l>
-          <l>Engraisse-nous du sang fumant de tes pensées.</l>
-          <l>Tes dernières, dis-les – encore surpassées !</l>
-          <l>Cherche avec nous tes vérités.</l>
-          <l>Construis-nous quelque dieu que l’on puisse adopter.</l>
-          <l>Dis-nous toute la vérité,</l>
+          <l><milestone unit="sent" n="317"/><pb n="109" xml:id="p109"/>La vérité ! <milestone unit="sent" n="318"/>Dis-nous toutes les vérités.</l>
+          <l><milestone unit="sent" n="319"/>Engraisse-nous du sang fumant de tes pensées.</l>
+          <l><milestone unit="sent" n="320"/>Tes dernières, dis-les – encore surpassées !</l>
+          <l><milestone unit="sent" n="321"/>Cherche avec nous tes vérités.</l>
+          <l><milestone unit="sent" n="322"/>Construis-nous quelque dieu que l’on puisse adopter.</l>
+          <l><milestone unit="sent" n="323"/>Dis-nous toute la vérité,</l>
           <l>Orphée.</l>
-          <l>Ô prophète des Thraces blonds,</l>
+          <l><milestone unit="sent" n="324"/>Ô prophète des Thraces blonds,</l>
           <l>De quels prêcheurs barbus suivrons-nous les sermons,</l>
           <l>Ceux de Bacchus, ceux d’Apollon ?</l>
         </div>
         <div>
           <head>47 <lb/>Le Rire d’Orphée</head>
-          <l><pb n="111" xml:id="p111"/>Tu ris. Pourquoi ton rire, Orphée ?</l>
-          <l>Est-ce montrer cervelle si brouillée</l>
+          <l><milestone unit="sent" n="325"/><pb n="111" xml:id="p111"/>Tu ris. <milestone unit="sent" n="326"/>Pourquoi ton rire, Orphée ?</l>
+          <l><milestone unit="sent" n="327"/>Est-ce montrer cervelle si brouillée</l>
           <l>Que d’interroger pour savoir</l>
           <l>À quel autel suspendre son espoir ?</l>
-          <l>Deux temples espacés que les hommes séparent.</l>
-          <l>Là, c’est le dieu joyeux qui se livre aux douleurs.</l>
-          <l>Le Dionys vers qui s’égarent</l>
+          <l><milestone unit="sent" n="328"/>Deux temples espacés que les hommes séparent.</l>
+          <l><milestone unit="sent" n="329"/>Là, c’est le dieu joyeux qui se livre aux douleurs.</l>
+          <l><milestone unit="sent" n="330"/>Le Dionys vers qui s’égarent</l>
           <l>À des poursuites par les monts ceints de chaleur</l>
           <l>Ceux qui hurlent au son des instruments barbares ;</l>
           <l><pb n="112" xml:id="p112"/>Ici, l’harmonieux Apollon, dieu songeur</l>
           <l>Qui dans la paix de son orgueilleuse rigueur</l>
           <l>Touche la lyre mesurée et la cithare.</l>
-          <l>Nous interrogeons pour savoir</l>
+          <l><milestone unit="sent" n="331"/>Nous interrogeons pour savoir</l>
           <l>À quel dieu vouer notre espoir.</l>
         </div>
         <div>
           <head>48 <lb/>Apollon l’hyperboréen</head>
-          <l><pb n="113" xml:id="p113"/>Quand fermente par toi la Pythie en délire</l>
+          <l><milestone unit="sent" n="332"/><pb n="113" xml:id="p113"/>Quand fermente par toi la Pythie en délire</l>
           <l>Tu réfléchis la paix de sept mondes sereins.</l>
-          <l>Te chargeant du souci de conduire et d’instruire,</l>
+          <l><milestone unit="sent" n="333"/>Te chargeant du souci de conduire et d’instruire,</l>
           <l>Le septuple fardeau de la pesante lyre</l>
           <l>T’accompagne, dieu blond, ô hyperboréen.</l>
-          <l>Ô dévorant, qui restes seul et te consumes.</l>
-          <l>Dieu soumis à la Passion,</l>
+          <l><milestone unit="sent" n="334"/>Ô dévorant, qui restes seul et te consumes.</l>
+          <l><milestone unit="sent" n="335"/>Dieu soumis à la Passion,</l>
           <l>L’or glorieux de tes rayons</l>
           <l>Éclaire un cœur désert où rêve l’amertume.</l>
-          <l>Ainsi, puissant et vagabond,</l>
+          <l><milestone unit="sent" n="336"/>Ainsi, puissant et vagabond,</l>
           <l><pb n="114" xml:id="p114"/>Universel témoin qui surveille et dirige</l>
           <l>Et connaît les secrètes lois de tout vertige,</l>
           <l>Ainsi règne et s’attriste Apollon, le dieu blond.</l>
-          <l>Harmonie et lumière, il sait que le mystère</l>
+          <l><milestone unit="sent" n="337"/>Harmonie et lumière, il sait que le mystère</l>
           <l>Dans les veines du monde agit et se répand.</l>
-          <l>Assis sur l’Omphalos, au centre de la terre</l>
+          <l><milestone unit="sent" n="338"/>Assis sur l’Omphalos, au centre de la terre</l>
           <l>Et touchant de ses mains cette vibrante pierre</l>
           <l>Qui porte le vibrant trépied du sanctuaire,</l>
           <l>Le dieu delphique, frémissant</l>
           <l>Au double battement du sol et de son sang,</l>
           <l>Te gouverne et s’unit à ton frémissement.</l>
-          <l>Python, tellurique Serpent.</l>
-          <l>Ainsi, sur l’Omphalos, au centre de la terre,</l>
+          <l><milestone unit="sent" n="339"/>Python, tellurique Serpent.</l>
+          <l><milestone unit="sent" n="340"/>Ainsi, sur l’Omphalos, au centre de la terre,</l>
           <l>Écoutons résonner en notre plus profond</l>
           <l>La rythmique vibration</l>
           <l>De notre sombre cœur solaire, et de la Terre.</l>
         </div>
         <div>
           <head>49 <lb/>Dionys l’infernal</head>
-          <l><pb n="115" xml:id="p115"/>Mais cet Apollon souterrain,</l>
+          <l><milestone unit="sent" n="341"/><pb n="115" xml:id="p115"/>Mais cet Apollon souterrain,</l>
           <l>Nous reconnaissons au passage</l>
           <l>Les tigres fous de son rouge attelage ;</l>
           <l>C’est le chef emporté par ses bêtes sauvages.</l>
-          <l>Oïoh ! Crions son nom divin :</l>
-          <l>Bacchus aux cheveux de raisin.</l>
-          <l>Inépuisable cep, dont les fruits lourds étalent</l>
+          <l><milestone unit="sent" n="342"/>Oïoh ! Crions son nom divin :</l>
+          <l><milestone unit="sent" n="343"/>Bacchus aux cheveux de raisin.</l>
+          <l><milestone unit="sent" n="344"/>Inépuisable cep, dont les fruits lourds étalent</l>
           <l>Sur le monde la sève ardente, le sang mûr</l>
           <l>Qu’il a puisé, profondément, au gouffre obscur.</l>
-          <l>Dans les ténèbres infernales,</l>
+          <l><milestone unit="sent" n="345"/>Dans les ténèbres infernales,</l>
           <l>Dans l’humide foyer de la vie infernale.</l>
-          <l>(Là, son tombeau vit, sous l’Omphale.)</l>
+          <l><milestone unit="sent" n="346"/>(Là, son tombeau vit, sous l’Omphale.)</l>
           <l><pb n="116" xml:id="p116"/>Le nom jailli du beau sang créateur.</l>
-          <l>Oïoh ! Bacchus ! Qu’il soit la multiple clameur</l>
+          <l><milestone unit="sent" n="347"/>Oïoh ! Bacchus ! <milestone unit="sent" n="348"/>Qu’il soit la multiple clameur</l>
           <l>Répercutée et qui transmet son cri sauveur.</l>
-          <l>Ah ! ses sarments roux, qu’on les hache ;</l>
+          <l><milestone unit="sent" n="349"/>Ah ! ses sarments roux, qu’on les hache ;</l>
           <l>Ses beaux bras clairs, qu’on les arrache.</l>
-          <l>Dans le délire bouillonnant du dieu qui meurt</l>
+          <l><milestone unit="sent" n="350"/>Dans le délire bouillonnant du dieu qui meurt</l>
           <l>Que naisse alors l’ivre clameur.</l>
-          <l>Le cri de libre force neuve</l>
+          <l><milestone unit="sent" n="351"/>Le cri de libre force neuve</l>
           <l>Qui vous franchira, humaines épreuves…</l>
-          <l>Douleur divine, inépuisable fleuve</l>
+          <l><milestone unit="sent" n="352"/>Douleur divine, inépuisable fleuve</l>
           <l>Où la joie du monde s’abreuve.</l>
-          <l>Sang de la grande Vigne pure, sang sauveur ;</l>
+          <l><milestone unit="sent" n="353"/>Sang de la grande Vigne pure, sang sauveur ;</l>
           <l>Sang qui coulera dans le sang des mystes,</l>
           <l>Chargé de furieuse joie et de douleur :</l>
-          <l>Toujours vaincu, tué, naissant, vainqueur ;</l>
+          <l><milestone unit="sent" n="354"/>Toujours vaincu, tué, naissant, vainqueur ;</l>
           <l>Embrasé de triomphe immortel, sang sauveur.</l>
-          <l>Sang du multiple Éros où le désir persiste ;</l>
+          <l><milestone unit="sent" n="355"/>Sang du multiple Éros où le désir persiste ;</l>
           <l>Sang dédié, pure boisson, où coexistent</l>
           <l>Et se rejoignent l’homme et le dieu ; sang sauveur.</l>
-          <l>Sang, humidité chaude où le désir persiste.</l>
-          <l><pb n="117" xml:id="p117"/>Dionys deux fois né, multiple Éros danseur,</l>
+          <l><milestone unit="sent" n="356"/>Sang, humidité chaude où le désir persiste.</l>
+          <l><pb n="117" xml:id="p117"/><milestone unit="sent" n="357"/>Dionys deux fois né, multiple Éros danseur,</l>
           <l>Nocturne et lumineux, véridique et trompeur.</l>
-          <l>Dieu fou que guérira l’apaisante Cybèle,</l>
+          <l><milestone unit="sent" n="358"/>Dieu fou que guérira l’apaisante Cybèle,</l>
           <l>Juvénile et barbu, hostie et dieu rebelle</l>
           <l>Qui fait bondir dans les montagnes sa fureur.</l>
         </div>
         <div>
           <head>50 <lb/>Solitude d’Apollon</head>
-          <l><pb n="119" xml:id="p119"/>Chef que cerne de feu désert son diadème,</l>
+          <l><milestone unit="sent" n="359"/><pb n="119" xml:id="p119"/>Chef que cerne de feu désert son diadème,</l>
           <l>Dieu jaloux même de lui-même,</l>
           <l>Violent cœur obscur</l>
           <l>Qui détruit ce qu’il aime,</l>
           <l>Brasier suprême où tout se disjoint, feu trop pur.</l>
-          <l>L’homme têtu qui te poursuit, qui s’illumine</l>
+          <l><milestone unit="sent" n="360"/>L’homme têtu qui te poursuit, qui s’illumine</l>
           <l>De ta splendide et solitaire ardeur divine,</l>
           <l>Voici que déjà le calcine</l>
           <l>Ton haleine dans sa poitrine.</l>
-          <l>Il se consume. Et veut encore. Et puis, un jour,</l>
+          <l><milestone unit="sent" n="361"/>Il se consume. Et veut encore. <milestone unit="sent" n="362"/>Et puis, un jour,</l>
           <l>Il tremble et n’ose plus se jeter au délire.</l>
-          <l>L’homme blessé par le torride amour.</l>
-          <l><pb n="120" xml:id="p120"/>Son regard que ta flamme sombre allait détruire</l>
+          <l><milestone unit="sent" n="363"/>L’homme blessé par le torride amour.</l>
+          <l><pb n="120" xml:id="p120"/><milestone unit="sent" n="364"/>Son regard que ta flamme sombre allait détruire</l>
           <l>S’en détourne et bientôt va suivre un autre cours.</l>
-          <l>Une autre source, une fraîcheur, s’éveille et sourd</l>
+          <l><milestone unit="sent" n="365"/>Une autre source, une fraîcheur, s’éveille et sourd</l>
           <l>De ce cœur trop ardent que tes rayons déchirent.</l>
-          <l>Et l’homme d’un seul dieu comprend trop tard, un jour,</l>
+          <l><milestone unit="sent" n="366"/>Et l’homme d’un seul dieu comprend trop tard, un jour,</l>
           <l>Qu’il ne veut plus mourir sous le poids de la lyre.</l>
-          <l>Et le dieu solitaire et jaloux sent plus lourd</l>
+          <l><milestone unit="sent" n="367"/>Et le dieu solitaire et jaloux sent plus lourd</l>
           <l>L’inséparable poids de la sublime lyre.</l>
         </div>
         <div>
           <head>51 <lb/>Les Compagnies de Dionys</head>
-          <l><pb n="121" xml:id="p121"/>Mille bouches : « Bacchus aux cheveux de raisin !</l>
-          <l>« Dionysos de Thrace et de Phrygie ! »</l>
-          <l>Iacchos, le chant qui marche en claire théorie.</l>
-          <l>L’entoure de flambeaux et de sistres d’airain.</l>
-          <l>Et vers son char traîné de fauves bactriens</l>
+          <l><milestone unit="sent" n="368"/><pb n="121" xml:id="p121"/>Mille bouches : « Bacchus aux cheveux de raisin !</l>
+          <l><milestone unit="sent" n="369"/>« Dionysos de Thrace et de Phrygie ! »</l>
+          <l><milestone unit="sent" n="370"/>Iacchos, le chant qui marche en claire théorie.</l>
+          <l><milestone unit="sent" n="371"/>L’entoure de flambeaux et de sistres d’airain.</l>
+          <l><milestone unit="sent" n="372"/>Et vers son char traîné de fauves bactriens</l>
           <l>Roule un ardent cortège de folie :</l>
-          <l>Les baladins savants en obscures magies,</l>
+          <l><milestone unit="sent" n="373"/>Les baladins savants en obscures magies,</l>
           <l>Les archers à l’œil bleu venus du nord lointain,</l>
           <l>Les sages accourus des déserts indiens</l>
           <l>Et la bacchante avide ouvrant bouche d’orgie.</l>
-          <l>Elle accourt.</l>
-          <l>Les danseurs enfiévrés par la flûte phrygienne</l>
+          <l><milestone unit="sent" n="374"/>Elle accourt.</l>
+          <l><milestone unit="sent" n="375"/>Les danseurs enfiévrés par la flûte phrygienne</l>
           <l>Font redoubler cymbales et tambours.</l>
-          <l><pb n="122" xml:id="p122"/>Par les sommets, sous les couverts de chênes,</l>
+          <l><pb n="122" xml:id="p122"/><milestone unit="sent" n="376"/>Par les sommets, sous les couverts de chênes,</l>
           <l>Au profond de la nuit vivante et souterraine</l>
           <l>Qui prépare le jour après la mort du jour,</l>
           <l>Court la danse que le dieu mène.</l>
-          <l>Cybèle des forêts, dont sonnent pour Attis les cris d’amour,</l>
+          <l><milestone unit="sent" n="377"/>Cybèle des forêts, dont sonnent pour Attis les cris d’amour,</l>
           <l>A vu ses compagnons, âmes des montueux et verts domaines.</l>
-          <l>Quitter les frais festins de rude sève et courir aux tambours.</l>
-          <l>Les Corybantes nus, entraînés dans la danse et le vacarme</l>
+          <l><milestone unit="sent" n="378"/>Quitter les frais festins de rude sève et courir aux tambours.</l>
+          <l><milestone unit="sent" n="379"/>Les Corybantes nus, entraînés dans la danse et le vacarme</l>
           <l>Rythment du fracas heurté de leurs armes</l>
           <l>L’appel des mains et des tambours</l>
           <l>Qui proclame, parmi les nocturnes alarmes,</l>
           <l>La résurrection de la vie et du jour.</l>
-          <l>Et la purifiante et sauvage Cybèle</l>
+          <l><milestone unit="sent" n="380"/>Et la purifiante et sauvage Cybèle</l>
           <l>Qui se plaît au grand vent qui fait mugir les monts,</l>
           <l>Aux cris des loups et des lions ;</l>
           <l>La déesse puissante et rebelle, Cybèle</l>
@@ -1036,111 +1032,111 @@
           <l>Accompagne, la nuit, sous le bruit des forêts,</l>
           <l>Dionys qui dénoue en riant les secrets,</l>
           <l>Dionysos, Automne et Joie, Ivresse et Paix.</l>
-          <l><pb n="123" xml:id="p123"/>Dionysos, Ivresse et Paix, Automne et Joie.</l>
-          <l>Quand il combat le loup nocturne Hiver</l>
+          <l><pb n="123" xml:id="p123"/><milestone unit="sent" n="381"/>Dionysos, Ivresse et Paix, Automne et Joie.</l>
+          <l><milestone unit="sent" n="382"/>Quand il combat le loup nocturne Hiver</l>
           <l>Sa mère l’accompagne et pleure, Démèter</l>
           <l>Dont la puissance calme se déploie</l>
           <l>En ordre clair</l>
           <l>Sous les sages moissons qui parent l’univers.</l>
-          <l>Le cortège nocturne agitant sa folie</l>
+          <l><milestone unit="sent" n="383"/>Le cortège nocturne agitant sa folie</l>
           <l>Acclame Dionys de Trace et de Phrygie.</l>
-          <l>Et l’homme d’un seul dieu ivre et mystérieux</l>
+          <l><milestone unit="sent" n="384"/>Et l’homme d’un seul dieu ivre et mystérieux</l>
           <l>Se perd dans l’extase.</l>
-          <l>Bouillant comme le vin ténébreux dans le vase</l>
+          <l><milestone unit="sent" n="385"/>Bouillant comme le vin ténébreux dans le vase</l>
           <l>D’or, l’homme d’un seul dieu</l>
           <l>Se perd tout entier dans la folle extase.</l>
-          <l>Tumultueuse, impersonnelle extase.</l>
-          <l>Ô Dionys, rieur, impétueux,</l>
+          <l><milestone unit="sent" n="386"/>Tumultueuse, impersonnelle extase.</l>
+          <l><milestone unit="sent" n="387"/>Ô Dionys, rieur, impétueux,</l>
           <l>Apollon, pur et rigoureux,</l>
           <l>Voyez, sous votre amour terrible qui l’embrase,</l>
           <l>Se perdre l’homme d’un seul dieu.</l>
         </div>
         <div>
           <head>52 <lb/>Orphée et les dieux frères</head>
-          <l><pb n="125" xml:id="p125"/>Orphée est fils d Apollon, le dieu blond :</l>
-          <l>Les louves en folie en feront leur carnage…</l>
-          <l>Mais sage.</l>
-          <l>Il n’est pas consumé par le feu d’Apollon.</l>
-          <l>Orphée est fils de la Thrace sauvage ;</l>
+          <l><milestone unit="sent" n="388"/><pb n="125" xml:id="p125"/>Orphée est fils d’Apollon, le dieu blond :</l>
+          <l><milestone unit="sent" n="389"/>Les louves en folie en feront leur carnage…</l>
+          <l><milestone unit="sent" n="390"/>Mais sage.</l>
+          <l><milestone unit="sent" n="391"/>Il n’est pas consumé par le feu d’Apollon.</l>
+          <l><milestone unit="sent" n="392"/>Orphée est fils de la Thrace sauvage ;</l>
           <l>Aux temples le voici prêtre de Dionys…</l>
-          <l>Mais sage,</l>
+          <l><milestone unit="sent" n="393"/>Mais sage,</l>
           <l>Le délire du sang ne l’a pas envahi.</l>
-          <l>Comme l’enfant en qui fleurissent,</l>
+          <l><milestone unit="sent" n="394"/>Comme l’enfant en qui fleurissent,</l>
           <l>Inscrites dans son cœur, deux forces qui s’unissent.</l>
-          <l><pb n="126" xml:id="p126"/>Orphée unit le double feu</l>
+          <l><pb n="126" xml:id="p126"/><milestone unit="sent" n="395"/>Orphée unit le double feu</l>
           <l>De la stricte harmonie et du cri furieux.</l>
-          <l>Il sait qu’étant né de deux dieux</l>
+          <l><milestone unit="sent" n="396"/>Il sait qu’étant né de deux dieux</l>
           <l>Il sera le cratère où s’unissent les dieux.</l>
-          <l>Son chant proclamera leurs chants mystérieux,</l>
+          <l><milestone unit="sent" n="397"/>Son chant proclamera leurs chants mystérieux,</l>
         </div>
         <div>
           <head>53 <lb/>Les Doriens et les Thraces</head>
-          <l><pb n="127" xml:id="p127"/>Être deux dieux vivant dans la claire lumière,</l>
+          <l><milestone unit="sent" n="398"/><pb n="127" xml:id="p127"/>Être deux dieux vivant dans la claire lumière,</l>
           <l>Fraternels et différents</l>
           <l>Comme sont la vigne et le lierre !…</l>
-          <l>Comment ne pas s’aimer, l’un de l’autre contents ?</l>
-          <l>Comment ne pas sourire au miroir de son sang ?</l>
-          <l>Comment, comment se regarder avec colère ?</l>
-          <l>Apollon gardera les restes de son frère,</l>
+          <l><milestone unit="sent" n="399"/>Comment ne pas s’aimer, l’un de l’autre contents ?</l>
+          <l><milestone unit="sent" n="400"/>Comment ne pas sourire au miroir de son sang ?</l>
+          <l><milestone unit="sent" n="401"/>Comment, comment se regarder avec colère ?</l>
+          <l><milestone unit="sent" n="402"/>Apollon gardera les restes de son frère,</l>
           <l>Bacchus Zagreus, tué par les Titans.</l>
-          <l><pb n="128" xml:id="p128"/>Dionysos de Thrace, Apollon le Dorien</l>
+          <l><pb n="128" xml:id="p128"/><milestone unit="sent" n="403"/>Dionysos de Thrace, Apollon le Dorien</l>
           <l>Verront retomber vos haines fugaces.</l>
-          <l>Ils ne briseront pas la douceur de leurs liens</l>
+          <l><milestone unit="sent" n="404"/>Ils ne briseront pas la douceur de leurs liens</l>
           <l>Pour les combats des Doriens et des Thraces.</l>
         </div>
         <div>
           <head>54 <lb/>La Rencontre sous le palmier</head>
-          <l><pb n="129" xml:id="p129"/>Au pied du palmier triomphal.</l>
-          <l>Tandis que Muses et Satyres</l>
+          <l><milestone unit="sent" n="405"/><pb n="129" xml:id="p129"/>Au pied du palmier triomphal.</l>
+          <l><milestone unit="sent" n="406"/>Tandis que Muses et Satyres</l>
           <l>Frappent en leur honneur la corde et le métal</l>
           <l>Les Musagètes sont unis et leur sourire</l>
           <l>Étend en ondes lumineuses leur empire.</l>
-          <l>Et tous deux se font don de leurs signes : la lyre</l>
+          <l><milestone unit="sent" n="407"/>Et tous deux se font don de leurs signes : la lyre</l>
           <l>Et la nébride, et le thyrse automnal.</l>
-          <l>Semblable à quelque roi dont le règne s’avance,</l>
+          <l><milestone unit="sent" n="408"/>Semblable à quelque roi dont le règne s’avance,</l>
           <l>Et vêtu comme un personnage d’Orient,</l>
           <l>Sous le palmier Dionysos est souriant.</l>
-          <l>Devant lui, pur comme l’enfance,</l>
+          <l><milestone unit="sent" n="409"/>Devant lui, pur comme l’enfance,</l>
           <l><pb n="130" xml:id="p130"/>Le noble jeune homme lauré,</l>
           <l>Apollon, portant l’olivier sacré,</l>
           <l>Se drape avec décence.</l>
-          <l>Dionysos offre sa main</l>
+          <l><milestone unit="sent" n="410"/>Dionysos offre sa main</l>
           <l>Et celle d’Apollon s’y pose.</l>
-          <l>Palmier, toi qui consacres les apothéoses</l>
+          <l><milestone unit="sent" n="411"/>Palmier, toi qui consacres les apothéoses</l>
           <l>Et l’immortalité des princes des humains,</l>
           <l>Jamais tu n’as<note place="bottom" resp="KS">Nous corrigeons « a » par « as ».</note>
             paré triomphe plus serein.</l>
-          <l>Les mains des dieux se sont unies.</l>
-          <l>Sois témoin ; voici que naît l’Harmonie.</l>
+          <l><milestone unit="sent" n="412"/>Les mains des dieux se sont unies.</l>
+          <l><milestone unit="sent" n="413"/>Sois témoin ; voici que naît l’Harmonie.</l>
         </div>
         <div>
           <head>55 <lb/>La Passion des dieux frères</head>
-          <l><pb n="131" xml:id="p131"/>Lequel est l’épi.</l>
-          <l>Le fils divin de la déesse,</l>
+          <l><milestone unit="sent" n="414"/><pb n="131" xml:id="p131"/>Lequel est l’épi.</l>
+          <l><milestone unit="sent" n="415"/>Le fils divin de la déesse,</l>
           <l>L’image en qui se reconnaissent</l>
           <l>Les épis mortels, qui renaissent ?</l>
-          <l>Lequel est l’épi</l>
+          <l><milestone unit="sent" n="416"/>Lequel est l’épi</l>
           <l>Qui sera pétri</l>
           <l>Pour que l’homme soit nourri ?</l>
-          <l>Lequel est ta grappe,</l>
+          <l><milestone unit="sent" n="417"/>Lequel est ta grappe,</l>
           <l>Dansante ivresse, libres jeux.</l>
-          <l>Jeune force ravie aux dieux,</l>
+          <l><milestone unit="sent" n="418"/>Jeune force ravie aux dieux,</l>
           <l>Image et puissance du feu ?</l>
-          <l><pb n="132" xml:id="p132"/>Lequel est la grappe</l>
+          <l><pb n="132" xml:id="p132"/><milestone unit="sent" n="419"/>Lequel est la grappe</l>
           <l>Dont le sang s’échappe</l>
           <l>Pour que l’homme soit joyeux ?</l>
-          <l>Ainsi s’unissent</l>
+          <l><milestone unit="sent" n="420"/>Ainsi s’unissent</l>
           <l>Par la meule et par le pressoir,</l>
           <l>Images de mort et d’espoir</l>
           <l>Les dieux offerts au sacrifice.</l>
         </div>
         <div>
           <head>56 <lb/>Le Poème d’Orphée <lb/>ou L’Ellipse de la couronne ramenée</head>
-          <l><pb n="133" xml:id="p133"/>Quand chanterons-nous ton poème, Orphée ?</l>
-          <l>Quand les deux images du dieu,</l>
+          <l><milestone unit="sent" n="421"/><pb n="133" xml:id="p133"/>Quand chanterons-nous ton poème, Orphée ?</l>
+          <l><milestone unit="sent" n="422"/>Quand les deux images du dieu,</l>
           <l>Phoïbos aux chants harmonieux</l>
           <l>Bacchos aux louves dégrafées.</l>
-          <l>Quand les deux dieux,</l>
+          <l><milestone unit="sent" n="423"/>Quand les deux dieux,</l>
           <l>Dans le cercle parfait des flambeaux d’hyménée</l>
           <l>Accomplissant leur destinée,</l>
           <l>Sur le même autel seront réunis</l>
@@ -1152,7 +1148,7 @@
         <head>Épilogue</head>
         <div>
           <head>57 <lb/>Le Retour d’Eurydice</head>
-          <l><pb n="137" xml:id="p137"/>Son juste sourire clair,</l>
+          <l><milestone unit="sent" n="424"/><pb n="137" xml:id="p137"/>Son juste sourire clair,</l>
           <l>Si maintenant Eurydice</l>
           <l>Te le rendait, offert,</l>
           <l>Offrant, médiatrice et fondatrice</l>
@@ -1162,7 +1158,7 @@
           <l>Reposé des élans obscurs,</l>
           <l>Appuyant ta pensée au large horizon sûr,</l>
           <l>Tu ferais flamboyer vos lumières unies.</l>
-          <l><pb n="138" xml:id="p138"/>Et les ombres s’écarteraient de toi</l>
+          <l><pb n="138" xml:id="p138"/><milestone unit="sent" n="425"/>Et les ombres s’écarteraient de toi</l>
           <l>Laissant place ;</l>
           <l>Et tu suivrais en paix le chemin droit,</l>
           <l>Ton regard mesurant l’espace</l>
@@ -1171,12 +1167,11 @@
       </div>
       <div type="postface">
         <head>Avertissement d’auteur</head>
-        <p><pb n="139" xml:id="p139"/>L’auteur avertit qu’il s’est servi, pour certains passages, de
+        <p><pb n="139" xml:id="p139"/><milestone unit="sent" n="426"/>L’auteur avertit qu’il s’est servi, pour certains passages, de
           quelques travaux historiques, qu’il a cru pouvoir interpréter, et de quelques inscriptions
           grecques.</p>
-        <p>Il laisse à ceux dont tel est le métier le soin de retrouver ces matériaux.</p>
+        <p><milestone unit="sent" n="427"/>Il laisse à ceux dont tel est le métier le soin de retrouver ces matériaux.</p>
       </div>
     </body>
-
   </text>
 </TEI>

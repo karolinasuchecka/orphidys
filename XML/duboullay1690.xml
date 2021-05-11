@@ -1,1537 +1,1975 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
-        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
-        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Orphée</title>
-        <title type="sub">Tragédie en musique représentée par l’Académie royale de musique</title>
-        <author>Michel Du Boullay, Louis Lully</author>
-        <editor/>
-      </titleStmt>
-      <editionStmt>
-        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Orphée</title>
+            <title type="sub">Tragédie en musique représentée par l’Académie royale de musique</title>
+            <author>Michel Du Boullay, Louis Lully</author>
+            <editor/>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
           édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
           comparative intermédiale innovante accompagnée d’une ressource pour le repérage
           intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
           l’Université de Lille.</edition>
-        <respStmt>
-          <name>Karolina Suchecka</name>
-          <resp>Chargé de l’édition</resp>
-        </respStmt>
-        <respStmt>
-          <name>Nathalie Gasiglia</name>
-          <resp>Co-tutrice de thèse</resp>
-        </respStmt>
-        <respStmt>
-          <name>Karl Zieger</name>
-          <resp>Co-tuteur de thèse</resp>
-        </respStmt>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Karolina Suchecka</publisher>
-        <publisher>ALITHILA (Université Lille III)</publisher>
-        <date when="2019"/>
-        <availability status="restricted">
-          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+            <respStmt>
+               <name>Karolina Suchecka</name>
+               <resp>Chargé de l’édition</resp>
+            </respStmt>
+            <respStmt>
+               <name>Nathalie Gasiglia</name>
+               <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+               <name>Karl Zieger</name>
+               <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                  <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
               thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
               numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
               ressource pour le repérage intertextuel »</p>
-            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+                  <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
               les bases de données (L341-1) est mise à disposition de la communauté scientifique
               internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
               : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
               BY-NC-ND 3.0 FR) ». </p>
-            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+                  <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
               de cette ressource électroniques comportera le nom du projet et surtout l’adresse
               Internet de la ressource. </p>
-            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+                  <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
               utilisation commerciale est interdite.</p>
-            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+                  <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
               électronique, notamment en intégrant toutes les contributions extérieures, la
               diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-          </licence>
-        </availability>
-        <idno>https://gallica.bnf.fr/ark:/12148/bpt6k311845v</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl><author>Michel Du Boullay, Louis Lully</author> / <title>Orphée, tragédie en musique
+               </licence>
+            </availability>
+            <idno>https://gallica.bnf.fr/ark:/12148/bpt6k311845v</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Michel Du Boullay, Louis Lully</author> / <title>Orphée, tragédie en musique
             représentée par l’Académie royale de musique. [Paroles de M. Du Boullay, musique de L.
             Lully.]</title> / Paris / aux dépens de l’Académie / 1690.</bibl>
-        <biblFull>
-          <titleStmt>
-            <title>Orphée, tragédie en musique représentée par l’Académie royale de musique.
+            <biblFull>
+               <titleStmt>
+                  <title>Orphée, tragédie en musique représentée par l’Académie royale de musique.
               [Paroles de M. Du Boullay, musique de L. Lully.]</title>
-          </titleStmt>
-          <publicationStmt>
-            <publisher>aux dépens de l’Académie</publisher>
-            <pubPlace>Paris</pubPlace>
-            <date when="1690"/>
-          </publicationStmt>
-        </biblFull>
-        <genre>opéra</genre>
-        <structure>duboullay1690</structure>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>aux dépens de l’Académie</publisher>
+                  <pubPlace>Paris</pubPlace>
+                  <date when="1690"/>
+               </publicationStmt>
+            </biblFull>
+            <genre>opéra</genre>
+            <structure>duboullay1690</structure>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
         nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
         projet. La structure des métadonnées a été établie en référence à la manière dont le
         logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-      <creation>
-        <date when="1690">1690</date>
-      </creation>
-      <language>
-        <language>oFR</language>
-      </language>
-      <textClass>
-        <keywords>
-          <list>
-            <item>transmodalisation</item>
-          </list>
-        </keywords>
-      </textClass>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <titlePage>
-        <docAuthor>Michel Du Boullay, Louis Lully</docAuthor>
-        <docTitle>
-          <titlePart type="main">Orphée</titlePart>
-          <titlePart type="sub">Tragédie en musique représentée par l’Académie royale de
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when="1690">1690</date>
+         </creation>
+         <language>
+            <language>oFR</language>
+         </language>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>transmodalisation</item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docAuthor>Michel Du Boullay, Louis Lully</docAuthor>
+            <docTitle>
+               <titlePart type="main">Orphée</titlePart>
+               <titlePart type="sub">Tragédie en musique représentée par l’Académie royale de
             musique</titlePart>
-        </docTitle>
-      </titlePage>
-      <castList>
-        <castItem xml:id="hiver">L’Hyver</castItem>
-        <castItem xml:id="troupe_hiver">Troupe de Vents, de Frimats, de Glaçons, et d’Hommes
+            </docTitle>
+         </titlePage>
+         <castList>
+            <castItem xml:id="hiver">L’Hyver</castItem>
+            <castItem xml:id="troupe_hiver">Troupe de Vents, de Frimats, de Glaçons, et d’Hommes
           gelez</castItem>
-        <castItem xml:id="bergers">Troupe de personnes qui cherchent un Spectacle, parmy lesquelles
+            <castItem xml:id="bergers">Troupe de personnes qui cherchent un Spectacle, parmy lesquelles
           se trouvent un berger et une bergère</castItem>
-        <castItem xml:id="venus">Venus</castItem>
-        <castItem xml:id="amour">L’Amour et les Grâces</castItem>
-        <castItem xml:id="jeux">Les Jeux, les Ris et les Plaisirs</castItem>
-        <castItem xml:id="oraise">Oraise, Reine de Thrace</castItem>
-        <castItem xml:id="orphee">Orphée, nouvellement marié avec Euridice</castItem>
-        <castItem xml:id="eurydice">Euridice</castItem>
-        <castItem xml:id="ismene">Ismene, confidente d’Orphée</castItem>
-        <castItem xml:id="eurimede">Eurimède, amy d’Orphée</castItem>
-        <castItem xml:id="nymphes">Troupe de Nymphes, Compagnes d’Euridice</castItem>
-        <castItem xml:id="cephise">Cephise, une des Nymphes</castItem>
-        <castItem xml:id="pluton">Pluton</castItem>
-        <castItem xml:id="ministres_pluton">Troupe de Ministres, et de Suivans de Pluton</castItem>
-        <castItem xml:id="ascalax">Ascalax, un des Ministres de Pluton</castItem>
-        <castItem xml:id="ombres_criminelles">Troupe d’Ombres criminelles, comme Sisiphe, Tantale,
+            <castItem xml:id="venus">Venus</castItem>
+            <castItem xml:id="amour">L’Amour et les Grâces</castItem>
+            <castItem xml:id="jeux">Les Jeux, les Ris et les Plaisirs</castItem>
+            <castItem xml:id="oraise">Oraise, Reine de Thrace</castItem>
+            <castItem xml:id="orphee">Orphée, nouvellement marié avec Euridice</castItem>
+            <castItem xml:id="eurydice">Euridice</castItem>
+            <castItem xml:id="ismene">Ismene, confidente d’Orphée</castItem>
+            <castItem xml:id="eurimede">Eurimède, amy d’Orphée</castItem>
+            <castItem xml:id="nymphes">Troupe de Nymphes, Compagnes d’Euridice</castItem>
+            <castItem xml:id="cephise">Cephise, une des Nymphes</castItem>
+            <castItem xml:id="pluton">Pluton</castItem>
+            <castItem xml:id="ministres_pluton">Troupe de Ministres, et de Suivans de Pluton</castItem>
+            <castItem xml:id="ascalax">Ascalax, un des Ministres de Pluton</castItem>
+            <castItem xml:id="ombres_criminelles">Troupe d’Ombres criminelles, comme Sisiphe, Tantale,
           Promethée, les Danaïdes, etc.</castItem>
-        <castItem xml:id="ombres_heureuses">Troupe d’Ombres heureuses qui accompagnent l’Ombre
+            <castItem xml:id="ombres_heureuses">Troupe d’Ombres heureuses qui accompagnent l’Ombre
           d’Euridice</castItem>
-        <castItem xml:id="pretresse_bacchus">La Prestresse de Bacchus</castItem>
-        <castItem xml:id="bacchantes">Troupe de Bacchantes</castItem>
-        <castItem xml:id="chœur">Le Chœur</castItem>
-      </castList>
-    </front>
-
-    <body>
-
-      <div>
-        <head>Prologue</head>
-        <stage><pb n="3" xml:id="p3"/>Le Theatre represente une Salle destinée pour des Spectacles.
-          Elle est ornée d’Ampitheatres et de Balustrades, et percée de Portiques, dont ceux du fond
+            <castItem xml:id="pretresse_bacchus">La Prestresse de Bacchus</castItem>
+            <castItem xml:id="bacchantes">Troupe de Bacchantes</castItem>
+            <castItem xml:id="chœur">Le Chœur</castItem>
+         </castList>
+      </front>
+      <body>
+         <div>
+            <head>Prologue</head>
+            <stage>
+               <milestone unit="sent" n="1"/>
+               <pb n="3" xml:id="p3"/>Le Theatre represente une Salle destinée pour des Spectacles. <milestone unit="sent" n="2"/>Elle est ornée d’Ampitheatres et de Balustrades, et percée de Portiques, dont ceux du fond
           laissent voir des Arbres dépoüillez, une Campagne couverte de neige, et les autres marques
           de l’Hyver.</stage>
-        <sp who="hiver">
-          <speaker rend="sc">L’Hyver</speaker>
-          <l>Aprés Flore, Cerés, Bacchus,</l>
-          <l>C’est à mon tour à regner sur la terre ;</l>
-          <l>Mais loin de m’offrir leurs tributs</l>
-          <l>Tous les Mortels me font la guerre :</l>
-          <l>Quels biens par mon secours ne reçoivent-ils pas ?</l>
-          <l>C’est moy dont le pouvoir écarte le Tonnerre,</l>
-          <l>Je rassemble les Jeux, je suspens les Combats ;</l>
-          <l>Cependant mes bien-faits ne font que des ingrats.</l>
-          <stage>Troupe de personnes cherchant un spectacle</stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un de la troupe</speaker>
-          <l><pb n="4" xml:id="p4"/>Quoy toujours de l’Hyver la presence odieuse !</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Deux hommes et une femme de la troupe</speaker>
-          <l>Ah ! quand reviendront les Zephirs ?</l>
-          <l>Laisse-nous, Saison fâcheuse,</l>
-          <l>Ne trouble plus nos plaisirs.</l>
-        </sp>
-        <sp who="chœur">
-          <speaker>Le Chœur</speaker>
-          <l>Ah ! quand reviendront les Zephirs ?</l>
-          <l>Laisse-nous, Saison fâcheuse,</l>
-          <l>Ne trouble pas nos plaisirs.</l>
-        </sp>
-        <sp who="hiver">
-          <speaker>L’Hyver</speaker>
-          <l>Froids Enfans d’Aquilon, soutiens de ma puissance,</l>
-          <l>Éloignez de ces lieux un Peuple qui m’offence.</l>
-          <stage>Les Vents et les Frimats veulent executer les ordres de l’Hyver ; Mais dans ce
+            <sp who="hiver">
+               <speaker rend="sc">L’Hyver</speaker>
+               <l>
+                  <milestone unit="sent" n="3"/>Aprés Flore, Cerés, Bacchus,</l>
+               <l>C’est à mon tour à regner sur la terre ;</l>
+               <l>Mais loin de m’offrir leurs tributs</l>
+               <l>Tous les Mortels me font la guerre :</l>
+               <l>
+                  <milestone unit="sent" n="4"/>Quels biens par mon secours ne reçoivent-ils pas ?</l>
+               <l>
+                  <milestone unit="sent" n="5"/>C’est moy dont le pouvoir écarte le Tonnerre,</l>
+               <l>Je rassemble les Jeux, je suspens les Combats ;</l>
+               <l>Cependant mes bien-faits ne font que des ingrats.</l>
+               <stage>
+                  <milestone unit="sent" n="6"/>Troupe de personnes cherchant un spectacle</stage>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un de la troupe</speaker>
+               <l>
+                  <milestone unit="sent" n="7"/>
+                  <pb n="4" xml:id="p4"/>Quoy toujours de l’Hyver la presence odieuse !</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Deux hommes et une femme de la troupe</speaker>
+               <l>
+                  <milestone unit="sent" n="8"/>Ah ! quand reviendront les Zephirs ?</l>
+               <l>
+                  <milestone unit="sent" n="9"/>Laisse-nous, Saison fâcheuse,</l>
+               <l>Ne trouble plus nos plaisirs.</l>
+            </sp>
+            <sp who="chœur">
+               <speaker>Le Chœur</speaker>
+               <l>
+                  <milestone unit="sent" n="10"/>Ah ! quand reviendront les Zephirs ?</l>
+               <l>
+                  <milestone unit="sent" n="11"/>Laisse-nous, Saison fâcheuse,</l>
+               <l>Ne trouble pas nos plaisirs.</l>
+            </sp>
+            <sp who="hiver">
+               <speaker>L’Hyver</speaker>
+               <l>
+                  <milestone unit="sent" n="12"/>Froids Enfans d’Aquilon, soutiens de ma puissance,</l>
+               <l>Éloignez de ces lieux un Peuple qui m’offence.</l>
+               <stage>
+                  <milestone unit="sent" n="13"/>Les Vents et les Frimats veulent executer les ordres de l’Hyver ; Mais dans ce
             moment le Ciel brille d’une lumiere nouvelle, et Venus descend dans un Char, accompagnée
             de l’Amour et des Graces.</stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un homme de la Troupe</speaker>
-          <l>De ton foible couroux c’est trop nous allarmer ;</l>
-          <l>Cesse d’attrister la nature :</l>
-          <l>Les doux feux de l’Amour viennent la ranimer,</l>
-          <l>Venus descend, c’est trop nous allarmer,</l>
-          <l>Retire-toy dans quelque grotte obscure.</l>
-          <stage><pb n="5" xml:id="p5"/>L’Hyver et sa Suite se retirent, les marques de l’Hyver font
+            </sp>
+            <sp who="bergers">
+               <speaker>Un homme de la Troupe</speaker>
+               <l>
+                  <milestone unit="sent" n="14"/>De ton foible couroux c’est trop nous allarmer ;</l>
+               <l>Cesse d’attrister la nature :</l>
+               <l>
+                  <milestone unit="sent" n="15"/>Les doux feux de l’Amour viennent la ranimer,</l>
+               <l>Venus descend, c’est trop nous allarmer,</l>
+               <l>Retire-toy dans quelque grotte obscure.</l>
+               <stage>
+                  <milestone unit="sent" n="16"/>
+                  <pb n="5" xml:id="p5"/>L’Hyver et sa Suite se retirent, les marques de l’Hyver font
             place à celles du Printemps, et Venus acheve de descendre.</stage>
-        </sp>
-        <sp who="venus">
-          <speaker>Venus</speaker>
-          <l>Malgré l’Hyver et ses rigueurs,</l>
-          <l>Mortels, pour vous l’Amour redouble ses faveurs :</l>
-          <l>Vous faire sentir ses flames,</l>
-          <l>C’est égaler la Terre aux Cieux ;</l>
-          <l>C’est faire part à vos ames</l>
-          <l>De la felicité des Dieux.</l>
-          <l>Tandis que le bruit des armes</l>
-          <l>Jette l’horreur en tous lieux,</l>
-          <l>Ce séjour delicieux</l>
-          <l>Est exempt de tant d’allarmes :</l>
-          <l>Venez Plaisirs, Ris et Jeux,</l>
-          <l>Faites briller tous vos charmes,</l>
-          <l>Venez Plaisirs, Ris, et Jeux,</l>
-          <l>Demeurez pour jamais dans cét azile heureux.</l>
-          <stage>Les Jeux et les Plaisirs volent ou accourent de toutes parts. Un Berger et une
+            </sp>
+            <sp who="venus">
+               <speaker>Venus</speaker>
+               <l>
+                  <milestone unit="sent" n="17"/>Malgré l’Hyver et ses rigueurs,</l>
+               <l>Mortels, pour vous l’Amour redouble ses faveurs :</l>
+               <l>
+                  <milestone unit="sent" n="18"/>Vous faire sentir ses flames,</l>
+               <l>C’est égaler la Terre aux Cieux ;</l>
+               <l>C’est faire part à vos ames</l>
+               <l>De la felicité des Dieux.</l>
+               <l>
+                  <milestone unit="sent" n="19"/>Tandis que le bruit des armes</l>
+               <l>Jette l’horreur en tous lieux,</l>
+               <l>Ce séjour delicieux</l>
+               <l>Est exempt de tant d’allarmes :</l>
+               <l>
+                  <milestone unit="sent" n="20"/>Venez Plaisirs, Ris et Jeux,</l>
+               <l>Faites briller tous vos charmes,</l>
+               <l>Venez Plaisirs, Ris, et Jeux,</l>
+               <l>Demeurez pour jamais dans cét azile heureux.</l>
+               <stage>
+                  <milestone unit="sent" n="21"/>Les Jeux et les Plaisirs volent ou accourent de toutes parts. <milestone unit="sent" n="22"/>Un Berger et une
             Bergère qui se trouvent dans la Troupe précédente, chantent ensemble.</stage>
-          <l><pb n="6" xml:id="p6"/>Si nous quittons nostre séjour tranquille,</l>
-          <l>Ce n’est pas pour chercher une pompe inutile ;</l>
-          <l>C’est pour donner à vos jeunes desirs</l>
-          <l>L’exemple des ardeurs sinceres ;</l>
-          <l>Aimez en Bergers, en Bergères,</l>
-          <l>Vous en aurez plus de plaisirs.</l>
-          <stage>Ceux de la Troupe témoignent par une Danse champestre qu’ils approuvent ce qu’ont
+               <l>
+                  <pb n="6" xml:id="p6"/>
+                  <milestone unit="sent" n="23"/>Si nous quittons nostre séjour tranquille,</l>
+               <l>Ce n’est pas pour chercher une pompe inutile ;</l>
+               <l>C’est pour donner à vos jeunes desirs</l>
+               <l>L’exemple des ardeurs sinceres ;</l>
+               <l>Aimez en Bergers, en Bergères,</l>
+               <l>Vous en aurez plus de plaisirs.</l>
+               <stage>
+                  <milestone unit="sent" n="24"/>Ceux de la Troupe témoignent par une Danse champestre qu’ils approuvent ce qu’ont
             dit le Berger et la Bergère</stage>
-        </sp>
-        <sp who="venus">
-          <speaker>Venus</speaker>
-          <l>Par la puissance de l’Amour</l>
-          <l>Pour vous divertir en ce jour</l>
-          <l>Orphée exprés sort du Royaume sombre :</l>
-          <l>Heureux si ses Airs et sa Voix</l>
-          <l>Vous paroissent seulement l’ombre</l>
-          <l>De ce qu’ils furent autrefois.</l>
-          <l>Quel cœur en l’écoutant n’en devenoit plus tendre ?</l>
-          <l>De ses chants tout divins ce fût le moindre effort.</l>
-          <l>Mon fils en estoit plus fort,</l>
-          <l>On ne pouvoit plus s’en deffendre ;</l>
-          <l>Helas ! helas ! Orphée est mort !</l>
-          <l>Venus et les Amours voudroient bien vous le rendre.</l>
-          <stage>L’Amour, les Graces, les Jeux et les Plaisirs expriment leur tristesse.</stage>
-        </sp>
-        <sp who="venus">
-          <speaker>Venus</speaker>
-          <l>Laissons le souvenir d’une perte cruelle,</l>
-          <l>Un devoir plus pressant demande vostre zele.</l>
-          <l><pb n="7" xml:id="p7"/>Applaudissez au Héros</l>
-          <l>Dont les soins fortunez vous donnent ce repos.</l>
-          <l>En vain tout l’Univers conspire</l>
-          <l>Pour obscurcir l’éclat de son Empire.</l>
-          <l>Ce n’est que preparer un plus illustre prix</l>
-          <l>Au merite de sa Victoire :</l>
-          <l>Plus l’Envie à son bras oppose d’Ennemis,</l>
-          <l>Et plus grande sera sa Gloire.</l>
-        </sp>
-        <sp who="chœur">
-          <speaker>Les Chœurs</speaker>
-          <l>Applaudissons au Héros</l>
-          <l>Dont les soins fortunez nous donnent ce repos.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Deux hommes et une femme</speaker>
-          <l>en vain tout l’Univers conspire</l>
-          <l>Pour oscurcir l’éclat de sa Victoire.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Deux Hommes</speaker>
-          <l>Ce n’est que preparer un plus illustre prix</l>
-          <l>Au merite de sa Victoire.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Deux Hommes et une Femme</speaker>
-          <l>Plus l’Envie à son bras oppose d’Ennemis,</l>
-          <l>Et plus grande sera sa Gloire.</l>
-        </sp>
-        <sp who="chœur">
-          <speaker>Les Chœurs</speaker>
-          <l>Plus l’Envie à son bras oppose d’Ennemis.</l>
-          <l>Et plus grande sera sa Gloire.</l>
-        </sp>
-      </div>
-      <div>
-        <head>Acte premier</head>
-        <stage>Le Theatre represente une Campagne agreable dans le voisinage de la Capitale de la
+            </sp>
+            <sp who="venus">
+               <speaker>Venus</speaker>
+               <l>
+                  <milestone unit="sent" n="25"/>Par la puissance de l’Amour</l>
+               <l>Pour vous divertir en ce jour</l>
+               <l>Orphée exprés sort du Royaume sombre :</l>
+               <l>
+                  <milestone unit="sent" n="26"/>Heureux si ses Airs et sa Voix</l>
+               <l>Vous paroissent seulement l’ombre</l>
+               <l>De ce qu’ils furent autrefois.</l>
+               <l>
+                  <milestone unit="sent" n="27"/>Quel cœur en l’écoutant n’en devenoit plus tendre ?</l>
+               <l>
+                  <milestone unit="sent" n="28"/>De ses chants tout divins ce fût le moindre effort.</l>
+               <l>
+                  <milestone unit="sent" n="29"/>Mon fils en estoit plus fort,</l>
+               <l>On ne pouvoit plus s’en deffendre ;</l>
+               <l>Helas ! helas ! <milestone unit="sent" n="30"/>Orphée est mort !</l>
+               <l>
+                  <milestone unit="sent" n="31"/>Venus et les Amours voudroient bien vous le rendre.</l>
+               <stage>
+                  <milestone unit="sent" n="32"/>L’Amour, les Graces, les Jeux et les Plaisirs expriment leur tristesse.</stage>
+            </sp>
+            <sp who="venus">
+               <speaker>Venus</speaker>
+               <l>
+                  <milestone unit="sent" n="33"/>Laissons le souvenir d’une perte cruelle,</l>
+               <l>Un devoir plus pressant demande vostre zele.</l>
+               <l>
+                  <pb n="7" xml:id="p7"/>
+                  <milestone unit="sent" n="34"/>Applaudissez au Héros</l>
+               <l>Dont les soins fortunez vous donnent ce repos.</l>
+               <l>
+                  <milestone unit="sent" n="35"/>En vain tout l’Univers conspire</l>
+               <l>Pour obscurcir l’éclat de son Empire.</l>
+               <l>
+                  <milestone unit="sent" n="36"/>Ce n’est que preparer un plus illustre prix</l>
+               <l>Au merite de sa Victoire :</l>
+               <l>
+                  <milestone unit="sent" n="37"/>Plus l’Envie à son bras oppose d’Ennemis,</l>
+               <l>Et plus grande sera sa Gloire.</l>
+            </sp>
+            <sp who="chœur">
+               <speaker>Les Chœurs</speaker>
+               <l>
+                  <milestone unit="sent" n="38"/>Applaudissons au Héros</l>
+               <l>Dont les soins fortunez nous donnent ce repos.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Deux hommes et une femme</speaker>
+               <l>
+                  <milestone unit="sent" n="39"/>en vain tout l’Univers conspire</l>
+               <l>Pour oscurcir l’éclat de sa Victoire.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Deux Hommes</speaker>
+               <l>
+                  <milestone unit="sent" n="40"/>Ce n’est que preparer un plus illustre prix</l>
+               <l>Au merite de sa Victoire.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Deux Hommes et une Femme</speaker>
+               <l>
+                  <milestone unit="sent" n="41"/>Plus l’Envie à son bras oppose d’Ennemis,</l>
+               <l>Et plus grande sera sa Gloire.</l>
+            </sp>
+            <sp who="chœur">
+               <speaker>Les Chœurs</speaker>
+               <l>
+                  <milestone unit="sent" n="42"/>Plus l’Envie à son bras oppose d’Ennemis.</l>
+               <l>
+                  <milestone unit="sent" n="43"/>Et plus grande sera sa Gloire.</l>
+            </sp>
+         </div>
+         <div>
+            <head>Acte premier</head>
+            <stage>
+               <milestone unit="sent" n="44"/>Le Theatre represente une Campagne agreable dans le voisinage de la Capitale de la
           Thrace.</stage>
-        <div type="scene">
-          <head>Scène première</head>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="9" xml:id="p9"/>Je me soulage, chere Ismene,</l>
-            <l>En te découvrant un peine</l>
-            <l>Dont je ne sçaurois plus guerir :</l>
-            <l>C’est trop voir ma Rivale unie avec Orphée ;</l>
-            <l><pb n="10" xml:id="p10"/>Tandis que dans mon sein ma flâme renfermée</l>
-            <l>Rend cette peine encor plus cruelle à souffrir.</l>
-            <l>D’un plus doux sort reprenons l’esperance,</l>
-            <l>Délivrons-nous d’un obstacle odieux,</l>
-            <l>Euridice habite ces lieux,</l>
-            <l>Elle y va rencontrer sa perte et ma vangeance.</l>
-            <l>Ô ! toy, qu’un charme plein d’horreur</l>
-            <l>Vient d’instruire en secret à servir ma fureur,</l>
-            <l>Serpent, que sous ces fleurs cache cette prairie ?</l>
-            <l>Cent Nymphes dès ce jour y porteront leurs pas ;</l>
-            <l>Discerne bien mon ennemie,</l>
-            <l>C’est elle à qui tu dois donner un prompt trépas.</l>
-          </sp>
-          <sp who="ismene">
-            <speaker>Ismene</speaker>
-            <l>D’Orphée Apollon est le pere ;</l>
-            <l>Mais il languit dans le repos :</l>
-            <l>Et les Arts qu’on voit luy plaire</l>
-            <l>Ne sont pas ceux des Heros.</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>J’entens la Gloire qui murmure ;</l>
-            <l>Mais se choisit-on son vainqueur ?</l>
-            <l>Il charme toute la nature,</l>
-            <l>T’étonnes-tu qu’il ait charmé mon cœur ?</l>
-          </sp>
-          <sp who="ismene">
-            <speaker>Ismene</speaker>
-            <l>Eh pourquoy donc souffrir un Hymen si contraire</l>
-            <l>À vostre espoir le plus charmant ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="11" xml:id="p11"/>Je me flattois, helas ! trop vainement</l>
-            <l>D’y trouver le secours d’un dépit salutaire.</l>
-          </sp>
-          <sp who="ismene">
-            <speaker>Ismene</speaker>
-            <l>Ah que ne faisiez-vous plûtost agir mes soins,</l>
-            <l>Afin qu’Orphée apprît du moins</l>
-            <l>Tout ce qu’en sa faveur vostre amour pouvoit faire.</l>
-            <l>Veuve d’un Roy fameux, Reine de ces climats,</l>
-            <l>Les charmes de vostre personne,</l>
-            <l>Le brillant de vostre Couronne,</l>
-            <l>N’estoit-ce pas pour luy d’assez puissans appas ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Tu parles de l’Amour et ne le connois pas.</l>
-            <l>Les offres les plus éclatantes</l>
-            <l>Sur un cœur prevenu sont toûjours impuissantes,</l>
-            <l>La raison vainement s’efforce de parler :</l>
-            <l>Il brûle dans l’instant mesme</l>
-            <l>D’aller revoir ce qu’il aime</l>
-            <l>Et de luy tout immoler.</l>
-          </sp>
-          <sp who="ismene">
-            <speaker rend="noindent">Ismene</speaker>
-            <l>Si l’on voit des Amans dont l’ame peu commune</l>
-            <l>Immole quelque fois la Fortune à l’Amour ;</l>
-            <l>On en voit bien plus chaque jour</l>
-            <l>Sans scrupule immoler l’Amour à la Fortune.</l>
-            <l>C’est rarement qu’un Throsne est méprisé</l>
-          </sp>
-          <sp who="orasie">
-            <speaker rend="noindent">Orasie</speaker>
-            <l><pb n="12" xml:id="p12"/>Non, je connois Orphée, il eût tout refusé</l>
-            <l>Son Amour satisfait luy tient lieu d’un Empire ;</l>
-            <l>Que je prevoy d’obstacle au bien que je desire !</l>
-            <l>Et du crime où l’amour malgré moy me conduit,</l>
-            <l>Que sçay-je si jamais je recevray le fruit.</l>
-            <l>Dieux, quelle peine à ma peine est égale !</l>
-          </sp>
-          <sp who="ismene">
-            <speaker rend="noindent">Ismene</speaker>
-            <l>Que je vous plains ! mais sortons de ces lieux,</l>
-            <l>Y voulez-vous trouver vostre Rivale ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker rend="noindent">Orasie</speaker>
-            <l>Non, m’en preservent les Dieux !</l>
-            <l>Si toutefois Orphée… Il vient ; laisse à ma flame…</l>
-          </sp>
-          <sp who="ismene">
-            <speaker rend="noindent">Ismene</speaker>
-            <l>Par cent raisons plûtost songez à l’éviter.</l>
-          </sp>
-          <sp who="orasie">
-            <speaker rend="noindent">Orasie</speaker>
-            <l>Ismene, malgré moy je me sens arrester,</l>
-            <l>Cachons-luy seulement le trouble de mon ame.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène II</head>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="13" xml:id="p13"/>Le desir du repos, et la beauté du jour</l>
-            <l>M’ont fait venir dans ce lieu solitaire :</l>
-            <l>Mais quand vous preferez aux plaisirs de ma Cour</l>
-            <l>Un champestre séjour ;</l>
-            <l>On peut vous reprocher que c’est trop vous plaire.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Je cheris ces beaux lieux, j’ay peine à les quitter,</l>
-            <l>Ils m’offrent des Ruisseaux, des Fleurs, de la Verdure,</l>
-            <l>Le plus cruel Hyver semble les respecter,</l>
-            <l>Et le Ciel y répand sa clarté la plus pure ;</l>
-            <l>Eh pourquoy ne pas profiter</l>
-            <l>De ces faveurs de la nature ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Vous ne me dites pas leurs charmes les plus grands,</l>
-            <l>Euridice s’y plaist, en faut-il d’avantage ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Les Nymphes de ce voisinage</l>
-            <l>L’amusent chaque jour par leurs jeux differens ;</l>
-            <l>À demeurer encor leur amitié l’engage</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="14" xml:id="p14"/>De vostre hymen nouveau les doux commencemens</l>
-            <l>Demandoient de la complaisance ;</l>
-            <l>Mais songez désormais qu’après un si long-temps</l>
-            <l>Vous nous devez vostre presence.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène III</head>
-          <sp who="eurimede">
-            <speaker rend="sc">Eurimede</speaker>
-            <l>Quand la faveur semble icy vous chercher,</l>
-            <l>D’où vient que vostre cœur soûpire ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Est-il doux de m’entendre dire</l>
-            <l>Qu’à mes plus chers plaisirs je me dois arracher ?</l>
-            <l>La faveur souvent importune,</l>
-            <l>L’esclavage la suit de prés,</l>
-            <l>Je ne demanderois, helas ! à la Fortune,</l>
-            <l>Que de pouvoir joüir en paix</l>
-            <l>Des seuls biens que l’Amour m’a faits.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker rend="sc">Eurimede</speaker>
-            <l>Cette felicité parfaite</l>
-            <l>Dans une Cour qui vous souhaite</l>
-            <l>Perdroit-elle de ses attraits ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="15" xml:id="p15"/>Trop de soins à la Cour rendent les cœurs distraits,</l>
-            <l>On aime mieux dans la retraire :</l>
-            <l>Icy tous mes moments ne sont que pour l’Amour,</l>
-            <l>Et j’aime mille fois plus que le premier jour.</l>
-          </sp>
-          <sp who="orphee eurimede">
-            <speaker>Orphée et Eurimede</speaker>
-            <l>Non, l’hymen ne vient point éteindre</l>
-            <l>Les feux par l’Amour allumez.</l>
-            <l>Deux cœurs l’un pour l’autre formez</l>
-            <l>N’ont jamais ce malheur à craindre ;</l>
-            <l>S’il arrive aux Amans quelque fois de s’en plaindre ;</l>
-            <l>C’est qu’ils estoient foiblement enflamez :</l>
-            <l>Non, l’hymen ne vient point éteindre</l>
-            <l>Les feux par l’Amour allumez.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Cependant vous sçavez quelle peine secrete</l>
-            <l>Tient mon ame inquiete.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker rend="sc">Eurimede</speaker>
-            <l>Vostre chagrin vous presse-t-il toûjours</l>
-            <l>De quitter pour jamais la Thrace ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Un noir pressentiment sans cesse m’y menace,</l>
-            <l>Je veux par mon départ en terminer le cours.</l>
-            <l>Je pretens habiter la Grace ;</l>
-            <l>Me faire une retraite aux rives du Permesse,</l>
-            <l><pb n="16" xml:id="p16"/>Et signaler les Arts que je tiens d’Apollon :</l>
-            <l>Y regarder de loin le Sort et ses Caprices ;</l>
-            <l>Et faire toutes mes delices</l>
-            <l>De ma chere Euridice, et du sacré Vallon.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker rend="sc">Eurimede</speaker>
-            <l>Vous quitterez vostre Partie ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eh bien ! s’il faut que je vous le confie,</l>
-            <l>Mon cœur revere Bachus,</l>
-            <l>Mais je déteste l’abus</l>
-            <l>De ces Festes odieuses</l>
-            <l>Où l’on voit… je me tais, je n’en ay que trop dit,</l>
-            <l>Et que trop irrité l’esprit</l>
-            <l>De nos Bacchantes furieuses.</l>
-            <l>Livreray-je Euridice en danger de ces mœurs ?</l>
-            <l>Non, je la dois sauver de pareilles horreurs ;</l>
-            <l>Mais je ne la vois point paroistre,</l>
-            <l>Je l’attens, et je ses renaistre</l>
-            <l>Toutes mes secrettes terreurs.</l>
-            <l>Elle vient.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène IV</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="17" xml:id="p17"/>Qu’en ces lieux mon ame impatiente</l>
-            <l>Brûloit de vous voir arriver !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Si j’avois crû si-tost vous y trouver,</l>
-            <l>Je n’aurois pas fait languir vostre attente.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eh quoy ne sçavez-vous pas</l>
-            <l>Que mon amour ne peut soutenir vostre absence ?</l>
-            <l>Et que par tout où vous portez vos pas,</l>
-            <l>Il les suit, ou les devance ?</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Je ne sçaurois blâmer ce grand empressement,</l>
-            <l>Il me paroist trop aimable :</l>
-            <l>C’est un bien inestimable</l>
-            <l>Qu’en Époux toûjours Amant.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ô Dieux ! je vous le recommande,</l>
-            <l>Ce tresor que je tiens de vos seules bontez,</l>
-            <l>Conservez-moy tant de beautez,</l>
-            <l>C’est tout ce que mon cœur sans cesse vous demande.</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l><pb n="18" xml:id="p18"/>Quoy vous verray-encore à des transports si doux</l>
-            <l>Mesler une importune crainte ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Si malgré moy j’en éprouve l’atteinte,</l>
-            <l>Vous le sçavez, c’est que je crains pour vous.</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Rasseurez-vous, trop de delicatesse</l>
-            <l>Allarme ainsi vostre tendresse.</l>
-            <l>Non, non, le juste Ciel favorable à nos vœux</l>
-            <l>Ne voudra pas si-tost briser de se beaux nœuds.</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice, Orphée, Eurimede</speaker>
-            <l>Non, non, le juste Ciel favorable à nos vœux</l>
-            <l>Ne voudra pas si-tost briser de si beaux nœuds.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>De tous costez on voit dans ces campagnes</l>
-            <l>Les Nymphes commencer leurs jeux.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à Euridice</stage>
-            <l>Nous vous laissons, bien-tost nous reviendrons tous deux.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène V</head>
-          <stage>Des Nymphes et des Divinitez champestres arrivent par petites troupes et sans
+            <div type="scene">
+               <head>Scène première</head>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="45"/>
+                     <pb n="9" xml:id="p9"/>Je me soulage, chere Ismene,</l>
+                  <l>En te découvrant un peine</l>
+                  <l>Dont je ne sçaurois plus guerir :</l>
+                  <l>
+                     <milestone unit="sent" n="46"/>C’est trop voir ma Rivale unie avec Orphée ;</l>
+                  <l>
+                     <pb n="10" xml:id="p10"/>Tandis que dans mon sein ma flâme renfermée</l>
+                  <l>Rend cette peine encor plus cruelle à souffrir.</l>
+                  <l>
+                     <milestone unit="sent" n="47"/>D’un plus doux sort reprenons l’esperance,</l>
+                  <l>Délivrons-nous d’un obstacle odieux,</l>
+                  <l>Euridice habite ces lieux,</l>
+                  <l>Elle y va rencontrer sa perte et ma vangeance.</l>
+                  <l>
+                     <milestone unit="sent" n="48"/>Ô ! toy, qu’un charme plein d’horreur</l>
+                  <l>Vient d’instruire en secret à servir ma fureur,</l>
+                  <l>Serpent, que sous ces fleurs cache cette prairie ?</l>
+                  <l>
+                     <milestone unit="sent" n="49"/>Cent Nymphes dès ce jour y porteront leurs pas ;</l>
+                  <l>Discerne bien mon ennemie,</l>
+                  <l>C’est elle à qui tu dois donner un prompt trépas.</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker>Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="50"/>D’Orphée Apollon est le pere ;</l>
+                  <l>Mais il languit dans le repos :</l>
+                  <l>
+                     <milestone unit="sent" n="51"/>Et les Arts qu’on voit luy plaire</l>
+                  <l>Ne sont pas ceux des Heros.</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="52"/>J’entens la Gloire qui murmure ;</l>
+                  <l>Mais se choisit-on son vainqueur ?</l>
+                  <l>
+                     <milestone unit="sent" n="53"/>Il charme toute la nature,</l>
+                  <l>T’étonnes-tu qu’il ait charmé mon cœur ?</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker>Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="54"/>Eh pourquoy donc souffrir un Hymen si contraire</l>
+                  <l>À vostre espoir le plus charmant ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="55"/>
+                     <pb n="11" xml:id="p11"/>Je me flattois, helas ! trop vainement</l>
+                  <l>D’y trouver le secours d’un dépit salutaire.</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker>Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="56"/>Ah que ne faisiez-vous plûtost agir mes soins,</l>
+                  <l>Afin qu’Orphée apprît du moins</l>
+                  <l>Tout ce qu’en sa faveur vostre amour pouvoit faire.</l>
+                  <l>
+                     <milestone unit="sent" n="57"/>Veuve d’un Roy fameux, Reine de ces climats,</l>
+                  <l>Les charmes de vostre personne,</l>
+                  <l>Le brillant de vostre Couronne,</l>
+                  <l>N’estoit-ce pas pour luy d’assez puissans appas ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="58"/>Tu parles de l’Amour et ne le connois pas.</l>
+                  <l>
+                     <milestone unit="sent" n="59"/>Les offres les plus éclatantes</l>
+                  <l>Sur un cœur prevenu sont toûjours impuissantes,</l>
+                  <l>La raison vainement s’efforce de parler :</l>
+                  <l>
+                     <milestone unit="sent" n="60"/>Il brûle dans l’instant mesme</l>
+                  <l>D’aller revoir ce qu’il aime</l>
+                  <l>Et de luy tout immoler.</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker rend="noindent">Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="61"/>Si l’on voit des Amans dont l’ame peu commune</l>
+                  <l>Immole quelque fois la Fortune à l’Amour ;</l>
+                  <l>On en voit bien plus chaque jour</l>
+                  <l>Sans scrupule immoler l’Amour à la Fortune.</l>
+                  <l>
+                     <milestone unit="sent" n="62"/>C’est rarement qu’un Throsne est méprisé</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker rend="noindent">Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="63"/>
+                     <pb n="12" xml:id="p12"/>Non, je connois Orphée, il eût tout refusé</l>
+                  <l>Son Amour satisfait luy tient lieu d’un Empire ;</l>
+                  <l>Que je prevoy d’obstacle au bien que je desire !</l>
+                  <l>
+                     <milestone unit="sent" n="64"/>Et du crime où l’amour malgré moy me conduit,</l>
+                  <l>Que sçay-je si jamais je recevray le fruit.</l>
+                  <l>
+                     <milestone unit="sent" n="65"/>Dieux, quelle peine à ma peine est égale !</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker rend="noindent">Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="66"/>Que je vous plains ! mais sortons de ces lieux,</l>
+                  <l>Y voulez-vous trouver vostre Rivale ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker rend="noindent">Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="67"/>Non, m’en preservent les Dieux !</l>
+                  <l>
+                     <milestone unit="sent" n="68"/>Si toutefois Orphée… Il vient ; laisse à ma flame…</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker rend="noindent">Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="69"/>Par cent raisons plûtost songez à l’éviter.</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker rend="noindent">Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="70"/>Ismene, malgré moy je me sens arrester,</l>
+                  <l>Cachons-luy seulement le trouble de mon ame.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène II</head>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="71"/>
+                     <pb n="13" xml:id="p13"/>Le desir du repos, et la beauté du jour</l>
+                  <l>M’ont fait venir dans ce lieu solitaire :</l>
+                  <l>
+                     <milestone unit="sent" n="72"/>Mais quand vous preferez aux plaisirs de ma Cour</l>
+                  <l>Un champestre séjour ;</l>
+                  <l>On peut vous reprocher que c’est trop vous plaire.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="73"/>Je cheris ces beaux lieux, j’ay peine à les quitter,</l>
+                  <l>Ils m’offrent des Ruisseaux, des Fleurs, de la Verdure,</l>
+                  <l>Le plus cruel Hyver semble les respecter,</l>
+                  <l>Et le Ciel y répand sa clarté la plus pure ;</l>
+                  <l>Eh pourquoy ne pas profiter</l>
+                  <l>De ces faveurs de la nature ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="74"/>Vous ne me dites pas leurs charmes les plus grands,</l>
+                  <l>Euridice s’y plaist, en faut-il d’avantage ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="75"/>Les Nymphes de ce voisinage</l>
+                  <l>L’amusent chaque jour par leurs jeux differens ;</l>
+                  <l>À demeurer encor leur amitié l’engage</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="76"/>
+                     <pb n="14" xml:id="p14"/>De vostre hymen nouveau les doux commencemens</l>
+                  <l>Demandoient de la complaisance ;</l>
+                  <l>Mais songez désormais qu’après un si long-temps</l>
+                  <l>Vous nous devez vostre presence.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène III</head>
+               <sp who="eurimede">
+                  <speaker rend="sc">Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="77"/>Quand la faveur semble icy vous chercher,</l>
+                  <l>D’où vient que vostre cœur soûpire ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="78"/>Est-il doux de m’entendre dire</l>
+                  <l>Qu’à mes plus chers plaisirs je me dois arracher ?</l>
+                  <l>
+                     <milestone unit="sent" n="79"/>La faveur souvent importune,</l>
+                  <l>L’esclavage la suit de prés,</l>
+                  <l>Je ne demanderois, helas ! à la Fortune,</l>
+                  <l>Que de pouvoir joüir en paix</l>
+                  <l>Des seuls biens que l’Amour m’a faits.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker rend="sc">Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="80"/>Cette felicité parfaite</l>
+                  <l>Dans une Cour qui vous souhaite</l>
+                  <l>Perdroit-elle de ses attraits ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="81"/>
+                     <pb n="15" xml:id="p15"/>Trop de soins à la Cour rendent les cœurs distraits,</l>
+                  <l>On aime mieux dans la retraire :</l>
+                  <l>
+                     <milestone unit="sent" n="82"/>Icy tous mes moments ne sont que pour l’Amour,</l>
+                  <l>Et j’aime mille fois plus que le premier jour.</l>
+               </sp>
+               <sp who="orphee eurimede">
+                  <speaker>Orphée et Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="83"/>Non, l’hymen ne vient point éteindre</l>
+                  <l>Les feux par l’Amour allumez.</l>
+                  <l>
+                     <milestone unit="sent" n="84"/>Deux cœurs l’un pour l’autre formez</l>
+                  <l>N’ont jamais ce malheur à craindre ;</l>
+                  <l>S’il arrive aux Amans quelque fois de s’en plaindre ;</l>
+                  <l>C’est qu’ils estoient foiblement enflamez :</l>
+                  <l>
+                     <milestone unit="sent" n="85"/>Non, l’hymen ne vient point éteindre</l>
+                  <l>Les feux par l’Amour allumez.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="86"/>Cependant vous sçavez quelle peine secrete</l>
+                  <l>Tient mon ame inquiete.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker rend="sc">Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="87"/>Vostre chagrin vous presse-t-il toûjours</l>
+                  <l>De quitter pour jamais la Thrace ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="88"/>Un noir pressentiment sans cesse m’y menace,</l>
+                  <l>Je veux par mon départ en terminer le cours.</l>
+                  <l>
+                     <milestone unit="sent" n="89"/>Je pretens habiter la Grace ;</l>
+                  <l>Me faire une retraite aux rives du Permesse,</l>
+                  <l>
+                     <pb n="16" xml:id="p16"/>Et signaler les Arts que je tiens d’Apollon :</l>
+                  <l>
+                     <milestone unit="sent" n="90"/>Y regarder de loin le Sort et ses Caprices ;</l>
+                  <l>Et faire toutes mes delices</l>
+                  <l>De ma chere Euridice, et du sacré Vallon.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker rend="sc">Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="91"/>Vous quitterez vostre Partie ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="92"/>Eh bien ! s’il faut que je vous le confie,</l>
+                  <l>Mon cœur revere Bachus,</l>
+                  <l>Mais je déteste l’abus</l>
+                  <l>De ces Festes odieuses</l>
+                  <l>Où l’on voit… je me tais, je n’en ay que trop dit,</l>
+                  <l>Et que trop irrité l’esprit</l>
+                  <l>De nos Bacchantes furieuses.</l>
+                  <l>
+                     <milestone unit="sent" n="93"/>Livreray-je Euridice en danger de ces mœurs ?</l>
+                  <l>
+                     <milestone unit="sent" n="94"/>Non, je la dois sauver de pareilles horreurs ;</l>
+                  <l>Mais je ne la vois point paroistre,</l>
+                  <l>Je l’attens, et je ses renaistre</l>
+                  <l>Toutes mes secrettes terreurs.</l>
+                  <l>
+                     <milestone unit="sent" n="95"/>Elle vient.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène IV</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="96"/>
+                     <pb n="17" xml:id="p17"/>Qu’en ces lieux mon ame impatiente</l>
+                  <l>Brûloit de vous voir arriver !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="97"/>Si j’avois crû si-tost vous y trouver,</l>
+                  <l>Je n’aurois pas fait languir vostre attente.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="98"/>Eh quoy ne sçavez-vous pas</l>
+                  <l>Que mon amour ne peut soutenir vostre absence ?</l>
+                  <l>
+                     <milestone unit="sent" n="99"/>Et que par tout où vous portez vos pas,</l>
+                  <l>Il les suit, ou les devance ?</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="100"/>Je ne sçaurois blâmer ce grand empressement,</l>
+                  <l>Il me paroist trop aimable :</l>
+                  <l>
+                     <milestone unit="sent" n="101"/>C’est un bien inestimable</l>
+                  <l>Qu’en Époux toûjours Amant.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="102"/>Ô Dieux ! je vous le recommande,</l>
+                  <l>Ce tresor que je tiens de vos seules bontez,</l>
+                  <l>Conservez-moy tant de beautez,</l>
+                  <l>C’est tout ce que mon cœur sans cesse vous demande.</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="103"/>
+                     <pb n="18" xml:id="p18"/>Quoy vous verray-encore à des transports si doux</l>
+                  <l>Mesler une importune crainte ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="104"/>Si malgré moy j’en éprouve l’atteinte,</l>
+                  <l>Vous le sçavez, c’est que je crains pour vous.</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="105"/>Rasseurez-vous, trop de delicatesse</l>
+                  <l>Allarme ainsi vostre tendresse.</l>
+                  <l>
+                     <milestone unit="sent" n="106"/>Non, non, le juste Ciel favorable à nos vœux</l>
+                  <l>Ne voudra pas si-tost briser de se beaux nœuds.</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice, Orphée, Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="107"/>Non, non, le juste Ciel favorable à nos vœux</l>
+                  <l>Ne voudra pas si-tost briser de si beaux nœuds.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="108"/>De tous costez on voit dans ces campagnes</l>
+                  <l>Les Nymphes commencer leurs jeux.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à Euridice</stage>
+                  <l>
+                     <milestone unit="sent" n="109"/>Nous vous laissons, bien-tost nous reviendrons tous deux.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène V</head>
+               <stage>
+                  <milestone unit="sent" n="110"/>Des Nymphes et des Divinitez champestres arrivent par petites troupes et sans
             ordre, en dansant et en chantant.</stage>
-          <sp who="nymphes">
-            <speaker>Chœur des nymphes et de divinitez</speaker>
-            <l><pb n="19" xml:id="p19"/>Aux champs, aux champs,</l>
-            <l>Aimables Compagnes,</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Venez, il est temps.</l>
-            <l>Sortez des Bois, des Eaux, descendez des Montagnes ;</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Aimables Compagnes,</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Venez, il est temps.</l>
-          </sp>
-          <sp who="nymphes">
-            <speaker>Une nymphe</speaker>
-            <l>Thetis bien-tost dans sa vaste demeure</l>
-            <l>Verra plonger le celeste Flambeau :</l>
-            <l>Jamais une plus belle heure</l>
-            <l>Ne finit un jour plus beau.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Aux champs, aux champs,</l>
-            <l>Aimables Compagnes,</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Venez, il est temps.</l>
-            <l><pb n="20" xml:id="p20"/>Sortez des Bois, des Eaux, descendez des Montagnes ;</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Aimables Compagnes,</l>
-            <l>Aux champs, aux champs,</l>
-            <l>Venez, il est temps.</l>
-            <stage>Elles dansent.</stage>
-          </sp>
-          <sp who="nymphes">
-            <speaker>Une nymphe</speaker>
-            <l>Vos charmes, divine Euridice,</l>
-            <l>Chaque jour prés de vous sçavent nous attirer,</l>
-            <l>Qu’icy nostre amitié du moins vous divertisse ;</l>
-            <l>Ailleurs l’Amour prend soin de vous faire adorer.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Souvent la naissante aurore</l>
-            <l>Nous rassemble dans ces lieux :</l>
-            <l>Mais nous aimons mieux encore</l>
-            <l>Y voir briller vos beaux yeux.</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Dansez, Nymphes, dans ces prairies,</l>
-            <l>Sur le tendre gazon je vais me délasser ;</l>
-            <l>Quelquefois on aime à passer</l>
-            <l>Des divertissemens aux douces rêveries.</l>
-            <stage>Elles continüent leurs danses.</stage>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VI</head>
-          <stage><pb n="21" xml:id="p21"/>Troupe de Nymphes, Cephise, Orphée et Eurimede et qui
+               <sp who="nymphes">
+                  <speaker>Chœur des nymphes et de divinitez</speaker>
+                  <l>
+                     <milestone unit="sent" n="111"/>
+                     <pb n="19" xml:id="p19"/>Aux champs, aux champs,</l>
+                  <l>Aimables Compagnes,</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Venez, il est temps.</l>
+                  <l>
+                     <milestone unit="sent" n="112"/>Sortez des Bois, des Eaux, descendez des Montagnes ;</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Aimables Compagnes,</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Venez, il est temps.</l>
+               </sp>
+               <sp who="nymphes">
+                  <speaker>Une nymphe</speaker>
+                  <l>
+                     <milestone unit="sent" n="113"/>Thetis bien-tost dans sa vaste demeure</l>
+                  <l>Verra plonger le celeste Flambeau :</l>
+                  <l>
+                     <milestone unit="sent" n="114"/>Jamais une plus belle heure</l>
+                  <l>Ne finit un jour plus beau.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="115"/>Aux champs, aux champs,</l>
+                  <l>Aimables Compagnes,</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Venez, il est temps.</l>
+                  <l>
+                     <pb n="20" xml:id="p20"/>
+                     <milestone unit="sent" n="116"/>Sortez des Bois, des Eaux, descendez des Montagnes ;</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Aimables Compagnes,</l>
+                  <l>Aux champs, aux champs,</l>
+                  <l>Venez, il est temps.</l>
+                  <stage>
+                     <milestone unit="sent" n="117"/>Elles dansent.</stage>
+               </sp>
+               <sp who="nymphes">
+                  <speaker>Une nymphe</speaker>
+                  <l>
+                     <milestone unit="sent" n="118"/>Vos charmes, divine Euridice,</l>
+                  <l>Chaque jour prés de vous sçavent nous attirer,</l>
+                  <l>Qu’icy nostre amitié du moins vous divertisse ;</l>
+                  <l>Ailleurs l’Amour prend soin de vous faire adorer.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="119"/>Souvent la naissante aurore</l>
+                  <l>Nous rassemble dans ces lieux :</l>
+                  <l>
+                     <milestone unit="sent" n="120"/>Mais nous aimons mieux encore</l>
+                  <l>Y voir briller vos beaux yeux.</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="121"/>Dansez, Nymphes, dans ces prairies,</l>
+                  <l>Sur le tendre gazon je vais me délasser ;</l>
+                  <l>Quelquefois on aime à passer</l>
+                  <l>Des divertissemens aux douces rêveries.</l>
+                  <stage>
+                     <milestone unit="sent" n="122"/>Elles continüent leurs danses.</stage>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VI</head>
+               <stage>
+                  <milestone unit="sent" n="123"/>
+                  <pb n="21" xml:id="p21"/>Troupe de Nymphes, Cephise, Orphée et Eurimede et qui
             arrivent en même temps.</stage>
-          <sp who="cephise">
-            <speaker>Cephise</speaker>
-            <l>Ô Ciel ! ô malheur déplorable !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Sauvez mon Euridice, ô Dieux !</l>
-          </sp>
-          <sp who="cephise">
-            <speaker>Cephise</speaker>
-            <l>Cruelle mort !</l>
-            <l>Ô destin trop impitoyable !</l>
-            <l>Vostre Euridice, helas ! voit terminer son sort.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Qu’entens-je ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée, Cephise, Eurimede</speaker>
-            <l>Ô malheureux Orphée !</l>
-          </sp>
-          <sp who="cephise">
-            <speaker>Cephise</speaker>
-            <l>Sur le gazon à peine elle est passée,</l>
-            <l><pb n="22" xml:id="p22"/>Que d’un Serpent caché sous l’herbe et sous les fleurs,</l>
-            <l>Cette belle soudain blessée</l>
-            <l>A senti du trépas les premieres horreurs.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VII</head>
-          <stage>Les mesmes Acteurs. Eurydice mourante soûtenuë par deux Nymphes</stage>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! quel objet à mes yeux se presente !</l>
-            <l>Secrets pressentimens, helas, trop averez !</l>
-            <l>Mon Euridice, vous mourez !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Je vous revois, je vais mourir contente.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Mon Euridice, vous mourez !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Le Ciel le veut, mon cher Orphée.</l>
-          </sp>
-          <sp who="orphee euridice">
-            <speaker>Orphée et Euridice</speaker>
-            <l><pb n="23" xml:id="p23"/>Sont-ce là les plaisirs que les nœuds d’hymenée</l>
-            <l>Sembloient nous avoir preparez ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Dieux ! s’il est encor temps, que je meure pour elle !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Eh que me serviroit cette pitié cruelle ?</l>
-            <l>En serions-nous moins separez ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Nous ne le serons point, je ne puis vous survivre.</l>
-            <l>Le fer…</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Par ce chemin gardez-vous de me suivre.</l>
-            <l>Attendez vostre sort d’un esprit plus soûmis.</l>
-            <l>Le Ciel s’offenceroit de vostre impatience ;</l>
-            <l>Les champs Élysiens vous seroient interdits :</l>
-            <l>Ah ! laissez-moy du moins emporter l’esperance</l>
-            <l>D’estre un jour réünis.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Où me reduit, helas, une loy trop severe ?</l>
-            <l>Trop rigoureuse attente !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l><pb n="24" xml:id="p24"/>Et pourtant necessaire,</l>
-            <l>Puisque nostre bon-heur en doit estre le prix,</l>
-            <l>Vivez, c’est moy qui vous en presse,</l>
-            <l>N’attendons que des Dieux le temps de nous revoir :</l>
-            <l>Je ne vous deffens pas une tendre tristesse,</l>
-            <l>Je vous deffens le desespoir.</l>
-            <l>Mais du mortel poison en ce moment saisie,</l>
-            <l>Je sens… Adieu, recevez, cher Époux,</l>
-            <l>Les derniers soûpirs d’une vie</l>
-            <l>Qui ne me plaisoit qu’avec vous.</l>
-            <stage>Elle expire, et on l’emporte. Et Orphée tombe évanoüy sur un gazon.</stage>
-          </sp>
-          <sp who="chœur eurimede">
-            <speaker>Les Chœurs et Eurimede</speaker>
-            <l>Ô Ciel ! ô malheur déplorable !</l>
-            <l>Dieux ennemis ! cruelle mort !</l>
-            <l>Ô destin trop impitoyable !</l>
-            <l>Euridice a finy son sort.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VIII</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="25" xml:id="p25"/>Et je sens ma foible paupiere</l>
-            <l>S’ouvrir encor à la lumiere</l>
-            <l>Lorsqu’Euridice vient de la perdre à jamais !</l>
-            <l>Ô honteux, ô lâches regrets !</l>
-            <l>Quand je devrois plûtost la suivre !</l>
-            <l>Euridice, eh comment pourray-je vous survivre ?</l>
-            <l>Mais je ne la vois plus… ah laissez-moy courir</l>
-            <l>Prés de ce qui m’en reste ;</l>
-            <l>Apres ce coup funeste</l>
-            <l>J’y veux mourir.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>Songez, songez plûtost dans ce malheur extrême</l>
-            <l>Aux moyens de la reparer.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Et que puis-je encor esperer ?</l>
-            <l>La mort me ravit ce que j’aime.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>Avez-vous oublié ce qu’ont fait quelquefois</l>
-            <l>Et vostre Lyre et vostre Voix ?</l>
-            <l><pb n="26" xml:id="p26"/>À leurs divins accords n’a-t-on pas veu possibles</l>
-            <l>Les effets les moins attendus ;</l>
-            <l>Les Tigres attentifs, les Torrens suspendus.</l>
-            <l>Les Arbres, les Rochers, mobiles et sensibles ?</l>
-            <l>N’estes-vous pas encor maistre de ces accens</l>
-            <l>Sur la nature tout puissans ?</l>
-            <l>Faites qu’à leur pouvoir l’Enfer mesme obeïsse.</l>
-            <l>N’oseriez-vous tenter ce genereux effort ?</l>
-            <l>La mort vous enleve Euridice,</l>
-            <l>Allez l’enlever à la mort.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>C’en est asséz ; Attend, chere Ombre,</l>
-            <l>Je n’auray pas long-temps à me rien reprocher.</l>
-            <l>Je cours dans le Royaume sombre,</l>
-            <l>Ou mourir, ou t’en arracher.</l>
-          </sp>
-        </div>
-      </div>
-      <div>
-        <head>Acte second</head>
-        <stage><pb n="27" xml:id="p27"/>Le Theatre represente un Vestibule magnifique, où Pluton sur
-          son Thrône a coûtume de juger les Ombres qui viennent de passer le Styx. Ce Vestibule est
-          de plain-pied avec de vastes Jardins. L’on voit dans l’éloignement quelque chose de ce qui
+               <sp who="cephise">
+                  <speaker>Cephise</speaker>
+                  <l>
+                     <milestone unit="sent" n="124"/>Ô Ciel ! ô malheur déplorable !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="125"/>Sauvez mon Euridice, ô Dieux !</l>
+               </sp>
+               <sp who="cephise">
+                  <speaker>Cephise</speaker>
+                  <l>
+                     <milestone unit="sent" n="126"/>Cruelle mort !</l>
+                  <l>Ô destin trop impitoyable !</l>
+                  <l>
+                     <milestone unit="sent" n="127"/>Vostre Euridice, helas ! voit terminer son sort.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="128"/>Qu’entens-je ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée, Cephise, Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="129"/>Ô malheureux Orphée !</l>
+               </sp>
+               <sp who="cephise">
+                  <speaker>Cephise</speaker>
+                  <l>
+                     <milestone unit="sent" n="130"/>Sur le gazon à peine elle est passée,</l>
+                  <l>
+                     <pb n="22" xml:id="p22"/>Que d’un Serpent caché sous l’herbe et sous les fleurs,</l>
+                  <l>Cette belle soudain blessée</l>
+                  <l>A senti du trépas les premieres horreurs.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VII</head>
+               <stage>
+                  <milestone unit="sent" n="131"/>Les mesmes Acteurs. <milestone unit="sent" n="132"/>Eurydice mourante soûtenuë par deux Nymphes</stage>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="133"/>Ah ! quel objet à mes yeux se presente !</l>
+                  <l>
+                     <milestone unit="sent" n="134"/>Secrets pressentimens, helas, trop averez !</l>
+                  <l>
+                     <milestone unit="sent" n="135"/>Mon Euridice, vous mourez !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="136"/>Je vous revois, je vais mourir contente.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="137"/>Mon Euridice, vous mourez !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="138"/>Le Ciel le veut, mon cher Orphée.</l>
+               </sp>
+               <sp who="orphee euridice">
+                  <speaker>Orphée et Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="139"/>
+                     <pb n="23" xml:id="p23"/>Sont-ce là les plaisirs que les nœuds d’hymenée</l>
+                  <l>Sembloient nous avoir preparez ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="140"/>Dieux ! s’il est encor temps, que je meure pour elle !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="141"/>Eh que me serviroit cette pitié cruelle ?</l>
+                  <l>
+                     <milestone unit="sent" n="142"/>En serions-nous moins separez ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="143"/>Nous ne le serons point, je ne puis vous survivre.</l>
+                  <l>Le fer…</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="144"/>Par ce chemin gardez-vous de me suivre.</l>
+                  <l>
+                     <milestone unit="sent" n="145"/>Attendez vostre sort d’un esprit plus soûmis.</l>
+                  <l>
+                     <milestone unit="sent" n="146"/>Le Ciel s’offenceroit de vostre impatience ;</l>
+                  <l>Les champs Élysiens vous seroient interdits :</l>
+                  <l>
+                     <milestone unit="sent" n="147"/>Ah ! laissez-moy du moins emporter l’esperance</l>
+                  <l>D’estre un jour réünis.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="148"/>Où me reduit, helas, une loy trop severe ?</l>
+                  <l>
+                     <milestone unit="sent" n="149"/>Trop rigoureuse attente !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="150"/>
+                     <pb n="24" xml:id="p24"/>Et pourtant necessaire,</l>
+                  <l>Puisque nostre bon-heur en doit estre le prix,</l>
+                  <l>Vivez, c’est moy qui vous en presse,</l>
+                  <l>N’attendons que des Dieux le temps de nous revoir :</l>
+                  <l>
+                     <milestone unit="sent" n="151"/>Je ne vous deffens pas une tendre tristesse,</l>
+                  <l>Je vous deffens le desespoir.</l>
+                  <l>
+                     <milestone unit="sent" n="152"/>Mais du mortel poison en ce moment saisie,</l>
+                  <l>Je sens… Adieu, recevez, cher Époux,</l>
+                  <l>Les derniers soûpirs d’une vie</l>
+                  <l>Qui ne me plaisoit qu’avec vous.</l>
+                  <stage>
+                     <milestone unit="sent" n="153"/>Elle expire, et on l’emporte. <milestone unit="sent" n="154"/>Et Orphée tombe évanoüy sur un gazon.</stage>
+               </sp>
+               <sp who="chœur eurimede">
+                  <speaker>Les Chœurs et Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="155"/>Ô Ciel ! ô malheur déplorable !</l>
+                  <l>
+                     <milestone unit="sent" n="156"/>Dieux ennemis ! cruelle mort !</l>
+                  <l>
+                     <milestone unit="sent" n="157"/>Ô destin trop impitoyable !</l>
+                  <l>
+                     <milestone unit="sent" n="158"/>Euridice a finy son sort.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VIII</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="159"/>
+                     <pb n="25" xml:id="p25"/>Et je sens ma foible paupiere</l>
+                  <l>S’ouvrir encor à la lumiere</l>
+                  <l>Lorsqu’Euridice vient de la perdre à jamais !</l>
+                  <l>
+                     <milestone unit="sent" n="160"/>Ô honteux, ô lâches regrets !</l>
+                  <l>
+                     <milestone unit="sent" n="161"/>Quand je devrois plûtost la suivre !</l>
+                  <l>
+                     <milestone unit="sent" n="162"/>Euridice, eh comment pourray-je vous survivre ?</l>
+                  <l>
+                     <milestone unit="sent" n="163"/>Mais je ne la vois plus… ah laissez-moy courir</l>
+                  <l>Prés de ce qui m’en reste ;</l>
+                  <l>Apres ce coup funeste</l>
+                  <l>J’y veux mourir.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="164"/>Songez, songez plûtost dans ce malheur extrême</l>
+                  <l>Aux moyens de la reparer.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="165"/>Et que puis-je encor esperer ?</l>
+                  <l>
+                     <milestone unit="sent" n="166"/>La mort me ravit ce que j’aime.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="167"/>Avez-vous oublié ce qu’ont fait quelquefois</l>
+                  <l>Et vostre Lyre et vostre Voix ?</l>
+                  <l>
+                     <pb n="26" xml:id="p26"/>
+                     <milestone unit="sent" n="168"/>À leurs divins accords n’a-t-on pas veu possibles</l>
+                  <l>Les effets les moins attendus ;</l>
+                  <l>Les Tigres attentifs, les Torrens suspendus.</l>
+                  <l>
+                     <milestone unit="sent" n="169"/>Les Arbres, les Rochers, mobiles et sensibles ?</l>
+                  <l>
+                     <milestone unit="sent" n="170"/>N’estes-vous pas encor maistre de ces accens</l>
+                  <l>Sur la nature tout puissans ?</l>
+                  <l>
+                     <milestone unit="sent" n="171"/>Faites qu’à leur pouvoir l’Enfer mesme obeïsse.</l>
+                  <l>
+                     <milestone unit="sent" n="172"/>N’oseriez-vous tenter ce genereux effort ?</l>
+                  <l>
+                     <milestone unit="sent" n="173"/>La mort vous enleve Euridice,</l>
+                  <l>Allez l’enlever à la mort.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="174"/>C’en est asséz ; Attend, chere Ombre,</l>
+                  <l>Je n’auray pas long-temps à me rien reprocher.</l>
+                  <l>
+                     <milestone unit="sent" n="175"/>Je cours dans le Royaume sombre,</l>
+                  <l>Ou mourir, ou t’en arracher.</l>
+               </sp>
+            </div>
+         </div>
+         <div>
+            <head>Acte second</head>
+            <stage>
+               <milestone unit="sent" n="176"/>
+               <pb n="27" xml:id="p27"/>Le Theatre represente un Vestibule magnifique, où Pluton sur
+          son Thrône a coûtume de juger les Ombres qui viennent de passer le Styx. <milestone unit="sent" n="177"/>Ce Vestibule est
+          de plain-pied avec de vastes Jardins. <milestone unit="sent" n="178"/>L’on voit dans l’éloignement quelque chose de ce qui
           peut caractériser les Enfers.</stage>
-        <div type="scene">
-          <head>Scène première</head>
-          <sp who="euridice">
-            <speaker>L’ombre d’Euridice</speaker>
-            <l>Ah que j’éprouve bien que l’amoureuse flâme</l>
-            <l>Au-delà du trespas regne encor dans une ame.</l>
-            <l><pb n="28" xml:id="p28"/>Des champs Élysiens j’ay veu tous les attraits,</l>
-            <l>Ces Forests toûjours verdoyantes,</l>
-            <l>Ces beaux Astres formez exprés</l>
-            <l>Pour luire aux ames innocentes,</l>
-            <l>Mais rien n’y peut charmer l’ennuy que je ressens,</l>
-            <l>Privée helas de ce que j’aime ;</l>
-            <l>Je regrette un plus heureux temps,</l>
-            <l>L’amour content est le bonheur suprême,</l>
-            <l>Tous les autres sont languissans.</l>
-            <l>Ah que j’éprouve bien que l’amoureuse flame,</l>
-            <l>Au-delà du trespas regne encor dans une ame.</l>
-            <l>Un tendre souvenir m’occupe incessamment,</l>
-            <l>Que fait Orphée en ce moment ?</l>
-            <l>Puis-je en douter ? il m’aime, il m’est fidelle,</l>
-            <l>Il soûpire, il gémit, sa triste voix m’appelle.</l>
-            <l>Ô dieux, que ne peut-il pour son soulagement</l>
-            <l>Estre aussi le témoin de ma peine cruelle !</l>
-            <l>Mon cher Orphée, helas, je souffre également.</l>
-            <l>Pourquoy faut-il que Proserpine</l>
-            <l>Aujourd’huy me destine</l>
-            <l>À l’honneur d’augmenter sa Cour !</l>
-            <l>Je trouvois l’Élysée un plus charmant séjour.</l>
-            <l>Que de momens va perdre ma tendresse !</l>
-            <l>Helas avec tranquilité</l>
-            <l>Je pouvois y rêver sans cesse ;</l>
-            <l>Cette douce liberté</l>
-            <l>Faisoit ma felicité.</l>
-            <l><pb n="29" xml:id="p29"/>Mais déja de ces lieux on trouble le silence.</l>
-            <l>Pluton paroist, évitons sa presence.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène seconde</head>
-          <sp who="pluton">
-            <speaker>Pluton</speaker>
-            <l>Qu’entens-je ? est-il donc vray que jusques dans ces lieux</l>
-            <l>Un mortel insolent s’avance ?</l>
-            <l>Suis-je donc le moindre des Dieux ;</l>
-            <l>Et craint-il si peu ma puissance ?</l>
-            <l>Ah je dois signaler par des tourmens cruels</l>
-            <l>Le châtiment de cette audace ;</l>
-            <l>Qu’il vienne ce mortel, il va trouver sa place</l>
-            <l>Parmy les fameux criminels.</l>
-            <l>Mais dis-moy, Dieu du Stix, si dans cette entreprise</l>
-            <l>Le Ciel le favorise ?</l>
-            <l>D’un Fils de Jupiter les insolens efforts</l>
-            <l>Doivent forcer les sombres bords.</l>
-            <l>Ah sans doute c’est luy ; Pour me faire la guerre</l>
-            <l>Son Pere dans ce jour l’arme de son Tonnerre.</l>
-            <l>Vous, mes Sujets preparez-vous ;</l>
-            <l>Craignons l’effet de son courage,</l>
-            <l><pb n="30" xml:id="p30"/>Repoussons cét outrage,</l>
-            <l>Armons-nous, armons-nous.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Chœur</speaker>
-            <l>Craignons l’effet de son courage ;</l>
-            <l>Repoussons cét outrage,</l>
-            <l>Armons-nous, armons-nous.</l>
-            <stage>On entend une charmante melodie comme venant de fort loin.</stage>
-          </sp>
-          <sp who="pluton">
-            <speaker>Pluton</speaker>
-            <l>Mais quels sons éloignez surprennent mes oreilles ?</l>
-            <l>Qu’ils sont nouveaux ! Qu’ils ont dequoy toucher !</l>
-            <stage>On l’entend plus distinctement.</stage>
-            <l>Chaque instant vers ces lieux semblent les approcher</l>
-            <l>Quels autres chants ont des douceurs pareilles ?</l>
-            <l>Mais ce n’est pas le temps de nous laisser charmer.</l>
-            <l>Il faut punir un Temeraire,</l>
-            <l>J’ay besoin de ma colére,</l>
-            <l>Elle pourroit se calmer.</l>
-            <l>Il faut punir un Temeraire,</l>
-            <l>Allons, il n’est pas temps de nous laisser charmer.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Chœur</speaker>
-            <l>Il faut punit un Temeraire,</l>
-            <l>Allons, il n’est pas temps de nous laisser charmer.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène III</head>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <l><pb n="31" xml:id="p31"/>Sans crainte abandonnez-vous</l>
-            <l>À d’aimables charmes,</l>
-            <l>L’auteur mesmes de vos allarmes</l>
-            <l>L’est aussi de ces chants si doux.</l>
-            <l>Il est seul, il est sans armes,</l>
-            <l>Il vient en Suppliant embrasser vos genoux.</l>
-            <l>Sans crainte abandonnez-vous</l>
-            <l>À d’aimables charmes.</l>
-            <l>Des bords du Styx où je maintiens vos Loix,</l>
-            <l>Je croyois du mortel voir bien-tost le naufrage :</l>
-            <l>Mais sans effort la barque a soutenu son poids ;</l>
-            <l>Et du costé de ce Rivage,</l>
-            <l>Cerbere déchaisné pour la premiere fois,</l>
-            <l>L’a caressé sur son passage.</l>
-            <l>Pour obtenir par tout un entier avantage.</l>
-            <l>Il chante seulement, et tout céde à sa voix.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène IV</head>
-          <sp who="ministres_pluton">
-            <speaker>Les Trois Ministres de Pluton</speaker>
-            <l><pb n="32" xml:id="p32"/>Quels effets surprenans des sons harmonieux</l>
-            <l>Qui penetrent ces lieux !</l>
-            <l>On n’y void plus rien qui gémisse,</l>
-            <l>Rien qui ne s’attendrisse.</l>
-          </sp>
-          <sp who="ministres_pluton">
-            <speaker>Un de trois</speaker>
-            <l>De ces sons ravissans tout paroist enchanté,</l>
-            <l>Sous leur doux effort tout succombe.</l>
-            <l>Sisiphe en ce moment repose en liberté.</l>
-            <l>Son Rocher sur le Mont avec peine porté,</l>
-            <l>D’où sans cesse il roule et retombe,</l>
-            <l>S’est arresté.</l>
-          </sp>
-          <sp who="ministres_pluton">
-            <speaker>Un second</speaker>
-            <l>Promethée enfin respire,</l>
-            <l>Le Vautour qui le déchire</l>
-            <l>Vient de le laisser en paix :</l>
-            <l>On voit la Danaïde oisive,</l>
-            <l>Et Tantale boire à longs traits</l>
-            <l>L’onde jusque là fugitive.</l>
-            <stage>La Musique que l’on n’entendoit auparavant que du loin, s’entend icy pleinement,
+            <div type="scene">
+               <head>Scène première</head>
+               <sp who="euridice">
+                  <speaker>L’ombre d’Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="179"/>Ah que j’éprouve bien que l’amoureuse flâme</l>
+                  <l>Au-delà du trespas regne encor dans une ame.</l>
+                  <l>
+                     <pb n="28" xml:id="p28"/>
+                     <milestone unit="sent" n="180"/>Des champs Élysiens j’ay veu tous les attraits,</l>
+                  <l>Ces Forests toûjours verdoyantes,</l>
+                  <l>Ces beaux Astres formez exprés</l>
+                  <l>Pour luire aux ames innocentes,</l>
+                  <l>Mais rien n’y peut charmer l’ennuy que je ressens,</l>
+                  <l>Privée helas de ce que j’aime ;</l>
+                  <l>Je regrette un plus heureux temps,</l>
+                  <l>L’amour content est le bonheur suprême,</l>
+                  <l>Tous les autres sont languissans.</l>
+                  <l>
+                     <milestone unit="sent" n="181"/>Ah que j’éprouve bien que l’amoureuse flame,</l>
+                  <l>Au-delà du trespas regne encor dans une ame.</l>
+                  <l>
+                     <milestone unit="sent" n="182"/>Un tendre souvenir m’occupe incessamment,</l>
+                  <l>Que fait Orphée en ce moment ?</l>
+                  <l>
+                     <milestone unit="sent" n="183"/>Puis-je en douter ? il m’aime, il m’est fidelle,</l>
+                  <l>Il soûpire, il gémit, sa triste voix m’appelle.</l>
+                  <l>
+                     <milestone unit="sent" n="184"/>Ô dieux, que ne peut-il pour son soulagement</l>
+                  <l>Estre aussi le témoin de ma peine cruelle !</l>
+                  <l>
+                     <milestone unit="sent" n="185"/>Mon cher Orphée, helas, je souffre également.</l>
+                  <l>
+                     <milestone unit="sent" n="186"/>Pourquoy faut-il que Proserpine</l>
+                  <l>Aujourd’huy me destine</l>
+                  <l>À l’honneur d’augmenter sa Cour !</l>
+                  <l>
+                     <milestone unit="sent" n="187"/>Je trouvois l’Élysée un plus charmant séjour.</l>
+                  <l>
+                     <milestone unit="sent" n="188"/>Que de momens va perdre ma tendresse !</l>
+                  <l>
+                     <milestone unit="sent" n="189"/>Helas avec tranquilité</l>
+                  <l>Je pouvois y rêver sans cesse ;</l>
+                  <l>Cette douce liberté</l>
+                  <l>Faisoit ma felicité.</l>
+                  <l>
+                     <pb n="29" xml:id="p29"/>
+                     <milestone unit="sent" n="190"/>Mais déja de ces lieux on trouble le silence.</l>
+                  <l>
+                     <milestone unit="sent" n="191"/>Pluton paroist, évitons sa presence.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène seconde</head>
+               <sp who="pluton">
+                  <speaker>Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="192"/>Qu’entens-je ? est-il donc vray que jusques dans ces lieux</l>
+                  <l>Un mortel insolent s’avance ?</l>
+                  <l>
+                     <milestone unit="sent" n="193"/>Suis-je donc le moindre des Dieux ;</l>
+                  <l>Et craint-il si peu ma puissance ?</l>
+                  <l>
+                     <milestone unit="sent" n="194"/>Ah je dois signaler par des tourmens cruels</l>
+                  <l>Le châtiment de cette audace ;</l>
+                  <l>Qu’il vienne ce mortel, il va trouver sa place</l>
+                  <l>Parmy les fameux criminels.</l>
+                  <l>
+                     <milestone unit="sent" n="195"/>Mais dis-moy, Dieu du Stix, si dans cette entreprise</l>
+                  <l>Le Ciel le favorise ?</l>
+                  <l>
+                     <milestone unit="sent" n="196"/>D’un Fils de Jupiter les insolens efforts</l>
+                  <l>Doivent forcer les sombres bords.</l>
+                  <l>
+                     <milestone unit="sent" n="197"/>Ah sans doute c’est luy ; Pour me faire la guerre</l>
+                  <l>Son Pere dans ce jour l’arme de son Tonnerre.</l>
+                  <l>
+                     <milestone unit="sent" n="198"/>Vous, mes Sujets preparez-vous ;</l>
+                  <l>Craignons l’effet de son courage,</l>
+                  <l>
+                     <pb n="30" xml:id="p30"/>Repoussons cét outrage,</l>
+                  <l>Armons-nous, armons-nous.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="199"/>Craignons l’effet de son courage ;</l>
+                  <l>Repoussons cét outrage,</l>
+                  <l>Armons-nous, armons-nous.</l>
+                  <stage>
+                     <milestone unit="sent" n="200"/>On entend une charmante melodie comme venant de fort loin.</stage>
+               </sp>
+               <sp who="pluton">
+                  <speaker>Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="201"/>Mais quels sons éloignez surprennent mes oreilles ?</l>
+                  <l>
+                     <milestone unit="sent" n="202"/>Qu’ils sont nouveaux ! <milestone unit="sent" n="203"/>Qu’ils ont dequoy toucher !</l>
+                  <stage>
+                     <milestone unit="sent" n="204"/>On l’entend plus distinctement.</stage>
+                  <l>
+                     <milestone unit="sent" n="205"/>Chaque instant vers ces lieux semblent les approcher</l>
+                  <l>Quels autres chants ont des douceurs pareilles ?</l>
+                  <l>
+                     <milestone unit="sent" n="206"/>Mais ce n’est pas le temps de nous laisser charmer.</l>
+                  <l>
+                     <milestone unit="sent" n="207"/>Il faut punir un Temeraire,</l>
+                  <l>J’ay besoin de ma colére,</l>
+                  <l>Elle pourroit se calmer.</l>
+                  <l>
+                     <milestone unit="sent" n="208"/>Il faut punir un Temeraire,</l>
+                  <l>Allons, il n’est pas temps de nous laisser charmer.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="209"/>Il faut punit un Temeraire,</l>
+                  <l>Allons, il n’est pas temps de nous laisser charmer.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène III</head>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <l>
+                     <milestone unit="sent" n="210"/>
+                     <pb n="31" xml:id="p31"/>Sans crainte abandonnez-vous</l>
+                  <l>À d’aimables charmes,</l>
+                  <l>L’auteur mesmes de vos allarmes</l>
+                  <l>L’est aussi de ces chants si doux.</l>
+                  <l>
+                     <milestone unit="sent" n="211"/>Il est seul, il est sans armes,</l>
+                  <l>Il vient en Suppliant embrasser vos genoux.</l>
+                  <l>
+                     <milestone unit="sent" n="212"/>Sans crainte abandonnez-vous</l>
+                  <l>À d’aimables charmes.</l>
+                  <l>
+                     <milestone unit="sent" n="213"/>Des bords du Styx où je maintiens vos Loix,</l>
+                  <l>Je croyois du mortel voir bien-tost le naufrage :</l>
+                  <l>
+                     <milestone unit="sent" n="214"/>Mais sans effort la barque a soutenu son poids ;</l>
+                  <l>Et du costé de ce Rivage,</l>
+                  <l>Cerbere déchaisné pour la premiere fois,</l>
+                  <l>L’a caressé sur son passage.</l>
+                  <l>
+                     <milestone unit="sent" n="215"/>Pour obtenir par tout un entier avantage.</l>
+                  <l>
+                     <milestone unit="sent" n="216"/>Il chante seulement, et tout céde à sa voix.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène IV</head>
+               <sp who="ministres_pluton">
+                  <speaker>Les Trois Ministres de Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="217"/>
+                     <pb n="32" xml:id="p32"/>Quels effets surprenans des sons harmonieux</l>
+                  <l>Qui penetrent ces lieux !</l>
+                  <l>
+                     <milestone unit="sent" n="218"/>On n’y void plus rien qui gémisse,</l>
+                  <l>Rien qui ne s’attendrisse.</l>
+               </sp>
+               <sp who="ministres_pluton">
+                  <speaker>Un de trois</speaker>
+                  <l>
+                     <milestone unit="sent" n="219"/>De ces sons ravissans tout paroist enchanté,</l>
+                  <l>Sous leur doux effort tout succombe.</l>
+                  <l>
+                     <milestone unit="sent" n="220"/>Sisiphe en ce moment repose en liberté.</l>
+                  <l>
+                     <milestone unit="sent" n="221"/>Son Rocher sur le Mont avec peine porté,</l>
+                  <l>D’où sans cesse il roule et retombe,</l>
+                  <l>S’est arresté.</l>
+               </sp>
+               <sp who="ministres_pluton">
+                  <speaker>Un second</speaker>
+                  <l>
+                     <milestone unit="sent" n="222"/>Promethée enfin respire,</l>
+                  <l>Le Vautour qui le déchire</l>
+                  <l>Vient de le laisser en paix :</l>
+                  <l>
+                     <milestone unit="sent" n="223"/>On voit la Danaïde oisive,</l>
+                  <l>Et Tantale boire à longs traits</l>
+                  <l>L’onde jusque là fugitive.</l>
+                  <stage>
+                     <milestone unit="sent" n="224"/>La Musique que l’on n’entendoit auparavant que du loin, s’entend icy pleinement,
               et l’on voit Orphée vestu comme les Peintres nous le representent, avec sa Lyre, et
               une Couronne de Laurier.</stage>
-          </sp>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <l><pb n="33" xml:id="p33"/>Le mortel luy-mesme arrive,</l>
-            <l>Il vient icy se presenter.</l>
-          </sp>
-          <sp who="pluton">
-            <speaker>Pluton</speaker>
-            <l>Silence, je veux l’écouter.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène V</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Monarque des Enfers que la Terre revére,</l>
-            <l>À qui nous devons tous un tribut necessaire,</l>
-            <l>Vous voyez devant vous le fils du Dieu du Jour ;</l>
-            <l>Il n’y vient point poussé d’un dessein temeraire,</l>
-            <l>Il y vient forcé par l’Amour.</l>
-            <l>S’il vous souvient de vos allarmes,</l>
-            <l>Quand dans les premiers feux d’un Hymen plein de charmes</l>
-            <l>De vostre Proserpine on voulut vous priver :</l>
-            <l>Jugez quel déplaisir mon cœur doit éprouver ;</l>
-            <l>Je pers une Espouse adorable,</l>
-            <l>La Mort, la Mort impitoyable,</l>
-            <l>Dans son plus beau printemps vient de me l’enlever.</l>
-            <l><pb n="34" xml:id="p34"/>Qu’une vie heureuse et nouvelle</l>
-            <l>La redonne en ce jour à mon amour fidelle ;</l>
-            <l>Rendez-la-moy<note place="bottom" resp="KS">Nous corrigeons « Rendez-là-moy » par « Rendez-la-moy ».</note>, grand Dieu ; pour me la
+               </sp>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <l>
+                     <milestone unit="sent" n="225"/>
+                     <pb n="33" xml:id="p33"/>Le mortel luy-mesme arrive,</l>
+                  <l>Il vient icy se presenter.</l>
+               </sp>
+               <sp who="pluton">
+                  <speaker>Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="226"/>Silence, je veux l’écouter.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène V</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="227"/>Monarque des Enfers que la Terre revére,</l>
+                  <l>À qui nous devons tous un tribut necessaire,</l>
+                  <l>Vous voyez devant vous le fils du Dieu du Jour ;</l>
+                  <l>Il n’y vient point poussé d’un dessein temeraire,</l>
+                  <l>Il y vient forcé par l’Amour.</l>
+                  <l>
+                     <milestone unit="sent" n="228"/>S’il vous souvient de vos allarmes,</l>
+                  <l>Quand dans les premiers feux d’un Hymen plein de charmes</l>
+                  <l>De vostre Proserpine on voulut vous priver :</l>
+                  <l>
+                     <milestone unit="sent" n="229"/>Jugez quel déplaisir mon cœur doit éprouver ;</l>
+                  <l>Je pers une Espouse adorable,</l>
+                  <l>La Mort, la Mort impitoyable,</l>
+                  <l>Dans son plus beau printemps vient de me l’enlever.</l>
+                  <l>
+                     <pb n="34" xml:id="p34"/>
+                     <milestone unit="sent" n="230"/>Qu’une vie heureuse et nouvelle</l>
+                  <l>La redonne en ce jour à mon amour fidelle ;</l>
+                  <l>Rendez-la-moy<note place="bottom" resp="KS">Nous corrigeons « Rendez-là-moy » par « Rendez-la-moy ».</note>, grand Dieu ; pour me la
               rendre, helas !</l>
-            <l>En sera-t-elle moins mortelle ?</l>
-            <l>Et ne faut-il pas qu’avec elle</l>
-            <l>Tost ou tard sous vos loix je retombe icy bas ?<note place="bottom" resp="KS">Nous corrigeons « . » par « ? ».</note></l>
-          </sp>
-          <sp who="pluton">
-            <speaker>Pluton</speaker>
-            <l>Quel nouveau charme ! quel prodige !</l>
-            <l>J’écoute, et malgré moy je me laisse attendrir ;</l>
-            <l>Il se plaint, et je sens la douleur qui l’afflige,</l>
-            <l>Mesme contre mes droits je veux le secourir.</l>
-            <l>Va, trop heureux Mortel, je prens part à ta peine,</l>
-            <l>Ma pitié ne sera pas vaine :</l>
-            <l>Depuis que ton Espouse est soûmise à la mort,</l>
-            <l>Proserpine regle son sort ;</l>
-            <l>Je sçauray disposer la Déesse à la rendre.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! que nos cœurs reconnoissans</l>
-            <l>Sur vos Autels vont prodiguer d’encens !</l>
-            <l>C’est tout ce qu’un grand Dieu des mortels peut attendre.</l>
-          </sp>
-          <sp who="pluton">
-            <speaker>Pluton</speaker>
-            <l>Puisque le Destin aujourd’huy</l>
-            <l>De tant de malheureux veut suspendre les peines ;</l>
-            <l><pb n="35" xml:id="p35"/>Pluton ne sera pas moins indulgent que luy,</l>
-            <l>Je veux qu’ils sortent de leurs chaisnes.</l>
-            <l>Pour honorer l’autheur de ces doux changemens,</l>
-            <l>Venez, empressez-vous, infortunez coupables ;</l>
-            <l>Et vous, dont les jeux surprenans</l>
-            <l>Font quelquefois mes divertissemens,</l>
-            <l>Rendez-luy, s’il se peut, les momens agreables</l>
-            <l>Dont ces lieux luy sont redevables.</l>
-            <stage>Pluton s’en va, avec Ascalax et les autres Suivans.</stage>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VI</head>
-          <stage>Les Ombres Criminelles témoignent la joye qu’elles ont d’estre soulagées.</stage>
-          <stage>Des Lutins accoûtumez à divertir Pluton les secondent.</stage>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Heureux Mortel, quelle est ta gloire !</l>
-            <l>Celebrons-la par nos Concerts.</l>
-            <l>Est-il de plus grande Victoire</l>
-            <l>Que d’avoir charmé les Enfers ?</l>
-            <l>Heureux Mortel, quelle est ta gloire !</l>
-            <l>Celebrons-la<note place="bottom" resp="KS">Nous corrigeons « Celebrons-là » par « Celebrons-la ».</note> par nos Concerts.</l>
-            <stage>Des Danses succédent aux Chants, et l’arrivée de quelques Ombres heureuses semble
+                  <l>
+                     <milestone unit="sent" n="231"/>En sera-t-elle moins mortelle ?</l>
+                  <l>
+                     <milestone unit="sent" n="232"/>Et ne faut-il pas qu’avec elle</l>
+                  <l>Tost ou tard sous vos loix je retombe icy bas ?<note place="bottom" resp="KS">Nous corrigeons « . » par « ? ».</note>
+                  </l>
+               </sp>
+               <sp who="pluton">
+                  <speaker>Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="233"/>Quel nouveau charme ! quel prodige !</l>
+                  <l>
+                     <milestone unit="sent" n="234"/>J’écoute, et malgré moy je me laisse attendrir ;</l>
+                  <l>Il se plaint, et je sens la douleur qui l’afflige,</l>
+                  <l>Mesme contre mes droits je veux le secourir.</l>
+                  <l>
+                     <milestone unit="sent" n="235"/>Va, trop heureux Mortel, je prens part à ta peine,</l>
+                  <l>Ma pitié ne sera pas vaine :</l>
+                  <l>
+                     <milestone unit="sent" n="236"/>Depuis que ton Espouse est soûmise à la mort,</l>
+                  <l>Proserpine regle son sort ;</l>
+                  <l>Je sçauray disposer la Déesse à la rendre.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="237"/>Ah ! que nos cœurs reconnoissans</l>
+                  <l>Sur vos Autels vont prodiguer d’encens !</l>
+                  <l>
+                     <milestone unit="sent" n="238"/>C’est tout ce qu’un grand Dieu des mortels peut attendre.</l>
+               </sp>
+               <sp who="pluton">
+                  <speaker>Pluton</speaker>
+                  <l>
+                     <milestone unit="sent" n="239"/>Puisque le Destin aujourd’huy</l>
+                  <l>De tant de malheureux veut suspendre les peines ;</l>
+                  <l>
+                     <pb n="35" xml:id="p35"/>Pluton ne sera pas moins indulgent que luy,</l>
+                  <l>Je veux qu’ils sortent de leurs chaisnes.</l>
+                  <l>
+                     <milestone unit="sent" n="240"/>Pour honorer l’autheur de ces doux changemens,</l>
+                  <l>Venez, empressez-vous, infortunez coupables ;</l>
+                  <l>Et vous, dont les jeux surprenans</l>
+                  <l>Font quelquefois mes divertissemens,</l>
+                  <l>Rendez-luy, s’il se peut, les momens agreables</l>
+                  <l>Dont ces lieux luy sont redevables.</l>
+                  <stage>
+                     <milestone unit="sent" n="241"/>Pluton s’en va, avec Ascalax et les autres Suivans.</stage>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VI</head>
+               <stage>
+                  <milestone unit="sent" n="242"/>Les Ombres Criminelles témoignent la joye qu’elles ont d’estre soulagées.</stage>
+               <stage>
+                  <milestone unit="sent" n="243"/>Des Lutins accoûtumez à divertir Pluton les secondent.</stage>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="244"/>Heureux Mortel, quelle est ta gloire !</l>
+                  <l>
+                     <milestone unit="sent" n="245"/>Celebrons-la par nos Concerts.</l>
+                  <l>
+                     <milestone unit="sent" n="246"/>Est-il de plus grande Victoire</l>
+                  <l>Que d’avoir charmé les Enfers ?</l>
+                  <l>
+                     <milestone unit="sent" n="247"/>Heureux Mortel, quelle est ta gloire !</l>
+                  <l>
+                     <milestone unit="sent" n="248"/>Celebrons-la<note place="bottom" resp="KS">Nous corrigeons « Celebrons-là » par « Celebrons-la ».</note> par nos Concerts.</l>
+                  <stage>
+                     <milestone unit="sent" n="249"/>Des Danses succédent aux Chants, et l’arrivée de quelques Ombres heureuses semble
               annoncer celle d’Euridice.</stage>
-          </sp>
-          <sp who="chœur">
-            <speaker>Les Chœurs</speaker>
-            <l><pb n="36" xml:id="p36"/>Ton Espouse va reprendre</l>
-            <l>Tout ce qu’elle avoit d’attraits :</l>
-            <l>Mais pouvons-nous nous deffendre</l>
-            <l>De former des vœux secrets ;</l>
-            <l>Qu’on differe à te la rendre :</l>
-            <l>Ne presse plus pour l’obtenir,</l>
-            <l>Calme un peu ton impatience ;</l>
-            <l>Ta peine ne sçauroit finir</l>
-            <l>Que la nostre ne recommence.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VII</head>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <l>Pluton qui de ton sort dispose,</l>
-            <l>Rend Euridice à ton amour :</l>
-            <l>Mais écoute ce qu’à son tour</l>
-            <l>Ce Monarque absolu t’impose.</l>
-            <l>Rien ne peut plus te retarder,</l>
-            <l>Tu vas partir seul avec elle ;</l>
-            <l>Garde-toy de la regarder,</l>
-            <l>Que tu ne sois sorty de cette ombre éternelle ;</l>
-            <l>Si devant ce moment tes yeux sont satisfaits,</l>
-            <l>Tu pers Euridice à jamais.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="37" xml:id="p37"/>Euridice, est-ce vous ? ô contrainte sevére !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <stage>voilée.</stage>
-            <l>Recevons les graces des Dieux</l>
-            <l>Telles qu’ils veulent nous les faire.</l>
-          </sp>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <l>Laissez du Styx le passage ordinaire,</l>
-            <l>Ce chemin vous conduit à la clarté des Cieux ;</l>
-            <l>Mais profitez au sortir de ces lieux</l>
-            <l>D’un secret que Pluton veut bien ne vous pas taire.</l>
-            <l>Les crimes des mortels sont connus icy bas,</l>
-            <l>Apprenez celuy d’Orasie ;</l>
-            <l>Elle aime Orphée, et c’est sa jalousie</l>
-            <l>Qui d’Euridice a causé le trépas.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Le perfide, grands Dieux ! je cours à la vangeance.</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <stage>voilée.</stage>
-            <l>Bien qu’elle m’ait ravy le jour,</l>
-            <l>Mon cœur luy pardonne une offense,</l>
-            <l>Qui m’a fait voir tout vostre amour :</l>
-            <l>Cherchons seulement un séjour</l>
-            <l>Qui ne soit pas sous sa puissance.</l>
-          </sp>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <l>Partez, heureux Espoux, vos destins sont changez,</l>
-            <l>Vostre Amour est content, c’est estre assez vangez.</l>
-          </sp>
-          <sp who="leschœurs">
-            <speaker>Les Chœurs</speaker>
-            <l>Vos destins sont changez</l>
-            <l><pb n="38" xml:id="p38"/>Votre amour est content, c’est este assés vangez.</l>
-            <stage>Les Ombres heureuses ostent à Euridice son voile, et Orphée cesse de tourner ses
+               </sp>
+               <sp who="chœur">
+                  <speaker>Les Chœurs</speaker>
+                  <l>
+                     <milestone unit="sent" n="250"/>
+                     <pb n="36" xml:id="p36"/>Ton Espouse va reprendre</l>
+                  <l>Tout ce qu’elle avoit d’attraits :</l>
+                  <l>
+                     <milestone unit="sent" n="251"/>Mais pouvons-nous nous deffendre</l>
+                  <l>De former des vœux secrets ;</l>
+                  <l>Qu’on differe à te la rendre :</l>
+                  <l>
+                     <milestone unit="sent" n="252"/>Ne presse plus pour l’obtenir,</l>
+                  <l>Calme un peu ton impatience ;</l>
+                  <l>Ta peine ne sçauroit finir</l>
+                  <l>Que la nostre ne recommence.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VII</head>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <l>
+                     <milestone unit="sent" n="253"/>Pluton qui de ton sort dispose,</l>
+                  <l>Rend Euridice à ton amour :</l>
+                  <l>
+                     <milestone unit="sent" n="254"/>Mais écoute ce qu’à son tour</l>
+                  <l>Ce Monarque absolu t’impose.</l>
+                  <l>
+                     <milestone unit="sent" n="255"/>Rien ne peut plus te retarder,</l>
+                  <l>Tu vas partir seul avec elle ;</l>
+                  <l>Garde-toy de la regarder,</l>
+                  <l>Que tu ne sois sorty de cette ombre éternelle ;</l>
+                  <l>Si devant ce moment tes yeux sont satisfaits,</l>
+                  <l>Tu pers Euridice à jamais.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="256"/>
+                     <pb n="37" xml:id="p37"/>Euridice, est-ce vous ? ô contrainte sevére !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <stage>voilée.</stage>
+                  <l>
+                     <milestone unit="sent" n="257"/>Recevons les graces des Dieux</l>
+                  <l>Telles qu’ils veulent nous les faire.</l>
+               </sp>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <l>
+                     <milestone unit="sent" n="258"/>Laissez du Styx le passage ordinaire,</l>
+                  <l>Ce chemin vous conduit à la clarté des Cieux ;</l>
+                  <l>Mais profitez au sortir de ces lieux</l>
+                  <l>D’un secret que Pluton veut bien ne vous pas taire.</l>
+                  <l>
+                     <milestone unit="sent" n="259"/>Les crimes des mortels sont connus icy bas,</l>
+                  <l>Apprenez celuy d’Orasie ;</l>
+                  <l>Elle aime Orphée, et c’est sa jalousie</l>
+                  <l>Qui d’Euridice a causé le trépas.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="260"/>Le perfide, grands Dieux ! je cours à la vangeance.</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <stage>voilée.</stage>
+                  <l>
+                     <milestone unit="sent" n="261"/>Bien qu’elle m’ait ravy le jour,</l>
+                  <l>Mon cœur luy pardonne une offense,</l>
+                  <l>Qui m’a fait voir tout vostre amour :</l>
+                  <l>
+                     <milestone unit="sent" n="262"/>Cherchons seulement un séjour</l>
+                  <l>Qui ne soit pas sous sa puissance.</l>
+               </sp>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <l>
+                     <milestone unit="sent" n="263"/>Partez, heureux Espoux, vos destins sont changez,</l>
+                  <l>Vostre Amour est content, c’est estre assez vangez.</l>
+               </sp>
+               <sp who="leschœurs">
+                  <speaker>Les Chœurs</speaker>
+                  <l>
+                     <milestone unit="sent" n="264"/>Vos destins sont changez</l>
+                  <l>
+                     <pb n="38" xml:id="p38"/>Votre amour est content, c’est este assés vangez.</l>
+                  <stage>
+                     <milestone unit="sent" n="265"/>Les Ombres heureuses ostent à Euridice son voile, et Orphée cesse de tourner ses
               yeux sur elle.</stage>
-          </sp>
-          <sp who="ascalax">
-            <speaker>Ascalax</speaker>
-            <stage>aux Ombres criminelles.</stage>
-            <l>Vous, Troupe à souffrir condamnée,</l>
-            <l>Rentrez, rentrez dans vos fers :</l>
-            <l>Orphée en quittant les Enfers,</l>
-            <l>Vous rend à vostre destinée.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VIII</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Vous reverrez le jour ; Quel heureux changement !</l>
-            <l>Mais que je souffre en ce moment</l>
-            <l>De n’oser prés de vous joüir de vostre veuë.</l>
-            <l>Ah ! cherchons promptement la lumiere des Cieux,</l>
-            <l>Puis qu’avec elle enfin me doit estre renduë</l>
-            <l>Celle de vos beaux yeux.</l>
-            <l>Ah que je sens d’impatience !</l>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Ah quand pourra mon tendre cœur</l>
-            <l>Vous monstrer toute son ardeur ?</l>
-            <l>Vous estes à la fois ma plus chere esperance,</l>
-            <l>Mon Amant, mon Espous, et mon Liberateur,</l>
-            <l><pb n="39" xml:id="p39"/>Tout s’unit en vostre faveur,</l>
-            <l>Amour, devoir, reconnoissance,</l>
-            <l>Ah ! quand pourra mon tendre cœur</l>
-            <l>Vous monstrer toute son ardeur.</l>
-            <l>Ah ! que je sens d’impatience !</l>
-            <stage>La lumiere disparoist.</stage>
-            <l>Que cette obscurité vient à propos s’offrir</l>
-            <l>Pour rendre de Pluton la deffense inutile.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Elle m’espargne un soin importun, difficile,</l>
-            <l>Mais je ne vous vois pas, et c’est toujours souffrir.</l>
-            <l>Avançons, achevons cette triste carriere ;</l>
-            <l>S’il se peut ne vous lassez pas.</l>
-            <l>Nous touchons presque à la lumiere.</l>
-            <stage>La Lumiere revient, et laisse voir tout le devant du Theatre changé. C’est une
+               </sp>
+               <sp who="ascalax">
+                  <speaker>Ascalax</speaker>
+                  <stage>aux Ombres criminelles.</stage>
+                  <l>
+                     <milestone unit="sent" n="266"/>Vous, Troupe à souffrir condamnée,</l>
+                  <l>Rentrez, rentrez dans vos fers :</l>
+                  <l>
+                     <milestone unit="sent" n="267"/>Orphée en quittant les Enfers,</l>
+                  <l>Vous rend à vostre destinée.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VIII</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="268"/>Vous reverrez le jour ; Quel heureux changement !</l>
+                  <l>
+                     <milestone unit="sent" n="269"/>Mais que je souffre en ce moment</l>
+                  <l>De n’oser prés de vous joüir de vostre veuë.</l>
+                  <l>
+                     <milestone unit="sent" n="270"/>Ah ! cherchons promptement la lumiere des Cieux,</l>
+                  <l>Puis qu’avec elle enfin me doit estre renduë</l>
+                  <l>Celle de vos beaux yeux.</l>
+                  <l>
+                     <milestone unit="sent" n="271"/>Ah que je sens d’impatience !</l>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="272"/>Ah quand pourra mon tendre cœur</l>
+                  <l>Vous monstrer toute son ardeur ?</l>
+                  <l>
+                     <milestone unit="sent" n="273"/>Vous estes à la fois ma plus chere esperance,</l>
+                  <l>Mon Amant, mon Espous, et mon Liberateur,</l>
+                  <l>
+                     <pb n="39" xml:id="p39"/>Tout s’unit en vostre faveur,</l>
+                  <l>Amour, devoir, reconnoissance,</l>
+                  <l>Ah ! quand pourra mon tendre cœur</l>
+                  <l>Vous monstrer toute son ardeur.</l>
+                  <l>
+                     <milestone unit="sent" n="274"/>Ah ! que je sens d’impatience !</l>
+                  <stage>
+                     <milestone unit="sent" n="275"/>La lumiere disparoist.</stage>
+                  <l>
+                     <milestone unit="sent" n="276"/>Que cette obscurité vient à propos s’offrir</l>
+                  <l>Pour rendre de Pluton la deffense inutile.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="277"/>Elle m’espargne un soin importun, difficile,</l>
+                  <l>Mais je ne vous vois pas, et c’est toujours souffrir.</l>
+                  <l>
+                     <milestone unit="sent" n="278"/>Avançons, achevons cette triste carriere ;</l>
+                  <l>S’il se peut ne vous lassez pas.</l>
+                  <l>
+                     <milestone unit="sent" n="279"/>Nous touchons presque à la lumiere.</l>
+                  <stage>
+                     <milestone unit="sent" n="280"/>La Lumiere revient, et laisse voir tout le devant du Theatre changé. <milestone unit="sent" n="281"/>C’est une
               partie du Mont Rhodope et l’on reconnoist la Bouche d’un Antre par où Orphée est déjà
-              sorty des Enfers. Euridice ne l’est pas encore.</stage>
-            <l>Respondez-moy du moins, marchez-vous sur mes pas ?</l>
-            <l>Je ne l’entens plus, quel supplice !</l>
-            <l>Que faire ? ah que je sens de mouvements divers !</l>
-            <l>Cherchons…</l>
-            <stage>Orphée regarde Euridice, laquelle dans ce moment paroist sortir de l’Antre ; mais
+              sorty des Enfers. <milestone unit="sent" n="282"/>Euridice ne l’est pas encore.</stage>
+                  <l>
+                     <milestone unit="sent" n="283"/>Respondez-moy du moins, marchez-vous sur mes pas ?</l>
+                  <l>
+                     <milestone unit="sent" n="284"/>Je ne l’entens plus, quel supplice !</l>
+                  <l>
+                     <milestone unit="sent" n="285"/>Que faire ? ah que je sens de mouvements divers !</l>
+                  <l>Cherchons…</l>
+                  <stage>
+                     <milestone unit="sent" n="286"/>Orphée regarde Euridice, laquelle dans ce moment paroist sortir de l’Antre ; mais
               elle en est empéchée par des Ministres de Pluton qui la retirent avec
               violence.</stage>
-          </sp>
-          <sp who="euridice">
-            <speaker>Euridice</speaker>
-            <l>Orphée, helas, tu n’a plus d’Euridice.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène IX</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>seul</stage>
-            <l><pb n="40" xml:id="p40"/>Dieux, je l’ay veuë, et je la pers !</l>
-            <l>Mortel regard ! funeste impatience !</l>
-            <l>Pluton, ce n’est pas là violer ta deffence,</l>
-            <l>Retournons promptement par ces chemins ouverts.</l>
-            </sp>
+               </sp>
+               <sp who="euridice">
+                  <speaker>Euridice</speaker>
+                  <l>
+                     <milestone unit="sent" n="287"/>Orphée, helas, tu n’a plus d’Euridice.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène IX</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>seul</stage>
+                  <l>
+                     <milestone unit="sent" n="288"/>
+                     <pb n="40" xml:id="p40"/>Dieux, je l’ay veuë, et je la pers !</l>
+                  <l>
+                     <milestone unit="sent" n="289"/>Mortel regard ! funeste impatience !</l>
+                  <l>
+                     <milestone unit="sent" n="290"/>Pluton, ce n’est pas là violer ta deffence,</l>
+                  <l>Retournons promptement par ces chemins ouverts.</l>
+               </sp>
             </div>
             <div>
-            <head>Scène X</head>
-            <stage>Une Troupe de Ministres de Pluton s’oppose à son passage.</stage>
-          
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Souffrez…</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Non, non, nous sommes inflexibles,</l>
-            <l>Non, la pitié deux fois n’entre point aux Enfers.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Peut-estre encor je les rendray sensibles ;</l>
-            <l>Accordez-moy…</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Non, non, nous sommes inflexibles,</l>
-            <l>Non, la pitié deux fois n’entre point eux Enfers.</l>
-            <stage>Les Ministres du Pluton repoussent Orphée hors du Theatre.</stage>
-          </sp>
-        </div>
-      </div>
-      <div>
-        <head>Acte III</head>
-        <stage><pb n="41" xml:id="p41"/>Le Theatre acheve de changer, et represente le Mont
+               <head>Scène X</head>
+               <stage>
+                  <milestone unit="sent" n="291"/>Une Troupe de Ministres de Pluton s’oppose à son passage.</stage>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="292"/>Souffrez…</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="293"/>Non, non, nous sommes inflexibles,</l>
+                  <l>Non, la pitié deux fois n’entre point aux Enfers.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="294"/>Peut-estre encor je les rendray sensibles ;</l>
+                  <l>Accordez-moy…</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="295"/>Non, non, nous sommes inflexibles,</l>
+                  <l>Non, la pitié deux fois n’entre point eux Enfers.</l>
+                  <stage>
+                     <milestone unit="sent" n="296"/>Les Ministres du Pluton repoussent Orphée hors du Theatre.</stage>
+               </sp>
+            </div>
+         </div>
+         <div>
+            <head>Acte III</head>
+            <stage>
+               <milestone unit="sent" n="297"/>
+               <pb n="41" xml:id="p41"/>Le Theatre acheve de changer, et represente le Mont
           Rhodope.</stage>
-        <div type="scene">
-          <head>Scène première</head>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>C’est icy que d’Orphée on attend le retour.</l>
-            <l>Par cét Antre fameux Rhodope ouvre un passage</l>
-            <l>À qui veut penetrer dans l’infernal séjour.</l>
-            <l>Orphée est le premier qu’un trop parfait amour</l>
-            <l>vient d’engager à ce voyage.</l>
-            <l>Dessein pour luy trop dangereux !</l>
-            <l>C’est cette crainte qui m’amene ;</l>
-            <l>Mais je ressens encor un trouble plus affreux,</l>
-            <l>Et je tremble qu’il ne revienne</l>
-            <l>Avec son Euridice au comble de ses vœux.</l>
-            <l><pb n="42" xml:id="p42"/>Quoy, je te reverrois, odieuse ennemie,</l>
-            <l>Retourner à la vie,</l>
-            <l>J’aurois commis un crime en vain !</l>
-            <l>Non, non, elle te peut encor estre ravie,</l>
-            <l>Et mesme aux yeux d’Orphée…</l>
-          </sp>
-          <sp who="ismene">
-            <speaker>Ismene</speaker>
-            <l>Ah quittez ce dessein.</l>
-            <l>De vostre premiere vangeance</l>
-            <l>Le projet fut bien mieux conduit :</l>
-            <l>elle ne fit pas tant de bruit</l>
-            <l>Et vous laissoit plus d’esperance :</l>
-            <l>Pourquoy par une violence</l>
-            <l>Voulez-vous en perdre le fruit ?</l>
-            <l>Voulez-vous donc qu’Orphée à jamais vous déteste ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Chere Ismene, soûtiens la raison qui me reste.</l>
-            <l>Mais j’imagine en ce moment</l>
-            <l>Un coup plus favorable à mon ressentiment.</l>
-            <l>De Bachus aujourd’huy c’est le grand sacrifice,</l>
-            <l>Dès long-temps, tu le sçais, j’eus soin de prevenir</l>
-            <l>Nos Bachantes contre Euridice ;</l>
-            <l>Si nous la voyons revenir,</l>
-            <l>Faisons que leurs fureurs s’arment pour son supplice.</l>
-          </sp>
-          <sp who="ismene">
-            <speaker>Ismene</speaker>
-            <l>C’est exposer Orphée aux mesme traits.</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Sur elle n’ay-je pas l’autorité suprême ?</l>
-            <l>Je sçauray bien perdre ce que je hais,</l>
-            <l>Et sauver ce que j’aime.</l>
-            <stage>Orphée paroist.</stage>
-            <l><pb n="43" xml:id="p43"/>Mais le Ciel auroit-il secondé mes souhaits ?</l>
-            <l>Orphée est de retour, ma joye est sans égale,</l>
-            <l>Je le vois sans ma rivale.</l>
-            <l>Il vient. Feignons de la douleur</l>
-            <l>D’un succés qui fait mon bonheur.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène seconde</head>
-          <stage>Orasie, Orphée, Ismene. Eurimede arrive presqu’en mesme temps.</stage>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Faut-il que l’amitié qui pour vous m’interesse</l>
-            <l>N’ose se réjoüir de vostre heureux retour ?</l>
-            <l>Et ne monte que ma tristesse</l>
-            <l>De vous voir revenir sans ramener au jour</l>
-            <l>L’objet seul de vostre tendresse.</l>
-            <l>Mais le sort veut que les Enfers</l>
-            <l>Aux Mortels soient inaccessibles.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Reine, ces lieux terribles</l>
-            <l>N’en doutez pas, viennent de m’estre ouverts.</l>
-            <l>Et c’est là que j’ay sçeu, Barbare,</l>
-            <l>Que si mon Euridice a fini son destin,</l>
-            <l>Le coup, helas ! qui nous separe</l>
-            <l>Ne partoit que de vostre main.</l>
-            <l>Malgré vous, je le vois, vostre trouble s’exprime,</l>
-            <l>Voulez-vous que je mette au jour ?</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="44" xml:id="p44"/>Eh bien je confesse mon crime,</l>
-            <l>Mais toy, cruel, tu feins d’ignorer mon amour.</l>
-            <l>C’est pourtant cét amour qui me l’a fait commettre,</l>
-            <l>Je croyois dans l’oubly le cacher pour jamais ;</l>
-            <l>Et le temps sembloit me promettre</l>
-            <l>D’adoucir enfin tes regrets.</l>
-            <l>Qu’un jour…</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Un jour ! l’avez-vous donc pû croire</l>
-            <l>Qu’Euridice jamais sorte de ma memoire ?</l>
-            <l>Non, non, malgré la mort, elle sera toûjours</l>
-            <l>L’unique objet de mes amours,</l>
-            <l>Et de vostre impuissante rage.</l>
-            <l>C’est ainsi que je laisse à vanger mon outrage</l>
-            <l>À vostre desespoir, à vos transports jaloux ;</l>
-            <l>Ah que ne m’aimez-vous mille fois davantage,</l>
-            <l>Pour en ressentir mieux l’horreur que j’ay pour vous.</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l>Épargne-toy cette esperance vaine ;</l>
-            <l>C’en est fait, je ne t’aime plus.</l>
-            <l>Tu me peux desormais chercher quelque autre peine,</l>
-            <l>Mais je dois te punir de tes cruels rebuts,</l>
-            <l>Tremble, ma vangeance est prochaine,</l>
-            <l>C’en est fait, je ne t’aime plus.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène troisiesme</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="45" xml:id="p45"/>Appren, cher Eurimede, et plains mon triste sort.</l>
-            <l>J’avois charmé l’empire de la mort ;</l>
-            <l>Tout à mes vœux s’estoit rendu propice,</l>
-            <l>Et je ramenois Euridice.</l>
-            <l>Une dure loy seulement</l>
-            <l>Me deffendoit de voir cét objet si charmant</l>
-            <l>Dans les lieux où Pluton exerce sa puissance.</l>
-            <l>Mes yeux long-temps se sont fait violence,</l>
-            <l>Mais la crainte, l’amour, dans un fatal moment…</l>
-            <l>Ah Pluton, un regard me rend-il si coupable ?</l>
-            <l>Avec tant de rigueur pourquoy me condamner ?</l>
-            <l>Helas, fût-il jamais faute plus pardonnable,</l>
-            <l>Si l’Enfer sçavoit pardonner ?</l>
-          </sp>
-          <sp who="orphee eurimede">
-            <speaker>Orphée et Eurimede</speaker>
-            <l>Helas, fût-il jamais faute plus pardonnable,</l>
-            <l>Si l’Enfer sçavoit pardonner ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Laisse-moy seul icy soupirer et me plaindre.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>Quelque soit vostre sort je veux le partager.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l><pb n="46" xml:id="p46"/>Ce n’est pas me soulager,</l>
-            <l>Et ce seroit me contraindre.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>Orphée, ô Dieux ! refuse de me voir !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Va, laisse un malheureux que ta presence gêne.</l>
-          </sp>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l>Quoy l’amitié demeure vaine ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Tout ce qui faisoit mon bonheur</l>
-            <l>Dans l’estat où je suis rend ma peine plus rude :</l>
-            <l>Et je ne veux dans cette solitude</l>
-            <l>Qu’un tendre souvenir, ma Lyre, et ma douleur.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène quatriesme</head>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>seul</stage>
-            <l>Sejour affreux et solitaire,</l>
-            <l>Seul séjour qui puisse me plaire :</l>
-            <l>Que vous convenez bien à l’horreur de mon sort,</l>
-            <l>Quand je ne cherche que la mort.</l>
-            <l><pb n="47" xml:id="p47"/>Euridice faisoit le bonheur de ma vie,</l>
-            <l>Deux fois, helas, deux fois la mort me l’a ravie.</l>
-            <stage>Les Rochers retentissent des plaintes d’Orphée</stage>
-            <l>Echo, vous qui dans ces deserts</l>
-            <l>Me montrez une pitié vaine,</l>
-            <l>Au lieu de perdre dans les Airs</l>
-            <l>Le triste recit de ma peine,</l>
-            <l>Par ces Gouffres profonds, penetrez aux Enfers :</l>
-            <l>Que le fier Pluton s’attendrisse ;</l>
-            <l>En écoutant ma languissante voix</l>
-            <l>Gemir et redire cent fois,</l>
-            <l>Je vous pers pour jamais Euridice, Euridice.</l>
-            <stage>Les Animaux les plus farouches viennent écouter Orphée.</stage>
-            <l>Que le fier Pluton s’attendrisse ;</l>
-            <l>Des Antres et des Bois les plus fiers habitans</l>
-            <l>Eux mesmes sont touchez des peines que je sens.</l>
-            <l>Euridice faisoit le bonheur de ma vie,</l>
-            <l>Deux fois, helas, deux fois la mort me l’a ravie.</l>
-            <stage>La verdure naist sur les Roches nuës et seiches du Mont Rhodope. Les Arbres y
+            <div type="scene">
+               <head>Scène première</head>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="298"/>C’est icy que d’Orphée on attend le retour.</l>
+                  <l>
+                     <milestone unit="sent" n="299"/>Par cét Antre fameux Rhodope ouvre un passage</l>
+                  <l>À qui veut penetrer dans l’infernal séjour.</l>
+                  <l>
+                     <milestone unit="sent" n="300"/>Orphée est le premier qu’un trop parfait amour</l>
+                  <l>vient d’engager à ce voyage.</l>
+                  <l>
+                     <milestone unit="sent" n="301"/>Dessein pour luy trop dangereux !</l>
+                  <l>
+                     <milestone unit="sent" n="302"/>C’est cette crainte qui m’amene ;</l>
+                  <l>Mais je ressens encor un trouble plus affreux,</l>
+                  <l>Et je tremble qu’il ne revienne</l>
+                  <l>Avec son Euridice au comble de ses vœux.</l>
+                  <l>
+                     <pb n="42" xml:id="p42"/>
+                     <milestone unit="sent" n="303"/>Quoy, je te reverrois, odieuse ennemie,</l>
+                  <l>Retourner à la vie,</l>
+                  <l>J’aurois commis un crime en vain !</l>
+                  <l>
+                     <milestone unit="sent" n="304"/>Non, non, elle te peut encor estre ravie,</l>
+                  <l>Et mesme aux yeux d’Orphée…</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker>Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="305"/>Ah quittez ce dessein.</l>
+                  <l>
+                     <milestone unit="sent" n="306"/>De vostre premiere vangeance</l>
+                  <l>Le projet fut bien mieux conduit :</l>
+                  <l>elle ne fit pas tant de bruit</l>
+                  <l>Et vous laissoit plus d’esperance :</l>
+                  <l>
+                     <milestone unit="sent" n="307"/>Pourquoy par une violence</l>
+                  <l>Voulez-vous en perdre le fruit ?</l>
+                  <l>
+                     <milestone unit="sent" n="308"/>Voulez-vous donc qu’Orphée à jamais vous déteste ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="309"/>Chere Ismene, soûtiens la raison qui me reste.</l>
+                  <l>
+                     <milestone unit="sent" n="310"/>Mais j’imagine en ce moment</l>
+                  <l>Un coup plus favorable à mon ressentiment.</l>
+                  <l>
+                     <milestone unit="sent" n="311"/>De Bachus aujourd’huy c’est le grand sacrifice,</l>
+                  <l>Dès long-temps, tu le sçais, j’eus soin de prevenir</l>
+                  <l>Nos Bachantes contre Euridice ;</l>
+                  <l>Si nous la voyons revenir,</l>
+                  <l>Faisons que leurs fureurs s’arment pour son supplice.</l>
+               </sp>
+               <sp who="ismene">
+                  <speaker>Ismene</speaker>
+                  <l>
+                     <milestone unit="sent" n="312"/>C’est exposer Orphée aux mesme traits.</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="313"/>Sur elle n’ay-je pas l’autorité suprême ?</l>
+                  <l>
+                     <milestone unit="sent" n="314"/>Je sçauray bien perdre ce que je hais,</l>
+                  <l>Et sauver ce que j’aime.</l>
+                  <stage>
+                     <milestone unit="sent" n="315"/>Orphée paroist.</stage>
+                  <l>
+                     <pb n="43" xml:id="p43"/>
+                     <milestone unit="sent" n="316"/>Mais le Ciel auroit-il secondé mes souhaits ?</l>
+                  <l>
+                     <milestone unit="sent" n="317"/>Orphée est de retour, ma joye est sans égale,</l>
+                  <l>Je le vois sans ma rivale.</l>
+                  <l>
+                     <milestone unit="sent" n="318"/>Il vient. Feignons de la douleur</l>
+                  <l>D’un succés qui fait mon bonheur.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène seconde</head>
+               <stage>
+                  <milestone unit="sent" n="319"/>Orasie, Orphée, Ismene. <milestone unit="sent" n="320"/>Eurimede arrive presqu’en mesme temps.</stage>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="321"/>Faut-il que l’amitié qui pour vous m’interesse</l>
+                  <l>N’ose se réjoüir de vostre heureux retour ?</l>
+                  <l>
+                     <milestone unit="sent" n="322"/>Et ne monte que ma tristesse</l>
+                  <l>De vous voir revenir sans ramener au jour</l>
+                  <l>L’objet seul de vostre tendresse.</l>
+                  <l>
+                     <milestone unit="sent" n="323"/>Mais le sort veut que les Enfers</l>
+                  <l>Aux Mortels soient inaccessibles.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="324"/>Reine, ces lieux terribles</l>
+                  <l>N’en doutez pas, viennent de m’estre ouverts.</l>
+                  <l>
+                     <milestone unit="sent" n="325"/>Et c’est là que j’ay sçeu, Barbare,</l>
+                  <l>Que si mon Euridice a fini son destin,</l>
+                  <l>Le coup, helas ! qui nous separe</l>
+                  <l>Ne partoit que de vostre main.</l>
+                  <l>
+                     <milestone unit="sent" n="326"/>Malgré vous, je le vois, vostre trouble s’exprime,</l>
+                  <l>Voulez-vous que je mette au jour ?</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="327"/>
+                     <pb n="44" xml:id="p44"/>Eh bien je confesse mon crime,</l>
+                  <l>Mais toy, cruel, tu feins d’ignorer mon amour.</l>
+                  <l>
+                     <milestone unit="sent" n="328"/>C’est pourtant cét amour qui me l’a fait commettre,</l>
+                  <l>Je croyois dans l’oubly le cacher pour jamais ;</l>
+                  <l>Et le temps sembloit me promettre</l>
+                  <l>D’adoucir enfin tes regrets.</l>
+                  <l>
+                     <milestone unit="sent" n="329"/>Qu’un jour…</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="330"/>Un jour ! l’avez-vous donc pû croire</l>
+                  <l>Qu’Euridice jamais sorte de ma memoire ?</l>
+                  <l>
+                     <milestone unit="sent" n="331"/>Non, non, malgré la mort, elle sera toûjours</l>
+                  <l>L’unique objet de mes amours,</l>
+                  <l>Et de vostre impuissante rage.</l>
+                  <l>
+                     <milestone unit="sent" n="332"/>C’est ainsi que je laisse à vanger mon outrage</l>
+                  <l>À vostre desespoir, à vos transports jaloux ;</l>
+                  <l>Ah que ne m’aimez-vous mille fois davantage,</l>
+                  <l>Pour en ressentir mieux l’horreur que j’ay pour vous.</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="333"/>Épargne-toy cette esperance vaine ;</l>
+                  <l>C’en est fait, je ne t’aime plus.</l>
+                  <l>
+                     <milestone unit="sent" n="334"/>Tu me peux desormais chercher quelque autre peine,</l>
+                  <l>Mais je dois te punir de tes cruels rebuts,</l>
+                  <l>Tremble, ma vangeance est prochaine,</l>
+                  <l>C’en est fait, je ne t’aime plus.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène troisiesme</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="335"/>
+                     <pb n="45" xml:id="p45"/>Appren, cher Eurimede, et plains mon triste sort.</l>
+                  <l>
+                     <milestone unit="sent" n="336"/>J’avois charmé l’empire de la mort ;</l>
+                  <l>Tout à mes vœux s’estoit rendu propice,</l>
+                  <l>Et je ramenois Euridice.</l>
+                  <l>
+                     <milestone unit="sent" n="337"/>Une dure loy seulement</l>
+                  <l>Me deffendoit de voir cét objet si charmant</l>
+                  <l>Dans les lieux où Pluton exerce sa puissance.</l>
+                  <l>
+                     <milestone unit="sent" n="338"/>Mes yeux long-temps se sont fait violence,</l>
+                  <l>Mais la crainte, l’amour, dans un fatal moment…</l>
+                  <l>
+                     <milestone unit="sent" n="339"/>Ah Pluton, un regard me rend-il si coupable ?</l>
+                  <l>
+                     <milestone unit="sent" n="340"/>Avec tant de rigueur pourquoy me condamner ?</l>
+                  <l>
+                     <milestone unit="sent" n="341"/>Helas, fût-il jamais faute plus pardonnable,</l>
+                  <l>Si l’Enfer sçavoit pardonner ?</l>
+               </sp>
+               <sp who="orphee eurimede">
+                  <speaker>Orphée et Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="342"/>Helas, fût-il jamais faute plus pardonnable,</l>
+                  <l>Si l’Enfer sçavoit pardonner ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="343"/>Laisse-moy seul icy soupirer et me plaindre.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="344"/>Quelque soit vostre sort je veux le partager.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="345"/>
+                     <pb n="46" xml:id="p46"/>Ce n’est pas me soulager,</l>
+                  <l>Et ce seroit me contraindre.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="346"/>Orphée, ô Dieux ! refuse de me voir !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="347"/>Va, laisse un malheureux que ta presence gêne.</l>
+               </sp>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="348"/>Quoy l’amitié demeure vaine ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="349"/>Tout ce qui faisoit mon bonheur</l>
+                  <l>Dans l’estat où je suis rend ma peine plus rude :</l>
+                  <l>
+                     <milestone unit="sent" n="350"/>Et je ne veux dans cette solitude</l>
+                  <l>Qu’un tendre souvenir, ma Lyre, et ma douleur.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène quatriesme</head>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>seul</stage>
+                  <l>
+                     <milestone unit="sent" n="351"/>Sejour affreux et solitaire,</l>
+                  <l>Seul séjour qui puisse me plaire :</l>
+                  <l>
+                     <milestone unit="sent" n="352"/>Que vous convenez bien à l’horreur de mon sort,</l>
+                  <l>Quand je ne cherche que la mort.</l>
+                  <l>
+                     <pb n="47" xml:id="p47"/>
+                     <milestone unit="sent" n="353"/>Euridice faisoit le bonheur de ma vie,</l>
+                  <l>Deux fois, helas, deux fois la mort me l’a ravie.</l>
+                  <stage>
+                     <milestone unit="sent" n="354"/>Les Rochers retentissent des plaintes d’Orphée</stage>
+                  <l>
+                     <milestone unit="sent" n="355"/>Echo, vous qui dans ces deserts</l>
+                  <l>Me montrez une pitié vaine,</l>
+                  <l>Au lieu de perdre dans les Airs</l>
+                  <l>Le triste recit de ma peine,</l>
+                  <l>Par ces Gouffres profonds, penetrez aux Enfers :</l>
+                  <l>
+                     <milestone unit="sent" n="356"/>Que le fier Pluton s’attendrisse ;</l>
+                  <l>En écoutant ma languissante voix</l>
+                  <l>Gemir et redire cent fois,</l>
+                  <l>Je vous pers pour jamais Euridice, Euridice.</l>
+                  <stage>
+                     <milestone unit="sent" n="357"/>Les Animaux les plus farouches viennent écouter Orphée.</stage>
+                  <l>
+                     <milestone unit="sent" n="358"/>Que le fier Pluton s’attendrisse ;</l>
+                  <l>Des Antres et des Bois les plus fiers habitans</l>
+                  <l>Eux mesmes sont touchez des peines que je sens.</l>
+                  <l>
+                     <milestone unit="sent" n="359"/>Euridice faisoit le bonheur de ma vie,</l>
+                  <l>Deux fois, helas, deux fois la mort me l’a ravie.</l>
+                  <stage>
+                     <milestone unit="sent" n="360"/>La verdure naist sur les Roches nuës et seiches du Mont Rhodope. <milestone unit="sent" n="361"/>Les Arbres y
               sont attirez, et les Ruisseaux commencent à y couler.</stage>
-            <l>Eh que sert à me consoler !</l>
-            <l>Que ces Rochers pour moy se couvrent de verdure ?</l>
-            <l><pb n="48" xml:id="p48"/>Clairs ruisseaux que ces lieux n’ont jamais veu couler,</l>
-            <l>Cessez vostre naissant murmure,</l>
-            <l>Miracles de ma voix maintenant superflus</l>
-            <l>Vous ne me plaisez plus.</l>
-            <l>Loin de moy ces Lauriers d’une gloire sterile.</l>
-            <stage>Orphée jette sa Couronne et sa Lyre, et la Symphonie cesse.</stage>
-            <l>Vain Instrument d’un Art désormais inutile</l>
-            <l>Allez où rendez-moy le bien qu’on m’a<note place="bottom" resp="KS">Nous corrigeons « ma » par « m’a ».</note> ravy.</l>
-            <l>Que dis-je, helas ! Vous m’avez bien servy</l>
-            <l>Et je me plaignois sans Justice.</l>
-            <l>Mes yeux seuls m’ont causé le plus grand des malheurs,</l>
-            <l>Ils m’ont coûté mon Euridice ;</l>
-            <l>Mes yeux, mes tristes yeux noyez-vous dans les pleurs.</l>
-            <l>Je ne la verray plus ! ô tourment effroyable !</l>
-            <l>Nul espoir ne vient plus s’offrir.</l>
-            <l>Tigres, Lions, venez me secourir,</l>
-            <l>Déchirez, dévorez un Amant miserable ;</l>
-            <l>Helas en me faisant perir</l>
-            <l>Vous me rendrez à ce que j’aime,</l>
-            <l>Eh quoy vous m’épargnez, vous me laissez souffrir</l>
-            <l>Cruels encor dans vostre pitié mesme.</l>
-            <l>Ô Mort, ô douce Mort vien finir mes regrets !</l>
-            <l>J’entens du bruit, on s’avance,</l>
-            <l>Où pourray-je désormais,</l>
-            <l>Fuïr des Mortels l’odieuse presence.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène V</head>
-          <sp who="eurimede">
-            <speaker>Eurimede</speaker>
-            <l><pb n="49" xml:id="p49"/>Où trouveray-je Orphée ? on en veut à ses jours.</l>
-            <l>Les Bacchantes en furie</l>
-            <l>Suivent en ces lieux Orasie,</l>
-            <l>Où trouveray-je Orphée ? on en veut à ses jours,</l>
-            <l>Ne puis-je rien pour son secours ?<note place="bottom" resp="KS">Nous corrigeons « . » par « ? ».</note></l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène VI</head>
-          <sp who="orasie pretresse_bacchus">
-            <speaker>Orasie et la Prestresse de Bachus</speaker>
-            <l>Qu’il perisse le prophane</l>
-            <l>Qui nous condamne ;</l>
-            <l>Et qui méprise tes vertus,</l>
-            <l>Bacchus, Bacchus, Bacchus.</l>
-            <stage>Elles marquent leur yvresse et leur fureur.</stage>
-          </sp>
-          <sp who="pretresse_bacchus">
-            <speaker>La Prestresse</speaker>
-            <l><pb n="50" xml:id="p50"/>Ô toy qui remplis nos cœurs</l>
-            <l>De tes divines fureurs !</l>
-            <l>Toy qui toûjours nous accompagnes</l>
-            <l>Sur les Montagnes !</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Ô Fils puissant</l>
-            <l>Du Dieu tonnant,</l>
-            <l>Lance, lance sur le coupable</l>
-            <l>Le Thyrse redoutable.</l>
-          </sp>
-          <sp who="pretresse_bacchus">
-            <speaker>La Pretresse</speaker>
-            <l>Parois, Bacchus, vange-toy, vange-nous,</l>
-            <l>Fais qu’il expire sous nos coups.</l>
-            <stage>Elles cherchent encore Orphée, et marquent le redoublement de leur fureur et de
+                  <l>
+                     <milestone unit="sent" n="362"/>Eh que sert à me consoler !</l>
+                  <l>
+                     <milestone unit="sent" n="363"/>Que ces Rochers pour moy se couvrent de verdure ?</l>
+                  <l>
+                     <pb n="48" xml:id="p48"/>
+                     <milestone unit="sent" n="364"/>Clairs ruisseaux que ces lieux n’ont jamais veu couler,</l>
+                  <l>Cessez vostre naissant murmure,</l>
+                  <l>Miracles de ma voix maintenant superflus</l>
+                  <l>Vous ne me plaisez plus.</l>
+                  <l>
+                     <milestone unit="sent" n="365"/>Loin de moy ces Lauriers d’une gloire sterile.</l>
+                  <stage>
+                     <milestone unit="sent" n="366"/>Orphée jette sa Couronne et sa Lyre, et la Symphonie cesse.</stage>
+                  <l>
+                     <milestone unit="sent" n="367"/>Vain Instrument d’un Art désormais inutile</l>
+                  <l>Allez où rendez-moy le bien qu’on m’a<note place="bottom" resp="KS">Nous corrigeons « ma » par « m’a ».</note> ravy.</l>
+                  <l>
+                     <milestone unit="sent" n="368"/>Que dis-je, helas ! <milestone unit="sent" n="369"/>Vous m’avez bien servy</l>
+                  <l>Et je me plaignois sans Justice.</l>
+                  <l>
+                     <milestone unit="sent" n="370"/>Mes yeux seuls m’ont causé le plus grand des malheurs,</l>
+                  <l>Ils m’ont coûté mon Euridice ;</l>
+                  <l>Mes yeux, mes tristes yeux noyez-vous dans les pleurs.</l>
+                  <l>
+                     <milestone unit="sent" n="371"/>Je ne la verray plus ! ô tourment effroyable !</l>
+                  <l>
+                     <milestone unit="sent" n="372"/>Nul espoir ne vient plus s’offrir.</l>
+                  <l>
+                     <milestone unit="sent" n="373"/>Tigres, Lions, venez me secourir,</l>
+                  <l>Déchirez, dévorez un Amant miserable ;</l>
+                  <l>Helas en me faisant perir</l>
+                  <l>Vous me rendrez à ce que j’aime,</l>
+                  <l>Eh quoy vous m’épargnez, vous me laissez souffrir</l>
+                  <l>Cruels encor dans vostre pitié mesme.</l>
+                  <l>
+                     <milestone unit="sent" n="374"/>Ô Mort, ô douce Mort vien finir mes regrets !</l>
+                  <l>
+                     <milestone unit="sent" n="375"/>J’entens du bruit, on s’avance,</l>
+                  <l>Où pourray-je désormais,</l>
+                  <l>Fuïr des Mortels l’odieuse presence.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène V</head>
+               <sp who="eurimede">
+                  <speaker>Eurimede</speaker>
+                  <l>
+                     <milestone unit="sent" n="376"/>
+                     <pb n="49" xml:id="p49"/>Où trouveray-je Orphée ? on en veut à ses jours.</l>
+                  <l>
+                     <milestone unit="sent" n="377"/>Les Bacchantes en furie</l>
+                  <l>Suivent en ces lieux Orasie,</l>
+                  <l>Où trouveray-je Orphée ? on en veut à ses jours,</l>
+                  <l>Ne puis-je rien pour son secours ?<note place="bottom" resp="KS">Nous corrigeons « . » par « ? ».</note>
+                  </l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène VI</head>
+               <sp who="orasie pretresse_bacchus">
+                  <speaker>Orasie et la Prestresse de Bachus</speaker>
+                  <l>
+                     <milestone unit="sent" n="378"/>Qu’il perisse le prophane</l>
+                  <l>Qui nous condamne ;</l>
+                  <l>Et qui méprise tes vertus,</l>
+                  <l>Bacchus, Bacchus, Bacchus.</l>
+                  <stage>
+                     <milestone unit="sent" n="379"/>Elles marquent leur yvresse et leur fureur.</stage>
+               </sp>
+               <sp who="pretresse_bacchus">
+                  <speaker>La Prestresse</speaker>
+                  <l>
+                     <milestone unit="sent" n="380"/>
+                     <pb n="50" xml:id="p50"/>Ô toy qui remplis nos cœurs</l>
+                  <l>De tes divines fureurs !</l>
+                  <l>
+                     <milestone unit="sent" n="381"/>Toy qui toûjours nous accompagnes</l>
+                  <l>Sur les Montagnes !</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="382"/>Ô Fils puissant</l>
+                  <l>Du Dieu tonnant,</l>
+                  <l>Lance, lance sur le coupable</l>
+                  <l>Le Thyrse redoutable.</l>
+               </sp>
+               <sp who="pretresse_bacchus">
+                  <speaker>La Pretresse</speaker>
+                  <l>
+                     <milestone unit="sent" n="383"/>Parois, Bacchus, vange-toy, vange-nous,</l>
+                  <l>Fais qu’il expire sous nos coups.</l>
+                  <stage>
+                     <milestone unit="sent" n="384"/>Elles cherchent encore Orphée, et marquent le redoublement de leur fureur et de
               leur inquietude.</stage>
-          </sp>
-          <sp who="bacchantes">
-            <speaker>Une Bacchante</speaker>
-            <l>Quel Antre favorable au crime</l>
-            <l>Peut si long-temps nous le celer !</l>
-            <l>Bacchus, livre-nous ta Victime,</l>
-            <l>Nous brûlons de te l’immoler.</l>
-            <stage>On voit de loin Orphée.</stage>
-          </sp>
-          <sp who="pretresse_bacchus">
-            <speaker>La Prestresse</speaker>
-            <l>Je l’apperçois, Bacchus nous l’abandonne ;</l>
-            <l>Venez, venez, suivez mes pas.</l>
-            <l>Elles courent toutes du costé de la Prestresse.</l>
-          </sp>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <l><pb n="51" xml:id="p51"/>Dieux ! il va souffrir le trépas !</l>
-            <l>D’où vient qu’en ce moment, je tremble, je frissonne ?</l>
-            <stage>Orasie va voir ce que deviendra Orphée. Les Bacchantes cependant lancent sur luy
+               </sp>
+               <sp who="bacchantes">
+                  <speaker>Une Bacchante</speaker>
+                  <l>
+                     <milestone unit="sent" n="385"/>Quel Antre favorable au crime</l>
+                  <l>Peut si long-temps nous le celer !</l>
+                  <l>
+                     <milestone unit="sent" n="386"/>Bacchus, livre-nous ta Victime,</l>
+                  <l>Nous brûlons de te l’immoler.</l>
+                  <stage>
+                     <milestone unit="sent" n="387"/>On voit de loin Orphée.</stage>
+               </sp>
+               <sp who="pretresse_bacchus">
+                  <speaker>La Prestresse</speaker>
+                  <l>
+                     <milestone unit="sent" n="388"/>Je l’apperçois, Bacchus nous l’abandonne ;</l>
+                  <l>Venez, venez, suivez mes pas.</l>
+                  <l>
+                     <milestone unit="sent" n="389"/>Elles courent toutes du costé de la Prestresse.</l>
+               </sp>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <l>
+                     <milestone unit="sent" n="390"/>
+                     <pb n="51" xml:id="p51"/>Dieux ! il va souffrir le trépas !</l>
+                  <l>
+                     <milestone unit="sent" n="391"/>D’où vient qu’en ce moment, je tremble, je frissonne ?</l>
+                  <stage>
+                     <milestone unit="sent" n="392"/>Orasie va voir ce que deviendra Orphée. <milestone unit="sent" n="393"/>Les Bacchantes cependant lancent sur luy
               tous leurs Tyrses, et reviennent triomphantes avec des morceaux de sa Couronne et de
               sa Lyre à la main comme des marques de leur victoire.</stage>
-          </sp>
-          <sp who="pretresse_bacchus">
-            <speaker>La Prestresse</speaker>
-            <l>Il meurt enfin l’Ennemy de nos loix,</l>
-            <l>Il reçoit son juste supplice.</l>
-            <l>Son sang qu’ont répandu cent Thyrses à la fois,</l>
-            <l>Vient d’étouffer l’indigne voix</l>
-            <l>Qui ne celebroit qu’Euridice.</l>
-            <l>Il reçoit son juste supplice,</l>
-            <l>Il meurt enfin l’Ennemy de nos loix.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l>Il meurt enfin l’Ennemy de nos loix,</l>
-            <l>Il reçoit son juste supplice,</l>
-            <l>Il meurt enfin l’Ennemy de nos loix.</l>
-          </sp>
-          <sp who="pretresse_bacchus">
-            <speaker>La Prestresse</speaker>
-            <l>Sa mort n’est pas assez affreuse,</l>
-            <l>Que ses membres épars</l>
-            <l>Rendent de toutes parts</l>
-            <l>Nostre vangeance fameuse.</l>
-            <l>Que l’Hébre rougissant ses eaux</l>
-            <l>En porte la terreur à des climats nouveaux.</l>
-          </sp>
-          <sp who="chœur">
-            <speaker>Le Chœur</speaker>
-            <l><pb n="52" xml:id="p52"/>Que l’Hébre rougissant ses eaux</l>
-            <l>En porte la terreur à des climats nouveaux.</l>
-            <stage>Elles sortent pour executer l’ordre de la Prestresse.</stage>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène septiesme <lb/>et derniere</head>
-          <sp who="orasie">
-            <speaker>Orasie</speaker>
-            <stage>seule</stage>
-            <l>Il est mort ! qu’as tu fait malheureuse Orasie ?</l>
-            <l>De quels tristes remords ta vangeance est suivie !</l>
-            <l>J’ay veu perir l’Ingrat, je pensois le haïr ;</l>
-            <l>De son trépas j’ay crû joüir.</l>
-            <l>Et presqu’en un moment à moy-mesme contraire,</l>
-            <l>Helas, par un fatal retour,</l>
-            <l>J’ay perdu toute ma colere,</l>
-            <l>Et je ressens tout mon amour.</l>
-            <l>Mais ce qui rend ma peine sans égale,</l>
-            <l>Je le réjoins à ma Rivale :</l>
-            <l>Mourons, ou pour finir tant de tourmens souffers,</l>
-            <l>Ou pour troubler encor ces Amans aux Enfers.</l>
-          </sp>
-        </div>
-      </div>
-    </body>
-
-  </text>
+               </sp>
+               <sp who="pretresse_bacchus">
+                  <speaker>La Prestresse</speaker>
+                  <l>
+                     <milestone unit="sent" n="394"/>Il meurt enfin l’Ennemy de nos loix,</l>
+                  <l>Il reçoit son juste supplice.</l>
+                  <l>
+                     <milestone unit="sent" n="395"/>Son sang qu’ont répandu cent Thyrses à la fois,</l>
+                  <l>Vient d’étouffer l’indigne voix</l>
+                  <l>Qui ne celebroit qu’Euridice.</l>
+                  <l>
+                     <milestone unit="sent" n="396"/>Il reçoit son juste supplice,</l>
+                  <l>Il meurt enfin l’Ennemy de nos loix.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="397"/>Il meurt enfin l’Ennemy de nos loix,</l>
+                  <l>Il reçoit son juste supplice,</l>
+                  <l>Il meurt enfin l’Ennemy de nos loix.</l>
+               </sp>
+               <sp who="pretresse_bacchus">
+                  <speaker>La Prestresse</speaker>
+                  <l>
+                     <milestone unit="sent" n="398"/>Sa mort n’est pas assez affreuse,</l>
+                  <l>Que ses membres épars</l>
+                  <l>Rendent de toutes parts</l>
+                  <l>Nostre vangeance fameuse.</l>
+                  <l>
+                     <milestone unit="sent" n="399"/>Que l’Hébre rougissant ses eaux</l>
+                  <l>En porte la terreur à des climats nouveaux.</l>
+               </sp>
+               <sp who="chœur">
+                  <speaker>Le Chœur</speaker>
+                  <l>
+                     <milestone unit="sent" n="400"/>
+                     <pb n="52" xml:id="p52"/>Que l’Hébre rougissant ses eaux</l>
+                  <l>En porte la terreur à des climats nouveaux.</l>
+                  <stage>
+                     <milestone unit="sent" n="401"/>Elles sortent pour executer l’ordre de la Prestresse.</stage>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène septiesme <lb/>et derniere</head>
+               <sp who="orasie">
+                  <speaker>Orasie</speaker>
+                  <stage>seule</stage>
+                  <l>
+                     <milestone unit="sent" n="402"/>Il est mort ! qu’as tu fait malheureuse Orasie ?</l>
+                  <l>
+                     <milestone unit="sent" n="403"/>De quels tristes remords ta vangeance est suivie !</l>
+                  <l>
+                     <milestone unit="sent" n="404"/>J’ay veu perir l’Ingrat, je pensois le haïr ;</l>
+                  <l>De son trépas j’ay crû joüir.</l>
+                  <l>
+                     <milestone unit="sent" n="405"/>Et presqu’en un moment à moy-mesme contraire,</l>
+                  <l>Helas, par un fatal retour,</l>
+                  <l>J’ay perdu toute ma colere,</l>
+                  <l>Et je ressens tout mon amour.</l>
+                  <l>
+                     <milestone unit="sent" n="406"/>Mais ce qui rend ma peine sans égale,</l>
+                  <l>Je le réjoins à ma Rivale :</l>
+                  <l>
+                     <milestone unit="sent" n="407"/>Mourons, ou pour finir tant de tourmens souffers,</l>
+                  <l>Ou pour troubler encor ces Amans aux Enfers.</l>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

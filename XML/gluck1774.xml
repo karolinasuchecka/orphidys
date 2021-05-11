@@ -1,1049 +1,1284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
-        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
-        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Orphée et Eurydice</title>
-        <author>Christoph Willibald Gluck, Ranieri de Calzabigi</author>
-        <editor>Pierre-Louis Molinet</editor>
-      </titleStmt>
-      <editionStmt>
-        <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Orphée et Eurydice</title>
+            <author>Christoph Willibald Gluck, Ranieri de Calzabigi</author>
+            <editor>Pierre-Louis Molinet</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
           édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition
           comparative intermédiale innovante accompagnée d’une ressource pour le repérage
           intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à
           l’Université de Lille.</edition>
-        <respStmt>
-          <name>Karolina Suchecka</name>
-          <resp>Chargé de l’édition</resp>
-        </respStmt>
-        <respStmt>
-          <name>Nathalie Gasiglia</name>
-          <resp>Co-tutrice de thèse</resp>
-        </respStmt>
-        <respStmt>
-          <name>Karl Zieger</name>
-          <resp>Co-tuteur de thèse</resp>
-        </respStmt>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Karolina Suchecka</publisher>
-        <publisher>ALITHILA (Université Lille III)</publisher>
-        <date when="2019"/>
-        <availability status="restricted">
-          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-            <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
+            <respStmt>
+               <name>Karolina Suchecka</name>
+               <resp>Chargé de l’édition</resp>
+            </respStmt>
+            <respStmt>
+               <name>Nathalie Gasiglia</name>
+               <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+               <name>Karl Zieger</name>
+               <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                  <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de
               thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
               numériques. Vers une édition comparative intermédiale innovante accompagnée d’une
               ressource pour le repérage intertextuel »</p>
-            <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
+                  <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur
               les bases de données (L341-1) est mise à disposition de la communauté scientifique
               internationale par Karolina Suchecka, selon les termes de la licence Creative Commons
               : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC
               BY-NC-ND 3.0 FR) ». </p>
-            <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
+                  <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée
               de cette ressource électroniques comportera le nom du projet et surtout l’adresse
               Internet de la ressource. </p>
-            <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
+                  <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute
               utilisation commerciale est interdite.</p>
-            <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
+                  <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource
               électronique, notamment en intégrant toutes les contributions extérieures, la
               diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-          </licence>
-        </availability>
-        <idno>http://www.impresario.ch/libretto/libgluorf_f.htm</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl><author>Christoph Willibald Gluck, Ranieri de Calzabigi</author> / <title>Orphée et
+               </licence>
+            </availability>
+            <idno>http://www.impresario.ch/libretto/libgluorf_f.htm</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Christoph Willibald Gluck, Ranieri de Calzabigi</author> / <title>Orphée et
             Eurydice</title> / Paris / Académie Royale / 1774.</bibl>
-        <biblFull>
-          <titleStmt>
-            <title>Orphée et Eurydice</title>
-          </titleStmt>
-          <publicationStmt>
-            <publisher>Académie Royale</publisher>
-            <pubPlace>Paris</pubPlace>
-            <date when="1774"/>
-          </publicationStmt>
-        </biblFull>
-        <genre>opéra</genre>
-        <structure>gluck1774</structure>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
+            <biblFull>
+               <titleStmt>
+                  <title>Orphée et Eurydice</title>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Académie Royale</publisher>
+                  <pubPlace>Paris</pubPlace>
+                  <date when="1774"/>
+               </publicationStmt>
+            </biblFull>
+            <genre>opéra</genre>
+            <structure>gluck1774</structure>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous
         nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du
         projet. La structure des métadonnées a été établie en référence à la manière dont le
         logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-      <creation>
-        <date when="1774">1774</date>
-      </creation>
-      <language>
-        <language>IT</language>
-      </language>
-      <textClass>
-        <keywords>
-          <list>
-            <item>modernisation</item>
-          </list>
-        </keywords>
-      </textClass>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <titlePage>
-        <docAuthor>Christoph Willibald Gluck, Ranieri de Calzabigi</docAuthor>
-        <docTitle>
-          <titlePart type="main">Orphée et Eurydice</titlePart>
-          <titlePart type="sub">Tragédie-opéra en trois actes</titlePart>
-        </docTitle>
-      </titlePage>
-      <castList>
-        <castItem xml:id="orphee">Orphée (Alto ou Ténor)</castItem>
-        <castItem xml:id="eurydice">Eurydice (Soprano)</castItem>
-        <castItem xml:id="amour">L’amour (Soprano)</castItem>
-        <castItem xml:id="chœur">Chœur</castItem>
-        <castItem xml:id="pasteurs_nymphes">Pasteurs et Nymphes</castItem>
-        <castItem xml:id="furies">Furies</castItem>
-        <castItem xml:id="heros">Héros et héroïnes</castItem>
-        <castItem xml:id="bergers">Berges et bergères</castItem>
-      </castList>
-    </front>
-
-    <body>
-      <div>
-        <head>Premier acte</head>
-        <label>Ouverture</label>
-        <div>
-          <head>Première scène</head>
-          <stage>Un bois de lauriers et de cyprès, un séjour agréable mais solitaire qui est
-            entrecoupé pour former une petite plaine contenant le tombeau d’Eurydice. Au lever du
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when="1774">1774</date>
+         </creation>
+         <language>
+            <language>IT</language>
+         </language>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>modernisation</item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docAuthor>Christoph Willibald Gluck, Ranieri de Calzabigi</docAuthor>
+            <docTitle>
+               <titlePart type="main">Orphée et Eurydice</titlePart>
+               <titlePart type="sub">Tragédie-opéra en trois actes</titlePart>
+            </docTitle>
+         </titlePage>
+         <castList>
+            <castItem xml:id="orphee">Orphée (Alto ou Ténor)</castItem>
+            <castItem xml:id="eurydice">Eurydice (Soprano)</castItem>
+            <castItem xml:id="amour">L’amour (Soprano)</castItem>
+            <castItem xml:id="chœur">Chœur</castItem>
+            <castItem xml:id="pasteurs_nymphes">Pasteurs et Nymphes</castItem>
+            <castItem xml:id="furies">Furies</castItem>
+            <castItem xml:id="heros">Héros et héroïnes</castItem>
+            <castItem xml:id="bergers">Berges et bergères</castItem>
+         </castList>
+      </front>
+      <body>
+         <div>
+            <head>Premier acte</head>
+            <label>Ouverture</label>
+            <div>
+               <head>Première scène</head>
+               <stage>
+                  <milestone unit="sent" n="1"/>Un bois de lauriers et de cyprès, un séjour agréable mais solitaire qui est
+            entrecoupé pour former une petite plaine contenant le tombeau d’Eurydice. <milestone unit="sent" n="2"/>Au lever du
             rideau et pendant la ritournelle du chœur d’entrée, on voit une troupe de bergers et de
             nymphes dans la suite d’Orphée et tous portent des couronnes de fleurs et de myrtes ;
             quelques-uns versent de l’encens dans le feu sacré, enguirlandent le marbre et couvrent
             son tombeau de fleurs, Pendant que les autres chantent le chœur suivant qui est
             interrompu par les plaintes d’Orphée adossé sur le devant contre une pierre et répétant
             le nom d’Eurydice d’une voix gémissante.</stage>
-          <label>N° 1 – Chœur</label>
-          <sp who="pasteurs_nymphes">
-            <speaker>Pasteurs et nymphes</speaker>
-            <l>Ah ! dans ce bois tranquille et sombre,</l>
-            <l>Eurydice, si ton ombre</l>
-            <l>Nous entend…</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eurydice !</l>
-          </sp>
-          <sp who="pasteurs_nymphes">
-            <speaker>Pasteurs et nymphes</speaker>
-            <l>… Sois sensible à nos alarmes,</l>
-            <l>Vois nos peines, vois nos larmes</l>
-            <l>Que pour toi l’on répand.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eurydice !</l>
-          </sp>
-          <sp who="pasteurs_nymphes">
-            <speaker>Pasteurs et nymphes</speaker>
-            <l>Ah ! prends pitié du malheureux Orphée,</l>
-            <l>Il soupire, il gémit, Il plaint sa destinée.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eurydice !</l>
-          </sp>
-          <sp who="pasteurs_nymphes">
-            <speaker>Pasteurs et nymphes</speaker>
-            <l>L’amoureuse tourterelle,</l>
-            <l>Toujours tendre, toujours fidèle,</l>
-            <l>Ainsi soupire et meurt</l>
-            <l>De douleur.</l>
-
-          </sp>
-          <label>N° 2 – Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Vos plaintes, vos regrets augmentent mon supplice !</l>
-            <l>Aux mânes sacrés d’Eurydice</l>
-            <l>Rendez les suprêmes honneurs,</l>
-            <l>Et couvrez son tombeau de fleurs.</l>
-          </sp>
-          <label>N° 3 – Pantomime des nymphes et des bergers</label>
-          <label>N° 4 – Chœur</label>
-          <sp who="pasteurs_nymphes">
-            <speaker>Pasteurs et nymphes</speaker>
-            <l>Ah ! dans ce bois lugubre et sombre,</l>
-            <l>Eurydice, si ton ombre</l>
-            <l>Nous entend,</l>
-            <l>Sois sensible à nos alarmes !</l>
-            <l>Vois nos peines, vois les larmes</l>
-            <l>Que pour toi l’on répand !</l>
-
-          </sp>
-          <label>N° 5 – Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à la suite</stage>
-            <l>Éloignez-vous ; ce lieu convient à ma douleur,</l>
-            <l>Et je veux sans témoins y répandre des pleurs.</l>
-
-          </sp>
-          <label>N° 6 – Ritournelle</label>
-          <stage>Les bergers et les nymphes se dispersent dans le bois.</stage>
-        </div>
-        <div>
-          <head>Deuxième scène</head>
-          <label>N° 7 – Air</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Objet de mon amour,</l>
-            <l>Je te demande au jour</l>
-            <l>Avant l’aurore ;</l>
-            <l>Et quand le jour s’en fuit,</l>
-            <l>Ma voix pendant la nuit</l>
-            <l>T’appelle encore.</l>
-            <label>N° 8 – Récit</label>
-            <l>Eurydice, Eurydice, Ombre chère,</l>
-            <l>Ah ! dans quels lieux es-tu ?</l>
-            <l>Ton époux gémissant, interdit, éperdu,</l>
-            <l>Te demande sans cesse à la nature entière</l>
-            <l>Les vents, hélas ! emportent sa prière.</l>
-            <label>N° 9 – Air</label>
-            <l>Accablé de regrets,</l>
-            <l>Je parcours des forêts</l>
-            <l>La vaste enceinte.</l>
-            <l>Touché de mon destin,</l>
-            <l>Écho répète en vain</l>
-            <l>Ma triste plainte.</l>
-            <label>N° 10 – Récit</label>
-            <l>Eurydice, Eurydice ! De ce doux nom</l>
-            <l>Tout retentit, ces bois, ces rochers, ce vallon.</l>
-            <l>Sur les troncs dépouillés, sur l’écorce naissante,</l>
-            <l>On lit ce mot gravé par une main tremblante.</l>
-            <l>Eurydice n’est plus, et je respire encore !</l>
-            <l>Dieux, rendez-lui la vie, ou donnez-moi la mort !</l>
-            <label>N° 11 – Air</label>
-            <l>Plein de trouble et d’effroi,</l>
-            <l>Que de maux loin de toi,</l>
-            <l>Mon cœur endure ;</l>
-            <l>Témoin de mes malheurs,</l>
-            <l>Sensible à mes douleurs,</l>
-            <l>L’onde murmure.</l>
-            <label>N° 12 Récit</label>
-            <l>Divinités de l’Achéron,</l>
-            <l>Ministres redoutés de l’empire des Ombres,</l>
-            <l>Vous qui dans les demeures sombres</l>
-            <l>Faites exécuter les arrêts de Pluton,</l>
-            <l>Vous que n’attendrit point la beauté, la jeunesse,</l>
-            <l>Vous m’avez enlevé l’objet de ma tendresse,</l>
-            <l>Oh, cruel souvenir !</l>
-            <l>Eh quoi ! les grâces de son âge</l>
-            <l>Du sort le plus affreux n’ont pu la garantir ?</l>
-            <l>Implacables tyrans, je veux vous la ravir !</l>
-            <l>Je saurai pénétrer jusqu’au sombre rivage,</l>
-            <l>Mes accents douloureux fléchiront vos rigueurs ;</l>
-            <l>Je me sens assez de courage</l>
-            <l>Pour braver toutes vos fureurs !</l>
-          </sp>
-        </div>
-        <div>
-          <head>Troisième scène</head>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <stage>paraissant</stage>
-            <l>L’amour vient au secours de l’amant le plus tendre.</l>
-            <l>Rassure-toi, les dieux sont touchés de ton sort.</l>
-            <l>Dans les enfers tu peux te rendre ;</l>
-            <l>Va trouver Eurydice au séjour de la mort.</l>
-            <label>N° 13 – Air</label>
-            <l>Si les doux accords de ta lyre,</l>
-            <l>Si tes accents mélodieux</l>
-            <l>Appaisent la fureur des tyrans de ces lieux,</l>
-            <l>Tu la ramèneras du ténébreux empire.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Dieux ! je la reverrais !</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Si les doux accords de ta lyre, etc.</l>
-            <label>N° 14 – Récit</label>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Dieux ! je la reverrais !</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Oui ; mais pour l’obtenir</l>
-            <l>Il faut te résoudre à remplir</l>
-            <l>L’ordre que je vais te prescrire.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! qui pourrait me retenir ?</l>
-            <l>À tout mon âme est préparée.</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Apprends la volonté des dieux :</l>
-            <l>Sur cette amante adorée</l>
-            <l>Garde-toi de porter un regard curieux,</l>
-            <l>Ou de toi, pour jamais, tu la vois séparée.</l>
-            <l>Tels sont de Jupiter les suprêmes décrets.</l>
-            <l>Rends-toi digne de ses bienfaits !</l>
-            <label>N° 15 – Air</label>
-            <l>Soumis au silence,</l>
-            <l>Contrains ton désir,</l>
-            <l>Fais-toi violence,</l>
-            <l>Bientôt à ce prix tes tourments vont finir.</l>
-            <l>Tu sais qu’un amant</l>
-            <l>Discret et fidèle,</l>
-            <l>Muet et tremblant</l>
-            <l>Auprès de sa belle,</l>
-            <l>En est plus touchant.</l>
-            <l>Soumis au silence, etc.</l>
-            <stage>L’amour s’éloigne.</stage>
-
-          </sp>
-          <label>N° 16 – Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Qu’entends-je ? qu’a-t-il dit ?</l>
-            <l>Eurydice vivra ! mon Eurydice !</l>
-            <l>Un dieu clément, un dieu propice</l>
-            <l>Me la rendra !</l>
-            <l>Mais quoi ! je ne pourrai,</l>
-            <l>Revenant à la vie,</l>
-            <l>La presser sur mon sein ?</l>
-            <l>O mon amie, quelle faveur,</l>
-            <l>Et quel ordre inhumain !</l>
-            <l>Je prévois ses soupçons,</l>
-            <l>Je prévois ma terreur,</l>
-            <l>Et la seule pensée</l>
-            <l>D’une épreuve insensée</l>
-            <l>D’effroi glace mon cœur.</l>
-            <l>Oui, je le pourrai !</l>
-            <l>Je le veux, je le jure !</l>
-            <l>Amour, amour, j’espère en toi</l>
-            <l>Dans les maux que j’endure.</l>
-            <l>Douter de ton bienfait</l>
-            <l>Serait te faire injure.</l>
-            <l>C’en est fait, dieux puissants,</l>
-            <l>J’accepte votre loi.</l>
-            <l>Amour, viens rendre à mon âme</l>
-            <l>Ta plus ardente flamme ;</l>
-            <l>Pour celle qui m’enflamme,</l>
-            <l>Je vais braver le trépas.</l>
-            <l>L’enfer en vain nous sépare,</l>
-            <l>Les monstres du tartare</l>
-            <l>Ne m’épouvantent pas.</l>
-            <l>Je sens croître ma flamme,</l>
-            <l>Je vais braver le trépas.</l>
-            <l>L’amour vient rendre à mon âme.</l>
-            <l>Sa plus ardente flamme ;</l>
-            <l>L’amour accroît ma flamme ;</l>
-            <l>Je vais braver le trépas.</l>
-            <l>L’enfer en vain nous sépare, etc.</l>
-
-          </sp>
-          <label>N° 17 – Presto</label>
-          <stage>On voit un éclair, on entend un coup de tonnerre. Orphée s’en va.</stage>
-        </div>
-      </div>
-      <div>
-        <head>Deuxième acte</head>
-        <div>
-          <head>Première scène</head>
-          <label>N° 18 – Introduction</label>
-          <stage>Une contée épouvantable, hérissée de rochers, au-delà du Cocyte ; au loin s’élève
-            une fumée épaisse, sombre, les flammes y jaillissent de temps en temps. Les spectres et
+               <label>N° 1 – Chœur</label>
+               <sp who="pasteurs_nymphes">
+                  <speaker>Pasteurs et nymphes</speaker>
+                  <l>
+                     <milestone unit="sent" n="3"/>Ah ! dans ce bois tranquille et sombre,</l>
+                  <l>Eurydice, si ton ombre</l>
+                  <l>Nous entend…</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="4"/>Eurydice !</l>
+               </sp>
+               <sp who="pasteurs_nymphes">
+                  <speaker>Pasteurs et nymphes</speaker>
+                  <l>
+                     <milestone unit="sent" n="5"/>… Sois sensible à nos alarmes,</l>
+                  <l>Vois nos peines, vois nos larmes</l>
+                  <l>Que pour toi l’on répand.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="6"/>Eurydice !</l>
+               </sp>
+               <sp who="pasteurs_nymphes">
+                  <speaker>Pasteurs et nymphes</speaker>
+                  <l>
+                     <milestone unit="sent" n="7"/>Ah ! prends pitié du malheureux Orphée,</l>
+                  <l>Il soupire, il gémit, Il plaint sa destinée.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="8"/>Eurydice !</l>
+               </sp>
+               <sp who="pasteurs_nymphes">
+                  <speaker>Pasteurs et nymphes</speaker>
+                  <l>
+                     <milestone unit="sent" n="9"/>L’amoureuse tourterelle,</l>
+                  <l>Toujours tendre, toujours fidèle,</l>
+                  <l>Ainsi soupire et meurt</l>
+                  <l>De douleur.</l>
+               </sp>
+               <label>N° 2 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="10"/>Vos plaintes, vos regrets augmentent mon supplice !</l>
+                  <l>
+                     <milestone unit="sent" n="11"/>Aux mânes sacrés d’Eurydice</l>
+                  <l>Rendez les suprêmes honneurs,</l>
+                  <l>Et couvrez son tombeau de fleurs.</l>
+               </sp>
+               <label>N° 3 – Pantomime des nymphes et des bergers</label>
+               <label>N° 4 – Chœur</label>
+               <sp who="pasteurs_nymphes">
+                  <speaker>Pasteurs et nymphes</speaker>
+                  <l>
+                     <milestone unit="sent" n="12"/>Ah ! dans ce bois lugubre et sombre,</l>
+                  <l>Eurydice, si ton ombre</l>
+                  <l>Nous entend,</l>
+                  <l>Sois sensible à nos alarmes !</l>
+                  <l>
+                     <milestone unit="sent" n="13"/>Vois nos peines, vois les larmes</l>
+                  <l>Que pour toi l’on répand !</l>
+               </sp>
+               <label>N° 5 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à la suite</stage>
+                  <l>
+                     <milestone unit="sent" n="14"/>Éloignez-vous ; ce lieu convient à ma douleur,</l>
+                  <l>Et je veux sans témoins y répandre des pleurs.</l>
+               </sp>
+               <label>N° 6 – Ritournelle</label>
+               <stage>
+                  <milestone unit="sent" n="15"/>Les bergers et les nymphes se dispersent dans le bois.</stage>
+            </div>
+            <div>
+               <head>Deuxième scène</head>
+               <label>N° 7 – Air</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="16"/>Objet de mon amour,</l>
+                  <l>Je te demande au jour</l>
+                  <l>Avant l’aurore ;</l>
+                  <l>Et quand le jour s’en fuit,</l>
+                  <l>Ma voix pendant la nuit</l>
+                  <l>T’appelle encore.</l>
+                  <label>N° 8 – Récit</label>
+                  <l>Eurydice, Eurydice, Ombre chère,</l>
+                  <l>Ah ! dans quels lieux es-tu ?</l>
+                  <l>
+                     <milestone unit="sent" n="17"/>Ton époux gémissant, interdit, éperdu,</l>
+                  <l>Te demande sans cesse à la nature entière</l>
+                  <l>Les vents, hélas ! emportent sa prière.</l>
+                  <label>N° 9 – Air</label>
+                  <l>Accablé de regrets,</l>
+                  <l>Je parcours des forêts</l>
+                  <l>La vaste enceinte.</l>
+                  <l>
+                     <milestone unit="sent" n="18"/>Touché de mon destin,</l>
+                  <l>Écho répète en vain</l>
+                  <l>Ma triste plainte.</l>
+                  <label>N° 10 – Récit</label>
+                  <l>
+                     <milestone unit="sent" n="19"/>Eurydice, Eurydice ! De ce doux nom</l>
+                  <l>Tout retentit, ces bois, ces rochers, ce vallon.</l>
+                  <l>
+                     <milestone unit="sent" n="20"/>Sur les troncs dépouillés, sur l’écorce naissante,</l>
+                  <l>On lit ce mot gravé par une main tremblante.</l>
+                  <l>
+                     <milestone unit="sent" n="21"/>Eurydice n’est plus, et je respire encore !</l>
+                  <l>
+                     <milestone unit="sent" n="22"/>Dieux, rendez-lui la vie, ou donnez-moi la mort !</l>
+                  <label>N° 11 – Air</label>
+                  <l>
+                     <milestone unit="sent" n="23"/>Plein de trouble et d’effroi,</l>
+                  <l>Que de maux loin de toi,</l>
+                  <l>Mon cœur endure ;</l>
+                  <l>Témoin de mes malheurs,</l>
+                  <l>Sensible à mes douleurs,</l>
+                  <l>L’onde murmure.</l>
+                  <label>N° 12 Récit</label>
+                  <l>
+                     <milestone unit="sent" n="24"/>Divinités de l’Achéron,</l>
+                  <l>Ministres redoutés de l’empire des Ombres,</l>
+                  <l>Vous qui dans les demeures sombres</l>
+                  <l>Faites exécuter les arrêts de Pluton,</l>
+                  <l>Vous que n’attendrit point la beauté, la jeunesse,</l>
+                  <l>Vous m’avez enlevé l’objet de ma tendresse,</l>
+                  <l>Oh, cruel souvenir !</l>
+                  <l>
+                     <milestone unit="sent" n="25"/>Eh quoi ! les grâces de son âge</l>
+                  <l>Du sort le plus affreux n’ont pu la garantir ?</l>
+                  <l>
+                     <milestone unit="sent" n="26"/>Implacables tyrans, je veux vous la ravir !</l>
+                  <l>
+                     <milestone unit="sent" n="27"/>Je saurai pénétrer jusqu’au sombre rivage,</l>
+                  <l>Mes accents douloureux fléchiront vos rigueurs ;</l>
+                  <l>Je me sens assez de courage</l>
+                  <l>Pour braver toutes vos fureurs !</l>
+               </sp>
+            </div>
+            <div>
+               <head>Troisième scène</head>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <stage>paraissant</stage>
+                  <l>
+                     <milestone unit="sent" n="28"/>L’amour vient au secours de l’amant le plus tendre.</l>
+                  <l>
+                     <milestone unit="sent" n="29"/>Rassure-toi, les dieux sont touchés de ton sort.</l>
+                  <l>
+                     <milestone unit="sent" n="30"/>Dans les enfers tu peux te rendre ;</l>
+                  <l>Va trouver Eurydice au séjour de la mort.</l>
+                  <label>N° 13 – Air</label>
+                  <l>
+                     <milestone unit="sent" n="31"/>Si les doux accords de ta lyre,</l>
+                  <l>Si tes accents mélodieux</l>
+                  <l>Appaisent la fureur des tyrans de ces lieux,</l>
+                  <l>Tu la ramèneras du ténébreux empire.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="32"/>Dieux ! je la reverrais !</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="33"/>Si les doux accords de ta lyre, etc.</l>
+               </sp>
+               <label>N° 14 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="34"/>Dieux ! je la reverrais !</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="35"/>Oui ; mais pour l’obtenir</l>
+                  <l>Il faut te résoudre à remplir</l>
+                  <l>L’ordre que je vais te prescrire.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="36"/>Ah ! qui pourrait me retenir ?</l>
+                  <l>
+                     <milestone unit="sent" n="37"/>À tout mon âme est préparée.</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="38"/>Apprends la volonté des dieux :</l>
+                  <l>
+                     <milestone unit="sent" n="39"/>Sur cette amante adorée</l>
+                  <l>Garde-toi de porter un regard curieux,</l>
+                  <l>Ou de toi, pour jamais, tu la vois séparée.</l>
+                  <l>
+                     <milestone unit="sent" n="40"/>Tels sont de Jupiter les suprêmes décrets.</l>
+                  <l>
+                     <milestone unit="sent" n="41"/>Rends-toi digne de ses bienfaits !</l>
+                  <label>N° 15 – Air</label>
+                  <l>
+                     <milestone unit="sent" n="42"/>Soumis au silence,</l>
+                  <l>Contrains ton désir,</l>
+                  <l>Fais-toi violence,</l>
+                  <l>Bientôt à ce prix tes tourments vont finir.</l>
+                  <l>
+                     <milestone unit="sent" n="43"/>Tu sais qu’un amant</l>
+                  <l>Discret et fidèle,</l>
+                  <l>Muet et tremblant</l>
+                  <l>Auprès de sa belle,</l>
+                  <l>En est plus touchant.</l>
+                  <l>
+                     <milestone unit="sent" n="44"/>Soumis au silence, etc.</l>
+                  <stage>
+                     <milestone unit="sent" n="45"/>L’amour s’éloigne.</stage>
+               </sp>
+               <label>N° 16 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="46"/>Qu’entends-je ? qu’a-t-il dit ?</l>
+                  <l>
+                     <milestone unit="sent" n="47"/>Eurydice vivra ! mon Eurydice !</l>
+                  <l>
+                     <milestone unit="sent" n="48"/>Un dieu clément, un dieu propice</l>
+                  <l>Me la rendra !</l>
+                  <l>
+                     <milestone unit="sent" n="49"/>Mais quoi ! je ne pourrai,</l>
+                  <l>Revenant à la vie,</l>
+                  <l>La presser sur mon sein ?</l>
+                  <l>
+                     <milestone unit="sent" n="50"/>O mon amie, quelle faveur,</l>
+                  <l>Et quel ordre inhumain !</l>
+                  <l>
+                     <milestone unit="sent" n="51"/>Je prévois ses soupçons,</l>
+                  <l>Je prévois ma terreur,</l>
+                  <l>Et la seule pensée</l>
+                  <l>D’une épreuve insensée</l>
+                  <l>D’effroi glace mon cœur.</l>
+                  <l>
+                     <milestone unit="sent" n="52"/>Oui, je le pourrai !</l>
+                  <l>
+                     <milestone unit="sent" n="53"/>Je le veux, je le jure !</l>
+                  <l>
+                     <milestone unit="sent" n="54"/>Amour, amour, j’espère en toi</l>
+                  <l>Dans les maux que j’endure.</l>
+                  <l>
+                     <milestone unit="sent" n="55"/>Douter de ton bienfait</l>
+                  <l>Serait te faire injure.</l>
+                  <l>
+                     <milestone unit="sent" n="56"/>C’en est fait, dieux puissants,</l>
+                  <l>J’accepte votre loi.</l>
+                  <l>
+                     <milestone unit="sent" n="57"/>Amour, viens rendre à mon âme</l>
+                  <l>Ta plus ardente flamme ;</l>
+                  <l>Pour celle qui m’enflamme,</l>
+                  <l>Je vais braver le trépas.</l>
+                  <l>
+                     <milestone unit="sent" n="58"/>L’enfer en vain nous sépare,</l>
+                  <l>Les monstres du tartare</l>
+                  <l>Ne m’épouvantent pas.</l>
+                  <l>
+                     <milestone unit="sent" n="59"/>Je sens croître ma flamme,</l>
+                  <l>Je vais braver le trépas.</l>
+                  <l>
+                     <milestone unit="sent" n="60"/>L’amour vient rendre à mon âme.</l>
+                  <l>
+                     <milestone unit="sent" n="61"/>Sa plus ardente flamme ;</l>
+                  <l>L’amour accroît ma flamme ;</l>
+                  <l>Je vais braver le trépas.</l>
+                  <l>
+                     <milestone unit="sent" n="62"/>L’enfer en vain nous sépare, etc.</l>
+               </sp>
+               <label>N° 17 – Presto</label>
+               <stage>
+                  <milestone unit="sent" n="63"/>On voit un éclair, on entend un coup de tonnerre. <milestone unit="sent" n="64"/>Orphée s’en va.</stage>
+            </div>
+         </div>
+         <div>
+            <head>Deuxième acte</head>
+            <div>
+               <head>Première scène</head>
+               <label>N° 18 – Introduction</label>
+               <stage>
+                  <milestone unit="sent" n="65"/>Une contée épouvantable, hérissée de rochers, au-delà du Cocyte ; au loin s’élève
+            une fumée épaisse, sombre, les flammes y jaillissent de temps en temps. <milestone unit="sent" n="66"/>Les spectres et
             les esprits commencent une danse qu’Orphée interrompt par l’harmonie de sa lyre ; à la
             vue d’Orphée toute la troupe entonne le premier chœur.</stage>
-          <label>N° 19 – Chœur</label>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Quel est l’audacieux</l>
-            <l>Qui dans ces sombres lieux</l>
-            <l>Ose porter ses pas,</l>
-            <l>Et devant le trépas</l>
-            <l>Ne frémit pas ?</l>
-
-          </sp>
-          <label>N° 20 – Danse des Furies</label>
-          <stage>Les esprits dansent autour d’Orphée pour l’effrayer.</stage>
-          <label>N° 21 – Chœur</label>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Quel est l’audacieux, etc.</l>
-            <l>Que la peur la terreur</l>
-            <l>S’emparent de son cœur</l>
-            <l>À l’affreux hurlement</l>
-            <l>Du Cerbère écumant</l>
-            <l>Et rugissant !</l>
-
-          </sp>
-          <label>N° 22 – Air</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>Il s’approche avec sa lyre</stage>
-            <l>Laissez-vous toucher par mes pleurs,</l>
-            <l>Spectres…</l>
-          </sp>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Non !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>… larves…</l>
-          </sp>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Non !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>… ombres terribles !</l>
-          </sp>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Non !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Soyez, soyez sensibles</l>
-            <l>À l’excès de mes malheurs !</l>
-          </sp>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Non ! Non ! Non !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Laissez-vous toucher par mes pleurs, etc.</l>
-
-          </sp>
-          <label>N° 23 – Chœur</label>
-          <stage>Le chœur apaisé répond à Orphée avec un peu plus de pitié dans
+               <label>N° 19 – Chœur</label>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="67"/>Quel est l’audacieux</l>
+                  <l>Qui dans ces sombres lieux</l>
+                  <l>Ose porter ses pas,</l>
+                  <l>Et devant le trépas</l>
+                  <l>Ne frémit pas ?</l>
+               </sp>
+               <label>N° 20 – Danse des Furies</label>
+               <stage>
+                  <milestone unit="sent" n="68"/>Les esprits dansent autour d’Orphée pour l’effrayer.</stage>
+               <label>N° 21 – Chœur</label>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="69"/>Quel est l’audacieux, etc.</l>
+                  <l>
+                     <milestone unit="sent" n="70"/>Que la peur la terreur</l>
+                  <l>S’emparent de son cœur</l>
+                  <l>À l’affreux hurlement</l>
+                  <l>Du Cerbère écumant</l>
+                  <l>Et rugissant !</l>
+               </sp>
+               <label>N° 22 – Air</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>Il s’approche avec sa lyre</stage>
+                  <l>
+                     <milestone unit="sent" n="71"/>Laissez-vous toucher par mes pleurs,</l>
+                  <l>Spectres…</l>
+               </sp>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="72"/>Non !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="73"/>… larves…</l>
+               </sp>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="74"/>Non !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="75"/>… ombres terribles !</l>
+               </sp>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="76"/>Non !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="77"/>Soyez, soyez sensibles</l>
+                  <l>À l’excès de mes malheurs !</l>
+               </sp>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="78"/>Non ! Non ! Non !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="79"/>Laissez-vous toucher par mes pleurs, etc.</l>
+               </sp>
+               <label>N° 23 – Chœur</label>
+               <stage>
+                  <milestone unit="sent" n="80"/>Le chœur apaisé répond à Orphée avec un peu plus de pitié dans
             l’expression.</stage>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <l>Qui t’amène en ces lieux,</l>
-            <l>Mortel présomptueux ?</l>
-            <l>C’est le séjour affreux</l>
-            <l>Des remords dévorants</l>
-            <l>Et des gémissements</l>
-            <l>Et des tourments.</l>
-            <l>Qui t’amène en ces lieux etc.</l>
-
-          </sp>
-          <label>N° 24 – Air</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! la flamme qui me dévore,</l>
-            <l>Est cent fois plus cruelle encore.</l>
-            <l>L’enfer n’a point de tourments</l>
-            <l>Pareils à ceux que je ressens.</l>
-
-          </sp>
-          <label>N° 25 – Chœur</label>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <stage>encore plus apaisé</stage>
-            <l>Par quels puissants accords,</l>
-            <l>Dans le séjour des morts,</l>
-            <l>Malgré nos vains efforts</l>
-            <l>Il calme la fureur de nos transports.</l>
-            <l>Par quels puissants accords, etc.</l>
-
-          </sp>
-          <label>N° 26 – Air</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>La tendresse</l>
-            <l>Qui me presse,</l>
-            <l>Calmera votre fureur,</l>
-            <l>Oui, mes larmes,</l>
-            <l>Mes alarmes</l>
-            <l>Fléchiront votre rigueur.</l>
-
-          </sp>
-          <label>N° 27 – Chœur</label>
-          <sp who="furies">
-            <speaker>Furies</speaker>
-            <stage>encore plus doux</stage>
-            <l>Quels chants doux et touchants</l>
-            <l>Quels accords ravissants !</l>
-            <l>De si tendres accents</l>
-            <l>Ont su nous désarmer</l>
-            <l>Et nous charmer.</l>
-            <l>Qu’il descende aux enfers !</l>
-            <l>Les chemins sont ouverts.</l>
-            <l>Tout cède à la douceur</l>
-            <l>De son art enchanteur,</l>
-            <l>Il est vainqueur.</l>
-          </sp>
-          <label>N° 28 – Danse des Furies</label>
-          <stage>Après le commencement de cette danse, Orphée entre dans les enfers ; vers la fin de
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <l>
+                     <milestone unit="sent" n="81"/>Qui t’amène en ces lieux,</l>
+                  <l>Mortel présomptueux ?</l>
+                  <l>
+                     <milestone unit="sent" n="82"/>C’est le séjour affreux</l>
+                  <l>Des remords dévorants</l>
+                  <l>Et des gémissements</l>
+                  <l>Et des tourments.</l>
+                  <l>
+                     <milestone unit="sent" n="83"/>Qui t’amène en ces lieux etc.</l>
+               </sp>
+               <label>N° 24 – Air</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="84"/>Ah ! la flamme qui me dévore,</l>
+                  <l>Est cent fois plus cruelle encore.</l>
+                  <l>
+                     <milestone unit="sent" n="85"/>L’enfer n’a point de tourments</l>
+                  <l>Pareils à ceux que je ressens.</l>
+               </sp>
+               <label>N° 25 – Chœur</label>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <stage>encore plus apaisé</stage>
+                  <l>
+                     <milestone unit="sent" n="86"/>Par quels puissants accords,</l>
+                  <l>Dans le séjour des morts,</l>
+                  <l>Malgré nos vains efforts</l>
+                  <l>Il calme la fureur de nos transports.</l>
+                  <l>
+                     <milestone unit="sent" n="87"/>Par quels puissants accords, etc.</l>
+               </sp>
+               <label>N° 26 – Air</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="88"/>La tendresse</l>
+                  <l>Qui me presse,</l>
+                  <l>Calmera votre fureur,</l>
+                  <l>Oui, mes larmes,</l>
+                  <l>Mes alarmes</l>
+                  <l>Fléchiront votre rigueur.</l>
+               </sp>
+               <label>N° 27 – Chœur</label>
+               <sp who="furies">
+                  <speaker>Furies</speaker>
+                  <stage>encore plus doux</stage>
+                  <l>
+                     <milestone unit="sent" n="89"/>Quels chants doux et touchants</l>
+                  <l>Quels accords ravissants !</l>
+                  <l>
+                     <milestone unit="sent" n="90"/>De si tendres accents</l>
+                  <l>Ont su nous désarmer</l>
+                  <l>Et nous charmer.</l>
+                  <l>
+                     <milestone unit="sent" n="91"/>Qu’il descende aux enfers !</l>
+                  <l>
+                     <milestone unit="sent" n="92"/>Les chemins sont ouverts.</l>
+                  <l>
+                     <milestone unit="sent" n="93"/>Tout cède à la douceur</l>
+                  <l>De son art enchanteur,</l>
+                  <l>Il est vainqueur.</l>
+               </sp>
+               <label>N° 28 – Danse des Furies</label>
+               <stage>
+                  <milestone unit="sent" n="94"/>Après le commencement de cette danse, Orphée entre dans les enfers ; vers la fin de
             la danse les spectres et les esprits disparaissent peu à peu.</stage>
-        </div>
-        <div>
-          <head>Deuxième scène</head>
-          <stage>Une contrée enchanteresse des Champs Élysées pleine de superbe buissons, de fleurs,
+            </div>
+            <div>
+               <head>Deuxième scène</head>
+               <stage>
+                  <milestone unit="sent" n="95"/>Une contrée enchanteresse des Champs Élysées pleine de superbe buissons, de fleurs,
             de ruisseaux.</stage>
-          <stage>Eurydice suivie des ombres célestes des Héros et des Héroïnes.</stage>
-          <label>N° 29 – Danses des Ombres Heureuses (Lent et très doux)</label>
-          <label>N° 30 – Danses des Ombres Heureuses (Même mouvemnet)</label>
-          <label>N° 31 – Danses des Ombres Heureuses (Dolce con espressione)</label>
-          <label>N° 32 – Air avec Chœur</label>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Cet asile</l>
-            <l>aimable et tranquille</l>
-            <l>Par le bonheur est habité,</l>
-            <l>C’est le riant séjour de la félicité.</l>
-            <l>Nul objet ici n’enflamme</l>
-            <l>L’âme,</l>
-            <l>Une douce ivresse</l>
-            <l>Laisse</l>
-            <l>Un calme heureux dans tous les sens ;</l>
-            <l>Et la sombre tristesse</l>
-            <l>Cesse</l>
-            <l>Dans ces lieux innocents.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice, Héros et héroïnes</speaker>
-            <l>Cet asile aimable et tranquille, etc.</l>
-            <stage>Pendant le postule du chœur disparaissent Eurydice et les esprits bienheureux.
-              Orphée est perdu dans l’admiration.</stage>
-
-          </sp>
-          <label>N° 33 Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Quel nouveau ciel pare ces lieux !</l>
-            <l>Un jour plus doux s’offre à mes yeux.</l>
-            <l>Quels sons harmonieux !</l>
-            <l>J’entends retentir ce bocage</l>
-            <l>Du ramage</l>
-            <l>Des oiseaux,</l>
-            <l>Du murmure des ruisseaux</l>
-            <l>Et des soupirs de Zéphire.</l>
-            <l>On goûte en ce séjour un éternel repos.</l>
-            <l>Mais le calme qu’on y respire</l>
-            <l>Ne saurait adoucir mes maux.</l>
-            <l>Chère épouse, objet de ma flamme,</l>
-            <l>Toi seule y peux calmer le trouble de mon âme !</l>
-            <l>Tes accents</l>
-            <l>Tendres et touchants,</l>
-            <l>Tes regards séduisants,</l>
-            <l>Ton doux sourire</l>
-            <l>Sont les seuls biens que je désire.</l>
-            <l>Attirés par le chant d’Orphée, les esprits bienheureux se sont rapprochés.</l>
-            <l>Orphée regarde autour de lui, le chœur s’en approche.</l>
-          </sp>
-          <label>N° 34 – Chœur</label>
-          <sp who="heros">
-            <speaker>Héros et héroïnes</speaker>
-            <l>Viens dans ce séjour paisible,</l>
-            <l>Époux tendre, amant sensible,</l>
-            <l>Viens bannir tes justes regrets.</l>
-            <l>Eurydice va paraître,</l>
-            <l>Eurydice va renaître</l>
-            <l>Avec de nouveaux attraits.</l>
-          </sp>
-          <label>N° 35 – Danse de Ombres Heureuses</label>
-          <stage>Continue la danse des héros</stage>
-          <label>N° 36 – Récit et Chœur</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ô vous, ombres que j’implore,</l>
-            <l>Hâtez-vous de la rendre à mes embrassements !</l>
-            <l>Ah ! si vous ressentiez le feu qui me dévore,</l>
-            <l>Si vous étiez aussi de fidèles amants,</l>
-            <l>J’aurais déjà revu la beauté que j’adore !</l>
-            <l>Hâtez-vous de me rendre heureux !</l>
-          </sp>
-          <sp who="heros">
-            <speaker>Héros et héroïnes</speaker>
-            <l>Le destin répond à tes vœux.</l>
-            <stage>Eurydice est introduite par une partie du chœur.</stage>
-          </sp>
-          <label>N° 37 – Chœur</label>
-          <sp who="heros">
-            <speaker>Héros et héroïnes</speaker>
-            <l>Près du tendre objet qu’on aime</l>
-            <l>On jouit du bien suprême,</l>
-            <l>Goûtez le sort le plus doux.</l>
-            <l>Va renaître pour Orphée,</l>
-            <l>On retrouve l’Elysée</l>
-            <l>Auprès d’un si tendre époux.</l>
-            <stage>Eurydice est ramenée à Orphée par le chœur ; sans la regarder, il saisit sa main
+               <stage>
+                  <milestone unit="sent" n="96"/>Eurydice suivie des ombres célestes des Héros et des Héroïnes.</stage>
+               <label>N° 29 – Danses des Ombres Heureuses (Lent et très doux)</label>
+               <label>N° 30 – Danses des Ombres Heureuses (Même mouvemnet)</label>
+               <label>N° 31 – Danses des Ombres Heureuses (Dolce con espressione)</label>
+               <label>N° 32 – Air avec Chœur</label>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="97"/>Cet asile</l>
+                  <l>aimable et tranquille</l>
+                  <l>Par le bonheur est habité,</l>
+                  <l>C’est le riant séjour de la félicité.</l>
+                  <l>
+                     <milestone unit="sent" n="98"/>Nul objet ici n’enflamme</l>
+                  <l>L’âme,</l>
+                  <l>Une douce ivresse</l>
+                  <l>Laisse</l>
+                  <l>Un calme heureux dans tous les sens ;</l>
+                  <l>Et la sombre tristesse</l>
+                  <l>Cesse</l>
+                  <l>Dans ces lieux innocents.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice, Héros et héroïnes</speaker>
+                  <l>
+                     <milestone unit="sent" n="99"/>Cet asile aimable et tranquille, etc.</l>
+                  <stage>
+                     <milestone unit="sent" n="100"/>Pendant le postule du chœur disparaissent Eurydice et les esprits bienheureux. <milestone unit="sent" n="101"/>Orphée est perdu dans l’admiration.</stage>
+               </sp>
+               <label>N° 33 Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="102"/>Quel nouveau ciel pare ces lieux !</l>
+                  <l>
+                     <milestone unit="sent" n="103"/>Un jour plus doux s’offre à mes yeux.</l>
+                  <l>
+                     <milestone unit="sent" n="104"/>Quels sons harmonieux !</l>
+                  <l>
+                     <milestone unit="sent" n="105"/>J’entends retentir ce bocage</l>
+                  <l>Du ramage</l>
+                  <l>Des oiseaux,</l>
+                  <l>Du murmure des ruisseaux</l>
+                  <l>Et des soupirs de Zéphire.</l>
+                  <l>
+                     <milestone unit="sent" n="106"/>On goûte en ce séjour un éternel repos.</l>
+                  <l>
+                     <milestone unit="sent" n="107"/>Mais le calme qu’on y respire</l>
+                  <l>Ne saurait adoucir mes maux.</l>
+                  <l>
+                     <milestone unit="sent" n="108"/>Chère épouse, objet de ma flamme,</l>
+                  <l>Toi seule y peux calmer le trouble de mon âme !</l>
+                  <l>
+                     <milestone unit="sent" n="109"/>Tes accents</l>
+                  <l>Tendres et touchants,</l>
+                  <l>Tes regards séduisants,</l>
+                  <l>Ton doux sourire</l>
+                  <l>Sont les seuls biens que je désire.</l>
+                  <l>
+                     <milestone unit="sent" n="110"/>Attirés par le chant d’Orphée, les esprits bienheureux se sont rapprochés.</l>
+                  <l>
+                     <milestone unit="sent" n="111"/>Orphée regarde autour de lui, le chœur s’en approche.</l>
+               </sp>
+               <label>N° 34 – Chœur</label>
+               <sp who="heros">
+                  <speaker>Héros et héroïnes</speaker>
+                  <l>
+                     <milestone unit="sent" n="112"/>Viens dans ce séjour paisible,</l>
+                  <l>Époux tendre, amant sensible,</l>
+                  <l>Viens bannir tes justes regrets.</l>
+                  <l>
+                     <milestone unit="sent" n="113"/>Eurydice va paraître,</l>
+                  <l>Eurydice va renaître</l>
+                  <l>Avec de nouveaux attraits.</l>
+               </sp>
+               <label>N° 35 – Danse de Ombres Heureuses</label>
+               <stage>
+                  <milestone unit="sent" n="114"/>Continue la danse des héros</stage>
+               <label>N° 36 – Récit et Chœur</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="115"/>Ô vous, ombres que j’implore,</l>
+                  <l>Hâtez-vous de la rendre à mes embrassements !</l>
+                  <l>
+                     <milestone unit="sent" n="116"/>Ah ! si vous ressentiez le feu qui me dévore,</l>
+                  <l>Si vous étiez aussi de fidèles amants,</l>
+                  <l>J’aurais déjà revu la beauté que j’adore !</l>
+                  <l>
+                     <milestone unit="sent" n="117"/>Hâtez-vous de me rendre heureux !</l>
+               </sp>
+               <sp who="heros">
+                  <speaker>Héros et héroïnes</speaker>
+                  <l>
+                     <milestone unit="sent" n="118"/>Le destin répond à tes vœux.</l>
+                  <stage>
+                     <milestone unit="sent" n="119"/>Eurydice est introduite par une partie du chœur.</stage>
+               </sp>
+               <label>N° 37 – Chœur</label>
+               <sp who="heros">
+                  <speaker>Héros et héroïnes</speaker>
+                  <l>
+                     <milestone unit="sent" n="120"/>Près du tendre objet qu’on aime</l>
+                  <l>On jouit du bien suprême,</l>
+                  <l>Goûtez le sort le plus doux.</l>
+                  <l>
+                     <milestone unit="sent" n="121"/>Va renaître pour Orphée,</l>
+                  <l>On retrouve l’Elysée</l>
+                  <l>Auprès d’un si tendre époux.</l>
+                  <stage>
+                     <milestone unit="sent" n="122"/>Eurydice est ramenée à Orphée par le chœur ; sans la regarder, il saisit sa main
               et l’emmène.</stage>
-            <stage>Le rideau se baisse lentement.</stage>
-          </sp>
-        </div>
-      </div>
-      <div>
-        <head>Troisième acte</head>
-        <div>
-          <head>Première scène</head>
-          <stage>Une caverne sombre avec un labyrinthe plein de couloirs obscurs et entourée de
-            rochers mousseux, tombants. Orphée mène encore Eurydice par la main sans le
+                  <stage>
+                     <milestone unit="sent" n="123"/>Le rideau se baisse lentement.</stage>
+               </sp>
+            </div>
+         </div>
+         <div>
+            <head>Troisième acte</head>
+            <div>
+               <head>Première scène</head>
+               <stage>
+                  <milestone unit="sent" n="124"/>Une caverne sombre avec un labyrinthe plein de couloirs obscurs et entourée de
+            rochers mousseux, tombants. <milestone unit="sent" n="125"/>Orphée mène encore Eurydice par la main sans le
             regarder.</stage>
-          <label>N° 38 – Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à Eurydice</stage>
-            <l>Viens, viens, Eurydice, suis-moi,</l>
-            <l>Unique et doux objet de L’amour plus tendre.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <stage>surprise</stage>
-            <l>C’est toi… ? je te vois… ?</l>
-            <l>Ciel ! devais-je m’attendre… ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>avec précipitation</stage>
-            <l>Oui, tu vois ton époux. J’ai voulu vivre encore,</l>
-            <l>Et je viens t’arracher au séjour de la mort !</l>
-            <l>Touché de mon ardeur fidèle,</l>
-            <l>Jupiter au jour te rappelle.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Quoi ! je vis, et pour toi ?</l>
-            <l>Ah, grands dieux, quel bonheur !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Eurydice, suis-moi…,</l>
-            <l>Profitons sans retard de la faveur céleste ;</l>
-            <l>Sortons, fuyons ce lieu funeste.</l>
-            <l>Non, tu n’es plus une ombre,</l>
-            <l>Et le dieu des amours</l>
-            <l>Va nous réunir pour toujours.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Qu’entends-je ? ah ! se peut-il ?</l>
-            <l>Heureuse destinée !</l>
-            <l>Eh quoi, nous pourrons resserrer</l>
-            <l>Les nœuds d’amour et d’hyménée ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Oui, suis mes pas sans différer.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Mais, par ta main ma main n’est plus pressée… !</l>
-            <l>Quoi ! tu fuis ces regards que tu chérissais tant !</l>
-            <l>Ton cœur pour Eurydice est-il indifférent ?</l>
-            <l>La fraîcheur de mes traits serait-elle effacée ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à part</stage>
-            <l>Oh dieux ! quelle contrainte !</l>
-            <stage>haut</stage>
-            <l>Eurydice, suis-moi…,</l>
-            <l>Fuyons de ces lieux, le temps presse ;</l>
-            <l>Je voudrais t’exprimer l’excès de ma tendresse… ;</l>
-            <stage>à part</stage>
-            <l>Mais je ne puis, oh ! trop funeste loi !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Un seul de tes regards…</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Tu me glaces d’effroi !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Ah ! barbare !</l>
-            <l>Sont-ce là les douceurs que ton cœur me prépare ?</l>
-            <l>Est-ce donc là le prix de mon amour ?</l>
-            <l>Oh fortune jalouse !</l>
-            <l>Orphée, hélas ! se refuse en ce jour</l>
-            <l>Aux transports innocents de sa fidèle épouse.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>sent qu’elle est près de lui, il saisit sa main voulant l’emmener</stage>
-            <l>Par tes soupçons, cesse de m’outrager.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <stage>indignée retire sa main</stage>
-            <l>Tu me rends à la vie, et c’est pour m’affliger !</l>
-            <l>Dieux, reprenez un bienfait que j’abhorre !</l>
-            <l>Ah ! cruel époux, laisse-moi !</l>
-
-          </sp>
-          <label>N° 39 – Duo</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Viens ! Suis un époux qui t’adore.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Non, ingrat, je préfère encore</l>
-            <l>La mort qui m’éloigne de toi.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Vois ma peine !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Laisse Eurydice !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! cruelle ! Quelle injustice !</l>
-            <l>Ah viens ! je t’implore, suis mes pas !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Parle, réponds, je t’en supplie !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Dut-il m’en coûter la vie,</l>
-            <l>Non, je ne parlerai pas.</l>
-          </sp>
-          <sp who="orphee eurydice">
-            <speaker>Orphée et Eurydice</speaker>
-            <stage>chacun à part</stage>
-            <l>Dieux, soyez-moi favorables !</l>
-            <l>Voyez mes pleurs,</l>
-            <l>Dieux secourables !</l>
-            <l>Quels tourments insupportables !</l>
-            <l>Quelles rigueurs</l>
-            <l>Mêlez-vous à vos faveurs !</l>
-            <stage>Chacun d’eux se dirige vers un autre côté de la scène où ils restent adossés à un
+               <label>N° 38 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à Eurydice</stage>
+                  <l>
+                     <milestone unit="sent" n="126"/>Viens, viens, Eurydice, suis-moi,</l>
+                  <l>Unique et doux objet de L’amour plus tendre.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <stage>surprise</stage>
+                  <l>
+                     <milestone unit="sent" n="127"/>C’est toi… ? je te vois… ?</l>
+                  <l>
+                     <milestone unit="sent" n="128"/>Ciel ! devais-je m’attendre… ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>avec précipitation</stage>
+                  <l>
+                     <milestone unit="sent" n="129"/>Oui, tu vois ton époux. <milestone unit="sent" n="130"/>J’ai voulu vivre encore,</l>
+                  <l>Et je viens t’arracher au séjour de la mort !</l>
+                  <l>
+                     <milestone unit="sent" n="131"/>Touché de mon ardeur fidèle,</l>
+                  <l>Jupiter au jour te rappelle.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="132"/>Quoi ! je vis, et pour toi ?</l>
+                  <l>
+                     <milestone unit="sent" n="133"/>Ah, grands dieux, quel bonheur !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="134"/>Eurydice, suis-moi…,</l>
+                  <l>Profitons sans retard de la faveur céleste ;</l>
+                  <l>Sortons, fuyons ce lieu funeste.</l>
+                  <l>
+                     <milestone unit="sent" n="135"/>Non, tu n’es plus une ombre,</l>
+                  <l>Et le dieu des amours</l>
+                  <l>Va nous réunir pour toujours.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="136"/>Qu’entends-je ? ah ! se peut-il ?</l>
+                  <l>
+                     <milestone unit="sent" n="137"/>Heureuse destinée !</l>
+                  <l>
+                     <milestone unit="sent" n="138"/>Eh quoi, nous pourrons resserrer</l>
+                  <l>Les nœuds d’amour et d’hyménée ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="139"/>Oui, suis mes pas sans différer.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="140"/>Mais, par ta main ma main n’est plus pressée… !</l>
+                  <l>
+                     <milestone unit="sent" n="141"/>Quoi ! tu fuis ces regards que tu chérissais tant !</l>
+                  <l>
+                     <milestone unit="sent" n="142"/>Ton cœur pour Eurydice est-il indifférent ?</l>
+                  <l>
+                     <milestone unit="sent" n="143"/>La fraîcheur de mes traits serait-elle effacée ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à part</stage>
+                  <l>
+                     <milestone unit="sent" n="144"/>Oh dieux ! quelle contrainte !</l>
+                  <stage>(haut)</stage>
+                  <l>
+                     <milestone unit="sent" n="145"/>Eurydice, suis-moi…,</l>
+                  <l>Fuyons de ces lieux, le temps presse ;</l>
+                  <l>Je voudrais t’exprimer l’excès de ma tendresse… ;</l>
+                  <stage>(à part)</stage>
+                  <l>
+                     <milestone unit="sent" n="146"/>Mais je ne puis, oh ! trop funeste loi !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="147"/>Un seul de tes regards…</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="148"/>Tu me glaces d’effroi !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="149"/>Ah ! barbare !</l>
+                  <l>
+                     Sont-ce là les douceurs que ton cœur me prépare ?</l>
+                  <l>
+                     <milestone unit="sent" n="150"/>Est-ce donc là le prix de mon amour ?</l>
+                  <l>
+                     <milestone unit="sent" n="151"/>Oh fortune jalouse !</l>
+                  <l>
+                     <milestone unit="sent" n="152"/>Orphée, hélas ! se refuse en ce jour</l>
+                  <l>Aux transports innocents de sa fidèle épouse.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>sent qu’elle est près de lui, il saisit sa main voulant l’emmener</stage>
+                  <l>
+                     <milestone unit="sent" n="153"/>Par tes soupçons, cesse de m’outrager.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <stage>indignée retire sa main</stage>
+                  <l>
+                     <milestone unit="sent" n="154"/>Tu me rends à la vie, et c’est pour m’affliger !</l>
+                  <l>
+                     <milestone unit="sent" n="155"/>Dieux, reprenez un bienfait que j’abhorre !</l>
+                  <l>
+                     <milestone unit="sent" n="156"/>Ah ! cruel époux, laisse-moi !</l>
+               </sp>
+               <label>N° 39 – Duo</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="157"/>Viens ! Suis un époux qui t’adore.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="158"/>Non, ingrat, je préfère encore</l>
+                  <l>La mort qui m’éloigne de toi.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="159"/>Vois ma peine !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="160"/>Laisse Eurydice !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="161"/>Ah ! cruelle ! Quelle injustice !</l>
+                  <l>
+                     <milestone unit="sent" n="162"/>Ah viens ! je t’implore, suis mes pas !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="163"/>Parle, réponds, je t’en supplie !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="164"/>Dut-il m’en coûter la vie,</l>
+                  <l>Non, je ne parlerai pas.</l>
+               </sp>
+               <sp who="orphee eurydice">
+                  <speaker>Orphée et Eurydice</speaker>
+                  <stage>chacun à part</stage>
+                  <l>
+                     <milestone unit="sent" n="165"/>Dieux, soyez-moi favorables !</l>
+                  <l>
+                     <milestone unit="sent" n="166"/>Voyez mes pleurs,</l>
+                  <l>Dieux secourables !</l>
+                  <l>
+                     <milestone unit="sent" n="167"/>Quels tourments insupportables !</l>
+                  <l>
+                     <milestone unit="sent" n="168"/>Quelles rigueurs</l>
+                  <l>Mêlez-vous à vos faveurs !</l>
+                  <stage>
+                     <milestone unit="sent" n="169"/>Chacun d’eux se dirige vers un autre côté de la scène où ils restent adossés à un
               arbre ou à un rocher.</stage>
-
-          </sp>
-          <label>N° 40 – Récit</label>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Mais d’où vient qu’il persiste à garder le silence ?</l>
-            <l>Quels secrets veut-il me cacher ?</l>
-            <l>Au séjour de la mort devait-il m’arracher</l>
-            <l>Pour m’accabler de son indifférence ?</l>
-            <l>Oh destin rigoureux !</l>
-            <l>Ma force m’abandonne,</l>
-            <l>Le voile de la mort retombe sur mes yeux !</l>
-            <l>Je frémis, je languis,</l>
-            <l>Je frissonne, je tremble, je pâlis,</l>
-            <l>Mon cœur palpite,</l>
-            <l>Un trouble secret m’agite,</l>
-            <l>Tous mes sens sont saisis d’horreur</l>
-            <l>Et je succombe à ma douleur.</l>
-
-          </sp>
-          <label>N° 41 – Air et Duo</label>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Fortune ennemie,</l>
-            <l>Quelle barbarie !</l>
-            <l>Ne me rends-tu la vie</l>
-            <l>Que pour les tourments ?</l>
-            <l>Je goûtais les charmes</l>
-            <l>D’un repos sans alarmes,</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ses injustes soupçons</l>
-            <l>Redoublent mes tourments !</l>
-            <l>Que dire ? que faire ?</l>
-            <l>Elle me désespère,</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Le trouble, les larmes</l>
-            <l>Remplissent aujourd’hui</l>
-            <l>Mes malheureux moments.</l>
-            <l>Je goûtais les charmes etc.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ne pourrai-je calmer</l>
-            <l>Le trouble de mes sens ?</l>
-            <l>Que mon sort est à plaindre !</l>
-            <l>Je ne puis me contraindre !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Je frissonne, je tremble.</l>
-            <l>Fortune ennemie, etc.</l>
-
-          </sp>
-          <label>N° 42 – Récit</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à part</stage>
-            <l>Quelle épreuve cruelle !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Tu m’abandonnes, cher Orphée !</l>
-            <l>En ce moment ton épouse désolée</l>
-            <l>Implore en vain tes secours ;</l>
-            <l>O dieux ! à vous seuls j’ai recours.</l>
-            <l>Dois-je finir mes jours</l>
-            <l>Sans un regard de ce que j’aime ?</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à part</stage>
-            <l>Je sens mon courage expirer,</l>
-            <l>Et ma raison se perd</l>
-            <l>Dans mon amour extrême ;</l>
-            <l>J’oublie et la défense, Eurydice et moi même.</l>
-            <l>Il fait un mouvement pour se retourner et tout à coup se retient.</l>
-            <l>Ciel !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Cher époux, je puis à peine respirer.</l>
-            <stage>Elle tombe sur un rocher.</stage>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>fort</stage>
-            <l>Rassure-toi, je vais tout dire…</l>
-            <l>Apprends….</l>
-            <stage>à part</stage>
-            <l>Que fais-je !… Justes dieux,</l>
-            <l>Quand finirez-vous mon martyre ?</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Reçois donc mes derniers adieux,</l>
-            <l>Et souviens-toi d’Eurydice…</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <stage>à part</stage>
-            <l>Où suis-je ? Je ne puis résister à ses pleurs.</l>
-            <stage>fort</stage>
-            <l>Non, le ciel ne veut pas un plus grand sacrifice.</l>
-            <l>Il se retourne avec impétuosité et regarde Eurydice.</l>
-            <l>Oh ma chère Eurydice..</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Fait un effort de se lever</l>
-            <l>Orphée ! o ciel ! je meurs…</l>
-            <stage>Elle meurt.</stage>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Malheureux, qu’ai-je fait ?</l>
-            <l>Et dans quel précipice</l>
-            <l>M’a plongé mon funeste amour ?</l>
-            <l>S’approche de Eurydice avec précipitation</l>
-            <l>Chère épouse !… Eurydice !</l>
-            <l>Eurydice !… Chère épouse !</l>
-            <stage>Il la secoue</stage>
-            <l>Elle ne m’entend plus, je la perds à jamais !</l>
-            <l>C’est moi qui lui ravis le jour !</l>
-            <l>Loi fatale !</l>
-            <l>Cruel remords !</l>
-            <l>Ma peine est sans égale.</l>
-            <l>Dans ce moment funeste</l>
-            <l>Le désespoir, la mort</l>
-            <l>Est tout ce qui me reste.</l>
-
-          </sp>
-          <label>N° 43 – Air</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>J’ai perdu mon Eurydice,</l>
-            <l>Rien n’égale mon malheur ;</l>
-            <l>Sort cruel ! quelle rigueur !</l>
-            <l>Rien n’égale mon malheur !</l>
-            <l>Je succombe à ma douleur !</l>
-            <l>Eurydice…, Eurydice…,</l>
-            <l>Réponds, quel supplice !</l>
-            <l>Réponds-moi !</l>
-            <l>C’est ton époux fidèle ;</l>
-            <l>Entends ma voix qui t’appelle…</l>
-            <l>J’ai perdu mon Eurydice, etc.</l>
-            <l>Eurydice, Eurydice !</l>
-            <l>Mortel silence ! Vaine espérance !</l>
-            <l>Quelle souffrance !</l>
-            <l>Quel tourment déchire mon cœur !</l>
-            <l>J’ai perdu mon Eurydice, etc.</l>
-            <label>N° 44 – Récit</label>
-            <l>Ah ! puisse ma douleur finir avec ma vie !</l>
-            <l>Je ne survivrai pas à ce dernier revers.</l>
-            <l>Je touche encore aux portes des enfers,</l>
-            <l>J’aurai bientôt rejoint mon épouse chérie.</l>
-            <l>Oui, je te suis, tendre objet de ma foi,</l>
-            <l>Je te suis, attends-moi !</l>
-            <l>Tu ne me seras plus ravie,</l>
-            <l>Et la mort pour jamais va m’unir avec toi.</l>
-            <stage>Lorsqu’il est sur le point de se tuer, L’amour apparaît.</stage>
-          </sp>
-        </div>
-        <div>
-          <head>Deuxième scène</head>
-          <label>N° 45 – Récit</label>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <stage>lui arrache le poignard</stage>
-            <l>Arrête, Orphée !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ô ciel ! Qui pourrait en ce jour</l>
-            <l>Retenir le transport de mon âme égarée ?</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Calme ta fureur insensée ;</l>
-            <l>Arrête, et reconnais L’amour</l>
-            <l>Qui veille sur ta destinée.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Qu’exigez-vous de moi ?</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Tu viens de me prouver ta constance et ta foi ;</l>
-            <l>Je vais faire cesser ton martyre.</l>
-            <l>Il touche Eurydice et la ranime.</l>
-            <l>Eurydice… ! respire !</l>
-            <l>Du plus fidèle époux viens couronner les feux.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Mon Eurydice !</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Orphée !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Ah ! justes dieux !</l>
-            <l>Quelle est notre reconnaissance !</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Ne doutez plus de ma puissance !</l>
-            <l>Je viens vous retirer de cet affreux séjour,</l>
-            <l>Jouissez désormais des plaisirs de L’amour !</l>
-
-          </sp>
-          <label>N° 51 – Trio</label>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Tendre amour, que tes chaînes</l>
-            <l>Ont de charmes pour nos cœurs !</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Tendre amour, à tes peines</l>
-            <l>Que tu mêles de douceurs !</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Je dédommage tous les cœurs</l>
-            <l>Par un instant de mes faveurs.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Tendre amour, que tes chaînes, etc.</l>
-          </sp>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>Tendre amour, à tes peines, etc.</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Que l’ardeur qui vous enflamme,</l>
-            <l>Toujours règne dans votre âme,</l>
-            <l>Ne craignez plus mes rigueurs ;</l>
-            <l>Je dédommage tous les cœurs !</l>
-          </sp>
-          <sp who="orpheeeteurydice">
-            <speaker>Orphée et Eurydice</speaker>
-            <l>Quels transports et quel délire,</l>
-            <l>O tendre amour, ta faveur nous inspire,</l>
-            <l>Célébrons pour jamais.</l>
-            <l>Célébrons tes bienfaits.</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Célébrez pour jamais mes bienfaits etc.</l>
-          </sp>
-        </div>
-        <div type="scene">
-          <head>Scène finale</head>
-          <stage>Un magnifique temple consacré à l’Amour.</stage>
-          <stage>L’Amour, Orphée et Eurydice. Devant eux marche une nombreuse troupe de bergers et
+               </sp>
+               <label>N° 40 – Récit</label>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="170"/>Mais d’où vient qu’il persiste à garder le silence ?</l>
+                  <l>
+                     <milestone unit="sent" n="171"/>Quels secrets veut-il me cacher ?</l>
+                  <l>
+                     <milestone unit="sent" n="172"/>Au séjour de la mort devait-il m’arracher</l>
+                  <l>Pour m’accabler de son indifférence ?</l>
+                  <l>
+                     <milestone unit="sent" n="173"/>Oh destin rigoureux !</l>
+                  <l>
+                     <milestone unit="sent" n="174"/>Ma force m’abandonne,</l>
+                  <l>Le voile de la mort retombe sur mes yeux !</l>
+                  <l>
+                     <milestone unit="sent" n="175"/>Je frémis, je languis,</l>
+                  <l>Je frissonne, je tremble, je pâlis,</l>
+                  <l>Mon cœur palpite,</l>
+                  <l>Un trouble secret m’agite,</l>
+                  <l>Tous mes sens sont saisis d’horreur</l>
+                  <l>Et je succombe à ma douleur.</l>
+               </sp>
+               <label>N° 41 – Air et Duo</label>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="176"/>Fortune ennemie,</l>
+                  <l>Quelle barbarie !</l>
+                  <l>
+                     <milestone unit="sent" n="177"/>Ne me rends-tu la vie</l>
+                  <l>Que pour les tourments ?</l>
+                  <l>
+                     <milestone unit="sent" n="178"/>Je goûtais les charmes</l>
+                  <l>D’un repos sans alarmes,</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="179"/>Ses injustes soupçons</l>
+                  <l>Redoublent mes tourments !</l>
+                  <l>
+                     <milestone unit="sent" n="180"/>Que dire ? que faire ?</l>
+                  <l>
+                     <milestone unit="sent" n="181"/>Elle me désespère,</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="182"/>Le trouble, les larmes</l>
+                  <l>Remplissent aujourd’hui</l>
+                  <l>Mes malheureux moments.</l>
+                  <l>
+                     <milestone unit="sent" n="183"/>Je goûtais les charmes etc.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="184"/>Ne pourrai-je calmer</l>
+                  <l>Le trouble de mes sens ?</l>
+                  <l>
+                     <milestone unit="sent" n="185"/>Que mon sort est à plaindre !</l>
+                  <l>
+                     <milestone unit="sent" n="186"/>Je ne puis me contraindre !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="187"/>Je frissonne, je tremble.</l>
+                  <l>
+                     <milestone unit="sent" n="188"/>Fortune ennemie, etc.</l>
+               </sp>
+               <label>N° 42 – Récit</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à part</stage>
+                  <l>
+                     <milestone unit="sent" n="189"/>Quelle épreuve cruelle !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="190"/>Tu m’abandonnes, cher Orphée !</l>
+                  <l>
+                     <milestone unit="sent" n="191"/>En ce moment ton épouse désolée</l>
+                  <l>Implore en vain tes secours ;</l>
+                  <l>O dieux ! à vous seuls j’ai recours.</l>
+                  <l>
+                     <milestone unit="sent" n="192"/>Dois-je finir mes jours</l>
+                  <l>Sans un regard de ce que j’aime ?</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>à part</stage>
+                  <l>
+                     <milestone unit="sent" n="193"/>Je sens mon courage expirer,</l>
+                  <l>Et ma raison se perd</l>
+                  <l>Dans mon amour extrême ;</l>
+                  <l>J’oublie et la défense, Eurydice et moi même.</l>
+                  <l>
+                     <milestone unit="sent" n="194"/>Il fait un mouvement pour se retourner et tout à coup se retient.</l>
+                  <l>Ciel !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="195"/>Cher époux, je puis à peine respirer.</l>
+                  <stage>
+                     <milestone unit="sent" n="196"/>Elle tombe sur un rocher.</stage>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>(fort)</stage>
+                  <l>
+                     <milestone unit="sent" n="197"/>Rassure-toi, je vais tout dire…</l>
+                  <l>
+                     <milestone unit="sent" n="198"/>Apprends….</l>
+                  <stage>(à part)</stage>
+                  <l>
+                     <milestone unit="sent" n="199"/>Que fais-je !… Justes dieux,</l>
+                  <l>Quand finirez-vous mon martyre ?</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="200"/>Reçois donc mes derniers adieux,</l>
+                  <l>Et souviens-toi d’Eurydice…</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <stage>(à part)</stage>
+                  <l>
+                     <milestone unit="sent" n="201"/>Où suis-je ? Je ne puis résister à ses pleurs.</l>
+                  <stage>(fort)</stage>
+                  <l>
+                     <milestone unit="sent" n="202"/>Non, le ciel ne veut pas un plus grand sacrifice.</l>
+                  <l>
+                     <milestone unit="sent" n="203"/>Il se retourne avec impétuosité et regarde Eurydice.</l>
+                  <l>
+                     <milestone unit="sent" n="204"/>Oh ma chère Eurydice..</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="205"/>Fait un effort de se lever</l>
+                  <l>Orphée ! ô ciel ! je meurs…</l>
+                  <stage>
+                     <milestone unit="sent" n="206"/>Elle meurt.</stage>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="207"/>Malheureux, qu’ai-je fait ?</l>
+                  <l>
+                     <milestone unit="sent" n="208"/>Et dans quel précipice</l>
+                  <l>M’a plongé mon funeste amour ?</l>
+                  <l>
+                     <milestone unit="sent" n="209"/>S’approche de Eurydice avec précipitation</l>
+                  <l>Chère épouse !… Eurydice !</l>
+                  <l>
+                     <milestone unit="sent" n="210"/>Eurydice !… Chère épouse !</l>
+                  <stage>
+                     <milestone unit="sent" n="211"/>Il la secoue</stage>
+                  <l>
+                     <milestone unit="sent" n="212"/>Elle ne m’entend plus, je la perds à jamais !</l>
+                  <l>
+                     <milestone unit="sent" n="213"/>C’est moi qui lui ravis le jour !</l>
+                  <l>
+                     <milestone unit="sent" n="214"/>Loi fatale !</l>
+                  <l>
+                     <milestone unit="sent" n="215"/>Cruel remords !</l>
+                  <l>
+                     <milestone unit="sent" n="216"/>Ma peine est sans égale.</l>
+                  <l>
+                     <milestone unit="sent" n="217"/>Dans ce moment funeste</l>
+                  <l>Le désespoir, la mort</l>
+                  <l>Est tout ce qui me reste.</l>
+               </sp>
+               <label>N° 43 – Air</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="218"/>J’ai perdu mon Eurydice,</l>
+                  <l>Rien n’égale mon malheur ;</l>
+                  <l>Sort cruel ! quelle rigueur !</l>
+                  <l>
+                     <milestone unit="sent" n="219"/>Rien n’égale mon malheur !</l>
+                  <l>
+                     <milestone unit="sent" n="220"/>Je succombe à ma douleur !</l>
+                  <l>
+                     <milestone unit="sent" n="221"/>Eurydice…, Eurydice…,</l>
+                  <l>Réponds, quel supplice !</l>
+                  <l>
+                     <milestone unit="sent" n="222"/>Réponds-moi !</l>
+                  <l>C’est ton époux fidèle ;</l>
+                  <l>Entends ma voix qui t’appelle…</l>
+                  <l>
+                     <milestone unit="sent" n="223"/>J’ai perdu mon Eurydice, etc.</l>
+                  <l>
+                     <milestone unit="sent" n="224"/>Eurydice, Eurydice !</l>
+                  <l>Mortel silence ! <milestone unit="sent" n="225"/>Vaine espérance !</l>
+                  <l>Quelle souffrance !</l>
+                  <l>
+                     <milestone unit="sent" n="226"/>Quel tourment déchire mon cœur !</l>
+                  <l>
+                     <milestone unit="sent" n="227"/>J’ai perdu mon Eurydice, etc.</l>
+                  <label>N° 44 – Récit</label>
+                  <l>
+                     <milestone unit="sent" n="228"/>Ah ! puisse ma douleur finir avec ma vie !</l>
+                  <l>
+                     <milestone unit="sent" n="229"/>Je ne survivrai pas à ce dernier revers.</l>
+                  <l>
+                     <milestone unit="sent" n="230"/>Je touche encore aux portes des enfers,</l>
+                  <l>J’aurai bientôt rejoint mon épouse chérie.</l>
+                  <l>
+                     <milestone unit="sent" n="231"/>Oui, je te suis, tendre objet de ma foi,</l>
+                  <l>Je te suis, attends-moi !</l>
+                  <l>
+                     <milestone unit="sent" n="232"/>Tu ne me seras plus ravie,</l>
+                  <l>Et la mort pour jamais va m’unir avec toi.</l>
+                  <stage>
+                     <milestone unit="sent" n="233"/>Lorsqu’il est sur le point de se tuer, L’amour apparaît.</stage>
+               </sp>
+            </div>
+            <div>
+               <head>Deuxième scène</head>
+               <label>N° 45 – Récit</label>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <stage>lui arrache le poignard</stage>
+                  <l>
+                     <milestone unit="sent" n="234"/>Arrête, Orphée !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="235"/>Ô ciel ! Qui pourrait en ce jour</l>
+                  <l>Retenir le transport de mon âme égarée ?</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="236"/>Calme ta fureur insensée ;</l>
+                  <l>Arrête, et reconnais L’amour</l>
+                  <l>Qui veille sur ta destinée.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="237"/>Qu’exigez-vous de moi ?</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="238"/>Tu viens de me prouver ta constance et ta foi ;</l>
+                  <l>Je vais faire cesser ton martyre.</l>
+                  <l>
+                     <milestone unit="sent" n="239"/>Il touche Eurydice et la ranime.</l>
+                  <l>
+                     <milestone unit="sent" n="240"/>Eurydice… ! respire !</l>
+                  <l>
+                     <milestone unit="sent" n="241"/>Du plus fidèle époux viens couronner les feux.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="242"/>Mon Eurydice !</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="243"/>Orphée !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="244"/>Ah ! justes dieux !</l>
+                  <l>Quelle est notre reconnaissance !</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="245"/>Ne doutez plus de ma puissance !</l>
+                  <l>
+                     <milestone unit="sent" n="246"/>Je viens vous retirer de cet affreux séjour,</l>
+                  <l>Jouissez désormais des plaisirs de L’amour !</l>
+               </sp>
+               <label>N° 51 – Trio</label>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="247"/>Tendre amour, que tes chaînes</l>
+                  <l>Ont de charmes pour nos cœurs !</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="248"/>Tendre amour, à tes peines</l>
+                  <l>Que tu mêles de douceurs !</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="249"/>Je dédommage tous les cœurs</l>
+                  <l>Par un instant de mes faveurs.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="250"/>Tendre amour, que tes chaînes, etc.</l>
+               </sp>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="251"/>Tendre amour, à tes peines, etc.</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="252"/>Que l’ardeur qui vous enflamme,</l>
+                  <l>Toujours règne dans votre âme,</l>
+                  <l>Ne craignez plus mes rigueurs ;</l>
+                  <l>Je dédommage tous les cœurs !</l>
+               </sp>
+               <sp who="orpheeeteurydice">
+                  <speaker>Orphée et Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="253"/>Quels transports et quel délire,</l>
+                  <l>O tendre amour, ta faveur nous inspire,</l>
+                  <l>Célébrons pour jamais.</l>
+                  <l>
+                     <milestone unit="sent" n="254"/>Célébrons tes bienfaits.</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="255"/>Célébrez pour jamais mes bienfaits etc.</l>
+               </sp>
+            </div>
+            <div type="scene">
+               <head>Scène finale</head>
+               <stage>
+                  <milestone unit="sent" n="256"/>Un magnifique temple consacré à l’Amour.</stage>
+               <stage>
+                  <milestone unit="sent" n="257"/>L’Amour, Orphée et Eurydice. <milestone unit="sent" n="258"/>Devant eux marche une nombreuse troupe de bergers et
             de bergères fêtant le retour d’Eurydice par leur chant et leurs joyeuses danses.</stage>
-          <label>Ballet du Triomphe et de L’amour</label>
-          <label>Air et Chœur</label>
-          <sp who="orphee">
-            <speaker>Orphée</speaker>
-            <l>L’amour triomphe,</l>
-            <l>Et tout ce qui respire</l>
-            <l>Sert l’empire de la beauté ;</l>
-            <l>Sa chaîne agréable</l>
-            <l>Est préférable à la liberté.</l>
-          </sp>
-          <sp who="bergers">
-            <speaker>Bergers et bergères</speaker>
-            <l>L’amour triomphe etc.</l>
-          </sp>
-          <sp who="amour">
-            <speaker>L’amour</speaker>
-            <l>Dans les peines, dans les alarmes</l>
-            <l>Je fais souvent languir les cœurs ;</l>
-            <l>Mais dans un instant mes charmes</l>
-            <l>Font pour jamais oublier mes rigueurs.</l>
-          </sp>
-          <sp who="bergers">
-            <speaker>Bergers et bergères</speaker>
-            <l>L’amour triomphe, etc.</l>
-          </sp>
-          <sp who="eurydice">
-            <speaker>Eurydice</speaker>
-            <l>Si la cruelle jalousie</l>
-            <l>A troublé mes tendres désirs,</l>
-            <l>Les douceurs dont elle est suivie,</l>
-            <l>Sont des chaînes de plaisirs.</l>
-          </sp>
-          <sp who="bergers">
-            <speaker>Bergers et bergères</speaker>
-            <l>L’amour triomphe, etc.</l>
-            <stage>La danse retourne</stage>
-          </sp>
-        </div>
-      </div>
-    </body>
-
-  </text>
+               <label>Ballet du Triomphe et de L’amour</label>
+               <label>Air et Chœur</label>
+               <sp who="orphee">
+                  <speaker>Orphée</speaker>
+                  <l>
+                     <milestone unit="sent" n="259"/>L’amour triomphe,</l>
+                  <l>Et tout ce qui respire</l>
+                  <l>Sert l’empire de la beauté ;</l>
+                  <l>Sa chaîne agréable</l>
+                  <l>Est préférable à la liberté.</l>
+               </sp>
+               <sp who="bergers">
+                  <speaker>Bergers et bergères</speaker>
+                  <l>
+                     <milestone unit="sent" n="260"/>L’amour triomphe etc.</l>
+               </sp>
+               <sp who="amour">
+                  <speaker>L’amour</speaker>
+                  <l>
+                     <milestone unit="sent" n="261"/>Dans les peines, dans les alarmes</l>
+                  <l>Je fais souvent languir les cœurs ;</l>
+                  <l>Mais dans un instant mes charmes</l>
+                  <l>Font pour jamais oublier mes rigueurs.</l>
+               </sp>
+               <sp who="bergers">
+                  <speaker>Bergers et bergères</speaker>
+                  <l>
+                     <milestone unit="sent" n="262"/>L’amour triomphe, etc.</l>
+               </sp>
+               <sp who="eurydice">
+                  <speaker>Eurydice</speaker>
+                  <l>
+                     <milestone unit="sent" n="263"/>Si la cruelle jalousie</l>
+                  <l>A troublé mes tendres désirs,</l>
+                  <l>Les douceurs dont elle est suivie,</l>
+                  <l>Sont des chaînes de plaisirs.</l>
+               </sp>
+               <sp who="bergers">
+                  <speaker>Bergers et bergères</speaker>
+                  <l>
+                     <milestone unit="sent" n="264"/>L’amour triomphe, etc.</l>
+                  <stage>
+                     <milestone unit="sent" n="265"/>La danse retourne</stage>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
 </TEI>

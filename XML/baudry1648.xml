@@ -1,398 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">Dessein du poème et des superbes machines du mariage d’Orphée et
-                    d’Eurydice</title>
-                <title type="sub">Qui se représentera sur le théâtre du Marais par les comédiens
-                    entretenus par Leurs Majestés</title>
-                <author>Anonyme</author>
-                <editor/>
-            </titleStmt>
-            <editionStmt>
-                <edition>Cette édition électronique fait partie du projet de thèse intitulé
-                    « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
-                    numériques. Vers une édition comparative intermédiale innovante accompagnée
-                    d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
-                    sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-                <respStmt>
-                    <name>Karolina Suchecka</name>
-                    <resp>Chargé de l’édition</resp>
-                </respStmt>
-                <respStmt>
-                    <name>Nathalie Gasiglia</name>
-                    <resp>Co-tutrice de thèse</resp>
-                </respStmt>
-                <respStmt>
-                    <name>Karl Zieger</name>
-                    <resp>Co-tuteur de thèse</resp>
-                </respStmt>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Karolina Suchecka</publisher>
-                <publisher>ALITHILA (Université Lille III)</publisher>
-                <date when="2019"/>
-                <availability status="restricted">
-                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
-                            projet de thèse « Analyse et édition d’un corpus littéraire dans
-                            l’esprit des humanités numériques. Vers une édition comparative
-                            intermédiale innovante accompagnée d’une ressource pour le repérage
-                            intertextuel »</p>
-                        <p> Cette ressource électronique protégée par le code de la propriété
-                            intellectuelle sur les bases de données (L341-1) est mise à disposition
-                            de la communauté scientifique internationale par Karolina Suchecka,
-                            selon les termes de la licence Creative Commons : « Attribution - Pas
-                            d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
-                            3.0 FR) ». </p>
-                        <p> Attribution : afin de référencer la source, toute utilisation ou
-                            publication dérivée de cette ressource électroniques comportera le nom
-                            du projet et surtout l’adresse Internet de la ressource. </p>
-                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
-                            scientifique, toute utilisation commerciale est interdite.</p>
-                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
-                            cette ressource électronique, notamment en intégrant toutes les
-                            contributions extérieures, la diffusion de versions modifiées de cette
-                            ressource n’est pas souhaitable.</p>
-                    </licence>
-                </availability>
-                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k58171563?rk=21459;2 </idno>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl><author>Anonyme</author> / <title>Dessein du poème et des superbes machines du
-                        mariage d’Orphée et d’Eurydice, qui se représentera sur le théâtre du Marais
-                        par les comédiens entretenus par Leurs Majestés</title> / Paris / R. Baudry
-                    / 1648.</bibl>
-                <biblFull>
-                    <titleStmt>
-                        <title>Dessein du poème et des superbes machines du mariage d’Orphée et
-                            d’Eurydice, qui se représentera sur le théâtre du Marais par les
-                            comédiens entretenus par Leurs Majestés</title>
-                    </titleStmt>
-                    <publicationStmt>
-                        <publisher>R. Baudry</publisher>
-                        <pubPlace>Paris</pubPlace>
-                        <date when="1648"/>
-                    </publicationStmt>
-                </biblFull>
-                <genre>théâtre</genre>
-                <structure>baudry1648</structure>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
-                Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
-                conçus au sein du projet. La structure des métadonnées a été établie en référence à
-                la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
-                son traitement.</p>
-        </encodingDesc>
-        <profileDesc>
-            <creation>
-                <date when="1648">1648</date>
-            </creation>
-            <language>
-                <language>oFR</language>
-            </language>
-            <textClass>
-                <keywords>
-                    <list>
-                        <item>transmodalisation</item>
-                    </list>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <front>
-            <titlePage>
-                <docAuthor>Anonyme</docAuthor>
-                <docTitle>
-                    <titlePart type="main">Dessein du poème et des superbes machines du mariage
-                        d’Orphée et d’Eurydice</titlePart>
-                    <titlePart type="sub">Qui se représentera sur le théâtre du Marais par les
-                        comédiens entretenus par Leurs Majestés</titlePart>
-                </docTitle>
-            </titlePage>
-        </front>
-
-
-        <body>
-            <div type="introduction">
-                <head>Introduction</head>
-                <p>
-                    <pb n="3" xml:id="p3"/>Puis qu’il faut que ceux qui representent les Personnages
-                    des Heros en façent quelque fois les cations. Il est juste que ceux qui font la
-                    Comedie pour la satisfaction du publicq, et reçoivent des graces de ceux qui les
-                    visitent, donnent par un ressentiment genereux à la curiosité des absents et des
-                    personnes qui ne peuvent jouyr de cét agreable divertissement : Un fidelle recit
-                    des merveilles que la Scene Françoise fera parroistre dans le mois de Decembre,
-                    afin que s’ils ne peuvent assister à ces fameux spectacles, ils puissent au
-                    moins en voir sur le papier la superbe peinture, et cognoistre jusqu’à quels
-                    grands efforts l’esprit humain peut aller en la composition des Machines les
-                    plus belles et les plus extraordinaires que l’artifice des siecles presens et
-                    passez puissent inventer.</p>
-                <p>Et comme il est necessaire que toutes les partie soient parfaicte en la
-                    composition d’un tout miraculeur, un sujet tout heroïque servira d’ame à ces
-                    magnifiques decorations. Et le funeste Mariage <hi rend="sc">d’Orphée et
-                        d’Eurydice</hi>, estant representé par les Comediens du Marests, fera voir
-                    sur leur Theatre presque en un mesme instant, des Dieux du Ciel descendre sur la
-                    Terre. Des Divinitez voler dans le vague des Airs. Le Soleil rouler sur son
-                    Zodiaque. Les Furies errer dans leurs cavernes. Des Driades dans les bois. Des
-                    Bachantes metamorphosées en Arbres. Des Serpens remper. Des Animaux marcher. La
-                    Terre s’ouvrir. L’Enfer parroistre. Et l’agreable diversité des Forests. Des
-                    plaines, des Deserts, des Rochers, des Montagnes et des Fleuves disputer avec la
-                    nature, pour tromper agreablement la veuë des Spectateurs, et les ravir par les
-                    charmes à un artifice inimitable.</p>
-            </div>
-            <div n="1" type="act">
-                <head>Acte premier</head>
-                <p>
-                    <pb n="4" xml:id="p4"/>La grande thoille qui couvrira toute la face du Theatre,
-                    estant levée avec une telle rapidité que les yeux dans l’instant d’un esclair
-                    auront peine d’en suivre l’eslevation, l’on verra le Theatre couvert de Bois et
-                    de Rochers : Dont la perspective, l’esloignement et la beauté surpassant tout ce
-                    que l’on en peut d’escrire, raviront les yeux des Spectateurs.</p>
-                <p>Les cieux estans aussi representez avec leurs mouvemens ordinaires, et ces
-                    regions inferieures ou se forment les Orages. <hi rend="sc">Junon</hi> dans
-                    l’espoisseur des Nuées parroistra sur son Char, tout brillant de celestes
-                    lumieres, et se voyant environnée de Tonneres, des Vents, des Esclairs, et des
-                    Tempestes dont elle troubloit l’Empire ; Commande aux Elements de corriger
-                    l’insolence des Meteores, et de luy faire un passage aysé pour descendre sur la
-                    Terre, où le dessein de troubler les Nopces d’<hi rend="sc">Orphée</hi>
-                    l’appelloit.</p>
-                <p>Estant descenduë par une machine qui surprend esgalement et l’imagination et la
-                    veuë : Elle se plaint de voir tant de mortels que <hi rend="sc">Jupiter</hi>
-                    avoit mis au rang des Dieux : Et craignant qu’il ne fist <hi rend="sc"
-                        >d’Orphée</hi> comme il avoit fait <hi rend="sc">d’Apollon</hi>, de <hi
-                        rend="sc">Diane</hi>, de <hi rend="sc">Bachus</hi>, de <hi rend="sc"
-                        >Caliste</hi>, et de tant d’autre Divinitez à lui l’on donnoit à l’Encens,
-                    Elle se resout d’aller trouver l’<hi rend="sc">Envie</hi> dans son Antre, pour
-                    luy declarer ses desseins et l’obliger à servir sa colere.</p>
-                <p>Dans ce sentiment elle appelle l’<hi rend="sc">Envie</hi>, qui se devorant elle
-                    mesme sur un lict d’Aspices et de Lezards, accourt au bruit de cette divine
-                    voix, toute couverte de Viperes qui luy servoient de nourriture et
-                    d’habillement. Et par trois fois pour marque de son obeyssance ayant branslé sa
-                    teste, qui pour cheveux n’avoit que d’horribles couleuvres : Elle escoute
-                    attentivement <hi rend="sc">Junon</hi>, et pressant les furieux Serpens qu’elle
-                    tenoit à replis tortueux entre ses mains, de peut que leur siflemens
-                    n’interrompissent cette Divinité, Elle reçoit l’ordre d’aller <pb n="5"
-                        xml:id="p5"/>au bord de Pensée, inspirer dans le cœur d’un jaloux rival les
-                    fureurs necessaires pour desrober à la passion d’<hi rend="sc">Orphée</hi> la
-                    jouyssance de la belle <hi rend="sc">Eurydice</hi>.</p>
-                <p>L’<hi rend="sc">Envie</hi> pour executer les commandemens de <hi rend="sc"
-                        >Junon</hi>, va trouver le berger <hi rend="sc">Aristée</hi>, et luy jettant
-                    un Serpent qui se glisse imperceptiblement jusques dans son cœur, luy donne des
-                    pensées de jalousie et des transports de hayne et de vengeance, où pour la perte
-                        d’<hi rend="sc">Orphée</hi>, ou pour la punition d’<hi rend="sc"
-                        >Eurydice</hi>.</p>
-                <p>Cet amoureux desesperé dans ces furieux mouvements, abordant <hi rend="sc"
-                        >Eurydice</hi>, n’en est payé que de justes mespris. Et sa douleur ne
-                    pouvant estre consolée par l’assistance des hommes, il se resoult de recourir
-                    aux forces de la magie, et de voir si les Demons pourroient le rendre plus
-                    heureux, où flater son desespoir, en luy faisant cognoistre quels succéz auroit
-                    son Amour dans cette pensée ? Il s’emporte à toutes les violences que la fureur
-                    luy suggere, et ferme l’Acte en abandonnant sa raison à toutes les passions qui
-                    tirannisoient son ame.</p>
-            </div>
-            <div n="2" type="act">
-                <head>Acte second</head>
-                <p>Le théâtre ayant changé de face, le vieil <hi rend="sc">Eurimedon</hi> dans les
-                    ruines d’un superbe bastiment dont il faisoit sa demeur, aprend au Pasteur <hi
-                        rend="sc">Aristée</hi> les funestes succéz de sa conference avec les Demons.
-                    Et parmy les Colomnes, les Portiques, les Chapiteaux, les Festons et les
-                    Trophées desmolis, luy monstre les endoits où pour l’invoquation des furies de
-                    l’Enfer, il faisoit ses Libations et ses Sacrifices, et luy faisant encore
-                    remarquer du costé de l’Orient les cernes et les neufs parties d’où ses parfums
-                    avoient exalé leur esprits abstratifs et violents, luy fait recognoistre qu’il
-                    n’avoit rien espargné pour le satisfaire : Ce qui force le déplorable <hi
-                        rend="sc">Aristée</hi> à employer son credit jusques au bout, et conjurer ce
-                    Ministre Infernal de respandre sur son Rival toutes les infortunes et les
-                    disgraces que les Demons peuvent inspirer dans <pb n="6" xml:id="p6"/>le cœur
-                    d’un mal heureux.</p>
-                <p>Sa requeste accordée il quitte le Magicien, avec asseurance de luy faire voir
-                    dans le mesme instant les effets espouvantables de sa science.</p>
-                <p>À peine sont-ils partis que le Theatre change une seconde fois de face, et tout
-                    different de la precedente Decoration, au lieu des ruine d’un Palais, fait vous
-                    un Jardin maginfique, aui par la longueur des Allées, la haulteur des
-                    Pallissades, le nombre des Fontaines, la vaste estenduë d’un Parterre, et la
-                    diversité des Arbres, des Fleurs et des Fruicts, fera parroistre par un artifice
-                    inimitable au milieu de l’Hyver, ce que le plus beau Printemps et les Saisons
-                    les plus esgayées auroient peine à produire avec l’assistance de la Nature.</p>
-                <p>Dans ce lieu delicieux, <hi rend="sc">Eurydice</hi> avec les Nymphes ses
-                    Compagnes, faisant un choix des plus belles Fleurs, est picquée par un horrible
-                    Serpent que l’on void ramper sur la Terre, et dont le mouvement libre et
-                    l’action animée sont representées avec tant de naïfveté que ce n’est pas sans
-                    peine que l’on pourroit distinguer la Nature d’avec la feinte.</p>
-                <p>
-                    <hi rend="sc">Eurydice</hi> ayant esté morellement picquée, <hi rend="sc"
-                        >Orphée</hi> n’aprend pas plustost cette triste nouvelle, que plus surpris,
-                    comme dit Ovide, qu’Olene, où que le Berger qui fous changée en Arbre, apres
-                    estre revenu de son estonnement, il entra tout à coup dans un desespoir
-                    inconsolable, et s’adressant au Soleil comme à l’Autheur de son estre : Il n’a
-                    pas plustost faict sa Requeste, qu’il void reagir l’horison d’une lumiere qui
-                    luy presage que ses vœux sont exaucez.</p>
-                <p>Pour troisiéme Decoration en cét Acte, le Soleil parroist dans son Chat, traisné
-                    par Piroys, Eous et Phlegon, ces Courriers miraculeux qui romflent le jour qui
-                    nous esclaire, et qui le conduisent sur le Zodiaque, d’où s’aprochant de la
-                    Terre pour entretenir <hi rend="sc">Orphée</hi>. Apres quelques discours il
-                    remonte dans son Char, et perçant les Nuées, faict voir à travers son Palais
-                    remply de lumieres surprenantes, dont le nombre infiny, et la Perspective joints
-                    aux brillants des diverses couleurs des mineraux, des metaux, et des corps
-                    fixes, dont les Poëtes feignent sue son Ciel est composé, feront advoüer que <pb
-                        n="7" xml:id="p7"/>l’Inventeur de ces Machines estoit seul capable
-                    d’entreprendre ce penible et glorieux travail, qui suprasse l’ydée de tout ce
-                    que l’on peut s’imaginer de beau.</p>
-                <p>Aussi pour remplir dignement cét Acte qui finit par la Decoration d’une longue
-                    Allée de Fleurs, qui naissent à l’arrivée du Soleil. Cét Astre comme inventeur
-                    de la Musique, chante un Air faict expres, dont les tons miraculeux, les
-                    reflections hardies, et les traits doux et perçans, raviront les oreilles des
-                    Auditeurs au mesme moment que tant de divers Dpectacles leur auront charmé la
-                    veuë.</p>
-            </div>
-            <div n="3" type="act">
-                <head>Acte troisiesme</head>
-                <p>
-                    <hi rend="sc">Orphée</hi> ayant apris qu’il falloit avoir recours aux Divinitez
-                    Infernalles, et sçachant par le moyen du Soleil (qui voit toutes choses) qu’il
-                    falloit pour entrer dans les enfers, descendre par cét horrible precipice que
-                    l’on void dans la Laconie, à costé du mont Thenare, se resoult de tanter ce
-                    dernier effort, et se rendant aux funestes bords des rivages sombres, il y voit
-                    les neuf replis de cét affreux Cocite, où les ames de ceux qui sont privez de
-                    sepulture, errent vagabondes à l’entour de ce Fleuve tenebreux, sans jouyr des
-                    fœlicitez des champs Élysées.</p>
-                <p>Parmu des Rochers effroyables, et les Deserts espouvantables de ces plaines
-                    infernalles, <hi rend="sc">Caron</hi> parroist dans sa Barque chargée d’Esprits,
-                    qui repoussant <hi rend="sc">Orphée</hi>, en est enfin charmé par un air
-                    miraculeux qui luy chante, ce qui contrainct le Nautonnier de le passer à
-                    l’autre rivage, et de laisser à ce bout les esprits dont son Vaisseau
-                    parroissoit remply, de peur qu’à lors la vie et la mort ne se rencontrassent
-                    ensemble.</p>
-                <p>Estant descendu, le bon Vieillard l’assiste encore de ses Conseils, et luy
-                    monstre le chemin qu’il doit tenir pour arriver au Palais de Pluton, luy fait la
-                    description des Monstres qu’il doit affronter, des fureurs qui s’opposeront à
-                    son passage, et de quelle façon il se doit gouverner parmy les rages et les
-                    barbaries, <pb n="8" xml:id="p8"/>dont les chemins de ce Royaume des Tenebres
-                    sont remplis. Ces belles Decorations finiront le troisieme Acte, dont les Vers
-                    sont aussi beaux que le Sujet est magnifique, soit en la description de toutes
-                    les Puissances Infernalles, soit dans les Transports d’<hi rend="sc"
-                        >Aristée</hi> qui le poussent en un desespoir espouvantable, sçachant qu’il
-                    estoit cause de la mort d’<hi rend="sc">Eurydice</hi>.</p>
-            </div>
-            <div n="4" type="act">
-                <head>Acte quatriesme</head>
-                <p>
-                    <hi rend="sc">Orphée</hi> arrive devant le palais de <hi rend="sc">Pluton</hi>
-                    qui s’ouvre aussi tost et fait que le Theatre changeant de face, l’on void
-                    parroistre <hi rend="sc">Pluton</hi> sur son Trosne d’Airain, ayant <hi
-                        rend="sc">Minos</hi>, <hi rend="sc">Éaque</hi> et <hi rend="sc"
-                        >Rhamadante</hi> à ses costez, et <hi rend="sc">Proserpine</hi> assize
-                    aupres de luy, Et s’enquerant du bruit qu’il entendoit, il aprend qu’un mortal
-                    sans mourir a traversé son Empire, et void entrer <hi rend="sc">Orphée</hi> qui
-                    n’a pas plustost faict sa harangue, que par les doux accords de sa Lyre et de la
-                    voix, il oblige ces cruelles Divinitez de se rendre sensibles à ses plaintes, et
-                    leur declarant le sujet de ses inquietudes par des tons languissants, des
-                    cadances mesurées et des mouvemens si touchans, que tout le Royaume Infernal
-                    charmé des douceurs de ses Chansons, en suspend les chastimens dont il afflige
-                    les criminels, et force ce Monarque inflexible d’accorder la priere d’<hi
-                        rend="sc">Orphée</hi>, aux conditions qu’il ne regarderoit point <hi
-                        rend="sc">Eurydice</hi>, qu’elle ne fust repassée à l’autre bord du Fleuve
-                    de Stix.</p>
-                <p>Icy le Lecteur auroit besoin de faire une reflexion en luy mesme, et tascher de
-                    comprenre par l’imagination, une chose qu’il seroit malaisé de luy descrire.</p>
-                <p>Aussi n’en peut-on rien dire, si ce n’est que les esprits de tous les plus
-                    habiles Machinistes ensemble, ne sçauroient produire une feinte si pleine de
-                    choses extraordinaires et surprenantes que sera cette Decoration de l’Enfer, où
-                    l’on verra tout d’un coup le Theatre couvert de flammes depuis un bout jusques à
-                        <pb n="9" xml:id="p9"/>l’autre, qui ne disparroissant pas comme un esclair,
-                    dureront autant que la Scene durera. Et feront admirer le genie et l’adresse du
-                    Machiniste, soit en l’invention de cette flamme artificielle, soit dans la
-                    Perspective, les esloignemens et les diversitez, qui le rendront mesme ce lieu
-                    d’horreur agreable à la veuë ; Le haut mesme du Theatre qui representoit le Ciel
-                    auparavant, ne parroistre plus qu’un assemblage de cent couleurs funestes, dont
-                    le triste meslange et le mouvement en estonans les Spectateurs, les laisseront
-                    dans une admiration qui n’est concevable qu’à ceux qui peuvent en avoit veu
-                    l’espreuve.</p>
-                <p>Ensuite l’Enfer se ferme et le rivage d’Acheron où <hi rend="sc">Caron</hi> passe
-                    les Esprits, parroissant aussi tost, donneront lieu d’admirer la promptitude
-                    avec laquelle ces Decorations sont changées, et la subtilité des Machines, qui
-                    dans un seul instant font voir tant d’agreables diversitez.</p>
-                <p>Sur ce Rivage, <hi rend="sc">Orphée</hi> parroist avec l’ombre d’<hi rend="sc"
-                        >Eurydice</hi>, et tout prest de toucher à l’autre bord du Fleuve, dans la
-                    défiance qu’il avoit de la promesse de Dieu qui luy rendoit son Amante, où
-                    plustost dans l’impatient desir de voir celle qu’il adoroit ; Il ne se souvient
-                    plus à quelles conditions il s’estoit obligé : Mais son cœur amoureux s’estant
-                    eslargy de joye envoya jusques à son ame des Esprits enflammez, qui maistrisans
-                    sa raison pour luy procurer un instant de plaisirs forcerent ses yeux à se
-                    tourner vers <hi rend="sc">Eurydice</hi>, qui traisnée aussi tost par <hi
-                        rend="sc">Alecton</hi> qui la conduisoit sur ces Rivages blesmis, laissa ce
-                    miserable Amant en des nuicts eternelles et des douleurs inconsolables.</p>
-                <p>Aussy quand il recognoist son mal-heur, en rejettant la cause à l’exceds de son
-                    amour, il s’arrache les cheveux, se plombe le sein de coups mortels, et
-                    s’abandonne si cruellement aux violents exceds d’un remords cuisant et
-                    raisonnable, qu’il force la mort mesme d’escouter ses plaintes, et de ne point
-                    exaucer les prieres qu’il luy faisoit pour la perte de sa vie.</p>
-                <p>Dans les resolutions estonnantes avec de sanglots meslez à des larmes
-                    continuelles, il finit ce quatriéme Acte : Et passant sur le Mont Rodoppe, rend
-                    sensible tous les objets qu’il rend tesmoins de sa douleur.</p>
-            </div>
-            <div n="5" type="act">
-                <head>Acte cinquiesme</head>
-                <p>
-                    <pb n="10" xml:id="p10"/>Un berger en racontant la mort d’<hi rend="sc"
-                        >Aristée</hi>, qui dans le desespoir d’avoir causé le trespas d’<hi
-                        rend="sc">Eurydice</hi>, s’esoit noyé dans les eaux de l’Alphée, aprend à
-                    quelques Pasteurs qu’<hi rend="sc">Orphée</hi> est sur le Mont Rodoppe, qui
-                    charme avec sa Lyre jusques aux choses inanimées.</p>
-                <p>Au mesme temps plus par enchantement que l’artifice des Machines, le Theatre se
-                    change en des Vallons et des Forests, dont la grandeur et l’estenduë sembleront
-                    un effet de la Magie si l’on estoit persuadé en la puissance de la Perspective
-                    et de l’adresse du Decorateur.</p>
-                <p>Sur le haut d’une Montagne <hi rend="sc">Orphée</hi> parroist desolé, qui ne
-                    trouvant point de remede à ses douleurs, et fuyant toutes les consolations dont
-                    il pouvoir estre capable ; Ouvre sans relasche sa bouche aux plaintes, et par
-                    les tristes souspirs d’une voix mourante, qui dans ses derniers efforts produit
-                    ses plus grands miracles : Attire les Animaux, les Rochers et les Arbres, et
-                    donne à ses objets (que la Nature n’a pourveuë que d’une ame vegetative) un
-                    esprit intellectuel et raisonnable, pour prester le silence et l’oreille à ses
-                    divines Chansons, et se rendre sensible à sa douleur.</p>
-                <p>Ayant chanté quelques airs tristes et mourants, et donné l’ame aux tons
-                    harmonieux de sa Lyre pour faire des miracles, accompagné des charmes de sa
-                    voix, Il retombe dans un desespoir qui luy persuade d’éviter tous les objets qui
-                    le peuvent divertir, et de mespriser tout le reste des femmes, puis qu’elle
-                    n’avoient plus d’<hi rend="sc">Eurydice</hi> pour luy : Mais que quelques unes
-                    d’entr’elles esprises des fureurs de <hi rend="sc">Bachus</hi>, croyans faire
-                    plaisir à leur sexe, en pardant celuy qui les avoit en horreur, plaine d’un
-                    Anthousiasme, aveugle et barbare, attaquerent ce Chantre Divin, qui pouvoit bien
-                    sans regret quitter la vie apres avoir perdu celles qu’il ne pouvoit plus
-                    rejoindre que par la mort.</p>
-                <p>D’abord les efforts de ces Bacchantes furent assez inutiles, <pb n="11"
-                        xml:id="p11"/>car les pierres charmées par la douceur de son harmonie
-                    demeurans suspendues en l’air y perdoient leur violence : Et s’abaissans
-                    doucement à ses pieds, sembloient par ce profond respect reprocher à ces ames de
-                    sang, qu’elles n’avoient sur elles que l’advantage d’un esprit abominable et
-                    sanguinaire : Mais leurs coups se redoublans et leur fureur estant plus allumée
-                    à l’aspect de cette complaisance que la nature luy rendoit par ses creatures
-                    insensibles, elle se jettent toutes ensemble sur luy et deschirent ce
-                    mal-heureux Amant, dont la belle ame alla retrouver son aymable <hi rend="sc"
-                        >Eurydice</hi>, qui sous les Myrthes amoureux des Champs Élysées,
-                    l’attendoit que les destins ordonnassent des jours de son fidel Amant.</p>
-                <p>Bachus aprenant cette funeste histoire et voyant comme ces cruelles Mesnades
-                    avoient abusé de ces sacrez mysteres en presence du Dieu <hi rend="sc">Pan</hi>
-                    et du bon <hi rend="sc">Silene</hi>, qui par lascitude demeure depuis dans la
-                    Phrigie, en fist une justice exemplaire, en les changeant soudain en Arbres. Ce
-                    qui se fait si promptement et par une Machine si surprenante, que la subtilité
-                    ne s’en peut trop admirer : Et comme cette Decoration est le dernier changement
-                    qui finit la piece : c’est aussi celle qui doit rappeller toutes les autres en
-                    la memoire, afin de loüer dignement le sieur <hi rend="sc">Buffequin</hi>, qui
-                    seul estant l’Autheur de ce grand travail, a donné des nouveautez au public qui
-                    ne se peuvent payer, ny bien concevoir par le simple recit que l’on en peut
-                    faire.</p>
-            </div>
-        </body>
-
-    </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Dessein du poème et des superbes machines du mariage d’Orphée et
+               d’Eurydice</title>
+            <title type="sub">Qui se représentera sur le théâtre du Marais par les comédiens
+               entretenus par Leurs Majestés</title>
+            <author>Anonyme</author>
+            <editor/>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et
+               édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une
+               édition comparative intermédiale innovante accompagnée d’une ressource pour le
+               repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA
+               à l’Université de Lille.</edition>
+            <respStmt>
+               <name>Karolina Suchecka</name>
+               <resp>Chargé de l’édition</resp>
+            </respStmt>
+            <respStmt>
+               <name>Nathalie Gasiglia</name>
+               <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+               <name>Karl Zieger</name>
+               <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                  <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet
+                     de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des
+                     humanités numériques. Vers une édition comparative intermédiale innovante
+                     accompagnée d’une ressource pour le repérage intertextuel »</p>
+                  <p> Cette ressource électronique protégée par le code de la propriété
+                     intellectuelle sur les bases de données (L341-1) est mise à disposition de la
+                     communauté scientifique internationale par Karolina Suchecka, selon les termes
+                     de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale
+                     - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
+                  <p> Attribution : afin de référencer la source, toute utilisation ou publication
+                     dérivée de cette ressource électroniques comportera le nom du projet et surtout
+                     l’adresse Internet de la ressource. </p>
+                  <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique,
+                     toute utilisation commerciale est interdite.</p>
+                  <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette
+                     ressource électronique, notamment en intégrant toutes les contributions
+                     extérieures, la diffusion de versions modifiées de cette ressource n’est pas
+                     souhaitable.</p>
+               </licence>
+            </availability>
+            <idno>https://gallica.bnf.fr/ark:/12148/bpt6k58171563?rk=21459;2 </idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Anonyme</author> / <title>Dessein du poème et des superbes machines du
+                  mariage d’Orphée et d’Eurydice, qui se représentera sur le théâtre du Marais par
+                  les comédiens entretenus par Leurs Majestés</title> / Paris / R. Baudry /
+               1648.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title>Dessein du poème et des superbes machines du mariage d’Orphée et
+                     d’Eurydice, qui se représentera sur le théâtre du Marais par les comédiens
+                     entretenus par Leurs Majestés</title>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>R. Baudry</publisher>
+                  <pubPlace>Paris</pubPlace>
+                  <date when="1648"/>
+               </publicationStmt>
+            </biblFull>
+            <genre>théâtre</genre>
+            <structure>baudry1648</structure>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+            Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus
+            au sein du projet. La structure des métadonnées a été établie en référence à la manière
+            dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son
+            traitement.</p>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when="1648">1648</date>
+         </creation>
+         <language>
+            <language>oFR</language>
+         </language>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>transmodalisation</item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docAuthor>Anonyme</docAuthor>
+            <docTitle>
+               <titlePart type="main">Dessein du poème et des superbes machines du mariage d’Orphée
+                  et d’Eurydice</titlePart>
+               <titlePart type="sub">Qui se représentera sur le théâtre du Marais par les comédiens
+                  entretenus par Leurs Majestés</titlePart>
+            </docTitle>
+         </titlePage>
+         <div type="introduction">
+            <head>Introduction</head>
+            <p>
+               <pb n="3" xml:id="p3"/>Puis qu’il faut que ceux qui representent les Personnages des
+               Heros en façent quelque fois les cations. Il est juste que ceux qui font la Comedie
+               pour la satisfaction du publicq, et reçoivent des graces de ceux qui les visitent,
+               donnent par un ressentiment genereux à la curiosité des absents et des personnes qui
+               ne peuvent jouyr de cét agreable divertissement : Un fidelle recit des merveilles que
+               la Scene Françoise fera parroistre dans le mois de Decembre, afin que s’ils ne
+               peuvent assister à ces fameux spectacles, ils puissent au moins en voir sur le papier
+               la superbe peinture, et cognoistre jusqu’à quels grands efforts l’esprit humain peut
+               aller en la composition des Machines les plus belles et les plus extraordinaires que
+               l’artifice des siecles presens et passez puissent inventer.</p>
+            <p>Et comme il est necessaire que toutes les partie soient parfaicte en la composition
+               d’un tout miraculeur, un sujet tout heroïque servira d’ame à ces magnifiques
+               decorations. Et le funeste Mariage <hi rend="sc">d’Orphée et d’Eurydice</hi>, estant
+               representé par les Comediens du Marests, fera voir sur leur Theatre presque en un
+               mesme instant, des Dieux du Ciel descendre sur la Terre. Des Divinitez voler dans le
+               vague des Airs. Le Soleil rouler sur son Zodiaque. Les Furies errer dans leurs
+               cavernes. Des Driades dans les bois. Des Bachantes metamorphosées en Arbres. Des
+               Serpens remper. Des Animaux marcher. La Terre s’ouvrir. L’Enfer parroistre. Et
+               l’agreable diversité des Forests. Des plaines, des Deserts, des Rochers, des
+               Montagnes et des Fleuves disputer avec la nature, pour tromper agreablement la veuë
+               des Spectateurs, et les ravir par les charmes à un artifice inimitable.</p>
+         </div>
+      </front>
+      <body>
+         <div n="1" type="act">
+            <head>Acte premier</head>
+            <p>
+               <pb n="4" xml:id="p4"/>
+               <milestone unit="sent" n="1"/>La grande thoille qui couvrira toute la face du
+               Theatre, estant levée avec une telle rapidité que les yeux dans l’instant d’un
+               esclair auront peine d’en suivre l’eslevation, l’on verra le Theatre couvert de Bois
+               et de Rochers : <milestone unit="sent" n="2"/>Dont la perspective, l’esloignement et
+               la beauté surpassant tout ce que l’on en peut d’escrire, raviront les yeux des
+               Spectateurs.</p>
+            <p>
+               <milestone unit="sent" n="3"/>Les cieux estans aussi representez avec leurs mouvemens
+               ordinaires, et ces regions inferieures ou se forment les Orages. <hi rend="sc"
+                  >Junon</hi> dans l’espoisseur des Nuées parroistra sur son Char, tout brillant de
+               celestes lumieres, et se voyant environnée de Tonneres, des Vents, des Esclairs, et
+               des Tempestes dont elle troubloit l’Empire ; Commande aux Elements de corriger
+               l’insolence des Meteores, et de luy faire un passage aysé pour descendre sur la
+               Terre, où le dessein de troubler les Nopces d’<hi rend="sc">Orphée</hi>
+               l’appelloit.</p>
+            <p>
+               <milestone unit="sent" n="4"/>Estant descenduë par une machine qui surprend
+               esgalement et l’imagination et la veuë : <milestone unit="sent" n="5"/>Elle se plaint
+               de voir tant de mortels que <hi rend="sc">Jupiter</hi> avoit mis au rang des Dieux :
+                  <milestone unit="sent" n="6"/>Et craignant qu’il ne fist <hi rend="sc"
+                  >d’Orphée</hi> comme il avoit fait <hi rend="sc">d’Apollon</hi>, de <hi rend="sc"
+                  >Diane</hi>, de <hi rend="sc">Bachus</hi>, de <hi rend="sc">Caliste</hi>, et de
+               tant d’autre Divinitez à lui l’on donnoit à l’Encens, Elle se resout d’aller trouver
+                  l’<hi rend="sc">Envie</hi> dans son Antre, pour luy declarer ses desseins et
+               l’obliger à servir sa colere.</p>
+            <p>
+               <milestone unit="sent" n="7"/>Dans ce sentiment elle appelle l’<hi rend="sc"
+                  >Envie</hi>, qui se devorant elle mesme sur un lict d’Aspices et de Lezards,
+               accourt au bruit de cette divine voix, toute couverte de Viperes qui luy servoient de
+               nourriture et d’habillement. <milestone unit="sent" n="8"/>Et par trois fois pour
+               marque de son obeyssance ayant branslé sa teste, qui pour cheveux n’avoit que
+               d’horribles couleuvres : <milestone unit="sent" n="9"/>Elle escoute attentivement <hi
+                  rend="sc">Junon</hi>, et pressant les furieux Serpens qu’elle tenoit à replis
+               tortueux entre ses mains, de peut que leur siflemens n’interrompissent cette
+               Divinité, Elle reçoit l’ordre d’aller <pb n="5" xml:id="p5"/>au bord de Pensée,
+               inspirer dans le cœur d’un jaloux rival les fureurs necessaires pour desrober à la
+               passion d’<hi rend="sc">Orphée</hi> la jouyssance de la belle <hi rend="sc"
+                  >Eurydice</hi>.</p>
+            <p>
+               <milestone unit="sent" n="10"/>L’<hi rend="sc">Envie</hi> pour executer les
+               commandemens de <hi rend="sc">Junon</hi>, va trouver le berger <hi rend="sc"
+                  >Aristée</hi>, et luy jettant un Serpent qui se glisse imperceptiblement jusques
+               dans son cœur, luy donne des pensées de jalousie et des transports de hayne et de
+               vengeance, où pour la perte d’<hi rend="sc">Orphée</hi>, ou pour la punition d’<hi
+                  rend="sc">Eurydice</hi>.</p>
+            <p>
+               <milestone unit="sent" n="11"/>Cet amoureux desesperé dans ces furieux mouvements,
+               abordant <hi rend="sc">Eurydice</hi>, n’en est payé que de justes mespris. <milestone
+                  unit="sent" n="12"/>Et sa douleur ne pouvant estre consolée par l’assistance des
+               hommes, il se resoult de recourir aux forces de la magie, et de voir si les Demons
+               pourroient le rendre plus heureux, où flater son desespoir, en luy faisant cognoistre
+               quels succéz auroit son Amour dans cette pensée ? <milestone unit="sent" n="13"/>Il
+               s’emporte à toutes les violences que la fureur luy suggere, et ferme l’Acte en
+               abandonnant sa raison à toutes les passions qui tirannisoient son ame.</p>
+         </div>
+         <div n="2" type="act">
+            <head>Acte second</head>
+            <p>
+               <milestone unit="sent" n="14"/>Le théâtre ayant changé de face, le vieil <hi
+                  rend="sc">Eurimedon</hi> dans les ruines d’un superbe bastiment dont il faisoit sa
+               demeur, aprend au Pasteur <hi rend="sc">Aristée</hi> les funestes succéz de sa
+               conference avec les Demons. <milestone unit="sent" n="15"/>Et parmy les Colomnes, les
+               Portiques, les Chapiteaux, les Festons et les Trophées desmolis, luy monstre les
+               endoits où pour l’invoquation des furies de l’Enfer, il faisoit ses Libations et ses
+               Sacrifices, et luy faisant encore remarquer du costé de l’Orient les cernes et les
+               neufs parties d’où ses parfums avoient exalé leur esprits abstratifs et violents, luy
+               fait recognoistre qu’il n’avoit rien espargné pour le satisfaire : <milestone
+                  unit="sent" n="16"/>Ce qui force le déplorable <hi rend="sc">Aristée</hi> à
+               employer son credit jusques au bout, et conjurer ce Ministre Infernal de respandre
+               sur son Rival toutes les infortunes et les disgraces que les Demons peuvent inspirer
+               dans <pb n="6" xml:id="p6"/>le cœur d’un mal heureux.</p>
+            <p>
+               <milestone unit="sent" n="17"/>Sa requeste accordée il quitte le Magicien, avec
+               asseurance de luy faire voir dans le mesme instant les effets espouvantables de sa
+               science.</p>
+            <p>
+               <milestone unit="sent" n="18"/>À peine sont-ils partis que le Theatre change une
+               seconde fois de face, et tout different de la precedente Decoration, au lieu des
+               ruine d’un Palais, fait vous un Jardin maginfique, aui par la longueur des Allées, la
+               haulteur des Pallissades, le nombre des Fontaines, la vaste estenduë d’un Parterre,
+               et la diversité des Arbres, des Fleurs et des Fruicts, fera parroistre par un
+               artifice inimitable au milieu de l’Hyver, ce que le plus beau Printemps et les
+               Saisons les plus esgayées auroient peine à produire avec l’assistance de la
+               Nature.</p>
+            <p>
+               <milestone unit="sent" n="19"/>Dans ce lieu delicieux, <hi rend="sc">Eurydice</hi>
+               avec les Nymphes ses Compagnes, faisant un choix des plus belles Fleurs, est picquée
+               par un horrible Serpent que l’on void ramper sur la Terre, et dont le mouvement libre
+               et l’action animée sont representées avec tant de naïfveté que ce n’est pas sans
+               peine que l’on pourroit distinguer la Nature d’avec la feinte.</p>
+            <p>
+               <hi rend="sc">Eurydice</hi> ayant esté morellement picquée, <hi rend="sc">Orphée</hi>
+               n’aprend pas plustost cette triste nouvelle, que plus surpris, comme dit Ovide,
+               qu’Olene, où que le Berger qui fous changée en Arbre, apres estre revenu de son
+               estonnement, il entra tout à coup dans un desespoir inconsolable, et s’adressant au
+               Soleil comme à l’Autheur de son estre : <milestone unit="sent" n="20"/>Il n’a pas
+               plustost faict sa Requeste, qu’il void reagir l’horison d’une lumiere qui luy presage
+               que ses vœux sont exaucez.</p>
+            <p>
+               <milestone unit="sent" n="21"/>Pour troisiéme Decoration en cét Acte, le Soleil
+               parroist dans son Chat, traisné par Piroys, Eous et Phlegon, ces Courriers miraculeux
+               qui romflent le jour qui nous esclaire, et qui le conduisent sur le Zodiaque, d’où
+               s’aprochant de la Terre pour entretenir <hi rend="sc">Orphée</hi>. <milestone
+                  unit="sent" n="22"/>Apres quelques discours il remonte dans son Char, et perçant
+               les Nuées, faict voir à travers son Palais remply de lumieres surprenantes, dont le
+               nombre infiny, et la Perspective joints aux brillants des diverses couleurs des
+               mineraux, des metaux, et des corps fixes, dont les Poëtes feignent sue son Ciel est
+               composé, feront advoüer que <pb n="7" xml:id="p7"/>l’Inventeur de ces Machines estoit
+               seul capable d’entreprendre ce penible et glorieux travail, qui suprasse l’ydée de
+               tout ce que l’on peut s’imaginer de beau.</p>
+            <p>
+               <milestone unit="sent" n="23"/>Aussi pour remplir dignement cét Acte qui finit par la
+               Decoration d’une longue Allée de Fleurs, qui naissent à l’arrivée du Soleil.
+                  <milestone unit="sent" n="24"/>Cét Astre comme inventeur de la Musique, chante un
+               Air faict expres, dont les tons miraculeux, les reflections hardies, et les traits
+               doux et perçans, raviront les oreilles des Auditeurs au mesme moment que tant de
+               divers Dpectacles leur auront charmé la veuë.</p>
+         </div>
+         <div n="3" type="act">
+            <head>Acte troisiesme</head>
+            <p>
+               <hi rend="sc">Orphée</hi> ayant apris qu’il falloit avoir recours aux Divinitez
+               Infernalles, et sçachant par le moyen du Soleil (qui voit toutes choses) qu’il
+               falloit pour entrer dans les enfers, descendre par cét horrible precipice que l’on
+               void dans la Laconie, à costé du mont Thenare, se resoult de tanter ce dernier
+               effort, et se rendant aux funestes bords des rivages sombres, il y voit les neuf
+               replis de cét affreux Cocite, où les ames de ceux qui sont privez de sepulture,
+               errent vagabondes à l’entour de ce Fleuve tenebreux, sans jouyr des fœlicitez des
+               champs Élysées.</p>
+            <p>
+               <milestone unit="sent" n="25"/>Parmu des Rochers effroyables, et les Deserts
+               espouvantables de ces plaines infernalles, <hi rend="sc">Caron</hi> parroist dans sa
+               Barque chargée d’Esprits, qui repoussant <hi rend="sc">Orphée</hi>, en est enfin
+               charmé par un air miraculeux qui luy chante, ce qui contrainct le Nautonnier de le
+               passer à l’autre rivage, et de laisser à ce bout les esprits dont son Vaisseau
+               parroissoit remply, de peur qu’à lors la vie et la mort ne se rencontrassent
+               ensemble.</p>
+            <p>
+               <milestone unit="sent" n="26"/>Estant descendu, le bon Vieillard l’assiste encore de
+               ses Conseils, et luy monstre le chemin qu’il doit tenir pour arriver au Palais de
+               Pluton, luy fait la description des Monstres qu’il doit affronter, des fureurs qui
+               s’opposeront à son passage, et de quelle façon il se doit gouverner parmy les rages
+               et les barbaries, <pb n="8" xml:id="p8"/>dont les chemins de ce Royaume des Tenebres
+               sont remplis. <milestone unit="sent" n="27"/>Ces belles Decorations finiront le
+               troisieme Acte, dont les Vers sont aussi beaux que le Sujet est magnifique, soit en
+               la description de toutes les Puissances Infernalles, soit dans les Transports d’<hi
+                  rend="sc">Aristée</hi> qui le poussent en un desespoir espouvantable, sçachant
+               qu’il estoit cause de la mort d’<hi rend="sc">Eurydice</hi>.</p>
+         </div>
+         <div n="4" type="act">
+            <head>Acte quatriesme</head>
+            <p>
+               <hi rend="sc">Orphée</hi> arrive devant le palais de <hi rend="sc">Pluton</hi> qui
+               s’ouvre aussi tost et fait que le Theatre changeant de face, l’on void parroistre <hi
+                  rend="sc">Pluton</hi> sur son Trosne d’Airain, ayant <hi rend="sc">Minos</hi>, <hi
+                  rend="sc">Éaque</hi> et <hi rend="sc">Rhamadante</hi> à ses costez, et <hi
+                  rend="sc">Proserpine</hi> assize aupres de luy, Et s’enquerant du bruit qu’il
+               entendoit, il aprend qu’un mortel sans mourir a traversé son Empire, et void entrer
+                  <hi rend="sc">Orphée</hi> qui n’a pas plustost faict sa harangue, que par les doux
+               accords de sa Lyre et de la voix, il oblige ces cruelles Divinitez de se rendre
+               sensibles à ses plaintes, et leur declarant le sujet de ses inquietudes par des tons
+               languissants, des cadances mesurées et des mouvemens si touchans, que tout le Royaume
+               Infernal charmé des douceurs de ses Chansons, en suspend les chastimens dont il
+               afflige les criminels, et force ce Monarque inflexible d’accorder la priere d’<hi
+                  rend="sc">Orphée</hi>, aux conditions qu’il ne regarderoit point <hi rend="sc"
+                  >Eurydice</hi>, qu’elle ne fust repassée à l’autre bord du Fleuve de Stix.</p>
+            <p>
+               <milestone unit="sent" n="28"/>Icy le Lecteur auroit besoin de faire une reflexion en
+               luy mesme, et tascher de comprenre par l’imagination, une chose qu’il seroit malaisé
+               de luy descrire.</p>
+            <p>
+               <milestone unit="sent" n="29"/>Aussi n’en peut-on rien dire, si ce n’est que les
+               esprits de tous les plus habiles Machinistes ensemble, ne sçauroient produire une
+               feinte si pleine de choses extraordinaires et surprenantes que sera cette Decoration
+               de l’Enfer, où l’on verra tout d’un coup le Theatre couvert de flammes depuis un bout
+               jusques à <pb n="9" xml:id="p9"/>l’autre, qui ne disparroissant pas comme un esclair,
+               dureront autant que la Scene durera. <milestone unit="sent" n="30"/>Et feront admirer
+               le genie et l’adresse du Machiniste, soit en l’invention de cette flamme
+               artificielle, soit dans la Perspective, les esloignemens et les diversitez, qui le
+               rendront mesme ce lieu d’horreur agreable à la veuë ; Le haut mesme du Theatre qui
+               representoit le Ciel auparavant, ne parroistre plus qu’un assemblage de cent couleurs
+               funestes, dont le triste meslange et le mouvement en estonans les Spectateurs, les
+               laisseront dans une admiration qui n’est concevable qu’à ceux qui peuvent en avoit
+               veu l’espreuve.</p>
+            <p>
+               <milestone unit="sent" n="31"/>Ensuite l’Enfer se ferme et le rivage d’Acheron où <hi
+                  rend="sc">Caron</hi> passe les Esprits, parroissant aussi tost, donneront lieu
+               d’admirer la promptitude avec laquelle ces Decorations sont changées, et la subtilité
+               des Machines, qui dans un seul instant font voir tant d’agreables diversitez.</p>
+            <p>
+               <milestone unit="sent" n="32"/>Sur ce Rivage, <hi rend="sc">Orphée</hi> parroist avec
+               l’ombre d’<hi rend="sc">Eurydice</hi>, et tout prest de toucher à l’autre bord du
+               Fleuve, dans la défiance qu’il avoit de la promesse de Dieu qui luy rendoit son
+               Amante, où plustost dans l’impatient desir de voir celle qu’il adoroit ; Il ne se
+               souvient plus à quelles conditions il s’estoit obligé : <milestone unit="sent" n="33"
+               />Mais son cœur amoureux s’estant eslargy de joye envoya jusques à son ame des
+               Esprits enflammez, qui maistrisans sa raison pour luy procurer un instant de plaisirs
+               forcerent ses yeux à se tourner vers <hi rend="sc">Eurydice</hi>, qui traisnée aussi
+               tost par <hi rend="sc">Alecton</hi> qui la conduisoit sur ces Rivages blesmis, laissa
+               ce miserable Amant en des nuicts eternelles et des douleurs inconsolables.</p>
+            <p>
+               <milestone unit="sent" n="34"/>Aussy quand il recognoist son mal-heur, en rejettant
+               la cause à l’exceds de son amour, il s’arrache les cheveux, se plombe le sein de
+               coups mortels, et s’abandonne si cruellement aux violents exceds d’un remords cuisant
+               et raisonnable, qu’il force la mort mesme d’escouter ses plaintes, et de ne point
+               exaucer les prieres qu’il luy faisoit pour la perte de sa vie.</p>
+            <p>
+               <milestone unit="sent" n="35"/>Dans les resolutions estonnantes avec de sanglots
+               meslez à des larmes continuelles, il finit ce quatriéme Acte : <milestone unit="sent"
+                  n="36"/>Et passant sur le Mont Rodoppe, rend sensible tous les objets qu’il rend
+               tesmoins de sa douleur.</p>
+         </div>
+         <div n="5" type="act">
+            <head>Acte cinquiesme</head>
+            <p>
+               <pb n="10" xml:id="p10"/>
+               <milestone unit="sent" n="37"/>Un berger en racontant la mort d’<hi rend="sc"
+                  >Aristée</hi>, qui dans le desespoir d’avoir causé le trespas d’<hi rend="sc"
+                  >Eurydice</hi>, s’esoit noyé dans les eaux de l’Alphée, aprend à quelques Pasteurs
+                  qu’<hi rend="sc">Orphée</hi> est sur le Mont Rodoppe, qui charme avec sa Lyre
+               jusques aux choses inanimées.</p>
+            <p>
+               <milestone unit="sent" n="38"/>Au mesme temps plus par enchantement que l’artifice
+               des Machines, le Theatre se change en des Vallons et des Forests, dont la grandeur et
+               l’estenduë sembleront un effet de la Magie si l’on estoit persuadé en la puissance de
+               la Perspective et de l’adresse du Decorateur.</p>
+            <p>
+               <milestone unit="sent" n="39"/>Sur le haut d’une Montagne <hi rend="sc">Orphée</hi>
+               parroist desolé, qui ne trouvant point de remede à ses douleurs, et fuyant toutes les
+               consolations dont il pouvoir estre capable ; Ouvre sans relasche sa bouche aux
+               plaintes, et par les tristes souspirs d’une voix mourante, qui dans ses derniers
+               efforts produit ses plus grands miracles : <milestone unit="sent" n="40"/>Attire les
+               Animaux, les Rochers et les Arbres, et donne à ses objets (que la Nature n’a pourveuë
+               que d’une ame vegetative) un esprit intellectuel et raisonnable, pour prester le
+               silence et l’oreille à ses divines Chansons, et se rendre sensible à sa douleur.</p>
+            <p>
+               <milestone unit="sent" n="41"/>Ayant chanté quelques airs tristes et mourants, et
+               donné l’ame aux tons harmonieux de sa Lyre pour faire des miracles, accompagné des
+               charmes de sa voix, Il retombe dans un desespoir qui luy persuade d’éviter tous les
+               objets qui le peuvent divertir, et de mespriser tout le reste des femmes, puis
+               qu’elle n’avoient plus d’<hi rend="sc">Eurydice</hi> pour luy : <milestone
+                  unit="sent" n="42"/>Mais que quelques unes d’entr’elles esprises des fureurs de
+                  <hi rend="sc">Bachus</hi>, croyans faire plaisir à leur sexe, en pardant celuy qui
+               les avoit en horreur, plaine d’un Anthousiasme, aveugle et barbare, attaquerent ce
+               Chantre Divin, qui pouvoit bien sans regret quitter la vie apres avoir perdu celles
+               qu’il ne pouvoit plus rejoindre que par la mort.</p>
+            <p>
+               <milestone unit="sent" n="43"/>D’abord les efforts de ces Bacchantes furent assez
+               inutiles, <pb n="11" xml:id="p11"/>car les pierres charmées par la douceur de son
+               harmonie demeurans suspendues en l’air y perdoient leur violence : <milestone
+                  unit="sent" n="44"/>Et s’abaissans doucement à ses pieds, sembloient par ce
+               profond respect reprocher à ces ames de sang, qu’elles n’avoient sur elles que
+               l’advantage d’un esprit abominable et sanguinaire : <milestone unit="sent" n="45"
+               />Mais leurs coups se redoublans et leur fureur estant plus allumée à l’aspect de
+               cette complaisance que la nature luy rendoit par ses creatures insensibles, elle se
+               jettent toutes ensemble sur luy et deschirent ce mal-heureux Amant, dont la belle ame
+               alla retrouver son aymable <hi rend="sc">Eurydice</hi>, qui sous les Myrthes amoureux
+               des Champs Élysées, l’attendoit que les destins ordonnassent des jours de son fidel
+               Amant.</p>
+            <p>
+               <milestone unit="sent" n="46"/>Bachus aprenant cette funeste histoire et voyant comme
+               ces cruelles Mesnades avoient abusé de ces sacrez mysteres en presence du Dieu <hi
+                  rend="sc">Pan</hi> et du bon <hi rend="sc">Silene</hi>, qui par lascitude demeure
+               depuis dans la Phrigie, en fist une justice exemplaire, en les changeant soudain en
+               Arbres. <milestone unit="sent" n="47"/>Ce qui se fait si promptement et par une
+               Machine si surprenante, que la subtilité ne s’en peut trop admirer : <milestone
+                  unit="sent" n="48"/>Et comme cette Decoration est le dernier changement qui finit
+               la piece : c’est aussi celle qui doit rappeller toutes les autres en la memoire, afin
+               de loüer dignement le sieur <hi rend="sc">Buffequin</hi>, qui seul estant l’Autheur
+               de ce grand travail, a donné des nouveautez au public qui ne se peuvent payer, ny
+               bien concevoir par le simple recit que l’on en peut faire.</p>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,291 +1,358 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
-        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
-        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">Orphée</title>
-                <title type="sub">Cantate avec simphonie</title>
-                <author>Nicolas Racot Grandval</author>
-                <editor/>
-            </titleStmt>
-            <editionStmt>
-                <edition>Cette édition électronique fait partie du projet de thèse intitulé
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Orphée</title>
+            <title type="sub">Cantate avec simphonie</title>
+            <author>Nicolas Racot Grandval</author>
+            <editor/>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cette édition électronique fait partie du projet de thèse intitulé
                     « Analyse et édition d’un corpus littéraire dans l’esprit des humanités
                     numériques. Vers une édition comparative intermédiale innovante accompagnée
                     d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au
                     sein du laboratoire ALITHILA à l’Université de Lille.</edition>
-                <respStmt>
-                    <name>Karolina Suchecka</name>
-                    <resp>Chargé de l’édition</resp>
-                </respStmt>
-                <respStmt>
-                    <name>Nathalie Gasiglia</name>
-                    <resp>Co-tutrice de thèse</resp>
-                </respStmt>
-                <respStmt>
-                    <name>Karl Zieger</name>
-                    <resp>Co-tuteur de thèse</resp>
-                </respStmt>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Karolina Suchecka</publisher>
-                <publisher>ALITHILA (Université Lille III)</publisher>
-                <date when="2019"/>
-                <availability status="restricted">
-                    <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                        <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
+            <respStmt>
+               <name>Karolina Suchecka</name>
+               <resp>Chargé de l’édition</resp>
+            </respStmt>
+            <respStmt>
+               <name>Nathalie Gasiglia</name>
+               <resp>Co-tutrice de thèse</resp>
+            </respStmt>
+            <respStmt>
+               <name>Karl Zieger</name>
+               <resp>Co-tuteur de thèse</resp>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Karolina Suchecka</publisher>
+            <publisher>ALITHILA (Université Lille III)</publisher>
+            <date when="2019"/>
+            <availability status="restricted">
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                  <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le
                             projet de thèse « Analyse et édition d’un corpus littéraire dans
                             l’esprit des humanités numériques. Vers une édition comparative
                             intermédiale innovante accompagnée d’une ressource pour le repérage
                             intertextuel »</p>
-                        <p> Cette ressource électronique protégée par le code de la propriété
+                  <p> Cette ressource électronique protégée par le code de la propriété
                             intellectuelle sur les bases de données (L341-1) est mise à disposition
                             de la communauté scientifique internationale par Karolina Suchecka,
                             selon les termes de la licence Creative Commons : « Attribution - Pas
                             d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND
                             3.0 FR) ». </p>
-                        <p> Attribution : afin de référencer la source, toute utilisation ou
+                  <p> Attribution : afin de référencer la source, toute utilisation ou
                             publication dérivée de cette ressource électroniques comportera le nom
                             du projet et surtout l’adresse Internet de la ressource. </p>
-                        <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
+                  <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté
                             scientifique, toute utilisation commerciale est interdite.</p>
-                        <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
+                  <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger
                             cette ressource électronique, notamment en intégrant toutes les
                             contributions extérieures, la diffusion de versions modifiées de cette
                             ressource n’est pas souhaitable.</p>
-                    </licence>
-                </availability>
-                <idno>https://gallica.bnf.fr/ark:/12148/bpt6k53907011/</idno>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl><author>Nicolas Racot Grandval</author> / <title> Orphée. Cantate avec
+               </licence>
+            </availability>
+            <idno>https://gallica.bnf.fr/ark:/12148/bpt6k53907011/</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Nicolas Racot Grandval</author> / <title> Orphée. Cantate avec
                         simphonie</title> / Paris / Ancien fonds du Conservatoire, D-1343 (5) /
                     1729.</bibl>
-                <biblFull>
-                    <titleStmt>
-                        <title> Orphée. Cantate avec simphonie.</title>
-                    </titleStmt>
-                    <publicationStmt>
-                        <publisher>Ancien fonds du Conservatoire, D-1343 (5)</publisher>
-                        <pubPlace>Paris</pubPlace>
-                        <date when="1729"/>
-                    </publicationStmt>
-                </biblFull>
-                <genre>opéra</genre>
-                <structure>grandval1729</structure>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
+            <biblFull>
+               <titleStmt>
+                  <title> Orphée. Cantate avec simphonie.</title>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Ancien fonds du Conservatoire, D-1343 (5)</publisher>
+                  <pubPlace>Paris</pubPlace>
+                  <date when="1729"/>
+               </publicationStmt>
+            </biblFull>
+            <genre>opéra</genre>
+            <structure>grandval1729</structure>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML.
                 Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python
                 conçus au sein du projet. La structure des métadonnées a été établie en référence à
                 la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour
                 son traitement.</p>
-        </encodingDesc>
-        <profileDesc>
-            <creation>
-                <date when="1729">1729</date>
-            </creation>
-            <language>
-                <language>FR</language>
-            </language>
-            <textClass>
-                <keywords>
-                    <list>
-                        <item>parodie</item>
-                    </list>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <front>
-            <titlePage>
-                <docAuthor>Nicolas Racot Grandval</docAuthor>
-                <docTitle>
-                    <titlePart type="main"> Orphée</titlePart>
-                    <titlePart type="sub">Cantate avec simphonie</titlePart>
-                </docTitle>
-            </titlePage>
-            <div type="introduction">
-                <l>Moy qui chantay jadis le célèbre Cartouche,</l>
-                <l>Ce grand Tueur d’Exempts, ce fier Tapeur de mouche,</l>
-                <l>Je chante maintenant le Phœnix des Époux.</l>
-                <l>Ses amis les plus chers avoient beau crier tous :</l>
-                <l>« N’allez point aux Enfers, laissez-la votre femme !</l>
-                <l>Elle est deffunte ? Hé bien, Dieu veille avoir son ame !</l>
-                <l>Pourquoy courir chercher une Épouse si loin ?</l>
-                <l>Y pensez-vous ? Dieux, quelle extravagance !</l>
-                <l>Ah ! qu’il est de Maris en France</l>
-                <l>Qui ne prendroient pas tant de soin !</l>
-                <l>Profitez de votre veuvage ;</l>
-                <l>Songez à quels perils ce projet vous engage ;</l>
-                <l>En vain pour revenir vous feriez mille efforts ;</l>
-                <l>On ne voit point deux fois le rivage des Morts. »</l>
-                <l>« Retirez-vous, dit-il, Troupe lâche et jalouse.</l>
-                <l>Je pourrois oublier une si chere Épouse !</l>
-                <l>De ses vertus mon cœur sera toujours épris.</l>
-                <l>Une femme fidelle est un tresor sans prix.</l>
-                <l>Ainsi malgré tout ce qu’on put luy dire</l>
-                <l>Il partit, ramena l’objet de son martire.</l>
-                <l>Hélas, est-il encor de ce Maris constants ?</l>
-                <l>Ces miracles d’amour ? Ce n’est est plus le temps.</l>
-                <l>Mais entrons en matiere, et sans craindre la fronde</l>
-                <l>Va, fruit de mes travaux, pousse-toy dans le monde.</l>
-                <l>Puisse-tu, ma Cantate, avoir un heureux sort</l>
-                <l>Et de maints bons écus remplir mon coffre fort !</l>
-            </div>
-        </front>
-        <body>
-
-            <label>Récitatif</label>
-            <l><pb n="2" xml:id="p2"/>Le fameux chantre de la Trace</l>
-            <l>Par les regrets les plus touchans</l>
-            <l>Déploroit ainsi sa disgrace,</l>
-            <l>Courant come un fou par les champs :</l>
-            <label>Air</label>
-            <l><pb n="3" xml:id="p3"/>« Rien ne peut soulager la douleur qui me presse ;</l>
-            <l>Je ne revéray plus l’objet de ma tendresse ;</l>
-            <l>L’amour, le tendre amour, nous unissoit tous deux ;</l>
-            <l>Hélas, fut-il jamais amant plus malheureux.</l>
-            <l>Or écoutez, petits et grands,</l>
-            <l>Mon méchef et mes accidents…</l>
-            <l>Mais à qui tien-je un tel langage ?</l>
-            <l>À qui dans ce desert sauvage</l>
-            <l>Veux-je apprendre mon triste état ?</l>
-            <l>Il n’est icy ny chien ny chat.</l>
-            <label>Deuxième couplet</label>
-            <l>Faut-il mes plaintes ravaler</l>
-            <l>En si beau sujet de parler ?</l>
-            <l>Faut-il perdre vers et musique ?</l>
-            <l>J’avois des choses magnifiques,</l>
-            <l>Plaignons-nous du moins aux Écos.</l>
-            <l>Imittons les tendres heros.</l>
-            <l>Fidelles Écos de ces bois</l>
-            <l>Cessez de répondre à ma <pb n="4" xml:id="p4"/>voix :</l>
-            <l>Fidelles. La mort, cette barbare, et bien !</l>
-            <l>Pour jamais nous separe, vous m’entendez bien.</l>
-            <l>Pourquoy tant pleurer et me plaindre encore !</l>
-            <l>Allons retirer celle que j’adore ;</l>
-            <l>Le Roy du sombre manoir</l>
-            <l>N’est pas si Diable qu’il est noir.</l>
-            <l><pb n="6" xml:id="p6"/>Décendons chez Pluton, Raplon, décendon chez Pluton ;</l>
-            <l>Par quelque chansonette attendrissons ce Barbon, Raplon.</l>
-            <l>Ramenons ma Poulette, mon joly tendron.</l>
-            <l><pb n="7" xml:id="p7"/>Je commence à prendre courage ;</l>
-            <l>Ce gouffre obscur m’ouvre un passage</l>
-            <l>Pour pénétrer aux sombres bords :</l>
-            <l>C’est trop faire icy le Jocrisse ;</l>
-            <l>J’aime autant rester chez les morts</l>
-            <l>Que d’être au lit sans Euridice.</l>
-            <label>Air gai</label>
-            <l>Allez Orphée, allez au Diable,</l>
-            <l>Servez d’exemple à <pb n="8" xml:id="p8"/>l’univers ;</l>
-            <l>Pour rejoindre un objet aimable</l>
-            <l>Il est beau d’aller aux Enfers :</l>
-            <l>Partez, courez au Sombre empire,</l>
-            <l>ta ta le ri ta ta le ri ta ta le rire.</l>
-            <l>Notre amant se met en chemin</l>
-            <l>Et dans l’Empire souterrain</l>
-            <l>Il dégringole en moins de rien,</l>
-            <l>Ô reguingué, ô lonlala,</l>
-            <l>Et malgré Cerbère et la Parque</l>
-            <l>Parvient jusqu’au piés du Monarque.</l>
-            <l>Après s’être un peu rajusté ;</l>
-            <l>Son luth tout d’or bien accordé ;</l>
-            <l>De presens tout son cou craché</l>
-            <l>Lon lan la derirette</l>
-            <l>Il tient le discours que voicy</l>
-            <l>Lon lan la deriry :</l>
-            <l><pb n="10" xml:id="p10"/>Prince enfumé de ces Royaumes Sombres,</l>
-            <l>Je suis (dit-on) le fils du Dieu du jour,</l>
-            <l>Plus malheureux que vos plus tristes Ombres ;</l>
-            <l>Et mon malheur <pb n="11" xml:id="p11"/>est causé par l’Amour.</l>
-            <l><pb n="12" xml:id="p12"/>On m’a ravy méchament ma femme Euridice ;</l>
-            <l>Un vilain maudit Serpent remply de malice</l>
-            <l>La guettant sur le gazon</l>
-            <l>L’a piquée en trahison.</l>
-            <l>Ah, quelle injustice !</l>
-            <l><pb n="13" xml:id="p13"/>Le Prince en face noire repond : « Pati pata,</l>
-            <l>Innocent, peut-tu croire que l’on te la rendra ?</l>
-            <l>Pour en perdre la mémoire</l>
-            <l>Dans le fleuve d’oubly va t’en boire. »</l>
-            <l><pb n="14" xml:id="p14"/>Du sort réparez le caprice,</l>
-            <l>Laissez-vous toucher par mes pleurs :</l>
-            <l>Rendez-moy ma chere Euridice,</l>
-            <l>Ne séparez pas nos deux cœurs.</l>
-            <l>J’aimois ma compagne de couche,</l>
-            <l>La pauvrette m’aimoit aussi :</l>
-            <l>Vous seriez pire qu’un Cartouche</l>
-            <l>De la vouloir garder icy.</l>
-            <l>Laissez-vous toucher par mes pleurs,</l>
-            <l>Rendez-moy ma chere Euridice,</l>
-            <l>Ne séparez pas nos deux cœurs.</l>
-            <l><pb n="16" xml:id="p16"/>Vous avez ressenty la flâme</l>
-            <l>Du Dieu dont j’éprouve les traits,</l>
-            <l>Quand vous prites pour vostre femme</l>
-            <l>L’aimable fille de Cérés.</l>
-            <l><pb n="17" xml:id="p17"/>Par cette Épouse si chere</l>
-            <l>Lachez l’objet de mes vœux.</l>
-            <l>Que de retour sur la terre</l>
-            <l>Nous puissions encor tous deux</l>
-            <l>Laire lan la landerirette</l>
-            <l>Laire lan la landerira.</l>
-            <l><pb n="18" xml:id="p18"/>Un exces d’amour conjugal</l>
-            <l>M’amene dans ce lieu fatal :</l>
-            <l>Mon nom apres cette aventure</l>
-            <l>Sera placé dans le Mercure.</l>
-            <l><pb n="19" xml:id="p19"/>Que d’apas à ma fripone !</l>
-            <l>Quels minois ! Quel teint ! quels yeux !</l>
-            <l>Sans vouloir choquer personne</l>
-            <l>Il n’est pas dans ces bas lieux</l>
-            <l>Plus joly chignon, mirliton mirlitaine,</l>
-            <l>Plus joly chignon dondon.</l>
-            <l><pb n="20" xml:id="p20"/>Je viens expres au Sabat, en robbe longue, en rabat,</l>
-            <l>Chercher mon Euridice qui manque à mon grabat.</l>
-            <label>Deuxième couplet</label>
-            <l><pb n="21" xml:id="p21"/>Si vous aimez le muscat,</l>
-            <l>J’en ay du plus delicat.</l>
-            <l>Jambon, boudin, saucisse,</l>
-            <l>Le présent n’est pas fat.</l>
-            <l>Pluton surpris d’entendre</l>
-            <l>Des discours si touchans :</l>
-            <l>« Prens-la sans pour attendre,</l>
-            <l>Avec <pb n="22" xml:id="p22"/>la clef des champs.</l>
-            <l>Va-t’en gay, d’un air gay,</l>
-            <l>En batteau, dessus l’eau.</l>
-            <l>Emmeine ta Conquete,</l>
-            <l>Mais prens garde en chemin</l>
-            <l>De <pb n="23" xml:id="p23"/>détourner la teste</l>
-            <l>Ou tu voudras en vain.</l>
-            <l>Et flon flon la lira dondaine,</l>
-            <l>Flon flon flon la lira dondon.</l>
-            <l>Partons, mon fils,</l>
-            <l>Me suis-tu ma poulette ?</l>
-            <l>Ouy, je te suis ;</l>
-            <l>Prens-moy par ma Jaquette,</l>
-            <l>Doublons le pas, allons, allons, allons,</l>
-            <l>Allons à la guinguette, allons.</l>
-            <l><pb n="24" xml:id="p24"/>Chantez la victoire éclatante</l>
-            <l>Que remporte le tendre amour :</l>
-            <l>Son ardeur est triomphante</l>
-            <l><pb n="25" xml:id="p25"/>Jusque dans le sombre sejour,</l>
-            <l>Sonnez houbois, battez tambour,</l>
-            <l>Chantez la victoire éclatante</l>
-            <l>Que remporte le tendre amour.</l>
-            <label>Chœur</label>
-            <l>Chantons la Victoire éclatante</l>
-            <l>Que remporte le tendre amour :</l>
-            <l><pb n="26" xml:id="p26"/>Son ardeur est triomphante</l>
-            <l>Jusque dans le sombre sejour,</l>
-            <l>Sonnez houbois, battez tambour,</l>
-            <l>Chantez la victoire éclatante</l>
-            <l>Que remporte le tendre amour, <hi rend="i">etc.</hi></l>
-        </body>
-
-    </text>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when="1729">1729</date>
+         </creation>
+         <language>
+            <language>FR</language>
+         </language>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>parodie</item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docAuthor>Nicolas Racot Grandval</docAuthor>
+            <docTitle>
+               <titlePart type="main"> Orphée</titlePart>
+               <titlePart type="sub">Cantate avec simphonie</titlePart>
+            </docTitle>
+         </titlePage>
+         <div type="introduction">
+            <l>Moy qui chantay jadis le célèbre Cartouche,</l>
+            <l>Ce grand Tueur d’Exempts, ce fier Tapeur de mouche,</l>
+            <l>Je chante maintenant le Phœnix des Époux.</l>
+            <l>Ses amis les plus chers avoient beau crier tous :</l>
+            <l>« N’allez point aux Enfers, laissez-la votre femme !</l>
+            <l>Elle est deffunte ? Hé bien, Dieu veille avoir son ame !</l>
+            <l>Pourquoy courir chercher une Épouse si loin ?</l>
+            <l>Y pensez-vous ? Dieux, quelle extravagance !</l>
+            <l>Ah ! qu’il est de Maris en France</l>
+            <l>Qui ne prendroient pas tant de soin !</l>
+            <l>Profitez de votre veuvage ;</l>
+            <l>Songez à quels perils ce projet vous engage ;</l>
+            <l>En vain pour revenir vous feriez mille efforts ;</l>
+            <l>On ne voit point deux fois le rivage des Morts. »</l>
+            <l>« Retirez-vous, dit-il, Troupe lâche et jalouse.</l>
+            <l>Je pourrois oublier une si chere Épouse !</l>
+            <l>De ses vertus mon cœur sera toujours épris.</l>
+            <l>Une femme fidelle est un tresor sans prix.</l>
+            <l>Ainsi malgré tout ce qu’on put luy dire</l>
+            <l>Il partit, ramena l’objet de son martire.</l>
+            <l>Hélas, est-il encor de ce Maris constants ?</l>
+            <l>Ces miracles d’amour ? Ce n’est est plus le temps.</l>
+            <l>Mais entrons en matiere, et sans craindre la fronde</l>
+            <l>Va, fruit de mes travaux, pousse-toy dans le monde.</l>
+            <l>Puisse-tu, ma Cantate, avoir un heureux sort</l>
+            <l>Et de maints bons écus remplir mon coffre fort !</l>
+         </div>
+      </front>
+      <body>
+         <label>Récitatif</label>
+         <l>
+            <milestone unit="sent" n="1"/>
+            <pb n="2" xml:id="p2"/>Le fameux chantre de la Trace</l>
+         <l>Par les regrets les plus touchans</l>
+         <l>Déploroit ainsi sa disgrace,</l>
+         <l>Courant come un fou par les champs :</l>
+         <label>Air</label>
+         <l>
+            <pb n="3" xml:id="p3"/>
+            <milestone unit="sent" n="2"/>« Rien ne peut soulager la douleur qui me presse ;</l>
+         <l>Je ne revéray plus l’objet de ma tendresse ;</l>
+         <l>L’amour, le tendre amour, nous unissoit tous deux ;</l>
+         <l>Hélas, fut-il jamais amant plus malheureux.</l>
+         <l>
+            <milestone unit="sent" n="3"/>Or écoutez, petits et grands,</l>
+         <l>Mon méchef et mes accidents…</l>
+         <l>
+            <milestone unit="sent" n="4"/>Mais à qui tien-je un tel langage ?</l>
+         <l>
+            <milestone unit="sent" n="5"/>À qui dans ce desert sauvage</l>
+         <l>Veux-je apprendre mon triste état ?</l>
+         <l>
+            <milestone unit="sent" n="6"/>Il n’est icy ny chien ny chat.</l>
+         <label>Deuxième couplet</label>
+         <l>
+            <milestone unit="sent" n="7"/>Faut-il mes plaintes ravaler</l>
+         <l>En si beau sujet de parler ?</l>
+         <l>
+            <milestone unit="sent" n="8"/>Faut-il perdre vers et musique ?</l>
+         <l>
+            <milestone unit="sent" n="9"/>J’avois des choses magnifiques,</l>
+         <l>Plaignons-nous du moins aux Écos.</l>
+         <l>
+            <milestone unit="sent" n="10"/>Imittons les tendres heros.</l>
+         <l>
+            <milestone unit="sent" n="11"/>Fidelles Écos de ces bois</l>
+         <l>Cessez de répondre à ma <pb n="4" xml:id="p4"/>voix :</l>
+         <l>
+            <milestone unit="sent" n="12"/>Fidelles. La mort, cette barbare, et bien !</l>
+         <l>
+            <milestone unit="sent" n="13"/>Pour jamais nous separe, vous m’entendez bien.</l>
+         <l>
+            <milestone unit="sent" n="14"/>Pourquoy tant pleurer et me plaindre encore !</l>
+         <l>
+            <milestone unit="sent" n="15"/>Allons retirer celle que j’adore ;</l>
+         <l>Le Roy du sombre manoir</l>
+         <l>N’est pas si Diable qu’il est noir.</l>
+         <l>
+            <pb n="6" xml:id="p6"/>
+            <milestone unit="sent" n="16"/>Décendons chez Pluton, Raplon, décendon chez Pluton ;</l>
+         <l>Par quelque chansonette attendrissons ce Barbon, Raplon.</l>
+         <l>
+            <milestone unit="sent" n="17"/>Ramenons ma Poulette, mon joly tendron.</l>
+         <l>
+            <pb n="7" xml:id="p7"/>
+            <milestone unit="sent" n="18"/>Je commence à prendre courage ;</l>
+         <l>Ce gouffre obscur m’ouvre un passage</l>
+         <l>Pour pénétrer aux sombres bords :</l>
+         <l>
+            <milestone unit="sent" n="19"/>C’est trop faire icy le Jocrisse ;</l>
+         <l>J’aime autant rester chez les morts</l>
+         <l>Que d’être au lit sans Euridice.</l>
+         <label>Air gai</label>
+         <l>
+            <milestone unit="sent" n="20"/>Allez Orphée, allez au Diable,</l>
+         <l>Servez d’exemple à <pb n="8" xml:id="p8"/>l’univers ;</l>
+         <l>Pour rejoindre un objet aimable</l>
+         <l>Il est beau d’aller aux Enfers :</l>
+         <l>
+            <milestone unit="sent" n="21"/>Partez, courez au Sombre empire,</l>
+         <l>ta ta le ri ta ta le ri ta ta le rire.</l>
+         <l>
+            <milestone unit="sent" n="22"/>Notre amant se met en chemin</l>
+         <l>Et dans l’Empire souterrain</l>
+         <l>Il dégringole en moins de rien,</l>
+         <l>Ô reguingué, ô lonlala,</l>
+         <l>Et malgré Cerbère et la Parque</l>
+         <l>Parvient jusqu’au piés du Monarque.</l>
+         <l>
+            <milestone unit="sent" n="23"/>Après s’être un peu rajusté ;</l>
+         <l>Son luth tout d’or bien accordé ;</l>
+         <l>De presens tout son cou craché</l>
+         <l>Lon lan la derirette</l>
+         <l>Il tient le discours que voicy</l>
+         <l>Lon lan la deriry :</l>
+         <l>
+            <pb n="10" xml:id="p10"/>Prince enfumé de ces Royaumes Sombres,</l>
+         <l>Je suis (dit-on) le fils du Dieu du jour,</l>
+         <l>Plus malheureux que vos plus tristes Ombres ;</l>
+         <l>Et mon malheur <pb n="11" xml:id="p11"/>est causé par l’Amour.</l>
+         <l>
+            <pb n="12" xml:id="p12"/>
+            <milestone unit="sent" n="24"/>On m’a ravy méchament ma femme Euridice ;</l>
+         <l>Un vilain maudit Serpent remply de malice</l>
+         <l>La guettant sur le gazon</l>
+         <l>L’a piquée en trahison.</l>
+         <l>
+            <milestone unit="sent" n="25"/>Ah, quelle injustice !</l>
+         <l>
+            <pb n="13" xml:id="p13"/>
+            <milestone unit="sent" n="26"/>Le Prince en face noire repond : « Pati pata,</l>
+         <l>Innocent, peut-tu croire que l’on te la rendra ?</l>
+         <l>
+            <milestone unit="sent" n="27"/>Pour en perdre la mémoire</l>
+         <l>Dans le fleuve d’oubly va t’en boire. »</l>
+         <l>
+            <pb n="14" xml:id="p14"/>Du sort réparez le caprice,</l>
+         <l>Laissez-vous toucher par mes pleurs :</l>
+         <l>
+            <milestone unit="sent" n="28"/>Rendez-moy ma chere Euridice,</l>
+         <l>Ne séparez pas nos deux cœurs.</l>
+         <l>
+            <milestone unit="sent" n="29"/>J’aimois ma compagne de couche,</l>
+         <l>La pauvrette m’aimoit aussi :</l>
+         <l>
+            <milestone unit="sent" n="30"/>Vous seriez pire qu’un Cartouche</l>
+         <l>De la vouloir garder icy.</l>
+         <l>
+            <milestone unit="sent" n="31"/>Laissez-vous toucher par mes pleurs,</l>
+         <l>Rendez-moy ma chere Euridice,</l>
+         <l>Ne séparez pas nos deux cœurs.</l>
+         <l>
+            <pb n="16" xml:id="p16"/>
+            <milestone unit="sent" n="32"/>Vous avez ressenty la flâme</l>
+         <l>Du Dieu dont j’éprouve les traits,</l>
+         <l>Quand vous prites pour vostre femme</l>
+         <l>L’aimable fille de Cérés.</l>
+         <l>
+            <pb n="17" xml:id="p17"/>
+            <milestone unit="sent" n="33"/>Par cette Épouse si chere</l>
+         <l>Lachez l’objet de mes vœux.</l>
+         <l>
+            <milestone unit="sent" n="34"/>Que de retour sur la terre</l>
+         <l>Nous puissions encor tous deux</l>
+         <l>Laire lan la landerirette</l>
+         <l>Laire lan la landerira.</l>
+         <l>
+            <pb n="18" xml:id="p18"/>
+            <milestone unit="sent" n="35"/>Un exces d’amour conjugal</l>
+         <l>M’amene dans ce lieu fatal :</l>
+         <l>
+            <milestone unit="sent" n="36"/>Mon nom apres cette aventure</l>
+         <l>Sera placé dans le Mercure.</l>
+         <l>
+            <pb n="19" xml:id="p19"/>
+            <milestone unit="sent" n="37"/>Que d’apas à ma fripone !</l>
+         <l>
+            <milestone unit="sent" n="38"/>Quels minois ! Quel teint ! quels yeux !</l>
+         <l>
+            <milestone unit="sent" n="39"/>Sans vouloir choquer personne</l>
+         <l>Il n’est pas dans ces bas lieux</l>
+         <l>Plus joly chignon, mirliton mirlitaine,</l>
+         <l>Plus joly chignon dondon.</l>
+         <l>
+            <pb n="20" xml:id="p20"/>
+            <milestone unit="sent" n="40"/>Je viens expres au Sabat, en robbe longue, en rabat,</l>
+         <l>Chercher mon Euridice qui manque à mon grabat.</l>
+         <label>Deuxième couplet</label>
+         <l>
+            <pb n="21" xml:id="p21"/>
+            <milestone unit="sent" n="41"/>Si vous aimez le muscat,</l>
+         <l>J’en ay du plus delicat.</l>
+         <l>
+            <milestone unit="sent" n="42"/>Jambon, boudin, saucisse,</l>
+         <l>Le présent n’est pas fat.</l>
+         <l>
+            <milestone unit="sent" n="43"/>Pluton surpris d’entendre</l>
+         <l>Des discours si touchans :</l>
+         <l>
+            <milestone unit="sent" n="44"/>« Prens-la sans pour attendre,</l>
+         <l>Avec <pb n="22" xml:id="p22"/>la clef des champs.</l>
+         <l>
+            <milestone unit="sent" n="45"/>Va-t’en gay, d’un air gay,</l>
+         <l>En batteau, dessus l’eau.</l>
+         <l>
+            <milestone unit="sent" n="46"/>Emmeine ta Conquete,</l>
+         <l>Mais prens garde en chemin</l>
+         <l>De <pb n="23" xml:id="p23"/>détourner la teste</l>
+         <l>Ou tu voudras en vain.</l>
+         <l>
+            <milestone unit="sent" n="47"/>Et flon flon la lira dondaine,</l>
+         <l>Flon flon flon la lira dondon.</l>
+         <l>
+            <milestone unit="sent" n="48"/>Partons, mon fils,</l>
+         <l>Me suis-tu ma poulette ?</l>
+         <l>
+            <milestone unit="sent" n="49"/>Ouy, je te suis ;</l>
+         <l>Prens-moy par ma Jaquette,</l>
+         <l>Doublons le pas, allons, allons, allons,</l>
+         <l>Allons à la guinguette, allons.</l>
+         <l>
+            <pb n="24" xml:id="p24"/>
+            <milestone unit="sent" n="50"/>Chantez la victoire éclatante</l>
+         <l>Que remporte le tendre amour :</l>
+         <l>
+            <milestone unit="sent" n="51"/>Son ardeur est triomphante</l>
+         <l>
+            <pb n="25" xml:id="p25"/>Jusque dans le sombre sejour,</l>
+         <l>Sonnez houbois, battez tambour,</l>
+         <l>Chantez la victoire éclatante</l>
+         <l>Que remporte le tendre amour.</l>
+         <label>Chœur</label>
+         <l>
+            <milestone unit="sent" n="52"/>Chantons la Victoire éclatante</l>
+         <l>Que remporte le tendre amour :</l>
+         <l>
+            <pb n="26" xml:id="p26"/>Son ardeur est triomphante</l>
+         <l>Jusque dans le sombre sejour,</l>
+         <l>Sonnez houbois, battez tambour,</l>
+         <l>Chantez la victoire éclatante</l>
+         <l>Que remporte le tendre amour, <hi rend="i">etc.</hi>
+         </l>
+      </body>
+   </text>
 </TEI>

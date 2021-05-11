@@ -1,1010 +1,1171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
-    <fileDesc>
-        <titleStmt>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
             <title type="main">Orphée, fable en musique</title>
             <author>Claudio Monteverdi, Alessandro Striggio</author>
-        </titleStmt>
-        <editionStmt>
+         </titleStmt>
+         <editionStmt>
             <edition>Cette édition électronique fait partie du projet de thèse intitulé « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel » réalisé par Karolina Suchecka au sein du laboratoire ALITHILA à l’Université de Lille.</edition>
             <respStmt>
-                <name>Karolina Suchecka</name>
-                <resp>Chargé de l’édition</resp>
+               <name>Karolina Suchecka</name>
+               <resp>Chargé de l’édition</resp>
             </respStmt>
             <respStmt>
-                <name>Nathalie Gasiglia</name>
-                <resp>Co-tutrice de thèse</resp>
+               <name>Nathalie Gasiglia</name>
+               <resp>Co-tutrice de thèse</resp>
             </respStmt>
             <respStmt>
-                <name>Karl Zieger</name>
-                <resp>Co-tuteur de thèse</resp>
+               <name>Karl Zieger</name>
+               <resp>Co-tuteur de thèse</resp>
             </respStmt>
-        </editionStmt>
-        <publicationStmt>
+         </editionStmt>
+         <publicationStmt>
             <publisher>Karolina Suchecka</publisher>
             <publisher>ALITHILA (Université Lille III)</publisher>
             <date when="2019"/>
             <availability status="restricted">
-                <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
-                    <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
-                    <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
-                    <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
-                    <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
-                    <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
-                </licence>
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                  <p> Copyright © 2019 Université Charles-de-Gaulle Lille 3, agissant pour le projet de thèse « Analyse et édition d’un corpus littéraire dans l’esprit des humanités numériques. Vers une édition comparative intermédiale innovante accompagnée d’une ressource pour le repérage intertextuel »</p>
+                  <p> Cette ressource électronique protégée par le code de la propriété intellectuelle sur les bases de données (L341-1) est mise à disposition de la communauté scientifique internationale par Karolina Suchecka, selon les termes de la licence Creative Commons : « Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France (CC BY-NC-ND 3.0 FR) ». </p>
+                  <p> Attribution : afin de référencer la source, toute utilisation ou publication dérivée de cette ressource électroniques comportera le nom du projet et surtout l’adresse Internet de la ressource. </p>
+                  <p> Pas d’Utilisation Commerciale : dans l’intérêt de la communauté scientifique, toute utilisation commerciale est interdite.</p>
+                  <p> Pas de Modification : l’éditrice s’engage à améliorer et à corriger cette ressource électronique, notamment en intégrant toutes les contributions extérieures, la diffusion de versions modifiées de cette ressource n’est pas souhaitable.</p>
+               </licence>
             </availability>
             <idno>http://orfeo.grenoble.free.fr/Annexes/Texte_Orfeo.pdf</idno>
-        </publicationStmt>
-        <sourceDesc>
-            <bibl><author>Claudio Monteverdi, Alessandro Striggio</author> / <title>L’Orfeo, favola in musica [Orphée, fable en musique]</title> / Venise / Ricciardo Amadino / 1609.</bibl> 
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Claudio Monteverdi, Alessandro Striggio</author> / <title>L’Orfeo, favola in musica [Orphée, fable en musique]</title> / Venise / Ricciardo Amadino / 1609.</bibl>
             <biblFull>
-                <titleStmt>
-                    <title>L’Orfeo, favola in musica [Orphée, fable en musique]</title>
-                </titleStmt>
-                <publicationStmt>
-                    <publisher>Ricciardo Amadino</publisher>
-                    <pubPlace>Venise</pubPlace>
-                    <date when="1609"/>
-                </publicationStmt>
+               <titleStmt>
+                  <title>L’Orfeo, favola in musica [Orphée, fable en musique]</title>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Ricciardo Amadino</publisher>
+                  <pubPlace>Venise</pubPlace>
+                  <date when="1609"/>
+               </publicationStmt>
             </biblFull>
             <genre>opéra</genre>
             <structure>monteverdi1607</structure>
-        </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
-    </encodingDesc>
-    <profileDesc>
-        <creation>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Nous utilisons la feuille de style Odette pour les premières transformations ODT/XML. Nous nettoyons et enrichissons ensuite la structure avec des algorihtmes Python conçus au sein du projet. La structure des métadonnées a été établie en référence à la manière dont le logiciel TEXTPAIR (The ARTFL Project) les extrait ensuite pour son traitement.</p>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
             <date when="1609">1609</date>
-        </creation>
-        <language>
+         </creation>
+         <language>
             <language>IT</language>
-        </language>
-        <textClass>
+         </language>
+         <textClass>
             <keywords>
-                <list>
-                    <item>transmodalisation</item>
-                </list>
+               <list>
+                  <item>transmodalisation</item>
+               </list>
             </keywords>
-        </textClass>
-    </profileDesc>
-</teiHeader><text><front><titlePage>
-        <docAuthor>Claudio Monteverdi, Alessandro Striggio</docAuthor>
-        <docTitle>
-          <titlePart type="main">Orphée, fable en musique</titlePart>
-        </docTitle>
-      </titlePage>
-      <castList>
-        <castItem xml:id="musique">La Musique</castItem>
-        <castItem xml:id="bergers">Les Bergers</castItem>
-        <castItem xml:id="nymphes">Les Nymphes</castItem>
-        <castItem xml:id="orphee">Orphée</castItem>
-        <castItem xml:id="eurydice">Eurydice</castItem>
-        <castItem xml:id="messagere">Une messagère</castItem>
-        <castItem xml:id="esperance">L’Espérance</castItem>
-        <castItem xml:id="caronte">Caronte</castItem>
-        <castItem xml:id="esprits">Les Esprits</castItem>
-        <castItem xml:id="proserpine">Proserpine</castItem>
-        <castItem xml:id="pluton">Pluton</castItem>
-        <castItem xml:id="ministre">Le ministre</castItem>
-        <castItem xml:id="echo">Écho</castItem>
-        <castItem xml:id="apollon">Apollon</castItem>
-        
-        
-      </castList>
-    </front>
-    <body>
-      
-      <div type="prologue">
-        <head>Prologue</head>
-        <stage>Tocatta</stage>
-        <label>Ritournelle</label>
-        <sp who="musique">
-          <speaker>La Musique</speaker>
-          <l>Des rives de mon bien aimé Permesso, je viens à vous</l>
-          <l>Illustres héros, noble lignée de rois,</l>
-          <l>Dont la renommée conte les sublimes vertus</l>
-          <l>Sans atteindre à la vérité tant elles sont élevées.</l>
-          <l>Je suis la Musique, et par mes doux accents</l>
-          <l>Je sais apaiser les cœurs tourmentés,</l>
-          <l>Et enflammer d’amour ou de noble courroux</l>
-          <l>Même les esprits les plus froids.</l>
-          <l>M’accompagnant d’une cithare d’or, j’ai coutume</l>
-          <l>D’enchanter l’oreille des mortels ;</l>
-          <l>Et, à m’entendre, leur âme aspire</l>
-          <l>Aux sons harmonieux de la lyre du ciel.</l>
-          <l>C’est le désir de vous parler d’Orphée qui m’a conduite ici,</l>
-          <l>Orphée qui de son chant apprivoisait les bêtes féroces Et fit céder l’Enfer à ses prières, Orphée, gloire immortelle du Pinde et de l’Hélicon.</l>
-          <l>Et tandis que je fais alterner les chants tristes aux gais,</l>
-          <l>Qu’à présent nul oiseau ne bouge dans ces arbres,</l>
-          <l>Que tous les flots sur ces rives se taisent,</l>
-          <l>Et que la moindre brise en sa course s’arrête.</l>
-        </sp>
-      </div>
-      <div n="1" type="act">
-        <head>Acte I</head>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>En cet heureux jour de liesse</l>
-          <l>Qui a mis fin aux tourments amoureux</l>
-          <l>De notre demi-dieu, chantons, bergers,</l>
-          <l>Que soient dignes d’Orphée les accents de nos chœurs.</l>
-          <l>Aujourd’hui s’est émue</l>
-          <l>L’âme autrefois si fière</l>
-          <l>De la belle Eurydice.</l>
-          <l>Et sur son sein, Orphée a trouvé le bonheur ;</l>
-          <l>Elle pour qui naguère, il a dans ces forêts,</l>
-          <l>Tant soupiré et tant pleuré.</l>
-          <l>En cet heureux jour de liesse</l>
-          <l>Qui a mis fin aux tourments amoureux, etc.</l>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Viens, Hyménée, ah, viens</l>
-          <l>Et que ton ardente lumière</l>
-          <l>Soit comme un soleil naissant</l>
-          <l>Qui donne à ces amants des jours sereins</l>
-          <l>Et repousse à jamais</l>
-          <l>Les ombres et les horreurs de la douleur et des tourments.</l>
-        </sp>
-        <sp who="nymphes">
-          <speaker>Une nymphe</speaker>
-          <l>Muses, gloire du Parnasse, amour du ciel</l>
-          <l>Noble réconfort d’un cœur désolé</l>
-          <l>Que le son de vos lyres</l>
-          <l>Déchire le voile sombre des nues ;</l>
-          <l>Et, tandis qu’aujourd’hui nous invoquons Hyménée</l>
-          <l>Pour qu’il soit favorable à notre cher Orphée,</l>
-          <l>Que sur vos lyres bien accordées</l>
-          <l>Votre chant s’unisse au nôtre en harmonie.</l>
-          <stage>Ballet</stage>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Quittez les monts,</l>
-          <l>Quittez les sources,</l>
-          <l>Nymphes gracieuses et gaies,</l>
-          <l>Et sur ces prés faits pour la danse,</l>
-          <l>Dansez d’un pied léger.</l>
-          <l>Qu’en ce lieu le soleil contemple</l>
-          <l>Vos rondes,</l>
-          <l>Plus gracieuses encore que celles</l>
-          <l>Des étoiles du ciel</l>
-          <l>Qui dans la nuit brune</l>
-          <l>Dansent à la lune.</l>
-          <l>Quittez les monts…etc.</l>
-          <l>Puis, de belles fleurs ornez</l>
-          <l>Les cheveux de ces amants,</l>
-          <l>Qui, au terme de durs tourments,</l>
-          <l>Goûtent enfin le bonheur</l>
-          <l>De voir s’accomplir leur désir.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Mais toi, aimable chanteur, par tes plaintes</l>
-          <l>Tu fis autrefois pleurer ces campagnes,</l>
-          <l>Que ne fais-tu maintenant, au son de ta lyre,</l>
-          <l>Se réjouir avec toi collines et vallées ?</l>
-          <l>Qu’une joyeuse chanson, des mots d’Amour inspirée</l>
-          <l>Témoigne de ton bonheur.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Rose du ciel, source de vie</l>
-          <l>Digne descendant de celui qui régit tout l’univers,</l>
-          <l>Soleil, toi qui tournes autour du monde et qui le domine</l>
-          <l>Du haut de ces sphères étoilées ;</l>
-          <l>Dis-moi, vis-tu jamais Amant plus heureux et plus comblé que moi ?</l>
-          <l>Qu’il fut heureux le jour</l>
-          <l>Où, la première fois, je te vis,</l>
-          <l>Bien aimée,</l>
-          <l>Et plus heureuse encore, l’heure</l>
-          <l>Où mon cœur soupira après toi !</l>
-          <l>Puisqu’à mes soupirs répondirent les tiens ;</l>
-          <l>Ô combien fut heureux l’instant</l>
-          <l>Où tu tendis vers moi</l>
-          <l>Ta blanche main, gage d’un pur amour.</l>
-          <l>Si j’avais autant de cœurs</l>
-          <l>Que le ciel éternel compte d’yeux</l>
-          <l>Et qu’au vert mois de mai</l>
-          <l>Ces douces collines comptent de chevelures,</l>
-          <l>Ils seraient tous comblés et débordants</l>
-          <l>De ce bonheur qui m’emplit aujourd’hui.</l>
-        </sp>
-        <sp who="eurydice">
-          <speaker>Eurydice</speaker>
-          <l>Je ne puis dire, Orphée,</l>
-          <l>Ma joie à ton plaisir,</l>
-          <l>Car mon cœur m’a quittée</l>
-          <l>Et demeure avec toi en compagnie d’Amour.</l>
-          <l>Interroge-le donc si tu désires entendre</l>
-          <l>Quel bonheur est le mien, et à quel point je t’aime.</l>
-          <stage>Ballet</stage>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Quittez les monts,</l>
-          <l>Quittez les sources,</l>
-          <l>Nymphes gracieuses et gaies,</l>
-          <l>Et sur ces prés faits pour la danse,</l>
-          <l>Dansez d’un pied léger.</l>
-          <l>Qu’en ce lieu le soleil contemple</l>
-          <l>Vos rondes,</l>
-          <l>Plus gracieuses encore que celles</l>
-          <l>Des étoiles du ciel</l>
-          <l>Qui dans la nuit brune</l>
-          <l>Dansent à la lune.</l>
-          <l>Viens, Hyménée, ah, viens</l>
-          <l>Et que ton ardente lumière</l>
-          <l>Soit comme un soleil naissant</l>
-          <l>Qui donne à ces amants des jours sereins</l>
-          <l>Et repousse à jamais</l>
-          <l>Les ombres et les horreurs de la douleur et des tourments.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Mais si cette joie, du Ciel nous arrive</l>
-          <l>Comme tout, ici-bas, du Ciel nous est donné,</l>
-          <l>Il est juste et bon, qu’avec dévotion,</l>
-          <l>Nous lui portions l’encens et aussi les offrandes :</l>
-          <l>Que chacun, donc, dirige ses pas vers le temple</l>
-          <l>Pour y prier celui qui dirige le monde</l>
-          <l>De préserver longtemps notre bonheur.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Les Bergers</speaker>
-          <l>Que nul ici ne s’abandonne à la douleur, au désespoir</l>
-          <l>Même si quelquefois leurs assauts sont si forts</l>
-          <l>Qu’ils gâchent notre vie.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Nymphes et Bergers</speaker>
-          <l>Car, même après qu’un lourd nuage chargé</l>
-          <l>De sinistre tempête ait obscurci le monde,</l>
-          <l>Le soleil déploie, plus clairs, ses rayons de lumière.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Bergers</speaker>
-          <l>Après l’âpre froideur de l’hiver dénudé</l>
-          <l>Le printemps chaque année couvre les champs de fleurs.</l>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Voici Orphée, Lui qui se nourrissait naguère de soupirs et</l>
-          <l>s’abreuvait de larmes ;</l>
-          <l>Il est si heureux, aujourd’hui</l>
-          <l>Qu’il n’est plus rien qu’il ne désire.</l>
-        </sp>
-      </div>
-      <div n="2" type="act">
-        <head>Acte II</head>
-        <label>Symphonie</label>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Voici que je reviens à vous,</l>
-          <l>Chères forêts et prairies bien aimées,</l>
-          <l>Égayées du même soleil</l>
-          <l>Qui transforme mes nuits en jours.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Vois, Orphée, l’ombre de ces hêtres</l>
-          <l>Qui nous attire vers elle</l>
-          <l>Alors que du haut du ciel</l>
-          <l>Phœbus darde ses rayons brûlants.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Sur l’herbe de ces rives, Reposons-nous un peu</l>
-          <l>Et qu’en des chants divers,</l>
-          <l>Chacun de sa voix s’accorde</l>
-          <l>Au doux murmure des eaux.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="bergers">
-          <speaker>Les Bergers</speaker>
-          <l>Dans ce pré charmant,</l>
-          <l>Les dieux de la forêt</l>
-          <l>Viennent souvent chercher</l>
-          <l>Un aimable séjour.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-          <l>En ce lieu, quelquefois,</l>
-          <l>Pan, le dieu des bergers,</l>
-          <l>Évoquait doucement</l>
-          <l>Ses amours malheureuses.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="nymphes">
-          <speaker>Les Nymphes</speaker>
-          <l>Là, les Napées gracieuses,</l>
-          <l>Jeunes nymphes en fleurs</l>
-          <l>De leurs doigts délicats</l>
-          <l>Ramassaient quelques roses.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Alors, rends dignes, Orphée,</l>
-          <l>Du beau son de ta lyre,</l>
-          <l>Ces champs où l’on respire</l>
-          <l>Un parfum de Saba.</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Vous souvient-il, bois ombrageux</l>
-          <l>De mes longs et cruels tourments</l>
-          <l>Quand les rochers pleins de pitié</l>
-          <l>Se faisaient l’écho de mes plaintes ?</l>
-          <l>Ne vous semblais-je pas alors</l>
-          <l>Le plus désespéré des hommes ?</l>
-          <l>Mais aujourd’hui, mon sort a changé de visage</l>
-          <l>Et il a transformé en fête mes tourments.</l>
-          <l>J’ai vécu triste et malheureux,</l>
-          <l>J’exulte maintenant et ces peines</l>
-          <l>Endurées au long de tant d’années</l>
-          <l>Donnent bien plus de prix à mon bonheur présent.</l>
-          <l>Belle Eurydice, et pour toi seulement,</l>
-          <l>Je bénis mes souffrances ;</l>
-          <l>Après la peine, elle est plus profonde la joie,</l>
-          <l>Après le malheur, le bonheur est plus grand.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Vois Orphée, vois tout autour de nous</l>
-          <l>Bois et prairies se réjouissent.</l>
-          <l>Continue donc, avec ta lyre d’or,</l>
-          <l>À rendre l’air plus doux en ce jour bienheureux.</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Las, sort cruel !</l>
-          <l>Implacable et funeste destin !</l>
-          <l>Las, fatales étoiles, impitoyable Ciel !</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Premier berger</speaker>
-          <l>Quel accent douloureux perturbe ce jour de joie ?</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Malheureuse, il m’appartient donc</l>
-          <l>De transpercer le cœur d’Orphée</l>
-          <l>Par mes paroles</l>
-          <l>Alors que de son chant, il réjouit le Ciel ?</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Berger</speaker>
-          <l>Vois ici la charmante Sylvia,</l>
-          <l>Si douce compagne de la belle Eurydice ;</l>
-          <l>Comme elle semble triste !</l>
-          <l>Que se passe-t-il donc ? De grâce, dieux puissants,</l>
-          <l>Ne détournez de nous vos regards bienveillants !</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Bergers, cessez vos chants,</l>
-          <l>Car à notre allégresse fait place la douleur.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>D’où viens-tu ? Où vas-tu ? Nymphe, quelles nouvelles ?</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Je viens à toi, Orphée, bien triste messagère</l>
-          <l>D’un sort funeste et malheureux ;</l>
-          <l>Ta belle Eurydice</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Hélas, qu’est-ce que j’entends ?</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Ta femme bien aimée est morte.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Hélas !</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Dans un pré fleuri, avec quelques amies,</l>
-          <l>Elle cueillait des fleurs pour mettre à ses cheveux,</l>
-          <l>Lorsqu’un serpent perfide</l>
-          <l>Qui se cachait dans l’herbe,</l>
-          <l>De sa dent venimeuse lui a mordu le pied.</l>
-          <l>Et l’on vit aussitôt pâlir son beau visage</l>
-          <l>Alors que dans ses yeux s’éteignait cette flamme rivale du soleil.</l>
-          <l>Nous toutes, atterrées, éplorées</l>
-          <l>L’entourâmes alors, tentant de rappeler</l>
-          <l>Ses esprits égarés</l>
-          <l>Avec un peu d’eau fraîche et des charmes puissants.</l>
-          <l>Mais rien n’y fit, hélas, malheureuse Eurydice,</l>
-          <l>Car, entrouvrant ses yeux et t’appelant, Orphée,</l>
-          <l>Fit un profond soupir, expira dans mes bras ;</l>
-          <l>Et moi, je restai là,</l>
-          <l>Le cœur rempli de pitié et d’effroi.</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Las, sort cruel ! Implacable et funeste destin !</l>
-          <l>Las, fatales étoiles, impitoyable Ciel !</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>À la triste nouvelle,</l>
-          <l>Ce malheureux semble pétrifié</l>
-          <l>Et sa douleur trop grande l’empêche de pleurer !</l>
-        </sp>
-        <sp who="bergers">
-          <speaker>Un berger</speaker>
-          <l>Hélas, seul un cœur de tigre ou d’ours</l>
-          <l>Resterait insensible à ta peine,</l>
-          <l>Malheureux amant, privé de ton bonheur !</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Tu es morte, ma vie, et je respire encore ?</l>
-          <l>Tu m’as quitté pour ne jamais plus revenir,</l>
-          <l>Et moi, je reste là ?</l>
-          <l>Non ! car si mes chants ont quelconque pouvoir,</l>
-          <l>J’irai sans crainte aux plus profonds abîmes ;</l>
-          <l>Et quand j’aurai touché le cœur du roi des ombres,</l>
-          <l>Je te ramènerai pour revoir les étoiles.</l>
-          <l>Si un cruel destin me refuse cela,</l>
-          <l>Je resterai alors avec toi dans la mort,</l>
-          <l>Adieu terre, adieu ciel, et adieu le soleil !</l>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Las, sort cruel ! Implacable et funeste destin !</l>
-          <l>Las, fatales étoiles, impitoyable Ciel !</l>
-          <l>Qu’aucun mortel ne s’abandonne</l>
-          <l>À un bonheur éphémère et fragile,</l>
-          <l>Car bientôt il s’enfuit, et même, bien souvent,</l>
-          <l>Plus haut est le sommet, plus le ravin est proche</l>
-        </sp>
-        <sp who="messagere">
-          <speaker>La Messagère</speaker>
-          <l>Mais moi, dont la parole a porté le couteau</l>
-          <l>Qui déchira l’âme amoureuse d’Orphée,</l>
-          <l>Haïe par les bergers et haïe par les nymphes,</l>
-          <l>Et haïe par moi-même, où vais-je me cacher ?</l>
-          <l>Telle un oiseau de nuit funeste,</l>
-          <l>Pour toujours je fuirai le soleil ;</l>
-          <l>Dans l’antre solitaire,</l>
-          <l>Je mènerai la vie qui sied à ma douleur.</l>
-          <stage>
-            <hi rend="i">Symphonie</hi>
-          </stage>
-        </sp>
-        <sp who="nymphes">
-          <speaker>Les Nymphes</speaker>
-          <l>Infortunés ! Qui nous consolera ?</l>
-          <l>Qui fera de nos yeux la source vive,</l>
-          <l>Que nous puissions, comme il se doit, pleurer en ce jour de détresse ?</l>
-          <l>Ce jour plus triste encore d’avoir été joyeux !</l>
-          <l>Aujourd’hui, un accident cruel a éteint</l>
-          <l>Les deux lumières les plus vives de nos forêts,</l>
-          <l>Eurydice et Orphée, infortunés amants,</l>
-          <l>L’une mordue par le serpent,</l>
-          <l>Et l’autre, hélas, transpercé de douleur.</l>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Las, sort cruel ! Implacable et funeste destin !</l>
-          <l>Las, fatales étoiles, impitoyable Ciel !</l>
-        </sp>
-        <sp who="nymphes">
-          <speaker>Les Nymphes</speaker>
-          <l>Mais où, où sont donc, maintenant,</l>
-          <l>De cette pauvre nymphe, les beaux membres glacés</l>
-          <l>Dignes séjours d’une âme noble</l>
-          <l>Envolée aujourd’hui dans la fleur de son âge ?</l>
-          <l>Allons, bergers, allons, pieusement retrouver</l>
-          <l>Ce corps sans vie</l>
-          <l>Et lui rendre l’hommage de nos larmes amères.</l>
-        </sp>
-        <sp who="nymphes bergers">
-          <speaker>Chœur de nymphes et de bergers</speaker>
-          <l>Las, sort cruel ! Implacable et funeste destin !</l>
-          <l>Las, fatales étoiles, impitoyable Ciel !</l>
-          <stage>
-            <hi rend="i">Ritournelle</hi>
-          </stage>
-        </sp>
-      </div>
-      <div n="3" type="act">
-        <head>Acte III</head>
-        <label>Symphonie</label>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Sous ton escorte, Espérance, ma déesse,</l>
-          <l>Unique recours des mortels affligés,</l>
-          <l>Me voici parvenu au seuil de ces royaumes</l>
-          <l>Tristes et ténébreux</l>
-          <l>Où jamais ne parvient un rayon de soleil.</l>
-          <l>Toi, ma compagne, toi, mon guide,</l>
-          <l>Sur ce chemin étrange et inconnu,</l>
-          <l>Tu as soutenu mon pas faible et tremblant</l>
-          <l>C’est pourquoi aujourd’hui, je conserve l’espoir</l>
-          <l>De revoir ces astres radieux</l>
-          <l>Seules lumières de mes yeux.</l>
-        </sp>
-        <sp who="esperance">
-          <speaker>L’espérance</speaker>
-          <l>Voici le sombre marécage, voici le rocher</l>
-          <l>Qui mène à l’autre rive les âmes dénudées</l>
-          <l>Là où règne Pluton sur le vaste empire des ombres.</l>
-          <l>Au-delà de ce marécage, au-delà de ce fleuve,</l>
-          <l>Dans ces champs de douleur et de larmes,</l>
-          <l>Le destin cruel cache à tes yeux ton unique bonheur.</l>
-          <l>Maintenant, il te faut grand courage et beau chant.</l>
-          <l>Je t’ai conduit ici, mais je n’ai plus le droit</l>
-          <l>De venir avec toi, c’est une loi sévère,</l>
-          <l>Une loi que le fer a gravée dans le roc,</l>
-          <l>Sur le funeste seuil du palais des abîmes</l>
-          <l>Et dont le sens farouche est ainsi énoncé :</l>
-          <l>« Laissez toute espérance, vous qui entrez ici ».</l>
-          <l>Si pourtant, en ton cœur, tu nourris le projet</l>
-          <l>Ferme, d’entrer dans la cité funeste,</l>
-          <l>Je m’enfuis loin de toi</l>
-          <l>Et je retourne à mon habituel séjour.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Ah ! Où t’en vas-tu donc,</l>
-          <l>Unique et doux réconfort de mon âme ?</l>
-          <l>Alors qu’au bout du long chemin,</l>
-          <l>Je vois enfin le port tout proche,</l>
-          <l>Pourquoi t’en aller et m’abandonner, hélas</l>
-          <l>Au seuil du périlleux passage ?</l>
-          <l>Quel bien me reste-t-il si tu t’enfuis,</l>
-          <l>Toi, très douce Espérance ?</l>
-        </sp>
-        <sp who="caronte">
-          <speaker>Caronte</speaker>
-          <l>Ô toi qui avant l’heure</l>
-          <l>T’en viens sur ces rivages avec témérité,</l>
-          <l>Arrête là tes pas !</l>
-          <l>Un mortel, sur ces eaux, ne doit pas naviguer,</l>
-          <l>Vivant, avec les morts ne peut pas séjourner.</l>
-          <l>Quoi ? Tu voudrais peut-être, ennemi de mon maître,</l>
-          <l>Que s’éloigne Cerbère des portes du Tartare ?</l>
-          <l>Ou le cœur enflammé d’un désir indécent</l>
-          <l>Tu voudrais lui ravir sa belle et chère épouse ?</l>
-          <l>Modère ton audace folle, car dans ma barque</l>
-          <l>Plus jamais je n’accueillerai un être humain ;</l>
-          <l>Car j’ai encore au cœur une juste colère</l>
-          <l>Et l’amer souvenir des offenses d’antan.</l>
-          <stage>Symphonie</stage>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Puissant esprit, dieu redoutable,</l>
-          <l>Sans qui toute âme, libérée de son corps</l>
-          <l>Ne peut pas espérer rejoindre l’autre rive,</l>
-          <l>Ce n’est plus moi qui vis, puisque ma chère épouse</l>
-          <l>Est privée de sa vie, mon cœur s’en est allé,</l>
-          <l>Et sans mon cœur, comment pourrais-je vivre ?</l>
-          <l>C’est vers elle que j’ai cheminé dans le noir,</l>
-          <l>Mais non pas vers l’enfer,</l>
-          <l>Puisque là où se trouve une telle beauté,</l>
-          <l>Là est le paradis.</l>
-          <l>C’est moi, Orphée, et je suis les pas d’Eurydice</l>
-          <l>Parmi ces déserts ténébreux</l>
-          <l>Où jamais un mortel n’osa s’aventurer.</l>
-          <l>Ô, claires lumières de mes yeux</l>
-          <l>Un seul de vos regards peut me rendre la vie</l>
-          <l>Qui pourrait refuser ce secours à ma peine ?</l>
-          <l>Toi seul, très noble dieu, peux me venir en aide,</l>
-          <l>Et n’aies aucune crainte ; Sur cette lyre d’or,</l>
-          <l>Mes doigts ne sont armés que de cordes suaves :</l>
-          <l>Le plus dur des esprits ne sait leur résister.</l>
-        </sp>
-        <sp who="caronte">
-          <speaker>Caronte</speaker>
-          <l>Tu me flattes, il est vrai, et tu charmes mon cœur,</l>
-          <l>Chanteur inconsolé, par ton chant et tes pleurs.</l>
-          <l>Mais que reste loin, très loin de mon cœur,</l>
-          <l>Toute pitié, sentiment indigne de ma grandeur.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Hélas, malheureux amant,</l>
-          <l>Il m’est donc interdit d’espérer</l>
-          <l>Que les habitants de l’Averne entendent mes prières</l>
-          <l>Et que tel l’âme errante</l>
-          <l>D’un corps infortuné laissé sans sépulture,</l>
-          <l>Je resterai privé du ciel et de l’enfer ?</l>
-          <l>Un destin cruel veut-il donc,</l>
-          <l>Que dans les horreurs de la mort</l>
-          <l>Loin de toi, mon cœur</l>
-          <l>Je crie ton nom en vain,</l>
-          <l>Et que je me consume en prières et en pleurs ?</l>
-          <l>Rendez-moi ma bien aimée, dieux du Tartare !</l>
-          <stage>
-            <hi rend="i">Symphonie</hi>
-          </stage>
-          <l>Il dort, et, si ma lyre</l>
-          <l>Ne parvient à toucher son cœur endurci</l>
-          <l>Du moins, grâce à mon chant, ses yeux</l>
-          <l>Ne peuvent échapper au sommeil.</l>
-          <l>En route, donc, pourquoi tarder encore ?</l>
-          <l>Il est temps désormais d’aborder l’autre rive</l>
-          <l>Si nul ne s’y oppose,</l>
-          <l>Que serve l’audace puisque les prières sont vaines.</l>
-          <l>L’occasion est la fleur de l’instant</l>
-          <l>Qui doit être aussitôt cueillie.</l>
-          <l>Tandis que mes yeux versent des torrents de larmes amères,</l>
-          <l>Rendez-moi ma bien aimée, dieux du Tartare !</l>
-          <stage>
-            <hi rend="i">Symphonie</hi>
-          </stage>
-        </sp>
-        <sp who="esprits">
-          <speaker>Chœur des esprits</speaker>
-          <l>Rien n’est tenté en vain par l’homme</l>
-          <l>Et la Nature ne sait plus comment s’armer contre lui,</l>
-          <l>De la plaine mouvante, il laboura les champs ondoyants</l>
-          <l>Il y sema ses peines dont il recueillit une blonde moisson.</l>
-          <l>Dès lors, pour que vécut</l>
-          <l>Le souvenir de sa gloire,</l>
-          <l>La Renommée délia sa langue pour parler de celui</l>
-          <l>Qui dompta la mer sur un frêle esquif</l>
-          <l>Et méprisa la colère d’Auster et d’Aquilon.</l>
-          <stage>
-            <hi rend="i">Symphonie</hi>
-          </stage>
-        </sp>
-      </div>
-      <div n="4" type="act">
-        <head>Acte IV</head>
-        <sp who="proserpine">
-          <speaker>Proserpine</speaker>
-          <l>Seigneur, ce malheureux</l>
-          <l>Parcourt les champs de la mort</l>
-          <l>En appelant Eurydice,</l>
-          <l>Lui dont tu viens d’entendre</l>
-          <l>La plainte si douce et mélodieuse</l>
-          <l>Il a rempli mon cœur de si grande pitié</l>
-          <l>Qu’à nouveau je t’implore</l>
-          <l>Pour que ta volonté accède à sa prière.</l>
-          <l>De grâce, si jamais mes yeux</l>
-          <l>T’ont prodigué quelque amoureuse douceur,</l>
-          <l>Si tu as aimé la pureté de mon front</l>
-          <l>Que tu nommes ton ciel, et par qui tu me jures</l>
-          <l>N’avoir rien à envier à Jupiter,</l>
-          <l>Je t’en prie, au nom de cette flamme</l>
-          <l>Dont Amour fit jadis brûler ta grande âme,</l>
-          <l>Permets qu’Eurydice à nouveau</l>
-          <l>Jouisse de ces jours</l>
-          <l>Qu’elle avait coutume de passer dans la joie et les chants</l>
-          <l>Et console les pleurs du malheureux Orphée.</l>
-        </sp>
-        <sp who="pluton">
-          <speaker>Pluton </speaker>
-          <l>Bien qu’un inflexible et immuable destin,</l>
-          <l>Épouse bien aimée, s’oppose à tes désirs,</l>
-          <l>Que rien pourtant ne soit plus refusé</l>
-          <l>À tant de beauté jointe à tant de prières.</l>
-          <l>Et qu’Orphée, malgré l’arrêt fatal</l>
-          <l>Retrouve sa chère Eurydice.</l>
-          <l>Mais avant que d’avoir quitté ces abîmes</l>
-          <l>Que jamais vers elle il ne tourne ses yeux avides,</l>
-          <l>Car, pour un seul regard, inéluctablement,</l>
-          <l>Il la perdrait à tout jamais.</l>
-          <l>Telle est ma décision. Maintenant, ô, ministres</l>
-          <l>Afin qu’Orphée l’entende, et l’entende Eurydice,</l>
-          <l>Faîtes, dans mon royaume, savoir ma volonté,</l>
-          <l>Et que personne, alors, n’espère la changer.</l>
-        </sp>
-        <sp who="ministre">
-          <speaker>Le Ministre</speaker>
-          <l>Ô !Puissant roi des habitants</l>
-          <l>Des ténèbres éternelles, que tes ordres soient notre loi,</l>
-          <l>Car nos pensées ne doivent pas chercher</l>
-          <l>D’autre causes internes que ta volonté.</l>
-        </sp>
-        <sp who="esprits">
-          <speaker>Un esprit</speaker>
-          <l>Orphée arrachera -t-il son épouse de ces froides cavernes ?</l>
-          <l>Saura-t-il, de toutes ses forces, résister à son juvénile désir</l>
-          <l>Et ne pas oublier l’implacable décret ?</l>
-        </sp>
-        <sp who="proserpine">
-          <speaker>Proserpine</speaker>
-          <l>Quelles grâces te rendrai-je</l>
-          <l>Maintenant qu’à mes prières</l>
-          <l>Tu accordes, noble Seigneur, un don si généreux ?</l>
-          <l>Béni soit le jour où je t’ai plu pour la première fois</l>
-          <l>Et bénis soient le rapt et la douce embuscade,</l>
-          <l>Puisque pour mon bonheur</l>
-          <l>C’est toi que je gagnai en perdant le soleil.</l>
-        </sp>
-        <sp who="pluton">
-          <speaker>Pluton</speaker>
-          <l>Tes douces paroles ravivent dans mon cœur</l>
-          <l>L’ancienne blessure d’amour.</l>
-          <l>Ainsi ton âme n’aspirera-t-elle plus</l>
-          <l>À un plaisir céleste</l>
-          <l>Qui te ferait abandonner le lit de ton époux.</l>
-        </sp>
-        <sp who="esprits">
-          <speaker>Chœur des esprits</speaker>
-          <l>Pitié et amour, aujourd’hui</l>
-          <l>Triomphent en enfer.</l>
-        </sp>
-        <sp who="esprits">
-          <speaker>Un esprit</speaker>
-          <l>Voici l’aimable chanteur</l>
-          <l>Qui conduit son épouse vers la lumière céleste.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Quel honneur sera digne de toi,</l>
-          <l>Ma lyre toute puissante,</l>
-          <l>Si dans le royaume du Tartare</l>
-          <l>Tu as pu fléchir les esprits les plus endurcis ?</l>
-          <l>Tu auras ta place parmi les plus belles</l>
-          <l>Images du ciel</l>
-          <l>Et au son de ta musique, les étoiles</l>
-          <l>Danseront en rondes lentes ou vives.</l>
-          <l>Moi, comblé grâce à toi,</l>
-          <l>Je verrai le visage aimé,</l>
-          <l>Et aujourd’hui je me reposerai</l>
-          <l>Sur le sein candide de mon épouse.</l>
-          <l>Mais hélas, tandis que je chante, qui peut m’assurer</l>
-          <l>Qu’elle me suit ? Qui me cache, hélas,</l>
-          <l>Le doux éclat de ces yeux bien-aimés ?</l>
-          <l>Peut-être, poussés par l’envie,</l>
-          <l>Les divinités de l’Averne,</l>
-          <l>Afin qu’ici-bas je ne sois pas pleinement comblé,</l>
-          <l>Me privent-elles de vous contempler</l>
-          <l>Qui, d’un seul regard peuvent rendre un mortel heureux ?</l>
-          <l>Mais que crains-tu, mon cœur ?</l>
-          <l>Ce qu’interdit Pluton, Amour l’ordonne.</l>
-          <l>À cette force plus puissante</l>
-          <l>Qui soumet et les hommes et les dieux,</l>
-          <l>Je devrais plutôt obéir.</l>
-          <l>(Un bruit.)</l>
-          <l>Mais, hélas, qu’entends-je ?</l>
-          <l>Les Furies amoureuses se préparent peut-être,</l>
-          <l>Avec rage, à lutter avec moi</l>
-          <l>Pour me ravir ma bien- aimée ?</l>
-          <l>Et moi, j’y consentirais ?</l>
-          <l>(Orphée se retourne.)</l>
-          <l>Ô astres si doux, je vous vois enfin,</l>
-          <l>Enfin je…mais quelle éclipse, hélas, vous obscurcit ?</l>
-        </sp>
-        <sp who="esprits">
-          <speaker>Les Esprits</speaker>
-          <l>Tu as enfreint la loi, tu n’es pas digne de pardon.</l>
-        </sp>
-        <sp who="eurydice">
-          <speaker>Eurydice</speaker>
-          <l>Las, vision trop douce et trop amère !</l>
-          <l>Ainsi donc, tu me perds pour m’avoir trop aimée ?</l>
-          <l>Et moi, infortunée, je perds la grâce</l>
-          <l>De jouir à nouveau</l>
-          <l>De la lumière et de la vie, et je te perds en même temps,</l>
-          <l>Toi, cher époux, le plus cher de mes biens.</l>
-        </sp>
-        <sp who="esprits">
-          <speaker>Un esprit</speaker>
-          <l>Retourne à l’ombre de la mort,</l>
-          <l>Malheureuse Eurydice,</l>
-          <l>N’espère plus revoir les étoiles,</l>
-          <l>Car, désormais, l’Enfer sera sourd à tes prières</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Où t’en vas-tu, ma vie ? Me voici, je te suis.</l>
-          <l>Mais, hélas, qui m’en empêche ? Est-ce rêve ou délire ?</l>
-          <l>Quel mystérieux pouvoir de ces sinistres lieux</l>
-          <l>À ces ténèbres aimées m’arrache, malgré moi,</l>
-          <l>Et me conduit vers l’horrible lumière ?</l>
-          <stage>
-            <hi rend="i">Symphonie</hi>
-          </stage>
-        </sp>
-        <sp who="esprits">
-          <speaker>Chœur des esprits</speaker>
-          <l>La vertu est un rayon de la beauté céleste,</l>
-          <l>Parure de l’âme dont, seule, elle fait le prix.</l>
-          <l>Elle ne craint pas l’outrage du temps,</l>
-          <l>Mais au contraire, chez l’homme,</l>
-          <l>Les années, en passant, augmentent sa splendeur.</l>
-          <l>Orphée vainquit l’Enfer, puis fut vaincu</l>
-          <l>Par ses passions.</l>
-          <l>Seul sera digne d’une gloire éternelle,</l>
-          <l>Celui qui triomphera de lui-même.</l>
-          <stage>Symphonie</stage>
-        </sp>
-      </div>
-      <div n="5" type="act">
-        <head>Acte V</head>
-        <label>Ritournelle</label>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Voici les champs de Thrace, et puis voici le lieu</l>
-          <l>Où la douleur,</l>
-          <l>À la triste nouvelle me transperça le cœur.</l>
-          <l>Puisque je n’ai plus l’espoir</l>
-          <l>Que les prières, les soupirs ni les larmes</l>
-          <l>Me rendent l’amour que j’ai perdu,</l>
-          <l>Que puis-je désormais, sinon vous adresser mes plaintes</l>
-          <l>Ô forêts, jadis doux réconfort</l>
-          <l>De mes tourments, alors qu’il plut au ciel</l>
-          <l>De vous faire partager ma détresse ?</l>
-          <l>Vous avez gémi, ô montagnes, vous avez pleuré,</l>
-          <l>O pierres, au départ de notre soleil.</l>
-          <l>Et avec vous, toujours je pleurerai,</l>
-          <l>Et, toujours me lamenterai, hélas !</l>
-          <l>Que de plaintes et de larmes !</l>
-        </sp>
-        <sp who="echo">
-          <speaker>Écho</speaker>
-          <l>…larmes !</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Écho, amoureuse aimable</l>
-          <l>Tu es inconsolable</l>
-          <l>Et, dans ma douleur, me voudrais consoler</l>
-          <l>Bien que mes yeux</l>
-          <l>Soient déjà devenus deux fontaines de larmes,</l>
-          <l>Dans mon malheur si dur et si cruel</l>
-          <l>De pleurs, pourtant, je n’ai pas assez</l>
-        </sp>
-        <sp who="echo">
-          <speaker>Écho</speaker>
-          <l>…pas assez.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Si j’avais les yeux d’Argus,</l>
-          <l>Et que tous répandissent un océan de larmes,</l>
-          <l>Ma douleur ne saurait encore dire tant de malheur.</l>
-        </sp>
-        <sp who="echo">
-          <speaker>Écho</speaker>
-          <l>…malheur !</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Si tu as pitié de ma peine, je te remercie</l>
-          <l>De ta bienveillance.</l>
-          <l>Mais, à mes lamentations,</l>
-          <l>Pourquoi ne réponds-tu</l>
-          <l>Que par mes derniers mots ?</l>
-          <l>Renvoie mes plaintes entières.</l>
-          <l>Mais toi, mon âme, si jamais</l>
-          <l>Ton ombre froide revient en ces lieux amis,</l>
-          <l>Accepte de moi, cet ultime hommage,</l>
-          <l>Car, désormais, je te consacre, et ma lyre et mon chant,</l>
-          <l>Comme, jadis, déjà, sur l’autel de l’amour,</l>
-          <l>Je t’ai offert en sacrifice mon esprit enflammé.</l>
-          <l>Belle, tu fus, et sage, et c’est à toi</l>
-          <l>Que le ciel généreux prodigua tant de grâces,</l>
-          <l>Alors qu’envers les autres, il mesura ses dons.</l>
-          <l>Toute louange, en toutes langues, s’adresse à toi,</l>
-          <l>Toi dont le corps si beau abritait une âme plus belle encore</l>
-          <l>D’autant plus modeste qu’elle était plus digne d’honneurs.</l>
-          <l>Alors que les autres femmes ont orgueilleuses et perfides,</l>
-          <l>Volages et sans pitié pour ceux qui les adorent,</l>
-          <l>Dépourvues de raison et de nobles pensées,</l>
-          <l>C’est à raison qu’on ne loue pas leurs œuvres.</l>
-          <l>Et jamais, donc, Amour, pour une vile femelle,</l>
-          <l>Ne me transpercera le cœur de sa flèche dorée.</l>
-          
-          <stage>Apollon descend en chantant dans un nuage</stage>
-        </sp>
-        <label>Symphonie</label>
-        <sp who="apollon">
-          <speaker>Apollon</speaker>
-          <l>Pourquoi, te livres tu ainsi, mon fils</l>
-          <l>À la douleur et à la colère ?</l>
-          <l>Non, ce n’est pas la marque d’un cœur généreux</l>
-          <l>Que d’être esclave de sa passion.</l>
-          <l>Je vois déjà le péril et la honte</l>
-          <l>Qui te menacent</l>
-          <l>Et je quitte le ciel pour te venir en aide.</l>
-          <l>Maintenant, écoute-moi, tu en recueilleras honneur et vie.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Tu arrives, Père généreux, au moment le plus opportun,</l>
-          <l>La colère et l’amour et la douleur immense,</l>
-          <l>M’avaient déjà conduit vers une fin désespérée.</l>
-          <l>Me voici donc, attentif à tes conseils,</l>
-          <l>Père céleste ; maintenant, impose-moi ta volonté.</l>
-        </sp>
-        <sp who="apollon">
-          <speaker>Apollon</speaker>
-          <l>Tu t’es trop réjoui de ta bonne fortune,</l>
-          <l>Et maintenant, tu pleures trop</l>
-          <l>Sur ton sort si dur et cruel.</l>
-          <l>Ne sais-tu pas encore</l>
-          <l>Qu’ici-bas nul plaisir ne dure ?</l>
-          <l>Et donc, si tu désires jouir d’une vie immortelle,</l>
-          <l>Viens avec moi au ciel qui à lui te rappelle.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Ainsi, jamais plus ne verrai-je les doux yeux d’Eurydice que j’aime ?</l>
-        </sp>
-        <sp who="apollon">
-          <speaker>Apollon</speaker>
-          <l>Dans le soleil et les étoiles,</l>
-          <l>Tu retrouveras sa beauté.</l>
-        </sp>
-        <sp who="orphee">
-          <speaker>Orphée</speaker>
-          <l>Je serais vraiment un fils indigne</l>
-          <l>D’un tel père,</l>
-          <l>Si je ne suivais pas ce généreux conseil.</l>
-        </sp>
-        <sp who="apollon orphee">
-          <speaker>Apollon et Orphée</speaker>
-          <stage>(Ascendant au ciel en chantant)</stage>
-          <l>En chantant, nous montons au ciel</l>
-          <l>Où la véritable vertu</l>
-          <l>Trouve en digne récompense</l>
-          <l>Le bonheur et la paix.</l>
-          
-        </sp><label>Ritornelle</label>
-        <sp who="nymphes bergers">
-          <speaker>Chœur des nymphes et des bergers</speaker>
-          <l>Va, Orphée, dans la félicité parfaite,</l>
-          <l>Jouir de la gloire du ciel,</l>
-          <l>Là où jamais le bonheur ne s’estompe,</l>
-          <l>Là où, jamais n’exista la douleur,</l>
-          <l>Tandis qu’avec joie et piété,</l>
-          <l>Nous t’offrons sur l’autel, l’encens et les prières.</l>
-          <l>Ainsi va celui qui ne se dérobe pas</l>
-          <l>À l’appel d’un dieu éternel ;</l>
-          <l>Il obtient grâce dans le ciel,</l>
-          <l>Qui, ici-bas, connut l’enfer ;</l>
-          <l>Et qui sème dans la souffrance</l>
-          <l>Cueille le fruit de toute grâce.</l>
-          
-        </sp><label>Mauresque</label>
-      </div>
-    </body>
-  
-</text></TEI>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docAuthor>Claudio Monteverdi, Alessandro Striggio</docAuthor>
+            <docTitle>
+               <titlePart type="main">Orphée, fable en musique</titlePart>
+            </docTitle>
+         </titlePage>
+         <castList>
+            <castItem xml:id="musique">La Musique</castItem>
+            <castItem xml:id="bergers">Les Bergers</castItem>
+            <castItem xml:id="nymphes">Les Nymphes</castItem>
+            <castItem xml:id="orphee">Orphée</castItem>
+            <castItem xml:id="eurydice">Eurydice</castItem>
+            <castItem xml:id="messagere">Une messagère</castItem>
+            <castItem xml:id="esperance">L’Espérance</castItem>
+            <castItem xml:id="caronte">Caronte</castItem>
+            <castItem xml:id="esprits">Les Esprits</castItem>
+            <castItem xml:id="proserpine">Proserpine</castItem>
+            <castItem xml:id="pluton">Pluton</castItem>
+            <castItem xml:id="ministre">Le ministre</castItem>
+            <castItem xml:id="echo">Écho</castItem>
+            <castItem xml:id="apollon">Apollon</castItem>
+         </castList>
+      </front>
+      <body>
+         <div type="prologue">
+            <head>Prologue</head>
+            <label>Tocatta</label>
+            <label>Ritournelle</label>
+            <sp who="musique">
+               <speaker>La Musique</speaker>
+               <l>
+                  <milestone unit="sent" n="1"/>Des rives de mon bien aimé Permesso, je viens à vous</l>
+               <l>Illustres héros, noble lignée de rois,</l>
+               <l>Dont la renommée conte les sublimes vertus</l>
+               <l>Sans atteindre à la vérité tant elles sont élevées.</l>
+               <l>
+                  <milestone unit="sent" n="2"/>Je suis la Musique, et par mes doux accents</l>
+               <l>Je sais apaiser les cœurs tourmentés,</l>
+               <l>Et enflammer d’amour ou de noble courroux</l>
+               <l>Même les esprits les plus froids.</l>
+               <l>
+                  <milestone unit="sent" n="3"/>M’accompagnant d’une cithare d’or, j’ai coutume</l>
+               <l>D’enchanter l’oreille des mortels ;</l>
+               <l>Et, à m’entendre, leur âme aspire</l>
+               <l>Aux sons harmonieux de la lyre du ciel.</l>
+               <l>
+                  <milestone unit="sent" n="4"/>C’est le désir de vous parler d’Orphée qui m’a conduite ici,</l>
+               <l>Orphée qui de son chant apprivoisait les bêtes féroces Et fit céder l’Enfer à ses prières, Orphée, gloire immortelle du Pinde et de l’Hélicon.</l>
+               <l>
+                  <milestone unit="sent" n="5"/>Et tandis que je fais alterner les chants tristes aux gais,</l>
+               <l>Qu’à présent nul oiseau ne bouge dans ces arbres,</l>
+               <l>Que tous les flots sur ces rives se taisent,</l>
+               <l>Et que la moindre brise en sa course s’arrête.</l>
+            </sp>
+         </div>
+         <div n="1" type="act">
+            <head>Acte I</head>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="6"/>En cet heureux jour de liesse</l>
+               <l>Qui a mis fin aux tourments amoureux</l>
+               <l>De notre demi-dieu, chantons, bergers,</l>
+               <l>Que soient dignes d’Orphée les accents de nos chœurs.</l>
+               <l>
+                  <milestone unit="sent" n="7"/>Aujourd’hui s’est émue</l>
+               <l>L’âme autrefois si fière</l>
+               <l>De la belle Eurydice.</l>
+               <l>
+                  <milestone unit="sent" n="8"/>Et sur son sein, Orphée a trouvé le bonheur ;</l>
+               <l>Elle pour qui naguère, il a dans ces forêts,</l>
+               <l>Tant soupiré et tant pleuré.</l>
+               <l>
+                  <milestone unit="sent" n="9"/>En cet heureux jour de liesse</l>
+               <l>Qui a mis fin aux tourments amoureux, etc.</l>
+            </sp>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="10"/>Viens, Hyménée, ah, viens</l>
+               <l>Et que ton ardente lumière</l>
+               <l>Soit comme un soleil naissant</l>
+               <l>Qui donne à ces amants des jours sereins</l>
+               <l>Et repousse à jamais</l>
+               <l>Les ombres et les horreurs de la douleur et des tourments.</l>
+            </sp>
+            <sp who="nymphes">
+               <speaker>Une nymphe</speaker>
+               <l>
+                  <milestone unit="sent" n="11"/>Muses, gloire du Parnasse, amour du ciel</l>
+               <l>Noble réconfort d’un cœur désolé</l>
+               <l>Que le son de vos lyres</l>
+               <l>Déchire le voile sombre des nues ;</l>
+               <l>Et, tandis qu’aujourd’hui nous invoquons Hyménée</l>
+               <l>Pour qu’il soit favorable à notre cher Orphée,</l>
+               <l>Que sur vos lyres bien accordées</l>
+               <l>Votre chant s’unisse au nôtre en harmonie.</l>
+            </sp>
+            <label>Ballet</label>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="12"/>Quittez les monts,</l>
+               <l>Quittez les sources,</l>
+               <l>Nymphes gracieuses et gaies,</l>
+               <l>Et sur ces prés faits pour la danse,</l>
+               <l>Dansez d’un pied léger.</l>
+               <l>
+                  <milestone unit="sent" n="13"/>Qu’en ce lieu le soleil contemple</l>
+               <l>Vos rondes,</l>
+               <l>Plus gracieuses encore que celles</l>
+               <l>Des étoiles du ciel</l>
+               <l>Qui dans la nuit brune</l>
+               <l>Dansent à la lune.</l>
+               <l>
+                  <milestone unit="sent" n="14"/>Quittez les monts…etc.</l>
+               <l>
+                  <milestone unit="sent" n="15"/>Puis, de belles fleurs ornez</l>
+               <l>Les cheveux de ces amants,</l>
+               <l>Qui, au terme de durs tourments,</l>
+               <l>Goûtent enfin le bonheur</l>
+               <l>De voir s’accomplir leur désir.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="16"/>Mais toi, aimable chanteur, par tes plaintes</l>
+               <l>Tu fis autrefois pleurer ces campagnes,</l>
+               <l>Que ne fais-tu maintenant, au son de ta lyre,</l>
+               <l>Se réjouir avec toi collines et vallées ?</l>
+               <l>
+                  <milestone unit="sent" n="17"/>Qu’une joyeuse chanson, des mots d’Amour inspirée</l>
+               <l>Témoigne de ton bonheur.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="18"/>Rose du ciel, source de vie</l>
+               <l>Digne descendant de celui qui régit tout l’univers,</l>
+               <l>Soleil, toi qui tournes autour du monde et qui le domine</l>
+               <l>Du haut de ces sphères étoilées ;</l>
+               <l>Dis-moi, vis-tu jamais Amant plus heureux et plus comblé que moi ?</l>
+               <l>
+                  <milestone unit="sent" n="19"/>Qu’il fut heureux le jour</l>
+               <l>Où, la première fois, je te vis,</l>
+               <l>Bien aimée,</l>
+               <l>Et plus heureuse encore, l’heure</l>
+               <l>Où mon cœur soupira après toi !</l>
+               <l>
+                  <milestone unit="sent" n="20"/>Puisqu’à mes soupirs répondirent les tiens ;</l>
+               <l>Ô combien fut heureux l’instant</l>
+               <l>Où tu tendis vers moi</l>
+               <l>Ta blanche main, gage d’un pur amour.</l>
+               <l>
+                  <milestone unit="sent" n="21"/>Si j’avais autant de cœurs</l>
+               <l>Que le ciel éternel compte d’yeux</l>
+               <l>Et qu’au vert mois de mai</l>
+               <l>Ces douces collines comptent de chevelures,</l>
+               <l>Ils seraient tous comblés et débordants</l>
+               <l>De ce bonheur qui m’emplit aujourd’hui.</l>
+            </sp>
+            <sp who="eurydice">
+               <speaker>Eurydice</speaker>
+               <l>
+                  <milestone unit="sent" n="22"/>Je ne puis dire, Orphée,</l>
+               <l>Ma joie à ton plaisir,</l>
+               <l>Car mon cœur m’a quittée</l>
+               <l>Et demeure avec toi en compagnie d’Amour.</l>
+               <l>
+                  <milestone unit="sent" n="23"/>Interroge-le donc si tu désires entendre</l>
+               <l>Quel bonheur est le mien, et à quel point je t’aime.</l>
+            </sp>
+            <label>Ballet</label>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="24"/>Quittez les monts,</l>
+               <l>Quittez les sources,</l>
+               <l>Nymphes gracieuses et gaies,</l>
+               <l>Et sur ces prés faits pour la danse,</l>
+               <l>Dansez d’un pied léger.</l>
+               <l>
+                  <milestone unit="sent" n="25"/>Qu’en ce lieu le soleil contemple</l>
+               <l>Vos rondes,</l>
+               <l>Plus gracieuses encore que celles</l>
+               <l>Des étoiles du ciel</l>
+               <l>Qui dans la nuit brune</l>
+               <l>Dansent à la lune.</l>
+               <l>
+                  <milestone unit="sent" n="26"/>Viens, Hyménée, ah, viens</l>
+               <l>Et que ton ardente lumière</l>
+               <l>Soit comme un soleil naissant</l>
+               <l>Qui donne à ces amants des jours sereins</l>
+               <l>Et repousse à jamais</l>
+               <l>Les ombres et les horreurs de la douleur et des tourments.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="27"/>Mais si cette joie, du Ciel nous arrive</l>
+               <l>Comme tout, ici-bas, du Ciel nous est donné,</l>
+               <l>Il est juste et bon, qu’avec dévotion,</l>
+               <l>Nous lui portions l’encens et aussi les offrandes :</l>
+               <l>
+                  <milestone unit="sent" n="28"/>Que chacun, donc, dirige ses pas vers le temple</l>
+               <l>Pour y prier celui qui dirige le monde</l>
+               <l>De préserver longtemps notre bonheur.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Les Bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="29"/>Que nul ici ne s’abandonne à la douleur, au désespoir</l>
+               <l>Même si quelquefois leurs assauts sont si forts</l>
+               <l>Qu’ils gâchent notre vie.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="nymphes bergers">
+               <speaker>Nymphes et Bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="30"/>Car, même après qu’un lourd nuage chargé</l>
+               <l>De sinistre tempête ait obscurci le monde,</l>
+               <l>Le soleil déploie, plus clairs, ses rayons de lumière.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="31"/>Après l’âpre froideur de l’hiver dénudé</l>
+               <l>Le printemps chaque année couvre les champs de fleurs.</l>
+            </sp>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="32"/>Voici Orphée, Lui qui se nourrissait naguère de soupirs et</l>
+               <l>s’abreuvait de larmes ;</l>
+               <l>Il est si heureux, aujourd’hui</l>
+               <l>Qu’il n’est plus rien qu’il ne désire.</l>
+            </sp>
+         </div>
+         <div n="2" type="act">
+            <head>Acte II</head>
+            <label>Symphonie</label>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="33"/>Voici que je reviens à vous,</l>
+               <l>Chères forêts et prairies bien aimées,</l>
+               <l>Égayées du même soleil</l>
+               <l>Qui transforme mes nuits en jours.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="34"/>Vois, Orphée, l’ombre de ces hêtres</l>
+               <l>Qui nous attire vers elle</l>
+               <l>Alors que du haut du ciel</l>
+               <l>Phœbus darde ses rayons brûlants.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="35"/>Sur l’herbe de ces rives, Reposons-nous un peu</l>
+               <l>Et qu’en des chants divers,</l>
+               <l>Chacun de sa voix s’accorde</l>
+               <l>Au doux murmure des eaux.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="bergers">
+               <speaker>Les Bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="36"/>Dans ce pré charmant,</l>
+               <l>Les dieux de la forêt</l>
+               <l>Viennent souvent chercher</l>
+               <l>Un aimable séjour.</l>
+               <l>
+                  <label>Ritournelle</label>
+                  <milestone unit="sent" n="37"/>En ce lieu, quelquefois,</l>
+               <l>Pan, le dieu des bergers,</l>
+               <l>Évoquait doucement</l>
+               <l>Ses amours malheureuses.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="nymphes">
+               <speaker>Les Nymphes</speaker>
+               <l>
+                  <milestone unit="sent" n="38"/>Là, les Napées gracieuses,</l>
+               <l>Jeunes nymphes en fleurs</l>
+               <l>De leurs doigts délicats</l>
+               <l>Ramassaient quelques roses.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="39"/>Alors, rends dignes, Orphée,</l>
+               <l>Du beau son de ta lyre,</l>
+               <l>Ces champs où l’on respire</l>
+               <l>Un parfum de Saba.</l>
+            </sp>
+            <label>Ritournelle</label>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="40"/>Vous souvient-il, bois ombrageux</l>
+               <l>De mes longs et cruels tourments</l>
+               <l>Quand les rochers pleins de pitié</l>
+               <l>Se faisaient l’écho de mes plaintes ?</l>
+               <l>
+                  <milestone unit="sent" n="41"/>Ne vous semblais-je pas alors</l>
+               <l>Le plus désespéré des hommes ?</l>
+               <l>
+                  <milestone unit="sent" n="42"/>Mais aujourd’hui, mon sort a changé de visage</l>
+               <l>Et il a transformé en fête mes tourments.</l>
+               <l>
+                  <milestone unit="sent" n="43"/>J’ai vécu triste et malheureux,</l>
+               <l>J’exulte maintenant et ces peines</l>
+               <l>Endurées au long de tant d’années</l>
+               <l>Donnent bien plus de prix à mon bonheur présent.</l>
+               <l>
+                  <milestone unit="sent" n="44"/>Belle Eurydice, et pour toi seulement,</l>
+               <l>Je bénis mes souffrances ;</l>
+               <l>Après la peine, elle est plus profonde la joie,</l>
+               <l>Après le malheur, le bonheur est plus grand.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="45"/>Vois Orphée, vois tout autour de nous</l>
+               <l>Bois et prairies se réjouissent.</l>
+               <l>
+                  <milestone unit="sent" n="46"/>Continue donc, avec ta lyre d’or,</l>
+               <l>À rendre l’air plus doux en ce jour bienheureux.</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="47"/>Las, sort cruel !</l>
+               <l>
+                  <milestone unit="sent" n="48"/>Implacable et funeste destin !</l>
+               <l>
+                  <milestone unit="sent" n="49"/>Las, fatales étoiles, impitoyable Ciel !</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Premier berger</speaker>
+               <l>
+                  <milestone unit="sent" n="50"/>Quel accent douloureux perturbe ce jour de joie ?</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="51"/>Malheureuse, il m’appartient donc</l>
+               <l>De transpercer le cœur d’Orphée</l>
+               <l>Par mes paroles</l>
+               <l>Alors que de son chant, il réjouit le Ciel ?</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Berger</speaker>
+               <l>
+                  <milestone unit="sent" n="52"/>Vois ici la charmante Sylvia,</l>
+               <l>Si douce compagne de la belle Eurydice ;</l>
+               <l>Comme elle semble triste !</l>
+               <l>
+                  <milestone unit="sent" n="53"/>Que se passe-t-il donc ? <milestone unit="sent" n="54"/>De grâce, dieux puissants,</l>
+               <l>Ne détournez de nous vos regards bienveillants !</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="55"/>Bergers, cessez vos chants,</l>
+               <l>Car à notre allégresse fait place la douleur.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="56"/>D’où viens-tu ? Où vas-tu ? <milestone unit="sent" n="57"/>Nymphe, quelles nouvelles ?</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="58"/>Je viens à toi, Orphée, bien triste messagère</l>
+               <l>D’un sort funeste et malheureux ;</l>
+               <l>Ta belle Eurydice</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="59"/>Hélas, qu’est-ce que j’entends ?</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="60"/>Ta femme bien aimée est morte.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="61"/>Hélas !</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="62"/>Dans un pré fleuri, avec quelques amies,</l>
+               <l>Elle cueillait des fleurs pour mettre à ses cheveux,</l>
+               <l>Lorsqu’un serpent perfide</l>
+               <l>Qui se cachait dans l’herbe,</l>
+               <l>De sa dent venimeuse lui a mordu le pied.</l>
+               <l>
+                  <milestone unit="sent" n="63"/>Et l’on vit aussitôt pâlir son beau visage</l>
+               <l>Alors que dans ses yeux s’éteignait cette flamme rivale du soleil.</l>
+               <l>
+                  <milestone unit="sent" n="64"/>Nous toutes, atterrées, éplorées</l>
+               <l>L’entourâmes alors, tentant de rappeler</l>
+               <l>Ses esprits égarés</l>
+               <l>Avec un peu d’eau fraîche et des charmes puissants.</l>
+               <l>
+                  <milestone unit="sent" n="65"/>Mais rien n’y fit, hélas, malheureuse Eurydice,</l>
+               <l>Car, entrouvrant ses yeux et t’appelant, Orphée,</l>
+               <l>Fit un profond soupir, expira dans mes bras ;</l>
+               <l>Et moi, je restai là,</l>
+               <l>Le cœur rempli de pitié et d’effroi.</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="66"/>Las, sort cruel ! <milestone unit="sent" n="67"/>Implacable et funeste destin !</l>
+               <l>
+                  <milestone unit="sent" n="68"/>Las, fatales étoiles, impitoyable Ciel !</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="69"/>À la triste nouvelle,</l>
+               <l>Ce malheureux semble pétrifié</l>
+               <l>Et sa douleur trop grande l’empêche de pleurer !</l>
+            </sp>
+            <sp who="bergers">
+               <speaker>Un berger</speaker>
+               <l>
+                  <milestone unit="sent" n="70"/>Hélas, seul un cœur de tigre ou d’ours</l>
+               <l>Resterait insensible à ta peine,</l>
+               <l>Malheureux amant, privé de ton bonheur !</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="71"/>Tu es morte, ma vie, et je respire encore ?</l>
+               <l>
+                  <milestone unit="sent" n="72"/>Tu m’as quitté pour ne jamais plus revenir,</l>
+               <l>Et moi, je reste là ?</l>
+               <l>
+                  <milestone unit="sent" n="73"/>Non ! car si mes chants ont quelconque pouvoir,</l>
+               <l>J’irai sans crainte aux plus profonds abîmes ;</l>
+               <l>Et quand j’aurai touché le cœur du roi des ombres,</l>
+               <l>Je te ramènerai pour revoir les étoiles.</l>
+               <l>
+                  <milestone unit="sent" n="74"/>Si un cruel destin me refuse cela,</l>
+               <l>Je resterai alors avec toi dans la mort,</l>
+               <l>Adieu terre, adieu ciel, et adieu le soleil !</l>
+            </sp>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="75"/>Las, sort cruel ! <milestone unit="sent" n="76"/>Implacable et funeste destin !</l>
+               <l>
+                  <milestone unit="sent" n="77"/>Las, fatales étoiles, impitoyable Ciel !</l>
+               <l>
+                  <milestone unit="sent" n="78"/>Qu’aucun mortel ne s’abandonne</l>
+               <l>À un bonheur éphémère et fragile,</l>
+               <l>Car bientôt il s’enfuit, et même, bien souvent,</l>
+               <l>Plus haut est le sommet, plus le ravin est proche</l>
+            </sp>
+            <sp who="messagere">
+               <speaker>La Messagère</speaker>
+               <l>
+                  <milestone unit="sent" n="79"/>Mais moi, dont la parole a porté le couteau</l>
+               <l>Qui déchira l’âme amoureuse d’Orphée,</l>
+               <l>Haïe par les bergers et haïe par les nymphes,</l>
+               <l>Et haïe par moi-même, où vais-je me cacher ?</l>
+               <l>
+                  <milestone unit="sent" n="80"/>Telle un oiseau de nuit funeste,</l>
+               <l>Pour toujours je fuirai le soleil ;</l>
+               <l>Dans l’antre solitaire,</l>
+               <l>Je mènerai la vie qui sied à ma douleur.</l>
+            </sp>
+            <label>Symphonie</label>
+            <sp who="nymphes">
+               <speaker>Les Nymphes</speaker>
+               <l>
+                  <milestone unit="sent" n="81"/>Infortunés ! Qui nous consolera ?</l>
+               <l>
+                  <milestone unit="sent" n="82"/>Qui fera de nos yeux la source vive,</l>
+               <l>Que nous puissions, comme il se doit, pleurer en ce jour de détresse ?</l>
+               <l>
+                  <milestone unit="sent" n="83"/>Ce jour plus triste encore d’avoir été joyeux !</l>
+               <l>
+                  <milestone unit="sent" n="84"/>Aujourd’hui, un accident cruel a éteint</l>
+               <l>Les deux lumières les plus vives de nos forêts,</l>
+               <l>Eurydice et Orphée, infortunés amants,</l>
+               <l>L’une mordue par le serpent,</l>
+               <l>Et l’autre, hélas, transpercé de douleur.</l>
+            </sp>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="85"/>Las, sort cruel ! <milestone unit="sent" n="86"/>Implacable et funeste destin !</l>
+               <l>
+                  <milestone unit="sent" n="87"/>Las, fatales étoiles, impitoyable Ciel !</l>
+            </sp>
+            <sp who="nymphes">
+               <speaker>Les Nymphes</speaker>
+               <l>
+                  <milestone unit="sent" n="88"/>Mais où, où sont donc, maintenant,</l>
+               <l>De cette pauvre nymphe, les beaux membres glacés</l>
+               <l>Dignes séjours d’une âme noble</l>
+               <l>Envolée aujourd’hui dans la fleur de son âge ?</l>
+               <l>
+                  <milestone unit="sent" n="89"/>Allons, bergers, allons, pieusement retrouver</l>
+               <l>Ce corps sans vie</l>
+               <l>Et lui rendre l’hommage de nos larmes amères.</l>
+            </sp>
+            <sp who="nymphes bergers">
+               <speaker>Chœur de nymphes et de bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="90"/>Las, sort cruel ! <milestone unit="sent" n="91"/>Implacable et funeste destin !</l>
+               <l>
+                  <milestone unit="sent" n="92"/>Las, fatales étoiles, impitoyable Ciel !</l>
+            </sp>
+            <label>Ritournelle</label>
+         </div>
+         <div n="3" type="act">
+            <head>Acte III</head>
+            <label>Symphonie</label>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="93"/>Sous ton escorte, Espérance, ma déesse,</l>
+               <l>Unique recours des mortels affligés,</l>
+               <l>Me voici parvenu au seuil de ces royaumes</l>
+               <l>Tristes et ténébreux</l>
+               <l>Où jamais ne parvient un rayon de soleil.</l>
+               <l>
+                  <milestone unit="sent" n="94"/>Toi, ma compagne, toi, mon guide,</l>
+               <l>Sur ce chemin étrange et inconnu,</l>
+               <l>Tu as soutenu mon pas faible et tremblant</l>
+               <l>C’est pourquoi aujourd’hui, je conserve l’espoir</l>
+               <l>De revoir ces astres radieux</l>
+               <l>Seules lumières de mes yeux.</l>
+            </sp>
+            <sp who="esperance">
+               <speaker>L’espérance</speaker>
+               <l>
+                  <milestone unit="sent" n="95"/>Voici le sombre marécage, voici le rocher</l>
+               <l>Qui mène à l’autre rive les âmes dénudées</l>
+               <l>Là où règne Pluton sur le vaste empire des ombres.</l>
+               <l>
+                  <milestone unit="sent" n="96"/>Au-delà de ce marécage, au-delà de ce fleuve,</l>
+               <l>Dans ces champs de douleur et de larmes,</l>
+               <l>Le destin cruel cache à tes yeux ton unique bonheur.</l>
+               <l>
+                  <milestone unit="sent" n="97"/>Maintenant, il te faut grand courage et beau chant.</l>
+               <l>
+                  <milestone unit="sent" n="98"/>Je t’ai conduit ici, mais je n’ai plus le droit</l>
+               <l>De venir avec toi, c’est une loi sévère,</l>
+               <l>Une loi que le fer a gravée dans le roc,</l>
+               <l>Sur le funeste seuil du palais des abîmes</l>
+               <l>Et dont le sens farouche est ainsi énoncé :</l>
+               <l>
+                  <milestone unit="sent" n="99"/>« Laissez toute espérance, vous qui entrez ici ».</l>
+               <l>
+                  <milestone unit="sent" n="100"/>Si pourtant, en ton cœur, tu nourris le projet</l>
+               <l>Ferme, d’entrer dans la cité funeste,</l>
+               <l>Je m’enfuis loin de toi</l>
+               <l>Et je retourne à mon habituel séjour.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="101"/>Ah ! Où t’en vas-tu donc,</l>
+               <l>Unique et doux réconfort de mon âme ?</l>
+               <l>
+                  <milestone unit="sent" n="102"/>Alors qu’au bout du long chemin,</l>
+               <l>Je vois enfin le port tout proche,</l>
+               <l>Pourquoi t’en aller et m’abandonner, hélas</l>
+               <l>Au seuil du périlleux passage ?</l>
+               <l>
+                  <milestone unit="sent" n="103"/>Quel bien me reste-t-il si tu t’enfuis,</l>
+               <l>Toi, très douce Espérance ?</l>
+            </sp>
+            <sp who="caronte">
+               <speaker>Caronte</speaker>
+               <l>
+                  <milestone unit="sent" n="104"/>Ô toi qui avant l’heure</l>
+               <l>T’en viens sur ces rivages avec témérité,</l>
+               <l>Arrête là tes pas !</l>
+               <l>
+                  <milestone unit="sent" n="105"/>Un mortel, sur ces eaux, ne doit pas naviguer,</l>
+               <l>Vivant, avec les morts ne peut pas séjourner.</l>
+               <l>
+                  <milestone unit="sent" n="106"/>Quoi ? Tu voudrais peut-être, ennemi de mon maître,</l>
+               <l>Que s’éloigne Cerbère des portes du Tartare ?</l>
+               <l>
+                  <milestone unit="sent" n="107"/>Ou le cœur enflammé d’un désir indécent</l>
+               <l>Tu voudrais lui ravir sa belle et chère épouse ?</l>
+               <l>
+                  <milestone unit="sent" n="108"/>Modère ton audace folle, car dans ma barque</l>
+               <l>Plus jamais je n’accueillerai un être humain ;</l>
+               <l>Car j’ai encore au cœur une juste colère</l>
+               <l>Et l’amer souvenir des offenses d’antan.</l>
+            </sp>
+            <label>Symphonie</label>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="109"/>Puissant esprit, dieu redoutable,</l>
+               <l>Sans qui toute âme, libérée de son corps</l>
+               <l>Ne peut pas espérer rejoindre l’autre rive,</l>
+               <l>Ce n’est plus moi qui vis, puisque ma chère épouse</l>
+               <l>Est privée de sa vie, mon cœur s’en est allé,</l>
+               <l>Et sans mon cœur, comment pourrais-je vivre ?</l>
+               <l>
+                  <milestone unit="sent" n="110"/>C’est vers elle que j’ai cheminé dans le noir,</l>
+               <l>Mais non pas vers l’enfer,</l>
+               <l>Puisque là où se trouve une telle beauté,</l>
+               <l>Là est le paradis.</l>
+               <l>
+                  <milestone unit="sent" n="111"/>C’est moi, Orphée, et je suis les pas d’Eurydice</l>
+               <l>Parmi ces déserts ténébreux</l>
+               <l>Où jamais un mortel n’osa s’aventurer.</l>
+               <l>
+                  <milestone unit="sent" n="112"/>Ô, claires lumières de mes yeux</l>
+               <l>Un seul de vos regards peut me rendre la vie</l>
+               <l>Qui pourrait refuser ce secours à ma peine ?</l>
+               <l>
+                  <milestone unit="sent" n="113"/>Toi seul, très noble dieu, peux me venir en aide,</l>
+               <l>Et n’aies aucune crainte ; Sur cette lyre d’or,</l>
+               <l>Mes doigts ne sont armés que de cordes suaves :</l>
+               <l>
+                  <milestone unit="sent" n="114"/>Le plus dur des esprits ne sait leur résister.</l>
+            </sp>
+            <sp who="caronte">
+               <speaker>Caronte</speaker>
+               <l>
+                  <milestone unit="sent" n="115"/>Tu me flattes, il est vrai, et tu charmes mon cœur,</l>
+               <l>Chanteur inconsolé, par ton chant et tes pleurs.</l>
+               <l>
+                  <milestone unit="sent" n="116"/>Mais que reste loin, très loin de mon cœur,</l>
+               <l>Toute pitié, sentiment indigne de ma grandeur.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="117"/>Hélas, malheureux amant,</l>
+               <l>Il m’est donc interdit d’espérer</l>
+               <l>Que les habitants de l’Averne entendent mes prières</l>
+               <l>Et que tel l’âme errante</l>
+               <l>D’un corps infortuné laissé sans sépulture,</l>
+               <l>Je resterai privé du ciel et de l’enfer ?</l>
+               <l>
+                  <milestone unit="sent" n="118"/>Un destin cruel veut-il donc,</l>
+               <l>Que dans les horreurs de la mort</l>
+               <l>Loin de toi, mon cœur</l>
+               <l>Je crie ton nom en vain,</l>
+               <l>Et que je me consume en prières et en pleurs ?</l>
+               <l>
+                  <milestone unit="sent" n="119"/>Rendez-moi ma bien aimée, dieux du Tartare !</l>
+               <label>Symphonie</label>
+               <l>
+                  <milestone unit="sent" n="120"/>Il dort, et, si ma lyre</l>
+               <l>Ne parvient à toucher son cœur endurci</l>
+               <l>Du moins, grâce à mon chant, ses yeux</l>
+               <l>Ne peuvent échapper au sommeil.</l>
+               <l>
+                  <milestone unit="sent" n="121"/>En route, donc, pourquoi tarder encore ?</l>
+               <l>
+                  <milestone unit="sent" n="122"/>Il est temps désormais d’aborder l’autre rive</l>
+               <l>Si nul ne s’y oppose,</l>
+               <l>Que serve l’audace puisque les prières sont vaines.</l>
+               <l>
+                  <milestone unit="sent" n="123"/>L’occasion est la fleur de l’instant</l>
+               <l>Qui doit être aussitôt cueillie.</l>
+               <l>
+                  <milestone unit="sent" n="124"/>Tandis que mes yeux versent des torrents de larmes amères,</l>
+               <l>Rendez-moi ma bien aimée, dieux du Tartare !</l>
+            </sp>
+            <label>Symphonie</label>
+            <sp who="esprits">
+               <speaker>Chœur des esprits</speaker>
+               <l>
+                  <milestone unit="sent" n="125"/>Rien n’est tenté en vain par l’homme</l>
+               <l>Et la Nature ne sait plus comment s’armer contre lui,</l>
+               <l>De la plaine mouvante, il laboura les champs ondoyants</l>
+               <l>Il y sema ses peines dont il recueillit une blonde moisson.</l>
+               <l>
+                  <milestone unit="sent" n="126"/>Dès lors, pour que vécut</l>
+               <l>Le souvenir de sa gloire,</l>
+               <l>La Renommée délia sa langue pour parler de celui</l>
+               <l>Qui dompta la mer sur un frêle esquif</l>
+               <l>Et méprisa la colère d’Auster et d’Aquilon.</l>
+            </sp>
+            <label>Symphonie</label>
+         </div>
+         <div n="4" type="act">
+            <head>Acte IV</head>
+            <sp who="proserpine">
+               <speaker>Proserpine</speaker>
+               <l>
+                  <milestone unit="sent" n="127"/>Seigneur, ce malheureux</l>
+               <l>Parcourt les champs de la mort</l>
+               <l>En appelant Eurydice,</l>
+               <l>Lui dont tu viens d’entendre</l>
+               <l>La plainte si douce et mélodieuse</l>
+               <l>Il a rempli mon cœur de si grande pitié</l>
+               <l>Qu’à nouveau je t’implore</l>
+               <l>Pour que ta volonté accède à sa prière.</l>
+               <l>
+                  <milestone unit="sent" n="128"/>De grâce, si jamais mes yeux</l>
+               <l>T’ont prodigué quelque amoureuse douceur,</l>
+               <l>Si tu as aimé la pureté de mon front</l>
+               <l>Que tu nommes ton ciel, et par qui tu me jures</l>
+               <l>N’avoir rien à envier à Jupiter,</l>
+               <l>Je t’en prie, au nom de cette flamme</l>
+               <l>Dont Amour fit jadis brûler ta grande âme,</l>
+               <l>Permets qu’Eurydice à nouveau</l>
+               <l>Jouisse de ces jours</l>
+               <l>Qu’elle avait coutume de passer dans la joie et les chants</l>
+               <l>Et console les pleurs du malheureux Orphée.</l>
+            </sp>
+            <sp who="pluton">
+               <speaker>Pluton </speaker>
+               <l>
+                  <milestone unit="sent" n="129"/>Bien qu’un inflexible et immuable destin,</l>
+               <l>Épouse bien aimée, s’oppose à tes désirs,</l>
+               <l>Que rien pourtant ne soit plus refusé</l>
+               <l>À tant de beauté jointe à tant de prières.</l>
+               <l>
+                  <milestone unit="sent" n="130"/>Et qu’Orphée, malgré l’arrêt fatal</l>
+               <l>Retrouve sa chère Eurydice.</l>
+               <l>
+                  <milestone unit="sent" n="131"/>Mais avant que d’avoir quitté ces abîmes</l>
+               <l>Que jamais vers elle il ne tourne ses yeux avides,</l>
+               <l>Car, pour un seul regard, inéluctablement,</l>
+               <l>Il la perdrait à tout jamais.</l>
+               <l>
+                  <milestone unit="sent" n="132"/>Telle est ma décision. <milestone unit="sent" n="133"/>Maintenant, ô, ministres</l>
+               <l>Afin qu’Orphée l’entende, et l’entende Eurydice,</l>
+               <l>Faîtes, dans mon royaume, savoir ma volonté,</l>
+               <l>Et que personne, alors, n’espère la changer.</l>
+            </sp>
+            <sp who="ministre">
+               <speaker>Le Ministre</speaker>
+               <l>
+                  <milestone unit="sent" n="134"/>Ô !Puissant roi des habitants</l>
+               <l>Des ténèbres éternelles, que tes ordres soient notre loi,</l>
+               <l>Car nos pensées ne doivent pas chercher</l>
+               <l>D’autre causes internes que ta volonté.</l>
+            </sp>
+            <sp who="esprits">
+               <speaker>Un esprit</speaker>
+               <l>
+                  <milestone unit="sent" n="135"/>Orphée arrachera -t-il son épouse de ces froides cavernes ?</l>
+               <l>
+                  <milestone unit="sent" n="136"/>Saura-t-il, de toutes ses forces, résister à son juvénile désir</l>
+               <l>Et ne pas oublier l’implacable décret ?</l>
+            </sp>
+            <sp who="proserpine">
+               <speaker>Proserpine</speaker>
+               <l>
+                  <milestone unit="sent" n="137"/>Quelles grâces te rendrai-je</l>
+               <l>Maintenant qu’à mes prières</l>
+               <l>Tu accordes, noble Seigneur, un don si généreux ?</l>
+               <l>
+                  <milestone unit="sent" n="138"/>Béni soit le jour où je t’ai plu pour la première fois</l>
+               <l>Et bénis soient le rapt et la douce embuscade,</l>
+               <l>Puisque pour mon bonheur</l>
+               <l>C’est toi que je gagnai en perdant le soleil.</l>
+            </sp>
+            <sp who="pluton">
+               <speaker>Pluton</speaker>
+               <l>
+                  <milestone unit="sent" n="139"/>Tes douces paroles ravivent dans mon cœur</l>
+               <l>L’ancienne blessure d’amour.</l>
+               <l>
+                  <milestone unit="sent" n="140"/>Ainsi ton âme n’aspirera-t-elle plus</l>
+               <l>À un plaisir céleste</l>
+               <l>Qui te ferait abandonner le lit de ton époux.</l>
+            </sp>
+            <sp who="esprits">
+               <speaker>Chœur des esprits</speaker>
+               <l>
+                  <milestone unit="sent" n="141"/>Pitié et amour, aujourd’hui</l>
+               <l>Triomphent en enfer.</l>
+            </sp>
+            <sp who="esprits">
+               <speaker>Un esprit</speaker>
+               <l>
+                  <milestone unit="sent" n="142"/>Voici l’aimable chanteur</l>
+               <l>Qui conduit son épouse vers la lumière céleste.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="143"/>Quel honneur sera digne de toi,</l>
+               <l>Ma lyre toute puissante,</l>
+               <l>Si dans le royaume du Tartare</l>
+               <l>Tu as pu fléchir les esprits les plus endurcis ?</l>
+               <l>
+                  <milestone unit="sent" n="144"/>Tu auras ta place parmi les plus belles</l>
+               <l>Images du ciel</l>
+               <l>Et au son de ta musique, les étoiles</l>
+               <l>Danseront en rondes lentes ou vives.</l>
+               <l>
+                  <milestone unit="sent" n="145"/>Moi, comblé grâce à toi,</l>
+               <l>Je verrai le visage aimé,</l>
+               <l>Et aujourd’hui je me reposerai</l>
+               <l>Sur le sein candide de mon épouse.</l>
+               <l>
+                  <milestone unit="sent" n="146"/>Mais hélas, tandis que je chante, qui peut m’assurer</l>
+               <l>Qu’elle me suit ? <milestone unit="sent" n="147"/>Qui me cache, hélas,</l>
+               <l>Le doux éclat de ces yeux bien-aimés ?</l>
+               <l>
+                  <milestone unit="sent" n="148"/>Peut-être, poussés par l’envie,</l>
+               <l>Les divinités de l’Averne,</l>
+               <l>Afin qu’ici-bas je ne sois pas pleinement comblé,</l>
+               <l>Me privent-elles de vous contempler</l>
+               <l>Qui, d’un seul regard peuvent rendre un mortel heureux ?</l>
+               <l>
+                  <milestone unit="sent" n="149"/>Mais que crains-tu, mon cœur ?</l>
+               <l>
+                  <milestone unit="sent" n="150"/>Ce qu’interdit Pluton, Amour l’ordonne.</l>
+               <l>
+                  <milestone unit="sent" n="151"/>À cette force plus puissante</l>
+               <l>Qui soumet et les hommes et les dieux,</l>
+               <l>Je devrais plutôt obéir.</l>
+               <l>
+                  (Un bruit.)</l>
+               <l>
+                  <milestone unit="sent" n="152"/>Mais, hélas, qu’entends-je ?</l>
+               <l>
+                  <milestone unit="sent" n="153"/>Les Furies amoureuses se préparent peut-être,</l>
+               <l>Avec rage, à lutter avec moi</l>
+               <l>Pour me ravir ma bien- aimée ?</l>
+               <l>
+                  <milestone unit="sent" n="154"/>Et moi, j’y consentirais ?</l>
+               <l>
+                  <milestone unit="sent" n="155"/>(Orphée se retourne.)</l>
+               <l>
+                  <milestone unit="sent" n="156"/>Ô astres si doux, je vous vois enfin,</l>
+               <l>Enfin je…mais quelle éclipse, hélas, vous obscurcit ?</l>
+            </sp>
+            <sp who="esprits">
+               <speaker>Les Esprits</speaker>
+               <l>
+                  <milestone unit="sent" n="157"/>Tu as enfreint la loi, tu n’es pas digne de pardon.</l>
+            </sp>
+            <sp who="eurydice">
+               <speaker>Eurydice</speaker>
+               <l>
+                  <milestone unit="sent" n="158"/>Las, vision trop douce et trop amère !</l>
+               <l>
+                  <milestone unit="sent" n="159"/>Ainsi donc, tu me perds pour m’avoir trop aimée ?</l>
+               <l>
+                  <milestone unit="sent" n="160"/>Et moi, infortunée, je perds la grâce</l>
+               <l>De jouir à nouveau</l>
+               <l>De la lumière et de la vie, et je te perds en même temps,</l>
+               <l>Toi, cher époux, le plus cher de mes biens.</l>
+            </sp>
+            <sp who="esprits">
+               <speaker>Un esprit</speaker>
+               <l>
+                  <milestone unit="sent" n="161"/>Retourne à l’ombre de la mort,</l>
+               <l>Malheureuse Eurydice,</l>
+               <l>N’espère plus revoir les étoiles,</l>
+               <l>Car, désormais, l’Enfer sera sourd à tes prières</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="162"/>Où t’en vas-tu, ma vie ? <milestone unit="sent" n="163"/>Me voici, je te suis.</l>
+               <l>
+                  <milestone unit="sent" n="164"/>Mais, hélas, qui m’en empêche ? <milestone unit="sent" n="165"/>Est-ce rêve ou délire ?</l>
+               <l>
+                  <milestone unit="sent" n="166"/>Quel mystérieux pouvoir de ces sinistres lieux</l>
+               <l>À ces ténèbres aimées m’arrache, malgré moi,</l>
+               <l>Et me conduit vers l’horrible lumière ?</l>
+            </sp>
+            <label>Symphonie</label>
+            <sp who="esprits">
+               <speaker>Chœur des esprits</speaker>
+               <l>
+                  <milestone unit="sent" n="167"/>La vertu est un rayon de la beauté céleste,</l>
+               <l>Parure de l’âme dont, seule, elle fait le prix.</l>
+               <l>
+                  <milestone unit="sent" n="168"/>Elle ne craint pas l’outrage du temps,</l>
+               <l>Mais au contraire, chez l’homme,</l>
+               <l>Les années, en passant, augmentent sa splendeur.</l>
+               <l>
+                  <milestone unit="sent" n="169"/>Orphée vainquit l’Enfer, puis fut vaincu</l>
+               <l>Par ses passions.</l>
+               <l>
+                  <milestone unit="sent" n="170"/>Seul sera digne d’une gloire éternelle,</l>
+               <l>Celui qui triomphera de lui-même.</l>
+            </sp>
+            <label>Symphonie</label>
+         </div>
+         <div n="5" type="act">
+            <head>Acte V</head>
+            <label>Ritournelle</label>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="171"/>Voici les champs de Thrace, et puis voici le lieu</l>
+               <l>Où la douleur,</l>
+               <l>À la triste nouvelle me transperça le cœur.</l>
+               <l>
+                  <milestone unit="sent" n="172"/>Puisque je n’ai plus l’espoir</l>
+               <l>Que les prières, les soupirs ni les larmes</l>
+               <l>Me rendent l’amour que j’ai perdu,</l>
+               <l>Que puis-je désormais, sinon vous adresser mes plaintes</l>
+               <l>Ô forêts, jadis doux réconfort</l>
+               <l>De mes tourments, alors qu’il plut au ciel</l>
+               <l>De vous faire partager ma détresse ?</l>
+               <l>
+                  <milestone unit="sent" n="173"/>Vous avez gémi, ô montagnes, vous avez pleuré,</l>
+               <l>O pierres, au départ de notre soleil.</l>
+               <l>
+                  <milestone unit="sent" n="174"/>Et avec vous, toujours je pleurerai,</l>
+               <l>Et, toujours me lamenterai, hélas !</l>
+               <l>
+                  <milestone unit="sent" n="175"/>Que de plaintes et de larmes !</l>
+            </sp>
+            <sp who="echo">
+               <speaker>Écho</speaker>
+               <l>
+                  …larmes !</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="176"/>Écho, amoureuse aimable</l>
+               <l>Tu es inconsolable</l>
+               <l>Et, dans ma douleur, me voudrais consoler</l>
+               <l>Bien que mes yeux</l>
+               <l>Soient déjà devenus deux fontaines de larmes,</l>
+               <l>Dans mon malheur si dur et si cruel</l>
+               <l>De pleurs, pourtant, je n’ai pas assez</l>
+            </sp>
+            <sp who="echo">
+               <speaker>Écho</speaker>
+               <l>
+                  …pas assez.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="177"/>Si j’avais les yeux d’Argus,</l>
+               <l>Et que tous répandissent un océan de larmes,</l>
+               <l>Ma douleur ne saurait encore dire tant de malheur.</l>
+            </sp>
+            <sp who="echo">
+               <speaker>Écho</speaker>
+               <l>
+                  …malheur !</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="178"/>Si tu as pitié de ma peine, je te remercie</l>
+               <l>De ta bienveillance.</l>
+               <l>
+                  <milestone unit="sent" n="179"/>Mais, à mes lamentations,</l>
+               <l>Pourquoi ne réponds-tu</l>
+               <l>Que par mes derniers mots ?</l>
+               <l>
+                  <milestone unit="sent" n="180"/>Renvoie mes plaintes entières.</l>
+               <l>
+                  <milestone unit="sent" n="181"/>Mais toi, mon âme, si jamais</l>
+               <l>Ton ombre froide revient en ces lieux amis,</l>
+               <l>Accepte de moi, cet ultime hommage,</l>
+               <l>Car, désormais, je te consacre, et ma lyre et mon chant,</l>
+               <l>Comme, jadis, déjà, sur l’autel de l’amour,</l>
+               <l>Je t’ai offert en sacrifice mon esprit enflammé.</l>
+               <l>
+                  <milestone unit="sent" n="182"/>Belle, tu fus, et sage, et c’est à toi</l>
+               <l>Que le ciel généreux prodigua tant de grâces,</l>
+               <l>Alors qu’envers les autres, il mesura ses dons.</l>
+               <l>
+                  <milestone unit="sent" n="183"/>Toute louange, en toutes langues, s’adresse à toi,</l>
+               <l>Toi dont le corps si beau abritait une âme plus belle encore</l>
+               <l>D’autant plus modeste qu’elle était plus digne d’honneurs.</l>
+               <l>
+                  <milestone unit="sent" n="184"/>Alors que les autres femmes ont orgueilleuses et perfides,</l>
+               <l>Volages et sans pitié pour ceux qui les adorent,</l>
+               <l>Dépourvues de raison et de nobles pensées,</l>
+               <l>C’est à raison qu’on ne loue pas leurs œuvres.</l>
+               <l>
+                  <milestone unit="sent" n="185"/>Et jamais, donc, Amour, pour une vile femelle,</l>
+               <l>Ne me transpercera le cœur de sa flèche dorée.</l>
+               <stage>
+                  <milestone unit="sent" n="186"/>Apollon descend en chantant dans un nuage</stage>
+            </sp>
+            <label>Symphonie</label>
+            <sp who="apollon">
+               <speaker>Apollon</speaker>
+               <l>
+                  <milestone unit="sent" n="187"/>Pourquoi, te livres tu ainsi, mon fils</l>
+               <l>À la douleur et à la colère ?</l>
+               <l>
+                  <milestone unit="sent" n="188"/>Non, ce n’est pas la marque d’un cœur généreux</l>
+               <l>Que d’être esclave de sa passion.</l>
+               <l>
+                  <milestone unit="sent" n="189"/>Je vois déjà le péril et la honte</l>
+               <l>Qui te menacent</l>
+               <l>Et je quitte le ciel pour te venir en aide.</l>
+               <l>
+                  <milestone unit="sent" n="190"/>Maintenant, écoute-moi, tu en recueilleras honneur et vie.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="191"/>Tu arrives, Père généreux, au moment le plus opportun,</l>
+               <l>La colère et l’amour et la douleur immense,</l>
+               <l>M’avaient déjà conduit vers une fin désespérée.</l>
+               <l>
+                  <milestone unit="sent" n="192"/>Me voici donc, attentif à tes conseils,</l>
+               <l>Père céleste ; maintenant, impose-moi ta volonté.</l>
+            </sp>
+            <sp who="apollon">
+               <speaker>Apollon</speaker>
+               <l>
+                  <milestone unit="sent" n="193"/>Tu t’es trop réjoui de ta bonne fortune,</l>
+               <l>Et maintenant, tu pleures trop</l>
+               <l>Sur ton sort si dur et cruel.</l>
+               <l>
+                  <milestone unit="sent" n="194"/>Ne sais-tu pas encore</l>
+               <l>Qu’ici-bas nul plaisir ne dure ?</l>
+               <l>
+                  <milestone unit="sent" n="195"/>Et donc, si tu désires jouir d’une vie immortelle,</l>
+               <l>Viens avec moi au ciel qui à lui te rappelle.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="196"/>Ainsi, jamais plus ne verrai-je les doux yeux d’Eurydice que j’aime ?</l>
+            </sp>
+            <sp who="apollon">
+               <speaker>Apollon</speaker>
+               <l>
+                  <milestone unit="sent" n="197"/>Dans le soleil et les étoiles,</l>
+               <l>Tu retrouveras sa beauté.</l>
+            </sp>
+            <sp who="orphee">
+               <speaker>Orphée</speaker>
+               <l>
+                  <milestone unit="sent" n="198"/>Je serais vraiment un fils indigne</l>
+               <l>D’un tel père,</l>
+               <l>Si je ne suivais pas ce généreux conseil.</l>
+            </sp>
+            <sp who="apollon orphee">
+               <speaker>Apollon et Orphée</speaker>
+               <stage>(Ascendant au ciel en chantant)</stage>
+               <l>
+                  <milestone unit="sent" n="199"/>En chantant, nous montons au ciel</l>
+               <l>Où la véritable vertu</l>
+               <l>Trouve en digne récompense</l>
+               <l>Le bonheur et la paix.</l>
+            </sp>
+            <label>Ritornelle</label>
+            <sp who="nymphes bergers">
+               <speaker>Chœur des nymphes et des bergers</speaker>
+               <l>
+                  <milestone unit="sent" n="200"/>Va, Orphée, dans la félicité parfaite,</l>
+               <l>Jouir de la gloire du ciel,</l>
+               <l>Là où jamais le bonheur ne s’estompe,</l>
+               <l>Là où, jamais n’exista la douleur,</l>
+               <l>Tandis qu’avec joie et piété,</l>
+               <l>Nous t’offrons sur l’autel, l’encens et les prières.</l>
+               <l>
+                  <milestone unit="sent" n="201"/>Ainsi va celui qui ne se dérobe pas</l>
+               <l>À l’appel d’un dieu éternel ;</l>
+               <l>Il obtient grâce dans le ciel,</l>
+               <l>Qui, ici-bas, connut l’enfer ;</l>
+               <l>Et qui sème dans la souffrance</l>
+               <l>Cueille le fruit de toute grâce.</l>
+            </sp>
+            <label>Mauresque</label>
+         </div>
+      </body>
+   </text>
+</TEI>

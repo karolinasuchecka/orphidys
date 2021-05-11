@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
-        type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-        <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 
-        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -96,7 +93,7 @@
       </textClass>
     </profileDesc>
   </teiHeader>
-  <text>
+  <text >
     <front>
       <titlePage>
         <docAuthor>Jean-François Regnard</docAuthor>
@@ -123,38 +120,37 @@
         <sp who="pluton">
           <speaker>Pluton</speaker>
           <stage>, au milieu d’une troupe de Divinités infernales</stage>
-          <l>Dieux des enfers, aux armes !</l>
+          <l><milestone unit="sent" n="1"/>Dieux des enfers, aux armes !</l>
         </sp>
         <sp who="divinites_infernales">
           <speaker>Le Chœur</speaker>
-          <l>Aux armes ! aux armes !</l>
+          <l><milestone unit="sent" n="2"/>Aux armes ! aux armes !</l>
         </sp>
         <sp who="pluton">
           <speaker>Pluton</speaker>
           <lg>
-            <l>Un mortel insolent, malgré la loi du sort,</l>
+            <l><milestone unit="sent" n="3"/>Un mortel insolent, malgré la loi du sort,</l>
             <l>Dans les royaumes de la Mort</l>
             <l>Descend encor vivant, et cause mes alarmes.</l>
-            <l>Aux armes ! aux armes !</l>
+            <l><milestone unit="sent" n="4"/>Aux armes ! aux armes !</l>
           </lg>
-
           <lg>
-            <l>Le Tartare frémit,</l>
+            <l><milestone unit="sent" n="5"/>Le Tartare frémit,</l>
             <l>L’Érèbe gémit,</l>
             <l>Cerbère mugit.</l>
-            <l>Dieux des enfers, aux armes !</l>
+            <l><milestone unit="sent" n="6"/>Dieux des enfers, aux armes !</l>
           </lg>
         </sp>
         <pb n="345"/>
         <sp who="divinites_infernales">
           <speaker>Le Chœur</speaker>
-          <l>Aux armes ! aux armes !</l>
+          <l><milestone unit="sent" n="7"/>Aux armes ! aux armes !</l>
         </sp>
-        <stage>On entend une symphonie très douce.</stage>
+        <stage><milestone unit="sent" n="8"/>On entend une symphonie très douce.</stage>
         <sp who="pluton">
           <speaker>Pluton</speaker>
-          <l>Mais quels chants remplis de douceur !</l>
-          <l>Quelle douce harmonie</l>
+          <l><milestone unit="sent" n="9"/>Mais quels chants remplis de douceur !</l>
+          <l><milestone unit="sent" n="10"/>Quelle douce harmonie</l>
           <l>Chasse la barbarie</l>
           <l>D’un cœur comme le mien, ouvert à la fureur !</l>
         </sp>
@@ -163,89 +159,82 @@
         <head>Scène II <lb/> Orphée, Pluton</head>
         <sp who="orphee">
           <speaker>Orphée</speaker>
-          <l>Puissant maître des Ombres,</l>
+          <l><milestone unit="sent" n="11"/>Puissant maître des Ombres,</l>
           <l>À ton trône enflammé l’Amour conduit mes pas :</l>
-          <l>La charmante Eurydice, hélas !</l>
-          <l>A passé les rivages sombres ;</l>
+          <l><milestone unit="sent" n="12"/>La charmante Eurydice, hélas !</l>
+          <l><milestone unit="sent" n="13"/>A passé les rivages sombres ;</l>
           <l>Rends-moi cet objet plein d’appas,</l>
           <l>Ou, par pitié, donne-moi le trépas.</l>
         </sp>
         <sp who="pluton">
           <speaker>Pluton</speaker>
-          <l>Plus loin que ton espoir tu portes ta demande ;</l>
+          <l><milestone unit="sent" n="14"/>Plus loin que ton espoir tu portes ta demande ;</l>
           <l>Mais Pluton y consent, si l’Amour le commande.</l>
-          <l>Pars ; sors du ténébreux séjour :</l>
-          <l>Mais je prétends qu’une loi s’accomplisse ;</l>
+          <l><milestone unit="sent" n="15"/>Pars ; sors du ténébreux séjour :</l>
+          <l><milestone unit="sent" n="16"/>Mais je prétends qu’une loi s’accomplisse ;</l>
           <l>Ne regarde point Eurydice,</l>
           <l>Que tu ne sois rendu dans l’empire du jour.</l>
         </sp>
       </div>
-
       <div>
         <pb n="347"/>
         <head>Scène III <lb/> Orphée</head>
         <sp who="orphee">
           <speaker>Orphée</speaker>
           <lg>
-            <l>Mon cœur, chantez votre victoire,</l>
+            <l><milestone unit="sent" n="17"/>Mon cœur, chantez votre victoire,</l>
             <l>L’Amour est couronné de gloire.</l>
           </lg>
-
           <lg>
-            <l>Les ris et les chants</l>
+            <l><milestone unit="sent" n="18"/>Les ris et les chants</l>
             <l>À la douleur succèdent,</l>
             <l>Les enfers cèdent</l>
             <l>Aux charmes de deux yeux touchants.</l>
           </lg>
         </sp>
-        <stage>Entrée de Divinitès infernales et d’Esprits follets</stage>
+        <stage><milestone unit="sent" n="19"/>Entrée de Divinités infernales et d’Esprits follets</stage>
       </div>
       <div>
-        <head>Scène IV.</head>
-
+        <head>Scène IV</head>
         <sp who="ombre">
           <speaker>Une ombre heureuse</speaker>
-          <l>Soutienne qui pourra les traits et les éclairs</l>
+          <l><milestone unit="sent" n="20"/>Soutienne qui pourra les traits et les éclairs</l>
           <l>Qu’on voit partir d’un beau visage ;</l>
           <l>La beauté dans les cieux trouve un aisé passage,</l>
           <l>Et se fait même ouvrir les portes des enfers.</l>
         </sp>
-        <stage>On recommence la danse.</stage>
+        <stage><milestone unit="sent" n="21"/>On recommence la danse.</stage>
       </div>
-
       <div>
         <head>Scène V</head>
-
         <sp who="eurydice">
           <speaker>Eurydice</speaker>
           <stage>, seule.</stage>
-          <l>Pour plaire à l’objet qui m’enflamme ,</l>
+          <l><milestone unit="sent" n="22"/>Pour plaire à l’objet qui m’enflamme ,</l>
           <l>Amours, volez tous dans mon âme ;</l>
           <l><pb n="349"/>Fuyez, peines, soupirs, ne revenez jamais</l>
           <l>De mon cœur amoureux interrompre la paix.</l>
         </sp>
-        <stage>On recommence.</stage>
+        <stage><milestone unit="sent" n="23"/>On recommence.</stage>
       </div>
       <div>
         <head>Scène VI <lb/> Orphée, Eurydice</head>
-
-        <stage>Orphée passe sans regarder Eurydice.</stage>
+        <stage><milestone unit="sent" n="24"/>Orphée passe sans regarder Eurydice.</stage>
         <sp who="eurydice">
           <speaker>Eurydice</speaker>
-          <l>Jette, Orphée, un regard sur celle qui t’adore.</l>
+          <l><milestone unit="sent" n="25"/>Jette, Orphée, un regard sur celle qui t’adore.</l>
         </sp>
         <sp who="orphee">
           <speaker>Orphée</speaker>
           <stage>, regardant Eurydice</stage>
-          <l>Chère Eurydice, enfin, je vous revois encore !</l>
+          <l><milestone unit="sent" n="26"/>Chère Eurydice, enfin, je vous revois encore !</l>
         </sp>
       </div>
       <div>
         <head>Scène VII <lb/> Pluton, Orphée, Eurydice</head>
         <sp who="pluton">
           <speaker>Pluton</speaker>
-
-          <l>Va, fuis loin de mes yeux,</l>
+          <l><milestone unit="sent" n="27"/>Va, fuis loin de mes yeux,</l>
           <l>Mortel trop téméraire ,</l>
           <l>Puisque des dieux</l>
           <l>Tu violes l’arrêt sévère ;</l>
@@ -253,32 +242,30 @@
         </sp>
         <sp who="orphee">
           <speaker>Orphée</speaker>
-          <l>Ô dieux !</l>
+          <l><milestone unit="sent" n="28"/>Ô dieux !</l>
         </sp>
-
         <sp who="pluton">
           <speaker>Pluton</speaker>
-          <l>Qu’une troupe rapide</l>
+          <l><milestone unit="sent" n="29"/>Qu’une troupe rapide</l>
           <l><pb n="351"/>De démons empressés</l>
           <l>Dans l’empire des airs reporte ce perfide ,</l>
           <l>Pluton commande, obéissez.</l>
         </sp>
         <sp who="orphee">
           <speaker>Orphée</speaker>
-          <l>Quelle rigueur impitoyable !</l>
+          <l><milestone unit="sent" n="30"/>Quelle rigueur impitoyable !</l>
         </sp>
         <sp who="eurydice">
           <speaker>Eurydice</speaker>
-          <l>Un crime de l’amour n’est-il point pardonnable ?</l>
+          <l><milestone unit="sent" n="31"/>Un crime de l’amour n’est-il point pardonnable ?</l>
         </sp>
-        <stage>Des Démons enlèvent Orphée.</stage>
+        <stage><milestone unit="sent" n="32"/>Des Démons enlèvent Orphée.</stage>
       </div>
       <div>
         <head>Scène VIII</head>
         <sp who="pluton">
           <speaker>Pluton</speaker>
-
-          <l>Esprits infernaux, en ce jour,</l>
+          <l><milestone unit="sent" n="33"/>Esprits infernaux, en ce jour,</l>
           <l>Pour chasser le chagrin qui la presse,</l>
           <l>Riez, chantez, dansez, montrez votre allégresse ;</l>
           <l>Qu’on ne parle plus de tristesse</l>
@@ -286,12 +273,11 @@
         </sp>
         <sp who="divinites_infernales">
           <speaker>Le Chœur</speaker>
-          <l>Rions,chantons, dansons, montrons notre allégresse :</l>
-          <l>Qu’on ne parle plus de tristesse</l>
+          <l><milestone unit="sent" n="34"/>Rions,chantons, dansons, montrons notre allégresse :</l>
+          <l><milestone unit="sent" n="35"/>Qu’on ne parle plus de tristesse</l>
           <l>Où brille le flambeau d’Amour.</l>
         </sp>
       </div>
     </body>
-
   </text>
 </TEI>
